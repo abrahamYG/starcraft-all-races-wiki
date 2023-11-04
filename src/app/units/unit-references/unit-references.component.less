@@ -1,0 +1,43 @@
+
+.cards-container{
+  display: block;
+}
+table.cards {
+  border: 2px solid #2765a4;
+  border-spacing: 0;
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 10px;
+
+  > tr {
+    height: 48px;
+
+    > td {
+      width: 48px;
+      position: relative;
+      height: 48px;
+      padding: 0;
+      background-image: url(./../../../assets/ui/ui_ingame_coop_topbar_stetmann_commandbuttons_blue_normal.png);
+      background-size: 50px;
+      background-position: center;
+
+      &.disabled{
+        opacity: 0.1;
+      }
+
+      .card-hotkey{
+        position: absolute;
+        left: 6px;
+        top: 6px;
+        color: white;
+        text-shadow: 1px 1px 1px black, -1px -1px 1px black, -1px 1px 1px black, 1px -1px 1px black;
+        z-index: 1;
+      }
+      img {
+        width: 48px;
+        display: block;
+        height: 48px;
+      }
+    }
+  }
+}

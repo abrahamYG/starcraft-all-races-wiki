@@ -1,0 +1,10 @@
+<ul *ngIf="scdata.modData">
+  <ng-container *ngFor="let race of scdata.modData.races">
+    <li>
+      <a [title]="race.name" [routerLink]="scdata.raceRoute(race)" [queryParams]="{}" class="sc-button" [class.selected]="race.id === scdata.raceID">
+        <img [src]="'./assets/icons/races/lobby-' + race.id.toLowerCase() + '.png'">
+        <span>{{race.name}}</span>
+      </a>
+    </li>
+  </ng-container>
+</ul>

@@ -1,0 +1,8 @@
+<h5>
+  Switch Mod:
+</h5>
+<div *ngIf="scdata.modsData">
+  <ng-container *ngFor="let mod of scdata.modsData.mods">
+    <a *ngIf="mod.id !== scdata.modID"  [routerLink]="scdata.modRoute(mod)" class="sc-button">{{mod.name}}</a>
+  </ng-container>
+</div>

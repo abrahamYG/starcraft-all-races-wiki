@@ -1,0 +1,45 @@
+{
+  "id":"war",
+  "races": [
+    {
+      "id": "Human",
+      "Name": "Human",
+      "Icon": "renee_war3_btnrallypoint"
+    },
+    {
+      "id": "Orc",
+      "Name": "Orc",
+      "Icon": "renee_war3_btnorcrallypoint"
+    },
+    {
+      "id": "NightElf",
+      "Name": "NightElf",
+      "Icon": "renee_war3_btnrallypointnightelf"
+    },
+    {
+      "id": "Undead",
+      "Name": "Undead",
+      "Icon": "renee_war3_btnundeadcaptureflag"
+    },
+    {
+      "id": "Naga",
+      "Name": "Naga",
+      "Icon": "renee_war3_btnnagaseawitch"
+    },
+    {
+      "id": "Goblin",
+      "Name": "Goblin",
+      "Icon": "war3_btngoblinsapper"
+    },
+    {
+      "id": "Draenei",
+      "Name": "Draenei",
+      "Icon": "renee_war3_btndranai"
+    },
+    {
+      "id": "Demon",
+      "Name": "Demon",
+      "Icon": "war3_btndemoness"
+    }
+  ]
+}

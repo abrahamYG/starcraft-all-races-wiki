@@ -1,0 +1,24 @@
+:host{
+  flex-grow: 1;
+}
+
+
+
+ul{
+  margin: 0;
+  user-select: none;
+  padding: 0;
+  width: 100%;
+  text-align: left;
+  display: flex;
+}
+li{
+  list-style: none;
+  display: inline-flex;
+  flex-grow: 1;
+  justify-content: center;
+
+  &:not(:last-of-type){
+    margin-right: 1px;
+  }
+}

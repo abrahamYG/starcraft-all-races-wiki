@@ -1,0 +1,84 @@
+:host{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+  height: 100%;
+  color: white;
+
+  &&::after{
+    position:absolute; width:0; height:0; overflow:hidden; z-index:-1; // hide images
+    content:
+      url(../../assets/ui/ui_battlenet_glues_bluebuttons_largeup.png)
+      url(../../assets/ui/ui_battlenet_glues_bluebuttons_largedisabled.png)
+      url(../../assets/ui/ui_battlenet_glues_bluebuttons_largeover.png)
+      url(../../assets/ui/ui_battlenet_glues_bluebuttons_largedown.png)
+      url(../../assets/ui/ui_battlenet_glues_bluebuttons_largeselected.png);   // load images
+  }
+}
+
+.sc-button {
+  width: 100%;
+  max-width: 235px;
+  text-decoration: none;
+  height: 50px;
+  text-align: center;
+  position: relative;
+  line-height: 50px;
+  font-weight: 600;
+  font-size: 12px;
+  overflow: hidden;
+  display: inline-block;
+  font-family: sans-serif;
+  cursor: pointer;
+  color: #a4b3bf;
+
+  &:before,&:after {
+    background-image: url(../../assets/ui/ui_battlenet_glues_bluebuttons_largeup.png);
+    content: "";
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-size: auto 100px;
+    z-index: -1;
+  }
+  &:before{
+    left: 0;
+  }
+  &:after{
+    right: 0;
+    background-position: right top;
+  }
+  &:hover {
+    &:before,&:after {
+      background-image: url(../../assets/ui/ui_battlenet_glues_bluebuttons_largeover.png);
+    }
+  }
+  &[disabled]{
+    &:before,&:after {
+      background-image: url(../../assets/ui/ui_battlenet_glues_bluebuttons_largedisabled.png);
+    }
+  }
+  &:active {
+    &:before,&:after {
+      background-image: url(../../assets/ui/ui_battlenet_glues_bluebuttons_largedown.png);
+    }
+  }
+  &.selected{
+    &:before,&:after {
+      background-image: url(../../assets/ui/ui_battlenet_glues_bluebuttons_largeselected.png);
+    }
+  }
+
+  span{
+    height: 20px;
+  }
+  img {
+    margin: -4px 4px;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: text-top;
+  }
+}

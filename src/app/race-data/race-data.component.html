@@ -1,0 +1,350 @@
+<ng-template #unitTemplate let-unit="unit" let-phase="phase" let-title="title">
+  <ng-template #unitTooltip>
+    <div><b>{{unit.Name}} <span *ngIf="scdata.developer">({{unit.id}})</span></b></div>
+<!--    <div class="unit-main-info-container">-->
+<!--      <div class="unit-main-info" >-->
+<!--        <sc-unit-statusbar [unit]="unit"></sc-unit-statusbar>-->
+<!--      </div>-->
+<!--      <div>-->
+    <p [innerHTML]="unit.Description | safeHtml"></p>
+<!--    <p><span class="sc-attribute" *ngFor="let attribute of unit.Attributes">{{attribute}}</span></p>-->
+<!--      </div>-->
+<!--    </div>-->
+  </ng-template>
+
+  <div class="sc-unit-container">
+    <sc-icon [class.selected]="scdata.isSelected('unit', unit)"
+             class="frame link" [src]="unit.Icon"
+             [routerLink]="scdata.unitRoute(unit)"
+             [tooltip]="unitTooltip"  contentType="template" tooltipClass="sc-tooltip" [animationDuration]="0" [hideDelay]="0">
+    </sc-icon>
+    <div class="phases" *ngIf="!phase && scdata.filteredUnits(unit.$Phase).length">
+      <ng-container *ngFor="let phaseUnit of scdata.filteredUnits(unit.$Phase)">
+          <ng-container *ngTemplateOutlet="unitTemplate; context:{unit:  phaseUnit, phase: true}"></ng-container>
+      </ng-container>
+    </div>
+  </div>
+</ng-template>
+
+<ng-template #upgradeTemplate let-upgrade="upgrade" let-title="title"  let-phase="phase">
+  <div class="sc-unit-container">
+    <span  [tooltip]="upgradeTooltip" contentType="template" tooltipClass="sc-tooltip" [animationDuration]="0" [hideDelay]="0">
+      <ng-template #upgradeTooltip>
+        <div><b>{{upgrade.Name}}<span *ngIf="scdata.developer">({{upgrade.id}})</span></b></div>
+      </ng-template>
+      <sc-icon
+        [routerLink]="scdata.upgradeRoute( upgrade)"
+        [class.selected]="scdata.isSelected('upgrade',upgrade.id)" class="frame link" [src]="upgrade.Icon" [title]="upgrade.Name"></sc-icon>
+    </span>
+    <div class="phases" *ngIf="!phase && scdata.filteredUpgrades(upgrade.$Phase).length">
+      <ng-container *ngFor="let phaseUpgrade of scdata.filteredUpgrades(upgrade.$Phase)">
+          <ng-container *ngTemplateOutlet="upgradeTemplate; context:{upgrade:  phaseUpgrade, phase: true}"></ng-container>
+      </ng-container>
+    </div>
+  </div>
+</ng-template>
+
+<div class="container" *ngIf="scdata.modData">
+  <nav>
+    <races-list></races-list>
+    <a *ngIf="scdata.modData.discord" target="_blank"  class="btn-discord" [href]="scdata.modData.discord"></a>
+  </nav>
+  <section>
+    <article class="mod-info" *ngIf="!scdata.raceData">
+      <mods-list></mods-list>
+    </article>
+    <article *ngIf="scdata.raceData as rd" class="sc-unit-categories"  [class.hidden-categories]="scdata.unitData">
+      <h5>
+        {{rd.Name}}
+        <a class="close" [routerLink]="scdata.modRoute(scdata.modData)"></a>
+      </h5>
+      <div class="sc-unit-details-content" *ngIf="unitsListStyle === 'grid'">
+<!--      <div class="results-header">-->
+<!--        {{race.Name}}-->
+<!--        <div class="results-header__option">-->
+<!--          <div (click)="setUnitsListStyle('grid')" [class.selected]="unitsListStyle === 'grid'" class="option__button option&#45;&#45;grid"><span></span><span></span><span></span><span></span><span>Grid</span></div>-->
+<!--          <div (click)="setUnitsListStyle('list')" [class.selected]="unitsListStyle === 'list'" class="option__button option&#45;&#45;list"><span></span><span></span><span></span><span>List</span></div>-->
+<!--        </div>-->
+<!--      </div>-->
+
+        <p class="sc-unit-category">Army:</p>
+        <div class="category-units">
+          <ng-container *ngFor="let unit of rd.army">
+            <ng-container *ngIf="rd.cache?.units[unit] as u ">
+              <ng-container *ngIf="!u.$Phased">
+                <ng-container *ngTemplateOutlet="unitTemplate; context:{unit:  u}"></ng-container>
+              </ng-container>
+            </ng-container>
+          </ng-container>
+        </div>
+
+        <p class="sc-unit-category">Structures:</p>
+        <div class="category-units">
+          <ng-container *ngFor="let unit of rd.structures">
+            <ng-container *ngIf="rd.cache?.units[unit] as u ">
+              <ng-container *ngIf="!u.$Phased">
+                <ng-container *ngTemplateOutlet="unitTemplate; context:{unit:  u}"></ng-container>
+              </ng-container>
+            </ng-container>
+          </ng-container>
+        </div>
+
+        <p class="sc-unit-category">Upgrades:</p>
+        <div class="category-units">
+          <ng-container *ngFor="let upgrade of rd.upgrades">
+            <ng-container *ngIf="rd.cache?.upgrades[upgrade] as u ">
+              <ng-container *ngIf="!u.$Phased">
+                <ng-container *ngTemplateOutlet="upgradeTemplate; context:{upgrade:  u}"></ng-container>
+              </ng-container>
+            </ng-container>
+          </ng-container>
+        </div>
+      </div>
+
+      <ng-container  *ngIf="unitsListStyle === 'list'">
+        <h5>Units:</h5>
+        <div class="unit-detailed" *ngFor="let unit of rd.units">
+          <sc-icon  [class.selected]="scdata.isSelected('unit',unit.id)"
+                    class="frame link" [src]="unit.Icon"
+                    [routerLink]="scdata.unitRoute( unit)"
+                    [title]="unit.Name + ' (' + unit.id + ')'">
+          </sc-icon>
+          <div>
+            {{unit.Name}}<br/>
+            <a *ngIf="scdata.developer" target="_blank" [href]="scdata.unitURL(unit)">({{unit.id}})</a>
+          </div>
+        </div>
+
+        <h5>Structures:</h5>
+        <div class="unit-detailed" *ngFor="let unit of rd.structures">
+          <sc-icon  [class.selected]="scdata.isSelected('unit',unit.id)"
+                    class="frame link" [src]="unit.Icon"
+                    [routerLink]="scdata.unitRoute( unit)"
+                    [title]="unit.Name + ' (' + unit.id + ')'">
+          </sc-icon>
+          <div>
+            {{unit.Name}}<br/>
+            <a *ngIf="scdata.developer" target="_blank" [href]="scdata.unitURL(unit)">({{unit.id}})</a>
+          </div>
+        </div>
+
+      </ng-container>
+
+<!--      <h5>Tech Tree:</h5>-->
+<!--      <ng-template #techUnitTemplate let-unit="unit">-->
+<!--        <sc-icon #refEl [class.selected]="unit.id === scdata.unitID"-->
+<!--                 class="frame" [src]="unit.Icon"-->
+<!--                 [routerLink]="['/', scdata.modID, scdata.raceID, unit.id]"-->
+<!--                 [tooltip]="unit.Name + ' (' + unit.id + ')'" tooltipClass="sc-tooltip" [animationDuration]="0" [hideDelay]="0">-->
+<!--        </sc-icon>-->
+<!--        <ng-container  *ngIf="showUnitDetails(unit,refEl)">-->
+<!--          <div class="tech-production" *ngIf="hasProduction(unit)">-->
+<!--            <ng-container  *ngFor="let prod of unit.Production">-->
+<!--              <ng-container *ngIf="race.cache?.units[prod]">-->
+<!--                <ng-container *ngTemplateOutlet="techUnitTemplate; context: {unit:  race.cache?.units[prod]}"></ng-container>-->
+<!--              </ng-container>-->
+<!--            </ng-container>-->
+<!--          </div>-->
+<!--        </ng-container>-->
+<!--      </ng-template>-->
+<!--      <ng-container *ngTemplateOutlet="techUnitTemplate; context: {unit:  race.cache?.units[race.StartingUnitArray[0].Unit]}"></ng-container>-->
+
+    </article>
+    <article *ngIf="scdata.raceData && scdata.unitData as unit" class="sc-unit-details">
+        <h5>
+          {{unit.Name}}
+          <a *ngIf="scdata.raceData" class="close" [routerLink]="scdata.raceRoute(scdata.raceData)"></a>
+        </h5>
+
+        <div class="sc-unit-details-content">
+          <div class="unit-main-info-container">
+            <div class="unit-main-info" >
+              <sc-icon class="frame" [src]="unit.Icon" [title]="unit.Name"></sc-icon>
+<!--              <sc-unit-statusbar [unit]="unit"></sc-unit-statusbar>-->
+
+              <div class="unit-short-stats unit-costs">
+                <div *ngIf="unit.CostResource?.Minerals" class="unit-stat">
+                  <span class="resources-minerals"></span>
+                  <span class="unit-stat-value">{{unit.CostResource.Minerals}}</span>
+                </div>
+                <div *ngIf="unit.CostResource?.Vespene" class="unit-stat">
+                  <span class="resources-vespene"></span>
+                  <span class="unit-stat-value">{{unit.CostResource.Vespene}}</span>
+                </div>
+                <div *ngIf="unit.Food" class="unit-stat ">
+                  <span class="resources-supply"></span>
+                  <span class="unit-stat-value">{{unit.Food}}</span>
+                </div>
+              </div>
+            </div>
+            <div  class="unit-stats-info" >
+              <!--            <p><a target="_blank" [href]="scdata.unitURL(unit)">{{unit.Name}}</a></p>-->
+              <p class="unit-description" [innerHTML]="unit.Description | safeHtml"></p>
+              <p><span class="sc-attribute" *ngFor="let attribute of unit.Attributes">{{attribute}}</span></p>
+
+              <div class="unit-short-stats unit-stats">
+                <div *ngIf="unit.LifeMax" class="unit-stat" [title]="unit.LifeArmorName">
+                  <sc-icon [src]="unit.LifeArmorIcon" class="short-icon unit-armor">
+                    <span *ngIf="unit.LifeArmor">{{unit.LifeArmor}}</span>
+                  </sc-icon>
+                  <span class="unit-stat-value">
+                    <ng-container *ngIf="unit.LifeStart && unit.LifeStart !== unit.LifeMax">{{unit.LifeStart}}<span class="smaller"> / </span></ng-container>{{unit.LifeMax}}
+                    <sub class="smaller" *ngIf="unit.LifeRegenRate">+{{unit.LifeRegenRate| number : '.1-1'}}/s</sub>
+                  </span>
+                </div>
+                <div *ngIf="unit.ShieldsMax" class="unit-stat" [title]="unit.ShieldsArmorName" >
+                  <sc-icon [src]="unit.ShieldArmorIcon" class="short-icon unit-shield">
+                    <span *ngIf="unit.ShieldArmor">{{unit.ShieldArmor}}</span>
+                  </sc-icon>
+                  <span class="unit-stat-value">
+                    <ng-container *ngIf="unit.ShieldsStart && unit.ShieldsStart !== unit.ShieldsMax">{{unit.ShieldsStart}}<span class="smaller"> / </span></ng-container>{{unit.ShieldsMax}}
+                    <sub class="smaller" *ngIf="unit.ShieldRegenRate">+{{unit.ShieldRegenRate| number : '.1-1'}}/s</sub>
+                  </span>
+                </div>
+                <div *ngIf="unit.EnergyMax" class="unit-stat ">
+                  <span class="resources-energy"></span>
+                  <span class="unit-stat-value">
+                    <ng-container *ngIf="unit.EnergyStart && unit.EnergyStart !== unit.EnergyMax">{{unit.EnergyStart}}<span class="smaller"> / </span></ng-container>{{unit.EnergyMax}}
+                    <sub class="smaller" *ngIf="unit.EnergyRegenRate">+{{unit.EnergyRegenRate| number : '.1-1'}}/s</sub>
+                  </span>
+                </div>
+              </div>
+
+              <sc-unit-stats [unit]="unit"></sc-unit-stats>
+
+            </div>
+          </div>
+
+          <ng-container *ngIf="scdata.filteredWeapons(unit.Weapons).length">
+            <p class="sc-unit-category">Weapons:</p>
+            <sc-unit-weapons [unit]="unit"></sc-unit-weapons>
+          </ng-container>
+
+          <ng-container *ngIf="unit.CardLayouts?.Root">
+            <p class="sc-unit-category">Card:</p>
+            <sc-unit-cards [unit]="unit"></sc-unit-cards>
+          </ng-container>
+
+          <div *ngIf="scdata.filteredUpgrades(unit.$Upgrades).length">
+            <p class="sc-unit-category">Upgrades:</p>
+            <div>
+              <ng-container *ngFor="let upgrade of scdata.filteredUpgrades(unit.$Upgrades)">
+                <span  [tooltip]="upgradeTooltip" contentType="template" tooltipClass="sc-tooltip" [animationDuration]="0" [hideDelay]="0">
+                  <ng-template #upgradeTooltip>
+                    <div><b>{{unit.Name}}<span *ngIf="scdata.developer">({{unit.id}})</span></b></div>
+                  </ng-template>
+                  <sc-icon class="frame link" [src]="unit.Icon" [title]="unit.Name || unit.id"  [routerLink]="scdata.upgradeRoute(unit)"></sc-icon>
+                </span>
+              </ng-container>
+            </div>
+          </div>
+
+          <div *ngIf="scdata.filteredUpgrades(unit.$Research).length">
+            <p class="sc-unit-category">Research: </p>
+            <div>
+              <span *ngFor="let upgrade of scdata.filteredUpgrades(unit.$Research)" [tooltip]="upgradeTooltip" contentType="template" tooltipClass="sc-tooltip" [animationDuration]="0" [hideDelay]="0">
+                <ng-template #upgradeTooltip>
+                  <div><b>{{upgrade.Name}}<span *ngIf="scdata.developer">({{upgrade.id}})</span></b></div>
+                </ng-template>
+                <sc-icon class="frame link" [src]="upgrade.Icon" [title]="upgrade.Name || upgrade.id" [routerLink]="scdata.upgradeRoute(  upgrade)"></sc-icon>
+              </span>
+            </div>
+          </div>
+
+          <div *ngIf="scdata.filteredUnits(unit.$Production).length">
+            <p class="sc-unit-category">Production: </p>
+            <div>
+                <sc-icon  *ngFor="let unit of scdata.filteredUnits(unit.$Production)" class="frame link" [src]="unit.Icon" [title]="unit.Name || unit.id" [routerLink]="scdata.unitRoute( unit)"></sc-icon>
+            </div>
+          </div>
+
+          <div *ngIf="scdata.filteredUnits(unit.$Producers).length">
+            <p class="sc-unit-category">Producers: </p>
+            <div>
+                <sc-icon  *ngFor="let unit of scdata.filteredUnits(unit.$Producers)" class="frame link" [src]="unit.Icon" [title]="unit.Name || unit.id" [routerLink]="scdata.unitRoute( unit)"></sc-icon>
+            </div>
+          </div>
+
+          <div *ngIf="scdata.filteredUnits(unit.$Morph).length">
+            <p class="sc-unit-category">Morph: </p>
+            <div>
+                <sc-icon  *ngFor="let unit of scdata.filteredUnits(unit.$Morph)" class="frame link" [src]="unit.Icon" [title]="unit.Name || unit.id" [routerLink]="scdata.unitRoute( unit)"></sc-icon>
+            </div>
+          </div>
+
+          <!--        <div *ngIf="unit?.Requirements?.length">-->
+          <!--          <div>Requirements: </div>-->
+          <!--          <div>-->
+          <!--            <sc-icon class="frame" *ngFor="let ability of unit.Requirements" [src]="ability.Icon" [title]="ability.Name || ability.id"></sc-icon>-->
+          <!--            &lt;!&ndash;        <span *ngFor="let ability of unit.Requirements" class="icon-holder" [title]="ability!.Name || ability!.id">&ndash;&gt;-->
+          <!--            &lt;!&ndash;          <img *ngIf="ability!.Icon" alt="" [src]="icon(ability!.Icon)">&ndash;&gt;-->
+          <!--            &lt;!&ndash;        </span>&ndash;&gt;-->
+          <!--          </div>-->
+          <!--        </div>-->
+
+
+          <!--  <div *ngIf="unit?.Behaviors?.length">-->
+          <!--    <div>Behaviors: </div>-->
+          <!--    <div>-->
+          <!--      <span *ngFor="let ability of unit.Behaviors" class="icon-holder" [title]="ability!.Name || ability!.id">-->
+          <!--        <img *ngIf="ability!.Icon" alt="" [src]="icon(ability!.Icon)">-->
+          <!--      </span>-->
+          <!--    </div>-->
+          <!--  </div>-->
+
+<!--          <details>-->
+<!--            <summary>Raw</summary>-->
+<!--            <div class="raw-container">-->
+<!--              <pre><code class="xml">{{code()}}</code></pre>-->
+<!--            </div>-->
+<!--          </details>-->
+
+          <p>
+            <a class="sc-button" target="_blank" [href]="scdata.unitURL(unit)">Raw Data</a>
+          </p>
+        </div>
+
+    </article>
+
+
+    <ng-container *ngIf="scdata.upgradeData as upgrade">
+      <article class="sc-unit-details" >
+        <h5>{{scdata.raceData?.cache?.upgrades?.[upgrade.id]?.Name}}<a *ngIf="scdata.raceData" class="close" [routerLink]="scdata.raceRoute(scdata.raceData)" [queryParams]="{}"></a></h5>
+
+        <div class="sc-unit-details-content">
+          <div class="unit-main-info-container">
+            <div class="unit-main-info" >
+              <sc-icon class="frame" [src]="upgrade.Icon" [title]="upgrade.Name"></sc-icon>
+            </div>
+            <div  class="unit-stats-info" >
+              <p [innerHTML]="upgrade.Description | safeHtml"></p>
+
+            </div>
+          </div>
+
+          <div *ngIf="upgrade?.EffectArray?.length">
+            <p class="sc-unit-category">EffectArray:</p>
+            <ul class="upgrade-effect-array">
+              <li *ngFor="let e of upgrade.EffectArray">{{e.Reference}} {{e.Operation || 'Add'}} {{e.Value}}</li>
+            </ul>
+          </div>
+
+          <div *ngIf="upgrade?.AffectedUnitArray?.length">
+            <p class="sc-unit-category">AffectedUnitArray:</p>
+            <div>
+              <ng-container *ngFor="let unit of upgrade.AffectedUnitArray">
+                <sc-icon  *ngIf="scdata.raceData?.cache?.units?.[unit] as u" class="frame link" [src]="u.Icon" [title]="u.Name || u.id" [routerLink]="scdata.unitRoute( u)"></sc-icon>
+              </ng-container>
+            </div>
+          </div>
+
+          <p>
+            <a class="sc-button" target="_blank" [href]="scdata.upgradeRoute(upgrade)">View Data ({{upgrade.id}})</a>
+          </p>
+        </div>
+
+
+      </article>
+    </ng-container>
+  </section>
+</div>

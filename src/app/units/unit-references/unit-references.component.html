@@ -1,0 +1,57 @@
+<div *ngIf="unit?.Upgrades?.length">
+  <div>Upgrades: </div>
+  <div>
+      <span *ngFor="let upgrade of unit.Upgrades" [tooltip]="upgradeTooltip" contentType="template" tooltipClass="sc-tooltip" [animationDuration]="0" [hideDelay]="0">
+        <ng-template #upgradeTooltip>
+          <div><b>{{upgrade.Name}} ({{upgrade.Id}})</b></div>
+          <ul *ngIf="upgrade.EffectArray">
+            <li *ngFor="let effect of upgrade.EffectArray">
+              {{effect.Catalog}}.{{effect.Entity}}.{{effect.Property}} {{effect.Operation || 'Add'}} {{effect.Value}}
+            </li>
+          </ul>
+        </ng-template>
+        <sc-icon class="frame" [src]="upgrade.Icon" [title]="upgrade.Name || upgrade.Id"></sc-icon>
+        ({{upgrade.Id}})
+      </span>
+  </div>
+</div>
+
+<div *ngIf="unit?.Production?.length">
+  <div>Production: </div>
+  <div>
+    <sc-icon class="frame" *ngFor="let ability of unit.Production" [src]="ability.Icon" [title]="ability.Name || ability.Id"></sc-icon>
+<!--      <span *ngFor="let ability of unit.Production" class="icon-holder" [title]="ability!.Name || ability!.Id">-->
+<!--        <img *ngIf="ability!.Icon" alt="" [src]="icon(ability!.Icon)">-->
+<!--      </span>-->
+  </div>
+</div>
+
+<div *ngIf="unit?.Producers?.length">
+  <div>Producers: </div>
+  <div>
+    <sc-icon class="frame" *ngFor="let ability of unit.Producers" [src]="ability.Icon" [title]="ability.Name || ability.Id"></sc-icon>
+<!--          <span *ngFor="let ability of unit.Producers" class="icon-holder" [title]="ability!.Name || ability!.Id">-->
+<!--            <img *ngIf="ability!.Icon" alt="" [src]="icon(ability!.Icon)">-->
+<!--          </span>-->
+  </div>
+</div>
+
+<div *ngIf="unit?.Requirements?.length">
+  <div>Requirements: </div>
+  <div>
+    <sc-icon class="frame" *ngFor="let ability of unit.Requirements" [src]="ability.Icon" [title]="ability.Name || ability.Id"></sc-icon>
+<!--        <span *ngFor="let ability of unit.Requirements" class="icon-holder" [title]="ability!.Name || ability!.Id">-->
+<!--          <img *ngIf="ability!.Icon" alt="" [src]="icon(ability!.Icon)">-->
+<!--        </span>-->
+  </div>
+</div>
+
+
+<!--  <div *ngIf="unit?.Behaviors?.length">-->
+<!--    <div>Behaviors: </div>-->
+<!--    <div>-->
+<!--      <span *ngFor="let ability of unit.Behaviors" class="icon-holder" [title]="ability!.Name || ability!.Id">-->
+<!--        <img *ngIf="ability!.Icon" alt="" [src]="icon(ability!.Icon)">-->
+<!--      </span>-->
+<!--    </div>-->
+<!--  </div>-->

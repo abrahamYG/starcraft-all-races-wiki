@@ -1,0 +1,104 @@
+sc-icon {
+  display: inline-flex;
+  text-align: center;
+  vertical-align: middle;
+  img {
+    width: 45px;
+    height: 45px;
+    margin: 1px;
+  }
+}
+.cards-container{
+  display: block;
+}
+table.cards {
+  border: 2px solid #2765a4;
+  border-spacing: 0;
+  display: inline-block;
+  margin-left: 8px;
+
+  > tr {
+    height: 64px;
+
+    > td {
+      width: 64px;
+      position: relative;
+      height: 64px;
+      padding: 0;
+      background-image: url(./../../../assets/ui/ui_ingame_coop_topbar_stetmann_commandbuttons_blue_normal.png);
+      background-size: 69px;
+      background-position: center;
+
+      &.disabled{
+        opacity: 0.1;
+      }
+      &.interactive{
+        cursor: pointer;
+        &:hover{
+          background-image: url(./../../../assets/ui/ui_ingame_coop_topbar_stetmann_commandbuttons_blue_highlighted.png);
+        }
+      }
+
+      .card-more{
+        position: absolute;
+        right: 6px;
+        bottom: 0px;
+        color: white;
+        text-shadow: 1px 1px 1px black, -1px -1px 1px black, -1px 1px 1px black, 1px -1px 1px black;
+        z-index: 1;
+        font-size: 16px;
+      }
+      .card-hotkey{
+        position: absolute;
+        left: 6px;
+        top: 6px;
+        color: white;
+        text-shadow: 1px 1px 1px black, -1px -1px 1px black, -1px 1px 1px black, 1px -1px 1px black;
+        z-index: 1;
+      }
+      img {
+        width: 64px;
+        display: block;
+        height: 64px;
+      }
+    }
+  }
+}
+.unit-cost {
+  height: 70px;
+  line-height: 20px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 5px;
+  > span{
+    background-size: 20px;
+    width: 75px;
+    height: 20px;
+    background-repeat: no-repeat;
+    line-height: 20px;
+    padding-left: 25px;
+  }
+  .resources-minerals {
+    background-image: url(./../../../assets/ui/icon-mineral-nobg.png);
+  }
+
+  .resources-vespene {
+    background-image: url(./../../../assets/ui/icon-gas-terran_nobg.png);
+  }
+
+  .resources-supply {
+    background-image: url(./../../../assets/ui/icon-supply-terran_nobg.png);
+  }
+  .resources-energy {
+    background-image: url(./../../../assets/ui/icon-energy-terran.png);
+  }
+  .resources-vital {
+    background-image: url(./../../../assets/ui/icon-health-terran.png);
+  }
+  .resources-shields {
+    background-image: url(./../../../assets/ui/icon-shields.png);
+  }
+  .resources-time {
+    background-image: url(./../../../assets/ui/icon-time-terran.png);
+  }
+}

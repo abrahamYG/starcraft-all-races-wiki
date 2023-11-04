@@ -1,0 +1,43 @@
+
+<div *ngIf="unit && cards" >
+  <div class="cards-container">
+    <table class="cards" >
+      <tr *ngFor="let row of cards[activeCard]">
+        <td *ngFor="let cell of row" (click)="switchIcon(cell)" [class.disabled]="!cell[0]" [class.interactive]="isInteractive(cell)">
+          <ng-container *ngIf="cell.at(-1) as btn">
+            <ng-template #HtmlContent>
+              <div><b>{{btn.Name}}<span *ngIf="scdata.developer">({{btn.AbilCmd}})</span></b></div>
+              <div [innerHTML]="btn.Tooltip | safeHtml"></div>
+
+              <span  class="unit-cost">
+                <span class="resources-minerals" *ngIf="btn.Cost.Minerals">{{btn.Cost.Minerals}}</span>
+                <span class="resources-vespene" *ngIf="btn.Cost.Vespene">{{btn.Cost.Vespene}}</span>
+                <span class="resources-energy" *ngIf="btn.Cost.Energy">{{btn.Cost.Energy}}</span>
+                <span class="resources-life" *ngIf="btn.Cost.Life">{{btn.Cost.Life}}</span>
+                <span class="resources-shields" *ngIf="btn.Cost.Shields">{{btn.Cost.Shields}}</span>
+                <span class="resources-supply" *ngIf="btn.Cost.Food">{{btn.Cost.Food}}</span>
+                <span class="resources-time" *ngIf="btn.Time">{{btn.Time}}</span>
+              </span>
+
+              <div *ngIf="btn.Info?.Cost?.[0]?.Cooldown?.TimeUse">Cooldown: {{btn.Info.Cost[0].Cooldown.TimeUse}}</div>
+              <div *ngIf="btn.Info?.Range">Range: {{btn.Info.Range}}</div>
+              <div *ngIf="btn.Info?.TargetFilters">Targets: {{targetFilters(btn.Info.TargetFilters[0])}}</div>
+
+
+            </ng-template>
+            <div  [tooltip]="HtmlContent" contentType="template" tooltipClass="sc-tooltip" [animationDuration]="0" [hideDelay]="0" >
+              <span class="card-hotkey">{{btn.Hotkey}}</span>
+
+              <sc-icon class="card" [src]="btn.Icon"></sc-icon>
+
+<!--              <img  [src]="icon(btn.Icon)" />-->
+            </div>
+          </ng-container>
+          <span class="card-more" *ngIf="cell[1]">↺</span>
+          <span class="card-more" *ngIf="cell[0]?.Type === 'Submenu'">↪</span>
+          <span class="card-more" *ngIf="cell[0]?.Type === 'CancelSubmenu'">↩</span>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>

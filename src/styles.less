@@ -1,0 +1,166 @@
+
+@font-face {
+  font-family: "Michroma";
+  src: url(./assets/fonts/Michroma-Regular.ttf)
+}
+
+
+
+
+body{
+  font-family: "Michroma",Open Sans,Helvetica,Arial,sans-serif;
+  margin: 0;
+  background-size: cover;
+  background-color: #002650;
+  background-image: url(./assets/ui/bg.jpg);
+  background-position: top;
+}
+
+html, body{
+  width: 100%;
+  height: 100%;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+.scrollbar
+{
+  margin-left: 22px;
+  float: left;
+  height: 300px;
+  width: 65px;
+  background: rgba(87, 95, 109, 0.14);
+  overflow-y: scroll;
+  margin-bottom: 25px;
+}
+
+.force-overflow
+{
+  min-height: 450px;
+}
+
+#wrapper
+{
+  text-align: center;
+  margin: auto;
+}
+
+/*
+ *  STYLE 7
+ */
+
+::-webkit-scrollbar-track
+{
+}
+
+::-webkit-scrollbar-corner { background: transparent }
+
+
+::-webkit-scrollbar
+{
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb
+{
+  border-radius: 10px;
+  background-color: #003f7f;
+}
+
+.sc-tooltip {
+  border: 1px solid #2765a4;
+  text-align: left !important;
+  font-size: 12px;
+  width: 350px !important;
+  min-width: 350px !important;
+  ul{
+    flex-direction: column;
+    margin: 0;
+    list-style: disc;
+    padding: 0 14px;
+    text-align: left !important;
+    li{
+      text-align: left !important;
+    }
+  }
+}
+
+.btn-discord{
+  background-image: url(./assets/discord.png);
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-size: contain;
+  cursor: pointer;
+}
+
+
+
+.sc-button {
+  width: 100%;
+  max-width: 235px;
+  text-decoration: none;
+  height: 50px;
+  text-align: center;
+  position: relative;
+  line-height: 50px;
+  font-weight: 600;
+  font-size: 12px;
+  overflow: hidden;
+  display: inline-block;
+  font-family: sans-serif;
+  cursor: pointer;
+  color: #a4b3bf;
+
+  &:before,&:after {
+    background-image: url(./assets/ui/ui_battlenet_glues_bluebuttons_largeup.png);
+    content: "";
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    background-size: auto 100px;
+    z-index: -1;
+  }
+  &:before{
+    left: 0;
+  }
+  &:after{
+    right: 0;
+    background-position: right top;
+  }
+  &:hover {
+    &:before,&:after {
+      background-image: url(./assets/ui/ui_battlenet_glues_bluebuttons_largeover.png);
+    }
+  }
+  &[disabled]{
+    &:before,&:after {
+      background-image: url(./assets/ui/ui_battlenet_glues_bluebuttons_largedisabled.png);
+    }
+  }
+  &:active {
+    &:before,&:after {
+      background-image: url(./assets/ui/ui_battlenet_glues_bluebuttons_largedown.png);
+    }
+  }
+  &.selected{
+    &:before,&:after {
+      background-image: url(./assets/ui/ui_battlenet_glues_bluebuttons_largeselected.png);
+    }
+  }
+
+  span{
+    height: 20px;
+  }
+  img {
+    margin: -4px 4px;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: text-top;
+  }
+}

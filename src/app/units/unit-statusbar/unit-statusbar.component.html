@@ -1,0 +1,23 @@
+<span class="unit-statusbar-container"  *ngIf="unit.LifeMax">
+  <span class="unit-statusbar">
+    <span class="stats">
+        <div>
+            <span *ngIf="unit.ShieldsMax">{{unit.ShieldsMax}}</span>
+            <span *ngIf="unit.LifeMax">{{unit.LifeMax}}</span>
+        </div>
+          <span *ngIf="unit.EnergyMax">{{unit.EnergyMax}}</span>
+    </span>
+    <span class="shields" [style]="vitalityStyles(unit.ShieldsMax)"
+          *ngIf="unit.ShieldsMax && unit.ShieldsMax<=1000"></span>
+    <span class="shields more" [style]="vitalityMoreStyles(unit.ShieldsMax)"
+          *ngIf="unit.ShieldsMax && unit.ShieldsMax > 1000 && unit.ShieldsMax<=2000"></span>
+    <span class="shields evenmore" [style]="vitalityStylesEvenMoreStyles(unit.ShieldsMax)"
+          *ngIf="unit.ShieldsMax && unit.ShieldsMax > 2000"></span>
+    <span class="life" [style]="vitalityStyles(unit.LifeMax)" *ngIf="unit.LifeMax && unit.LifeMax<=1000"></span>
+    <span class="life more" [style]="vitalityMoreStyles(unit.LifeMax)"
+          *ngIf="unit.LifeMax &&unit.LifeMax > 1000 && unit.LifeMax<=2000"></span>
+    <span class="life evenmore" [style]="vitalityStylesEvenMoreStyles(unit.LifeMax)"
+          *ngIf="unit.LifeMax && unit.LifeMax > 2000"></span>
+    <span class="energy" [style]="energyStyles(unit.EnergyMax)" *ngIf="unit.EnergyMax"></span>
+  </span>
+</span>

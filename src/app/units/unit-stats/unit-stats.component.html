@@ -1,0 +1,20 @@
+<ng-template #entityfield let-value="value" let-title="title">
+  <tr *ngIf="value"><td>{{title}}: </td><td>{{value}}</td></tr>
+</ng-template>
+
+<div *ngIf="unit" class="unit-stats">
+  <table>
+    <ng-container  *ngFor="let field of fields">
+<!--      <ng-container *ngTemplateOutlet="entityfield; context: {-->
+<!--        title:  field.title,-->
+<!--        value:  field.field  ? unit[field.field] : field.get && field.get(unit)-->
+<!--      }">-->
+<!--      </ng-container>-->
+      <ng-container *ngTemplateOutlet="entityfield; context: {
+        title:  field.title,
+        value:  field.field ? unit[field.field] : field.get(unit)
+      }">
+      </ng-container>
+    </ng-container>
+  </table>
+</div>
