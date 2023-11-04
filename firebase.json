@@ -1,7 +1,7 @@
 {
   "hosting": {
     "site": "sc2-custom-races-wiki",
-    "public": "dist\\app-sc",
+    "public": "dist/app-sc",
     "ignore": [
       "firebase.json",
       "**/.*",
