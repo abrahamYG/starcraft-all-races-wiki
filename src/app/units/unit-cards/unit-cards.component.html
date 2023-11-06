@@ -7,7 +7,7 @@
           <ng-container *ngIf="cell.at(-1) as btn">
             <ng-template #HtmlContent>
               <div><b>{{btn.Name}}<span *ngIf="scdata.developer">({{btn.AbilCmd}})</span></b></div>
-              <div [innerHTML]="btn.Tooltip | safeHtml"></div>
+              <div [innerHTML]="btn.Tooltip  | safe: 'html'"></div>
 
               <span  class="unit-cost">
                 <span class="resources-minerals" *ngIf="btn.Cost.Minerals">{{btn.Cost.Minerals}}</span>

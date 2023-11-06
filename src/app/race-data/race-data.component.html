@@ -6,7 +6,7 @@
 <!--        <sc-unit-statusbar [unit]="unit"></sc-unit-statusbar>-->
 <!--      </div>-->
 <!--      <div>-->
-    <p [innerHTML]="unit.Description | safeHtml"></p>
+    <p [innerHTML]="unit.Description | safe: 'html'"></p>
 <!--    <p><span class="sc-attribute" *ngFor="let attribute of unit.Attributes">{{attribute}}</span></p>-->
 <!--      </div>-->
 <!--    </div>-->
@@ -179,7 +179,7 @@
             </div>
             <div  class="unit-stats-info" >
               <!--            <p><a target="_blank" [href]="scdata.unitURL(unit)">{{unit.Name}}</a></p>-->
-              <p class="unit-description" [innerHTML]="unit.Description | safeHtml"></p>
+              <p class="unit-description" [innerHTML]="unit.Description  | safe: 'html'"></p>
               <p><span class="sc-attribute" *ngFor="let attribute of unit.Attributes">{{attribute}}</span></p>
 
               <div class="unit-short-stats unit-stats">
@@ -317,7 +317,7 @@
               <sc-icon class="frame" [src]="upgrade.Icon" [title]="upgrade.Name"></sc-icon>
             </div>
             <div  class="unit-stats-info" >
-              <p [innerHTML]="upgrade.Description | safeHtml"></p>
+              <p [innerHTML]="upgrade.Description  | safe: 'html'"></p>
 
             </div>
           </div>
@@ -339,7 +339,7 @@
           </div>
 
           <p>
-            <a class="sc-button" target="_blank" [href]="scdata.upgradeRoute(upgrade)">View Data ({{upgrade.id}})</a>
+            <a class="sc-button" target="_blank" [href]="scdata.upgradeRoute(upgrade)">Raw Data</a>
           </p>
         </div>
 
