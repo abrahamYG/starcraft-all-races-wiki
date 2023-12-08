@@ -16,22 +16,12 @@ export class SCDataService {
 
   private readonly environment: any;
 
-
-  modID$: Subject <string> = new Subject<string>()
-  raceID$: Subject <string>= new Subject<string>()
-  entity$: Subject <{catalog: string, entity: string}> = new Subject<{catalog: string, entity: string}>()
-
   imagesRoot: string
   modID: string
   raceID: string
   entityCatalog: string
   entityID: string
 
-  modsData$: Observable <any>
-  modData$: Observable <SC2Data | null>
-  entityData$: Observable <any | null>
-  upgradeData$: Observable <SCUpgrade | null>
-  raceData$: Observable <any>
 
   modsData: any | null
   modData: SC2Data  | null
@@ -106,6 +96,8 @@ export class SCDataService {
         if(entity && catalog){
           this.http.get(`data/${this.modID}/${catalog}/${entity}.json`).subscribe(data => {
 
+            let favIcon: HTMLLinkElement = document.querySelector('#favicon');
+
             switch(catalog){
               case "unit":
                 let unitData = data as SCUnit
@@ -117,10 +109,14 @@ export class SCDataService {
                 let url =   `http://arc.hometlt.ru/datas/${this.modID}/${unitData.Race}/${unitData.id}`
 
                 this.title.setTitle(title);
-                this.meta.updateTag({property: 'og:title', content: title});
-                this.meta.updateTag({property: 'og:image', content: icon});
-                this.meta.updateTag({property: 'og:type', content: 'website'});
-                this.meta.updateTag({property: 'og:url', content: url})
+                // this.meta.updateTag({property: 'og:title', content: title});
+                // this.meta.updateTag({property: 'og:image', content: icon});
+                // this.meta.updateTag({property: 'og:type', content: 'website'});
+                // this.meta.updateTag({property: 'og:url', content: url})
+
+
+
+                favIcon.href = icon;
 
                 break;
               case "upgrade":
@@ -130,6 +126,8 @@ export class SCDataService {
               default:
                 this.unitData = null
                 this.upgradeData = null
+
+                favIcon.href = 'favicon.ico';
             }
 
 

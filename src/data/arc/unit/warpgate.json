@@ -12,7 +12,7 @@
   "ResourceType": "Unknown",
   "LifeStart": 500,
   "LifeMax": 500,
-  "LifeArmorName": "Protoss Armor",
+  "LifeArmorName": "Synoid Armor",
   "Mover": "Ground",
   "StationaryTurningRate": 719.4726,
   "TurningRate": 719.4726,
@@ -521,7 +521,8 @@
     "GatewayBase",
     "Gateway",
     "GatewayForged",
-    "GatewayIhanrii"
+    "GatewayIhanrii",
+    null
   ],
   "$Requirements": [],
   "$Production": [

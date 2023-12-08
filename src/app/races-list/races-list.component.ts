@@ -8,7 +8,6 @@ import {Observable} from "rxjs";
   styleUrls: ['./races-list.component.less']
 })
 export class RacesListComponent implements OnInit{
-  imagesRoot: string
   constructor(public scdata: SCDataService) {
   }
   ngOnInit() {

@@ -48,6 +48,15 @@
       "id": "UPL",
       "Name": "UPL",
       "Icon": "decal_terran_0071_01"
+    },
+    {
+      "id": "Synd",
+      "Name": "Synoid"
+    },
+    {
+      "id": "TerU",
+      "Name": "Umojan",
+      "Icon": "decal_terran_0050_01"
     }
   ]
 }

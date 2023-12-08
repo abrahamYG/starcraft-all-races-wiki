@@ -158,6 +158,12 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
+            },
+            {
+              "DisplayType": "Confirm",
+              "Color": "255,0,255,0",
+              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
+              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -205,6 +211,7 @@
         "Type": "AbilCmd",
         "AbilCmd": "que5CancelToSelection,CancelLast",
         "id": "Cancel",
+        "Icon": "btn-command-cancel",
         "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
         "Name": "Cancel",
         "Hotkey": "Esc"
@@ -265,6 +272,12 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
+            },
+            {
+              "DisplayType": "Confirm",
+              "Color": "255,0,255,0",
+              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
+              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -288,10 +301,7 @@
               "DefaultButtonFace": "Cancel"
             },
             "Halt": {
-              "DefaultButtonFace": "Halt",
-              "Flags": {
-                "ToSelection": 1
-              }
+              "DefaultButtonFace": "Cancel"
             }
           },
           "id": "BuildInProgress"
@@ -641,7 +651,6 @@
     "ZergBuild",
     "Zerg",
     "IsHatchery",
-    "NotHatchery",
     "Hatchery",
     "CountUnitAlias_HatcheryCompleteOnly3846943109TechTreeCheat",
     "ZergHatcheryToLair",
@@ -649,13 +658,8 @@
     "ZergHatcheryPlayerDecalMacro",
     "Lair",
     "ZergBuildingStopSound",
-    "UPLRenameZerg",
-    "HatcheryBase",
-    "Hatchery",
-    "HatcheryMecha",
-    "HatcheryRCZ",
-    "HatcheryRemastered",
-    null
+    "NotHatchery",
+    "Hatchery"
   ],
   "$Requirements": [],
   "$Production": [
@@ -678,6 +682,7 @@
     {
       "AbilCmd": "que5CancelToSelection,CancelLast",
       "id": "Cancel",
+      "Icon": "btn-command-cancel",
       "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
       "Name": "Cancel"
     },

@@ -246,6 +246,12 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
+            },
+            {
+              "DisplayType": "Confirm",
+              "Color": "255,0,255,0",
+              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
+              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -289,6 +295,7 @@
         "Type": "AbilCmd",
         "AbilCmd": "que5,CancelLast",
         "id": "Cancel",
+        "Icon": "btn-command-cancel",
         "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
         "Name": "Cancel",
         "Hotkey": "Esc"
@@ -301,6 +308,12 @@
           "EditorCategories": "Race:Neutral,AbilityorEffectType:Units",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
+            {
+              "DisplayType": "Confirm",
+              "Color": "255,0,255,0",
+              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
+              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
+            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -329,10 +342,7 @@
               "DefaultButtonFace": "Cancel"
             },
             "Halt": {
-              "DefaultButtonFace": "Halt",
-              "Flags": {
-                "ToSelection": 1
-              }
+              "DefaultButtonFace": "Cancel"
             }
           },
           "id": "BuildInProgress"
@@ -370,6 +380,12 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
+            },
+            {
+              "DisplayType": "Confirm",
+              "Color": "255,0,255,0",
+              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
+              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -393,10 +409,7 @@
               "DefaultButtonFace": "Cancel"
             },
             "Halt": {
-              "DefaultButtonFace": "Halt",
-              "Flags": {
-                "ToSelection": 1
-              }
+              "DefaultButtonFace": "Cancel"
             }
           },
           "id": "BuildInProgress"
@@ -825,7 +838,7 @@
         "Icon": "btn-upgrade-terran-vehicleplatinglevel1",
         "Tooltip": "Upgrades the armor of units built at a Factory or Starport.",
         "Name": "Upgrade Vehicle and Ship Plating Level 1",
-        "Hotkey": "V"
+        "Hotkey": "W"
       },
       {
         "Upgrade": "TerranVehicleAndShipArmorsLevel2",
@@ -863,7 +876,7 @@
         "Icon": "btn-upgrade-terran-vehicleplatinglevel2",
         "Tooltip": "Further upgrades the armor of units built at a Factory or Starport.",
         "Name": "Upgrade Vehicle and Ship Plating Level 2",
-        "Hotkey": "V"
+        "Hotkey": "W"
       },
       {
         "Upgrade": "TerranVehicleAndShipArmorsLevel3",
@@ -901,7 +914,7 @@
         "Icon": "btn-upgrade-terran-vehicleplatinglevel3",
         "Tooltip": "Maximizes the armor of units built at a Factory or Starport.",
         "Name": "Upgrade Vehicle and Ship Plating Level 3",
-        "Hotkey": "V"
+        "Hotkey": "W"
       }
     ]
   },
@@ -945,10 +958,8 @@
     "IsArmory",
     "Armory",
     "ArmorySplat",
-    "ArmoryBase",
     "Armory",
-    "ArmoryCovertOps",
-    "ArmorySilver"
+    null
   ],
   "$Requirements": [],
   "$Production": [],
@@ -993,6 +1004,7 @@
     {
       "AbilCmd": "que5,CancelLast",
       "id": "Cancel",
+      "Icon": "btn-command-cancel",
       "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
       "Name": "Cancel"
     },

@@ -126,6 +126,12 @@
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
+              "DisplayType": "Confirm",
+              "Color": "255,0,255,0",
+              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
+              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
+            },
+            {
               "DisplayType": "Move",
               "Color": "255,35,125,255",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
@@ -214,6 +220,12 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
+            },
+            {
+              "DisplayType": "Confirm",
+              "Color": "255,0,255,0",
+              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
+              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -287,6 +299,12 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
+              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
+            },
+            {
+              "DisplayType": "Confirm",
+              "Color": "255,0,255,0",
+              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -378,6 +396,12 @@
               "Color": "255,255,0,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
+            },
+            {
+              "DisplayType": "Confirm",
+              "Color": "255,0,255,0",
+              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
+              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -451,6 +475,12 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
+              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
+            },
+            {
+              "DisplayType": "Confirm",
+              "Color": "255,0,255,0",
+              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -537,6 +567,12 @@
           "EditorCategories": "Race:Protoss,AbilityorEffectType:Units",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
+            {
+              "DisplayType": "Confirm",
+              "Color": "255,0,255,0",
+              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
+              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
+            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -632,6 +668,12 @@
           "EditorCategories": "Race:Protoss,AbilityorEffectType:Units",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
+            {
+              "DisplayType": "Confirm",
+              "Color": "255,0,255,0",
+              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
+              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
+            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -775,6 +817,12 @@
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
+              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
+            },
+            {
+              "DisplayType": "Confirm",
+              "Color": "255,0,255,0",
+              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
@@ -1125,6 +1173,7 @@
         "Column": 4,
         "Type": "CancelSubmenu",
         "id": "Cancel",
+        "Icon": "btn-command-cancel",
         "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
         "Name": "Cancel",
         "Hotkey": "Esc"
@@ -1331,7 +1380,7 @@
         "AbilCmd": "ProtossBuild,Build6",
         "id": "FleetBeacon",
         "Icon": "btn-building-protoss-fleetbeacon",
-        "Tooltip": "Contains upgrades for Phoenixes and Carriers.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Tempests at the Stargate<br/>- Carriers at the Stargate<br/>- Mothership from the Mothership Core",
+        "Tooltip": "Contains upgrades for Phoenixes and Carriers.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Tempests at the Stargate</n>- Carriers at the Stargate<br/>- Mothership from the Mothership Core",
         "Name": "Warp In Fleet Beacon",
         "Hotkey": "F"
       },
@@ -1350,6 +1399,7 @@
         "Column": 4,
         "Type": "CancelSubmenu",
         "id": "Cancel",
+        "Icon": "btn-command-cancel",
         "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
         "Name": "Cancel",
         "Hotkey": "Esc"
@@ -1513,13 +1563,11 @@
     }
   ],
   "$Upgrades": [
-    "NotWorkerProbe",
-    "Probe",
-    "NHbrMinion",
-    "NHbrTemple",
     "HallucinationCreateProbe",
+    "Probe",
     "ProtossGroundArmorsLevel1",
     "Probe",
+    "NotWorkerProbe",
     "ProtossGroundArmors",
     "ProtossGroundArmorsLevel2",
     "ProtossGroundArmorsLevel3",
@@ -1527,21 +1575,12 @@
     "ProtossShields",
     "ProtossShieldsLevel2",
     "ProtossShieldsLevel3",
-    "Plodder",
-    "AscendedPlodder",
-    "Salvager",
     "NexusTrain",
     "Nexus",
     "Prot",
+    "MycoChoir",
     "IsProbe",
-    "ProbeBase",
     "Probe",
-    "ProbeBlizzcon17",
-    "ProbeTaldarim",
-    "ProbePurifier",
-    "ProbeGolden",
-    "ProbeRemastered",
-    "ProbeIhanrii",
     null
   ],
   "$Requirements": [],
@@ -1719,7 +1758,7 @@
       "AbilCmd": "ProtossBuild,Build6",
       "id": "FleetBeacon",
       "Icon": "btn-building-protoss-fleetbeacon",
-      "Tooltip": "Contains upgrades for Phoenixes and Carriers.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Tempests at the Stargate<br/>- Carriers at the Stargate<br/>- Mothership from the Mothership Core",
+      "Tooltip": "Contains upgrades for Phoenixes and Carriers.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Tempests at the Stargate</n>- Carriers at the Stargate<br/>- Mothership from the Mothership Core",
       "Name": "Warp In Fleet Beacon"
     },
     {

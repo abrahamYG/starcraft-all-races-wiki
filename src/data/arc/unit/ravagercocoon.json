@@ -12,6 +12,7 @@
   "ResourceType": "Unknown",
   "LifeStart": 100,
   "LifeMax": 100,
+  "LifeArmorName": "None",
   "Mover": "Ground",
   "StationaryTurningRate": 720,
   "TurningRate": 720,
@@ -161,6 +162,12 @@
               "Color": "255,255,0,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
+            },
+            {
+              "DisplayType": "Confirm",
+              "Color": "255,0,255,0",
+              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
+              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -245,9 +252,9 @@
     }
   ],
   "$Upgrades": [
-    "MorphToRavager",
-    "RavagerCocoon",
     "NotRavagerCocoon",
+    "RavagerCocoon",
+    "MorphToRavager",
     "Roach",
     "Ravager",
     "RavagerCocoon",

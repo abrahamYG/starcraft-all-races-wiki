@@ -196,38 +196,38 @@ async function wiki(config) {
     }
     return {layouts,commands}
   }
-  function getProduction (commands){
-    let units =[], upgrades = []
-
-    for(let abilcmd of commands){
-      let [abilId, cmdIndex] = abilcmd.split(",");
-      let abil = mod.cache.abil[abilId]?.getResolvedData();
-      if(!abil)continue;
-      if(cmdIndex === 'Execute') cmdIndex = 0;
-      let unitinfo = abil.InfoArray?.[cmdIndex]?.Unit;
-      if(unitinfo){
-        if(unitinfo?.constructor === Array ){
-          for(let unit of unitinfo) if(!units.includes(unit))units.push(unitinfo)
-        }
-        else{
-          if(!units.includes(unitinfo)) units.push(unitinfo)
-        }
-      }
-      let upgradeinfo = abil.InfoArray?.[cmdIndex]?.Upgrade;
-      if(upgradeinfo){
-        if(upgradeinfo?.constructor === Array ){
-          for(let upgrade of upgradeinfo) if(!upgrades.includes(upgrade))upgrades.push(upgradeinfo)
-        }
-        else{
-          if(!upgrades.includes(upgradeinfo)) upgrades.push(upgradeinfo)
-        }
-      }
-    }
-    return {
-      producedUnits: units,
-      producedUpgrades: upgrades
-    }
-  }
+  // function getProduction (commands){
+  //   let units =[], upgrades = []
+  //
+  //   for(let abilcmd of commands){
+  //     let [abilId, cmdIndex] = abilcmd.split(",");
+  //     let abil = mod.cache.abil[abilId]?.getResolvedData();
+  //     if(!abil)continue;
+  //     if(cmdIndex === 'Execute') cmdIndex = 0;
+  //     let unitinfo = abil.InfoArray?.[cmdIndex]?.Unit;
+  //     if(unitinfo){
+  //       if(unitinfo?.constructor === Array ){
+  //         for(let unit of unitinfo) if(!units.includes(unit))units.push(unitinfo)
+  //       }
+  //       else{
+  //         if(!units.includes(unitinfo)) units.push(unitinfo)
+  //       }
+  //     }
+  //     let upgradeinfo = abil.InfoArray?.[cmdIndex]?.Upgrade;
+  //     if(upgradeinfo){
+  //       if(upgradeinfo?.constructor === Array ){
+  //         for(let upgrade of upgradeinfo) if(!upgrades.includes(upgrade))upgrades.push(upgradeinfo)
+  //       }
+  //       else{
+  //         if(!upgrades.includes(upgradeinfo)) upgrades.push(upgradeinfo)
+  //       }
+  //     }
+  //   }
+  //   return {
+  //     producedUnits: units,
+  //     producedUpgrades: upgrades
+  //   }
+  // }
   function filterLinks(unitID,array,type){
     return array?.filter(w => {
       if(!w.Link){
@@ -457,6 +457,8 @@ async function wiki(config) {
     mods: config.mods
   })
 
+
+
   mod.makeAbilCmds()
 //do not add the following entities and its children to the output data
   mod.ignoreEntities({
@@ -486,11 +488,13 @@ async function wiki(config) {
 //replace text strings expressions with data values
   mod.resolveTextValues()
 //load the list of available icons
-  mod.readImages('./../src/assets/icons')
+  mod.readImages('./../../web-assets/icons')
 //check entities icons and use the available ones
   mod.checkImages()
 //add actor data to units
   mod.resolveUnitActors()
+
+  getUnitProduction("Hangar")
 
   let strings = mod.locales.enUS.GameStrings
 
@@ -515,6 +519,8 @@ async function wiki(config) {
   let racesData = mod.catalogs.race.map(race => ({...race.getResolvedData(), ...pick(race, ["include", "exclude"])})).filter(race => race.Flags?.Selectable === 1)
 
   output["index"] = {
+    discord: config.discord,
+    id: config.id,
     races: racesData.map(race => ({
       id: race.id,
       Name: strings[race.Name],
@@ -674,19 +680,28 @@ async function wiki(config) {
   for (let file in output) {
     fs.mkdirSync(config.output + file.replace('\\','/').substring(file.toLowerCase(), file.lastIndexOf("/")), {recursive: true});
 
-    fs.writeFileSync(config.output + file + '.json', SCParser.formatData(output[file], 'json'), 'utf-8')
+    fs.writeFileSync(config.output + file.toLowerCase() + '.json', SCParser.formatData(output[file], 'json'), 'utf-8')
   }
 
 }
 
+let localPath = './../../../mods/all-races-mods/factions/'
+let arcGitPath = 'github:hometlt/starcraft-all-races-mods/'
+let scionGitPath = 'github:Solstice245/scion-keiron-dev/'
+
 await wiki( {
+  discord:"https://discord.gg/Xx9xurbb4u",
+  id:"scion",
   mods: [
     './input/legacy.json',
-    // 'github:hometlt/scion-keiron-dev/ScionMod.SC2Mod',
-    // 'github:hometlt/starcraft-all-races-mods/factions/Dragons.SC2Mod',
-    // 'github:hometlt/starcraft-all-races-mods/factions/UED.SC2Mod',
-    // 'github:hometlt/starcraft-all-races-mods/factions/UPL.SC2Mod',
-    // 'github:hometlt/starcraft-all-races-mods/factions/Hybrids.SC2Mod'
+    // './input/scion.json',
+    // localPath + 'ScionMod.SC2Mod',
+    // localPath + 'Dragons.SC2Mod',
+    // localPath + 'UED.SC2Mod',
+    // localPath + 'UPL.SC2Mod',
+    // localPath + 'Hybrids.SC2Mod',
+    localPath + 'Synoid.SC2Mod',
+    // localPath + 'Umojan.SC2Mod',
   ],
-  output: './../src/data/scion2/'
+  output: './../data/scion2/'
 })

@@ -108,8 +108,7 @@
   "Collide": [
     "Ground",
     "Locust",
-    "Small",
-    "Flying6"
+    "Small"
   ],
   "Sight": 9,
   "CardLayouts": {
@@ -126,6 +125,12 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
+              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
+            },
+            {
+              "DisplayType": "Confirm",
+              "Color": "255,0,255,0",
+              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -217,6 +222,12 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
+            },
+            {
+              "DisplayType": "Confirm",
+              "Color": "255,0,255,0",
+              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
+              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -290,6 +301,12 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
+              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
+            },
+            {
+              "DisplayType": "Confirm",
+              "Color": "255,0,255,0",
+              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -381,6 +398,12 @@
               "Color": "255,255,0,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
+            },
+            {
+              "DisplayType": "Confirm",
+              "Color": "255,0,255,0",
+              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
+              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -455,6 +478,12 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
+              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
+            },
+            {
+              "DisplayType": "Confirm",
+              "Color": "255,0,255,0",
+              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -674,20 +703,15 @@
     }
   ],
   "$Upgrades": [
-    "Berserker",
+    "BurrowUltraliskUp",
     "Ultralisk",
     "UltraliskBurrowed",
-    "BurrowUltraliskUp",
-    "AscendedBerserker",
-    "BrimstoneDemolisher",
-    "AscendedBrimstoneDemolisher",
     "AnabolicSynthesis",
     "ChitinousPlating",
     "UltraliskBurrowChargeUpgrade",
     "UltraliskCavern",
     "LarvaTrain",
     "Larva",
-    "IsUltralisk",
     "Burrow",
     "ZergMeleeWeaponsLevel1",
     "ZergMeleeWeapons",
@@ -700,9 +724,8 @@
     "ZergGroundArmorsLevel3",
     "DigesterUltralisk",
     "UltraliskBurrowedSplat",
-    "UltraliskBurrowedSplat2",
+    "IsUltralisk",
     "UltraliskSkin",
-    "UPLRenameZerg",
     "ThreatensUltralisk",
     "TacticalBurrowUltraliskThreatSearchEmpty",
     "TacticalBurrowUltraliskThreatTest",
@@ -710,14 +733,7 @@
     "TacticalBurrowUltraliskCampaignBullyUnburrow",
     "TacticalBurrowUltraliskDown",
     "TacticalBurrowUltraliskUp",
-    "UltraliskBase",
-    "Ultralisk",
-    "UltraliskCE",
-    "UltraliskWebby",
-    "UltraliskPrimal",
-    "UltraliskMecha",
-    "UltraliskRemastered",
-    "UltraliskRCZ"
+    "Ultralisk"
   ],
   "$Requirements": [],
   "$Production": [],

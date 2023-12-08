@@ -418,6 +418,12 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
+            },
+            {
+              "DisplayType": "Confirm",
+              "Color": "255,0,255,0",
+              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
+              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -461,6 +467,7 @@
         "Type": "AbilCmd",
         "AbilCmd": "que1,CancelLast",
         "id": "Cancel",
+        "Icon": "btn-command-cancel",
         "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
         "Name": "Cancel",
         "Hotkey": "Esc"
@@ -638,12 +645,8 @@
     "IsLarva",
     "Larva",
     "Larva_Death",
-    "UPLRenameZerg",
     "CountUnitLarvaCompleteOnlyAtUnit",
-    "LarvaBase",
-    "Larva",
-    "LarvaMecha",
-    "LarvaRCZ"
+    "Larva"
   ],
   "$Requirements": [],
   "$Production": [
@@ -735,6 +738,7 @@
     {
       "AbilCmd": "que1,CancelLast",
       "id": "Cancel",
+      "Icon": "btn-command-cancel",
       "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
       "Name": "Cancel"
     },

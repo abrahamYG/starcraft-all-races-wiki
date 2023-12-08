@@ -1,5 +1,5 @@
 export const environment = {
   production: true,
-  imagesRoot: "./assets/icons/",
+  imagesRoot: "http://scassets.hometlt.ru/icons/",
   dataRoot: "/data/"
 };

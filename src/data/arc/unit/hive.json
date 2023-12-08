@@ -159,6 +159,12 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
+            },
+            {
+              "DisplayType": "Confirm",
+              "Color": "255,0,255,0",
+              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
+              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -182,10 +188,7 @@
               "DefaultButtonFace": "Cancel"
             },
             "Halt": {
-              "DefaultButtonFace": "Halt",
-              "Flags": {
-                "ToSelection": 1
-              }
+              "DefaultButtonFace": "Cancel"
             }
           },
           "id": "BuildInProgress"
@@ -218,6 +221,12 @@
           "EditorCategories": "Race:Neutral,AbilityorEffectType:Structures",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
+            {
+              "DisplayType": "Confirm",
+              "Color": "255,0,255,0",
+              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
+              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
+            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -270,6 +279,7 @@
         "Type": "AbilCmd",
         "AbilCmd": "que5CancelToSelection,CancelLast",
         "id": "Cancel",
+        "Icon": "btn-command-cancel",
         "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
         "Name": "Cancel",
         "Hotkey": "Esc"
@@ -551,7 +561,6 @@
     "CountUnitHiveCompleteOnlyTechTreeCheat",
     "Hive",
     "IsHive",
-    "NotHive",
     "CountUnitHiveCompleteOnly1229866228",
     "CountUnitHiveCompleteOnly",
     "UpgradeToHive",
@@ -561,14 +570,13 @@
     "ZergHivePlayerDecalMacro",
     "ZergBuildingStopSound",
     "ZergBuildingMorphCancel",
-    "UPLRenameZerg",
+    "NotHive",
     "CountUnitHiveCompleteOnly1229866228TechTreeCheat",
     "HatcheryBase",
     "Hatchery",
     "HatcheryMecha",
     "HatcheryRCZ",
-    "HatcheryRemastered",
-    null
+    "HatcheryRemastered"
   ],
   "$Requirements": [],
   "$Production": [
@@ -594,6 +602,7 @@
     {
       "AbilCmd": "que5CancelToSelection,CancelLast",
       "id": "Cancel",
+      "Icon": "btn-command-cancel",
       "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
       "Name": "Cancel"
     },

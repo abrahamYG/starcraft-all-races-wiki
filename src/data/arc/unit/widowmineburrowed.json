@@ -193,6 +193,12 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
+            },
+            {
+              "DisplayType": "Confirm",
+              "Color": "255,0,255,0",
+              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
+              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -350,6 +356,12 @@
               "Color": "255,255,0,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
+            },
+            {
+              "DisplayType": "Confirm",
+              "Color": "255,0,255,0",
+              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
+              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -424,6 +436,12 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
+              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
+            },
+            {
+              "DisplayType": "Confirm",
+              "Color": "255,0,255,0",
+              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -586,7 +604,6 @@
     "WidowMineBurrow",
     "WidowMineBurrowed",
     "DrillClaws",
-    "IsWidowMineBurrowed",
     "WidowMine",
     "TerranVehicleArmorsLevel1",
     "TerranVehicleArmorsLevel2",
@@ -598,13 +615,19 @@
     "TerranVehicleAndShipArmors",
     "TerranVehicleAndShipArmorsLevel2",
     "TerranVehicleAndShipArmorsLevel3",
+    "IsWidowMineBurrowed",
     "TerranVehicleAndShipWeaponsLevel1",
     "TerranVehicleAndShipWeapons",
     "TerranVehicleAndShipWeaponsLevel2",
     "TerranVehicleAndShipWeaponsLevel3",
+    "SynoidVehicleAndShipArmors1",
+    "SynoidVehicleAndShipArmors",
+    "SynoidVehicleAndShipArmors2",
+    "SynoidVehicleAndShipArmors3",
     "WidowMineBurrowedSplat",
     "WidowMineAttackRange",
-    "WidowMine_Burrow"
+    "WidowMine_Burrow",
+    "WalkerBeacon"
   ],
   "$Requirements": [],
   "$Production": [],

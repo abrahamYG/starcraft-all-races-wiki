@@ -113,6 +113,12 @@
               "Color": "255,255,0,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
+            },
+            {
+              "DisplayType": "Confirm",
+              "Color": "255,0,255,0",
+              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
+              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -234,9 +240,7 @@
   "LifeArmorIcon": "btn-upgrade-zerg-groundcarapace-level0",
   "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
   "Weapons": [],
-  "Behaviors": [
-    {}
-  ],
+  "Behaviors": [],
   "Abilities": [
     {
       "id": "BurrowHydraliskUp",
@@ -244,9 +248,9 @@
     }
   ],
   "$Upgrades": [
-    "IsHydraliskBurrowed",
     "BurrowHydraliskDown",
     "HydraliskBurrowed",
+    "IsHydraliskBurrowed",
     "EvolveGroovedSpines",
     "EvolveMuscularAugments",
     "hydraliskspeed",
@@ -263,7 +267,6 @@
     "ZergMissileWeaponsLevel3",
     "HydraliskBurrowedSplat",
     "ZergBurrowMove",
-    "UPLRenameZerg",
     "TacticalBurrowHydraliskBurrowedBullyTest",
     "TacticalBurrowHydraliskCampaignNoHostilesBullyBurrow"
   ],

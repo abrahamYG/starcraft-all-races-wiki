@@ -128,6 +128,12 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
+            },
+            {
+              "DisplayType": "Confirm",
+              "Color": "255,0,255,0",
+              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
+              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -151,10 +157,7 @@
               "DefaultButtonFace": "Cancel"
             },
             "Halt": {
-              "DefaultButtonFace": "Halt",
-              "Flags": {
-                "ToSelection": 1
-              }
+              "DefaultButtonFace": "Cancel"
             }
           },
           "id": "BuildInProgress"
@@ -216,18 +219,13 @@
     }
   ],
   "$Upgrades": [
-    "Siphoner",
+    "ZergBuild",
     "Extractor",
     "ExtractorRich",
-    "ZergBuild",
     "IsExtractor",
     "Extractor",
-    "SiphonerRich",
-    "Siphoner",
-    "ExtractorBase",
     "Extractor",
-    "ExtractorMecha",
-    "ExtractorRCZ"
+    null
   ],
   "$Requirements": [],
   "$Production": [],

@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  imagesRoot: "./assets/icons/",
+  imagesRoot: "http://scassets.hometlt.ru/icons/",
   dataRoot: "/data/"
 };
 
