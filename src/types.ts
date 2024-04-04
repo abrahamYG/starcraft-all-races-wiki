@@ -182,10 +182,10 @@ interface SCAbility extends
 
 interface SC2DataRace {
   "id": string,
-  "icon": string,
+  "Icon": string,
   "structures": any[],
   "units": any[],
-  "name": string
+  "Name": string
 }
 interface SC2Data {
   "discord": string,

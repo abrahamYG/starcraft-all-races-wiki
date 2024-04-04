@@ -1,12 +1,24 @@
 {
   "mods": [
     {
+      "id": "VoidMulti5012",
+      "name": "VoidMulti5012"
+    },
+    {
       "id": "scion",
       "name": "Scion Races"
     },
     {
       "id": "arc",
       "name": "All Races"
+    },
+    {
+      "id": "coop",
+      "name": "COOP"
+    },
+    {
+      "id": "nexus",
+      "name": "nexus coop"
     }
   ]
 }
