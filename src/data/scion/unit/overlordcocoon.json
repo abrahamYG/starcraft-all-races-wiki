@@ -95,7 +95,7 @@
   "Collide": [
     "Flying"
   ],
-  "VisionHeight": 4,
+  "VisionHeight": 15,
   "Sight": 5,
   "CardLayouts": {
     "Root": [
@@ -111,12 +111,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -208,12 +202,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -287,12 +275,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -384,12 +366,6 @@
               "Color": "255,255,0,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -464,12 +440,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -605,15 +575,15 @@
     }
   ],
   "$Upgrades": [
-    "IsNotOverlordCocoon",
+    "MorphToOverseer",
     "OverlordCocoon",
     "ZergFlyerArmorsLevel1",
     "Overseer",
     "OverlordCocoon",
+    "IsNotOverlordCocoon",
     "ZergFlyerArmors",
     "ZergFlyerArmorsLevel2",
     "ZergFlyerArmorsLevel3",
-    "MorphToOverseer",
     "OverlordCocoonHatch",
     "OverlordEggBirth",
     "OverlordEgg_Death",

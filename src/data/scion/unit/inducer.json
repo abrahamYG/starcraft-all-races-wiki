@@ -10,15 +10,15 @@
   "Response": "Acquire",
   "ResourceState": "Unknown",
   "ResourceType": "Unknown",
-  "LifeStart": 100,
-  "LifeMax": 100,
+  "LifeStart": 150,
+  "LifeMax": 150,
   "LifeArmorName": "Keiron Mechanical Armor",
   "Mover": "Ground",
   "StationaryTurningRate": 720,
   "TurningRate": 450,
-  "Radius": 0.875,
+  "Radius": 1,
   "SeparationRadius": 0.5,
-  "MinimapRadius": 0.875,
+  "MinimapRadius": 1,
   "EditorCategories": "ObjectType:Unit,ObjectFamily:Melee",
   "TacticalAIFilters": "-;Player,Ally,Neutral",
   "AIEvalFactor": 1,
@@ -85,14 +85,11 @@
   ],
   "Collide": [
     "Ground",
-    "ForceField",
     "Flying6"
   ],
-  "LifeRegenRate": 0.1718,
-  "ShieldRegenDelay": 4,
-  "ShieldRegenRate": 1.25,
+  "LifeRegenRate": 0.2734,
   "Acceleration": 1000,
-  "Sight": 11,
+  "Sight": 10,
   "CostCategory": "Army",
   "AttackTargetPriority": 20,
   "CardLayouts": {
@@ -109,12 +106,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -206,12 +197,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -285,12 +270,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -384,12 +363,6 @@
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
               "DisplayType": "Move",
               "Color": "255,35,125,255",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
@@ -477,12 +450,6 @@
               "DisplayType": "Attack",
               "Color": "255,255,0,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
@@ -580,12 +547,6 @@
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
@@ -698,7 +659,7 @@
         "AbilCmd": "FuseUnfuse,Execute",
         "id": "Unfuse",
         "Icon": "btn-ability-zerg-dehaka-levelup",
-        "Tooltip": "Releases the Fuse inhabiting this unit, losing the associated bonus.",
+        "Tooltip": "Releases the Fuses inhabiting this unit, losing the associated bonus.",
         "Name": "Unfuse",
         "Hotkey": "U"
       }
@@ -718,11 +679,11 @@
   "HotkeyCategory": "Unit/Category/KeironUnits",
   "ShieldArmorName": "Keiron Dispersion Shields",
   "id": "Inducer",
-  "ShieldsStart": 160,
-  "ShieldsMax": 160,
+  "ShieldsStart": 100,
+  "ShieldsMax": 100,
   "Speed": 2.25,
-  "Food": -6,
-  "InnerRadius": 0.5,
+  "Food": -5,
+  "InnerRadius": 0.75,
   "CostResource": {
     "Minerals": 200,
     "Vespene": 250
@@ -730,10 +691,11 @@
   "EffectArray": {
     "Create": "AtriumIndMyrDelay"
   },
-  "CargoSize": 4,
+  "CargoSize": 8,
   "Attributes": [
     "Armored",
-    "Mechanical"
+    "Mechanical",
+    "Massive"
   ],
   "GlossaryPriority": 22,
   "SubgroupPriority": 5,
@@ -746,9 +708,6 @@
       "Icon": "btn-upgrade-keiron-mechanicalweaponslevel0",
       "Name": "Gamut Orb",
       "Amount": 30,
-      "AttributeBonus": {
-        "Massive": 10
-      },
       "Kind": "Ranged",
       "TargetFilters": "",
       "Range": 12,
@@ -756,6 +715,9 @@
     }
   ],
   "Behaviors": [
+    {
+      "id": "KeironShellRestoration"
+    },
     {
       "id": "InducerGamutOrb"
     }
@@ -790,6 +752,7 @@
     "Atrium",
     "Inducer",
     "KeironCitadelMaterialize",
+    "CitadelCharged",
     "KeironMechWeaponsLevel1",
     "KeironMechWeapons",
     "KeironMechWeaponsLevel2",
@@ -800,12 +763,14 @@
     "KeironMechArmorLevel2",
     "KeironMechArmorLevel3",
     "KeironShieldsLevel1",
-    "CitadelCharged",
     "KeironShields",
     "KeironShieldsLevel2",
     "KeironShieldsLevel3",
     "Citadel",
-    "IsInducer"
+    "IsInducer",
+    "KeironMechArmorRevert",
+    "KeironMechWeaponsRevert",
+    "KeironShieldsRevert"
   ],
   "$Requirements": [],
   "$Production": [],
@@ -863,7 +828,7 @@
       "AbilCmd": "FuseUnfuse,Execute",
       "id": "Unfuse",
       "Icon": "btn-ability-zerg-dehaka-levelup",
-      "Tooltip": "Releases the Fuse inhabiting this unit, losing the associated bonus.",
+      "Tooltip": "Releases the Fuses inhabiting this unit, losing the associated bonus.",
       "Name": "Unfuse"
     }
   ]

@@ -645,10 +645,10 @@
           "Cost": [
             {
               "Vital": {
-                "Energy": 50
+                "Energy": 75
               },
               "Cooldown": {
-                "TimeUse": 45
+                "TimeUse": 15
               }
             }
           ],
@@ -660,7 +660,7 @@
           "Vespene": 0,
           "Terazine": 0,
           "Custom": 0,
-          "Energy": 50,
+          "Energy": 75,
           "Life": 0,
           "Shields": 0,
           "Food": 0
@@ -671,7 +671,7 @@
         "AbilCmd": "OnwardComrades,Execute",
         "id": "OnwardComrades",
         "Icon": "btn-ability-mengsk-commandcenter-drafttroopers",
-        "Tooltip": "Inspire nearby units to fight by temporarily increasing their movement speed and attack power.",
+        "Tooltip": "Inspire nearby units to fight by temporarily increasing their attack speed and  movement.",
         "Name": "Onward, Comrades!",
         "Hotkey": "F"
       },
@@ -921,7 +921,7 @@
           "Cost": [
             {
               "Vital": {
-                "Energy": 50
+                "Energy": 75
               }
             }
           ],
@@ -942,7 +942,7 @@
           "Vespene": 0,
           "Terazine": 0,
           "Custom": 0,
-          "Energy": 50,
+          "Energy": 75,
           "Life": 0,
           "Shields": 0,
           "Food": 0
@@ -953,7 +953,7 @@
         "AbilCmd": "UEDTossGrenade,Execute",
         "id": "StrikeGrenade",
         "Icon": "btn-ability-tychus-tychus-shreddergrenade",
-        "Tooltip": "Throw a grenade that explodes on contact. Deals 12 damage and slows attack speed by 20% for 7 seconds.",
+        "Tooltip": "Throw a grenade that explodes on contact. Deals <b>6</b> damage and slows attack speed by <b>99</b>% for <b>13</b> seconds. The deceleration effect can add up to 2 times.",
         "Name": "Throw Strike grenade",
         "Hotkey": "E"
       }
@@ -1039,10 +1039,10 @@
     }
   ],
   "$Upgrades": [
-    "StrikeGrenade",
-    "PoliticalAdvisor",
     "UEDWeaponsLevel1",
+    "PoliticalAdvisor",
     "AllowUnitPoliticalAdvisor",
+    "StrikeGrenade",
     "CommandoTraining",
     "UpgradeOpticalFlare",
     "UEDWeaponsLevel2",
@@ -1102,7 +1102,7 @@
       "AbilCmd": "OnwardComrades,Execute",
       "id": "OnwardComrades",
       "Icon": "btn-ability-mengsk-commandcenter-drafttroopers",
-      "Tooltip": "Inspire nearby units to fight by temporarily increasing their movement speed and attack power.",
+      "Tooltip": "Inspire nearby units to fight by temporarily increasing their attack speed and  movement.",
       "Name": "Onward, Comrades!"
     },
     {
@@ -1116,7 +1116,7 @@
       "AbilCmd": "UEDTossGrenade,Execute",
       "id": "StrikeGrenade",
       "Icon": "btn-ability-tychus-tychus-shreddergrenade",
-      "Tooltip": "Throw a grenade that explodes on contact. Deals 12 damage and slows attack speed by 20% for 7 seconds.",
+      "Tooltip": "Throw a grenade that explodes on contact. Deals <b>6</b> damage and slows attack speed by <b>99</b>% for <b>13</b> seconds. The deceleration effect can add up to 2 times.",
       "Name": "Throw Strike grenade"
     }
   ]

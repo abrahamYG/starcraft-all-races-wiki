@@ -121,12 +121,6 @@
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
               "DisplayType": "Move",
               "Color": "255,35,125,255",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
@@ -215,12 +209,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -294,12 +282,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -393,12 +375,6 @@
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
               "DisplayType": "Move",
               "Color": "255,35,125,255",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
@@ -487,12 +463,6 @@
               "Color": "255,255,0,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -567,12 +537,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -701,11 +665,10 @@
     }
   ],
   "$Upgrades": [
-    "TargetNotChangeling",
+    "SpawnChangeling",
     "Changeling",
     "ChangelingZealot",
-    "SpawnChangeling",
-    "SpawnChangeling",
+    "TargetNotChangeling",
     "SpawnChangelingTarget",
     "ChangelingMarineShield",
     "ChangelingMarine",
@@ -714,6 +677,7 @@
     "ChangelingSpitfire",
     "ChangelingXayidling",
     "ChangelingVolt",
+    "SpawnChangeling",
     "Changeling"
   ],
   "$Requirements": [],

@@ -16,7 +16,7 @@
   "Mover": "Ground",
   "StationaryTurningRate": 999.8437,
   "TurningRate": 999.8437,
-  "Radius": 0.5,
+  "Radius": 0.625,
   "SeparationRadius": 0.375,
   "MinimapRadius": 0.5,
   "EditorCategories": "ObjectType:Unit,ObjectFamily:Melee",
@@ -106,7 +106,7 @@
   "Acceleration": 1000,
   "LateralAcceleration": 46.0625,
   "Sight": 9,
-  "Food": -3,
+  "Food": -4,
   "CostCategory": "Army",
   "CostResource": {
     "Minerals": 150,
@@ -130,12 +130,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -227,12 +221,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -306,12 +294,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -403,12 +385,6 @@
               "Color": "255,255,0,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -483,12 +459,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -579,12 +549,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -697,12 +661,6 @@
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
@@ -884,6 +842,7 @@
   "$Upgrades": [
     "IsNotDisruptor",
     "Disruptor",
+    "IsDisruptor",
     "PurificationNovaMorphBack",
     "HallucinationCreateDisruptor",
     "Disruptor",
@@ -891,13 +850,13 @@
     "ProtossGroundArmorsLevel2",
     "ProtossGroundArmorsLevel3",
     "RoboticsBay",
+    "RoboticsFacilityTrain",
+    "RoboticsFacility",
     "ProtossShieldsLevel1",
     "ProtossShieldsLevel2",
     "ProtossShieldsLevel3",
-    "IsDisruptor",
-    "RoboticsFacilityTrain",
-    "RoboticsFacility",
-    "Disruptor"
+    null,
+    null
   ],
   "$Requirements": [],
   "$Production": [

@@ -118,12 +118,6 @@
               "Color": "255,255,0,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -261,9 +255,8 @@
   "$Upgrades": [
     "BurrowQueenDown",
     "QueenBurrowed",
-    "IsQueenBurrowed",
-    "Burrow",
     "ZergGroundArmorsLevel1",
+    "IsQueenBurrowed",
     "Queen",
     "ZergGroundArmors",
     "ZergGroundArmorsLevel2",
@@ -272,9 +265,10 @@
     "ZergMissileWeapons",
     "ZergMissileWeaponsLevel2",
     "ZergMissileWeaponsLevel3",
+    "Burrow",
     "Queen_Death",
     "QueenBurrowedSplat",
-    "ZergBurrowMove",
+    "UPLRenameZerg",
     "UnitQueenBurrowedQueuedOrBetter"
   ],
   "$Requirements": [],

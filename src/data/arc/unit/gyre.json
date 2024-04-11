@@ -769,6 +769,7 @@
         "Type": "AbilCmd",
         "AbilCmd": "GyrePrison,255",
         "id": "Cancel",
+        "Icon": "btn-command-cancel",
         "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
         "Name": "Cancel",
         "Hotkey": "Esc"
@@ -1361,7 +1362,6 @@
   "SubgroupPriority": 31,
   "GlossaryPriority": 37,
   "LifeArmor": 1,
-  "RankDisplay": "Always",
   "Icon": "btn-unit-keiron-paradox",
   "LifeArmorIcon": "btn-upgrade-keiron-mechanicalarmorlevel0",
   "ShieldArmorIcon": "btn-upgrade-keiron-shields-level0",
@@ -1372,7 +1372,9 @@
     },
     {
       "id": "Detector12",
-      "Icon": "btn-status-detector"
+      "Icon": "btn-status-detector",
+      "Tooltip": "This unit can detect cloaked or burrowed units within its sight range.",
+      "Name": "Detector"
     }
   ],
   "Abilities": [
@@ -1413,8 +1415,8 @@
     "IsGyre",
     "Gyre",
     "Empyrean",
-    "CitadelCharged",
     "KeironCitadelMaterialize",
+    "CitadelCharged",
     "KeironMechArmorLevel1",
     "Gyre",
     "KeironMechArmor",
@@ -1490,6 +1492,7 @@
     {
       "AbilCmd": "GyrePrison,255",
       "id": "Cancel",
+      "Icon": "btn-command-cancel",
       "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
       "Name": "Cancel"
     },

@@ -127,12 +127,6 @@
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
               "DisplayType": "Move",
               "Color": "255,35,125,255",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
@@ -221,12 +215,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -300,12 +288,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -397,12 +379,6 @@
               "Color": "255,255,0,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -477,12 +453,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -585,10 +555,6 @@
       },
       {
         "Info": {
-          "Resource": {
-            "Minerals": 0,
-            "Vespene": 0
-          },
           "Unit": "Archon",
           "Time": 12
         },
@@ -645,12 +611,6 @@
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
@@ -870,8 +830,7 @@
     "ProtossShieldsLevel2",
     "ProtossShieldsLevel3",
     "DarkTemplar_Death",
-    "IsDarkTemplar",
-    "DarkTemplar"
+    "IsDarkTemplar"
   ],
   "$Requirements": [],
   "$Production": [],

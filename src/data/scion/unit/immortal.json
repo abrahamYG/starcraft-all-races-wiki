@@ -124,12 +124,6 @@
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
               "DisplayType": "Move",
               "Color": "255,35,125,255",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
@@ -218,12 +212,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -297,12 +285,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -394,12 +376,6 @@
               "Color": "255,255,0,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -474,12 +450,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -575,7 +545,7 @@
         "AbilCmd": "ImmortalOverload,Execute",
         "id": "ImmortalOverload",
         "Icon": "btn-ability-protoss-invulnerabilityshield",
-        "Tooltip": "Absorbs up to <b>100</b> damage. Lasts for <b>3</b> seconds.",
+        "Tooltip": "Absorbs up to <b>100</b> damage. Lasts for <b>3</b> seconds. This effect can only occur once every <b>45</b> seconds.",
         "Name": "Barrier",
         "Hotkey": "B"
       }
@@ -633,6 +603,11 @@
   "Behaviors": [
     {
       "id": "BarrierDamageResponse"
+    },
+    {
+      "id": "ImmortalOverload",
+      "Tooltip": "This unit is absorbing damage dealt to it.",
+      "Name": "Barrier"
     }
   ],
   "Abilities": [
@@ -662,20 +637,14 @@
     "ProtossGroundArmorsLevel2",
     "ProtossGroundArmorsLevel3",
     "ProtossShieldsLevel1",
-    "ImmortalRevive",
+    "RoboticsFacilityTrain",
+    "RoboticsFacility",
     "ProtossShields",
     "ProtossShieldsLevel2",
     "ProtossShieldsLevel3",
-    "RoboticsFacilityTrain",
-    "RoboticsFacility",
-    "VoidMPImmortalReviveRebuild",
     "IsImmortal",
-    "IncreasedRange",
-    "ImmortalBarrier",
     "IsNotImmortal",
-    "AllowUnitImmortal",
-    "Immortal",
-    null
+    "AllowUnitImmortal"
   ],
   "$Requirements": [],
   "$Production": [],
@@ -725,7 +694,7 @@
       "AbilCmd": "ImmortalOverload,Execute",
       "id": "ImmortalOverload",
       "Icon": "btn-ability-protoss-invulnerabilityshield",
-      "Tooltip": "Absorbs up to <b>100</b> damage. Lasts for <b>3</b> seconds.",
+      "Tooltip": "Absorbs up to <b>100</b> damage. Lasts for <b>3</b> seconds. This effect can only occur once every <b>45</b> seconds.",
       "Name": "Barrier"
     }
   ]

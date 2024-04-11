@@ -110,7 +110,8 @@
   "Collide": [
     "Ground",
     "Locust",
-    "Small"
+    "Small",
+    "Flying6"
   ],
   "Sight": 11,
   "CardLayouts": {
@@ -127,12 +128,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -224,12 +219,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -303,12 +292,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -400,12 +383,6 @@
               "Color": "255,255,0,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -483,12 +460,6 @@
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
               "DisplayType": "Move",
               "Color": "255,35,125,255",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
@@ -563,335 +534,6 @@
         "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
         "Name": "Patrol",
         "Hotkey": "P"
-      },
-      {
-        "Info": {
-          "class": "CAbilEffectTarget",
-          "Name": "Abil/Name/250mmStrikeCannons",
-          "TechPlayer": "Upkeep",
-          "EditorCategories": "Race:Terran,AbilityorEffectType:Units",
-          "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
-          "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            }
-          ],
-          "SharedFlags": {
-            "DisableWhileDead": 1
-          },
-          "DataCollection": "250mmStrikeCannons",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
-          "RangeSlop": 4,
-          "ArcSlop": 11.25,
-          "AutoCastAcquireLevel": "Offensive",
-          "AutoCastFilters": "Visible;Player,Ally",
-          "Flags": {
-            "AbortOnAllianceChange": 1,
-            "CancelResetAutoCast": 1,
-            "ChannelingMinimum": 1,
-            "RangeUseCasterRadius": 1,
-            "ReApproachable": 1,
-            "RequireTargetVision": 1,
-            "WaitToSpend": 1,
-            "UpdateChargesOnLevelChange": 1,
-            "BestUnit": 1
-          },
-          "Effect": [
-            "250mmStrikeCannonsCreatePersistent"
-          ],
-          "EffectRange": [
-            "0,1000"
-          ],
-          "AINotifyEffect": "250mmStrikeCannons",
-          "RefundArray": {
-            "Approach": 1,
-            "Prep": 1,
-            "Cast": 1
-          },
-          "RefundFraction": {
-            "Resource": {
-              "Minerals": -1,
-              "Vespene": -1,
-              "Terrazine": -1,
-              "Custom": -1
-            },
-            "Charge": -1,
-            "Cooldown": -1
-          },
-          "UseMarkerArray": {
-            "Approach": 1,
-            "Prep": 1,
-            "Cast": 1,
-            "Channel": 1
-          },
-          "PauseableArray": {
-            "Approach": 1,
-            "Prep": 1,
-            "Cast": 1,
-            "Channel": 1,
-            "Finish": 1
-          },
-          "PreemptableArray": {
-            "Approach": 1,
-            "Prep": 1,
-            "Cast": 1,
-            "Channel": 1,
-            "Finish": 1
-          },
-          "ValidatedArray": {
-            "Approach": 1,
-            "Prep": 1,
-            "Cast": 1,
-            "Channel": 1
-          },
-          "DefaultError": "MustTargetUnit",
-          "AcquirePriority": 3,
-          "SetLastTarget": "Unknown",
-          "VeterancyLevelMin": 0,
-          "VeterancyLevelSkip": 0,
-          "CmdButtonArray": {
-            "Execute": {
-              "Flags": {
-                "ShowInGlossary": 1
-              },
-              "DefaultButtonFace": "250mmStrikeCannons",
-              "Requirements": "UseStrikeCannons",
-              "State": "Restricted"
-            },
-            "Cancel": {
-              "DefaultButtonFace": "Cancel"
-            }
-          },
-          "FollowRange": 5,
-          "Range": [
-            7
-          ],
-          "CastIntroTime": [
-            2
-          ],
-          "FinishTime": [
-            2
-          ],
-          "Cost": [
-            {
-              "Vital": {
-                "Energy": 150
-              }
-            }
-          ],
-          "TargetFilters": [
-            "Ground,Visible;Self,Missile,Stasis,Dead,Hidden,Invulnerable"
-          ],
-          "CancelableArray": {
-            "Prep": 1,
-            "Cast": 1,
-            "Channel": 1
-          },
-          "UninterruptibleArray": {
-            "Cast": 1,
-            "Channel": 1,
-            "Finish": 1
-          },
-          "InfoTooltipPriority": 1,
-          "id": "250mmStrikeCannons"
-        },
-        "Cost": {
-          "Minerals": 0,
-          "Vespene": 0,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 150,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 2,
-        "Column": 0,
-        "Type": "AbilCmd",
-        "AbilCmd": "250mmStrikeCannons,Execute",
-        "id": "250mmStrikeCannons",
-        "Icon": "btn-ability-terran-bombardmentstrike-color",
-        "Tooltip": "Fires at a single unit or structure, stunning the target and dealing <b>500</b> damage over <b>6</b> seconds.<br/><br/><c val=\"#ColorAttackInfo\">Can target ground units.</span>",
-        "Name": "250mm Strike Cannons"
-      },
-      {
-        "Info": {
-          "class": "CAbilEffectTarget",
-          "Name": "Abil/Name/250mmStrikeCannons",
-          "TechPlayer": "Upkeep",
-          "EditorCategories": "Race:Terran,AbilityorEffectType:Units",
-          "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
-          "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            }
-          ],
-          "SharedFlags": {
-            "DisableWhileDead": 1
-          },
-          "DataCollection": "250mmStrikeCannons",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
-          "RangeSlop": 4,
-          "ArcSlop": 11.25,
-          "AutoCastAcquireLevel": "Offensive",
-          "AutoCastFilters": "Visible;Player,Ally",
-          "Flags": {
-            "AbortOnAllianceChange": 1,
-            "CancelResetAutoCast": 1,
-            "ChannelingMinimum": 1,
-            "RangeUseCasterRadius": 1,
-            "ReApproachable": 1,
-            "RequireTargetVision": 1,
-            "WaitToSpend": 1,
-            "UpdateChargesOnLevelChange": 1,
-            "BestUnit": 1
-          },
-          "Effect": [
-            "250mmStrikeCannonsCreatePersistent"
-          ],
-          "EffectRange": [
-            "0,1000"
-          ],
-          "AINotifyEffect": "250mmStrikeCannons",
-          "RefundArray": {
-            "Approach": 1,
-            "Prep": 1,
-            "Cast": 1
-          },
-          "RefundFraction": {
-            "Resource": {
-              "Minerals": -1,
-              "Vespene": -1,
-              "Terrazine": -1,
-              "Custom": -1
-            },
-            "Charge": -1,
-            "Cooldown": -1
-          },
-          "UseMarkerArray": {
-            "Approach": 1,
-            "Prep": 1,
-            "Cast": 1,
-            "Channel": 1
-          },
-          "PauseableArray": {
-            "Approach": 1,
-            "Prep": 1,
-            "Cast": 1,
-            "Channel": 1,
-            "Finish": 1
-          },
-          "PreemptableArray": {
-            "Approach": 1,
-            "Prep": 1,
-            "Cast": 1,
-            "Channel": 1,
-            "Finish": 1
-          },
-          "ValidatedArray": {
-            "Approach": 1,
-            "Prep": 1,
-            "Cast": 1,
-            "Channel": 1
-          },
-          "DefaultError": "MustTargetUnit",
-          "AcquirePriority": 3,
-          "SetLastTarget": "Unknown",
-          "VeterancyLevelMin": 0,
-          "VeterancyLevelSkip": 0,
-          "CmdButtonArray": {
-            "Execute": {
-              "Flags": {
-                "ShowInGlossary": 1
-              },
-              "DefaultButtonFace": "250mmStrikeCannons",
-              "Requirements": "UseStrikeCannons",
-              "State": "Restricted"
-            },
-            "Cancel": {
-              "DefaultButtonFace": "Cancel"
-            }
-          },
-          "FollowRange": 5,
-          "Range": [
-            7
-          ],
-          "CastIntroTime": [
-            2
-          ],
-          "FinishTime": [
-            2
-          ],
-          "Cost": [
-            {
-              "Vital": {
-                "Energy": 150
-              }
-            }
-          ],
-          "TargetFilters": [
-            "Ground,Visible;Self,Missile,Stasis,Dead,Hidden,Invulnerable"
-          ],
-          "CancelableArray": {
-            "Prep": 1,
-            "Cast": 1,
-            "Channel": 1
-          },
-          "UninterruptibleArray": {
-            "Cast": 1,
-            "Channel": 1,
-            "Finish": 1
-          },
-          "InfoTooltipPriority": 1,
-          "id": "250mmStrikeCannons"
-        },
-        "Cost": {
-          "Minerals": 0,
-          "Vespene": 0,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 150,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 2,
-        "Column": 4,
-        "Type": "AbilCmd",
-        "AbilCmd": "250mmStrikeCannons,Cancel",
-        "id": "Cancel",
-        "Icon": "btn-command-cancel",
-        "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
-        "Name": "Cancel",
-        "Hotkey": "Esc"
       },
       {
         "Info": {
@@ -1054,44 +696,35 @@
       "Name": "Move"
     },
     {
-      "id": "250mmStrikeCannons",
-      "Name": "250mm Strike Cannons"
-    },
-    {
       "id": "ThorAPMode",
       "Name": "Thor APMode"
     }
   ],
   "$Upgrades": [
-    "TerranVehicleArmorsLevel1",
+    "TerranVehicleWeaponsLevel1",
     "Thor",
     "ThorAP",
     "ThorNormalMode",
-    "NotThor",
-    "StrikeCannons",
-    "SmartServos",
-    "FactoryTrain",
-    "Factory",
-    "Thor",
-    "TerranVehicleArmors",
-    "TerranVehicleArmorsLevel2",
-    "TerranVehicleArmorsLevel3",
-    "TerranVehicleWeaponsLevel1",
     "TerranVehicleWeapons",
     "TerranVehicleWeaponsLevel2",
     "TerranVehicleWeaponsLevel3",
-    "Medivac",
     "TerranVehicleAndShipArmorsLevel1",
+    "Thor",
+    "Medivac",
+    "NotThor",
     "TerranVehicleAndShipArmors",
     "TerranVehicleAndShipArmorsLevel2",
     "TerranVehicleAndShipArmorsLevel3",
     "Armory",
-    "TerranVehicleAndShipWeaponsLevel1",
-    "TerranVehicleAndShipWeapons",
-    "TerranVehicleAndShipWeaponsLevel2",
-    "TerranVehicleAndShipWeaponsLevel3",
-    "IsThor",
-    "Thor"
+    "StarshipMaintenancePlant",
+    "Medivac3",
+    "Medivac2",
+    "MunitionsFactory",
+    "MilitaryResearchStation",
+    "SmartServos",
+    "FactoryTrain",
+    "Factory",
+    "IsThor"
   ],
   "$Requirements": [],
   "$Production": [],
@@ -1140,20 +773,6 @@
       "Icon": "btn-command-patrol",
       "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
       "Name": "Patrol"
-    },
-    {
-      "AbilCmd": "250mmStrikeCannons,Execute",
-      "id": "250mmStrikeCannons",
-      "Icon": "btn-ability-terran-bombardmentstrike-color",
-      "Tooltip": "Fires at a single unit or structure, stunning the target and dealing <b>500</b> damage over <b>6</b> seconds.<br/><br/><c val=\"#ColorAttackInfo\">Can target ground units.</span>",
-      "Name": "250mm Strike Cannons"
-    },
-    {
-      "AbilCmd": "250mmStrikeCannons,Cancel",
-      "id": "Cancel",
-      "Icon": "btn-command-cancel",
-      "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
-      "Name": "Cancel"
     },
     {
       "AbilCmd": "ThorAPMode,Execute",

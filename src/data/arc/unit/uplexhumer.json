@@ -209,8 +209,6 @@
   "Footprint": "FootprintGeyserRoundedBuilt",
   "PlacementFootprint": "Footprint3x3CappedGeyser",
   "BuiltOn": [
-    "FluoriteDeposit",
-    "RichFluoriteDeposit",
     "VespeneGeyser",
     "SpacePlatformGeyser",
     "RichVespeneGeyser",
@@ -233,11 +231,11 @@
   "Weapons": [],
   "Behaviors": [
     {
-      "id": "HarvestableVespeneGeyserGas",
-      "Icon": "icon-gas"
+      "id": "UnderConstruction"
     },
     {
-      "id": "ExhumerDeathPrevention"
+      "id": "HarvestableVespeneGeyserGas",
+      "Icon": "icon-gas"
     }
   ],
   "Abilities": [

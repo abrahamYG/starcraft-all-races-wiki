@@ -390,7 +390,9 @@
   "Behaviors": [
     {
       "id": "Detector11",
-      "Icon": "btn-status-detector"
+      "Icon": "btn-status-detector",
+      "Tooltip": "This unit can detect cloaked or burrowed units within its sight range.",
+      "Name": "Detector"
     },
     {
       "id": "UnderConstruction"

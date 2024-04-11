@@ -589,7 +589,7 @@
         "AbilCmd": "GoAttackRedirect,Execute",
         "id": "OnwardComrades",
         "Icon": "btn-ability-mengsk-commandcenter-drafttroopers",
-        "Tooltip": "Inspire nearby units to fight by temporarily increasing their movement speed and attack power.",
+        "Tooltip": "Inspire nearby units to fight by temporarily increasing their attack speed and  movement.",
         "Name": "Onward, Comrades!",
         "Hotkey": "F"
       },
@@ -718,7 +718,8 @@
         "id": "ButtonDrakkarFireMode",
         "Icon": "btn-ability-terran-detectionconedebuff",
         "Tooltip": "Allows you to fire from the internal compartment of the Drakkar APC.",
-        "Name": "Shooting mode"
+        "Name": "Shooting mode",
+        "Hotkey": "Q"
       },
       {
         "Info": {
@@ -852,7 +853,8 @@
         "id": "ButtonDrakkarFastMove",
         "Icon": "btn-ability-mengsk-viking-speed",
         "Tooltip": "Drakkar APC moves faster, but an attack from within becomes impossible.",
-        "Name": "Mode of transportation"
+        "Name": "Mode of transportation",
+        "Hotkey": "W"
       },
       {
         "Info": {
@@ -1160,7 +1162,7 @@
     "UEDVehicalsLevel3",
     "UEDArmorLevel1",
     "DrakkarAPC",
-    "UEDUnitGoliath",
+    "UEDUnitSpartan",
     "UEDArmorLevel2",
     "UEDArmorLevel3",
     "TeleportationNodeTrain",
@@ -1214,7 +1216,7 @@
       "AbilCmd": "GoAttackRedirect,Execute",
       "id": "OnwardComrades",
       "Icon": "btn-ability-mengsk-commandcenter-drafttroopers",
-      "Tooltip": "Inspire nearby units to fight by temporarily increasing their movement speed and attack power.",
+      "Tooltip": "Inspire nearby units to fight by temporarily increasing their attack speed and  movement.",
       "Name": "Onward, Comrades!"
     },
     {

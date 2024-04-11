@@ -12,6 +12,7 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "FlamespitterFervidReconstitution",
+  "EditorCategories": "Race:Dragon,UpgradeType:Talents",
   "$tokens": {
     "ID": {
       "type": "string",
@@ -42,7 +43,6 @@
       "Value": "1"
     }
   ],
-  "EditorCategories": "Race:Dragon,UpgradeType:Talents",
   "AffectedUnitArray": [
     "Flamespitter"
   ],

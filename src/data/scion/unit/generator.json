@@ -1,6 +1,6 @@
 {
   "Name": "Generator",
-  "Description": "Provides energy. Contains upgrades for the Processor.",
+  "Description": "Generates power. Increases power storage by <b>50</b>.",
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -10,15 +10,15 @@
   "Response": "Acquire",
   "ResourceState": "Unknown",
   "ResourceType": "Unknown",
-  "LifeStart": 850,
-  "LifeMax": 850,
+  "LifeStart": 750,
+  "LifeMax": 750,
   "LifeArmorName": "Mechanical Structure Armor",
   "Mover": "Ground",
   "StationaryTurningRate": 720,
   "TurningRate": 720,
   "Radius": 1.5,
   "SeparationRadius": 0.5,
-  "MinimapRadius": 1.5,
+  "MinimapRadius": 1.75,
   "EditorCategories": "ObjectType:Structure,ObjectFamily:Melee",
   "TacticalAIFilters": "-;Player,Ally,Neutral",
   "AIEvalFactor": 1,
@@ -133,12 +133,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -198,12 +192,6 @@
           "EditorCategories": "Race:Neutral,AbilityorEffectType:Structures",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -271,106 +259,30 @@
         "Row": 2,
         "Column": 0,
         "Type": "Passive",
-        "id": "GeneratorEnergyGrid",
+        "id": "GeneratorPowerGrid",
         "Icon": "btn-tips-computerterminals",
-        "Tooltip": "<span style=\"color: #f078ff\">Generates <b>2.1</b> energy per second.</span>",
-        "Name": "Energy Grid"
-      },
-      {
-        "Upgrade": "IntegratedOptics",
-        "Info": {
-          "Button": {
-            "Flags": {
-              "AllowMinimap": 0,
-              "ShowInGlossary": 1
-            },
-            "DefaultButtonFace": "ResearchProcessorIntegratedOptics",
-            "Requirements": "LearnIntegratedOptics"
-          },
-          "Resource": {
-            "Minerals": 150,
-            "Vespene": 150
-          },
-          "Time": 80,
-          "Alert": "ResearchComplete_Terr",
-          "Upgrade": "IntegratedOptics"
-        },
-        "Time": 80,
-        "Cost": {
-          "Minerals": 150,
-          "Vespene": 150,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 0,
-        "Column": 0,
-        "Type": "AbilCmd",
-        "AbilCmd": "GeneratorResearch,Research2",
-        "id": "ResearchProcessorIntegratedOptics",
-        "Icon": "btn-upgrade-genetron-integratedoptics",
-        "Tooltip": "Allows the <span style=\"color: #FFFF80\">Processor</span> to detect permanently, removing the energy consumption of detection.",
-        "Name": "Research Integrated Optics",
-        "Hotkey": "D"
-      },
-      {
-        "Upgrade": "CloakingGenerator",
-        "Info": {
-          "Button": {
-            "Flags": {
-              "AllowMinimap": 0,
-              "ShowInGlossary": 1
-            },
-            "DefaultButtonFace": "CloakingGenerator",
-            "Requirements": "LearnCloakingGenerator"
-          },
-          "Resource": {
-            "Minerals": 150,
-            "Vespene": 150
-          },
-          "Time": 110,
-          "Alert": "ResearchComplete_Terr",
-          "Upgrade": "CloakingGenerator"
-        },
-        "Time": 110,
-        "Cost": {
-          "Minerals": 150,
-          "Vespene": 150,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 0,
-        "Column": 1,
-        "Type": "AbilCmd",
-        "AbilCmd": "GeneratorResearch,Research1",
-        "id": "ResearchProcessorCloakingGenerator",
-        "Icon": "btn-upgrade-genetron-processorcloak",
-        "Tooltip": "Causes the <span style=\"color: #FFFF80\">Processor</span> to become permanently cloaked.",
-        "Name": "Research Cloaking Generator",
-        "Hotkey": "C"
+        "Tooltip": "<span style=\"color: #78f0ff\">Generates <b>2.86</b> power per second.</span>",
+        "Name": "Power Grid"
       }
     ]
   },
   "Footprint": "Footprint3x3Contour",
   "PlacementFootprint": "Footprint3x3Contour",
   "CostResource": {
-    "Minerals": 150,
+    "Minerals": 200,
     "Vespene": 50
   },
   "RepairTime": 40,
   "GlossaryPriority": 24,
+  "SubgroupPriority": 1,
   "Icon": "btn-building-genetron-generator",
   "LifeArmorIcon": "btn-upgrade-genetron-mechstructurearmor",
   "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
   "Weapons": [],
   "Behaviors": [
+    {
+      "id": "GenetronPowerSupplyTracker"
+    },
     {
       "id": "LockdownMode",
       "Icon": "btn-ability-genetron-structurelockdownmode",
@@ -378,36 +290,34 @@
       "Name": "Lockdown Mode"
     },
     {
+      "id": "TrackGenetronPowerSupply"
+    },
+    {
       "id": "GeneratorPower",
       "Icon": "btn-tips-computerterminals"
+    },
+    {
+      "id": "UnderConstruction"
     }
   ],
   "Abilities": [
     {
       "id": "BuildInProgress",
       "Name": "Build in Progress"
-    },
-    {
-      "id": "que5",
-      "Name": "Queue (5)"
-    },
-    {
-      "id": "GeneratorResearch",
-      "Name": "Generator - Research"
     }
   ],
   "$Upgrades": [
+    "CasterIsGenerator",
+    "Generator",
     "ACRBuild",
+    "CountUnitGeneratorCompleteOnlyTechTreeCheat",
     "Generator",
-    "Generator",
-    "CountUnitGeneratorCompleteOnlyTechTreeCheat"
+    "IsGenerator",
+    null
   ],
   "$Requirements": [],
   "$Production": [],
-  "$Research": [
-    "IntegratedOptics",
-    "CloakingGenerator"
-  ],
+  "$Research": [],
   "$Morph": [],
   "$Phase": [],
   "$Producers": [
@@ -427,20 +337,6 @@
       "Icon": "btn-command-cancel",
       "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
       "Name": "Cancel"
-    },
-    {
-      "AbilCmd": "GeneratorResearch,Research2",
-      "id": "ResearchProcessorIntegratedOptics",
-      "Icon": "btn-upgrade-genetron-integratedoptics",
-      "Tooltip": "Allows the <span style=\"color: #FFFF80\">Processor</span> to detect permanently, removing the energy consumption of detection.",
-      "Name": "Research Integrated Optics"
-    },
-    {
-      "AbilCmd": "GeneratorResearch,Research1",
-      "id": "ResearchProcessorCloakingGenerator",
-      "Icon": "btn-upgrade-genetron-processorcloak",
-      "Tooltip": "Causes the <span style=\"color: #FFFF80\">Processor</span> to become permanently cloaked.",
-      "Name": "Research Cloaking Generator"
     }
   ]
 }

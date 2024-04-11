@@ -1,6 +1,6 @@
 {
   "Name": "Ascended Berserker",
-  "Description": "Durable melee unit.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span><br/><br/><span style=\"color: #00FF00\">Ascended:<br/>+90 Life<br/>+4 Damage<br/>Massive<br/>Not Light</span><br/>",
+  "Description": "Durable melee unit.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span><br/><br/><span style=\"color: #00FF00\">Ascended:<br/>+75 Life<br/>+7 Damage<br/>Massive<br/>Not Light<br/>Berserk</span>",
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -10,8 +10,8 @@
   "Response": "Acquire",
   "ResourceState": "Unknown",
   "ResourceType": "Unknown",
-  "LifeStart": 330,
-  "LifeMax": 330,
+  "LifeStart": 450,
+  "LifeMax": 450,
   "LifeArmorName": "Dragon Scale Armor",
   "Mover": "Ground",
   "StationaryTurningRate": 720,
@@ -539,7 +539,7 @@
         "Type": "AbilCmd",
         "AbilCmd": "AscendedBerserker,Execute",
         "id": "AscendedBerserker",
-        "Tooltip": "<span style=\"color: #00FF00\">+90 Life<br/>+4 Damage<br/>Massive<br/>Not Light</span><br/>",
+        "Tooltip": "<span style=\"color: #00FF00\">+75 Life<br/>+7 Damage<br/>Massive<br/>Not Light<br/>Berserk</span>",
         "Name": "Ascend",
         "Hotkey": "X"
       },
@@ -558,7 +558,7 @@
         "Column": 4,
         "Type": "Passive",
         "id": "AscendedBerserker",
-        "Tooltip": "<span style=\"color: #00FF00\">+90 Life<br/>+4 Damage<br/>Massive<br/>Not Light</span><br/>",
+        "Tooltip": "<span style=\"color: #00FF00\">+75 Life<br/>+7 Damage<br/>Massive<br/>Not Light<br/>Berserk</span>",
         "Name": "Ascend",
         "Hotkey": "X"
       },
@@ -988,6 +988,25 @@
         "Icon": "btn-ability-zerg-dehaka-intimidatingroar",
         "Tooltip": "Nearby ground enemies that can attack the Berserker are forced to do so.",
         "Name": "Madness"
+      },
+      {
+        "Cost": {
+          "Minerals": 0,
+          "Vespene": 0,
+          "Terazine": 0,
+          "Custom": 0,
+          "Energy": 0,
+          "Life": 0,
+          "Shields": 0,
+          "Food": 0
+        },
+        "Row": 1,
+        "Column": 1,
+        "Type": "Passive",
+        "id": "BerserkerBerserk",
+        "Icon": "btn-ability-zerg-dehaka-superroar",
+        "Tooltip": "Increases movement speed by <b>50</b>% for 1 second upon taking damage.",
+        "Name": "Berserk"
       }
     ]
   },
@@ -1041,12 +1060,13 @@
   ],
   "Behaviors": [
     {
-      "id": "DragonLineageLesser",
-      "Name": "Dragon Lineage"
+      "id": "DragonLineageLesser"
     },
     {
-      "id": "Berserker",
-      "Name": "Berserker"
+      "id": "Berserker"
+    },
+    {
+      "id": "BerserkerBerserk"
     },
     {
       "id": "DragonAscended",
@@ -1142,7 +1162,7 @@
     {
       "AbilCmd": "AscendedBerserker,Execute",
       "id": "AscendedBerserker",
-      "Tooltip": "<span style=\"color: #00FF00\">+90 Life<br/>+4 Damage<br/>Massive<br/>Not Light</span><br/>",
+      "Tooltip": "<span style=\"color: #00FF00\">+75 Life<br/>+7 Damage<br/>Massive<br/>Not Light<br/>Berserk</span>",
       "Name": "Ascend"
     },
     {

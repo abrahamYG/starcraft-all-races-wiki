@@ -12,6 +12,7 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "TempestGroundAttackUpgrade",
+  "EditorCategories": "Race:Protoss,UpgradeType:Spell",
   "$tokens": {
     "ID": {
       "type": "string",
@@ -24,9 +25,12 @@
     {
       "Reference": "Effect,TempestDamageGround,AttributeBonus[Structure]",
       "Value": "40"
+    },
+    {
+      "Reference": "Effect,TempestDamage,AttributeBonus[Structure]",
+      "Value": "40"
     }
   ],
-  "EditorCategories": "Race:Protoss,UpgradeType:Talents",
   "AffectedUnitArray": [
     "Tempest"
   ]

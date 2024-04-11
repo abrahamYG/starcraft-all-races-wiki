@@ -17,8 +17,8 @@
   "StationaryTurningRate": 720,
   "TurningRate": 720,
   "Radius": 1.25,
-  "SeparationRadius": 1.4375,
-  "MinimapRadius": 1.5,
+  "SeparationRadius": 1.25,
+  "MinimapRadius": 1.75,
   "EditorCategories": "ObjectType:Structure,ObjectFamily:Melee",
   "TacticalAIFilters": "-;Player,Ally,Neutral",
   "AIEvalFactor": 1,
@@ -100,12 +100,12 @@
     "Structure"
   ],
   "LifeArmor": 1,
-  "Sight": 10,
+  "Sight": 9,
   "CostCategory": "Technology",
   "ScoreResult": "BuildOrder",
   "HotkeyCategory": "Unit/Category/XayidUnits",
   "id": "MutagenChamber",
-  "Facing": 334.995,
+  "Facing": 315,
   "CostResource": {
     "Minerals": 125
   },
@@ -167,6 +167,7 @@
         "Type": "AbilCmd",
         "AbilCmd": "que5,CancelLast",
         "id": "Cancel",
+        "Icon": "btn-command-cancel",
         "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
         "Name": "Cancel",
         "Hotkey": "Esc"
@@ -527,6 +528,7 @@
     {
       "AbilCmd": "que5,CancelLast",
       "id": "Cancel",
+      "Icon": "btn-command-cancel",
       "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
       "Name": "Cancel"
     },

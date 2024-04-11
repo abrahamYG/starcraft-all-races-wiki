@@ -12,6 +12,7 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "PersistentSpores",
+  "EditorCategories": "Race:Xayid,UpgradeType:Talents",
   "$tokens": {
     "ID": {
       "type": "string",
@@ -19,14 +20,19 @@
     }
   },
   "InfoTooltipPriority": 1,
-  "EditorCategories": "Race:Xayid,UpgradeType:Talents",
   "Race": "Xayi",
   "ScoreResult": "BuildOrder",
   "ScoreAmount": 200,
   "EffectArray": [
     {
-      "Reference": "Behavior,CoveringSprayAB,Duration",
-      "Value": "42.000000"
+      "Operation": "Set",
+      "Reference": "Button,CoveringSpray,AlertTooltip",
+      "Value": "Button/Tooltip/CoveringSprayU"
+    },
+    {
+      "Operation": "Set",
+      "Reference": "Button,CoveringSpray,Tooltip",
+      "Value": "Button/Tooltip/CoveringSprayU"
     }
   ],
   "AffectedUnitArray": [

@@ -127,12 +127,6 @@
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
               "DisplayType": "Move",
               "Color": "255,35,125,255",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
@@ -221,12 +215,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -300,12 +288,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -397,12 +379,6 @@
               "Color": "255,255,0,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -477,12 +453,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -573,12 +543,6 @@
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
@@ -720,12 +684,6 @@
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
@@ -965,38 +923,34 @@
     }
   ],
   "$Upgrades": [
-    "CentrificalHooks",
+    "MorphToBaneling",
     "Baneling",
     "BanelingBurrowed",
     "BurrowBanelingUp",
-    "BanelingNest",
-    "MorphZerglingToBaneling",
-    "ThreatensCyclone",
-    "LarvaTrain",
-    "MorphToBaneling",
-    "Burrow",
     "ZergMeleeWeaponsLevel1",
     "ZergMeleeWeapons",
     "ZergMeleeWeaponsLevel2",
     "ZergMeleeWeaponsLevel3",
     "ZergGroundArmorsLevel1",
+    "ThreatensCyclone",
     "Baneling",
+    "CentrificalHooks",
     "ZergGroundArmors",
     "ZergGroundArmorsLevel2",
     "ZergGroundArmorsLevel3",
+    "Burrow",
+    "BanelingNest",
+    "MorphZerglingToBaneling",
+    "NotBaneling",
     "DigesterBaneling",
-    "BanelingBurrowMove",
     "BanelingBurrowedSplat",
-    "AbdominalFortitude",
     "ThreatensBaneling",
     "TacticalBurrowBanelingThreatSearchEmpty",
     "TacticalBurrowBanelingThreatTest",
     "TacticalBurrowBanelingBullyTest",
     "TacticalBurrowBanelingCampaignBullyUnburrow",
     "TacticalBurrowBanelingDown",
-    "TacticalBurrowBanelingUp",
-    "Baneling",
-    null
+    "TacticalBurrowBanelingUp"
   ],
   "$Requirements": [],
   "$Production": [],

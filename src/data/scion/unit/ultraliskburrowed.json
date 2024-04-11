@@ -114,12 +114,6 @@
               "Color": "255,255,0,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -187,7 +181,7 @@
           "SectionArray": {
             "Actor": {
               "DurationArray": {
-                "Duration": 2
+                "Duration": 1.25
               }
             }
           },
@@ -196,7 +190,7 @@
         },
         "Unit": "Ultralisk",
         "Cost": {
-          "Minerals": 300,
+          "Minerals": 275,
           "Vespene": 200,
           "Terazine": 0,
           "Custom": 0,
@@ -245,7 +239,7 @@
     "Burrow"
   ],
   "CostResource": {
-    "Minerals": 300,
+    "Minerals": 275,
     "Vespene": 200
   },
   "KillDisplay": "Always",
@@ -269,11 +263,10 @@
     }
   ],
   "$Upgrades": [
+    "IsUltraliskBurrowed",
     "BurrowUltraliskDown",
     "UltraliskBurrowed",
-    "IsUltraliskBurrowed",
     "ChitinousPlating",
-    "UltraliskBurrowChargeUpgrade",
     "Burrow",
     "ZergMeleeWeaponsLevel1",
     "ZergMeleeWeapons",
@@ -285,8 +278,6 @@
     "ZergGroundArmorsLevel2",
     "ZergGroundArmorsLevel3",
     "UltraliskBurrowedSplat",
-    "ZergBurrowMove",
-    "UltraliskSkin",
     "TacticalBurrowUltraliskBurrowedBullyTest",
     "TacticalBurrowUltraliskCampaignNoHostilesBullyBurrow"
   ],

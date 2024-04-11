@@ -18,7 +18,7 @@
   "TurningRate": 720,
   "Radius": 1,
   "SeparationRadius": 1,
-  "MinimapRadius": 1,
+  "MinimapRadius": 0.75,
   "EditorCategories": "ObjectType:Structure,ObjectFamily:Melee",
   "TacticalAIFilters": "-;Player,Ally,Neutral",
   "AIEvalFactor": 1,
@@ -95,11 +95,11 @@
     "Structure"
   ],
   "LifeArmor": 2,
-  "Sight": 10,
+  "Sight": 11,
   "CostCategory": "Technology",
   "ScoreResult": "BuildOrder",
   "HotkeyCategory": "Unit/Category/KeironUnits",
-  "LifeRegenRate": 0.25,
+  "LifeRegenRate": 0.2734,
   "Food": 0,
   "Footprint": "Footprint2x2AirContour",
   "PlacementFootprint": "Footprint2x2Air",
@@ -245,80 +245,6 @@
         "Hotkey": "Esc"
       },
       {
-        "Info": {
-          "class": "CAbilAttack",
-          "Name": "Abil/Name/attack",
-          "TechPlayer": "Upkeep",
-          "EditorCategories": "Race:Neutral,AbilityorEffectType:Units",
-          "TargetMessage": "Abil/TargetMessage/attack",
-          "OrderArray": [
-            {
-              "DisplayType": "Attack",
-              "Color": "255,255,0,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            }
-          ],
-          "SharedFlags": {
-            "DisableWhileDead": 1
-          },
-          "DataCollection": "attack",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
-          "AbilSetId": "Attack",
-          "Alignment": "Negative",
-          "AcquireFilters": "-;Player,Ally,Neutral,Dead,Hidden,Invulnerable,Benign",
-          "SmartFilters": "-;Player,Ally",
-          "SupportedFilters": "-;Self,Outer",
-          "CmdButtonArray": {
-            "Execute": {
-              "Flags": {
-                "ToSelection": 1
-              },
-              "DefaultButtonFace": "Attack"
-            },
-            "Towards": {
-              "Flags": {
-                "ToSelection": 1
-              },
-              "DefaultButtonFace": "AttackTowards"
-            },
-            "Barrage": {
-              "Flags": {
-                "ToSelection": 1
-              },
-              "DefaultButtonFace": "AttackBarrage"
-            }
-          },
-          "MaxAttackSpeedMultiplier": 128,
-          "MinAttackSpeedMultiplier": 0.25,
-          "AcquirePriority": 2,
-          "id": "attack"
-        },
-        "Cost": {
-          "Minerals": 0,
-          "Vespene": 0,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 0,
-        "Column": 4,
-        "Type": "AbilCmd",
-        "AbilCmd": "attack,Execute",
-        "id": "MothershipCoreAttack",
-        "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
-        "Name": "Attack",
-        "Hotkey": "A"
-      },
-      {
         "Cost": {
           "Minerals": 0,
           "Vespene": 0,
@@ -396,12 +322,12 @@
       "Name": "Build in Progress"
     },
     {
-      "id": "attack",
-      "Name": "Attack"
-    },
-    {
       "id": "stop",
       "Name": "Stop"
+    },
+    {
+      "id": "attack",
+      "Name": "Attack"
     }
   ],
   "$Upgrades": [
@@ -436,12 +362,6 @@
       "Icon": "btn-command-cancel",
       "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
       "Name": "Cancel"
-    },
-    {
-      "AbilCmd": "attack,Execute",
-      "id": "MothershipCoreAttack",
-      "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
-      "Name": "Attack"
     }
   ]
 }

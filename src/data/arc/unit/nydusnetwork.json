@@ -129,12 +129,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -158,7 +152,10 @@
               "DefaultButtonFace": "Cancel"
             },
             "Halt": {
-              "DefaultButtonFace": "Cancel"
+              "DefaultButtonFace": "Halt",
+              "Flags": {
+                "ToSelection": 1
+              }
             }
           },
           "id": "BuildInProgress"
@@ -196,12 +193,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -279,6 +270,7 @@
             "NotWidowMineTarget"
           ],
           "AbilSetId": "ULdS",
+          "UnloadCargoEffect": "PurificationNovaTargettedCasterRB",
           "id": "NydusCanalTransport"
         },
         "Cost": {
@@ -314,12 +306,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -397,6 +383,7 @@
             "NotWidowMineTarget"
           ],
           "AbilSetId": "ULdS",
+          "UnloadCargoEffect": "PurificationNovaTargettedCasterRB",
           "id": "NydusCanalTransport"
         },
         "Cost": {
@@ -486,12 +473,6 @@
           "EditorCategories": "Race:Neutral,AbilityorEffectType:Units",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -628,12 +609,11 @@
     }
   ],
   "$Upgrades": [
-    "SecretedCoating",
-    "NydusNetwork",
-    "CountUnitNydusNetworkCompleteOnlyTechTreeCheat",
     "ZergBuild",
     "NydusNetwork",
-    "NydusNetwork"
+    "CountUnitNydusNetworkCompleteOnlyTechTreeCheat",
+    "NydusNetwork",
+    "UPLRenameZerg"
   ],
   "$Requirements": [],
   "$Production": [

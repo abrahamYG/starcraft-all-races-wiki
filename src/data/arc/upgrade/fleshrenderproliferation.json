@@ -12,6 +12,7 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "FleshrenderProliferation",
+  "EditorCategories": "UpgradeType:Talents,Race:Dragon",
   "$tokens": {
     "ID": {
       "type": "string",
@@ -26,7 +27,6 @@
       "Value": "20.000000"
     }
   ],
-  "EditorCategories": "UpgradeType:Talents,Race:Dragon",
   "AffectedUnitArray": [
     "Fleshrender"
   ],

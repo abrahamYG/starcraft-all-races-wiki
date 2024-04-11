@@ -203,8 +203,7 @@
             "Flags": {
               "AllowMinimap": 0
             },
-            "DefaultButtonFace": "Reaper",
-            "Requirements": ""
+            "DefaultButtonFace": "Reaper"
           },
           "Unit": [
             "Reaper"
@@ -350,12 +349,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -379,7 +372,10 @@
               "DefaultButtonFace": "Cancel"
             },
             "Halt": {
-              "DefaultButtonFace": "Cancel"
+              "DefaultButtonFace": "Halt",
+              "Flags": {
+                "ToSelection": 1
+              }
             }
           },
           "id": "BuildInProgress"
@@ -485,12 +481,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -547,12 +537,6 @@
           "EditorCategories": "Race:Terran,AbilityorEffectType:Structures",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -852,12 +836,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -881,7 +859,10 @@
               "DefaultButtonFace": "Cancel"
             },
             "Halt": {
-              "DefaultButtonFace": "Cancel"
+              "DefaultButtonFace": "Halt",
+              "Flags": {
+                "ToSelection": 1
+              }
             }
           },
           "id": "BuildInProgress"
@@ -979,27 +960,25 @@
     }
   ],
   "$Upgrades": [
-    "TerranBuild",
+    "TerranBuildingArmor",
     "Barracks",
     "CountUnitAlias_BarracksCompleteOnlyAtUnit",
-    "FactoryTechLab",
-    "StarportReactor",
+    "StarportTechLab",
+    "FactoryReactor",
     "BarracksReactor",
     "Reactor",
-    "FactoryReactor",
-    "BarracksTechLab",
+    "StarportReactor",
+    "FactoryTechLab",
     "TechLab",
-    "StarportTechLab",
+    "BarracksTechLab",
     "BarracksFlying",
     "BarracksLand",
-    "TerranBuildingArmor",
     "CountUnitAlias_BarracksCompleteOnly789532539TechTreeCheat",
+    "TerranBuild",
     "IsBarracks",
     "Barracks",
     "BarracksLand",
-    "BarracksSplat",
-    "Barracks",
-    null
+    "BarracksSplat"
   ],
   "$Requirements": [],
   "$Production": [

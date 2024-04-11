@@ -124,12 +124,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -189,12 +183,6 @@
           "EditorCategories": "Race:Neutral,AbilityorEffectType:Structures",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -260,16 +248,16 @@
             "Requirements": "LearnEvolveDiggingClaws"
           },
           "Resource": {
-            "Minerals": 150,
-            "Vespene": 150
+            "Minerals": 100,
+            "Vespene": 100
           },
           "Time": 80,
           "Upgrade": "DiggingClaws"
         },
         "Time": 80,
         "Cost": {
-          "Minerals": 150,
-          "Vespene": 150,
+          "Minerals": 100,
+          "Vespene": 100,
           "Terazine": 0,
           "Custom": 0,
           "Energy": 0,
@@ -374,13 +362,11 @@
     "LurkerDenMP",
     "ZergBuild",
     "IsLurkerDen",
-    "UpgradeToLurkerDenMP",
     "LurkerDenMP",
     "HydraliskDen",
     "LurkerDenMPMorph",
     "ZergBuildingStopSound",
-    "ZergBuildingMorphCancel",
-    "LurkerDen"
+    "ZergBuildingMorphCancel"
   ],
   "$Requirements": [],
   "$Production": [],

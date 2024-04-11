@@ -18,7 +18,7 @@
   "TurningRate": 999.8437,
   "Radius": 0.375,
   "SeparationRadius": 0.375,
-  "MinimapRadius": 0.3125,
+  "MinimapRadius": 0.375,
   "EditorCategories": "ObjectType:Unit,ObjectFamily:Melee",
   "TacticalAIFilters": "-;Player,Ally,Neutral",
   "AIEvalFactor": 1,
@@ -619,7 +619,7 @@
                 "DefaultButtonFace": "FeedingPool"
               },
               "Unit": "FeedingPool",
-              "Time": 30
+              "Time": 25
             },
             "Build3": {
               "Button": {
@@ -643,7 +643,7 @@
                 "Requirements": "HaveFeedingPool"
               },
               "Unit": "XayidDen",
-              "Time": 68.25
+              "Time": 65
             },
             "Build5": {
               "Button": {
@@ -694,7 +694,7 @@
                 "Requirements": "HaveBiomassHatchery"
               },
               "Unit": "BiomassCavern",
-              "Time": 80
+              "Time": 65
             },
             "Build10": {
               "Button": {
@@ -860,7 +860,14 @@
               }
             }
           },
+          "FidgetDelayMin": 5,
+          "FidgetDelayMax": 10,
           "ConstructionMover": "Construction",
+          "EffectArray": {
+            "Start": "ScionStaticBuilderSwitch",
+            "Finish": "ScionStaticBuilderSuppressMovementClear",
+            "Cancel": "ScionStaticBuilderSuppressMovementClear"
+          },
           "id": "FormStructures"
         },
         "Cost": {
@@ -1258,10 +1265,10 @@
             "DefaultButtonFace": "FeedingPool"
           },
           "Unit": "FeedingPool",
-          "Time": 30
+          "Time": 25
         },
         "Unit": "FeedingPool",
-        "Time": 30,
+        "Time": 25,
         "Cost": {
           "Minerals": 100,
           "Vespene": 0,
@@ -1328,10 +1335,10 @@
             "Requirements": "HaveFeedingPool"
           },
           "Unit": "XayidDen",
-          "Time": 68.25
+          "Time": 65
         },
         "Unit": "XayidDen",
-        "Time": 68.25,
+        "Time": 65,
         "Cost": {
           "Minerals": 150,
           "Vespene": 0,
@@ -1435,6 +1442,7 @@
         "Column": 4,
         "Type": "CancelSubmenu",
         "id": "Cancel",
+        "Icon": "btn-command-cancel",
         "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
         "Name": "Cancel",
         "Hotkey": "Esc"
@@ -1490,7 +1498,7 @@
         "Unit": "BiomassHatchery",
         "Time": 60,
         "Cost": {
-          "Minerals": 200,
+          "Minerals": 150,
           "Vespene": 100,
           "Terazine": 0,
           "Custom": 0,
@@ -1519,10 +1527,10 @@
             "Requirements": "HaveBiomassHatchery"
           },
           "Unit": "BiomassCavern",
-          "Time": 80
+          "Time": 65
         },
         "Unit": "BiomassCavern",
-        "Time": 80,
+        "Time": 65,
         "Cost": {
           "Minerals": 200,
           "Vespene": 200,
@@ -1660,6 +1668,7 @@
         "Column": 4,
         "Type": "CancelSubmenu",
         "id": "Cancel",
+        "Icon": "btn-command-cancel",
         "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
         "Name": "Cancel",
         "Hotkey": "Esc"
@@ -1673,7 +1682,7 @@
     "Ground",
     "ForceField"
   ],
-  "Sight": 9,
+  "Sight": 8,
   "CostCategory": "Economy",
   "ScoreResult": "BuildOrder",
   "GlossaryCategory": "Unit/Category/XayidUnits",
@@ -1692,12 +1701,13 @@
   "CostResource": {
     "Minerals": 50
   },
-  "InnerRadius": 0.3125,
+  "InnerRadius": 0.375,
   "CargoSize": 1,
   "GlossaryPriority": 1,
   "SubgroupPriority": 3,
   "AIOverideTargetPriority": 10,
   "GlossaryAlias": "Scavenger",
+  "LateralAcceleration": 46,
   "Icon": "btn-unit-xayid-scavenger",
   "LifeArmorIcon": "btn-upgrade-xayid-organiccarapace-level0",
   "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",

@@ -15,6 +15,7 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "CruxConvergence",
+        "EditorCategories": "Race:Keiron,UpgradeType:SpellResearch",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -23,11 +24,13 @@
         },
         "InfoTooltipPriority": 1,
         "id": "CruxConvergence",
-        "EditorCategories": "Race:Keiron,UpgradeType:SpellResearch",
         "Race": "Keir",
         "ScoreResult": "BuildOrder",
         "Icon": "btn-ability-keiron-convergence",
-        "ScoreAmount": 400
+        "ScoreAmount": 400,
+        "AffectedUnitArray": [
+          "Crux"
+        ]
       },
       "ShieldCompulsion": {
         "class": "CUpgrade",
@@ -41,6 +44,7 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "ShieldCompulsion",
+        "EditorCategories": "Race:Keiron,UpgradeType:SpellResearch",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -49,7 +53,6 @@
         },
         "InfoTooltipPriority": 1,
         "id": "ShieldCompulsion",
-        "EditorCategories": "Race:Keiron,UpgradeType:SpellResearch",
         "Race": "Keir",
         "ScoreResult": "BuildOrder",
         "Icon": "btn-ability-keiron-shieldcompulsion",
@@ -70,6 +73,7 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "AmplifiedSphere",
+        "EditorCategories": "Race:Keiron,UpgradeType:Talents",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -78,7 +82,6 @@
         },
         "InfoTooltipPriority": 1,
         "id": "AmplifiedSphere",
-        "EditorCategories": "Race:Keiron,UpgradeType:Talents",
         "Race": "Keir",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
@@ -100,7 +103,7 @@
           }
         ],
         "AffectedUnitArray": [
-          "Subjecter"
+          "Cataract"
         ],
         "Icon": "btn-upgrade-protoss-fenix-scoutchampionrange",
         "ScoreAmount": 200
@@ -117,6 +120,7 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "PulsarDampener",
+        "EditorCategories": "Race:Keiron,UpgradeType:SpellResearch",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -125,7 +129,6 @@
         },
         "InfoTooltipPriority": 1,
         "id": "PulsarDampener",
-        "EditorCategories": "Race:Keiron,UpgradeType:SpellResearch",
         "Race": "Keir",
         "ScoreResult": "BuildOrder",
         "Icon": "btn-ability-keiron-dampener",
@@ -146,6 +149,7 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "ExaltedShield",
+        "EditorCategories": "Race:Keiron,UpgradeType:Talents",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -154,7 +158,6 @@
         },
         "InfoTooltipPriority": 1,
         "id": "ExaltedShield",
-        "EditorCategories": "Race:Keiron,UpgradeType:Talents",
         "Race": "Keir",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
@@ -194,6 +197,7 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "ModifiedGait",
+        "EditorCategories": "Race:Keiron,UpgradeType:Talents",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -202,7 +206,6 @@
         },
         "InfoTooltipPriority": 1,
         "id": "ModifiedGait",
-        "EditorCategories": "Race:Keiron,UpgradeType:Talents",
         "Race": "Keir",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
@@ -239,6 +242,7 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "LatentCharge",
+        "EditorCategories": "Race:Keiron,UpgradeType:Talents",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -247,7 +251,6 @@
         },
         "InfoTooltipPriority": 1,
         "id": "LatentCharge",
-        "EditorCategories": "Race:Keiron,UpgradeType:Talents",
         "Race": "Keir",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
@@ -274,6 +277,7 @@
         "ScoreValue": "ArmorTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "KeironShields",
+        "EditorCategories": "Race:Keiron,UpgradeType:ArmorBonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -301,7 +305,7 @@
             "Value": "1"
           },
           {
-            "Reference": "Unit,Subjecter,ShieldArmor",
+            "Reference": "Unit,Cataract,ShieldArmor",
             "Value": "1"
           },
           {
@@ -449,10 +453,6 @@
             "Value": "1"
           },
           {
-            "Reference": "Unit,AegisShielded,ShieldArmor",
-            "Value": "1"
-          },
-          {
             "Reference": "Unit,Converter,ShieldArmorLevel",
             "Value": "1"
           },
@@ -469,7 +469,7 @@
             "Value": "1"
           },
           {
-            "Reference": "Unit,Subjecter,ShieldArmorLevel",
+            "Reference": "Unit,Cataract,ShieldArmorLevel",
             "Value": "1"
           },
           {
@@ -617,10 +617,6 @@
             "Value": "1"
           },
           {
-            "Reference": "Unit,AegisShielded,ShieldArmorLevel",
-            "Value": "1"
-          },
-          {
             "Operation": "Set",
             "Reference": "Actor,Converter,ShieldArmorIcon",
             "Value": "Assets\\Textures\\btn-upgrade-keiron-shields-level1.dds"
@@ -642,7 +638,7 @@
           },
           {
             "Operation": "Set",
-            "Reference": "Actor,Subjecter,ShieldArmorIcon",
+            "Reference": "Actor,Cataract,ShieldArmorIcon",
             "Value": "Assets\\Textures\\btn-upgrade-keiron-shields-level1.dds"
           },
           {
@@ -816,13 +812,12 @@
             "Value": "Assets\\Textures\\btn-upgrade-keiron-shields-level1.dds"
           }
         ],
-        "EditorCategories": "Race:Keiron,UpgradeType:ArmorBonus",
         "AffectedUnitArray": [
           "Converter",
           "Pariah",
           "Volt",
           "Pulsar",
-          "Subjecter",
+          "Cataract",
           "Crux",
           "Umbra",
           "Ward",
@@ -858,8 +853,7 @@
           "Outlet",
           "Empyrean",
           "Zenith",
-          "Aegis",
-          "AegisShielded"
+          "Aegis"
         ],
         "id": "KeironShieldsLevel1",
         "ScoreAmount": 300,
@@ -882,6 +876,7 @@
         "ScoreValue": "ArmorTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "KeironShields",
+        "EditorCategories": "Race:Keiron,UpgradeType:ArmorBonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -909,7 +904,7 @@
             "Value": "1"
           },
           {
-            "Reference": "Unit,Subjecter,ShieldArmor",
+            "Reference": "Unit,Cataract,ShieldArmor",
             "Value": "1"
           },
           {
@@ -1057,10 +1052,6 @@
             "Value": "1"
           },
           {
-            "Reference": "Unit,AegisShielded,ShieldArmor",
-            "Value": "1"
-          },
-          {
             "Reference": "Unit,Converter,ShieldArmorLevel",
             "Value": "1"
           },
@@ -1077,7 +1068,7 @@
             "Value": "1"
           },
           {
-            "Reference": "Unit,Subjecter,ShieldArmorLevel",
+            "Reference": "Unit,Cataract,ShieldArmorLevel",
             "Value": "1"
           },
           {
@@ -1225,10 +1216,6 @@
             "Value": "1"
           },
           {
-            "Reference": "Unit,AegisShielded,ShieldArmorLevel",
-            "Value": "1"
-          },
-          {
             "Operation": "Set",
             "Reference": "Actor,Converter,ShieldArmorIcon",
             "Value": "Assets\\Textures\\btn-upgrade-keiron-shields-level2.dds"
@@ -1250,7 +1237,7 @@
           },
           {
             "Operation": "Set",
-            "Reference": "Actor,Subjecter,ShieldArmorIcon",
+            "Reference": "Actor,Cataract,ShieldArmorIcon",
             "Value": "Assets\\Textures\\btn-upgrade-keiron-shields-level2.dds"
           },
           {
@@ -1424,13 +1411,12 @@
             "Value": "Assets\\Textures\\btn-upgrade-keiron-shields-level2.dds"
           }
         ],
-        "EditorCategories": "Race:Keiron,UpgradeType:ArmorBonus",
         "AffectedUnitArray": [
           "Converter",
           "Pariah",
           "Volt",
           "Pulsar",
-          "Subjecter",
+          "Cataract",
           "Crux",
           "Umbra",
           "Ward",
@@ -1466,8 +1452,7 @@
           "Outlet",
           "Empyrean",
           "Zenith",
-          "Aegis",
-          "AegisShielded"
+          "Aegis"
         ],
         "id": "KeironShieldsLevel2",
         "ScoreAmount": 450,
@@ -1487,6 +1472,7 @@
         "ScoreValue": "ArmorTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "KeironShields",
+        "EditorCategories": "Race:Keiron,UpgradeType:ArmorBonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -1514,7 +1500,7 @@
             "Value": "1"
           },
           {
-            "Reference": "Unit,Subjecter,ShieldArmor",
+            "Reference": "Unit,Cataract,ShieldArmor",
             "Value": "1"
           },
           {
@@ -1662,10 +1648,6 @@
             "Value": "1"
           },
           {
-            "Reference": "Unit,AegisShielded,ShieldArmor",
-            "Value": "1"
-          },
-          {
             "Reference": "Unit,Converter,ShieldArmorLevel",
             "Value": "1"
           },
@@ -1682,7 +1664,7 @@
             "Value": "1"
           },
           {
-            "Reference": "Unit,Subjecter,ShieldArmorLevel",
+            "Reference": "Unit,Cataract,ShieldArmorLevel",
             "Value": "1"
           },
           {
@@ -1830,10 +1812,6 @@
             "Value": "1"
           },
           {
-            "Reference": "Unit,AegisShielded,ShieldArmorLevel",
-            "Value": "1"
-          },
-          {
             "Operation": "Set",
             "Reference": "Actor,Converter,ShieldArmorIcon",
             "Value": "Assets\\Textures\\btn-upgrade-keiron-shields-level3.dds"
@@ -1855,7 +1833,7 @@
           },
           {
             "Operation": "Set",
-            "Reference": "Actor,Subjecter,ShieldArmorIcon",
+            "Reference": "Actor,Cataract,ShieldArmorIcon",
             "Value": "Assets\\Textures\\btn-upgrade-keiron-shields-level3.dds"
           },
           {
@@ -2029,13 +2007,12 @@
             "Value": "Assets\\Textures\\btn-upgrade-keiron-shields-level3.dds"
           }
         ],
-        "EditorCategories": "Race:Keiron,UpgradeType:ArmorBonus",
         "AffectedUnitArray": [
           "Converter",
           "Pariah",
           "Volt",
           "Pulsar",
-          "Subjecter",
+          "Cataract",
           "Crux",
           "Umbra",
           "Ward",
@@ -2071,8 +2048,7 @@
           "Outlet",
           "Empyrean",
           "Zenith",
-          "Aegis",
-          "AegisShielded"
+          "Aegis"
         ],
         "id": "KeironShieldsLevel3",
         "ScoreAmount": 600,
@@ -2092,6 +2068,7 @@
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "KeironBioWeapons",
+        "EditorCategories": "Race:Keiron,UpgradeType:AttackBonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -2207,12 +2184,11 @@
             "Value": "Assets\\Textures\\btn-upgrade-keiron-biologicalweaponslevel1.dds"
           }
         ],
-        "EditorCategories": "Race:Keiron,UpgradeType:AttackBonus",
         "AffectedUnitArray": [
           "Pariah",
           "Volt",
           "Pulsar",
-          "Subjecter",
+          "Cataract",
           "Crux",
           "Echo",
           "EchoDM",
@@ -2239,6 +2215,7 @@
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "KeironBioWeapons",
+        "EditorCategories": "Race:Keiron,UpgradeType:AttackBonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -2354,12 +2331,11 @@
             "Value": "Assets\\Textures\\btn-upgrade-keiron-biologicalweaponslevel2.dds"
           }
         ],
-        "EditorCategories": "Race:Keiron,UpgradeType:AttackBonus",
         "AffectedUnitArray": [
           "Pariah",
           "Volt",
           "Pulsar",
-          "Subjecter",
+          "Cataract",
           "Crux",
           "Echo",
           "EchoDM",
@@ -2383,6 +2359,7 @@
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "KeironBioWeapons",
+        "EditorCategories": "Race:Keiron,UpgradeType:AttackBonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -2498,12 +2475,11 @@
             "Value": "Assets\\Textures\\btn-upgrade-keiron-biologicalweaponslevel3.dds"
           }
         ],
-        "EditorCategories": "Race:Keiron,UpgradeType:AttackBonus",
         "AffectedUnitArray": [
           "Pariah",
           "Volt",
           "Pulsar",
-          "Subjecter",
+          "Cataract",
           "Crux",
           "Echo",
           "EchoDM",
@@ -2527,6 +2503,7 @@
         "ScoreValue": "ArmorTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "KeironBioArmor",
+        "EditorCategories": "Race:Keiron,UpgradeType:ArmorBonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -2554,7 +2531,7 @@
             "Value": "1"
           },
           {
-            "Reference": "Unit,Subjecter,LifeArmor",
+            "Reference": "Unit,Cataract,LifeArmor",
             "Value": "1"
           },
           {
@@ -2594,7 +2571,7 @@
             "Value": "1"
           },
           {
-            "Reference": "Unit,Subjecter,LifeArmorLevel",
+            "Reference": "Unit,Cataract,LifeArmorLevel",
             "Value": "1"
           },
           {
@@ -2639,7 +2616,7 @@
           },
           {
             "Operation": "Set",
-            "Reference": "Actor,Subjecter,LifeArmorIcon",
+            "Reference": "Actor,Cataract,LifeArmorIcon",
             "Value": "Assets\\Textures\\btn-upgrade-keiron-biologicalarmorlevel1.dds"
           },
           {
@@ -2668,13 +2645,12 @@
             "Value": "Assets\\Textures\\btn-upgrade-keiron-biologicalarmorlevel1.dds"
           }
         ],
-        "EditorCategories": "Race:Keiron,UpgradeType:ArmorBonus",
         "AffectedUnitArray": [
           "Converter",
           "Pariah",
           "Volt",
           "Pulsar",
-          "Subjecter",
+          "Cataract",
           "Crux",
           "Echo",
           "EchoDM",
@@ -2702,6 +2678,7 @@
         "ScoreValue": "ArmorTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "KeironBioArmor",
+        "EditorCategories": "Race:Keiron,UpgradeType:ArmorBonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -2729,7 +2706,7 @@
             "Value": "1"
           },
           {
-            "Reference": "Unit,Subjecter,LifeArmor",
+            "Reference": "Unit,Cataract,LifeArmor",
             "Value": "1"
           },
           {
@@ -2769,7 +2746,7 @@
             "Value": "1"
           },
           {
-            "Reference": "Unit,Subjecter,LifeArmorLevel",
+            "Reference": "Unit,Cataract,LifeArmorLevel",
             "Value": "1"
           },
           {
@@ -2814,7 +2791,7 @@
           },
           {
             "Operation": "Set",
-            "Reference": "Actor,Subjecter,LifeArmorIcon",
+            "Reference": "Actor,Cataract,LifeArmorIcon",
             "Value": "Assets\\Textures\\btn-upgrade-keiron-biologicalarmorlevel2.dds"
           },
           {
@@ -2843,13 +2820,12 @@
             "Value": "Assets\\Textures\\btn-upgrade-keiron-biologicalarmorlevel2.dds"
           }
         ],
-        "EditorCategories": "Race:Keiron,UpgradeType:ArmorBonus",
         "AffectedUnitArray": [
           "Converter",
           "Pariah",
           "Volt",
           "Pulsar",
-          "Subjecter",
+          "Cataract",
           "Crux",
           "Echo",
           "EchoDM",
@@ -2874,6 +2850,7 @@
         "ScoreValue": "ArmorTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "KeironBioArmor",
+        "EditorCategories": "Race:Keiron,UpgradeType:ArmorBonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -2901,7 +2878,7 @@
             "Value": "1"
           },
           {
-            "Reference": "Unit,Subjecter,LifeArmor",
+            "Reference": "Unit,Cataract,LifeArmor",
             "Value": "1"
           },
           {
@@ -2941,7 +2918,7 @@
             "Value": "1"
           },
           {
-            "Reference": "Unit,Subjecter,LifeArmorLevel",
+            "Reference": "Unit,Cataract,LifeArmorLevel",
             "Value": "1"
           },
           {
@@ -2986,7 +2963,7 @@
           },
           {
             "Operation": "Set",
-            "Reference": "Actor,Subjecter,LifeArmorIcon",
+            "Reference": "Actor,Cataract,LifeArmorIcon",
             "Value": "Assets\\Textures\\btn-upgrade-keiron-biologicalarmorlevel3.dds"
           },
           {
@@ -3015,13 +2992,12 @@
             "Value": "Assets\\Textures\\btn-upgrade-keiron-biologicalarmorlevel3.dds"
           }
         ],
-        "EditorCategories": "Race:Keiron,UpgradeType:ArmorBonus",
         "AffectedUnitArray": [
           "Converter",
           "Pariah",
           "Volt",
           "Pulsar",
-          "Subjecter",
+          "Cataract",
           "Crux",
           "Echo",
           "EchoDM",
@@ -3046,6 +3022,7 @@
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "KeironMechWeapons",
+        "EditorCategories": "Race:Keiron,UpgradeType:AttackBonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -3102,19 +3079,11 @@
           },
           {
             "Reference": "Effect,ShadowCannonImpact,Amount",
-            "Value": "2"
-          },
-          {
-            "Reference": "Effect,ShadowCannonImpact,AttributeBonus[Armored]",
-            "Value": "1"
+            "Value": "3"
           },
           {
             "Reference": "Effect,GamutOrbLMImpact,Amount",
             "Value": "3"
-          },
-          {
-            "Reference": "Effect,GamutOrbLMImpact,AttributeBonus[Massive]",
-            "Value": "1"
           },
           {
             "Reference": "Effect,Lunge,Amount",
@@ -3203,7 +3172,6 @@
             "Value": "1"
           }
         ],
-        "EditorCategories": "Race:Keiron,UpgradeType:AttackBonus",
         "AffectedUnitArray": [
           "Umbra",
           "Ward",
@@ -3235,6 +3203,7 @@
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "KeironMechWeapons",
+        "EditorCategories": "Race:Keiron,UpgradeType:AttackBonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -3291,19 +3260,11 @@
           },
           {
             "Reference": "Effect,ShadowCannonImpact,Amount",
-            "Value": "2"
-          },
-          {
-            "Reference": "Effect,ShadowCannonImpact,AttributeBonus[Armored]",
-            "Value": "1"
+            "Value": "3"
           },
           {
             "Reference": "Effect,GamutOrbLMImpact,Amount",
             "Value": "3"
-          },
-          {
-            "Reference": "Effect,GamutOrbLMImpact,AttributeBonus[Massive]",
-            "Value": "1"
           },
           {
             "Reference": "Effect,Lunge,Amount",
@@ -3392,7 +3353,6 @@
             "Value": "1"
           }
         ],
-        "EditorCategories": "Race:Keiron,UpgradeType:AttackBonus",
         "AffectedUnitArray": [
           "Umbra",
           "Ward",
@@ -3421,6 +3381,7 @@
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "KeironMechWeapons",
+        "EditorCategories": "Race:Keiron,UpgradeType:AttackBonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -3477,19 +3438,11 @@
           },
           {
             "Reference": "Effect,ShadowCannonImpact,Amount",
-            "Value": "2"
-          },
-          {
-            "Reference": "Effect,ShadowCannonImpact,AttributeBonus[Armored]",
-            "Value": "1"
+            "Value": "3"
           },
           {
             "Reference": "Effect,GamutOrbLMImpact,Amount",
             "Value": "3"
-          },
-          {
-            "Reference": "Effect,GamutOrbLMImpact,AttributeBonus[Massive]",
-            "Value": "1"
           },
           {
             "Reference": "Effect,Lunge,Amount",
@@ -3578,7 +3531,6 @@
             "Value": "1"
           }
         ],
-        "EditorCategories": "Race:Keiron,UpgradeType:AttackBonus",
         "AffectedUnitArray": [
           "Umbra",
           "Ward",
@@ -3607,6 +3559,7 @@
         "ScoreValue": "ArmorTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "KeironMechArmor",
+        "EditorCategories": "Race:Keiron,UpgradeType:ArmorBonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -3761,7 +3714,6 @@
             "Value": "Assets\\Textures\\btn-upgrade-keiron-mechanicalarmorlevel1.dds"
           }
         ],
-        "EditorCategories": "Race:Keiron,UpgradeType:ArmorBonus",
         "AffectedUnitArray": [
           "Umbra",
           "Ward",
@@ -3796,6 +3748,7 @@
         "ScoreValue": "ArmorTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "KeironMechArmor",
+        "EditorCategories": "Race:Keiron,UpgradeType:ArmorBonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -3950,7 +3903,6 @@
             "Value": "Assets\\Textures\\btn-upgrade-keiron-mechanicalarmorlevel2.dds"
           }
         ],
-        "EditorCategories": "Race:Keiron,UpgradeType:ArmorBonus",
         "AffectedUnitArray": [
           "Umbra",
           "Ward",
@@ -3982,6 +3934,7 @@
         "ScoreValue": "ArmorTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "KeironMechArmor",
+        "EditorCategories": "Race:Keiron,UpgradeType:ArmorBonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -4136,7 +4089,6 @@
             "Value": "Assets\\Textures\\btn-upgrade-keiron-mechanicalarmorlevel3.dds"
           }
         ],
-        "EditorCategories": "Race:Keiron,UpgradeType:ArmorBonus",
         "AffectedUnitArray": [
           "Umbra",
           "Ward",
@@ -4168,6 +4120,7 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "DissonanceProjector",
+        "EditorCategories": "Race:Keiron,UpgradeType:Talents",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -4176,7 +4129,6 @@
         },
         "InfoTooltipPriority": 1,
         "id": "DissonanceProjector",
-        "EditorCategories": "Race:Keiron,UpgradeType:Talents",
         "Race": "Keir",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
@@ -4221,6 +4173,7 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "InterlacingBond",
+        "EditorCategories": "Race:Keiron,UpgradeType:Talents",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -4229,7 +4182,6 @@
         },
         "InfoTooltipPriority": 1,
         "id": "InterlacingBond",
-        "EditorCategories": "Race:Keiron,UpgradeType:Talents",
         "Race": "Keir",
         "ScoreResult": "BuildOrder",
         "Icon": "btn-upgrade-stetmann-zerglinghardenedshield",
@@ -4275,7 +4227,7 @@
           "Pariah",
           "Volt",
           "Pulsar",
-          "Subjecter",
+          "Cataract",
           "Myriad",
           "Crux",
           "Umbra",
@@ -4303,7 +4255,7 @@
         "ShieldsMax": 500,
         "Food": 18,
         "CostResource": {
-          "Minerals": 125
+          "Minerals": 575
         },
         "Production": [
           "Converter",
@@ -4318,7 +4270,7 @@
           "Pariah",
           "Volt",
           "Pulsar",
-          "Subjecter",
+          "Cataract",
           "Myriad",
           "Crux",
           "Umbra",
@@ -4540,7 +4492,7 @@
       "Sanctum": {
         "id": "Sanctum",
         "Icon": "btn-building-keiron-sanctum",
-        "Description": "Contains upgrades for Pulsars and Subjectors.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Pulsars from Citadels<br/>- Subjecters from Citadels",
+        "Description": "Contains upgrades for Pulsars and Cataracts.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Pulsars from Citadels<br/>- Cataracts from Citadels",
         "Name": "Sanctum",
         "LifeMax": 700,
         "LifeArmor": 1,
@@ -4572,7 +4524,7 @@
         "ShieldsMax": 350,
         "Food": 6,
         "CostResource": {
-          "Minerals": 175
+          "Minerals": 200
         },
         "Production": [],
         "Research": [
@@ -4598,7 +4550,7 @@
         "ShieldsMax": 100,
         "Food": 0,
         "CostResource": {
-          "Minerals": 125
+          "Minerals": 150
         },
         "Production": [],
         "Research": [],
@@ -4620,15 +4572,36 @@
         "ShieldsMax": 100,
         "Food": 0,
         "CostResource": {
+          "Minerals": 75
+        },
+        "Production": [],
+        "Research": [],
+        "Morph": [
+          "OculusCharged"
+        ],
+        "$Phase": [],
+        "LifeArmorIcon": "btn-upgrade-keiron-structurearmor",
+        "ShieldArmorIcon": "btn-upgrade-keiron-shields-level0",
+        "LifeArmorName": "Keiron Structure Armor",
+        "ShieldArmorName": "Keiron Dispersion Shields",
+        "priority": 53
+      },
+      "OculusCharged": {
+        "id": "OculusCharged",
+        "Description": "Able to grant vision of areas on the map at a long range.<br/><br/><span style=\"color: #FFE303\">Detector</span>",
+        "Name": "Oculus",
+        "LifeMax": 200,
+        "LifeArmor": 1,
+        "ShieldsMax": 100,
+        "Food": 0,
+        "CostResource": {
           "Minerals": 75,
-          "Vespene": 50
+          "Vespene": 75
         },
         "Production": [],
         "Research": [],
         "Morph": [],
         "$Phase": [],
-        "LifeArmorIcon": "btn-upgrade-keiron-structurearmor",
-        "ShieldArmorIcon": "btn-upgrade-keiron-shields-level0",
         "LifeArmorName": "Keiron Structure Armor",
         "ShieldArmorName": "Keiron Dispersion Shields",
         "priority": 53
@@ -4687,7 +4660,7 @@
         "ShieldsMax": 350,
         "Food": 6,
         "CostResource": {
-          "Minerals": 175
+          "Minerals": 200
         },
         "Production": [],
         "Research": [
@@ -4754,9 +4727,7 @@
         },
         "Production": [],
         "Research": [],
-        "Morph": [
-          "AegisShielded"
-        ],
+        "Morph": [],
         "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-keiron-structurearmor",
         "ShieldArmorIcon": "btn-upgrade-keiron-shields-level0",
@@ -4764,36 +4735,10 @@
         "ShieldArmorName": "Keiron Dispersion Shields",
         "priority": 50
       },
-      "AegisShielded": {
-        "id": "AegisShielded",
-        "Icon": "btn-unit-keiron-aegis",
-        "Description": "Powerful defense structure. Can use Relocate and Activate Shield.<br/><br/><span style=\"color: #FFFF80\">Can attack ground and air units.</span>",
-        "Name": "Aegis",
-        "LifeMax": 600,
-        "LifeArmor": 3,
-        "ShieldsMax": 3000,
-        "CostResource": {
-          "Minerals": 400,
-          "Vespene": 400
-        },
-        "Production": [],
-        "Research": [],
-        "Morph": [],
-        "$Phase": [
-          "AegisShielded",
-          "AegisShielded"
-        ],
-        "$Phased": "AegisShielded",
-        "LifeArmorIcon": "btn-upgrade-keiron-structurearmor",
-        "ShieldArmorIcon": "btn-upgrade-keiron-shields-level0",
-        "LifeArmorName": "Keiron Structure Armor",
-        "ShieldArmorName": "Keiron Dispersion Shields",
-        "priority": 140
-      },
       "Echo": {
         "id": "Echo",
         "Icon": "btn-unit-keiron-echo",
-        "Description": "Melee air fighter. Can use Discord Mode and Reverb.<br/><br/><span style=\"color: #FFFF80\">Can attack air units.</span>",
+        "Description": "Close range air fighter. Can use Discord Mode and Reverb.<br/><br/><span style=\"color: #FFFF80\">Can attack air units.</span>",
         "Name": "Echo",
         "LifeMax": 100,
         "ShieldsMax": 70,
@@ -4819,7 +4764,7 @@
       "EchoDM": {
         "id": "EchoDM",
         "Icon": "btn-unit-keiron-echo",
-        "Description": "Melee air fighter. Can use Discord Mode and Reverb.<br/><br/><span style=\"color: #FFFF80\">Can attack air units.</span>",
+        "Description": "Close range air fighter. Can use Discord Mode and Reverb.<br/><br/><span style=\"color: #FFFF80\">Can attack air units.</span>",
         "Name": "Echo",
         "LifeMax": 100,
         "ShieldsMax": 140,
@@ -4850,8 +4795,9 @@
         "Description": "Support unit. Can use Fusion.",
         "Name": "Fuse",
         "LifeMax": 75,
+        "LifeArmor": 1,
         "ShieldsMax": 125,
-        "Food": -2,
+        "Food": -1.5,
         "CostResource": {
           "Minerals": 100,
           "Vespene": 50
@@ -4910,14 +4856,14 @@
       "Aperture": {
         "id": "Aperture",
         "Icon": "btn-unit-keiron-aperture",
-        "Description": "Transport unit. Can be upgraded to use Keyhole.",
+        "Description": "Transport unit. Can use Keyhole.",
         "Name": "Aperture",
         "LifeMax": 100,
         "ShieldsMax": 100,
         "Food": -2,
         "CostResource": {
           "Minerals": 100,
-          "Vespene": 125
+          "Vespene": 100
         },
         "Production": [],
         "Research": [],
@@ -4981,9 +4927,9 @@
         "Description": "Capital ship. Can use Emissary Orb.<br/><br/><span style=\"color: #FFFF80\">Can attack ground and air units.</span>",
         "Name": "Paragon",
         "LifeMax": 350,
-        "LifeArmor": 2,
+        "LifeArmor": 3,
         "ShieldsMax": 200,
-        "Food": -8,
+        "Food": -7,
         "CostResource": {
           "Minerals": 450,
           "Vespene": 350
@@ -5048,7 +4994,7 @@
         "Name": "Pulsar",
         "LifeMax": 140,
         "LifeArmor": 1,
-        "ShieldsMax": 60,
+        "ShieldsMax": 50,
         "Food": -3,
         "CostResource": {
           "Minerals": 150,
@@ -5064,14 +5010,14 @@
         "ShieldArmorName": "Keiron Dispersion Shields",
         "priority": 15
       },
-      "Subjecter": {
-        "id": "Subjecter",
-        "Icon": "btn-unit-keiron-subjecter",
+      "Cataract": {
+        "id": "Cataract",
+        "Icon": "btn-unit-keiron-cataract",
         "Description": "Ranged anti-air support unit.<br/><br/><span style=\"color: #FFFF80\">Can target ground and air units.</span>",
-        "Name": "Subjecter",
-        "LifeMax": 110,
+        "Name": "Cataract",
+        "LifeMax": 100,
         "LifeArmor": 1,
-        "ShieldsMax": 60,
+        "ShieldsMax": 80,
         "Food": -2,
         "CostResource": {
           "Minerals": 125,
@@ -5115,12 +5061,12 @@
       "Elytron": {
         "id": "Elytron",
         "Icon": "btn-unit-keiron-elytron",
-        "Description": "Combat escorts that automatically attack their Myriad's target.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
+        "Description": "Combat escorts that automatically attack their host's target.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
         "Name": "Elytron",
         "LifeMax": 75,
         "ShieldsMax": 35,
         "CostResource": {
-          "Minerals": 50
+          "Minerals": 30
         },
         "Production": [],
         "Research": [],
@@ -5138,7 +5084,7 @@
         "Description": "Spell caster. Can use Beholder and Lightning Bolt. Can be upgraded to use Convergence.<br/><br/><span style=\"color: #FFFF80\">Can attack ground and air units.</span>",
         "Name": "Crux",
         "LifeMax": 80,
-        "ShieldsMax": 50,
+        "ShieldsMax": 60,
         "Food": -3,
         "CostResource": {
           "Minerals": 175,
@@ -5159,9 +5105,9 @@
         "Icon": "btn-unit-keiron-umbra",
         "Description": "Stealthed anti-armor specialist. Can be upgraded to use Stealth Compulsion.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
         "Name": "Umbra",
-        "LifeMax": 75,
+        "LifeMax": 70,
         "LifeArmor": 1,
-        "ShieldsMax": 150,
+        "ShieldsMax": 135,
         "Food": -3,
         "CostResource": {
           "Minerals": 150,
@@ -5209,7 +5155,7 @@
         "Name": "Inducer",
         "LifeMax": 150,
         "ShieldsMax": 100,
-        "Food": -6,
+        "Food": -5,
         "CostResource": {
           "Minerals": 200,
           "Vespene": 250
@@ -5272,7 +5218,7 @@
     "Pariah",
     "Volt",
     "Pulsar",
-    "Subjecter",
+    "Cataract",
     "Myriad",
     "Elytron",
     "Crux",
@@ -5295,12 +5241,12 @@
     "Edifice",
     "Nullifier",
     "Oculus",
+    "OculusCharged",
     "Formulator",
     "Stratus",
     "Reliquary",
     "Conduit",
-    "Aegis",
-    "AegisShielded"
+    "Aegis"
   ],
   "upgrades": [
     "CruxConvergence",

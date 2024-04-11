@@ -130,12 +130,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -192,12 +186,6 @@
           "EditorCategories": "Race:Neutral,AbilityorEffectType:Units",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -531,16 +519,16 @@
             "Requirements": "LearnProtossShield2"
           },
           "Resource": {
-            "Minerals": 225,
-            "Vespene": 225
+            "Minerals": 200,
+            "Vespene": 200
           },
           "Time": 202.5,
           "Upgrade": "ProtossShieldsLevel2"
         },
         "Time": 202.5,
         "Cost": {
-          "Minerals": 225,
-          "Vespene": 225,
+          "Minerals": 200,
+          "Vespene": 200,
           "Terazine": 0,
           "Custom": 0,
           "Energy": 0,
@@ -569,16 +557,16 @@
             "Requirements": "LearnProtossShield3"
           },
           "Resource": {
-            "Minerals": 300,
-            "Vespene": 300
+            "Minerals": 250,
+            "Vespene": 250
           },
           "Time": 235,
           "Upgrade": "ProtossShieldsLevel3"
         },
         "Time": 235,
         "Cost": {
-          "Minerals": 300,
-          "Vespene": 300,
+          "Minerals": 250,
+          "Vespene": 250,
           "Terazine": 0,
           "Custom": 0,
           "Energy": 0,
@@ -640,9 +628,7 @@
     "ProtossShieldsLevel3",
     "CountUnitForgeCompleteOnlyTechTreeCheat",
     "IsForge",
-    "ForgeSplat",
-    "Forge",
-    "ForgeTaldarim"
+    "ForgeSplat"
   ],
   "$Requirements": [],
   "$Production": [],

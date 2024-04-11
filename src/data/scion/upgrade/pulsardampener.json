@@ -12,6 +12,7 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "PulsarDampener",
+  "EditorCategories": "Race:Keiron,UpgradeType:SpellResearch",
   "$tokens": {
     "ID": {
       "type": "string",
@@ -19,21 +20,10 @@
     }
   },
   "InfoTooltipPriority": 1,
-  "EditorCategories": "Race:Keiron,UpgradeType:SpellResearch",
   "Race": "Keir",
   "ScoreResult": "BuildOrder",
-  "ScoreAmount": 400,
+  "ScoreAmount": 300,
   "AffectedUnitArray": [
     "Pulsar"
-  ],
-  "EffectArray": [
-    {
-      "Reference": "Behavior,PulsarDampenerAutoTrigger,DamageResponse.Chance",
-      "Value": "1"
-    },
-    {
-      "Reference": "Behavior,PulsarDampenerAutoTriggerAlt,DamageResponse.Chance",
-      "Value": "1"
-    }
   ]
 }

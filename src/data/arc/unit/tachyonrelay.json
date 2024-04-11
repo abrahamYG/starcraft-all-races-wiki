@@ -171,6 +171,7 @@
         "Type": "AbilCmd",
         "AbilCmd": "que5,CancelLast",
         "id": "Cancel",
+        "Icon": "btn-command-cancel",
         "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
         "Name": "Cancel",
         "Hotkey": "Esc"
@@ -328,8 +329,7 @@
     "TachyonRelaySplat",
     "UEDPlacementDummyMedium",
     "CountUnitFusionCoreCompleteOnly2",
-    "CountUnitFusionCoreCompleteOnlyTechTreeCheat2",
-    null
+    "CountUnitFusionCoreCompleteOnlyTechTreeCheat2"
   ],
   "$Requirements": [],
   "$Production": [],
@@ -346,6 +346,7 @@
     {
       "AbilCmd": "que5,CancelLast",
       "id": "Cancel",
+      "Icon": "btn-command-cancel",
       "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
       "Name": "Cancel"
     },

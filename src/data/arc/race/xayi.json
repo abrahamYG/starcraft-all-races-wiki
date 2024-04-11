@@ -15,6 +15,7 @@
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "XayidGroundAttacks",
+        "EditorCategories": "Race:Xayid,UpgradeType:AttackBonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -47,31 +48,23 @@
           },
           {
             "Reference": "Effect,VenomousStrikeDMG,Amount",
-            "Value": "1"
+            "Value": "2"
           },
           {
             "Reference": "Effect,SpitterSporesImpact,Amount",
-            "Value": "3"
+            "Value": "4"
           },
           {
             "Reference": "Effect,ThrasherSpineDMG,Amount",
             "Value": "1"
           },
           {
-            "Reference": "Effect,SpitterSporesImpact,AttributeBonus[Armored]",
-            "Value": "1"
-          },
-          {
-            "Reference": "Effect,VenomousStrikeDMG,AttributeBonus[Light]",
-            "Value": "1"
-          },
-          {
             "Reference": "Effect,EnervatorSporesDMG,Amount",
-            "Value": "3"
+            "Value": "2"
           },
           {
-            "Reference": "Effect,EnervatorSporesDMG,AttributeBonus[Light]",
-            "Value": "-1"
+            "Reference": "Effect,EnervatorSporesDMG,AttributeBonus[Armored]",
+            "Value": "1"
           },
           {
             "Reference": "Weapon,MassiveSporeAA,Level",
@@ -155,7 +148,6 @@
             "Value": "Assets\\Textures\\btn-upgrade-zerg-hotsgroovedspines.dds"
           }
         ],
-        "EditorCategories": "Race:Xayid,UpgradeType:AttackBonus",
         "AffectedUnitArray": [
           "Eroder",
           "Massalisk",
@@ -187,6 +179,7 @@
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "XayidGroundAttacks",
+        "EditorCategories": "Race:Xayid,UpgradeType:AttackBonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -219,31 +212,23 @@
           },
           {
             "Reference": "Effect,VenomousStrikeDMG,Amount",
-            "Value": "1"
+            "Value": "2"
           },
           {
             "Reference": "Effect,SpitterSporesImpact,Amount",
-            "Value": "3"
+            "Value": "4"
           },
           {
             "Reference": "Effect,ThrasherSpineDMG,Amount",
             "Value": "1"
           },
           {
-            "Reference": "Effect,SpitterSporesImpact,AttributeBonus[Armored]",
-            "Value": "1"
-          },
-          {
-            "Reference": "Effect,VenomousStrikeDMG,AttributeBonus[Light]",
-            "Value": "1"
-          },
-          {
             "Reference": "Effect,EnervatorSporesDMG,Amount",
-            "Value": "3"
+            "Value": "2"
           },
           {
-            "Reference": "Effect,EnervatorSporesDMG,AttributeBonus[Light]",
-            "Value": "-1"
+            "Reference": "Effect,EnervatorSporesDMG,AttributeBonus[Armored]",
+            "Value": "1"
           },
           {
             "Reference": "Weapon,MassiveSporeAA,Level",
@@ -327,7 +312,6 @@
             "Value": "Assets\\Textures\\btn-upgrade-xayid-missileweaponslevel2.dds"
           }
         ],
-        "EditorCategories": "Race:Xayid,UpgradeType:AttackBonus",
         "AffectedUnitArray": [
           "Eroder",
           "Massalisk",
@@ -356,6 +340,7 @@
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "XayidGroundAttacks",
+        "EditorCategories": "Race:Xayid,UpgradeType:AttackBonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -388,31 +373,23 @@
           },
           {
             "Reference": "Effect,VenomousStrikeDMG,Amount",
-            "Value": "1"
+            "Value": "2"
           },
           {
             "Reference": "Effect,SpitterSporesImpact,Amount",
-            "Value": "3"
+            "Value": "4"
           },
           {
             "Reference": "Effect,ThrasherSpineDMG,Amount",
             "Value": "1"
           },
           {
-            "Reference": "Effect,SpitterSporesImpact,AttributeBonus[Armored]",
-            "Value": "1"
-          },
-          {
-            "Reference": "Effect,VenomousStrikeDMG,AttributeBonus[Light]",
-            "Value": "1"
-          },
-          {
             "Reference": "Effect,EnervatorSporesDMG,Amount",
-            "Value": "3"
+            "Value": "2"
           },
           {
-            "Reference": "Effect,EnervatorSporesDMG,AttributeBonus[Light]",
-            "Value": "-1"
+            "Reference": "Effect,EnervatorSporesDMG,AttributeBonus[Armored]",
+            "Value": "1"
           },
           {
             "Reference": "Weapon,MassiveSporeAA,Level",
@@ -496,7 +473,6 @@
             "Value": "Assets\\Textures\\btn-upgrade-Xayid-missileweaponslevel3.dds"
           }
         ],
-        "EditorCategories": "Race:Xayid,UpgradeType:AttackBonus",
         "AffectedUnitArray": [
           "Eroder",
           "Massalisk",
@@ -525,6 +501,7 @@
         "ScoreValue": "ArmorTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "XayidGroundCarapace",
+        "EditorCategories": "Race:Xayid,UpgradeType:ArmorBonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -687,7 +664,6 @@
             "Value": "Assets\\Textures\\btn-upgrade-Xayid-organiccarapace-level1.dds"
           }
         ],
-        "EditorCategories": "Race:Xayid,UpgradeType:ArmorBonus",
         "AffectedUnitArray": [
           "Casnolisk",
           "Eroder",
@@ -722,6 +698,7 @@
         "ScoreValue": "ArmorTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "XayidGroundCarapace",
+        "EditorCategories": "Race:Xayid,UpgradeType:ArmorBonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -884,7 +861,6 @@
             "Value": "Assets\\Textures\\btn-upgrade-Xayid-organiccarapace-level2.dds"
           }
         ],
-        "EditorCategories": "Race:Xayid,UpgradeType:ArmorBonus",
         "AffectedUnitArray": [
           "Casnolisk",
           "Eroder",
@@ -916,6 +892,7 @@
         "ScoreValue": "ArmorTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "XayidGroundCarapace",
+        "EditorCategories": "Race:Xayid,UpgradeType:ArmorBonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -1078,7 +1055,6 @@
             "Value": "Assets\\Textures\\btn-upgrade-Xayid-organiccarapace-level3.dds"
           }
         ],
-        "EditorCategories": "Race:Xayid,UpgradeType:ArmorBonus",
         "AffectedUnitArray": [
           "Casnolisk",
           "Eroder",
@@ -1110,6 +1086,7 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "OcularAcuity",
+        "EditorCategories": "Race:Xayid,UpgradeType:Talents",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -1118,7 +1095,6 @@
         },
         "InfoTooltipPriority": 1,
         "id": "OcularAcuity",
-        "EditorCategories": "Race:Xayid,UpgradeType:Talents",
         "Race": "Xayi",
         "ScoreResult": "BuildOrder",
         "Icon": "btn-upgrade-xayid-ocularacuity",
@@ -1145,6 +1121,7 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "BileDucts",
+        "EditorCategories": "Race:Xayid,UpgradeType:Talents",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -1153,7 +1130,6 @@
         },
         "InfoTooltipPriority": 1,
         "id": "BileDucts",
-        "EditorCategories": "Race:Xayid,UpgradeType:Talents",
         "Race": "Xayi",
         "ScoreResult": "BuildOrder",
         "Icon": "btn-upgrade-zerg-bileducts",
@@ -1184,6 +1160,7 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "ScorpaliskMetabolics",
+        "EditorCategories": "Race:Xayid,UpgradeType:Talents",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -1192,7 +1169,6 @@
         },
         "InfoTooltipPriority": 1,
         "id": "ScorpaliskMetabolics",
-        "EditorCategories": "Race:Xayid,UpgradeType:Talents",
         "Race": "Xayi",
         "ScoreResult": "BuildOrder",
         "Icon": "btn-upgrade-xayid-scorpaliskmetabolics",
@@ -1219,6 +1195,7 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "DexterousJoints",
+        "EditorCategories": "Race:Xayid,UpgradeType:Talents",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -1227,7 +1204,6 @@
         },
         "InfoTooltipPriority": 1,
         "id": "DexterousJoints",
-        "EditorCategories": "Race:Xayid,UpgradeType:Talents",
         "Race": "Xayi",
         "ScoreResult": "BuildOrder",
         "Icon": "btn-upgrade-xayid-dexterousjoints",
@@ -1235,7 +1211,7 @@
         "EffectArray": [
           {
             "Reference": "Unit,Xayidling,Speed",
-            "Value": "0.429600"
+            "Value": "0.500000"
           },
           {
             "Reference": "Abil,XayidlingDash,Cost[0].Cooldown.TimeUse",
@@ -1262,6 +1238,7 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "PersistentSpores",
+        "EditorCategories": "Race:Xayid,UpgradeType:Talents",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -1270,7 +1247,6 @@
         },
         "InfoTooltipPriority": 1,
         "id": "PersistentSpores",
-        "EditorCategories": "Race:Xayid,UpgradeType:Talents",
         "Race": "Xayi",
         "ScoreResult": "BuildOrder",
         "Icon": "btn-ability-xayid-coveringspray",
@@ -1303,6 +1279,7 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "BattleFrenzy",
+        "EditorCategories": "Race:Xayid,UpgradeType:Talents",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -1311,43 +1288,12 @@
         },
         "InfoTooltipPriority": 1,
         "id": "BattleFrenzy",
-        "EditorCategories": "Race:Xayid,UpgradeType:Talents",
         "Race": "Xayi",
         "ScoreResult": "BuildOrder",
         "Icon": "btn-upgrade-xayid-battlefrenzy",
         "ScoreAmount": 300,
         "AffectedUnitArray": [
           "Reviler"
-        ]
-      },
-      "ResidualAcid": {
-        "class": "CUpgrade",
-        "Flags": {
-          "UpgradeCheat": 1
-        },
-        "Name": "Residual Acid",
-        "MaxLevel": 1,
-        "Alert": "ResearchComplete",
-        "ScoreCount": "MiscTechnologyCount",
-        "ScoreValue": "MiscTechnologyValue",
-        "WebPriority": 1,
-        "LeaderAlias": "ResidualAcid",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
-        "InfoTooltipPriority": 1,
-        "id": "ResidualAcid",
-        "EditorCategories": "Race:Xayid,UpgradeType:Talents",
-        "Race": "Xayi",
-        "ScoreResult": "BuildOrder",
-        "Icon": "btn-upgrade-xayid-residualacid",
-        "ScoreAmount": 200,
-        "AffectedUnitArray": [
-          "Prowler",
-          "AcidNest"
         ]
       },
       "ProlongedSpores": {
@@ -1362,6 +1308,7 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "ProlongedSpores",
+        "EditorCategories": "Race:Xayid,UpgradeType:Talents",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -1370,7 +1317,6 @@
         },
         "InfoTooltipPriority": 1,
         "id": "ProlongedSpores",
-        "EditorCategories": "Race:Xayid,UpgradeType:Talents",
         "Race": "Xayi",
         "ScoreResult": "BuildOrder",
         "Icon": "btn-upgrade-xayid-protractivespores",
@@ -1401,6 +1347,7 @@
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "XayidFlyerAttacks",
+        "EditorCategories": "Race:Xayid,UpgradeType:AttackBonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -1464,7 +1411,6 @@
             "Value": "Assets\\Textures\\btn-upgrade-xayid-airweaponslevel1.dds"
           }
         ],
-        "EditorCategories": "Race:Xayid,UpgradeType:AttackBonus",
         "AffectedUnitArray": [
           "Raptor",
           "Assailant",
@@ -1491,6 +1437,7 @@
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "XayidFlyerAttacks",
+        "EditorCategories": "Race:Xayid,UpgradeType:AttackBonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -1554,7 +1501,6 @@
             "Value": "Assets\\Textures\\btn-upgrade-xayid-airweaponslevel2.dds"
           }
         ],
-        "EditorCategories": "Race:Xayid,UpgradeType:AttackBonus",
         "AffectedUnitArray": [
           "Raptor",
           "Assailant",
@@ -1578,6 +1524,7 @@
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "XayidFlyerAttacks",
+        "EditorCategories": "Race:Xayid,UpgradeType:AttackBonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -1641,7 +1588,6 @@
             "Value": "Assets\\Textures\\btn-upgrade-xayid-airweaponslevel3.dds"
           }
         ],
-        "EditorCategories": "Race:Xayid,UpgradeType:AttackBonus",
         "AffectedUnitArray": [
           "Raptor",
           "Assailant",
@@ -1665,6 +1611,7 @@
         "ScoreValue": "ArmorTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "XayidFlyerCarapace",
+        "EditorCategories": "Race:Xayid,UpgradeType:ArmorBonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -1767,7 +1714,6 @@
             "Value": "Assets\\Textures\\btn-upgrade-Xayid-airarmorlevel1.dds"
           }
         ],
-        "EditorCategories": "Race:Xayid,UpgradeType:ArmorBonus",
         "AffectedUnitArray": [
           "Raptor",
           "Assailant",
@@ -1797,6 +1743,7 @@
         "ScoreValue": "ArmorTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "XayidFlyerCarapace",
+        "EditorCategories": "Race:Xayid,UpgradeType:ArmorBonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -1899,7 +1846,6 @@
             "Value": "Assets\\Textures\\btn-upgrade-Xayid-airarmorlevel2.dds"
           }
         ],
-        "EditorCategories": "Race:Xayid,UpgradeType:ArmorBonus",
         "AffectedUnitArray": [
           "Raptor",
           "Assailant",
@@ -1926,6 +1872,7 @@
         "ScoreValue": "ArmorTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "XayidFlyerCarapace",
+        "EditorCategories": "Race:Xayid,UpgradeType:ArmorBonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -2028,7 +1975,6 @@
             "Value": "Assets\\Textures\\btn-upgrade-Xayid-airarmorlevel3.dds"
           }
         ],
-        "EditorCategories": "Race:Xayid,UpgradeType:ArmorBonus",
         "AffectedUnitArray": [
           "Raptor",
           "Assailant",
@@ -2055,6 +2001,7 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "CleavingSpores",
+        "EditorCategories": "Race:Xayid,UpgradeType:Talents",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -2063,63 +2010,12 @@
         },
         "InfoTooltipPriority": 1,
         "id": "CleavingSpores",
-        "EditorCategories": "Race:Xayid,UpgradeType:Talents",
         "Race": "Xayi",
         "ScoreResult": "BuildOrder",
         "Icon": "btn-upgrade-xayid-cleavingspores",
         "ScoreAmount": 200,
         "AffectedUnitArray": [
           "Raptor"
-        ]
-      },
-      "RefinedExcretion": {
-        "class": "CUpgrade",
-        "Flags": {
-          "UpgradeCheat": 1
-        },
-        "Name": "Refined Excretion",
-        "MaxLevel": 1,
-        "Alert": "ResearchComplete",
-        "ScoreCount": "MiscTechnologyCount",
-        "ScoreValue": "MiscTechnologyValue",
-        "WebPriority": 1,
-        "LeaderAlias": "RefinedExcretion",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
-        "InfoTooltipPriority": 1,
-        "id": "RefinedExcretion",
-        "EditorCategories": "Race:Xayid,UpgradeType:Talents",
-        "Race": "Xayi",
-        "ScoreResult": "BuildOrder",
-        "Icon": "btn-upgrade-xayid-refinedexcretion",
-        "ScoreAmount": 200,
-        "EffectArray": [
-          {
-            "Reference": "Effect,ProtectiveCloud,PeriodCount",
-            "Value": "40"
-          },
-          {
-            "Operation": "Multiply",
-            "Reference": "Behavior,FrenzyInjection,Duration",
-            "Value": "1.500000"
-          },
-          {
-            "Operation": "Multiply",
-            "Reference": "Behavior,FrenzySink,Duration",
-            "Value": "1.500000"
-          },
-          {
-            "Operation": "Multiply",
-            "Reference": "Behavior,XayithoanWatcherTimedLife,Duration",
-            "Value": "1.500000"
-          }
-        ],
-        "AffectedUnitArray": [
-          "Xayithoan"
         ]
       }
     },
@@ -2307,7 +2203,7 @@
         "Icon": "btn-unit-xayid-roamer",
         "Description": "Fast anti-light skirmisher. Can use Scour.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
         "Name": "Roamer",
-        "LifeMax": 80,
+        "LifeMax": 75,
         "Food": -2,
         "CostResource": {
           "Minerals": 75,
@@ -2327,7 +2223,7 @@
         "Icon": "btn-unit-xayid-scorpalisk",
         "Description": "Armored melee attacker.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
         "Name": "Scorpalisk",
-        "LifeMax": 160,
+        "LifeMax": 150,
         "LifeArmor": 2,
         "Food": -2,
         "CostResource": {
@@ -2391,11 +2287,11 @@
         "Icon": "btn-unit-xayid-casnolisk",
         "Description": "Armored spell caster. Can use Stagnating Bile and Explosive Glob.",
         "Name": "Casnolisk",
-        "LifeMax": 135,
+        "LifeMax": 110,
         "LifeArmor": 1,
         "Food": -2,
         "CostResource": {
-          "Minerals": 100,
+          "Minerals": 50,
           "Vespene": 150
         },
         "Production": [],
@@ -2412,12 +2308,11 @@
         "Icon": "btn-unit-xayid-eroder",
         "Description": "Long ranged anti-armor beast.<br/><br/><span style=\"color: #FFFF80\">Can target ground units.</span>",
         "Name": "Eroder",
-        "LifeMax": 200,
-        "LifeArmor": 1,
+        "LifeMax": 180,
         "Food": -2,
         "CostResource": {
           "Minerals": 100,
-          "Vespene": 100
+          "Vespene": 75
         },
         "Production": [],
         "Research": [],
@@ -2507,7 +2402,7 @@
         "LifeMax": 1500,
         "LifeArmor": 1,
         "CostResource": {
-          "Minerals": 200,
+          "Minerals": 150,
           "Vespene": 100
         },
         "Production": [
@@ -2604,7 +2499,7 @@
           "Vespene": 75
         },
         "Production": [
-          "AcidNestBuild"
+          "AcidNest"
         ],
         "Research": [],
         "Morph": [],
@@ -2614,10 +2509,10 @@
         "LifeArmorName": "Xayid Ground Carapace",
         "priority": 11
       },
-      "AcidNestBuild": {
-        "id": "AcidNestBuild",
+      "AcidNest": {
+        "id": "AcidNest",
         "Icon": "btn-ability-xayid-prowlerexplosive",
-        "Description": "Explodes for <b>80</b> damage on contact with an enemy ground unit. Deals <b>35</b> splash damage to other units around it.",
+        "Description": "Burrowed explosive mine. Deals <b>80</b> damage on contact with an enemy ground unit. Deals <b>35</b> splash damage to other enemy ground units around it.",
         "Name": "Acid Nest",
         "LifeMax": 50,
         "LifeArmor": 1,
@@ -2627,14 +2522,12 @@
         },
         "Production": [],
         "Research": [],
-        "Morph": [
-          "AcidNest"
-        ],
+        "Morph": [],
         "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-zerg-buildingarmor",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": "Xayid Structure Armor",
-        "priority": 0
+        "priority": 22
       },
       "Spitter": {
         "id": "Spitter",
@@ -2685,8 +2578,8 @@
         "Icon": "btn-unit-xayid-massalisk",
         "Description": "Large, low ranged durable beast with splash damage. Currently using Hunker, which gives long range anti-air capabilities.<br/><br/><span style=\"color: #FFFF80\">Can attack ground and air units.</span>",
         "Name": "Massalisk",
-        "LifeMax": 550,
-        "LifeArmor": 5,
+        "LifeMax": 500,
+        "LifeArmor": 3,
         "Food": -6,
         "CostResource": {
           "Minerals": 300,
@@ -2718,7 +2611,6 @@
         "Production": [],
         "Research": [
           "BattleFrenzy",
-          "ResidualAcid",
           "ProlongedSpores"
         ],
         "Morph": [],
@@ -2860,7 +2752,7 @@
         "LifeArmorIcon": "btn-upgrade-zerg-pneumatizedcarapace",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": "Xayid Flyer Carapace",
-        "priority": 100
+        "priority": 18
       },
       "Scion_Watcher": {
         "id": "Scion_Watcher",
@@ -2939,8 +2831,7 @@
           "XayidFlyerCarapaceLevel1",
           "XayidFlyerCarapaceLevel2",
           "XayidFlyerCarapaceLevel3",
-          "CleavingSpores",
-          "RefinedExcretion"
+          "CleavingSpores"
         ],
         "Morph": [],
         "$Phase": [],
@@ -2995,7 +2886,7 @@
     "Reviler",
     "Ferrion",
     "Prowler",
-    "AcidNestBuild",
+    "AcidNest",
     "Spitter",
     "Massalisk",
     "MassaliskHunkered",
@@ -3035,7 +2926,6 @@
     "DexterousJoints",
     "PersistentSpores",
     "BattleFrenzy",
-    "ResidualAcid",
     "ProlongedSpores",
     "XayidFlyerAttacksLevel1",
     "XayidFlyerAttacksLevel2",
@@ -3043,7 +2933,6 @@
     "XayidFlyerCarapaceLevel1",
     "XayidFlyerCarapaceLevel2",
     "XayidFlyerCarapaceLevel3",
-    "CleavingSpores",
-    "RefinedExcretion"
+    "CleavingSpores"
   ]
 }

@@ -1,6 +1,6 @@
 {
   "Name": "Elytron",
-  "Description": "Combat escorts that automatically attack their Myriad's target.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
+  "Description": "Combat escorts that automatically attack their host's target.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -88,7 +88,7 @@
   ],
   "LifeRegenRate": 0.2734,
   "Acceleration": 6,
-  "Sight": 9,
+  "Sight": 5,
   "CostCategory": "Army",
   "AttackTargetPriority": 20,
   "CardLayouts": {
@@ -540,7 +540,7 @@
   "Speed": 3.5,
   "Height": 1,
   "CostResource": {
-    "Minerals": 50
+    "Minerals": 30
   },
   "GlossaryPriority": 24,
   "Attributes": [

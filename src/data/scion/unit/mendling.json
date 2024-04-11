@@ -106,12 +106,6 @@
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
               "DisplayType": "Move",
               "Color": "255,35,125,255",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
@@ -200,12 +194,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -279,12 +267,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -378,12 +360,6 @@
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
               "DisplayType": "Move",
               "Color": "255,35,125,255",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
@@ -472,12 +448,6 @@
               "Color": "255,255,0,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -552,12 +522,6 @@
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
@@ -699,7 +663,7 @@
         "AbilCmd": "Mend,Execute",
         "id": "Mend",
         "Icon": "btn-ability-xayid-mendlingheal",
-        "Tooltip": "Instantly restores <b>20</b> life to target biological unit or structure.",
+        "Tooltip": "Instantly restores <b>25</b> life to target biological unit or structure.",
         "Name": "Mend",
         "Hotkey": "E"
       },
@@ -762,12 +726,6 @@
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
@@ -861,24 +819,15 @@
           "Cost": [
             {
               "Vital": {
-                "Energy": 100
+                "Energy": 75
               }
             }
           ],
           "TargetFilters": [
-            "-;Self,Neutral,Enemy,Structure,Missile,Cloaked,Stasis"
+            "Visible;Neutral,Enemy,Structure,Missile,Cloaked,Stasis,Dead,Hidden"
           ],
           "Range": [
             5
-          ],
-          "CastIntroTime": [
-            0.25
-          ],
-          "CastOutroTime": [
-            0.25
-          ],
-          "CursorEffect": [
-            "CoveringSprayAB"
           ],
           "id": "CoveringSpray"
         },
@@ -887,7 +836,7 @@
           "Vespene": 0,
           "Terazine": 0,
           "Custom": 0,
-          "Energy": 100,
+          "Energy": 75,
           "Life": 0,
           "Shields": 0,
           "Food": 0
@@ -911,8 +860,6 @@
     "Ground",
     "ForceField"
   ],
-  "LifeRegenDelay": 3,
-  "LifeRegenRate": 0.5,
   "Sight": 9,
   "CostCategory": "Army",
   "ScoreResult": "BuildOrder",
@@ -937,7 +884,7 @@
     "Vespene": 75
   },
   "InnerRadius": 0.375,
-  "CargoSize": 2,
+  "CargoSize": 1,
   "GlossaryPriority": 6,
   "SubgroupPriority": 73,
   "GlossaryAlias": "Mendling",
@@ -969,7 +916,7 @@
       "Amount": 12,
       "Kind": "Ranged",
       "TargetFilters": "",
-      "Range": 4,
+      "Range": 5,
       "Period": 1.26
     }
   ],
@@ -1001,11 +948,11 @@
     }
   ],
   "$Upgrades": [
+    "PersistentSpores",
+    "Mendling",
     "XayidGroundCarapaceLevel1",
     "Mendling",
-    "Mendling",
     "XayidGroundCarapace",
-    "PersistentSpores",
     "XayidGroundCarapaceLevel2",
     "XayidGroundCarapaceLevel3",
     "XayidGroundAttacksLevel1",
@@ -1014,7 +961,9 @@
     "XayidGroundAttacksLevel3",
     "MutagenChamber",
     "MutateXayidUnits",
-    "Worm"
+    "Worm",
+    "XayidGroundAttacksRevert",
+    "XayidGroundCarapaceRevert"
   ],
   "$Requirements": [],
   "$Production": [],
@@ -1066,7 +1015,7 @@
       "AbilCmd": "Mend,Execute",
       "id": "Mend",
       "Icon": "btn-ability-xayid-mendlingheal",
-      "Tooltip": "Instantly restores <b>20</b> life to target biological unit or structure.",
+      "Tooltip": "Instantly restores <b>25</b> life to target biological unit or structure.",
       "Name": "Mend"
     },
     {

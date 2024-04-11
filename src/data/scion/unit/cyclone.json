@@ -10,8 +10,8 @@
   "Response": "Acquire",
   "ResourceState": "Unknown",
   "ResourceType": "Unknown",
-  "LifeStart": 120,
-  "LifeMax": 120,
+  "LifeStart": 130,
+  "LifeMax": 130,
   "LifeArmorName": "Terran Vehicle Plating",
   "Mover": "Ground",
   "StationaryTurningRate": 720,
@@ -96,17 +96,11 @@
     "Armored",
     "Mechanical"
   ],
-  "LifeArmor": 1,
-  "Speed": 3.375,
+  "Speed": 2.8125,
   "Acceleration": 1000,
   "LateralAcceleration": 64,
   "Sight": 11,
-  "Food": -3,
   "CostCategory": "Army",
-  "CostResource": {
-    "Minerals": 150,
-    "Vespene": 100
-  },
   "RepairTime": 45,
   "AttackTargetPriority": 20,
   "DamageDealtXP": 1,
@@ -126,12 +120,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -223,12 +211,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -302,12 +284,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -399,12 +375,6 @@
               "Color": "255,255,0,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -479,12 +449,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -575,12 +539,6 @@
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
@@ -673,23 +631,19 @@
               "Requirements": "NoLockedOn"
             }
           },
-          "FollowRange": 7,
+          "FollowRange": 6,
           "Alignment": "Negative",
           "Cost": [
             {
               "Cooldown": {
-                "TimeUse": 6
+                "TimeUse": 4
               }
             }
           ],
           "TargetFilters": [
             "Visible;Self,Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"
           ],
-          "Range": [
-            7
-          ],
           "Arc": 360,
-          "AutoCastRange": 7.5,
           "AutoCastValidatorArray": [
             "noMarkers",
             "TargetNotLockOn",
@@ -700,8 +654,7 @@
             "IsDefensiveStructure",
             "IsNotBroodlingFate",
             "NotLarva",
-            "CasterIsNotHidden",
-            "NotLarvaEgg"
+            "CasterIsNotHidden"
           ],
           "PrepEffect": [
             "LockOnInitialAB"
@@ -709,9 +662,14 @@
           "TargetSorts": {
             "SortArray": [
               "TSThreatensCyclone",
-              "AirTarget"
+              "AirTarget",
+              "TSDistance"
             ]
           },
+          "Range": [
+            6
+          ],
+          "AutoCastRange": 6.5,
           "id": "LockOn"
         },
         "Cost": {
@@ -730,7 +688,7 @@
         "AbilCmd": "LockOn,Execute",
         "id": "LockOn",
         "Icon": "btn-ability-terran-lockon",
-        "Tooltip": "Locks the Cyclone's weapons on the target unit, dealing <b>400</b> damage over <b>20</b> seconds. Can move while firing. Cancels if target moves out of range.",
+        "Tooltip": "Locks the Cyclone's weapons on the target unit, increasing the Cyclone's range to <b>9</b> and allowing it to move while firing. Cancels if target moves out of range.",
         "Name": "Lock On",
         "Hotkey": "C"
       },
@@ -746,12 +704,6 @@
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
@@ -876,41 +828,19 @@
           "Food": 0
         },
         "Row": 1,
-        "Column": 1,
-        "Type": "Passive",
-        "id": "CycloneLockOnAir",
-        "Icon": "btn-ability-terran-surfacetoairtargeting",
-        "Tooltip": "Allows the Cyclone's weapon and Lock On ability to target air units.",
-        "Name": "Lock On Air"
-      },
-      {
-        "Cost": {
-          "Minerals": 0,
-          "Vespene": 0,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 1,
         "Column": 0,
         "Type": "Passive",
-        "id": "CycloneLockOnDamageUpgrade",
-        "Icon": "btn-upgrade-terran-magfieldaccelerator",
-        "Tooltip": "Increases Cyclone Lock On damage.",
-        "Name": "Mag-Field Accelerator"
+        "id": "HurricaneThrusters",
+        "Icon": "btn-upgrade-mengsk-armory-smartservos",
+        "Tooltip": "Increases the move speed of <span style=\"color: #ffff8a\">Cyclones</span>.",
+        "Name": "Hurricane Engines"
       }
     ]
   },
   "InnerRadius": 0.5,
   "CargoSize": 4,
-  "ScoreMake": 250,
-  "ScoreKill": 250,
   "ScoreResult": "BuildOrder",
   "SubgroupPriority": 71,
-  "AIKiteRange": 10,
   "GlossaryCategory": "Unit/Category/TerranUnits",
   "GlossaryPriority": 136,
   "GlossaryStrongArray": [
@@ -925,6 +855,14 @@
   ],
   "HotkeyCategory": "Unit/Category/TerranUnits",
   "TacticalAIThink": "AIThinkCyclone",
+  "Food": -2,
+  "CostResource": {
+    "Minerals": 125,
+    "Vespene": 50
+  },
+  "ScoreMake": 175,
+  "ScoreKill": 175,
+  "AIKiteRange": 8,
   "id": "Cyclone",
   "Icon": "btn-unit-terran-cyclone",
   "LifeArmorIcon": "btn-upgrade-terran-vehicleplatinglevel0",
@@ -935,10 +873,24 @@
       "id": "TyphoonMissilePod",
       "Icon": "btn-upgrade-terran-vehicleweaponslevel0",
       "Name": "Typhoon Missile Pod",
-      "Amount": 18,
+      "Amount": 11,
+      "AttributeBonus": {
+        "Mechanical": 3
+      },
       "Kind": "Ranged",
       "TargetFilters": "",
-      "Range": 5,
+      "Range": 6,
+      "Period": 0.812
+    },
+    {
+      "Turret": "CycloneWeaponTurret",
+      "id": "CycloneFakeWeapon",
+      "Icon": "btn-upgrade-terran-vehicleweaponslevel0",
+      "Name": "Cyclone Fake Weapon",
+      "Amount": 20,
+      "Kind": "Spell",
+      "TargetFilters": "",
+      "Range": 6,
       "Period": 1
     }
   ],
@@ -966,24 +918,15 @@
     }
   ],
   "$Upgrades": [
+    "Cyclone",
+    "Cyclone",
     "ThreatensCyclone",
-    "Cyclone",
-    "CycloneAirUpgrade",
-    "CycloneLockOnDamageUpgrade",
-    "CycloneLockOnRangeUpgrade",
-    "ArmorPiercingRockets",
-    "CycloneRapidFireLaunchers",
-    "FactoryTrain",
-    "Factory",
-    "Cyclone",
-    "TerranVehicleArmorsLevel1",
-    "TerranVehicleArmorsLevel2",
-    "TerranVehicleArmorsLevel3",
+    "HurricaneThrusters",
     "TerranVehicleAndShipArmorsLevel1",
     "TerranVehicleAndShipArmorsLevel2",
     "TerranVehicleAndShipArmorsLevel3",
-    "MagFieldLaunchers",
-    "Cyclone"
+    "FactoryTrain",
+    "Factory"
   ],
   "$Requirements": [],
   "$Production": [],
@@ -1033,7 +976,7 @@
       "AbilCmd": "LockOn,Execute",
       "id": "LockOn",
       "Icon": "btn-ability-terran-lockon",
-      "Tooltip": "Locks the Cyclone's weapons on the target unit, dealing <b>400</b> damage over <b>20</b> seconds. Can move while firing. Cancels if target moves out of range.",
+      "Tooltip": "Locks the Cyclone's weapons on the target unit, increasing the Cyclone's range to <b>9</b> and allowing it to move while firing. Cancels if target moves out of range.",
       "Name": "Lock On"
     },
     {

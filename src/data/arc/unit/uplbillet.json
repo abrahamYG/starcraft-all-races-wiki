@@ -189,46 +189,7 @@
         "Hotkey": "U"
       },
       {
-        "Info": {
-          "class": "CAbilQueue",
-          "Name": "Abil/Name/que5",
-          "TechPlayer": "Upkeep",
-          "EditorCategories": "Race:Neutral,AbilityorEffectType:Structures",
-          "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
-          "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            }
-          ],
-          "SharedFlags": {
-            "DisableWhileDead": 1
-          },
-          "DataCollection": "que5",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
-          "QueueCount": 1,
-          "Flags": {
-            "BestUnit": 1,
-            "NotifyAddOn": 1
-          },
-          "CmdButtonArray": {
-            "CancelLast": {
-              "DefaultButtonFace": "Cancel"
-            },
-            "CancelSlot": {
-              "DefaultButtonFace": "CancelSlot"
-            }
-          },
-          "QueueSize": 5,
-          "id": "que5"
-        },
+        "Info": {},
         "Cost": {
           "Minerals": 0,
           "Vespene": 0,
@@ -242,33 +203,12 @@
         "Row": 2,
         "Column": 4,
         "Type": "AbilCmd",
-        "AbilCmd": "que5,CancelLast",
+        "AbilCmd": "Rally,Rally1",
         "id": "Cancel",
+        "Icon": "btn-command-cancel",
         "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
         "Name": "Cancel",
         "Hotkey": "Esc"
-      },
-      {
-        "Info": {},
-        "Cost": {
-          "Minerals": 0,
-          "Vespene": 0,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 1,
-        "Column": 4,
-        "Type": "AbilCmd",
-        "AbilCmd": "Rally,Rally1",
-        "id": "Rally",
-        "Icon": "btn-ability-terran-setrallypoint",
-        "Tooltip": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
-        "Name": "Set Rally Point",
-        "Hotkey": "Y"
       },
       {
         "Info": {
@@ -276,17 +216,54 @@
             "Flags": {
               "AllowMinimap": 0
             },
-            "DefaultButtonFace": "InfantryRifle"
+            "DefaultButtonFace": "UPLScout"
           },
           "Unit": [
-            "InfantryRifle"
+            "UPLScout"
           ],
-          "Time": 19
+          "Time": 26
         },
         "Unit": [
-          "InfantryRifle"
+          "UPLScout"
         ],
-        "Time": 19,
+        "Time": 26,
+        "Cost": {
+          "Minerals": 50,
+          "Vespene": 25,
+          "Terazine": 0,
+          "Custom": 0,
+          "Energy": 0,
+          "Life": 0,
+          "Shields": 0,
+          "Food": -1
+        },
+        "Row": 1,
+        "Column": 0,
+        "Type": "AbilCmd",
+        "AbilCmd": "UPLBilletTrain,Train9",
+        "id": "UPLScout",
+        "Icon": "btn-unit-upl-uplscout",
+        "Tooltip": "Covert Operations<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units.</span>",
+        "Name": "S.C.O.U.T.",
+        "Hotkey": "U"
+      },
+      {
+        "Info": {
+          "Button": {
+            "Flags": {
+              "AllowMinimap": 0
+            },
+            "DefaultButtonFace": "UPLTrainGuardian"
+          },
+          "Unit": [
+            "DarrenRodgers"
+          ],
+          "Time": 26
+        },
+        "Unit": [
+          "DarrenRodgers"
+        ],
+        "Time": 26,
         "Cost": {
           "Minerals": 50,
           "Vespene": 0,
@@ -300,11 +277,11 @@
         "Row": 0,
         "Column": 0,
         "Type": "AbilCmd",
-        "AbilCmd": "UPLBilletTrain,Train1",
-        "id": "InfantryRifle",
-        "Icon": "btn-unit-upl-infantryrifle",
-        "Tooltip": "Shock Trooper<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units</span>",
-        "Name": "Train Combat Infantry",
+        "AbilCmd": "UPLBilletTrain,Train11",
+        "id": "UPLTrainGuardian",
+        "Icon": "btn-unit-upl-uplriotofficer",
+        "Tooltip": "Troopers Equipped with Combat Shotgun and Riot Shield<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units</span>",
+        "Name": "Train Guardian",
         "Hotkey": "A"
       },
       {
@@ -325,7 +302,7 @@
         ],
         "Time": 26,
         "Cost": {
-          "Minerals": 65,
+          "Minerals": 75,
           "Vespene": 0,
           "Terazine": 0,
           "Custom": 0,
@@ -334,8 +311,8 @@
           "Shields": 0,
           "Food": -1
         },
-        "Row": 1,
-        "Column": 0,
+        "Row": 0,
+        "Column": 1,
         "Type": "AbilCmd",
         "AbilCmd": "UPLBilletTrain,Train2",
         "id": "InfantryHeavy",
@@ -350,17 +327,17 @@
             "Flags": {
               "AllowMinimap": 0
             },
-            "DefaultButtonFace": "InfantryRocket"
+            "DefaultButtonFace": "UPLTrainInfantryFlamethrower"
           },
           "Unit": [
-            "InfantryRocket"
+            "InfantryFlamethrower"
           ],
-          "Time": 30
+          "Time": 28
         },
         "Unit": [
-          "InfantryRocket"
+          "InfantryFlamethrower"
         ],
-        "Time": 30,
+        "Time": 28,
         "Cost": {
           "Minerals": 50,
           "Vespene": 25,
@@ -374,9 +351,46 @@
         "Row": 0,
         "Column": 2,
         "Type": "AbilCmd",
-        "AbilCmd": "UPLBilletTrain,Train3",
-        "id": "InfantryRocket",
-        "Icon": "btn-unit-upl-infantryrocket",
+        "AbilCmd": "UPLBilletTrain,Train4",
+        "id": "UPLTrainInfantryFlamethrower",
+        "Icon": "btn-unit-upl-infantryflamethrower",
+        "Tooltip": "Flamethrower Infantry<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units</span>",
+        "Name": "Train Incinerator",
+        "Hotkey": "F"
+      },
+      {
+        "Info": {
+          "Button": {
+            "Flags": {
+              "AllowMinimap": 0
+            },
+            "DefaultButtonFace": "UPLTrainSpecialInfantryRocket"
+          },
+          "Unit": [
+            "UPLSpecOps"
+          ],
+          "Time": 26
+        },
+        "Unit": [
+          "UPLSpecOps"
+        ],
+        "Time": 26,
+        "Cost": {
+          "Minerals": 50,
+          "Vespene": 25,
+          "Terazine": 0,
+          "Custom": 0,
+          "Energy": 0,
+          "Life": 0,
+          "Shields": 0,
+          "Food": -1
+        },
+        "Row": 1,
+        "Column": 1,
+        "Type": "AbilCmd",
+        "AbilCmd": "UPLBilletTrain,Train8",
+        "id": "UPLTrainSpecialInfantryRocket",
+        "Icon": "btn-unit-upl-richardgideon",
         "Tooltip": "Anti-Armor<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units</span>",
         "Name": "Train Rocket Trooper",
         "Hotkey": "R"
@@ -408,8 +422,8 @@
           "Shields": 0,
           "Food": -1
         },
-        "Row": 0,
-        "Column": 3,
+        "Row": 1,
+        "Column": 2,
         "Type": "AbilCmd",
         "AbilCmd": "UPLBilletTrain,Train5",
         "id": "InfantryMortar",
@@ -419,41 +433,42 @@
         "Hotkey": "T"
       },
       {
+        "Upgrade": "InfantryFlamethrower3xBurning",
         "Info": {
           "Button": {
             "Flags": {
               "AllowMinimap": 0
             },
-            "DefaultButtonFace": "InfantryFlamethrower"
+            "DefaultButtonFace": "InfantryFlamethrowerBurningUpgraded",
+            "Requirements": "LearnInfantryFlamethrower3xBurning"
           },
-          "Unit": [
-            "InfantryFlamethrower"
-          ],
-          "Time": 28
+          "Resource": {
+            "Minerals": 100,
+            "Vespene": 100
+          },
+          "Time": 154,
+          "Upgrade": "InfantryFlamethrower3xBurning"
         },
-        "Unit": [
-          "InfantryFlamethrower"
-        ],
-        "Time": 28,
+        "Time": 154,
         "Cost": {
-          "Minerals": 50,
-          "Vespene": 25,
+          "Minerals": 100,
+          "Vespene": 100,
           "Terazine": 0,
           "Custom": 0,
           "Energy": 0,
           "Life": 0,
           "Shields": 0,
-          "Food": -1
+          "Food": 0
         },
-        "Row": 0,
-        "Column": 1,
+        "Row": 2,
+        "Column": 3,
         "Type": "AbilCmd",
-        "AbilCmd": "UPLBilletTrain,Train4",
-        "id": "InfantryFlamethrower",
-        "Icon": "btn-unit-upl-infantryflamethrower",
-        "Tooltip": "Flamethrower Infantry<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units</span>",
-        "Name": "Train Incinerator",
-        "Hotkey": "F"
+        "AbilCmd": "UPLBilletResearch,Research4",
+        "id": "InfantryFlamethrowerBurningUpgraded",
+        "Icon": "btn-ability-upl-naniteignition",
+        "Tooltip": "Burning Damage is three times stronger.",
+        "Name": "Infantry Flamethrower Burning",
+        "Hotkey": "X"
       },
       {
         "Upgrade": "InfantryMortarRangeUpgrade",
@@ -485,7 +500,7 @@
           "Food": 0
         },
         "Row": 2,
-        "Column": 3,
+        "Column": 1,
         "Type": "AbilCmd",
         "AbilCmd": "UPLBilletResearch,Research2",
         "id": "ResearchInfantryMortarRangeUpgrade",
@@ -532,44 +547,6 @@
         "Tooltip": "<c val=\"#ColorAttackInfo\"><b>Combat Infantry</b></span>, <c val=\"#ColorAttackInfo\"><b>Heavy Gunner</b></span> and <c val=\"#ColorAttackInfo\"><b>Rocket Trooper</b></span> rifles are now equipped with range finders and laser scopes.<br/><br/>Increases weapon range by <span style=\"color: #80FFFF\">1</span>",
         "Name": "Research Infantry Targeting Equipment",
         "Hotkey": "Z"
-      },
-      {
-        "Upgrade": "InfantryFlamethrower3xBurning",
-        "Info": {
-          "Button": {
-            "Flags": {
-              "AllowMinimap": 0
-            },
-            "DefaultButtonFace": "InfantryFlamethrowerBurningUpgraded",
-            "Requirements": "LearnInfantryFlamethrower3xBurning"
-          },
-          "Resource": {
-            "Minerals": 100,
-            "Vespene": 100
-          },
-          "Time": 90,
-          "Upgrade": "InfantryFlamethrower3xBurning"
-        },
-        "Time": 90,
-        "Cost": {
-          "Minerals": 100,
-          "Vespene": 100,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 2,
-        "Column": 1,
-        "Type": "AbilCmd",
-        "AbilCmd": "UPLBilletResearch,Research4",
-        "id": "InfantryFlamethrowerBurningUpgraded",
-        "Icon": "btn-ability-upl-naniteignition",
-        "Tooltip": "Burning Damage is three times stronger.",
-        "Name": "Infantry Flamethrower Burning",
-        "Hotkey": "X"
       },
       {
         "Upgrade": "InfantryRocketAOE",
@@ -677,20 +654,22 @@
     "IsUPLBillet",
     "UPLBillet",
     "UPLBilletSplat",
-    "UPLBillet"
+    "UPLBillet",
+    null
   ],
   "$Requirements": [],
   "$Production": [
-    "InfantryRifle",
+    "UPLScout",
+    "DarrenRodgers",
     "InfantryHeavy",
-    "InfantryRocket",
-    "InfantryMortar",
-    "InfantryFlamethrower"
+    "InfantryFlamethrower",
+    "UPLSpecOps",
+    "InfantryMortar"
   ],
   "$Research": [
+    "InfantryFlamethrower3xBurning",
     "InfantryMortarRangeUpgrade",
     "InfantryRifleRangeUpgrade",
-    "InfantryFlamethrower3xBurning",
     "InfantryRocketAOE"
   ],
   "$Morph": [],
@@ -707,24 +686,25 @@
       "Name": "Cancel"
     },
     {
-      "AbilCmd": "que5,CancelLast",
+      "AbilCmd": "Rally,Rally1",
       "id": "Cancel",
+      "Icon": "btn-command-cancel",
       "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
       "Name": "Cancel"
     },
     {
-      "AbilCmd": "Rally,Rally1",
-      "id": "Rally",
-      "Icon": "btn-ability-terran-setrallypoint",
-      "Tooltip": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
-      "Name": "Set Rally Point"
+      "AbilCmd": "UPLBilletTrain,Train9",
+      "id": "UPLScout",
+      "Icon": "btn-unit-upl-uplscout",
+      "Tooltip": "Covert Operations<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units.</span>",
+      "Name": "S.C.O.U.T."
     },
     {
-      "AbilCmd": "UPLBilletTrain,Train1",
-      "id": "InfantryRifle",
-      "Icon": "btn-unit-upl-infantryrifle",
-      "Tooltip": "Shock Trooper<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units</span>",
-      "Name": "Train Combat Infantry"
+      "AbilCmd": "UPLBilletTrain,Train11",
+      "id": "UPLTrainGuardian",
+      "Icon": "btn-unit-upl-uplriotofficer",
+      "Tooltip": "Troopers Equipped with Combat Shotgun and Riot Shield<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units</span>",
+      "Name": "Train Guardian"
     },
     {
       "AbilCmd": "UPLBilletTrain,Train2",
@@ -734,9 +714,16 @@
       "Name": "Train Heavy Gunner"
     },
     {
-      "AbilCmd": "UPLBilletTrain,Train3",
-      "id": "InfantryRocket",
-      "Icon": "btn-unit-upl-infantryrocket",
+      "AbilCmd": "UPLBilletTrain,Train4",
+      "id": "UPLTrainInfantryFlamethrower",
+      "Icon": "btn-unit-upl-infantryflamethrower",
+      "Tooltip": "Flamethrower Infantry<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units</span>",
+      "Name": "Train Incinerator"
+    },
+    {
+      "AbilCmd": "UPLBilletTrain,Train8",
+      "id": "UPLTrainSpecialInfantryRocket",
+      "Icon": "btn-unit-upl-richardgideon",
       "Tooltip": "Anti-Armor<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units</span>",
       "Name": "Train Rocket Trooper"
     },
@@ -748,11 +735,11 @@
       "Name": "Train Mortar Trooper"
     },
     {
-      "AbilCmd": "UPLBilletTrain,Train4",
-      "id": "InfantryFlamethrower",
-      "Icon": "btn-unit-upl-infantryflamethrower",
-      "Tooltip": "Flamethrower Infantry<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units</span>",
-      "Name": "Train Incinerator"
+      "AbilCmd": "UPLBilletResearch,Research4",
+      "id": "InfantryFlamethrowerBurningUpgraded",
+      "Icon": "btn-ability-upl-naniteignition",
+      "Tooltip": "Burning Damage is three times stronger.",
+      "Name": "Infantry Flamethrower Burning"
     },
     {
       "AbilCmd": "UPLBilletResearch,Research2",
@@ -767,13 +754,6 @@
       "Icon": "btn-ability-upl-longrange",
       "Tooltip": "<c val=\"#ColorAttackInfo\"><b>Combat Infantry</b></span>, <c val=\"#ColorAttackInfo\"><b>Heavy Gunner</b></span> and <c val=\"#ColorAttackInfo\"><b>Rocket Trooper</b></span> rifles are now equipped with range finders and laser scopes.<br/><br/>Increases weapon range by <span style=\"color: #80FFFF\">1</span>",
       "Name": "Research Infantry Targeting Equipment"
-    },
-    {
-      "AbilCmd": "UPLBilletResearch,Research4",
-      "id": "InfantryFlamethrowerBurningUpgraded",
-      "Icon": "btn-ability-upl-naniteignition",
-      "Tooltip": "Burning Damage is three times stronger.",
-      "Name": "Infantry Flamethrower Burning"
     },
     {
       "AbilCmd": "UPLBilletResearch,Research5",

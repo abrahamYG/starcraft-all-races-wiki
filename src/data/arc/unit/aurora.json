@@ -889,11 +889,11 @@
     }
   ],
   "$Upgrades": [
-    "CitadelCharged",
-    "Aurora",
     "Outlet",
+    "Aurora",
     "IsAurora",
     "KeironCitadelMaterialize",
+    "CitadelCharged",
     "KeironBioWeaponsLevel1",
     "KeironBioWeapons",
     "KeironBioWeaponsLevel2",

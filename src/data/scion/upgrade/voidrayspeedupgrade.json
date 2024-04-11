@@ -4,7 +4,8 @@
   "Name": "Upgrade/Name/VoidRaySpeedUpgrade",
   "class": "CUpgrade",
   "Flags": {
-    "UpgradeCheat": 1
+    "UpgradeCheat": 1,
+    "TechTreeCheat": 1
   },
   "MaxLevel": 1,
   "Alert": "ResearchComplete",
@@ -12,6 +13,7 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "VoidRaySpeedUpgrade",
+  "EditorCategories": "Race:Protoss,UpgradeType:Spell",
   "$tokens": {
     "ID": {
       "type": "string",
@@ -22,19 +24,19 @@
   "ScoreResult": "BuildOrder",
   "EffectArray": [
     {
+      "Operation": "Set",
       "Reference": "Unit,VoidRay,Speed",
-      "Value": "3.320300",
-      "Operation": "Set"
+      "Value": "3.320300"
     },
     {
+      "Operation": "Set",
       "Reference": "Unit,VoidRay,Acceleration",
-      "Value": "2.687500",
-      "Operation": "Set"
+      "Value": "2.687500"
     },
     {
       "Operation": "Set",
       "Reference": "Behavior,VoidRaySwarmDamageBoost,Modification.MoveSpeedMultiplier",
-      "Value": "0.5644"
+      "Value": "0.621"
     },
     {
       "Operation": "Set",
@@ -42,7 +44,6 @@
       "Value": "0.7441"
     }
   ],
-  "EditorCategories": "Race:Protoss,UpgradeType:Talents",
   "Race": "Prot",
   "AffectedUnitArray": [
     "VoidRay"

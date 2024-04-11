@@ -12,6 +12,7 @@
   "ScoreValue": "ArmorTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "XayidFlyerCarapace",
+  "EditorCategories": "Race:Xayid,UpgradeType:ArmorBonus",
   "$tokens": {
     "ID": {
       "type": "string",
@@ -46,6 +47,10 @@
       "Value": "1"
     },
     {
+      "Reference": "Unit,Scion_Watcher,LifeArmor",
+      "Value": "1"
+    },
+    {
       "Reference": "Unit,Raptor,LifeArmorLevel",
       "Value": "1"
     },
@@ -67,6 +72,10 @@
     },
     {
       "Reference": "Unit,Xayithoan,LifeArmorLevel",
+      "Value": "1"
+    },
+    {
+      "Reference": "Unit,Scion_Watcher,LifeArmorLevel",
       "Value": "1"
     },
     {
@@ -98,16 +107,21 @@
       "Operation": "Set",
       "Reference": "Actor,Xayithoan,LifeArmorIcon",
       "Value": "Assets\\Textures\\btn-upgrade-Xayid-airarmorlevel3.dds"
+    },
+    {
+      "Operation": "Set",
+      "Reference": "Actor,Scion_Watcher,LifeArmorIcon",
+      "Value": "Assets\\Textures\\btn-upgrade-Xayid-airarmorlevel3.dds"
     }
   ],
-  "EditorCategories": "Race:Xayid,UpgradeType:ArmorBonus",
   "AffectedUnitArray": [
     "Raptor",
     "Assailant",
     "Exterminator",
     "Ferrion",
     "Kraken",
-    "Xayithoan"
+    "Xayithoan",
+    "Scion_Watcher"
   ],
   "ScoreAmount": 600,
   "LeaderLevel": 3

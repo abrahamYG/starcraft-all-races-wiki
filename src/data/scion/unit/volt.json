@@ -87,9 +87,7 @@
     "Ground",
     "ForceField"
   ],
-  "LifeRegenRate": 0.1718,
-  "ShieldRegenDelay": 4,
-  "ShieldRegenRate": 1.25,
+  "LifeRegenRate": 0.2734,
   "Acceleration": 1000,
   "Sight": 9,
   "CostCategory": "Army",
@@ -108,12 +106,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -205,12 +197,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -284,12 +270,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -383,12 +363,6 @@
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
               "DisplayType": "Move",
               "Color": "255,35,125,255",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
@@ -476,12 +450,6 @@
               "DisplayType": "Attack",
               "Color": "255,255,0,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
@@ -583,7 +551,7 @@
         "Type": "Passive",
         "id": "LatentCharge",
         "Icon": "btn-upgrade-keiron-latentcharge",
-        "Tooltip": "Enables the <span style=\"color: #FFFF80\">Volt's</span> weapon to bounce to 1 additional target and deal <b>2</b> spell damage.",
+        "Tooltip": "Attacks bounce to deal <b>2</b> spell damage.",
         "Name": "Latent Charge"
       },
       {
@@ -598,12 +566,6 @@
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
@@ -716,7 +678,7 @@
         "AbilCmd": "FuseUnfuse,Execute",
         "id": "Unfuse",
         "Icon": "btn-ability-zerg-dehaka-levelup",
-        "Tooltip": "Releases the Fuse inhabiting this unit, losing the associated bonus.",
+        "Tooltip": "Releases the Fuses inhabiting this unit, losing the associated bonus.",
         "Name": "Unfuse",
         "Hotkey": "U"
       }
@@ -761,14 +723,18 @@
       "id": "ElectronBolt",
       "Icon": "btn-upgrade-keiron-biologicalweaponslevel0",
       "Name": "Electron Bolt",
-      "Amount": 8,
+      "Amount": 7,
       "Kind": "Ranged",
       "TargetFilters": "",
       "Range": 5,
-      "Period": 1.68
+      "Period": 1.4
     }
   ],
-  "Behaviors": [],
+  "Behaviors": [
+    {
+      "id": "KeironShellRestoration"
+    }
+  ],
   "Abilities": [
     {
       "id": "move",
@@ -801,6 +767,7 @@
     "LatentCharge",
     "ModifiedGait",
     "Edifice",
+    "CitadelCharged",
     "KeironBioWeaponsLevel1",
     "KeironBioWeapons",
     "KeironBioWeaponsLevel2",
@@ -811,13 +778,15 @@
     "KeironBioArmorLevel2",
     "KeironBioArmorLevel3",
     "KeironShieldsLevel1",
-    "CitadelCharged",
     "KeironShields",
     "KeironShieldsLevel2",
     "KeironShieldsLevel3",
     "Citadel",
     "ChangelingVolt",
-    "IsVolt"
+    "IsVolt",
+    "KeironBioArmorRevert",
+    "KeironBioWeaponsRevert",
+    "KeironShieldsRevert"
   ],
   "$Requirements": [],
   "$Production": [],
@@ -875,7 +844,7 @@
       "AbilCmd": "FuseUnfuse,Execute",
       "id": "Unfuse",
       "Icon": "btn-ability-zerg-dehaka-levelup",
-      "Tooltip": "Releases the Fuse inhabiting this unit, losing the associated bonus.",
+      "Tooltip": "Releases the Fuses inhabiting this unit, losing the associated bonus.",
       "Name": "Unfuse"
     }
   ]

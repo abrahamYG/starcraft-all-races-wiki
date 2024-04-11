@@ -16,9 +16,9 @@
   "Mover": "Fly",
   "StationaryTurningRate": 720,
   "TurningRate": 720,
-  "Radius": 0.5,
-  "SeparationRadius": 0.5625,
-  "MinimapRadius": 0.5,
+  "Radius": 0.625,
+  "SeparationRadius": 0.625,
+  "MinimapRadius": 0.625,
   "EditorCategories": "ObjectType:Unit,ObjectFamily:Melee",
   "TacticalAIFilters": "-;Player,Ally,Neutral",
   "AIEvalFactor": 1,
@@ -125,12 +125,6 @@
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
               "DisplayType": "Move",
               "Color": "255,35,125,255",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
@@ -218,12 +212,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -315,12 +303,6 @@
               "Color": "255,255,0,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -391,12 +373,6 @@
           "EditorCategories": "Race:Neutral,AbilityorEffectType:Units",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -475,12 +451,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -589,7 +559,7 @@
     "Minerals": 100,
     "Vespene": 75
   },
-  "SubgroupPriority": 31,
+  "SubgroupPriority": 30,
   "GlossaryPriority": 12,
   "GlossaryStrongArray": [
     "Mole",
@@ -598,7 +568,7 @@
     "Roach"
   ],
   "GlossaryWeakArray": [
-    "AvengerGenetron",
+    "Scion_Avenger",
     "Phoenix",
     "VikingFighter",
     "Mutalisk"
@@ -648,8 +618,12 @@
     "GenetronAircraftWeaponsLevel2",
     "GenetronAircraftWeaponsLevel3",
     "BuildAircraft",
+    "CountUnitHornetQueuedOrBetterAtUnit",
     "AssemblyArray",
     "AssemblyArray",
+    "CountUnitHornetInProgressOnlyAtUnit",
+    "GenetronAircraftPlatingRevert",
+    "GenetronAircraftWeaponsRevert",
     "BoreDrills"
   ],
   "$Requirements": [],

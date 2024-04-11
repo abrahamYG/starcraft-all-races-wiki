@@ -12,27 +12,27 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "LiberatorAGRangeUpgrade",
+  "EditorCategories": "Race:Terran,UpgradeType:Spell",
   "$tokens": {
     "ID": {
       "type": "string",
       "value": ""
     }
   },
+  "ScoreAmount": 300,
+  "ScoreResult": "BuildOrder",
   "EffectArray": [
     {
       "Reference": "Abil,LiberatorAGTarget,Range[0]",
-      "Value": "3"
+      "Value": "2"
     },
     {
       "Reference": "Weapon,LiberatorAGWeapon,Range",
-      "Value": "3"
+      "Value": "2"
     }
   ],
-  "EditorCategories": "Race:Protoss,UpgradeType:SpellResearch",
   "AffectedUnitArray": [
     "Liberator",
     "LiberatorAG"
-  ],
-  "ScoreAmount": 300,
-  "ScoreResult": "BuildOrder"
+  ]
 }

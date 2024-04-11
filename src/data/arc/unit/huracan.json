@@ -105,7 +105,7 @@
   "Food": -2,
   "CostCategory": "Army",
   "CostResource": {
-    "Minerals": 100
+    "Minerals": 125
   },
   "RepairTime": 20,
   "AttackTargetPriority": 20,
@@ -571,7 +571,7 @@
         "Type": "Passive",
         "id": "PhosphoricFire",
         "Icon": "btn-tips-walloffire",
-        "Tooltip": "The bonus for buildings is +8 units.",
+        "Tooltip": "Ignoring the armor of buildings and bonus damage 8 units for bildings.",
         "Name": "Phosphoric fire"
       }
     ]

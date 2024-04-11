@@ -12,6 +12,7 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "BlinkTech",
+  "EditorCategories": "Race:Protoss,UpgradeType:Spell",
   "$tokens": {
     "ID": {
       "type": "string",
@@ -19,7 +20,6 @@
     }
   },
   "Race": "Prot",
-  "EditorCategories": "Race:Protoss,UpgradeType:Talents",
   "ScoreResult": "BuildOrder",
   "AffectedUnitArray": [
     "Stalker"

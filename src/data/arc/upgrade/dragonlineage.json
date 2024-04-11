@@ -12,6 +12,7 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "DragonLineage",
+  "EditorCategories": "Race:Dragon,UpgradeType:Talents",
   "$tokens": {
     "ID": {
       "type": "string",
@@ -189,6 +190,5 @@
       "Value": "2"
     }
   ],
-  "EditorCategories": "Race:Dragon,UpgradeType:Talents",
   "ScoreAmount": 1020
 }

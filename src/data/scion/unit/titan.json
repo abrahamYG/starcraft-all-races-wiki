@@ -87,11 +87,9 @@
     "Colossus",
     "Flying6"
   ],
-  "LifeRegenRate": 0.1718,
-  "ShieldRegenDelay": 4,
-  "ShieldRegenRate": 1.25,
+  "LifeRegenRate": 0.2734,
   "Acceleration": 1000,
-  "Sight": 9,
+  "Sight": 10,
   "CostCategory": "Army",
   "AttackTargetPriority": 20,
   "CardLayouts": {
@@ -108,12 +106,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -205,12 +197,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -284,12 +270,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -383,12 +363,6 @@
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
               "DisplayType": "Move",
               "Color": "255,35,125,255",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
@@ -476,12 +450,6 @@
               "DisplayType": "Attack",
               "Color": "255,255,0,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
@@ -599,12 +567,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -716,7 +678,7 @@
         "AbilCmd": "FuseUnfuse,Execute",
         "id": "Unfuse",
         "Icon": "btn-ability-zerg-dehaka-levelup",
-        "Tooltip": "Releases the Fuse inhabiting this unit, losing the associated bonus.",
+        "Tooltip": "Releases the Fuses inhabiting this unit, losing the associated bonus.",
         "Name": "Unfuse",
         "Hotkey": "U"
       }
@@ -741,10 +703,10 @@
     "Mechanical",
     "Massive"
   ],
-  "LifeArmor": 3,
+  "LifeArmor": 2,
   "ShieldsStart": 250,
   "ShieldsMax": 250,
-  "Speed": 2.5,
+  "Speed": 2.25,
   "EffectArray": {
     "Create": "PantheonTitanDelay"
   },
@@ -766,21 +728,25 @@
       "id": "TitanWeapon",
       "Icon": "btn-upgrade-keiron-mechanicalweaponslevel0",
       "Name": "Inhibitor Beam",
-      "Amount": 10,
+      "Amount": 14,
+      "Kind": "Ranged",
       "TargetFilters": "Ground",
-      "Range": 4,
-      "Period": 0.5
+      "Range": 5,
+      "Period": 0.602
     },
     {
       "Turret": "TitanMovement",
       "id": "TitanWeaponDummy",
       "Name": "Titan - Weapon Dummy",
       "TargetFilters": "Ground",
-      "Range": 4,
+      "Range": 5,
       "Period": 0.6
     }
   ],
   "Behaviors": [
+    {
+      "id": "KeironShellRestoration"
+    },
     {
       "id": "KeironConstructionFreeze"
     }
@@ -815,6 +781,7 @@
     "KeironCitadelMaterialize",
     "Titan",
     "Pantheon",
+    "CitadelCharged",
     "KeironMechWeaponsLevel1",
     "KeironMechWeapons",
     "KeironMechWeaponsLevel2",
@@ -825,12 +792,14 @@
     "KeironMechArmorLevel2",
     "KeironMechArmorLevel3",
     "KeironShieldsLevel1",
-    "CitadelCharged",
     "KeironShields",
     "KeironShieldsLevel2",
     "KeironShieldsLevel3",
     "Citadel",
-    "IsTitan"
+    "IsTitan",
+    "KeironMechArmorRevert",
+    "KeironMechWeaponsRevert",
+    "KeironShieldsRevert"
   ],
   "$Requirements": [],
   "$Production": [],
@@ -888,7 +857,7 @@
       "AbilCmd": "FuseUnfuse,Execute",
       "id": "Unfuse",
       "Icon": "btn-ability-zerg-dehaka-levelup",
-      "Tooltip": "Releases the Fuse inhabiting this unit, losing the associated bonus.",
+      "Tooltip": "Releases the Fuses inhabiting this unit, losing the associated bonus.",
       "Name": "Unfuse"
     }
   ]

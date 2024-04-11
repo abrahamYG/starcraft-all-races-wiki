@@ -86,11 +86,9 @@
   "Collide": [
     "Flying"
   ],
-  "LifeRegenRate": 0.1718,
-  "ShieldRegenDelay": 4,
-  "ShieldRegenRate": 1.25,
+  "LifeRegenRate": 0.2734,
   "Acceleration": 3,
-  "Sight": 9,
+  "Sight": 10,
   "CostCategory": "Army",
   "AttackTargetPriority": 20,
   "CardLayouts": {
@@ -107,12 +105,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -204,12 +196,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -283,12 +269,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -382,12 +362,6 @@
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
               "DisplayType": "Move",
               "Color": "255,35,125,255",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
@@ -475,12 +449,6 @@
               "DisplayType": "Attack",
               "Color": "255,255,0,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
@@ -578,12 +546,6 @@
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
@@ -692,7 +654,7 @@
         "AbilCmd": "HarbingerJudgementModeStart,Execute",
         "id": "HarbingerJudgementMode",
         "Icon": "btn-unit-keiron-harbinger-judgementmode",
-        "Tooltip": "While in Judgement Mode, Harbingers deal area damage vs air. They are also <b>100</b>% slower and are unable to attack ground.",
+        "Tooltip": "While in Judgement Mode, Harbinger air attacks deal <b>10</b> damage per second to enemy air units in an area for <b>2</b> seconds. They are also <b>99</b>% slower and are unable to attack ground.",
         "Name": "Judgement Mode",
         "Hotkey": "E"
       },
@@ -708,12 +670,6 @@
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
@@ -839,12 +795,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -956,7 +906,7 @@
         "AbilCmd": "FuseUnfuse,Execute",
         "id": "Unfuse",
         "Icon": "btn-ability-zerg-dehaka-levelup",
-        "Tooltip": "Releases the Fuse inhabiting this unit, losing the associated bonus.",
+        "Tooltip": "Releases the Fuses inhabiting this unit, losing the associated bonus.",
         "Name": "Unfuse",
         "Hotkey": "U"
       }
@@ -987,7 +937,7 @@
   "Speed": 3.375,
   "Food": -4,
   "CostResource": {
-    "Minerals": 250,
+    "Minerals": 275,
     "Vespene": 175
   },
   "EffectArray": {
@@ -1007,22 +957,26 @@
       "Amount": 18,
       "Kind": "Ranged",
       "TargetFilters": "Air",
-      "Range": 5,
-      "Period": 0.875
+      "Range": 6,
+      "Period": 0.84
     },
     {
       "id": "AuguryGuns",
       "Icon": "btn-upgrade-keiron-mechanicalweaponslevel0",
       "Name": "Augury Guns",
-      "Amount": 11,
+      "Amount": 9,
       "Kind": "Ranged",
       "DisplayAttackCount": 2,
       "TargetFilters": "Ground",
       "Range": 6,
-      "Period": 1.3
+      "Period": 1.12
     }
   ],
-  "Behaviors": [],
+  "Behaviors": [
+    {
+      "id": "KeironShellRestoration"
+    }
+  ],
   "Abilities": [
     {
       "id": "move",
@@ -1062,6 +1016,7 @@
     "Harbinger",
     "IsHarbinger",
     "KeironCitadelMaterialize",
+    "CitadelCharged",
     "KeironMechWeaponsLevel1",
     "KeironMechWeapons",
     "KeironMechWeaponsLevel2",
@@ -1072,11 +1027,13 @@
     "KeironMechArmorLevel2",
     "KeironMechArmorLevel3",
     "KeironShieldsLevel1",
-    "CitadelCharged",
     "KeironShields",
     "KeironShieldsLevel2",
     "KeironShieldsLevel3",
-    "Citadel"
+    "Citadel",
+    "KeironMechArmorRevert",
+    "KeironMechWeaponsRevert",
+    "KeironShieldsRevert"
   ],
   "$Requirements": [],
   "$Production": [],
@@ -1134,7 +1091,7 @@
       "AbilCmd": "HarbingerJudgementModeStart,Execute",
       "id": "HarbingerJudgementMode",
       "Icon": "btn-unit-keiron-harbinger-judgementmode",
-      "Tooltip": "While in Judgement Mode, Harbingers deal area damage vs air. They are also <b>100</b>% slower and are unable to attack ground.",
+      "Tooltip": "While in Judgement Mode, Harbinger air attacks deal <b>10</b> damage per second to enemy air units in an area for <b>2</b> seconds. They are also <b>99</b>% slower and are unable to attack ground.",
       "Name": "Judgement Mode"
     },
     {
@@ -1148,7 +1105,7 @@
       "AbilCmd": "FuseUnfuse,Execute",
       "id": "Unfuse",
       "Icon": "btn-ability-zerg-dehaka-levelup",
-      "Tooltip": "Releases the Fuse inhabiting this unit, losing the associated bonus.",
+      "Tooltip": "Releases the Fuses inhabiting this unit, losing the associated bonus.",
       "Name": "Unfuse"
     }
   ]

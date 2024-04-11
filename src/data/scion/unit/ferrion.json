@@ -16,9 +16,9 @@
   "Mover": "Fly",
   "StationaryTurningRate": 990,
   "TurningRate": 990,
-  "Radius": 0.625,
-  "SeparationRadius": 0.625,
-  "MinimapRadius": 0.625,
+  "Radius": 0.75,
+  "SeparationRadius": 0.75,
+  "MinimapRadius": 1,
   "EditorCategories": "ObjectType:Unit,ObjectFamily:Melee",
   "TacticalAIFilters": "-;Player,Ally,Neutral",
   "AIEvalFactor": 1,
@@ -101,12 +101,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -198,12 +192,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -277,12 +265,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -376,12 +358,6 @@
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
               "DisplayType": "Move",
               "Color": "255,35,125,255",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
@@ -470,12 +446,6 @@
               "Color": "255,255,0,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -550,12 +520,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -647,12 +611,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -726,8 +684,8 @@
           "LoadValidatorArray": [
             "NotWidowMineTarget"
           ],
-          "id": "TransportFerrion",
-          "UnloadCargoEffect": "CargoUnloadStopOrder"
+          "UnloadCargoEffect": "CargoUnloadStopOrder",
+          "id": "TransportFerrion"
         },
         "Cost": {
           "Minerals": 0,
@@ -750,25 +708,6 @@
         "Hotkey": "E"
       },
       {
-        "Cost": {
-          "Minerals": 0,
-          "Vespene": 0,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 1,
-        "Column": 4,
-        "Type": "Passive",
-        "id": "Detector",
-        "Icon": "btn-status-detector",
-        "Tooltip": "This unit can detect cloaked, burrowed, and hallucinated units.",
-        "Name": "Detector"
-      },
-      {
         "Info": {
           "class": "CAbilTransport",
           "Name": "Abil/Name/TransportFerrion",
@@ -776,12 +715,6 @@
           "EditorCategories": "Race:Xayid,AbilityorEffectType:Units",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -860,8 +793,8 @@
           "LoadValidatorArray": [
             "NotWidowMineTarget"
           ],
-          "id": "TransportFerrion",
-          "UnloadCargoEffect": "CargoUnloadStopOrder"
+          "UnloadCargoEffect": "CargoUnloadStopOrder",
+          "id": "TransportFerrion"
         },
         "Cost": {
           "Minerals": 0,
@@ -882,6 +815,25 @@
         "Tooltip": "Unloads all units currently loaded into the Ferrion's hold.",
         "Name": "Unload All",
         "Hotkey": "D"
+      },
+      {
+        "Cost": {
+          "Minerals": 0,
+          "Vespene": 0,
+          "Terazine": 0,
+          "Custom": 0,
+          "Energy": 0,
+          "Life": 0,
+          "Shields": 0,
+          "Food": 0
+        },
+        "Row": 2,
+        "Column": 4,
+        "Type": "Passive",
+        "id": "Detector",
+        "Icon": "btn-status-detector",
+        "Tooltip": "This unit can detect cloaked, burrowed, and hallucinated units.",
+        "Name": "Detector"
       }
     ]
   },
@@ -891,9 +843,7 @@
   "Collide": [
     "Flying"
   ],
-  "LifeRegenDelay": 3,
-  "LifeRegenRate": 0.5,
-  "Sight": 10,
+  "Sight": 11,
   "CostCategory": "Army",
   "ScoreResult": "BuildOrder",
   "GlossaryCategory": "Unit/Category/XayidUnits",
@@ -918,7 +868,7 @@
     "Vespene": 75
   },
   "GlossaryPriority": 10,
-  "SubgroupPriority": 78,
+  "SubgroupPriority": 74,
   "Deceleration": 6,
   "Icon": "btn-unit-xayid-ferrion",
   "LifeArmorIcon": "btn-upgrade-zerg-pneumatizedcarapace",
@@ -954,7 +904,8 @@
     "XayidFlyerCarapaceLevel2",
     "XayidFlyerCarapaceLevel3",
     "BiomassHatcheryLarvaMutateXayidUnits",
-    "Grub"
+    "Grub",
+    "XayidFlyerCarapaceRevert"
   ],
   "$Requirements": [],
   "$Production": [],

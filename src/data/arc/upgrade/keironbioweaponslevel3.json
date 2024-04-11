@@ -12,6 +12,7 @@
   "ScoreValue": "WeaponTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "KeironBioWeapons",
+  "EditorCategories": "Race:Keiron,UpgradeType:AttackBonus",
   "$tokens": {
     "ID": {
       "type": "string",
@@ -126,12 +127,11 @@
       "Value": "Assets\\Textures\\btn-upgrade-keiron-biologicalweaponslevel3.dds"
     }
   ],
-  "EditorCategories": "Race:Keiron,UpgradeType:AttackBonus",
   "AffectedUnitArray": [
     "Pariah",
     "Volt",
     "Pulsar",
-    "Subjecter",
+    "Cataract",
     "Crux",
     "Echo",
     "EchoDM",

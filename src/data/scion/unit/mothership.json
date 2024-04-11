@@ -1,6 +1,6 @@
 {
   "Name": "Mothership",
-  "Description": "Ultimate Protoss vessel. Can use Photon Overcharge, Mass Recall, and Time Warp abilities. Cloaks nearby friendly units and structures.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>",
+  "Description": "Ultimate Protoss vessel. Can use Strategic Recall, Time Warp, and Cloaking Field abilities.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>",
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -10,14 +10,14 @@
   "Response": "Acquire",
   "ResourceState": "Unknown",
   "ResourceType": "Unknown",
-  "LifeStart": 350,
-  "LifeMax": 350,
+  "LifeStart": 250,
+  "LifeMax": 250,
   "LifeArmorName": "Protoss Armor",
   "Mover": "Fly",
   "StationaryTurningRate": 720,
   "TurningRate": 720,
-  "Radius": 1.375,
-  "SeparationRadius": 1.375,
+  "Radius": 1.25,
+  "SeparationRadius": 1.25,
   "MinimapRadius": 1.375,
   "EditorCategories": "ObjectType:Unit,ObjectFamily:Melee",
   "TacticalAIFilters": "-;Player,Ally,Neutral",
@@ -82,11 +82,8 @@
   "Facing": 45,
   "Mob": "Multiplayer",
   "LifeArmor": 2,
-  "ShieldsStart": 350,
-  "ShieldsMax": 350,
   "ShieldRegenRate": 2,
   "ShieldArmorName": "Protoss Plasma Shields",
-  "Speed": 1.875,
   "Acceleration": 1.375,
   "Deceleration": 1,
   "Height": 3.75,
@@ -94,8 +91,6 @@
   "DamageDealtXP": 1,
   "DamageTakenXP": 1,
   "KillXP": 50,
-  "ScoreMake": 800,
-  "ScoreKill": 800,
   "ScoreResult": "BuildOrder",
   "SubgroupPriority": 96,
   "PlaneArray": [
@@ -104,8 +99,26 @@
   "Collide": [
     "Flying"
   ],
-  "VisionHeight": 4,
   "Sight": 14,
+  "Attributes": [
+    "Armored",
+    "Mechanical",
+    "Psionic",
+    "Massive",
+    "Heroic"
+  ],
+  "EnergyRegenRate": 0.5625,
+  "GlossaryCategory": "Unit/Category/ProtossUnits",
+  "HotkeyCategory": "Unit/Category/ProtossUnits",
+  "GlossaryPriority": 190,
+  "CostCategory": "Army",
+  "TacticalAIThink": "AIThinkMothership",
+  "ShieldRegenDelay": 10,
+  "GlossaryWeakArray": [
+    "VikingFighter",
+    "Corruptor",
+    "Tempest"
+  ],
   "CardLayouts": {
     "Root": [
       {
@@ -120,12 +133,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -217,12 +224,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -296,12 +297,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -395,12 +390,6 @@
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
               "DisplayType": "Move",
               "Color": "255,35,125,255",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
@@ -489,12 +478,6 @@
               "Color": "255,255,0,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -558,26 +541,6 @@
         "Hotkey": "A"
       },
       {
-        "Cost": {
-          "Minerals": 0,
-          "Vespene": 0,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 1,
-        "Column": 0,
-        "Type": "Passive",
-        "id": "CloakingField",
-        "Icon": "btn-ability-protoss-cloakfield-color",
-        "Tooltip": "Cloaking Field passively cloaks friendly nearby units and structures.<br/><br/><span style=\"color: #ffff8a\">Passive ability.</span>",
-        "Name": "Cloaking Field",
-        "Hotkey": ""
-      },
-      {
         "Info": {
           "class": "CAbilEffectTarget",
           "Name": "Abil/Name/MassRecall",
@@ -589,12 +552,6 @@
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
@@ -691,14 +648,8 @@
           "Arc": 360,
           "Cost": [
             {
-              "Vital": {
-                "Energy": 100
-              },
-              "Charge": {
-                "Link": ""
-              },
               "Cooldown": {
-                "Link": ""
+                "TimeUse": 125
               }
             }
           ],
@@ -712,7 +663,7 @@
           "Vespene": 0,
           "Terazine": 0,
           "Custom": 0,
-          "Energy": 100,
+          "Energy": 0,
           "Life": 0,
           "Shields": 0,
           "Food": 0
@@ -730,155 +681,6 @@
       {
         "Info": {
           "class": "CAbilEffectTarget",
-          "Name": "Abil/Name/Vortex",
-          "TechPlayer": "Upkeep",
-          "EditorCategories": "Race:Protoss,AbilityorEffectType:Units",
-          "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
-          "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            }
-          ],
-          "SharedFlags": {
-            "DisableWhileDead": 1
-          },
-          "DataCollection": "Vortex",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
-          "RangeSlop": 1,
-          "ArcSlop": 11.25,
-          "AutoCastAcquireLevel": "Offensive",
-          "AutoCastFilters": "Visible;Self,Player,Ally",
-          "Flags": {
-            "AbortOnAllianceChange": 0,
-            "CancelResetAutoCast": 1,
-            "ChannelingMinimum": 1,
-            "RangeUseCasterRadius": 1,
-            "ReApproachable": 1,
-            "RequireTargetVision": 1,
-            "WaitToSpend": 1,
-            "UpdateChargesOnLevelChange": 1,
-            "BestUnit": 1
-          },
-          "Effect": [
-            "VortexKillSet"
-          ],
-          "EffectRange": [
-            "0,1000"
-          ],
-          "AINotifyEffect": "Vortex",
-          "RefundArray": {
-            "Approach": 1,
-            "Prep": 1,
-            "Cast": 1
-          },
-          "RefundFraction": {
-            "Resource": {
-              "Minerals": -1,
-              "Vespene": -1,
-              "Terrazine": -1,
-              "Custom": -1
-            },
-            "Charge": -1,
-            "Cooldown": -1
-          },
-          "UseMarkerArray": {
-            "Approach": 1,
-            "Prep": 1,
-            "Cast": 1,
-            "Channel": 1
-          },
-          "PauseableArray": {
-            "Approach": 1,
-            "Prep": 1,
-            "Cast": 1,
-            "Channel": 1,
-            "Finish": 1
-          },
-          "PreemptableArray": {
-            "Approach": 1,
-            "Prep": 1,
-            "Cast": 1,
-            "Channel": 1,
-            "Finish": 1
-          },
-          "ValidatedArray": {
-            "Approach": 1,
-            "Prep": 1,
-            "Cast": 1,
-            "Channel": 1
-          },
-          "DefaultError": "MustTargetUnit",
-          "AcquirePriority": 3,
-          "SetLastTarget": "Unknown",
-          "VeterancyLevelMin": 0,
-          "VeterancyLevelSkip": 0,
-          "CmdButtonArray": {
-            "Execute": {
-              "Flags": {
-                "ShowInGlossary": 1
-              },
-              "DefaultButtonFace": "Vortex",
-              "State": "Restricted"
-            }
-          },
-          "FollowRange": 5,
-          "Range": [
-            9
-          ],
-          "Arc": 360,
-          "Cost": [
-            {
-              "Vital": {
-                "Energy": 100
-              },
-              "Cooldown": {
-                "Link": "Vortex"
-              }
-            }
-          ],
-          "CursorEffect": [],
-          "TargetFilters": [
-            "Visible;Player,Ally,Massive,Structure,Missile,Stasis,Dead,Invulnerable"
-          ],
-          "id": "Vortex"
-        },
-        "Cost": {
-          "Minerals": 0,
-          "Vespene": 0,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 100,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 2,
-        "Column": 2,
-        "Type": "AbilCmd",
-        "AbilCmd": "Vortex,Execute",
-        "id": "Vortex",
-        "Icon": "btn-ability-protoss-blackhole-color",
-        "Tooltip": "Creates a gravity Vortex that stuns ground and air units in the target area. Units within the Vortex are invulnerable to all damage and effects. Lasts for <b>20</b>.",
-        "Name": "Vortex",
-        "Hotkey": "V"
-      },
-      {
-        "Info": {
-          "class": "CAbilEffectTarget",
           "Name": "Abil/Name/TemporalField",
           "TechPlayer": "Upkeep",
           "EditorCategories": "Race:Protoss,AbilityorEffectType:Units",
@@ -888,12 +690,6 @@
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
@@ -988,8 +784,8 @@
           "FollowRange": 5,
           "Cost": [
             {
-              "Vital": {
-                "Energy": 100
+              "Cooldown": {
+                "TimeUse": 84
               }
             }
           ],
@@ -1007,7 +803,7 @@
           "Vespene": 0,
           "Terazine": 0,
           "Custom": 0,
-          "Energy": 100,
+          "Energy": 0,
           "Life": 0,
           "Shields": 0,
           "Food": 0
@@ -1018,38 +814,155 @@
         "AbilCmd": "TemporalField,Execute",
         "id": "TemporalField",
         "Icon": "btn-ability-protoss-timewarp-red",
-        "Tooltip": "Warps spacetime within the target area for <b>10</b> seconds. Enemy ground units that enter the field have their movement speed reduced by <b>50</b>%.",
+        "Tooltip": "Warps spacetime within the target area for <b>10</b> seconds. Enemy ground units that enter the field have their movement speed reduced by <b>40</b>%.",
         "Name": "Time Warp",
         "Hotkey": "T"
+      },
+      {
+        "Info": {
+          "class": "CAbilEffectInstant",
+          "Name": "Abil/Name/MothershipCloak",
+          "TechPlayer": "Upkeep",
+          "EditorCategories": "Race:Terran,AbilityorEffectType:Units",
+          "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
+          "OrderArray": [
+            {
+              "DisplayType": "Confirm",
+              "Color": "255,0,255,0",
+              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
+              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
+            }
+          ],
+          "SharedFlags": {
+            "DisableWhileDead": 1
+          },
+          "DataCollection": "MothershipCloak",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
+          "RangeSlop": 1,
+          "ArcSlop": 11.25,
+          "AutoCastAcquireLevel": "Offensive",
+          "AutoCastFilters": "Visible;Player,Ally",
+          "Flags": {
+            "AbortOnAllianceChange": 1,
+            "CancelResetAutoCast": 1,
+            "ChannelingMinimum": 1,
+            "RangeUseCasterRadius": 1,
+            "ReApproachable": 1,
+            "RequireTargetVision": 1,
+            "WaitToSpend": 1,
+            "UpdateChargesOnLevelChange": 1,
+            "Transient": 1
+          },
+          "Effect": [
+            "CloakingFieldApplyCasterBehavior"
+          ],
+          "EffectRange": [
+            "0,1000"
+          ],
+          "AINotifyEffect": "MothershipCloak",
+          "RefundArray": {
+            "Approach": 1,
+            "Prep": 1,
+            "Cast": 1
+          },
+          "RefundFraction": {
+            "Resource": {
+              "Minerals": -1,
+              "Vespene": -1,
+              "Terrazine": -1,
+              "Custom": -1
+            },
+            "Charge": -1,
+            "Cooldown": -1
+          },
+          "UseMarkerArray": {
+            "Approach": 1,
+            "Prep": 1,
+            "Cast": 1,
+            "Channel": 1
+          },
+          "PauseableArray": {
+            "Approach": 1,
+            "Prep": 1,
+            "Cast": 1,
+            "Channel": 1,
+            "Finish": 1
+          },
+          "PreemptableArray": {
+            "Approach": 1,
+            "Prep": 1,
+            "Cast": 1,
+            "Channel": 1,
+            "Finish": 1
+          },
+          "ValidatedArray": {
+            "Approach": 1,
+            "Prep": 1,
+            "Cast": 1,
+            "Channel": 1
+          },
+          "DefaultError": "MustTargetUnit",
+          "AcquirePriority": 3,
+          "SetLastTarget": "Unknown",
+          "VeterancyLevelMin": 0,
+          "VeterancyLevelSkip": 0,
+          "CmdButtonArray": {
+            "Execute": {
+              "Flags": {
+                "ShowInGlossary": 1
+              },
+              "DefaultButtonFace": "OracleCloakField"
+            }
+          },
+          "AbilSetId": "Clok",
+          "Cost": [
+            {
+              "Cooldown": {
+                "TimeUse": 70
+              }
+            }
+          ],
+          "id": "MothershipCloak"
+        },
+        "Cost": {
+          "Minerals": 0,
+          "Vespene": 0,
+          "Terazine": 0,
+          "Custom": 0,
+          "Energy": 0,
+          "Life": 0,
+          "Shields": 0,
+          "Food": 0
+        },
+        "Row": 2,
+        "Column": 2,
+        "Type": "AbilCmd",
+        "AbilCmd": "MothershipCloak,Execute",
+        "id": "CloakingField",
+        "Icon": "btn-ability-protoss-cloakfield-color",
+        "Tooltip": "Creates a cloaking field around the Mothership for <b>28</b> seconds, preventing enemy units from seeing and attacking nearby units and structures. A cloaked unit will only be revealed by detectors or effects.",
+        "Name": "Cloaking Field",
+        "Hotkey": "C"
       }
     ]
   },
-  "Attributes": [
-    "Armored",
-    "Mechanical",
-    "Psionic",
-    "Massive",
-    "Heroic"
-  ],
-  "EnergyStart": 50,
-  "EnergyMax": 200,
-  "EnergyRegenRate": 0.5625,
-  "GlossaryCategory": "Unit/Category/ProtossUnits",
-  "HotkeyCategory": "Unit/Category/ProtossUnits",
-  "GlossaryPriority": 190,
-  "CostCategory": "Army",
+  "Speed": 2.0156,
+  "VisionHeight": 15,
+  "LateralAcceleration": 2.0625,
+  "ShieldsStart": 250,
+  "ShieldsMax": 250,
   "CostResource": {
-    "Minerals": 400,
-    "Vespene": 400
+    "Minerals": 300,
+    "Vespene": 300
   },
-  "TacticalAIThink": "AIThinkMothership",
-  "Food": -8,
-  "ShieldRegenDelay": 10,
-  "GlossaryWeakArray": [
-    "VikingFighter",
-    "Corruptor",
-    "Tempest"
-  ],
+  "ScoreMake": 600,
+  "ScoreKill": 600,
+  "Food": -6,
   "id": "Mothership",
   "Icon": "btn-unit-protoss-mothership",
   "LifeArmorIcon": "btn-upgrade-protoss-airarmorlevel0",
@@ -1068,12 +981,7 @@
       "Period": 2.21
     }
   ],
-  "Behaviors": [
-    {
-      "id": "CloakField",
-      "Icon": "btn-ability-protoss-cloakfield"
-    }
-  ],
+  "Behaviors": [],
   "Abilities": [
     {
       "id": "move",
@@ -1088,27 +996,23 @@
       "Name": "Stop"
     },
     {
-      "id": "Vortex",
-      "Name": "Vortex"
-    },
-    {
-      "id": "MassRecall",
-      "Name": "Mass Recall"
-    },
-    {
       "id": "TemporalField",
       "Name": "Time Warp"
     },
     {
       "id": "MassRecall",
       "Name": "Mass Recall"
+    },
+    {
+      "id": "MothershipCloak"
     }
   ],
   "$Upgrades": [
-    "NotMothership",
-    "Mothership",
     "ProtossAirWeaponsLevel1",
+    "Mothership",
+    "NotMothership",
     "ProtossAirWeapons",
+    "FleetBeacon",
     "ProtossAirWeaponsLevel2",
     "ProtossAirWeaponsLevel3",
     "ProtossAirArmorsLevel1",
@@ -1120,15 +1024,12 @@
     "ProtossShields",
     "ProtossShieldsLevel2",
     "ProtossShieldsLevel3",
-    "FleetBeacon",
     "CountUnitMothershipQueuedOrBetter",
-    "MorphToMothership",
     "NexusTrainMothership",
     "Nexus",
     "IsMothership",
     "UnitMothershipInProgressOrBetter",
-    "UnitMothershipCompleteOnly",
-    "Mothership"
+    "UnitMothershipCompleteOnly"
   ],
   "$Requirements": [],
   "$Production": [],
@@ -1182,18 +1083,18 @@
       "Name": "Mass Recall"
     },
     {
-      "AbilCmd": "Vortex,Execute",
-      "id": "Vortex",
-      "Icon": "btn-ability-protoss-blackhole-color",
-      "Tooltip": "Creates a gravity Vortex that stuns ground and air units in the target area. Units within the Vortex are invulnerable to all damage and effects. Lasts for <b>20</b>.",
-      "Name": "Vortex"
-    },
-    {
       "AbilCmd": "TemporalField,Execute",
       "id": "TemporalField",
       "Icon": "btn-ability-protoss-timewarp-red",
-      "Tooltip": "Warps spacetime within the target area for <b>10</b> seconds. Enemy ground units that enter the field have their movement speed reduced by <b>50</b>%.",
+      "Tooltip": "Warps spacetime within the target area for <b>10</b> seconds. Enemy ground units that enter the field have their movement speed reduced by <b>40</b>%.",
       "Name": "Time Warp"
+    },
+    {
+      "AbilCmd": "MothershipCloak,Execute",
+      "id": "CloakingField",
+      "Icon": "btn-ability-protoss-cloakfield-color",
+      "Tooltip": "Creates a cloaking field around the Mothership for <b>28</b> seconds, preventing enemy units from seeing and attacking nearby units and structures. A cloaked unit will only be revealed by detectors or effects.",
+      "Name": "Cloaking Field"
     }
   ]
 }

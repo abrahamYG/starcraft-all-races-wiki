@@ -104,12 +104,6 @@
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
               "DisplayType": "Move",
               "Color": "255,35,125,255",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
@@ -198,12 +192,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -277,12 +265,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -376,12 +358,6 @@
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
               "DisplayType": "Move",
               "Color": "255,35,125,255",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
@@ -469,12 +445,6 @@
               "DisplayType": "Attack",
               "Color": "255,255,0,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
@@ -567,7 +537,7 @@
         "AbilCmd": "Hunker,Execute",
         "id": "HunkeredForm",
         "Icon": "btn-ability-xayid-massaliskhunker",
-        "Tooltip": "Turns the <span style=\"color: #FFFF80\">Massalisk</span> to  it's hunkered form. While hunkered, the <span style=\"color: #FFFF80\">Massalisk</span> is immobile, has increased armor, and a long range anti-air splash weapon</span>.",
+        "Tooltip": "Hunkers the <span style=\"color: #FFFF80\">Massalisk</span>. While hunkered, the <span style=\"color: #FFFF80\">Massalisk</span> is immobile, takes decreased damage, and has a long range anti-air splash weapon</span>.",
         "Name": "Hunkered Form",
         "Hotkey": "E"
       }
@@ -580,9 +550,7 @@
     "Ground",
     "Flying6"
   ],
-  "LifeRegenDelay": 3,
-  "LifeRegenRate": 0.5,
-  "Sight": 10,
+  "Sight": 11,
   "CostCategory": "Army",
   "ScoreResult": "BuildOrder",
   "GlossaryCategory": "Unit/Category/XayidUnits",
@@ -661,6 +629,8 @@
     "XayidGroundAttacks",
     "XayidGroundAttacksLevel2",
     "XayidGroundAttacksLevel3",
+    "XayidGroundAttacksRevert",
+    "XayidGroundCarapaceRevert",
     "ThreatensMassalisk",
     "IsMobileMassalisk"
   ],
@@ -714,7 +684,7 @@
       "AbilCmd": "Hunker,Execute",
       "id": "HunkeredForm",
       "Icon": "btn-ability-xayid-massaliskhunker",
-      "Tooltip": "Turns the <span style=\"color: #FFFF80\">Massalisk</span> to  it's hunkered form. While hunkered, the <span style=\"color: #FFFF80\">Massalisk</span> is immobile, has increased armor, and a long range anti-air splash weapon</span>.",
+      "Tooltip": "Hunkers the <span style=\"color: #FFFF80\">Massalisk</span>. While hunkered, the <span style=\"color: #FFFF80\">Massalisk</span> is immobile, takes decreased damage, and has a long range anti-air splash weapon</span>.",
       "Name": "Hunkered Form"
     }
   ]

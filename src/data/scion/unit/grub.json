@@ -100,12 +100,12 @@
           "Unit": [
             "Reviler"
           ],
-          "Time": 38
+          "Time": 30
         },
         "Unit": [
           "Reviler"
         ],
-        "Time": 38,
+        "Time": 30,
         "Cost": {
           "Minerals": 150,
           "Vespene": 75,
@@ -174,12 +174,12 @@
           "Unit": [
             "Prowler"
           ],
-          "Time": 38
+          "Time": 30
         },
         "Unit": [
           "Prowler"
         ],
-        "Time": 38,
+        "Time": 30,
         "Cost": {
           "Minerals": 100,
           "Vespene": 75,
@@ -188,7 +188,7 @@
           "Energy": 0,
           "Life": 0,
           "Shields": 0,
-          "Food": -3
+          "Food": -2
         },
         "Row": 1,
         "Column": 0,
@@ -288,12 +288,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -350,8 +344,6 @@
   "Collide": [
     "Larva"
   ],
-  "LifeRegenDelay": 3,
-  "LifeRegenRate": 0.5,
   "Sight": 5,
   "CostCategory": "Army",
   "ScoreResult": "BuildOrder",
@@ -398,7 +390,7 @@
     }
   ],
   "$Upgrades": [
-    "BiomassHatcherySpawnLarva",
+    "BiomassHatcherySpawnGrub",
     "Grub",
     "BiomassHatchery",
     "Grub"

@@ -12,6 +12,7 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "CSVSupplyLineManagement",
+  "EditorCategories": "UpgradeType:SpellResearch,Race:UPL",
   "$tokens": {
     "ID": {
       "type": "string",
@@ -19,7 +20,6 @@
     }
   },
   "InfoTooltipPriority": 1,
-  "EditorCategories": "UpgradeType:SpellResearch,Race:UPL",
   "Race": "UPL",
   "ScoreAmount": 250,
   "ScoreResult": "BuildOrder",

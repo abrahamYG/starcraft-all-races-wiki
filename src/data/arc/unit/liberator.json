@@ -100,7 +100,7 @@
   "Acceleration": 3.5,
   "Sight": 10,
   "Height": 3.75,
-  "VisionHeight": 4,
+  "VisionHeight": 15,
   "Food": -3,
   "CostCategory": "Army",
   "CostResource": {
@@ -126,12 +126,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -223,12 +217,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -302,12 +290,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -399,12 +381,6 @@
               "Color": "255,255,0,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -479,12 +455,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -575,12 +545,6 @@
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
@@ -674,7 +638,6 @@
           "Range": [
             5
           ],
-          "Arc": 0,
           "id": "LiberatorAGTarget"
         },
         "Cost": {
@@ -782,29 +745,16 @@
     "Liberator",
     "LiberatorMorphtoAA",
     "LiberatorAGRangeUpgrade",
-    "StarportTrain",
-    "LiberatorMorph",
-    "Starport",
     "Liberator",
-    "TerranShipArmorsLevel1",
-    "TerranShipArmorsLevel2",
-    "TerranShipArmorsLevel3",
     "TerranVehicleAndShipArmorsLevel1",
     "TerranVehicleAndShipArmors",
     "TerranVehicleAndShipArmorsLevel2",
     "TerranVehicleAndShipArmorsLevel3",
-    "SynoidVehicleAndShipArmors1",
-    "SynoidVehicleAndShipArmors",
-    "SynoidVehicleAndShipArmors2",
-    "SynoidVehicleAndShipArmors3",
-    "SuperHangar",
-    "HangarTrain",
-    "Hangar",
+    "StarportTrain",
+    "Starport",
     "LiberatorMorphModel",
     "LiberatorAGMorphModel",
-    "LiberatorAASound",
-    "Liberator",
-    null
+    "LiberatorAASound"
   ],
   "$Requirements": [],
   "$Production": [],

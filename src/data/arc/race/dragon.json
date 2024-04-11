@@ -16,6 +16,7 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "FlamespitterFervidReconstitution",
+        "EditorCategories": "Race:Dragon,UpgradeType:Talents",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -46,7 +47,6 @@
             "Value": "1"
           }
         ],
-        "EditorCategories": "Race:Dragon,UpgradeType:Talents",
         "AffectedUnitArray": [
           "Flamespitter"
         ],
@@ -66,6 +66,7 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "HunterFeast",
+        "EditorCategories": "UpgradeType:Talents,Race:Dragon",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -90,7 +91,6 @@
             "Value": "30"
           }
         ],
-        "EditorCategories": "UpgradeType:Talents,Race:Dragon",
         "AffectedUnitArray": [
           "DragonHunter"
         ],
@@ -111,6 +111,7 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "HornedMagusArcaneEssence",
+        "EditorCategories": "UpgradeType:Talents,Race:Dragon",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -127,7 +128,6 @@
             "Value": "25"
           }
         ],
-        "EditorCategories": "UpgradeType:Talents,Race:Dragon",
         "AffectedUnitArray": [
           "HornedMagus"
         ],
@@ -148,6 +148,7 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "HornedMagusShroud",
+        "EditorCategories": "UpgradeType:Talents,Race:Dragon",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -155,7 +156,6 @@
           }
         },
         "Race": "Dragon",
-        "EditorCategories": "UpgradeType:Talents,Race:Dragon",
         "Icon": "btn-ability-protoss-energize",
         "AffectedUnitArray": [
           "HornedMagus"
@@ -175,13 +175,13 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "UnseenBeast",
+        "EditorCategories": "UpgradeType:Talents,Race:Dragon",
         "$tokens": {
           "ID": {
             "type": "string",
             "value": ""
           }
         },
-        "EditorCategories": "UpgradeType:Talents,Race:Dragon",
         "Icon": "wireframe-critter-matriarchsnowbeast",
         "ScoreAmount": 680,
         "Race": "Dragon",
@@ -199,6 +199,7 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "BerserkerMadness",
+        "EditorCategories": "UpgradeType:Talents,Race:Dragon",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -208,7 +209,6 @@
         "Race": "Dragon",
         "Icon": "btn-ability-zerg-dehaka-intimidatingroar",
         "ScoreAmount": 170,
-        "EditorCategories": "UpgradeType:Talents,Race:Dragon",
         "AffectedUnitArray": [
           "Berserker"
         ],
@@ -226,6 +226,7 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "SkyrazerEmberCore",
+        "EditorCategories": "Race:Dragon,UpgradeType:Talents",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -307,7 +308,6 @@
             "Value": "3"
           }
         ],
-        "EditorCategories": "Race:Dragon,UpgradeType:Talents",
         "AffectedUnitArray": [
           "Skyrazer"
         ],
@@ -328,6 +328,7 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "HandofPowerMightyFist",
+        "EditorCategories": "UpgradeType:Talents,Race:Dragon",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -340,7 +341,6 @@
             "Value": "25"
           }
         ],
-        "EditorCategories": "UpgradeType:Talents,Race:Dragon",
         "Icon": "ui_tipicon_campaign_hyb02-nullzone",
         "AffectedUnitArray": [
           "HandofPower"
@@ -361,6 +361,7 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "HandofPowerFrenzy",
+        "EditorCategories": "UpgradeType:Talents,Race:Dragon",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -368,7 +369,6 @@
           }
         },
         "Race": "Dragon",
-        "EditorCategories": "UpgradeType:Talents,Race:Dragon",
         "Icon": "btn-ability-zerg-genemutation-attackspeed",
         "AffectedUnitArray": [
           "HandofPower"
@@ -388,6 +388,7 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "BrimstoneDemolisherInfernalBreath",
+        "EditorCategories": "Race:Dragon,UpgradeType:Talents",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -396,7 +397,6 @@
         },
         "InfoTooltipPriority": 1,
         "id": "BrimstoneDemolisherInfernalBreath",
-        "EditorCategories": "Race:Dragon,UpgradeType:Talents",
         "Race": "Dragon",
         "EffectArray": [
           {
@@ -438,6 +438,7 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "BrimstoneDemolisher",
+        "EditorCategories": "UpgradeType:Talents,Race:Dragon",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -445,7 +446,6 @@
           }
         },
         "Race": "Dragon",
-        "EditorCategories": "UpgradeType:Talents,Race:Dragon",
         "Icon": "btn-unit-zerg-brakk",
         "ScoreAmount": 340,
         "id": "BrimstoneDemolisher"
@@ -462,6 +462,7 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "FleshrenderProliferation",
+        "EditorCategories": "UpgradeType:Talents,Race:Dragon",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -477,7 +478,6 @@
             "Value": "20.000000"
           }
         ],
-        "EditorCategories": "UpgradeType:Talents,Race:Dragon",
         "AffectedUnitArray": [
           "Fleshrender"
         ],
@@ -496,6 +496,7 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "AuroraConduitCelerity",
+        "EditorCategories": "UpgradeType:Talents,Race:Dragon",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -516,7 +517,6 @@
             "Value": "2.100000"
           }
         ],
-        "EditorCategories": "UpgradeType:Talents,Race:Dragon",
         "AffectedUnitArray": [
           "AuroraConduit"
         ],
@@ -535,6 +535,7 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "VolcanicHarbingerPlasmaCatalyst",
+        "EditorCategories": "Race:Dragon,UpgradeType:Talents",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -548,7 +549,6 @@
             "Value": "2.000000"
           }
         ],
-        "EditorCategories": "Race:Dragon,UpgradeType:Talents",
         "AffectedUnitArray": [
           "VolcanicHarbinger"
         ],
@@ -569,19 +569,29 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "GrimGliderWraithNight",
+        "EditorCategories": "Race:Dragon,UpgradeType:Talents",
         "$tokens": {
           "ID": {
             "type": "string",
             "value": ""
           }
         },
-        "EditorCategories": "Race:Dragon,UpgradeType:Talents",
         "Icon": "btn-upgrade-zerg-enduringcorruption",
         "AffectedUnitArray": [
           "GrimGlider"
         ],
         "ScoreAmount": 510,
         "Race": "Dragon",
+        "EffectArray": [
+          {
+            "Reference": "Unit,GrimGlider,Speed",
+            "Value": "1.000000"
+          },
+          {
+            "Reference": "Unit,AscendedGrimGlider,Speed",
+            "Value": "1.000000"
+          }
+        ],
         "id": "GrimGliderWraithNight"
       },
       "GrimGlider": {
@@ -596,6 +606,7 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "GrimGlider",
+        "EditorCategories": "UpgradeType:Talents,Race:Dragon",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -603,7 +614,6 @@
           }
         },
         "Race": "Dragon",
-        "EditorCategories": "UpgradeType:Talents,Race:Dragon",
         "Icon": "btn-critter-sporeray",
         "ScoreAmount": 340,
         "id": "GrimGlider"
@@ -620,6 +630,7 @@
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "DragonMeleeAttacksLevel1",
+        "EditorCategories": "Race:Dragon,UpgradeType:AttackBonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -627,7 +638,6 @@
           }
         },
         "Race": "Dragon",
-        "EditorCategories": "Race:Dragon,UpgradeType:AttackBonus",
         "ScoreResult": "BuildOrder",
         "AffectedUnitArray": [
           "BrimstoneDemolisher",
@@ -884,6 +894,7 @@
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "DragonMeleeAttacksLevel2",
+        "EditorCategories": "Race:Dragon,UpgradeType:AttackBonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -891,7 +902,6 @@
           }
         },
         "Race": "Dragon",
-        "EditorCategories": "Race:Dragon,UpgradeType:AttackBonus",
         "ScoreResult": "BuildOrder",
         "AffectedUnitArray": [
           "BrimstoneDemolisher",
@@ -1084,7 +1094,7 @@
           },
           {
             "Operation": "Set",
-            "Reference": "Weapon,DragonHunterClaws,",
+            "Reference": "Weapon,DragonHunterClaws,-",
             "Value": "Assets\\Textures\\btn-upgrade-zerg-meleeattacks-level2.dds"
           },
           {
@@ -1145,6 +1155,7 @@
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "DragonMeleeAttacksLevel3",
+        "EditorCategories": "Race:Dragon,UpgradeType:AttackBonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -1152,7 +1163,6 @@
           }
         },
         "Race": "Dragon",
-        "EditorCategories": "Race:Dragon,UpgradeType:AttackBonus",
         "ScoreResult": "BuildOrder",
         "AffectedUnitArray": [
           "BrimstoneDemolisher",
@@ -1406,6 +1416,7 @@
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "DragonFireAttacksLevel1",
+        "EditorCategories": "Race:Dragon,UpgradeType:AttackBonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -1702,7 +1713,6 @@
             "Value": "Assets\\Textures\\fireball_6.dds"
           }
         ],
-        "EditorCategories": "Race:Dragon,UpgradeType:AttackBonus",
         "AffectedUnitArray": [
           "AuroraConduit",
           "BrimstoneDemolisher",
@@ -1733,6 +1743,7 @@
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "DragonFireAttacksLevel2",
+        "EditorCategories": "Race:Dragon,UpgradeType:AttackBonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -2029,7 +2040,6 @@
             "Value": "Assets\\Textures\\fireball_3.dds"
           }
         ],
-        "EditorCategories": "Race:Dragon,UpgradeType:AttackBonus",
         "AffectedUnitArray": [
           "AuroraConduit",
           "BrimstoneDemolisher",
@@ -2057,6 +2067,7 @@
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "DragonFireAttacksLevel3",
+        "EditorCategories": "Race:Dragon,UpgradeType:AttackBonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -2353,7 +2364,6 @@
             "Value": "Assets\\Textures\\fireball_1hot.dds"
           }
         ],
-        "EditorCategories": "Race:Dragon,UpgradeType:AttackBonus",
         "AffectedUnitArray": [
           "AuroraConduit",
           "BrimstoneDemolisher",
@@ -2381,6 +2391,7 @@
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "DragonScaleArmorLevel1",
+        "EditorCategories": "Race:Dragon,UpgradeType:ArmorBonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -2388,7 +2399,6 @@
           }
         },
         "Race": "Dragon",
-        "EditorCategories": "Race:Dragon,UpgradeType:ArmorBonus",
         "ScoreResult": "BuildOrder",
         "AffectedUnitArray": [
           "Flamespitter",
@@ -2630,6 +2640,7 @@
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "DragonScaleArmorLevel2",
+        "EditorCategories": "Race:Dragon,UpgradeType:ArmorBonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -2637,7 +2648,6 @@
           }
         },
         "Race": "Dragon",
-        "EditorCategories": "Race:Dragon,UpgradeType:ArmorBonus",
         "ScoreResult": "BuildOrder",
         "AffectedUnitArray": [
           "Flamespitter",
@@ -2876,6 +2886,7 @@
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "DragonScaleArmorLevel3",
+        "EditorCategories": "Race:Dragon,UpgradeType:ArmorBonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -2883,7 +2894,6 @@
           }
         },
         "Race": "Dragon",
-        "EditorCategories": "Race:Dragon,UpgradeType:ArmorBonus",
         "ScoreResult": "BuildOrder",
         "AffectedUnitArray": [
           "Flamespitter",
@@ -3122,6 +3132,7 @@
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "DragonPlateArmorLevel1",
+        "EditorCategories": "Race:Dragon,UpgradeType:ArmorBonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -3129,7 +3140,6 @@
           }
         },
         "Race": "Dragon",
-        "EditorCategories": "Race:Dragon,UpgradeType:ArmorBonus",
         "ScoreResult": "BuildOrder",
         "AffectedUnitArray": [
           "Arkwyrm",
@@ -3586,6 +3596,7 @@
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "DragonPlateArmorLevel2",
+        "EditorCategories": "Race:Dragon,UpgradeType:ArmorBonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -3593,7 +3604,6 @@
           }
         },
         "Race": "Dragon",
-        "EditorCategories": "Race:Dragon,UpgradeType:ArmorBonus",
         "ScoreResult": "BuildOrder",
         "AffectedUnitArray": [
           "Arkwyrm",
@@ -4047,6 +4057,7 @@
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "DragonPlateArmorLevel3",
+        "EditorCategories": "Race:Dragon,UpgradeType:ArmorBonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -4054,7 +4065,6 @@
           }
         },
         "Race": "Dragon",
-        "EditorCategories": "Race:Dragon,UpgradeType:ArmorBonus",
         "ScoreResult": "BuildOrder",
         "AffectedUnitArray": [
           "Arkwyrm",
@@ -4508,6 +4518,7 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "RazorbackAbundance",
+        "EditorCategories": "UpgradeType:Talents,Race:Dragon",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -4529,7 +4540,6 @@
             "Value": "0.5"
           }
         ],
-        "EditorCategories": "UpgradeType:Talents,Race:Dragon",
         "AffectedUnitArray": [
           "RazorbackNoFootprint"
         ],
@@ -4549,6 +4559,7 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "DragonLineage",
+        "EditorCategories": "Race:Dragon,UpgradeType:Talents",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -4726,7 +4737,6 @@
             "Value": "2"
           }
         ],
-        "EditorCategories": "Race:Dragon,UpgradeType:Talents",
         "Icon": "btn-unit-zerg-finalboss",
         "ScoreAmount": 1020,
         "id": "DragonLineage"
@@ -4754,6 +4764,7 @@
         "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-zerg-groundcarapace-level0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+        "LifeArmorName": "Dragon Plate Armor",
         "priority": 10
       },
       "Plodder": {
@@ -4838,6 +4849,7 @@
         "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-zerg-groundcarapace-level0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+        "LifeArmorName": "Dragon Plate Armor",
         "priority": 21
       },
       "Flamespitter": {
@@ -4845,7 +4857,7 @@
         "Icon": "btn-unit-zerg-primalzergling",
         "Description": "Fragile ranged unit. Projectiles may retarget.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span><br/><br/><span style=\"color: #00FF00\">Ascended:<br/>+30 Life<br/>+1 Damage<br/>Can Attack air units</span>",
         "Name": "Flamespitter",
-        "LifeMax": 75,
+        "LifeMax": 90,
         "Food": -2,
         "CostResource": {
           "Minerals": 100
@@ -4866,7 +4878,7 @@
         "Icon": "btn-unit-zerg-primalzergling",
         "Description": "Fragile ranged unit. Projectiles may retarget.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span><br/><br/><span style=\"color: #00FF00\">Ascended:<br/>+30 Life<br/>+1 Damage<br/>Can Attack air units</span>",
         "Name": "Ascended Flamespitter",
-        "LifeMax": 105,
+        "LifeMax": 120,
         "Food": -2,
         "CostResource": {
           "Minerals": 100,
@@ -4889,7 +4901,7 @@
         "id": "DragonHunter",
         "Icon": "btn-unit-zerg-ravasaur",
         "Description": "Fast ranged unit. Pulls enemies with ranged attack. Can jump up and down cliffs.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span><br/><br/><span style=\"color: #00FF00\">Ascended:<br/>+30 Life<br/>+1 Armor<br/>+0.7 Speed</span>",
-        "Name": "Dragonhunter",
+        "Name": "Hunter",
         "LifeMax": 75,
         "LifeArmor": 1,
         "Food": -2,
@@ -4905,6 +4917,7 @@
         "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-zerg-groundcarapace-level0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+        "LifeArmorName": "Dragon Plate Armor",
         "priority": 22
       },
       "AscendedDragonHunter": {
@@ -4930,6 +4943,7 @@
         "$Phased": "AscendedDragonHunter",
         "LifeArmorIcon": "btn-upgrade-zerg-groundcarapace-level0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+        "LifeArmorName": "Dragon Plate Armor",
         "priority": 0
       },
       "HornedMagus": {
@@ -5050,6 +5064,7 @@
         "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-zerg-groundcarapace-level0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+        "LifeArmorName": "Dragon Plate Armor",
         "priority": 40
       },
       "AugmentationPitLesser": {
@@ -5075,6 +5090,7 @@
         "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-zerg-groundcarapace-level0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+        "LifeArmorName": "Dragon Plate Armor",
         "priority": 42
       },
       "GreaterDeepOne": {
@@ -5101,14 +5117,15 @@
         "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-zerg-groundcarapace-level0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+        "LifeArmorName": "Dragon Plate Armor",
         "priority": 23
       },
       "Berserker": {
         "id": "Berserker",
         "Icon": "btn-unit-zerg-primalultralisk",
-        "Description": "Durable melee unit.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span><br/><br/><span style=\"color: #00FF00\">Ascended:<br/>+90 Life<br/>+4 Damage<br/>Massive<br/>Not Light</span><br/>",
+        "Description": "Durable melee unit.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span><br/><br/><span style=\"color: #00FF00\">Ascended:<br/>+75 Life<br/>+7 Damage<br/>Massive<br/>Not Light<br/>Berserk</span>",
         "Name": "Berserker",
-        "LifeMax": 270,
+        "LifeMax": 375,
         "LifeArmor": 2,
         "Food": -4,
         "CostResource": {
@@ -5129,9 +5146,9 @@
       "AscendedBerserker": {
         "id": "AscendedBerserker",
         "Icon": "btn-unit-zerg-primalultralisk",
-        "Description": "Durable melee unit.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span><br/><br/><span style=\"color: #00FF00\">Ascended:<br/>+90 Life<br/>+4 Damage<br/>Massive<br/>Not Light</span><br/>",
+        "Description": "Durable melee unit.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span><br/><br/><span style=\"color: #00FF00\">Ascended:<br/>+75 Life<br/>+7 Damage<br/>Massive<br/>Not Light<br/>Berserk</span>",
         "Name": "Ascended Berserker",
-        "LifeMax": 330,
+        "LifeMax": 450,
         "LifeArmor": 2,
         "Food": -4,
         "CostResource": {
@@ -5172,6 +5189,7 @@
         "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-zerg-groundcarapace-level0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+        "LifeArmorName": "Dragon Plate Armor",
         "priority": 32
       },
       "AscendedSkyrazer": {
@@ -5197,6 +5215,7 @@
         "$Phased": "AscendedSkyrazer",
         "LifeArmorIcon": "btn-upgrade-zerg-groundcarapace-level0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+        "LifeArmorName": "Dragon Plate Armor",
         "priority": 0
       },
       "HandofPower": {
@@ -5204,7 +5223,8 @@
         "Icon": "btn-unit-zerg-impaler",
         "Description": "Caster unit. Can use Crushing Gravity and Portal. Can be upgraded to use Frenzy.<br/><br/><span style=\"color: #FFE303\">Detector</span><br/><br/><span style=\"color: #00FF00\">Ascended:<br/>+75 Life<br/>+100% Energy Regeneration</span>",
         "Name": "Hand of Power",
-        "LifeMax": 90,
+        "LifeMax": 150,
+        "LifeArmor": 1,
         "Food": -3,
         "CostResource": {
           "Minerals": 50,
@@ -5221,6 +5241,7 @@
         "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-zerg-groundcarapace-level0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+        "LifeArmorName": "Dragon Plate Armor",
         "priority": 33
       },
       "AscendedHandofPower": {
@@ -5228,7 +5249,8 @@
         "Icon": "btn-unit-zerg-impaler",
         "Description": "Caster unit. Can use Crushing Gravity and Portal. Can be upgraded to use Frenzy.<br/><br/><span style=\"color: #FFE303\">Detector</span><br/><br/><span style=\"color: #00FF00\">Ascended:<br/>+75 Life<br/>+100% Energy Regeneration</span>",
         "Name": "Ascended Hand of Power",
-        "LifeMax": 165,
+        "LifeMax": 225,
+        "LifeArmor": 1,
         "Food": -3,
         "CostResource": {
           "Minerals": 50,
@@ -5248,14 +5270,15 @@
         "$Phased": "AscendedHandofPower",
         "LifeArmorIcon": "btn-upgrade-zerg-groundcarapace-level0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+        "LifeArmorName": "Dragon Plate Armor",
         "priority": 0
       },
       "BrimstoneDemolisher": {
         "id": "BrimstoneDemolisher",
         "Icon": "btn-unit-zerg-brakk",
-        "Description": "Powerful massive unit. Deals heavy melee and ranged splash damage.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span><br/><br/><span style=\"color: #00FF00\">Ascended:<br/>+90 Life<br/>+100% Energy Regeneration<br/>Adaptive Armor</span>",
+        "Description": "Powerful massive unit. Deals heavy melee and ranged splash damage.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span><br/><br/><span style=\"color: #00FF00\">Ascended:<br/>+75 Life<br/>+100% Energy Regeneration<br/>Adaptive Armor</span>",
         "Name": "Brimstone Demolisher",
-        "LifeMax": 390,
+        "LifeMax": 525,
         "LifeArmor": 2,
         "Food": -6,
         "CostResource": {
@@ -5270,14 +5293,15 @@
         "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-zerg-groundcarapace-level0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+        "LifeArmorName": "Dragon Plate Armor",
         "priority": 34
       },
       "AscendedBrimstoneDemolisher": {
         "id": "AscendedBrimstoneDemolisher",
         "Icon": "btn-unit-zerg-brakk",
-        "Description": "Powerful massive unit. Deals heavy melee and ranged splash damage.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span><br/><br/><span style=\"color: #00FF00\">Ascended:<br/>+90 Life<br/>+100% Energy Regeneration<br/>Adaptive Armor</span>",
+        "Description": "Powerful massive unit. Deals heavy melee and ranged splash damage.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span><br/><br/><span style=\"color: #00FF00\">Ascended:<br/>+75 Life<br/>+100% Energy Regeneration<br/>Adaptive Armor</span>",
         "Name": "Ascended Brimstone Demolisher",
-        "LifeMax": 450,
+        "LifeMax": 600,
         "LifeArmor": 2,
         "Food": -6,
         "CostResource": {
@@ -5295,6 +5319,7 @@
         "$Phased": "AscendedBrimstoneDemolisher",
         "LifeArmorIcon": "btn-upgrade-zerg-groundcarapace-level0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+        "LifeArmorName": "Dragon Plate Armor",
         "priority": 0
       },
       "GenesisPitGreater": {
@@ -5319,6 +5344,7 @@
         "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-zerg-groundcarapace-level0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+        "LifeArmorName": "Dragon Plate Armor",
         "priority": 40
       },
       "AugmentationPitGreater": {
@@ -5345,6 +5371,7 @@
         "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-zerg-groundcarapace-level0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+        "LifeArmorName": "Dragon Plate Armor",
         "priority": 42
       },
       "ToweringDeepOne": {
@@ -5372,6 +5399,7 @@
         "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-zerg-groundcarapace-level0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+        "LifeArmorName": "Dragon Plate Armor",
         "priority": 24
       },
       "Fleshrender": {
@@ -5440,6 +5468,7 @@
         "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-zerg-groundcarapace-level0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+        "LifeArmorName": "Dragon Plate Armor",
         "priority": 42
       },
       "AscendedAuroraConduit": {
@@ -5464,6 +5493,7 @@
         "$Phased": "AscendedAuroraConduit",
         "LifeArmorIcon": "btn-upgrade-zerg-groundcarapace-level0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+        "LifeArmorName": "Dragon Plate Armor",
         "priority": 0
       },
       "Arkwyrm": {
@@ -5485,6 +5515,7 @@
         "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-zerg-groundcarapace-level0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+        "LifeArmorName": "Dragon Plate Armor",
         "priority": 43
       },
       "AscendedArkwyrm": {
@@ -5509,6 +5540,7 @@
         "$Phased": "AscendedArkwyrm",
         "LifeArmorIcon": "btn-upgrade-zerg-groundcarapace-level0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+        "LifeArmorName": "Dragon Plate Armor",
         "priority": 0
       },
       "VolcanicHarbinger": {
@@ -5565,7 +5597,7 @@
       "VolcanicHarbingerOverload": {
         "id": "VolcanicHarbingerOverload",
         "Icon": "btn-ability-kerrigan-crushinggrip",
-        "Description": "Overloads the next attack to deal increased damage to the target and all units behind it.<br/><c val=\"#ColorAttackInfo\">Overload 1: <b>50</b>% increased damage and small area,<br/>Overload 2:<b>150</b>% increased damage and medium area,<br/>Overload 3: <b>300</b>% increased damage and large area.</span><br/><span style=\"color: #FF0000\">Cannot charge while attacking.</span>",
+        "Description": "Overloads the next attack to deal increased damage to the target and all units behind it.<br/><c val=\"#ColorAttackInfo\">Overload 1: <b>50</b>% increased damage and small area,<br/>Overload 2:<b>150</b>% increased damage and medium area,<br/>Overload 3: <b>300</b>% increased damage and large area.</span></n><span style=\"color: #FF0000\">Cannot charge while attacking.</span>",
         "Name": "Overload",
         "LifeMax": 1,
         "CostResource": {
@@ -5574,14 +5606,15 @@
         "Production": [],
         "Research": [],
         "Morph": [],
-        "$Phase": []
+        "$Phase": [],
+        "LifeArmorName": "Dragon Plate Armor"
       },
       "GrimGlider": {
         "id": "GrimGlider",
         "Icon": "btn-critter-sporeray",
-        "Description": "Massive flying unit. Can rise units slain nearby as temporary shades.<br/><br/><span style=\"color: #FFE303\">Detector</span><br/><br/><span style=\"color: #00FF00\">Ascended:<br/>+45 Life<br/>+200% Energy Regeneration<br/>+0.5 Speed</span>",
+        "Description": "Massive flying unit. Can rise units slain nearby as temporary shades.<br/><br/><span style=\"color: #FFE303\">Detector</span><br/><br/><span style=\"color: #00FF00\">Ascended:<br/>+120 Life<br/>+200% Energy Regeneration<br/>+1.4 Speed</span>",
         "Name": "Grim Glider",
-        "LifeMax": 150,
+        "LifeMax": 240,
         "Food": -4,
         "CostResource": {
           "Minerals": 100,
@@ -5601,9 +5634,9 @@
       "AscendedGrimGlider": {
         "id": "AscendedGrimGlider",
         "Icon": "btn-critter-sporeray",
-        "Description": "Massive flying unit. Can rise units slain nearby as temporary shades.<br/><br/><span style=\"color: #FFE303\">Detector</span><br/><br/><span style=\"color: #00FF00\">Ascended:<br/>+45 Life<br/>+200% Energy Regeneration<br/>+0.5 Speed</span>",
+        "Description": "Massive flying unit. Can rise units slain nearby as temporary shades.<br/><br/><span style=\"color: #FFE303\">Detector</span><br/><br/><span style=\"color: #00FF00\">Ascended:<br/>+120 Life<br/>+200% Energy Regeneration<br/>+1.4 Speed</span>",
         "Name": "Ascended Grim Glider",
-        "LifeMax": 195,
+        "LifeMax": 360,
         "Food": -4,
         "CostResource": {
           "Minerals": 100,
@@ -5646,6 +5679,7 @@
         "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-zerg-groundcarapace-level0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+        "LifeArmorName": "Dragon Plate Armor",
         "priority": 40
       },
       "AugmentationPitTowering": {
@@ -5671,6 +5705,7 @@
         "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-zerg-groundcarapace-level0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+        "LifeArmorName": "Dragon Plate Armor",
         "priority": 42
       },
       "FrontierDeepOne": {
@@ -5694,6 +5729,7 @@
         "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-zerg-groundcarapace-level0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+        "LifeArmorName": "Dragon Plate Armor",
         "priority": 15
       },
       "Razorback": {
@@ -5713,6 +5749,7 @@
         "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-zerg-groundcarapace-level0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+        "LifeArmorName": "Dragon Plate Armor",
         "priority": 12
       },
       "AugmentationPitFrontier": {
@@ -5747,6 +5784,7 @@
         "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-zerg-groundcarapace-level0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+        "LifeArmorName": "Dragon Plate Armor",
         "priority": 42
       },
       "SunkenGuardian": {
@@ -5765,6 +5803,7 @@
         "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-zerg-groundcarapace-level0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+        "LifeArmorName": "Dragon Plate Armor",
         "priority": 51
       },
       "PhlogistonGuardian": {
@@ -5783,6 +5822,7 @@
         "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-zerg-groundcarapace-level0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+        "LifeArmorName": "Dragon Plate Armor",
         "priority": 52
       },
       "Coagulater": {
@@ -5801,6 +5841,7 @@
         "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-zerg-groundcarapace-level0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+        "LifeArmorName": "Dragon Plate Armor",
         "priority": 20
       }
     }

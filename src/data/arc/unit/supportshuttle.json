@@ -542,28 +542,28 @@
       {
         "Info": {
           "class": "CAbilMove",
-          "Name": "Abil/Name/move",
+          "Name": "Abil/Name/moveUED",
           "TechPlayer": "Upkeep",
-          "EditorCategories": "Race:Neutral,AbilityorEffectType:Units",
+          "EditorCategories": "Race:UED,AbilityorEffectType:Units",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
             {
               "DisplayType": "Move",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
+              "Color": "255,255,128,0",
+              "Model": "Assets\\UI\\Cursors\\WayPointAttackSwarm\\WayPointAttackSwarm.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
               "DisplayType": "Move",
               "Color": "255,35,125,255",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
+              "Model": "Assets\\UI\\Cursors\\WayPointAttackSwarm\\WayPointAttackSwarm.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
             "DisableWhileDead": 1
           },
-          "DataCollection": "move",
+          "DataCollection": "moveUED",
           "$tokens": {
             "ID": {
               "type": "string",
@@ -602,12 +602,13 @@
               "DefaultButtonFace": "Turn"
             }
           },
+          "AbilSetId": "MoveUED",
           "FleeRange": 5,
           "FleeTime": 5,
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move"
+          "id": "moveUED"
         },
         "Cost": {
           "Minerals": 0,
@@ -622,7 +623,7 @@
         "Row": 0,
         "Column": 4,
         "Type": "AbilCmd",
-        "AbilCmd": "move,AcquireMove",
+        "AbilCmd": "moveUED,AcquireMove",
         "id": "AcquireMove",
         "Icon": "btn-command-attack",
         "Tooltip": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies.",
@@ -677,7 +678,7 @@
           "EffectRange": [
             "0,1000"
           ],
-          "AINotifyEffect": "CloakingDroneAB",
+          "AINotifyEffect": "CloakingDrone",
           "RefundArray": {
             "Approach": 1,
             "Prep": 1,
@@ -728,15 +729,14 @@
             "Execute": {
               "Flags": {
                 "ShowInGlossary": 1
-              },
-              "DefaultButtonFace": "CloakingDrone"
+              }
             }
           },
           "FollowRange": 5,
           "Cost": [
             {
               "Vital": {
-                "Energy": 50
+                "Energy": 40
               }
             }
           ],
@@ -753,7 +753,7 @@
           "Vespene": 0,
           "Terazine": 0,
           "Custom": 0,
-          "Energy": 50,
+          "Energy": 40,
           "Life": 0,
           "Shields": 0,
           "Food": 0
@@ -764,7 +764,7 @@
         "AbilCmd": "CloakingDrone,Execute",
         "id": "CloakingDrone",
         "Icon": "btn-ability-hornerhan-wraith-permanentcloak",
-        "Tooltip": "The specified combat unit receives a disguise before causing any damage to other combat units, but no more than 121 seconds. Movement speed increases.<br/><br/><c val=\"#ColorAttackInfo\"> The unit does not attack on its own until the attack command is given.",
+        "Tooltip": "The specified combat unit receives a disguise before causing any damage to other combat units, but no more than 121 seconds. Movement speed increases.<br/><br/><c val=\"#ColorAttackInfo\">The unit does not attack on its own until the attack command is given.",
         "Name": "Activate Cloaking Drone",
         "Hotkey": "Q"
       },
@@ -903,8 +903,8 @@
         "AbilCmd": "PsionicSuppressionField,Execute",
         "id": "DeployPsionicSuppressionField",
         "Icon": "btn-ability-stetmann-stetzonegenerator-energy",
-        "Tooltip": "For 12 seconds, create a field of suppression of psionic activity in the specified area. Everyone who enters it will be able to deal only 50% damage from abilities.",
-        "Name": "Expand the Field of suppression of psionic energy",
+        "Tooltip": "All targets affected by the suppression of psionic activity in the specified area will be able to deal only 50% of the damage from abilities for 12 sec.",
+        "Name": "Create an impulse to suppress psionic energy",
         "Hotkey": "E"
       },
       {
@@ -1092,11 +1092,15 @@
   "Behaviors": [
     {
       "id": "Detector11",
-      "Icon": "btn-status-detector"
+      "Icon": "btn-status-detector",
+      "Tooltip": "This unit can detect cloaked or burrowed units within its sight range.",
+      "Name": "Detector"
     },
     {
       "id": "Detector11",
-      "Icon": "btn-status-detector"
+      "Icon": "btn-status-detector",
+      "Tooltip": "This unit can detect cloaked or burrowed units within its sight range.",
+      "Name": "Detector"
     }
   ],
   "Abilities": [
@@ -1179,7 +1183,7 @@
       "Name": "Attack"
     },
     {
-      "AbilCmd": "move,AcquireMove",
+      "AbilCmd": "moveUED,AcquireMove",
       "id": "AcquireMove",
       "Icon": "btn-command-attack",
       "Tooltip": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies.",
@@ -1189,15 +1193,15 @@
       "AbilCmd": "CloakingDrone,Execute",
       "id": "CloakingDrone",
       "Icon": "btn-ability-hornerhan-wraith-permanentcloak",
-      "Tooltip": "The specified combat unit receives a disguise before causing any damage to other combat units, but no more than 121 seconds. Movement speed increases.<br/><br/><c val=\"#ColorAttackInfo\"> The unit does not attack on its own until the attack command is given.",
+      "Tooltip": "The specified combat unit receives a disguise before causing any damage to other combat units, but no more than 121 seconds. Movement speed increases.<br/><br/><c val=\"#ColorAttackInfo\">The unit does not attack on its own until the attack command is given.",
       "Name": "Activate Cloaking Drone"
     },
     {
       "AbilCmd": "PsionicSuppressionField,Execute",
       "id": "DeployPsionicSuppressionField",
       "Icon": "btn-ability-stetmann-stetzonegenerator-energy",
-      "Tooltip": "For 12 seconds, create a field of suppression of psionic activity in the specified area. Everyone who enters it will be able to deal only 50% damage from abilities.",
-      "Name": "Expand the Field of suppression of psionic energy"
+      "Tooltip": "All targets affected by the suppression of psionic activity in the specified area will be able to deal only 50% of the damage from abilities for 12 sec.",
+      "Name": "Create an impulse to suppress psionic energy"
     },
     {
       "AbilCmd": "ProjectedGravityShield,Execute",

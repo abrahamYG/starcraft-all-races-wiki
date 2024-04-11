@@ -12,6 +12,7 @@
   "ResourceType": "Unknown",
   "LifeStart": 300,
   "LifeMax": 300,
+  "LifeArmorName": "Dragon Plate Armor",
   "Mover": "Ground",
   "StationaryTurningRate": 720,
   "TurningRate": 360,
@@ -693,8 +694,7 @@
   "Weapons": [],
   "Behaviors": [
     {
-      "id": "DragonLineage",
-      "Name": "Dragon Lineage"
+      "id": "DragonLineage"
     }
   ],
   "Abilities": [

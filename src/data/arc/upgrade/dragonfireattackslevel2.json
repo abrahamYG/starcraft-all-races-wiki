@@ -12,6 +12,7 @@
   "ScoreValue": "WeaponTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "DragonFireAttacksLevel2",
+  "EditorCategories": "Race:Dragon,UpgradeType:AttackBonus",
   "$tokens": {
     "ID": {
       "type": "string",
@@ -308,7 +309,6 @@
       "Value": "Assets\\Textures\\fireball_3.dds"
     }
   ],
-  "EditorCategories": "Race:Dragon,UpgradeType:AttackBonus",
   "AffectedUnitArray": [
     "AuroraConduit",
     "BrimstoneDemolisher",

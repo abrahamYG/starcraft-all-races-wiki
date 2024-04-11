@@ -129,12 +129,6 @@
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
               "DisplayType": "Move",
               "Color": "255,35,125,255",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
@@ -223,12 +217,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -302,12 +290,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -399,12 +381,6 @@
               "Color": "255,255,0,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -479,12 +455,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -568,17 +538,17 @@
           "SectionArray": {
             "Actor": {
               "DurationArray": {
-                "Duration": 2
+                "Duration": 1.25
               }
             },
             "Collide": {
               "DurationArray": {
-                "Delay": 1.5
+                "Delay": 0.9375
               }
             },
             "Stats": {
               "DurationArray": {
-                "Delay": 1.8332
+                "Delay": 1.1457
               }
             }
           },
@@ -587,7 +557,7 @@
         },
         "Unit": "UltraliskBurrowed",
         "Cost": {
-          "Minerals": 300,
+          "Minerals": 275,
           "Vespene": 200,
           "Terazine": 0,
           "Custom": 0,
@@ -637,7 +607,7 @@
   "GlossaryPriority": 180,
   "CostCategory": "Army",
   "CostResource": {
-    "Minerals": 300,
+    "Minerals": 275,
     "Vespene": 200
   },
   "GlossaryStrongArray": [
@@ -666,9 +636,6 @@
       "Icon": "btn-upgrade-zerg-meleeattacks-level0",
       "Name": "Kaiser Blades",
       "Amount": 35,
-      "AttributeBonus": {
-        "Armored": 0
-      },
       "Kind": "Splash",
       "TargetFilters": "Ground",
       "Range": 1,
@@ -704,12 +671,11 @@
     }
   ],
   "$Upgrades": [
-    "BurrowUltraliskUp",
-    "Ultralisk",
     "UltraliskBurrowed",
+    "Ultralisk",
+    "BurrowUltraliskUp",
     "AnabolicSynthesis",
     "ChitinousPlating",
-    "UltraliskBurrowChargeUpgrade",
     "UltraliskCavern",
     "LarvaTrain",
     "Larva",
@@ -726,15 +692,13 @@
     "DigesterUltralisk",
     "UltraliskBurrowedSplat",
     "IsUltralisk",
-    "UltraliskSkin",
     "ThreatensUltralisk",
     "TacticalBurrowUltraliskThreatSearchEmpty",
     "TacticalBurrowUltraliskThreatTest",
     "TacticalBurrowUltraliskBullyTest",
     "TacticalBurrowUltraliskCampaignBullyUnburrow",
     "TacticalBurrowUltraliskDown",
-    "TacticalBurrowUltraliskUp",
-    "Ultralisk"
+    "TacticalBurrowUltraliskUp"
   ],
   "$Requirements": [],
   "$Production": [],

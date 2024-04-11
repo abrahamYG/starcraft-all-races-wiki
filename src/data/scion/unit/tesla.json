@@ -1,6 +1,6 @@
 {
   "Name": "Tesla",
-  "Description": "Area control specialist. Can construct and launch specialized charges.",
+  "Description": "Area control specialist. Can construct and launch specialized charges.<br/><br/><span style=\"color: #78F0FF\">Power user.</span>",
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -10,15 +10,15 @@
   "Response": "Acquire",
   "ResourceState": "Unknown",
   "ResourceType": "Unknown",
-  "LifeStart": 180,
-  "LifeMax": 180,
+  "LifeStart": 200,
+  "LifeMax": 200,
   "LifeArmorName": "Ground Mechanical Plating",
   "Mover": "Ground",
   "StationaryTurningRate": 990,
   "TurningRate": 360,
-  "Radius": 0.75,
+  "Radius": 1,
   "SeparationRadius": 0.5,
-  "MinimapRadius": 0.875,
+  "MinimapRadius": 1,
   "EditorCategories": "ObjectType:Unit,ObjectFamily:Melee",
   "TacticalAIFilters": "-;Player,Ally,Neutral",
   "AIEvalFactor": 1,
@@ -100,7 +100,7 @@
   "PlaneArray": [
     "Ground"
   ],
-  "Sight": 10,
+  "Sight": 11,
   "AttackTargetPriority": 20,
   "GlossaryCategory": "Unit/Category/GenetronUnits",
   "HotkeyCategory": "Unit/Category/GenetronUnits",
@@ -130,12 +130,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -229,12 +223,6 @@
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
               "DisplayType": "Move",
               "Color": "255,35,125,255",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
@@ -323,12 +311,6 @@
               "Color": "255,255,0,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -399,12 +381,6 @@
           "EditorCategories": "Race:Neutral,AbilityorEffectType:Units",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -483,12 +459,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -582,12 +552,6 @@
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
               "DisplayType": "Move",
               "Color": "255,35,125,255",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
@@ -669,15 +633,13 @@
             "Flags": {
               "AllowMinimap": 0
             },
-            "DefaultButtonFace": "ConstructShockCharge"
+            "DefaultButtonFace": "TeslaConstructCharge"
           },
-          "Resource": {
-            "Minerals": 20,
-            "Vespene": 20
+          "Vital": {
+            "Energy": 150
           },
           "Charge": {
             "CountMax": 1,
-            "CountStart": 1,
             "CountUse": 1,
             "Location": "Unit"
           },
@@ -685,30 +647,31 @@
             "Location": "Unit"
           },
           "Flags": {
-            "AutoCast": 1
+            "AutoCast": 1,
+            "AutoCastOn": 1
           },
-          "Time": 15,
-          "Effect": "ShockChargeComplete"
+          "Time": 17,
+          "Effect": "TeslaChargeCompleteShockCharge"
         },
-        "Time": 15,
+        "Time": 17,
         "Cost": {
-          "Minerals": 20,
-          "Vespene": 20,
+          "Minerals": 0,
+          "Vespene": 0,
           "Terazine": 0,
           "Custom": 0,
-          "Energy": 0,
+          "Energy": 150,
           "Life": 0,
           "Shields": 0,
           "Food": 0
         },
-        "Row": 1,
+        "Row": 2,
         "Column": 0,
         "Type": "AbilCmd",
         "AbilCmd": "ConstructTeslaCharge,Specialize1",
-        "id": "ConstructShockCharge",
-        "Icon": "btn-ability-genetron-teslacharge",
-        "Tooltip": "Construct a <span style=\"color: #FFFF80\">Shock Charge</span>, preparing it for launch. The <span style=\"color: #FFFF80\">Shock Charge</span> deals <b>6</b> (+<b>3</b> vs Shields) and removes <b>9</b> energy from enemy units in an area with a pulse, which occurs every <b>0.675</b> seconds. For each enemy hit, <b>1</b> energy is consumed.<br/><br/>The <span style=\"color: #FFFF80\">Shock Charge</span> degenerates energy over time, and is destroyed when its energy is exhausted.",
-        "Name": "Construct Shock Charge",
+        "id": "TeslaConstructCharge",
+        "Icon": "btn-ability-genetron-constructteslacharge",
+        "Tooltip": "Arms the Tesla with a charge which can be launched to provide combat support.",
+        "Name": "Construct Charge",
         "Hotkey": "C"
       },
       {
@@ -719,12 +682,6 @@
           "EditorCategories": "Race:Neutral,AbilityorEffectType:Structures",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -791,12 +748,6 @@
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
@@ -883,23 +834,32 @@
               "Flags": {
                 "ShowInGlossary": 1
               },
-              "DefaultButtonFace": "ConstructShockCharge"
+              "DefaultButtonFace": "LaunchShockCharge",
+              "Requirements": "TeslaAbilitiesReq"
             }
           },
           "FollowRange": 5,
           "Range": [
-            9
+            10
           ],
           "Cost": [
             {
               "Charge": {
                 "CountMax": 1,
-                "CountUse": 1
+                "CountStart": 1,
+                "CountUse": 1,
+                "Location": "Unit"
+              },
+              "Cooldown": {
+                "Location": "Unit"
               }
             }
           ],
           "Arc": 360,
           "IgnoreFilters": "-;Ally,Neutral,Enemy",
+          "CursorEffect": [
+            "TeslaShockChargeExpireSearch"
+          ],
           "id": "LaunchShockCharge"
         },
         "Cost": {
@@ -913,62 +873,14 @@
           "Food": 0
         },
         "Row": 2,
-        "Column": 0,
+        "Column": 1,
         "Type": "AbilCmd",
         "AbilCmd": "LaunchShockCharge,Execute",
         "id": "LaunchShockCharge",
-        "Icon": "btn-ability-genetron-launchshockcharge",
-        "Tooltip": "Launches a <span style=\"color: #FFFF80\">Shock Charge</span> to the target point.",
+        "Icon": "btn-unit-genetron-teslashockcharge",
+        "Tooltip": "Launches the Tesla's charge to the target point with the Shock Charge configuration.<br/><br/>Shock Charges deal <b>18</b> damage in an area every <b>2</b> seconds at the cost of energy. Each unit hit uses <b>3</b> energy and has <b>18</b> energy taken from them.<br/><br/>The charge is destroyed when its energy is exhausted.<br/><br/><span style=\"color: #78F0FF\">Uses <b>150</b> power.<c/>",
         "Name": "Launch Shock Charge",
         "Hotkey": "E"
-      },
-      {
-        "Info": {
-          "Button": {
-            "Flags": {
-              "AllowMinimap": 0
-            },
-            "DefaultButtonFace": "ConstructCloakCharge"
-          },
-          "Resource": {
-            "Minerals": 15,
-            "Vespene": 15
-          },
-          "Charge": {
-            "CountMax": 1,
-            "CountStart": 1,
-            "CountUse": 1,
-            "Location": "Unit"
-          },
-          "Cooldown": {
-            "Location": "Unit"
-          },
-          "Flags": {
-            "AutoCast": 1
-          },
-          "Time": 15,
-          "Effect": "CloakChargeComplete2"
-        },
-        "Time": 15,
-        "Cost": {
-          "Minerals": 15,
-          "Vespene": 15,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 1,
-        "Column": 1,
-        "Type": "AbilCmd",
-        "AbilCmd": "ConstructTeslaCharge,Specialize2",
-        "id": "ConstructCloakCharge",
-        "Icon": "btn-ability-genetron-teslacloakcharge",
-        "Tooltip": "Constructs a <span style=\"color: #FFFF80\">Cloak Charge</span>, preparing it for launch. The <span style=\"color: #FFFF80\">Cloak Charge</span> cloaks all friendly units in an area.<br/><br/>The <span style=\"color: #FFFF80\">Cloak Charge</span> degenerates energy over time, and is destroyed when its energy is exhausted.",
-        "Name": "Construct Cloak Charge",
-        "Hotkey": "V"
       },
       {
         "Info": {
@@ -982,12 +894,6 @@
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
@@ -1074,23 +980,34 @@
               "Flags": {
                 "ShowInGlossary": 1
               },
-              "DefaultButtonFace": "LaunchCloakCharge"
+              "DefaultButtonFace": "LaunchCloakCharge",
+              "Requirements": "TeslaAbilitiesReq"
             }
           },
           "FollowRange": 5,
           "Range": [
-            9
+            10
           ],
           "Cost": [
             {
               "Charge": {
                 "CountMax": 1,
-                "CountUse": 1
+                "CountStart": 1,
+                "CountUse": 1,
+                "Link": "Abil/LaunchShockCharge",
+                "Location": "Unit"
+              },
+              "Cooldown": {
+                "Link": "Abil/LaunchShockCharge",
+                "Location": "Unit"
               }
             }
           ],
           "Arc": 360,
           "IgnoreFilters": "-;Ally,Neutral,Enemy",
+          "CursorEffect": [
+            "CloakChargeFieldSA"
+          ],
           "id": "LaunchCloakCharge"
         },
         "Cost": {
@@ -1104,27 +1021,27 @@
           "Food": 0
         },
         "Row": 2,
-        "Column": 1,
+        "Column": 2,
         "Type": "AbilCmd",
         "AbilCmd": "LaunchCloakCharge,Execute",
         "id": "LaunchCloakCharge",
-        "Icon": "btn-ability-genetron-launchcloakcharge",
-        "Tooltip": "Launches a <span style=\"color: #FFFF80\">Cloak Charge</span> to the target point.",
+        "Icon": "btn-unit-genetron-teslastealthcharge",
+        "Tooltip": "Launches the Tesla's charge to the target point with the Cloak Charge configuration.<br/><br/>Cloak Charges cloak units in an area. Energy is used over time.<br/><br/>The charge is destroyed when its energy is exhausted.<br/><br/><span style=\"color: #78F0FF\">Uses <b>150</b> power.<c/>",
         "Name": "Launch Cloak Charge",
         "Hotkey": "R"
       }
     ]
   },
-  "CargoSize": 4,
+  "CargoSize": 8,
   "Food": -3,
   "CostResource": {
-    "Minerals": 150,
+    "Minerals": 200,
     "Vespene": 200
   },
-  "RepairTime": 42,
+  "RepairTime": 56,
   "InnerRadius": 0.75,
   "SubgroupPriority": 50,
-  "GlossaryPriority": 10,
+  "GlossaryPriority": 11,
   "GlossaryStrongArray": [
     "Mole",
     "Carrier",
@@ -1139,11 +1056,24 @@
   ],
   "KillDisplay": "Always",
   "AIEvalConstant": 1,
+  "EnergyStart": 200,
+  "EnergyMax": 200,
+  "EnergyRegenRate": 2.8125,
   "Icon": "btn-unit-genetron-tesla",
   "LifeArmorIcon": "btn-upgrade-genetron-groundmechplating-level0",
   "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
   "Weapons": [],
-  "Behaviors": [],
+  "Behaviors": [
+    {
+      "id": "GenetronPowerSupplyTracker"
+    },
+    {
+      "id": "TrackGenetronPowerSupplyUnit"
+    },
+    {
+      "id": "TeslaAbilitiesReq"
+    }
+  ],
   "Abilities": [
     {
       "id": "move",
@@ -1171,16 +1101,19 @@
     }
   ],
   "$Upgrades": [
-    "TrainHeavyweightMechs",
-    "Tesla",
-    "Fabricator",
-    "OutfittingStation",
     "GenetronGroundPlatingLevel1",
+    "Tesla",
     "Tesla",
     "GenetronGroundPlating",
     "GenetronGroundPlatingLevel2",
     "GenetronGroundPlatingLevel3",
+    "ChemicalFirm",
+    "TrainHeavyweightMechs",
+    "CountUnitTeslaQueuedOrBetterAtUnit",
     "Fabricator",
+    "Fabricator",
+    "CountUnitTeslaInProgressOnlyAtUnit",
+    "GenetronGroundPlatingRevert",
     "InternalProducers"
   ],
   "$Requirements": [],
@@ -1239,10 +1172,10 @@
     },
     {
       "AbilCmd": "ConstructTeslaCharge,Specialize1",
-      "id": "ConstructShockCharge",
-      "Icon": "btn-ability-genetron-teslacharge",
-      "Tooltip": "Construct a <span style=\"color: #FFFF80\">Shock Charge</span>, preparing it for launch. The <span style=\"color: #FFFF80\">Shock Charge</span> deals <b>6</b> (+<b>3</b> vs Shields) and removes <b>9</b> energy from enemy units in an area with a pulse, which occurs every <b>0.675</b> seconds. For each enemy hit, <b>1</b> energy is consumed.<br/><br/>The <span style=\"color: #FFFF80\">Shock Charge</span> degenerates energy over time, and is destroyed when its energy is exhausted.",
-      "Name": "Construct Shock Charge"
+      "id": "TeslaConstructCharge",
+      "Icon": "btn-ability-genetron-constructteslacharge",
+      "Tooltip": "Arms the Tesla with a charge which can be launched to provide combat support.",
+      "Name": "Construct Charge"
     },
     {
       "AbilCmd": "que1Passive,CancelLast",
@@ -1254,22 +1187,15 @@
     {
       "AbilCmd": "LaunchShockCharge,Execute",
       "id": "LaunchShockCharge",
-      "Icon": "btn-ability-genetron-launchshockcharge",
-      "Tooltip": "Launches a <span style=\"color: #FFFF80\">Shock Charge</span> to the target point.",
+      "Icon": "btn-unit-genetron-teslashockcharge",
+      "Tooltip": "Launches the Tesla's charge to the target point with the Shock Charge configuration.<br/><br/>Shock Charges deal <b>18</b> damage in an area every <b>2</b> seconds at the cost of energy. Each unit hit uses <b>3</b> energy and has <b>18</b> energy taken from them.<br/><br/>The charge is destroyed when its energy is exhausted.<br/><br/><span style=\"color: #78F0FF\">Uses <b>150</b> power.<c/>",
       "Name": "Launch Shock Charge"
-    },
-    {
-      "AbilCmd": "ConstructTeslaCharge,Specialize2",
-      "id": "ConstructCloakCharge",
-      "Icon": "btn-ability-genetron-teslacloakcharge",
-      "Tooltip": "Constructs a <span style=\"color: #FFFF80\">Cloak Charge</span>, preparing it for launch. The <span style=\"color: #FFFF80\">Cloak Charge</span> cloaks all friendly units in an area.<br/><br/>The <span style=\"color: #FFFF80\">Cloak Charge</span> degenerates energy over time, and is destroyed when its energy is exhausted.",
-      "Name": "Construct Cloak Charge"
     },
     {
       "AbilCmd": "LaunchCloakCharge,Execute",
       "id": "LaunchCloakCharge",
-      "Icon": "btn-ability-genetron-launchcloakcharge",
-      "Tooltip": "Launches a <span style=\"color: #FFFF80\">Cloak Charge</span> to the target point.",
+      "Icon": "btn-unit-genetron-teslastealthcharge",
+      "Tooltip": "Launches the Tesla's charge to the target point with the Cloak Charge configuration.<br/><br/>Cloak Charges cloak units in an area. Energy is used over time.<br/><br/>The charge is destroyed when its energy is exhausted.<br/><br/><span style=\"color: #78F0FF\">Uses <b>150</b> power.<c/>",
       "Name": "Launch Cloak Charge"
     }
   ]

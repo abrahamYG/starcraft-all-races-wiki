@@ -348,7 +348,7 @@
         ],
         "Time": 55,
         "Cost": {
-          "Minerals": 300,
+          "Minerals": 275,
           "Vespene": 200,
           "Terazine": 0,
           "Custom": 0,
@@ -413,12 +413,6 @@
           "EditorCategories": "Race:Neutral,AbilityorEffectType:Structures",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -645,8 +639,8 @@
     "IsLarva",
     "Larva",
     "Larva_Death",
-    "CountUnitLarvaCompleteOnlyAtUnit",
-    "Larva"
+    "UPLRenameZerg",
+    "CountUnitLarvaCompleteOnlyAtUnit"
   ],
   "$Requirements": [],
   "$Production": [

@@ -13,6 +13,7 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "DrillClaws",
+  "EditorCategories": "Race:Terran,UpgradeType:Spell",
   "$tokens": {
     "ID": {
       "type": "string",
@@ -32,9 +33,18 @@
       "Operation": "Subtract",
       "Reference": "Abil,WidowMineBurrow,InfoArray[0].SectionArray[Stats].DurationArray[Delay]",
       "Value": "1.500000"
+    },
+    {
+      "Operation": "Subtract",
+      "Reference": "Abil,WidowMineUnburrow,InfoArray[0].SectionArray[Actor].DurationArray[Duration]",
+      "Value": "0.500000"
+    },
+    {
+      "Operation": "Subtract",
+      "Reference": "Abil,WidowMineUnburrow,InfoArray[0].SectionArray[Stats].DurationArray[Duration]",
+      "Value": "0.500000"
     }
   ],
-  "EditorCategories": "Race:Terran,UpgradeType:Talents",
   "AffectedUnitArray": [
     "WidowMine",
     "WidowMineBurrowed"

@@ -266,7 +266,8 @@
         "id": "ButtonTowerMiningVkl",
         "Icon": "btn-techupgrade-terran-ripwavemissiles",
         "Tooltip": "Resume irradiation of mineral druze with beatings.",
-        "Name": "Turn on the Tower"
+        "Name": "Turn on the Tower",
+        "Hotkey": "D"
       },
       {
         "Info": {
@@ -337,7 +338,8 @@
         "id": "ButtonTowerMiningOtkl",
         "Icon": "btn-command-stop",
         "Tooltip": "To stop irradiation of mineral druze with beatings.",
-        "Name": "Disable the Tower"
+        "Name": "Disable the Tower",
+        "Hotkey": "S"
       }
     ]
   },

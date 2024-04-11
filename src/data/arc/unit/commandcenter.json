@@ -290,12 +290,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -402,12 +396,6 @@
           "EditorCategories": "Race:Terran,AbilityorEffectType:Structures",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -566,12 +554,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -595,7 +577,10 @@
               "DefaultButtonFace": "Cancel"
             },
             "Halt": {
-              "DefaultButtonFace": "Cancel"
+              "DefaultButtonFace": "Halt",
+              "Flags": {
+                "ToSelection": 1
+              }
             }
           },
           "id": "BuildInProgress"
@@ -628,12 +613,6 @@
           "EditorCategories": "Race:Neutral,AbilityorEffectType:Structures",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -790,12 +769,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -819,7 +792,10 @@
               "DefaultButtonFace": "Cancel"
             },
             "Halt": {
-              "DefaultButtonFace": "Cancel"
+              "DefaultButtonFace": "Halt",
+              "Flags": {
+                "ToSelection": 1
+              }
             }
           },
           "id": "BuildInProgress"
@@ -926,16 +902,17 @@
     }
   ],
   "$Upgrades": [
-    "Terr",
-    "CommandCenter",
     "TerranBuild",
-    "IsCommandCenter",
+    "Terr",
     "CommandCenterFlying",
     "CommandCenterLand",
     "IsCasterCommandCenter",
-    "CountUnitAlias_CommandCenterCompleteOnly1610623376TechTreeCheat",
+    "IsCommandCenter",
+    "NotCommandCenter",
+    "CommandCenter",
     "TerranBuildingArmor",
     "NeosteelFrame",
+    "CountUnitAlias_CommandCenterCompleteOnly1610623376TechTreeCheat",
     "CommandCenter",
     "TerranCommandCenterPlayerDecalMacro",
     "CommandCenterLand",
@@ -943,10 +920,8 @@
     "PlanetaryFortress",
     "OrbitalCommand",
     "UpgradeToSurveillance",
-    "CasterIsCommandCenter",
-    "NotCommandCenter",
-    "CommandCenter",
-    null
+    "OperationHeadquartersSplat",
+    "CasterIsCommandCenter"
   ],
   "$Requirements": [],
   "$Production": [

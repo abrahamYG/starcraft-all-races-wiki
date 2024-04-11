@@ -10,15 +10,15 @@
   "Response": "Acquire",
   "ResourceState": "Unknown",
   "ResourceType": "Unknown",
-  "LifeStart": 80,
-  "LifeMax": 80,
+  "LifeStart": 75,
+  "LifeMax": 75,
   "LifeArmorName": "Xayid Ground Carapace",
   "Mover": "Ground",
   "StationaryTurningRate": 990,
   "TurningRate": 990,
   "Radius": 0.5,
-  "SeparationRadius": 0.5,
-  "MinimapRadius": 0.5625,
+  "SeparationRadius": 0.4375,
+  "MinimapRadius": 0.4375,
   "EditorCategories": "ObjectType:Unit,ObjectFamily:Melee",
   "TacticalAIFilters": "-;Player,Ally,Neutral",
   "AIEvalFactor": 1,
@@ -659,7 +659,7 @@
     "Ground",
     "ForceField"
   ],
-  "Sight": 10,
+  "Sight": 9,
   "CostCategory": "Army",
   "ScoreResult": "BuildOrder",
   "GlossaryCategory": "Unit/Category/XayidUnits",
@@ -679,7 +679,7 @@
     "Minerals": 75,
     "Vespene": 25
   },
-  "InnerRadius": 0.5,
+  "InnerRadius": 0.375,
   "CargoSize": 2,
   "GlossaryPriority": 4,
   "SubgroupPriority": 76,
@@ -691,14 +691,14 @@
     {
       "id": "VirulentSpit",
       "Name": "Virulent Spit",
-      "Amount": 7,
+      "Amount": 8,
       "AttributeBonus": {
-        "Light": 5
+        "Light": 4
       },
       "Kind": "Ranged",
       "TargetFilters": "Ground",
       "Range": 3,
-      "Period": 0.7
+      "Period": 0.77
     }
   ],
   "Behaviors": [],

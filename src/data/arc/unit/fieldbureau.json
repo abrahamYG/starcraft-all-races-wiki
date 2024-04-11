@@ -171,6 +171,7 @@
         "Type": "AbilCmd",
         "AbilCmd": "que5,CancelLast",
         "id": "Cancel",
+        "Icon": "btn-command-cancel",
         "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
         "Name": "Cancel",
         "Hotkey": "Esc"
@@ -240,21 +241,21 @@
         "Hotkey": "Esc"
       },
       {
-        "Upgrade": "UEDPackageOfMedicines",
+        "Upgrade": "UEDLazarusbattery",
         "Info": {
           "Button": {
             "Flags": {
               "AllowMinimap": 0
             },
-            "DefaultButtonFace": "UEDButtonUpgraidePackageOfMedicines",
-            "Requirements": "LearnPackageOfMedicines"
+            "DefaultButtonFace": "UEDButtonUpgraideLazarusbattery",
+            "Requirements": "LearnLazarusBattary"
           },
           "Resource": {
             "Minerals": 150,
             "Vespene": 150
           },
           "Time": 120,
-          "Upgrade": "UEDPackageOfMedicines"
+          "Upgrade": "UEDLazarusbattery"
         },
         "Time": 120,
         "Cost": {
@@ -271,10 +272,10 @@
         "Column": 0,
         "Type": "AbilCmd",
         "AbilCmd": "EngineeringBayResearch2,Research4",
-        "id": "UEDButtonUpgraidePackageOfMedicines",
-        "Icon": "btn-upgrade-swann-regenerativebiosteel",
-        "Tooltip": "After being resurrected <span style=\"color: #FFFF80\"> by Lazarus</span>, the infantryman receives 100% health and energy loss of only 50% of the maximum reserve, but the reserve of shields is reduced to 10.",
-        "Name": "Authorization request: Package of medicines",
+        "id": "UEDButtonUpgraideLazarusbattery",
+        "Icon": "btn-upgrade-terran-behemothreactor",
+        "Tooltip": "Gives <span style=\"color: #FFFF80\">Lazarus</span> +25 to the initial and +50 to the maximum energy. It also allows you to resurrect units, depriving them of only 50% of the maximum amount of energy.",
+        "Name": "Authorization Request: Lazarus Battery",
         "Hotkey": "E"
       },
       {
@@ -312,7 +313,7 @@
         "AbilCmd": "EngineeringBayResearch2,Research1",
         "id": "AuthorizeStrikeGrenades",
         "Icon": "btn-ability-tychus-tychus-shreddergrenade",
-        "Tooltip": "Allows the effect of slowing down the strike grenades <span style=\"color: #FFFF80\">Political Advisors </span> to be added up to 2 times.",
+        "Tooltip": "Increases the effect of slowing down an attack  from a strike grenade <span style=\"color: #FFFF80\">Political Advisor </span> up to 20%.",
         "Name": "Authorize Strike Grenades",
         "Hotkey": "R"
       }
@@ -368,7 +369,7 @@
   "$Requirements": [],
   "$Production": [],
   "$Research": [
-    "UEDPackageOfMedicines",
+    "UEDLazarusbattery",
     "StrikeGrenade"
   ],
   "$Morph": [],
@@ -381,6 +382,7 @@
     {
       "AbilCmd": "que5,CancelLast",
       "id": "Cancel",
+      "Icon": "btn-command-cancel",
       "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
       "Name": "Cancel"
     },
@@ -393,16 +395,16 @@
     },
     {
       "AbilCmd": "EngineeringBayResearch2,Research4",
-      "id": "UEDButtonUpgraidePackageOfMedicines",
-      "Icon": "btn-upgrade-swann-regenerativebiosteel",
-      "Tooltip": "After being resurrected <span style=\"color: #FFFF80\"> by Lazarus</span>, the infantryman receives 100% health and energy loss of only 50% of the maximum reserve, but the reserve of shields is reduced to 10.",
-      "Name": "Authorization request: Package of medicines"
+      "id": "UEDButtonUpgraideLazarusbattery",
+      "Icon": "btn-upgrade-terran-behemothreactor",
+      "Tooltip": "Gives <span style=\"color: #FFFF80\">Lazarus</span> +25 to the initial and +50 to the maximum energy. It also allows you to resurrect units, depriving them of only 50% of the maximum amount of energy.",
+      "Name": "Authorization Request: Lazarus Battery"
     },
     {
       "AbilCmd": "EngineeringBayResearch2,Research1",
       "id": "AuthorizeStrikeGrenades",
       "Icon": "btn-ability-tychus-tychus-shreddergrenade",
-      "Tooltip": "Allows the effect of slowing down the strike grenades <span style=\"color: #FFFF80\">Political Advisors </span> to be added up to 2 times.",
+      "Tooltip": "Increases the effect of slowing down an attack  from a strike grenade <span style=\"color: #FFFF80\">Political Advisor </span> up to 20%.",
       "Name": "Authorize Strike Grenades"
     }
   ]

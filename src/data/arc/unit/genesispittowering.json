@@ -12,6 +12,7 @@
   "ResourceType": "Unknown",
   "LifeStart": 600,
   "LifeMax": 600,
+  "LifeArmorName": "Dragon Plate Armor",
   "Mover": "Ground",
   "StationaryTurningRate": 720,
   "TurningRate": 720,
@@ -172,6 +173,7 @@
         "Type": "AbilCmd",
         "AbilCmd": "que5PassiveCancelToSelection,CancelLast",
         "id": "Cancel",
+        "Icon": "btn-command-cancel",
         "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
         "Name": "Cancel",
         "Hotkey": "Esc"
@@ -450,7 +452,7 @@
         "AbilCmd": "ToweringDeepOneTrain,Train5",
         "id": "GrimGlider",
         "Icon": "btn-critter-sporeray",
-        "Tooltip": "Massive flying unit. Can rise units slain nearby as temporary shades.<br/><br/><span style=\"color: #FFE303\">Detector</span><br/><br/><span style=\"color: #00FF00\">Ascended:<br/>+45 Life<br/>+200% Energy Regeneration<br/>+0.5 Speed</span>",
+        "Tooltip": "Massive flying unit. Can rise units slain nearby as temporary shades.<br/><br/><span style=\"color: #FFE303\">Detector</span><br/><br/><span style=\"color: #00FF00\">Ascended:<br/>+120 Life<br/>+200% Energy Regeneration<br/>+1.4 Speed</span>",
         "Name": "Spawn Grim Glider",
         "Hotkey": "T"
       }
@@ -474,8 +476,7 @@
   "Weapons": [],
   "Behaviors": [
     {
-      "id": "DragonLineage",
-      "Name": "Dragon Lineage"
+      "id": "DragonLineage"
     }
   ],
   "Abilities": [
@@ -534,6 +535,7 @@
     {
       "AbilCmd": "que5PassiveCancelToSelection,CancelLast",
       "id": "Cancel",
+      "Icon": "btn-command-cancel",
       "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
       "Name": "Cancel"
     },
@@ -583,7 +585,7 @@
       "AbilCmd": "ToweringDeepOneTrain,Train5",
       "id": "GrimGlider",
       "Icon": "btn-critter-sporeray",
-      "Tooltip": "Massive flying unit. Can rise units slain nearby as temporary shades.<br/><br/><span style=\"color: #FFE303\">Detector</span><br/><br/><span style=\"color: #00FF00\">Ascended:<br/>+45 Life<br/>+200% Energy Regeneration<br/>+0.5 Speed</span>",
+      "Tooltip": "Massive flying unit. Can rise units slain nearby as temporary shades.<br/><br/><span style=\"color: #FFE303\">Detector</span><br/><br/><span style=\"color: #00FF00\">Ascended:<br/>+120 Life<br/>+200% Energy Regeneration<br/>+1.4 Speed</span>",
       "Name": "Spawn Grim Glider"
     }
   ]

@@ -130,12 +130,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -234,10 +228,7 @@
     "ProtossShieldsLevel2",
     "ProtossShieldsLevel3",
     "IsAssimilator",
-    "AssimilatorSplat",
-    "Assimilator",
-    "AssimilatorTaldarim",
-    null
+    "AssimilatorSplat"
   ],
   "$Requirements": [],
   "$Production": [],

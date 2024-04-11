@@ -1,6 +1,6 @@
 {
   "Name": "Echo",
-  "Description": "Melee air fighter. Can use Discord Mode and Reverb.<br/><br/><span style=\"color: #FFFF80\">Can attack air units.</span>",
+  "Description": "Close range air fighter. Can use Discord Mode and Reverb.<br/><br/><span style=\"color: #FFFF80\">Can attack air units.</span>",
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -86,9 +86,7 @@
   "Collide": [
     "Flying"
   ],
-  "LifeRegenRate": 0.1718,
-  "ShieldRegenDelay": 4,
-  "ShieldRegenRate": 1.25,
+  "LifeRegenRate": 0.2734,
   "Acceleration": 5,
   "Sight": 10,
   "CostCategory": "Army",
@@ -107,12 +105,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -204,12 +196,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -283,12 +269,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -382,12 +362,6 @@
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
               "DisplayType": "Move",
               "Color": "255,35,125,255",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
@@ -476,12 +450,6 @@
               "Color": "255,255,0,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -556,12 +524,6 @@
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
@@ -692,12 +654,6 @@
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
@@ -843,7 +799,7 @@
         "AbilCmd": "EchoDiscordMode,Execute",
         "id": "DiscordMode",
         "Icon": "btn-unit-keiron-echo-discord",
-        "Tooltip": "The Echo becomes stationary, slowing enemy movement and production while revealing cloaked units in an area.",
+        "Tooltip": "The Echo becomes stationary, slowing enemy movement and production.",
         "Name": "Discord Mode",
         "Hotkey": "E"
       },
@@ -881,12 +837,6 @@
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
@@ -999,7 +949,7 @@
         "AbilCmd": "FuseUnfuse,Execute",
         "id": "Unfuse",
         "Icon": "btn-ability-zerg-dehaka-levelup",
-        "Tooltip": "Releases the Fuse inhabiting this unit, losing the associated bonus.",
+        "Tooltip": "Releases the Fuses inhabiting this unit, losing the associated bonus.",
         "Name": "Unfuse",
         "Hotkey": "U"
       }
@@ -1026,7 +976,6 @@
     "Biological",
     "Mechanical"
   ],
-  "LifeArmor": 1,
   "ShieldsStart": 70,
   "ShieldsMax": 70,
   "Speed": 4.5,
@@ -1053,13 +1002,17 @@
       "Icon": "btn-upgrade-keiron-biologicalweaponslevel0",
       "Name": "Reverberator Flare",
       "Amount": 10,
-      "Kind": "Melee",
+      "Kind": "Ranged",
       "TargetFilters": "Air",
       "Range": 3,
       "Period": 1.008
     }
   ],
-  "Behaviors": [],
+  "Behaviors": [
+    {
+      "id": "KeironShellRestoration"
+    }
+  ],
   "Abilities": [
     {
       "id": "move",
@@ -1106,6 +1059,7 @@
     "Conduit",
     "IsEcho",
     "KeironCitadelMaterialize",
+    "CitadelCharged",
     "KeironBioWeaponsLevel1",
     "KeironBioWeapons",
     "KeironBioWeaponsLevel2",
@@ -1116,12 +1070,14 @@
     "KeironBioArmorLevel2",
     "KeironBioArmorLevel3",
     "KeironShieldsLevel1",
-    "CitadelCharged",
     "KeironShields",
     "KeironShieldsLevel2",
     "KeironShieldsLevel3",
     "Citadel",
-    "FuseFusionBuffShield"
+    "FuseFusionSizeMacro",
+    "KeironBioArmorRevert",
+    "KeironBioWeaponsRevert",
+    "KeironShieldsRevert"
   ],
   "$Requirements": [],
   "$Production": [
@@ -1190,7 +1146,7 @@
       "AbilCmd": "EchoDiscordMode,Execute",
       "id": "DiscordMode",
       "Icon": "btn-unit-keiron-echo-discord",
-      "Tooltip": "The Echo becomes stationary, slowing enemy movement and production while revealing cloaked units in an area.",
+      "Tooltip": "The Echo becomes stationary, slowing enemy movement and production.",
       "Name": "Discord Mode"
     },
     {
@@ -1204,7 +1160,7 @@
       "AbilCmd": "FuseUnfuse,Execute",
       "id": "Unfuse",
       "Icon": "btn-ability-zerg-dehaka-levelup",
-      "Tooltip": "Releases the Fuse inhabiting this unit, losing the associated bonus.",
+      "Tooltip": "Releases the Fuses inhabiting this unit, losing the associated bonus.",
       "Name": "Unfuse"
     }
   ]

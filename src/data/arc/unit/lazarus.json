@@ -685,7 +685,7 @@
         "AbilCmd": "LazarusDeviceAoE,Execute",
         "id": "MutatorReanimate",
         "Icon": "btn-ability-kerrigan_revive",
-        "Tooltip": "Releases a nanoswarm into the targeted unit's organism, resurrecting it with partial health and loss of energy, imposing a temporary shield. Can only be used on incapacitated infantry UED.",
+        "Tooltip": "Releases a nanoswarm into the targeted unit's organism, resurrecting him with full health and partial loss of energy, imposing a temporary shield. Can only be used on incapacitated infantry UED and no more than 1 time in 21 seconds.",
         "Name": "Lazarus Device",
         "Hotkey": "Z"
       },
@@ -703,10 +703,10 @@
         "Row": 1,
         "Column": 0,
         "Type": "Passive",
-        "id": "UEDButtonPackageOfMedicines",
-        "Icon": "btn-upgrade-swann-regenerativebiosteel",
-        "Tooltip": "When resurrecting, the target's health reserve is maximum, and energy losses are 50% of the maximum.",
-        "Name": "Package of medicines"
+        "id": "UEDButtonLazarusbattery",
+        "Icon": "btn-upgrade-terran-behemothreactor",
+        "Tooltip": "Gives +25 to the initial and +50 to the maximum energy. Reduces the energy loss of the resurrected unit only by 50% of the maximum.",
+        "Name": "Lazarus Battery"
       }
     ]
   },
@@ -792,7 +792,7 @@
     "UpgradeLazarusRegenHealf",
     "Lazarus",
     "ValidateLazarusUED",
-    "UEDPackageOfMedicines",
+    "UEDLazarusbattery",
     "UEDWeaponsLevel1",
     "UEDWeaponsLevel2",
     "UEDWeaponsLevel3",
@@ -851,7 +851,7 @@
       "AbilCmd": "LazarusDeviceAoE,Execute",
       "id": "MutatorReanimate",
       "Icon": "btn-ability-kerrigan_revive",
-      "Tooltip": "Releases a nanoswarm into the targeted unit's organism, resurrecting it with partial health and loss of energy, imposing a temporary shield. Can only be used on incapacitated infantry UED.",
+      "Tooltip": "Releases a nanoswarm into the targeted unit's organism, resurrecting him with full health and partial loss of energy, imposing a temporary shield. Can only be used on incapacitated infantry UED and no more than 1 time in 21 seconds.",
       "Name": "Lazarus Device"
     }
   ]

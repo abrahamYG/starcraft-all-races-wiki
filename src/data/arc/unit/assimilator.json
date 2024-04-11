@@ -12,7 +12,7 @@
   "ResourceType": "Vespene",
   "LifeStart": 300,
   "LifeMax": 300,
-  "LifeArmorName": "Synoid Armor",
+  "LifeArmorName": "Protoss Armor",
   "Mover": "Ground",
   "StationaryTurningRate": 719.4726,
   "TurningRate": 719.4726,
@@ -130,12 +130,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -159,7 +153,10 @@
               "DefaultButtonFace": "Cancel"
             },
             "Halt": {
-              "DefaultButtonFace": "Cancel"
+              "DefaultButtonFace": "Halt",
+              "Flags": {
+                "ToSelection": 1
+              }
             }
           },
           "id": "BuildInProgress"
@@ -231,10 +228,7 @@
     "ProtossShieldsLevel2",
     "ProtossShieldsLevel3",
     "IsAssimilator",
-    "AssimilatorSplat",
-    "Assimilator",
-    "AssimilatorTaldarim",
-    null
+    "AssimilatorSplat"
   ],
   "$Requirements": [],
   "$Production": [],

@@ -12,6 +12,7 @@
   "ScoreValue": "ArmorTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "XayidFlyerCarapace",
+  "EditorCategories": "Race:Xayid,UpgradeType:ArmorBonus",
   "$tokens": {
     "ID": {
       "type": "string",
@@ -113,7 +114,6 @@
       "Value": "Assets\\Textures\\btn-upgrade-Xayid-airarmorlevel3.dds"
     }
   ],
-  "EditorCategories": "Race:Xayid,UpgradeType:ArmorBonus",
   "AffectedUnitArray": [
     "Raptor",
     "Assailant",

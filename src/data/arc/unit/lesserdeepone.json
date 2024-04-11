@@ -12,6 +12,7 @@
   "ResourceType": "Unknown",
   "LifeStart": 1500,
   "LifeMax": 1500,
+  "LifeArmorName": "Dragon Plate Armor",
   "Mover": "Ground",
   "StationaryTurningRate": 180,
   "TurningRate": 180,
@@ -172,6 +173,7 @@
         "Type": "AbilCmd",
         "AbilCmd": "que5PassiveCancelToSelection,CancelLast",
         "id": "Cancel",
+        "Icon": "btn-command-cancel",
         "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
         "Name": "Cancel",
         "Hotkey": "Esc"
@@ -668,7 +670,7 @@
             }
           },
           "Range": [
-            5
+            7
           ],
           "EffectArray": {
             "Start": "DragonBuildSet",
@@ -691,6 +693,7 @@
         "Type": "AbilCmd",
         "AbilCmd": "LesserDeepOneBuild,Halt",
         "id": "Cancel",
+        "Icon": "btn-command-cancel",
         "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
         "Name": "Cancel",
         "Hotkey": "Esc"
@@ -739,7 +742,7 @@
             "Flags": {
               "AllowMinimap": 0
             },
-            "DefaultButtonFace": "Hunter"
+            "DefaultButtonFace": "DragonHunter"
           },
           "Unit": [
             "DragonHunter"
@@ -765,8 +768,9 @@
         "Column": 1,
         "Type": "AbilCmd",
         "AbilCmd": "LesserDeepOneTrain,Train2",
-        "id": "Hunter",
+        "id": "DragonHunter",
         "Icon": "btn-unit-zerg-ravasaur",
+        "Tooltip": "Fast ranged unit. Pulls enemies with ranged attack. Can jump up and down cliffs.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span><br/><br/><span style=\"color: #00FF00\">Ascended:<br/>+30 Life<br/>+1 Armor<br/>+0.7 Speed</span>",
         "Name": "Spawn Hunter",
         "Hotkey": "W"
       },
@@ -933,8 +937,7 @@
   "Weapons": [],
   "Behaviors": [
     {
-      "id": "DragonLineageGreater",
-      "Name": "Dragon Lineage"
+      "id": "DragonLineageGreater"
     }
   ],
   "Abilities": [
@@ -1003,6 +1006,7 @@
     {
       "AbilCmd": "que5PassiveCancelToSelection,CancelLast",
       "id": "Cancel",
+      "Icon": "btn-command-cancel",
       "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
       "Name": "Cancel"
     },
@@ -1037,6 +1041,7 @@
     {
       "AbilCmd": "LesserDeepOneBuild,Halt",
       "id": "Cancel",
+      "Icon": "btn-command-cancel",
       "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
       "Name": "Cancel"
     },
@@ -1049,8 +1054,9 @@
     },
     {
       "AbilCmd": "LesserDeepOneTrain,Train2",
-      "id": "Hunter",
+      "id": "DragonHunter",
       "Icon": "btn-unit-zerg-ravasaur",
+      "Tooltip": "Fast ranged unit. Pulls enemies with ranged attack. Can jump up and down cliffs.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span><br/><br/><span style=\"color: #00FF00\">Ascended:<br/>+30 Life<br/>+1 Armor<br/>+0.7 Speed</span>",
       "Name": "Spawn Hunter"
     },
     {

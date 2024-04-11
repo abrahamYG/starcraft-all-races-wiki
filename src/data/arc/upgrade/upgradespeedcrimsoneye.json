@@ -12,6 +12,7 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "UpgradeSpeedCrimsonEye",
+  "EditorCategories": "Race:UED,UpgradeType:SpellResearch",
   "$tokens": {
     "ID": {
       "type": "string",
@@ -27,7 +28,6 @@
       "Value": "1.199200"
     }
   ],
-  "EditorCategories": "Race:UED,UpgradeType:SpellResearch",
   "AffectedUnitArray": [
     "CrimsonEye"
   ]

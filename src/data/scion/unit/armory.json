@@ -89,14 +89,14 @@
   "CostCategory": "Technology",
   "CostResource": {
     "Minerals": 150,
-    "Vespene": 100
+    "Vespene": 50
   },
   "RepairTime": 65,
   "AttackTargetPriority": 11,
   "Footprint": "Footprint3x3Contour",
   "PlacementFootprint": "Footprint3x3",
-  "ScoreMake": 250,
-  "ScoreKill": 250,
+  "ScoreMake": 200,
+  "ScoreKill": 200,
   "ScoreResult": "BuildOrder",
   "SubgroupPriority": 16,
   "Attributes": [
@@ -246,12 +246,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -308,12 +302,6 @@
           "EditorCategories": "Race:Neutral,AbilityorEffectType:Units",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -383,12 +371,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -448,7 +430,6 @@
               "AllowMinimap": 0
             },
             "DefaultButtonFace": "TerranVehiclePlatingLevel1",
-            "State": "Restricted",
             "Requirements": "LearnTerranVehicleArmor1"
           },
           "Resource": {
@@ -487,7 +468,6 @@
               "AllowMinimap": 0
             },
             "DefaultButtonFace": "TerranVehiclePlatingLevel2",
-            "State": "Restricted",
             "Requirements": "LearnTerranVehicleArmor2"
           },
           "Resource": {
@@ -526,7 +506,6 @@
               "AllowMinimap": 0
             },
             "DefaultButtonFace": "TerranVehiclePlatingLevel3",
-            "State": "Restricted",
             "Requirements": "LearnTerranVehicleArmor3"
           },
           "Resource": {
@@ -679,7 +658,6 @@
               "AllowMinimap": 0
             },
             "DefaultButtonFace": "TerranShipPlatingLevel1",
-            "State": "Restricted",
             "Requirements": "LearnTerranShipArmor1"
           },
           "Resource": {
@@ -718,7 +696,6 @@
               "AllowMinimap": 0
             },
             "DefaultButtonFace": "TerranShipPlatingLevel2",
-            "State": "Restricted",
             "Requirements": "LearnTerranShipArmor2"
           },
           "Resource": {
@@ -757,7 +734,6 @@
               "AllowMinimap": 0
             },
             "DefaultButtonFace": "TerranShipPlatingLevel3",
-            "State": "Restricted",
             "Requirements": "LearnTerranShipArmor3"
           },
           "Resource": {
@@ -957,15 +933,13 @@
   "$Upgrades": [
     "CountUnitArmoryCompleteOnlyTechTreeCheat",
     "Armory",
-    "CountUnitArmoryCompleteOnly609241497TechTreeCheat",
     "CountUnitArmoryCompleteOnly",
     "TerranBuildingArmor",
     "TerranBuild",
     "IsArmory",
     "Armory",
     "ArmorySplat",
-    "Armory",
-    null
+    "CountUnitArmoryCompleteOnly609241497TechTreeCheat"
   ],
   "$Requirements": [],
   "$Production": [],
@@ -973,9 +947,15 @@
     "TerranVehicleWeaponsLevel1",
     "TerranVehicleWeaponsLevel2",
     "TerranVehicleWeaponsLevel3",
+    "TerranVehicleArmorsLevel1",
+    "TerranVehicleArmorsLevel2",
+    "TerranVehicleArmorsLevel3",
     "TerranShipWeaponsLevel1",
     "TerranShipWeaponsLevel2",
     "TerranShipWeaponsLevel3",
+    "TerranShipArmorsLevel1",
+    "TerranShipArmorsLevel2",
+    "TerranShipArmorsLevel3",
     "TerranVehicleAndShipArmorsLevel1",
     "TerranVehicleAndShipArmorsLevel2",
     "TerranVehicleAndShipArmorsLevel3"

@@ -10,8 +10,8 @@
   "Response": "Acquire",
   "ResourceState": "Unknown",
   "ResourceType": "Unknown",
-  "LifeStart": 75,
-  "LifeMax": 75,
+  "LifeStart": 70,
+  "LifeMax": 70,
   "LifeArmorName": "Keiron Mechanical Armor",
   "Mover": "Ground",
   "StationaryTurningRate": 630,
@@ -1103,8 +1103,8 @@
   "ShieldArmorName": "Keiron Dispersion Shields",
   "id": "Umbra",
   "LifeArmor": 1,
-  "ShieldsStart": 150,
-  "ShieldsMax": 150,
+  "ShieldsStart": 135,
+  "ShieldsMax": 135,
   "Speed": 3.125,
   "Food": -3,
   "CostResource": {
@@ -1130,14 +1130,11 @@
       "id": "ShadowCannon",
       "Icon": "btn-upgrade-keiron-mechanicalweaponslevel0",
       "Name": "Shadow Cannon",
-      "Amount": 20,
-      "AttributeBonus": {
-        "Armored": 10
-      },
+      "Amount": 25,
       "Kind": "Ranged",
       "TargetFilters": "Ground",
       "Range": 5,
-      "Period": 1.82
+      "Period": 1.89
     }
   ],
   "Behaviors": [
@@ -1200,8 +1197,8 @@
     "Umbra",
     "ShieldCompulsion",
     "Foundry",
-    "CitadelCharged",
     "KeironCitadelMaterialize",
+    "CitadelCharged",
     "KeironMechWeaponsLevel1",
     "KeironMechWeapons",
     "KeironMechWeaponsLevel2",

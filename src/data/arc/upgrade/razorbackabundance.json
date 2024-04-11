@@ -12,6 +12,7 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "RazorbackAbundance",
+  "EditorCategories": "UpgradeType:Talents,Race:Dragon",
   "$tokens": {
     "ID": {
       "type": "string",
@@ -32,7 +33,6 @@
       "Value": "0.5"
     }
   ],
-  "EditorCategories": "UpgradeType:Talents,Race:Dragon",
   "AffectedUnitArray": [
     "RazorbackNoFootprint"
   ],

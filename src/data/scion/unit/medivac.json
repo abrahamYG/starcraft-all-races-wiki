@@ -18,7 +18,7 @@
   "TurningRate": 999.8437,
   "Radius": 0.75,
   "SeparationRadius": 0.75,
-  "MinimapRadius": 0.75,
+  "MinimapRadius": 1,
   "EditorCategories": "ObjectType:Unit,ObjectFamily:Melee",
   "TacticalAIFilters": "-;Player,Ally,Neutral",
   "AIEvalFactor": 0.2,
@@ -112,7 +112,7 @@
   "Collide": [
     "Flying"
   ],
-  "VisionHeight": 4,
+  "VisionHeight": 15,
   "Sight": 11,
   "CardLayouts": {
     "Root": [
@@ -128,12 +128,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -225,12 +219,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -304,12 +292,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -403,12 +385,6 @@
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
               "DisplayType": "Move",
               "Color": "255,35,125,255",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
@@ -497,12 +473,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -550,7 +520,6 @@
           "MaxUnloadRange": 3,
           "TargetFilters": [
             "Visible;Ally,Neutral,Enemy,Buried,Dead,Hidden",
-            "Visible;Ally,Neutral,Enemy,Buried,UnderConstruction,Dead,Hidden",
             "Visible;Self,Ally,Neutral,Enemy,Buried,UnderConstruction,Dead,Hidden"
           ],
           "Flags": {
@@ -575,7 +544,7 @@
           "LoadValidatorArray": [
             "NotWidowMineTarget"
           ],
-          "UnloadCargoEffect": "SiegeTankUnloadDelayAB",
+          "UnloadCargoEffect": "PurificationNovaTargettedCasterRB",
           "id": "MedivacTransport"
         },
         "Cost": {
@@ -610,12 +579,6 @@
               "DisplayType": "Attack",
               "Color": "255,255,0,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
@@ -691,12 +654,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -787,12 +744,6 @@
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
@@ -950,12 +901,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -1003,7 +948,6 @@
           "MaxUnloadRange": 3,
           "TargetFilters": [
             "Visible;Ally,Neutral,Enemy,Buried,Dead,Hidden",
-            "Visible;Ally,Neutral,Enemy,Buried,UnderConstruction,Dead,Hidden",
             "Visible;Self,Ally,Neutral,Enemy,Buried,UnderConstruction,Dead,Hidden"
           ],
           "Flags": {
@@ -1028,7 +972,7 @@
           "LoadValidatorArray": [
             "NotWidowMineTarget"
           ],
-          "UnloadCargoEffect": "SiegeTankUnloadDelayAB",
+          "UnloadCargoEffect": "PurificationNovaTargettedCasterRB",
           "id": "MedivacTransport"
         },
         "Cost": {
@@ -1063,12 +1007,6 @@
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
@@ -1161,9 +1099,6 @@
           },
           "Cost": [
             {
-              "Vital": {
-                "Energy": 0
-              },
               "Cooldown": {
                 "TimeUse": 20
               }
@@ -1205,10 +1140,10 @@
         "Row": 1,
         "Column": 0,
         "Type": "Passive",
-        "id": "RapidReignitionSystem",
-        "Icon": "btn-upgrade-terran-highcapacityfueltanks",
-        "Tooltip": "Reduces the cooldown of Medivac's Ignite Afterburners by <b>7</b> and increases the movement speed of Medivacs.",
-        "Name": "Rapid Reignition System"
+        "id": "CaduceusReactor",
+        "Icon": "btn-upgrade-terran-caduceusreactor",
+        "Tooltip": "Increases the energy regeneration rate of <span style=\"color: #ffff8a\">Medivacs</span> by <b>100</b>%.",
+        "Name": "Caduceus Reactor"
       }
     ]
   },
@@ -1255,24 +1190,16 @@
     }
   ],
   "$Upgrades": [
-    "StarportTrain",
-    "Medivac",
-    "MedivacIncreaseSpeedBoost",
-    "MedivacCaduceusReactor",
-    "MedivacRapidDeployment",
-    "Starport",
-    "TerranShipArmorsLevel1",
-    "Medivac",
-    "TerranShipArmors",
-    "TerranShipArmorsLevel2",
-    "TerranShipArmorsLevel3",
     "TerranVehicleAndShipArmorsLevel1",
+    "Medivac",
+    "MedivacCaduceusReactor",
+    "Medivac",
     "TerranVehicleAndShipArmors",
     "TerranVehicleAndShipArmorsLevel2",
     "TerranVehicleAndShipArmorsLevel3",
-    "IsMedivac",
-    "Medivac",
-    null
+    "StarportTrain",
+    "Starport",
+    "IsMedivac"
   ],
   "$Requirements": [],
   "$Production": [],

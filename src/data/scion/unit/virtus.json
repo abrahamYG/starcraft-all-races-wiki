@@ -1,6 +1,6 @@
 {
   "Name": "Virtus",
-  "Description": "Heavy tank. Weapons and movement disabled and gains armor after taking critical damage.<br/><br/><span style=\"color: #f078ff\">Energy user.</span><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
+  "Description": "Heavy tank. Can use Self-fix Protocol.<br/><br/><span style=\"color: #78F0FF\">Power user.</span><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -10,8 +10,8 @@
   "Response": "Acquire",
   "ResourceState": "Unknown",
   "ResourceType": "Unknown",
-  "LifeStart": 400,
-  "LifeMax": 400,
+  "LifeStart": 375,
+  "LifeMax": 375,
   "LifeArmorName": "Ground Mechanical Plating",
   "Mover": "Ground",
   "StationaryTurningRate": 990,
@@ -89,7 +89,7 @@
     "Armored",
     "Massive"
   ],
-  "LifeArmor": 2,
+  "LifeArmor": 1,
   "ScoreResult": "BuildOrder",
   "GlossaryAlias": "Virtus",
   "PlaneArray": [
@@ -125,12 +125,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -224,12 +218,6 @@
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
               "DisplayType": "Move",
               "Color": "255,35,125,255",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
@@ -318,12 +306,6 @@
               "Color": "255,255,0,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -394,12 +376,6 @@
           "EditorCategories": "Race:Neutral,AbilityorEffectType:Units",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -478,12 +454,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -575,12 +545,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -608,7 +572,7 @@
             "UpdateChargesOnLevelChange": 1
           },
           "Effect": [
-            "VirtusSelffixProtocol"
+            "VirtusSelffixProtocolChannelDummy"
           ],
           "EffectRange": [
             "0,1000"
@@ -665,7 +629,8 @@
               "Flags": {
                 "ShowInGlossary": 1
               },
-              "DefaultButtonFace": "SelfFixProtocol"
+              "DefaultButtonFace": "SelfFixProtocol",
+              "Requirements": "VirtusSelfFixReq"
             }
           },
           "Cost": [
@@ -676,10 +641,9 @@
             }
           ],
           "CastOutroTime": [
-            5.6
+            4.2
           ],
           "UninterruptibleArray": {
-            "Cast": 1,
             "Channel": 1
           },
           "id": "VirtusSelffixProtocol"
@@ -700,166 +664,24 @@
         "AbilCmd": "VirtusSelffixProtocol,Execute",
         "id": "SelfFixProtocol",
         "Icon": "btn-upgrade-swann-regenerativebiosteel",
-        "Tooltip": "Heals <b>200</b> health over <b>6</b> seconds while disabling movement and weapons. Reduces received weapon damage by <b>25</b>%.",
+        "Tooltip": "Heals <b>150</b> health over <b>4</b> seconds while disabling movement and weapons. Reduces received weapon damage by <b>25</b>%.<br/><br/><span style=\"color: #78F0FF\">Uses <b>100</b> power.<c/>",
         "Name": "Self-Fix Protocol",
         "Hotkey": "F"
-      },
-      {
-        "Info": {
-          "class": "CAbilEffectInstant",
-          "Name": "Abil/Name/VirtusSelffixProtocol",
-          "TechPlayer": "Upkeep",
-          "EditorCategories": "Race:Genetron,AbilityorEffectType:Units",
-          "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
-          "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            }
-          ],
-          "SharedFlags": {
-            "DisableWhileDead": 1
-          },
-          "DataCollection": "VirtusSelffixProtocol",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
-          "RangeSlop": 1,
-          "ArcSlop": 11.25,
-          "AutoCastAcquireLevel": "Offensive",
-          "AutoCastFilters": "Visible;Player,Ally",
-          "Flags": {
-            "AbortOnAllianceChange": 1,
-            "CancelResetAutoCast": 1,
-            "ChannelingMinimum": 1,
-            "RangeUseCasterRadius": 1,
-            "ReApproachable": 1,
-            "RequireTargetVision": 1,
-            "WaitToSpend": 1,
-            "UpdateChargesOnLevelChange": 1
-          },
-          "Effect": [
-            "VirtusSelffixProtocol"
-          ],
-          "EffectRange": [
-            "0,1000"
-          ],
-          "AINotifyEffect": "VirtusSelffixProtocol",
-          "RefundArray": {
-            "Approach": 1,
-            "Prep": 1,
-            "Cast": 1
-          },
-          "RefundFraction": {
-            "Resource": {
-              "Minerals": -1,
-              "Vespene": -1,
-              "Terrazine": -1,
-              "Custom": -1
-            },
-            "Charge": -1,
-            "Cooldown": -1
-          },
-          "UseMarkerArray": {
-            "Approach": 1,
-            "Prep": 1,
-            "Cast": 1,
-            "Channel": 1
-          },
-          "PauseableArray": {
-            "Approach": 1,
-            "Prep": 1,
-            "Cast": 1,
-            "Channel": 1,
-            "Finish": 1
-          },
-          "PreemptableArray": {
-            "Approach": 1,
-            "Prep": 1,
-            "Cast": 1,
-            "Channel": 1,
-            "Finish": 1
-          },
-          "ValidatedArray": {
-            "Approach": 1,
-            "Prep": 1,
-            "Cast": 1,
-            "Channel": 1
-          },
-          "DefaultError": "MustTargetUnit",
-          "AcquirePriority": 3,
-          "SetLastTarget": "Unknown",
-          "VeterancyLevelMin": 0,
-          "VeterancyLevelSkip": 0,
-          "CmdButtonArray": {
-            "Execute": {
-              "Flags": {
-                "ShowInGlossary": 1
-              },
-              "DefaultButtonFace": "SelfFixProtocol"
-            }
-          },
-          "Cost": [
-            {
-              "Vital": {
-                "Energy": 100
-              }
-            }
-          ],
-          "CastOutroTime": [
-            5.6
-          ],
-          "UninterruptibleArray": {
-            "Cast": 1,
-            "Channel": 1
-          },
-          "id": "VirtusSelffixProtocol"
-        },
-        "Cost": {
-          "Minerals": 0,
-          "Vespene": 0,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 100,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 2,
-        "Column": 1,
-        "Type": "AbilCmd",
-        "AbilCmd": "VirtusSelffixProtocol,255",
-        "id": "Cancel",
-        "Icon": "btn-command-cancel",
-        "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
-        "Name": "Cancel",
-        "Hotkey": "Esc"
       }
     ]
   },
   "CargoSize": 8,
   "Food": -4,
   "CostResource": {
-    "Minerals": 275,
-    "Vespene": 125
+    "Minerals": 250,
+    "Vespene": 100
   },
   "RepairTime": 56,
   "InnerRadius": 0.75,
-  "SubgroupPriority": 30,
-  "GlossaryPriority": 11,
+  "SubgroupPriority": 32,
+  "GlossaryPriority": 10,
   "GlossaryStrongArray": [
-    "Blaze",
+    "Fixer",
     "Zealot",
     "Marine",
     "Zergling"
@@ -872,6 +694,7 @@
   ],
   "EnergyStart": 100,
   "EnergyMax": 100,
+  "EnergyRegenRate": 1.125,
   "Icon": "btn-unit-genetron-virtus",
   "LifeArmorIcon": "btn-upgrade-genetron-groundmechplating-level0",
   "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
@@ -885,12 +708,18 @@
       "Kind": "Ranged",
       "TargetFilters": "Ground",
       "Range": 4,
-      "Period": 1.694
+      "Period": 1.75
     }
   ],
   "Behaviors": [
     {
-      "id": "GenetronUnitEnergyRegenx2"
+      "id": "GenetronPowerSupplyTracker"
+    },
+    {
+      "id": "TrackGenetronPowerSupplyUnit"
+    },
+    {
+      "id": "VirtusSelfFixReq"
     }
   ],
   "Abilities": [
@@ -912,20 +741,24 @@
     }
   ],
   "$Upgrades": [
-    "GenetronHeavyWeaponsLevel1",
+    "GenetronGroundPlatingLevel1",
     "Virtus",
+    "Virtus",
+    "GenetronGroundPlating",
+    "GenetronHeavyWeaponsLevel1",
     "GenetronHeavyWeapons",
     "GenetronHeavyWeaponsLevel2",
     "GenetronHeavyWeaponsLevel3",
     "TechVault",
-    "TrainHeavyweightMechs",
-    "Fabricator",
-    "GenetronGroundPlatingLevel1",
-    "Virtus",
-    "GenetronGroundPlating",
     "GenetronGroundPlatingLevel2",
     "GenetronGroundPlatingLevel3",
+    "TrainHeavyweightMechs",
+    "CountUnitVirtusQueuedOrBetterAtUnit",
     "Fabricator",
+    "Fabricator",
+    "CountUnitVirtusInProgressOnlyAtUnit",
+    "GenetronGroundPlatingRevert",
+    "GenetronHeavyWeaponsRevert",
     "SelffixProtocol"
   ],
   "$Requirements": [],
@@ -976,15 +809,8 @@
       "AbilCmd": "VirtusSelffixProtocol,Execute",
       "id": "SelfFixProtocol",
       "Icon": "btn-upgrade-swann-regenerativebiosteel",
-      "Tooltip": "Heals <b>200</b> health over <b>6</b> seconds while disabling movement and weapons. Reduces received weapon damage by <b>25</b>%.",
+      "Tooltip": "Heals <b>150</b> health over <b>4</b> seconds while disabling movement and weapons. Reduces received weapon damage by <b>25</b>%.<br/><br/><span style=\"color: #78F0FF\">Uses <b>100</b> power.<c/>",
       "Name": "Self-Fix Protocol"
-    },
-    {
-      "AbilCmd": "VirtusSelffixProtocol,255",
-      "id": "Cancel",
-      "Icon": "btn-command-cancel",
-      "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
-      "Name": "Cancel"
     }
   ]
 }

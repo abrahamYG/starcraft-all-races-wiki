@@ -97,7 +97,7 @@
   "Collide": [
     "Flying"
   ],
-  "VisionHeight": 4,
+  "VisionHeight": 15,
   "Sight": 10,
   "CardLayouts": {
     "Root": [
@@ -113,12 +113,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -210,12 +204,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -289,12 +277,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -386,12 +368,6 @@
               "Color": "255,255,0,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -466,12 +442,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -580,328 +550,6 @@
       {
         "Info": {
           "class": "CAbilEffectTarget",
-          "Name": "Abil/Name/Corruption",
-          "TechPlayer": "Upkeep",
-          "EditorCategories": "Race:Zerg,AbilityorEffectType:Units",
-          "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
-          "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            }
-          ],
-          "SharedFlags": {
-            "DisableWhileDead": 1
-          },
-          "DataCollection": "Corruption",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
-          "RangeSlop": 1,
-          "ArcSlop": 11.25,
-          "AutoCastAcquireLevel": "Offensive",
-          "AutoCastFilters": "Visible;Player,Ally",
-          "Flags": {
-            "AbortOnAllianceChange": 1,
-            "CancelResetAutoCast": 1,
-            "ChannelingMinimum": 1,
-            "RangeUseCasterRadius": 1,
-            "ReApproachable": 1,
-            "RequireTargetVision": 1,
-            "WaitToSpend": 1,
-            "UpdateChargesOnLevelChange": 1,
-            "BestUnit": 1,
-            "AllowMovement": 1,
-            "NoDeceleration": 1,
-            "AutoCast": 1,
-            "AutoCastOn": 1
-          },
-          "Effect": [
-            "Corruption"
-          ],
-          "EffectRange": [
-            "0,1000"
-          ],
-          "AINotifyEffect": "Corruption",
-          "RefundArray": {
-            "Approach": 1,
-            "Prep": 1,
-            "Cast": 1
-          },
-          "RefundFraction": {
-            "Resource": {
-              "Minerals": -1,
-              "Vespene": -1,
-              "Terrazine": -1,
-              "Custom": -1
-            },
-            "Charge": -1,
-            "Cooldown": -1
-          },
-          "UseMarkerArray": {
-            "Approach": 1,
-            "Prep": 1,
-            "Cast": 1,
-            "Channel": 1
-          },
-          "PauseableArray": {
-            "Approach": 1,
-            "Prep": 1,
-            "Cast": 1,
-            "Channel": 1,
-            "Finish": 1
-          },
-          "PreemptableArray": {
-            "Approach": 1,
-            "Prep": 1,
-            "Cast": 1,
-            "Channel": 1,
-            "Finish": 1
-          },
-          "ValidatedArray": {
-            "Approach": 1,
-            "Prep": 1,
-            "Cast": 1,
-            "Channel": 1
-          },
-          "DefaultError": "MustTargetUnit",
-          "AcquirePriority": 3,
-          "SetLastTarget": "Unknown",
-          "VeterancyLevelMin": 0,
-          "VeterancyLevelSkip": 0,
-          "CmdButtonArray": {
-            "Execute": {
-              "Flags": {
-                "ShowInGlossary": 1
-              },
-              "DefaultButtonFace": "CorruptionAbility",
-              "State": "Restricted"
-            },
-            "Cancel": {
-              "DefaultButtonFace": "Cancel"
-            }
-          },
-          "FollowRange": 5,
-          "TargetFilters": [
-            "Visible;Player,Ally,Neutral,Structure,Missile,Stasis,Dead,Invulnerable"
-          ],
-          "Range": [
-            6
-          ],
-          "CancelableArray": {
-            "Channel": 1
-          },
-          "UninterruptibleArray": {
-            "Channel": 1
-          },
-          "Cost": [
-            {
-              "Vital": {
-                "Energy": 0
-              },
-              "Cooldown": {
-                "TimeStart": 45,
-                "TimeUse": 45
-              }
-            }
-          ],
-          "id": "Corruption"
-        },
-        "Cost": {
-          "Minerals": 0,
-          "Vespene": 0,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 2,
-        "Column": 0,
-        "Type": "AbilCmd",
-        "AbilCmd": "Corruption,Execute",
-        "id": "CorruptionAbility",
-        "Icon": "btn-ability-zerg-corruption-color",
-        "Tooltip": "Covers the target enemy unit in Zerg slime, increasing the damage taken by 20% for <b>30</b>.",
-        "Name": "Corruption",
-        "Hotkey": "C"
-      },
-      {
-        "Info": {
-          "class": "CAbilEffectTarget",
-          "Name": "Abil/Name/Corruption",
-          "TechPlayer": "Upkeep",
-          "EditorCategories": "Race:Zerg,AbilityorEffectType:Units",
-          "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
-          "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            }
-          ],
-          "SharedFlags": {
-            "DisableWhileDead": 1
-          },
-          "DataCollection": "Corruption",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
-          "RangeSlop": 1,
-          "ArcSlop": 11.25,
-          "AutoCastAcquireLevel": "Offensive",
-          "AutoCastFilters": "Visible;Player,Ally",
-          "Flags": {
-            "AbortOnAllianceChange": 1,
-            "CancelResetAutoCast": 1,
-            "ChannelingMinimum": 1,
-            "RangeUseCasterRadius": 1,
-            "ReApproachable": 1,
-            "RequireTargetVision": 1,
-            "WaitToSpend": 1,
-            "UpdateChargesOnLevelChange": 1,
-            "BestUnit": 1,
-            "AllowMovement": 1,
-            "NoDeceleration": 1,
-            "AutoCast": 1,
-            "AutoCastOn": 1
-          },
-          "Effect": [
-            "Corruption"
-          ],
-          "EffectRange": [
-            "0,1000"
-          ],
-          "AINotifyEffect": "Corruption",
-          "RefundArray": {
-            "Approach": 1,
-            "Prep": 1,
-            "Cast": 1
-          },
-          "RefundFraction": {
-            "Resource": {
-              "Minerals": -1,
-              "Vespene": -1,
-              "Terrazine": -1,
-              "Custom": -1
-            },
-            "Charge": -1,
-            "Cooldown": -1
-          },
-          "UseMarkerArray": {
-            "Approach": 1,
-            "Prep": 1,
-            "Cast": 1,
-            "Channel": 1
-          },
-          "PauseableArray": {
-            "Approach": 1,
-            "Prep": 1,
-            "Cast": 1,
-            "Channel": 1,
-            "Finish": 1
-          },
-          "PreemptableArray": {
-            "Approach": 1,
-            "Prep": 1,
-            "Cast": 1,
-            "Channel": 1,
-            "Finish": 1
-          },
-          "ValidatedArray": {
-            "Approach": 1,
-            "Prep": 1,
-            "Cast": 1,
-            "Channel": 1
-          },
-          "DefaultError": "MustTargetUnit",
-          "AcquirePriority": 3,
-          "SetLastTarget": "Unknown",
-          "VeterancyLevelMin": 0,
-          "VeterancyLevelSkip": 0,
-          "CmdButtonArray": {
-            "Execute": {
-              "Flags": {
-                "ShowInGlossary": 1
-              },
-              "DefaultButtonFace": "CorruptionAbility",
-              "State": "Restricted"
-            },
-            "Cancel": {
-              "DefaultButtonFace": "Cancel"
-            }
-          },
-          "FollowRange": 5,
-          "TargetFilters": [
-            "Visible;Player,Ally,Neutral,Structure,Missile,Stasis,Dead,Invulnerable"
-          ],
-          "Range": [
-            6
-          ],
-          "CancelableArray": {
-            "Channel": 1
-          },
-          "UninterruptibleArray": {
-            "Channel": 1
-          },
-          "Cost": [
-            {
-              "Vital": {
-                "Energy": 0
-              },
-              "Cooldown": {
-                "TimeStart": 45,
-                "TimeUse": 45
-              }
-            }
-          ],
-          "id": "Corruption"
-        },
-        "Cost": {
-          "Minerals": 0,
-          "Vespene": 0,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 2,
-        "Column": 4,
-        "Type": "AbilCmd",
-        "AbilCmd": "Corruption,Cancel",
-        "id": "Cancel",
-        "Icon": "btn-command-cancel",
-        "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
-        "Name": "Cancel",
-        "Hotkey": "Esc"
-      },
-      {
-        "Info": {
-          "class": "CAbilEffectTarget",
           "Name": "Abil/Name/CausticSpray",
           "TechPlayer": "Upkeep",
           "EditorCategories": "AbilityorEffectType:Units,Race:Zerg",
@@ -911,12 +559,6 @@
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
@@ -1095,10 +737,6 @@
   "Behaviors": [],
   "Abilities": [
     {
-      "id": "Corruption",
-      "Name": "Corruption"
-    },
-    {
       "id": "MorphToBroodLord",
       "Name": "Morph (Corruptor - > Brood Lord)"
     },
@@ -1120,14 +758,14 @@
     }
   ],
   "$Upgrades": [
-    "ZergFlyerWeaponsLevel1",
+    "Corruptor_Death",
     "Corruptor",
+    "ZergFlyerWeaponsLevel1",
     "ZergFlyerWeapons",
     "ZergFlyerWeaponsLevel2",
     "ZergFlyerWeaponsLevel3",
     "ZergFlyerArmorsLevel1",
     "Corruptor",
-    "Corruptor_Death",
     "BroodLordCocoon",
     "NotCorruptor",
     "ZergFlyerArmors",
@@ -1137,8 +775,7 @@
     "LarvaTrain",
     "Larva",
     "SwarmHostCocoon",
-    "IsCorruptor",
-    "Corruptor"
+    "IsCorruptor"
   ],
   "$Requirements": [],
   "$Production": [],
@@ -1193,13 +830,6 @@
       "Icon": "btn-unit-zerg-broodlord",
       "Tooltip": "Flying heavy-assault unit. Shoots Broodlings at its target. A Broodling is a small creature that can attack ground units.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
       "Name": "Morph to Brood Lord"
-    },
-    {
-      "AbilCmd": "Corruption,Execute",
-      "id": "CorruptionAbility",
-      "Icon": "btn-ability-zerg-corruption-color",
-      "Tooltip": "Covers the target enemy unit in Zerg slime, increasing the damage taken by 20% for <b>30</b>.",
-      "Name": "Corruption"
     },
     {
       "AbilCmd": "Corruption,Cancel",

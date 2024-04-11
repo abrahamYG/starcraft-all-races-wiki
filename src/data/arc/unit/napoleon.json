@@ -99,7 +99,7 @@
     "Mechanical"
   ],
   "LifeArmor": 1,
-  "Speed": 2.5,
+  "Speed": 2.75,
   "Acceleration": 1000,
   "LateralAcceleration": 64,
   "Sight": 11,

@@ -175,12 +175,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -237,12 +231,6 @@
           "EditorCategories": "Race:Neutral,AbilityorEffectType:Units",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -307,12 +295,6 @@
           "EditorCategories": "Race:Neutral,AbilityorEffectType:Units",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -401,46 +383,6 @@
         "Hotkey": "N"
       },
       {
-        "Upgrade": "GhostMoebiusReactor",
-        "Info": {
-          "Button": {
-            "Flags": {
-              "AllowMinimap": 0,
-              "ShowInGlossary": 1
-            },
-            "DefaultButtonFace": "ResearchGhostEnergyUpgrade",
-            "State": "Restricted",
-            "Requirements": "LearnGhostEnergyUpgrade"
-          },
-          "Resource": {
-            "Minerals": 100,
-            "Vespene": 100
-          },
-          "Time": 80,
-          "Upgrade": "GhostMoebiusReactor"
-        },
-        "Time": 80,
-        "Cost": {
-          "Minerals": 100,
-          "Vespene": 100,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 0,
-        "Column": 1,
-        "Type": "AbilCmd",
-        "AbilCmd": "GhostAcademyResearch,Research2",
-        "id": "ResearchGhostEnergyUpgrade",
-        "Icon": "btn-upgrade-terran-moebiusreactor",
-        "Tooltip": "Increases the starting energy of <span style=\"color: #ffff8a\">Ghosts</span> by <b>25</b>.",
-        "Name": "Research Moebius Reactor",
-        "Hotkey": "M"
-      },
-      {
         "Cost": {
           "Minerals": 0,
           "Vespene": 0,
@@ -506,9 +448,7 @@
     "IsGhostAcademy",
     "GhostAcademy",
     "GhostAcademySplat",
-    "NotGhostAcademy",
-    "GhostAcademy",
-    null
+    "NotGhostAcademy"
   ],
   "$Requirements": [],
   "$Production": [
@@ -557,13 +497,6 @@
       "Icon": "btn-ability-terran-armnuke",
       "Tooltip": "Arms the Silo with a Tactical Nuke.<br/><br/>Nukes take <b>20</b> to land, but they deal up to 300 (+200 vs. structures) damage in a large radius.<br/><br/>Use a Ghost to designate the target.",
       "Name": "Arm Silo with Nuke"
-    },
-    {
-      "AbilCmd": "GhostAcademyResearch,Research2",
-      "id": "ResearchGhostEnergyUpgrade",
-      "Icon": "btn-upgrade-terran-moebiusreactor",
-      "Tooltip": "Increases the starting energy of <span style=\"color: #ffff8a\">Ghosts</span> by <b>25</b>.",
-      "Name": "Research Moebius Reactor"
     }
   ]
 }

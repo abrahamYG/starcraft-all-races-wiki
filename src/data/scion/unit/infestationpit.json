@@ -122,12 +122,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -189,12 +183,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -245,73 +233,6 @@
         "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
         "Name": "Cancel",
         "Hotkey": "Esc"
-      },
-      {
-        "Info": {
-          "Button": {
-            "Flags": {
-              "AllowMinimap": 0
-            }
-          }
-        },
-        "Cost": {
-          "Minerals": 0,
-          "Vespene": 0,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 0,
-        "Column": 2,
-        "Type": "AbilCmd",
-        "AbilCmd": "InfestationPitResearch,Research2",
-        "id": "EvolvePeristalsis",
-        "Icon": "btn-upgrade-zerg-peristalsis",
-        "Tooltip": "Allows <span style=\"color: #ffff8a\">Infestors</span> to move faster while burrowed.",
-        "Name": "Evolve Peristalsis",
-        "Hotkey": "P"
-      },
-      {
-        "Upgrade": "InfestorEnergyUpgrade",
-        "Info": {
-          "Button": {
-            "Flags": {
-              "AllowMinimap": 0,
-              "ShowInGlossary": 1
-            },
-            "DefaultButtonFace": "EvolveInfestorEnergyUpgrade",
-            "Requirements": "LearnInfestorEnergyUpgrade"
-          },
-          "Resource": {
-            "Minerals": 150,
-            "Vespene": 150
-          },
-          "Time": 80,
-          "Upgrade": "InfestorEnergyUpgrade"
-        },
-        "Time": 80,
-        "Cost": {
-          "Minerals": 150,
-          "Vespene": 150,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 0,
-        "Column": 1,
-        "Type": "AbilCmd",
-        "AbilCmd": "InfestationPitResearch,Research3",
-        "id": "EvolveInfestorEnergyUpgrade",
-        "Icon": "btn-upgrade-zerg-pathogenglands",
-        "Tooltip": "Increases the starting energy of <span style=\"color: #ffff8a\">Infestors</span> by 25.",
-        "Name": "Evolve Pathogen Glands",
-        "Hotkey": "G"
       },
       {
         "Upgrade": "NeuralParasite",
@@ -406,14 +327,11 @@
     "InfestationPit",
     "ZergBuild",
     "IsInfestationPit",
-    "InfestationPit",
     "InfestationPit"
   ],
   "$Requirements": [],
   "$Production": [],
   "$Research": [
-    null,
-    "InfestorEnergyUpgrade",
     "NeuralParasite"
   ],
   "$Morph": [],
@@ -435,20 +353,6 @@
       "Icon": "btn-command-cancel",
       "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
       "Name": "Cancel"
-    },
-    {
-      "AbilCmd": "InfestationPitResearch,Research2",
-      "id": "EvolvePeristalsis",
-      "Icon": "btn-upgrade-zerg-peristalsis",
-      "Tooltip": "Allows <span style=\"color: #ffff8a\">Infestors</span> to move faster while burrowed.",
-      "Name": "Evolve Peristalsis"
-    },
-    {
-      "AbilCmd": "InfestationPitResearch,Research3",
-      "id": "EvolveInfestorEnergyUpgrade",
-      "Icon": "btn-upgrade-zerg-pathogenglands",
-      "Tooltip": "Increases the starting energy of <span style=\"color: #ffff8a\">Infestors</span> by 25.",
-      "Name": "Evolve Pathogen Glands"
     },
     {
       "AbilCmd": "InfestationPitResearch,Research4",

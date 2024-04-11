@@ -177,6 +177,7 @@
         "Type": "AbilCmd",
         "AbilCmd": "que5,CancelLast",
         "id": "Cancel",
+        "Icon": "btn-command-cancel",
         "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
         "Name": "Cancel",
         "Hotkey": "Esc"
@@ -246,7 +247,13 @@
         "Hotkey": "Esc"
       },
       {
-        "Info": {},
+        "Info": {
+          "SetValidators": [
+            "ProcessorIsQueuedGlobal"
+          ],
+          "SetFilters": "-;RawResource,HarvestableResource",
+          "UseFilters": "-;Worker"
+        },
         "Cost": {
           "Minerals": 0,
           "Vespene": 0,
@@ -260,7 +267,7 @@
         "Row": 1,
         "Column": 4,
         "Type": "AbilCmd",
-        "AbilCmd": "Rally,Rally1",
+        "AbilCmd": "RallyProcessingCore,Rally1",
         "id": "Rally",
         "Icon": "btn-ability-terran-setrallypoint",
         "Tooltip": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
@@ -349,7 +356,7 @@
           "EffectRange": [
             "0,1000"
           ],
-          "AINotifyEffect": "MiningPrioritySearchArea",
+          "AINotifyEffect": "MiningPriority",
           "RefundArray": {
             "Approach": 1,
             "Prep": 1,
@@ -406,8 +413,16 @@
             }
           },
           "Cost": [
-            {}
+            {
+              "Cooldown": {
+                "TimeStart": 0.0625
+              }
+            }
           ],
+          "PreEffectBehavior": {
+            "Behavior": "Scion_OverclockTargetMarker",
+            "Count": 1
+          },
           "id": "MiningPriority"
         },
         "Cost": {
@@ -426,9 +441,9 @@
         "AbilCmd": "MiningPriority,Execute",
         "id": "MiningPriority",
         "Icon": "btn-ability-genetron-miningtap",
-        "Tooltip": "<s val=\"VerySmallFont\">  </s><img path=\"@@UI/ResourceIconPower\" width=\"24\" height=\"24\" alignment=\"absolutemiddle\"/><c val=\"FF0000\" validator=\"GenetronPowerSupplyLT100\"><b>100</b></span><img path=\"Assets\\Textures\\blank.dds\" width=\"1\" height=\"24\" alignment=\"top\"/><br/>Increases the resource yield of owned nearby harvesters by <b>1</b>. The effect lasts <b>46</b> seconds.",
+        "Tooltip": "<s val=\"VerySmallFont\">  </s><img path=\"@@UI/ResourceIconPower\" width=\"24\" height=\"24\" alignment=\"absolutemiddle\"/><c val=\"FF0000\" validator=\"GenetronPowerSupplyLT100\"><b>100</b></span><img path=\"Assets\\Textures\\blank.dds\" width=\"1\" height=\"24\" alignment=\"top\"/><br/>Increases the yield of nearby mineral fields by <b>1</b> for <b>42</b> seconds. Repeated casts increase the duration up to <b>168</b> seconds.",
         "Name": "Mining Priority",
-        "Hotkey": "G"
+        "Hotkey": "V"
       },
       {
         "Info": {
@@ -458,7 +473,7 @@
           "RangeSlop": 1,
           "ArcSlop": 11.25,
           "AutoCastAcquireLevel": "Defensive",
-          "AutoCastFilters": "-;Ally,Neutral,Enemy",
+          "AutoCastFilters": "Visible;Neutral,Enemy,Missile,Stasis,Dead,Invulnerable",
           "Flags": {
             "AbortOnAllianceChange": 1,
             "CancelResetAutoCast": 1,
@@ -541,14 +556,14 @@
             "CanHaveEnergy;Self,Ally,Neutral,Enemy,Structure,Missile,Stasis,UnderConstruction,Dead,Hidden"
           ],
           "Range": [
-            8
+            9
           ],
           "Arc": 360,
           "SmartValidatorArray": [
             "healSmartTargetFilters",
             "NotWarpingIn"
           ],
-          "AutoCastRange": 8,
+          "AutoCastRange": 9,
           "AutoCastValidatorArray": [
             "NotWarpingIn",
             "IsNotTeslaCharge",
@@ -626,7 +641,7 @@
         "AbilCmd": "ProcessingCoreTrain,Train2",
         "id": "Scion_Processor",
         "Icon": "btn-unit-genetron-processor",
-        "Tooltip": "Support unit. Can use System Recharge.<br/><br/><span style=\"color: #78F0FF\">Power user.</span><br/><span style=\"color: #FFE303\">Detector</span>",
+        "Tooltip": "Support unit. Can use System Recharge.<br/><br/><span style=\"color: #78F0FF\">Power user.</span></n><span style=\"color: #FFE303\">Detector</span>",
         "Name": "Fabricate Processor",
         "Hotkey": "R"
       },
@@ -722,6 +737,34 @@
         "Icon": "btn-tips-computerterminals",
         "Tooltip": "<span style=\"color: #78f0ff\">Generates <b>0.71</b> power per second.</span>",
         "Name": "Power Grid"
+      },
+      {
+        "Info": {
+          "SetValidators": [
+            "ProcessorIsQueuedGlobal"
+          ],
+          "SetFilters": "-;RawResource,HarvestableResource",
+          "UseFilters": "-;Worker"
+        },
+        "Cost": {
+          "Minerals": 0,
+          "Vespene": 0,
+          "Terazine": 0,
+          "Custom": 0,
+          "Energy": 0,
+          "Life": 0,
+          "Shields": 0,
+          "Food": 0
+        },
+        "Row": 1,
+        "Column": 3,
+        "Type": "AbilCmd",
+        "AbilCmd": "RallyProcessingCore,Rally2",
+        "id": "RallyWorkerGen",
+        "Icon": "btn-ability-genetron-setworkerrallypoint",
+        "Tooltip": "Sends constructed worker units to the designated point. Workers rallied to resources will begin gathering automatically.",
+        "Name": "Set Worker Rally Point",
+        "Hotkey": "G"
       }
     ]
   },
@@ -790,6 +833,10 @@
       "Name": "Queue (5)"
     },
     {
+      "id": "Scion_DisplayCooldownDummy",
+      "Name": "Display Cooldown Dummy"
+    },
+    {
       "id": "RallyProcessingCore",
       "Name": "Processing Core - Rally"
     },
@@ -812,6 +859,8 @@
     "ACRBuild",
     "CountUnitProcessingCoreCompleteOnlyTechTreeCheat",
     "CasterIsProcessingCore",
+    "AddonDummy",
+    "GenetronProcessingCorePlayerDecalMacro",
     "UploaderSplat",
     "ProcessingCore",
     "ProcessingCoreSplat",
@@ -835,6 +884,7 @@
     {
       "AbilCmd": "que5,CancelLast",
       "id": "Cancel",
+      "Icon": "btn-command-cancel",
       "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
       "Name": "Cancel"
     },
@@ -846,7 +896,7 @@
       "Name": "Cancel"
     },
     {
-      "AbilCmd": "Rally,Rally1",
+      "AbilCmd": "RallyProcessingCore,Rally1",
       "id": "Rally",
       "Icon": "btn-ability-terran-setrallypoint",
       "Tooltip": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
@@ -863,7 +913,7 @@
       "AbilCmd": "MiningPriority,Execute",
       "id": "MiningPriority",
       "Icon": "btn-ability-genetron-miningtap",
-      "Tooltip": "<s val=\"VerySmallFont\">  </s><img path=\"@@UI/ResourceIconPower\" width=\"24\" height=\"24\" alignment=\"absolutemiddle\"/><c val=\"FF0000\" validator=\"GenetronPowerSupplyLT100\"><b>100</b></span><img path=\"Assets\\Textures\\blank.dds\" width=\"1\" height=\"24\" alignment=\"top\"/><br/>Increases the resource yield of owned nearby harvesters by <b>1</b>. The effect lasts <b>46</b> seconds.",
+      "Tooltip": "<s val=\"VerySmallFont\">  </s><img path=\"@@UI/ResourceIconPower\" width=\"24\" height=\"24\" alignment=\"absolutemiddle\"/><c val=\"FF0000\" validator=\"GenetronPowerSupplyLT100\"><b>100</b></span><img path=\"Assets\\Textures\\blank.dds\" width=\"1\" height=\"24\" alignment=\"top\"/><br/>Increases the yield of nearby mineral fields by <b>1</b> for <b>42</b> seconds. Repeated casts increase the duration up to <b>168</b> seconds.",
       "Name": "Mining Priority"
     },
     {
@@ -877,7 +927,7 @@
       "AbilCmd": "ProcessingCoreTrain,Train2",
       "id": "Scion_Processor",
       "Icon": "btn-unit-genetron-processor",
-      "Tooltip": "Support unit. Can use System Recharge.<br/><br/><span style=\"color: #78F0FF\">Power user.</span><br/><span style=\"color: #FFE303\">Detector</span>",
+      "Tooltip": "Support unit. Can use System Recharge.<br/><br/><span style=\"color: #78F0FF\">Power user.</span></n><span style=\"color: #FFE303\">Detector</span>",
       "Name": "Fabricate Processor"
     },
     {
@@ -886,6 +936,13 @@
       "Icon": "btn-command-stop",
       "Tooltip": "Orders selected units to cancel all orders and stop moving.",
       "Name": "Stop"
+    },
+    {
+      "AbilCmd": "RallyProcessingCore,Rally2",
+      "id": "RallyWorkerGen",
+      "Icon": "btn-ability-genetron-setworkerrallypoint",
+      "Tooltip": "Sends constructed worker units to the designated point. Workers rallied to resources will begin gathering automatically.",
+      "Name": "Set Worker Rally Point"
     }
   ]
 }

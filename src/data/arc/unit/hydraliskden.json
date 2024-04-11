@@ -131,12 +131,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -198,12 +192,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -227,7 +215,10 @@
               "DefaultButtonFace": "Cancel"
             },
             "Halt": {
-              "DefaultButtonFace": "Cancel"
+              "DefaultButtonFace": "Halt",
+              "Flags": {
+                "ToSelection": 1
+              }
             }
           },
           "id": "BuildInProgress"
@@ -253,54 +244,6 @@
         "Hotkey": "Esc"
       },
       {
-        "Info": {
-          "SectionArray": {
-            "Abils": {
-              "DurationArray": {
-                "Delay": 100
-              }
-            },
-            "Actor": {
-              "DurationArray": {
-                "Duration": 100
-              }
-            },
-            "Facing": {
-              "DurationArray": {
-                "Delay": 10
-              }
-            },
-            "Stats": {
-              "DurationArray": {
-                "Delay": 100
-              }
-            }
-          },
-          "Score": 1,
-          "Unit": "LurkerDenMP"
-        },
-        "Unit": "LurkerDenMP",
-        "Cost": {
-          "Minerals": 150,
-          "Vespene": 150,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 2,
-        "Column": 4,
-        "Type": "AbilCmd",
-        "AbilCmd": "UpgradeToLurkerDenMP,Cancel",
-        "id": "Cancel",
-        "Icon": "btn-command-cancel",
-        "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
-        "Name": "Cancel",
-        "Hotkey": "Esc"
-      },
-      {
         "Upgrade": "EvolveMuscularAugments",
         "Info": {
           "Button": {
@@ -315,10 +258,10 @@
             "Minerals": 100,
             "Vespene": 100
           },
-          "Time": 100,
+          "Time": 90,
           "Upgrade": "EvolveMuscularAugments"
         },
-        "Time": 100,
+        "Time": 90,
         "Cost": {
           "Minerals": 100,
           "Vespene": 100,
@@ -351,16 +294,16 @@
             "Requirements": "LearnEvolveGroovedSpines"
           },
           "Resource": {
-            "Minerals": 100,
-            "Vespene": 100
+            "Minerals": 75,
+            "Vespene": 75
           },
           "Time": 100,
           "Upgrade": "EvolveGroovedSpines"
         },
         "Time": 100,
         "Cost": {
-          "Minerals": 100,
-          "Vespene": 100,
+          "Minerals": 75,
+          "Vespene": 75,
           "Terazine": 0,
           "Custom": 0,
           "Energy": 0,
@@ -421,12 +364,12 @@
     }
   ],
   "$Upgrades": [
-    "CountUnitAlias_HydraliskDenCompleteOnly4037297345TechTreeCheat",
-    "HydraliskDen",
     "ZergBuild",
+    "HydraliskDen",
+    "CountUnitAlias_HydraliskDenCompleteOnly4037297345TechTreeCheat",
     "IsHydraliskDen",
     "HydraliskDen",
-    "HydraliskDen"
+    "UPLRenameZerg"
   ],
   "$Requirements": [],
   "$Production": [],
@@ -452,13 +395,6 @@
       "id": "CancelBuilding",
       "Icon": "btn-command-cancel",
       "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-      "Name": "Cancel"
-    },
-    {
-      "AbilCmd": "UpgradeToLurkerDenMP,Cancel",
-      "id": "Cancel",
-      "Icon": "btn-command-cancel",
-      "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
       "Name": "Cancel"
     },
     {

@@ -12,6 +12,7 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "InfantryMortarRangeUpgrade",
+  "EditorCategories": "UpgradeType:Talents,Race:UPL",
   "$tokens": {
     "ID": {
       "type": "string",
@@ -40,7 +41,6 @@
     }
   ],
   "Race": "UPL",
-  "EditorCategories": "UpgradeType:Talents,Race:UPL",
   "AffectedUnitArray": [
     "InfantryMortar"
   ]

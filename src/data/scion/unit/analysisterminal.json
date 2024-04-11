@@ -1,6 +1,6 @@
 {
   "Name": "Analysis Terminal",
-  "Description": "Contains weapon upgrades for Genetron light ground units, and armor upgrades for all Genetron ground units.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Repulsors from ACRs<br/>- Interdictors from ACRs",
+  "Description": "Contains weapon upgrades for Genetron light ground units, and armor upgrades for all Genetron ground units, and upgrades for the Spitfire.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Blitzers at the Manufacturer<br/>- Moles at the Fabricator<br/>- Repulsors from ACRs<br/>- Interdictors from ACRs",
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -10,15 +10,15 @@
   "Response": "Acquire",
   "ResourceState": "Unknown",
   "ResourceType": "Unknown",
-  "LifeStart": 1000,
-  "LifeMax": 1000,
+  "LifeStart": 850,
+  "LifeMax": 850,
   "LifeArmorName": "Mechanical Structure Armor",
   "Mover": "Ground",
   "StationaryTurningRate": 720,
   "TurningRate": 720,
   "Radius": 1.25,
   "SeparationRadius": 0.5,
-  "MinimapRadius": 1.5,
+  "MinimapRadius": 1.75,
   "EditorCategories": "ObjectType:Structure,ObjectFamily:Melee",
   "TacticalAIFilters": "-;Player,Ally,Neutral",
   "AIEvalFactor": 1,
@@ -133,12 +133,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -195,12 +189,6 @@
           "EditorCategories": "Race:Neutral,AbilityorEffectType:Units",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -271,12 +259,6 @@
             "Minerals": 100,
             "Vespene": 100
           },
-          "Charge": {
-            "Link": "Abil/MechGroundUpgrades"
-          },
-          "Cooldown": {
-            "Link": "Abil/MechGroundUpgrades"
-          },
           "Time": 160,
           "Alert": "UpgradeComplete_Terr",
           "Upgrade": "GenetronLightWeaponsLevel1"
@@ -313,14 +295,8 @@
             "Requirements": "LearnMechLightWeapons2"
           },
           "Resource": {
-            "Minerals": 150,
-            "Vespene": 150
-          },
-          "Charge": {
-            "Link": "Abil/MechGroundUpgrades"
-          },
-          "Cooldown": {
-            "Link": "Abil/MechGroundUpgrades"
+            "Minerals": 175,
+            "Vespene": 175
           },
           "Time": 190,
           "Alert": "UpgradeComplete_Terr",
@@ -328,8 +304,8 @@
         },
         "Time": 190,
         "Cost": {
-          "Minerals": 150,
-          "Vespene": 150,
+          "Minerals": 175,
+          "Vespene": 175,
           "Terazine": 0,
           "Custom": 0,
           "Energy": 0,
@@ -358,14 +334,8 @@
             "Requirements": "LearnMechLightWeapons3"
           },
           "Resource": {
-            "Minerals": 200,
-            "Vespene": 200
-          },
-          "Charge": {
-            "Link": "Abil/MechGroundUpgrades"
-          },
-          "Cooldown": {
-            "Link": "Abil/MechGroundUpgrades"
+            "Minerals": 250,
+            "Vespene": 250
           },
           "Time": 220,
           "Alert": "UpgradeComplete_Terr",
@@ -373,8 +343,8 @@
         },
         "Time": 220,
         "Cost": {
-          "Minerals": 200,
-          "Vespene": 200,
+          "Minerals": 250,
+          "Vespene": 250,
           "Terazine": 0,
           "Custom": 0,
           "Energy": 0,
@@ -405,12 +375,6 @@
           "Resource": {
             "Minerals": 150,
             "Vespene": 150
-          },
-          "Charge": {
-            "Link": "Abil/MechGroundUpgrades"
-          },
-          "Cooldown": {
-            "Link": "Abil/MechGroundUpgrades"
           },
           "Time": 160,
           "Alert": "UpgradeComplete_Terr",
@@ -451,12 +415,6 @@
             "Minerals": 225,
             "Vespene": 225
           },
-          "Charge": {
-            "Link": "Abil/MechGroundUpgrades"
-          },
-          "Cooldown": {
-            "Link": "Abil/MechGroundUpgrades"
-          },
           "Time": 190,
           "Alert": "UpgradeComplete_Terr",
           "Upgrade": "GenetronGroundPlatingLevel2"
@@ -496,12 +454,6 @@
             "Minerals": 300,
             "Vespene": 300
           },
-          "Charge": {
-            "Link": "Abil/MechGroundUpgrades"
-          },
-          "Cooldown": {
-            "Link": "Abil/MechGroundUpgrades"
-          },
           "Time": 220,
           "Alert": "UpgradeComplete_Terr",
           "Upgrade": "GenetronGroundPlatingLevel3"
@@ -526,6 +478,84 @@
         "Tooltip": "Maximizes the armor of all Genetron ground units.",
         "Name": "Upgrade Ground Plating Level 3",
         "Hotkey": "A"
+      },
+      {
+        "Upgrade": "CalibratedEngines",
+        "Info": {
+          "Button": {
+            "Flags": {
+              "AllowMinimap": 0,
+              "ShowInGlossary": 1
+            },
+            "DefaultButtonFace": "ResearchSpitfireCalibratedEngines",
+            "Requirements": "LearnCalibratedEngines"
+          },
+          "Resource": {
+            "Minerals": 100,
+            "Vespene": 100
+          },
+          "Time": 140,
+          "Upgrade": "CalibratedEngines"
+        },
+        "Time": 140,
+        "Cost": {
+          "Minerals": 100,
+          "Vespene": 100,
+          "Terazine": 0,
+          "Custom": 0,
+          "Energy": 0,
+          "Life": 0,
+          "Shields": 0,
+          "Food": 0
+        },
+        "Row": 1,
+        "Column": 0,
+        "Type": "AbilCmd",
+        "AbilCmd": "AnalysisTerminalResearch,Research7",
+        "id": "ResearchSpitfireCalibratedEngines",
+        "Icon": "btn-upgrade-genetron-calibratedengines",
+        "Tooltip": "Increases the movement speed of <span style=\"color: #FFFF80\">Spitfires</span>.",
+        "Name": "Research Calibrated Engines",
+        "Hotkey": "C"
+      },
+      {
+        "Upgrade": "SpitfireMadcapRounds",
+        "Info": {
+          "Button": {
+            "Flags": {
+              "AllowMinimap": 0,
+              "ShowInGlossary": 1
+            },
+            "DefaultButtonFace": "ResearchSpitfireMadcapRounds",
+            "Requirements": "LearnSpitfireMadcapRounds"
+          },
+          "Resource": {
+            "Minerals": 100,
+            "Vespene": 100
+          },
+          "Time": 80,
+          "Upgrade": "SpitfireMadcapRounds"
+        },
+        "Time": 80,
+        "Cost": {
+          "Minerals": 100,
+          "Vespene": 100,
+          "Terazine": 0,
+          "Custom": 0,
+          "Energy": 0,
+          "Life": 0,
+          "Shields": 0,
+          "Food": 0
+        },
+        "Row": 1,
+        "Column": 1,
+        "Type": "AbilCmd",
+        "AbilCmd": "AnalysisTerminalResearch,Research8",
+        "id": "ResearchSpitfireMadcapRounds",
+        "Icon": "btn-tips-terran-penetrator",
+        "Tooltip": "Increases <span style=\"color: #FFFF80\">Spitfire</span> weapon range and attack speed.",
+        "Name": "Research Madcap Rounds",
+        "Hotkey": "D"
       }
     ]
   },
@@ -534,9 +564,13 @@
   "CostResource": {
     "Minerals": 150
   },
-  "RepairTime": 80,
-  "SubgroupPriority": 3,
+  "RepairTime": 50,
+  "SubgroupPriority": 7,
   "GlossaryPriority": 4,
+  "TechTreeUnlockedUnitArray": [
+    "Blitzer",
+    "Mole"
+  ],
   "Icon": "btn-building-genetron-analysisterminal",
   "LifeArmorIcon": "btn-upgrade-genetron-mechstructurearmor",
   "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
@@ -579,7 +613,9 @@
     "GenetronLightWeaponsLevel3",
     "GenetronGroundPlatingLevel1",
     "GenetronGroundPlatingLevel2",
-    "GenetronGroundPlatingLevel3"
+    "GenetronGroundPlatingLevel3",
+    "CalibratedEngines",
+    "SpitfireMadcapRounds"
   ],
   "$Morph": [],
   "$Phase": [],
@@ -642,6 +678,20 @@
       "Icon": "btn-upgrade-genetron-groundmechplating-level3",
       "Tooltip": "Maximizes the armor of all Genetron ground units.",
       "Name": "Upgrade Ground Plating Level 3"
+    },
+    {
+      "AbilCmd": "AnalysisTerminalResearch,Research7",
+      "id": "ResearchSpitfireCalibratedEngines",
+      "Icon": "btn-upgrade-genetron-calibratedengines",
+      "Tooltip": "Increases the movement speed of <span style=\"color: #FFFF80\">Spitfires</span>.",
+      "Name": "Research Calibrated Engines"
+    },
+    {
+      "AbilCmd": "AnalysisTerminalResearch,Research8",
+      "id": "ResearchSpitfireMadcapRounds",
+      "Icon": "btn-tips-terran-penetrator",
+      "Tooltip": "Increases <span style=\"color: #FFFF80\">Spitfire</span> weapon range and attack speed.",
+      "Name": "Research Madcap Rounds"
     }
   ]
 }

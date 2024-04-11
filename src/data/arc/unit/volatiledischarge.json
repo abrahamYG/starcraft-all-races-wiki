@@ -227,6 +227,7 @@
         "Type": "AbilCmd",
         "AbilCmd": "VolatileDischargeCancel,Execute",
         "id": "Cancel",
+        "Icon": "btn-command-cancel",
         "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
         "Name": "Cancel",
         "Hotkey": "Esc"
@@ -254,6 +255,7 @@
     "VolatileDischargeCU",
     "VolatileDischarge",
     "VolatileDischarge",
+    "VolatileDischarge",
     "VolatileDischargeUnitRange",
     "VolatileDischarge"
   ],
@@ -267,6 +269,7 @@
     {
       "AbilCmd": "VolatileDischargeCancel,Execute",
       "id": "Cancel",
+      "Icon": "btn-command-cancel",
       "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
       "Name": "Cancel"
     }

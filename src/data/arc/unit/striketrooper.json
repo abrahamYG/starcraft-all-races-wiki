@@ -599,6 +599,9 @@
       "id": "UnitDeathPrevention",
       "Icon": "btn-ability-kerrigan_revive",
       "Tooltip": "This unit does not die immediately, within 5 seconds it can be resurrected."
+    },
+    {
+      "id": "AlgoritmRedaktorStrikeTrooper"
     }
   ],
   "Abilities": [
@@ -618,11 +621,11 @@
   "$Upgrades": [
     "UEDWeaponsLevel1",
     "StrikeTrooper",
+    "AllowUnitStrikeTrooper",
+    "SpareRifleBatteries",
     "UEDWeaponsLevel2",
     "UEDWeaponsLevel3",
     "ValidateStrikeTrooperUED",
-    "AllowUnitStrikeTrooper",
-    "SpareRifleBatteries",
     "UEDArmorLightLevel1",
     "StrikeTrooper",
     "UEDArmorLightLevel2",

@@ -12,6 +12,7 @@
   "ScoreValue": "WeaponTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "XayidFlyerAttacks",
+  "EditorCategories": "Race:Xayid,UpgradeType:AttackBonus",
   "$tokens": {
     "ID": {
       "type": "string",
@@ -30,11 +31,11 @@
       "Value": "1"
     },
     {
-      "Reference": "Effect,ExterminationDMG,Amount",
+      "Reference": "Effect,ExterminationImpact,Amount",
       "Value": "1"
     },
     {
-      "Reference": "Effect,BileSwarmDMG,Amount",
+      "Reference": "Effect,BileSwarmLMImpact,Amount",
       "Value": "2"
     },
     {
@@ -74,7 +75,6 @@
       "Value": "Assets\\Textures\\btn-upgrade-xayid-airweaponslevel2.dds"
     }
   ],
-  "EditorCategories": "Race:Xayid,UpgradeType:AttackBonus",
   "AffectedUnitArray": [
     "Raptor",
     "Assailant",

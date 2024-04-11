@@ -12,6 +12,7 @@
   "ScoreValue": "WeaponTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "KeironMechWeapons",
+  "EditorCategories": "Race:Keiron,UpgradeType:AttackBonus",
   "$tokens": {
     "ID": {
       "type": "string",
@@ -67,19 +68,11 @@
     },
     {
       "Reference": "Effect,ShadowCannonImpact,Amount",
-      "Value": "2"
-    },
-    {
-      "Reference": "Effect,ShadowCannonImpact,AttributeBonus[Armored]",
-      "Value": "1"
+      "Value": "3"
     },
     {
       "Reference": "Effect,GamutOrbLMImpact,Amount",
       "Value": "3"
-    },
-    {
-      "Reference": "Effect,GamutOrbLMImpact,AttributeBonus[Massive]",
-      "Value": "1"
     },
     {
       "Reference": "Effect,Lunge,Amount",
@@ -168,7 +161,6 @@
       "Value": "1"
     }
   ],
-  "EditorCategories": "Race:Keiron,UpgradeType:AttackBonus",
   "AffectedUnitArray": [
     "Umbra",
     "Ward",

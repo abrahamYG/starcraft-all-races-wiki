@@ -551,7 +551,7 @@
         "Type": "Passive",
         "id": "LatentCharge",
         "Icon": "btn-upgrade-keiron-latentcharge",
-        "Tooltip": "Attacks bounce to deal <b>3</b> spell damage.",
+        "Tooltip": "Attacks bounce to deal <b>2</b> spell damage.",
         "Name": "Latent Charge"
       },
       {
@@ -723,11 +723,11 @@
       "id": "ElectronBolt",
       "Icon": "btn-upgrade-keiron-biologicalweaponslevel0",
       "Name": "Electron Bolt",
-      "Amount": 8,
+      "Amount": 7,
       "Kind": "Ranged",
       "TargetFilters": "",
       "Range": 5,
-      "Period": 1.75
+      "Period": 1.4
     }
   ],
   "Behaviors": [
@@ -765,9 +765,9 @@
     "KeironCitadelMaterialize",
     "Volt",
     "LatentCharge",
-    "CitadelCharged",
     "ModifiedGait",
     "Edifice",
+    "CitadelCharged",
     "KeironBioWeaponsLevel1",
     "KeironBioWeapons",
     "KeironBioWeaponsLevel2",

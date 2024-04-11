@@ -89,7 +89,7 @@
   ],
   "LifeRegenRate": 0.2734,
   "Acceleration": 1000,
-  "Sight": 9,
+  "Sight": 10,
   "CostCategory": "Army",
   "AttackTargetPriority": 20,
   "CardLayouts": {
@@ -682,7 +682,7 @@
   "ShieldsStart": 100,
   "ShieldsMax": 100,
   "Speed": 2.25,
-  "Food": -6,
+  "Food": -5,
   "InnerRadius": 0.75,
   "CostResource": {
     "Minerals": 200,
@@ -708,9 +708,6 @@
       "Icon": "btn-upgrade-keiron-mechanicalweaponslevel0",
       "Name": "Gamut Orb",
       "Amount": 30,
-      "AttributeBonus": {
-        "Massive": 10
-      },
       "Kind": "Ranged",
       "TargetFilters": "",
       "Range": 12,
@@ -752,10 +749,10 @@
     }
   ],
   "$Upgrades": [
-    "CitadelCharged",
-    "Inducer",
     "Atrium",
+    "Inducer",
     "KeironCitadelMaterialize",
+    "CitadelCharged",
     "KeironMechWeaponsLevel1",
     "KeironMechWeapons",
     "KeironMechWeaponsLevel2",

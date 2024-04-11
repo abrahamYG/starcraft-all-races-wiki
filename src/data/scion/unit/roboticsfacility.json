@@ -127,12 +127,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -189,12 +183,6 @@
           "EditorCategories": "Race:Neutral,AbilityorEffectType:Units",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -300,13 +288,13 @@
           "Unit": [
             "Observer"
           ],
-          "Time": 30,
+          "Time": 25,
           "Effect": "WarpInEffect15"
         },
         "Unit": [
           "Observer"
         ],
-        "Time": 30,
+        "Time": 25,
         "Cost": {
           "Minerals": 25,
           "Vespene": 75,
@@ -474,18 +462,16 @@
     }
   ],
   "$Upgrades": [
-    "IsRoboticsFacility",
-    "RoboticsFacility",
     "ProtossShieldsLevel1",
+    "RoboticsFacility",
     "RoboticsFacility",
     "ProtossShields",
     "ProtossShieldsLevel2",
     "ProtossShieldsLevel3",
     "CountUnitRoboticsFacilityCompleteOnlyTechTreeCheat",
     "ProtossBuild",
-    "RoboticsFacilitySplat",
-    "RoboticsFacility",
-    "RoboticsFacilityTaldarim"
+    "IsRoboticsFacility",
+    "RoboticsFacilitySplat"
   ],
   "$Requirements": [],
   "$Production": [

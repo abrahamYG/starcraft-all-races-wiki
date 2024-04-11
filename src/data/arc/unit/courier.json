@@ -18,7 +18,7 @@
   "TurningRate": 990,
   "Radius": 0.875,
   "SeparationRadius": 0.875,
-  "MinimapRadius": 0.875,
+  "MinimapRadius": 1,
   "EditorCategories": "ObjectType:Unit,ObjectFamily:Melee",
   "TacticalAIFilters": "-;Player,Ally,Neutral",
   "AIEvalFactor": 1,
@@ -681,7 +681,6 @@
           "MaxUnloadRange": 3,
           "TargetFilters": [
             "Visible;Ally,Neutral,Enemy,Buried,Dead,Hidden",
-            "Visible;Ally,Neutral,Enemy,Buried,UnderConstruction,Dead,Hidden",
             "Visible;Self,Ally,Neutral,Enemy,Buried,UnderConstruction,Dead,Hidden"
           ],
           "Flags": {
@@ -863,7 +862,7 @@
         "AbilCmd": "CourierOpticalDisruption,Execute",
         "id": "OpticalDisruption",
         "Icon": "btn-upgrade-genetron-integratedoptics",
-        "Tooltip": "Reduces the attack range of units in an area around the target unit. The effect lasts up to <b>9</b> seconds.<br/><br/><span style=\"color: #78F0FF\">Uses power.</span>",
+        "Tooltip": "Reduces the attack and vision range of units in an area around the target unit. The effect lasts up to <b>9</b> seconds.<br/><br/><span style=\"color: #78F0FF\">Uses <b>50</b> power.</span>",
         "Name": "Optical Disruption",
         "Hotkey": "T"
       },
@@ -1013,7 +1012,6 @@
           "MaxUnloadRange": 3,
           "TargetFilters": [
             "Visible;Ally,Neutral,Enemy,Buried,Dead,Hidden",
-            "Visible;Ally,Neutral,Enemy,Buried,UnderConstruction,Dead,Hidden",
             "Visible;Self,Ally,Neutral,Enemy,Buried,UnderConstruction,Dead,Hidden"
           ],
           "Flags": {
@@ -1143,7 +1141,7 @@
         "AbilCmd": "CourierCloak,On",
         "id": "CloakOnCourier",
         "Icon": "btn-ability-hornerhan-wraith-permanentcloak",
-        "Tooltip": "Cloaks the unit, preventing enemy units from seeing or attacking it. A cloaked unit will only be revealed by detectors or effects.<br/><br/><span style=\"color: #f078ff\">Drains <b>0.9</b> energy per second.</span><br/><span style=\"color: #78F0FF\">Uses power.</span>",
+        "Tooltip": "Cloaks the unit, preventing enemy units from seeing or attacking it. A cloaked unit will only be revealed by detectors or effects.<br/><br/><span style=\"color: #f078ff\">Drains <b>0.9</b> energy and <span style=\"color: #78F0FF\">power</span> per second.</span><br/><span style=\"color: #78F0FF\">Uses <b>25</b> power.</span>",
         "Name": "Cloak",
         "Hotkey": "C"
       }
@@ -1162,7 +1160,7 @@
     "Vespene": 50
   },
   "RepairTime": 35,
-  "SubgroupPriority": 44,
+  "SubgroupPriority": 45,
   "GlossaryPriority": 14,
   "Mob": "Multiplayer",
   "EnergyRegenRate": 0.5625,
@@ -1214,10 +1212,10 @@
     "GenetronAircraftPlatingLevel2",
     "GenetronAircraftPlatingLevel3",
     "BuildAircraft",
-    "CountUnitCourierInProgressOnlyAtUnit",
     "CountUnitCourierQueuedOrBetterAtUnit",
     "AssemblyArray",
     "AssemblyArray",
+    "CountUnitCourierInProgressOnlyAtUnit",
     "GenetronAircraftPlatingRevert",
     "StealthSystems",
     "UnitThreatensCourier",
@@ -1286,7 +1284,7 @@
       "AbilCmd": "CourierOpticalDisruption,Execute",
       "id": "OpticalDisruption",
       "Icon": "btn-upgrade-genetron-integratedoptics",
-      "Tooltip": "Reduces the attack range of units in an area around the target unit. The effect lasts up to <b>9</b> seconds.<br/><br/><span style=\"color: #78F0FF\">Uses power.</span>",
+      "Tooltip": "Reduces the attack and vision range of units in an area around the target unit. The effect lasts up to <b>9</b> seconds.<br/><br/><span style=\"color: #78F0FF\">Uses <b>50</b> power.</span>",
       "Name": "Optical Disruption"
     },
     {
@@ -1307,7 +1305,7 @@
       "AbilCmd": "CourierCloak,On",
       "id": "CloakOnCourier",
       "Icon": "btn-ability-hornerhan-wraith-permanentcloak",
-      "Tooltip": "Cloaks the unit, preventing enemy units from seeing or attacking it. A cloaked unit will only be revealed by detectors or effects.<br/><br/><span style=\"color: #f078ff\">Drains <b>0.9</b> energy per second.</span><br/><span style=\"color: #78F0FF\">Uses power.</span>",
+      "Tooltip": "Cloaks the unit, preventing enemy units from seeing or attacking it. A cloaked unit will only be revealed by detectors or effects.<br/><br/><span style=\"color: #f078ff\">Drains <b>0.9</b> energy and <span style=\"color: #78F0FF\">power</span> per second.</span><br/><span style=\"color: #78F0FF\">Uses <b>25</b> power.</span>",
       "Name": "Cloak"
     }
   ]

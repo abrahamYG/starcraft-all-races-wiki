@@ -12,6 +12,7 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "AmplifiedSphere",
+  "EditorCategories": "Race:Keiron,UpgradeType:Talents",
   "$tokens": {
     "ID": {
       "type": "string",
@@ -19,7 +20,6 @@
     }
   },
   "InfoTooltipPriority": 1,
-  "EditorCategories": "Race:Keiron,UpgradeType:Talents",
   "Race": "Keir",
   "ScoreResult": "BuildOrder",
   "EffectArray": [
@@ -41,7 +41,7 @@
     }
   ],
   "AffectedUnitArray": [
-    "Subjecter"
+    "Cataract"
   ],
   "ScoreAmount": 200
 }

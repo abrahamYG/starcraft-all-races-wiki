@@ -103,7 +103,7 @@
   "PlaneArray": [
     "Ground"
   ],
-  "Sight": 10,
+  "Sight": 11,
   "AttackTargetPriority": 20,
   "GlossaryCategory": "Unit/Category/GenetronUnits",
   "HotkeyCategory": "Unit/Category/GenetronUnits",
@@ -488,7 +488,9 @@
     },
     {
       "id": "Detector11",
-      "Icon": "btn-status-detector"
+      "Icon": "btn-status-detector",
+      "Tooltip": "This unit can detect cloaked or burrowed units within its sight range.",
+      "Name": "Detector"
     },
     {
       "id": "UnderConstruction"

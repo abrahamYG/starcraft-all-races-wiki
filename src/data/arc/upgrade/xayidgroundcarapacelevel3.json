@@ -12,6 +12,7 @@
   "ScoreValue": "ArmorTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "XayidGroundCarapace",
+  "EditorCategories": "Race:Xayid,UpgradeType:ArmorBonus",
   "$tokens": {
     "ID": {
       "type": "string",
@@ -173,7 +174,6 @@
       "Value": "Assets\\Textures\\btn-upgrade-Xayid-organiccarapace-level3.dds"
     }
   ],
-  "EditorCategories": "Race:Xayid,UpgradeType:ArmorBonus",
   "AffectedUnitArray": [
     "Casnolisk",
     "Eroder",

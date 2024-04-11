@@ -12,6 +12,7 @@
   "ScoreValue": "ArmorTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "KeironMechArmor",
+  "EditorCategories": "Race:Keiron,UpgradeType:ArmorBonus",
   "$tokens": {
     "ID": {
       "type": "string",
@@ -23,6 +24,10 @@
   "EffectArray": [
     {
       "Reference": "Unit,Umbra,LifeArmor",
+      "Value": "1"
+    },
+    {
+      "Reference": "Unit,Ward,LifeArmor",
       "Value": "1"
     },
     {
@@ -66,6 +71,10 @@
       "Value": "1"
     },
     {
+      "Reference": "Unit,Ward,LifeArmorLevel",
+      "Value": "1"
+    },
+    {
       "Reference": "Unit,Inducer,LifeArmorLevel",
       "Value": "1"
     },
@@ -104,6 +113,11 @@
     {
       "Operation": "Set",
       "Reference": "Actor,Umbra,LifeArmorIcon",
+      "Value": "Assets\\Textures\\btn-upgrade-keiron-mechanicalarmorlevel2.dds"
+    },
+    {
+      "Operation": "Set",
+      "Reference": "Actor,Ward,LifeArmorIcon",
       "Value": "Assets\\Textures\\btn-upgrade-keiron-mechanicalarmorlevel2.dds"
     },
     {
@@ -152,9 +166,9 @@
       "Value": "Assets\\Textures\\btn-upgrade-keiron-mechanicalarmorlevel2.dds"
     }
   ],
-  "EditorCategories": "Race:Keiron,UpgradeType:ArmorBonus",
   "AffectedUnitArray": [
     "Umbra",
+    "Ward",
     "Inducer",
     "Myriad",
     "Elytron",

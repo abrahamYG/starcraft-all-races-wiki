@@ -1,6 +1,5 @@
 {
   "Name": "Raptor Jet",
-  "Description": "Air-superiority fighter.<br/><br/><span style=\"color: #ffff8a\">Can Attack air units.</span>",
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -88,12 +87,11 @@
     "Flying"
   ],
   "Attributes": [
-    "Mechanical",
-    "Light",
-    "Armored"
+    "Armored",
+    "Mechanical"
   ],
   "EnergyStart": 50,
-  "EnergyMax": 200,
+  "EnergyMax": 100,
   "EnergyRegenRate": 0.5625,
   "Speed": 3.75,
   "Acceleration": 3.25,
@@ -863,7 +861,7 @@
       "DisplayAttackCount": 2,
       "TargetFilters": "Air",
       "Range": 9,
-      "Period": 3
+      "Period": 2
     },
     {
       "Turret": "RaptorTurret",
@@ -875,7 +873,7 @@
       "DisplayAttackCount": 2,
       "TargetFilters": "Air",
       "Range": 9,
-      "Period": 0.2
+      "Period": 3
     }
   ],
   "Behaviors": [],
@@ -925,7 +923,8 @@
     "UPLShipWeaponsLevel1",
     "UPLShipWeaponsLevel2",
     "UPLShipWeaponsLevel3",
-    "RaptorJet"
+    "RaptorJet",
+    null
   ],
   "$Requirements": [],
   "$Production": [],

@@ -129,12 +129,6 @@
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
               "DisplayType": "Move",
               "Color": "255,35,125,255",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
@@ -223,12 +217,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -302,12 +290,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -399,12 +381,6 @@
               "Color": "255,255,0,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -479,12 +455,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -575,12 +545,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -683,22 +647,25 @@
           "SectionArray": {
             "Actor": {
               "DurationArray": {
-                "Duration": 3
+                "Duration": 3.125
+              },
+              "EffectArray": {
+                "Start": "WidowMineNotificationSearch"
               }
             },
             "Collide": {
               "DurationArray": {
-                "Delay": 0.5556
+                "Delay": 0.6806
               }
             },
             "Stats": {
               "DurationArray": {
-                "Delay": 3
+                "Delay": 3.125
               }
             }
           },
           "Unit": "WidowMineBurrowed",
-          "RandomDelayMax": 0.5
+          "RandomDelayMax": 0.25
         },
         "Unit": "WidowMineBurrowed",
         "Cost": {
@@ -733,12 +700,6 @@
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
@@ -860,8 +821,11 @@
             1.5
           ],
           "PrepEffect": [
-            "WidowMineTargetingBeamDummy"
+            "WidowMineTargetTintApplyBehavior"
           ],
+          "CancelEffect": {
+            "Prep": "WidowMineTargetTintRemoveBehavior"
+          },
           "id": "WidowMineAttack"
         },
         "Cost": {
@@ -914,8 +878,8 @@
           "Shields": 0,
           "Food": 0
         },
-        "Row": 1,
-        "Column": 2,
+        "Row": 2,
+        "Column": 4,
         "Type": "Passive",
         "id": "WidowMineConcealment",
         "Icon": "btn-ability-terran-widowminehidden",
@@ -950,7 +914,7 @@
   "Weapons": [],
   "Behaviors": [
     {
-      "id": "WidowMineArmoryTracker"
+      "id": "WidowMineDrillingClawsTracker"
     }
   ],
   "Abilities": [
@@ -977,34 +941,24 @@
     "WidowMineBurrowed",
     "WidowMineUnburrow",
     "DrillClaws",
-    "FactoryTrain",
-    "Factory",
-    "WidowMine",
-    "TerranVehicleArmorsLevel1",
-    "TerranVehicleArmorsLevel2",
-    "TerranVehicleArmorsLevel3",
     "TerranVehicleWeaponsLevel1",
     "TerranVehicleWeaponsLevel2",
     "TerranVehicleWeaponsLevel3",
     "TerranVehicleAndShipArmorsLevel1",
+    "WidowMine",
     "TerranVehicleAndShipArmors",
     "TerranVehicleAndShipArmorsLevel2",
     "TerranVehicleAndShipArmorsLevel3",
-    "TerranVehicleAndShipWeaponsLevel1",
-    "TerranVehicleAndShipWeapons",
-    "TerranVehicleAndShipWeaponsLevel2",
-    "TerranVehicleAndShipWeaponsLevel3",
+    "FactoryTrain",
+    "Factory",
     "WidowMineBurrowedSplat",
     "WidowMineAttackRange",
-    "WidowMine_Unburrow",
-    "WidowMine"
+    "WidowMine_Unburrow"
   ],
   "$Requirements": [],
   "$Production": [],
   "$Research": [],
-  "$Morph": [
-    null
-  ],
+  "$Morph": [],
   "$Phase": [
     "WidowMineBurrowed"
   ],

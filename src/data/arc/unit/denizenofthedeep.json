@@ -12,6 +12,7 @@
   "ResourceType": "Unknown",
   "LifeStart": 2000,
   "LifeMax": 2000,
+  "LifeArmorName": "Dragon Plate Armor",
   "Mover": "Ground",
   "StationaryTurningRate": 180,
   "TurningRate": 180,
@@ -174,6 +175,7 @@
         "Type": "AbilCmd",
         "AbilCmd": "que5PassiveCancelToSelection,CancelLast",
         "id": "Cancel",
+        "Icon": "btn-command-cancel",
         "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
         "Name": "Cancel",
         "Hotkey": "Esc"
@@ -631,7 +633,6 @@
             }
           },
           "Range": [
-            5,
             7
           ],
           "EffectArray": {
@@ -656,6 +657,7 @@
         "Type": "AbilCmd",
         "AbilCmd": "DenizenoftheDeepBuild,Halt",
         "id": "Cancel",
+        "Icon": "btn-command-cancel",
         "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
         "Name": "Cancel",
         "Hotkey": "Esc"
@@ -1039,14 +1041,17 @@
     "Plodder",
     "Razorback"
   ],
+  "EffectArray": {
+    "Birth": "DenizenoftheDeepBirthSet",
+    "Create": "DenizenoftheDeepCreateSet"
+  },
   "Icon": "btn-building-zerg-primalhive",
   "LifeArmorIcon": "btn-upgrade-zerg-groundcarapace-level0",
   "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
   "Weapons": [],
   "Behaviors": [
     {
-      "id": "DragonLineageGreater",
-      "Name": "Dragon Lineage"
+      "id": "DragonLineageGreater"
     }
   ],
   "Abilities": [
@@ -1121,6 +1126,7 @@
     {
       "AbilCmd": "que5PassiveCancelToSelection,CancelLast",
       "id": "Cancel",
+      "Icon": "btn-command-cancel",
       "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
       "Name": "Cancel"
     },
@@ -1155,6 +1161,7 @@
     {
       "AbilCmd": "DenizenoftheDeepBuild,Halt",
       "id": "Cancel",
+      "Icon": "btn-command-cancel",
       "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
       "Name": "Cancel"
     },

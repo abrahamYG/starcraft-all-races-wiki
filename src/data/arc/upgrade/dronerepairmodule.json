@@ -12,6 +12,7 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "DroneRepairModule",
+  "EditorCategories": "Race:UED,UpgradeType:SpellResearch",
   "$tokens": {
     "ID": {
       "type": "string",
@@ -19,7 +20,6 @@
     }
   },
   "InfoTooltipPriority": 1,
-  "EditorCategories": "Race:UED,UpgradeType:SpellResearch",
   "Race": "UED",
   "ScoreAmount": 200,
   "ScoreResult": "BuildOrder",

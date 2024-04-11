@@ -12,6 +12,7 @@
   "ResourceType": "Unknown",
   "LifeStart": 600,
   "LifeMax": 600,
+  "LifeArmorName": "Dragon Plate Armor",
   "Mover": "Ground",
   "StationaryTurningRate": 720,
   "TurningRate": 720,
@@ -172,6 +173,7 @@
         "Type": "AbilCmd",
         "AbilCmd": "que5PassiveCancelToSelection,CancelLast",
         "id": "Cancel",
+        "Icon": "btn-command-cancel",
         "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
         "Name": "Cancel",
         "Hotkey": "Esc"
@@ -392,7 +394,7 @@
         "AbilCmd": "LesserDeepOneResearch,Research4",
         "id": "LesserDeepOneShroud",
         "Icon": "btn-ability-protoss-energize",
-        "Tooltip": "Allows Horned Magus to use Shroud, causing friendly units in the target area to temporarily cloak unless they attack or receive damage.",
+        "Tooltip": "Allows Horned Magus to use Shroud, which temporarily cloaks and increases the movement speed of friendly units in the target area by <b>50</b>% for <b>28</b> seconds unless they attack or receive damage.",
         "Name": "Augment Shroud",
         "Hotkey": "R"
       },
@@ -453,8 +455,7 @@
   "Weapons": [],
   "Behaviors": [
     {
-      "id": "DragonLineage",
-      "Name": "Dragon Lineage"
+      "id": "DragonLineage"
     }
   ],
   "Abilities": [
@@ -504,6 +505,7 @@
     {
       "AbilCmd": "que5PassiveCancelToSelection,CancelLast",
       "id": "Cancel",
+      "Icon": "btn-command-cancel",
       "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
       "Name": "Cancel"
     },
@@ -539,7 +541,7 @@
       "AbilCmd": "LesserDeepOneResearch,Research4",
       "id": "LesserDeepOneShroud",
       "Icon": "btn-ability-protoss-energize",
-      "Tooltip": "Allows Horned Magus to use Shroud, causing friendly units in the target area to temporarily cloak unless they attack or receive damage.",
+      "Tooltip": "Allows Horned Magus to use Shroud, which temporarily cloaks and increases the movement speed of friendly units in the target area by <b>50</b>% for <b>28</b> seconds unless they attack or receive damage.",
       "Name": "Augment Shroud"
     },
     {

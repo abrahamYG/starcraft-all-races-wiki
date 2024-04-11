@@ -147,12 +147,6 @@
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
               "DisplayType": "Move",
               "Color": "255,35,125,255",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
@@ -240,12 +234,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -339,12 +327,6 @@
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
               "DisplayType": "Move",
               "Color": "255,35,125,255",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
@@ -433,12 +415,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -512,12 +488,6 @@
               "DisplayType": "Attack",
               "Color": "255,255,0,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
@@ -674,34 +644,23 @@
     "VikingAssault",
     "VikingFighter",
     "FighterMode",
-    "YoinkStartCreatePlaceholderVikingAir",
-    "StarportTrain",
-    "SmartServos",
-    "Starport",
-    "TerranShipArmorsLevel1",
-    "VikingFighter",
-    "TerranShipArmors",
-    "TerranShipArmorsLevel2",
-    "TerranShipArmorsLevel3",
     "TerranShipWeaponsLevel1",
     "TerranShipWeapons",
     "TerranShipWeaponsLevel2",
     "TerranShipWeaponsLevel3",
     "TerranVehicleAndShipArmorsLevel1",
+    "VikingFighter",
     "TerranVehicleAndShipArmors",
     "TerranVehicleAndShipArmorsLevel2",
     "TerranVehicleAndShipArmorsLevel3",
-    "TerranVehicleAndShipWeaponsLevel1",
-    "TerranVehicleAndShipWeapons",
-    "TerranVehicleAndShipWeaponsLevel2",
-    "TerranVehicleAndShipWeaponsLevel3",
+    "YoinkStartCreatePlaceholderVikingAir",
+    "StarportTrain",
+    "Starport",
+    "SmartServos",
     "AssaultMorphModel",
     "FighterMorphModel",
     "FighterMode",
-    "VikingJotunBoosters",
-    "IsVikingFighter",
-    "Viking",
-    null
+    "IsVikingFighter"
   ],
   "$Requirements": [],
   "$Production": [],

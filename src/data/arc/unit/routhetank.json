@@ -1,6 +1,5 @@
 {
   "Name": "Routhe Tank",
-  "Description": "Armored Assault<br/><br/><span style=\"color: #FFFF8A\">Can Attack Ground units.</span>",
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -17,7 +16,7 @@
   "StationaryTurningRate": 720,
   "TurningRate": 360,
   "Radius": 0.875,
-  "SeparationRadius": 1,
+  "SeparationRadius": 0.875,
   "MinimapRadius": 1,
   "EditorCategories": "ObjectType:Unit,ObjectFamily:Melee",
   "TacticalAIFilters": "-;Player,Ally,Neutral",
@@ -637,7 +636,8 @@
     "AllowUnitRoutheTank",
     "UPLManufacturingFacility",
     "IsRoutheTank",
-    "RoutheTank"
+    "RoutheTank",
+    null
   ],
   "$Requirements": [],
   "$Production": [],

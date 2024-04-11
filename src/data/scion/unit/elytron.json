@@ -1,6 +1,6 @@
 {
   "Name": "Elytron",
-  "Description": "Combat escorts that automatically attack their Myriad's target.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
+  "Description": "Combat escorts that automatically attack their host's target.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -10,8 +10,8 @@
   "Response": "Acquire",
   "ResourceState": "Unknown",
   "ResourceType": "Unknown",
-  "LifeStart": 40,
-  "LifeMax": 40,
+  "LifeStart": 75,
+  "LifeMax": 75,
   "LifeArmorName": "Keiron Mechanical Armor",
   "Mover": "Elytron",
   "StationaryTurningRate": 1080,
@@ -86,11 +86,9 @@
   "Collide": [
     "Structure"
   ],
-  "LifeRegenRate": 0.1718,
-  "ShieldRegenDelay": 4,
-  "ShieldRegenRate": 1.25,
+  "LifeRegenRate": 0.2734,
   "Acceleration": 6,
-  "Sight": 9,
+  "Sight": 5,
   "CostCategory": "Army",
   "AttackTargetPriority": 20,
   "CardLayouts": {
@@ -107,12 +105,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -204,12 +196,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -283,12 +269,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -382,12 +362,6 @@
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
               "DisplayType": "Move",
               "Color": "255,35,125,255",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
@@ -478,12 +452,6 @@
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
               "DisplayType": "Move",
               "Color": "255,35,125,255",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
@@ -567,13 +535,12 @@
   "HotkeyCategory": "Unit/Category/KeironUnits",
   "ShieldArmorName": "Keiron Dispersion Shields",
   "id": "Elytron",
-  "ShieldsStart": 70,
-  "ShieldsMax": 70,
-  "Speed": 2.75,
+  "ShieldsStart": 35,
+  "ShieldsMax": 35,
+  "Speed": 3.5,
   "Height": 1,
   "CostResource": {
-    "Minerals": 25,
-    "Vespene": 25
+    "Minerals": 30
   },
   "GlossaryPriority": 24,
   "Attributes": [
@@ -589,17 +556,21 @@
       "id": "TitanBlast",
       "Icon": "btn-upgrade-keiron-mechanicalweaponslevel0",
       "Name": "Titan Blast",
-      "Amount": 15,
+      "Amount": 9,
       "AttributeBonus": {
-        "Light": 7
+        "Light": 6
       },
       "Kind": "Ranged",
       "TargetFilters": "Ground",
       "Range": 3,
-      "Period": 1.68
+      "Period": 1.4
     }
   ],
-  "Behaviors": [],
+  "Behaviors": [
+    {
+      "id": "KeironShellRestoration"
+    }
+  ],
   "Abilities": [
     {
       "id": "move",
@@ -633,6 +604,9 @@
     "KeironShields",
     "KeironShieldsLevel2",
     "KeironShieldsLevel3",
+    "KeironMechArmorRevert",
+    "KeironMechWeaponsRevert",
+    "KeironShieldsRevert",
     "IsElytron"
   ],
   "$Requirements": [],

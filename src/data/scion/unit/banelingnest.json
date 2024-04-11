@@ -128,12 +128,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -190,12 +184,6 @@
           "EditorCategories": "Race:Neutral,AbilityorEffectType:Units",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -264,16 +252,16 @@
             "Requirements": "LearnCentrificalHooks"
           },
           "Resource": {
-            "Minerals": 150,
-            "Vespene": 150
+            "Minerals": 100,
+            "Vespene": 100
           },
-          "Time": 110,
+          "Time": 100,
           "Upgrade": "CentrificalHooks"
         },
-        "Time": 110,
+        "Time": 100,
         "Cost": {
-          "Minerals": 150,
-          "Vespene": 150,
+          "Minerals": 100,
+          "Vespene": 100,
           "Terazine": 0,
           "Custom": 0,
           "Energy": 0,
@@ -287,7 +275,7 @@
         "AbilCmd": "BanelingNestResearch,Research1",
         "id": "EvolveCentrificalHooks",
         "Icon": "btn-upgrade-zerg-centrifugalhooks",
-        "Tooltip": "Increases the movement speed of <span style=\"color: #ffff8a\">Banelings</span>.",
+        "Tooltip": "<span style=\"color: #ffff8a\">Banelings</span> gain increased movement speed.",
         "Name": "Evolve Centrifugal Hooks",
         "Hotkey": "C"
       }
@@ -339,8 +327,7 @@
     "ZergBuild",
     "IsBanelingNest",
     "BanelingNest",
-    "NotBanelingNest",
-    "BanelingNest"
+    "NotBanelingNest"
   ],
   "$Requirements": [],
   "$Production": [],
@@ -371,7 +358,7 @@
       "AbilCmd": "BanelingNestResearch,Research1",
       "id": "EvolveCentrificalHooks",
       "Icon": "btn-upgrade-zerg-centrifugalhooks",
-      "Tooltip": "Increases the movement speed of <span style=\"color: #ffff8a\">Banelings</span>.",
+      "Tooltip": "<span style=\"color: #ffff8a\">Banelings</span> gain increased movement speed.",
       "Name": "Evolve Centrifugal Hooks"
     }
   ]

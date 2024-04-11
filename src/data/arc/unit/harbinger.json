@@ -654,7 +654,7 @@
         "AbilCmd": "HarbingerJudgementModeStart,Execute",
         "id": "HarbingerJudgementMode",
         "Icon": "btn-unit-keiron-harbinger-judgementmode",
-        "Tooltip": "While in Judgement Mode, Harbingers deal area damage vs air. They are also <b>99</b>% slower and are unable to attack ground.",
+        "Tooltip": "While in Judgement Mode, Harbinger air attacks deal <b>10</b> damage per second to enemy air units in an area for <b>2</b> seconds. They are also <b>99</b>% slower and are unable to attack ground.",
         "Name": "Judgement Mode",
         "Hotkey": "E"
       },
@@ -957,7 +957,7 @@
       "Amount": 18,
       "Kind": "Ranged",
       "TargetFilters": "Air",
-      "Range": 5,
+      "Range": 6,
       "Period": 0.84
     },
     {
@@ -1015,8 +1015,8 @@
     "Empyrean",
     "Harbinger",
     "IsHarbinger",
-    "CitadelCharged",
     "KeironCitadelMaterialize",
+    "CitadelCharged",
     "KeironMechWeaponsLevel1",
     "KeironMechWeapons",
     "KeironMechWeaponsLevel2",
@@ -1091,7 +1091,7 @@
       "AbilCmd": "HarbingerJudgementModeStart,Execute",
       "id": "HarbingerJudgementMode",
       "Icon": "btn-unit-keiron-harbinger-judgementmode",
-      "Tooltip": "While in Judgement Mode, Harbingers deal area damage vs air. They are also <b>99</b>% slower and are unable to attack ground.",
+      "Tooltip": "While in Judgement Mode, Harbinger air attacks deal <b>10</b> damage per second to enemy air units in an area for <b>2</b> seconds. They are also <b>99</b>% slower and are unable to attack ground.",
       "Name": "Judgement Mode"
     },
     {

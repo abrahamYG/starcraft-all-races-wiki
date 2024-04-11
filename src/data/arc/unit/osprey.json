@@ -1,6 +1,5 @@
 {
   "Name": "Osprey",
-  "Description": "Attack Helicopter and Infantry Transport<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units</span>",
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -807,9 +806,9 @@
           },
           "ErrorAlert": "Error",
           "AbilSetId": "ULdM",
-          "MaxCargoCount": 4,
+          "MaxCargoCount": 2,
           "MaxCargoSize": 1,
-          "TotalCargoSpace": 4,
+          "TotalCargoSpace": 2,
           "UnloadPeriod": 0.125,
           "LoadValidatorArray": [
             "TargetIsTransportable",
@@ -822,9 +821,9 @@
             "OspreyLanded"
           ],
           "DeathUnloadEffect": "TransportUnloadDeath",
-          "id": "OspreyTransport",
           "LoadCargoEffect": "UPLOspreyTransportCargoLoad",
-          "UnloadCargoEffect": "UPLOspreyTransportCargoUnload"
+          "UnloadCargoEffect": "UPLOspreyTransportCargoUnload",
+          "id": "OspreyTransport"
         },
         "Cost": {
           "Minerals": 0,
@@ -931,9 +930,9 @@
           },
           "ErrorAlert": "Error",
           "AbilSetId": "ULdM",
-          "MaxCargoCount": 4,
+          "MaxCargoCount": 2,
           "MaxCargoSize": 1,
-          "TotalCargoSpace": 4,
+          "TotalCargoSpace": 2,
           "UnloadPeriod": 0.125,
           "LoadValidatorArray": [
             "TargetIsTransportable",
@@ -946,9 +945,9 @@
             "OspreyLanded"
           ],
           "DeathUnloadEffect": "TransportUnloadDeath",
-          "id": "OspreyTransport",
           "LoadCargoEffect": "UPLOspreyTransportCargoLoad",
-          "UnloadCargoEffect": "UPLOspreyTransportCargoUnload"
+          "UnloadCargoEffect": "UPLOspreyTransportCargoUnload",
+          "id": "OspreyTransport"
         },
         "Cost": {
           "Minerals": 0,
@@ -1094,7 +1093,8 @@
     "UPLShipWeaponsLevel2",
     "UPLShipWeaponsLevel3",
     "IsOsprey",
-    "Osprey"
+    "Osprey",
+    null
   ],
   "$Requirements": [],
   "$Production": [],

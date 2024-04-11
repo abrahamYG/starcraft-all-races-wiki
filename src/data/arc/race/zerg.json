@@ -17,6 +17,7 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "zerglingmovementspeed",
+        "EditorCategories": "Race:Zerg,UpgradeType:Spell",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -25,7 +26,6 @@
         },
         "Race": "Zerg",
         "Icon": "btn-upgrade-zerg-metabolicboost",
-        "EditorCategories": "Race:Zerg,UpgradeType:Talents",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -63,6 +63,7 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "zerglingattackspeed",
+        "EditorCategories": "Race:Zerg,UpgradeType:Spell",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -71,7 +72,6 @@
         },
         "Race": "Zerg",
         "Icon": "btn-upgrade-zerg-adrenalglands",
-        "EditorCategories": "Race:Zerg,UpgradeType:Talents",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -102,6 +102,7 @@
         "ScoreValue": "ArmorTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "ZergGroundArmors",
+        "EditorCategories": "Race:Zerg,UpgradeType:Bonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -109,7 +110,6 @@
           }
         },
         "Race": "Zerg",
-        "EditorCategories": "Race:Zerg,UpgradeType:ArmorBonus",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -488,6 +488,7 @@
         "ScoreValue": "ArmorTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "ZergGroundArmors",
+        "EditorCategories": "Race:Zerg,UpgradeType:Bonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -495,7 +496,6 @@
           }
         },
         "Race": "Zerg",
-        "EditorCategories": "Race:Zerg,UpgradeType:ArmorBonus",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -871,6 +871,7 @@
         "ScoreValue": "ArmorTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "ZergGroundArmors",
+        "EditorCategories": "Race:Zerg,UpgradeType:Bonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -878,7 +879,6 @@
           }
         },
         "Race": "Zerg",
-        "EditorCategories": "Race:Zerg,UpgradeType:ArmorBonus",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -1254,6 +1254,7 @@
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "ZergMeleeArmors",
+        "EditorCategories": "Race:Zerg,UpgradeType:Bonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -1261,7 +1262,6 @@
           }
         },
         "Race": "Zerg",
-        "EditorCategories": "Race:Zerg,UpgradeType:AttackBonus",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -1317,14 +1317,6 @@
             "Value": "1"
           },
           {
-            "Reference": "Effect,VolatileBurstU,AttributeBonus[Light]",
-            "Value": "2.000000"
-          },
-          {
-            "Reference": "Effect,VolatileBurstFriendlyUnitDamage,AttributeBonus[Light]",
-            "Value": "2.000000"
-          },
-          {
             "Operation": "Set",
             "Reference": "Weapon,Claws,Icon",
             "Value": "Assets\\Textures\\btn-upgrade-zerg-meleeattacks-level1.dds"
@@ -1351,6 +1343,14 @@
           {
             "Reference": "Effect,BurrowChargeMPTargetDamage,AttributeBonus[Armored]",
             "Value": "2"
+          },
+          {
+            "Reference": "Effect,VolatileBurstDirectFallbackEnemyNeutralBuilding,Amount",
+            "Value": "5"
+          },
+          {
+            "Reference": "Effect,VolatileBurstDirectFallbackEnemyNeutralUnit,Amount",
+            "Value": "5"
           }
         ],
         "AffectedUnitArray": [
@@ -1384,6 +1384,7 @@
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "ZergMeleeArmors",
+        "EditorCategories": "Race:Zerg,UpgradeType:Bonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -1391,7 +1392,6 @@
           }
         },
         "Race": "Zerg",
-        "EditorCategories": "Race:Zerg,UpgradeType:AttackBonus",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -1447,14 +1447,6 @@
             "Value": "1"
           },
           {
-            "Reference": "Effect,VolatileBurstU,AttributeBonus[Light]",
-            "Value": "2.000000"
-          },
-          {
-            "Reference": "Effect,VolatileBurstFriendlyUnitDamage,AttributeBonus[Light]",
-            "Value": "2.000000"
-          },
-          {
             "Operation": "Set",
             "Reference": "Weapon,Claws,Icon",
             "Value": "Assets\\Textures\\btn-upgrade-zerg-meleeattacks-level2.dds"
@@ -1481,6 +1473,14 @@
           {
             "Reference": "Effect,BurrowChargeMPTargetDamage,AttributeBonus[Armored]",
             "Value": "2"
+          },
+          {
+            "Reference": "Effect,VolatileBurstDirectFallbackEnemyNeutralBuilding,Amount",
+            "Value": "5"
+          },
+          {
+            "Reference": "Effect,VolatileBurstDirectFallbackEnemyNeutralUnit,Amount",
+            "Value": "5"
           }
         ],
         "AffectedUnitArray": [
@@ -1511,6 +1511,7 @@
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "ZergMeleeArmors",
+        "EditorCategories": "Race:Zerg,UpgradeType:Bonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -1518,7 +1519,6 @@
           }
         },
         "Race": "Zerg",
-        "EditorCategories": "Race:Zerg,UpgradeType:AttackBonus",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -1574,14 +1574,6 @@
             "Value": "1"
           },
           {
-            "Reference": "Effect,VolatileBurstU,AttributeBonus[Light]",
-            "Value": "2.000000"
-          },
-          {
-            "Reference": "Effect,VolatileBurstFriendlyUnitDamage,AttributeBonus[Light]",
-            "Value": "2.000000"
-          },
-          {
             "Operation": "Set",
             "Reference": "Weapon,Claws,Icon",
             "Value": "Assets\\Textures\\btn-upgrade-zerg-meleeattacks-level3.dds"
@@ -1608,6 +1600,14 @@
           {
             "Reference": "Effect,BurrowChargeMPTargetDamage,AttributeBonus[Armored]",
             "Value": "2"
+          },
+          {
+            "Reference": "Effect,VolatileBurstDirectFallbackEnemyNeutralBuilding,Amount",
+            "Value": "5"
+          },
+          {
+            "Reference": "Effect,VolatileBurstDirectFallbackEnemyNeutralUnit,Amount",
+            "Value": "5"
           }
         ],
         "AffectedUnitArray": [
@@ -1638,6 +1638,7 @@
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "ZergMissileWeapons",
+        "EditorCategories": "Race:Zerg,UpgradeType:Bonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -1645,7 +1646,6 @@
           }
         },
         "Race": "Zerg",
-        "EditorCategories": "Race:Zerg,UpgradeType:AttackBonus",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -1814,6 +1814,15 @@
           {
             "Operation": "Set",
             "Reference": "Weapon,InfestedAcidSpines,Icon",
+            "Value": "Assets\\Textures\\btn-upgrade-zerg-missileattacks-level1.dds"
+          },
+          {
+            "Reference": "Weapon,Spinesdisabled,Level",
+            "Value": "1"
+          },
+          {
+            "Operation": "Set",
+            "Reference": "Weapon,Spinesdisabled,Icon",
             "Value": "Assets\\Textures\\btn-upgrade-zerg-missileattacks-level1.dds"
           }
         ],
@@ -1852,6 +1861,7 @@
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "ZergMissileWeapons",
+        "EditorCategories": "Race:Zerg,UpgradeType:Bonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -1859,7 +1869,6 @@
           }
         },
         "Race": "Zerg",
-        "EditorCategories": "Race:Zerg,UpgradeType:AttackBonus",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -2029,6 +2038,15 @@
             "Operation": "Set",
             "Reference": "Weapon,InfestedAcidSpines,Icon",
             "Value": "Assets\\Textures\\btn-upgrade-zerg-missileattacks-level2.dds"
+          },
+          {
+            "Reference": "Weapon,Spinesdisabled,Level",
+            "Value": "1"
+          },
+          {
+            "Operation": "Set",
+            "Reference": "Weapon,Spinesdisabled,Icon",
+            "Value": "Assets\\Textures\\btn-upgrade-zerg-missileattacks-level2.dds"
           }
         ],
         "AffectedUnitArray": [
@@ -2063,6 +2081,7 @@
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "ZergMissileWeapons",
+        "EditorCategories": "Race:Zerg,UpgradeType:Bonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -2070,7 +2089,6 @@
           }
         },
         "Race": "Zerg",
-        "EditorCategories": "Race:Zerg,UpgradeType:AttackBonus",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -2240,6 +2258,15 @@
             "Operation": "Set",
             "Reference": "Weapon,InfestedAcidSpines,Icon",
             "Value": "Assets\\Textures\\btn-upgrade-zerg-missileattacks-level3.dds"
+          },
+          {
+            "Reference": "Weapon,Spinesdisabled,Level",
+            "Value": "1"
+          },
+          {
+            "Operation": "Set",
+            "Reference": "Weapon,Spinesdisabled,Icon",
+            "Value": "Assets\\Textures\\btn-upgrade-zerg-missileattacks-level3.dds"
           }
         ],
         "AffectedUnitArray": [
@@ -2275,6 +2302,7 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "CentrificalHooks",
+        "EditorCategories": "Race:Zerg,UpgradeType:Spell",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -2291,25 +2319,8 @@
           {
             "Reference": "Unit,Baneling,Speed",
             "Value": "0.453100"
-          },
-          {
-            "Reference": "Unit,Baneling,LifeMax",
-            "Value": "5"
-          },
-          {
-            "Reference": "Unit,Baneling,LifeStart",
-            "Value": "5"
-          },
-          {
-            "Reference": "Unit,BanelingBurrowed,LifeMax",
-            "Value": "5"
-          },
-          {
-            "Reference": "Unit,BanelingBurrowed,LifeStart",
-            "Value": "5"
           }
         ],
-        "EditorCategories": "Race:Zerg,UpgradeType:Talents",
         "ScoreResult": "BuildOrder",
         "ScoreAmount": 300,
         "InfoTooltipPriority": 1,
@@ -2328,13 +2339,13 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "GlialReconstitution",
+        "EditorCategories": "Race:Zerg,UpgradeType:Spell",
         "$tokens": {
           "ID": {
             "type": "string",
             "value": ""
           }
         },
-        "EditorCategories": "Race:Zerg,UpgradeType:Talents",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -2368,6 +2379,7 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "TunnelingClaws",
+        "EditorCategories": "Race:Zerg,UpgradeType:Spell",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -2402,7 +2414,6 @@
             "Value": "1"
           }
         ],
-        "EditorCategories": "Race:Zerg,UpgradeType:Talents",
         "AffectedUnitArray": [
           "Roach",
           "RoachBurrowed"
@@ -2421,6 +2432,7 @@
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "ZergFlyerWeapons",
+        "EditorCategories": "Race:Zerg,UpgradeType:Bonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -2428,7 +2440,6 @@
           }
         },
         "Race": "Zerg",
-        "EditorCategories": "Race:Zerg,UpgradeType:AttackBonus",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -2513,6 +2524,7 @@
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "ZergFlyerWeapons",
+        "EditorCategories": "Race:Zerg,UpgradeType:Bonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -2520,7 +2532,6 @@
           }
         },
         "Race": "Zerg",
-        "EditorCategories": "Race:Zerg,UpgradeType:AttackBonus",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -2602,6 +2613,7 @@
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "ZergFlyerWeapons",
+        "EditorCategories": "Race:Zerg,UpgradeType:Bonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -2609,7 +2621,6 @@
           }
         },
         "Race": "Zerg",
-        "EditorCategories": "Race:Zerg,UpgradeType:AttackBonus",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -2691,6 +2702,7 @@
         "ScoreValue": "ArmorTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "ZergFlyerArmors",
+        "EditorCategories": "Race:Zerg,UpgradeType:Bonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -2698,7 +2710,6 @@
           }
         },
         "Race": "Zerg",
-        "EditorCategories": "Race:Zerg,UpgradeType:ArmorBonus",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -2872,6 +2883,7 @@
         "ScoreValue": "ArmorTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "ZergFlyerArmors",
+        "EditorCategories": "Race:Zerg,UpgradeType:Bonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -2879,7 +2891,6 @@
           }
         },
         "Race": "Zerg",
-        "EditorCategories": "Race:Zerg,UpgradeType:ArmorBonus",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -3050,6 +3061,7 @@
         "ScoreValue": "ArmorTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "ZergFlyerArmors",
+        "EditorCategories": "Race:Zerg,UpgradeType:Bonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -3057,7 +3069,6 @@
           }
         },
         "Race": "Zerg",
-        "EditorCategories": "Race:Zerg,UpgradeType:ArmorBonus",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -3229,6 +3240,7 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "ChitinousPlating",
+        "EditorCategories": "Race:Zerg,UpgradeType:Spell",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -3257,7 +3269,6 @@
             "Value": "2"
           }
         ],
-        "EditorCategories": "Race:Zerg,UpgradeType:Talents",
         "AffectedUnitArray": [
           "Ultralisk",
           "UltraliskBurrowed"
@@ -3276,6 +3287,7 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "AnabolicSynthesis",
+        "EditorCategories": "Race:Zerg,UpgradeType:Spell",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -3288,56 +3300,19 @@
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
+            "Operation": "Subtract",
             "Reference": "Unit,Ultralisk,SpeedMultiplierCreep",
-            "Value": "0.2165",
-            "Operation": "Subtract"
+            "Value": "0.2165"
           },
           {
             "Reference": "Unit,Ultralisk,Speed",
             "Value": "0.589800"
           }
         ],
-        "EditorCategories": "Race:Zerg,UpgradeType:Talents",
         "AffectedUnitArray": [
           "Ultralisk"
         ],
         "id": "AnabolicSynthesis"
-      },
-      "InfestorEnergyUpgrade": {
-        "class": "CUpgrade",
-        "Flags": {
-          "UpgradeCheat": 1,
-          "TechTreeCheat": 1
-        },
-        "Name": "Pathogen Glands",
-        "MaxLevel": 1,
-        "Alert": "ResearchComplete",
-        "ScoreCount": "MiscTechnologyCount",
-        "ScoreValue": "MiscTechnologyValue",
-        "WebPriority": 1,
-        "LeaderAlias": "InfestorEnergyUpgrade",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
-        "ScoreAmount": 300,
-        "ScoreResult": "BuildOrder",
-        "EffectArray": [
-          {
-            "Reference": "Unit,Infestor,EnergyStart",
-            "Value": "25"
-          }
-        ],
-        "EditorCategories": "Race:Terran,UpgradeType:Talents",
-        "Icon": "btn-upgrade-zerg-pathogenglands",
-        "Race": "Zerg",
-        "AffectedUnitArray": [
-          "Infestor",
-          "InfestorBurrowed"
-        ],
-        "id": "InfestorEnergyUpgrade"
       },
       "NeuralParasite": {
         "class": "CUpgrade",
@@ -3351,6 +3326,7 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "NeuralParasite",
+        "EditorCategories": "Race:Zerg,UpgradeType:Spell",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -3361,7 +3337,6 @@
         "Race": "Zerg",
         "ScoreAmount": 300,
         "ScoreResult": "BuildOrder",
-        "EditorCategories": "Race:Zerg,UpgradeType:Talents",
         "AffectedUnitArray": [
           "Infestor"
         ],
@@ -3380,6 +3355,7 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "EvolveMuscularAugments",
+        "EditorCategories": "Race:Zerg,UpgradeType:Spell",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -3401,7 +3377,6 @@
             "Value": "1.2391"
           }
         ],
-        "EditorCategories": "Race:Zerg,UpgradeType:Talents",
         "AffectedUnitArray": [
           "Hydralisk",
           "HydraliskBurrowed"
@@ -3421,6 +3396,7 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "EvolveGroovedSpines",
+        "EditorCategories": "Race:Zerg,UpgradeType:Spell",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -3441,7 +3417,6 @@
             "Value": "1"
           }
         ],
-        "EditorCategories": "Race:Zerg,UpgradeType:Talents",
         "AffectedUnitArray": [
           "Hydralisk",
           "HydraliskBurrowed"
@@ -3461,6 +3436,7 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "DiggingClaws",
+        "EditorCategories": "Race:Zerg,UpgradeType:Spell",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -3469,7 +3445,7 @@
         },
         "Icon": "btn-upgrade-zerg-adaptivetalons",
         "Race": "Terr",
-        "ScoreAmount": 300,
+        "ScoreAmount": 200,
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -3491,13 +3467,8 @@
             "Operation": "Subtract",
             "Reference": "Abil,BurrowLurkerMPDown,InfoArray[0].SectionArray[Stats].DurationArray[Delay]",
             "Value": "0.660000"
-          },
-          {
-            "Reference": "Unit,LurkerMP,Speed",
-            "Value": "0.300700"
           }
         ],
-        "EditorCategories": "Race:Zerg,UpgradeType:Talents",
         "AffectedUnitArray": [
           "LurkerMP",
           "LurkerMPBurrowed"
@@ -3517,6 +3488,7 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "LurkerRange",
+        "EditorCategories": "Race:Zerg,UpgradeType:Spell",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -3537,7 +3509,6 @@
             "Value": "2"
           }
         ],
-        "EditorCategories": "Race:Zerg,UpgradeType:Talents",
         "AffectedUnitArray": [
           "LurkerMP",
           "LurkerMPBurrowed"
@@ -3557,6 +3528,7 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "overlordspeed",
+        "EditorCategories": "Race:Zerg,UpgradeType:Spell",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -3565,7 +3537,6 @@
         },
         "Race": "Zerg",
         "Icon": "btn-upgrade-zerg-pneumatizedcarapace",
-        "EditorCategories": "Race:Zerg,UpgradeType:Talents",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -3573,14 +3544,14 @@
             "Value": "1.500000"
           },
           {
+            "Operation": "Set",
             "Reference": "Unit,Overlord,Speed",
-            "Value": "1.879000",
-            "Operation": "Set"
+            "Value": "1.879000"
           },
           {
             "Operation": "Set",
             "Reference": "Unit,OverlordTransport,Speed",
-            "Value": "1.879000"
+            "Value": "2.144500"
           }
         ],
         "ScoreAmount": 200,
@@ -3606,6 +3577,7 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "Burrow",
+        "EditorCategories": "Race:Zerg,UpgradeType:Spell",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -3614,7 +3586,6 @@
         },
         "Race": "Zerg",
         "Icon": "btn-ability-zerg-burrow-color",
-        "EditorCategories": "Race:Zerg,UpgradeType:Talents",
         "ScoreResult": "BuildOrder",
         "ScoreAmount": 200,
         "AffectedUnitArray": [
@@ -3642,34 +3613,6 @@
           "RavagerBurrowed"
         ],
         "id": "Burrow"
-      },
-      "overlordtransport": {
-        "class": "CUpgrade",
-        "Flags": {
-          "UpgradeCheat": 1
-        },
-        "Name": "Ventral Sacs",
-        "MaxLevel": 1,
-        "Alert": "ResearchComplete",
-        "ScoreCount": "MiscTechnologyCount",
-        "ScoreValue": "MiscTechnologyValue",
-        "WebPriority": 1,
-        "LeaderAlias": "overlordtransport",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
-        "Race": "Zerg",
-        "EditorCategories": "Race:Zerg,UpgradeType:Talents",
-        "ScoreResult": "BuildOrder",
-        "Icon": "btn-upgrade-zerg-ventralsacs",
-        "ScoreAmount": 400,
-        "AffectedUnitArray": [
-          "Overlord"
-        ],
-        "id": "overlordtransport"
       }
     },
     "units": {
@@ -3690,8 +3633,7 @@
         ],
         "Research": [
           "overlordspeed",
-          "Burrow",
-          "overlordtransport"
+          "Burrow"
         ],
         "Morph": [
           "Lair"
@@ -3720,8 +3662,7 @@
         ],
         "Research": [
           "overlordspeed",
-          "Burrow",
-          "overlordtransport"
+          "Burrow"
         ],
         "Morph": [
           "Hive"
@@ -3750,8 +3691,7 @@
         ],
         "Research": [
           "overlordspeed",
-          "Burrow",
-          "overlordtransport"
+          "Burrow"
         ],
         "Morph": [],
         "$Phase": [],
@@ -3840,9 +3780,7 @@
           "Egg",
           "Egg"
         ],
-        "$Phase": [
-          "Egg"
-        ],
+        "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-zerg-groundcarapace-level0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": "Zerg Ground Carapace",
@@ -3859,7 +3797,6 @@
         "Research": [],
         "Morph": [],
         "$Phase": [],
-        "$Phased": "Larva",
         "LifeArmorIcon": "btn-upgrade-zerg-groundcarapace-level0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": "Zerg Ground Carapace"
@@ -4255,8 +4192,6 @@
         },
         "Production": [],
         "Research": [
-          null,
-          "InfestorEnergyUpgrade",
           "NeuralParasite"
         ],
         "Morph": [],
@@ -4352,7 +4287,6 @@
         "Research": [],
         "Morph": [],
         "$Phase": [],
-        "$Phased": "Baneling",
         "LifeArmorIcon": "btn-upgrade-zerg-groundcarapace-level0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": "Zerg Ground Carapace"
@@ -4372,7 +4306,6 @@
         "Research": [],
         "Morph": [],
         "$Phase": [
-          "BanelingCocoon",
           "BanelingBurrowed"
         ],
         "LifeArmorIcon": "btn-upgrade-zerg-groundcarapace-level0",
@@ -4464,7 +4397,6 @@
         "Research": [],
         "Morph": [],
         "$Phase": [],
-        "$Phased": "Overseer",
         "LifeArmorIcon": "btn-upgrade-zerg-flyercarapace-level0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": "Zerg Flyer Carapace"
@@ -4487,7 +4419,6 @@
         "Research": [],
         "Morph": [],
         "$Phase": [
-          "OverlordCocoon",
           "OverseerSiegeMode"
         ],
         "LifeArmorIcon": "btn-upgrade-zerg-flyercarapace-level0",
@@ -4552,7 +4483,6 @@
         "Research": [],
         "Morph": [],
         "$Phase": [],
-        "$Phased": "TransportOverlord",
         "LifeArmorIcon": "btn-upgrade-zerg-flyercarapace-level0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": "Zerg Flyer Carapace"
@@ -4573,7 +4503,7 @@
           "OverlordCocoon",
           "Overseer"
         ],
-        "$Phase": ["TransportOverlordCocoon"],
+        "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-zerg-flyercarapace-level0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": "Zerg Flyer Carapace"
@@ -4640,9 +4570,9 @@
         "Research": [],
         "Morph": [],
         "$Phase": [],
-        "$Phased": "Ravager",
         "LifeArmorIcon": "btn-upgrade-zerg-groundcarapace-level0",
-        "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0"
+        "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+        "LifeArmorName": "None"
       },
       "Ravager": {
         "id": "Ravager",
@@ -4660,7 +4590,6 @@
         "Research": [],
         "Morph": [],
         "$Phase": [
-          "RavagerCocoon",
           "RavagerBurrowed"
         ],
         "LifeArmorIcon": "btn-upgrade-zerg-groundcarapace-level0",
@@ -4764,7 +4693,7 @@
         "LifeArmor": 2,
         "Food": -6,
         "CostResource": {
-          "Minerals": 300,
+          "Minerals": 275,
           "Vespene": 200
         },
         "Production": [],
@@ -4787,7 +4716,7 @@
         "LifeArmor": 2,
         "Food": -6,
         "CostResource": {
-          "Minerals": 300,
+          "Minerals": 275,
           "Vespene": 200
         },
         "Production": [],
@@ -4841,7 +4770,6 @@
         "Research": [],
         "Morph": [],
         "$Phase": [],
-        "$Phased": ["BroodLord"],
         "LifeArmorIcon": "btn-upgrade-zerg-flyercarapace-level0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": "Zerg Flyer Carapace"
@@ -4861,7 +4789,7 @@
         "Production": [],
         "Research": [],
         "Morph": [],
-        "$Phase": ["BroodLord"],
+        "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-zerg-flyercarapace-level0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": "Zerg Flyer Carapace",
@@ -4881,7 +4809,9 @@
         "Production": [],
         "Research": [],
         "Morph": [
-          "LurkerMP"
+          "LurkerMPEgg",
+          "LurkerMP",
+          null
         ],
         "$Phase": [
           "HydraliskBurrowed"
@@ -4925,7 +4855,7 @@
         "Production": [],
         "Research": [],
         "Morph": [],
-        "$Phased": "LurkerMP",
+        "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-zerg-groundcarapace-level0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": "Zerg Ground Carapace"
@@ -4948,7 +4878,6 @@
           null
         ],
         "$Phase": [
-          "LurkerMPEgg",
           "LurkerMPBurrowed"
         ],
         "LifeArmorIcon": "btn-upgrade-zerg-groundcarapace-level0",
@@ -5063,48 +4992,11 @@
         "Production": [],
         "Research": [],
         "Morph": [],
-        "$Phase": [
-          "LocustMPFlying"
-        ],
-        "LifeArmorIcon": "btn-upgrade-zerg-groundcarapace-level0",
-        "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Zerg Ground Carapace",
-        "priority": 148
-      },
-      "LocustMPFlying": {
-        "id": "LocustMPFlying",
-        "Icon": "btn-unit-zerg-locustflyer",
-        "Description": "Timed life creature. Durable and dangerous.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
-        "Name": "Locust",
-        "LifeMax": 50,
-        "Production": [
-          "LocustMPPrecursor"
-        ],
-        "Research": [],
-        "Morph": [
-          "LocustMP"
-        ],
-        "$Phased": "LocustMP",
         "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-zerg-groundcarapace-level0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": "Zerg Ground Carapace",
         "priority": 148
-      },
-      "Broodling": {
-        "id": "Broodling",
-        "Icon": "btn-unit-zerg-symbiote",
-        "Description": "Fast melee creature that will last for a short duration.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
-        "Name": "Broodling",
-        "LifeMax": 30,
-        "Production": [],
-        "Research": [],
-        "Morph": [],
-        "$Phase": [],
-        "LifeArmorIcon": "btn-upgrade-zerg-groundcarapace-level0",
-        "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Zerg Ground Carapace",
-        "priority": 200
       }
     }
   },
@@ -5160,9 +5052,7 @@
     "Viper",
     "SwarmHostMP",
     "SwarmHostBurrowedMP",
-    "LocustMP",
-    "LocustMPFlying",
-    "Broodling"
+    "LocustMP"
   ],
   "structures": [
     "Hatchery",
@@ -5209,14 +5099,12 @@
     "ZergFlyerArmorsLevel3",
     "ChitinousPlating",
     "AnabolicSynthesis",
-    "InfestorEnergyUpgrade",
     "NeuralParasite",
     "EvolveMuscularAugments",
     "EvolveGroovedSpines",
     "DiggingClaws",
     "LurkerRange",
     "overlordspeed",
-    "Burrow",
-    "overlordtransport"
+    "Burrow"
   ]
 }

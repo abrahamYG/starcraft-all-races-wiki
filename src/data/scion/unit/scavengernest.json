@@ -1,6 +1,6 @@
 {
   "Name": "Scavenger Nest",
-  "Description": "Base structure for the Xayid race. Acts as a resource drop-off point and can create Scavengers.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Scavengers",
+  "Description": "Primary structure. Used to receive gathered resources.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Scavengers",
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -88,6 +88,7 @@
   "PlaneArray": [
     "Ground"
   ],
+  "AttackTargetPriority": 11,
   "Collide": [
     "Burrow",
     "Ground",
@@ -100,11 +101,9 @@
     "Biological",
     "Structure"
   ],
-  "LifeArmor": 2,
-  "LifeRegenDelay": 3,
-  "LifeRegenRate": 0.5,
+  "LifeArmor": 1,
   "Sight": 11,
-  "CostCategory": "Technology",
+  "CostCategory": "Economy",
   "ScoreResult": "BuildOrder",
   "HotkeyCategory": "Unit/Category/XayidUnits",
   "id": "ScavengerNest",
@@ -125,12 +124,6 @@
           "EditorCategories": "Race:Neutral,AbilityorEffectType:Structures",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -192,12 +185,6 @@
           "EditorCategories": "Race:Neutral,AbilityorEffectType:Units",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -364,6 +351,7 @@
     "IsScavengerNest",
     "XayidBuildingSplat5x5",
     "ScavengerNest",
+    "XayidScavengerNestPlayerDecalMacro",
     "CountUnitScavengerNestCompleteOnlyTechTreeCheat"
   ],
   "$Requirements": [],

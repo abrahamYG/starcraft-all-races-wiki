@@ -10,8 +10,8 @@
   "Response": "Acquire",
   "ResourceState": "Unknown",
   "ResourceType": "Unknown",
-  "LifeStart": 550,
-  "LifeMax": 550,
+  "LifeStart": 500,
+  "LifeMax": 500,
   "LifeArmorName": "Xayid Ground Carapace",
   "Mover": "Ground",
   "StationaryTurningRate": 149.9414,
@@ -104,12 +104,6 @@
               "DisplayType": "Attack",
               "Color": "255,255,0,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
@@ -218,12 +212,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -297,12 +285,6 @@
               "DisplayType": "Attack",
               "Color": "255,255,0,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
@@ -379,9 +361,7 @@
     "Structure",
     "RoachBurrow"
   ],
-  "LifeRegenDelay": 3,
-  "LifeRegenRate": 3,
-  "Sight": 10,
+  "Sight": 11,
   "CostCategory": "Army",
   "ScoreResult": "BuildOrder",
   "GlossaryCategory": "",
@@ -395,7 +375,7 @@
     "Vespene": 1
   },
   "id": "MassaliskHunkered",
-  "LifeArmor": 5,
+  "LifeArmor": 3,
   "Speed": 0,
   "Food": -6,
   "CostResource": {
@@ -433,7 +413,14 @@
       "Period": 1.4
     }
   ],
-  "Behaviors": [],
+  "Behaviors": [
+    {
+      "id": "MassaliskHunkered",
+      "Icon": "btn-ability-xayid-massaliskhunker",
+      "Tooltip": "Takes <b>-79</b>% reduced damage.",
+      "Name": "Hunkered"
+    }
+  ],
   "Abilities": [
     {
       "id": "Mobile",
@@ -459,6 +446,8 @@
     "XayidGroundAttacks",
     "XayidGroundAttacksLevel2",
     "XayidGroundAttacksLevel3",
+    "XayidGroundAttacksRevert",
+    "XayidGroundCarapaceRevert",
     "IsHunkeredMassalisk"
   ],
   "$Requirements": [],

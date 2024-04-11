@@ -12,6 +12,7 @@
   "ScoreValue": "WeaponTechnologyValue",
   "WebPriority": 0,
   "LeaderAlias": "TechVehicleWeapons",
+  "EditorCategories": "Race:Terran,UpgradeType:Bonus",
   "$tokens": {
     "ID": {
       "type": "string",
@@ -19,7 +20,6 @@
     }
   },
   "Race": "Terr",
-  "EditorCategories": "Race:Terran,UpgradeType:AttackBonus",
   "ScoreResult": "BuildOrder",
   "EffectArray": [
     {
@@ -167,10 +167,6 @@
       "Value": "1"
     },
     {
-      "Reference": "Effect,HellionTankDamage,AttributeBonus[Light]",
-      "Value": "1.000000"
-    },
-    {
       "Reference": "Weapon,LanceMissileLaunchers,Level",
       "Value": "1"
     },
@@ -180,7 +176,7 @@
     },
     {
       "Reference": "Effect,CycloneAttackWeaponDamage,Amount",
-      "Value": "2"
+      "Value": "1"
     },
     {
       "Operation": "Set",

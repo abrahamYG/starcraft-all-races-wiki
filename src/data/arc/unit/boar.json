@@ -660,7 +660,7 @@
         "AbilCmd": "IgnitionBlast,Execute",
         "id": "IgnitionBlast",
         "Icon": "btn-ability-genetron-ignitionblast",
-        "Tooltip": "Casues the <span style=\"color: #FFFF80\">Boar</span> to have increased movement speed. Deals 15 damage when it comes into contact with enemy air units. Lasts <b>4</b> seconds.<br/><br/><span style=\"color: #78F0FF\">Uses power.</span>",
+        "Tooltip": "After a charge up time of <b>1</b> second, the caster gains increased movement speed and deals up to <b>100</b> damage to units it comes into contact with over <b>3</b> seconds.<br/><br/><span style=\"color: #78F0FF\">Uses <b>50</b> power.</span>",
         "Name": "Ignition Blast",
         "Hotkey": "R"
       }
@@ -669,13 +669,13 @@
   "CargoSize": 0,
   "Height": 3.75,
   "VisionHeight": 4,
-  "Food": -4,
+  "Food": -3,
   "CostResource": {
     "Minerals": 200,
-    "Vespene": 150
+    "Vespene": 125
   },
   "RepairTime": 35,
-  "SubgroupPriority": 47,
+  "SubgroupPriority": 48,
   "GlossaryPriority": 15,
   "GlossaryStrongArray": [
     "Hornet",
@@ -689,7 +689,7 @@
     "Battlecruiser",
     "Hydralisk"
   ],
-  "LateralAcceleration": 7,
+  "LateralAcceleration": 9,
   "EnergyStart": 50,
   "EnergyMax": 50,
   "EnergyRegenRate": 1.6875,
@@ -749,11 +749,11 @@
     "GenetronAircraftWeaponsLevel2",
     "GenetronAircraftWeaponsLevel3",
     "BuildAircraft",
-    "CountUnitBoarInProgressOnlyAtUnit",
     "CountUnitBoarQueuedOrBetterAtUnit",
     "AssemblyArray",
-    "BoarShapedHull",
+    "ShapedHull",
     "AssemblyArray",
+    "CountUnitBoarInProgressOnlyAtUnit",
     "GenetronAircraftPlatingRevert",
     "GenetronAircraftWeaponsRevert"
   ],
@@ -805,7 +805,7 @@
       "AbilCmd": "IgnitionBlast,Execute",
       "id": "IgnitionBlast",
       "Icon": "btn-ability-genetron-ignitionblast",
-      "Tooltip": "Casues the <span style=\"color: #FFFF80\">Boar</span> to have increased movement speed. Deals 15 damage when it comes into contact with enemy air units. Lasts <b>4</b> seconds.<br/><br/><span style=\"color: #78F0FF\">Uses power.</span>",
+      "Tooltip": "After a charge up time of <b>1</b> second, the caster gains increased movement speed and deals up to <b>100</b> damage to units it comes into contact with over <b>3</b> seconds.<br/><br/><span style=\"color: #78F0FF\">Uses <b>50</b> power.</span>",
       "Name": "Ignition Blast"
     }
   ]

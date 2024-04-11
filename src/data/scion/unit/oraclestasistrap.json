@@ -34,6 +34,7 @@
     "PlayerRevivable",
     "CameraFollow",
     "UseLineOfSight",
+    "NoScore",
     "NoPortraitTalk",
     "AIThreatGround",
     "AILifetime",
@@ -94,7 +95,7 @@
   "ShieldsMax": 30,
   "ShieldRegenRate": 2,
   "ShieldArmorName": "Protoss Plasma Shields",
-  "Sight": 4,
+  "Sight": 7,
   "AttackTargetPriority": 20,
   "CardLayouts": {
     "Root": [
@@ -126,12 +127,6 @@
           "EditorCategories": "Race:Neutral,AbilityorEffectType:Units",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",

@@ -131,12 +131,6 @@
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
               "DisplayType": "Move",
               "Color": "255,35,125,255",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
@@ -225,12 +219,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -304,12 +292,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -401,12 +383,6 @@
               "Color": "255,255,0,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -481,12 +457,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -571,6 +541,10 @@
             "Link": "CarrierInterceptor",
             "Location": "Unit"
           },
+          "Cooldown": {
+            "Link": "CarrierTrainInterceptor",
+            "TimeUse": 0.01
+          },
           "Button": {
             "Flags": {
               "ToSelection": 1
@@ -581,10 +555,6 @@
           "Flags": {
             "AutoBuild": 1,
             "LeashRetarget": 1
-          },
-          "Cooldown": {
-            "Link": "CarrierTrainInterceptor",
-            "TimeUse": 0.01
           },
           "Time": 12,
           "CountStart": 4,
@@ -621,12 +591,6 @@
           "EditorCategories": "Race:Neutral,AbilityorEffectType:Structures",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -680,26 +644,6 @@
         "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
         "Name": "Cancel",
         "Hotkey": "Esc"
-      },
-      {
-        "Cost": {
-          "Minerals": 0,
-          "Vespene": 0,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 2,
-        "Column": 1,
-        "Type": "Passive",
-        "id": "GravitonCatapult",
-        "Icon": "btn-upgrade-protoss-gravitoncatapult",
-        "Tooltip": "Makes the Carrier launch Interceptors more quickly.",
-        "Name": "Graviton Catapult",
-        "Hotkey": "G"
       }
     ]
   },
@@ -771,8 +715,9 @@
     }
   ],
   "$Upgrades": [
-    "CarrierLaunchSpeedUpgrade",
+    "IsCarrier",
     "Carrier",
+    "FleetBeacon",
     "ProtossAirArmorsLevel1",
     "Carrier",
     "ProtossAirArmors",
@@ -785,12 +730,7 @@
     "ProtossShields",
     "ProtossShieldsLevel2",
     "ProtossShieldsLevel3",
-    "FleetBeacon",
-    "IsCarrier",
-    "CarrierCarrierCapacity",
-    "CarrierLeashRangeUpgrade",
-    "NotCarrier",
-    "Carrier"
+    "NotCarrier"
   ],
   "$Requirements": [],
   "$Production": [

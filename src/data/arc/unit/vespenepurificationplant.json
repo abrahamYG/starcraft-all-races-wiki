@@ -225,8 +225,7 @@
     "UEDCalldownStructure",
     "UEDPlacementDummyMedium",
     "VespenePurificationPlant",
-    "VespenePurificationPlantSplat",
-    null
+    "VespenePurificationPlantSplat"
   ],
   "$Requirements": [],
   "$Production": [],

@@ -1,6 +1,5 @@
 {
   "Name": "Z-1",
-  "Description": "Enhanced Infantry<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units</span>",
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -91,7 +90,7 @@
     "ForceField"
   ],
   "Attributes": [
-    "Light",
+    "Armored",
     "Mechanical"
   ],
   "LifeArmor": 1,
@@ -99,10 +98,10 @@
   "Acceleration": 1000,
   "LateralAcceleration": 69.125,
   "Sight": 10,
-  "Food": -2,
+  "Food": -3,
   "CostCategory": "Army",
   "CostResource": {
-    "Minerals": 75,
+    "Minerals": 200,
     "Vespene": 125
   },
   "RepairTime": 25,
@@ -662,7 +661,7 @@
           "Food": 0
         },
         "Row": 2,
-        "Column": 1,
+        "Column": 0,
         "Type": "AbilCmd",
         "AbilCmd": "Z1Freeze,Execute",
         "id": "Z1LiquidNitrogen",
@@ -796,7 +795,7 @@
           "Food": 0
         },
         "Row": 2,
-        "Column": 2,
+        "Column": 1,
         "Type": "AbilCmd",
         "AbilCmd": "Z1Shield,Execute",
         "id": "Z1ShieldDefence",
@@ -909,11 +908,6 @@
           "FollowRange": 5,
           "Cost": [
             {
-              "Charge": {
-                "CountMax": 0,
-                "CountStart": 0,
-                "CountUse": 0
-              },
               "Vital": {
                 "Energy": 75
               },
@@ -945,7 +939,7 @@
           "Food": 0
         },
         "Row": 2,
-        "Column": 0,
+        "Column": 2,
         "Type": "AbilCmd",
         "AbilCmd": "Z1BadgerBomb,Execute",
         "id": "Z1BadgerBomb",
@@ -1107,7 +1101,7 @@
   "ScoreResult": "BuildOrder",
   "SubgroupPriority": 40,
   "GlossaryCategory": "Unit/Category/0UPLUnits",
-  "GlossaryPriority": 40,
+  "GlossaryPriority": 50,
   "HotkeyCategory": "Unit/Category/UPLUnits",
   "EnergyStart": 50,
   "EnergyMax": 100,
@@ -1185,7 +1179,8 @@
     "UPLManufacturingFacility",
     "IsZ1",
     "UPLHeadquartersTrain",
-    "Z1"
+    "Z1",
+    null
   ],
   "$Requirements": [],
   "$Production": [

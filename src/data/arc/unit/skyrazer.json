@@ -12,12 +12,13 @@
   "ResourceType": "Unknown",
   "LifeStart": 150,
   "LifeMax": 150,
+  "LifeArmorName": "Dragon Plate Armor",
   "Mover": "Ground",
   "StationaryTurningRate": 720,
   "TurningRate": 720,
-  "Radius": 0.6875,
-  "SeparationRadius": 0.6875,
-  "MinimapRadius": 0.6875,
+  "Radius": 0.625,
+  "SeparationRadius": 0.625,
+  "MinimapRadius": 0.625,
   "EditorCategories": "ObjectType:Unit,ObjectFamily:Melee",
   "TacticalAIFilters": "-;Player,Ally,Neutral",
   "AIEvalFactor": 1,
@@ -1083,20 +1084,16 @@
   ],
   "Behaviors": [
     {
-      "id": "DragonLineageLesser",
-      "Name": "Dragon Lineage"
+      "id": "DragonLineageLesser"
     },
     {
-      "id": "Skyrazer1",
-      "Name": "Skyrazer"
+      "id": "Skyrazer1"
     },
     {
-      "id": "Skyrazer2",
-      "Name": "Skyrazer"
+      "id": "Skyrazer2"
     },
     {
-      "id": "Skyrazer3",
-      "Name": "Skyrazer"
+      "id": "Skyrazer3"
     }
   ],
   "Abilities": [

@@ -12,6 +12,7 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "RoutheTankArmorPlating",
+  "EditorCategories": "UpgradeType:Talents,Race:UPL",
   "$tokens": {
     "ID": {
       "type": "string",
@@ -37,7 +38,6 @@
     }
   ],
   "Race": "UPL",
-  "EditorCategories": "UpgradeType:Talents,Race:UPL",
   "AffectedUnitArray": [
     "RoutheTank"
   ]

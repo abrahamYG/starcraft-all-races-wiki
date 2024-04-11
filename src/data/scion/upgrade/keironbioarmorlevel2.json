@@ -12,6 +12,7 @@
   "ScoreValue": "ArmorTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "KeironBioArmor",
+  "EditorCategories": "Race:Keiron,UpgradeType:ArmorBonus",
   "$tokens": {
     "ID": {
       "type": "string",
@@ -38,11 +39,11 @@
       "Value": "1"
     },
     {
-      "Reference": "Unit,Subjecter,LifeArmor",
+      "Reference": "Unit,Cataract,LifeArmor",
       "Value": "1"
     },
     {
-      "Reference": "Unit,Meridian,LifeArmor",
+      "Reference": "Unit,Crux,LifeArmor",
       "Value": "1"
     },
     {
@@ -78,11 +79,11 @@
       "Value": "1"
     },
     {
-      "Reference": "Unit,Subjecter,LifeArmorLevel",
+      "Reference": "Unit,Cataract,LifeArmorLevel",
       "Value": "1"
     },
     {
-      "Reference": "Unit,Meridian,LifeArmorLevel",
+      "Reference": "Unit,Crux,LifeArmorLevel",
       "Value": "1"
     },
     {
@@ -123,12 +124,12 @@
     },
     {
       "Operation": "Set",
-      "Reference": "Actor,Subjecter,LifeArmorIcon",
+      "Reference": "Actor,Cataract,LifeArmorIcon",
       "Value": "Assets\\Textures\\btn-upgrade-keiron-biologicalarmorlevel2.dds"
     },
     {
       "Operation": "Set",
-      "Reference": "Actor,Meridian,LifeArmorIcon",
+      "Reference": "Actor,Crux,LifeArmorIcon",
       "Value": "Assets\\Textures\\btn-upgrade-keiron-biologicalarmorlevel2.dds"
     },
     {
@@ -152,14 +153,13 @@
       "Value": "Assets\\Textures\\btn-upgrade-keiron-biologicalarmorlevel2.dds"
     }
   ],
-  "EditorCategories": "Race:Keiron,UpgradeType:ArmorBonus",
   "AffectedUnitArray": [
     "Converter",
     "Pariah",
     "Volt",
     "Pulsar",
-    "Subjecter",
-    "Meridian",
+    "Cataract",
+    "Crux",
     "Echo",
     "EchoDM",
     "Fuse",

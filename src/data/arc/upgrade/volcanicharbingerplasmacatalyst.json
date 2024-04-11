@@ -12,6 +12,7 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "VolcanicHarbingerPlasmaCatalyst",
+  "EditorCategories": "Race:Dragon,UpgradeType:Talents",
   "$tokens": {
     "ID": {
       "type": "string",
@@ -25,7 +26,6 @@
       "Value": "2.000000"
     }
   ],
-  "EditorCategories": "Race:Dragon,UpgradeType:Talents",
   "AffectedUnitArray": [
     "VolcanicHarbinger"
   ],

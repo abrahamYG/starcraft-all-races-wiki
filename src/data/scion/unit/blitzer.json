@@ -1,6 +1,6 @@
 {
   "Name": "Blitzer",
-  "Description": "General purpose combat unit. Can use Supercharge and Overdrive.<br/><br/><span style=\"color: #f078ff\">Energy user.</span></n><span style=\"color: #FFFF80\">Can attack ground and air units.</span>",
+  "Description": "General purpose combat unit. Can use Supercharge and Overdrive.<br/><br/><span style=\"color: #78F0FF\">Power user.</span></n><span style=\"color: #FFFF80\">Can attack ground and air units.</span>",
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -10,8 +10,8 @@
   "Response": "Acquire",
   "ResourceState": "Unknown",
   "ResourceType": "Unknown",
-  "LifeStart": 140,
-  "LifeMax": 140,
+  "LifeStart": 135,
+  "LifeMax": 135,
   "LifeArmorName": "Ground Mechanical Plating",
   "Mover": "Ground",
   "StationaryTurningRate": 990,
@@ -127,12 +127,6 @@
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
               "DisplayType": "Move",
               "Color": "255,35,125,255",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
@@ -220,12 +214,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -317,12 +305,6 @@
               "Color": "255,255,0,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -393,12 +375,6 @@
           "EditorCategories": "Race:Neutral,AbilityorEffectType:Units",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -477,12 +453,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -574,12 +544,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -608,7 +572,7 @@
             "Transient": 1
           },
           "Effect": [
-            "Supercharge"
+            "BlitzerSuperchargePowerEnum"
           ],
           "EffectRange": [
             "0,1000"
@@ -670,10 +634,11 @@
               "Requirements": "IsNotSupercharged"
             }
           },
+          "AbilSetId": "Supercharge",
           "Cost": [
             {
               "Vital": {
-                "Energy": 10
+                "Energy": 15
               },
               "Charge": {
                 "Link": "Abil/CannonReset"
@@ -683,7 +648,6 @@
               }
             }
           ],
-          "AbilSetId": "Supercharge",
           "id": "SuperCharge"
         },
         "Cost": {
@@ -691,7 +655,7 @@
           "Vespene": 0,
           "Terazine": 0,
           "Custom": 0,
-          "Energy": 10,
+          "Energy": 15,
           "Life": 0,
           "Shields": 0,
           "Food": 0
@@ -702,7 +666,7 @@
         "AbilCmd": "SuperCharge,Execute",
         "id": "BlitzerSupercharge",
         "Icon": "btn-ability-genetron-cannonreset",
-        "Tooltip": "Causes the caster's next attack to deal <b>200</b>% damage. Weapon range is extended by <b>2</b> while charged. The charge lasts for <b>5</b> seconds.",
+        "Tooltip": "The caster's next attack will deal <b>200</b>% damage as spell damage. Weapon range is extended by <b>1.0</b> while charged. The charge lasts for <b>5</b> seconds.<br/><br/><span style=\"color: #78F0FF\">Uses <b>15</b> power.</span>",
         "Name": "Supercharge",
         "Hotkey": "R"
       },
@@ -738,12 +702,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -772,7 +730,7 @@
             "Transient": 1
           },
           "Effect": [
-            "BlitzerOverdrive"
+            "BlitzerOverdrivePowerEnum"
           ],
           "EffectRange": [
             "0,1000"
@@ -827,21 +785,24 @@
           "CmdButtonArray": {
             "Execute": {
               "Flags": {
-                "ShowInGlossary": 1
+                "ShowInGlossary": 1,
+                "ToSelection": 1
               },
-              "DefaultButtonFace": "BlitzerSupercharge"
+              "DefaultButtonFace": "BlitzerOverdrive",
+              "Requirements": "BlitzerOverdriveReq"
             }
           },
           "Cost": [
             {
               "Vital": {
-                "Energy": 10
+                "Energy": 15
               },
               "Cooldown": {
                 "TimeUse": 5
               }
             }
           ],
+          "AbilSetId": "Overdrive",
           "id": "BlitzerOverdrive"
         },
         "Cost": {
@@ -849,7 +810,7 @@
           "Vespene": 0,
           "Terazine": 0,
           "Custom": 0,
-          "Energy": 10,
+          "Energy": 15,
           "Life": 0,
           "Shields": 0,
           "Food": 0
@@ -860,7 +821,7 @@
         "AbilCmd": "BlitzerOverdrive,Execute",
         "id": "BlitzerOverdrive",
         "Icon": "btn-ability-stetmann-stetelliteoverloadspeed",
-        "Tooltip": "Increases movement speed by <b>-98</b>% for <b>6</b> seconds.",
+        "Tooltip": "Increases movement speed by <b>-98</b>% for <b>6</b> seconds.<br/><br/><span style=\"color: #78F0FF\">Uses <b>15</b> power.</span>",
         "Name": "Overdrive",
         "Hotkey": "D"
       }
@@ -872,9 +833,9 @@
     "Minerals": 100,
     "Vespene": 25
   },
-  "RepairTime": 33.6,
+  "RepairTime": 39.2,
   "InnerRadius": 0.5,
-  "SubgroupPriority": 43,
+  "SubgroupPriority": 46,
   "GlossaryPriority": 3,
   "GlossaryStrongArray": [
     "Blaze",
@@ -888,8 +849,9 @@
     "Marauder",
     "Zergling"
   ],
-  "EnergyStart": 10,
-  "EnergyMax": 10,
+  "EnergyStart": 30,
+  "EnergyMax": 30,
+  "EnergyRegenRate": 0.8437,
   "Icon": "btn-unit-genetron-blitzer",
   "LifeArmorIcon": "btn-upgrade-genetron-groundmechplating-level0",
   "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
@@ -899,7 +861,7 @@
       "id": "ChargeCannon",
       "Icon": "btn-upgrade-genetron-lightmechweapons-level0",
       "Name": "Charge Cannon",
-      "Amount": 13,
+      "Amount": 11,
       "Kind": "Ranged",
       "TargetFilters": "",
       "Range": 5,
@@ -908,7 +870,13 @@
   ],
   "Behaviors": [
     {
-      "id": "GenetronUnitEnergyRegen"
+      "id": "GenetronPowerSupplyTracker"
+    },
+    {
+      "id": "TrackGenetronPowerSupplyUnit"
+    },
+    {
+      "id": "BlitzerAbilitiesReq"
     }
   ],
   "Abilities": [
@@ -934,11 +902,8 @@
     }
   ],
   "$Upgrades": [
-    "BlitzerBoreanReactor",
-    "Blitzer",
-    "TrainLightweightMechs",
-    "Manufacturer",
     "GenetronGroundPlatingLevel1",
+    "Blitzer",
     "Blitzer",
     "GenetronGroundPlating",
     "GenetronGroundPlatingLevel2",
@@ -947,8 +912,17 @@
     "GenetronLightWeapons",
     "GenetronLightWeaponsLevel2",
     "GenetronLightWeaponsLevel3",
+    "AnalysisTerminal",
+    "TrainLightweightMechs",
+    "CountUnitBlitzerQueuedOrBetterAtUnit",
     "Manufacturer",
+    "BlitzerBoreanReactor",
+    "Manufacturer",
+    "CountUnitBlitzerInProgressOnlyAtUnit",
+    "GenetronGroundPlatingRevert",
+    "GenetronLightWeaponsRevert",
     "ReinforcedPlating",
+    "ThreatensBlitzer",
     "IsBlitzer"
   ],
   "$Requirements": [],
@@ -999,14 +973,14 @@
       "AbilCmd": "SuperCharge,Execute",
       "id": "BlitzerSupercharge",
       "Icon": "btn-ability-genetron-cannonreset",
-      "Tooltip": "Causes the caster's next attack to deal <b>200</b>% damage. Weapon range is extended by <b>2</b> while charged. The charge lasts for <b>5</b> seconds.",
+      "Tooltip": "The caster's next attack will deal <b>200</b>% damage as spell damage. Weapon range is extended by <b>1.0</b> while charged. The charge lasts for <b>5</b> seconds.<br/><br/><span style=\"color: #78F0FF\">Uses <b>15</b> power.</span>",
       "Name": "Supercharge"
     },
     {
       "AbilCmd": "BlitzerOverdrive,Execute",
       "id": "BlitzerOverdrive",
       "Icon": "btn-ability-stetmann-stetelliteoverloadspeed",
-      "Tooltip": "Increases movement speed by <b>-98</b>% for <b>6</b> seconds.",
+      "Tooltip": "Increases movement speed by <b>-98</b>% for <b>6</b> seconds.<br/><br/><span style=\"color: #78F0FF\">Uses <b>15</b> power.</span>",
       "Name": "Overdrive"
     }
   ]

@@ -560,14 +560,11 @@
       "id": "HurricaneMissiles",
       "Icon": "btn-upgrade-genetron-heavymechweapons-level0",
       "Name": "Hurricane Missiles",
-      "Amount": 10,
-      "AttributeBonus": {
-        "Massive": 2
-      },
+      "Amount": 12,
       "Kind": "Ranged",
       "TargetFilters": "Air",
       "Range": 10,
-      "Period": 0.56
+      "Period": 0.625
     },
     {
       "Turret": "Phoenix",
@@ -578,7 +575,7 @@
       "Kind": "Ranged",
       "TargetFilters": "Ground",
       "Range": 6,
-      "Period": 1.4
+      "Period": 1.12
     }
   ],
   "Behaviors": [],
@@ -597,9 +594,8 @@
     }
   ],
   "$Upgrades": [
-    "TrainHeavyweightMechs",
-    "Torrent",
     "GenetronGroundPlatingLevel1",
+    "Torrent",
     "Torrent",
     "GenetronGroundPlating",
     "GenetronHeavyWeaponsLevel1",
@@ -608,11 +604,12 @@
     "GenetronHeavyWeaponsLevel3",
     "GenetronGroundPlatingLevel2",
     "GenetronGroundPlatingLevel3",
-    "CountUnitTorrentInProgressOnlyAtUnit",
+    "TrainHeavyweightMechs",
     "CountUnitTorrentQueuedOrBetterAtUnit",
     "Fabricator",
     "EnhancedTargeting",
     "Fabricator",
+    "CountUnitTorrentInProgressOnlyAtUnit",
     "GenetronGroundPlatingRevert",
     "GenetronHeavyWeaponsRevert"
   ],

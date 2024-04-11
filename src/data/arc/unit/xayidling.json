@@ -17,8 +17,8 @@
   "StationaryTurningRate": 990,
   "TurningRate": 990,
   "Radius": 0.4375,
-  "SeparationRadius": 0.5,
-  "MinimapRadius": 0.5,
+  "SeparationRadius": 0.4375,
+  "MinimapRadius": 0.375,
   "EditorCategories": "ObjectType:Unit,ObjectFamily:Melee",
   "TacticalAIFilters": "-;Player,Ally,Neutral",
   "AIEvalFactor": 1,
@@ -690,7 +690,7 @@
     {
       "id": "ThrasherSpine",
       "Name": "Thrasher Spine",
-      "Amount": 10,
+      "Amount": 11,
       "Kind": "Ranged",
       "TargetFilters": "",
       "Range": 3,
@@ -734,7 +734,8 @@
     "Worm",
     "ChangelingXayidling",
     "XayidGroundAttacksRevert",
-    "XayidGroundCarapaceRevert"
+    "XayidGroundCarapaceRevert",
+    null
   ],
   "$Requirements": [],
   "$Production": [],

@@ -636,6 +636,9 @@
           "CursorEffect": [
             "VolatileDischargeDMG"
           ],
+          "ProducedUnitArray": [
+            "VolatileDischarge"
+          ],
           "id": "VolatileDischarge"
         },
         "Cost": {

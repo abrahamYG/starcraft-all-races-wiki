@@ -10,13 +10,13 @@
   "Response": "Acquire",
   "ResourceState": "Unknown",
   "ResourceType": "Unknown",
-  "LifeStart": 160,
-  "LifeMax": 160,
+  "LifeStart": 175,
+  "LifeMax": 175,
   "LifeArmorName": "Keiron Mechanical Armor",
   "Mover": "Ground",
   "StationaryTurningRate": 720,
   "TurningRate": 450,
-  "Radius": 0.9375,
+  "Radius": 1,
   "SeparationRadius": 0.5,
   "MinimapRadius": 1,
   "EditorCategories": "ObjectType:Unit,ObjectFamily:Melee",
@@ -85,12 +85,9 @@
   ],
   "Collide": [
     "Ground",
-    "ForceField",
     "Flying6"
   ],
-  "LifeRegenRate": 0.1718,
-  "ShieldRegenDelay": 4,
-  "ShieldRegenRate": 1.25,
+  "LifeRegenRate": 0.2734,
   "Acceleration": 1000,
   "Sight": 10,
   "CostCategory": "Army",
@@ -109,12 +106,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -206,12 +197,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -285,12 +270,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -384,12 +363,6 @@
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
               "DisplayType": "Move",
               "Color": "255,35,125,255",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
@@ -478,12 +451,6 @@
               "Color": "255,255,0,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -568,16 +535,16 @@
             "AutoBuildOn": 1,
             "LeashRetarget": 1
           },
-          "Time": 12,
+          "Time": 15.4,
           "CountStart": 1,
           "Manage": "Recall",
           "Unit": "Elytron"
         },
         "Unit": "Elytron",
-        "Time": 12,
+        "Time": 15.4,
         "Cost": {
-          "Minerals": 25,
-          "Vespene": 25,
+          "Minerals": 30,
+          "Vespene": 0,
           "Terazine": 0,
           "Custom": 0,
           "Energy": 0,
@@ -618,26 +585,6 @@
         "Hotkey": "Y"
       },
       {
-        "Cost": {
-          "Minerals": 0,
-          "Vespene": 0,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 2,
-        "Column": 1,
-        "Type": "Passive",
-        "id": "AnisopteraWings",
-        "Icon": "btn-upgrade-keiron-anisopterawings",
-        "Tooltip": "Increases the movement speed of <span style=\"color: #FFFF80\">Elytra</span>.",
-        "Name": "Anisoptera Wings",
-        "Hotkey": ""
-      },
-      {
         "Info": {
           "class": "CAbilEffectInstant",
           "Name": "Abil/Name/FuseUnfuse",
@@ -649,12 +596,6 @@
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
@@ -767,7 +708,7 @@
         "AbilCmd": "FuseUnfuse,Execute",
         "id": "Unfuse",
         "Icon": "btn-ability-zerg-dehaka-levelup",
-        "Tooltip": "Releases the Fuse inhabiting this unit, losing the associated bonus.",
+        "Tooltip": "Releases the Fuses inhabiting this unit, losing the associated bonus.",
         "Name": "Unfuse",
         "Hotkey": "U"
       }
@@ -790,17 +731,18 @@
   "LifeArmor": 1,
   "ShieldsStart": 100,
   "ShieldsMax": 100,
-  "Speed": 2,
+  "Speed": 1.875,
   "Food": -6,
   "CostResource": {
     "Minerals": 250,
-    "Vespene": 175
+    "Vespene": 200
   },
   "InnerRadius": 0.75,
-  "CargoSize": 4,
+  "CargoSize": 8,
   "Attributes": [
     "Armored",
-    "Mechanical"
+    "Mechanical",
+    "Massive"
   ],
   "AcquireMovementLimit": 2,
   "EffectArray": {
@@ -819,25 +761,29 @@
       "Amount": 15,
       "Kind": "Melee",
       "TargetFilters": "Ground",
-      "Range": 0.1,
+      "Range": 0.5,
       "Period": 0.7
     },
     {
       "id": "ElytraRelease",
       "Icon": "btn-unit-keiron-elytron",
       "Name": "Elytra",
-      "Amount": 15,
+      "Amount": 9,
       "AttributeBonus": {
-        "Light": 7
+        "Light": 6
       },
       "Kind": "Ranged",
       "DisplayAttackCount": 3,
       "TargetFilters": "Ground",
       "Range": 11,
-      "Period": 1.68
+      "Period": 1.4
     }
   ],
-  "Behaviors": [],
+  "Behaviors": [
+    {
+      "id": "KeironShellRestoration"
+    }
+  ],
   "Abilities": [
     {
       "id": "move",
@@ -877,6 +823,7 @@
     "Myriad",
     "Atrium",
     "KeironCitadelMaterialize",
+    "CitadelCharged",
     "KeironMechWeaponsLevel1",
     "KeironMechWeapons",
     "KeironMechWeaponsLevel2",
@@ -887,12 +834,14 @@
     "KeironMechArmorLevel2",
     "KeironMechArmorLevel3",
     "KeironShieldsLevel1",
-    "CitadelCharged",
     "KeironShields",
     "KeironShieldsLevel2",
     "KeironShieldsLevel3",
     "Citadel",
-    "IsMyriad"
+    "IsMyriad",
+    "KeironMechArmorRevert",
+    "KeironMechWeaponsRevert",
+    "KeironShieldsRevert"
   ],
   "$Requirements": [],
   "$Production": [
@@ -959,7 +908,7 @@
       "AbilCmd": "FuseUnfuse,Execute",
       "id": "Unfuse",
       "Icon": "btn-ability-zerg-dehaka-levelup",
-      "Tooltip": "Releases the Fuse inhabiting this unit, losing the associated bonus.",
+      "Tooltip": "Releases the Fuses inhabiting this unit, losing the associated bonus.",
       "Name": "Unfuse"
     }
   ]

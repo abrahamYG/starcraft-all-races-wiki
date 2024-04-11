@@ -17,7 +17,7 @@
   "StationaryTurningRate": 999.8437,
   "TurningRate": 999.8437,
   "Radius": 0.375,
-  "SeparationRadius": 0.5,
+  "SeparationRadius": 0.375,
   "MinimapRadius": 0.375,
   "EditorCategories": "ObjectType:Unit,ObjectFamily:Melee",
   "TacticalAIFilters": "-;Player,Ally,Neutral",
@@ -82,7 +82,8 @@
   },
   "Collide": [
     "Ground",
-    "ForceField"
+    "ForceField",
+    "Small"
   ],
   "Attributes": [
     "Mechanical",
@@ -94,7 +95,7 @@
   "PlaneArray": [
     "Ground"
   ],
-  "Sight": 9,
+  "Sight": 8,
   "AttackTargetPriority": 20,
   "GlossaryCategory": "Unit/Category/GenetronUnits",
   "HotkeyCategory": "Unit/Category/GenetronUnits",
@@ -948,7 +949,8 @@
             "IgnoreUnitBuildTime": 1,
             "PeonMaintained": 0,
             "RangeIncludesBuilding": 1,
-            "PeonDisableCollision": 1
+            "PeonDisableCollision": 1,
+            "RequireFacing": 1
           },
           "RefundFraction": {
             "Resource": {
@@ -1004,7 +1006,7 @@
                 "Requirements": "HaveNode"
               },
               "Unit": "Manufacturer",
-              "Time": 65
+              "Time": 70
             },
             "Build5": {
               "Button": {
@@ -1026,7 +1028,7 @@
                 "Requirements": "HaveAnalysisTerminal"
               },
               "Unit": "OutfittingStation",
-              "Time": 50
+              "Time": 65
             },
             "Build7": {
               "Button": {
@@ -1070,7 +1072,7 @@
                 "Requirements": "HaveManufacturer"
               },
               "Unit": "Fabricator",
-              "Time": 60
+              "Time": 70
             },
             "Build11": {
               "Button": {
@@ -1092,7 +1094,7 @@
                 "Requirements": "HaveRelayTower"
               },
               "Unit": "AssemblyArray",
-              "Time": 60
+              "Time": 70
             },
             "Build13": {
               "Button": {
@@ -1241,11 +1243,11 @@
               }
             }
           },
-          "FidgetDelayMin": 5,
-          "FidgetDelayMax": 10,
           "ConstructionMover": "Construction",
           "EffectArray": {
-            "Start": "GenetronConstructionInit"
+            "Start": "GenetronConstructionStart",
+            "Finish": "ScionStaticBuilderSuppressMovementClear",
+            "Cancel": "ScionStaticBuilderSuppressMovementClear"
           },
           "id": "ACRBuild"
         },
@@ -1390,26 +1392,12 @@
                 "Location": "Player",
                 "TimeStart": 300,
                 "TimeUse": 300
-              },
-              "Cooldown": {
-                "Link": "Abil/SprayTerran"
               }
             }
           ],
-          "InterruptCost": {
-            "Charge": {
-              "Link": "Abil/SprayTerran"
-            },
-            "Cooldown": {
-              "Link": "Abil/SprayTerran"
-            }
-          },
           "Range": [
             1
           ],
-          "Marker": {
-            "Link": "Abil/SprayTerran"
-          },
           "id": "SprayTerran"
         },
         "Cost": {
@@ -1552,6 +1540,7 @@
         "Column": 4,
         "Type": "CancelSubmenu",
         "id": "Cancel",
+        "Icon": "btn-command-cancel",
         "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
         "Name": "Cancel",
         "Hotkey": "Esc"
@@ -1566,12 +1555,12 @@
             "Requirements": "HaveNode"
           },
           "Unit": "Manufacturer",
-          "Time": 65
+          "Time": 70
         },
         "Unit": "Manufacturer",
-        "Time": 65,
+        "Time": 70,
         "Cost": {
-          "Minerals": 150,
+          "Minerals": 175,
           "Vespene": 0,
           "Terazine": 0,
           "Custom": 0,
@@ -1620,7 +1609,7 @@
         "AbilCmd": "ACRBuild,Build13",
         "id": "AnalysisTerminal",
         "Icon": "btn-building-genetron-analysisterminal",
-        "Tooltip": "Contains weapon upgrades for Genetron light ground units, and armor upgrades for all Genetron ground units.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Blitzers at the Manufacturer<br/>- Moles at the Fabricator<br/>- Repulsors from ACRs<br/>- Interdictors from ACRs",
+        "Tooltip": "Contains weapon upgrades for Genetron light ground units, and armor upgrades for all Genetron ground units, and upgrades for the Spitfire.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Blitzers at the Manufacturer<br/>- Moles at the Fabricator<br/>- Repulsors from ACRs<br/>- Interdictors from ACRs",
         "Name": "Build Analysis Terminal",
         "Hotkey": "S"
       },
@@ -1743,6 +1732,7 @@
         "Column": 4,
         "Type": "CancelSubmenu",
         "id": "Cancel",
+        "Icon": "btn-command-cancel",
         "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
         "Name": "Cancel",
         "Hotkey": "Esc"
@@ -1757,10 +1747,10 @@
             "Requirements": "HaveManufacturer"
           },
           "Unit": "Fabricator",
-          "Time": 60
+          "Time": 70
         },
         "Unit": "Fabricator",
-        "Time": 60,
+        "Time": 70,
         "Cost": {
           "Minerals": 200,
           "Vespene": 100,
@@ -1811,7 +1801,7 @@
         "AbilCmd": "ACRBuild,Build11",
         "id": "TechVault",
         "Icon": "btn-building-genetron-techvault",
-        "Tooltip": "Contains weapon upgrades for Genetron heavy ground units, and weapon and armor upgrades for Genetron air units.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Inciters at the Fabricator",
+        "Tooltip": "Contains weapon upgrades for Genetron heavy ground units, and weapon and armor upgrades for Genetron air units.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Inciters at the Fabricator<br/>- Virtus at the Fabricator",
         "Name": "Build Tech Vault",
         "Hotkey": "V"
       },
@@ -1825,10 +1815,10 @@
             "Requirements": "HaveRelayTower"
           },
           "Unit": "AssemblyArray",
-          "Time": 60
+          "Time": 70
         },
         "Unit": "AssemblyArray",
-        "Time": 60,
+        "Time": 70,
         "Cost": {
           "Minerals": 200,
           "Vespene": 150,
@@ -1864,8 +1854,8 @@
         "Unit": "Generator",
         "Time": 40,
         "Cost": {
-          "Minerals": 150,
-          "Vespene": 75,
+          "Minerals": 200,
+          "Vespene": 50,
           "Terazine": 0,
           "Custom": 0,
           "Energy": 0,
@@ -1898,8 +1888,8 @@
         "Unit": "ChemicalFirm",
         "Time": 65,
         "Cost": {
-          "Minerals": 200,
-          "Vespene": 200,
+          "Minerals": 150,
+          "Vespene": 150,
           "Terazine": 0,
           "Custom": 0,
           "Energy": 0,
@@ -1913,7 +1903,7 @@
         "AbilCmd": "ACRBuild,Build16",
         "id": "ChemicalFirm",
         "Icon": "btn-building-genetron-chemicalfirm",
-        "Tooltip": "Tech structure.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Aquilas at the Manufacturer<br/>- Teslas at the Fabricator<br/>- Virtus at the Fabricator",
+        "Tooltip": "<span style=\"color: #FFFF80\">Enables:</span><br/>- Aquilas at the Manufacturer<br/>- Teslas at the Fabricator",
         "Name": "Build Chemical Firm",
         "Hotkey": "C"
       },
@@ -1932,8 +1922,8 @@
         "Unit": "OrdnanceCache",
         "Time": 65,
         "Cost": {
-          "Minerals": 200,
-          "Vespene": 200,
+          "Minerals": 150,
+          "Vespene": 150,
           "Terazine": 0,
           "Custom": 0,
           "Energy": 0,
@@ -1947,7 +1937,7 @@
         "AbilCmd": "ACRBuild,Build17",
         "id": "OrdnanceCache",
         "Icon": "btn-building-genetron-ordnancecache",
-        "Tooltip": "Tech structure.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Jupiters at the Assembly Array<br/>- Badgers at the Assembly Array",
+        "Tooltip": "<span style=\"color: #FFFF80\">Enables:</span><br/>- Jupiters at the Assembly Array<br/>- Badgers at the Assembly Array",
         "Name": "Build Ordnance Cache",
         "Hotkey": "D"
       },
@@ -1961,10 +1951,10 @@
             "Requirements": "HaveAnalysisTerminal"
           },
           "Unit": "OutfittingStation",
-          "Time": 50
+          "Time": 65
         },
         "Unit": "OutfittingStation",
-        "Time": 50,
+        "Time": 65,
         "Cost": {
           "Minerals": 150,
           "Vespene": 100,
@@ -1981,7 +1971,7 @@
         "AbilCmd": "ACRBuild,Build6",
         "id": "OutfittingStation",
         "Icon": "btn-building-genetron-outfittingstation",
-        "Tooltip": "Contains upgrades for the Spitfire.<br/><br/><span style=\"color: #FFFF80\">Enables:<br/></span>- Fixers at the Manufacturer<br/>- Equalizers at the Manufacturer",
+        "Tooltip": "<span style=\"color: #FFFF80\">Enables:<br/></span>- Fixers at the Manufacturer</n>- Equalizers at the Manufacturer",
         "Name": "Build Outfitting Station",
         "Hotkey": "S"
       },
@@ -2027,7 +2017,7 @@
   "CostResource": {
     "Minerals": 50
   },
-  "RepairTime": 17,
+  "RepairTime": 16.667,
   "AIOverideTargetPriority": 10,
   "InnerRadius": 0.375,
   "SubgroupPriority": 6,
@@ -2042,7 +2032,7 @@
       "Amount": 5,
       "Kind": "Melee",
       "TargetFilters": "Ground",
-      "Range": 0.1,
+      "Range": 0.2,
       "Period": 1.5
     }
   ],
@@ -2223,7 +2213,7 @@
       "AbilCmd": "ACRBuild,Build13",
       "id": "AnalysisTerminal",
       "Icon": "btn-building-genetron-analysisterminal",
-      "Tooltip": "Contains weapon upgrades for Genetron light ground units, and armor upgrades for all Genetron ground units.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Blitzers at the Manufacturer<br/>- Moles at the Fabricator<br/>- Repulsors from ACRs<br/>- Interdictors from ACRs",
+      "Tooltip": "Contains weapon upgrades for Genetron light ground units, and armor upgrades for all Genetron ground units, and upgrades for the Spitfire.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Blitzers at the Manufacturer<br/>- Moles at the Fabricator<br/>- Repulsors from ACRs<br/>- Interdictors from ACRs",
       "Name": "Build Analysis Terminal"
     },
     {
@@ -2258,7 +2248,7 @@
       "AbilCmd": "ACRBuild,Build11",
       "id": "TechVault",
       "Icon": "btn-building-genetron-techvault",
-      "Tooltip": "Contains weapon upgrades for Genetron heavy ground units, and weapon and armor upgrades for Genetron air units.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Inciters at the Fabricator",
+      "Tooltip": "Contains weapon upgrades for Genetron heavy ground units, and weapon and armor upgrades for Genetron air units.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Inciters at the Fabricator<br/>- Virtus at the Fabricator",
       "Name": "Build Tech Vault"
     },
     {
@@ -2279,21 +2269,21 @@
       "AbilCmd": "ACRBuild,Build16",
       "id": "ChemicalFirm",
       "Icon": "btn-building-genetron-chemicalfirm",
-      "Tooltip": "Tech structure.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Aquilas at the Manufacturer<br/>- Teslas at the Fabricator<br/>- Virtus at the Fabricator",
+      "Tooltip": "<span style=\"color: #FFFF80\">Enables:</span><br/>- Aquilas at the Manufacturer<br/>- Teslas at the Fabricator",
       "Name": "Build Chemical Firm"
     },
     {
       "AbilCmd": "ACRBuild,Build17",
       "id": "OrdnanceCache",
       "Icon": "btn-building-genetron-ordnancecache",
-      "Tooltip": "Tech structure.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Jupiters at the Assembly Array<br/>- Badgers at the Assembly Array",
+      "Tooltip": "<span style=\"color: #FFFF80\">Enables:</span><br/>- Jupiters at the Assembly Array<br/>- Badgers at the Assembly Array",
       "Name": "Build Ordnance Cache"
     },
     {
       "AbilCmd": "ACRBuild,Build6",
       "id": "OutfittingStation",
       "Icon": "btn-building-genetron-outfittingstation",
-      "Tooltip": "Contains upgrades for the Spitfire.<br/><br/><span style=\"color: #FFFF80\">Enables:<br/></span>- Fixers at the Manufacturer<br/>- Equalizers at the Manufacturer",
+      "Tooltip": "<span style=\"color: #FFFF80\">Enables:<br/></span>- Fixers at the Manufacturer</n>- Equalizers at the Manufacturer",
       "Name": "Build Outfitting Station"
     },
     {

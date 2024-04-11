@@ -18,7 +18,7 @@
   "TurningRate": 999.8437,
   "Radius": 0.375,
   "SeparationRadius": 0.375,
-  "MinimapRadius": 0.3125,
+  "MinimapRadius": 0.375,
   "EditorCategories": "ObjectType:Unit,ObjectFamily:Melee",
   "TacticalAIFilters": "-;Player,Ally,Neutral",
   "AIEvalFactor": 1,
@@ -100,12 +100,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -197,12 +191,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -276,12 +264,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -375,12 +357,6 @@
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
               "DisplayType": "Move",
               "Color": "255,35,125,255",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
@@ -468,12 +444,6 @@
               "DisplayType": "Attack",
               "Color": "255,255,0,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
@@ -593,12 +563,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -655,7 +619,7 @@
                 "DefaultButtonFace": "FeedingPool"
               },
               "Unit": "FeedingPool",
-              "Time": 30
+              "Time": 25
             },
             "Build3": {
               "Button": {
@@ -679,7 +643,7 @@
                 "Requirements": "HaveFeedingPool"
               },
               "Unit": "XayidDen",
-              "Time": 68.25
+              "Time": 65
             },
             "Build5": {
               "Button": {
@@ -730,7 +694,7 @@
                 "Requirements": "HaveBiomassHatchery"
               },
               "Unit": "BiomassCavern",
-              "Time": 80
+              "Time": 65
             },
             "Build10": {
               "Button": {
@@ -896,7 +860,14 @@
               }
             }
           },
+          "FidgetDelayMin": 5,
+          "FidgetDelayMax": 10,
           "ConstructionMover": "Construction",
+          "EffectArray": {
+            "Start": "ScionStaticBuilderSwitch",
+            "Finish": "ScionStaticBuilderSuppressMovementClear",
+            "Cancel": "ScionStaticBuilderSuppressMovementClear"
+          },
           "id": "FormStructures"
         },
         "Cost": {
@@ -927,12 +898,6 @@
           "EditorCategories": "Race:Zerg,AbilityorEffectType:Units",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -1033,12 +998,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -1133,12 +1092,6 @@
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
@@ -1299,7 +1252,7 @@
         "AbilCmd": "FormStructures,Build1",
         "id": "ScavengerNest",
         "Icon": "btn-building-xayid-scavengernest",
-        "Tooltip": "Base structure for the Xayid race. Acts as a resource drop-off point and can create Scavengers.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Scavengers",
+        "Tooltip": "Primary structure. Used to receive gathered resources.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Scavengers",
         "Name": "Form Scavenger Nest",
         "Hotkey": "S"
       },
@@ -1312,10 +1265,10 @@
             "DefaultButtonFace": "FeedingPool"
           },
           "Unit": "FeedingPool",
-          "Time": 30
+          "Time": 25
         },
         "Unit": "FeedingPool",
-        "Time": 30,
+        "Time": 25,
         "Cost": {
           "Minerals": 100,
           "Vespene": 0,
@@ -1332,7 +1285,7 @@
         "AbilCmd": "FormStructures,Build2",
         "id": "FeedingPool",
         "Icon": "btn-building-xayid-feedingpool",
-        "Tooltip": "<span style=\"color: #FFFF80\">Provides supply.</span><br/>Supply allows you to create more units.<br/>Boosts production of nearby structures and heals nearby damaged units.",
+        "Tooltip": "Provides supply.<br/>Supply allows you to create more units.<br/>Boosts the production of nearby structures and heals nearby units.",
         "Name": "Form Feeding Pool",
         "Hotkey": "F"
       },
@@ -1382,10 +1335,10 @@
             "Requirements": "HaveFeedingPool"
           },
           "Unit": "XayidDen",
-          "Time": 68.25
+          "Time": 65
         },
         "Unit": "XayidDen",
-        "Time": 68.25,
+        "Time": 65,
         "Cost": {
           "Minerals": 150,
           "Vespene": 0,
@@ -1402,7 +1355,7 @@
         "AbilCmd": "FormStructures,Build4",
         "id": "XayidDen",
         "Icon": "btn-building-xayid-xayidden",
-        "Tooltip": "Creates larva, which are in turn used to mutate various basic creatures.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Xayidlings<br/>- Roamers<br/>- Bile Pit from Scavengers",
+        "Tooltip": "Creates larva, which are in turn used to mutate various basic creatures.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Xayidlings<br/>- Roamers<br/>- Bile Pits from Scavengers",
         "Name": "Form Xayid Den",
         "Hotkey": "X"
       },
@@ -1436,7 +1389,7 @@
         "AbilCmd": "FormStructures,Build5",
         "id": "MutagenChamber",
         "Icon": "btn-building-xayid-mutagenchambernew",
-        "Tooltip": "Contains upgrades for Xayid ground units.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Roamers from the Xayid Den<br/>- Scorpalisks from the Xayid Den<br/>- Mendlings from the Xayid Den",
+        "Tooltip": "Contains weapon and armor upgrades for Xayid ground units.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Roamers at the Xayid Den<br/>- Scorpalisks at the Xayid Den<br/>- Mendlings at the Xayid Den",
         "Name": "Form Mutagen Chamber",
         "Hotkey": "T"
       },
@@ -1470,7 +1423,7 @@
         "AbilCmd": "FormStructures,Build14",
         "id": "BilePit",
         "Icon": "btn-building-xayid-bilepit",
-        "Tooltip": "Defensive structure with a quick fire rate. Must be placed near a <span style=\"color: #FFFF80\">Feeding Pool</span> or <span style=\"color: #FFFF80\">Scavenger Nest</span>.<br/><br/><span style=\"color: #FFFF00\">Detector</span><br/><span style=\"color: #FFFF80\">Can attack air and ground units.</span>",
+        "Tooltip": "Primary defensive structure. Must be placed near a <span style=\"color: #FFFF80\">Feeding Pool</span> or <span style=\"color: #FFFF80\">Scavenger Nest</span>.<br/><br/><span style=\"color: #FFFF80\">Can attack ground and air units.</span><br/><span style=\"color: #FFFF00\">Detector</span>",
         "Name": "Form Bile Pit",
         "Hotkey": "B"
       },
@@ -1526,7 +1479,7 @@
         "AbilCmd": "FormStructures,Build7",
         "id": "CasnoliskDen",
         "Icon": "btn-building-xayid-casnoliskden",
-        "Tooltip": "Contains upgrades for various Xayid units.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Casnolisks from the Xayid Den",
+        "Tooltip": "Contains upgrades for Xayidlings, Roamers, Scorpalisks, and Mendlings.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Casnolisks from the Xayid Den",
         "Name": "Form Casnolisk Den",
         "Hotkey": "D"
       },
@@ -1545,7 +1498,7 @@
         "Unit": "BiomassHatchery",
         "Time": 60,
         "Cost": {
-          "Minerals": 200,
+          "Minerals": 150,
           "Vespene": 100,
           "Terazine": 0,
           "Custom": 0,
@@ -1560,7 +1513,7 @@
         "AbilCmd": "FormStructures,Build8",
         "id": "BiomassHatchery",
         "Icon": "btn-building-xayid-biomasshatchery",
-        "Tooltip": "Creates larva, which can mutate into various Xayid beasts.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Revilers<br/>- Ferrions<br/> - Prowlers<br/>- Spitters",
+        "Tooltip": "Creates larva, which can mutate into various Xayid beasts.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Revilers<br/>- Ferrions<br/>- Prowlers<br/>- Spitters",
         "Name": "Form Biomass Hatchery",
         "Hotkey": "B"
       },
@@ -1574,10 +1527,10 @@
             "Requirements": "HaveBiomassHatchery"
           },
           "Unit": "BiomassCavern",
-          "Time": 80
+          "Time": 65
         },
         "Unit": "BiomassCavern",
-        "Time": 80,
+        "Time": 65,
         "Cost": {
           "Minerals": 200,
           "Vespene": 200,
@@ -1594,7 +1547,7 @@
         "AbilCmd": "FormStructures,Build9",
         "id": "BiomassCavern",
         "Icon": "btn-building-xayid-biomasscavern",
-        "Tooltip": "Contains upgrades for various Xayid units.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Massalisks from the Biomass Hatchery",
+        "Tooltip": "Contains upgrades for Revilers, Prowlers and Spitters.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Massalisks at the Biomass Hatchery",
         "Name": "Form Biomass Cavern",
         "Hotkey": "C"
       },
@@ -1662,7 +1615,7 @@
         "AbilCmd": "FormStructures,Build11",
         "id": "CatalystPit",
         "Icon": "btn-building-xayid-catalystpit",
-        "Tooltip": "Contains various upgrades for Xayid fliers.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Exterminators from the Avian Nest<br/>- Xayithoans from the Avian Nest",
+        "Tooltip": "Contains weapon and armor upgrades for Xayid fliers. Contains researches for Raptors and Xayithoans.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Exterminators at the Avian Nest<br/>- Xayithoans at the Avian Nest",
         "Name": "Form Catalyst Pit",
         "Hotkey": "T"
       },
@@ -1696,7 +1649,7 @@
         "AbilCmd": "FormStructures,Build12",
         "id": "SunkenWarren",
         "Icon": "btn-building-xayid-sunkenwarren",
-        "Tooltip": "Contains upgrades for the Kraken and the Raptor.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Krakens from the Avian Nest",
+        "Tooltip": "<span style=\"color: #FFFF80\">Enables:</span><br/>- Krakens at the Avian Nest",
         "Name": "Form Sunken Warren",
         "Hotkey": "S"
       },
@@ -1729,9 +1682,7 @@
     "Ground",
     "ForceField"
   ],
-  "LifeRegenDelay": 3,
-  "LifeRegenRate": 0.5,
-  "Sight": 9,
+  "Sight": 8,
   "CostCategory": "Economy",
   "ScoreResult": "BuildOrder",
   "GlossaryCategory": "Unit/Category/XayidUnits",
@@ -1750,12 +1701,13 @@
   "CostResource": {
     "Minerals": 50
   },
-  "InnerRadius": 0.3125,
+  "InnerRadius": 0.375,
   "CargoSize": 1,
   "GlossaryPriority": 1,
-  "SubgroupPriority": 67,
+  "SubgroupPriority": 3,
   "AIOverideTargetPriority": 10,
   "GlossaryAlias": "Scavenger",
+  "LateralAcceleration": 46,
   "Icon": "btn-unit-xayid-scavenger",
   "LifeArmorIcon": "btn-upgrade-xayid-organiccarapace-level0",
   "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
@@ -1806,7 +1758,8 @@
     "XayidGroundCarapaceLevel3",
     "ScavengerSpawn",
     "ScavengerNest",
-    "Xayi"
+    "Xayi",
+    "XayidGroundCarapaceRevert"
   ],
   "$Requirements": [],
   "$Production": [
@@ -1904,14 +1857,14 @@
       "AbilCmd": "FormStructures,Build1",
       "id": "ScavengerNest",
       "Icon": "btn-building-xayid-scavengernest",
-      "Tooltip": "Base structure for the Xayid race. Acts as a resource drop-off point and can create Scavengers.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Scavengers",
+      "Tooltip": "Primary structure. Used to receive gathered resources.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Scavengers",
       "Name": "Form Scavenger Nest"
     },
     {
       "AbilCmd": "FormStructures,Build2",
       "id": "FeedingPool",
       "Icon": "btn-building-xayid-feedingpool",
-      "Tooltip": "<span style=\"color: #FFFF80\">Provides supply.</span><br/>Supply allows you to create more units.<br/>Boosts production of nearby structures and heals nearby damaged units.",
+      "Tooltip": "Provides supply.<br/>Supply allows you to create more units.<br/>Boosts the production of nearby structures and heals nearby units.",
       "Name": "Form Feeding Pool"
     },
     {
@@ -1925,42 +1878,42 @@
       "AbilCmd": "FormStructures,Build4",
       "id": "XayidDen",
       "Icon": "btn-building-xayid-xayidden",
-      "Tooltip": "Creates larva, which are in turn used to mutate various basic creatures.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Xayidlings<br/>- Roamers<br/>- Bile Pit from Scavengers",
+      "Tooltip": "Creates larva, which are in turn used to mutate various basic creatures.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Xayidlings<br/>- Roamers<br/>- Bile Pits from Scavengers",
       "Name": "Form Xayid Den"
     },
     {
       "AbilCmd": "FormStructures,Build5",
       "id": "MutagenChamber",
       "Icon": "btn-building-xayid-mutagenchambernew",
-      "Tooltip": "Contains upgrades for Xayid ground units.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Roamers from the Xayid Den<br/>- Scorpalisks from the Xayid Den<br/>- Mendlings from the Xayid Den",
+      "Tooltip": "Contains weapon and armor upgrades for Xayid ground units.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Roamers at the Xayid Den<br/>- Scorpalisks at the Xayid Den<br/>- Mendlings at the Xayid Den",
       "Name": "Form Mutagen Chamber"
     },
     {
       "AbilCmd": "FormStructures,Build14",
       "id": "BilePit",
       "Icon": "btn-building-xayid-bilepit",
-      "Tooltip": "Defensive structure with a quick fire rate. Must be placed near a <span style=\"color: #FFFF80\">Feeding Pool</span> or <span style=\"color: #FFFF80\">Scavenger Nest</span>.<br/><br/><span style=\"color: #FFFF00\">Detector</span><br/><span style=\"color: #FFFF80\">Can attack air and ground units.</span>",
+      "Tooltip": "Primary defensive structure. Must be placed near a <span style=\"color: #FFFF80\">Feeding Pool</span> or <span style=\"color: #FFFF80\">Scavenger Nest</span>.<br/><br/><span style=\"color: #FFFF80\">Can attack ground and air units.</span><br/><span style=\"color: #FFFF00\">Detector</span>",
       "Name": "Form Bile Pit"
     },
     {
       "AbilCmd": "FormStructures,Build7",
       "id": "CasnoliskDen",
       "Icon": "btn-building-xayid-casnoliskden",
-      "Tooltip": "Contains upgrades for various Xayid units.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Casnolisks from the Xayid Den",
+      "Tooltip": "Contains upgrades for Xayidlings, Roamers, Scorpalisks, and Mendlings.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Casnolisks from the Xayid Den",
       "Name": "Form Casnolisk Den"
     },
     {
       "AbilCmd": "FormStructures,Build8",
       "id": "BiomassHatchery",
       "Icon": "btn-building-xayid-biomasshatchery",
-      "Tooltip": "Creates larva, which can mutate into various Xayid beasts.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Revilers<br/>- Ferrions<br/> - Prowlers<br/>- Spitters",
+      "Tooltip": "Creates larva, which can mutate into various Xayid beasts.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Revilers<br/>- Ferrions<br/>- Prowlers<br/>- Spitters",
       "Name": "Form Biomass Hatchery"
     },
     {
       "AbilCmd": "FormStructures,Build9",
       "id": "BiomassCavern",
       "Icon": "btn-building-xayid-biomasscavern",
-      "Tooltip": "Contains upgrades for various Xayid units.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Massalisks from the Biomass Hatchery",
+      "Tooltip": "Contains upgrades for Revilers, Prowlers and Spitters.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Massalisks at the Biomass Hatchery",
       "Name": "Form Biomass Cavern"
     },
     {
@@ -1974,14 +1927,14 @@
       "AbilCmd": "FormStructures,Build11",
       "id": "CatalystPit",
       "Icon": "btn-building-xayid-catalystpit",
-      "Tooltip": "Contains various upgrades for Xayid fliers.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Exterminators from the Avian Nest<br/>- Xayithoans from the Avian Nest",
+      "Tooltip": "Contains weapon and armor upgrades for Xayid fliers. Contains researches for Raptors and Xayithoans.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Exterminators at the Avian Nest<br/>- Xayithoans at the Avian Nest",
       "Name": "Form Catalyst Pit"
     },
     {
       "AbilCmd": "FormStructures,Build12",
       "id": "SunkenWarren",
       "Icon": "btn-building-xayid-sunkenwarren",
-      "Tooltip": "Contains upgrades for the Kraken and the Raptor.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Krakens from the Avian Nest",
+      "Tooltip": "<span style=\"color: #FFFF80\">Enables:</span><br/>- Krakens at the Avian Nest",
       "Name": "Form Sunken Warren"
     }
   ]

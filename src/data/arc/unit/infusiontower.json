@@ -342,8 +342,9 @@
         "AbilCmd": "AbilitiIrradiationBMField,Execute",
         "id": "UnknownButton3",
         "Icon": "btn-ability-mengsk-blimp-propagandamode",
-        "Tooltip": "Irradiate everyone with a Beatan magnetic field in the specified area. Units at the same time <span style=\"color: #FFFF00\">lose the ability to invisibility for 10 seconds.",
-        "Name": "Beatan magnetic field emitter"
+        "Tooltip": "Irradiate everyone with a Beatan magnetic field in the specified area.<br/>Units at the same time <span style=\"color: #FFFF00\">lose invisibility for 10 seconds.",
+        "Name": "Beatan magnetic field emitter",
+        "Hotkey": "R"
       },
       {
         "Info": {
@@ -476,8 +477,9 @@
         "AbilCmd": "AbilityHightRegeneration,Execute",
         "id": "ButtonIonRecharging",
         "Icon": "btn-techupgrade-terran-stabilizermedpacks",
-        "Tooltip": "Restores health by 200% stronger + energy to terrestrial biological targets also by 200%. Duration 20 sec.",
-        "Name": "Ion charging"
+        "Tooltip": "Restores health by 200% stronger. Duration 20 sec.",
+        "Name": "Ion charging",
+        "Hotkey": "G"
       }
     ]
   },
@@ -548,14 +550,14 @@
       "AbilCmd": "AbilitiIrradiationBMField,Execute",
       "id": "UnknownButton3",
       "Icon": "btn-ability-mengsk-blimp-propagandamode",
-      "Tooltip": "Irradiate everyone with a Beatan magnetic field in the specified area. Units at the same time <span style=\"color: #FFFF00\">lose the ability to invisibility for 10 seconds.",
+      "Tooltip": "Irradiate everyone with a Beatan magnetic field in the specified area.<br/>Units at the same time <span style=\"color: #FFFF00\">lose invisibility for 10 seconds.",
       "Name": "Beatan magnetic field emitter"
     },
     {
       "AbilCmd": "AbilityHightRegeneration,Execute",
       "id": "ButtonIonRecharging",
       "Icon": "btn-techupgrade-terran-stabilizermedpacks",
-      "Tooltip": "Restores health by 200% stronger + energy to terrestrial biological targets also by 200%. Duration 20 sec.",
+      "Tooltip": "Restores health by 200% stronger. Duration 20 sec.",
       "Name": "Ion charging"
     }
   ]

@@ -12,7 +12,7 @@
   "ResourceType": "Unknown",
   "LifeStart": 500,
   "LifeMax": 500,
-  "LifeArmorName": "Synoid Armor",
+  "LifeArmorName": "Protoss Armor",
   "Mover": "Ground",
   "StationaryTurningRate": 719.4726,
   "TurningRate": 719.4726,
@@ -167,12 +167,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -234,12 +228,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -263,7 +251,10 @@
               "DefaultButtonFace": "Cancel"
             },
             "Halt": {
-              "DefaultButtonFace": "Cancel"
+              "DefaultButtonFace": "Halt",
+              "Flags": {
+                "ToSelection": 1
+              }
             }
           },
           "id": "BuildInProgress"
@@ -407,17 +398,16 @@
     }
   ],
   "$Upgrades": [
-    "ProtossShieldsLevel1",
+    "CountUnitRoboticsBayCompleteOnlyTechTreeCheat",
     "RoboticsBay",
+    "ProtossShieldsLevel1",
     "RoboticsBay",
     "ProtossShields",
     "ProtossShieldsLevel2",
     "ProtossShieldsLevel3",
     "ProtossBuild",
-    "CountUnitRoboticsBayCompleteOnlyTechTreeCheat",
     "IsRoboticsBay",
-    "RoboticsBaySplat",
-    "RoboticsBay"
+    "RoboticsBaySplat"
   ],
   "$Requirements": [],
   "$Production": [],

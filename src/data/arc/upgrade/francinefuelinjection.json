@@ -12,6 +12,7 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "FrancineFuelInjection",
+  "EditorCategories": "Race:UPL,UpgradeType:Talents",
   "$tokens": {
     "ID": {
       "type": "string",
@@ -19,7 +20,6 @@
     }
   },
   "InfoTooltipPriority": 1,
-  "EditorCategories": "Race:UPL,UpgradeType:Talents",
   "Race": "Terr",
   "ScoreAmount": 450,
   "ScoreResult": "BuildOrder",

@@ -170,6 +170,7 @@
         "Type": "AbilCmd",
         "AbilCmd": "que5,CancelLast",
         "id": "Cancel",
+        "Icon": "btn-command-cancel",
         "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
         "Name": "Cancel",
         "Hotkey": "Esc"
@@ -272,8 +273,9 @@
         "AbilCmd": "MilitaryResearchStationResearch,Research7",
         "id": "UEDButtonCitadelUpgrade",
         "Icon": "btn-ability-protoss-shieldrecharge",
-        "Tooltip": "A special magnetic device will not deprive for a long time <span style=\"color: #FFFF80\">Citadel AAT</span> of the ability to move, but it will provide shooting 3.5 times faster and 3 units further with damage behind standing targets.",
-        "Name": "Authorization request: Magnetic wave accelerator"
+        "Tooltip": "Activate the Wave Accelerator device, starting a short charge-up cycle, temporarily immobilizing the <span style=\"color: #FFFF80\">Citadel AAT</span>. When powered, the device will allow the tank's primary cannon to fire 3.5 times faster, increase its range by 3, as well as enable the shell to penetrate its main target, dealing additional damage to enemies behind it.",
+        "Name": "Authorization Request: Magnetic wave accelerator",
+        "Hotkey": "D"
       },
       {
         "Upgrade": "DroneRepairModule",
@@ -461,8 +463,9 @@
         "AbilCmd": "MilitaryResearchStationResearch,Research8",
         "id": "ButtonUEDUpgradePenemundeRange",
         "Icon": "btn-ability-mengsk-battlecruiser-decksights",
-        "Tooltip": "Adds +5 to the maximum range of the shot <span style=\"color: #FFFF80\">Peenemunde MRLS</span>.",
-        "Name": "Authorization Request: Retribution Protocol"
+        "Tooltip": "Allows <span style=\"color: #FFFF80\">Peenemunde MRLS</span> to fire at a distance of up to 25 using a Crimson Eye.",
+        "Name": "Authorization Request: Retribution Protocol",
+        "Hotkey": "F"
       },
       {
         "Upgrade": "UEDArmorLevel1",
@@ -472,7 +475,7 @@
               "AllowMinimap": 0,
               "ShowInGlossary": 1
             },
-            "DefaultButtonFace": "UEDArmorLevel1",
+            "DefaultButtonFace": "UnknownButton",
             "Requirements": "LearnTUEDArmor1"
           },
           "Resource": {
@@ -497,7 +500,7 @@
         "Column": 4,
         "Type": "AbilCmd",
         "AbilCmd": "TacticsAcademyResearch,Research6",
-        "id": "UEDArmorLevel1",
+        "id": "UnknownButton",
         "Icon": "btn-upgrade-ued-armor-level1",
         "Tooltip": "Improves <span style=\"color: #ffff8a\">armor</span> for mechanical UED units.",
         "Name": "Research Beathanium Defensive Programming, Level 1",
@@ -510,7 +513,7 @@
             "Flags": {
               "AllowMinimap": 0
             },
-            "DefaultButtonFace": "UEDArmorLevel2",
+            "DefaultButtonFace": "UnknownButton2",
             "Requirements": "LearnUEDArmor2"
           },
           "Resource": {
@@ -535,7 +538,7 @@
         "Column": 4,
         "Type": "AbilCmd",
         "AbilCmd": "TacticsAcademyResearch,Research8",
-        "id": "UEDArmorLevel2",
+        "id": "UnknownButton2",
         "Icon": "btn-upgrade-ued-armor-level2",
         "Tooltip": "Improves <span style=\"color: #ffff8a\">armor</span> for mechanical UED units.",
         "Name": "Research Beathanium Defensive Programming, Level 2",
@@ -548,7 +551,7 @@
             "Flags": {
               "AllowMinimap": 0
             },
-            "DefaultButtonFace": "UEDArmorLevel3",
+            "DefaultButtonFace": "UnknownButton22",
             "Requirements": "LearnUEDArmor3"
           },
           "Resource": {
@@ -573,7 +576,7 @@
         "Column": 4,
         "Type": "AbilCmd",
         "AbilCmd": "TacticsAcademyResearch,Research9",
-        "id": "UEDArmorLevel3",
+        "id": "UnknownButton22",
         "Icon": "btn-upgrade-ued-armor-level3",
         "Tooltip": "Improves <span style=\"color: #ffff8a\">armor</span> for mechanical UED units.",
         "Name": "Research Beathanium Defensive Programming, Level 3",
@@ -613,8 +616,9 @@
         "AbilCmd": "MilitaryResearchStationResearch,Research10",
         "id": "ButtonUpgradePhosphoricFire",
         "Icon": "btn-tips-walloffire",
-        "Tooltip": "<span style=\"color: #FFFF80\">Hurakans</span> get a bonus on buildings of +8 units.",
-        "Name": "Authorization request: Phosphoric fire"
+        "Tooltip": "<span style=\"color: #FFFF80\">Hurakans</span> get a bonus damage on buildings of 8 units and ignoring the armor of buildings.",
+        "Name": "Authorization Request: Phosphoric fire",
+        "Hotkey": "G"
       }
     ]
   },
@@ -664,8 +668,7 @@
     "MilitaryResearchStationSplat",
     "UEDPlacementDummyMedium",
     "CountUnitArmoryCompleteOnly23",
-    "CountUnitArmoryCompleteOnlyTechTreeCheat23",
-    null
+    "CountUnitArmoryCompleteOnlyTechTreeCheat23"
   ],
   "$Requirements": [],
   "$Production": [],
@@ -691,6 +694,7 @@
     {
       "AbilCmd": "que5,CancelLast",
       "id": "Cancel",
+      "Icon": "btn-command-cancel",
       "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
       "Name": "Cancel"
     },
@@ -705,8 +709,8 @@
       "AbilCmd": "MilitaryResearchStationResearch,Research7",
       "id": "UEDButtonCitadelUpgrade",
       "Icon": "btn-ability-protoss-shieldrecharge",
-      "Tooltip": "A special magnetic device will not deprive for a long time <span style=\"color: #FFFF80\">Citadel AAT</span> of the ability to move, but it will provide shooting 3.5 times faster and 3 units further with damage behind standing targets.",
-      "Name": "Authorization request: Magnetic wave accelerator"
+      "Tooltip": "Activate the Wave Accelerator device, starting a short charge-up cycle, temporarily immobilizing the <span style=\"color: #FFFF80\">Citadel AAT</span>. When powered, the device will allow the tank's primary cannon to fire 3.5 times faster, increase its range by 3, as well as enable the shell to penetrate its main target, dealing additional damage to enemies behind it.",
+      "Name": "Authorization Request: Magnetic wave accelerator"
     },
     {
       "AbilCmd": "MilitaryResearchStationResearch,Research3",
@@ -740,26 +744,26 @@
       "AbilCmd": "MilitaryResearchStationResearch,Research8",
       "id": "ButtonUEDUpgradePenemundeRange",
       "Icon": "btn-ability-mengsk-battlecruiser-decksights",
-      "Tooltip": "Adds +5 to the maximum range of the shot <span style=\"color: #FFFF80\">Peenemunde MRLS</span>.",
+      "Tooltip": "Allows <span style=\"color: #FFFF80\">Peenemunde MRLS</span> to fire at a distance of up to 25 using a Crimson Eye.",
       "Name": "Authorization Request: Retribution Protocol"
     },
     {
       "AbilCmd": "TacticsAcademyResearch,Research6",
-      "id": "UEDArmorLevel1",
+      "id": "UnknownButton",
       "Icon": "btn-upgrade-ued-armor-level1",
       "Tooltip": "Improves <span style=\"color: #ffff8a\">armor</span> for mechanical UED units.",
       "Name": "Research Beathanium Defensive Programming, Level 1"
     },
     {
       "AbilCmd": "TacticsAcademyResearch,Research8",
-      "id": "UEDArmorLevel2",
+      "id": "UnknownButton2",
       "Icon": "btn-upgrade-ued-armor-level2",
       "Tooltip": "Improves <span style=\"color: #ffff8a\">armor</span> for mechanical UED units.",
       "Name": "Research Beathanium Defensive Programming, Level 2"
     },
     {
       "AbilCmd": "TacticsAcademyResearch,Research9",
-      "id": "UEDArmorLevel3",
+      "id": "UnknownButton22",
       "Icon": "btn-upgrade-ued-armor-level3",
       "Tooltip": "Improves <span style=\"color: #ffff8a\">armor</span> for mechanical UED units.",
       "Name": "Research Beathanium Defensive Programming, Level 3"
@@ -768,8 +772,8 @@
       "AbilCmd": "MilitaryResearchStationResearch,Research10",
       "id": "ButtonUpgradePhosphoricFire",
       "Icon": "btn-tips-walloffire",
-      "Tooltip": "<span style=\"color: #FFFF80\">Hurakans</span> get a bonus on buildings of +8 units.",
-      "Name": "Authorization request: Phosphoric fire"
+      "Tooltip": "<span style=\"color: #FFFF80\">Hurakans</span> get a bonus damage on buildings of 8 units and ignoring the armor of buildings.",
+      "Name": "Authorization Request: Phosphoric fire"
     }
   ]
 }

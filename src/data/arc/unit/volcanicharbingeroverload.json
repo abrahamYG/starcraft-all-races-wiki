@@ -1,6 +1,6 @@
 {
   "Name": "Overload",
-  "Description": "Overloads the next attack to deal increased damage to the target and all units behind it.<br/><c val=\"#ColorAttackInfo\">Overload 1: <b>50</b>% increased damage and small area,<br/>Overload 2:<b>150</b>% increased damage and medium area,<br/>Overload 3: <b>300</b>% increased damage and large area.</span><br/><span style=\"color: #FF0000\">Cannot charge while attacking.</span>",
+  "Description": "Overloads the next attack to deal increased damage to the target and all units behind it.<br/><c val=\"#ColorAttackInfo\">Overload 1: <b>50</b>% increased damage and small area,<br/>Overload 2:<b>150</b>% increased damage and medium area,<br/>Overload 3: <b>300</b>% increased damage and large area.</span></n><span style=\"color: #FF0000\">Cannot charge while attacking.</span>",
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -12,6 +12,7 @@
   "ResourceType": "Unknown",
   "LifeStart": 1,
   "LifeMax": 1,
+  "LifeArmorName": "Dragon Plate Armor",
   "Mover": "Ground",
   "StationaryTurningRate": 720,
   "TurningRate": 720,

@@ -1,6 +1,6 @@
 {
   "Name": "Processing Core",
-  "Description": "Primary structure. Used to receive gathered resources. Can use Mining Priority and System Recharge<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- ACRs",
+  "Description": "Primary structure. Used to receive gathered resources. Generates power. Increases power storage by <b>400</b>. Can use Mining Priority and System Recharge<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- ACRs",
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -134,12 +134,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -201,12 +195,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -259,7 +247,13 @@
         "Hotkey": "Esc"
       },
       {
-        "Info": {},
+        "Info": {
+          "SetValidators": [
+            "ProcessorIsQueuedGlobal"
+          ],
+          "SetFilters": "-;RawResource,HarvestableResource",
+          "UseFilters": "-;Worker"
+        },
         "Cost": {
           "Minerals": 0,
           "Vespene": 0,
@@ -273,7 +267,7 @@
         "Row": 1,
         "Column": 4,
         "Type": "AbilCmd",
-        "AbilCmd": "Rally,Rally1",
+        "AbilCmd": "RallyProcessingCore,Rally1",
         "id": "Rally",
         "Icon": "btn-ability-terran-setrallypoint",
         "Tooltip": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
@@ -329,12 +323,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -359,15 +347,16 @@
             "ReApproachable": 1,
             "RequireTargetVision": 1,
             "WaitToSpend": 1,
-            "UpdateChargesOnLevelChange": 1
+            "UpdateChargesOnLevelChange": 1,
+            "Transient": 1
           },
           "Effect": [
-            "MiningPrioritySearch"
+            "ProcessingCoreMiningPriority"
           ],
           "EffectRange": [
             "0,1000"
           ],
-          "AINotifyEffect": "MiningPrioritySearchArea",
+          "AINotifyEffect": "MiningPriority",
           "RefundArray": {
             "Approach": 1,
             "Prep": 1,
@@ -419,19 +408,21 @@
               "Flags": {
                 "ShowInGlossary": 1
               },
-              "DefaultButtonFace": "MiningPriority"
+              "DefaultButtonFace": "MiningPriority",
+              "Requirements": "ProcessingCoreMiningPriorityReq"
             }
           },
           "Cost": [
             {
-              "Vital": {
-                "Energy": 100
-              },
               "Cooldown": {
-                "TimeUse": 46.2
+                "TimeStart": 0.0625
               }
             }
           ],
+          "PreEffectBehavior": {
+            "Behavior": "Scion_OverclockTargetMarker",
+            "Count": 1
+          },
           "id": "MiningPriority"
         },
         "Cost": {
@@ -439,7 +430,7 @@
           "Vespene": 0,
           "Terazine": 0,
           "Custom": 0,
-          "Energy": 100,
+          "Energy": 0,
           "Life": 0,
           "Shields": 0,
           "Food": 0
@@ -450,9 +441,9 @@
         "AbilCmd": "MiningPriority,Execute",
         "id": "MiningPriority",
         "Icon": "btn-ability-genetron-miningtap",
-        "Tooltip": "Increases the resource yield of owned nearby harvesters by <b>1</b>. The effect lasts <b>46</b> seconds.",
+        "Tooltip": "<s val=\"VerySmallFont\">  </s><img path=\"@@UI/ResourceIconPower\" width=\"24\" height=\"24\" alignment=\"absolutemiddle\"/><c val=\"FF0000\" validator=\"GenetronPowerSupplyLT100\"><b>100</b></span><img path=\"Assets\\Textures\\blank.dds\" width=\"1\" height=\"24\" alignment=\"top\"/><br/>Increases the yield of nearby mineral fields by <b>1</b> for <b>42</b> seconds. Repeated casts increase the duration up to <b>168</b> seconds.",
         "Name": "Mining Priority",
-        "Hotkey": "G"
+        "Hotkey": "V"
       },
       {
         "Info": {
@@ -466,12 +457,6 @@
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
@@ -505,7 +490,7 @@
             "Smart": 1
           },
           "Effect": [
-            "SystemRechargeCoreCH"
+            "ProcessingCoreSystemRecharge"
           ],
           "EffectRange": [
             "0,1000"
@@ -568,23 +553,22 @@
           "FollowRange": 5,
           "Alignment": "Positive",
           "TargetFilters": [
-            "CanHaveEnergy;Self,Ally,Neutral,Enemy,Missile,Stasis,Dead,Hidden"
+            "CanHaveEnergy;Self,Ally,Neutral,Enemy,Structure,Missile,Stasis,UnderConstruction,Dead,Hidden"
           ],
           "Range": [
-            8
+            9
           ],
           "Arc": 360,
           "SmartValidatorArray": [
             "healSmartTargetFilters",
             "NotWarpingIn"
           ],
-          "AutoCastRange": 8,
+          "AutoCastRange": 9,
           "AutoCastValidatorArray": [
-            "healCasterMinEnergy",
             "NotWarpingIn",
-            "IsNotProcessingCore",
-            "IsNotRelayTower",
-            "CasterEnergyGTE5"
+            "IsNotTeslaCharge",
+            "EnergyNotFull",
+            "GenetronPowerSupplyGE05"
           ],
           "TargetSorts": {
             "SortArray": [
@@ -594,6 +578,13 @@
             ],
             "RequestCount": 1
           },
+          "Cost": [
+            {
+              "Cooldown": {
+                "TimeUse": 0.0625
+              }
+            }
+          ],
           "id": "CoreSystemRecharge"
         },
         "Cost": {
@@ -612,7 +603,7 @@
         "AbilCmd": "CoreSystemRecharge,Execute",
         "id": "CoreSystemRecharge",
         "Icon": "btn-upgrade-terran-nova-snipeenergyrefund",
-        "Tooltip": "Transfers energy directly to the target unit.",
+        "Tooltip": "Recharges the energy of a friendly Genetron unit.<br/><br/><span style=\"color: #78F0FF\">Restores <b>4</b> energy per 1 power.</span>",
         "Name": "System Recharge",
         "Hotkey": "C"
       },
@@ -622,18 +613,18 @@
             "Flags": {
               "AllowMinimap": 0
             },
-            "DefaultButtonFace": "Processor",
+            "DefaultButtonFace": "Scion_Processor",
             "Requirements": "HaveRelayTower"
           },
           "Unit": [
-            "Processor"
+            "Scion_Processor"
           ],
-          "Time": 17
+          "Time": 25.5
         },
         "Unit": [
-          "Processor"
+          "Scion_Processor"
         ],
-        "Time": 17,
+        "Time": 25.5,
         "Cost": {
           "Minerals": 75,
           "Vespene": 75,
@@ -642,17 +633,138 @@
           "Energy": 0,
           "Life": 0,
           "Shields": 0,
-          "Food": -2
+          "Food": -1
         },
         "Row": 0,
         "Column": 1,
         "Type": "AbilCmd",
         "AbilCmd": "ProcessingCoreTrain,Train2",
-        "id": "Processor",
+        "id": "Scion_Processor",
         "Icon": "btn-unit-genetron-processor",
-        "Tooltip": "Support drone. Can use Analyze Weakness, System Recharge, and Detection Mode.<br/><br/><span style=\"color: #f078ff\">Energy user.</span>",
+        "Tooltip": "Support unit. Can use System Recharge.<br/><br/><span style=\"color: #78F0FF\">Power user.</span></n><span style=\"color: #FFE303\">Detector</span>",
         "Name": "Fabricate Processor",
         "Hotkey": "R"
+      },
+      {
+        "Info": {
+          "class": "CAbilStop",
+          "Name": "Abil/Name/stop",
+          "TechPlayer": "Upkeep",
+          "EditorCategories": "Race:Neutral,AbilityorEffectType:Units",
+          "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
+          "OrderArray": [
+            {
+              "DisplayType": "Confirm",
+              "Color": "255,0,255,0",
+              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
+              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
+            }
+          ],
+          "SharedFlags": {
+            "DisableWhileDead": 1
+          },
+          "DataCollection": "stop",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
+          "AbilSetId": "Stop",
+          "CmdButtonArray": {
+            "Stop": {
+              "Flags": {
+                "ToSelection": 1
+              },
+              "DefaultButtonFace": "Stop"
+            },
+            "HoldFire": {
+              "Flags": {
+                "ToSelection": 1
+              },
+              "DefaultButtonFace": "HoldFireSpecial"
+            },
+            "Cheer": {
+              "Flags": {
+                "ToSelection": 1
+              },
+              "DefaultButtonFace": "Cheer"
+            },
+            "Dance": {
+              "Flags": {
+                "ToSelection": 1
+              },
+              "DefaultButtonFace": "Dance"
+            }
+          },
+          "id": "stop"
+        },
+        "Cost": {
+          "Minerals": 0,
+          "Vespene": 0,
+          "Terazine": 0,
+          "Custom": 0,
+          "Energy": 0,
+          "Life": 0,
+          "Shields": 0,
+          "Food": 0
+        },
+        "Row": 0,
+        "Column": 3,
+        "Type": "AbilCmd",
+        "AbilCmd": "stop,Stop",
+        "id": "StopPlanetaryFortress",
+        "Icon": "btn-command-stop",
+        "Tooltip": "Orders selected units to cancel all orders and stop moving.",
+        "Name": "Stop",
+        "Hotkey": "P"
+      },
+      {
+        "Cost": {
+          "Minerals": 0,
+          "Vespene": 0,
+          "Terazine": 0,
+          "Custom": 0,
+          "Energy": 0,
+          "Life": 0,
+          "Shields": 0,
+          "Food": 0
+        },
+        "Row": 2,
+        "Column": 2,
+        "Type": "Passive",
+        "id": "ProcessingCorePowerGrid",
+        "Icon": "btn-tips-computerterminals",
+        "Tooltip": "<span style=\"color: #78f0ff\">Generates <b>0.71</b> power per second.</span>",
+        "Name": "Power Grid"
+      },
+      {
+        "Info": {
+          "SetValidators": [
+            "ProcessorIsQueuedGlobal"
+          ],
+          "SetFilters": "-;RawResource,HarvestableResource",
+          "UseFilters": "-;Worker"
+        },
+        "Cost": {
+          "Minerals": 0,
+          "Vespene": 0,
+          "Terazine": 0,
+          "Custom": 0,
+          "Energy": 0,
+          "Life": 0,
+          "Shields": 0,
+          "Food": 0
+        },
+        "Row": 1,
+        "Column": 3,
+        "Type": "AbilCmd",
+        "AbilCmd": "RallyProcessingCore,Rally2",
+        "id": "RallyWorkerGen",
+        "Icon": "btn-ability-genetron-setworkerrallypoint",
+        "Tooltip": "Sends constructed worker units to the designated point. Workers rallied to resources will begin gathering automatically.",
+        "Name": "Set Worker Rally Point",
+        "Hotkey": "G"
       }
     ]
   },
@@ -664,7 +776,6 @@
     "Terrazine": 1,
     "Custom": 1
   },
-  "EnergyMax": 300,
   "Food": 15,
   "CostResource": {
     "Minerals": 400
@@ -674,7 +785,7 @@
   "GlossaryPriority": 1,
   "TechTreeProducedUnitArray": [
     "ACR",
-    "Processor"
+    "Scion_Processor"
   ],
   "Mob": "Multiplayer",
   "Icon": "btn-building-genetron-processingcore",
@@ -687,6 +798,25 @@
       "Icon": "btn-ability-genetron-structurelockdownmode",
       "Tooltip": "Under lockdown due to severe damage. Takes reduced damage, and cannot fully function. Must be repaired in order to resume a regular state.",
       "Name": "Lockdown Mode"
+    },
+    {
+      "id": "GenetronEnergyStateNotFull"
+    },
+    {
+      "id": "GenetronPowerSupplyTracker"
+    },
+    {
+      "id": "TrackAndMirrorGenetronPowerSupply"
+    },
+    {
+      "id": "ProcessingCorePower",
+      "Icon": "btn-tips-computerterminals"
+    },
+    {
+      "id": "ProcessingCoreMiningPriorityReq"
+    },
+    {
+      "id": "UnderConstruction"
     }
   ],
   "Abilities": [
@@ -695,8 +825,16 @@
       "Name": "Build in Progress"
     },
     {
+      "id": "stop",
+      "Name": "Stop"
+    },
+    {
       "id": "que5",
       "Name": "Queue (5)"
+    },
+    {
+      "id": "Scion_DisplayCooldownDummy",
+      "Name": "Display Cooldown Dummy"
     },
     {
       "id": "RallyProcessingCore",
@@ -720,17 +858,21 @@
     "ProcessingCore",
     "ACRBuild",
     "CountUnitProcessingCoreCompleteOnlyTechTreeCheat",
-    "IsProcessingCore",
-    "IsNotProcessingCore",
-    "CountUnitProcessingCoreCompleteOnly",
+    "CasterIsProcessingCore",
+    "AddonDummy",
+    "GenetronProcessingCorePlayerDecalMacro",
     "UploaderSplat",
     "ProcessingCore",
-    "ProcessingCoreSplat"
+    "ProcessingCoreSplat",
+    "IsProcessingCore",
+    "CountUnitProcessingCoreCompleteOnly",
+    "IsNotProcessingCore",
+    null
   ],
   "$Requirements": [],
   "$Production": [
     "ACR",
-    "Processor"
+    "Scion_Processor"
   ],
   "$Research": [],
   "$Morph": [],
@@ -754,7 +896,7 @@
       "Name": "Cancel"
     },
     {
-      "AbilCmd": "Rally,Rally1",
+      "AbilCmd": "RallyProcessingCore,Rally1",
       "id": "Rally",
       "Icon": "btn-ability-terran-setrallypoint",
       "Tooltip": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
@@ -771,22 +913,36 @@
       "AbilCmd": "MiningPriority,Execute",
       "id": "MiningPriority",
       "Icon": "btn-ability-genetron-miningtap",
-      "Tooltip": "Increases the resource yield of owned nearby harvesters by <b>1</b>. The effect lasts <b>46</b> seconds.",
+      "Tooltip": "<s val=\"VerySmallFont\">  </s><img path=\"@@UI/ResourceIconPower\" width=\"24\" height=\"24\" alignment=\"absolutemiddle\"/><c val=\"FF0000\" validator=\"GenetronPowerSupplyLT100\"><b>100</b></span><img path=\"Assets\\Textures\\blank.dds\" width=\"1\" height=\"24\" alignment=\"top\"/><br/>Increases the yield of nearby mineral fields by <b>1</b> for <b>42</b> seconds. Repeated casts increase the duration up to <b>168</b> seconds.",
       "Name": "Mining Priority"
     },
     {
       "AbilCmd": "CoreSystemRecharge,Execute",
       "id": "CoreSystemRecharge",
       "Icon": "btn-upgrade-terran-nova-snipeenergyrefund",
-      "Tooltip": "Transfers energy directly to the target unit.",
+      "Tooltip": "Recharges the energy of a friendly Genetron unit.<br/><br/><span style=\"color: #78F0FF\">Restores <b>4</b> energy per 1 power.</span>",
       "Name": "System Recharge"
     },
     {
       "AbilCmd": "ProcessingCoreTrain,Train2",
-      "id": "Processor",
+      "id": "Scion_Processor",
       "Icon": "btn-unit-genetron-processor",
-      "Tooltip": "Support drone. Can use Analyze Weakness, System Recharge, and Detection Mode.<br/><br/><span style=\"color: #f078ff\">Energy user.</span>",
+      "Tooltip": "Support unit. Can use System Recharge.<br/><br/><span style=\"color: #78F0FF\">Power user.</span></n><span style=\"color: #FFE303\">Detector</span>",
       "Name": "Fabricate Processor"
+    },
+    {
+      "AbilCmd": "stop,Stop",
+      "id": "StopPlanetaryFortress",
+      "Icon": "btn-command-stop",
+      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
+      "Name": "Stop"
+    },
+    {
+      "AbilCmd": "RallyProcessingCore,Rally2",
+      "id": "RallyWorkerGen",
+      "Icon": "btn-ability-genetron-setworkerrallypoint",
+      "Tooltip": "Sends constructed worker units to the designated point. Workers rallied to resources will begin gathering automatically.",
+      "Name": "Set Worker Rally Point"
     }
   ]
 }

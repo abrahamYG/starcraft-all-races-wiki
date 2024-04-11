@@ -1,6 +1,6 @@
 {
   "Name": "Echo",
-  "Description": "Melee air fighter. Can use Discord Mode and Reverb.<br/><br/><span style=\"color: #FFFF80\">Can attack air units.</span>",
+  "Description": "Close range air fighter. Can use Discord Mode and Reverb.<br/><br/><span style=\"color: #FFFF80\">Can attack air units.</span>",
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -86,9 +86,7 @@
   "Collide": [
     "Flying"
   ],
-  "LifeRegenRate": 0.1718,
-  "ShieldRegenDelay": 4,
-  "ShieldRegenRate": 2.5,
+  "LifeRegenRate": 0.2734,
   "Acceleration": 4,
   "Sight": 12,
   "CostCategory": "Army",
@@ -103,12 +101,6 @@
           "EditorCategories": "Race:Neutral,AbilityorEffectType:Units",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -187,12 +179,6 @@
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
@@ -323,12 +309,6 @@
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
@@ -480,86 +460,6 @@
       },
       {
         "Info": {
-          "class": "CAbilAttack",
-          "Name": "Abil/Name/attack",
-          "TechPlayer": "Upkeep",
-          "EditorCategories": "Race:Neutral,AbilityorEffectType:Units",
-          "TargetMessage": "Abil/TargetMessage/attack",
-          "OrderArray": [
-            {
-              "DisplayType": "Attack",
-              "Color": "255,255,0,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            }
-          ],
-          "SharedFlags": {
-            "DisableWhileDead": 1
-          },
-          "DataCollection": "attack",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
-          "AbilSetId": "Attack",
-          "Alignment": "Negative",
-          "AcquireFilters": "-;Player,Ally,Neutral,Dead,Hidden,Invulnerable,Benign",
-          "SmartFilters": "-;Player,Ally",
-          "SupportedFilters": "-;Self,Outer",
-          "CmdButtonArray": {
-            "Execute": {
-              "Flags": {
-                "ToSelection": 1
-              },
-              "DefaultButtonFace": "Attack"
-            },
-            "Towards": {
-              "Flags": {
-                "ToSelection": 1
-              },
-              "DefaultButtonFace": "AttackTowards"
-            },
-            "Barrage": {
-              "Flags": {
-                "ToSelection": 1
-              },
-              "DefaultButtonFace": "AttackBarrage"
-            }
-          },
-          "MaxAttackSpeedMultiplier": 128,
-          "MinAttackSpeedMultiplier": 0.25,
-          "AcquirePriority": 2,
-          "id": "attack"
-        },
-        "Cost": {
-          "Minerals": 0,
-          "Vespene": 0,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 0,
-        "Column": 4,
-        "Type": "AbilCmd",
-        "AbilCmd": "attack,Execute",
-        "id": "MothershipCoreAttack",
-        "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
-        "Name": "Attack",
-        "Hotkey": "A"
-      },
-      {
-        "Info": {
           "class": "CAbilEffectInstant",
           "Name": "Abil/Name/FuseUnfuse",
           "TechPlayer": "Upkeep",
@@ -570,12 +470,6 @@
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
@@ -688,7 +582,7 @@
         "AbilCmd": "FuseUnfuse,Execute",
         "id": "Unfuse",
         "Icon": "btn-ability-zerg-dehaka-levelup",
-        "Tooltip": "Releases the Fuse inhabiting this unit, losing the associated bonus.",
+        "Tooltip": "Releases the Fuses inhabiting this unit, losing the associated bonus.",
         "Name": "Unfuse",
         "Hotkey": "U"
       },
@@ -725,7 +619,7 @@
         "AbilCmd": "EchoDiscordMode,Execute",
         "id": "DiscordMode",
         "Icon": "btn-unit-keiron-echo-discord",
-        "Tooltip": "The Echo becomes stationary, slowing enemy movement and production while revealing cloaked units in an area.",
+        "Tooltip": "The Echo becomes stationary, slowing enemy movement and production.",
         "Name": "Discord Mode",
         "Hotkey": "E"
       },
@@ -741,12 +635,6 @@
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
@@ -859,7 +747,7 @@
         "AbilCmd": "FuseUnfuse,Execute",
         "id": "Unfuse",
         "Icon": "btn-ability-zerg-dehaka-levelup",
-        "Tooltip": "Releases the Fuse inhabiting this unit, losing the associated bonus.",
+        "Tooltip": "Releases the Fuses inhabiting this unit, losing the associated bonus.",
         "Name": "Unfuse",
         "Hotkey": "U"
       }
@@ -886,7 +774,6 @@
     "Biological",
     "Mechanical"
   ],
-  "LifeArmor": 1,
   "ShieldsStart": 140,
   "ShieldsMax": 140,
   "Speed": 0,
@@ -915,13 +802,16 @@
       "Icon": "btn-upgrade-keiron-biologicalweaponslevel0",
       "Name": "Reverberator Flare",
       "Amount": 10,
-      "Kind": "Melee",
+      "Kind": "Ranged",
       "TargetFilters": "Air",
       "Range": 3,
       "Period": 1.008
     }
   ],
   "Behaviors": [
+    {
+      "id": "KeironShellRestoration"
+    },
     {
       "id": "DiscordZoneRadius"
     }
@@ -973,7 +863,10 @@
     "KeironShields",
     "KeironShieldsLevel2",
     "KeironShieldsLevel3",
-    "FuseFusionBuffShield"
+    "FuseFusionSizeMacro",
+    "KeironBioArmorRevert",
+    "KeironBioWeaponsRevert",
+    "KeironShieldsRevert"
   ],
   "$Requirements": [],
   "$Production": [],
@@ -1017,30 +910,24 @@
       "Name": "Fighter Mode"
     },
     {
-      "AbilCmd": "attack,Execute",
-      "id": "MothershipCoreAttack",
-      "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
-      "Name": "Attack"
-    },
-    {
       "AbilCmd": "FuseUnfuse,Execute",
       "id": "Unfuse",
       "Icon": "btn-ability-zerg-dehaka-levelup",
-      "Tooltip": "Releases the Fuse inhabiting this unit, losing the associated bonus.",
+      "Tooltip": "Releases the Fuses inhabiting this unit, losing the associated bonus.",
       "Name": "Unfuse"
     },
     {
       "AbilCmd": "EchoDiscordMode,Execute",
       "id": "DiscordMode",
       "Icon": "btn-unit-keiron-echo-discord",
-      "Tooltip": "The Echo becomes stationary, slowing enemy movement and production while revealing cloaked units in an area.",
+      "Tooltip": "The Echo becomes stationary, slowing enemy movement and production.",
       "Name": "Discord Mode"
     },
     {
       "AbilCmd": "FuseUnfuse,Execute",
       "id": "Unfuse",
       "Icon": "btn-ability-zerg-dehaka-levelup",
-      "Tooltip": "Releases the Fuse inhabiting this unit, losing the associated bonus.",
+      "Tooltip": "Releases the Fuses inhabiting this unit, losing the associated bonus.",
       "Name": "Unfuse"
     }
   ]

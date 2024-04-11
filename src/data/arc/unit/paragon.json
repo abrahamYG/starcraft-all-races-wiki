@@ -837,12 +837,12 @@
     "Mechanical",
     "Massive"
   ],
-  "LifeArmor": 2,
+  "LifeArmor": 3,
   "ShieldsStart": 200,
   "ShieldsMax": 200,
   "Speed": 1.7851,
   "LateralAcceleration": 46,
-  "Food": -8,
+  "Food": -7,
   "CostResource": {
     "Minerals": 450,
     "Vespene": 350
@@ -864,7 +864,7 @@
       "id": "ParagonAirWeapon",
       "Icon": "btn-upgrade-keiron-mechanicalweaponslevel0",
       "Name": "Paragon - Air Weapon",
-      "Amount": 40,
+      "Amount": 44,
       "Kind": "Ranged",
       "TargetFilters": "Air",
       "Range": 10,
@@ -920,11 +920,11 @@
     }
   ],
   "$Upgrades": [
-    "Zenith",
-    "Paragon",
     "IsParagon",
-    "CitadelCharged",
+    "Paragon",
+    "Zenith",
     "KeironCitadelMaterialize",
+    "CitadelCharged",
     "KeironMechWeaponsLevel1",
     "KeironMechWeapons",
     "KeironMechWeaponsLevel2",

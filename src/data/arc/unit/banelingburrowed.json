@@ -112,12 +112,6 @@
               "Color": "255,255,0,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -225,12 +219,6 @@
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
@@ -413,22 +401,19 @@
   "$Upgrades": [
     "BurrowBanelingDown",
     "BanelingBurrowed",
-    "CentrificalHooks",
-    "IsBanelingBurrowed",
-    "Burrow",
     "ZergMeleeWeaponsLevel1",
     "ZergMeleeWeapons",
     "ZergMeleeWeaponsLevel2",
     "ZergMeleeWeaponsLevel3",
     "ZergGroundArmorsLevel1",
+    "IsBanelingBurrowed",
     "Baneling",
+    "CentrificalHooks",
     "ZergGroundArmors",
     "ZergGroundArmorsLevel2",
     "ZergGroundArmorsLevel3",
-    "BanelingBurrowMove",
+    "Burrow",
     "BanelingBurrowedSplat",
-    "AbdominalFortitude",
-    "ZergBurrowMove",
     "TacticalBurrowBanelingBurrowedBullyTest",
     "TacticalBurrowBanelingCampaignNoHostilesBullyBurrow"
   ],

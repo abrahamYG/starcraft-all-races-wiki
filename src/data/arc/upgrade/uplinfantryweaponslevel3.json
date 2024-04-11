@@ -12,6 +12,7 @@
   "ScoreValue": "WeaponTechnologyValue",
   "WebPriority": 0,
   "LeaderAlias": "TechInfantryWeapons",
+  "EditorCategories": "Race:UPL,UpgradeType:AttackBonus",
   "$tokens": {
     "ID": {
       "type": "string",
@@ -349,7 +350,6 @@
       "Value": "1"
     }
   ],
-  "EditorCategories": "Race:UPL,UpgradeType:AttackBonus",
   "AffectedUnitArray": [
     "InfantryRifle",
     "InfantryHeavy",

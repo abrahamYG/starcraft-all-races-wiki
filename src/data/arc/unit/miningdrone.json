@@ -989,10 +989,10 @@
             "IgnoreUnitBuildTime": 0,
             "PeonMaintained": 1,
             "RangeIncludesBuilding": 1,
-            "PeonDisableCollision": 1,
-            "AutoHarvest": 1,
             "PeonHide": 1,
-            "PeonKillFinish": 1
+            "PeonDisableCollision": 1,
+            "PeonKillFinish": 1,
+            "AutoHarvest": 1
           },
           "RefundFraction": {
             "Resource": {
@@ -1143,12 +1143,8 @@
               "Button": {
                 "Flags": {
                   "AllowMinimap": 0
-                },
-                "DefaultButtonFace": "",
-                "Requirements": ""
-              },
-              "Unit": "MercCompound",
-              "Time": 50
+                }
+              }
             },
             "Build14": {
               "Button": {
@@ -1172,12 +1168,8 @@
               "Button": {
                 "Flags": {
                   "AllowMinimap": 0
-                },
-                "DefaultButtonFace": "",
-                "Requirements": ""
-              },
-              "Unit": "FusionCore",
-              "Time": 80
+                }
+              }
             },
             "Build17": {
               "Button": {
@@ -1647,6 +1639,7 @@
         "Column": 4,
         "Type": "CancelSubmenu",
         "id": "Cancel",
+        "Icon": "btn-command-cancel",
         "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
         "Name": "Cancel",
         "Hotkey": "Esc"
@@ -1866,6 +1859,10 @@
       "Name": "Move"
     },
     {
+      "id": "SCVHarvest",
+      "Name": "Gather (SCV)"
+    },
+    {
       "id": "UPLBuild",
       "Name": "Build"
     },
@@ -1876,10 +1873,6 @@
     {
       "id": "UPLMiningDroneRepair",
       "Name": "UPLMiningDroneRepair"
-    },
-    {
-      "id": "SCVHarvest",
-      "Name": "Gather (SCV)"
     }
   ],
   "$Upgrades": [
@@ -1897,7 +1890,8 @@
     "UPLHeadquartersTrain",
     "UPLHeadquarters",
     "UPL",
-    "MiningDrone"
+    "MiningDrone",
+    null
   ],
   "$Requirements": [],
   "$Production": [

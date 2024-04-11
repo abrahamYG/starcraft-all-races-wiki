@@ -91,6 +91,10 @@
     "ForceField"
   ],
   "Speed": 2.25,
+  "Attributes": [
+    "Light",
+    "Biological"
+  ],
   "Acceleration": 1000,
   "LateralAcceleration": 69.125,
   "Sight": 10,
@@ -538,7 +542,7 @@
         "Type": "Passive",
         "id": "InfantryMedkit",
         "Icon": "btn-ability-upl-medkit",
-        "Tooltip": "This unit will use a Medkit when they have less than 25% of their life, which will heal <span style=\"color: #FFFF80\"><b>50</b></span> life over <span style=\"color: #FFFF80\"><b>5</b></span>. Once activated it will be on cooldown for <b>180</b>.",
+        "Tooltip": "This unit will use a Medkit when they have less than 25% of their life, which will heal <span style=\"color: #FFFF80\"><b>45</b></span> life over <span style=\"color: #FFFF80\"><b>8</b></span>. Once activated it will be on cooldown for <b>180</b>.",
         "Name": "Personal Medkit"
       },
       {
@@ -557,7 +561,7 @@
         "Type": "Passive",
         "id": "InfantryMedkit",
         "Icon": "btn-ability-upl-medkit",
-        "Tooltip": "This unit will use a Medkit when they have less than 25% of their life, which will heal <span style=\"color: #FFFF80\"><b>50</b></span> life over <span style=\"color: #FFFF80\"><b>5</b></span>. Once activated it will be on cooldown for <b>180</b>.",
+        "Tooltip": "This unit will use a Medkit when they have less than 25% of their life, which will heal <span style=\"color: #FFFF80\"><b>45</b></span> life over <span style=\"color: #FFFF80\"><b>8</b></span>. Once activated it will be on cooldown for <b>180</b>.",
         "Name": "Personal Medkit"
       },
       {
@@ -571,14 +575,157 @@
           "Shields": 0,
           "Food": 0
         },
-        "Row": 2,
-        "Column": 0,
+        "Row": 1,
+        "Column": 1,
         "Type": "Passive",
         "AbilCmd": "InfantryOfficerCharge,Execute",
         "id": "InfantryOfficerInspiration",
         "Icon": "btn-ability-upl-infantryofficercharge",
         "Tooltip": "Inspires nearby <c val=\"#ColorAttackInfo\">Infantry</span> troops increasing their attack speed ,  movement speed and decrease received damage  by <span style=\"color: #80FFFF\">10%</span>. Stacks with other <b>Infantry Officer</b>s</span>",
         "Name": "Inspiration",
+        "Hotkey": "C"
+      },
+      {
+        "Info": {
+          "class": "CAbilEffectTarget",
+          "Name": "Abil/Name/ClaymoreMineDummy",
+          "TechPlayer": "Upkeep",
+          "EditorCategories": "AbilityorEffectType:Units,Race:UPL",
+          "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
+          "OrderArray": [
+            {
+              "DisplayType": "Confirm",
+              "Color": "255,0,255,0",
+              "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
+              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
+            }
+          ],
+          "SharedFlags": {
+            "DisableWhileDead": 1
+          },
+          "DataCollection": "ClaymoreMineDummy",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
+          "RangeSlop": 1,
+          "ArcSlop": 11.25,
+          "AutoCastAcquireLevel": "Offensive",
+          "AutoCastFilters": "Visible;Player,Ally",
+          "Flags": {
+            "AbortOnAllianceChange": 1,
+            "CancelResetAutoCast": 1,
+            "ChannelingMinimum": 1,
+            "RangeUseCasterRadius": 1,
+            "ReApproachable": 1,
+            "RequireTargetVision": 0,
+            "WaitToSpend": 1,
+            "UpdateChargesOnLevelChange": 1,
+            "BestUnit": 1
+          },
+          "Effect": [
+            "ClaymoreMineInit"
+          ],
+          "EffectRange": [
+            "0,1000"
+          ],
+          "AINotifyEffect": "ClaymoreMineInit",
+          "RefundArray": {
+            "Approach": 1,
+            "Prep": 1,
+            "Cast": 1
+          },
+          "RefundFraction": {
+            "Resource": {
+              "Minerals": -1,
+              "Vespene": -1,
+              "Terrazine": -1,
+              "Custom": -1
+            },
+            "Charge": -1,
+            "Cooldown": -1
+          },
+          "UseMarkerArray": {
+            "Approach": 1,
+            "Prep": 1,
+            "Cast": 1,
+            "Channel": 1
+          },
+          "PauseableArray": {
+            "Approach": 1,
+            "Prep": 1,
+            "Cast": 1,
+            "Channel": 1,
+            "Finish": 1
+          },
+          "PreemptableArray": {
+            "Approach": 1,
+            "Prep": 1,
+            "Cast": 1,
+            "Channel": 1,
+            "Finish": 1
+          },
+          "ValidatedArray": {
+            "Approach": 1,
+            "Prep": 1,
+            "Cast": 1,
+            "Channel": 1
+          },
+          "DefaultError": "MustTargetUnit",
+          "AcquirePriority": 3,
+          "SetLastTarget": "Unknown",
+          "VeterancyLevelMin": 0,
+          "VeterancyLevelSkip": 0,
+          "CmdButtonArray": {
+            "Execute": {
+              "Flags": {
+                "ShowInGlossary": 1
+              },
+              "DefaultButtonFace": "ClaymoreMinePlace",
+              "Requirements": "ClaymoreMineHaveCharges"
+            }
+          },
+          "FollowRange": 5,
+          "Cost": [
+            {
+              "Charge": {
+                "CountMax": 1,
+                "CountStart": 1,
+                "Link": "Abil/ClaymoreMinePlace",
+                "Location": "Unit"
+              },
+              "Cooldown": {
+                "Link": "Abil/ClaymoreMinePlace"
+              }
+            }
+          ],
+          "Range": [
+            500
+          ],
+          "PlaceUnit": "ClaymoreMine",
+          "Placeholder": "ClaymoreMine",
+          "id": "ClaymoreMineDummy"
+        },
+        "Cost": {
+          "Minerals": 0,
+          "Vespene": 0,
+          "Terazine": 0,
+          "Custom": 0,
+          "Energy": 0,
+          "Life": 0,
+          "Shields": 0,
+          "Food": 0
+        },
+        "Row": 2,
+        "Column": 0,
+        "Type": "AbilCmd",
+        "AbilCmd": "ClaymoreMineDummy,Execute",
+        "id": "ClaymoreMinePlace",
+        "Icon": "btn-ability-upl-claymore",
+        "Tooltip": "Claymore Mines activates when enemies come in range, and detonate for heavy area damage in a cone. Placed Mines can not be seen by enemies",
+        "Name": "Place Claymore Mine",
         "Hotkey": "C"
       },
       {
@@ -615,10 +762,6 @@
     "Dance": 5
   },
   "id": "InfantryOfficer",
-  "Attributes": [
-    "Biological",
-    "Light"
-  ],
   "LifeArmor": 1,
   "CostResource": {
     "Minerals": 175,
@@ -656,7 +799,12 @@
     },
     {
       "id": "Detector10",
-      "Icon": "btn-status-detector"
+      "Icon": "btn-status-detector",
+      "Tooltip": "This unit can detect cloaked or burrowed units within its sight range.",
+      "Name": "Detector"
+    },
+    {
+      "id": "ClaymoreMineHaveCharges"
     }
   ],
   "Abilities": [
@@ -675,11 +823,24 @@
     {
       "id": "InfantryOfficerCharge",
       "Name": "Infantry Officer Charge"
+    },
+    {
+      "id": "ClaymoreMineDummy",
+      "Name": "ClaymoreMineDummy"
+    },
+    {
+      "id": "ClaymoreMineExecute",
+      "Name": "ClaymoreMineExecute"
+    },
+    {
+      "id": "ClaymoreMinePlace",
+      "Name": "ClaymoreMinePlace"
     }
   ],
   "$Upgrades": [
-    "UPLInfantryWeaponsLevel1",
+    "UPLBilletTrain",
     "InfantryOfficer",
+    "UPLInfantryWeaponsLevel1",
     "UPLInfantryWeapons",
     "UPLInfantryWeaponsLevel2",
     "UPLInfantryWeaponsLevel3",
@@ -691,12 +852,12 @@
     "UPLOspreyTransportCargoIsInfantryOfficer",
     "IsInfantryOfficer",
     "UPLRnDFacility",
-    "UPLForwardOperatingBaseTrain",
     "AllowUnitInfantryOfficer",
     "UPLForwardOperatingBase",
     "UPLRnDFacilityTrain",
     "CountUnitInfantryOfficerQueuedOrBetter",
-    "InfantryOfficer"
+    "InfantryOfficer",
+    null
   ],
   "$Requirements": [],
   "$Production": [],
@@ -748,6 +909,13 @@
       "Icon": "btn-ability-upl-infantryofficercharge",
       "Tooltip": "Inspires nearby <c val=\"#ColorAttackInfo\">Infantry</span> troops increasing their attack speed ,  movement speed and decrease received damage  by <span style=\"color: #80FFFF\">10%</span>. Stacks with other <b>Infantry Officer</b>s</span>",
       "Name": "Inspiration"
+    },
+    {
+      "AbilCmd": "ClaymoreMineDummy,Execute",
+      "id": "ClaymoreMinePlace",
+      "Icon": "btn-ability-upl-claymore",
+      "Tooltip": "Claymore Mines activates when enemies come in range, and detonate for heavy area damage in a cone. Placed Mines can not be seen by enemies",
+      "Name": "Place Claymore Mine"
     }
   ]
 }

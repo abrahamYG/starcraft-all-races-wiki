@@ -1,6 +1,6 @@
 {
   "Name": "Badger",
-  "Description": "Large gunship.<br/><br/><span style=\"color: #f078ff\">Energy user.</span><br/><span style=\"color: #FFFF80\">Can attack ground and air units simultaneously.</span>",
+  "Description": "Large gunship. Can use Powershell.<br/><br/><span style=\"color: #78F0FF\">Power user.</span><br/><span style=\"color: #FFFF80\">Can attack ground and air units simultaneously.</span>",
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -10,15 +10,15 @@
   "Response": "Acquire",
   "ResourceState": "Unknown",
   "ResourceType": "Unknown",
-  "LifeStart": 325,
-  "LifeMax": 325,
+  "LifeStart": 300,
+  "LifeMax": 300,
   "LifeArmorName": "Mechanical Aircraft Plating",
   "Mover": "Fly",
   "StationaryTurningRate": 720,
   "TurningRate": 720,
-  "Radius": 0.875,
-  "SeparationRadius": 1,
-  "MinimapRadius": 0.875,
+  "Radius": 1.25,
+  "SeparationRadius": 1.25,
+  "MinimapRadius": 1.25,
   "EditorCategories": "ObjectType:Unit,ObjectFamily:Melee",
   "TacticalAIFilters": "-;Player,Ally,Neutral",
   "AIEvalFactor": 1,
@@ -88,13 +88,13 @@
     "Armored",
     "Massive"
   ],
-  "LifeArmor": 2,
+  "LifeArmor": 1,
   "ScoreResult": "BuildOrder",
   "GlossaryAlias": "Badger",
   "PlaneArray": [
     "Air"
   ],
-  "Sight": 10,
+  "Sight": 12,
   "AttackTargetPriority": 20,
   "GlossaryCategory": "Unit/Category/GenetronUnits",
   "HotkeyCategory": "Unit/Category/GenetronUnits",
@@ -124,12 +124,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -223,12 +217,6 @@
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
               "DisplayType": "Move",
               "Color": "255,35,125,255",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
@@ -317,12 +305,6 @@
               "Color": "255,255,0,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -393,12 +375,6 @@
           "EditorCategories": "Race:Neutral,AbilityorEffectType:Units",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -480,12 +456,6 @@
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
               "DisplayType": "Move",
               "Color": "255,35,125,255",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
@@ -562,6 +532,87 @@
         "Hotkey": "M"
       },
       {
+        "Info": {
+          "class": "CAbilBehavior",
+          "Name": "Abil/Name/BadgerPowershell",
+          "TechPlayer": "Upkeep",
+          "EditorCategories": "Race:Genetron,AbilityorEffectType:Units",
+          "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
+          "OrderArray": [
+            {
+              "DisplayType": "Confirm",
+              "Color": "255,0,255,0",
+              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
+              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
+            }
+          ],
+          "SharedFlags": {
+            "DisableWhileDead": 1
+          },
+          "DataCollection": "BadgerPowershell",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
+          "CmdButtonArray": {
+            "On": {
+              "Flags": {
+                "ShowInGlossary": 1,
+                "ToSelection": 1
+              },
+              "DefaultButtonFace": "BadgerPowershell"
+            },
+            "Off": {
+              "DefaultButtonFace": "Cancel"
+            }
+          },
+          "VeterancyLevelMin": 0,
+          "VeterancyLevelSkip": 0,
+          "AbilSetId": "Powershell",
+          "Flags": {
+            "Toggle": 1,
+            "Transient": 1
+          },
+          "Cost": [
+            {
+              "Cooldown": {
+                "TimeUse": 1
+              }
+            }
+          ],
+          "OffCost": {
+            "Cooldown": {
+              "TimeUse": 10
+            }
+          },
+          "BehaviorArray": [
+            "BadgerPowershell"
+          ],
+          "id": "BadgerPowershell"
+        },
+        "Cost": {
+          "Minerals": 0,
+          "Vespene": 0,
+          "Terazine": 0,
+          "Custom": 0,
+          "Energy": 0,
+          "Life": 0,
+          "Shields": 0,
+          "Food": 0
+        },
+        "Row": 2,
+        "Column": 0,
+        "Type": "AbilCmd",
+        "AbilCmd": "BadgerPowershell,On",
+        "id": "BadgerPowershell",
+        "Icon": "btn-ability-stetmann-garypersonalstetzone-speed",
+        "Tooltip": "Causes all damage received to be absorbed by energy.<br/><br/><span style=\"color: #f078ff\">Drains <b>1.5</b> energy and <span style=\"color: #78F0FF\">power</span> per second.</span><br/><span style=\"color: #78F0FF\">100% of damage received is taken from the power grid.</span>",
+        "Name": "Powershell",
+        "Hotkey": "E"
+      },
+      {
         "Cost": {
           "Minerals": 0,
           "Vespene": 0,
@@ -575,10 +626,92 @@
         "Row": 2,
         "Column": 0,
         "Type": "Passive",
-        "id": "MELESTargetingSystem",
-        "Icon": "btn-ability-genetron-badgertargetingsystems",
-        "Tooltip": "The <span style=\"color: #FFFF80\">Badger</span> is able to attack air and ground targets simultaneously.",
-        "Name": "MELES Targeting System"
+        "id": "BadgerPowershell",
+        "Icon": "btn-ability-stetmann-garypersonalstetzone-speed",
+        "Tooltip": "Causes all damage received to be absorbed by energy.<br/><br/><span style=\"color: #f078ff\">Drains <b>1.5</b> energy and <span style=\"color: #78F0FF\">power</span> per second.</span><br/><span style=\"color: #78F0FF\">100% of damage received is taken from the power grid.</span>",
+        "Name": "Powershell",
+        "Hotkey": "E"
+      },
+      {
+        "Info": {
+          "class": "CAbilBehavior",
+          "Name": "Abil/Name/BadgerPowershell",
+          "TechPlayer": "Upkeep",
+          "EditorCategories": "Race:Genetron,AbilityorEffectType:Units",
+          "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
+          "OrderArray": [
+            {
+              "DisplayType": "Confirm",
+              "Color": "255,0,255,0",
+              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
+              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
+            }
+          ],
+          "SharedFlags": {
+            "DisableWhileDead": 1
+          },
+          "DataCollection": "BadgerPowershell",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
+          "CmdButtonArray": {
+            "On": {
+              "Flags": {
+                "ShowInGlossary": 1,
+                "ToSelection": 1
+              },
+              "DefaultButtonFace": "BadgerPowershell"
+            },
+            "Off": {
+              "DefaultButtonFace": "Cancel"
+            }
+          },
+          "VeterancyLevelMin": 0,
+          "VeterancyLevelSkip": 0,
+          "AbilSetId": "Powershell",
+          "Flags": {
+            "Toggle": 1,
+            "Transient": 1
+          },
+          "Cost": [
+            {
+              "Cooldown": {
+                "TimeUse": 1
+              }
+            }
+          ],
+          "OffCost": {
+            "Cooldown": {
+              "TimeUse": 10
+            }
+          },
+          "BehaviorArray": [
+            "BadgerPowershell"
+          ],
+          "id": "BadgerPowershell"
+        },
+        "Cost": {
+          "Minerals": 0,
+          "Vespene": 0,
+          "Terazine": 0,
+          "Custom": 0,
+          "Energy": 0,
+          "Life": 0,
+          "Shields": 0,
+          "Food": 0
+        },
+        "Row": 2,
+        "Column": 4,
+        "Type": "AbilCmd",
+        "AbilCmd": "BadgerPowershell,Off",
+        "id": "Cancel",
+        "Icon": "btn-command-cancel",
+        "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
+        "Name": "Cancel",
+        "Hotkey": "Esc"
       },
       {
         "Cost": {
@@ -594,18 +727,18 @@
         "Row": 2,
         "Column": 1,
         "Type": "Passive",
-        "id": "AAMDefenseTurret",
-        "Icon": "btn-upgrade-genetron-auxillaryantimissiledefenseturret",
-        "Tooltip": "<span style=\"color: #FFFF80\">Badgers</span> gain a turret, which uses a laser to fire upon enemy missiles.<br/>Has <b>7.0</b> range,and a fire rate of <b>2.0</b>.<br/>Cannot target special attacks.<br/><br/><span style=\"color: #f078ff\">Each shot consumes <b>10</b> energy.</span>",
-        "Name": "AAM Defense Turret"
+        "id": "MELESTargetingSystem",
+        "Icon": "btn-ability-genetron-badgertargetingsystems",
+        "Tooltip": "The <span style=\"color: #FFFF80\">Badger</span> is able to attack air and ground targets simultaneously.",
+        "Name": "MELES Targeting System"
       }
     ]
   },
   "CargoSize": 0,
   "Height": 3.75,
   "VisionHeight": 4,
-  "EnergyStart": 100,
-  "EnergyMax": 100,
+  "EnergyStart": 200,
+  "EnergyMax": 200,
   "Food": -6,
   "CostResource": {
     "Minerals": 300,
@@ -625,6 +758,7 @@
     "Battlecruiser",
     "Viper"
   ],
+  "EnergyRegenRate": 1.6875,
   "Icon": "btn-unit-genetron-badger",
   "LifeArmorIcon": "btn-upgrade-genetron-aircraftplating-level0",
   "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
@@ -637,32 +771,26 @@
       "Kind": "Ranged",
       "TargetFilters": "Ground",
       "Range": 6,
-      "Period": 0.3
+      "Period": 0.28
     },
     {
       "Turret": "BadgerAATurret",
       "id": "LancerAutogun",
       "Icon": "btn-upgrade-genetron-rocketweapons-level0",
       "Name": "Lancer Autogun",
-      "Amount": 15,
+      "Amount": 12,
       "Kind": "Ranged",
       "TargetFilters": "Air",
       "Range": 6,
-      "Period": 1.3
-    },
-    {
-      "Turret": "BadgerPointDefenseTurret",
-      "id": "AAMLaser",
-      "Icon": "btn-upgrade-genetron-auxillaryantimissiledefenseturret",
-      "Name": "AAM Laser",
-      "TargetFilters": "Missile",
-      "Range": 7,
-      "Period": 2
+      "Period": 0.91
     }
   ],
   "Behaviors": [
     {
-      "id": "GenetronUnitEnergyRegenx2"
+      "id": "GenetronPowerSupplyTracker"
+    },
+    {
+      "id": "TrackGenetronPowerSupplyUnit"
     }
   ],
   "Abilities": [
@@ -677,13 +805,17 @@
     {
       "id": "attack",
       "Name": "Attack"
+    },
+    {
+      "id": "BadgerPowershell",
+      "Name": "Badger - Powershell"
     }
   ],
   "$Upgrades": [
     "GenetronAircraftPlatingLevel1",
     "Badger",
-    "AAMDefenseTurret",
     "Badger",
+    "AAMDefenseTurret",
     "GenetronAircraftPlating",
     "GenetronAircraftPlatingLevel2",
     "GenetronAircraftPlatingLevel3",
@@ -691,10 +823,14 @@
     "GenetronAircraftWeapons",
     "GenetronAircraftWeaponsLevel2",
     "GenetronAircraftWeaponsLevel3",
-    "TechVault",
+    "OrdnanceCache",
     "BuildAircraft",
+    "CountUnitBadgerQueuedOrBetterAtUnit",
     "AssemblyArray",
     "AssemblyArray",
+    "CountUnitBadgerInProgressOnlyAtUnit",
+    "GenetronAircraftPlatingRevert",
+    "GenetronAircraftWeaponsRevert",
     "IsBadger"
   ],
   "$Requirements": [],
@@ -740,6 +876,20 @@
       "Icon": "btn-command-move",
       "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
       "Name": "Move"
+    },
+    {
+      "AbilCmd": "BadgerPowershell,On",
+      "id": "BadgerPowershell",
+      "Icon": "btn-ability-stetmann-garypersonalstetzone-speed",
+      "Tooltip": "Causes all damage received to be absorbed by energy.<br/><br/><span style=\"color: #f078ff\">Drains <b>1.5</b> energy and <span style=\"color: #78F0FF\">power</span> per second.</span><br/><span style=\"color: #78F0FF\">100% of damage received is taken from the power grid.</span>",
+      "Name": "Powershell"
+    },
+    {
+      "AbilCmd": "BadgerPowershell,Off",
+      "id": "Cancel",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
+      "Name": "Cancel"
     }
   ]
 }

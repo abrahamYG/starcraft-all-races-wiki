@@ -331,6 +331,7 @@
         "Type": "AbilCmd",
         "AbilCmd": "que1,CancelLast",
         "id": "Cancel",
+        "Icon": "btn-command-cancel",
         "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
         "Name": "Cancel",
         "Hotkey": "Esc"
@@ -389,7 +390,7 @@
     }
   ],
   "$Upgrades": [
-    "BiomassHatcherySpawnLarva",
+    "BiomassHatcherySpawnGrub",
     "Grub",
     "BiomassHatchery",
     "Grub"
@@ -451,6 +452,7 @@
     {
       "AbilCmd": "que1,CancelLast",
       "id": "Cancel",
+      "Icon": "btn-command-cancel",
       "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
       "Name": "Cancel"
     }

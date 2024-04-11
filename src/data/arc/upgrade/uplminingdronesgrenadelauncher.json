@@ -12,11 +12,11 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "UPLMiningDronesGrenadeLauncher",
+  "EditorCategories": "Race:UPL,UpgradeType:Talents",
   "$tokens": {
     "ID": {
       "type": "string",
       "value": ""
     }
-  },
-  "EditorCategories": "Race:UPL,UpgradeType:Talents"
+  }
 }

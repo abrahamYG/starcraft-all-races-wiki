@@ -12,6 +12,7 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "GrimGlider",
+  "EditorCategories": "UpgradeType:Talents,Race:Dragon",
   "$tokens": {
     "ID": {
       "type": "string",
@@ -19,6 +20,5 @@
     }
   },
   "Race": "Dragon",
-  "EditorCategories": "UpgradeType:Talents,Race:Dragon",
   "ScoreAmount": 340
 }

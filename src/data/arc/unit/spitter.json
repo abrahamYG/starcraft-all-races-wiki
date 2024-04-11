@@ -612,7 +612,7 @@
     "Ground",
     "ForceField"
   ],
-  "Sight": 8,
+  "Sight": 10,
   "CostCategory": "Army",
   "ScoreResult": "BuildOrder",
   "GlossaryCategory": "Unit/Category/XayidUnits",
@@ -645,10 +645,7 @@
     {
       "id": "SpitterSpores",
       "Name": "Spitter Spores",
-      "Amount": 30,
-      "AttributeBonus": {
-        "Armored": 10
-      },
+      "Amount": 40,
       "Kind": "Ranged",
       "TargetFilters": "Ground",
       "Range": 8,

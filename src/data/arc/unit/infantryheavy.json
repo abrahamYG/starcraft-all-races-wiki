@@ -91,6 +91,10 @@
     "ForceField"
   ],
   "Speed": 2.25,
+  "Attributes": [
+    "Light",
+    "Biological"
+  ],
   "Acceleration": 1000,
   "LateralAcceleration": 69.125,
   "Sight": 10,
@@ -533,77 +537,88 @@
           "Shields": 0,
           "Food": 0
         },
-        "Row": 1,
+        "Row": 2,
+        "Column": 2,
+        "Type": "Passive",
+        "id": "InfantryMedkit",
+        "Icon": "btn-ability-upl-medkit",
+        "Tooltip": "This unit will use a Medkit when they have less than 25% of their life, which will heal <span style=\"color: #FFFF80\"><b>45</b></span> life over <span style=\"color: #FFFF80\"><b>8</b></span>. Once activated it will be on cooldown for <b>180</b>.",
+        "Name": "Personal Medkit"
+      },
+      {
+        "Cost": {
+          "Minerals": 0,
+          "Vespene": 0,
+          "Terazine": 0,
+          "Custom": 0,
+          "Energy": 0,
+          "Life": 0,
+          "Shields": 0,
+          "Food": 0
+        },
+        "Row": 2,
+        "Column": 2,
+        "Type": "Passive",
+        "id": "InfantryMedkit",
+        "Icon": "btn-ability-upl-medkit",
+        "Tooltip": "This unit will use a Medkit when they have less than 25% of their life, which will heal <span style=\"color: #FFFF80\"><b>45</b></span> life over <span style=\"color: #FFFF80\"><b>8</b></span>. Once activated it will be on cooldown for <b>180</b>.",
+        "Name": "Personal Medkit"
+      },
+      {
+        "Info": {
+          "SectionArray": {
+            "Actor": {
+              "DurationArray": {
+                "Duration": 0.5
+              }
+            },
+            "Collide": {
+              "DurationArray": {
+                "Delay": 0.1
+              }
+            },
+            "Mover": {
+              "DurationArray": {
+                "Delay": 0.1,
+                "Duration": 0.1
+              }
+            },
+            "Stats": {
+              "DurationArray": {
+                "Delay": 1,
+                "Duration": 0.5
+              }
+            }
+          },
+          "Unit": "InfantryHeavySieged"
+        },
+        "Unit": "InfantryHeavySieged",
+        "Cost": {
+          "Minerals": 75,
+          "Vespene": 0,
+          "Terazine": 0,
+          "Custom": 0,
+          "Energy": 0,
+          "Life": 0,
+          "Shields": 0,
+          "Food": -1
+        },
+        "Row": 2,
         "Column": 0,
-        "Type": "Passive",
-        "id": "InfantryHeavyNanoweaveBodyArmor",
-        "Icon": "btn-ability-upl-nanoweave",
-        "Tooltip": "Provides the <c val=\"#ColorAttackInfo\"><d stringRef=\"Unit,InfantryHeavy,Name\"/></span> with <span style=\"color: #80FFFF\">+1 Armor</span>",
-        "Name": "Nano-Weave Body Armor"
-      },
-      {
-        "Cost": {
-          "Minerals": 0,
-          "Vespene": 0,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 2,
-        "Column": 2,
-        "Type": "Passive",
-        "id": "InfantryMedkit",
-        "Icon": "btn-ability-upl-medkit",
-        "Tooltip": "This unit will use a Medkit when they have less than 25% of their life, which will heal <span style=\"color: #FFFF80\"><b>50</b></span> life over <span style=\"color: #FFFF80\"><b>5</b></span>. Once activated it will be on cooldown for <b>180</b>.",
-        "Name": "Personal Medkit"
-      },
-      {
-        "Cost": {
-          "Minerals": 0,
-          "Vespene": 0,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 2,
-        "Column": 2,
-        "Type": "Passive",
-        "id": "InfantryMedkit",
-        "Icon": "btn-ability-upl-medkit",
-        "Tooltip": "This unit will use a Medkit when they have less than 25% of their life, which will heal <span style=\"color: #FFFF80\"><b>50</b></span> life over <span style=\"color: #FFFF80\"><b>5</b></span>. Once activated it will be on cooldown for <b>180</b>.",
-        "Name": "Personal Medkit"
-      },
-      {
-        "Cost": {
-          "Minerals": 0,
-          "Vespene": 0,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 1,
-        "Column": 1,
-        "Type": "Passive",
-        "id": "InfantryRifleRangeUpgrade",
-        "Icon": "btn-ability-upl-longrange",
-        "Tooltip": "<c val=\"#ColorAttackInfo\"><b>Combat Infantry</b></span>, <c val=\"#ColorAttackInfo\"><b>Heavy Gunner</b></span> and <c val=\"#ColorAttackInfo\"><b>Rocket Trooper</b></span> rifles are now equipped with range finders and laser scopes.<br/><br/>Increases weapon range by <span style=\"color: #80FFFF\">1</span>",
-        "Name": "Increased Rifle Range"
+        "Type": "AbilCmd",
+        "AbilCmd": "MorphToInfantryHeavySieged,Execute",
+        "id": "UPLHeavyGunnerSiege",
+        "Icon": "btn-unit-heavygunner-sieged",
+        "Tooltip": "Build Sandbags for 2 seconds. In Sieged Mode Heavy Gunner cant Move, but has increased attack rate and range.",
+        "Name": "Siege",
+        "Hotkey": "E"
       }
     ]
   },
   "InnerRadius": 0.3125,
   "CargoSize": 1,
-  "ScoreMake": 125,
-  "ScoreKill": 125,
+  "ScoreMake": 75,
+  "ScoreKill": 75,
   "ScoreResult": "BuildOrder",
   "SubgroupPriority": 12,
   "GlossaryCategory": "Unit/Category/0UPLUnits",
@@ -613,13 +628,8 @@
     "Dance": 5
   },
   "id": "InfantryHeavy",
-  "Attributes": [
-    "Biological",
-    "Light"
-  ],
-  "LifeArmor": 1,
   "CostResource": {
-    "Minerals": 65
+    "Minerals": 75
   },
   "GlossaryPriority": 22,
   "AlliedPushPriority": 5,
@@ -638,7 +648,7 @@
       "Kind": "Ranged",
       "TargetFilters": "Ground",
       "Range": 6,
-      "Period": 1.2
+      "Period": 1.5
     }
   ],
   "Behaviors": [
@@ -663,12 +673,17 @@
     {
       "id": "move",
       "Name": "Move"
+    },
+    {
+      "id": "MorphToInfantryHeavySieged"
     }
   ],
   "$Upgrades": [
-    "UPLBilletTrain",
-    "InfantryHeavy",
     "InfantryMedkit",
+    "InfantryHeavy",
+    "InfantryHeavySieged",
+    "MorphToInfantryHeavy",
+    "UPLBilletTrain",
     "UPLBillet",
     "UPLInfantryWeaponsLevel1",
     "UPLInfantryWeapons",
@@ -680,13 +695,16 @@
     "UPLInfantryArmorLevel2",
     "UPLInfantryArmorLevel3",
     "IsInfantryHeavy",
-    "InfantryHeavy"
+    "InfantryHeavy",
+    null
   ],
   "$Requirements": [],
   "$Production": [],
   "$Research": [],
   "$Morph": [],
-  "$Phase": [],
+  "$Phase": [
+    "InfantryHeavySieged"
+  ],
   "$Producers": [
     "UPLBillet"
   ],
@@ -725,6 +743,13 @@
       "Icon": "btn-command-attack",
       "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
       "Name": "Attack"
+    },
+    {
+      "AbilCmd": "MorphToInfantryHeavySieged,Execute",
+      "id": "UPLHeavyGunnerSiege",
+      "Icon": "btn-unit-heavygunner-sieged",
+      "Tooltip": "Build Sandbags for 2 seconds. In Sieged Mode Heavy Gunner cant Move, but has increased attack rate and range.",
+      "Name": "Siege"
     }
   ]
 }

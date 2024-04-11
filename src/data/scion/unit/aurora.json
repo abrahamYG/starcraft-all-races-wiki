@@ -10,15 +10,15 @@
   "Response": "Acquire",
   "ResourceState": "Unknown",
   "ResourceType": "Unknown",
-  "LifeStart": 110,
-  "LifeMax": 110,
+  "LifeStart": 100,
+  "LifeMax": 100,
   "LifeArmorName": "Keiron Biological Armor",
   "Mover": "Fly",
   "StationaryTurningRate": 1350,
   "TurningRate": 1350,
-  "Radius": 0.5,
-  "SeparationRadius": 0.5,
-  "MinimapRadius": 0.5,
+  "Radius": 0.6875,
+  "SeparationRadius": 0.6875,
+  "MinimapRadius": 0.6875,
   "EditorCategories": "ObjectType:Unit,ObjectFamily:Melee",
   "TacticalAIFilters": "-;Player,Ally,Neutral",
   "AIEvalFactor": 1,
@@ -86,11 +86,9 @@
   "Collide": [
     "Flying"
   ],
-  "LifeRegenRate": 0.1718,
-  "ShieldRegenDelay": 4,
-  "ShieldRegenRate": 1.25,
+  "LifeRegenRate": 0.2734,
   "Acceleration": 2.5,
-  "Sight": 11,
+  "Sight": 10,
   "CostCategory": "Army",
   "AttackTargetPriority": 20,
   "CardLayouts": {
@@ -107,12 +105,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -204,12 +196,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -283,12 +269,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -382,12 +362,6 @@
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
               "DisplayType": "Move",
               "Color": "255,35,125,255",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
@@ -476,12 +450,6 @@
               "Color": "255,255,0,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -556,12 +524,6 @@
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
@@ -662,7 +624,7 @@
           ],
           "Placeholder": "Emanator",
           "Range": [
-            4
+            5
           ],
           "ProducedUnitArray": [
             "Emanator"
@@ -686,7 +648,7 @@
         "AbilCmd": "Emanator,Execute",
         "id": "PlaceEmanator",
         "Icon": "btn-unit-keiron-emanator",
-        "Tooltip": "Emanators grant vision in an area. They are vulnerable to attack, but becomes permanently cloaked <b>6</b> seconds after placement.</n></n><span style=\"color: #FFE303\">Detector</span>",
+        "Tooltip": "Grants vision in an area. It is vulnerable to attack, but becomes permanently cloaked <b>7</b> seconds after placement.",
         "Name": "Place Emanator",
         "Hotkey": "E"
       },
@@ -724,12 +686,6 @@
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
@@ -842,7 +798,7 @@
         "AbilCmd": "FuseUnfuse,Execute",
         "id": "Unfuse",
         "Icon": "btn-ability-zerg-dehaka-levelup",
-        "Tooltip": "Releases the Fuse inhabiting this unit, losing the associated bonus.",
+        "Tooltip": "Releases the Fuses inhabiting this unit, losing the associated bonus.",
         "Name": "Unfuse",
         "Hotkey": "U"
       }
@@ -864,10 +820,9 @@
   "id": "Aurora",
   "Height": 3.75,
   "VisionHeight": 4,
-  "LifeArmor": 1,
-  "ShieldsStart": 40,
-  "ShieldsMax": 40,
-  "Speed": 3,
+  "ShieldsStart": 50,
+  "ShieldsMax": 50,
+  "Speed": 2.9531,
   "Food": -3,
   "CostResource": {
     "Minerals": 150,
@@ -898,7 +853,11 @@
       "Period": 1.68
     }
   ],
-  "Behaviors": [],
+  "Behaviors": [
+    {
+      "id": "KeironShellRestoration"
+    }
+  ],
   "Abilities": [
     {
       "id": "move",
@@ -934,6 +893,7 @@
     "Aurora",
     "IsAurora",
     "KeironCitadelMaterialize",
+    "CitadelCharged",
     "KeironBioWeaponsLevel1",
     "KeironBioWeapons",
     "KeironBioWeaponsLevel2",
@@ -944,11 +904,13 @@
     "KeironBioArmorLevel2",
     "KeironBioArmorLevel3",
     "KeironShieldsLevel1",
-    "CitadelCharged",
     "KeironShields",
     "KeironShieldsLevel2",
     "KeironShieldsLevel3",
-    "Citadel"
+    "Citadel",
+    "KeironBioArmorRevert",
+    "KeironBioWeaponsRevert",
+    "KeironShieldsRevert"
   ],
   "$Requirements": [],
   "$Production": [
@@ -1001,7 +963,7 @@
       "AbilCmd": "Emanator,Execute",
       "id": "PlaceEmanator",
       "Icon": "btn-unit-keiron-emanator",
-      "Tooltip": "Emanators grant vision in an area. They are vulnerable to attack, but becomes permanently cloaked <b>6</b> seconds after placement.</n></n><span style=\"color: #FFE303\">Detector</span>",
+      "Tooltip": "Grants vision in an area. It is vulnerable to attack, but becomes permanently cloaked <b>7</b> seconds after placement.",
       "Name": "Place Emanator"
     },
     {
@@ -1015,7 +977,7 @@
       "AbilCmd": "FuseUnfuse,Execute",
       "id": "Unfuse",
       "Icon": "btn-ability-zerg-dehaka-levelup",
-      "Tooltip": "Releases the Fuse inhabiting this unit, losing the associated bonus.",
+      "Tooltip": "Releases the Fuses inhabiting this unit, losing the associated bonus.",
       "Name": "Unfuse"
     }
   ]

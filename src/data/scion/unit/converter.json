@@ -85,11 +85,10 @@
   ],
   "Collide": [
     "Ground",
-    "ForceField"
+    "ForceField",
+    "Small"
   ],
-  "LifeRegenRate": 0.1718,
-  "ShieldRegenDelay": 4,
-  "ShieldRegenRate": 1.25,
+  "LifeRegenRate": 0.2734,
   "Acceleration": 2.5,
   "Sight": 8,
   "CostCategory": "Economy",
@@ -108,12 +107,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -205,12 +198,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -284,12 +271,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -383,12 +364,6 @@
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
               "DisplayType": "Move",
               "Color": "255,35,125,255",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
@@ -477,12 +452,6 @@
               "Color": "255,255,0,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -553,12 +522,6 @@
           "EditorCategories": "Race:Protoss,AbilityorEffectType:Units",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -654,12 +617,6 @@
           "EditorCategories": "Race:Protoss,AbilityorEffectType:Units",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -802,12 +759,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -832,7 +783,9 @@
             "PeonMaintained": 1,
             "RangeIncludesBuilding": 1,
             "Interruptible": 1,
-            "PeonDisableCollision": 1
+            "PeonDisableCollision": 1,
+            "PeonCanBeMoved": 1,
+            "RequireFacing": 1
           },
           "RefundFraction": {
             "Resource": {
@@ -874,7 +827,7 @@
                 "Requirements": "HaveCitadel"
               },
               "Unit": "Reliquary",
-              "Time": 40
+              "Time": 35
             },
             "Build4": {
               "Button": {
@@ -885,7 +838,7 @@
                 "Requirements": "HaveReliquary"
               },
               "Unit": "Nullifier",
-              "Time": 50
+              "Time": 40
             },
             "Build5": {
               "Button": {
@@ -951,7 +904,7 @@
                 "Requirements": "HaveSanctum"
               },
               "Unit": "Foundry",
-              "Time": 50
+              "Time": 60
             },
             "Build11": {
               "Button": {
@@ -962,7 +915,7 @@
                 "Requirements": "HaveFoundry"
               },
               "Unit": "Atrium",
-              "Time": 80
+              "Time": 70
             },
             "Build12": {
               "Button": {
@@ -1006,7 +959,7 @@
                 "Requirements": "HaveSanctum"
               },
               "Unit": "Empyrean",
-              "Time": 65
+              "Time": 70
             },
             "Build16": {
               "Button": {
@@ -1121,9 +1074,13 @@
               }
             }
           },
+          "TechAliasArray": "AliasScion_GenericBuild",
           "Range": [
             4.5
           ],
+          "FidgetDelayMin": 5,
+          "FidgetDelayMax": 10,
+          "ConstructionMover": "Construction",
           "EffectArray": {
             "Start": "KeironConstructionStart",
             "Finish": "KeironConstructionStop",
@@ -1163,12 +1120,6 @@
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
@@ -1281,9 +1232,150 @@
         "AbilCmd": "FuseUnfuse,Execute",
         "id": "Unfuse",
         "Icon": "btn-ability-zerg-dehaka-levelup",
-        "Tooltip": "Releases the Fuse inhabiting this unit, losing the associated bonus.",
+        "Tooltip": "Releases the Fuses inhabiting this unit, losing the associated bonus.",
         "Name": "Unfuse",
         "Hotkey": "U"
+      },
+      {
+        "Info": {
+          "class": "CAbilEffectTarget",
+          "Name": "Abil/Name/SprayProtoss",
+          "TechPlayer": "Upkeep",
+          "EditorCategories": "AbilityorEffectType:Units,Race:Protoss",
+          "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
+          "OrderArray": [
+            {
+              "DisplayType": "Confirm",
+              "Color": "255,0,255,0",
+              "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
+              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
+            }
+          ],
+          "SharedFlags": {
+            "DisableWhileDead": 1
+          },
+          "DataCollection": "SprayProtoss",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
+          "RangeSlop": 1,
+          "ArcSlop": 11.25,
+          "AutoCastAcquireLevel": "Offensive",
+          "AutoCastFilters": "Visible;Player,Ally",
+          "Flags": {
+            "AbortOnAllianceChange": 1,
+            "CancelResetAutoCast": 1,
+            "ChannelingMinimum": 1,
+            "RangeUseCasterRadius": 1,
+            "ReApproachable": 1,
+            "RequireTargetVision": 1,
+            "WaitToSpend": 1,
+            "UpdateChargesOnLevelChange": 1,
+            "BestUnit": 1
+          },
+          "Effect": [
+            "SprayProtoss"
+          ],
+          "EffectRange": [
+            "0,1000"
+          ],
+          "AINotifyEffect": "SprayProtoss",
+          "RefundArray": {
+            "Approach": 1,
+            "Prep": 1,
+            "Cast": 1
+          },
+          "RefundFraction": {
+            "Resource": {
+              "Minerals": -1,
+              "Vespene": -1,
+              "Terrazine": -1,
+              "Custom": -1
+            },
+            "Charge": -1,
+            "Cooldown": -1
+          },
+          "UseMarkerArray": {
+            "Approach": 1,
+            "Prep": 1,
+            "Cast": 1,
+            "Channel": 1
+          },
+          "PauseableArray": {
+            "Approach": 1,
+            "Prep": 1,
+            "Cast": 1,
+            "Channel": 1,
+            "Finish": 1
+          },
+          "PreemptableArray": {
+            "Approach": 1,
+            "Prep": 1,
+            "Cast": 1,
+            "Channel": 1,
+            "Finish": 1
+          },
+          "ValidatedArray": {
+            "Approach": 1,
+            "Prep": 1,
+            "Cast": 1,
+            "Channel": 1
+          },
+          "DefaultError": "MustTargetUnit",
+          "AcquirePriority": 3,
+          "SetLastTarget": "Unknown",
+          "VeterancyLevelMin": 0,
+          "VeterancyLevelSkip": 0,
+          "CmdButtonArray": {
+            "Execute": {
+              "Flags": {
+                "ShowInGlossary": 1
+              },
+              "DefaultButtonFace": "Spray",
+              "Requirements": "HaveSprayProtoss"
+            }
+          },
+          "FollowRange": 5,
+          "Cost": [
+            {
+              "Charge": {
+                "CountMax": 5,
+                "CountStart": 1,
+                "CountUse": 1,
+                "Link": "Spray",
+                "Location": "Player",
+                "TimeStart": 300,
+                "TimeUse": 300
+              }
+            }
+          ],
+          "Range": [
+            1
+          ],
+          "id": "SprayProtoss"
+        },
+        "Cost": {
+          "Minerals": 0,
+          "Vespene": 0,
+          "Terazine": 0,
+          "Custom": 0,
+          "Energy": 0,
+          "Life": 0,
+          "Shields": 0,
+          "Food": 0
+        },
+        "Row": 2,
+        "Column": 3,
+        "Type": "AbilCmd",
+        "AbilCmd": "SprayProtoss,Execute",
+        "id": "Spray",
+        "Icon": "btn-command-spray",
+        "Tooltip": "Orders the unit to apply your currently selected spray to the terrain at the target location.",
+        "Name": "Spray",
+        "Hotkey": "Y"
       }
     ],
     "0002": [
@@ -1370,7 +1462,7 @@
         "AbilCmd": "KeironBuild,Build8",
         "id": "Sanctum",
         "Icon": "btn-building-keiron-sanctum",
-        "Tooltip": "Tech facility.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>  - Pulsars from the Citadel<br/>  - Subjecters from the Citadel",
+        "Tooltip": "Contains upgrades for Pulsars and Cataracts.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Pulsars from Citadels<br/>- Cataracts from Citadels",
         "Name": "Shape Sanctum",
         "Hotkey": "S"
       },
@@ -1404,7 +1496,7 @@
         "AbilCmd": "KeironBuild,Build7",
         "id": "Edifice",
         "Icon": "btn-building-keiron-edifice",
-        "Tooltip": "Basic tech facility.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>  - Pariah from the Citadel<br/>  - Volts from the Citadel<br/>  - Oculi from the Converter",
+        "Tooltip": "Contains upgrades for Pariahs and Volts.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Pariahs from Citadels<br/>- Volts from Citadels<br/>- Oculi from Converters",
         "Name": "Shape Edifice",
         "Hotkey": "E"
       },
@@ -1418,12 +1510,12 @@
             "Requirements": "HaveReliquary"
           },
           "Unit": "Nullifier",
-          "Time": 50
+          "Time": 40
         },
         "Unit": "Nullifier",
-        "Time": 50,
+        "Time": 40,
         "Cost": {
-          "Minerals": 125,
+          "Minerals": 150,
           "Vespene": 0,
           "Terazine": 0,
           "Custom": 0,
@@ -1458,7 +1550,7 @@
         "Time": 25,
         "Cost": {
           "Minerals": 75,
-          "Vespene": 50,
+          "Vespene": 0,
           "Terazine": 0,
           "Custom": 0,
           "Energy": 0,
@@ -1524,7 +1616,7 @@
         "Unit": "Stratus",
         "Time": 30,
         "Cost": {
-          "Minerals": 125,
+          "Minerals": 100,
           "Vespene": 0,
           "Terazine": 0,
           "Custom": 0,
@@ -1539,7 +1631,7 @@
         "AbilCmd": "KeironBuild,Build5",
         "id": "Stratus",
         "Icon": "btn-building-keiron-stratus",
-        "Tooltip": "Anti-air defensive structure. <br/><br/><span style=\"color: #ffff8a\">Can attack air units.</span><br/><span style=\"color: #FFE303\">Detector</span>",
+        "Tooltip": "Anti-air defensive structure. <br/><br/><span style=\"color: #ffff8a\">Can attack air units.</span><br/>",
         "Name": "Shape Stratus",
         "Hotkey": "T"
       },
@@ -1553,12 +1645,12 @@
             "Requirements": "HaveCitadel"
           },
           "Unit": "Reliquary",
-          "Time": 40
+          "Time": 35
         },
         "Unit": "Reliquary",
-        "Time": 40,
+        "Time": 35,
         "Cost": {
-          "Minerals": 150,
+          "Minerals": 200,
           "Vespene": 0,
           "Terazine": 0,
           "Custom": 0,
@@ -1573,7 +1665,7 @@
         "AbilCmd": "KeironBuild,Build3",
         "id": "Reliquary",
         "Icon": "btn-building-keiron-reliquary",
-        "Tooltip": "Upgrade tech facility.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>  - Nullifiers from the Converter<br/>  - Strati from the Converter",
+        "Tooltip": "Contains weapon and armor upgrades for all Keiron units, and shield upgrades for all Keiron units and structures.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Nullifiers from Converters<br/>- Strati from Converters",
         "Name": "Shape Reliquary",
         "Hotkey": "R"
       },
@@ -1607,7 +1699,7 @@
         "AbilCmd": "KeironBuild,Build13",
         "id": "Conduit",
         "Icon": "btn-building-keiron-conduit",
-        "Tooltip": "Basic air tech facility.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>  - Echoes from the Citadel<br/>  - Fuses from the Citadel<br/>",
+        "Tooltip": "Contains upgrades for Echoes and Fuses.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Echoes from Citadels<br/>- Fuses from Citadels",
         "Name": "Shape Conduit",
         "Hotkey": "D"
       }
@@ -1663,7 +1755,7 @@
         "AbilCmd": "KeironBuild,Build9",
         "id": "Elysium",
         "Icon": "btn-building-keiron-elysium",
-        "Tooltip": "Advanced tech facility.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>  - Meridians from the Citadel",
+        "Tooltip": "Contains an upgrade for Cruxes.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Cruxes from Citadels",
         "Name": "Shape Elysium",
         "Hotkey": "E"
       },
@@ -1677,10 +1769,10 @@
             "Requirements": "HaveSanctum"
           },
           "Unit": "Foundry",
-          "Time": 50
+          "Time": 60
         },
         "Unit": "Foundry",
-        "Time": 50,
+        "Time": 60,
         "Cost": {
           "Minerals": 225,
           "Vespene": 75,
@@ -1697,7 +1789,7 @@
         "AbilCmd": "KeironBuild,Build10",
         "id": "Foundry",
         "Icon": "btn-building-keiron-foundry",
-        "Tooltip": "Advanced tech facility.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>  - Umbrae from the Citadel",
+        "Tooltip": "Contains an upgrade for Umbrae.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Umbrae from Citadels<br/>- Wards from Citadels",
         "Name": "Shape Foundry",
         "Hotkey": "F"
       },
@@ -1711,10 +1803,10 @@
             "Requirements": "HaveFoundry"
           },
           "Unit": "Atrium",
-          "Time": 80
+          "Time": 70
         },
         "Unit": "Atrium",
-        "Time": 80,
+        "Time": 70,
         "Cost": {
           "Minerals": 250,
           "Vespene": 150,
@@ -1723,7 +1815,7 @@
           "Energy": 0,
           "Life": 0,
           "Shields": 0,
-          "Food": 6
+          "Food": 8
         },
         "Row": 1,
         "Column": 1,
@@ -1731,7 +1823,7 @@
         "AbilCmd": "KeironBuild,Build11",
         "id": "Atrium",
         "Icon": "btn-building-keiron-atrium",
-        "Tooltip": "Advanced tech facility.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>  - Inducers from the Citadel<br/>  - Myriads from the Citadel",
+        "Tooltip": "<span style=\"color: #FFFF80\">Enables:</span><br/>- Inducers from Citadels<br/>- Myriads from Citadels",
         "Name": "Shape Atrium",
         "Hotkey": "A"
       },
@@ -1765,7 +1857,7 @@
         "AbilCmd": "KeironBuild,Build14",
         "id": "Outlet",
         "Icon": "btn-building-keiron-outlet",
-        "Tooltip": "Advanced air tech facility.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>  - Apertures from the Citadel<br/>  - Auroras from the Citadel",
+        "Tooltip": "<span style=\"color: #FFFF80\">Enables:</span><br/>- Apertures from Citadels<br/>- Auroras from Citadels",
         "Name": "Shape Outlet",
         "Hotkey": "C"
       },
@@ -1791,7 +1883,7 @@
           "Energy": 0,
           "Life": 0,
           "Shields": 0,
-          "Food": 6
+          "Food": 8
         },
         "Row": 1,
         "Column": 2,
@@ -1799,7 +1891,7 @@
         "AbilCmd": "KeironBuild,Build12",
         "id": "Pantheon",
         "Icon": "btn-building-keiron-pantheon",
-        "Tooltip": "Highly advanced tech facility.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>  - Titans from the Citadel",
+        "Tooltip": "<span style=\"color: #FFFF80\">Enables:</span><br/>- Titans from Citadels<br/>- Aegis from a Citadel",
         "Name": "Shape Pantheon",
         "Hotkey": "H"
       },
@@ -1813,10 +1905,10 @@
             "Requirements": "HaveSanctum"
           },
           "Unit": "Empyrean",
-          "Time": 65
+          "Time": 70
         },
         "Unit": "Empyrean",
-        "Time": 65,
+        "Time": 70,
         "Cost": {
           "Minerals": 250,
           "Vespene": 150,
@@ -1825,7 +1917,7 @@
           "Energy": 0,
           "Life": 0,
           "Shields": 0,
-          "Food": 6
+          "Food": 8
         },
         "Row": 2,
         "Column": 1,
@@ -1833,7 +1925,7 @@
         "AbilCmd": "KeironBuild,Build15",
         "id": "Empyrean",
         "Icon": "btn-building-keiron-empyrean",
-        "Tooltip": "Advanced air tech facility.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>  - Harbingers from the Citadel<br/>  - Gyres from the Citadel",
+        "Tooltip": "<span style=\"color: #FFFF80\">Enables:</span><br/>- Harbingers from Citadels<br/>- Gyres from Citadels",
         "Name": "Shape Empyrean",
         "Hotkey": "T"
       },
@@ -1859,7 +1951,7 @@
           "Energy": 0,
           "Life": 0,
           "Shields": 0,
-          "Food": 6
+          "Food": 8
         },
         "Row": 2,
         "Column": 2,
@@ -1867,7 +1959,7 @@
         "AbilCmd": "KeironBuild,Build16",
         "id": "Zenith",
         "Icon": "btn-building-keiron-zenith",
-        "Tooltip": "Highly advanced tech facility.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>  - Paragons from the Citadel",
+        "Tooltip": "<span style=\"color: #FFFF80\">Enables:</span><br/>- Paragons from Citadels<br/>- Aegis from a Citadel",
         "Name": "Shape Zenith",
         "Hotkey": "Z"
       }
@@ -1903,6 +1995,8 @@
   "Food": -1,
   "GlossaryPriority": 10,
   "SubgroupPriority": 3,
+  "AIOverideTargetPriority": 10,
+  "InnerRadius": 0.375,
   "Icon": "btn-unit-keiron-converter",
   "LifeArmorIcon": "btn-upgrade-keiron-biologicalarmorlevel0",
   "ShieldArmorIcon": "btn-upgrade-keiron-shields-level0",
@@ -1918,7 +2012,11 @@
       "Period": 1.5
     }
   ],
-  "Behaviors": [],
+  "Behaviors": [
+    {
+      "id": "KeironShellRestoration"
+    }
+  ],
   "Abilities": [
     {
       "id": "move",
@@ -1943,25 +2041,29 @@
     {
       "id": "KeironBuild",
       "Name": "Keiron Build"
+    },
+    {
+      "id": "SprayProtoss"
     }
   ],
   "$Upgrades": [
-    "Keir",
+    "KeironCitadelTrain",
     "Converter",
+    "CitadelCharged",
     "KeironBioArmorLevel1",
     "Converter",
     "KeironBioArmor",
     "KeironBioArmorLevel2",
     "KeironBioArmorLevel3",
     "KeironShieldsLevel1",
-    "KeironCitadelTrain",
-    "CitadelCharged",
     "KeironShields",
     "KeironShieldsLevel2",
     "KeironShieldsLevel3",
     "Citadel",
-    "KeironAquiferTrain",
-    "IsConverter"
+    "Keir",
+    "IsConverter",
+    "KeironBioArmorRevert",
+    "KeironShieldsRevert"
   ],
   "$Requirements": [],
   "$Production": [
@@ -1986,7 +2088,6 @@
   "$Morph": [],
   "$Phase": [],
   "$Producers": [
-    "Aquifer",
     "Citadel",
     "CitadelCharged"
   ],
@@ -2051,8 +2152,15 @@
       "AbilCmd": "FuseUnfuse,Execute",
       "id": "Unfuse",
       "Icon": "btn-ability-zerg-dehaka-levelup",
-      "Tooltip": "Releases the Fuse inhabiting this unit, losing the associated bonus.",
+      "Tooltip": "Releases the Fuses inhabiting this unit, losing the associated bonus.",
       "Name": "Unfuse"
+    },
+    {
+      "AbilCmd": "SprayProtoss,Execute",
+      "id": "Spray",
+      "Icon": "btn-command-spray",
+      "Tooltip": "Orders the unit to apply your currently selected spray to the terrain at the target location.",
+      "Name": "Spray"
     },
     {
       "AbilCmd": "KeironBuild,Build1",
@@ -2065,14 +2173,14 @@
       "AbilCmd": "KeironBuild,Build8",
       "id": "Sanctum",
       "Icon": "btn-building-keiron-sanctum",
-      "Tooltip": "Tech facility.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>  - Pulsars from the Citadel<br/>  - Subjecters from the Citadel",
+      "Tooltip": "Contains upgrades for Pulsars and Cataracts.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Pulsars from Citadels<br/>- Cataracts from Citadels",
       "Name": "Shape Sanctum"
     },
     {
       "AbilCmd": "KeironBuild,Build7",
       "id": "Edifice",
       "Icon": "btn-building-keiron-edifice",
-      "Tooltip": "Basic tech facility.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>  - Pariah from the Citadel<br/>  - Volts from the Citadel<br/>  - Oculi from the Converter",
+      "Tooltip": "Contains upgrades for Pariahs and Volts.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Pariahs from Citadels<br/>- Volts from Citadels<br/>- Oculi from Converters",
       "Name": "Shape Edifice"
     },
     {
@@ -2100,70 +2208,70 @@
       "AbilCmd": "KeironBuild,Build5",
       "id": "Stratus",
       "Icon": "btn-building-keiron-stratus",
-      "Tooltip": "Anti-air defensive structure. <br/><br/><span style=\"color: #ffff8a\">Can attack air units.</span><br/><span style=\"color: #FFE303\">Detector</span>",
+      "Tooltip": "Anti-air defensive structure. <br/><br/><span style=\"color: #ffff8a\">Can attack air units.</span><br/>",
       "Name": "Shape Stratus"
     },
     {
       "AbilCmd": "KeironBuild,Build3",
       "id": "Reliquary",
       "Icon": "btn-building-keiron-reliquary",
-      "Tooltip": "Upgrade tech facility.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>  - Nullifiers from the Converter<br/>  - Strati from the Converter",
+      "Tooltip": "Contains weapon and armor upgrades for all Keiron units, and shield upgrades for all Keiron units and structures.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Nullifiers from Converters<br/>- Strati from Converters",
       "Name": "Shape Reliquary"
     },
     {
       "AbilCmd": "KeironBuild,Build13",
       "id": "Conduit",
       "Icon": "btn-building-keiron-conduit",
-      "Tooltip": "Basic air tech facility.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>  - Echoes from the Citadel<br/>  - Fuses from the Citadel<br/>",
+      "Tooltip": "Contains upgrades for Echoes and Fuses.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Echoes from Citadels<br/>- Fuses from Citadels",
       "Name": "Shape Conduit"
     },
     {
       "AbilCmd": "KeironBuild,Build9",
       "id": "Elysium",
       "Icon": "btn-building-keiron-elysium",
-      "Tooltip": "Advanced tech facility.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>  - Meridians from the Citadel",
+      "Tooltip": "Contains an upgrade for Cruxes.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Cruxes from Citadels",
       "Name": "Shape Elysium"
     },
     {
       "AbilCmd": "KeironBuild,Build10",
       "id": "Foundry",
       "Icon": "btn-building-keiron-foundry",
-      "Tooltip": "Advanced tech facility.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>  - Umbrae from the Citadel",
+      "Tooltip": "Contains an upgrade for Umbrae.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Umbrae from Citadels<br/>- Wards from Citadels",
       "Name": "Shape Foundry"
     },
     {
       "AbilCmd": "KeironBuild,Build11",
       "id": "Atrium",
       "Icon": "btn-building-keiron-atrium",
-      "Tooltip": "Advanced tech facility.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>  - Inducers from the Citadel<br/>  - Myriads from the Citadel",
+      "Tooltip": "<span style=\"color: #FFFF80\">Enables:</span><br/>- Inducers from Citadels<br/>- Myriads from Citadels",
       "Name": "Shape Atrium"
     },
     {
       "AbilCmd": "KeironBuild,Build14",
       "id": "Outlet",
       "Icon": "btn-building-keiron-outlet",
-      "Tooltip": "Advanced air tech facility.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>  - Apertures from the Citadel<br/>  - Auroras from the Citadel",
+      "Tooltip": "<span style=\"color: #FFFF80\">Enables:</span><br/>- Apertures from Citadels<br/>- Auroras from Citadels",
       "Name": "Shape Outlet"
     },
     {
       "AbilCmd": "KeironBuild,Build12",
       "id": "Pantheon",
       "Icon": "btn-building-keiron-pantheon",
-      "Tooltip": "Highly advanced tech facility.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>  - Titans from the Citadel",
+      "Tooltip": "<span style=\"color: #FFFF80\">Enables:</span><br/>- Titans from Citadels<br/>- Aegis from a Citadel",
       "Name": "Shape Pantheon"
     },
     {
       "AbilCmd": "KeironBuild,Build15",
       "id": "Empyrean",
       "Icon": "btn-building-keiron-empyrean",
-      "Tooltip": "Advanced air tech facility.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>  - Harbingers from the Citadel<br/>  - Gyres from the Citadel",
+      "Tooltip": "<span style=\"color: #FFFF80\">Enables:</span><br/>- Harbingers from Citadels<br/>- Gyres from Citadels",
       "Name": "Shape Empyrean"
     },
     {
       "AbilCmd": "KeironBuild,Build16",
       "id": "Zenith",
       "Icon": "btn-building-keiron-zenith",
-      "Tooltip": "Highly advanced tech facility.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>  - Paragons from the Citadel",
+      "Tooltip": "<span style=\"color: #FFFF80\">Enables:</span><br/>- Paragons from Citadels<br/>- Aegis from a Citadel",
       "Name": "Shape Zenith"
     }
   ]

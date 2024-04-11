@@ -523,7 +523,7 @@
         "Type": "Passive",
         "id": "CleavingSpores",
         "Icon": "btn-upgrade-xayid-cleavingspores",
-        "Tooltip": "<span style=\"color: #FFFF80\">Raptor</span> attacks deal <b>10</b> spell damage to armored units over <b>3.5</b> seconds.",
+        "Tooltip": "<span style=\"color: #FFFF80\">Raptor</span> attacks deal <b>10</b> spell damage to Armored units over <b>3.5</b> seconds.",
         "Name": "Cleaving Spores"
       }
     ]

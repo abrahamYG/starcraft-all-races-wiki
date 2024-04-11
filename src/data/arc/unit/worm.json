@@ -122,7 +122,6 @@
         "AbilCmd": "MutateXayidUnits,Train1",
         "id": "Xayidling",
         "Icon": "btn-unit-xayid-xayidling",
-        "Tooltip": "Mid-ranged fighter.<br/><br/><span style=\"color: #FFFF80\">Can attack ground and air units</span>",
         "Name": "Mutate into Xayidling",
         "Hotkey": "X"
       },
@@ -259,7 +258,7 @@
         ],
         "Time": 40,
         "Cost": {
-          "Minerals": 100,
+          "Minerals": 50,
           "Vespene": 150,
           "Terazine": 0,
           "Custom": 0,
@@ -334,6 +333,7 @@
         "Type": "AbilCmd",
         "AbilCmd": "que1,CancelLast",
         "id": "Cancel",
+        "Icon": "btn-command-cancel",
         "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
         "Name": "Cancel",
         "Hotkey": "Esc"
@@ -358,7 +358,7 @@
         "Time": 35,
         "Cost": {
           "Minerals": 100,
-          "Vespene": 100,
+          "Vespene": 75,
           "Terazine": 0,
           "Custom": 0,
           "Energy": 0,
@@ -431,7 +431,7 @@
     }
   ],
   "$Upgrades": [
-    "XayidDenSpawnLarva",
+    "XayidDenSpawnWorm",
     "Worm",
     "XayidDen",
     "Worm"
@@ -461,7 +461,6 @@
       "AbilCmd": "MutateXayidUnits,Train1",
       "id": "Xayidling",
       "Icon": "btn-unit-xayid-xayidling",
-      "Tooltip": "Mid-ranged fighter.<br/><br/><span style=\"color: #FFFF80\">Can attack ground and air units</span>",
       "Name": "Mutate into Xayidling"
     },
     {
@@ -495,6 +494,7 @@
     {
       "AbilCmd": "que1,CancelLast",
       "id": "Cancel",
+      "Icon": "btn-command-cancel",
       "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
       "Name": "Cancel"
     },

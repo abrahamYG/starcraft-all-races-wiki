@@ -1,6 +1,6 @@
 {
   "Name": "Sanctum",
-  "Description": "Tech facility.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>  - Pulsars from the Citadel<br/>  - Subjecters from the Citadel",
+  "Description": "Contains upgrades for Pulsars and Cataracts.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Pulsars from Citadels<br/>- Cataracts from Citadels",
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 2,
   "DeathRevealDuration": 4,
@@ -18,7 +18,7 @@
   "TurningRate": 720,
   "Radius": 1.5,
   "SeparationRadius": 1.5,
-  "MinimapRadius": 1.5,
+  "MinimapRadius": 1.75,
   "EditorCategories": "ObjectType:Structure,ObjectFamily:Melee",
   "TacticalAIFilters": "-;Player,Ally,Neutral",
   "AIEvalFactor": 1,
@@ -98,17 +98,15 @@
     "Structure"
   ],
   "LifeArmor": 1,
-  "Sight": 10,
+  "Sight": 9,
   "CostCategory": "Technology",
   "ScoreResult": "BuildOrder",
   "HotkeyCategory": "Unit/Category/KeironUnits",
-  "LifeRegenRate": 0.25,
+  "LifeRegenRate": 0.2734,
   "Food": 6,
   "Footprint": "Footprint3x3Contour",
   "PlacementFootprint": "Footprint3x3",
   "ShieldArmorName": "Keiron Dispersion Shields",
-  "ShieldRegenDelay": 4,
-  "ShieldRegenRate": 1.25,
   "CardLayouts": {
     "Root": [
       {
@@ -158,12 +156,6 @@
           "EditorCategories": "Race:Neutral,AbilityorEffectType:Units",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -228,12 +220,6 @@
           "EditorCategories": "Race:Neutral,AbilityorEffectType:Structures",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -322,7 +308,7 @@
         "AbilCmd": "SanctumResearch,Research1",
         "id": "DevelopAmplifiedSphere",
         "Icon": "btn-upgrade-protoss-fenix-scoutchampionrange",
-        "Tooltip": "Increases the attack range of <span style=\"color: #FFFF80\">Subjecters</span>.",
+        "Tooltip": "Increases the attack range of <span style=\"color: #FFFF80\">Cataracts</span>.",
         "Name": "Develop Amplified Sphere",
         "Hotkey": "A"
       },
@@ -331,23 +317,24 @@
         "Info": {
           "Button": {
             "Flags": {
-              "AllowMinimap": 0
+              "AllowMinimap": 0,
+              "ShowInGlossary": 1
             },
             "DefaultButtonFace": "DevelopPulsarDampener",
             "Requirements": "LearnDampener"
           },
           "Resource": {
-            "Minerals": 200,
-            "Vespene": 200
+            "Minerals": 150,
+            "Vespene": 150
           },
-          "Time": 110,
+          "Time": 140,
           "Alert": "ResearchComplete",
           "Upgrade": "PulsarDampener"
         },
-        "Time": 110,
+        "Time": 140,
         "Cost": {
-          "Minerals": 200,
-          "Vespene": 200,
+          "Minerals": 150,
+          "Vespene": 150,
           "Terazine": 0,
           "Custom": 0,
           "Energy": 0,
@@ -361,7 +348,7 @@
         "AbilCmd": "SanctumResearch,Research2",
         "id": "DevelopPulsarDampener",
         "Icon": "btn-ability-keiron-dampener",
-        "Tooltip": "Allows the <span style=\"color: #FFFF80\">Pulsar</span> to use the Dampener ability.",
+        "Tooltip": "Allows <span style=\"color: #FFFF80\">Pulsars</span> to use the Dampener ability.",
         "Name": "Develop Dampener",
         "Hotkey": "D"
       }
@@ -382,13 +369,16 @@
   "ScoreKill": 200,
   "TechTreeUnlockedUnitArray": [
     "Pulsar",
-    "Subjecter"
+    "Cataract"
   ],
   "Icon": "btn-building-keiron-sanctum",
   "LifeArmorIcon": "btn-upgrade-keiron-structurearmor",
   "ShieldArmorIcon": "btn-upgrade-keiron-shields-level0",
   "Weapons": [],
   "Behaviors": [
+    {
+      "id": "KeironShellRestoration"
+    },
     {
       "id": "KeironChargeDummyCreation"
     }
@@ -412,16 +402,17 @@
     }
   ],
   "$Upgrades": [
-    "IsSanctum",
-    "Sanctum",
     "CasterIsSanctum",
+    "Sanctum",
+    "IsSanctum",
     "KeironShieldsLevel1",
     "Sanctum",
     "KeironShields",
     "KeironShieldsLevel2",
     "KeironShieldsLevel3",
     "KeironBuild",
-    "CountUnitSanctumCompleteOnly"
+    "CountUnitSanctumCompleteOnlyTechTreeCheat",
+    "KeironShieldsRevert"
   ],
   "$Requirements": [],
   "$Production": [],
@@ -453,14 +444,14 @@
       "AbilCmd": "SanctumResearch,Research1",
       "id": "DevelopAmplifiedSphere",
       "Icon": "btn-upgrade-protoss-fenix-scoutchampionrange",
-      "Tooltip": "Increases the attack range of <span style=\"color: #FFFF80\">Subjecters</span>.",
+      "Tooltip": "Increases the attack range of <span style=\"color: #FFFF80\">Cataracts</span>.",
       "Name": "Develop Amplified Sphere"
     },
     {
       "AbilCmd": "SanctumResearch,Research2",
       "id": "DevelopPulsarDampener",
       "Icon": "btn-ability-keiron-dampener",
-      "Tooltip": "Allows the <span style=\"color: #FFFF80\">Pulsar</span> to use the Dampener ability.",
+      "Tooltip": "Allows <span style=\"color: #FFFF80\">Pulsars</span> to use the Dampener ability.",
       "Name": "Develop Dampener"
     }
   ]

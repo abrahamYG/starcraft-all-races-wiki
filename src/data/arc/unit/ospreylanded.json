@@ -17,7 +17,7 @@
   "StationaryTurningRate": 999.8437,
   "TurningRate": 720,
   "Radius": 0.875,
-  "SeparationRadius": 0.8,
+  "SeparationRadius": 0.875,
   "MinimapRadius": 0.75,
   "EditorCategories": "ObjectType:Unit,ObjectFamily:Melee",
   "TacticalAIFilters": "-;Player,Ally,Neutral",
@@ -807,9 +807,9 @@
           },
           "ErrorAlert": "Error",
           "AbilSetId": "ULdM",
-          "MaxCargoCount": 4,
+          "MaxCargoCount": 2,
           "MaxCargoSize": 1,
-          "TotalCargoSpace": 4,
+          "TotalCargoSpace": 2,
           "UnloadPeriod": 0.125,
           "LoadValidatorArray": [
             "TargetIsTransportable",
@@ -822,9 +822,9 @@
             "OspreyLanded"
           ],
           "DeathUnloadEffect": "TransportUnloadDeath",
-          "id": "OspreyTransport",
           "LoadCargoEffect": "UPLOspreyTransportCargoLoad",
-          "UnloadCargoEffect": "UPLOspreyTransportCargoUnload"
+          "UnloadCargoEffect": "UPLOspreyTransportCargoUnload",
+          "id": "OspreyTransport"
         },
         "Cost": {
           "Minerals": 0,
@@ -931,9 +931,9 @@
           },
           "ErrorAlert": "Error",
           "AbilSetId": "ULdM",
-          "MaxCargoCount": 4,
+          "MaxCargoCount": 2,
           "MaxCargoSize": 1,
-          "TotalCargoSpace": 4,
+          "TotalCargoSpace": 2,
           "UnloadPeriod": 0.125,
           "LoadValidatorArray": [
             "TargetIsTransportable",
@@ -946,9 +946,9 @@
             "OspreyLanded"
           ],
           "DeathUnloadEffect": "TransportUnloadDeath",
-          "id": "OspreyTransport",
           "LoadCargoEffect": "UPLOspreyTransportCargoLoad",
-          "UnloadCargoEffect": "UPLOspreyTransportCargoUnload"
+          "UnloadCargoEffect": "UPLOspreyTransportCargoUnload",
+          "id": "OspreyTransport"
         },
         "Cost": {
           "Minerals": 0,
@@ -1010,25 +1010,6 @@
         "Tooltip": "Sends unloaded units to designated point.",
         "Name": "Set Rally Point",
         "Hotkey": "Y"
-      },
-      {
-        "Cost": {
-          "Minerals": 0,
-          "Vespene": 0,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 1,
-        "Column": 1,
-        "Type": "Passive",
-        "id": "CSVPersonnelCarrier",
-        "Icon": "btn-ability-upl-personnelcarrier",
-        "Tooltip": "Allows infantry to load into the CSV.<br/>Infantry loaded into a CSV are healed by <span style=\"color: #f078ff\"><b>5</b> life per <b>1</b> energy.</span>",
-        "Name": "Personnel Carrier"
       }
     ]
   },

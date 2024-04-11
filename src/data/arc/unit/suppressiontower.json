@@ -109,7 +109,7 @@
   "CostResource": {
     "Minerals": 200
   },
-  "AttackTargetPriority": 19,
+  "AttackTargetPriority": 20,
   "CardLayouts": {
     "Root": [
       {

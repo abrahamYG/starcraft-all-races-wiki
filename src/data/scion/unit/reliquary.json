@@ -1,6 +1,6 @@
 {
   "Name": "Reliquary",
-  "Description": "Upgrade tech facility.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>  - Nullifiers from the Converter<br/>  - Strati from the Converter",
+  "Description": "Contains weapon and armor upgrades for all Keiron units, and shield upgrades for all Keiron units and structures.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Nullifiers from Converters<br/>- Strati from Converters",
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 2,
   "DeathRevealDuration": 4,
@@ -18,7 +18,7 @@
   "TurningRate": 720,
   "Radius": 1.5,
   "SeparationRadius": 1.5,
-  "MinimapRadius": 1.5,
+  "MinimapRadius": 1.75,
   "EditorCategories": "ObjectType:Structure,ObjectFamily:Melee",
   "TacticalAIFilters": "-;Player,Ally,Neutral",
   "AIEvalFactor": 1,
@@ -98,17 +98,15 @@
     "Structure"
   ],
   "LifeArmor": 1,
-  "Sight": 10,
+  "Sight": 9,
   "CostCategory": "Technology",
   "ScoreResult": "BuildOrder",
   "HotkeyCategory": "Unit/Category/KeironUnits",
-  "LifeRegenRate": 0.25,
+  "LifeRegenRate": 0.2734,
   "Food": 6,
   "Footprint": "Footprint3x3Contour",
   "PlacementFootprint": "Footprint3x3",
   "ShieldArmorName": "Keiron Dispersion Shields",
-  "ShieldRegenDelay": 4,
-  "ShieldRegenRate": 1.25,
   "CardLayouts": {
     "Root": [
       {
@@ -160,16 +158,16 @@
             "Requirements": "LearnKeironShieldsLevel2"
           },
           "Resource": {
-            "Minerals": 225,
-            "Vespene": 225
+            "Minerals": 200,
+            "Vespene": 200
           },
           "Time": 190,
           "Upgrade": "KeironShieldsLevel2"
         },
         "Time": 190,
         "Cost": {
-          "Minerals": 225,
-          "Vespene": 225,
+          "Minerals": 200,
+          "Vespene": 200,
           "Terazine": 0,
           "Custom": 0,
           "Energy": 0,
@@ -198,16 +196,16 @@
             "Requirements": "LearnKeironShieldsLevel3"
           },
           "Resource": {
-            "Minerals": 300,
-            "Vespene": 300
+            "Minerals": 250,
+            "Vespene": 250
           },
           "Time": 220,
           "Upgrade": "KeironShieldsLevel3"
         },
         "Time": 220,
         "Cost": {
-          "Minerals": 300,
-          "Vespene": 300,
+          "Minerals": 250,
+          "Vespene": 250,
           "Terazine": 0,
           "Custom": 0,
           "Energy": 0,
@@ -253,12 +251,6 @@
           "EditorCategories": "Race:Neutral,AbilityorEffectType:Units",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -323,12 +315,6 @@
           "EditorCategories": "Race:Neutral,AbilityorEffectType:Structures",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -845,16 +831,20 @@
   "ShieldsStart": 350,
   "ShieldsMax": 350,
   "CostResource": {
-    "Minerals": 150
+    "Minerals": 200
   },
   "GlossaryPriority": 16,
-  "ScoreMake": 150,
-  "ScoreKill": 150,
+  "ScoreMake": 200,
+  "ScoreKill": 200,
   "Icon": "btn-building-keiron-reliquary",
   "LifeArmorIcon": "btn-upgrade-keiron-structurearmor",
   "ShieldArmorIcon": "btn-upgrade-keiron-shields-level0",
   "Weapons": [],
-  "Behaviors": [],
+  "Behaviors": [
+    {
+      "id": "KeironShellRestoration"
+    }
+  ],
   "Abilities": [
     {
       "id": "BuildInProgress",
@@ -881,7 +871,8 @@
     "KeironShieldsLevel2",
     "KeironShieldsLevel3",
     "KeironBuild",
-    "CountUnitReliquaryCompleteOnly"
+    "CountUnitReliquaryCompleteOnlyTechTreeCheat",
+    "KeironShieldsRevert"
   ],
   "$Requirements": [],
   "$Production": [],

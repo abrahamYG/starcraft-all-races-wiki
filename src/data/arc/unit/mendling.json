@@ -663,7 +663,7 @@
         "AbilCmd": "Mend,Execute",
         "id": "Mend",
         "Icon": "btn-ability-xayid-mendlingheal",
-        "Tooltip": "Instantly restores <b>20</b> life to target biological unit or structure.",
+        "Tooltip": "Instantly restores <b>25</b> life to target biological unit or structure.",
         "Name": "Mend",
         "Hotkey": "E"
       },
@@ -824,19 +824,10 @@
             }
           ],
           "TargetFilters": [
-            "-;Self,Neutral,Enemy,Structure,Missile,Cloaked,Stasis"
+            "Visible;Neutral,Enemy,Structure,Missile,Cloaked,Stasis,Dead,Hidden"
           ],
           "Range": [
             5
-          ],
-          "CastIntroTime": [
-            0.25
-          ],
-          "CastOutroTime": [
-            0.25
-          ],
-          "CursorEffect": [
-            "CoveringSprayAB"
           ],
           "id": "CoveringSpray"
         },
@@ -893,7 +884,7 @@
     "Vespene": 75
   },
   "InnerRadius": 0.375,
-  "CargoSize": 2,
+  "CargoSize": 1,
   "GlossaryPriority": 6,
   "SubgroupPriority": 73,
   "GlossaryAlias": "Mendling",
@@ -925,7 +916,7 @@
       "Amount": 12,
       "Kind": "Ranged",
       "TargetFilters": "",
-      "Range": 4,
+      "Range": 5,
       "Period": 1.26
     }
   ],
@@ -1024,7 +1015,7 @@
       "AbilCmd": "Mend,Execute",
       "id": "Mend",
       "Icon": "btn-ability-xayid-mendlingheal",
-      "Tooltip": "Instantly restores <b>20</b> life to target biological unit or structure.",
+      "Tooltip": "Instantly restores <b>25</b> life to target biological unit or structure.",
       "Name": "Mend"
     },
     {

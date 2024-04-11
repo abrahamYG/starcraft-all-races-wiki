@@ -37,6 +37,7 @@
     "PreventDestroy",
     "UseLineOfSight",
     "ArmySelect",
+    "AlwaysThreatens",
     "AICaster",
     "AISupport",
     "AIPressForwardDisabled"
@@ -716,6 +717,14 @@
           "CastIntroTime": [
             0.25
           ],
+          "Marker": {
+            "MatchFlags": {
+              "CasterPlayer": 1
+            }
+          },
+          "TargetFilters": [
+            "Visible;Missile,Stasis,Dead,Hidden"
+          ],
           "id": "AdaptiveInjection"
         },
         "Cost": {
@@ -734,28 +743,9 @@
         "AbilCmd": "AdaptiveInjection,Execute",
         "id": "AdaptiveInjection",
         "Icon": "btn-ability-xayid-dynamicinjection",
-        "Tooltip": "Can target either friendly or enemy units. When used on a friendly unit, it grants +40% attack speed, and +2 weapon range. When used on enemies, it has the opposite effect. Lasts for <b>15</b> seconds.",
+        "Tooltip": "Can target either friendly or enemy units. When used on a friendly unit, it grants +40% attack speed, and +3 weapon range. When used on enemies, it has the opposite effect. Lasts for <b>21</b> seconds.",
         "Name": "Adaptive Injection",
         "Hotkey": "T"
-      },
-      {
-        "Cost": {
-          "Minerals": 0,
-          "Vespene": 0,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 1,
-        "Column": 4,
-        "Type": "Passive",
-        "id": "Detector",
-        "Icon": "btn-status-detector",
-        "Tooltip": "This unit can detect cloaked, burrowed, and hallucinated units.",
-        "Name": "Detector"
       },
       {
         "Info": {
@@ -891,7 +881,7 @@
         "AbilCmd": "ProtectiveCloud,Execute",
         "id": "ProtectiveCloud",
         "Icon": "btn-ability-xayid-dynamiccoating",
-        "Tooltip": "Casts a cloud of gas, affected friendly units take 30% less damage from all effects.  Lasts for <b>20</b> seconds.",
+        "Tooltip": "Casts a cloud of gas, affected friendly units take 30% less damage from all effects.  Lasts for <b>28</b> seconds.",
         "Name": "Protective Cloud",
         "Hotkey": "R"
       },
@@ -1046,12 +1036,12 @@
           "Food": 0
         },
         "Row": 2,
-        "Column": 3,
+        "Column": 4,
         "Type": "Passive",
-        "id": "RefinedExcretion",
-        "Icon": "btn-upgrade-xayid-refinedexcretion",
-        "Tooltip": "<span style=\"color: #FFFF80\">Xayithoans</span> abilities gain +50% duration.",
-        "Name": "Refined Excretion"
+        "id": "Detector",
+        "Icon": "btn-status-detector",
+        "Tooltip": "This unit can detect cloaked, burrowed, and hallucinated units.",
+        "Name": "Detector"
       }
     ]
   },
@@ -1061,7 +1051,7 @@
   "Collide": [
     "Flying"
   ],
-  "Sight": 10,
+  "Sight": 11,
   "CostCategory": "Army",
   "ScoreResult": "BuildOrder",
   "GlossaryCategory": "Unit/Category/XayidUnits",
@@ -1079,7 +1069,7 @@
   "VisionHeight": 4,
   "GlossaryAlias": "Xayithoan",
   "LifeArmor": 1,
-  "EnergyStart": 50,
+  "EnergyStart": 75,
   "EnergyMax": 200,
   "EnergyRegenRate": 0.5625,
   "Speed": 2.9531,
@@ -1090,7 +1080,7 @@
   },
   "SubgroupPriority": 81,
   "TacticalAIThink": "AIThinkXayithoan",
-  "GlossaryPriority": 100,
+  "GlossaryPriority": 18,
   "Icon": "btn-unit-xayid-xayithoan",
   "LifeArmorIcon": "btn-upgrade-zerg-pneumatizedcarapace",
   "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
@@ -1098,7 +1088,9 @@
   "Behaviors": [
     {
       "id": "Detector11",
-      "Icon": "btn-status-detector"
+      "Icon": "btn-status-detector",
+      "Tooltip": "This unit can detect cloaked or burrowed units within its sight range.",
+      "Name": "Detector"
     }
   ],
   "Abilities": [
@@ -1126,11 +1118,11 @@
   "$Upgrades": [
     "XayidFlyerCarapaceLevel1",
     "Xayithoan",
-    "RefinedExcretion",
     "Xayithoan",
     "XayidFlyerCarapace",
     "XayidFlyerCarapaceLevel2",
     "XayidFlyerCarapaceLevel3",
+    "RefinedExcretion",
     "CatalystPit",
     "AerialNestWaspMutateXayidFlyers",
     "Wasp",
@@ -1193,14 +1185,14 @@
       "AbilCmd": "AdaptiveInjection,Execute",
       "id": "AdaptiveInjection",
       "Icon": "btn-ability-xayid-dynamicinjection",
-      "Tooltip": "Can target either friendly or enemy units. When used on a friendly unit, it grants +40% attack speed, and +2 weapon range. When used on enemies, it has the opposite effect. Lasts for <b>15</b> seconds.",
+      "Tooltip": "Can target either friendly or enemy units. When used on a friendly unit, it grants +40% attack speed, and +3 weapon range. When used on enemies, it has the opposite effect. Lasts for <b>21</b> seconds.",
       "Name": "Adaptive Injection"
     },
     {
       "AbilCmd": "ProtectiveCloud,Execute",
       "id": "ProtectiveCloud",
       "Icon": "btn-ability-xayid-dynamiccoating",
-      "Tooltip": "Casts a cloud of gas, affected friendly units take 30% less damage from all effects.  Lasts for <b>20</b> seconds.",
+      "Tooltip": "Casts a cloud of gas, affected friendly units take 30% less damage from all effects.  Lasts for <b>28</b> seconds.",
       "Name": "Protective Cloud"
     },
     {

@@ -746,7 +746,7 @@
       "AttributeBonus": {
         "Light": 3
       },
-      "Kind": "Ranged",
+      "Kind": "Melee",
       "TargetFilters": "Ground",
       "Range": 0.1,
       "Period": 1.25

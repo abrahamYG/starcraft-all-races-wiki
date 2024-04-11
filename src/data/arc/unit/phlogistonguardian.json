@@ -12,6 +12,7 @@
   "ResourceType": "Unknown",
   "LifeStart": 300,
   "LifeMax": 300,
+  "LifeArmorName": "Dragon Plate Armor",
   "Mover": "Ground",
   "StationaryTurningRate": 720,
   "TurningRate": 720,
@@ -172,6 +173,7 @@
         "Type": "AbilCmd",
         "AbilCmd": "que5PassiveCancelToSelection,CancelLast",
         "id": "Cancel",
+        "Icon": "btn-command-cancel",
         "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
         "Name": "Cancel",
         "Hotkey": "Esc"
@@ -462,8 +464,9 @@
       "id": "PhlogistonGuardianFulmination",
       "Icon": "fireball_1",
       "Name": "Fulmination",
-      "Amount": 14,
+      "Amount": 7,
       "Kind": "Ranged",
+      "DisplayAttackCount": 3,
       "TargetFilters": "Air",
       "Range": 7,
       "Period": 0.77
@@ -471,12 +474,13 @@
   ],
   "Behaviors": [
     {
-      "id": "DragonLineage",
-      "Name": "Dragon Lineage"
+      "id": "DragonLineage"
     },
     {
       "id": "Detector11",
-      "Icon": "btn-status-detector"
+      "Icon": "btn-status-detector",
+      "Tooltip": "This unit can detect cloaked or burrowed units within its sight range.",
+      "Name": "Detector"
     }
   ],
   "Abilities": [
@@ -519,6 +523,7 @@
     {
       "AbilCmd": "que5PassiveCancelToSelection,CancelLast",
       "id": "Cancel",
+      "Icon": "btn-command-cancel",
       "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
       "Name": "Cancel"
     },

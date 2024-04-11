@@ -1,6 +1,6 @@
 {
   "Name": "Boar",
-  "Description": "Armored craft with a bladed hull, and light machine guns. Can use Ignition Blast.<br/><br/><span style=\"color: #f078ff\">Energy user.</span><br/><span style=\"color: #FFFF80\">Can attack ground and air units.</span>",
+  "Description": "Armored craft with a bladed hull, and light machine guns. Can use Ignition Blast.<br/><br/><span style=\"color: #78F0FF\">Power user.</span><br/><span style=\"color: #FFFF80\">Can attack ground and air units.</span>",
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -10,15 +10,15 @@
   "Response": "Acquire",
   "ResourceState": "Unknown",
   "ResourceType": "Unknown",
-  "LifeStart": 175,
-  "LifeMax": 175,
+  "LifeStart": 225,
+  "LifeMax": 225,
   "LifeArmorName": "Mechanical Aircraft Plating",
   "Mover": "Fly",
   "StationaryTurningRate": 1440,
   "TurningRate": 1440,
-  "Radius": 0.625,
-  "SeparationRadius": 0.6875,
-  "MinimapRadius": 0.5,
+  "Radius": 0.875,
+  "SeparationRadius": 0.875,
+  "MinimapRadius": 0.875,
   "EditorCategories": "ObjectType:Unit,ObjectFamily:Melee",
   "TacticalAIFilters": "-;Player,Ally,Neutral",
   "AIEvalFactor": 1,
@@ -126,12 +126,6 @@
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
               "DisplayType": "Move",
               "Color": "255,35,125,255",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
@@ -219,12 +213,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -316,12 +304,6 @@
               "Color": "255,255,0,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -392,12 +374,6 @@
           "EditorCategories": "Race:Neutral,AbilityorEffectType:Units",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -476,12 +452,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -573,12 +543,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -607,7 +571,7 @@
             "Transient": 1
           },
           "Effect": [
-            "IgnitionBlast"
+            "BoarIgnitionBlastPowerEnum"
           ],
           "EffectRange": [
             "0,1000"
@@ -664,7 +628,8 @@
               "Flags": {
                 "ShowInGlossary": 1
               },
-              "DefaultButtonFace": "IgnitionBlast"
+              "DefaultButtonFace": "IgnitionBlast",
+              "Requirements": "BoarIgnitionBlastReq"
             }
           },
           "Cost": [
@@ -695,7 +660,7 @@
         "AbilCmd": "IgnitionBlast,Execute",
         "id": "IgnitionBlast",
         "Icon": "btn-ability-genetron-ignitionblast",
-        "Tooltip": "Casues the <span style=\"color: #FFFF80\">Boar</span> to have increased movement speed. Deals 15 damage when it comes into contact with enemy air units. Lasts <b>4</b> seconds.",
+        "Tooltip": "After a charge up time of <b>1</b> second, the caster gains increased movement speed and deals up to <b>100</b> damage to units it comes into contact with over <b>3</b> seconds.<br/><br/><span style=\"color: #78F0FF\">Uses <b>50</b> power.</span>",
         "Name": "Ignition Blast",
         "Hotkey": "R"
       }
@@ -704,13 +669,13 @@
   "CargoSize": 0,
   "Height": 3.75,
   "VisionHeight": 4,
-  "Food": -4,
+  "Food": -3,
   "CostResource": {
     "Minerals": 200,
-    "Vespene": 150
+    "Vespene": 125
   },
   "RepairTime": 35,
-  "SubgroupPriority": 47,
+  "SubgroupPriority": 48,
   "GlossaryPriority": 15,
   "GlossaryStrongArray": [
     "Hornet",
@@ -724,9 +689,10 @@
     "Battlecruiser",
     "Hydralisk"
   ],
-  "LateralAcceleration": 7,
+  "LateralAcceleration": 9,
   "EnergyStart": 50,
   "EnergyMax": 50,
+  "EnergyRegenRate": 1.6875,
   "Icon": "btn-unit-genetron-boar",
   "LifeArmorIcon": "btn-upgrade-genetron-aircraftplating-level0",
   "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
@@ -739,12 +705,18 @@
       "Kind": "Ranged",
       "TargetFilters": "",
       "Range": 5,
-      "Period": 1.106
+      "Period": 1.12
     }
   ],
   "Behaviors": [
     {
-      "id": "GenetronUnitEnergyRegenx3"
+      "id": "GenetronPowerSupplyTracker"
+    },
+    {
+      "id": "TrackGenetronPowerSupplyUnit"
+    },
+    {
+      "id": "BoarIgnitionBlastReq"
     }
   ],
   "Abilities": [
@@ -777,10 +749,13 @@
     "GenetronAircraftWeaponsLevel2",
     "GenetronAircraftWeaponsLevel3",
     "BuildAircraft",
+    "CountUnitBoarQueuedOrBetterAtUnit",
     "AssemblyArray",
     "ShapedHull",
-    "OutfittingStation",
-    "AssemblyArray"
+    "AssemblyArray",
+    "CountUnitBoarInProgressOnlyAtUnit",
+    "GenetronAircraftPlatingRevert",
+    "GenetronAircraftWeaponsRevert"
   ],
   "$Requirements": [],
   "$Production": [],
@@ -830,7 +805,7 @@
       "AbilCmd": "IgnitionBlast,Execute",
       "id": "IgnitionBlast",
       "Icon": "btn-ability-genetron-ignitionblast",
-      "Tooltip": "Casues the <span style=\"color: #FFFF80\">Boar</span> to have increased movement speed. Deals 15 damage when it comes into contact with enemy air units. Lasts <b>4</b> seconds.",
+      "Tooltip": "After a charge up time of <b>1</b> second, the caster gains increased movement speed and deals up to <b>100</b> damage to units it comes into contact with over <b>3</b> seconds.<br/><br/><span style=\"color: #78F0FF\">Uses <b>50</b> power.</span>",
       "Name": "Ignition Blast"
     }
   ]

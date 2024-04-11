@@ -113,12 +113,6 @@
               "Color": "255,255,0,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -246,19 +240,21 @@
     }
   ],
   "$Upgrades": [
-    "IsDroneBurrowed",
-    "DroneBurrowed",
-    "NotWorkerDroneBurrowed",
-    "Burrow",
-    "BurrowDroneDown",
     "ZergGroundArmorsLevel1",
+    "DroneBurrowed",
     "Drone",
+    "IsDroneBurrowed",
+    "Drone_Death",
     "ZergGroundArmors",
     "ZergGroundArmorsLevel2",
     "ZergGroundArmorsLevel3",
-    "Drone_Death",
+    "BurrowDroneDown",
+    "Burrow",
+    "BeaconUED",
     "DroneBurrowedSplat",
-    "ZergBurrowMove"
+    "BeaconUED_Death",
+    "UPLRenameZerg",
+    "NotWorkerDroneBurrowed"
   ],
   "$Requirements": [],
   "$Production": [],

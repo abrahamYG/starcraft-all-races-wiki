@@ -16,8 +16,8 @@
   "Mover": "Ground",
   "StationaryTurningRate": 990,
   "TurningRate": 990,
-  "Radius": 0.75,
-  "SeparationRadius": 0.75,
+  "Radius": 0.6875,
+  "SeparationRadius": 0.6875,
   "MinimapRadius": 0.75,
   "EditorCategories": "ObjectType:Unit,ObjectFamily:Melee",
   "TacticalAIFilters": "-;Player,Ally,Neutral",
@@ -37,6 +37,7 @@
     "PreventDestroy",
     "UseLineOfSight",
     "ArmySelect",
+    "AlwaysThreatens",
     "AICaster",
     "AIPressForwardDisabled"
   ],
@@ -739,7 +740,7 @@
         "Info": {
           "Button": {
             "Flags": {
-              "AllowMinimap": 0
+              "AllowMinimap": 1
             },
             "DefaultButtonFace": "PlaceAcidNest"
           },
@@ -747,13 +748,13 @@
             "CountMax": 3,
             "CountStart": 3,
             "CountUse": 1,
-            "TimeUse": 25
+            "TimeUse": 20
           },
-          "Unit": "AcidNestBuild",
-          "Time": 15
+          "Unit": "AcidNest",
+          "Time": 10
         },
-        "Unit": "AcidNestBuild",
-        "Time": 15,
+        "Unit": "AcidNest",
+        "Time": 10,
         "Cost": {
           "Minerals": 10,
           "Vespene": 5,
@@ -770,7 +771,7 @@
         "AbilCmd": "PlaceAcidNest,Build1",
         "id": "PlaceAcidNest",
         "Icon": "btn-ability-xayid-prowlerexplosive",
-        "Tooltip": "Explodes for <b>80</b> damage on contact with an enemy ground unit. Deals <b>35</b> splash damage to other units around it.",
+        "Tooltip": "Burrowed explosive mine. Deals <b>80</b> damage on contact with an enemy ground unit. Deals <b>35</b> splash damage to other enemy ground units around it.",
         "Name": "Place Acid Nest",
         "Hotkey": "C"
       },
@@ -790,7 +791,7 @@
         "Type": "Passive",
         "id": "ResidualAcid",
         "Icon": "btn-upgrade-xayid-residualacid",
-        "Tooltip": "<span style=\"color: #FFFF80\">Acid Nests</span> now leave behind a puddle of acid upon death, dealing <b>10</b> damage per second, and slowing enemies by 30% in an area. Lasts <b>20</b> seconds.",
+        "Tooltip": "<span style=\"color: #FFFF80\">Acid Nests</span> leave behind a puddle of acid upon death, dealing <b>10</b> damage per second, and slowing enemy movement speed by 30% in an area. Lasts <b>20</b> seconds.",
         "Name": "Residual Acid"
       }
     ]
@@ -802,7 +803,7 @@
     "Ground",
     "ForceField"
   ],
-  "Sight": 9,
+  "Sight": 10,
   "CostCategory": "Army",
   "ScoreResult": "BuildOrder",
   "GlossaryCategory": "Unit/Category/XayidUnits",
@@ -870,7 +871,7 @@
   ],
   "$Requirements": [],
   "$Production": [
-    "AcidNestBuild"
+    "AcidNest"
   ],
   "$Research": [],
   "$Morph": [],
@@ -932,7 +933,7 @@
       "AbilCmd": "PlaceAcidNest,Build1",
       "id": "PlaceAcidNest",
       "Icon": "btn-ability-xayid-prowlerexplosive",
-      "Tooltip": "Explodes for <b>80</b> damage on contact with an enemy ground unit. Deals <b>35</b> splash damage to other units around it.",
+      "Tooltip": "Burrowed explosive mine. Deals <b>80</b> damage on contact with an enemy ground unit. Deals <b>35</b> splash damage to other enemy ground units around it.",
       "Name": "Place Acid Nest"
     }
   ]

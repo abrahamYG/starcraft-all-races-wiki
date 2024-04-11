@@ -12,6 +12,7 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "BerserkerMadness",
+  "EditorCategories": "UpgradeType:Talents,Race:Dragon",
   "$tokens": {
     "ID": {
       "type": "string",
@@ -20,7 +21,6 @@
   },
   "Race": "Dragon",
   "ScoreAmount": 170,
-  "EditorCategories": "UpgradeType:Talents,Race:Dragon",
   "AffectedUnitArray": [
     "Berserker"
   ]

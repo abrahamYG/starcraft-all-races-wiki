@@ -12,6 +12,7 @@
   "ScoreValue": "WeaponTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "KeironMechWeapons",
+  "EditorCategories": "Race:Keiron,UpgradeType:AttackBonus",
   "$tokens": {
     "ID": {
       "type": "string",
@@ -27,6 +28,10 @@
     },
     {
       "Reference": "Weapon,ShadowCannon,Level",
+      "Value": "1"
+    },
+    {
+      "Reference": "Weapon,WardWeapon,Level",
       "Value": "1"
     },
     {
@@ -63,19 +68,11 @@
     },
     {
       "Reference": "Effect,ShadowCannonImpact,Amount",
-      "Value": "2"
-    },
-    {
-      "Reference": "Effect,ShadowCannonImpact,AttributeBonus[Armored]",
-      "Value": "1"
+      "Value": "3"
     },
     {
       "Reference": "Effect,GamutOrbLMImpact,Amount",
       "Value": "3"
-    },
-    {
-      "Reference": "Effect,GamutOrbLMImpact,AttributeBonus[Massive]",
-      "Value": "1"
     },
     {
       "Reference": "Effect,Lunge,Amount",
@@ -83,7 +80,11 @@
     },
     {
       "Reference": "Effect,TitanBlastImpact,Amount",
-      "Value": "2"
+      "Value": "1"
+    },
+    {
+      "Reference": "Effect,TitanBlastImpact,AttributeBonus[Light]",
+      "Value": "1"
     },
     {
       "Reference": "Effect,TitanWeaponDMG,Amount",
@@ -94,15 +95,15 @@
       "Value": "1"
     },
     {
-      "Reference": "Effect,HeraldEnergyCannonsLMImpact,Amount",
+      "Reference": "Effect,HeraldEnergyCannonsDMG,Amount",
       "Value": "2"
     },
     {
-      "Reference": "Effect,ParagonAirWeaponDMG,Amount",
+      "Reference": "Effect,ParagonAirWeaponImpact,Amount",
       "Value": "4"
     },
     {
-      "Reference": "Effect,ParagonGroundWeaponDMG,Amount",
+      "Reference": "Effect,ParagonGroundWeaponImpact,Amount",
       "Value": "1"
     },
     {
@@ -113,6 +114,11 @@
     {
       "Operation": "Set",
       "Reference": "Weapon,ShadowCannon,Icon",
+      "Value": "Assets\\Textures\\btn-upgrade-keiron-mechanicalweaponslevel1.dds"
+    },
+    {
+      "Operation": "Set",
+      "Reference": "Weapon,WardWeapon,Icon",
       "Value": "Assets\\Textures\\btn-upgrade-keiron-mechanicalweaponslevel1.dds"
     },
     {
@@ -149,11 +155,15 @@
       "Operation": "Set",
       "Reference": "Weapon,ParagonGroundWeapon,Icon",
       "Value": "Assets\\Textures\\btn-upgrade-keiron-mechanicalweaponslevel1.dds"
+    },
+    {
+      "Reference": "Effect,WardWeaponLMImpact,Amount",
+      "Value": "1"
     }
   ],
-  "EditorCategories": "Race:Keiron,UpgradeType:AttackBonus",
   "AffectedUnitArray": [
     "Umbra",
+    "Ward",
     "Inducer",
     "Myriad",
     "Elytron",

@@ -159,12 +159,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -224,12 +218,6 @@
           "EditorCategories": "Race:Neutral,AbilityorEffectType:Structures",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -379,7 +367,8 @@
             "NotResourcesOrEnemyTargetType"
           ],
           "UseValidators": [
-            "NotQueen"
+            "NotQueen",
+            "NotOverlord"
           ],
           "UseFilters": "-;Worker"
         },
@@ -409,7 +398,8 @@
             "NotResourcesOrEnemyTargetType"
           ],
           "UseValidators": [
-            "NotQueen"
+            "NotQueen",
+            "NotOverlord"
           ],
           "UseFilters": "-;Worker"
         },
@@ -446,8 +436,7 @@
           "Unit": [
             "Queen"
           ],
-          "Time": 50,
-          "Effect": ""
+          "Time": 50
         },
         "Unit": [
           "Queen"
@@ -552,46 +541,6 @@
         "Tooltip": "Enables all Zerg ground units to use the Burrow ability. Burrow allows a unit to take cover underground, rendering it unable to attack. A burrowed unit is invisible unless revealed by detectors or effects.",
         "Name": "Evolve Burrow",
         "Hotkey": "B"
-      },
-      {
-        "Upgrade": "overlordtransport",
-        "Info": {
-          "Button": {
-            "Flags": {
-              "AllowMinimap": 0,
-              "ShowInGlossary": 1,
-              "ToSelection": 1
-            },
-            "DefaultButtonFace": "EvolveVentralSacks",
-            "Requirements": "LearnVentralSacs"
-          },
-          "Resource": {
-            "Minerals": 200,
-            "Vespene": 200
-          },
-          "Time": 130,
-          "Upgrade": "overlordtransport"
-        },
-        "Time": 130,
-        "Cost": {
-          "Minerals": 200,
-          "Vespene": 200,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 1,
-        "Column": 1,
-        "Type": "AbilCmd",
-        "AbilCmd": "LairResearch,Research3",
-        "id": "EvolveVentralSacks",
-        "Icon": "btn-upgrade-zerg-ventralsacs",
-        "Tooltip": "Allows <span style=\"color: #ffff8a\">Overlords</span> to transport units.",
-        "Name": "Evolve Ventral Sacs",
-        "Hotkey": "E"
       }
     ]
   },
@@ -648,11 +597,10 @@
     }
   ],
   "$Upgrades": [
-    "CountUnitAlias_LairCompleteOnly1515591279TechTreeCheat",
+    "CountUnitLairCompleteOnlyTechTreeCheat",
     "Lair",
     "IsLair",
-    "CountUnitLairCompleteOnlyTechTreeCheat",
-    "CountUnitLairCompleteOnly1515591279",
+    "CountUnitAlias_LairCompleteOnly1515591279TechTreeCheat",
     "UpgradeToLair",
     "ZergHatcheryToLair",
     "ZergLairToHive",
@@ -663,8 +611,9 @@
     "ZergBuildingStopSound",
     "ZergBuildingMorphCancel",
     "NotLair",
-    "CountUnitAlias_LairCompleteOnly556944322",
     "CountUnitLairCompleteOnly",
+    "CountUnitAlias_LairCompleteOnly556944322",
+    "CountUnitLairCompleteOnly1515591279",
     "CountUnitLairCompleteOnly1515591279TechTreeCheat"
   ],
   "$Requirements": [],
@@ -674,8 +623,7 @@
   ],
   "$Research": [
     "overlordspeed",
-    "Burrow",
-    "overlordtransport"
+    "Burrow"
   ],
   "$Morph": [
     "Hive"
@@ -745,13 +693,6 @@
       "Icon": "btn-ability-zerg-burrow-color",
       "Tooltip": "Enables all Zerg ground units to use the Burrow ability. Burrow allows a unit to take cover underground, rendering it unable to attack. A burrowed unit is invisible unless revealed by detectors or effects.",
       "Name": "Evolve Burrow"
-    },
-    {
-      "AbilCmd": "LairResearch,Research3",
-      "id": "EvolveVentralSacks",
-      "Icon": "btn-upgrade-zerg-ventralsacs",
-      "Tooltip": "Allows <span style=\"color: #ffff8a\">Overlords</span> to transport units.",
-      "Name": "Evolve Ventral Sacs"
     }
   ]
 }

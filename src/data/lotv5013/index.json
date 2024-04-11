@@ -1,0 +1,18 @@
+{
+  "discord": "https://discord.gg/Xx9xurbb4u",
+  "id": "voidMulti",
+  "races": [
+    {
+      "id": "Terr",
+      "Name": "Terran"
+    },
+    {
+      "id": "Prot",
+      "Name": "Protoss"
+    },
+    {
+      "id": "Zerg",
+      "Name": "Zerg"
+    }
+  ]
+}

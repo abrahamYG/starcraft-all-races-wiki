@@ -12,6 +12,7 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "StrikeGrenade",
+  "EditorCategories": "Race:UED,UpgradeType:SpellResearch",
   "$tokens": {
     "ID": {
       "type": "string",
@@ -19,11 +20,22 @@
     }
   },
   "InfoTooltipPriority": 1,
-  "EditorCategories": "Race:UED,UpgradeType:SpellResearch",
   "Race": "UED",
   "ScoreAmount": 200,
   "ScoreResult": "BuildOrder",
   "AffectedUnitArray": [
     "PoliticalAdvisor"
+  ],
+  "EffectArray": [
+    {
+      "Operation": "Subtract",
+      "Reference": "Behavior,AlgoritmStrikeGrenadeAlone,Modification.AttackSpeedMultiplier",
+      "Value": "0.1"
+    },
+    {
+      "Operation": "Subtract",
+      "Reference": "Behavior,AlgoritmStrikeGrenadeDouble,Modification.AttackSpeedMultiplier",
+      "Value": "0.1"
+    }
   ]
 }

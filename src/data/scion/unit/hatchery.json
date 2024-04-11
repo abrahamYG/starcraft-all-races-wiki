@@ -158,12 +158,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -272,12 +266,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -378,7 +366,8 @@
             "NotResourcesOrEnemyTargetType"
           ],
           "UseValidators": [
-            "NotQueen"
+            "NotQueen",
+            "NotOverlord"
           ],
           "UseFilters": "-;Worker"
         },
@@ -415,8 +404,7 @@
           "Unit": [
             "Queen"
           ],
-          "Time": 50,
-          "Effect": ""
+          "Time": 50
         },
         "Unit": [
           "Queen"
@@ -448,7 +436,8 @@
             "NotResourcesOrEnemyTargetType"
           ],
           "UseValidators": [
-            "NotQueen"
+            "NotQueen",
+            "NotOverlord"
           ],
           "UseFilters": "-;Worker"
         },
@@ -553,28 +542,19 @@
         "Hotkey": "B"
       },
       {
-        "Upgrade": "overlordtransport",
         "Info": {
-          "Button": {
-            "Flags": {
-              "AllowMinimap": 0,
-              "ShowInGlossary": 1,
-              "ToSelection": 1
-            },
-            "DefaultButtonFace": "EvolveVentralSacks",
-            "Requirements": "LearnVentralSacs"
-          },
-          "Resource": {
-            "Minerals": 200,
-            "Vespene": 200
-          },
-          "Time": 130,
-          "Upgrade": "overlordtransport"
+          "SetValidators": [
+            "NotResourcesOrEnemyTargetType"
+          ],
+          "UseValidators": [
+            "NotQueen",
+            "NotOverlord"
+          ],
+          "UseFilters": "-;Worker"
         },
-        "Time": 130,
         "Cost": {
-          "Minerals": 200,
-          "Vespene": 200,
+          "Minerals": 0,
+          "Vespene": 0,
           "Terazine": 0,
           "Custom": 0,
           "Energy": 0,
@@ -583,14 +563,14 @@
           "Food": 0
         },
         "Row": 1,
-        "Column": 1,
+        "Column": 2,
         "Type": "AbilCmd",
-        "AbilCmd": "LairResearch,Research3",
-        "id": "EvolveVentralSacks",
-        "Icon": "btn-upgrade-zerg-ventralsacs",
-        "Tooltip": "Allows <span style=\"color: #ffff8a\">Overlords</span> to transport units.",
-        "Name": "Evolve Ventral Sacs",
-        "Hotkey": "E"
+        "AbilCmd": "RallyHatchery,Rally3",
+        "id": "RallyOverlord",
+        "Icon": "btn-ability-terran-setrallypoint",
+        "Tooltip": "Sends morphed Overlords to the designated point.",
+        "Name": "Set Overlord Rally Point",
+        "Hotkey": "O"
       }
     ]
   },
@@ -651,18 +631,17 @@
     }
   ],
   "$Upgrades": [
-    "ZergBuild",
-    "Zerg",
     "IsHatchery",
-    "Hatchery",
+    "Zerg",
+    "ZergBuild",
     "CountUnitAlias_HatcheryCompleteOnly3846943109TechTreeCheat",
+    "Hatchery",
     "ZergHatcheryToLair",
     "Hatchery",
     "ZergHatcheryPlayerDecalMacro",
     "Lair",
     "ZergBuildingStopSound",
-    "NotHatchery",
-    "Hatchery"
+    "NotHatchery"
   ],
   "$Requirements": [],
   "$Production": [
@@ -671,8 +650,7 @@
   ],
   "$Research": [
     "overlordspeed",
-    "Burrow",
-    "overlordtransport"
+    "Burrow"
   ],
   "$Morph": [
     "Lair"
@@ -746,11 +724,11 @@
       "Name": "Evolve Burrow"
     },
     {
-      "AbilCmd": "LairResearch,Research3",
-      "id": "EvolveVentralSacks",
-      "Icon": "btn-upgrade-zerg-ventralsacs",
-      "Tooltip": "Allows <span style=\"color: #ffff8a\">Overlords</span> to transport units.",
-      "Name": "Evolve Ventral Sacs"
+      "AbilCmd": "RallyHatchery,Rally3",
+      "id": "RallyOverlord",
+      "Icon": "btn-ability-terran-setrallypoint",
+      "Tooltip": "Sends morphed Overlords to the designated point.",
+      "Name": "Set Overlord Rally Point"
     }
   ]
 }

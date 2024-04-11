@@ -85,6 +85,7 @@
   "PlaneArray": [
     "Ground"
   ],
+  "AttackTargetPriority": 18,
   "Collide": [
     "Ground",
     "ForceField"
@@ -95,19 +96,17 @@
     "Structure"
   ],
   "LifeArmor": 5,
-  "LifeRegenDelay": 3,
-  "LifeRegenRate": 0.5,
   "Sight": 5,
   "CostCategory": "Army",
-  "ScoreResult": "BuildOrder",
+  "ScoreResult": "",
   "HotkeyCategory": "Unit/Category/XayidUnits",
   "id": "VolatileDischarge",
   "CostResource": {
-    "Minerals": 75,
-    "Vespene": 75
+    "Minerals": 25,
+    "Vespene": 25
   },
-  "ScoreMake": 150,
-  "ScoreKill": 150,
+  "ScoreMake": 50,
+  "ScoreKill": 50,
   "SubgroupPriority": 43,
   "CardLayouts": {
     "Root": [
@@ -123,12 +122,6 @@
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
@@ -241,7 +234,6 @@
       }
     ]
   },
-  "AttackTargetPriority": 10,
   "GlossaryCategory": "Unit/Category/XayidUnits",
   "GlossaryPriority": 50,
   "Icon": "btn-ability-xayid-volatiledischarge",
@@ -261,6 +253,7 @@
   ],
   "$Upgrades": [
     "VolatileDischargeCU",
+    "VolatileDischarge",
     "VolatileDischarge",
     "VolatileDischarge",
     "VolatileDischargeUnitRange",

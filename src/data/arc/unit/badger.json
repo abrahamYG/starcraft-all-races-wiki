@@ -1,6 +1,6 @@
 {
   "Name": "Badger",
-  "Description": "Large gunship.<br/><br/><span style=\"color: #78F0FF\">Power user.</span><br/><span style=\"color: #FFFF80\">Can attack ground and air units simultaneously.</span>",
+  "Description": "Large gunship. Can use Powershell.<br/><br/><span style=\"color: #78F0FF\">Power user.</span><br/><span style=\"color: #FFFF80\">Can attack ground and air units simultaneously.</span>",
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -534,7 +534,7 @@
       {
         "Info": {
           "class": "CAbilBehavior",
-          "Name": "Abil/Name/BadgerEnergyShield",
+          "Name": "Abil/Name/BadgerPowershell",
           "TechPlayer": "Upkeep",
           "EditorCategories": "Race:Genetron,AbilityorEffectType:Units",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
@@ -549,7 +549,7 @@
           "SharedFlags": {
             "DisableWhileDead": 1
           },
-          "DataCollection": "BadgerEnergyShield",
+          "DataCollection": "BadgerPowershell",
           "$tokens": {
             "ID": {
               "type": "string",
@@ -559,7 +559,8 @@
           "CmdButtonArray": {
             "On": {
               "Flags": {
-                "ShowInGlossary": 1
+                "ShowInGlossary": 1,
+                "ToSelection": 1
               },
               "DefaultButtonFace": "BadgerPowershell"
             },
@@ -569,6 +570,7 @@
           },
           "VeterancyLevelMin": 0,
           "VeterancyLevelSkip": 0,
+          "AbilSetId": "Powershell",
           "Flags": {
             "Toggle": 1,
             "Transient": 1
@@ -588,7 +590,7 @@
           "BehaviorArray": [
             "BadgerPowershell"
           ],
-          "id": "BadgerEnergyShield"
+          "id": "BadgerPowershell"
         },
         "Cost": {
           "Minerals": 0,
@@ -603,10 +605,10 @@
         "Row": 2,
         "Column": 0,
         "Type": "AbilCmd",
-        "AbilCmd": "BadgerEnergyShield,On",
+        "AbilCmd": "BadgerPowershell,On",
         "id": "BadgerPowershell",
         "Icon": "btn-ability-stetmann-garypersonalstetzone-speed",
-        "Tooltip": "Converts energy into a shield.<br/><br/><span style=\"color: #f078ff\">Drains <b>1.5</b> energy per second.</span><br/><span style=\"color: #78F0FF\">Uses power.</span>",
+        "Tooltip": "Causes all damage received to be absorbed by energy.<br/><br/><span style=\"color: #f078ff\">Drains <b>1.5</b> energy and <span style=\"color: #78F0FF\">power</span> per second.</span><br/><span style=\"color: #78F0FF\">100% of damage received is taken from the power grid.</span>",
         "Name": "Powershell",
         "Hotkey": "E"
       },
@@ -626,14 +628,14 @@
         "Type": "Passive",
         "id": "BadgerPowershell",
         "Icon": "btn-ability-stetmann-garypersonalstetzone-speed",
-        "Tooltip": "Converts energy into a shield.<br/><br/><span style=\"color: #f078ff\">Drains <b>1.5</b> energy per second.</span><br/><span style=\"color: #78F0FF\">Uses power.</span>",
+        "Tooltip": "Causes all damage received to be absorbed by energy.<br/><br/><span style=\"color: #f078ff\">Drains <b>1.5</b> energy and <span style=\"color: #78F0FF\">power</span> per second.</span><br/><span style=\"color: #78F0FF\">100% of damage received is taken from the power grid.</span>",
         "Name": "Powershell",
         "Hotkey": "E"
       },
       {
         "Info": {
           "class": "CAbilBehavior",
-          "Name": "Abil/Name/BadgerEnergyShield",
+          "Name": "Abil/Name/BadgerPowershell",
           "TechPlayer": "Upkeep",
           "EditorCategories": "Race:Genetron,AbilityorEffectType:Units",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
@@ -648,7 +650,7 @@
           "SharedFlags": {
             "DisableWhileDead": 1
           },
-          "DataCollection": "BadgerEnergyShield",
+          "DataCollection": "BadgerPowershell",
           "$tokens": {
             "ID": {
               "type": "string",
@@ -658,7 +660,8 @@
           "CmdButtonArray": {
             "On": {
               "Flags": {
-                "ShowInGlossary": 1
+                "ShowInGlossary": 1,
+                "ToSelection": 1
               },
               "DefaultButtonFace": "BadgerPowershell"
             },
@@ -668,6 +671,7 @@
           },
           "VeterancyLevelMin": 0,
           "VeterancyLevelSkip": 0,
+          "AbilSetId": "Powershell",
           "Flags": {
             "Toggle": 1,
             "Transient": 1
@@ -687,7 +691,7 @@
           "BehaviorArray": [
             "BadgerPowershell"
           ],
-          "id": "BadgerEnergyShield"
+          "id": "BadgerPowershell"
         },
         "Cost": {
           "Minerals": 0,
@@ -702,8 +706,9 @@
         "Row": 2,
         "Column": 4,
         "Type": "AbilCmd",
-        "AbilCmd": "BadgerEnergyShield,Off",
+        "AbilCmd": "BadgerPowershell,Off",
         "id": "Cancel",
+        "Icon": "btn-command-cancel",
         "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
         "Name": "Cancel",
         "Hotkey": "Esc"
@@ -802,8 +807,8 @@
       "Name": "Attack"
     },
     {
-      "id": "BadgerEnergyShield",
-      "Name": "Badger - Energy Shield"
+      "id": "BadgerPowershell",
+      "Name": "Badger - Powershell"
     }
   ],
   "$Upgrades": [
@@ -820,10 +825,10 @@
     "GenetronAircraftWeaponsLevel3",
     "OrdnanceCache",
     "BuildAircraft",
-    "CountUnitBadgerInProgressOnlyAtUnit",
     "CountUnitBadgerQueuedOrBetterAtUnit",
     "AssemblyArray",
     "AssemblyArray",
+    "CountUnitBadgerInProgressOnlyAtUnit",
     "GenetronAircraftPlatingRevert",
     "GenetronAircraftWeaponsRevert",
     "IsBadger"
@@ -873,15 +878,16 @@
       "Name": "Move"
     },
     {
-      "AbilCmd": "BadgerEnergyShield,On",
+      "AbilCmd": "BadgerPowershell,On",
       "id": "BadgerPowershell",
       "Icon": "btn-ability-stetmann-garypersonalstetzone-speed",
-      "Tooltip": "Converts energy into a shield.<br/><br/><span style=\"color: #f078ff\">Drains <b>1.5</b> energy per second.</span><br/><span style=\"color: #78F0FF\">Uses power.</span>",
+      "Tooltip": "Causes all damage received to be absorbed by energy.<br/><br/><span style=\"color: #f078ff\">Drains <b>1.5</b> energy and <span style=\"color: #78F0FF\">power</span> per second.</span><br/><span style=\"color: #78F0FF\">100% of damage received is taken from the power grid.</span>",
       "Name": "Powershell"
     },
     {
-      "AbilCmd": "BadgerEnergyShield,Off",
+      "AbilCmd": "BadgerPowershell,Off",
       "id": "Cancel",
+      "Icon": "btn-command-cancel",
       "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
       "Name": "Cancel"
     }

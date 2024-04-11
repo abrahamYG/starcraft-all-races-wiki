@@ -170,6 +170,7 @@
         "Type": "AbilCmd",
         "AbilCmd": "que5,CancelLast",
         "id": "Cancel",
+        "Icon": "btn-command-cancel",
         "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
         "Name": "Cancel",
         "Hotkey": "Esc"
@@ -311,7 +312,8 @@
         "id": "ButtonUpgadeStrikeFighterSpeed",
         "Icon": "btn-upgrade-terran-nova-specialordance",
         "Tooltip": "A small injection of prepared plasma greatly increases the speed of the <span style=\"color: #FFFF80\"> Strikefighter </span> by 4 seconds.",
-        "Name": "Authorization Request: Plasma Fuel"
+        "Name": "Authorization Request: Plasma Fuel",
+        "Hotkey": "W"
       },
       {
         "Cost": {
@@ -329,7 +331,7 @@
         "Type": "Passive",
         "id": "UEDButtonAmmunitionDepot",
         "Icon": "btn-ability-mengsk-siegetank-flyingtankarmament",
-        "Tooltip": "Allows you to store ammunition for a Strikefighter and issue it as needed.",
+        "Tooltip": "Allows you to store ammunition for a Strikefighters and issue it as needed.",
         "Name": "Ammunition depot"
       }
     ]
@@ -389,8 +391,7 @@
     "StarshipMaintenancePlant",
     "StarshipMaintenancePlantSplat",
     "CountUnitArmoryCompleteOnly22",
-    "CountUnitArmoryCompleteOnlyTechTreeCheat22",
-    null
+    "CountUnitArmoryCompleteOnlyTechTreeCheat22"
   ],
   "$Requirements": [],
   "$Production": [],
@@ -408,6 +409,7 @@
     {
       "AbilCmd": "que5,CancelLast",
       "id": "Cancel",
+      "Icon": "btn-command-cancel",
       "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
       "Name": "Cancel"
     },

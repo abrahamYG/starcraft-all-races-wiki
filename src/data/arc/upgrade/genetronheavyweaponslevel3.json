@@ -12,6 +12,7 @@
   "ScoreValue": "WeaponTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "GenetronHeavyWeapons",
+  "EditorCategories": "Race:Genetron,UpgradeType:AttackBonus",
   "$tokens": {
     "ID": {
       "type": "string",
@@ -99,11 +100,10 @@
       "Value": "Assets\\Textures\\btn-upgrade-genetron-heavymechweapons-level3.dds"
     }
   ],
-  "EditorCategories": "Race:Genetron,UpgradeType:AttackBonus",
   "AffectedUnitArray": [
     "Torrent",
     "Mole",
-    "MoleBurrowed",
+    "MoleRooted",
     "Inciter",
     "Virtus"
   ],

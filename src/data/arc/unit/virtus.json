@@ -10,8 +10,8 @@
   "Response": "Acquire",
   "ResourceState": "Unknown",
   "ResourceType": "Unknown",
-  "LifeStart": 400,
-  "LifeMax": 400,
+  "LifeStart": 375,
+  "LifeMax": 375,
   "LifeArmorName": "Ground Mechanical Plating",
   "Mover": "Ground",
   "StationaryTurningRate": 990,
@@ -664,7 +664,7 @@
         "AbilCmd": "VirtusSelffixProtocol,Execute",
         "id": "SelfFixProtocol",
         "Icon": "btn-upgrade-swann-regenerativebiosteel",
-        "Tooltip": "Heals <b>150</b> health over <b>4</b> seconds while disabling movement and weapons. Reduces received weapon damage by <b>25</b>%.<br/><br/><span style=\"color: #78F0FF\">Uses power.</span>",
+        "Tooltip": "Heals <b>150</b> health over <b>4</b> seconds while disabling movement and weapons. Reduces received weapon damage by <b>25</b>%.<br/><br/><span style=\"color: #78F0FF\">Uses <b>100</b> power.<c/>",
         "Name": "Self-Fix Protocol",
         "Hotkey": "F"
       }
@@ -673,15 +673,15 @@
   "CargoSize": 8,
   "Food": -4,
   "CostResource": {
-    "Minerals": 275,
-    "Vespene": 125
+    "Minerals": 250,
+    "Vespene": 100
   },
   "RepairTime": 56,
   "InnerRadius": 0.75,
   "SubgroupPriority": 32,
-  "GlossaryPriority": 11,
+  "GlossaryPriority": 10,
   "GlossaryStrongArray": [
-    "Blaze",
+    "Fixer",
     "Zealot",
     "Marine",
     "Zergling"
@@ -708,7 +708,7 @@
       "Kind": "Ranged",
       "TargetFilters": "Ground",
       "Range": 4,
-      "Period": 1.694
+      "Period": 1.75
     }
   ],
   "Behaviors": [
@@ -749,14 +749,14 @@
     "GenetronHeavyWeapons",
     "GenetronHeavyWeaponsLevel2",
     "GenetronHeavyWeaponsLevel3",
+    "TechVault",
     "GenetronGroundPlatingLevel2",
     "GenetronGroundPlatingLevel3",
-    "ChemicalFirm",
     "TrainHeavyweightMechs",
-    "CountUnitVirtusInProgressOnlyAtUnit",
     "CountUnitVirtusQueuedOrBetterAtUnit",
     "Fabricator",
     "Fabricator",
+    "CountUnitVirtusInProgressOnlyAtUnit",
     "GenetronGroundPlatingRevert",
     "GenetronHeavyWeaponsRevert",
     "SelffixProtocol"
@@ -809,7 +809,7 @@
       "AbilCmd": "VirtusSelffixProtocol,Execute",
       "id": "SelfFixProtocol",
       "Icon": "btn-upgrade-swann-regenerativebiosteel",
-      "Tooltip": "Heals <b>150</b> health over <b>4</b> seconds while disabling movement and weapons. Reduces received weapon damage by <b>25</b>%.<br/><br/><span style=\"color: #78F0FF\">Uses power.</span>",
+      "Tooltip": "Heals <b>150</b> health over <b>4</b> seconds while disabling movement and weapons. Reduces received weapon damage by <b>25</b>%.<br/><br/><span style=\"color: #78F0FF\">Uses <b>100</b> power.<c/>",
       "Name": "Self-Fix Protocol"
     }
   ]

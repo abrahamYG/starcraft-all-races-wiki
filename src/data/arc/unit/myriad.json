@@ -543,7 +543,7 @@
         "Unit": "Elytron",
         "Time": 15.4,
         "Cost": {
-          "Minerals": 50,
+          "Minerals": 30,
           "Vespene": 0,
           "Terazine": 0,
           "Custom": 0,
@@ -822,8 +822,8 @@
     "AnisopteraWings",
     "Myriad",
     "Atrium",
-    "CitadelCharged",
     "KeironCitadelMaterialize",
+    "CitadelCharged",
     "KeironMechWeaponsLevel1",
     "KeironMechWeapons",
     "KeironMechWeaponsLevel2",

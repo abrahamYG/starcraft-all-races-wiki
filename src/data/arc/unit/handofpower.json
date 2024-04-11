@@ -10,8 +10,9 @@
   "Response": "Acquire",
   "ResourceState": "Unknown",
   "ResourceType": "Unknown",
-  "LifeStart": 90,
-  "LifeMax": 90,
+  "LifeStart": 150,
+  "LifeMax": 150,
+  "LifeArmorName": "Dragon Plate Armor",
   "Mover": "Ground",
   "StationaryTurningRate": 720,
   "TurningRate": 720,
@@ -1343,7 +1344,7 @@
         "AbilCmd": "HandofPowerFrenzy,Execute",
         "id": "HandofPowerFrenzy",
         "Icon": "btn-ability-kerrigan-wildmutation",
-        "Tooltip": "Biological units in the target area to go mad for <b>10</b> seconds. Increases attack and movement speed by 50% but reduces armor by 2 and prevents control.",
+        "Tooltip": "Biological units in the target area to go mad for <b>14</b> seconds rendering them immune to Spell damage. Increases attack and movement speed by 50% but reduces armor by 2 and prevents control.",
         "Name": "Frenzy",
         "Hotkey": "W"
       },
@@ -1450,7 +1451,7 @@
           },
           "FollowRange": 5,
           "Range": [
-            9
+            15
           ],
           "CastOutroTime": [
             0.5
@@ -1483,7 +1484,7 @@
         "AbilCmd": "HandofPowerPortalEntrance,Execute",
         "id": "HandofPowerPortalEntrance",
         "Icon": "btn-ability-protoss-blackhole-color",
-        "Tooltip": "Creates a portal entrance at the target location which teleports ground units that enter it to the next created portal exit. Lasts <b>14</b> seconds.<br/><br/><c val=\"#ColorAttackInfo\">Massive units are immune.",
+        "Tooltip": "Creates a portal entrance at the target location which teleports ground units that enter it to the next created portal exit. Lasts <b>28</b> seconds.<br/><br/><c val=\"#ColorAttackInfo\">Massive units are immune.",
         "Name": "Portal Entrance",
         "Hotkey": "E"
       },
@@ -1670,18 +1671,20 @@
     "Ultralisk",
     "Ghost"
   ],
+  "LifeArmor": 1,
   "Icon": "btn-unit-zerg-impaler",
   "LifeArmorIcon": "btn-upgrade-zerg-groundcarapace-level0",
   "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
   "Weapons": [],
   "Behaviors": [
     {
-      "id": "DragonLineageLesser",
-      "Name": "Dragon Lineage"
+      "id": "DragonLineageLesser"
     },
     {
       "id": "Detector11",
-      "Icon": "btn-status-detector"
+      "Icon": "btn-status-detector",
+      "Tooltip": "This unit can detect cloaked or burrowed units within its sight range.",
+      "Name": "Detector"
     }
   ],
   "Abilities": [
@@ -1835,14 +1838,14 @@
       "AbilCmd": "HandofPowerFrenzy,Execute",
       "id": "HandofPowerFrenzy",
       "Icon": "btn-ability-kerrigan-wildmutation",
-      "Tooltip": "Biological units in the target area to go mad for <b>10</b> seconds. Increases attack and movement speed by 50% but reduces armor by 2 and prevents control.",
+      "Tooltip": "Biological units in the target area to go mad for <b>14</b> seconds rendering them immune to Spell damage. Increases attack and movement speed by 50% but reduces armor by 2 and prevents control.",
       "Name": "Frenzy"
     },
     {
       "AbilCmd": "HandofPowerPortalEntrance,Execute",
       "id": "HandofPowerPortalEntrance",
       "Icon": "btn-ability-protoss-blackhole-color",
-      "Tooltip": "Creates a portal entrance at the target location which teleports ground units that enter it to the next created portal exit. Lasts <b>14</b> seconds.<br/><br/><c val=\"#ColorAttackInfo\">Massive units are immune.",
+      "Tooltip": "Creates a portal entrance at the target location which teleports ground units that enter it to the next created portal exit. Lasts <b>28</b> seconds.<br/><br/><c val=\"#ColorAttackInfo\">Massive units are immune.",
       "Name": "Portal Entrance"
     },
     {

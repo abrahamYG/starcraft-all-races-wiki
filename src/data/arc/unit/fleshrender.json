@@ -1095,25 +1095,20 @@
       "TargetFilters": "Ground",
       "Range": 3,
       "Period": 0.91
-    },
-    {}
+    }
   ],
   "Behaviors": [
     {
-      "id": "DragonLineageLesser",
-      "Name": "Dragon Lineage"
+      "id": "DragonLineageLesser"
     },
     {
-      "id": "Negative1Armor",
-      "Name": "-1 Armor"
+      "id": "Negative1Armor"
     },
     {
-      "id": "Fleshrender",
-      "Name": "Fleshrender"
+      "id": "Fleshrender"
     },
     {
-      "id": "FleshrenderInfernalEffigy",
-      "Name": "Fleshrender - Infernal Effigy"
+      "id": "FleshrenderInfernalEffigy"
     }
   ],
   "Abilities": [

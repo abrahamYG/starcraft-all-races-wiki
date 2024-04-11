@@ -138,12 +138,12 @@
           "Unit": [
             "Assailant"
           ],
-          "Time": 45
+          "Time": 38
         },
         "Unit": [
           "Assailant"
         ],
-        "Time": 45,
+        "Time": 38,
         "Cost": {
           "Minerals": 150,
           "Vespene": 150,
@@ -160,7 +160,7 @@
         "AbilCmd": "AerialNestWaspMutateXayidFlyers,Train8",
         "id": "Assailant",
         "Icon": "btn-unit-xayid-assailant",
-        "Tooltip": "Anti-ground assault flyer.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
+        "Tooltip": "Anti-ground assault flyer. Attack missiles seek valid targets until dealing damage.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
         "Name": "Mutate into Assailant",
         "Hotkey": "A"
       },
@@ -228,7 +228,7 @@
           "Energy": 0,
           "Life": 0,
           "Shields": 0,
-          "Food": -3
+          "Food": -2
         },
         "Row": 0,
         "Column": 2,
@@ -236,7 +236,7 @@
         "AbilCmd": "AerialNestWaspMutateXayidFlyers,Train4",
         "id": "Xayithoan",
         "Icon": "btn-unit-xayid-xayithoan",
-        "Tooltip": "Aerial detector and spell caster. Can use Adaptive Injection and Protective cloud.<br/><br/><span style=\"color: #FFFF00\">Detector</span>",
+        "Tooltip": "Aerial detector and spell caster. Can use Adaptive Injection, Protective Cloud and Spawn Watcher.<br/><br/><span style=\"color: #FFFF00\">Detector</span>",
         "Name": "Mutate into Xayithoan",
         "Hotkey": "T"
       },
@@ -259,8 +259,8 @@
         ],
         "Time": 65,
         "Cost": {
-          "Minerals": 400,
-          "Vespene": 300,
+          "Minerals": 350,
+          "Vespene": 250,
           "Terazine": 0,
           "Custom": 0,
           "Energy": 0,
@@ -286,12 +286,6 @@
           "EditorCategories": "Race:Neutral,AbilityorEffectType:Structures",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -353,8 +347,6 @@
   "Collide": [
     "Larva"
   ],
-  "LifeRegenDelay": 3,
-  "LifeRegenRate": 0.5,
   "Sight": 5,
   "CostCategory": "Army",
   "ScoreResult": "BuildOrder",
@@ -437,7 +429,7 @@
       "AbilCmd": "AerialNestWaspMutateXayidFlyers,Train8",
       "id": "Assailant",
       "Icon": "btn-unit-xayid-assailant",
-      "Tooltip": "Anti-ground assault flyer.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
+      "Tooltip": "Anti-ground assault flyer. Attack missiles seek valid targets until dealing damage.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
       "Name": "Mutate into Assailant"
     },
     {
@@ -451,7 +443,7 @@
       "AbilCmd": "AerialNestWaspMutateXayidFlyers,Train4",
       "id": "Xayithoan",
       "Icon": "btn-unit-xayid-xayithoan",
-      "Tooltip": "Aerial detector and spell caster. Can use Adaptive Injection and Protective cloud.<br/><br/><span style=\"color: #FFFF00\">Detector</span>",
+      "Tooltip": "Aerial detector and spell caster. Can use Adaptive Injection, Protective Cloud and Spawn Watcher.<br/><br/><span style=\"color: #FFFF00\">Detector</span>",
       "Name": "Mutate into Xayithoan"
     },
     {

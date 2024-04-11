@@ -1,6 +1,6 @@
 {
   "Name": "Aquila",
-  "Description": "Support trooper. Can use Supercharge and Nanite Grenade.<br/><br/><span style=\"color: #f078ff\">Energy user.</span><br/><span style=\"color: #FFFF80\">Can attack ground and air units.</span>",
+  "Description": "Support trooper. Can use Nanite Emitter.<br/><br/><span style=\"color: #78F0FF\">Power user.</span><br/><span style=\"color: #FFFF80\">Can attack ground and air units.</span>",
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -10,8 +10,8 @@
   "Response": "Acquire",
   "ResourceState": "Unknown",
   "ResourceType": "Unknown",
-  "LifeStart": 100,
-  "LifeMax": 100,
+  "LifeStart": 80,
+  "LifeMax": 80,
   "LifeArmorName": "Ground Mechanical Plating",
   "Mover": "Ground",
   "StationaryTurningRate": 990,
@@ -131,12 +131,6 @@
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
               "DisplayType": "Move",
               "Color": "255,35,125,255",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
@@ -224,12 +218,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -321,12 +309,6 @@
               "Color": "255,255,0,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -397,12 +379,6 @@
           "EditorCategories": "Race:Neutral,AbilityorEffectType:Units",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -484,12 +460,6 @@
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
               "DisplayType": "Move",
               "Color": "255,35,125,255",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
@@ -568,7 +538,7 @@
       {
         "Info": {
           "class": "CAbilEffectTarget",
-          "Name": "Abil/Name/NaniteGrenade",
+          "Name": "Abil/Name/AquilaNaniteEmitter",
           "TechPlayer": "Upkeep",
           "EditorCategories": "Race:Genetron,AbilityorEffectType:Units",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
@@ -578,18 +548,12 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
             "DisableWhileDead": 1
           },
-          "DataCollection": "NaniteGrenade",
+          "DataCollection": "AquilaNaniteEmitter",
           "$tokens": {
             "ID": {
               "type": "string",
@@ -612,12 +576,12 @@
             "BestUnit": 1
           },
           "Effect": [
-            "NaniteGrenade"
+            "AquilaNaniteEmitterInitTarget"
           ],
           "EffectRange": [
             "0,1000"
           ],
-          "AINotifyEffect": "NaniteGrenade",
+          "AINotifyEffect": "AquilaNaniteEmitterLaunchMissile",
           "RefundArray": {
             "Approach": 1,
             "Prep": 1,
@@ -669,235 +633,72 @@
               "Flags": {
                 "ShowInGlossary": 1
               },
-              "DefaultButtonFace": "NaniteGrenade"
+              "DefaultButtonFace": "AquilaNaniteEmitter",
+              "Requirements": "AquilaNaniteGrenadeReq"
             }
           },
           "FollowRange": 5,
           "Cost": [
             {
               "Vital": {
-                "Energy": 25
+                "Energy": 50
               },
               "Charge": {
                 "Link": "Abil/FlashGrenade"
               },
               "Cooldown": {
                 "Link": "Abil/FlashGrenade",
-                "TimeUse": 2
+                "TimeUse": 4.2
               }
             }
           ],
           "Range": [
-            9
+            10
           ],
           "FinishTime": [
-            1
+            0.5
           ],
           "UninterruptibleArray": {
             "Cast": 1,
             "Finish": 1
           },
           "CursorEffect": [
-            "NaniteGrenadeImpact"
+            "AquilaNaniteEmitterSearchArea"
           ],
-          "id": "NaniteGrenade"
+          "id": "AquilaNaniteEmitter"
         },
         "Cost": {
           "Minerals": 0,
           "Vespene": 0,
           "Terazine": 0,
           "Custom": 0,
-          "Energy": 25,
+          "Energy": 50,
           "Life": 0,
           "Shields": 0,
           "Food": 0
         },
         "Row": 2,
-        "Column": 1,
+        "Column": 0,
         "Type": "AbilCmd",
-        "AbilCmd": "NaniteGrenade,Execute",
-        "id": "NaniteGrenade",
-        "Icon": "btn-ability-genetron-nanitegrenade",
-        "Tooltip": "Stuns all non-massive ground enemies in an area for <b>2</b> seconds.",
-        "Name": "Nanite Grenade",
+        "AbilCmd": "AquilaNaniteEmitter,Execute",
+        "id": "AquilaNaniteEmitter",
+        "Icon": "btn-upgrade-nova-btn-upgrade-nova-pulsegrenade",
+        "Tooltip": "Creates a zone on the ground which lasts <b>4</b> seconds. Ground units inside of this zone have their movement and attack speed decreased by <b>50</b>%.<br/><br/><span style=\"color: #78F0FF\">Uses <b>50</b> power.</span><br/><span style=\"color: #FFFF80\">Massive units have <b>50</b>% immunity.</span>",
+        "Name": "Nanite Emitter",
         "Hotkey": "G"
-      },
-      {
-        "Info": {
-          "class": "CAbilEffectInstant",
-          "Name": "Abil/Name/SuperChargeAquila",
-          "TechPlayer": "Upkeep",
-          "EditorCategories": "Race:Genetron,AbilityorEffectType:Units",
-          "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
-          "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            }
-          ],
-          "SharedFlags": {
-            "DisableWhileDead": 1
-          },
-          "DataCollection": "SuperChargeAquila",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
-          "RangeSlop": 1,
-          "ArcSlop": 11.25,
-          "AutoCastAcquireLevel": "Offensive",
-          "AutoCastFilters": "Visible;Player,Ally",
-          "Flags": {
-            "AbortOnAllianceChange": 1,
-            "CancelResetAutoCast": 1,
-            "ChannelingMinimum": 1,
-            "RangeUseCasterRadius": 1,
-            "ReApproachable": 1,
-            "RequireTargetVision": 1,
-            "WaitToSpend": 1,
-            "UpdateChargesOnLevelChange": 1,
-            "Transient": 1
-          },
-          "Effect": [
-            "Supercharge"
-          ],
-          "EffectRange": [
-            "0,1000"
-          ],
-          "AINotifyEffect": "SuperChargeAquila",
-          "RefundArray": {
-            "Approach": 1,
-            "Prep": 1,
-            "Cast": 1
-          },
-          "RefundFraction": {
-            "Resource": {
-              "Minerals": -1,
-              "Vespene": -1,
-              "Terrazine": -1,
-              "Custom": -1
-            },
-            "Charge": -1,
-            "Cooldown": -1
-          },
-          "UseMarkerArray": {
-            "Approach": 1,
-            "Prep": 1,
-            "Cast": 1,
-            "Channel": 1
-          },
-          "PauseableArray": {
-            "Approach": 1,
-            "Prep": 1,
-            "Cast": 1,
-            "Channel": 1,
-            "Finish": 1
-          },
-          "PreemptableArray": {
-            "Approach": 1,
-            "Prep": 1,
-            "Cast": 1,
-            "Channel": 1,
-            "Finish": 1
-          },
-          "ValidatedArray": {
-            "Approach": 1,
-            "Prep": 1,
-            "Cast": 1,
-            "Channel": 1
-          },
-          "DefaultError": "MustTargetUnit",
-          "AcquirePriority": 3,
-          "SetLastTarget": "Unknown",
-          "VeterancyLevelMin": 0,
-          "VeterancyLevelSkip": 0,
-          "CmdButtonArray": {
-            "Execute": {
-              "Flags": {
-                "ShowInGlossary": 1,
-                "ToSelection": 1
-              },
-              "DefaultButtonFace": "BlitzerSupercharge",
-              "Requirements": "IsNotSupercharged"
-            }
-          },
-          "Cost": [
-            {
-              "Vital": {
-                "Energy": 25
-              },
-              "Charge": {
-                "Link": "Abil/CannonReset"
-              },
-              "Cooldown": {
-                "Link": "Abil/CannonReset"
-              }
-            }
-          ],
-          "AbilSetId": "Supercharge",
-          "id": "SuperChargeAquila"
-        },
-        "Cost": {
-          "Minerals": 0,
-          "Vespene": 0,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 25,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 2,
-        "Column": 0,
-        "Type": "AbilCmd",
-        "AbilCmd": "SuperChargeAquila,Execute",
-        "id": "AquilaSupercharge",
-        "Icon": "btn-ability-genetron-cannonreset",
-        "Tooltip": "Causes the caster's next attack to deal <b>300</b>% damage. Weapon range is extended by <b>2</b> while charged. The charge lasts for <b>5</b> seconds.",
-        "Name": "Supercharge",
-        "Hotkey": "R"
-      },
-      {
-        "Cost": {
-          "Minerals": 0,
-          "Vespene": 0,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 2,
-        "Column": 0,
-        "Type": "Passive",
-        "id": "BlitzerSupercharged",
-        "Icon": "btn-ability-genetron-cannonreset",
-        "Tooltip": "The caster's weapon is currently supercharged.",
-        "Name": "Supercharged"
       }
     ]
   },
   "CargoSize": 2,
-  "EnergyStart": 75,
-  "EnergyMax": 75,
-  "Food": -3,
+  "EnergyStart": 80,
+  "EnergyMax": 80,
+  "Food": -2,
   "CostResource": {
     "Minerals": 100,
     "Vespene": 100
   },
   "RepairTime": 44.8,
-  "SubgroupPriority": 46,
+  "SubgroupPriority": 47,
   "GlossaryPriority": 6,
   "GlossaryStrongArray": [
     "Virtus",
@@ -912,6 +713,7 @@
     "SwarmHostMP"
   ],
   "InnerRadius": 0.375,
+  "EnergyRegenRate": 1.125,
   "Icon": "btn-unit-genetron-aquila",
   "LifeArmorIcon": "btn-upgrade-genetron-groundmechplating-level0",
   "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
@@ -920,16 +722,22 @@
       "id": "D15Magnum",
       "Icon": "btn-upgrade-genetron-lightmechweapons-level0",
       "Name": "D-15 Magnum",
-      "Amount": 15,
+      "Amount": 16,
       "Kind": "Ranged",
       "TargetFilters": "",
-      "Range": 7,
-      "Period": 1.568
+      "Range": 8,
+      "Period": 1.47
     }
   ],
   "Behaviors": [
     {
-      "id": "GenetronUnitEnergyRegenx2"
+      "id": "GenetronPowerSupplyTracker"
+    },
+    {
+      "id": "TrackGenetronPowerSupplyUnit"
+    },
+    {
+      "id": "AquilaNaniteGrenadeReq"
     }
   ],
   "Abilities": [
@@ -946,20 +754,13 @@
       "Name": "Attack"
     },
     {
-      "id": "NaniteGrenade",
-      "Name": "Nanite Grenade"
-    },
-    {
-      "id": "SuperChargeAquila",
-      "Name": "Super Charge"
+      "id": "AquilaNaniteEmitter",
+      "Name": "Aquila - Nanite Emitter"
     }
   ],
   "$Upgrades": [
-    "TechVault",
-    "Aquila",
-    "TrainLightweightMechs",
-    "Manufacturer",
     "GenetronGroundPlatingLevel1",
+    "Aquila",
     "Aquila",
     "PhalanxReactor",
     "GenetronGroundPlating",
@@ -969,9 +770,16 @@
     "GenetronLightWeapons",
     "GenetronLightWeaponsLevel2",
     "GenetronLightWeaponsLevel3",
+    "ChemicalFirm",
+    "TrainLightweightMechs",
+    "CountUnitAquilaQueuedOrBetterAtUnit",
     "Manufacturer",
-    "IsAquila",
-    "ThreatensAquila"
+    "Manufacturer",
+    "CountUnitAquilaInProgressOnlyAtUnit",
+    "GenetronGroundPlatingRevert",
+    "GenetronLightWeaponsRevert",
+    "ThreatensAquila",
+    "IsAquila"
   ],
   "$Requirements": [],
   "$Production": [],
@@ -1018,18 +826,11 @@
       "Name": "Move"
     },
     {
-      "AbilCmd": "NaniteGrenade,Execute",
-      "id": "NaniteGrenade",
-      "Icon": "btn-ability-genetron-nanitegrenade",
-      "Tooltip": "Stuns all non-massive ground enemies in an area for <b>2</b> seconds.",
-      "Name": "Nanite Grenade"
-    },
-    {
-      "AbilCmd": "SuperChargeAquila,Execute",
-      "id": "AquilaSupercharge",
-      "Icon": "btn-ability-genetron-cannonreset",
-      "Tooltip": "Causes the caster's next attack to deal <b>300</b>% damage. Weapon range is extended by <b>2</b> while charged. The charge lasts for <b>5</b> seconds.",
-      "Name": "Supercharge"
+      "AbilCmd": "AquilaNaniteEmitter,Execute",
+      "id": "AquilaNaniteEmitter",
+      "Icon": "btn-upgrade-nova-btn-upgrade-nova-pulsegrenade",
+      "Tooltip": "Creates a zone on the ground which lasts <b>4</b> seconds. Ground units inside of this zone have their movement and attack speed decreased by <b>50</b>%.<br/><br/><span style=\"color: #78F0FF\">Uses <b>50</b> power.</span><br/><span style=\"color: #FFFF80\">Massive units have <b>50</b>% immunity.</span>",
+      "Name": "Nanite Emitter"
     }
   ]
 }

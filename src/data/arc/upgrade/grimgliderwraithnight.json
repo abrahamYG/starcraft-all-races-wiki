@@ -12,16 +12,26 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "GrimGliderWraithNight",
+  "EditorCategories": "Race:Dragon,UpgradeType:Talents",
   "$tokens": {
     "ID": {
       "type": "string",
       "value": ""
     }
   },
-  "EditorCategories": "Race:Dragon,UpgradeType:Talents",
   "AffectedUnitArray": [
     "GrimGlider"
   ],
   "ScoreAmount": 510,
-  "Race": "Dragon"
+  "Race": "Dragon",
+  "EffectArray": [
+    {
+      "Reference": "Unit,GrimGlider,Speed",
+      "Value": "1.000000"
+    },
+    {
+      "Reference": "Unit,AscendedGrimGlider,Speed",
+      "Value": "1.000000"
+    }
+  ]
 }

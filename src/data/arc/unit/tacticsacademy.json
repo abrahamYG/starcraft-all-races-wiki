@@ -170,6 +170,7 @@
         "Type": "AbilCmd",
         "AbilCmd": "que5,CancelLast",
         "id": "Cancel",
+        "Icon": "btn-command-cancel",
         "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
         "Name": "Cancel",
         "Hotkey": "Esc"
@@ -273,7 +274,8 @@
         "id": "ButtonUpgradeDrakkar",
         "Icon": "btn-ability-terran-detectionconedebuff",
         "Tooltip": "Replacing the internal compartment <c val=\"#ColorAttackInfo\">Drakkar APC</span> increases the speed of movement by 15%, and also makes it possible to fight without leaving the car.",
-        "Name": "Authorization Request: Light Alloy Beatania"
+        "Name": "Authorization Request: Light Alloy Beatania",
+        "Hotkey": "Q"
       },
       {
         "Upgrade": "SpareRifleBatteries",
@@ -476,16 +478,15 @@
             "Requirements": "LearnTowerMining"
           },
           "Resource": {
-            "Minerals": 100,
-            "Vespene": 100
+            "Minerals": 150
           },
-          "Time": 60,
+          "Time": 45,
           "Upgrade": "UpgradeTowerMining"
         },
-        "Time": 60,
+        "Time": 45,
         "Cost": {
-          "Minerals": 100,
-          "Vespene": 100,
+          "Minerals": 150,
+          "Vespene": 0,
           "Terazine": 0,
           "Custom": 0,
           "Energy": 0,
@@ -500,7 +501,8 @@
         "id": "AuthorizeTowerMining",
         "Icon": "btn-structure-ued-sensortower",
         "Tooltip": "Allows <span style=\"color: #FFFF80\">Operations Headquarters</span> to call enrichment towers.",
-        "Name": "Authorization Request: Enrichment Tower"
+        "Name": "Authorization Request: Enrichment Tower",
+        "Hotkey": "G"
       },
       {
         "Upgrade": "UpgradeSpeedHurakan",
@@ -537,7 +539,8 @@
         "id": "ButtonUpgraideHurrakan",
         "Icon": "btn-ability-mengsk-medivac-igniteafterburners",
         "Tooltip": "Increases the movement speed of <span style=\"color: #FFFF80\">hurakan</span> by 50%.",
-        "Name": "Authorization request: Calibration of the motors"
+        "Name": "Authorization Request: Calibration of the motors",
+        "Hotkey": "B"
       },
       {
         "Upgrade": "UEDArmorLightLevel1",
@@ -574,7 +577,8 @@
         "id": "ButtonUEDResearchLightArmory",
         "Icon": "btn-upgrade-ued-armor-level1",
         "Tooltip": "Improves <span style=\"color: #ffff8a\">armor</span> of all biological units of the UED.",
-        "Name": "Research Light Armor, Level 1"
+        "Name": "Research Light Armor, Level 1",
+        "Hotkey": "A"
       },
       {
         "Upgrade": "UEDArmorLightLevel2",
@@ -611,7 +615,8 @@
         "id": "ButtonUEDResearchLightArmory2",
         "Icon": "btn-upgrade-ued-armor-level2",
         "Tooltip": "Improves <span style=\"color: #ffff8a\">armor</span> of all biological units of the UED.",
-        "Name": "Research Light Armor, Level 2"
+        "Name": "Research Light Armor, Level 2",
+        "Hotkey": "A"
       },
       {
         "Upgrade": "UEDArmorLightLevel3",
@@ -648,7 +653,8 @@
         "id": "ButtonUEDResearchLightArmory3",
         "Icon": "btn-upgrade-ued-armor-level3",
         "Tooltip": "Improves <span style=\"color: #ffff8a\">armor</span> of all biological units of the UED.",
-        "Name": "Research Light Armor, Level 3"
+        "Name": "Research Light Armor, Level 3",
+        "Hotkey": "A"
       }
     ]
   },
@@ -687,13 +693,13 @@
   "$Upgrades": [
     "CountUnitTacticsAcademyCompleteOnly2343667948TechTreeCheat",
     "TacticsAcademy",
+    "CountUnitTacticsAcademyCompleteOnly",
     "BeaconBuild",
     "UEDCalldownStructure",
     "TacticsAcademy",
     "TacticsAcademySplat",
     "UEDPlacementDummyMedium",
-    "CountUnitEngineeringBayCompleteOnlyTechTreeCheat2",
-    null
+    "CountUnitEngineeringBayCompleteOnlyTechTreeCheat2"
   ],
   "$Requirements": [],
   "$Production": [],
@@ -720,6 +726,7 @@
     {
       "AbilCmd": "que5,CancelLast",
       "id": "Cancel",
+      "Icon": "btn-command-cancel",
       "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
       "Name": "Cancel"
     },
@@ -784,7 +791,7 @@
       "id": "ButtonUpgraideHurrakan",
       "Icon": "btn-ability-mengsk-medivac-igniteafterburners",
       "Tooltip": "Increases the movement speed of <span style=\"color: #FFFF80\">hurakan</span> by 50%.",
-      "Name": "Authorization request: Calibration of the motors"
+      "Name": "Authorization Request: Calibration of the motors"
     },
     {
       "AbilCmd": "TacticsAcademyResearch,Research16",

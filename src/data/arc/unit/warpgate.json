@@ -12,7 +12,7 @@
   "ResourceType": "Unknown",
   "LifeStart": 500,
   "LifeMax": 500,
-  "LifeArmorName": "Synoid Armor",
+  "LifeArmorName": "Protoss Armor",
   "Mover": "Ground",
   "StationaryTurningRate": 719.4726,
   "TurningRate": 719.4726,
@@ -126,20 +126,19 @@
             },
             "DefaultButtonFace": "Zealot"
           },
-          "Cooldown": {
-            "Link": "WarpGateTrain",
-            "TimeUse": 0
-          },
           "Charge": {
-            "Flags": {
-              "EnableChargeTimeQueuing": 1
-            },
             "CountMax": 1,
             "CountStart": 1,
             "CountUse": 1,
             "Link": "WarpGateTrain",
             "TimeStart": 30,
-            "TimeUse": 28
+            "TimeUse": 28,
+            "Flags": {
+              "EnableChargeTimeQueuing": 1
+            }
+          },
+          "Cooldown": {
+            "Link": "WarpGateTrain"
           },
           "Time": 16,
           "Unit": "Zealot"
@@ -175,19 +174,18 @@
             "DefaultButtonFace": "Stalker",
             "Requirements": "HaveCyberneticsCore"
           },
-          "Cooldown": {
-            "Link": "WarpGateTrain",
-            "TimeUse": 0
-          },
           "Charge": {
-            "Flags": {
-              "EnableChargeTimeQueuing": 1
-            },
             "CountMax": 1,
             "CountStart": 1,
             "CountUse": 1,
             "Link": "WarpGateTrain",
-            "TimeUse": 32
+            "TimeUse": 32,
+            "Flags": {
+              "EnableChargeTimeQueuing": 1
+            }
+          },
+          "Cooldown": {
+            "Link": "WarpGateTrain"
           },
           "Time": 16,
           "Unit": "Stalker"
@@ -223,19 +221,18 @@
             "DefaultButtonFace": "HighTemplar",
             "Requirements": "HaveTemplarArchives"
           },
-          "Cooldown": {
-            "Link": "WarpGateTrain",
-            "TimeUse": 0
-          },
           "Charge": {
-            "Flags": {
-              "EnableChargeTimeQueuing": 1
-            },
             "CountMax": 1,
             "CountStart": 1,
             "CountUse": 1,
             "Link": "WarpGateTrain",
-            "TimeUse": 45
+            "TimeUse": 45,
+            "Flags": {
+              "EnableChargeTimeQueuing": 1
+            }
+          },
+          "Cooldown": {
+            "Link": "WarpGateTrain"
           },
           "Time": 16,
           "Unit": "HighTemplar"
@@ -271,19 +268,18 @@
             "DefaultButtonFace": "DarkTemplar",
             "Requirements": "HaveDarkShrine"
           },
-          "Cooldown": {
-            "Link": "WarpGateTrain",
-            "TimeUse": 0
-          },
           "Charge": {
-            "Flags": {
-              "EnableChargeTimeQueuing": 1
-            },
             "CountMax": 1,
             "CountStart": 1,
             "CountUse": 1,
             "Link": "WarpGateTrain",
-            "TimeUse": 45
+            "TimeUse": 45,
+            "Flags": {
+              "EnableChargeTimeQueuing": 1
+            }
+          },
+          "Cooldown": {
+            "Link": "WarpGateTrain"
           },
           "Time": 16,
           "Unit": "DarkTemplar"
@@ -383,19 +379,18 @@
             "DefaultButtonFace": "Sentry",
             "Requirements": "HaveCyberneticsCore"
           },
-          "Cooldown": {
-            "Link": "WarpGateTrain",
-            "TimeUse": 0
-          },
           "Charge": {
-            "Flags": {
-              "EnableChargeTimeQueuing": 1
-            },
             "CountMax": 1,
             "CountStart": 1,
             "CountUse": 1,
             "Link": "WarpGateTrain",
-            "TimeUse": 32
+            "TimeUse": 32,
+            "Flags": {
+              "EnableChargeTimeQueuing": 1
+            }
+          },
+          "Cooldown": {
+            "Link": "WarpGateTrain"
           },
           "Time": 16,
           "Unit": "Sentry"
@@ -432,14 +427,14 @@
             "Requirements": "HaveCyberneticsCore"
           },
           "Charge": {
-            "Flags": {
-              "EnableChargeTimeQueuing": 1
-            },
             "CountMax": 1,
             "CountStart": 1,
             "CountUse": 1,
             "Link": "WarpGateTrain",
-            "TimeUse": 28
+            "TimeUse": 28,
+            "Flags": {
+              "EnableChargeTimeQueuing": 1
+            }
           },
           "Cooldown": {
             "Link": "WarpGateTrain"
@@ -517,12 +512,7 @@
     "ProtossShields",
     "ProtossShieldsLevel2",
     "ProtossShieldsLevel3",
-    "IsWarpgate",
-    "GatewayBase",
-    "Gateway",
-    "GatewayForged",
-    "GatewayIhanrii",
-    null
+    "IsWarpgate"
   ],
   "$Requirements": [],
   "$Production": [

@@ -1,6 +1,5 @@
 {
   "Name": "CARR",
-  "Description": "Combat and Reconnaisance Robot<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units</span>",
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -19,7 +18,7 @@
   "Radius": 0.4375,
   "SeparationRadius": 0.5,
   "MinimapRadius": 0.5,
-  "EditorCategories": "ObjectType:Hero,ObjectFamily:Melee",
+  "EditorCategories": "ObjectType:Unit,ObjectFamily:Melee",
   "TacticalAIFilters": "-;Player,Ally,Neutral",
   "AIEvalFactor": 1,
   "Mass": 0.4,
@@ -90,7 +89,14 @@
     "Ground",
     "ForceField"
   ],
-  "Speed": 2.5,
+  "Speed": 2.25,
+  "Attributes": [
+    "Light",
+    "Biological",
+    "Heroic",
+    "Armored",
+    "Mechanical"
+  ],
   "Acceleration": 1000,
   "LateralAcceleration": 46.0625,
   "Sight": 9,
@@ -866,19 +872,14 @@
     "Dance": 5
   },
   "id": "CARR",
-  "Attributes": [
-    "Heroic",
-    "Armored",
-    "Mechanical"
-  ],
   "AlliedPushPriority": 20,
   "LifeArmor": 3,
+  "LifeRegenRate": 0.668,
   "CostResource": {
     "Minerals": 350,
     "Vespene": 150
   },
-  "GlossaryPriority": 5,
-  "LifeRegenRate": 0.668,
+  "GlossaryPriority": 52,
   "Icon": "btn-unit-upl-carr",
   "LifeArmorIcon": "btn-upgrades-upl-vehicleplating-lvl0",
   "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
@@ -953,7 +954,8 @@
     "UPLHeadquarters",
     "CARRTrackerRadarRange",
     "CARR",
-    "CARR"
+    "CARR",
+    null
   ],
   "$Requirements": [],
   "$Production": [],

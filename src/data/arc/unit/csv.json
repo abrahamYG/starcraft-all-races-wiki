@@ -1,6 +1,5 @@
 {
   "Name": "CSV",
-  "Description": "Mobile Operations Center<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units</span>",
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -507,7 +506,7 @@
           "Food": -6
         },
         "Row": 2,
-        "Column": 1,
+        "Column": 0,
         "Type": "AbilCmd",
         "AbilCmd": "CSVDeploy,Execute",
         "id": "CSVDeploy",
@@ -886,9 +885,9 @@
             "TargetNotStasis"
           ],
           "DeathUnloadEffect": "TransportUnloadDeath",
-          "id": "CSVTransport",
           "LoadCargoEffect": "UPLOspreyTransportCargoLoad",
-          "UnloadCargoEffect": "UPLOspreyTransportCargoUnload"
+          "UnloadCargoEffect": "UPLOspreyTransportCargoUnload",
+          "id": "CSVTransport"
         },
         "Cost": {
           "Minerals": 0,
@@ -900,8 +899,8 @@
           "Shields": 0,
           "Food": 0
         },
-        "Row": 1,
-        "Column": 3,
+        "Row": 2,
+        "Column": 4,
         "Type": "AbilCmd",
         "AbilCmd": "CSVTransport,UnloadAll",
         "id": "CSVUnloadAll",
@@ -1170,9 +1169,9 @@
             "TargetNotStasis"
           ],
           "DeathUnloadEffect": "TransportUnloadDeath",
-          "id": "CSVTransport",
           "LoadCargoEffect": "UPLOspreyTransportCargoLoad",
-          "UnloadCargoEffect": "UPLOspreyTransportCargoUnload"
+          "UnloadCargoEffect": "UPLOspreyTransportCargoUnload",
+          "id": "CSVTransport"
         },
         "Cost": {
           "Minerals": 0,
@@ -1185,7 +1184,7 @@
           "Food": 0
         },
         "Row": 1,
-        "Column": 2,
+        "Column": 3,
         "Type": "AbilCmd",
         "AbilCmd": "CSVTransport,Load",
         "id": "CSVLoad",
@@ -1427,7 +1426,7 @@
     "UPLVehicleWeapons",
     "UPLVehicleWeaponsLevel2",
     "UPLVehicleWeaponsLevel3",
-    "UPLForwardOperatingBaseTrain",
+    "UPLManufacturingFacilityTrain",
     "AllowUnitCSV",
     "UPLForwardOperatingBase",
     "UPLRnDFacilityTrain",
@@ -1436,7 +1435,8 @@
     "CSVUndeploySound",
     "IsCSV",
     "IsCSVAlias",
-    "CSV"
+    "CSV",
+    null
   ],
   "$Requirements": [],
   "$Production": [],
@@ -1450,6 +1450,7 @@
   ],
   "$Phased": "CSV",
   "$Producers": [
+    "UPLForwardOperatingBase",
     "UPLManufacturingFacility"
   ],
   "$Commands": [

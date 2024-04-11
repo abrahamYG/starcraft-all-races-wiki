@@ -12,6 +12,7 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "ShieldCompulsion",
+  "EditorCategories": "Race:Keiron,UpgradeType:SpellResearch",
   "$tokens": {
     "ID": {
       "type": "string",
@@ -19,10 +20,9 @@
     }
   },
   "InfoTooltipPriority": 1,
-  "EditorCategories": "Race:Keiron,UpgradeType:SpellResearch",
   "Race": "Keir",
   "ScoreResult": "BuildOrder",
-  "ScoreAmount": 300,
+  "ScoreAmount": 400,
   "AffectedUnitArray": [
     "Umbra"
   ]

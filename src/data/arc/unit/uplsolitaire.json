@@ -424,6 +424,7 @@
           "MaxCargoSize": 1,
           "TotalCargoSpace": 1,
           "LoadCargoEffect": "UPLTurretCargoLoad2",
+          "UnloadCargoEffect": "UPLOspreyTransportCargoUnload",
           "LoadTransportEffect": "UPLTurretCargoTransportLoadDummy",
           "UnloadTransportEffect": "UPLTurretCargoTransportUnloadDummy",
           "LoadValidatorArray": [
@@ -433,8 +434,7 @@
             "TargetNotStunnedCombine",
             "TargetNotStasis"
           ],
-          "id": "UPLTurretCargo",
-          "UnloadCargoEffect": "UPLOspreyTransportCargoUnload"
+          "id": "UPLTurretCargo"
         },
         "Cost": {
           "Minerals": 0,
@@ -541,6 +541,7 @@
           "MaxCargoSize": 1,
           "TotalCargoSpace": 1,
           "LoadCargoEffect": "UPLTurretCargoLoad2",
+          "UnloadCargoEffect": "UPLOspreyTransportCargoUnload",
           "LoadTransportEffect": "UPLTurretCargoTransportLoadDummy",
           "UnloadTransportEffect": "UPLTurretCargoTransportUnloadDummy",
           "LoadValidatorArray": [
@@ -550,8 +551,7 @@
             "TargetNotStunnedCombine",
             "TargetNotStasis"
           ],
-          "id": "UPLTurretCargo",
-          "UnloadCargoEffect": "UPLOspreyTransportCargoUnload"
+          "id": "UPLTurretCargo"
         },
         "Cost": {
           "Minerals": 0,
@@ -610,15 +610,15 @@
     "Vespene": 100
   },
   "RepairTime": 30,
-  "Footprint": "Footprint3x3Contour",
-  "PlacementFootprint": "Footprint3x3",
   "ScoreMake": 100,
   "ScoreKill": 100,
   "Facing": 45,
   "KillDisplay": "Never",
   "RankDisplay": "Never",
   "DeathTime": 1,
-  "DeadFootprint": "Footprint3x3Contour",
+  "Footprint": "Footprint2x2Contour",
+  "DeadFootprint": "Footprint2x2Contour",
+  "PlacementFootprint": "Footprint2x2",
   "Icon": "btn-building-upl-uplsolitaire",
   "LifeArmorIcon": "genericbuildingarmor",
   "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",

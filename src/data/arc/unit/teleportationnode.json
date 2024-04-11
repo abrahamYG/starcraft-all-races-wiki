@@ -1,6 +1,6 @@
 {
   "Name": "Teleportation Node",
-  "Description": "Universal production structure for the Directorate army, capable of deploying any combat units.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Garmrs<br/>- Strike Troopers<br/>- Enrichment Towers",
+  "Description": "Universal production structure for the Directorate army, capable of deploying any combat units.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Garmrs<br/>- Strike Troopers<br/>",
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -192,6 +192,7 @@
         "Type": "AbilCmd",
         "AbilCmd": "que52,CancelLast",
         "id": "Cancel",
+        "Icon": "btn-command-cancel",
         "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
         "Name": "Cancel",
         "Hotkey": "Esc"
@@ -261,6 +262,93 @@
         "Hotkey": "Esc"
       },
       {
+        "Info": {
+          "class": "CAbilBehavior",
+          "Name": "Abil/Name/UEDMorphTeleportationNode",
+          "TechPlayer": "Upkeep",
+          "EditorCategories": "Race:UED,AbilityorEffectType:Units",
+          "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
+          "OrderArray": [
+            {
+              "DisplayType": "Confirm",
+              "Color": "255,0,255,0",
+              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
+              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
+            }
+          ],
+          "SharedFlags": {
+            "DisableWhileDead": 1
+          },
+          "DataCollection": "UEDMorphTeleportationNode",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
+          "CmdButtonArray": {
+            "On": {
+              "Flags": {
+                "ShowInGlossary": 1,
+                "ToSelection": 1
+              },
+              "DefaultButtonFace": "UEDButtonAcelerationMorphNode",
+              "State": "Restricted",
+              "Requirements": "UEDTrebovanieAcelerationMorhp"
+            },
+            "Off": {
+              "Flags": {
+                "ToSelection": 1
+              },
+              "DefaultButtonFace": "Cancel"
+            }
+          },
+          "VeterancyLevelMin": 0,
+          "VeterancyLevelSkip": 0,
+          "Flags": {
+            "BestUnit": 1,
+            "Toggle": 1
+          },
+          "Cost": [
+            {
+              "Resource": {
+                "Minerals": 50,
+                "Vespene": 50
+              }
+            }
+          ],
+          "OffCost": {
+            "Resource": {
+              "Minerals": -38,
+              "Vespene": -38
+            }
+          },
+          "BehaviorArray": [
+            "UEDAlgoritmMorphAcelerationTrain"
+          ],
+          "id": "UEDMorphTeleportationNode"
+        },
+        "Cost": {
+          "Minerals": 50,
+          "Vespene": 50,
+          "Terazine": 0,
+          "Custom": 0,
+          "Energy": 0,
+          "Life": 0,
+          "Shields": 0,
+          "Food": 0
+        },
+        "Row": 2,
+        "Column": 4,
+        "Type": "AbilCmd",
+        "AbilCmd": "UEDMorphTeleportationNode,Off",
+        "id": "Cancel",
+        "Icon": "btn-command-cancel",
+        "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
+        "Name": "Cancel",
+        "Hotkey": "Esc"
+      },
+      {
         "Cost": {
           "Minerals": 0,
           "Vespene": 0,
@@ -279,7 +367,7 @@
         "Icon": "btn-ued_striketrooper",
         "Tooltip": "",
         "Name": "Request Infantry",
-        "Hotkey": "Q"
+        "Hotkey": "S"
       },
       {
         "Cost": {
@@ -322,6 +410,93 @@
         "Tooltip": "",
         "Name": "Request Starships",
         "Hotkey": "R"
+      },
+      {
+        "Info": {
+          "class": "CAbilBehavior",
+          "Name": "Abil/Name/UEDMorphTeleportationNode",
+          "TechPlayer": "Upkeep",
+          "EditorCategories": "Race:UED,AbilityorEffectType:Units",
+          "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
+          "OrderArray": [
+            {
+              "DisplayType": "Confirm",
+              "Color": "255,0,255,0",
+              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
+              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
+            }
+          ],
+          "SharedFlags": {
+            "DisableWhileDead": 1
+          },
+          "DataCollection": "UEDMorphTeleportationNode",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
+          "CmdButtonArray": {
+            "On": {
+              "Flags": {
+                "ShowInGlossary": 1,
+                "ToSelection": 1
+              },
+              "DefaultButtonFace": "UEDButtonAcelerationMorphNode",
+              "State": "Restricted",
+              "Requirements": "UEDTrebovanieAcelerationMorhp"
+            },
+            "Off": {
+              "Flags": {
+                "ToSelection": 1
+              },
+              "DefaultButtonFace": "Cancel"
+            }
+          },
+          "VeterancyLevelMin": 0,
+          "VeterancyLevelSkip": 0,
+          "Flags": {
+            "BestUnit": 1,
+            "Toggle": 1
+          },
+          "Cost": [
+            {
+              "Resource": {
+                "Minerals": 50,
+                "Vespene": 50
+              }
+            }
+          ],
+          "OffCost": {
+            "Resource": {
+              "Minerals": -38,
+              "Vespene": -38
+            }
+          },
+          "BehaviorArray": [
+            "UEDAlgoritmMorphAcelerationTrain"
+          ],
+          "id": "UEDMorphTeleportationNode"
+        },
+        "Cost": {
+          "Minerals": 50,
+          "Vespene": 50,
+          "Terazine": 0,
+          "Custom": 0,
+          "Energy": 0,
+          "Life": 0,
+          "Shields": 0,
+          "Food": 0
+        },
+        "Row": 2,
+        "Column": 0,
+        "Type": "AbilCmd",
+        "AbilCmd": "UEDMorphTeleportationNode,On",
+        "id": "UEDButtonAcelerationMorphNode",
+        "Icon": "btn-ability-zeratul-darkarchon-maelstrom",
+        "Tooltip": "Improve the teleportation node, which will speed up the call of troops by 25%. It will also increase the strength of the structure by 100 units + 1 armor points.",
+        "Name": "Fast teleportation",
+        "Hotkey": "X"
       }
     ],
     "0002": [
@@ -377,6 +552,7 @@
         "Column": 4,
         "Type": "Submenu",
         "id": "Cancel",
+        "Icon": "btn-command-cancel",
         "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
         "Name": "Cancel",
         "Hotkey": "Esc"
@@ -540,21 +716,21 @@
             "Flags": {
               "AllowMinimap": 0
             },
-            "DefaultButtonFace": "UEDButtonGoliath",
+            "DefaultButtonFace": "UEDButtonSpartan",
             "Requirements": "HaveTacticsAcademy"
           },
           "Unit": [
-            "UEDUnitGoliath"
+            "UEDUnitSpartan"
           ],
           "Time": 40
         },
         "Unit": [
-          "UEDUnitGoliath"
+          "UEDUnitSpartan"
         ],
         "Time": 40,
         "Cost": {
           "Minerals": 125,
-          "Vespene": 50,
+          "Vespene": 75,
           "Terazine": 0,
           "Custom": 0,
           "Energy": 0,
@@ -566,10 +742,11 @@
         "Column": 2,
         "Type": "AbilCmd",
         "AbilCmd": "TeleportationNodeTrain,Train19",
-        "id": "UEDButtonGoliath",
-        "Icon": "btn-unit-terran-goliath",
+        "id": "UEDButtonSpartan",
+        "Icon": "btn-unit-uedspartan",
         "Tooltip": "Universal combat robot, effective against aerial targets.<br/><br/><span style=\"color: #FFFF8A\">Can attack ground and air targets.</span>",
-        "Name": "Request Goliath Combat Robot"
+        "Name": "Request Spartan AAC",
+        "Hotkey": "W"
       },
       {
         "Cost": {
@@ -586,6 +763,7 @@
         "Column": 4,
         "Type": "Submenu",
         "id": "Cancel",
+        "Icon": "btn-command-cancel",
         "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
         "Name": "Cancel",
         "Hotkey": "Esc"
@@ -761,7 +939,7 @@
         ],
         "Time": 35,
         "Cost": {
-          "Minerals": 100,
+          "Minerals": 125,
           "Vespene": 0,
           "Terazine": 0,
           "Custom": 0,
@@ -911,6 +1089,7 @@
         "Column": 4,
         "Type": "Submenu",
         "id": "Cancel",
+        "Icon": "btn-command-cancel",
         "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
         "Name": "Cancel",
         "Hotkey": "Esc"
@@ -1084,13 +1263,11 @@
   "Weapons": [],
   "Behaviors": [
     {
-      "id": "ReactorQueue"
-    },
-    {
-      "id": "TerranStructuresKnockbackBehavior"
-    },
-    {
       "id": "UEDConstructionVisionDebuff"
+    },
+    {
+      "id": "UEDAlgoritmHaveTrain",
+      "Icon": "btn-ability-zeratul-darkarchon-maelstrom"
     }
   ],
   "Abilities": [
@@ -1109,6 +1286,9 @@
     {
       "id": "Rally",
       "Name": "Rally"
+    },
+    {
+      "id": "UEDMorphTeleportationNode"
     }
   ],
   "$Upgrades": [
@@ -1129,7 +1309,7 @@
     "Lazarus",
     "Garmr",
     "Taranis",
-    "UEDUnitGoliath",
+    "UEDUnitSpartan",
     "DrakkarAPC",
     "Typhoon",
     "PeenemundeMRLS",
@@ -1161,6 +1341,7 @@
     {
       "AbilCmd": "que52,CancelLast",
       "id": "Cancel",
+      "Icon": "btn-command-cancel",
       "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
       "Name": "Cancel"
     },
@@ -1170,6 +1351,20 @@
       "Icon": "btn-command-cancel",
       "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
       "Name": "Cancel"
+    },
+    {
+      "AbilCmd": "UEDMorphTeleportationNode,Off",
+      "id": "Cancel",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
+      "Name": "Cancel"
+    },
+    {
+      "AbilCmd": "UEDMorphTeleportationNode,On",
+      "id": "UEDButtonAcelerationMorphNode",
+      "Icon": "btn-ability-zeratul-darkarchon-maelstrom",
+      "Tooltip": "Improve the teleportation node, which will speed up the call of troops by 25%. It will also increase the strength of the structure by 100 units + 1 armor points.",
+      "Name": "Fast teleportation"
     },
     {
       "AbilCmd": "TeleportationNodeTrain,Train1",
@@ -1208,10 +1403,10 @@
     },
     {
       "AbilCmd": "TeleportationNodeTrain,Train19",
-      "id": "UEDButtonGoliath",
-      "Icon": "btn-unit-terran-goliath",
+      "id": "UEDButtonSpartan",
+      "Icon": "btn-unit-uedspartan",
       "Tooltip": "Universal combat robot, effective against aerial targets.<br/><br/><span style=\"color: #FFFF8A\">Can attack ground and air targets.</span>",
-      "Name": "Request Goliath Combat Robot"
+      "Name": "Request Spartan AAC"
     },
     {
       "AbilCmd": "TeleportationNodeTrain,Train10",

@@ -16,9 +16,9 @@
   "Mover": "Ground",
   "StationaryTurningRate": 720,
   "TurningRate": 720,
-  "Radius": 1.5,
+  "Radius": 1.75,
   "SeparationRadius": 0.5,
-  "MinimapRadius": 1.5,
+  "MinimapRadius": 1.75,
   "EditorCategories": "ObjectType:Structure,ObjectFamily:Melee",
   "TacticalAIFilters": "-;Player,Ally,Neutral",
   "AIEvalFactor": 1,
@@ -133,12 +133,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -195,12 +189,6 @@
           "EditorCategories": "Race:Neutral,AbilityorEffectType:Units",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -285,17 +273,17 @@
             "Flags": {
               "AllowMinimap": 0
             },
-            "DefaultButtonFace": "Spitfire"
+            "DefaultButtonFace": "FabricateSpitfire"
           },
           "Unit": [
             "Spitfire"
           ],
-          "Time": 42
+          "Time": 44.8
         },
         "Unit": [
           "Spitfire"
         ],
-        "Time": 42,
+        "Time": 44.8,
         "Cost": {
           "Minerals": 100,
           "Vespene": 0,
@@ -310,9 +298,9 @@
         "Column": 0,
         "Type": "AbilCmd",
         "AbilCmd": "TrainLightweightMechs,Train1",
-        "id": "Spitfire",
+        "id": "FabricateSpitfire",
         "Icon": "btn-unit-genetron-spitfire",
-        "Tooltip": "Skirmish unit.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
+        "Tooltip": "",
         "Name": "Fabricate Spitfire",
         "Hotkey": "S"
       },
@@ -322,18 +310,18 @@
             "Flags": {
               "AllowMinimap": 0
             },
-            "DefaultButtonFace": "Fixer",
-            "Requirements": "IsStandardOrOverclockedConfiguration"
+            "DefaultButtonFace": "FabricateFixer",
+            "Requirements": "HaveOutfittingStation"
           },
           "Unit": [
             "Fixer"
           ],
-          "Time": 42
+          "Time": 44.8
         },
         "Unit": [
           "Fixer"
         ],
-        "Time": 42,
+        "Time": 44.8,
         "Cost": {
           "Minerals": 100,
           "Vespene": 50,
@@ -348,9 +336,9 @@
         "Column": 2,
         "Type": "AbilCmd",
         "AbilCmd": "TrainLightweightMechs,Train6",
-        "id": "Fixer",
+        "id": "FabricateFixer",
         "Icon": "btn-unit-genetron-fixer",
-        "Tooltip": "Anti-light specialist. Can use Speed Cloak and Repair.<br/><span style=\"color: #FFFF80\"><br/>Can attack ground units.</span>",
+        "Tooltip": "",
         "Name": "Fabricate Fixer",
         "Hotkey": "F"
       },
@@ -360,18 +348,18 @@
             "Flags": {
               "AllowMinimap": 0
             },
-            "DefaultButtonFace": "Blitzer",
-            "Requirements": "IsStandardOrOverclockedConfiguration"
+            "DefaultButtonFace": "FabricateBlitzer",
+            "Requirements": "HaveAnalysisTerminal"
           },
           "Unit": [
             "Blitzer"
           ],
-          "Time": 42
+          "Time": 44.8
         },
         "Unit": [
           "Blitzer"
         ],
-        "Time": 42,
+        "Time": 44.8,
         "Cost": {
           "Minerals": 100,
           "Vespene": 25,
@@ -386,9 +374,9 @@
         "Column": 1,
         "Type": "AbilCmd",
         "AbilCmd": "TrainLightweightMechs,Train3",
-        "id": "Blitzer",
+        "id": "FabricateBlitzer",
         "Icon": "btn-unit-genetron-blitzer",
-        "Tooltip": "General purpose combat unit. Can use Supercharge and Overdrive.<br/><br/><span style=\"color: #f078ff\">Energy user.</span></n><span style=\"color: #FFFF80\">Can attack ground and air units.</span>",
+        "Tooltip": "",
         "Name": "Fabricate Blitzer",
         "Hotkey": "B"
       },
@@ -398,18 +386,18 @@
             "Flags": {
               "AllowMinimap": 0
             },
-            "DefaultButtonFace": "Equalizer",
-            "Requirements": "IsStandardOrOverclockedConfigurationAndHaveOutfittingStation"
+            "DefaultButtonFace": "FabricateEqualizer",
+            "Requirements": "HaveOutfittingStation"
           },
           "Unit": [
             "Equalizer"
           ],
-          "Time": 56
+          "Time": 50.4
         },
         "Unit": [
           "Equalizer"
         ],
-        "Time": 56,
+        "Time": 50.4,
         "Cost": {
           "Minerals": 100,
           "Vespene": 75,
@@ -424,493 +412,11 @@
         "Column": 3,
         "Type": "AbilCmd",
         "AbilCmd": "TrainLightweightMechs,Train2",
-        "id": "Equalizer",
+        "id": "FabricateEqualizer",
         "Icon": "btn-unit-genetron-equalizer-v2",
-        "Tooltip": "Anti-armor craft.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
+        "Tooltip": "",
         "Name": "Fabricate Equalizer",
         "Hotkey": "R"
-      },
-      {
-        "Info": {
-          "class": "CAbilEffectInstant",
-          "Name": "Abil/Name/GenetronProductionModePerformance",
-          "TechPlayer": "Upkeep",
-          "EditorCategories": "Race:Genetron,AbilityorEffectType:Units",
-          "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
-          "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            }
-          ],
-          "SharedFlags": {
-            "DisableWhileDead": 1
-          },
-          "DataCollection": "GenetronProductionModePerformance",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
-          "RangeSlop": 1,
-          "ArcSlop": 11.25,
-          "AutoCastAcquireLevel": "Offensive",
-          "AutoCastFilters": "Visible;Player,Ally",
-          "Flags": {
-            "AbortOnAllianceChange": 1,
-            "CancelResetAutoCast": 1,
-            "ChannelingMinimum": 1,
-            "RangeUseCasterRadius": 1,
-            "ReApproachable": 1,
-            "RequireTargetVision": 1,
-            "WaitToSpend": 1,
-            "UpdateChargesOnLevelChange": 1,
-            "Transient": 1
-          },
-          "Effect": [
-            "GenetronProductionModePerformance"
-          ],
-          "EffectRange": [
-            "0,1000"
-          ],
-          "AINotifyEffect": "GenetronProductionModePerformance",
-          "RefundArray": {
-            "Approach": 1,
-            "Prep": 1,
-            "Cast": 1
-          },
-          "RefundFraction": {
-            "Resource": {
-              "Minerals": -1,
-              "Vespene": -1,
-              "Terrazine": -1,
-              "Custom": -1
-            },
-            "Charge": -1,
-            "Cooldown": -1
-          },
-          "UseMarkerArray": {
-            "Approach": 1,
-            "Prep": 1,
-            "Cast": 1,
-            "Channel": 1
-          },
-          "PauseableArray": {
-            "Approach": 1,
-            "Prep": 1,
-            "Cast": 1,
-            "Channel": 1,
-            "Finish": 1
-          },
-          "PreemptableArray": {
-            "Approach": 1,
-            "Prep": 1,
-            "Cast": 1,
-            "Channel": 1,
-            "Finish": 1
-          },
-          "ValidatedArray": {
-            "Approach": 1,
-            "Prep": 1,
-            "Cast": 1,
-            "Channel": 1
-          },
-          "DefaultError": "MustTargetUnit",
-          "AcquirePriority": 3,
-          "SetLastTarget": "Unknown",
-          "VeterancyLevelMin": 0,
-          "VeterancyLevelSkip": 0,
-          "CmdButtonArray": {
-            "Execute": {
-              "Flags": {
-                "ShowInGlossary": 1
-              },
-              "DefaultButtonFace": "GenetronPerformanceMode",
-              "Requirements": "ProductionNotPerformanceMode"
-            }
-          },
-          "Cost": [
-            {
-              "Charge": {
-                "Link": "Abil/GenetronProductionModeStandard"
-              },
-              "Cooldown": {
-                "Link": "Abil/GenetronProductionModeStandard",
-                "Location": "Unit",
-                "TimeUse": 5
-              }
-            }
-          ],
-          "id": "GenetronProductionModePerformance"
-        },
-        "Cost": {
-          "Minerals": 0,
-          "Vespene": 0,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 2,
-        "Column": 0,
-        "Type": "AbilCmd",
-        "AbilCmd": "GenetronProductionModePerformance,Execute",
-        "id": "GenetronPerformanceMode",
-        "Icon": "btn-ability-genetron-productionmode-performance",
-        "Tooltip": "Production occurs at the base rate and requires no energy.<br/><br/><span style=\"color: #78ff78\">Production drains no energy.</span>",
-        "Name": "Performance Mode",
-        "Hotkey": "Z"
-      },
-      {
-        "Cost": {
-          "Minerals": 0,
-          "Vespene": 0,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 2,
-        "Column": 0,
-        "Type": "Passive",
-        "id": "GenetronPerformanceMode",
-        "Icon": "btn-ability-genetron-productionmode-performance",
-        "Tooltip": "Production occurs at the base rate and requires no energy.<br/><br/><span style=\"color: #78ff78\">Production drains no energy.</span>",
-        "Name": "Performance Mode",
-        "Hotkey": "Z"
-      },
-      {
-        "Info": {
-          "class": "CAbilEffectInstant",
-          "Name": "Abil/Name/GenetronProductionModeStandard",
-          "TechPlayer": "Upkeep",
-          "EditorCategories": "Race:Genetron,AbilityorEffectType:Units",
-          "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
-          "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            }
-          ],
-          "SharedFlags": {
-            "DisableWhileDead": 1
-          },
-          "DataCollection": "GenetronProductionModeStandard",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
-          "RangeSlop": 1,
-          "ArcSlop": 11.25,
-          "AutoCastAcquireLevel": "Offensive",
-          "AutoCastFilters": "Visible;Player,Ally",
-          "Flags": {
-            "AbortOnAllianceChange": 1,
-            "CancelResetAutoCast": 1,
-            "ChannelingMinimum": 1,
-            "RangeUseCasterRadius": 1,
-            "ReApproachable": 1,
-            "RequireTargetVision": 1,
-            "WaitToSpend": 1,
-            "UpdateChargesOnLevelChange": 1,
-            "Transient": 1
-          },
-          "Effect": [
-            "GenetronProductionModeStandard"
-          ],
-          "EffectRange": [
-            "0,1000"
-          ],
-          "AINotifyEffect": "GenetronProductionModeStandard",
-          "RefundArray": {
-            "Approach": 1,
-            "Prep": 1,
-            "Cast": 1
-          },
-          "RefundFraction": {
-            "Resource": {
-              "Minerals": -1,
-              "Vespene": -1,
-              "Terrazine": -1,
-              "Custom": -1
-            },
-            "Charge": -1,
-            "Cooldown": -1
-          },
-          "UseMarkerArray": {
-            "Approach": 1,
-            "Prep": 1,
-            "Cast": 1,
-            "Channel": 1
-          },
-          "PauseableArray": {
-            "Approach": 1,
-            "Prep": 1,
-            "Cast": 1,
-            "Channel": 1,
-            "Finish": 1
-          },
-          "PreemptableArray": {
-            "Approach": 1,
-            "Prep": 1,
-            "Cast": 1,
-            "Channel": 1,
-            "Finish": 1
-          },
-          "ValidatedArray": {
-            "Approach": 1,
-            "Prep": 1,
-            "Cast": 1,
-            "Channel": 1
-          },
-          "DefaultError": "MustTargetUnit",
-          "AcquirePriority": 3,
-          "SetLastTarget": "Unknown",
-          "VeterancyLevelMin": 0,
-          "VeterancyLevelSkip": 0,
-          "CmdButtonArray": {
-            "Execute": {
-              "Flags": {
-                "ShowInGlossary": 1
-              },
-              "DefaultButtonFace": "GenetronStandardMode",
-              "Requirements": "ProductionNotStandardMode"
-            }
-          },
-          "Cost": [
-            {
-              "Cooldown": {
-                "Location": "Unit",
-                "TimeUse": 5
-              }
-            }
-          ],
-          "id": "GenetronProductionModeStandard"
-        },
-        "Cost": {
-          "Minerals": 0,
-          "Vespene": 0,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 2,
-        "Column": 1,
-        "Type": "AbilCmd",
-        "AbilCmd": "GenetronProductionModeStandard,Execute",
-        "id": "GenetronStandardMode",
-        "Icon": "btn-ability-genetron-productionmode-standard",
-        "Tooltip": "Production occurs at a rate of <b>150</b>%, but if no energy is available, production will halt.<br/><br/><span style=\"color: #f078ff\">Production drains <b>0.71</b> energy per second.</span>",
-        "Name": "Standard Mode",
-        "Hotkey": "X"
-      },
-      {
-        "Cost": {
-          "Minerals": 0,
-          "Vespene": 0,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 2,
-        "Column": 1,
-        "Type": "Passive",
-        "id": "GenetronStandardMode",
-        "Icon": "btn-ability-genetron-productionmode-standard",
-        "Tooltip": "Production occurs at a rate of <b>150</b>%, but if no energy is available, production will halt.<br/><br/><span style=\"color: #f078ff\">Production drains <b>0.71</b> energy per second.</span>",
-        "Name": "Standard Mode",
-        "Hotkey": "X"
-      },
-      {
-        "Info": {
-          "class": "CAbilEffectInstant",
-          "Name": "Abil/Name/GenetronProductionModeOverclock",
-          "TechPlayer": "Upkeep",
-          "EditorCategories": "Race:Genetron,AbilityorEffectType:Units",
-          "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
-          "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            }
-          ],
-          "SharedFlags": {
-            "DisableWhileDead": 1
-          },
-          "DataCollection": "GenetronProductionModeOverclock",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
-          "RangeSlop": 1,
-          "ArcSlop": 11.25,
-          "AutoCastAcquireLevel": "Offensive",
-          "AutoCastFilters": "Visible;Player,Ally",
-          "Flags": {
-            "AbortOnAllianceChange": 1,
-            "CancelResetAutoCast": 1,
-            "ChannelingMinimum": 1,
-            "RangeUseCasterRadius": 1,
-            "ReApproachable": 1,
-            "RequireTargetVision": 1,
-            "WaitToSpend": 1,
-            "UpdateChargesOnLevelChange": 1,
-            "Transient": 1
-          },
-          "Effect": [
-            "GenetronProductionModeOverclock"
-          ],
-          "EffectRange": [
-            "0,1000"
-          ],
-          "AINotifyEffect": "GenetronProductionModeOverclock",
-          "RefundArray": {
-            "Approach": 1,
-            "Prep": 1,
-            "Cast": 1
-          },
-          "RefundFraction": {
-            "Resource": {
-              "Minerals": -1,
-              "Vespene": -1,
-              "Terrazine": -1,
-              "Custom": -1
-            },
-            "Charge": -1,
-            "Cooldown": -1
-          },
-          "UseMarkerArray": {
-            "Approach": 1,
-            "Prep": 1,
-            "Cast": 1,
-            "Channel": 1
-          },
-          "PauseableArray": {
-            "Approach": 1,
-            "Prep": 1,
-            "Cast": 1,
-            "Channel": 1,
-            "Finish": 1
-          },
-          "PreemptableArray": {
-            "Approach": 1,
-            "Prep": 1,
-            "Cast": 1,
-            "Channel": 1,
-            "Finish": 1
-          },
-          "ValidatedArray": {
-            "Approach": 1,
-            "Prep": 1,
-            "Cast": 1,
-            "Channel": 1
-          },
-          "DefaultError": "MustTargetUnit",
-          "AcquirePriority": 3,
-          "SetLastTarget": "Unknown",
-          "VeterancyLevelMin": 0,
-          "VeterancyLevelSkip": 0,
-          "CmdButtonArray": {
-            "Execute": {
-              "Flags": {
-                "ShowInGlossary": 1
-              },
-              "DefaultButtonFace": "GenetronOverclockMode",
-              "Requirements": "ProductionNotOverclockMode"
-            }
-          },
-          "Cost": [
-            {
-              "Charge": {
-                "Link": "Abil/GenetronProductionModeStandard"
-              },
-              "Cooldown": {
-                "Link": "Abil/GenetronProductionModeStandard",
-                "Location": "Unit",
-                "TimeUse": 5
-              }
-            }
-          ],
-          "id": "GenetronProductionModeOverclock"
-        },
-        "Cost": {
-          "Minerals": 0,
-          "Vespene": 0,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 2,
-        "Column": 2,
-        "Type": "AbilCmd",
-        "AbilCmd": "GenetronProductionModeOverclock,Execute",
-        "id": "GenetronOverclockMode",
-        "Icon": "btn-ability-genetron-productionmode-overclock",
-        "Tooltip": "Production occurs at a rate of <b>200</b>%, but if no energy is available, production will halt.<br/><br/><span style=\"color: #f078ff\">Production drains <b>1.43</b> energy per second.</span>",
-        "Name": "Overclock Mode",
-        "Hotkey": "C"
-      },
-      {
-        "Cost": {
-          "Minerals": 0,
-          "Vespene": 0,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 2,
-        "Column": 2,
-        "Type": "Passive",
-        "id": "GenetronOverclockMode",
-        "Icon": "btn-ability-genetron-productionmode-overclock",
-        "Tooltip": "Production occurs at a rate of <b>200</b>%, but if no energy is available, production will halt.<br/><br/><span style=\"color: #f078ff\">Production drains <b>1.43</b> energy per second.</span>",
-        "Name": "Overclock Mode",
-        "Hotkey": "C"
       },
       {
         "Info": {
@@ -918,8 +424,8 @@
             "Flags": {
               "AllowMinimap": 0
             },
-            "DefaultButtonFace": "Aquila",
-            "Requirements": "IsOverclockedConfigurationAndHaveTechVault"
+            "DefaultButtonFace": "FabricateAquila",
+            "Requirements": "HaveChemicalFirm"
           },
           "Unit": [
             "Aquila"
@@ -938,26 +444,161 @@
           "Energy": 0,
           "Life": 0,
           "Shields": 0,
-          "Food": -3
+          "Food": -2
         },
         "Row": 0,
         "Column": 4,
         "Type": "AbilCmd",
         "AbilCmd": "TrainLightweightMechs,Train5",
-        "id": "Aquila",
+        "id": "FabricateAquila",
         "Icon": "btn-unit-genetron-aquila",
-        "Tooltip": "Support trooper. Can use Supercharge and Nanite Grenade.<br/><br/><span style=\"color: #f078ff\">Energy user.</span><br/><span style=\"color: #FFFF80\">Can attack ground and air units.</span>",
+        "Tooltip": "",
         "Name": "Fabricate Aquila",
         "Hotkey": "A"
+      },
+      {
+        "Info": {
+          "class": "CAbilEffectInstant",
+          "Name": "Abil/Name/Scion_Overclock",
+          "TechPlayer": "Upkeep",
+          "EditorCategories": "Race:Genetron,AbilityorEffectType:Units",
+          "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
+          "OrderArray": [
+            {
+              "DisplayType": "Confirm",
+              "Color": "255,0,255,0",
+              "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
+              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
+            }
+          ],
+          "SharedFlags": {
+            "DisableWhileDead": 1
+          },
+          "DataCollection": "Scion_Overclock",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
+          "RangeSlop": 1,
+          "ArcSlop": 11.25,
+          "AutoCastAcquireLevel": "Offensive",
+          "AutoCastFilters": "Visible;Player,Ally",
+          "Flags": {
+            "AbortOnAllianceChange": 1,
+            "CancelResetAutoCast": 1,
+            "ChannelingMinimum": 1,
+            "RangeUseCasterRadius": 1,
+            "ReApproachable": 1,
+            "RequireTargetVision": 1,
+            "WaitToSpend": 1,
+            "UpdateChargesOnLevelChange": 1
+          },
+          "Effect": [
+            "Scion_OverclockPowerEnum"
+          ],
+          "EffectRange": [
+            "0,1000"
+          ],
+          "AINotifyEffect": "Scion_Overclock",
+          "RefundArray": {
+            "Approach": 1,
+            "Prep": 1,
+            "Cast": 1
+          },
+          "RefundFraction": {
+            "Resource": {
+              "Minerals": -1,
+              "Vespene": -1,
+              "Terrazine": -1,
+              "Custom": -1
+            },
+            "Charge": -1,
+            "Cooldown": -1
+          },
+          "UseMarkerArray": {
+            "Approach": 1,
+            "Prep": 1,
+            "Cast": 1,
+            "Channel": 1
+          },
+          "PauseableArray": {
+            "Approach": 1,
+            "Prep": 1,
+            "Cast": 1,
+            "Channel": 1,
+            "Finish": 1
+          },
+          "PreemptableArray": {
+            "Approach": 1,
+            "Prep": 1,
+            "Cast": 1,
+            "Channel": 1,
+            "Finish": 1
+          },
+          "ValidatedArray": {
+            "Approach": 1,
+            "Prep": 1,
+            "Cast": 1,
+            "Channel": 1
+          },
+          "DefaultError": "MustTargetUnit",
+          "AcquirePriority": 3,
+          "SetLastTarget": "Unknown",
+          "VeterancyLevelMin": 0,
+          "VeterancyLevelSkip": 0,
+          "CmdButtonArray": {
+            "Execute": {
+              "Flags": {
+                "ShowInGlossary": 1
+              },
+              "DefaultButtonFace": "Scion_Overclock",
+              "Requirements": "UseOverclock"
+            }
+          },
+          "Arc": 360,
+          "Cost": [
+            {
+              "Cooldown": {
+                "TimeStart": 0.0625
+              }
+            }
+          ],
+          "PreEffectBehavior": {
+            "Behavior": "Scion_OverclockTargetMarker",
+            "Count": 1
+          },
+          "id": "Scion_Overclock"
+        },
+        "Cost": {
+          "Minerals": 0,
+          "Vespene": 0,
+          "Terazine": 0,
+          "Custom": 0,
+          "Energy": 0,
+          "Life": 0,
+          "Shields": 0,
+          "Food": 0
+        },
+        "Row": 2,
+        "Column": 0,
+        "Type": "AbilCmd",
+        "AbilCmd": "Scion_Overclock,Execute",
+        "id": "Scion_Overclock",
+        "Icon": "btn-ability-genetron-productionmode-overclock",
+        "Tooltip": "<s val=\"VerySmallFont\">  </s><img path=\"@@UI/ResourceIconPower\" width=\"24\" height=\"24\" alignment=\"absolutemiddle\"/><c val=\"FF0000\" validator=\"GenetronPowerSupplyLT75\"><b>75</b></span><img path=\"Assets\\Textures\\blank.dds\" width=\"1\" height=\"24\" alignment=\"top\"/><br/>Increases production speed by <b>-98</b>% for <b>28</b> seconds. Repeated casts increase the duration up to <b>112</b> seconds.",
+        "Name": "Overclock",
+        "Hotkey": "Z"
       }
     ]
   },
   "Footprint": "Footprint3x3Contour",
   "PlacementFootprint": "Footprint3x3Contour",
   "CostResource": {
-    "Minerals": 150
+    "Minerals": 175
   },
-  "RepairTime": 65,
+  "RepairTime": 70,
   "SubgroupPriority": 10,
   "GlossaryPriority": 19,
   "TechTreeProducedUnitArray": [
@@ -979,14 +620,19 @@
       "Name": "Lockdown Mode"
     },
     {
-      "id": "GenetronProductionModePerformanceBuff",
-      "Icon": "btn-ability-genetron-productionmode-performance"
+      "id": "GenetronPowerSupplyTracker"
     },
     {
-      "id": "ManufacturerIsTraining"
+      "id": "Manufacturer"
+    },
+    {
+      "id": "TrackAndMirrorGenetronPowerSupply"
     },
     {
       "id": "UnderConstruction"
+    },
+    {
+      "id": "OverclockPowerReq"
     }
   ],
   "Abilities": [
@@ -999,6 +645,10 @@
       "Name": "Queue (5)"
     },
     {
+      "id": "Scion_DisplayCooldownDummy",
+      "Name": "Display Cooldown Dummy"
+    },
+    {
       "id": "Rally",
       "Name": "Rally"
     },
@@ -1007,25 +657,17 @@
       "Name": "Train Lightweight Mechs"
     },
     {
-      "id": "GenetronProductionModePerformance",
-      "Name": "Genetron Production Mode (Performance)"
-    },
-    {
-      "id": "GenetronProductionModeStandard",
-      "Name": "Genetron Production Mode (Standard)"
-    },
-    {
-      "id": "GenetronProductionModeOverclock",
-      "Name": "Genetron Production Mode (Overclock)"
+      "id": "Scion_Overclock",
+      "Name": "Genetron - Overclock"
     }
   ],
   "$Upgrades": [
     "ACRBuild",
     "Manufacturer",
-    "CountUnitManufacturerCompleteOnly",
-    "UploaderLinkedtoManufacturer",
+    "IsManufacturer",
     "CountUnitManufacturerCompleteOnlyTechTreeCheat",
-    "Uploader3x3AddonDummy",
+    "CountUnitManufacturerCompleteOnly",
+    "AddonDummy",
     "Manufacturer",
     "ManufacturerSplat"
   ],
@@ -1067,59 +709,45 @@
     },
     {
       "AbilCmd": "TrainLightweightMechs,Train1",
-      "id": "Spitfire",
+      "id": "FabricateSpitfire",
       "Icon": "btn-unit-genetron-spitfire",
-      "Tooltip": "Skirmish unit.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
+      "Tooltip": "",
       "Name": "Fabricate Spitfire"
     },
     {
       "AbilCmd": "TrainLightweightMechs,Train6",
-      "id": "Fixer",
+      "id": "FabricateFixer",
       "Icon": "btn-unit-genetron-fixer",
-      "Tooltip": "Anti-light specialist. Can use Speed Cloak and Repair.<br/><span style=\"color: #FFFF80\"><br/>Can attack ground units.</span>",
+      "Tooltip": "",
       "Name": "Fabricate Fixer"
     },
     {
       "AbilCmd": "TrainLightweightMechs,Train3",
-      "id": "Blitzer",
+      "id": "FabricateBlitzer",
       "Icon": "btn-unit-genetron-blitzer",
-      "Tooltip": "General purpose combat unit. Can use Supercharge and Overdrive.<br/><br/><span style=\"color: #f078ff\">Energy user.</span></n><span style=\"color: #FFFF80\">Can attack ground and air units.</span>",
+      "Tooltip": "",
       "Name": "Fabricate Blitzer"
     },
     {
       "AbilCmd": "TrainLightweightMechs,Train2",
-      "id": "Equalizer",
+      "id": "FabricateEqualizer",
       "Icon": "btn-unit-genetron-equalizer-v2",
-      "Tooltip": "Anti-armor craft.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
+      "Tooltip": "",
       "Name": "Fabricate Equalizer"
     },
     {
-      "AbilCmd": "GenetronProductionModePerformance,Execute",
-      "id": "GenetronPerformanceMode",
-      "Icon": "btn-ability-genetron-productionmode-performance",
-      "Tooltip": "Production occurs at the base rate and requires no energy.<br/><br/><span style=\"color: #78ff78\">Production drains no energy.</span>",
-      "Name": "Performance Mode"
-    },
-    {
-      "AbilCmd": "GenetronProductionModeStandard,Execute",
-      "id": "GenetronStandardMode",
-      "Icon": "btn-ability-genetron-productionmode-standard",
-      "Tooltip": "Production occurs at a rate of <b>150</b>%, but if no energy is available, production will halt.<br/><br/><span style=\"color: #f078ff\">Production drains <b>0.71</b> energy per second.</span>",
-      "Name": "Standard Mode"
-    },
-    {
-      "AbilCmd": "GenetronProductionModeOverclock,Execute",
-      "id": "GenetronOverclockMode",
-      "Icon": "btn-ability-genetron-productionmode-overclock",
-      "Tooltip": "Production occurs at a rate of <b>200</b>%, but if no energy is available, production will halt.<br/><br/><span style=\"color: #f078ff\">Production drains <b>1.43</b> energy per second.</span>",
-      "Name": "Overclock Mode"
-    },
-    {
       "AbilCmd": "TrainLightweightMechs,Train5",
-      "id": "Aquila",
+      "id": "FabricateAquila",
       "Icon": "btn-unit-genetron-aquila",
-      "Tooltip": "Support trooper. Can use Supercharge and Nanite Grenade.<br/><br/><span style=\"color: #f078ff\">Energy user.</span><br/><span style=\"color: #FFFF80\">Can attack ground and air units.</span>",
+      "Tooltip": "",
       "Name": "Fabricate Aquila"
+    },
+    {
+      "AbilCmd": "Scion_Overclock,Execute",
+      "id": "Scion_Overclock",
+      "Icon": "btn-ability-genetron-productionmode-overclock",
+      "Tooltip": "<s val=\"VerySmallFont\">  </s><img path=\"@@UI/ResourceIconPower\" width=\"24\" height=\"24\" alignment=\"absolutemiddle\"/><c val=\"FF0000\" validator=\"GenetronPowerSupplyLT75\"><b>75</b></span><img path=\"Assets\\Textures\\blank.dds\" width=\"1\" height=\"24\" alignment=\"top\"/><br/>Increases production speed by <b>-98</b>% for <b>28</b> seconds. Repeated casts increase the duration up to <b>112</b> seconds.",
+      "Name": "Overclock"
     }
   ]
 }

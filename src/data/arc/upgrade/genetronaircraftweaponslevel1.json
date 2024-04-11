@@ -12,6 +12,7 @@
   "ScoreValue": "WeaponTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "GenetronAircraftWeapons",
+  "EditorCategories": "Race:Genetron,UpgradeType:AttackBonus",
   "$tokens": {
     "ID": {
       "type": "string",
@@ -87,7 +88,6 @@
       "Value": "Assets\\Textures\\btn-upgrade-genetron-rocketweapons-level1.dds"
     }
   ],
-  "EditorCategories": "Race:Genetron,UpgradeType:AttackBonus",
   "AffectedUnitArray": [
     "Scion_Avenger",
     "Badger",

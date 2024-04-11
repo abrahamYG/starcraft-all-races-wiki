@@ -18,7 +18,7 @@
   "TurningRate": 720,
   "Radius": 1.875,
   "SeparationRadius": 0.5,
-  "MinimapRadius": 2,
+  "MinimapRadius": 2.125,
   "EditorCategories": "ObjectType:Structure,ObjectFamily:Melee",
   "TacticalAIFilters": "-;Player,Ally,Neutral",
   "AIEvalFactor": 1,
@@ -240,6 +240,7 @@
         "Type": "AbilCmd",
         "AbilCmd": "que5,CancelLast",
         "id": "Cancel",
+        "Icon": "btn-command-cancel",
         "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
         "Name": "Cancel",
         "Hotkey": "Esc"
@@ -277,8 +278,7 @@
           "Unit": [
             "Scion_Avenger"
           ],
-          "Time": 35,
-          "Effect": "AssemblyArrayFinishAvengerInit"
+          "Time": 35
         },
         "Unit": [
           "Scion_Avenger"
@@ -300,7 +300,7 @@
         "AbilCmd": "BuildAircraft,Train1",
         "id": "FabricateAvengerGenetron",
         "Icon": "btn-unit-genetron-avenger",
-        "Tooltip": "<s val=\"VerySmallFont\">  </s><img path=\"@@UI/ResourceIconPower\" width=\"24\" height=\"24\" alignment=\"absolutemiddle\"/><img path=\"Assets\\Textures\\btn-ability-genetron-productionmode-performance-nobg.dds\"width=\"21\" height=\"21\" alignment=\"absolutemiddle\"/>0<img path=\"Assets\\Textures\\btn-ability-genetron-productionmode-standard-nobg.dds\"width=\"21\" height=\"21\" alignment=\"absolutemiddle\"/><b>50</b><img path=\"Assets\\Textures\\btn-ability-genetron-productionmode-overclock-nobg.dds\"width=\"21\" height=\"21\" alignment=\"absolutemiddle\"/><b>100</b><img path=\"Assets\\Textures\\blank.dds\" width=\"1\" height=\"48\" alignment=\"middle\"/><br/>",
+        "Tooltip": "",
         "Name": "Fabricate Avenger",
         "Hotkey": "V"
       },
@@ -315,8 +315,7 @@
           "Unit": [
             "Courier"
           ],
-          "Time": 42,
-          "Effect": "AssemblyArrayFinishCourierInit"
+          "Time": 42
         },
         "Unit": [
           "Courier"
@@ -338,7 +337,7 @@
         "AbilCmd": "BuildAircraft,Train2",
         "id": "FabricateCourier",
         "Icon": "btn-unit-genetron-courier",
-        "Tooltip": "<s val=\"VerySmallFont\">  </s><img path=\"@@UI/ResourceIconPower\" width=\"24\" height=\"24\" alignment=\"absolutemiddle\"/><img path=\"Assets\\Textures\\btn-ability-genetron-productionmode-performance-nobg.dds\"width=\"21\" height=\"21\" alignment=\"absolutemiddle\"/>0<img path=\"Assets\\Textures\\btn-ability-genetron-productionmode-standard-nobg.dds\"width=\"21\" height=\"21\" alignment=\"absolutemiddle\"/><b>50</b><img path=\"Assets\\Textures\\btn-ability-genetron-productionmode-overclock-nobg.dds\"width=\"21\" height=\"21\" alignment=\"absolutemiddle\"/><b>100</b><img path=\"Assets\\Textures\\blank.dds\" width=\"1\" height=\"48\" alignment=\"middle\"/><br/>",
+        "Tooltip": "",
         "Name": "Fabricate Courier",
         "Hotkey": "E"
       },
@@ -354,8 +353,7 @@
           "Unit": [
             "Jupiter"
           ],
-          "Time": 56,
-          "Effect": "AssemblyArrayFinishJupiterInit"
+          "Time": 56
         },
         "Unit": [
           "Jupiter"
@@ -377,7 +375,7 @@
         "AbilCmd": "BuildAircraft,Train3",
         "id": "FabricateJupiter",
         "Icon": "btn-unit-genetron-jupiter",
-        "Tooltip": "<s val=\"VerySmallFont\">  </s><img path=\"@@UI/ResourceIconPower\" width=\"24\" height=\"24\" alignment=\"absolutemiddle\"/><img path=\"Assets\\Textures\\btn-ability-genetron-productionmode-performance-nobg.dds\"width=\"21\" height=\"21\" alignment=\"absolutemiddle\"/><b>30</b><img path=\"Assets\\Textures\\btn-ability-genetron-productionmode-standard-nobg.dds\"width=\"21\" height=\"21\" alignment=\"absolutemiddle\"/><b>60</b><img path=\"Assets\\Textures\\btn-ability-genetron-productionmode-overclock-nobg.dds\"width=\"21\" height=\"21\" alignment=\"absolutemiddle\"/><b>120</b><img path=\"Assets\\Textures\\blank.dds\" width=\"1\" height=\"48\" alignment=\"middle\"/><br/>",
+        "Tooltip": "",
         "Name": "Fabricate Jupiter",
         "Hotkey": "T"
       },
@@ -392,8 +390,7 @@
           "Unit": [
             "Boar"
           ],
-          "Time": 35,
-          "Effect": "AssemblyArrayFinishBoarInit"
+          "Time": 35
         },
         "Unit": [
           "Boar"
@@ -401,13 +398,13 @@
         "Time": 35,
         "Cost": {
           "Minerals": 200,
-          "Vespene": 150,
+          "Vespene": 125,
           "Terazine": 0,
           "Custom": 0,
           "Energy": 0,
           "Life": 0,
           "Shields": 0,
-          "Food": -4
+          "Food": -3
         },
         "Row": 0,
         "Column": 2,
@@ -415,7 +412,7 @@
         "AbilCmd": "BuildAircraft,Train4",
         "id": "FabricateBoar",
         "Icon": "btn-unit-genetron-boar",
-        "Tooltip": "<s val=\"VerySmallFont\">  </s><img path=\"@@UI/ResourceIconPower\" width=\"24\" height=\"24\" alignment=\"absolutemiddle\"/><img path=\"Assets\\Textures\\btn-ability-genetron-productionmode-performance-nobg.dds\"width=\"21\" height=\"21\" alignment=\"absolutemiddle\"/>0<img path=\"Assets\\Textures\\btn-ability-genetron-productionmode-standard-nobg.dds\"width=\"21\" height=\"21\" alignment=\"absolutemiddle\"/><b>50</b><img path=\"Assets\\Textures\\btn-ability-genetron-productionmode-overclock-nobg.dds\"width=\"21\" height=\"21\" alignment=\"absolutemiddle\"/><b>100</b><img path=\"Assets\\Textures\\blank.dds\" width=\"1\" height=\"48\" alignment=\"middle\"/><br/>",
+        "Tooltip": "",
         "Name": "Fabricate Boar",
         "Hotkey": "B"
       },
@@ -430,8 +427,7 @@
           "Unit": [
             "Hornet"
           ],
-          "Time": 42,
-          "Effect": "AssemblyArrayFinishHornetInit"
+          "Time": 42
         },
         "Unit": [
           "Hornet"
@@ -453,186 +449,9 @@
         "AbilCmd": "BuildAircraft,Train7",
         "id": "FabricateHornet",
         "Icon": "btn-unit-genetron-hornet",
-        "Tooltip": "<s val=\"VerySmallFont\">  </s><img path=\"@@UI/ResourceIconPower\" width=\"24\" height=\"24\" alignment=\"absolutemiddle\"/><img path=\"Assets\\Textures\\btn-ability-genetron-productionmode-performance-nobg.dds\"width=\"21\" height=\"21\" alignment=\"absolutemiddle\"/>0<img path=\"Assets\\Textures\\btn-ability-genetron-productionmode-standard-nobg.dds\"width=\"21\" height=\"21\" alignment=\"absolutemiddle\"/><b>40</b><img path=\"Assets\\Textures\\btn-ability-genetron-productionmode-overclock-nobg.dds\"width=\"21\" height=\"21\" alignment=\"absolutemiddle\"/><b>80</b><img path=\"Assets\\Textures\\blank.dds\" width=\"1\" height=\"48\" alignment=\"middle\"/><br/>",
+        "Tooltip": "",
         "Name": "Fabricate Hornet",
         "Hotkey": "R"
-      },
-      {
-        "Info": {
-          "Button": {
-            "Flags": {
-              "AllowMinimap": 0
-            },
-            "DefaultButtonFace": "GenetronPerformanceMode",
-            "Requirements": "GenetronPerformanceModeNotQueuedOrActive"
-          },
-          "Unit": [
-            "GenetronPerformanceModeDummy"
-          ],
-          "Time": 2.8,
-          "Effect": "GenetronProductionModePerformance"
-        },
-        "Unit": [
-          "GenetronPerformanceModeDummy"
-        ],
-        "Time": 2.8,
-        "Cost": {
-          "Minerals": 0,
-          "Vespene": 0,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 2,
-        "Column": 0,
-        "Type": "AbilCmd",
-        "AbilCmd": "GenetronProductionModeSwitch,Train1",
-        "id": "GenetronPerformanceMode",
-        "Icon": "btn-ability-genetron-productionmode-performance",
-        "Tooltip": "Production occurs at the base rate and uses minimal energy.",
-        "Name": "Performance Mode",
-        "Hotkey": "Z"
-      },
-      {
-        "Cost": {
-          "Minerals": 0,
-          "Vespene": 0,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 2,
-        "Column": 0,
-        "Type": "Passive",
-        "id": "GenetronPerformanceMode",
-        "Icon": "btn-ability-genetron-productionmode-performance",
-        "Tooltip": "Production occurs at the base rate and uses minimal energy.",
-        "Name": "Performance Mode",
-        "Hotkey": "Z"
-      },
-      {
-        "Info": {
-          "Button": {
-            "Flags": {
-              "AllowMinimap": 0
-            },
-            "DefaultButtonFace": "GenetronStandardMode",
-            "Requirements": "GenetronStandardModeNotQueuedOrActive"
-          },
-          "Unit": [
-            "GenetronStandardModeDummy"
-          ],
-          "Time": 2.8,
-          "Effect": "GenetronProductionModeStandard"
-        },
-        "Unit": [
-          "GenetronStandardModeDummy"
-        ],
-        "Time": 2.8,
-        "Cost": {
-          "Minerals": 0,
-          "Vespene": 0,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 2,
-        "Column": 1,
-        "Type": "AbilCmd",
-        "AbilCmd": "GenetronProductionModeSwitch,Train2",
-        "id": "GenetronStandardMode",
-        "Icon": "btn-ability-genetron-productionmode-standard",
-        "Tooltip": "Production occurs at a rate of <b>150</b>%, but if no energy is available, production will halt. Uses a medium amount of energy.",
-        "Name": "Standard Mode",
-        "Hotkey": "X"
-      },
-      {
-        "Cost": {
-          "Minerals": 0,
-          "Vespene": 0,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 2,
-        "Column": 1,
-        "Type": "Passive",
-        "id": "GenetronStandardMode",
-        "Icon": "btn-ability-genetron-productionmode-standard",
-        "Tooltip": "Production occurs at a rate of <b>150</b>%, but if no energy is available, production will halt. Uses a medium amount of energy.",
-        "Name": "Standard Mode",
-        "Hotkey": "X"
-      },
-      {
-        "Info": {
-          "Button": {
-            "Flags": {
-              "AllowMinimap": 0
-            },
-            "DefaultButtonFace": "GenetronOverclockMode",
-            "Requirements": "GenetronOverclockModeNotQueuedOrActive"
-          },
-          "Unit": [
-            "GenetronOverclockModeDummy"
-          ],
-          "Time": 2.8,
-          "Effect": "GenetronProductionModeOverclock"
-        },
-        "Unit": [
-          "GenetronOverclockModeDummy"
-        ],
-        "Time": 2.8,
-        "Cost": {
-          "Minerals": 0,
-          "Vespene": 0,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 2,
-        "Column": 2,
-        "Type": "AbilCmd",
-        "AbilCmd": "GenetronProductionModeSwitch,Train3",
-        "id": "GenetronOverclockMode",
-        "Icon": "btn-ability-genetron-productionmode-overclock",
-        "Tooltip": "Production occurs at a rate of <b>200</b>%, but if no energy is available, production will halt. Uses a high amount of energy.",
-        "Name": "Overclock Mode",
-        "Hotkey": "C"
-      },
-      {
-        "Cost": {
-          "Minerals": 0,
-          "Vespene": 0,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 2,
-        "Column": 2,
-        "Type": "Passive",
-        "id": "GenetronOverclockMode",
-        "Icon": "btn-ability-genetron-productionmode-overclock",
-        "Tooltip": "Production occurs at a rate of <b>200</b>%, but if no energy is available, production will halt. Uses a high amount of energy.",
-        "Name": "Overclock Mode",
-        "Hotkey": "C"
       },
       {
         "Info": {
@@ -646,8 +465,7 @@
           "Unit": [
             "Badger"
           ],
-          "Time": 70,
-          "Effect": "AssemblyArrayFinishBadgerInit"
+          "Time": 70
         },
         "Unit": [
           "Badger"
@@ -669,9 +487,144 @@
         "AbilCmd": "BuildAircraft,Train5",
         "id": "FabricateBadger",
         "Icon": "btn-unit-genetron-badger",
-        "Tooltip": "<s val=\"VerySmallFont\">  </s><img path=\"@@UI/ResourceIconPower\" width=\"24\" height=\"24\" alignment=\"absolutemiddle\"/><img path=\"Assets\\Textures\\btn-ability-genetron-productionmode-performance-nobg.dds\"width=\"21\" height=\"21\" alignment=\"absolutemiddle\"/><b>50</b><img path=\"Assets\\Textures\\btn-ability-genetron-productionmode-standard-nobg.dds\"width=\"21\" height=\"21\" alignment=\"absolutemiddle\"/><b>100</b><img path=\"Assets\\Textures\\btn-ability-genetron-productionmode-overclock-nobg.dds\"width=\"21\" height=\"21\" alignment=\"absolutemiddle\"/><b>200</b><img path=\"Assets\\Textures\\blank.dds\" width=\"1\" height=\"48\" alignment=\"middle\"/><br/>",
+        "Tooltip": "",
         "Name": "Fabricate Badger",
         "Hotkey": "D"
+      },
+      {
+        "Info": {
+          "class": "CAbilEffectInstant",
+          "Name": "Abil/Name/Scion_Overclock",
+          "TechPlayer": "Upkeep",
+          "EditorCategories": "Race:Genetron,AbilityorEffectType:Units",
+          "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
+          "OrderArray": [
+            {
+              "DisplayType": "Confirm",
+              "Color": "255,0,255,0",
+              "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
+              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
+            }
+          ],
+          "SharedFlags": {
+            "DisableWhileDead": 1
+          },
+          "DataCollection": "Scion_Overclock",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
+          "RangeSlop": 1,
+          "ArcSlop": 11.25,
+          "AutoCastAcquireLevel": "Offensive",
+          "AutoCastFilters": "Visible;Player,Ally",
+          "Flags": {
+            "AbortOnAllianceChange": 1,
+            "CancelResetAutoCast": 1,
+            "ChannelingMinimum": 1,
+            "RangeUseCasterRadius": 1,
+            "ReApproachable": 1,
+            "RequireTargetVision": 1,
+            "WaitToSpend": 1,
+            "UpdateChargesOnLevelChange": 1
+          },
+          "Effect": [
+            "Scion_OverclockPowerEnum"
+          ],
+          "EffectRange": [
+            "0,1000"
+          ],
+          "AINotifyEffect": "Scion_Overclock",
+          "RefundArray": {
+            "Approach": 1,
+            "Prep": 1,
+            "Cast": 1
+          },
+          "RefundFraction": {
+            "Resource": {
+              "Minerals": -1,
+              "Vespene": -1,
+              "Terrazine": -1,
+              "Custom": -1
+            },
+            "Charge": -1,
+            "Cooldown": -1
+          },
+          "UseMarkerArray": {
+            "Approach": 1,
+            "Prep": 1,
+            "Cast": 1,
+            "Channel": 1
+          },
+          "PauseableArray": {
+            "Approach": 1,
+            "Prep": 1,
+            "Cast": 1,
+            "Channel": 1,
+            "Finish": 1
+          },
+          "PreemptableArray": {
+            "Approach": 1,
+            "Prep": 1,
+            "Cast": 1,
+            "Channel": 1,
+            "Finish": 1
+          },
+          "ValidatedArray": {
+            "Approach": 1,
+            "Prep": 1,
+            "Cast": 1,
+            "Channel": 1
+          },
+          "DefaultError": "MustTargetUnit",
+          "AcquirePriority": 3,
+          "SetLastTarget": "Unknown",
+          "VeterancyLevelMin": 0,
+          "VeterancyLevelSkip": 0,
+          "CmdButtonArray": {
+            "Execute": {
+              "Flags": {
+                "ShowInGlossary": 1
+              },
+              "DefaultButtonFace": "Scion_Overclock",
+              "Requirements": "UseOverclock"
+            }
+          },
+          "Arc": 360,
+          "Cost": [
+            {
+              "Cooldown": {
+                "TimeStart": 0.0625
+              }
+            }
+          ],
+          "PreEffectBehavior": {
+            "Behavior": "Scion_OverclockTargetMarker",
+            "Count": 1
+          },
+          "id": "Scion_Overclock"
+        },
+        "Cost": {
+          "Minerals": 0,
+          "Vespene": 0,
+          "Terazine": 0,
+          "Custom": 0,
+          "Energy": 0,
+          "Life": 0,
+          "Shields": 0,
+          "Food": 0
+        },
+        "Row": 2,
+        "Column": 0,
+        "Type": "AbilCmd",
+        "AbilCmd": "Scion_Overclock,Execute",
+        "id": "Scion_Overclock",
+        "Icon": "btn-ability-genetron-productionmode-overclock",
+        "Tooltip": "<s val=\"VerySmallFont\">  </s><img path=\"@@UI/ResourceIconPower\" width=\"24\" height=\"24\" alignment=\"absolutemiddle\"/><c val=\"FF0000\" validator=\"GenetronPowerSupplyLT75\"><b>75</b></span><img path=\"Assets\\Textures\\blank.dds\" width=\"1\" height=\"24\" alignment=\"top\"/><br/>Increases production speed by <b>-98</b>% for <b>28</b> seconds. Repeated casts increase the duration up to <b>112</b> seconds.",
+        "Name": "Overclock",
+        "Hotkey": "Z"
       }
     ]
   },
@@ -698,20 +651,13 @@
   "Weapons": [],
   "Behaviors": [
     {
-      "id": "GenetronPowerSupplyTracker"
-    },
-    {
       "id": "LockdownMode",
       "Icon": "btn-ability-genetron-structurelockdownmode",
       "Tooltip": "Under lockdown due to severe damage. Takes reduced damage, and cannot fully function. Must be repaired in order to resume a regular state.",
       "Name": "Lockdown Mode"
     },
     {
-      "id": "GenetronProductionInternalEnergy"
-    },
-    {
-      "id": "GenetronProductionModePerformanceBuff",
-      "Icon": "btn-ability-genetron-productionmode-performance"
+      "id": "GenetronPowerSupplyTracker"
     },
     {
       "id": "AssemblyArray"
@@ -721,6 +667,9 @@
     },
     {
       "id": "UnderConstruction"
+    },
+    {
+      "id": "OverclockPowerReq"
     }
   ],
   "Abilities": [
@@ -733,6 +682,10 @@
       "Name": "Queue (5)"
     },
     {
+      "id": "Scion_DisplayCooldownDummy",
+      "Name": "Display Cooldown Dummy"
+    },
+    {
       "id": "Rally",
       "Name": "Rally"
     },
@@ -741,15 +694,16 @@
       "Name": "Build Aircraft"
     },
     {
-      "id": "GenetronProductionModeSwitch",
-      "Name": "Genetron Production Mode Switch"
+      "id": "Scion_Overclock",
+      "Name": "Genetron - Overclock"
     }
   ],
   "$Upgrades": [
-    "CountUnitAssemblyArrayCompleteOnly",
-    "AssemblyArray",
     "IsAssemblyArray",
+    "AssemblyArray",
     "ACRBuild",
+    "CountUnitAssemblyArrayCompleteOnly",
+    "AddonDummy",
     "AssemblyArray",
     "AssemblyArraySplat",
     "CountUnitAssemblyArrayCompleteOnlyTechTreeCheat"
@@ -761,9 +715,6 @@
     "Jupiter",
     "Boar",
     "Hornet",
-    "GenetronPerformanceModeDummy",
-    "GenetronStandardModeDummy",
-    "GenetronOverclockModeDummy",
     "Badger"
   ],
   "$Research": [],
@@ -783,6 +734,7 @@
     {
       "AbilCmd": "que5,CancelLast",
       "id": "Cancel",
+      "Icon": "btn-command-cancel",
       "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
       "Name": "Cancel"
     },
@@ -797,64 +749,50 @@
       "AbilCmd": "BuildAircraft,Train1",
       "id": "FabricateAvengerGenetron",
       "Icon": "btn-unit-genetron-avenger",
-      "Tooltip": "<s val=\"VerySmallFont\">  </s><img path=\"@@UI/ResourceIconPower\" width=\"24\" height=\"24\" alignment=\"absolutemiddle\"/><img path=\"Assets\\Textures\\btn-ability-genetron-productionmode-performance-nobg.dds\"width=\"21\" height=\"21\" alignment=\"absolutemiddle\"/>0<img path=\"Assets\\Textures\\btn-ability-genetron-productionmode-standard-nobg.dds\"width=\"21\" height=\"21\" alignment=\"absolutemiddle\"/><b>50</b><img path=\"Assets\\Textures\\btn-ability-genetron-productionmode-overclock-nobg.dds\"width=\"21\" height=\"21\" alignment=\"absolutemiddle\"/><b>100</b><img path=\"Assets\\Textures\\blank.dds\" width=\"1\" height=\"48\" alignment=\"middle\"/><br/>",
+      "Tooltip": "",
       "Name": "Fabricate Avenger"
     },
     {
       "AbilCmd": "BuildAircraft,Train2",
       "id": "FabricateCourier",
       "Icon": "btn-unit-genetron-courier",
-      "Tooltip": "<s val=\"VerySmallFont\">  </s><img path=\"@@UI/ResourceIconPower\" width=\"24\" height=\"24\" alignment=\"absolutemiddle\"/><img path=\"Assets\\Textures\\btn-ability-genetron-productionmode-performance-nobg.dds\"width=\"21\" height=\"21\" alignment=\"absolutemiddle\"/>0<img path=\"Assets\\Textures\\btn-ability-genetron-productionmode-standard-nobg.dds\"width=\"21\" height=\"21\" alignment=\"absolutemiddle\"/><b>50</b><img path=\"Assets\\Textures\\btn-ability-genetron-productionmode-overclock-nobg.dds\"width=\"21\" height=\"21\" alignment=\"absolutemiddle\"/><b>100</b><img path=\"Assets\\Textures\\blank.dds\" width=\"1\" height=\"48\" alignment=\"middle\"/><br/>",
+      "Tooltip": "",
       "Name": "Fabricate Courier"
     },
     {
       "AbilCmd": "BuildAircraft,Train3",
       "id": "FabricateJupiter",
       "Icon": "btn-unit-genetron-jupiter",
-      "Tooltip": "<s val=\"VerySmallFont\">  </s><img path=\"@@UI/ResourceIconPower\" width=\"24\" height=\"24\" alignment=\"absolutemiddle\"/><img path=\"Assets\\Textures\\btn-ability-genetron-productionmode-performance-nobg.dds\"width=\"21\" height=\"21\" alignment=\"absolutemiddle\"/><b>30</b><img path=\"Assets\\Textures\\btn-ability-genetron-productionmode-standard-nobg.dds\"width=\"21\" height=\"21\" alignment=\"absolutemiddle\"/><b>60</b><img path=\"Assets\\Textures\\btn-ability-genetron-productionmode-overclock-nobg.dds\"width=\"21\" height=\"21\" alignment=\"absolutemiddle\"/><b>120</b><img path=\"Assets\\Textures\\blank.dds\" width=\"1\" height=\"48\" alignment=\"middle\"/><br/>",
+      "Tooltip": "",
       "Name": "Fabricate Jupiter"
     },
     {
       "AbilCmd": "BuildAircraft,Train4",
       "id": "FabricateBoar",
       "Icon": "btn-unit-genetron-boar",
-      "Tooltip": "<s val=\"VerySmallFont\">  </s><img path=\"@@UI/ResourceIconPower\" width=\"24\" height=\"24\" alignment=\"absolutemiddle\"/><img path=\"Assets\\Textures\\btn-ability-genetron-productionmode-performance-nobg.dds\"width=\"21\" height=\"21\" alignment=\"absolutemiddle\"/>0<img path=\"Assets\\Textures\\btn-ability-genetron-productionmode-standard-nobg.dds\"width=\"21\" height=\"21\" alignment=\"absolutemiddle\"/><b>50</b><img path=\"Assets\\Textures\\btn-ability-genetron-productionmode-overclock-nobg.dds\"width=\"21\" height=\"21\" alignment=\"absolutemiddle\"/><b>100</b><img path=\"Assets\\Textures\\blank.dds\" width=\"1\" height=\"48\" alignment=\"middle\"/><br/>",
+      "Tooltip": "",
       "Name": "Fabricate Boar"
     },
     {
       "AbilCmd": "BuildAircraft,Train7",
       "id": "FabricateHornet",
       "Icon": "btn-unit-genetron-hornet",
-      "Tooltip": "<s val=\"VerySmallFont\">  </s><img path=\"@@UI/ResourceIconPower\" width=\"24\" height=\"24\" alignment=\"absolutemiddle\"/><img path=\"Assets\\Textures\\btn-ability-genetron-productionmode-performance-nobg.dds\"width=\"21\" height=\"21\" alignment=\"absolutemiddle\"/>0<img path=\"Assets\\Textures\\btn-ability-genetron-productionmode-standard-nobg.dds\"width=\"21\" height=\"21\" alignment=\"absolutemiddle\"/><b>40</b><img path=\"Assets\\Textures\\btn-ability-genetron-productionmode-overclock-nobg.dds\"width=\"21\" height=\"21\" alignment=\"absolutemiddle\"/><b>80</b><img path=\"Assets\\Textures\\blank.dds\" width=\"1\" height=\"48\" alignment=\"middle\"/><br/>",
+      "Tooltip": "",
       "Name": "Fabricate Hornet"
-    },
-    {
-      "AbilCmd": "GenetronProductionModeSwitch,Train1",
-      "id": "GenetronPerformanceMode",
-      "Icon": "btn-ability-genetron-productionmode-performance",
-      "Tooltip": "Production occurs at the base rate and uses minimal energy.",
-      "Name": "Performance Mode"
-    },
-    {
-      "AbilCmd": "GenetronProductionModeSwitch,Train2",
-      "id": "GenetronStandardMode",
-      "Icon": "btn-ability-genetron-productionmode-standard",
-      "Tooltip": "Production occurs at a rate of <b>150</b>%, but if no energy is available, production will halt. Uses a medium amount of energy.",
-      "Name": "Standard Mode"
-    },
-    {
-      "AbilCmd": "GenetronProductionModeSwitch,Train3",
-      "id": "GenetronOverclockMode",
-      "Icon": "btn-ability-genetron-productionmode-overclock",
-      "Tooltip": "Production occurs at a rate of <b>200</b>%, but if no energy is available, production will halt. Uses a high amount of energy.",
-      "Name": "Overclock Mode"
     },
     {
       "AbilCmd": "BuildAircraft,Train5",
       "id": "FabricateBadger",
       "Icon": "btn-unit-genetron-badger",
-      "Tooltip": "<s val=\"VerySmallFont\">  </s><img path=\"@@UI/ResourceIconPower\" width=\"24\" height=\"24\" alignment=\"absolutemiddle\"/><img path=\"Assets\\Textures\\btn-ability-genetron-productionmode-performance-nobg.dds\"width=\"21\" height=\"21\" alignment=\"absolutemiddle\"/><b>50</b><img path=\"Assets\\Textures\\btn-ability-genetron-productionmode-standard-nobg.dds\"width=\"21\" height=\"21\" alignment=\"absolutemiddle\"/><b>100</b><img path=\"Assets\\Textures\\btn-ability-genetron-productionmode-overclock-nobg.dds\"width=\"21\" height=\"21\" alignment=\"absolutemiddle\"/><b>200</b><img path=\"Assets\\Textures\\blank.dds\" width=\"1\" height=\"48\" alignment=\"middle\"/><br/>",
+      "Tooltip": "",
       "Name": "Fabricate Badger"
+    },
+    {
+      "AbilCmd": "Scion_Overclock,Execute",
+      "id": "Scion_Overclock",
+      "Icon": "btn-ability-genetron-productionmode-overclock",
+      "Tooltip": "<s val=\"VerySmallFont\">  </s><img path=\"@@UI/ResourceIconPower\" width=\"24\" height=\"24\" alignment=\"absolutemiddle\"/><c val=\"FF0000\" validator=\"GenetronPowerSupplyLT75\"><b>75</b></span><img path=\"Assets\\Textures\\blank.dds\" width=\"1\" height=\"24\" alignment=\"top\"/><br/>Increases production speed by <b>-98</b>% for <b>28</b> seconds. Repeated casts increase the duration up to <b>112</b> seconds.",
+      "Name": "Overclock"
     }
   ]
 }

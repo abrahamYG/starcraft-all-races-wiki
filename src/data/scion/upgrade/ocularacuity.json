@@ -12,6 +12,7 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "OcularAcuity",
+  "EditorCategories": "Race:Xayid,UpgradeType:Talents",
   "$tokens": {
     "ID": {
       "type": "string",
@@ -19,7 +20,6 @@
     }
   },
   "InfoTooltipPriority": 1,
-  "EditorCategories": "Race:Xayid,UpgradeType:Talents",
   "Race": "Xayi",
   "ScoreResult": "BuildOrder",
   "ScoreAmount": 300,
@@ -27,14 +27,6 @@
     {
       "Reference": "Weapon,ThrasherSpine,Range",
       "Value": "1"
-    },
-    {
-      "Reference": "Effect,ThrasherSpineDMG,Amount",
-      "Value": "1"
-    },
-    {
-      "Reference": "Effect,ThrasherSpineDMG,AttributeBonus[Armored]",
-      "Value": "3"
     }
   ],
   "AffectedUnitArray": [

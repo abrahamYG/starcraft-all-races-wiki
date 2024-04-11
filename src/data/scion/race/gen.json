@@ -15,6 +15,7 @@
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "GenetronLightWeapons",
+        "EditorCategories": "Race:Genetron,UpgradeType:AttackBonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -58,12 +59,12 @@
             "Value": "2"
           },
           {
-            "Reference": "Effect,StratumMissilePodImpact,Amount",
-            "Value": "3"
+            "Reference": "Effect,StratumMissilePodDMG,Amount",
+            "Value": "2"
           },
           {
-            "Reference": "Effect,StratumMissilePodImpact,AttributeBonus[Armored]",
-            "Value": "2"
+            "Reference": "Accumulator,EqualizerTargetDamageBonus,MaxAccumulation",
+            "Value": "3"
           },
           {
             "Reference": "Weapon,ChargeCannon,Level",
@@ -124,7 +125,6 @@
             "Value": "Assets\\Textures\\btn-upgrade-genetron-lightmechweapons-level1.dds"
           }
         ],
-        "EditorCategories": "Race:Genetron,UpgradeType:AttackBonus",
         "AffectedUnitArray": [
           "Aquila",
           "Blaze",
@@ -152,6 +152,7 @@
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "GenetronLightWeapons",
+        "EditorCategories": "Race:Genetron,UpgradeType:AttackBonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -195,12 +196,12 @@
             "Value": "2"
           },
           {
-            "Reference": "Effect,StratumMissilePodImpact,Amount",
-            "Value": "3"
+            "Reference": "Effect,StratumMissilePodDMG,Amount",
+            "Value": "2"
           },
           {
-            "Reference": "Effect,StratumMissilePodImpact,AttributeBonus[Armored]",
-            "Value": "2"
+            "Reference": "Accumulator,EqualizerTargetDamageBonus,MaxAccumulation",
+            "Value": "3"
           },
           {
             "Reference": "Weapon,ChargeCannon,Level",
@@ -261,7 +262,6 @@
             "Value": "Assets\\Textures\\btn-upgrade-genetron-lightmechweapons-level2.dds"
           }
         ],
-        "EditorCategories": "Race:Genetron,UpgradeType:AttackBonus",
         "AffectedUnitArray": [
           "Aquila",
           "Blaze",
@@ -286,6 +286,7 @@
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "GenetronLightWeapons",
+        "EditorCategories": "Race:Genetron,UpgradeType:AttackBonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -329,12 +330,12 @@
             "Value": "2"
           },
           {
-            "Reference": "Effect,StratumMissilePodImpact,Amount",
-            "Value": "3"
+            "Reference": "Effect,StratumMissilePodDMG,Amount",
+            "Value": "2"
           },
           {
-            "Reference": "Effect,StratumMissilePodImpact,AttributeBonus[Armored]",
-            "Value": "2"
+            "Reference": "Accumulator,EqualizerTargetDamageBonus,MaxAccumulation",
+            "Value": "3"
           },
           {
             "Reference": "Weapon,ChargeCannon,Level",
@@ -395,7 +396,6 @@
             "Value": "Assets\\Textures\\btn-upgrade-genetron-lightmechweapons-level3.dds"
           }
         ],
-        "EditorCategories": "Race:Genetron,UpgradeType:AttackBonus",
         "AffectedUnitArray": [
           "Aquila",
           "Blaze",
@@ -420,6 +420,7 @@
         "ScoreValue": "ArmorTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "GenetronGroundPlating",
+        "EditorCategories": "Race:Genetron,UpgradeType:ArmorBonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -479,6 +480,14 @@
             "Value": "1"
           },
           {
+            "Reference": "Unit,MoleRooted,LifeArmor",
+            "Value": "1"
+          },
+          {
+            "Reference": "Unit,MoleRooted,LifeArmorLevel",
+            "Value": "1"
+          },
+          {
             "Reference": "Unit,MoleBurrowed,LifeArmor",
             "Value": "1"
           },
@@ -566,7 +575,7 @@
           },
           {
             "Operation": "Set",
-            "Reference": "Actor,MoleBurrowed,LifeArmorIcon",
+            "Reference": "Actor,MoleRooted,LifeArmorIcon",
             "Value": "Assets\\Textures\\btn-upgrade-genetron-groundmechplating-level1.dds"
           },
           {
@@ -600,7 +609,6 @@
             "Value": "Assets\\Textures\\btn-upgrade-genetron-groundmechplating-level1.dds"
           }
         ],
-        "EditorCategories": "Race:Genetron,UpgradeType:ArmorBonus",
         "AffectedUnitArray": [
           "Aquila",
           "Blaze",
@@ -634,6 +642,7 @@
         "ScoreValue": "ArmorTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "GenetronGroundPlating",
+        "EditorCategories": "Race:Genetron,UpgradeType:ArmorBonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -693,6 +702,14 @@
             "Value": "1"
           },
           {
+            "Reference": "Unit,MoleRooted,LifeArmor",
+            "Value": "1"
+          },
+          {
+            "Reference": "Unit,MoleRooted,LifeArmorLevel",
+            "Value": "1"
+          },
+          {
             "Reference": "Unit,MoleBurrowed,LifeArmor",
             "Value": "1"
           },
@@ -780,7 +797,7 @@
           },
           {
             "Operation": "Set",
-            "Reference": "Actor,MoleBurrowed,LifeArmorIcon",
+            "Reference": "Actor,MoleRooted,LifeArmorIcon",
             "Value": "Assets\\Textures\\btn-upgrade-genetron-groundmechplating-level2.dds"
           },
           {
@@ -814,7 +831,6 @@
             "Value": "Assets\\Textures\\btn-upgrade-genetron-groundmechplating-level2.dds"
           }
         ],
-        "EditorCategories": "Race:Genetron,UpgradeType:ArmorBonus",
         "AffectedUnitArray": [
           "Aquila",
           "Blaze",
@@ -845,6 +861,7 @@
         "ScoreValue": "ArmorTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "GenetronGroundPlating",
+        "EditorCategories": "Race:Genetron,UpgradeType:ArmorBonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -904,6 +921,14 @@
             "Value": "1"
           },
           {
+            "Reference": "Unit,MoleRooted,LifeArmor",
+            "Value": "1"
+          },
+          {
+            "Reference": "Unit,MoleRooted,LifeArmorLevel",
+            "Value": "1"
+          },
+          {
             "Reference": "Unit,MoleBurrowed,LifeArmor",
             "Value": "1"
           },
@@ -991,7 +1016,7 @@
           },
           {
             "Operation": "Set",
-            "Reference": "Actor,MoleBurrowed,LifeArmorIcon",
+            "Reference": "Actor,MoleRooted,LifeArmorIcon",
             "Value": "Assets\\Textures\\btn-upgrade-genetron-groundmechplating-level3.dds"
           },
           {
@@ -1025,7 +1050,6 @@
             "Value": "Assets\\Textures\\btn-upgrade-genetron-groundmechplating-level3.dds"
           }
         ],
-        "EditorCategories": "Race:Genetron,UpgradeType:ArmorBonus",
         "AffectedUnitArray": [
           "Aquila",
           "Blaze",
@@ -1056,6 +1080,7 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "CalibratedEngines",
+        "EditorCategories": "Race:Genetron,UpgradeType:Talents",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -1064,7 +1089,6 @@
         },
         "InfoTooltipPriority": 1,
         "id": "CalibratedEngines",
-        "EditorCategories": "Race:Genetron,UpgradeType:Talents",
         "Race": "Gen",
         "ScoreResult": "BuildOrder",
         "Icon": "btn-upgrade-genetron-calibratedengines",
@@ -1072,7 +1096,7 @@
         "EffectArray": [
           {
             "Reference": "Unit,Spitfire,Speed",
-            "Value": "1.49"
+            "Value": "1.250000"
           }
         ],
         "AffectedUnitArray": [
@@ -1091,6 +1115,7 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "SpitfireMadcapRounds",
+        "EditorCategories": "Race:Genetron,UpgradeType:Talents",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -1099,11 +1124,10 @@
         },
         "InfoTooltipPriority": 1,
         "id": "SpitfireMadcapRounds",
-        "EditorCategories": "Race:Genetron,UpgradeType:Talents",
         "Race": "Gen",
         "ScoreResult": "BuildOrder",
         "Icon": "btn-tips-terran-penetrator",
-        "ScoreAmount": 400,
+        "ScoreAmount": 200,
         "EffectArray": [
           {
             "Reference": "Weapon,RiotGun,Range",
@@ -1111,309 +1135,15 @@
           },
           {
             "Reference": "Weapon,RiotGun,MinScanRange",
-            "Value": "0.5"
+            "Value": "1"
           },
           {
             "Reference": "Weapon,RiotGun,Period",
-            "Value": "-0.084000"
+            "Value": "-0.056000"
           }
         ],
         "AffectedUnitArray": [
           "Spitfire"
-        ]
-      },
-      "BlitzerBoreanReactor": {
-        "class": "CUpgrade",
-        "Flags": {
-          "UpgradeCheat": 1
-        },
-        "Name": "Borean Reactor",
-        "MaxLevel": 1,
-        "Alert": "ResearchComplete",
-        "ScoreCount": "MiscTechnologyCount",
-        "ScoreValue": "MiscTechnologyValue",
-        "WebPriority": 1,
-        "LeaderAlias": "BlitzerBoreanReactor",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
-        "InfoTooltipPriority": 1,
-        "id": "BlitzerBoreanReactor",
-        "EditorCategories": "Race:Genetron,UpgradeType:Talents",
-        "Race": "Gen",
-        "ScoreResult": "BuildOrder",
-        "Icon": "btn-upgrade-genetron-boreanreactor",
-        "ScoreAmount": 300,
-        "EffectArray": [
-          {
-            "Reference": "Unit,Blitzer,EnergyMax",
-            "Value": "15"
-          },
-          {
-            "Reference": "Unit,Blitzer,EnergyStart",
-            "Value": "15"
-          }
-        ],
-        "AffectedUnitArray": [
-          "Blitzer"
-        ]
-      },
-      "FixerReactiveArmor": {
-        "class": "CUpgrade",
-        "Flags": {
-          "UpgradeCheat": 1
-        },
-        "Name": "Reactive Armor",
-        "MaxLevel": 1,
-        "Alert": "ResearchComplete",
-        "ScoreCount": "MiscTechnologyCount",
-        "ScoreValue": "MiscTechnologyValue",
-        "WebPriority": 1,
-        "LeaderAlias": "FixerReactiveArmor",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
-        "InfoTooltipPriority": 1,
-        "id": "FixerReactiveArmor",
-        "EditorCategories": "Race:Genetron,UpgradeType:Talents",
-        "Race": "Gen",
-        "ScoreResult": "BuildOrder",
-        "Icon": "btn-upgrade-genetron-reactivearmor",
-        "ScoreAmount": 300,
-        "EffectArray": [
-          {
-            "Reference": "Behavior,FixerReactiveArmor,DamageResponse.Chance",
-            "Value": "1"
-          }
-        ],
-        "AffectedUnitArray": [
-          "Fixer"
-        ]
-      },
-      "EnhancedTargeting": {
-        "class": "CUpgrade",
-        "Flags": {
-          "UpgradeCheat": 1
-        },
-        "Name": "Enhanced Targeting",
-        "MaxLevel": 1,
-        "Alert": "ResearchComplete",
-        "ScoreCount": "MiscTechnologyCount",
-        "ScoreValue": "MiscTechnologyValue",
-        "WebPriority": 1,
-        "LeaderAlias": "EnhancedTargeting",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
-        "InfoTooltipPriority": 1,
-        "id": "EnhancedTargeting",
-        "EditorCategories": "Race:Genetron,UpgradeType:Talents",
-        "Race": "Gen",
-        "ScoreResult": "BuildOrder",
-        "Icon": "btn-upgrade-genetron-enhancedtargeting",
-        "ScoreAmount": 200,
-        "EffectArray": [
-          {
-            "Reference": "Weapon,TwinP1Dash0Guns,Range",
-            "Value": "1"
-          },
-          {
-            "Reference": "Weapon,TwinP1Dash0Guns,MinScanRange",
-            "Value": "1"
-          },
-          {
-            "Reference": "Weapon,HurricaneMissiles,Range",
-            "Value": "3"
-          },
-          {
-            "Reference": "Weapon,HurricaneMissiles,MinScanRange",
-            "Value": "3"
-          }
-        ],
-        "AffectedUnitArray": [
-          "Torrent"
-        ]
-      },
-      "SubterraneanSensors": {
-        "class": "CUpgrade",
-        "Flags": {
-          "UpgradeCheat": 1
-        },
-        "Name": "Subterranean Sensors",
-        "MaxLevel": 1,
-        "Alert": "ResearchComplete",
-        "ScoreCount": "MiscTechnologyCount",
-        "ScoreValue": "MiscTechnologyValue",
-        "WebPriority": 1,
-        "LeaderAlias": "SubterraneanSensors",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
-        "InfoTooltipPriority": 1,
-        "id": "SubterraneanSensors",
-        "EditorCategories": "Race:Genetron,UpgradeType:Talents",
-        "Race": "Gen",
-        "ScoreResult": "BuildOrder",
-        "Icon": "btn-upgrade-terran-nova-detector",
-        "ScoreAmount": 300,
-        "EffectArray": [
-          {
-            "Reference": "Behavior,MoleBurrowed,Modification.Radar",
-            "Value": "25"
-          }
-        ],
-        "AffectedUnitArray": [
-          "Mole",
-          "MoleBurrowed"
-        ]
-      },
-      "ShapedHull": {
-        "class": "CUpgrade",
-        "Flags": {
-          "UpgradeCheat": 1
-        },
-        "Name": "Shaped Hull",
-        "MaxLevel": 1,
-        "Alert": "ResearchComplete",
-        "ScoreCount": "MiscTechnologyCount",
-        "ScoreValue": "MiscTechnologyValue",
-        "WebPriority": 1,
-        "LeaderAlias": "ShapedHull",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
-        "InfoTooltipPriority": 1,
-        "id": "ShapedHull",
-        "EditorCategories": "Race:Genetron,UpgradeType:Talents",
-        "Race": "Gen",
-        "ScoreResult": "BuildOrder",
-        "Icon": "btn-upgrade-genetron-shapedhull",
-        "ScoreAmount": 300,
-        "EffectArray": [
-          {
-            "Reference": "Unit,Boar,LifeMax",
-            "Value": "50"
-          },
-          {
-            "Reference": "Unit,Boar,LifeStart",
-            "Value": "50"
-          }
-        ],
-        "AffectedUnitArray": [
-          "Boar"
-        ]
-      },
-      "AAMDefenseTurret": {
-        "class": "CUpgrade",
-        "Flags": {
-          "UpgradeCheat": 1
-        },
-        "Name": "AAM Defense Turret",
-        "MaxLevel": 1,
-        "Alert": "ResearchComplete",
-        "ScoreCount": "MiscTechnologyCount",
-        "ScoreValue": "MiscTechnologyValue",
-        "WebPriority": 1,
-        "LeaderAlias": "AAMDefenseTurret",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
-        "InfoTooltipPriority": 1,
-        "id": "AAMDefenseTurret",
-        "EditorCategories": "Race:Genetron,UpgradeType:Talents",
-        "Race": "Gen",
-        "ScoreResult": "BuildOrder",
-        "Icon": "btn-upgrade-genetron-auxillaryantimissiledefenseturret",
-        "ScoreAmount": 400,
-        "AffectedUnitArray": [
-          "Badger"
-        ]
-      },
-      "IntegratedOptics": {
-        "class": "CUpgrade",
-        "Flags": {
-          "UpgradeCheat": 1
-        },
-        "Name": "Integrated Optics",
-        "MaxLevel": 1,
-        "Alert": "ResearchComplete",
-        "ScoreCount": "MiscTechnologyCount",
-        "ScoreValue": "MiscTechnologyValue",
-        "WebPriority": 1,
-        "LeaderAlias": "IntegratedOptics",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
-        "InfoTooltipPriority": 1,
-        "id": "IntegratedOptics",
-        "EditorCategories": "Race:Genetron,UpgradeType:Talents",
-        "Race": "Gen",
-        "ScoreResult": "BuildOrder",
-        "Icon": "btn-upgrade-genetron-integratedoptics",
-        "ScoreAmount": 200,
-        "EffectArray": [
-          {
-            "Reference": "Unit,Processor,Sight",
-            "Value": "2"
-          },
-          {
-            "Operation": "Set",
-            "Reference": "Unit,Processor,TacticalAI",
-            "Value": "ProcessorUpgrade"
-          }
-        ],
-        "AffectedUnitArray": [
-          "Processor"
-        ]
-      },
-      "CloakingGenerator": {
-        "class": "CUpgrade",
-        "Flags": {
-          "UpgradeCheat": 1
-        },
-        "Name": "Cloaking Generator",
-        "MaxLevel": 1,
-        "Alert": "ResearchComplete",
-        "ScoreCount": "MiscTechnologyCount",
-        "ScoreValue": "MiscTechnologyValue",
-        "WebPriority": 1,
-        "LeaderAlias": "CloakingGenerator",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
-        "InfoTooltipPriority": 1,
-        "id": "CloakingGenerator",
-        "EditorCategories": "Race:Genetron,UpgradeType:Talents",
-        "Race": "Gen",
-        "ScoreResult": "BuildOrder",
-        "Icon": "btn-upgrade-genetron-processorcloak",
-        "ScoreAmount": 200,
-        "AffectedUnitArray": [
-          "Processor"
         ]
       },
       "GenetronHeavyWeaponsLevel1": {
@@ -1428,6 +1158,7 @@
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "GenetronHeavyWeapons",
+        "EditorCategories": "Race:Genetron,UpgradeType:AttackBonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -1444,11 +1175,7 @@
           },
           {
             "Reference": "Effect,LynxCannonImpact,Amount",
-            "Value": "4"
-          },
-          {
-            "Reference": "Effect,LynxCannonImpact,AttributeBonus[Armored]",
-            "Value": "1"
+            "Value": "5"
           },
           {
             "Reference": "Effect,TwinP1Dash0Guns,Amount",
@@ -1520,11 +1247,10 @@
             "Value": "Assets\\Textures\\btn-upgrade-genetron-heavymechweapons-level1.dds"
           }
         ],
-        "EditorCategories": "Race:Genetron,UpgradeType:AttackBonus",
         "AffectedUnitArray": [
           "Torrent",
           "Mole",
-          "MoleBurrowed",
+          "MoleRooted",
           "Inciter",
           "Virtus"
         ],
@@ -1548,6 +1274,7 @@
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "GenetronHeavyWeapons",
+        "EditorCategories": "Race:Genetron,UpgradeType:AttackBonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -1564,11 +1291,7 @@
           },
           {
             "Reference": "Effect,LynxCannonImpact,Amount",
-            "Value": "4"
-          },
-          {
-            "Reference": "Effect,LynxCannonImpact,AttributeBonus[Armored]",
-            "Value": "1"
+            "Value": "5"
           },
           {
             "Reference": "Effect,TwinP1Dash0Guns,Amount",
@@ -1640,11 +1363,10 @@
             "Value": "Assets\\Textures\\btn-upgrade-genetron-heavymechweapons-level2.dds"
           }
         ],
-        "EditorCategories": "Race:Genetron,UpgradeType:AttackBonus",
         "AffectedUnitArray": [
           "Torrent",
           "Mole",
-          "MoleBurrowed",
+          "MoleRooted",
           "Inciter",
           "Virtus"
         ],
@@ -1665,6 +1387,7 @@
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "GenetronHeavyWeapons",
+        "EditorCategories": "Race:Genetron,UpgradeType:AttackBonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -1681,11 +1404,7 @@
           },
           {
             "Reference": "Effect,LynxCannonImpact,Amount",
-            "Value": "4"
-          },
-          {
-            "Reference": "Effect,LynxCannonImpact,AttributeBonus[Armored]",
-            "Value": "1"
+            "Value": "5"
           },
           {
             "Reference": "Effect,TwinP1Dash0Guns,Amount",
@@ -1757,11 +1476,10 @@
             "Value": "Assets\\Textures\\btn-upgrade-genetron-heavymechweapons-level3.dds"
           }
         ],
-        "EditorCategories": "Race:Genetron,UpgradeType:AttackBonus",
         "AffectedUnitArray": [
           "Torrent",
           "Mole",
-          "MoleBurrowed",
+          "MoleRooted",
           "Inciter",
           "Virtus"
         ],
@@ -1782,6 +1500,7 @@
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "GenetronAircraftWeapons",
+        "EditorCategories": "Race:Genetron,UpgradeType:AttackBonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -1798,7 +1517,7 @@
           },
           {
             "Reference": "Effect,LancerAutogunImpact,Amount",
-            "Value": "2"
+            "Value": "1"
           },
           {
             "Reference": "Effect,NemesisMissilesLMImpact,Amount",
@@ -1858,9 +1577,8 @@
             "Value": "Assets\\Textures\\btn-upgrade-genetron-rocketweapons-level1.dds"
           }
         ],
-        "EditorCategories": "Race:Genetron,UpgradeType:AttackBonus",
         "AffectedUnitArray": [
-          "AvengerGenetron",
+          "Scion_Avenger",
           "Badger",
           "Boar",
           "Hornet"
@@ -1885,6 +1603,7 @@
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "GenetronAircraftWeapons",
+        "EditorCategories": "Race:Genetron,UpgradeType:AttackBonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -1901,7 +1620,7 @@
           },
           {
             "Reference": "Effect,LancerAutogunImpact,Amount",
-            "Value": "2"
+            "Value": "1"
           },
           {
             "Reference": "Effect,NemesisMissilesLMImpact,Amount",
@@ -1961,9 +1680,8 @@
             "Value": "Assets\\Textures\\btn-upgrade-genetron-rocketweapons-level2.dds"
           }
         ],
-        "EditorCategories": "Race:Genetron,UpgradeType:AttackBonus",
         "AffectedUnitArray": [
-          "AvengerGenetron",
+          "Scion_Avenger",
           "Badger",
           "Boar",
           "Hornet"
@@ -1985,6 +1703,7 @@
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "GenetronAircraftWeapons",
+        "EditorCategories": "Race:Genetron,UpgradeType:AttackBonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -2001,7 +1720,7 @@
           },
           {
             "Reference": "Effect,LancerAutogunImpact,Amount",
-            "Value": "2"
+            "Value": "1"
           },
           {
             "Reference": "Effect,NemesisMissilesLMImpact,Amount",
@@ -2061,9 +1780,8 @@
             "Value": "Assets\\Textures\\btn-upgrade-genetron-rocketweapons-level3.dds"
           }
         ],
-        "EditorCategories": "Race:Genetron,UpgradeType:AttackBonus",
         "AffectedUnitArray": [
-          "AvengerGenetron",
+          "Scion_Avenger",
           "Badger",
           "Boar",
           "Hornet"
@@ -2085,6 +1803,7 @@
         "ScoreValue": "ArmorTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "GenetronAircraftPlating",
+        "EditorCategories": "Race:Genetron,UpgradeType:ArmorBonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -2096,7 +1815,7 @@
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
-            "Reference": "Unit,AvengerGenetron,LifeArmor",
+            "Reference": "Unit,Scion_Avenger,LifeArmor",
             "Value": "1"
           },
           {
@@ -2120,11 +1839,15 @@
             "Value": "1"
           },
           {
-            "Reference": "Unit,Processor,LifeArmor",
+            "Reference": "Unit,Scion_Processor,LifeArmor",
             "Value": "1"
           },
           {
-            "Reference": "Unit,AvengerGenetron,LifeArmorLevel",
+            "Reference": "Unit,Scion_ProcessorStatic,LifeArmor",
+            "Value": "1"
+          },
+          {
+            "Reference": "Unit,Scion_Avenger,LifeArmorLevel",
             "Value": "1"
           },
           {
@@ -2148,12 +1871,16 @@
             "Value": "1"
           },
           {
-            "Reference": "Unit,Processor,LifeArmorLevel",
+            "Reference": "Unit,Scion_Processor,LifeArmorLevel",
+            "Value": "1"
+          },
+          {
+            "Reference": "Unit,Scion_ProcessorStatic,LifeArmorLevel",
             "Value": "1"
           },
           {
             "Operation": "Set",
-            "Reference": "Actor,AvengerGenetron,LifeArmorIcon",
+            "Reference": "Actor,Scion_Avenger,LifeArmorIcon",
             "Value": "Assets\\Textures\\btn-upgrade-genetron-aircraftplating-level1.dds"
           },
           {
@@ -2183,19 +1910,19 @@
           },
           {
             "Operation": "Set",
-            "Reference": "Actor,Processor,LifeArmorIcon",
+            "Reference": "Actor,Scion_Processor,LifeArmorIcon",
             "Value": "Assets\\Textures\\btn-upgrade-genetron-aircraftplating-level1.dds"
           }
         ],
-        "EditorCategories": "Race:Genetron,UpgradeType:ArmorBonus",
         "AffectedUnitArray": [
-          "AvengerGenetron",
+          "Scion_Avenger",
           "Badger",
           "Boar",
           "Courier",
           "Hornet",
           "Jupiter",
-          "Processor"
+          "Scion_Processor",
+          "Scion_ProcessorStatic"
         ],
         "id": "GenetronAircraftPlatingLevel1",
         "ScoreAmount": 200,
@@ -2217,6 +1944,7 @@
         "ScoreValue": "ArmorTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "GenetronAircraftPlating",
+        "EditorCategories": "Race:Genetron,UpgradeType:ArmorBonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -2228,7 +1956,7 @@
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
-            "Reference": "Unit,AvengerGenetron,LifeArmor",
+            "Reference": "Unit,Scion_Avenger,LifeArmor",
             "Value": "1"
           },
           {
@@ -2252,11 +1980,15 @@
             "Value": "1"
           },
           {
-            "Reference": "Unit,Processor,LifeArmor",
+            "Reference": "Unit,Scion_Processor,LifeArmor",
             "Value": "1"
           },
           {
-            "Reference": "Unit,AvengerGenetron,LifeArmorLevel",
+            "Reference": "Unit,Scion_ProcessorStatic,LifeArmor",
+            "Value": "1"
+          },
+          {
+            "Reference": "Unit,Scion_Avenger,LifeArmorLevel",
             "Value": "1"
           },
           {
@@ -2280,12 +2012,16 @@
             "Value": "1"
           },
           {
-            "Reference": "Unit,Processor,LifeArmorLevel",
+            "Reference": "Unit,Scion_Processor,LifeArmorLevel",
+            "Value": "1"
+          },
+          {
+            "Reference": "Unit,Scion_ProcessorStatic,LifeArmorLevel",
             "Value": "1"
           },
           {
             "Operation": "Set",
-            "Reference": "Actor,AvengerGenetron,LifeArmorIcon",
+            "Reference": "Actor,Scion_Avenger,LifeArmorIcon",
             "Value": "Assets\\Textures\\btn-upgrade-genetron-aircraftplating-level2.dds"
           },
           {
@@ -2315,19 +2051,19 @@
           },
           {
             "Operation": "Set",
-            "Reference": "Actor,Processor,LifeArmorIcon",
+            "Reference": "Actor,Scion_Processor,LifeArmorIcon",
             "Value": "Assets\\Textures\\btn-upgrade-genetron-aircraftplating-level2.dds"
           }
         ],
-        "EditorCategories": "Race:Genetron,UpgradeType:ArmorBonus",
         "AffectedUnitArray": [
-          "AvengerGenetron",
+          "Scion_Avenger",
           "Badger",
           "Boar",
           "Courier",
           "Hornet",
           "Jupiter",
-          "Processor"
+          "Scion_Processor",
+          "Scion_ProcessorStatic"
         ],
         "id": "GenetronAircraftPlatingLevel2",
         "ScoreAmount": 350,
@@ -2346,6 +2082,7 @@
         "ScoreValue": "ArmorTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "GenetronAircraftPlating",
+        "EditorCategories": "Race:Genetron,UpgradeType:ArmorBonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -2357,7 +2094,7 @@
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
-            "Reference": "Unit,AvengerGenetron,LifeArmor",
+            "Reference": "Unit,Scion_Avenger,LifeArmor",
             "Value": "1"
           },
           {
@@ -2381,11 +2118,15 @@
             "Value": "1"
           },
           {
-            "Reference": "Unit,Processor,LifeArmor",
+            "Reference": "Unit,Scion_Processor,LifeArmor",
             "Value": "1"
           },
           {
-            "Reference": "Unit,AvengerGenetron,LifeArmorLevel",
+            "Reference": "Unit,Scion_ProcessorStatic,LifeArmor",
+            "Value": "1"
+          },
+          {
+            "Reference": "Unit,Scion_Avenger,LifeArmorLevel",
             "Value": "1"
           },
           {
@@ -2409,12 +2150,16 @@
             "Value": "1"
           },
           {
-            "Reference": "Unit,Processor,LifeArmorLevel",
+            "Reference": "Unit,Scion_Processor,LifeArmorLevel",
+            "Value": "1"
+          },
+          {
+            "Reference": "Unit,Scion_ProcessorStatic,LifeArmorLevel",
             "Value": "1"
           },
           {
             "Operation": "Set",
-            "Reference": "Actor,AvengerGenetron,LifeArmorIcon",
+            "Reference": "Actor,Scion_Avenger,LifeArmorIcon",
             "Value": "Assets\\Textures\\btn-upgrade-genetron-aircraftplating-level3.dds"
           },
           {
@@ -2444,19 +2189,19 @@
           },
           {
             "Operation": "Set",
-            "Reference": "Actor,Processor,LifeArmorIcon",
+            "Reference": "Actor,Scion_Processor,LifeArmorIcon",
             "Value": "Assets\\Textures\\btn-upgrade-genetron-aircraftplating-level3.dds"
           }
         ],
-        "EditorCategories": "Race:Genetron,UpgradeType:ArmorBonus",
         "AffectedUnitArray": [
-          "AvengerGenetron",
+          "Scion_Avenger",
           "Badger",
           "Boar",
           "Courier",
           "Hornet",
           "Jupiter",
-          "Processor"
+          "Scion_Processor",
+          "Scion_ProcessorStatic"
         ],
         "id": "GenetronAircraftPlatingLevel3",
         "ScoreAmount": 500,
@@ -2468,7 +2213,7 @@
       "ProcessingCore": {
         "id": "ProcessingCore",
         "Icon": "btn-building-genetron-processingcore",
-        "Description": "Primary structure. Used to receive gathered resources. Can use Mining Priority and System Recharge<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- ACRs",
+        "Description": "Primary structure. Used to receive gathered resources. Generates power. Increases power storage by <b>400</b>. Can use Mining Priority and System Recharge<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- ACRs",
         "Name": "Processing Core",
         "LifeMax": 1500,
         "LifeArmor": 1,
@@ -2478,7 +2223,7 @@
         },
         "Production": [
           "ACR",
-          "Processor"
+          "Scion_Processor"
         ],
         "Research": [],
         "Morph": [],
@@ -2507,12 +2252,15 @@
           "AnalysisTerminal",
           "Repulsor",
           "Interdictor",
-          "Fabricator",
-          "OutfittingStation",
           "RelayTower",
+          "Fabricator",
+          "TechVault",
           "AssemblyArray",
           "Generator",
-          "TechVault"
+          "ChemicalFirm",
+          "OrdnanceCache",
+          "OutfittingStation",
+          "Olympus"
         ],
         "Research": [],
         "Morph": [],
@@ -2524,7 +2272,7 @@
       "Node": {
         "id": "Node",
         "Icon": "btn-building-genetron-node",
-        "Description": "Provides supply and energy.",
+        "Description": "Provides supply and generates power.",
         "Name": "Node",
         "LifeMax": 400,
         "LifeArmor": 1,
@@ -2568,7 +2316,7 @@
         "LifeMax": 1000,
         "LifeArmor": 1,
         "CostResource": {
-          "Minerals": 150
+          "Minerals": 175
         },
         "Production": [
           "Spitfire",
@@ -2590,7 +2338,7 @@
         "Icon": "btn-unit-genetron-spitfire",
         "Description": "Skirmish unit.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
         "Name": "Spitfire",
-        "LifeMax": 100,
+        "LifeMax": 85,
         "LifeArmor": 0,
         "Food": -2,
         "CostResource": {
@@ -2608,7 +2356,7 @@
       "Fixer": {
         "id": "Fixer",
         "Icon": "btn-unit-genetron-fixer",
-        "Description": "Anti-light specialist. Can use Speed Cloak and Repair.<br/><span style=\"color: #FFFF80\"><br/>Can attack ground units.</span>",
+        "Description": "Anti-light specialist. Can use Repair.<br/><span style=\"color: #FFFF80\"><br/>Can attack ground units.</span>",
         "Name": "Fixer",
         "LifeMax": 125,
         "LifeArmor": 0,
@@ -2629,9 +2377,9 @@
       "Blitzer": {
         "id": "Blitzer",
         "Icon": "btn-unit-genetron-blitzer",
-        "Description": "General purpose combat unit. Can use Supercharge and Overdrive.<br/><br/><span style=\"color: #f078ff\">Energy user.</span></n><span style=\"color: #FFFF80\">Can attack ground and air units.</span>",
+        "Description": "General purpose combat unit. Can use Supercharge and Overdrive.<br/><br/><span style=\"color: #78F0FF\">Power user.</span></n><span style=\"color: #FFFF80\">Can attack ground and air units.</span>",
         "Name": "Blitzer",
-        "LifeMax": 140,
+        "LifeMax": 135,
         "LifeArmor": 1,
         "Food": -2,
         "CostResource": {
@@ -2652,7 +2400,7 @@
         "Icon": "btn-unit-genetron-equalizer-v2",
         "Description": "Anti-armor craft.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
         "Name": "Equalizer",
-        "LifeMax": 120,
+        "LifeMax": 110,
         "LifeArmor": 0,
         "Food": -2,
         "CostResource": {
@@ -2671,11 +2419,11 @@
       "Aquila": {
         "id": "Aquila",
         "Icon": "btn-unit-genetron-aquila",
-        "Description": "Support trooper. Can use Supercharge and Nanite Grenade.<br/><br/><span style=\"color: #f078ff\">Energy user.</span><br/><span style=\"color: #FFFF80\">Can attack ground and air units.</span>",
+        "Description": "Support trooper. Can use Nanite Emitter.<br/><br/><span style=\"color: #78F0FF\">Power user.</span><br/><span style=\"color: #FFFF80\">Can attack ground and air units.</span>",
         "Name": "Aquila",
-        "LifeMax": 100,
+        "LifeMax": 80,
         "LifeArmor": 0,
-        "Food": -3,
+        "Food": -2,
         "CostResource": {
           "Minerals": 100,
           "Vespene": 100
@@ -2692,9 +2440,9 @@
       "AnalysisTerminal": {
         "id": "AnalysisTerminal",
         "Icon": "btn-building-genetron-analysisterminal",
-        "Description": "Contains weapon upgrades for Genetron light ground units, and armor upgrades for all Genetron ground units.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Repulsors from ACRs<br/>- Interdictors from ACRs",
+        "Description": "Contains weapon upgrades for Genetron light ground units, and armor upgrades for all Genetron ground units, and upgrades for the Spitfire.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Blitzers at the Manufacturer<br/>- Moles at the Fabricator<br/>- Repulsors from ACRs<br/>- Interdictors from ACRs",
         "Name": "Analysis Terminal",
-        "LifeMax": 1000,
+        "LifeMax": 850,
         "LifeArmor": 1,
         "CostResource": {
           "Minerals": 150
@@ -2706,7 +2454,9 @@
           "GenetronLightWeaponsLevel3",
           "GenetronGroundPlatingLevel1",
           "GenetronGroundPlatingLevel2",
-          "GenetronGroundPlatingLevel3"
+          "GenetronGroundPlatingLevel3",
+          "CalibratedEngines",
+          "SpitfireMadcapRounds"
         ],
         "Morph": [],
         "$Phase": [],
@@ -2738,7 +2488,7 @@
         "LifeArmorIcon": "btn-upgrade-genetron-mechstructurearmor",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": "Mechanical Structure Armor",
-        "priority": 17
+        "priority": 18
       },
       "RepulsorBurrowed": {
         "id": "RepulsorBurrowed",
@@ -2788,7 +2538,7 @@
         "LifeArmorIcon": "btn-upgrade-genetron-mechstructurearmor",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": "Mechanical Structure Armor",
-        "priority": 18
+        "priority": 19
       },
       "InterdictorBurrowed": {
         "id": "InterdictorBurrowed",
@@ -2815,6 +2565,25 @@
         "LifeArmorName": "Mechanical Structure Armor",
         "priority": 0
       },
+      "RelayTower": {
+        "id": "RelayTower",
+        "Icon": "btn-building-genetron-relaytower",
+        "Description": "Increases power storage by <b>100</b>. Can use System Recharge.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Processors at the Processing Core",
+        "Name": "Relay Tower",
+        "LifeMax": 500,
+        "LifeArmor": 1,
+        "CostResource": {
+          "Minerals": 100
+        },
+        "Production": [],
+        "Research": [],
+        "Morph": [],
+        "$Phase": [],
+        "LifeArmorIcon": "btn-upgrade-genetron-mechstructurearmor",
+        "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+        "LifeArmorName": "Mechanical Structure Armor",
+        "priority": 23
+      },
       "Fabricator": {
         "id": "Fabricator",
         "Icon": "btn-building-genetron-fabricator",
@@ -2829,9 +2598,9 @@
         "Production": [
           "Mole",
           "Torrent",
-          "Tesla",
+          "Virtus",
           "Inciter",
-          "Virtus"
+          "Tesla"
         ],
         "Research": [],
         "Morph": [],
@@ -2844,9 +2613,9 @@
       "Mole": {
         "id": "Mole",
         "Icon": "btn-unit-genetron-mole",
-        "Description": "Deployable artillery cannon.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
+        "Description": "Deployable artillery cannon and radar suite.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
         "Name": "Mole",
-        "LifeMax": 150,
+        "LifeMax": 125,
         "LifeArmor": 0,
         "Food": -3,
         "CostResource": {
@@ -2858,19 +2627,20 @@
         "Morph": [],
         "$Phase": [
           "MoleBurrowed",
-          "MoleBuried"
+          "MoleRooted",
+          "MoleBurrowed"
         ],
         "LifeArmorIcon": "btn-upgrade-genetron-groundmechplating-level0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": "Ground Mechanical Plating",
         "priority": 8
       },
-      "MoleBurrowed": {
-        "id": "MoleBurrowed",
+      "MoleRooted": {
+        "id": "MoleRooted",
         "Icon": "btn-unit-genetron-mole",
-        "Description": "Deployable artillery cannon.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
+        "Description": "Deployable artillery cannon and radar suite.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
         "Name": "Mole",
-        "LifeMax": 150,
+        "LifeMax": 125,
         "LifeArmor": 0,
         "Food": -3,
         "CostResource": {
@@ -2885,7 +2655,7 @@
           "Mole"
         ],
         "$Phase": [
-          "MoleBuried"
+          "MoleBurrowed"
         ],
         "$Phased": "Mole",
         "LifeArmorIcon": "btn-upgrade-genetron-groundmechplating-level0",
@@ -2893,12 +2663,12 @@
         "LifeArmorName": "Ground Mechanical Plating",
         "priority": 8
       },
-      "MoleBuried": {
-        "id": "MoleBuried",
+      "MoleBurrowed": {
+        "id": "MoleBurrowed",
         "Icon": "btn-unit-genetron-mole",
-        "Description": "Deployable artillery cannon.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
+        "Description": "Deployable artillery cannon and radar suite.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
         "Name": "Mole",
-        "LifeMax": 150,
+        "LifeMax": 125,
         "LifeArmor": 0,
         "Food": -3,
         "CostResource": {
@@ -2911,10 +2681,10 @@
         "Research": [],
         "Morph": [
           "Mole",
-          "MoleBurrowed"
+          "MoleRooted"
         ],
         "$Phase": [],
-        "$Phased": "MoleBurrowed",
+        "$Phased": "MoleRooted",
         "LifeArmorIcon": "btn-upgrade-genetron-groundmechplating-level0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": "Ground Mechanical Plating",
@@ -2941,22 +2711,19 @@
         "LifeArmorName": "Ground Mechanical Plating",
         "priority": 7
       },
-      "Tesla": {
-        "id": "Tesla",
-        "Icon": "btn-unit-genetron-tesla",
-        "Description": "Area control specialist. Can construct and launch specialized charges.",
-        "Name": "Tesla",
-        "LifeMax": 180,
+      "Virtus": {
+        "id": "Virtus",
+        "Icon": "btn-unit-genetron-virtus",
+        "Description": "Heavy tank. Can use Self-fix Protocol.<br/><br/><span style=\"color: #78F0FF\">Power user.</span><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
+        "Name": "Virtus",
+        "LifeMax": 375,
         "LifeArmor": 1,
-        "Food": -3,
+        "Food": -4,
         "CostResource": {
-          "Minerals": 150,
-          "Vespene": 200
+          "Minerals": 250,
+          "Vespene": 100
         },
-        "Production": [
-          "ShockCharge",
-          "CloakCharge"
-        ],
+        "Production": [],
         "Research": [],
         "Morph": [],
         "$Phase": [],
@@ -2968,14 +2735,14 @@
       "Inciter": {
         "id": "Inciter",
         "Icon": "btn-unit-genetron-inciter",
-        "Description": "Grenade attacker. Can jump up and down cliffs. Can use ELOR Protocol.<br/><br/><span style=\"color: #f078ff\">Energy user.</span><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
+        "Description": "Grenade attacker. Can jump up and down cliffs. Can use ELOR Protocol.<br/><br/><span style=\"color: #78F0FF\">Power user.</span><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
         "Name": "Inciter",
-        "LifeMax": 210,
+        "LifeMax": 185,
         "LifeArmor": 1,
         "Food": -3,
         "CostResource": {
-          "Minerals": 150,
-          "Vespene": 150
+          "Minerals": 175,
+          "Vespene": 125
         },
         "Production": [
           "InciterELORProtocolTargetDummy"
@@ -2988,19 +2755,22 @@
         "LifeArmorName": "Ground Mechanical Plating",
         "priority": 9
       },
-      "Virtus": {
-        "id": "Virtus",
-        "Icon": "btn-unit-genetron-virtus",
-        "Description": "Heavy tank. Weapons and movement disabled and gains armor after taking critical damage.<br/><br/><span style=\"color: #f078ff\">Energy user.</span><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
-        "Name": "Virtus",
-        "LifeMax": 400,
-        "LifeArmor": 2,
-        "Food": -4,
+      "Tesla": {
+        "id": "Tesla",
+        "Icon": "btn-unit-genetron-tesla",
+        "Description": "Area control specialist. Can construct and launch specialized charges.<br/><br/><span style=\"color: #78F0FF\">Power user.</span>",
+        "Name": "Tesla",
+        "LifeMax": 200,
+        "LifeArmor": 1,
+        "Food": -3,
         "CostResource": {
-          "Minerals": 275,
-          "Vespene": 125
+          "Minerals": 200,
+          "Vespene": 200
         },
-        "Production": [],
+        "Production": [
+          "ShockCharge",
+          "CloakCharge"
+        ],
         "Research": [],
         "Morph": [],
         "$Phase": [],
@@ -3009,12 +2779,12 @@
         "LifeArmorName": "Ground Mechanical Plating",
         "priority": 11
       },
-      "OutfittingStation": {
-        "id": "OutfittingStation",
-        "Icon": "btn-building-genetron-outfittingstation",
-        "Description": "Contains upgrades for Genetron units.<br/><br/><span style=\"color: #FFFF80\">Enables:<br/></span>- Equalizers at the Manufacturer<br/>- Inciters at the Fabricator<br/>- Teslas at the Fabricator<br/>- Jupiters at the Assembly Array<br/>- Boars at the Assembly Array",
-        "Name": "Outfitting Station",
-        "LifeMax": 850,
+      "TechVault": {
+        "id": "TechVault",
+        "Icon": "btn-building-genetron-techvault",
+        "Description": "Contains weapon upgrades for Genetron heavy ground units, and weapon and armor upgrades for Genetron air units.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Inciters at the Fabricator<br/>- Virtus at the Fabricator",
+        "Name": "Tech Vault",
+        "LifeMax": 750,
         "LifeArmor": 1,
         "CostResource": {
           "Minerals": 125,
@@ -3022,41 +2792,22 @@
         },
         "Production": [],
         "Research": [
-          "CalibratedEngines",
-          "SpitfireMadcapRounds",
-          "BlitzerBoreanReactor",
-          "FixerReactiveArmor",
-          "EnhancedTargeting",
-          "SubterraneanSensors",
-          "ShapedHull",
-          "AAMDefenseTurret"
+          "GenetronHeavyWeaponsLevel1",
+          "GenetronHeavyWeaponsLevel2",
+          "GenetronHeavyWeaponsLevel3",
+          "GenetronAircraftWeaponsLevel1",
+          "GenetronAircraftWeaponsLevel2",
+          "GenetronAircraftWeaponsLevel3",
+          "GenetronAircraftPlatingLevel1",
+          "GenetronAircraftPlatingLevel2",
+          "GenetronAircraftPlatingLevel3"
         ],
         "Morph": [],
         "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-genetron-mechstructurearmor",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": "Mechanical Structure Armor",
-        "priority": 25
-      },
-      "RelayTower": {
-        "id": "RelayTower",
-        "Icon": "btn-building-genetron-relaytower",
-        "Description": "Facilitates global energy management. Can use System Recharge.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Processors at the Processing Core",
-        "Name": "Relay Tower",
-        "LifeMax": 600,
-        "LifeArmor": 1,
-        "CostResource": {
-          "Minerals": 100,
-          "Vespene": 50
-        },
-        "Production": [],
-        "Research": [],
-        "Morph": [],
-        "$Phase": [],
-        "LifeArmorIcon": "btn-upgrade-genetron-mechstructurearmor",
-        "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Mechanical Structure Armor",
-        "priority": 23
+        "priority": 26
       },
       "AssemblyArray": {
         "id": "AssemblyArray",
@@ -3067,10 +2818,10 @@
         "LifeArmor": 1,
         "CostResource": {
           "Minerals": 200,
-          "Vespene": 100
+          "Vespene": 150
         },
         "Production": [
-          "AvengerGenetron",
+          "Scion_Avenger",
           "Courier",
           "Jupiter",
           "Boar",
@@ -3085,16 +2836,16 @@
         "LifeArmorName": "Mechanical Structure Armor",
         "priority": 21
       },
-      "AvengerGenetron": {
-        "id": "AvengerGenetron",
+      "Scion_Avenger": {
+        "id": "Scion_Avenger",
         "Icon": "btn-unit-genetron-avenger",
-        "Description": "Quick interceptor. Can use Vengeance Missile.<br/><br/><span style=\"color: #f078ff\">Energy user.</span><br/><span style=\"color: #FFFF80\">Can attack air units.</span>",
+        "Description": "Quick interceptor. Can use Vengeance Missile.<br/><br/><span style=\"color: #78F0FF\">Power user.</span><br/><span style=\"color: #FFFF80\">Can attack air units.</span>",
         "Name": "Avenger",
-        "LifeMax": 160,
-        "LifeArmor": 1,
+        "LifeMax": 150,
+        "LifeArmor": 0,
         "Food": -2,
         "CostResource": {
-          "Minerals": 175,
+          "Minerals": 150,
           "Vespene": 100
         },
         "Production": [],
@@ -3109,13 +2860,13 @@
       "Courier": {
         "id": "Courier",
         "Icon": "btn-unit-genetron-courier",
-        "Description": "Stealth transport. Can use Cloak.<br/><br/><span style=\"color: #f078ff\">Energy user.</span>",
+        "Description": "Stealth transport. Can use Cloak and Optical Disruption.<br/><br/><span style=\"color: #78F0FF\">Power user.</span>",
         "Name": "Courier",
-        "LifeMax": 175,
+        "LifeMax": 150,
         "LifeArmor": 1,
-        "Food": -3,
+        "Food": -2,
         "CostResource": {
-          "Minerals": 150,
+          "Minerals": 125,
           "Vespene": 50
         },
         "Production": [],
@@ -3130,7 +2881,7 @@
       "Jupiter": {
         "id": "Jupiter",
         "Icon": "btn-unit-genetron-jupiter",
-        "Description": "Bomber aircraft. Can use Revenant Bomb to damage enemies, and apply napalm on the ground for damage over time.<br/><br/><span style=\"color: #f078ff\">Energy user.</span>",
+        "Description": "Bomber aircraft. Can use Revenant Bomb to damage enemies, and apply napalm on the ground for damage over time.<br/><br/><span style=\"color: #78F0FF\">Power user.</span>",
         "Name": "Jupiter",
         "LifeMax": 200,
         "LifeArmor": 1,
@@ -3151,14 +2902,14 @@
       "Boar": {
         "id": "Boar",
         "Icon": "btn-unit-genetron-boar",
-        "Description": "Armored craft with a bladed hull, and light machine guns. Can use Ignition Blast.<br/><br/><span style=\"color: #f078ff\">Energy user.</span><br/><span style=\"color: #FFFF80\">Can attack ground and air units.</span>",
+        "Description": "Armored craft with a bladed hull, and light machine guns. Can use Ignition Blast.<br/><br/><span style=\"color: #78F0FF\">Power user.</span><br/><span style=\"color: #FFFF80\">Can attack ground and air units.</span>",
         "Name": "Boar",
-        "LifeMax": 175,
+        "LifeMax": 225,
         "LifeArmor": 1,
-        "Food": -4,
+        "Food": -3,
         "CostResource": {
           "Minerals": 200,
-          "Vespene": 150
+          "Vespene": 125
         },
         "Production": [],
         "Research": [],
@@ -3193,10 +2944,10 @@
       "Badger": {
         "id": "Badger",
         "Icon": "btn-unit-genetron-badger",
-        "Description": "Large gunship.<br/><br/><span style=\"color: #f078ff\">Energy user.</span><br/><span style=\"color: #FFFF80\">Can attack ground and air units simultaneously.</span>",
+        "Description": "Large gunship. Can use Powershell.<br/><br/><span style=\"color: #78F0FF\">Power user.</span><br/><span style=\"color: #FFFF80\">Can attack ground and air units simultaneously.</span>",
         "Name": "Badger",
-        "LifeMax": 325,
-        "LifeArmor": 2,
+        "LifeMax": 300,
+        "LifeArmor": 1,
         "Food": -6,
         "CostResource": {
           "Minerals": 300,
@@ -3214,19 +2965,16 @@
       "Generator": {
         "id": "Generator",
         "Icon": "btn-building-genetron-generator",
-        "Description": "Provides energy. Contains upgrades for the Processor.",
+        "Description": "Generates power. Increases power storage by <b>50</b>.",
         "Name": "Generator",
-        "LifeMax": 850,
+        "LifeMax": 750,
         "LifeArmor": 1,
         "CostResource": {
-          "Minerals": 150,
+          "Minerals": 200,
           "Vespene": 50
         },
         "Production": [],
-        "Research": [
-          "IntegratedOptics",
-          "CloakingGenerator"
-        ],
+        "Research": [],
         "Morph": [],
         "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-genetron-mechstructurearmor",
@@ -3234,44 +2982,94 @@
         "LifeArmorName": "Mechanical Structure Armor",
         "priority": 24
       },
-      "TechVault": {
-        "id": "TechVault",
-        "Icon": "btn-building-genetron-techvault",
-        "Description": "Contains weapon upgrades for Genetron heavy ground units, and weapon and armor upgrades for Genetron air units.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Aquilas at the Manufacturer<br/>- Virtus at the Fabricator<br/>- Badgers at the Assembly Array",
-        "Name": "Tech Vault",
+      "ChemicalFirm": {
+        "id": "ChemicalFirm",
+        "Icon": "btn-building-genetron-chemicalfirm",
+        "Description": "<span style=\"color: #FFFF80\">Enables:</span><br/>- Aquilas at the Manufacturer<br/>- Teslas at the Fabricator",
+        "Name": "Chemical Firm",
         "LifeMax": 1000,
+        "LifeArmor": 1,
+        "CostResource": {
+          "Minerals": 150,
+          "Vespene": 150
+        },
+        "Production": [],
+        "Research": [],
+        "Morph": [],
+        "$Phase": [],
+        "LifeArmorIcon": "btn-upgrade-genetron-mechstructurearmor",
+        "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+        "LifeArmorName": "Mechanical Structure Armor",
+        "priority": 27
+      },
+      "OrdnanceCache": {
+        "id": "OrdnanceCache",
+        "Icon": "btn-building-genetron-ordnancecache",
+        "Description": "<span style=\"color: #FFFF80\">Enables:</span><br/>- Jupiters at the Assembly Array<br/>- Badgers at the Assembly Array",
+        "Name": "Ordnance Cache",
+        "LifeMax": 1000,
+        "LifeArmor": 1,
+        "CostResource": {
+          "Minerals": 150,
+          "Vespene": 150
+        },
+        "Production": [],
+        "Research": [],
+        "Morph": [],
+        "$Phase": [],
+        "LifeArmorIcon": "btn-upgrade-genetron-mechstructurearmor",
+        "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+        "LifeArmorName": "Mechanical Structure Armor",
+        "priority": 28
+      },
+      "OutfittingStation": {
+        "id": "OutfittingStation",
+        "Icon": "btn-building-genetron-outfittingstation",
+        "Description": "<span style=\"color: #FFFF80\">Enables:<br/></span>- Fixers at the Manufacturer</n>- Equalizers at the Manufacturer",
+        "Name": "Outfitting Station",
+        "LifeMax": 850,
         "LifeArmor": 1,
         "CostResource": {
           "Minerals": 150,
           "Vespene": 100
         },
         "Production": [],
-        "Research": [
-          "GenetronHeavyWeaponsLevel1",
-          "GenetronHeavyWeaponsLevel2",
-          "GenetronHeavyWeaponsLevel3",
-          "GenetronAircraftWeaponsLevel1",
-          "GenetronAircraftWeaponsLevel2",
-          "GenetronAircraftWeaponsLevel3",
-          "GenetronAircraftPlatingLevel1",
-          "GenetronAircraftPlatingLevel2",
-          "GenetronAircraftPlatingLevel3"
-        ],
+        "Research": [],
         "Morph": [],
         "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-genetron-mechstructurearmor",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": "Mechanical Structure Armor",
-        "priority": 26
+        "priority": 25
       },
-      "Processor": {
-        "id": "Processor",
+      "Olympus": {
+        "id": "Olympus",
+        "Icon": "btn-building-genetron-olympus",
+        "Description": "Weapon of mass destruction. Uses power to energize a global strike weapon that deals damage in a large area.",
+        "Name": "Olympus",
+        "LifeMax": 1500,
+        "LifeArmor": 1,
+        "CostResource": {
+          "Minerals": 250,
+          "Vespene": 250
+        },
+        "Production": [],
+        "Research": [],
+        "Morph": [],
+        "$Phase": [],
+        "LifeArmorIcon": "btn-upgrade-genetron-mechstructurearmor",
+        "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+        "LifeArmorName": "Mechanical Structure Armor",
+        "priority": 24
+      },
+      "Scion_Processor": {
+        "id": "Scion_Processor",
         "Icon": "btn-unit-genetron-processor",
-        "Description": "Support drone. Can use Analyze Weakness, System Recharge, and Detection Mode.<br/><br/><span style=\"color: #f078ff\">Energy user.</span>",
+        "Description": "Support unit. Can use System Recharge.<br/><br/><span style=\"color: #78F0FF\">Power user.</span></n><span style=\"color: #FFE303\">Detector</span>",
         "Name": "Processor",
-        "LifeMax": 100,
-        "LifeArmor": 0,
-        "Food": -2,
+        "LifeMax": 125,
+        "LifeArmor": 1,
+        "Food": -1,
         "CostResource": {
           "Minerals": 75,
           "Vespene": 75
@@ -3279,7 +3077,33 @@
         "Production": [],
         "Research": [],
         "Morph": [],
+        "$Phase": [
+          "Scion_ProcessorStatic"
+        ],
+        "LifeArmorIcon": "btn-upgrade-genetron-aircraftplating-level0",
+        "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+        "LifeArmorName": "Mechanical Aircraft Plating",
+        "priority": 1
+      },
+      "Scion_ProcessorStatic": {
+        "id": "Scion_ProcessorStatic",
+        "Icon": "btn-unit-genetron-processor",
+        "Description": "Support unit. Can use System Recharge.<br/><br/><span style=\"color: #78F0FF\">Power user.</span></n><span style=\"color: #FFE303\">Detector</span>",
+        "Name": "Processor",
+        "LifeMax": 125,
+        "LifeArmor": 1,
+        "Food": -1,
+        "CostResource": {
+          "Minerals": 75,
+          "Vespene": 75
+        },
+        "Production": [],
+        "Research": [],
+        "Morph": [
+          "Scion_Processor"
+        ],
         "$Phase": [],
+        "$Phased": "Scion_Processor",
         "LifeArmorIcon": "btn-upgrade-genetron-aircraftplating-level0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": "Mechanical Aircraft Plating",
@@ -3304,19 +3128,20 @@
     "Equalizer",
     "Aquila",
     "Mole",
+    "MoleRooted",
     "MoleBurrowed",
-    "MoleBuried",
     "Torrent",
-    "Tesla",
-    "Inciter",
     "Virtus",
-    "AvengerGenetron",
+    "Inciter",
+    "Tesla",
+    "Scion_Avenger",
     "Courier",
     "Jupiter",
     "Boar",
     "Hornet",
     "Badger",
-    "Processor"
+    "Scion_Processor",
+    "Scion_ProcessorStatic"
   ],
   "structures": [
     "ProcessingCore",
@@ -3328,12 +3153,15 @@
     "RepulsorBurrowed",
     "Interdictor",
     "InterdictorBurrowed",
-    "Fabricator",
-    "OutfittingStation",
     "RelayTower",
+    "Fabricator",
+    "TechVault",
     "AssemblyArray",
     "Generator",
-    "TechVault"
+    "ChemicalFirm",
+    "OrdnanceCache",
+    "OutfittingStation",
+    "Olympus"
   ],
   "upgrades": [
     "GenetronLightWeaponsLevel1",
@@ -3344,14 +3172,6 @@
     "GenetronGroundPlatingLevel3",
     "CalibratedEngines",
     "SpitfireMadcapRounds",
-    "BlitzerBoreanReactor",
-    "FixerReactiveArmor",
-    "EnhancedTargeting",
-    "SubterraneanSensors",
-    "ShapedHull",
-    "AAMDefenseTurret",
-    "IntegratedOptics",
-    "CloakingGenerator",
     "GenetronHeavyWeaponsLevel1",
     "GenetronHeavyWeaponsLevel2",
     "GenetronHeavyWeaponsLevel3",

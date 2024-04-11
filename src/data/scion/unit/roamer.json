@@ -1,6 +1,6 @@
 {
   "Name": "Roamer",
-  "Description": "Quick ranged anti-light fighter. Can use Scour.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
+  "Description": "Fast anti-light skirmisher. Can use Scour.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -10,15 +10,15 @@
   "Response": "Acquire",
   "ResourceState": "Unknown",
   "ResourceType": "Unknown",
-  "LifeStart": 80,
-  "LifeMax": 80,
+  "LifeStart": 75,
+  "LifeMax": 75,
   "LifeArmorName": "Xayid Ground Carapace",
   "Mover": "Ground",
   "StationaryTurningRate": 990,
   "TurningRate": 990,
   "Radius": 0.5,
-  "SeparationRadius": 0.5,
-  "MinimapRadius": 0.5625,
+  "SeparationRadius": 0.4375,
+  "MinimapRadius": 0.4375,
   "EditorCategories": "ObjectType:Unit,ObjectFamily:Melee",
   "TacticalAIFilters": "-;Player,Ally,Neutral",
   "AIEvalFactor": 1,
@@ -100,12 +100,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -197,12 +191,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -276,12 +264,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -375,12 +357,6 @@
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
               "DisplayType": "Move",
               "Color": "255,35,125,255",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
@@ -469,12 +445,6 @@
               "Color": "255,255,0,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -549,12 +519,6 @@
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
@@ -685,44 +649,6 @@
         "Tooltip": "Reveals a small area. Lasts for a duration of <b>14.0</b> seconds.<br/><br/><span style=\"color: #FFFF80\">Does not detect.</span>",
         "Name": "Scour",
         "Hotkey": "C"
-      },
-      {
-        "Cost": {
-          "Minerals": 0,
-          "Vespene": 0,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 2,
-        "Column": 1,
-        "Type": "Passive",
-        "id": "CalcifiedHusk",
-        "Icon": "btn-upgrade-xayid-calcifiedhusk",
-        "Tooltip": "<span style=\"color: #FFFF80\">Roamer</span> health increased by 20.",
-        "Name": "Calcified Husk"
-      },
-      {
-        "Cost": {
-          "Minerals": 0,
-          "Vespene": 0,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 2,
-        "Column": 2,
-        "Type": "Passive",
-        "id": "BileDucts",
-        "Icon": "btn-upgrade-zerg-bileducts",
-        "Tooltip": "<span style=\"color: #FFFF80\">Roamer</span> attack speed improved by 25%, and weapon range increased by 2.",
-        "Name": "Bile Ducts"
       }
     ]
   },
@@ -733,9 +659,7 @@
     "Ground",
     "ForceField"
   ],
-  "LifeRegenDelay": 3,
-  "LifeRegenRate": 0.5,
-  "Sight": 10,
+  "Sight": 9,
   "CostCategory": "Army",
   "ScoreResult": "BuildOrder",
   "GlossaryCategory": "Unit/Category/XayidUnits",
@@ -749,13 +673,13 @@
     "Vespene": 1
   },
   "id": "Roamer",
-  "Speed": 3.5,
+  "Speed": 3.75,
   "Food": -2,
   "CostResource": {
     "Minerals": 75,
     "Vespene": 25
   },
-  "InnerRadius": 0.5,
+  "InnerRadius": 0.375,
   "CargoSize": 2,
   "GlossaryPriority": 4,
   "SubgroupPriority": 76,
@@ -767,14 +691,14 @@
     {
       "id": "VirulentSpit",
       "Name": "Virulent Spit",
-      "Amount": 9,
+      "Amount": 8,
       "AttributeBonus": {
         "Light": 4
       },
       "Kind": "Ranged",
       "TargetFilters": "Ground",
-      "Range": 4,
-      "Period": 1
+      "Range": 3,
+      "Period": 0.77
     }
   ],
   "Behaviors": [],
@@ -799,10 +723,10 @@
   "$Upgrades": [
     "XayidGroundCarapaceLevel1",
     "Roamer",
-    "CalcifiedHusk",
-    "BileDucts",
     "Roamer",
     "XayidGroundCarapace",
+    "CalcifiedHusk",
+    "BileDucts",
     "XayidGroundCarapaceLevel2",
     "XayidGroundCarapaceLevel3",
     "XayidGroundAttacksLevel1",
@@ -811,7 +735,9 @@
     "XayidGroundAttacksLevel3",
     "MutagenChamber",
     "MutateXayidUnits",
-    "Worm"
+    "Worm",
+    "XayidGroundAttacksRevert",
+    "XayidGroundCarapaceRevert"
   ],
   "$Requirements": [],
   "$Production": [],

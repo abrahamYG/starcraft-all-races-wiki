@@ -91,7 +91,7 @@
   "DamageDealtXP": 1,
   "DamageTakenXP": 1,
   "KillXP": 10,
-  "InnerRadius": 0.375,
+  "InnerRadius": 0.3125,
   "CargoSize": 1,
   "ScoreMake": 50,
   "ScoreKill": 50,
@@ -120,12 +120,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -217,12 +211,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -296,12 +284,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -393,12 +375,6 @@
               "Color": "255,255,0,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -472,12 +448,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -564,12 +534,6 @@
           "EditorCategories": "Race:Zerg,AbilityorEffectType:Units",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -757,12 +721,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -857,12 +815,6 @@
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
@@ -1478,40 +1430,6 @@
         "Tooltip": "Contains an upgrade for Hydralisks. Can mutate into a Lurker Den.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Hydralisks from Larvae",
         "Name": "Mutate into Hydralisk Den",
         "Hotkey": "H"
-      },
-      {
-        "Info": {
-          "Button": {
-            "Flags": {
-              "AllowMinimap": 0
-            },
-            "DefaultButtonFace": "MutateintoLurkerDen",
-            "Requirements": "HaveHydraliskDen"
-          },
-          "Unit": "LurkerDenMP",
-          "Time": 80
-        },
-        "Unit": "LurkerDenMP",
-        "Time": 80,
-        "Cost": {
-          "Minerals": 150,
-          "Vespene": 150,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 0,
-        "Column": 2,
-        "Type": "AbilCmd",
-        "AbilCmd": "ZergBuild,Build12",
-        "id": "MutateintoLurkerDen",
-        "Icon": "btn-building-zerg-lurkerden",
-        "Tooltip": "Morph into a Lurker Den, allowing Hydralisks to morph into Lurkers.",
-        "Name": "Mutate into Lurker Den",
-        "Hotkey": "D"
       }
     ]
   },
@@ -1540,7 +1458,7 @@
       "Amount": 5,
       "Kind": "Melee",
       "TargetFilters": "Ground",
-      "Range": 0.1,
+      "Range": 0.2,
       "Period": 1.5
     }
   ],
@@ -1575,27 +1493,26 @@
     }
   ],
   "$Upgrades": [
-    "Zerg",
-    "Drone",
     "LarvaTrain",
-    "IsDrone",
-    "BurrowDroneUp",
-    "DroneBurrowed",
-    "NotWorkerDrone",
-    "Larva",
-    "Burrow",
-    "ZergGroundArmorsLevel1",
     "Drone",
+    "ZergGroundArmorsLevel1",
+    "DroneBurrowed",
+    "BurrowDroneUp",
+    "IsDrone",
+    "Drone",
+    "Drone_Death",
     "ZergGroundArmors",
     "ZergGroundArmorsLevel2",
     "ZergGroundArmorsLevel3",
+    "Larva",
+    "Burrow",
+    "BeaconUED",
+    "Zerg",
     "DigesterDrone",
-    "Prospector",
-    "Drone_Death",
+    "NotWorkerDrone",
     "DroneBurrowedSplat",
-    "ThreatensDrone",
-    "Drone",
-    null
+    "UPLRenameZerg",
+    "ThreatensDrone"
   ],
   "$Requirements": [],
   "$Production": [
@@ -1789,13 +1706,6 @@
       "Icon": "btn-building-zerg-hydraliskden",
       "Tooltip": "Contains an upgrade for Hydralisks. Can mutate into a Lurker Den.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Hydralisks from Larvae",
       "Name": "Mutate into Hydralisk Den"
-    },
-    {
-      "AbilCmd": "ZergBuild,Build12",
-      "id": "MutateintoLurkerDen",
-      "Icon": "btn-building-zerg-lurkerden",
-      "Tooltip": "Morph into a Lurker Den, allowing Hydralisks to morph into Lurkers.",
-      "Name": "Mutate into Lurker Den"
     }
   ]
 }

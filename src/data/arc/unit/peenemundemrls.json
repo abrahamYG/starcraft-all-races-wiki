@@ -474,7 +474,7 @@
         "AbilCmd": "PeenemundeMRLSLM,Execute",
         "id": "PrecisionStrikeDescription",
         "Icon": "btn-ability-hornerhan-raven-analyzetarget",
-        "Tooltip": "Fires a cruise missile at the point where the target was, setting fire to the area. When hit, it deals <b>7</b> damage. In fire, it deals ever-increasing damage, the maximum possible 100 per second. Lasts 6 seconds. From one rocket you can get up to <b>100</b> damage.<br/><br/><c val=\"#ColorAttackInfo\">For a range greater than 13, use the Crimson Eye",
+        "Tooltip": "Fires a cruise missile at the point where the target was, setting fire to the area. When hit, it deals <b>10</b> damage. Causes <b>10</b> damage in sec and lasts 4 seconds.",
         "Name": "Peenemunde weapons"
       },
       {
@@ -705,9 +705,10 @@
         "Type": "AbilCmd",
         "AbilCmd": "UEDPenemundeStopAttack,On",
         "id": "UEDButtonStopAttackPenemunde",
-        "Icon": "btn-ability-terran-holdfire",
-        "Tooltip": "Orders the selected troops to attack strictly different targets and interrupt the attack immediately after the shot, moving on to the next task.",
-        "Name": "Scattered attack"
+        "Icon": "btn-ability-zeratul-stalker-predectiveblink",
+        "Tooltip": "Orders the selected troops to attack strictly different targets.",
+        "Name": "Scattered attack",
+        "Hotkey": "F"
       },
       {
         "Info": {
@@ -772,9 +773,29 @@
         "Type": "AbilCmd",
         "AbilCmd": "UEDPenemundeStopAttack,Off",
         "id": "UEDButtonPenemundeCanAttack",
-        "Icon": "btn-ability-terran-weaponsfree",
+        "Icon": "btn-ability-zeratul-stalker-phasebattery",
         "Tooltip": "Allow firing in normal mode.",
-        "Name": "Standard attack"
+        "Name": "Standard attack",
+        "Hotkey": "G"
+      },
+      {
+        "Cost": {
+          "Minerals": 0,
+          "Vespene": 0,
+          "Terazine": 0,
+          "Custom": 0,
+          "Energy": 0,
+          "Life": 0,
+          "Shields": 0,
+          "Food": 0
+        },
+        "Row": 2,
+        "Column": 1,
+        "Type": "Passive",
+        "id": "UEDButtonBallisticRange",
+        "Icon": "btn-ability-mengsk-battlecruiser-decksights",
+        "Tooltip": "With the help of the Crimson Eye, ballistic missiles can be guided at a distance of 12 to 25. At the same time, the aiming time takes 2 seconds.",
+        "Name": "Ballistic range"
       }
     ]
   },
@@ -807,11 +828,20 @@
       "id": "UEDPenemundeGunRange",
       "Icon": "weapon-tank-icon-upgrade-0",
       "Name": "Ballistic missile \"Retaliation\"",
-      "Amount": 7,
+      "Amount": 10,
       "Kind": "Splash",
       "TargetFilters": "Ground",
-      "Range": 20,
-      "Period": 7.7
+      "Range": 12,
+      "Period": 3.5
+    },
+    {
+      "id": "UEDPenemundeGunRangeHidden",
+      "Icon": "weapon-tank-icon-upgrade-0",
+      "Amount": 10,
+      "Kind": "Splash",
+      "TargetFilters": "Ground",
+      "Range": 25,
+      "Period": 3.5
     }
   ],
   "Behaviors": [],
@@ -838,9 +868,9 @@
   "$Upgrades": [
     "UEDVehicalsLevel1",
     "PeenemundeMRLS",
+    "UpgradePenemundeRange",
     "UEDVehicalsLevel2",
     "UEDVehicalsLevel3",
-    "UpgradePenemundeRange",
     "UEDArmorLevel1",
     "PeenemundeMRLS",
     "UEDArmorLevel2",
@@ -890,7 +920,7 @@
       "AbilCmd": "PeenemundeMRLSLM,Execute",
       "id": "PrecisionStrikeDescription",
       "Icon": "btn-ability-hornerhan-raven-analyzetarget",
-      "Tooltip": "Fires a cruise missile at the point where the target was, setting fire to the area. When hit, it deals <b>7</b> damage. In fire, it deals ever-increasing damage, the maximum possible 100 per second. Lasts 6 seconds. From one rocket you can get up to <b>100</b> damage.<br/><br/><c val=\"#ColorAttackInfo\">For a range greater than 13, use the Crimson Eye",
+      "Tooltip": "Fires a cruise missile at the point where the target was, setting fire to the area. When hit, it deals <b>10</b> damage. Causes <b>10</b> damage in sec and lasts 4 seconds.",
       "Name": "Peenemunde weapons"
     },
     {
@@ -910,14 +940,14 @@
     {
       "AbilCmd": "UEDPenemundeStopAttack,On",
       "id": "UEDButtonStopAttackPenemunde",
-      "Icon": "btn-ability-terran-holdfire",
-      "Tooltip": "Orders the selected troops to attack strictly different targets and interrupt the attack immediately after the shot, moving on to the next task.",
+      "Icon": "btn-ability-zeratul-stalker-predectiveblink",
+      "Tooltip": "Orders the selected troops to attack strictly different targets.",
       "Name": "Scattered attack"
     },
     {
       "AbilCmd": "UEDPenemundeStopAttack,Off",
       "id": "UEDButtonPenemundeCanAttack",
-      "Icon": "btn-ability-terran-weaponsfree",
+      "Icon": "btn-ability-zeratul-stalker-phasebattery",
       "Tooltip": "Allow firing in normal mode.",
       "Name": "Standard attack"
     }

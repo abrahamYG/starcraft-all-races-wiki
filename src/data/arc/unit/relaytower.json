@@ -102,7 +102,7 @@
   "PlaneArray": [
     "Ground"
   ],
-  "Sight": 10,
+  "Sight": 11,
   "AttackTargetPriority": 11,
   "GlossaryCategory": "",
   "HotkeyCategory": "Unit/Category/GenetronUnits",
@@ -212,7 +212,7 @@
           "RangeSlop": 1,
           "ArcSlop": 11.25,
           "AutoCastAcquireLevel": "Defensive",
-          "AutoCastFilters": "-;Ally,Neutral,Enemy",
+          "AutoCastFilters": "Visible;Neutral,Enemy,Missile,Stasis,Dead,Invulnerable",
           "Flags": {
             "AbortOnAllianceChange": 1,
             "CancelResetAutoCast": 1,
@@ -295,14 +295,14 @@
             "CanHaveEnergy;Self,Ally,Neutral,Enemy,Structure,Missile,Stasis,UnderConstruction,Dead,Hidden"
           ],
           "Range": [
-            8
+            9
           ],
           "Arc": 360,
           "SmartValidatorArray": [
             "healSmartTargetFilters",
             "NotWarpingIn"
           ],
-          "AutoCastRange": 8,
+          "AutoCastRange": 9,
           "AutoCastValidatorArray": [
             "NotWarpingIn",
             "IsNotTeslaCharge",
@@ -474,8 +474,8 @@
   "$Upgrades": [
     "CasterIsRelayTower",
     "RelayTower",
-    "ACRBuild",
     "CountUnitRelayTowerCompleteOnlyTechTreeCheat",
+    "ACRBuild",
     "RelayTower",
     "CountUnitRelayTowerCompleteOnly",
     "IsNotRelayTower",

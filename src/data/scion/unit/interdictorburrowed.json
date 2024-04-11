@@ -105,7 +105,7 @@
   "PlaneArray": [
     "Ground"
   ],
-  "Sight": 10,
+  "Sight": 4,
   "AttackTargetPriority": 11,
   "GlossaryCategory": "",
   "HotkeyCategory": "Unit/Category/GenetronUnits",
@@ -131,12 +131,6 @@
           "EditorCategories": "Race:Neutral,AbilityorEffectType:Units",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -215,12 +209,6 @@
               "DisplayType": "Attack",
               "Color": "255,255,0,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
@@ -371,30 +359,8 @@
         "Hotkey": "E"
       },
       {
-        "Info": {
-          "SectionArray": {
-            "Abils": {
-              "DurationArray": {
-                "Duration": 1
-              }
-            },
-            "Collide": {
-              "DurationArray": {
-                "Duration": 1
-              }
-            },
-            "Stats": {
-              "DurationArray": {
-                "Duration": 1
-              }
-            }
-          },
-          "Unit": "Interdictor",
-          "RandomDelayMax": 0.5
-        },
-        "Unit": "Interdictor",
         "Cost": {
-          "Minerals": 100,
+          "Minerals": 0,
           "Vespene": 0,
           "Terazine": 0,
           "Custom": 0,
@@ -404,14 +370,13 @@
           "Food": 0
         },
         "Row": 2,
-        "Column": 2,
-        "Type": "AbilCmd",
-        "AbilCmd": "InterdictorUnburrow,Execute",
-        "id": "StaticDUnburrow",
-        "Icon": "btn-ability-genetron-ambush",
-        "Tooltip": "Unburies the structure, allowing it to resume a normal state.",
-        "Name": "Reveal",
-        "Hotkey": "D"
+        "Column": 3,
+        "Type": "Passive",
+        "AbilCmd": "",
+        "id": "Detector",
+        "Icon": "btn-status-detector",
+        "Tooltip": "This unit can detect cloaked, burrowed, and hallucinated units.",
+        "Name": "Detector"
       }
     ]
   },
@@ -527,13 +492,6 @@
       "Icon": "btn-ability-genetron-conceal",
       "Tooltip": "Buries the structure underground. While burrowed, the structure is unable to attack, and cannot be seen without detection.",
       "Name": "Conceal"
-    },
-    {
-      "AbilCmd": "InterdictorUnburrow,Execute",
-      "id": "StaticDUnburrow",
-      "Icon": "btn-ability-genetron-ambush",
-      "Tooltip": "Unburies the structure, allowing it to resume a normal state.",
-      "Name": "Reveal"
     }
   ]
 }

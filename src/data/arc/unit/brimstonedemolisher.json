@@ -1,6 +1,6 @@
 {
   "Name": "Brimstone Demolisher",
-  "Description": "Powerful massive unit. Deals heavy melee and ranged splash damage.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span><br/><br/><span style=\"color: #00FF00\">Ascended:<br/>+90 Life<br/>+100% Energy Regeneration<br/>Adaptive Armor</span>",
+  "Description": "Powerful massive unit. Deals heavy melee and ranged splash damage.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span><br/><br/><span style=\"color: #00FF00\">Ascended:<br/>+75 Life<br/>+100% Energy Regeneration<br/>Adaptive Armor</span>",
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -10,8 +10,9 @@
   "Response": "Acquire",
   "ResourceState": "Unknown",
   "ResourceType": "Unknown",
-  "LifeStart": 390,
-  "LifeMax": 390,
+  "LifeStart": 525,
+  "LifeMax": 525,
+  "LifeArmorName": "Dragon Plate Armor",
   "Mover": "Ground",
   "StationaryTurningRate": 720,
   "TurningRate": 360,
@@ -539,7 +540,7 @@
         "Type": "AbilCmd",
         "AbilCmd": "AscendedBrimstoneDemolisher,Execute",
         "id": "AscendedBrimstoneDemolisher",
-        "Tooltip": "<span style=\"color: #00FF00\">+90 Life<br/>+100% Energy Regeneration<br/>Adaptive Armor</span>",
+        "Tooltip": "<span style=\"color: #00FF00\">+75 Life<br/>+100% Energy Regeneration<br/>Adaptive Armor</span>",
         "Name": "Ascend",
         "Hotkey": "X"
       },
@@ -558,7 +559,7 @@
         "Column": 4,
         "Type": "Passive",
         "id": "AscendedBrimstoneDemolisher",
-        "Tooltip": "<span style=\"color: #00FF00\">+90 Life<br/>+100% Energy Regeneration<br/>Adaptive Armor</span>",
+        "Tooltip": "<span style=\"color: #00FF00\">+75 Life<br/>+100% Energy Regeneration<br/>Adaptive Armor</span>",
         "Name": "Ascend",
         "Hotkey": "X"
       },
@@ -1115,7 +1116,7 @@
         "AbilCmd": "BrimstoneDemolisherScorchingBlaze,Execute",
         "id": "BrimstoneDemolisherScorchingBlaze",
         "Icon": "btn-tips-walloffire",
-        "Tooltip": "Ranged attack that produces a continuous stream of fire that damages all enemies up to its maximum range.<br/><br/><span style=\"color: #f078ff\">Costs <b>8</b> energy per attack.</span>",
+        "Tooltip": "Ranged attack that produces a continuous stream of fire that damages all enemies up to its maximum range.<br/><br/><span style=\"color: #f078ff\">Costs <b>4</b> energy per attack.</span>",
         "Name": "Scorching Blaze",
         "Hotkey": "Q"
       },
@@ -1205,20 +1206,17 @@
       "Name": "Scorching Blaze",
       "Amount": 5,
       "Kind": "Splash",
-      "DisplayAttackCount": 4,
       "TargetFilters": "Ground",
       "Range": 4,
-      "Period": 1
+      "Period": 0.25
     }
   ],
   "Behaviors": [
     {
-      "id": "DragonLineageLesser",
-      "Name": "Dragon Lineage"
+      "id": "DragonLineageLesser"
     },
     {
-      "id": "BrimstoneDemolisherScorchingBlaze1",
-      "Name": "Brimstone Demolisher - Scorching Blaze"
+      "id": "BrimstoneDemolisherScorchingBlaze1"
     }
   ],
   "Abilities": [
@@ -1327,7 +1325,7 @@
     {
       "AbilCmd": "AscendedBrimstoneDemolisher,Execute",
       "id": "AscendedBrimstoneDemolisher",
-      "Tooltip": "<span style=\"color: #00FF00\">+90 Life<br/>+100% Energy Regeneration<br/>Adaptive Armor</span>",
+      "Tooltip": "<span style=\"color: #00FF00\">+75 Life<br/>+100% Energy Regeneration<br/>Adaptive Armor</span>",
       "Name": "Ascend"
     },
     {
@@ -1355,7 +1353,7 @@
       "AbilCmd": "BrimstoneDemolisherScorchingBlaze,Execute",
       "id": "BrimstoneDemolisherScorchingBlaze",
       "Icon": "btn-tips-walloffire",
-      "Tooltip": "Ranged attack that produces a continuous stream of fire that damages all enemies up to its maximum range.<br/><br/><span style=\"color: #f078ff\">Costs <b>8</b> energy per attack.</span>",
+      "Tooltip": "Ranged attack that produces a continuous stream of fire that damages all enemies up to its maximum range.<br/><br/><span style=\"color: #f078ff\">Costs <b>4</b> energy per attack.</span>",
       "Name": "Scorching Blaze"
     }
   ]

@@ -546,7 +546,8 @@
             "WaitToSpend": 1,
             "UpdateChargesOnLevelChange": 1,
             "BestUnit": 1,
-            "AllowMovement": 1
+            "AllowMovement": 1,
+            "TransientPreferred": 1
           },
           "Effect": [
             "IncendiaryInfusion"
@@ -618,7 +619,7 @@
             }
           ],
           "Range": [
-            8
+            7
           ],
           "FinishTime": [
             0.45
@@ -690,13 +691,10 @@
       "id": "Extermination",
       "Name": "Extermination",
       "Amount": 10,
-      "AttributeBonus": {
-        "Light": 4
-      },
       "Kind": "Ranged",
       "TargetFilters": "Air",
       "Range": 7,
-      "Period": 1.4
+      "Period": 1.12
     }
   ],
   "Behaviors": [],

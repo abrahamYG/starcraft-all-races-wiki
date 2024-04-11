@@ -12,6 +12,7 @@
   "ResourceType": "Unknown",
   "LifeStart": 180,
   "LifeMax": 180,
+  "LifeArmorName": "Dragon Plate Armor",
   "Mover": "Fly",
   "StationaryTurningRate": 720,
   "TurningRate": 720,
@@ -1053,8 +1054,7 @@
   ],
   "Behaviors": [
     {
-      "id": "DragonLineageLesser",
-      "Name": "Dragon Lineage"
+      "id": "DragonLineageLesser"
     },
     {
       "id": "DragonAscended",

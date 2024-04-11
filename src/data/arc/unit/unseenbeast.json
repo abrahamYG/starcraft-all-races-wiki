@@ -1165,16 +1165,13 @@
   ],
   "Behaviors": [
     {
-      "id": "DragonLineageLesser",
-      "Name": "Dragon Lineage"
+      "id": "DragonLineageLesser"
     },
     {
-      "id": "UnseenBeast",
-      "Name": "Unseen Beast"
+      "id": "UnseenBeast"
     },
     {
-      "id": "UnseenBeastRadar",
-      "Name": "Unseen Beast (Radar)"
+      "id": "UnseenBeastRadar"
     }
   ],
   "Abilities": [
@@ -1225,7 +1222,8 @@
     "DragonScaleArmors",
     "DragonScaleArmorLevel2",
     "DragonScaleArmorLevel3",
-    "UnseenBeast_Death"
+    "UnseenBeast_Death",
+    null
   ],
   "$Requirements": [],
   "$Production": [],

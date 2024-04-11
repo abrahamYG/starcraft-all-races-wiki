@@ -1,7 +1,6 @@
 {
   "id": "UED",
   "Name": "UED",
-  "Icon": "icon-1v1-ued",
   "cache": {
     "upgrades": {
       "UpgraideDrakkar": {
@@ -16,6 +15,7 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "UpgraideDrakkar",
+        "EditorCategories": "Race:UED,UpgradeType:SpellResearch",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -24,7 +24,6 @@
         },
         "InfoTooltipPriority": 1,
         "id": "UpgraideDrakkar",
-        "EditorCategories": "Race:UED,UpgradeType:SpellResearch",
         "Icon": "btn-ability-terran-detectionconedebuff",
         "Race": "UED",
         "ScoreAmount": 200,
@@ -52,6 +51,7 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "SpareRifleBatteries",
+        "EditorCategories": "Race:UED,UpgradeType:SpellResearch",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -60,7 +60,6 @@
         },
         "InfoTooltipPriority": 1,
         "id": "SpareRifleBatteries",
-        "EditorCategories": "Race:UED,UpgradeType:SpellResearch",
         "Icon": "btn-upgrade-terran-nova-shotgunaoe",
         "Race": "UED",
         "ScoreAmount": 200,
@@ -93,6 +92,7 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "IcarusCatalyst",
+        "EditorCategories": "Race:UED,UpgradeType:SpellResearch",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -101,7 +101,6 @@
         },
         "InfoTooltipPriority": 1,
         "id": "IcarusCatalyst",
-        "EditorCategories": "Race:UED,UpgradeType:SpellResearch",
         "Icon": "btn-ability-mengsk-ghost-pyrokineticimmolation_orange",
         "Race": "UED",
         "ScoreAmount": 200,
@@ -142,6 +141,7 @@
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "TechInfantryWeapons",
+        "EditorCategories": "Race:UED,UpgradeType:AttackBonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -149,7 +149,6 @@
           }
         },
         "Race": "UED",
-        "EditorCategories": "Race:UED,UpgradeType:AttackBonus",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -265,6 +264,7 @@
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "TechInfantryWeapons",
+        "EditorCategories": "Race:UED,UpgradeType:AttackBonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -272,7 +272,6 @@
           }
         },
         "Race": "UED",
-        "EditorCategories": "Race:UED,UpgradeType:AttackBonus",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -385,6 +384,7 @@
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "TechInfantryWeapons",
+        "EditorCategories": "Race:UED,UpgradeType:AttackBonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -392,7 +392,6 @@
           }
         },
         "Race": "UED",
-        "EditorCategories": "Race:UED,UpgradeType:AttackBonus",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -505,6 +504,7 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "UpgradeEnergeSupportShutl",
+        "EditorCategories": "Race:UED,UpgradeType:SpellResearch",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -513,7 +513,6 @@
         },
         "InfoTooltipPriority": 1,
         "id": "UpgradeTowerMining",
-        "EditorCategories": "Race:UED,UpgradeType:SpellResearch",
         "Icon": "btn-structure-ued-sensortower",
         "Race": "UED",
         "ScoreAmount": 200,
@@ -534,6 +533,7 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "UpgradeEnergeSupportShutl",
+        "EditorCategories": "Race:UED,UpgradeType:SpellResearch",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -542,7 +542,6 @@
         },
         "InfoTooltipPriority": 1,
         "id": "UpgradeSpeedHurakan",
-        "EditorCategories": "Race:UED,UpgradeType:SpellResearch",
         "Icon": "btn-ability-mengsk-medivac-igniteafterburners",
         "Race": "UED",
         "ScoreAmount": 200,
@@ -570,6 +569,7 @@
         "ScoreValue": "ArmorTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "TechInfantryArmors",
+        "EditorCategories": "Race:UED,UpgradeType:ArmorBonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -577,7 +577,6 @@
           }
         },
         "Race": "UED",
-        "EditorCategories": "Race:UED,UpgradeType:ArmorBonus",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -675,6 +674,7 @@
         "ScoreValue": "ArmorTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "TechInfantryArmors",
+        "EditorCategories": "Race:UED,UpgradeType:ArmorBonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -682,7 +682,6 @@
           }
         },
         "Race": "UED",
-        "EditorCategories": "Race:UED,UpgradeType:ArmorBonus",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -777,6 +776,7 @@
         "ScoreValue": "ArmorTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "TechInfantryArmors",
+        "EditorCategories": "Race:UED,UpgradeType:ArmorBonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -784,7 +784,6 @@
           }
         },
         "Race": "UED",
-        "EditorCategories": "Race:UED,UpgradeType:ArmorBonus",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -867,18 +866,19 @@
         "LeaderLevel": 3,
         "$Phased": "UEDArmorLightLevel1"
       },
-      "UEDPackageOfMedicines": {
+      "UEDLazarusbattery": {
         "class": "CUpgrade",
         "Flags": {
           "UpgradeCheat": 1
         },
-        "Name": "Package of medicines",
+        "Name": "Lazarus Battery",
         "MaxLevel": 1,
         "Alert": "ResearchComplete_ued",
         "ScoreCount": "MiscTechnologyCount",
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "UpgradeEnergeSupportShutl",
+        "EditorCategories": "Race:UED,UpgradeType:SpellResearch",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -886,24 +886,22 @@
           }
         },
         "InfoTooltipPriority": 1,
-        "id": "UEDPackageOfMedicines",
-        "EditorCategories": "Race:UED,UpgradeType:SpellResearch",
-        "Icon": "btn-upgrade-swann-regenerativebiosteel",
+        "id": "UEDLazarusbattery",
+        "Icon": "btn-upgrade-terran-behemothreactor",
         "Race": "UED",
         "ScoreAmount": 200,
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
-            "Operation": "Subtract",
-            "Reference": "Behavior,UEDResurrectionShields,Modification.VitalMaxArray[Shields]",
-            "Value": "15"
+            "Reference": "Unit,Lazarus,EnergyMax",
+            "Value": "50"
           },
           {
-            "Reference": "Effect,UEDResurrectionLiveEnd,VitalArray[Life].ChangeFraction",
-            "Value": "0.5"
+            "Reference": "Unit,Lazarus,EnergyStart",
+            "Value": "25"
           },
           {
-            "Reference": "Effect,UEDResurrectionLiveEnd,VitalArray[Energy].ChangeFraction",
+            "Reference": "Effect,UEDResurrectionLive,VitalArray[Energy].ChangeFraction",
             "Value": "0.5"
           }
         ],
@@ -923,6 +921,7 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "StrikeGrenade",
+        "EditorCategories": "Race:UED,UpgradeType:SpellResearch",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -931,13 +930,24 @@
         },
         "InfoTooltipPriority": 1,
         "id": "StrikeGrenade",
-        "EditorCategories": "Race:UED,UpgradeType:SpellResearch",
         "Icon": "btn-ability-tychus-tychus-shreddergrenade",
         "Race": "UED",
         "ScoreAmount": 200,
         "ScoreResult": "BuildOrder",
         "AffectedUnitArray": [
           "PoliticalAdvisor"
+        ],
+        "EffectArray": [
+          {
+            "Operation": "Subtract",
+            "Reference": "Behavior,AlgoritmStrikeGrenadeAlone,Modification.AttackSpeedMultiplier",
+            "Value": "0.1"
+          },
+          {
+            "Operation": "Subtract",
+            "Reference": "Behavior,AlgoritmStrikeGrenadeDouble,Modification.AttackSpeedMultiplier",
+            "Value": "0.1"
+          }
         ]
       },
       "SalvoFiringPattern": {
@@ -952,6 +962,7 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "SalvoFiringPattern",
+        "EditorCategories": "Race:UED,UpgradeType:SpellResearch",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -960,7 +971,6 @@
         },
         "InfoTooltipPriority": 1,
         "id": "SalvoFiringPattern",
-        "EditorCategories": "Race:UED,UpgradeType:SpellResearch",
         "Icon": "btn-ability-hornerhan-viking-missileupgrade",
         "Race": "UED",
         "ScoreAmount": 200,
@@ -987,6 +997,7 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "TandemReactiveArmor",
+        "EditorCategories": "Race:UED,UpgradeType:SpellResearch",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -995,7 +1006,6 @@
         },
         "InfoTooltipPriority": 1,
         "id": "UEDSpeedProjectile",
-        "EditorCategories": "Race:UED,UpgradeType:SpellResearch",
         "Icon": "btn-ability-protoss-voidstasis",
         "Race": "UED",
         "ScoreAmount": 200,
@@ -1009,13 +1019,14 @@
         "Flags": {
           "UpgradeCheat": 1
         },
-        "Name": "Armor-piercing cartridges",
+        "Name": "Long-range missiles",
         "MaxLevel": 1,
         "Alert": "ResearchComplete_ued",
         "ScoreCount": "MiscTechnologyCount",
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
-        "LeaderAlias": "UpgradeAbilityCitadelUED",
+        "LeaderAlias": "UEDUpgradeGoliath",
+        "EditorCategories": "Race:UED,UpgradeType:SpellResearch",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -1024,19 +1035,18 @@
         },
         "InfoTooltipPriority": 1,
         "id": "UEDUpgradeGoliath",
-        "EditorCategories": "Race:UED,UpgradeType:SpellResearch",
-        "Icon": "btn-techupgrade-terran-fullborecanisterammo",
+        "Icon": "btn-techupgrade-terran-multilocktargetingsystem",
         "Race": "UED",
         "ScoreAmount": 200,
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
-            "Reference": "Effect,UEDDamageGoliathGround,AttributeBonus[Armored]",
+            "Reference": "Weapon,UEDSpartanGunAir,Range",
             "Value": "3"
           }
         ],
         "AffectedUnitArray": [
-          "UEDUnitGoliath"
+          "UEDUnitSpartan"
         ]
       },
       "UpgradeSpeedCrimsonEye": {
@@ -1051,6 +1061,7 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "UpgradeSpeedCrimsonEye",
+        "EditorCategories": "Race:UED,UpgradeType:SpellResearch",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -1067,7 +1078,6 @@
             "Value": "1.199200"
           }
         ],
-        "EditorCategories": "Race:UED,UpgradeType:SpellResearch",
         "AffectedUnitArray": [
           "CrimsonEye"
         ],
@@ -1085,6 +1095,7 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "UpgradeSpeedStrikeFighter",
+        "EditorCategories": "Race:UED,UpgradeType:SpellResearch",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -1093,7 +1104,6 @@
         },
         "InfoTooltipPriority": 1,
         "id": "UpgradeSpeedStrikeFighter",
-        "EditorCategories": "Race:UED,UpgradeType:SpellResearch",
         "Icon": "btn-upgrade-terran-nova-specialordance",
         "Race": "UED",
         "ScoreAmount": 200,
@@ -1114,6 +1124,7 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "UpgradeAbilityCitadelUED",
+        "EditorCategories": "Race:UED,UpgradeType:SpellResearch",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -1122,7 +1133,6 @@
         },
         "InfoTooltipPriority": 1,
         "id": "UpgradeAbilityCitadelUED",
-        "EditorCategories": "Race:UED,UpgradeType:SpellResearch",
         "Icon": "btn-ability-protoss-shieldrecharge",
         "Race": "UED",
         "ScoreAmount": 200,
@@ -1143,6 +1153,7 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "DroneRepairModule",
+        "EditorCategories": "Race:UED,UpgradeType:SpellResearch",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -1151,7 +1162,6 @@
         },
         "InfoTooltipPriority": 1,
         "id": "DroneRepairModule",
-        "EditorCategories": "Race:UED,UpgradeType:SpellResearch",
         "Icon": "ui_tipicon_campaign_space01-repair",
         "Race": "UED",
         "ScoreAmount": 200,
@@ -1179,6 +1189,7 @@
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "TechInfantryWeapons",
+        "EditorCategories": "Race:UED,UpgradeType:AttackBonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -1186,7 +1197,6 @@
           }
         },
         "Race": "UED",
-        "EditorCategories": "Race:UED,UpgradeType:AttackBonus",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -1390,32 +1400,36 @@
           },
           {
             "Operation": "Set",
-            "Reference": "Weapon,UEDGoliathGunGround,Icon",
+            "Reference": "Weapon,UEDSpartanGunGround,Icon",
             "Value": "Assets\\weapon-tank-icon-upgrade-1.dds"
           },
           {
-            "Reference": "Weapon,UEDGoliathGunGround,Level",
+            "Reference": "Weapon,UEDSpartanGunGround,Level",
             "Value": "1"
           },
           {
             "Operation": "Set",
-            "Reference": "Weapon,UEDGoliathGunAir,Icon",
+            "Reference": "Weapon,UEDSpartanGunAir,Icon",
             "Value": "Assets\\weapon-tank-icon-upgrade-1.dds"
           },
           {
-            "Reference": "Weapon,UEDGoliathGunAir,Level",
+            "Reference": "Weapon,UEDSpartanGunAir,Level",
             "Value": "1"
           },
           {
-            "Reference": "Effect,UEDDamageGoliathGround,Amount",
+            "Reference": "Effect,UEDDamageSpartanGround,Amount",
             "Value": "1"
           },
           {
-            "Reference": "Effect,UEDDamageGoliathAir,Amount",
+            "Reference": "Effect,UEDDamageSpartanAir,Amount",
             "Value": "1"
           },
           {
-            "Reference": "Effect,UEDDamageGoliathAir,AttributeBonus[Armored]",
+            "Reference": "Effect,UEDDamageSpartanAir,AttributeBonus[Armored]",
+            "Value": "1"
+          },
+          {
+            "Reference": "Effect,DamageOnBuildingHurakan,Amount",
             "Value": "1"
           }
         ],
@@ -1429,7 +1443,7 @@
           "PeenemundeMRLS",
           "Strikefighter",
           "Huracan",
-          "UEDUnitGoliath"
+          "UEDUnitSpartan"
         ],
         "InfoTooltipPriority": 0,
         "id": "UEDVehicalsLevel1",
@@ -1453,6 +1467,7 @@
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "TechInfantryWeapons",
+        "EditorCategories": "Race:UED,UpgradeType:AttackBonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -1460,7 +1475,6 @@
           }
         },
         "Race": "UED",
-        "EditorCategories": "Race:UED,UpgradeType:AttackBonus",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -1664,32 +1678,36 @@
           },
           {
             "Operation": "Set",
-            "Reference": "Weapon,UEDGoliathGunGround,Icon",
+            "Reference": "Weapon,UEDSpartanGunGround,Icon",
             "Value": "Assets\\weapon-tank-icon-upgrade-2.dds"
           },
           {
-            "Reference": "Weapon,UEDGoliathGunGround,Level",
+            "Reference": "Weapon,UEDSpartanGunGround,Level",
             "Value": "1"
           },
           {
             "Operation": "Set",
-            "Reference": "Weapon,UEDGoliathGunAir,Icon",
+            "Reference": "Weapon,UEDSpartanGunAir,Icon",
             "Value": "Assets\\weapon-tank-icon-upgrade-2.dds"
           },
           {
-            "Reference": "Weapon,UEDGoliathGunAir,Level",
+            "Reference": "Weapon,UEDSpartanGunAir,Level",
             "Value": "1"
           },
           {
-            "Reference": "Effect,UEDDamageGoliathAir,Amount",
+            "Reference": "Effect,UEDDamageSpartanAir,Amount",
             "Value": "1"
           },
           {
-            "Reference": "Effect,UEDDamageGoliathAir,AttributeBonus[Armored]",
+            "Reference": "Effect,UEDDamageSpartanGround,Amount",
             "Value": "1"
           },
           {
-            "Reference": "Effect,UEDDamageGoliathGround,Amount",
+            "Reference": "Effect,UEDDamageSpartanAir,AttributeBonus[Armored]",
+            "Value": "1"
+          },
+          {
+            "Reference": "Effect,DamageOnBuildingHurakan,Amount",
             "Value": "1"
           }
         ],
@@ -1706,7 +1724,7 @@
           "SupportShuttle",
           "TransportShuttle",
           "Huracan",
-          "UEDUnitGoliath"
+          "UEDUnitSpartan"
         ],
         "InfoTooltipPriority": 0,
         "id": "UEDVehicalsLevel2",
@@ -1727,6 +1745,7 @@
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "TechInfantryWeapons",
+        "EditorCategories": "Race:UED,UpgradeType:AttackBonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -1734,7 +1753,6 @@
           }
         },
         "Race": "UED",
-        "EditorCategories": "Race:UED,UpgradeType:AttackBonus",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -1938,32 +1956,36 @@
           },
           {
             "Operation": "Set",
-            "Reference": "Weapon,UEDGoliathGunGround,Icon",
+            "Reference": "Weapon,UEDSpartanGunGround,Icon",
             "Value": "Assets\\weapon-tank-icon-upgrade-3.dds"
           },
           {
-            "Reference": "Weapon,UEDGoliathGunGround,Level",
+            "Reference": "Weapon,UEDSpartanGunGround,Level",
             "Value": "1"
           },
           {
-            "Reference": "Weapon,UEDGoliathGunAir,Level",
+            "Reference": "Weapon,UEDSpartanGunAir,Level",
             "Value": "1"
           },
           {
             "Operation": "Set",
-            "Reference": "Weapon,UEDGoliathGunAir,Icon",
+            "Reference": "Weapon,UEDSpartanGunAir,Icon",
             "Value": "Assets\\weapon-tank-icon-upgrade-3.dds"
           },
           {
-            "Reference": "Effect,UEDDamageGoliathAir,AttributeBonus[Armored]",
+            "Reference": "Effect,UEDDamageSpartanAir,Amount",
             "Value": "1"
           },
           {
-            "Reference": "Effect,UEDDamageGoliathAir,Amount",
+            "Reference": "Effect,UEDDamageSpartanGround,Amount",
             "Value": "1"
           },
           {
-            "Reference": "Effect,UEDDamageGoliathGround,Amount",
+            "Reference": "Effect,UEDDamageSpartanAir,AttributeBonus[Armored]",
+            "Value": "1"
+          },
+          {
+            "Reference": "Effect,DamageOnBuildingHurakan,Amount",
             "Value": "1"
           }
         ],
@@ -1980,7 +2002,7 @@
           "SupportShuttle",
           "TransportShuttle",
           "Huracan",
-          "UEDUnitGoliath"
+          "UEDUnitSpartan"
         ],
         "InfoTooltipPriority": 0,
         "id": "UEDVehicalsLevel3",
@@ -2001,6 +2023,7 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "UpgradePenemundeRange",
+        "EditorCategories": "Race:UED,UpgradeType:SpellResearch",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -2009,19 +2032,15 @@
         },
         "InfoTooltipPriority": 1,
         "id": "UpgradePenemundeRange",
-        "EditorCategories": "Race:UED,UpgradeType:SpellResearch",
         "Icon": "btn-ability-mengsk-battlecruiser-decksights",
         "Race": "UED",
         "ScoreAmount": 200,
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
-            "Reference": "Weapon,UEDPenemundeGunRange,Range",
-            "Value": "5"
-          },
-          {
-            "Reference": "Weapon,UEDPenemundeGunRange,MinScanRange",
-            "Value": "5"
+            "Operation": "Set",
+            "Reference": "Weapon,UEDPenemundeGunRangeHidden,Options[Disabled]",
+            "Value": "0"
           }
         ],
         "AffectedUnitArray": [
@@ -2040,6 +2059,7 @@
         "ScoreValue": "ArmorTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "TechInfantryArmors",
+        "EditorCategories": "Race:UED,UpgradeType:ArmorBonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -2047,7 +2067,6 @@
           }
         },
         "Race": "UED",
-        "EditorCategories": "Race:UED,UpgradeType:ArmorBonus",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -2234,15 +2253,15 @@
           },
           {
             "Operation": "Set",
-            "Reference": "Actor,UEDUnitGoliath,LifeArmorIcon",
+            "Reference": "Actor,UEDUnitSpartan,LifeArmorIcon",
             "Value": "Assets\\btn-upgrade-ued-armor-level1.dds"
           },
           {
-            "Reference": "Unit,UEDUnitGoliath,LifeArmor",
+            "Reference": "Unit,UEDUnitSpartan,LifeArmor",
             "Value": "1"
           },
           {
-            "Reference": "Unit,UEDUnitGoliath,LifeArmorLevel",
+            "Reference": "Unit,UEDUnitSpartan,LifeArmorLevel",
             "Value": "1"
           }
         ],
@@ -2260,7 +2279,7 @@
           "TransportShuttle",
           "Huracan",
           "Salvager",
-          "UEDUnitGoliath"
+          "UEDUnitSpartan"
         ],
         "InfoTooltipPriority": 0,
         "id": "UEDArmorLevel1",
@@ -2284,6 +2303,7 @@
         "ScoreValue": "ArmorTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "TechInfantryArmors",
+        "EditorCategories": "Race:UED,UpgradeType:ArmorBonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -2291,7 +2311,6 @@
           }
         },
         "Race": "UED",
-        "EditorCategories": "Race:UED,UpgradeType:ArmorBonus",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -2478,15 +2497,15 @@
           },
           {
             "Operation": "Set",
-            "Reference": "Actor,UEDUnitGoliath,LifeArmorIcon",
+            "Reference": "Actor,UEDUnitSpartan,LifeArmorIcon",
             "Value": "Assets\\btn-upgrade-ued-armor-level2.dds"
           },
           {
-            "Reference": "Unit,UEDUnitGoliath,LifeArmor",
+            "Reference": "Unit,UEDUnitSpartan,LifeArmor",
             "Value": "1"
           },
           {
-            "Reference": "Unit,UEDUnitGoliath,LifeArmorLevel",
+            "Reference": "Unit,UEDUnitSpartan,LifeArmorLevel",
             "Value": "1"
           }
         ],
@@ -2504,7 +2523,7 @@
           "TransportShuttle",
           "Huracan",
           "Salvager",
-          "UEDUnitGoliath"
+          "UEDUnitSpartan"
         ],
         "InfoTooltipPriority": 0,
         "id": "UEDArmorLevel2",
@@ -2525,6 +2544,7 @@
         "ScoreValue": "ArmorTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "TechInfantryArmors",
+        "EditorCategories": "Race:UED,UpgradeType:ArmorBonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -2532,7 +2552,6 @@
           }
         },
         "Race": "UED",
-        "EditorCategories": "Race:UED,UpgradeType:ArmorBonus",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -2719,15 +2738,15 @@
           },
           {
             "Operation": "Set",
-            "Reference": "Actor,UEDUnitGoliath,LifeArmorIcon",
+            "Reference": "Actor,UEDUnitSpartan,LifeArmorIcon",
             "Value": "Assets\\btn-upgrade-ued-armor-level3.dds"
           },
           {
-            "Reference": "Unit,UEDUnitGoliath,LifeArmor",
+            "Reference": "Unit,UEDUnitSpartan,LifeArmor",
             "Value": "1"
           },
           {
-            "Reference": "Unit,UEDUnitGoliath,LifeArmorLevel",
+            "Reference": "Unit,UEDUnitSpartan,LifeArmorLevel",
             "Value": "1"
           }
         ],
@@ -2745,7 +2764,7 @@
           "TransportShuttle",
           "Huracan",
           "Salvager",
-          "UEDUnitGoliath"
+          "UEDUnitSpartan"
         ],
         "InfoTooltipPriority": 0,
         "id": "UEDArmorLevel3",
@@ -2766,6 +2785,7 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "UpgradePhosphoricFire",
+        "EditorCategories": "Race:UED,UpgradeType:SpellResearch",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -2774,13 +2794,23 @@
         },
         "InfoTooltipPriority": 1,
         "id": "UpgradePhosphoricFire",
-        "EditorCategories": "Race:UED,UpgradeType:SpellResearch",
         "Icon": "btn-tips-walloffire",
         "Race": "UED",
         "ScoreAmount": 200,
         "ScoreResult": "BuildOrder",
         "AffectedUnitArray": [
           "Huracan"
+        ],
+        "EffectArray": [
+          {
+            "Reference": "Effect,DamageOnBuildingHurakan,Amount",
+            "Value": "8"
+          },
+          {
+            "Operation": "Subtract",
+            "Reference": "Effect,DamageOnBuildingHurakan,ArmorReduction",
+            "Value": "1"
+          }
         ]
       },
       "EnrichedUraniumOrdinance": {
@@ -2795,6 +2825,7 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "EnrichedUraniumOrdinance",
+        "EditorCategories": "Race:UED,UpgradeType:SpellResearch",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -2803,7 +2834,6 @@
         },
         "InfoTooltipPriority": 1,
         "id": "EnrichedUraniumOrdinance",
-        "EditorCategories": "Race:UED,UpgradeType:SpellResearch",
         "Icon": "btn-ability-mengsk-topbar-nuclearannihilation",
         "Race": "UED",
         "ScoreAmount": 200,
@@ -3004,7 +3034,7 @@
       "TeleportationNode": {
         "id": "TeleportationNode",
         "Icon": "btn-ued-teleportation-node",
-        "Description": "Universal production structure for the Directorate army, capable of deploying any combat units.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Garmrs<br/>- Strike Troopers<br/>- Enrichment Towers",
+        "Description": "Universal production structure for the Directorate army, capable of deploying any combat units.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Garmrs<br/>- Strike Troopers<br/>",
         "Name": "Teleportation Node",
         "LifeMax": 1000,
         "LifeArmor": 1,
@@ -3017,7 +3047,7 @@
           "Lazarus",
           "Garmr",
           "Taranis",
-          "UEDUnitGoliath",
+          "UEDUnitSpartan",
           "DrakkarAPC",
           "Typhoon",
           "PeenemundeMRLS",
@@ -3126,6 +3156,7 @@
       },
       "GarmrDownUED": {
         "id": "GarmrDownUED",
+        "Name": "Garmr",
         "LifeMax": 45,
         "Food": -1,
         "CostResource": {
@@ -3164,17 +3195,17 @@
         "LifeArmorName": "UED Adaptive Staballoy Plating",
         "priority": 110
       },
-      "UEDUnitGoliath": {
-        "id": "UEDUnitGoliath",
-        "Icon": "btn-unit-terran-goliath",
+      "UEDUnitSpartan": {
+        "id": "UEDUnitSpartan",
+        "Icon": "btn-unit-uedspartan",
         "Description": "Universal combat robot, effective against aerial targets.<br/><br/><span style=\"color: #FFFF8A\">Can attack ground and air targets.</span>",
-        "Name": "Goliath combat robot",
-        "LifeMax": 125,
+        "Name": "Spartan AAC",
+        "LifeMax": 160,
         "LifeArmor": 1,
         "Food": -2,
         "CostResource": {
           "Minerals": 125,
-          "Vespene": 50
+          "Vespene": 75
         },
         "Production": [],
         "Research": [],
@@ -3276,7 +3307,7 @@
         "LifeArmor": 1,
         "Food": -2,
         "CostResource": {
-          "Minerals": 100
+          "Minerals": 125
         },
         "Production": [],
         "Research": [],
@@ -3501,7 +3532,7 @@
         },
         "Production": [],
         "Research": [
-          "UEDPackageOfMedicines",
+          "UEDLazarusbattery",
           "StrikeGrenade"
         ],
         "Morph": [],
@@ -3678,7 +3709,7 @@
     "Garmr",
     "GarmrDownUED",
     "Taranis",
-    "UEDUnitGoliath",
+    "UEDUnitSpartan",
     "DrakkarAPC",
     "Typhoon",
     "PeenemundeMRLS",
@@ -3723,7 +3754,7 @@
     "UEDArmorLightLevel1",
     "UEDArmorLightLevel2",
     "UEDArmorLightLevel3",
-    "UEDPackageOfMedicines",
+    "UEDLazarusbattery",
     "StrikeGrenade",
     "SalvoFiringPattern",
     "UEDSpeedProjectile",

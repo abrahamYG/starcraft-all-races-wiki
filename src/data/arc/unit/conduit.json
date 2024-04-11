@@ -18,7 +18,7 @@
   "TurningRate": 720,
   "Radius": 1.5,
   "SeparationRadius": 1.5,
-  "MinimapRadius": 1.5,
+  "MinimapRadius": 2,
   "EditorCategories": "ObjectType:Structure,ObjectFamily:Melee",
   "TacticalAIFilters": "-;Player,Ally,Neutral",
   "AIEvalFactor": 1,
@@ -99,7 +99,7 @@
   "CostCategory": "Technology",
   "ScoreResult": "BuildOrder",
   "HotkeyCategory": "Unit/Category/KeironUnits",
-  "LifeRegenRate": 0.25,
+  "LifeRegenRate": 0.2734,
   "Food": 6,
   "Footprint": "Footprint4x4AirContour",
   "PlacementFootprint": "Footprint4x4Air",
@@ -265,6 +265,7 @@
         "Type": "AbilCmd",
         "AbilCmd": "que5,CancelLast",
         "id": "Cancel",
+        "Icon": "btn-command-cancel",
         "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
         "Name": "Cancel",
         "Hotkey": "Esc"
@@ -399,9 +400,9 @@
     }
   ],
   "$Upgrades": [
-    "IsAstralConduit",
-    "Conduit",
     "CasterIsConduit",
+    "Conduit",
+    "IsAstralConduit",
     "KeironShieldsLevel1",
     "Conduit",
     "KeironShields",
@@ -409,7 +410,7 @@
     "KeironShieldsLevel3",
     "KeironBuild",
     "KeironShieldsRevert",
-    "CountUnitConduitCompleteOnly"
+    "CountUnitConduitCompleteOnlyTechTreeCheat"
   ],
   "$Requirements": [],
   "$Production": [],
@@ -433,6 +434,7 @@
     {
       "AbilCmd": "que5,CancelLast",
       "id": "Cancel",
+      "Icon": "btn-command-cancel",
       "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
       "Name": "Cancel"
     },

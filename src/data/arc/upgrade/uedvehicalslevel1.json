@@ -12,6 +12,7 @@
   "ScoreValue": "WeaponTechnologyValue",
   "WebPriority": 0,
   "LeaderAlias": "TechInfantryWeapons",
+  "EditorCategories": "Race:UED,UpgradeType:AttackBonus",
   "$tokens": {
     "ID": {
       "type": "string",
@@ -19,7 +20,6 @@
     }
   },
   "Race": "UED",
-  "EditorCategories": "Race:UED,UpgradeType:AttackBonus",
   "ScoreResult": "BuildOrder",
   "EffectArray": [
     {
@@ -223,32 +223,36 @@
     },
     {
       "Operation": "Set",
-      "Reference": "Weapon,UEDGoliathGunGround,Icon",
+      "Reference": "Weapon,UEDSpartanGunGround,Icon",
       "Value": "Assets\\weapon-tank-icon-upgrade-1.dds"
     },
     {
-      "Reference": "Weapon,UEDGoliathGunGround,Level",
+      "Reference": "Weapon,UEDSpartanGunGround,Level",
       "Value": "1"
     },
     {
       "Operation": "Set",
-      "Reference": "Weapon,UEDGoliathGunAir,Icon",
+      "Reference": "Weapon,UEDSpartanGunAir,Icon",
       "Value": "Assets\\weapon-tank-icon-upgrade-1.dds"
     },
     {
-      "Reference": "Weapon,UEDGoliathGunAir,Level",
+      "Reference": "Weapon,UEDSpartanGunAir,Level",
       "Value": "1"
     },
     {
-      "Reference": "Effect,UEDDamageGoliathGround,Amount",
+      "Reference": "Effect,UEDDamageSpartanGround,Amount",
       "Value": "1"
     },
     {
-      "Reference": "Effect,UEDDamageGoliathAir,Amount",
+      "Reference": "Effect,UEDDamageSpartanAir,Amount",
       "Value": "1"
     },
     {
-      "Reference": "Effect,UEDDamageGoliathAir,AttributeBonus[Armored]",
+      "Reference": "Effect,UEDDamageSpartanAir,AttributeBonus[Armored]",
+      "Value": "1"
+    },
+    {
+      "Reference": "Effect,DamageOnBuildingHurakan,Amount",
       "Value": "1"
     }
   ],
@@ -262,7 +266,7 @@
     "PeenemundeMRLS",
     "Strikefighter",
     "Huracan",
-    "UEDUnitGoliath"
+    "UEDUnitSpartan"
   ],
   "InfoTooltipPriority": 0,
   "ScoreAmount": 200,

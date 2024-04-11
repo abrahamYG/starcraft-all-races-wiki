@@ -10,8 +10,8 @@
   "Response": "Acquire",
   "ResourceState": "Unknown",
   "ResourceType": "Unknown",
-  "LifeStart": 150,
-  "LifeMax": 150,
+  "LifeStart": 125,
+  "LifeMax": 125,
   "LifeArmorName": "Ground Mechanical Plating",
   "Mover": "Ground",
   "StationaryTurningRate": 990,
@@ -109,7 +109,7 @@
     "Vespene": 1
   },
   "id": "Mole",
-  "Speed": 2.25,
+  "Speed": 2.6875,
   "Acceleration": 1000,
   "CostCategory": "Army",
   "CardLayouts": {
@@ -642,10 +642,9 @@
               }
             }
           },
-          "Unit": "MoleBurrowed",
-          "RandomDelayMax": 0.125
+          "Unit": "MoleRooted"
         },
-        "Unit": "MoleBurrowed",
+        "Unit": "MoleRooted",
         "Cost": {
           "Minerals": 150,
           "Vespene": 100,
@@ -730,7 +729,27 @@
         "AbilCmd": "MoleSubterraneanSensors,On",
         "id": "SubterraneanSensors",
         "Icon": "btn-upgrade-terran-nova-detector",
-        "Tooltip": "While buried, the <span style=\"color: #FFFF80\">Mole</span> gains +<b>30</b> ground radar range.<br/><br/><span style=\"color: #78F0FF\">Drains <b>2</b> power per second.</span>",
+        "Tooltip": "While burrowed, the <span style=\"color: #FFFF80\">Mole</span> gains +<b>30</b> ground radar range.<br/><br/><span style=\"color: #78F0FF\">Drains <b>2</b> power per second.</span>",
+        "Name": "Subterranean Sensors",
+        "Hotkey": "Q"
+      },
+      {
+        "Cost": {
+          "Minerals": 0,
+          "Vespene": 0,
+          "Terazine": 0,
+          "Custom": 0,
+          "Energy": 0,
+          "Life": 0,
+          "Shields": 0,
+          "Food": 0
+        },
+        "Row": 1,
+        "Column": 0,
+        "Type": "Passive",
+        "id": "SubterraneanSensors",
+        "Icon": "btn-upgrade-terran-nova-detector",
+        "Tooltip": "While burrowed, the <span style=\"color: #FFFF80\">Mole</span> gains +<b>30</b> ground radar range.<br/><br/><span style=\"color: #78F0FF\">Drains <b>2</b> power per second.</span>",
         "Name": "Subterranean Sensors",
         "Hotkey": "Q"
       },
@@ -798,9 +817,56 @@
         "AbilCmd": "MoleSubterraneanSensors,Off",
         "id": "MoleSubterraneanSensorsOff",
         "Icon": "btn-upgrade-terran-nova-detector",
-        "Tooltip": "Dsiables the <span style=\"color: #FFFF80\">Mole's</span> Subterranean Sensors.",
+        "Tooltip": "Disables the Subterranean Sensors.",
         "Name": "Subterranean Sensors Off",
         "Hotkey": "W"
+      },
+      {
+        "Info": {
+          "SectionArray": {
+            "Abils": {
+              "DurationArray": {
+                "Delay": 3.75
+              }
+            },
+            "Actor": {
+              "DurationArray": {
+                "Duration": 3.75
+              },
+              "EffectArray": {
+                "Start": "MoleLockTurret",
+                "Finish": "MoleLockTurretRemove",
+                "Cancel": "MoleLockTurretRemove"
+              }
+            },
+            "Stats": {
+              "DurationArray": {
+                "Delay": 3.75
+              }
+            }
+          },
+          "Unit": "MoleBurrowed"
+        },
+        "Unit": "MoleBurrowed",
+        "Cost": {
+          "Minerals": 150,
+          "Vespene": 100,
+          "Terazine": 0,
+          "Custom": 0,
+          "Energy": 0,
+          "Life": 0,
+          "Shields": 0,
+          "Food": -3
+        },
+        "Row": 2,
+        "Column": 2,
+        "Type": "AbilCmd",
+        "AbilCmd": "MoleBuryFull,Execute",
+        "id": "MoleConceal",
+        "Icon": "btn-ability-genetron-conceal",
+        "Tooltip": "Burrows the Mole's cannon. It will be unable to attack, but cannot be seen without detection.",
+        "Name": "Conceal",
+        "Hotkey": "R"
       }
     ]
   },
@@ -867,16 +933,19 @@
     {
       "id": "MoleActivate",
       "Name": "MoleActivate"
+    },
+    {
+      "id": "MoleBuryFull",
+      "Name": "MoleBuryFull"
     }
   ],
   "$Upgrades": [
     "GenetronGroundPlatingLevel1",
     "Mole",
-    "MoleBuried",
+    "MoleBurrowed",
     "MoleDeactivate",
     "Mole",
-    "SubterraneanSensors",
-    "MoleBurrowed",
+    "MoleRooted",
     "GenetronGroundPlating",
     "GenetronHeavyWeaponsLevel1",
     "GenetronHeavyWeapons",
@@ -886,15 +955,16 @@
     "GenetronGroundPlatingLevel3",
     "AnalysisTerminal",
     "TrainHeavyweightMechs",
-    "CountUnitMoleInProgressOnlyAtUnit",
     "CountUnitMoleQueuedOrBetterAtUnit",
     "Fabricator",
-    "MoleBurrowed",
+    "MoleRooted",
+    "SubterraneanSensors",
     "MoleAttackRange",
     "MoleTurret",
     "Fabricator",
     "MoleBurrowSound",
     "MoleBurrowedSplat",
+    "CountUnitMoleInProgressOnlyAtUnit",
     "GenetronGroundPlatingRevert",
     "GenetronHeavyWeaponsRevert",
     "IsMole"
@@ -905,7 +975,8 @@
   "$Morph": [],
   "$Phase": [
     "MoleBurrowed",
-    "MoleBuried"
+    "MoleRooted",
+    "MoleBurrowed"
   ],
   "$Producers": [
     "Fabricator"
@@ -964,15 +1035,22 @@
       "AbilCmd": "MoleSubterraneanSensors,On",
       "id": "SubterraneanSensors",
       "Icon": "btn-upgrade-terran-nova-detector",
-      "Tooltip": "While buried, the <span style=\"color: #FFFF80\">Mole</span> gains +<b>30</b> ground radar range.<br/><br/><span style=\"color: #78F0FF\">Drains <b>2</b> power per second.</span>",
+      "Tooltip": "While burrowed, the <span style=\"color: #FFFF80\">Mole</span> gains +<b>30</b> ground radar range.<br/><br/><span style=\"color: #78F0FF\">Drains <b>2</b> power per second.</span>",
       "Name": "Subterranean Sensors"
     },
     {
       "AbilCmd": "MoleSubterraneanSensors,Off",
       "id": "MoleSubterraneanSensorsOff",
       "Icon": "btn-upgrade-terran-nova-detector",
-      "Tooltip": "Dsiables the <span style=\"color: #FFFF80\">Mole's</span> Subterranean Sensors.",
+      "Tooltip": "Disables the Subterranean Sensors.",
       "Name": "Subterranean Sensors Off"
+    },
+    {
+      "AbilCmd": "MoleBuryFull,Execute",
+      "id": "MoleConceal",
+      "Icon": "btn-ability-genetron-conceal",
+      "Tooltip": "Burrows the Mole's cannon. It will be unable to attack, but cannot be seen without detection.",
+      "Name": "Conceal"
     }
   ]
 }

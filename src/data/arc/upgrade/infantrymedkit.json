@@ -12,6 +12,7 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "InfantryMedkit",
+  "EditorCategories": "Race:UPL",
   "$tokens": {
     "ID": {
       "type": "string",
@@ -26,6 +27,5 @@
     "InfantryHeavy"
   ],
   "DataCollection": "InfantryMedkit",
-  "ScoreAmount": 400,
-  "EditorCategories": "Race:UPL"
+  "ScoreAmount": 400
 }

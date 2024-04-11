@@ -114,7 +114,7 @@
     "Phased",
     "Small"
   ],
-  "Sight": 9,
+  "Sight": 10,
   "TurretArray": [
     "PylonCrystalRotate",
     "PylonRingRotate"
@@ -129,12 +129,6 @@
           "EditorCategories": "Race:Neutral,AbilityorEffectType:Units",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -245,27 +239,18 @@
     {
       "id": "BuildInProgress",
       "Name": "Build in Progress"
-    },
-    {
-      "id": "PurifyMorphPylon"
     }
   ],
   "$Upgrades": [
     "ProtossBuild",
     "Pylon",
-    "PylonOvercharged",
-    "PurifyMorphPylonBack",
-    "IsPylon",
     "ProtossShieldsLevel1",
     "Pylon",
     "ProtossShields",
     "ProtossShieldsLevel2",
     "ProtossShieldsLevel3",
-    "PylonSplat",
-    "PylonSkin",
-    "Pylon",
-    "PylonXPR",
-    "PylonTaldarim"
+    "IsPylon",
+    "PylonSplat"
   ],
   "$Requirements": [],
   "$Production": [],

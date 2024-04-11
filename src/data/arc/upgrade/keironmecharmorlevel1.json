@@ -12,6 +12,7 @@
   "ScoreValue": "ArmorTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "KeironMechArmor",
+  "EditorCategories": "Race:Keiron,UpgradeType:ArmorBonus",
   "$tokens": {
     "ID": {
       "type": "string",
@@ -165,7 +166,6 @@
       "Value": "Assets\\Textures\\btn-upgrade-keiron-mechanicalarmorlevel1.dds"
     }
   ],
-  "EditorCategories": "Race:Keiron,UpgradeType:ArmorBonus",
   "AffectedUnitArray": [
     "Umbra",
     "Ward",

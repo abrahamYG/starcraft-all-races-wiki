@@ -244,6 +244,7 @@
         "Type": "AbilCmd",
         "AbilCmd": "que5,CancelLast",
         "id": "Cancel",
+        "Icon": "btn-command-cancel",
         "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
         "Name": "Cancel",
         "Hotkey": "Esc"
@@ -712,7 +713,7 @@
   "GlossaryPriority": 21,
   "HotkeyCategory": "Unit/Category/UPLUnits",
   "id": "UPLRnDFacility",
-  "Facing": 315,
+  "Facing": 45,
   "LifeArmor": 1,
   "CostCategory": "Technology",
   "CostResource": {
@@ -795,6 +796,7 @@
     {
       "AbilCmd": "que5,CancelLast",
       "id": "Cancel",
+      "Icon": "btn-command-cancel",
       "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
       "Name": "Cancel"
     },

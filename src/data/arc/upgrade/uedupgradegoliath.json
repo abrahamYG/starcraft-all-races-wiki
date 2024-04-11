@@ -1,6 +1,6 @@
 {
   "id": "UEDUpgradeGoliath",
-  "Icon": "btn-techupgrade-terran-fullborecanisterammo",
+  "Icon": "btn-techupgrade-terran-multilocktargetingsystem",
   "Name": "Upgrade/Name/UEDUpgradeGoliath",
   "class": "CUpgrade",
   "Flags": {
@@ -11,7 +11,8 @@
   "ScoreCount": "MiscTechnologyCount",
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
-  "LeaderAlias": "UpgradeAbilityCitadelUED",
+  "LeaderAlias": "UEDUpgradeGoliath",
+  "EditorCategories": "Race:UED,UpgradeType:SpellResearch",
   "$tokens": {
     "ID": {
       "type": "string",
@@ -19,17 +20,16 @@
     }
   },
   "InfoTooltipPriority": 1,
-  "EditorCategories": "Race:UED,UpgradeType:SpellResearch",
   "Race": "UED",
   "ScoreAmount": 200,
   "ScoreResult": "BuildOrder",
   "EffectArray": [
     {
-      "Reference": "Effect,UEDDamageGoliathGround,AttributeBonus[Armored]",
+      "Reference": "Weapon,UEDSpartanGunAir,Range",
       "Value": "3"
     }
   ],
   "AffectedUnitArray": [
-    "UEDUnitGoliath"
+    "UEDUnitSpartan"
   ]
 }

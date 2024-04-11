@@ -536,28 +536,28 @@
       {
         "Info": {
           "class": "CAbilMove",
-          "Name": "Abil/Name/move",
+          "Name": "Abil/Name/moveUED",
           "TechPlayer": "Upkeep",
-          "EditorCategories": "Race:Neutral,AbilityorEffectType:Units",
+          "EditorCategories": "Race:UED,AbilityorEffectType:Units",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
             {
               "DisplayType": "Move",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
+              "Color": "255,255,128,0",
+              "Model": "Assets\\UI\\Cursors\\WayPointAttackSwarm\\WayPointAttackSwarm.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
               "DisplayType": "Move",
               "Color": "255,35,125,255",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
+              "Model": "Assets\\UI\\Cursors\\WayPointAttackSwarm\\WayPointAttackSwarm.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
             "DisableWhileDead": 1
           },
-          "DataCollection": "move",
+          "DataCollection": "moveUED",
           "$tokens": {
             "ID": {
               "type": "string",
@@ -596,12 +596,13 @@
               "DefaultButtonFace": "Turn"
             }
           },
+          "AbilSetId": "MoveUED",
           "FleeRange": 5,
           "FleeTime": 5,
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move"
+          "id": "moveUED"
         },
         "Cost": {
           "Minerals": 0,
@@ -616,7 +617,7 @@
         "Row": 0,
         "Column": 4,
         "Type": "AbilCmd",
-        "AbilCmd": "move,AcquireMove",
+        "AbilCmd": "moveUED,AcquireMove",
         "id": "AcquireMove",
         "Icon": "btn-command-attack",
         "Tooltip": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies.",
@@ -775,7 +776,7 @@
         "AbilCmd": "CrimsonEyeRepair,Execute",
         "id": "CrimsonEyeRepair",
         "Icon": "ui_tipicon_campaign_space01-repair",
-        "Tooltip": "Restores a friendly mechanical unit.<br/><br/><span style=\"color: #f078ff\">Regenerates <b>0</b> health units per second. Spends at the same time <b>0</b> units of energy.</span>",
+        "Tooltip": "Restores a friendly mechanical unit.<br/><br/><span style=\"color: #f078ff\">Regenerates <b>9.0</b> health units per second. Spends at the same time <b>2.4</b> units of energy.</span>",
         "Name": "Repair",
         "Hotkey": "R"
       },
@@ -854,6 +855,7 @@
         "Type": "AbilCmd",
         "AbilCmd": "RadarCrimsonEyeUED,Off",
         "id": "Cancel",
+        "Icon": "btn-command-cancel",
         "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
         "Name": "Cancel",
         "Hotkey": "Esc"
@@ -990,7 +992,8 @@
         "id": "ButtonDetectorCrimsonYea",
         "Icon": "btn-upgrade-protoss-fenix-arbiterchampiondetectionresearch",
         "Tooltip": "It evades the viewing range and allows you to see camouflaged and buried troops in it, but reduces the speed of movement.",
-        "Name": "Detection mode"
+        "Name": "Detection mode",
+        "Hotkey": "E"
       },
       {
         "Info": {
@@ -1069,7 +1072,8 @@
         "id": "ButtonRadarCrimsonYea",
         "Icon": "btn-status-radar",
         "Tooltip": "Allows you to track the movement of enemies within a radius of 21, at the same time, all other abilities and movement are unavailable. Does not open the terrain.<br/><br/><span style=\"color: #f078ff\">Consumes <b>0.3</b> ед. энергии в секунду.</span>",
-        "Name": "Radar mode"
+        "Name": "Radar mode",
+        "Hotkey": "G"
       },
       {
         "Cost": {
@@ -1107,7 +1111,7 @@
         "Column": 0,
         "Type": "Passive",
         "id": "UEDButtonCrimsonEyePenemunde",
-        "Icon": "btn-ability-hornerhan-raven-analyzetarget",
+        "Icon": "btn-ability-mengsk-battlecruiser-decksights",
         "Tooltip": "It helps to direct missiles to <c val=\"#ColorAttackInfo\">Peenemunde MRLS </span> in a radius of 11 around itself at a huge distance.",
         "Name": "Ballistic missile guidance"
       }
@@ -1173,6 +1177,8 @@
     "UEDArmorLevel3",
     "TeleportationNodeTrain",
     "CrimsonEyeMorphtoCrimsonEyeSiege",
+    null,
+    null,
     null
   ],
   "$Requirements": [],
@@ -1220,7 +1226,7 @@
       "Name": "Attack"
     },
     {
-      "AbilCmd": "move,AcquireMove",
+      "AbilCmd": "moveUED,AcquireMove",
       "id": "AcquireMove",
       "Icon": "btn-command-attack",
       "Tooltip": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies.",
@@ -1230,12 +1236,13 @@
       "AbilCmd": "CrimsonEyeRepair,Execute",
       "id": "CrimsonEyeRepair",
       "Icon": "ui_tipicon_campaign_space01-repair",
-      "Tooltip": "Restores a friendly mechanical unit.<br/><br/><span style=\"color: #f078ff\">Regenerates <b>0</b> health units per second. Spends at the same time <b>0</b> units of energy.</span>",
+      "Tooltip": "Restores a friendly mechanical unit.<br/><br/><span style=\"color: #f078ff\">Regenerates <b>9.0</b> health units per second. Spends at the same time <b>2.4</b> units of energy.</span>",
       "Name": "Repair"
     },
     {
       "AbilCmd": "RadarCrimsonEyeUED,Off",
       "id": "Cancel",
+      "Icon": "btn-command-cancel",
       "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
       "Name": "Cancel"
     },

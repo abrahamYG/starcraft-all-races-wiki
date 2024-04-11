@@ -105,12 +105,6 @@
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
               "DisplayType": "Move",
               "Color": "255,35,125,255",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
@@ -199,12 +193,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -278,12 +266,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -377,12 +359,6 @@
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
               "DisplayType": "Move",
               "Color": "255,35,125,255",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
@@ -471,12 +447,6 @@
               "Color": "255,255,0,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -555,7 +525,7 @@
         "Type": "Passive",
         "id": "SpitterVolatile",
         "Icon": "btn-upgrade-zagara-bilebombardment",
-        "Tooltip": "The Spitter deals <b>45</b> damage in an area around itself when it dies.",
+        "Tooltip": "The Spitter deals <b>40</b> damage in an area around itself when it dies.",
         "Name": "Volatile"
       },
       {
@@ -570,12 +540,6 @@
               "DisplayType": "Attack",
               "Color": "255,255,0,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
@@ -638,25 +602,6 @@
         "Tooltip": "Orders the selected units which can use this function to fire upon the selected point on the ground.",
         "Name": "Attack Ground",
         "Hotkey": "G"
-      },
-      {
-        "Cost": {
-          "Minerals": 0,
-          "Vespene": 0,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 2,
-        "Column": 1,
-        "Type": "Passive",
-        "id": "ProlongedSpores",
-        "Icon": "btn-upgrade-xayid-protractivespores",
-        "Tooltip": "<span style=\"color: #FFFF80\">Spitters</span> gain +3 weapon range.",
-        "Name": "Prolonged Spores"
       }
     ]
   },
@@ -667,9 +612,7 @@
     "Ground",
     "ForceField"
   ],
-  "LifeRegenDelay": 3,
-  "LifeRegenRate": 0.5,
-  "Sight": 8,
+  "Sight": 10,
   "CostCategory": "Army",
   "ScoreResult": "BuildOrder",
   "GlossaryCategory": "Unit/Category/XayidUnits",
@@ -684,7 +627,7 @@
   },
   "id": "Spitter",
   "LifeArmor": 1,
-  "Speed": 2.8125,
+  "Speed": 2.5,
   "Food": -3,
   "CostResource": {
     "Minerals": 150,
@@ -702,14 +645,11 @@
     {
       "id": "SpitterSpores",
       "Name": "Spitter Spores",
-      "Amount": 30,
-      "AttributeBonus": {
-        "Armored": 10
-      },
+      "Amount": 40,
       "Kind": "Ranged",
       "TargetFilters": "Ground",
       "Range": 8,
-      "Period": 2.75
+      "Period": 2.8
     }
   ],
   "Behaviors": [
@@ -745,6 +685,8 @@
     "XayidGroundAttacks",
     "XayidGroundAttacksLevel2",
     "XayidGroundAttacksLevel3",
+    "XayidGroundAttacksRevert",
+    "XayidGroundCarapaceRevert",
     "IsSpitter"
   ],
   "$Requirements": [],

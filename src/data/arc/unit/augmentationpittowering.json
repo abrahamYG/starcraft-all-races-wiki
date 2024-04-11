@@ -12,6 +12,7 @@
   "ResourceType": "Unknown",
   "LifeStart": 600,
   "LifeMax": 600,
+  "LifeArmorName": "Dragon Plate Armor",
   "Mover": "Ground",
   "StationaryTurningRate": 720,
   "TurningRate": 720,
@@ -172,6 +173,7 @@
         "Type": "AbilCmd",
         "AbilCmd": "que5PassiveCancelToSelection,CancelLast",
         "id": "Cancel",
+        "Icon": "btn-command-cancel",
         "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
         "Name": "Cancel",
         "Hotkey": "Esc"
@@ -392,7 +394,7 @@
         "AbilCmd": "ToweringDeepOneResearch,Research4",
         "id": "ToweringDeepOneWraithNight",
         "Icon": "btn-upgrade-zerg-enduringcorruption",
-        "Tooltip": "Increases Grim Glider movement speed by 1 and prevents Shades from decaying in their presence.",
+        "Tooltip": "Increases Grim Glider movement speed by 1.4 and prevents Shades from decaying in their presence.",
         "Name": "Augment Wraith Night",
         "Hotkey": "R"
       },
@@ -453,8 +455,7 @@
   "Weapons": [],
   "Behaviors": [
     {
-      "id": "DragonLineage",
-      "Name": "Dragon Lineage"
+      "id": "DragonLineage"
     }
   ],
   "Abilities": [
@@ -504,6 +505,7 @@
     {
       "AbilCmd": "que5PassiveCancelToSelection,CancelLast",
       "id": "Cancel",
+      "Icon": "btn-command-cancel",
       "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
       "Name": "Cancel"
     },
@@ -539,7 +541,7 @@
       "AbilCmd": "ToweringDeepOneResearch,Research4",
       "id": "ToweringDeepOneWraithNight",
       "Icon": "btn-upgrade-zerg-enduringcorruption",
-      "Tooltip": "Increases Grim Glider movement speed by 1 and prevents Shades from decaying in their presence.",
+      "Tooltip": "Increases Grim Glider movement speed by 1.4 and prevents Shades from decaying in their presence.",
       "Name": "Augment Wraith Night"
     },
     {

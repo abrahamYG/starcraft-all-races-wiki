@@ -110,7 +110,7 @@
     "Minerals": 225,
     "Vespene": 25
   },
-  "AttackTargetPriority": 19,
+  "AttackTargetPriority": 20,
   "CardLayouts": {
     "Root": [
       {

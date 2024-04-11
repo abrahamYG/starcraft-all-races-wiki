@@ -1,6 +1,6 @@
 {
   "Name": "Tech Vault",
-  "Description": "Contains weapon upgrades for Genetron heavy ground units, and weapon and armor upgrades for Genetron air units.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Aquilas at the Manufacturer<br/>- Virtus at the Fabricator<br/>- Badgers at the Assembly Array",
+  "Description": "Contains weapon upgrades for Genetron heavy ground units, and weapon and armor upgrades for Genetron air units.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Inciters at the Fabricator<br/>- Virtus at the Fabricator",
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -10,8 +10,8 @@
   "Response": "Acquire",
   "ResourceState": "Unknown",
   "ResourceType": "Unknown",
-  "LifeStart": 1000,
-  "LifeMax": 1000,
+  "LifeStart": 750,
+  "LifeMax": 750,
   "LifeArmorName": "Mechanical Structure Armor",
   "Mover": "Ground",
   "StationaryTurningRate": 720,
@@ -102,7 +102,7 @@
   "PlaneArray": [
     "Ground"
   ],
-  "Sight": 10,
+  "Sight": 9,
   "AttackTargetPriority": 11,
   "GlossaryCategory": "",
   "HotkeyCategory": "Unit/Category/GenetronUnits",
@@ -128,12 +128,6 @@
           "EditorCategories": "Race:Neutral,AbilityorEffectType:Structures",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -195,12 +189,6 @@
           "EditorCategories": "Race:Neutral,AbilityorEffectType:Units",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -307,8 +295,8 @@
             "Requirements": "LearnMechHeavyWeapons2"
           },
           "Resource": {
-            "Minerals": 150,
-            "Vespene": 150
+            "Minerals": 175,
+            "Vespene": 175
           },
           "Time": 190,
           "Alert": "UpgradeComplete_Terr",
@@ -316,8 +304,8 @@
         },
         "Time": 190,
         "Cost": {
-          "Minerals": 150,
-          "Vespene": 150,
+          "Minerals": 175,
+          "Vespene": 175,
           "Terazine": 0,
           "Custom": 0,
           "Energy": 0,
@@ -346,8 +334,8 @@
             "Requirements": "LearnMechHeavyWeaponsLevel3"
           },
           "Resource": {
-            "Minerals": 200,
-            "Vespene": 200
+            "Minerals": 250,
+            "Vespene": 250
           },
           "Time": 220,
           "Alert": "UpgradeComplete_Terr",
@@ -355,8 +343,8 @@
         },
         "Time": 220,
         "Cost": {
-          "Minerals": 200,
-          "Vespene": 200,
+          "Minerals": 250,
+          "Vespene": 250,
           "Terazine": 0,
           "Custom": 0,
           "Energy": 0,
@@ -424,8 +412,8 @@
             "Requirements": "LearnMechAircraftWeaponsLevel2"
           },
           "Resource": {
-            "Minerals": 150,
-            "Vespene": 150
+            "Minerals": 175,
+            "Vespene": 175
           },
           "Time": 190,
           "Alert": "UpgradeComplete_Terr",
@@ -433,8 +421,8 @@
         },
         "Time": 190,
         "Cost": {
-          "Minerals": 150,
-          "Vespene": 150,
+          "Minerals": 175,
+          "Vespene": 175,
           "Terazine": 0,
           "Custom": 0,
           "Energy": 0,
@@ -612,16 +600,15 @@
   "Footprint": "Footprint3x3Contour",
   "PlacementFootprint": "Footprint3x3Contour",
   "CostResource": {
-    "Minerals": 150,
-    "Vespene": 100
+    "Minerals": 125,
+    "Vespene": 75
   },
   "RepairTime": 65,
-  "SubgroupPriority": 3,
+  "SubgroupPriority": 6,
   "GlossaryPriority": 26,
   "TechTreeUnlockedUnitArray": [
-    "Aquila",
-    "Virtus",
-    "Badger"
+    "Inciter",
+    "Virtus"
   ],
   "Icon": "btn-building-genetron-techvault",
   "LifeArmorIcon": "btn-upgrade-genetron-mechstructurearmor",
@@ -652,10 +639,10 @@
   "$Upgrades": [
     "CountUnitTechVaultCompleteOnly",
     "TechVault",
+    "CountUnitTechVaultCompleteOnlyTechTreeCheat",
     "ACRBuild",
     "TechVault",
-    "TechVaultSplat",
-    "CountUnitTechVaultCompleteOnlyTechTreeCheat"
+    "TechVaultSplat"
   ],
   "$Requirements": [],
   "$Production": [],

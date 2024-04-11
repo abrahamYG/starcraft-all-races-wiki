@@ -13,6 +13,7 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "CentrificalHooks",
+  "EditorCategories": "Race:Zerg,UpgradeType:Spell",
   "$tokens": {
     "ID": {
       "type": "string",
@@ -28,25 +29,8 @@
     {
       "Reference": "Unit,Baneling,Speed",
       "Value": "0.453100"
-    },
-    {
-      "Reference": "Unit,Baneling,LifeMax",
-      "Value": "5"
-    },
-    {
-      "Reference": "Unit,Baneling,LifeStart",
-      "Value": "5"
-    },
-    {
-      "Reference": "Unit,BanelingBurrowed,LifeMax",
-      "Value": "5"
-    },
-    {
-      "Reference": "Unit,BanelingBurrowed,LifeStart",
-      "Value": "5"
     }
   ],
-  "EditorCategories": "Race:Zerg,UpgradeType:Talents",
   "ScoreResult": "BuildOrder",
   "ScoreAmount": 300,
   "InfoTooltipPriority": 1

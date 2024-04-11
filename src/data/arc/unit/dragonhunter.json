@@ -1,5 +1,5 @@
 {
-  "Name": "Dragonhunter",
+  "Name": "Hunter",
   "Description": "Fast ranged unit. Pulls enemies with ranged attack. Can jump up and down cliffs.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span><br/><br/><span style=\"color: #00FF00\">Ascended:<br/>+30 Life<br/>+1 Armor<br/>+0.7 Speed</span>",
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
@@ -12,12 +12,13 @@
   "ResourceType": "Unknown",
   "LifeStart": 75,
   "LifeMax": 75,
+  "LifeArmorName": "Dragon Plate Armor",
   "Mover": "CliffJumper",
   "StationaryTurningRate": 720,
   "TurningRate": 720,
-  "Radius": 0.625,
-  "SeparationRadius": 0.625,
-  "MinimapRadius": 0.625,
+  "Radius": 0.5,
+  "SeparationRadius": 0.5,
+  "MinimapRadius": 0.5,
   "EditorCategories": "ObjectType:Unit,ObjectFamily:Melee",
   "TacticalAIFilters": "-;Player,Ally,Neutral",
   "AIEvalFactor": 1,
@@ -1022,7 +1023,7 @@
         "Type": "Passive",
         "id": "HunterFeast",
         "Icon": "btn-upgrade-zerg-adrenaloverload",
-        "Tooltip": "Each attack against biological targets provides the Hunter <b>0</b> life.",
+        "Tooltip": "Each attack against biological targets provides the Hunter <b>6</b> life.",
         "Name": "Feast"
       }
     ]
@@ -1044,7 +1045,7 @@
     "Vespene": 75
   },
   "KillXP": 15,
-  "InnerRadius": 0.5,
+  "InnerRadius": 0.375,
   "CargoSize": 2,
   "ScoreMake": 100,
   "ScoreKill": 100,
@@ -1081,9 +1082,9 @@
       "id": "DragonHunterTongueLash",
       "Icon": "btn-upgrade-zerg-meleeattacks-level0",
       "Name": "Tongue Lash",
-      "Amount": 9,
+      "Amount": 14,
       "AttributeBonus": {
-        "Light": 6
+        "Light": 9
       },
       "Kind": "Melee",
       "TargetFilters": "Ground",
@@ -1093,8 +1094,7 @@
   ],
   "Behaviors": [
     {
-      "id": "DragonLineageLesser",
-      "Name": "Dragon Lineage"
+      "id": "DragonLineageLesser"
     },
     {
       "id": "DragonHunter"

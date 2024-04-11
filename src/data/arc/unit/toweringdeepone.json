@@ -12,6 +12,7 @@
   "ResourceType": "Unknown",
   "LifeStart": 1500,
   "LifeMax": 1500,
+  "LifeArmorName": "Dragon Plate Armor",
   "Mover": "Ground",
   "StationaryTurningRate": 180,
   "TurningRate": 180,
@@ -172,6 +173,7 @@
         "Type": "AbilCmd",
         "AbilCmd": "que5PassiveCancelToSelection,CancelLast",
         "id": "Cancel",
+        "Icon": "btn-command-cancel",
         "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
         "Name": "Cancel",
         "Hotkey": "Esc"
@@ -668,7 +670,7 @@
             }
           },
           "Range": [
-            5
+            7
           ],
           "EffectArray": {
             "Start": "DragonBuildSet",
@@ -691,6 +693,7 @@
         "Type": "AbilCmd",
         "AbilCmd": "ToweringDeepOneBuild,Halt",
         "id": "Cancel",
+        "Icon": "btn-command-cancel",
         "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
         "Name": "Cancel",
         "Hotkey": "Esc"
@@ -883,7 +886,7 @@
         "AbilCmd": "ToweringDeepOneTrain,Train5",
         "id": "GrimGlider",
         "Icon": "btn-critter-sporeray",
-        "Tooltip": "Massive flying unit. Can rise units slain nearby as temporary shades.<br/><br/><span style=\"color: #FFE303\">Detector</span><br/><br/><span style=\"color: #00FF00\">Ascended:<br/>+45 Life<br/>+200% Energy Regeneration<br/>+0.5 Speed</span>",
+        "Tooltip": "Massive flying unit. Can rise units slain nearby as temporary shades.<br/><br/><span style=\"color: #FFE303\">Detector</span><br/><br/><span style=\"color: #00FF00\">Ascended:<br/>+120 Life<br/>+200% Energy Regeneration<br/>+1.4 Speed</span>",
         "Name": "Spawn Grim Glider",
         "Hotkey": "T"
       },
@@ -974,8 +977,7 @@
   "Weapons": [],
   "Behaviors": [
     {
-      "id": "DragonLineageGreater",
-      "Name": "Dragon Lineage"
+      "id": "DragonLineageGreater"
     }
   ],
   "Abilities": [
@@ -1045,6 +1047,7 @@
     {
       "AbilCmd": "que5PassiveCancelToSelection,CancelLast",
       "id": "Cancel",
+      "Icon": "btn-command-cancel",
       "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
       "Name": "Cancel"
     },
@@ -1079,6 +1082,7 @@
     {
       "AbilCmd": "ToweringDeepOneBuild,Halt",
       "id": "Cancel",
+      "Icon": "btn-command-cancel",
       "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
       "Name": "Cancel"
     },
@@ -1114,7 +1118,7 @@
       "AbilCmd": "ToweringDeepOneTrain,Train5",
       "id": "GrimGlider",
       "Icon": "btn-critter-sporeray",
-      "Tooltip": "Massive flying unit. Can rise units slain nearby as temporary shades.<br/><br/><span style=\"color: #FFE303\">Detector</span><br/><br/><span style=\"color: #00FF00\">Ascended:<br/>+45 Life<br/>+200% Energy Regeneration<br/>+0.5 Speed</span>",
+      "Tooltip": "Massive flying unit. Can rise units slain nearby as temporary shades.<br/><br/><span style=\"color: #FFE303\">Detector</span><br/><br/><span style=\"color: #00FF00\">Ascended:<br/>+120 Life<br/>+200% Energy Regeneration<br/>+1.4 Speed</span>",
       "Name": "Spawn Grim Glider"
     },
     {

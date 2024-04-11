@@ -89,7 +89,7 @@
   },
   "Mob": "Multiplayer",
   "LifeRegenRate": 0.2734,
-  "EnergyStart": 50,
+  "EnergyStart": 75,
   "EnergyMax": 200,
   "EnergyRegenRate": 0.5625,
   "Speed": 2.25,
@@ -130,12 +130,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -227,12 +221,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -306,12 +294,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -405,12 +387,6 @@
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
               "DisplayType": "Move",
               "Color": "255,35,125,255",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
@@ -498,12 +474,6 @@
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
@@ -631,166 +601,9 @@
         "AbilCmd": "FungalGrowth,Execute",
         "id": "FungalGrowth",
         "Icon": "btn-ability-zerg-fungalgrowth-color",
-        "Tooltip": "Immobilizes target units and causes <b>30</b> damage over <b>4</b>. Reveals cloaked and burrowed units.",
+        "Tooltip": "Immobilizes target units and causes <b>25</b> damage over <b>4</b>. Reveals cloaked and burrowed units.",
         "Name": "Fungal Growth",
         "Hotkey": "F"
-      },
-      {
-        "Info": {
-          "class": "CAbilEffectTarget",
-          "Name": "Abil/Name/InfestedTerrans",
-          "TechPlayer": "Upkeep",
-          "EditorCategories": "Race:Zerg,AbilityorEffectType:Units",
-          "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
-          "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            }
-          ],
-          "SharedFlags": {
-            "DisableWhileDead": 1
-          },
-          "DataCollection": "InfestedTerrans",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
-          "RangeSlop": 1,
-          "ArcSlop": 11.25,
-          "AutoCastAcquireLevel": "Offensive",
-          "AutoCastFilters": "Visible;Player,Ally",
-          "Flags": {
-            "AbortOnAllianceChange": 1,
-            "CancelResetAutoCast": 1,
-            "ChannelingMinimum": 1,
-            "RangeUseCasterRadius": 1,
-            "ReApproachable": 1,
-            "RequireTargetVision": 1,
-            "WaitToSpend": 1,
-            "UpdateChargesOnLevelChange": 1,
-            "BestUnit": 1
-          },
-          "Effect": [
-            "InfestedTerransCreateEgg"
-          ],
-          "EffectRange": [
-            "0,1000"
-          ],
-          "AINotifyEffect": "InfestedTerrans",
-          "RefundArray": {
-            "Approach": 1,
-            "Prep": 1,
-            "Cast": 1
-          },
-          "RefundFraction": {
-            "Resource": {
-              "Minerals": -1,
-              "Vespene": -1,
-              "Terrazine": -1,
-              "Custom": -1
-            },
-            "Charge": -1,
-            "Cooldown": -1
-          },
-          "UseMarkerArray": {
-            "Approach": 1,
-            "Prep": 1,
-            "Cast": 1,
-            "Channel": 1
-          },
-          "PauseableArray": {
-            "Approach": 1,
-            "Prep": 1,
-            "Cast": 1,
-            "Channel": 1,
-            "Finish": 1
-          },
-          "PreemptableArray": {
-            "Approach": 1,
-            "Prep": 1,
-            "Cast": 1,
-            "Channel": 1,
-            "Finish": 1
-          },
-          "ValidatedArray": {
-            "Approach": 1,
-            "Prep": 1,
-            "Cast": 1,
-            "Channel": 1
-          },
-          "DefaultError": "MustTargetUnit",
-          "AcquirePriority": 3,
-          "SetLastTarget": "Unknown",
-          "VeterancyLevelMin": 0,
-          "VeterancyLevelSkip": 0,
-          "CmdButtonArray": {
-            "Execute": {
-              "Flags": {
-                "ShowInGlossary": 1,
-                "ToSelection": 1
-              },
-              "DefaultButtonFace": "InfestedTerrans",
-              "State": "Restricted"
-            }
-          },
-          "FollowRange": 5,
-          "Range": [
-            8
-          ],
-          "Cost": [
-            {
-              "Vital": {
-                "Energy": 50
-              }
-            }
-          ],
-          "CastIntroTime": [
-            0
-          ],
-          "ProducedUnitArray": [
-            "InfestedTerran"
-          ],
-          "CastOutroTime": [
-            0
-          ],
-          "UninterruptibleArray": {
-            "Prep": 1,
-            "Cast": 1,
-            "Channel": 1,
-            "Finish": 1
-          },
-          "id": "InfestedTerrans"
-        },
-        "Cost": {
-          "Minerals": 0,
-          "Vespene": 0,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 50,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 2,
-        "Column": 3,
-        "Type": "AbilCmd",
-        "AbilCmd": "InfestedTerrans,Execute",
-        "id": "InfestedTerrans",
-        "Icon": "btn-unit-zerg-infestedmarine",
-        "Tooltip": "Spawn an Infested Terran. Infested Terrans last <b>30</b> seconds.",
-        "Name": "Infested Terran",
-        "Hotkey": "T"
       },
       {
         "Info": {
@@ -804,12 +617,6 @@
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
@@ -968,12 +775,6 @@
               "Color": "255,255,0,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -1048,12 +849,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -1187,12 +982,6 @@
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
@@ -1350,12 +1139,6 @@
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
@@ -1557,18 +1340,6 @@
       "Name": "Neural Parasite"
     },
     {
-      "id": "Leech",
-      "Name": "Leech"
-    },
-    {
-      "id": "InfestorEnsnare",
-      "Name": "Infestor Ensnare"
-    },
-    {
-      "id": "InfestedTerrans",
-      "Name": "Infested Terrans"
-    },
-    {
       "id": "AmorphousArmorcloud",
       "Name": "Amorphous Armorcloud"
     },
@@ -1578,23 +1349,20 @@
     }
   ],
   "$Upgrades": [
-    "InfestorBurrowed",
-    "Infestor",
     "NeuralParasite",
+    "Infestor",
+    "InfestorBurrowed",
     "BurrowInfestorUp",
-    "InfestorEnergyUpgrade",
-    "MicrobialShroud",
-    "InfestationPit",
     "LarvaTrain",
     "Larva",
     "Burrow",
+    "InfestationPit",
     "ZergGroundArmorsLevel1",
     "Infestor",
     "ZergGroundArmors",
     "ZergGroundArmorsLevel2",
     "ZergGroundArmorsLevel3",
     "DigesterInfestor",
-    "NotInfestor",
     "Infestor_Death",
     "IsInfestor",
     "ThreatensInfestor",
@@ -1604,7 +1372,7 @@
     "TacticalBurrowInfestorCampaignBullyUnburrow",
     "TacticalBurrowInfestorDown",
     "TacticalBurrowInfestorUp",
-    "Infestor"
+    "NotInfestor"
   ],
   "$Requirements": [],
   "$Production": [],
@@ -1649,15 +1417,8 @@
       "AbilCmd": "FungalGrowth,Execute",
       "id": "FungalGrowth",
       "Icon": "btn-ability-zerg-fungalgrowth-color",
-      "Tooltip": "Immobilizes target units and causes <b>30</b> damage over <b>4</b>. Reveals cloaked and burrowed units.",
+      "Tooltip": "Immobilizes target units and causes <b>25</b> damage over <b>4</b>. Reveals cloaked and burrowed units.",
       "Name": "Fungal Growth"
-    },
-    {
-      "AbilCmd": "InfestedTerrans,Execute",
-      "id": "InfestedTerrans",
-      "Icon": "btn-unit-zerg-infestedmarine",
-      "Tooltip": "Spawn an Infested Terran. Infested Terrans last <b>30</b> seconds.",
-      "Name": "Infested Terran"
     },
     {
       "AbilCmd": "NeuralParasite,Execute",

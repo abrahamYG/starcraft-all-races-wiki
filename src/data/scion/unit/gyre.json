@@ -16,9 +16,9 @@
   "Mover": "Fly",
   "StationaryTurningRate": 720,
   "TurningRate": 720,
-  "Radius": 0.75,
-  "SeparationRadius": 0.75,
-  "MinimapRadius": 0.75,
+  "Radius": 0.8125,
+  "SeparationRadius": 0.8125,
+  "MinimapRadius": 0.8125,
   "EditorCategories": "ObjectType:Unit,ObjectFamily:Melee",
   "TacticalAIFilters": "-;Player,Ally,Neutral",
   "AIEvalFactor": 1,
@@ -88,11 +88,9 @@
   "Collide": [
     "Flying"
   ],
-  "LifeRegenRate": 0.1718,
-  "ShieldRegenDelay": 4,
-  "ShieldRegenRate": 1.25,
+  "LifeRegenRate": 0.2734,
   "Acceleration": 3,
-  "Sight": 9,
+  "Sight": 11,
   "CostCategory": "Army",
   "AttackTargetPriority": 20,
   "CardLayouts": {
@@ -109,12 +107,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -206,12 +198,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -285,12 +271,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -384,12 +364,6 @@
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
               "DisplayType": "Move",
               "Color": "255,35,125,255",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
@@ -478,12 +452,6 @@
               "Color": "255,255,0,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -558,12 +526,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -676,12 +638,6 @@
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
@@ -831,12 +787,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -866,7 +816,7 @@
             "AllowMovement": 1
           },
           "Effect": [
-            "GyreShackleLM"
+            "GyreShackle"
           ],
           "EffectRange": [
             "0,1000"
@@ -975,12 +925,6 @@
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
@@ -1093,7 +1037,7 @@
         "AbilCmd": "FuseUnfuse,Execute",
         "id": "Unfuse",
         "Icon": "btn-ability-zerg-dehaka-levelup",
-        "Tooltip": "Releases the Fuse inhabiting this unit, losing the associated bonus.",
+        "Tooltip": "Releases the Fuses inhabiting this unit, losing the associated bonus.",
         "Name": "Unfuse",
         "Hotkey": "U"
       },
@@ -1109,12 +1053,6 @@
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
@@ -1232,9 +1170,158 @@
         "AbilCmd": "GyreAnnex,Execute",
         "id": "GyreAnnex",
         "Icon": "btn-ability-keiron-annex",
-        "Tooltip": "Captures ground units that the caster flies over, preventing use of their attacks or abilities. Deals <b>5</b> damage per second to captured enemies. Can capture up to <b>10</b> units at a time.",
+        "Tooltip": "Captures ground units that the caster flies over, preventing use of their attacks or abilities. Can capture up to <b>10</b> units at a time.",
         "Name": "Annex",
         "Hotkey": "E"
+      },
+      {
+        "Cost": {
+          "Minerals": 0,
+          "Vespene": 0,
+          "Terazine": 0,
+          "Custom": 0,
+          "Energy": 0,
+          "Life": 0,
+          "Shields": 0,
+          "Food": 0
+        },
+        "Row": 2,
+        "Column": 3,
+        "Type": "Passive",
+        "id": "Detector",
+        "Icon": "btn-status-detector",
+        "Tooltip": "This unit can detect cloaked, burrowed, and hallucinated units.",
+        "Name": "Detector"
+      },
+      {
+        "Info": {
+          "class": "CAbilEffectInstant",
+          "Name": "Abil/Name/GyreInflux",
+          "TechPlayer": "Upkeep",
+          "EditorCategories": "Race:Keiron,AbilityorEffectType:Units",
+          "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
+          "OrderArray": [
+            {
+              "DisplayType": "Confirm",
+              "Color": "255,0,255,0",
+              "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
+              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
+            }
+          ],
+          "SharedFlags": {
+            "DisableWhileDead": 1
+          },
+          "DataCollection": "GyreInflux",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
+          "RangeSlop": 1,
+          "ArcSlop": 11.25,
+          "AutoCastAcquireLevel": "Offensive",
+          "AutoCastFilters": "Visible;Player,Ally",
+          "Flags": {
+            "AbortOnAllianceChange": 1,
+            "CancelResetAutoCast": 1,
+            "ChannelingMinimum": 1,
+            "RangeUseCasterRadius": 1,
+            "ReApproachable": 1,
+            "RequireTargetVision": 1,
+            "WaitToSpend": 1,
+            "UpdateChargesOnLevelChange": 1,
+            "Transient": 1
+          },
+          "Effect": [
+            "GyreInfluxSet"
+          ],
+          "EffectRange": [
+            "0,1000"
+          ],
+          "AINotifyEffect": "GyreInflux",
+          "RefundArray": {
+            "Approach": 1,
+            "Prep": 1,
+            "Cast": 1
+          },
+          "RefundFraction": {
+            "Resource": {
+              "Minerals": -1,
+              "Vespene": -1,
+              "Terrazine": -1,
+              "Custom": -1
+            },
+            "Charge": -1,
+            "Cooldown": -1
+          },
+          "UseMarkerArray": {
+            "Approach": 1,
+            "Prep": 1,
+            "Cast": 1,
+            "Channel": 1
+          },
+          "PauseableArray": {
+            "Approach": 1,
+            "Prep": 1,
+            "Cast": 1,
+            "Channel": 1,
+            "Finish": 1
+          },
+          "PreemptableArray": {
+            "Approach": 1,
+            "Prep": 1,
+            "Cast": 1,
+            "Channel": 1,
+            "Finish": 1
+          },
+          "ValidatedArray": {
+            "Approach": 1,
+            "Prep": 1,
+            "Cast": 1,
+            "Channel": 1
+          },
+          "DefaultError": "MustTargetUnit",
+          "AcquirePriority": 3,
+          "SetLastTarget": "Unknown",
+          "VeterancyLevelMin": 0,
+          "VeterancyLevelSkip": 0,
+          "CmdButtonArray": {
+            "Execute": {
+              "Flags": {
+                "ShowInGlossary": 1
+              },
+              "DefaultButtonFace": "GyreInflux"
+            }
+          },
+          "Cost": [
+            {
+              "Vital": {
+                "Shields": 100
+              }
+            }
+          ],
+          "id": "GyreInflux"
+        },
+        "Cost": {
+          "Minerals": 0,
+          "Vespene": 0,
+          "Terazine": 0,
+          "Custom": 0,
+          "Energy": 0,
+          "Life": 0,
+          "Shields": 100,
+          "Food": 0
+        },
+        "Row": 2,
+        "Column": 2,
+        "Type": "AbilCmd",
+        "AbilCmd": "GyreInflux,Execute",
+        "id": "GyreInflux",
+        "Icon": "btn-ability-keiron-influx",
+        "Tooltip": "Restores <b>50</b> energy at the cost of shields.",
+        "Name": "Influx",
+        "Hotkey": "F"
       }
     ]
   },
@@ -1261,8 +1348,8 @@
   "EnergyStart": 75,
   "EnergyMax": 200,
   "EnergyRegenRate": 0.5625,
-  "ShieldsStart": 100,
-  "ShieldsMax": 100,
+  "ShieldsStart": 125,
+  "ShieldsMax": 125,
   "Speed": 3.125,
   "Food": -2,
   "CostResource": {
@@ -1275,13 +1362,14 @@
   "SubgroupPriority": 31,
   "GlossaryPriority": 37,
   "LifeArmor": 1,
-  "KillDisplay": "Always",
-  "RankDisplay": "Always",
   "Icon": "btn-unit-keiron-paradox",
   "LifeArmorIcon": "btn-upgrade-keiron-mechanicalarmorlevel0",
   "ShieldArmorIcon": "btn-upgrade-keiron-shields-level0",
   "Weapons": [],
   "Behaviors": [
+    {
+      "id": "KeironShellRestoration"
+    },
     {
       "id": "Detector12",
       "Icon": "btn-status-detector",
@@ -1317,6 +1405,10 @@
     {
       "id": "GyreShackle",
       "Name": "Gyre - Shackle"
+    },
+    {
+      "id": "GyreInflux",
+      "Name": "Gyre - Influx"
     }
   ],
   "$Upgrades": [
@@ -1324,17 +1416,19 @@
     "Gyre",
     "Empyrean",
     "KeironCitadelMaterialize",
+    "CitadelCharged",
     "KeironMechArmorLevel1",
     "Gyre",
     "KeironMechArmor",
     "KeironMechArmorLevel2",
     "KeironMechArmorLevel3",
     "KeironShieldsLevel1",
-    "CitadelCharged",
     "KeironShields",
     "KeironShieldsLevel2",
     "KeironShieldsLevel3",
-    "Citadel"
+    "Citadel",
+    "KeironMechArmorRevert",
+    "KeironShieldsRevert"
   ],
   "$Requirements": [],
   "$Production": [],
@@ -1413,15 +1507,22 @@
       "AbilCmd": "FuseUnfuse,Execute",
       "id": "Unfuse",
       "Icon": "btn-ability-zerg-dehaka-levelup",
-      "Tooltip": "Releases the Fuse inhabiting this unit, losing the associated bonus.",
+      "Tooltip": "Releases the Fuses inhabiting this unit, losing the associated bonus.",
       "Name": "Unfuse"
     },
     {
       "AbilCmd": "GyreAnnex,Execute",
       "id": "GyreAnnex",
       "Icon": "btn-ability-keiron-annex",
-      "Tooltip": "Captures ground units that the caster flies over, preventing use of their attacks or abilities. Deals <b>5</b> damage per second to captured enemies. Can capture up to <b>10</b> units at a time.",
+      "Tooltip": "Captures ground units that the caster flies over, preventing use of their attacks or abilities. Can capture up to <b>10</b> units at a time.",
       "Name": "Annex"
+    },
+    {
+      "AbilCmd": "GyreInflux,Execute",
+      "id": "GyreInflux",
+      "Icon": "btn-ability-keiron-influx",
+      "Tooltip": "Restores <b>50</b> energy at the cost of shields.",
+      "Name": "Influx"
     }
   ]
 }

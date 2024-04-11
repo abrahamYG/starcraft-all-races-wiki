@@ -106,7 +106,7 @@
   "CostCategory": "Economy",
   "ScoreResult": "BuildOrder",
   "HotkeyCategory": "Unit/Category/KeironUnits",
-  "LifeRegenRate": 0.25,
+  "LifeRegenRate": 0.2734,
   "Food": 18,
   "Footprint": "FootprintCitadelContour",
   "PlacementFootprint": "FootprintCitadelDropOff",
@@ -169,6 +169,7 @@
         "Type": "AbilCmd",
         "AbilCmd": "que5,CancelLast",
         "id": "Cancel",
+        "Icon": "btn-command-cancel",
         "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
         "Name": "Cancel",
         "Hotkey": "Esc"
@@ -234,28 +235,6 @@
         "id": "CancelBuilding",
         "Icon": "btn-command-cancel",
         "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-        "Name": "Cancel",
-        "Hotkey": "Esc"
-      },
-      {
-        "Info": {},
-        "Cost": {
-          "Minerals": 0,
-          "Vespene": 0,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 2,
-        "Column": 4,
-        "Type": "AbilCmd",
-        "AbilCmd": "CitadelCharge,255",
-        "id": "CancelUpgradeMorph",
-        "Icon": "btn-command-cancel",
-        "Tooltip": "Cancels the upgrade order, returning the structure to its original state.",
         "Name": "Cancel",
         "Hotkey": "Esc"
       },
@@ -456,7 +435,8 @@
               "Flags": {
                 "ShowInGlossary": 1
               },
-              "DefaultButtonFace": "CitadelEnergize"
+              "DefaultButtonFace": "CitadelEnergize",
+              "Requirements": "CitadelIsCharged"
             }
           },
           "Cost": [
@@ -692,7 +672,7 @@
             "Flags": {
               "AllowMinimap": 1
             },
-            "DefaultButtonFace": "MaterializeSubjecter"
+            "DefaultButtonFace": "MaterializeCataract"
           },
           "Charge": {
             "CountMax": 500000,
@@ -705,9 +685,9 @@
             "Location": "Player"
           },
           "Time": 5,
-          "Unit": "Subjecter"
+          "Unit": "Cataract"
         },
-        "Unit": "Subjecter",
+        "Unit": "Cataract",
         "Time": 5,
         "Cost": {
           "Minerals": 125,
@@ -723,11 +703,11 @@
         "Column": 3,
         "Type": "AbilCmd",
         "AbilCmd": "KeironCitadelMaterialize,Train4",
-        "id": "MaterializeSubjecter",
-        "Icon": "btn-unit-keiron-subjecter",
+        "id": "MaterializeCataract",
+        "Icon": "btn-unit-keiron-cataract",
         "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Sanctum</span>.<br/><br/>",
-        "Name": "Materialize Subjecter",
-        "Hotkey": "S"
+        "Name": "Materialize Cataract",
+        "Hotkey": "C"
       },
       {
         "Info": {
@@ -932,7 +912,7 @@
           "Energy": 0,
           "Life": 0,
           "Shields": 0,
-          "Food": -6
+          "Food": -5
         },
         "Row": 1,
         "Column": 2,
@@ -959,6 +939,7 @@
         "Column": 4,
         "Type": "CancelSubmenu",
         "id": "Cancel",
+        "Icon": "btn-command-cancel",
         "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
         "Name": "Cancel",
         "Hotkey": "Esc"
@@ -1023,7 +1004,7 @@
         "AbilCmd": "KeironCitadelMaterialize,Train9",
         "id": "MaterializeTitan",
         "Icon": "btn-unit-keiron-titan",
-        "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Pantheon</span>.<br/><br/>",
+        "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Pantheon</span>.</n><br/>",
         "Name": "Materialize Titan",
         "Hotkey": "T"
       }
@@ -1103,7 +1084,7 @@
           "Energy": 0,
           "Life": 0,
           "Shields": 0,
-          "Food": -2
+          "Food": -1.5
         },
         "Row": 0,
         "Column": 1,
@@ -1111,7 +1092,6 @@
         "AbilCmd": "KeironCitadelMaterialize,Train17",
         "id": "MaterializeFuse",
         "Icon": "btn-unit-keiron-fuse",
-        "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Conduit</span>.<br/><br/>",
         "Name": "Materialize Fuse",
         "Hotkey": "F"
       },
@@ -1183,7 +1163,7 @@
         "Time": 5,
         "Cost": {
           "Minerals": 100,
-          "Vespene": 125,
+          "Vespene": 100,
           "Terazine": 0,
           "Custom": 0,
           "Energy": 0,
@@ -1314,7 +1294,7 @@
           "Energy": 0,
           "Life": 0,
           "Shields": 0,
-          "Food": -8
+          "Food": -7
         },
         "Row": 1,
         "Column": 2,
@@ -1341,6 +1321,7 @@
         "Column": 4,
         "Type": "CancelSubmenu",
         "id": "Cancel",
+        "Icon": "btn-command-cancel",
         "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
         "Name": "Cancel",
         "Hotkey": "Esc"
@@ -1370,17 +1351,17 @@
   },
   "id": "CitadelCharged",
   "Facing": 315,
-  "ShieldsStart": 500,
-  "ShieldsMax": 500,
   "ResourceDropOff": {
     "Minerals": 1,
     "Vespene": 1
   },
+  "ShieldsStart": 500,
+  "ShieldsMax": 500,
   "CostResource": {
-    "Minerals": 125
+    "Minerals": 575
   },
-  "ScoreMake": 125,
-  "ScoreKill": 525,
+  "ScoreMake": 150,
+  "ScoreKill": 550,
   "TechAliasArray": [
     "Alias_Citadel"
   ],
@@ -1389,7 +1370,7 @@
     "Pariah",
     "Volt",
     "Pulsar",
-    "Subjecter",
+    "Cataract",
     "Crux",
     "Umbra",
     "Ward",
@@ -1422,6 +1403,9 @@
     },
     {
       "id": "KeironShellRestorationAura"
+    },
+    {
+      "id": "KeironStructureCharged"
     }
   ],
   "Abilities": [
@@ -1449,7 +1433,6 @@
       "id": "KeironCitadelMaterialize",
       "Name": "Keiron - Citadel Materialize"
     },
-    {},
     {
       "id": "CitadelEnergize",
       "Name": "Citadel - Energize"
@@ -1460,6 +1443,7 @@
     "KeironShieldsLevel1",
     "CitadelChargeMorph",
     "Citadel",
+    "KeironCitadelPlayerDecalMacro",
     "KeironShields",
     "KeironShieldsLevel2",
     "KeironShieldsLevel3",
@@ -1480,7 +1464,7 @@
     "Pariah",
     "Volt",
     "Pulsar",
-    "Subjecter",
+    "Cataract",
     "Myriad",
     "Crux",
     "Umbra",
@@ -1496,6 +1480,7 @@
     {
       "AbilCmd": "que5,CancelLast",
       "id": "Cancel",
+      "Icon": "btn-command-cancel",
       "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
       "Name": "Cancel"
     },
@@ -1564,10 +1549,10 @@
     },
     {
       "AbilCmd": "KeironCitadelMaterialize,Train4",
-      "id": "MaterializeSubjecter",
-      "Icon": "btn-unit-keiron-subjecter",
+      "id": "MaterializeCataract",
+      "Icon": "btn-unit-keiron-cataract",
       "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Sanctum</span>.<br/><br/>",
-      "Name": "Materialize Subjecter"
+      "Name": "Materialize Cataract"
     },
     {
       "AbilCmd": "KeironCitadelMaterialize,Train8",
@@ -1608,7 +1593,7 @@
       "AbilCmd": "KeironCitadelMaterialize,Train9",
       "id": "MaterializeTitan",
       "Icon": "btn-unit-keiron-titan",
-      "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Pantheon</span>.<br/><br/>",
+      "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Pantheon</span>.</n><br/>",
       "Name": "Materialize Titan"
     },
     {
@@ -1622,7 +1607,6 @@
       "AbilCmd": "KeironCitadelMaterialize,Train17",
       "id": "MaterializeFuse",
       "Icon": "btn-unit-keiron-fuse",
-      "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Conduit</span>.<br/><br/>",
       "Name": "Materialize Fuse"
     },
     {

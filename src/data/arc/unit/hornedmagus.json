@@ -1155,7 +1155,7 @@
             "Visible;Missile,Stasis,Dead,Hidden,Invulnerable"
           ],
           "Range": [
-            9
+            7
           ],
           "CastIntroTime": [
             0.25
@@ -1181,7 +1181,7 @@
         "AbilCmd": "HornedMagusFireShield,Execute",
         "id": "HornedMagusFireShield",
         "Icon": "btn-ability-terran-electricfield",
-        "Tooltip": "Increases the target unit's armor by <b>3</b> and causes nearby units on the same plane that do not also have Fire Shield to suffer <b>8</b> damage per second. Lasts <b>14</b> seconds.",
+        "Tooltip": "Increases the target unit's armor by <b>3</b> and causes nearby units on the same plane that do not also have Fire Shield to suffer <b>5</b> damage per second. Lasts <b>14</b> seconds.",
         "Name": "Fire Shield",
         "Hotkey": "Q"
       },
@@ -1325,7 +1325,7 @@
         "AbilCmd": "HornedMagusShroud,Execute",
         "id": "HornedMagusShroud",
         "Icon": "btn-ability-protoss-energize",
-        "Tooltip": "Temporarily cloaks friendly units in the target area for <b>21</b> seconds unless they attack or receive damage.",
+        "Tooltip": "Temporarily cloaks and increases the movement speed of friendly units in the target area by <b>50</b>% for <b>28</b> seconds unless they attack or receive damage.",
         "Name": "Shroud",
         "Hotkey": "W"
       },
@@ -1482,12 +1482,10 @@
   ],
   "Behaviors": [
     {
-      "id": "DragonLineageLesser",
-      "Name": "Dragon Lineage"
+      "id": "DragonLineageLesser"
     },
     {
-      "id": "Negative1Armor",
-      "Name": "-1 Armor"
+      "id": "Negative1Armor"
     }
   ],
   "Abilities": [
@@ -1639,14 +1637,14 @@
       "AbilCmd": "HornedMagusFireShield,Execute",
       "id": "HornedMagusFireShield",
       "Icon": "btn-ability-terran-electricfield",
-      "Tooltip": "Increases the target unit's armor by <b>3</b> and causes nearby units on the same plane that do not also have Fire Shield to suffer <b>8</b> damage per second. Lasts <b>14</b> seconds.",
+      "Tooltip": "Increases the target unit's armor by <b>3</b> and causes nearby units on the same plane that do not also have Fire Shield to suffer <b>5</b> damage per second. Lasts <b>14</b> seconds.",
       "Name": "Fire Shield"
     },
     {
       "AbilCmd": "HornedMagusShroud,Execute",
       "id": "HornedMagusShroud",
       "Icon": "btn-ability-protoss-energize",
-      "Tooltip": "Temporarily cloaks friendly units in the target area for <b>21</b> seconds unless they attack or receive damage.",
+      "Tooltip": "Temporarily cloaks and increases the movement speed of friendly units in the target area by <b>50</b>% for <b>28</b> seconds unless they attack or receive damage.",
       "Name": "Shroud"
     },
     {

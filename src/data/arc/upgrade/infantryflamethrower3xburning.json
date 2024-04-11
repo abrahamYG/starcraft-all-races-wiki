@@ -12,6 +12,7 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "InfantryFlamethrower3xBurning",
+  "EditorCategories": "UpgradeType:Talents,Race:UPL",
   "$tokens": {
     "ID": {
       "type": "string",
@@ -25,6 +26,5 @@
       "Value": "3"
     }
   ],
-  "Race": "UPL",
-  "EditorCategories": "UpgradeType:Talents,Race:UPL"
+  "Race": "UPL"
 }

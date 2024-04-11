@@ -1,6 +1,6 @@
 {
   "Name": "Echo",
-  "Description": "Melee air fighter. Can use Discord Mode and Reverb.<br/><br/><span style=\"color: #FFFF80\">Can attack air units.</span>",
+  "Description": "Close range air fighter. Can use Discord Mode and Reverb.<br/><br/><span style=\"color: #FFFF80\">Can attack air units.</span>",
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -1052,14 +1052,14 @@
     }
   ],
   "$Upgrades": [
-    "CitadelCharged",
+    "DissonanceProjector",
     "Echo",
     "EchoDM",
     "EchoFighterMode",
-    "DissonanceProjector",
     "Conduit",
     "IsEcho",
     "KeironCitadelMaterialize",
+    "CitadelCharged",
     "KeironBioWeaponsLevel1",
     "KeironBioWeapons",
     "KeironBioWeaponsLevel2",

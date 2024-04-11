@@ -138,12 +138,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -200,12 +194,6 @@
           "EditorCategories": "Race:Neutral,AbilityorEffectType:Units",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -302,102 +290,21 @@
         "Hotkey": "I"
       },
       {
-        "Upgrade": "SiegeTech",
+        "Upgrade": "HurricaneThrusters",
         "Info": {
           "Button": {
             "Flags": {
-              "AllowMinimap": 0,
-              "ShowInGlossary": 1
+              "AllowMinimap": 0
             },
-            "DefaultButtonFace": "ResearchSiegeTech",
-            "Requirements": "LearnSiegeTech",
-            "State": "Restricted"
-          },
-          "Resource": {
-            "Minerals": 100,
-            "Vespene": 100
-          },
-          "Time": 80,
-          "Upgrade": "SiegeTech"
-        },
-        "Time": 80,
-        "Cost": {
-          "Minerals": 100,
-          "Vespene": 100,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 1,
-        "Column": 1,
-        "Type": "AbilCmd",
-        "AbilCmd": "FactoryTechLabResearch,Research1",
-        "id": "ResearchSiegeTech",
-        "Icon": "btn-unit-terran-siegetanksiegemode",
-        "Tooltip": "Enables <span style=\"color: #ffff8a\">Siege Tanks</span> to deploy into Siege Mode. While in Siege Mode, Siege Tanks have significantly increased range and damage, but they cannot move.",
-        "Name": "Research Siege Tech",
-        "Hotkey": "S"
-      },
-      {
-        "Upgrade": "StrikeCannons",
-        "Info": {
-          "Button": {
-            "Flags": {
-              "AllowMinimap": 0,
-              "ShowInGlossary": 1
-            },
-            "DefaultButtonFace": "ResearchStrikeCannons",
-            "Requirements": "LearnStrikeCannons",
-            "State": "Restricted"
-          },
-          "Resource": {
-            "Minerals": 150,
-            "Vespene": 150
-          },
-          "Time": 110,
-          "Upgrade": "StrikeCannons"
-        },
-        "Time": 110,
-        "Cost": {
-          "Minerals": 150,
-          "Vespene": 150,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 1,
-        "Column": 2,
-        "Type": "AbilCmd",
-        "AbilCmd": "FactoryTechLabResearch,Research3",
-        "id": "ResearchStrikeCannons",
-        "Icon": "btn-ability-terran-bombardmentstrike-color",
-        "Tooltip": "Allows <span style=\"color: #ffff8a\">Thors</span> to use the 250mm Strike Cannons ability.",
-        "Name": "Research 250mm Strike Cannons",
-        "Hotkey": "C"
-      },
-      {
-        "Upgrade": "CycloneLockOnDamageUpgrade",
-        "Info": {
-          "Button": {
-            "Flags": {
-              "AllowMinimap": 0,
-              "ShowInGlossary": 1
-            },
-            "DefaultButtonFace": "CycloneResearchLockOnDamageUpgrade",
-            "Requirements": "LearnCycloneLockOnDamageUpgrade"
+            "DefaultButtonFace": "CycloneResearchHurricaneThrusters",
+            "Requirements": "LearnCycloneSpeedUpgrade"
           },
           "Resource": {
             "Minerals": 100,
             "Vespene": 100
           },
           "Time": 140,
-          "Upgrade": "CycloneLockOnDamageUpgrade"
+          "Upgrade": "HurricaneThrusters"
         },
         "Time": 140,
         "Cost": {
@@ -411,14 +318,53 @@
           "Food": 0
         },
         "Row": 0,
-        "Column": 2,
+        "Column": 1,
         "Type": "AbilCmd",
-        "AbilCmd": "FactoryTechLabResearch,Research10",
-        "id": "CycloneResearchLockOnDamageUpgrade",
-        "Icon": "btn-upgrade-terran-magfieldaccelerator",
-        "Tooltip": "Increases <span style=\"color: #ffff8a\">Cyclone</span> Lock On damage. Deals 600 damage over <b>20</b> seconds to ground targets, and 360 damage over <b>20</b> seconds to flying targets.",
-        "Name": "Research Mag-Field Accelerator",
+        "AbilCmd": "FactoryTechLabResearch,Research11",
+        "id": "CycloneResearchHurricaneThrusters",
+        "Icon": "btn-upgrade-mengsk-armory-smartservos",
+        "Tooltip": "Increases the move speed of <span style=\"color: #ffff8a\">Cyclones</span>.",
+        "Name": "Research Hurricane Engines",
         "Hotkey": "R"
+      },
+      {
+        "Upgrade": "SmartServos",
+        "Info": {
+          "Button": {
+            "Flags": {
+              "AllowMinimap": 0,
+              "ShowInGlossary": 1
+            },
+            "DefaultButtonFace": "ResearchSmartServos",
+            "Requirements": "LearnSmartServos"
+          },
+          "Resource": {
+            "Minerals": 100,
+            "Vespene": 100
+          },
+          "Time": 110,
+          "Upgrade": "SmartServos"
+        },
+        "Time": 110,
+        "Cost": {
+          "Minerals": 100,
+          "Vespene": 100,
+          "Terazine": 0,
+          "Custom": 0,
+          "Energy": 0,
+          "Life": 0,
+          "Shields": 0,
+          "Food": 0
+        },
+        "Row": 0,
+        "Column": 3,
+        "Type": "AbilCmd",
+        "AbilCmd": "FactoryTechLabResearch,Research7",
+        "id": "ResearchSmartServos",
+        "Icon": "btn-upgrade-terran-transformationservos",
+        "Tooltip": "Allows <span style=\"color: #ffff8a\">Hellions</span>, <span style=\"color: #ffff8a\">Hellbats</span>, <span style=\"color: #ffff8a\">Vikings</span>, and <span style=\"color: #ffff8a\">Thors</span> to transform quickly between combat modes.",
+        "Name": "Research Smart Servos",
+        "Hotkey": "S"
       },
       {
         "Upgrade": "DrillClaws",
@@ -450,53 +396,14 @@
           "Food": 0
         },
         "Row": 0,
-        "Column": 1,
+        "Column": 2,
         "Type": "AbilCmd",
         "AbilCmd": "FactoryTechLabResearch,Research5",
         "id": "ResearchDrillClaws",
         "Icon": "btn-upgrade-terran-researchdrillingclaws",
-        "Tooltip": "Allows <span style=\"color: #ffff8a\">Widow Mines</span> to burrow and activate three times as fast.",
+        "Tooltip": "Allows <span style=\"color: #ffff8a\">Widow Mines</span> to burrow and unburrow two times as fast.",
         "Name": "Research Drilling Claws",
         "Hotkey": "C"
-      },
-      {
-        "Upgrade": "SmartServos",
-        "Info": {
-          "Button": {
-            "Flags": {
-              "AllowMinimap": 0,
-              "ShowInGlossary": 1
-            },
-            "DefaultButtonFace": "ResearchSmartServos",
-            "Requirements": "LearnSmartServos"
-          },
-          "Resource": {
-            "Minerals": 100,
-            "Vespene": 100
-          },
-          "Upgrade": "SmartServos",
-          "Time": 110
-        },
-        "Time": 110,
-        "Cost": {
-          "Minerals": 100,
-          "Vespene": 100,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 0,
-        "Column": 3,
-        "Type": "AbilCmd",
-        "AbilCmd": "FactoryTechLabResearch,Research7",
-        "id": "ResearchSmartServos",
-        "Icon": "btn-upgrade-terran-transformationservos",
-        "Tooltip": "Allows <span style=\"color: #ffff8a\">Hellions</span>, <span style=\"color: #ffff8a\">Hellbats</span>, <span style=\"color: #ffff8a\">Vikings</span>, and <span style=\"color: #ffff8a\">Thors</span> to transform quickly between combat modes.",
-        "Name": "Research Smart Servos",
-        "Hotkey": "S"
       }
     ]
   },
@@ -563,16 +470,15 @@
     "TerranBuildingArmor",
     "IsFactoryTechLab",
     "FactoryTechLab",
-    "FactoryTechLabSplat",
-    null
+    "FactoryTechLabSplat"
   ],
   "$Requirements": [],
   "$Production": [],
   "$Research": [
     "HighCapacityBarrels",
-    "CycloneLockOnDamageUpgrade",
-    "DrillClaws",
-    "SmartServos"
+    "HurricaneThrusters",
+    "SmartServos",
+    "DrillClaws"
   ],
   "$Morph": [],
   "$Phase": [],
@@ -603,32 +509,11 @@
       "Name": "Research Infernal Pre-Igniter"
     },
     {
-      "AbilCmd": "FactoryTechLabResearch,Research1",
-      "id": "ResearchSiegeTech",
-      "Icon": "btn-unit-terran-siegetanksiegemode",
-      "Tooltip": "Enables <span style=\"color: #ffff8a\">Siege Tanks</span> to deploy into Siege Mode. While in Siege Mode, Siege Tanks have significantly increased range and damage, but they cannot move.",
-      "Name": "Research Siege Tech"
-    },
-    {
-      "AbilCmd": "FactoryTechLabResearch,Research3",
-      "id": "ResearchStrikeCannons",
-      "Icon": "btn-ability-terran-bombardmentstrike-color",
-      "Tooltip": "Allows <span style=\"color: #ffff8a\">Thors</span> to use the 250mm Strike Cannons ability.",
-      "Name": "Research 250mm Strike Cannons"
-    },
-    {
-      "AbilCmd": "FactoryTechLabResearch,Research10",
-      "id": "CycloneResearchLockOnDamageUpgrade",
-      "Icon": "btn-upgrade-terran-magfieldaccelerator",
-      "Tooltip": "Increases <span style=\"color: #ffff8a\">Cyclone</span> Lock On damage. Deals 600 damage over <b>20</b> seconds to ground targets, and 360 damage over <b>20</b> seconds to flying targets.",
-      "Name": "Research Mag-Field Accelerator"
-    },
-    {
-      "AbilCmd": "FactoryTechLabResearch,Research5",
-      "id": "ResearchDrillClaws",
-      "Icon": "btn-upgrade-terran-researchdrillingclaws",
-      "Tooltip": "Allows <span style=\"color: #ffff8a\">Widow Mines</span> to burrow and activate three times as fast.",
-      "Name": "Research Drilling Claws"
+      "AbilCmd": "FactoryTechLabResearch,Research11",
+      "id": "CycloneResearchHurricaneThrusters",
+      "Icon": "btn-upgrade-mengsk-armory-smartservos",
+      "Tooltip": "Increases the move speed of <span style=\"color: #ffff8a\">Cyclones</span>.",
+      "Name": "Research Hurricane Engines"
     },
     {
       "AbilCmd": "FactoryTechLabResearch,Research7",
@@ -636,6 +521,13 @@
       "Icon": "btn-upgrade-terran-transformationservos",
       "Tooltip": "Allows <span style=\"color: #ffff8a\">Hellions</span>, <span style=\"color: #ffff8a\">Hellbats</span>, <span style=\"color: #ffff8a\">Vikings</span>, and <span style=\"color: #ffff8a\">Thors</span> to transform quickly between combat modes.",
       "Name": "Research Smart Servos"
+    },
+    {
+      "AbilCmd": "FactoryTechLabResearch,Research5",
+      "id": "ResearchDrillClaws",
+      "Icon": "btn-upgrade-terran-researchdrillingclaws",
+      "Tooltip": "Allows <span style=\"color: #ffff8a\">Widow Mines</span> to burrow and unburrow two times as fast.",
+      "Name": "Research Drilling Claws"
     }
   ]
 }

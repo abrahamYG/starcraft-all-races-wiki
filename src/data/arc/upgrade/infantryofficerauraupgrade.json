@@ -12,6 +12,7 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "InfantryOfficerAuraUpgrade",
+  "EditorCategories": "UpgradeType:Talents,Race:UPL",
   "$tokens": {
     "ID": {
       "type": "string",
@@ -30,6 +31,5 @@
       "Value": "7.500000"
     }
   ],
-  "Race": "UPL",
-  "EditorCategories": "UpgradeType:Talents,Race:UPL"
+  "Race": "UPL"
 }

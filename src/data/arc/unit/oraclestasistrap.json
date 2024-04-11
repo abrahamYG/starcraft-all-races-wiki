@@ -12,7 +12,7 @@
   "ResourceType": "Unknown",
   "LifeStart": 30,
   "LifeMax": 30,
-  "LifeArmorName": "Synoid Armor",
+  "LifeArmorName": "Protoss Armor",
   "Mover": "Ground",
   "StationaryTurningRate": 720,
   "TurningRate": 720,
@@ -34,6 +34,7 @@
     "PlayerRevivable",
     "CameraFollow",
     "UseLineOfSight",
+    "NoScore",
     "NoPortraitTalk",
     "AIThreatGround",
     "AILifetime",
@@ -94,7 +95,7 @@
   "ShieldsMax": 30,
   "ShieldRegenRate": 2,
   "ShieldArmorName": "Protoss Plasma Shields",
-  "Sight": 4,
+  "Sight": 7,
   "AttackTargetPriority": 20,
   "CardLayouts": {
     "Root": [
@@ -131,12 +132,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -160,7 +155,10 @@
               "DefaultButtonFace": "Cancel"
             },
             "Halt": {
-              "DefaultButtonFace": "Cancel"
+              "DefaultButtonFace": "Halt",
+              "Flags": {
+                "ToSelection": 1
+              }
             }
           },
           "id": "BuildInProgress"

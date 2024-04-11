@@ -12,6 +12,7 @@
   "ScoreValue": "WeaponTechnologyValue",
   "WebPriority": 0,
   "LeaderAlias": "TechVehicleWeapons",
+  "EditorCategories": "Race:UPL,UpgradeType:AttackBonus",
   "$tokens": {
     "ID": {
       "type": "string",
@@ -240,7 +241,6 @@
       "Value": "Assets\\Textures\\btn-upgrades-upl-vehicleweapons-lvl2.dds"
     }
   ],
-  "EditorCategories": "Race:UPL,UpgradeType:AttackBonus",
   "AffectedUnitArray": [
     "A6",
     "CSV",
@@ -254,7 +254,7 @@
     "Condor",
     "CARR",
     "AltonPetersZ1",
-    "Z2",
+    "UPLZ2",
     "UPLNightjar",
     "UPLSolitaire"
   ],

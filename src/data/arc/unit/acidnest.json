@@ -1,6 +1,6 @@
 {
   "Name": "Acid Nest",
-  "Description": "Explodes for <b>80</b> damage on contact with an enemy ground unit. Deals <b>35</b> splash damage to other units around it.",
+  "Description": "Burrowed explosive mine. Deals <b>80</b> damage on contact with an enemy ground unit. Deals <b>35</b> splash damage to other enemy ground units around it.",
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -37,8 +37,6 @@
     "TownAlert",
     "NoPortraitTalk",
     "ArmorDisabledWhileConstructing",
-    "Cloaked",
-    "Buried",
     "AILifetime"
   ],
   "EditorFlags": [
@@ -114,24 +112,106 @@
   "CardLayouts": {
     "Root": [
       {
+        "Cost": {
+          "Minerals": 0,
+          "Vespene": 0,
+          "Terazine": 0,
+          "Custom": 0,
+          "Energy": 0,
+          "Life": 0,
+          "Shields": 0,
+          "Food": 0
+        },
         "Row": 2,
         "Column": 0,
-        "Type": "AbilCmd",
-        "AbilCmd": "AcidNestAttack,Execute",
-        "id": "MothershipCoreAttack",
-        "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
-        "Name": "Attack",
-        "Hotkey": "A"
+        "Type": "Passive",
+        "id": "AcidNest",
+        "Icon": "btn-ability-zerg-banelingspooge",
+        "Tooltip": "Burrowed explosive mine. Deals <b>80</b> damage on contact with an enemy ground unit. Deals <b>35</b> splash damage to other enemy ground units around it.",
+        "Name": "Volatile Acid"
       },
       {
+        "Info": {
+          "class": "CAbilBuildable",
+          "Name": "Abil/Name/BuildInProgress",
+          "TechPlayer": "Upkeep",
+          "EditorCategories": "Race:Neutral,AbilityorEffectType:Units",
+          "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
+          "OrderArray": [
+            {
+              "DisplayType": "Confirm",
+              "Color": "255,0,255,0",
+              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
+              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
+            }
+          ],
+          "SharedFlags": {
+            "DisableWhileDead": 1
+          },
+          "DataCollection": "BuildInProgress",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
+          "Activity": "UI/Building",
+          "VitalStartFactor": {
+            "Life": 0.1,
+            "Shields": 0.1,
+            "Energy": 1
+          },
+          "CmdButtonArray": {
+            "Cancel": {
+              "DefaultButtonFace": "Cancel"
+            },
+            "Halt": {
+              "DefaultButtonFace": "Halt",
+              "Flags": {
+                "ToSelection": 1
+              }
+            }
+          },
+          "id": "BuildInProgress"
+        },
+        "Cost": {
+          "Minerals": 0,
+          "Vespene": 0,
+          "Terazine": 0,
+          "Custom": 0,
+          "Energy": 0,
+          "Life": 0,
+          "Shields": 0,
+          "Food": 0
+        },
         "Row": 2,
         "Column": 4,
         "Type": "AbilCmd",
         "AbilCmd": "BuildInProgress,Cancel",
         "id": "Cancel",
+        "Icon": "btn-command-cancel",
         "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
         "Name": "Cancel",
         "Hotkey": "Esc"
+      },
+      {
+        "Cost": {
+          "Minerals": 0,
+          "Vespene": 0,
+          "Terazine": 0,
+          "Custom": 0,
+          "Energy": 0,
+          "Life": 0,
+          "Shields": 0,
+          "Food": 0
+        },
+        "Row": 2,
+        "Column": 1,
+        "Type": "Passive",
+        "id": "ResidualAcid",
+        "Icon": "btn-upgrade-xayid-residualacid",
+        "Tooltip": "<span style=\"color: #FFFF80\">Acid Nests</span> leave behind a puddle of acid upon death, dealing <b>10</b> damage per second, and slowing enemy movement speed by 30% in an area. Lasts <b>20</b> seconds.",
+        "Name": "Residual Acid"
       }
     ]
   },
@@ -149,8 +229,11 @@
   "Weapons": [],
   "Behaviors": [
     {
-      "id": "ResidualAcidFate",
-      "Icon": "btn-upgrade-xayid-residualacid"
+      "id": "VolatileAcidFate",
+      "Icon": "btn-ability-zerg-banelingspooge"
+    },
+    {
+      "id": "AcidNestVolatileAcidSearch"
     }
   ],
   "Abilities": [
@@ -161,18 +244,16 @@
     {
       "id": "que1",
       "Name": "Queue (1)"
-    },
-    {
-      "id": "AcidNestAttack",
-      "Name": "Acid Nest Attack"
     }
   ],
   "$Upgrades": [
-    "AcidNestBuild",
+    "PlaceAcidNest",
     "AcidNest",
-    "AcidNestMorph",
     "ResidualAcid",
+    "ProwlerPlaceAcidNest",
+    "AcidNestMorph",
     "AcidNest",
+    "AcidNestBuild",
     "AcidNestBuild",
     "AcidNestSplat",
     "IsAcidNest"
@@ -182,17 +263,14 @@
   "$Research": [],
   "$Morph": [],
   "$Phase": [],
-  "$Producers": [],
+  "$Producers": [
+    "Prowler"
+  ],
   "$Commands": [
-    {
-      "AbilCmd": "AcidNestAttack,Execute",
-      "id": "MothershipCoreAttack",
-      "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
-      "Name": "Attack"
-    },
     {
       "AbilCmd": "BuildInProgress,Cancel",
       "id": "Cancel",
+      "Icon": "btn-command-cancel",
       "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
       "Name": "Cancel"
     }

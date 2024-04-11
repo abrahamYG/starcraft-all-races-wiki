@@ -12,6 +12,7 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "BileDucts",
+  "EditorCategories": "Race:Xayid,UpgradeType:Talents",
   "$tokens": {
     "ID": {
       "type": "string",
@@ -19,18 +20,13 @@
     }
   },
   "InfoTooltipPriority": 1,
-  "EditorCategories": "Race:Xayid,UpgradeType:Talents",
   "Race": "Xayi",
   "ScoreResult": "BuildOrder",
-  "ScoreAmount": 200,
+  "ScoreAmount": 300,
   "EffectArray": [
     {
-      "Reference": "Weapon,VirulentSpit,Period",
-      "Value": "-0.250000"
-    },
-    {
       "Reference": "Weapon,VirulentSpit,Range",
-      "Value": "2"
+      "Value": "3"
     },
     {
       "Reference": "Weapon,VirulentSpit,MinScanRange",

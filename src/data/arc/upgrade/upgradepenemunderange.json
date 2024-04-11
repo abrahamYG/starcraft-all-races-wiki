@@ -12,6 +12,7 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "UpgradePenemundeRange",
+  "EditorCategories": "Race:UED,UpgradeType:SpellResearch",
   "$tokens": {
     "ID": {
       "type": "string",
@@ -19,18 +20,14 @@
     }
   },
   "InfoTooltipPriority": 1,
-  "EditorCategories": "Race:UED,UpgradeType:SpellResearch",
   "Race": "UED",
   "ScoreAmount": 200,
   "ScoreResult": "BuildOrder",
   "EffectArray": [
     {
-      "Reference": "Weapon,UEDPenemundeGunRange,Range",
-      "Value": "5"
-    },
-    {
-      "Reference": "Weapon,UEDPenemundeGunRange,MinScanRange",
-      "Value": "5"
+      "Operation": "Set",
+      "Reference": "Weapon,UEDPenemundeGunRangeHidden,Options[Disabled]",
+      "Value": "0"
     }
   ],
   "AffectedUnitArray": [

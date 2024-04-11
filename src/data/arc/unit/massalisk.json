@@ -537,7 +537,7 @@
         "AbilCmd": "Hunker,Execute",
         "id": "HunkeredForm",
         "Icon": "btn-ability-xayid-massaliskhunker",
-        "Tooltip": "Turns the <span style=\"color: #FFFF80\">Massalisk</span> to  it's hunkered form. While hunkered, the <span style=\"color: #FFFF80\">Massalisk</span> is immobile, has increased armor, and a long range anti-air splash weapon</span>.",
+        "Tooltip": "Hunkers the <span style=\"color: #FFFF80\">Massalisk</span>. While hunkered, the <span style=\"color: #FFFF80\">Massalisk</span> is immobile, takes decreased damage, and has a long range anti-air splash weapon</span>.",
         "Name": "Hunkered Form",
         "Hotkey": "E"
       }
@@ -550,7 +550,7 @@
     "Ground",
     "Flying6"
   ],
-  "Sight": 10,
+  "Sight": 11,
   "CostCategory": "Army",
   "ScoreResult": "BuildOrder",
   "GlossaryCategory": "Unit/Category/XayidUnits",
@@ -684,7 +684,7 @@
       "AbilCmd": "Hunker,Execute",
       "id": "HunkeredForm",
       "Icon": "btn-ability-xayid-massaliskhunker",
-      "Tooltip": "Turns the <span style=\"color: #FFFF80\">Massalisk</span> to  it's hunkered form. While hunkered, the <span style=\"color: #FFFF80\">Massalisk</span> is immobile, has increased armor, and a long range anti-air splash weapon</span>.",
+      "Tooltip": "Hunkers the <span style=\"color: #FFFF80\">Massalisk</span>. While hunkered, the <span style=\"color: #FFFF80\">Massalisk</span> is immobile, takes decreased damage, and has a long range anti-air splash weapon</span>.",
       "Name": "Hunkered Form"
     }
   ]

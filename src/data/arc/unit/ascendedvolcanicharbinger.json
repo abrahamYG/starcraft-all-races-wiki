@@ -998,7 +998,7 @@
         "AbilCmd": "VolcanicHarbingerOverload,Ammo1",
         "id": "VolcanicHarbingerOverload",
         "Icon": "btn-ability-kerrigan-crushinggrip",
-        "Tooltip": "Overloads the next attack to deal increased damage to the target and all units behind it.<br/><c val=\"#ColorAttackInfo\">Overload 1: <b>50</b>% increased damage and small area,<br/>Overload 2:<b>150</b>% increased damage and medium area,<br/>Overload 3: <b>300</b>% increased damage and large area.</span><br/><span style=\"color: #FF0000\">Cannot charge while attacking.</span>",
+        "Tooltip": "Overloads the next attack to deal increased damage to the target and all units behind it.<br/><c val=\"#ColorAttackInfo\">Overload 1: <b>50</b>% increased damage and small area,<br/>Overload 2:<b>150</b>% increased damage and medium area,<br/>Overload 3: <b>300</b>% increased damage and large area.</span></n><span style=\"color: #FF0000\">Cannot charge while attacking.</span>",
         "Name": "Overload",
         "Hotkey": "Q"
       }
@@ -1054,12 +1054,10 @@
   ],
   "Behaviors": [
     {
-      "id": "DragonLineageLesser",
-      "Name": "Dragon Lineage"
+      "id": "DragonLineageLesser"
     },
     {
-      "id": "Negative1Armor",
-      "Name": "-1 Armor"
+      "id": "Negative1Armor"
     },
     {
       "id": "DragonAscended",
@@ -1193,7 +1191,7 @@
       "AbilCmd": "VolcanicHarbingerOverload,Ammo1",
       "id": "VolcanicHarbingerOverload",
       "Icon": "btn-ability-kerrigan-crushinggrip",
-      "Tooltip": "Overloads the next attack to deal increased damage to the target and all units behind it.<br/><c val=\"#ColorAttackInfo\">Overload 1: <b>50</b>% increased damage and small area,<br/>Overload 2:<b>150</b>% increased damage and medium area,<br/>Overload 3: <b>300</b>% increased damage and large area.</span><br/><span style=\"color: #FF0000\">Cannot charge while attacking.</span>",
+      "Tooltip": "Overloads the next attack to deal increased damage to the target and all units behind it.<br/><c val=\"#ColorAttackInfo\">Overload 1: <b>50</b>% increased damage and small area,<br/>Overload 2:<b>150</b>% increased damage and medium area,<br/>Overload 3: <b>300</b>% increased damage and large area.</span></n><span style=\"color: #FF0000\">Cannot charge while attacking.</span>",
       "Name": "Overload"
     }
   ]

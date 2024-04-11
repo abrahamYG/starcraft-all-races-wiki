@@ -13,13 +13,13 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "GlialReconstitution",
+  "EditorCategories": "Race:Zerg,UpgradeType:Spell",
   "$tokens": {
     "ID": {
       "type": "string",
       "value": ""
     }
   },
-  "EditorCategories": "Race:Zerg,UpgradeType:Talents",
   "ScoreResult": "BuildOrder",
   "EffectArray": [
     {

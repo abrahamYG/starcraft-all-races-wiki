@@ -13,6 +13,7 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "DiggingClaws",
+  "EditorCategories": "Race:Zerg,UpgradeType:Spell",
   "$tokens": {
     "ID": {
       "type": "string",
@@ -20,7 +21,7 @@
     }
   },
   "Race": "Terr",
-  "ScoreAmount": 300,
+  "ScoreAmount": 200,
   "ScoreResult": "BuildOrder",
   "EffectArray": [
     {
@@ -42,13 +43,8 @@
       "Operation": "Subtract",
       "Reference": "Abil,BurrowLurkerMPDown,InfoArray[0].SectionArray[Stats].DurationArray[Delay]",
       "Value": "0.660000"
-    },
-    {
-      "Reference": "Unit,LurkerMP,Speed",
-      "Value": "0.300700"
     }
   ],
-  "EditorCategories": "Race:Zerg,UpgradeType:Talents",
   "AffectedUnitArray": [
     "LurkerMP",
     "LurkerMPBurrowed"

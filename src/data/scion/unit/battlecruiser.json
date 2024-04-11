@@ -128,12 +128,6 @@
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
               "DisplayType": "Move",
               "Color": "255,35,125,255",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
@@ -222,12 +216,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -301,12 +289,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -400,12 +382,6 @@
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
               "DisplayType": "Move",
               "Color": "255,35,125,255",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
@@ -494,12 +470,6 @@
               "Color": "255,255,0,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -575,12 +545,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -608,8 +572,8 @@
             "UpdateChargesOnLevelChange": 1,
             "BestUnit": 1,
             "AllowMovement": 1,
-            "NoDeceleration": 1,
-            "IgnoreOrderPlayerIdInStageValidate": 1
+            "IgnoreOrderPlayerIdInStageValidate": 1,
+            "NoDeceleration": 1
           },
           "Effect": [
             "Yamato"
@@ -682,9 +646,6 @@
           ],
           "Cost": [
             {
-              "Vital": {
-                "Energy": 0
-              },
               "Cooldown": {
                 "Link": "Yamato",
                 "TimeUse": 100
@@ -746,12 +707,6 @@
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
@@ -846,9 +801,6 @@
           "FollowRange": 5,
           "Cost": [
             {
-              "Vital": {
-                "Energy": 0
-              },
               "Cooldown": {
                 "TimeUse": 100
               }
@@ -867,13 +819,13 @@
             "Channel": 1
           },
           "UninterruptibleArray": {
-            "Channel": 1,
             "Prep": 1,
+            "Channel": 1,
             "Finish": 1
           },
           "ProgressButtonArray": {
-            "Channel": "Hyperjump",
-            "Prep": "Hyperjump"
+            "Prep": "Hyperjump",
+            "Channel": "Hyperjump"
           },
           "InterruptCost": {
             "Cooldown": {
@@ -989,32 +941,21 @@
     "HyperjumpCreatePrecursor",
     "Battlecruiser",
     "BattlecruiserEnableSpecializations",
-    "BattlecruiserBehemothReactor",
-    "FusionCore",
-    "StarportTrain",
-    "Starport",
-    "TerranShipArmorsLevel1",
-    "Battlecruiser",
     "ThreatensBattlecruiser",
-    "TerranShipArmors",
-    "TerranShipArmorsLevel2",
-    "TerranShipArmorsLevel3",
     "TerranShipWeaponsLevel1",
     "TerranShipWeapons",
     "TerranShipWeaponsLevel2",
     "TerranShipWeaponsLevel3",
     "TerranVehicleAndShipArmorsLevel1",
+    "Battlecruiser",
     "TerranVehicleAndShipArmors",
     "TerranVehicleAndShipArmorsLevel2",
     "TerranVehicleAndShipArmorsLevel3",
+    "FusionCore",
+    "StarportTrain",
+    "Starport",
     "BattlecruiserPlacementCheck",
-    "TerranVehicleAndShipWeaponsLevel1",
-    "TerranVehicleAndShipWeapons",
-    "TerranVehicleAndShipWeaponsLevel2",
-    "TerranVehicleAndShipWeaponsLevel3",
-    "IsBattlecruiser",
-    "Battlecruiser",
-    null
+    "IsBattlecruiser"
   ],
   "$Requirements": [],
   "$Production": [],

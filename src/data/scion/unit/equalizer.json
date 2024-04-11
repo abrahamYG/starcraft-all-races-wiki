@@ -10,8 +10,8 @@
   "Response": "Acquire",
   "ResourceState": "Unknown",
   "ResourceType": "Unknown",
-  "LifeStart": 120,
-  "LifeMax": 120,
+  "LifeStart": 110,
+  "LifeMax": 110,
   "LifeArmorName": "Ground Mechanical Plating",
   "Mover": "Ground",
   "StationaryTurningRate": 990,
@@ -107,7 +107,7 @@
     "Vespene": 1
   },
   "id": "Equalizer",
-  "Speed": 3.375,
+  "Speed": 3.25,
   "Acceleration": 1000,
   "CostCategory": "Army",
   "CardLayouts": {
@@ -124,12 +124,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -223,12 +217,6 @@
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
               "DisplayType": "Move",
               "Color": "255,35,125,255",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
@@ -317,12 +305,6 @@
               "Color": "255,255,0,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -393,12 +375,6 @@
           "EditorCategories": "Race:Neutral,AbilityorEffectType:Units",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -480,12 +456,6 @@
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
               "DisplayType": "Move",
               "Color": "255,35,125,255",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
@@ -560,6 +530,25 @@
         "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
         "Name": "Move",
         "Hotkey": "M"
+      },
+      {
+        "Cost": {
+          "Minerals": 0,
+          "Vespene": 0,
+          "Terazine": 0,
+          "Custom": 0,
+          "Energy": 0,
+          "Life": 0,
+          "Shields": 0,
+          "Food": 0
+        },
+        "Row": 2,
+        "Column": 0,
+        "Type": "Passive",
+        "id": "StratumMissilePod",
+        "Icon": "btn-ability-genetron-stratummissilepod",
+        "Tooltip": "This weapon deals bonus damage equal to <b>8.5</b>% of the target's total maximum health. Caps at +<b>25</b>.",
+        "Name": "Stratum Missile Pod"
       }
     ]
   },
@@ -571,7 +560,7 @@
   },
   "RepairTime": 44.8,
   "InnerRadius": 0.5,
-  "SubgroupPriority": 31,
+  "SubgroupPriority": 30,
   "GlossaryPriority": 5,
   "GlossaryStrongArray": [
     "Blitzer",
@@ -593,14 +582,11 @@
       "id": "StratumMissilePod",
       "Icon": "btn-upgrade-genetron-lightmechweapons-level0",
       "Name": "Stratum Missile Pod",
-      "Amount": 30,
-      "AttributeBonus": {
-        "Armored": 30
-      },
+      "Amount": 20,
       "Kind": "Ranged",
       "TargetFilters": "Ground",
       "Range": 6,
-      "Period": 2.8
+      "Period": 2.38
     }
   ],
   "Behaviors": [],
@@ -622,7 +608,6 @@
     "OutfittingStation",
     "Equalizer",
     "TrainLightweightMechs",
-    "Manufacturer",
     "GenetronGroundPlatingLevel1",
     "Equalizer",
     "GenetronGroundPlating",
@@ -632,7 +617,12 @@
     "GenetronLightWeapons",
     "GenetronLightWeaponsLevel2",
     "GenetronLightWeaponsLevel3",
+    "CountUnitEqualizerQueuedOrBetterAtUnit",
     "Manufacturer",
+    "Manufacturer",
+    "CountUnitEqualizerInProgressOnlyAtUnit",
+    "GenetronGroundPlatingRevert",
+    "GenetronLightWeaponsRevert",
     "ReinforcedPlating"
   ],
   "$Requirements": [],

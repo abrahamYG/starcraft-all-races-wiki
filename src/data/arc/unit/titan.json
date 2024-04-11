@@ -89,7 +89,7 @@
   ],
   "LifeRegenRate": 0.2734,
   "Acceleration": 1000,
-  "Sight": 9,
+  "Sight": 10,
   "CostCategory": "Army",
   "AttackTargetPriority": 20,
   "CardLayouts": {
@@ -728,11 +728,11 @@
       "id": "TitanWeapon",
       "Icon": "btn-upgrade-keiron-mechanicalweaponslevel0",
       "Name": "Inhibitor Beam",
-      "Amount": 11,
+      "Amount": 14,
       "Kind": "Ranged",
       "TargetFilters": "Ground",
       "Range": 5,
-      "Period": 0.5
+      "Period": 0.602
     },
     {
       "Turret": "TitanMovement",
@@ -778,10 +778,10 @@
     }
   ],
   "$Upgrades": [
-    "Pantheon",
-    "Titan",
-    "CitadelCharged",
     "KeironCitadelMaterialize",
+    "Titan",
+    "Pantheon",
+    "CitadelCharged",
     "KeironMechWeaponsLevel1",
     "KeironMechWeapons",
     "KeironMechWeaponsLevel2",

@@ -244,6 +244,7 @@
         "Type": "AbilCmd",
         "AbilCmd": "que5,CancelLast",
         "id": "Cancel",
+        "Icon": "btn-command-cancel",
         "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
         "Name": "Cancel",
         "Hotkey": "Esc"
@@ -276,7 +277,7 @@
             "Flags": {
               "AllowMinimap": 0
             },
-            "DefaultButtonFace": "RaptorJet",
+            "DefaultButtonFace": "UPLTrainRaptorJet",
             "Requirements": "HaveUPLForwardOperatingBase"
           },
           "Unit": [
@@ -302,11 +303,11 @@
         "Column": 0,
         "Type": "AbilCmd",
         "AbilCmd": "UPLAirstripTrain,Train1",
-        "id": "RaptorJet",
+        "id": "UPLTrainRaptorJet",
         "Icon": "btn-unit-upl-raptofighterjet",
         "Tooltip": "Air-superiority fighter.<br/><br/><span style=\"color: #ffff8a\">Can Attack air units.</span>",
         "Name": "Build Raptor Jet",
-        "Hotkey": "R"
+        "Hotkey": "W"
       },
       {
         "Info": {
@@ -314,7 +315,7 @@
             "Flags": {
               "AllowMinimap": 0
             },
-            "DefaultButtonFace": "Osprey"
+            "DefaultButtonFace": "UPLTrainOsprey"
           },
           "Unit": [
             "Osprey"
@@ -339,11 +340,11 @@
         "Column": 1,
         "Type": "AbilCmd",
         "AbilCmd": "UPLAirstripTrain,Train2",
-        "id": "Osprey",
+        "id": "UPLTrainOsprey",
         "Icon": "btn-unit-upl-ospreyhelicopter",
         "Tooltip": "Attack Helicopter and Infantry Transport<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units</span>",
         "Name": "Build Osprey",
-        "Hotkey": "E"
+        "Hotkey": "Q"
       },
       {
         "Info": {
@@ -351,7 +352,7 @@
             "Flags": {
               "AllowMinimap": 0
             },
-            "DefaultButtonFace": "Condor",
+            "DefaultButtonFace": "UPLTrainCondor",
             "Requirements": "HaveUPLForwardOperatingBase"
           },
           "Unit": [
@@ -377,11 +378,11 @@
         "Column": 2,
         "Type": "AbilCmd",
         "AbilCmd": "UPLAirstripTrain,Train3",
-        "id": "Condor",
+        "id": "UPLTrainCondor",
         "Icon": "btn-unit-upl-condortransport",
         "Tooltip": "Reinforced Aerial Transport",
         "Name": "Build Condor",
-        "Hotkey": "D"
+        "Hotkey": "R"
       },
       {
         "Upgrade": "RaptorCloakAbilUpgrade",
@@ -391,7 +392,7 @@
               "AllowMinimap": 0,
               "ShowInGlossary": 1
             },
-            "DefaultButtonFace": "ResearchRaptorCloakAbilUpgrade",
+            "DefaultButtonFace": "RaptorCloakAbilUpgrade",
             "Requirements": "LearnRaptorCloakAbilUpgrade"
           },
           "Resource": {
@@ -544,7 +545,7 @@
             "Flags": {
               "AllowMinimap": 0
             },
-            "DefaultButtonFace": "UPLBehemoth"
+            "DefaultButtonFace": "UPLTrainBehemoth"
           },
           "Resource": {
             "Minerals": 300,
@@ -573,9 +574,48 @@
         "Column": 3,
         "Type": "AbilCmd",
         "AbilCmd": "UPLAirstripTrain,Train4",
-        "id": "UPLBehemoth",
-        "Icon": "btn-unit-terran-gorgonbattlecruiser",
-        "Name": "Behemoth"
+        "id": "UPLTrainBehemoth",
+        "Icon": "btn-starship",
+        "Name": "Build Behemoth"
+      },
+      {
+        "Info": {
+          "Button": {
+            "Flags": {
+              "AllowMinimap": 0
+            },
+            "DefaultButtonFace": "UPLSeekerDrone"
+          },
+          "Resource": {
+            "Minerals": 25,
+            "Vespene": 25
+          },
+          "Unit": [
+            "UPLSeekerDrone"
+          ],
+          "Time": 5
+        },
+        "Unit": [
+          "UPLSeekerDrone"
+        ],
+        "Time": 5,
+        "Cost": {
+          "Minerals": 50,
+          "Vespene": 50,
+          "Terazine": 0,
+          "Custom": 0,
+          "Energy": 0,
+          "Life": 0,
+          "Shields": 0,
+          "Food": 0
+        },
+        "Row": 0,
+        "Column": 4,
+        "Type": "AbilCmd",
+        "AbilCmd": "UPLAirstripTrain,Train5",
+        "id": "UPLSeekerDrone",
+        "Icon": "btn-ability-seekerdrone-seekermode",
+        "Tooltip": "Uses a laser to shoot down enemy missiles.  <br/>Cannot target special attacks. <br/>Times out after <b>0</b> seconds.<br/><br/><span style=\"color: #f078ff\">Each shot consumes 10 energy.</span>"
       }
     ]
   },
@@ -644,14 +684,16 @@
     "UPLAirstrip",
     "UPLBuild",
     "UPLAirstrip",
-    "UPLAirstripSplat"
+    "UPLAirstripSplat",
+    null
   ],
   "$Requirements": [],
   "$Production": [
     "RaptorJet",
     "Osprey",
     "Condor",
-    "UPLBehemoth"
+    "UPLBehemoth",
+    "UPLSeekerDrone"
   ],
   "$Research": [
     "RaptorCloakAbilUpgrade",
@@ -675,6 +717,7 @@
     {
       "AbilCmd": "que5,CancelLast",
       "id": "Cancel",
+      "Icon": "btn-command-cancel",
       "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
       "Name": "Cancel"
     },
@@ -687,21 +730,21 @@
     },
     {
       "AbilCmd": "UPLAirstripTrain,Train1",
-      "id": "RaptorJet",
+      "id": "UPLTrainRaptorJet",
       "Icon": "btn-unit-upl-raptofighterjet",
       "Tooltip": "Air-superiority fighter.<br/><br/><span style=\"color: #ffff8a\">Can Attack air units.</span>",
       "Name": "Build Raptor Jet"
     },
     {
       "AbilCmd": "UPLAirstripTrain,Train2",
-      "id": "Osprey",
+      "id": "UPLTrainOsprey",
       "Icon": "btn-unit-upl-ospreyhelicopter",
       "Tooltip": "Attack Helicopter and Infantry Transport<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units</span>",
       "Name": "Build Osprey"
     },
     {
       "AbilCmd": "UPLAirstripTrain,Train3",
-      "id": "Condor",
+      "id": "UPLTrainCondor",
       "Icon": "btn-unit-upl-condortransport",
       "Tooltip": "Reinforced Aerial Transport",
       "Name": "Build Condor"
@@ -736,9 +779,15 @@
     },
     {
       "AbilCmd": "UPLAirstripTrain,Train4",
-      "id": "UPLBehemoth",
-      "Icon": "btn-unit-terran-gorgonbattlecruiser",
-      "Name": "Behemoth"
+      "id": "UPLTrainBehemoth",
+      "Icon": "btn-starship",
+      "Name": "Build Behemoth"
+    },
+    {
+      "AbilCmd": "UPLAirstripTrain,Train5",
+      "id": "UPLSeekerDrone",
+      "Icon": "btn-ability-seekerdrone-seekermode",
+      "Tooltip": "Uses a laser to shoot down enemy missiles.  <br/>Cannot target special attacks. <br/>Times out after <b>0</b> seconds.<br/><br/><span style=\"color: #f078ff\">Each shot consumes 10 energy.</span>"
     }
   ]
 }

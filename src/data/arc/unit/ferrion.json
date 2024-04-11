@@ -18,7 +18,7 @@
   "TurningRate": 990,
   "Radius": 0.75,
   "SeparationRadius": 0.75,
-  "MinimapRadius": 0.75,
+  "MinimapRadius": 1,
   "EditorCategories": "ObjectType:Unit,ObjectFamily:Melee",
   "TacticalAIFilters": "-;Player,Ally,Neutral",
   "AIEvalFactor": 1,
@@ -684,8 +684,8 @@
           "LoadValidatorArray": [
             "NotWidowMineTarget"
           ],
-          "id": "TransportFerrion",
-          "UnloadCargoEffect": "CargoUnloadStopOrder"
+          "UnloadCargoEffect": "CargoUnloadStopOrder",
+          "id": "TransportFerrion"
         },
         "Cost": {
           "Minerals": 0,
@@ -793,8 +793,8 @@
           "LoadValidatorArray": [
             "NotWidowMineTarget"
           ],
-          "id": "TransportFerrion",
-          "UnloadCargoEffect": "CargoUnloadStopOrder"
+          "UnloadCargoEffect": "CargoUnloadStopOrder",
+          "id": "TransportFerrion"
         },
         "Cost": {
           "Minerals": 0,
@@ -843,7 +843,7 @@
   "Collide": [
     "Flying"
   ],
-  "Sight": 10,
+  "Sight": 11,
   "CostCategory": "Army",
   "ScoreResult": "BuildOrder",
   "GlossaryCategory": "Unit/Category/XayidUnits",
@@ -877,7 +877,9 @@
   "Behaviors": [
     {
       "id": "Detector11",
-      "Icon": "btn-status-detector"
+      "Icon": "btn-status-detector",
+      "Tooltip": "This unit can detect cloaked or burrowed units within its sight range.",
+      "Name": "Detector"
     }
   ],
   "Abilities": [

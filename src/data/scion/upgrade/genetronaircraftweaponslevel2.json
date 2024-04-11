@@ -12,6 +12,7 @@
   "ScoreValue": "WeaponTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "GenetronAircraftWeapons",
+  "EditorCategories": "Race:Genetron,UpgradeType:AttackBonus",
   "$tokens": {
     "ID": {
       "type": "string",
@@ -27,7 +28,7 @@
     },
     {
       "Reference": "Effect,LancerAutogunImpact,Amount",
-      "Value": "2"
+      "Value": "1"
     },
     {
       "Reference": "Effect,NemesisMissilesLMImpact,Amount",
@@ -87,9 +88,8 @@
       "Value": "Assets\\Textures\\btn-upgrade-genetron-rocketweapons-level2.dds"
     }
   ],
-  "EditorCategories": "Race:Genetron,UpgradeType:AttackBonus",
   "AffectedUnitArray": [
-    "AvengerGenetron",
+    "Scion_Avenger",
     "Badger",
     "Boar",
     "Hornet"

@@ -1,6 +1,6 @@
 {
   "Name": "Mole",
-  "Description": "Deployable artillery cannon.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
+  "Description": "Deployable artillery cannon and radar suite.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -10,8 +10,8 @@
   "Response": "Acquire",
   "ResourceState": "Unknown",
   "ResourceType": "Unknown",
-  "LifeStart": 150,
-  "LifeMax": 150,
+  "LifeStart": 125,
+  "LifeMax": 125,
   "LifeArmorName": "Ground Mechanical Plating",
   "Mover": "Ground",
   "StationaryTurningRate": 990,
@@ -24,7 +24,6 @@
   "AIEvalFactor": 1,
   "Mass": 0.4,
   "FlagArray": [
-    "Turnable",
     "Movable",
     "Unclickable",
     "Unhighlightable",
@@ -37,8 +36,11 @@
     "PreventDestroy",
     "UseLineOfSight",
     "ArmySelect",
+    "AlwaysThreatens",
     "AISupport",
-    "AIPressForwardDisabled"
+    "AIPressForwardDisabled",
+    "Cloaked",
+    "Buried"
   ],
   "EditorFlags": [
     "BlockStructures"
@@ -83,17 +85,13 @@
     }
   },
   "Collide": [
-    "Ground",
-    "ForceField",
-    "Burrow",
-    "Structure",
-    "RoachBurrow"
+    "Burrow"
   ],
   "Attributes": [
     "Mechanical"
   ],
   "LifeArmor": 0,
-  "ScoreResult": "BuildOrder",
+  "ScoreResult": "",
   "GlossaryAlias": "",
   "PlaneArray": [
     "Ground"
@@ -128,12 +126,6 @@
               "DisplayType": "Attack",
               "Color": "255,255,0,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
@@ -205,12 +197,6 @@
           "EditorCategories": "Race:Neutral,AbilityorEffectType:Units",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -292,7 +278,7 @@
             }
           },
           "Unit": "Mole",
-          "RandomDelayMax": 0.5
+          "RandomDelayMax": 0.25
         },
         "Unit": "Mole",
         "Cost": {
@@ -316,6 +302,53 @@
         "Hotkey": "D"
       },
       {
+        "Info": {
+          "class": "CAbilBehavior",
+          "Name": "Abil/Name/MoleSubterraneanSensors",
+          "TechPlayer": "Upkeep",
+          "EditorCategories": "Race:Genetron,AbilityorEffectType:Units",
+          "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
+          "OrderArray": [
+            {
+              "DisplayType": "Confirm",
+              "Color": "255,0,255,0",
+              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
+              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
+            }
+          ],
+          "SharedFlags": {
+            "DisableWhileDead": 1
+          },
+          "DataCollection": "MoleSubterraneanSensors",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
+          "CmdButtonArray": {
+            "On": {
+              "Flags": {
+                "ShowInGlossary": 1
+              },
+              "DefaultButtonFace": "SubterraneanSensors"
+            },
+            "Off": {
+              "DefaultButtonFace": "MoleSubterraneanSensorsOff"
+            }
+          },
+          "VeterancyLevelMin": 0,
+          "VeterancyLevelSkip": 0,
+          "Flags": {
+            "Toggle": 1,
+            "ToggledOn": 1,
+            "Transient": 1
+          },
+          "BehaviorArray": [
+            "MoleSubterraneanSensors"
+          ],
+          "id": "MoleSubterraneanSensors"
+        },
         "Cost": {
           "Minerals": 0,
           "Vespene": 0,
@@ -326,14 +359,15 @@
           "Shields": 0,
           "Food": 0
         },
-        "Row": 2,
-        "Column": 2,
-        "Type": "Passive",
-        "AbilCmd": "",
+        "Row": 1,
+        "Column": 0,
+        "Type": "AbilCmd",
+        "AbilCmd": "MoleSubterraneanSensors,On",
         "id": "SubterraneanSensors",
         "Icon": "btn-upgrade-terran-nova-detector",
-        "Tooltip": "<span style=\"color: #FFFF80\">Moles</span> gain +22 ground radar range.",
-        "Name": "Subterranean Sensors"
+        "Tooltip": "While burrowed, the <span style=\"color: #FFFF80\">Mole</span> gains +<b>30</b> ground radar range.<br/><br/><span style=\"color: #78F0FF\">Drains <b>2</b> power per second.</span>",
+        "Name": "Subterranean Sensors",
+        "Hotkey": "Q"
       },
       {
         "Info": {
@@ -347,12 +381,6 @@
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
@@ -376,7 +404,7 @@
             "ChannelingMinimum": 1,
             "RangeUseCasterRadius": 1,
             "ReApproachable": 1,
-            "RequireTargetVision": 1,
+            "RequireTargetVision": 0,
             "WaitToSpend": 1,
             "UpdateChargesOnLevelChange": 1,
             "BestUnit": 0
@@ -475,23 +503,24 @@
           "SectionArray": {
             "Actor": {
               "DurationArray": {
-                "Duration": 1.4
+                "Duration": 1.25
               },
               "EffectArray": {
-                "Start": "MoleBury",
-                "Finish": "MoleBuryRemove",
-                "Cancel": "MoleBuryRemove"
+                "Start": "MoleLockTurret",
+                "Finish": "MoleLockTurretRemove",
+                "Cancel": "MoleLockTurretRemove"
               }
             },
             "Stats": {
               "DurationArray": {
-                "Delay": 1.4
+                "Duration": 1.25
               }
             }
           },
-          "Unit": "MoleBuried"
+          "Unit": "MoleRooted",
+          "RandomDelayMax": 0.0625
         },
-        "Unit": "MoleBuried",
+        "Unit": "MoleRooted",
         "Cost": {
           "Minerals": 150,
           "Vespene": 100,
@@ -505,12 +534,80 @@
         "Row": 2,
         "Column": 3,
         "Type": "AbilCmd",
-        "AbilCmd": "MoleBury,Execute",
-        "id": "MoleConceal",
-        "Icon": "btn-ability-genetron-conceal",
-        "Tooltip": "Buries the Mole's cannon. It will be unable to attack, but cannot be seen without detection.",
-        "Name": "Conceal",
-        "Hotkey": "R"
+        "AbilCmd": "MoleUnbury,Execute",
+        "id": "MoleReveal",
+        "Icon": "btn-ability-genetron-ambush",
+        "Tooltip": "Returns the Mole's cannon to the surface.",
+        "Name": "Reveal",
+        "Hotkey": "F"
+      },
+      {
+        "Info": {
+          "class": "CAbilBehavior",
+          "Name": "Abil/Name/MoleSubterraneanSensors",
+          "TechPlayer": "Upkeep",
+          "EditorCategories": "Race:Genetron,AbilityorEffectType:Units",
+          "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
+          "OrderArray": [
+            {
+              "DisplayType": "Confirm",
+              "Color": "255,0,255,0",
+              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
+              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
+            }
+          ],
+          "SharedFlags": {
+            "DisableWhileDead": 1
+          },
+          "DataCollection": "MoleSubterraneanSensors",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
+          "CmdButtonArray": {
+            "On": {
+              "Flags": {
+                "ShowInGlossary": 1
+              },
+              "DefaultButtonFace": "SubterraneanSensors"
+            },
+            "Off": {
+              "DefaultButtonFace": "MoleSubterraneanSensorsOff"
+            }
+          },
+          "VeterancyLevelMin": 0,
+          "VeterancyLevelSkip": 0,
+          "Flags": {
+            "Toggle": 1,
+            "ToggledOn": 1,
+            "Transient": 1
+          },
+          "BehaviorArray": [
+            "MoleSubterraneanSensors"
+          ],
+          "id": "MoleSubterraneanSensors"
+        },
+        "Cost": {
+          "Minerals": 0,
+          "Vespene": 0,
+          "Terazine": 0,
+          "Custom": 0,
+          "Energy": 0,
+          "Life": 0,
+          "Shields": 0,
+          "Food": 0
+        },
+        "Row": 1,
+        "Column": 1,
+        "Type": "AbilCmd",
+        "AbilCmd": "MoleSubterraneanSensors,Off",
+        "id": "MoleSubterraneanSensorsOff",
+        "Icon": "btn-upgrade-terran-nova-detector",
+        "Tooltip": "Disables the Subterranean Sensors.",
+        "Name": "Subterranean Sensors Off",
+        "Hotkey": "W"
       },
       {
         "Cost": {
@@ -523,13 +620,83 @@
           "Shields": 0,
           "Food": 0
         },
-        "Row": 2,
-        "Column": 2,
+        "Row": 1,
+        "Column": 0,
         "Type": "Passive",
+        "AbilCmd": "",
         "id": "SubterraneanSensors",
         "Icon": "btn-upgrade-terran-nova-detector",
-        "Tooltip": "<span style=\"color: #FFFF80\">Moles</span> gain +22 ground radar range.",
-        "Name": "Subterranean Sensors"
+        "Tooltip": "While burrowed, the <span style=\"color: #FFFF80\">Mole</span> gains +<b>30</b> ground radar range.<br/><br/><span style=\"color: #78F0FF\">Drains <b>2</b> power per second.</span>",
+        "Name": "Subterranean Sensors",
+        "Hotkey": "Q"
+      },
+      {
+        "Info": {
+          "class": "CAbilBehavior",
+          "Name": "Abil/Name/MoleSubterraneanSensors",
+          "TechPlayer": "Upkeep",
+          "EditorCategories": "Race:Genetron,AbilityorEffectType:Units",
+          "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
+          "OrderArray": [
+            {
+              "DisplayType": "Confirm",
+              "Color": "255,0,255,0",
+              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
+              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
+            }
+          ],
+          "SharedFlags": {
+            "DisableWhileDead": 1
+          },
+          "DataCollection": "MoleSubterraneanSensors",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
+          "CmdButtonArray": {
+            "On": {
+              "Flags": {
+                "ShowInGlossary": 1
+              },
+              "DefaultButtonFace": "SubterraneanSensors"
+            },
+            "Off": {
+              "DefaultButtonFace": "MoleSubterraneanSensorsOff"
+            }
+          },
+          "VeterancyLevelMin": 0,
+          "VeterancyLevelSkip": 0,
+          "Flags": {
+            "Toggle": 1,
+            "ToggledOn": 1,
+            "Transient": 1
+          },
+          "BehaviorArray": [
+            "MoleSubterraneanSensors"
+          ],
+          "id": "MoleSubterraneanSensors"
+        },
+        "Cost": {
+          "Minerals": 0,
+          "Vespene": 0,
+          "Terazine": 0,
+          "Custom": 0,
+          "Energy": 0,
+          "Life": 0,
+          "Shields": 0,
+          "Food": 0
+        },
+        "Row": 1,
+        "Column": 1,
+        "Type": "AbilCmd",
+        "AbilCmd": "MoleSubterraneanSensors,Off",
+        "id": "MoleSubterraneanSensorsOff",
+        "Icon": "btn-upgrade-terran-nova-detector",
+        "Tooltip": "Disables the Subterranean Sensors.",
+        "Name": "Subterranean Sensors Off",
+        "Hotkey": "W"
       }
     ]
   },
@@ -542,12 +709,20 @@
   "RepairTime": 35,
   "TurretArray": [],
   "InnerRadius": 0.5,
-  "SubgroupPriority": 45,
+  "SubgroupPriority": 43,
   "AIEvalConstant": 1,
   "TechAliasArray": [
     "Alias_Mole"
   ],
-  "EquipmentArray": [],
+  "EquipmentArray": [
+    {
+      "Effect": "",
+      "Icon": "",
+      "Name": "",
+      "Tooltip": "",
+      "Weapon": "LynxCannon"
+    }
+  ],
   "GlossaryPriority": 8,
   "GlossaryStrongArray": [
     "Inciter",
@@ -562,29 +737,17 @@
     "Zergling"
   ],
   "KillDisplay": "Always",
+  "Footprint": "",
   "Icon": "btn-unit-genetron-mole",
   "LifeArmorIcon": "btn-upgrade-genetron-groundmechplating-level0",
   "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-  "Weapons": [
-    {
-      "Turret": "MoleTurret",
-      "id": "LynxCannon",
-      "Icon": "btn-upgrade-genetron-heavymechweapons-level0",
-      "Name": "Lynx Cannon",
-      "Amount": 36,
-      "AttributeBonus": {
-        "Armored": 12
-      },
-      "Kind": "Ranged",
-      "TargetFilters": "Ground",
-      "Range": 13,
-      "Period": 1.652
-    }
-  ],
+  "Weapons": [],
   "Behaviors": [
     {
-      "id": "MoleBurrowed",
-      "Icon": "btn-upgrade-protoss-alarak-havoctargetlockbuffed"
+      "id": "GenetronPowerSupplyTracker"
+    },
+    {
+      "id": "TrackGenetronPowerSupplyUnit"
     }
   ],
   "Abilities": [
@@ -597,12 +760,16 @@
       "Name": "Attack"
     },
     {
+      "id": "MoleSubterraneanSensors",
+      "Name": "MoleSubterraneanSensors"
+    },
+    {
       "id": "MoleDeactivate",
       "Name": "MoleDeactivate"
     },
     {
-      "id": "MoleBury",
-      "Name": "MoleBury"
+      "id": "MoleUnbury",
+      "Name": "MoleUnbury"
     },
     {
       "id": "MoleTurnTurret",
@@ -610,26 +777,20 @@
     }
   ],
   "$Upgrades": [
-    "MoleUnbury",
-    "MoleActivate",
-    "SubterraneanSensors",
-    "GenetronHeavyWeaponsLevel1",
-    "GenetronHeavyWeapons",
-    "GenetronHeavyWeaponsLevel2",
-    "GenetronHeavyWeaponsLevel3",
+    "IsMoleBurrowed",
+    "MoleBuryFull",
     "GenetronGroundPlatingLevel1",
     "Mole",
-    "MoleBurrowed",
-    "MoleBuried",
+    "MoleRooted",
     "GenetronGroundPlating",
     "GenetronGroundPlatingLevel2",
     "GenetronGroundPlatingLevel3",
+    "MoleBury",
+    "IsNotMoleBurrowed",
     "MoleAttackRange",
     "MoleTurret",
     "MoleBurrowSound",
-    "MoleBurrowedSplat",
-    "IsMoleBurrowed",
-    "IsNotBurrowedMole"
+    "MoleBurrowedSplat"
   ],
   "$Requirements": [],
   "$Production": [
@@ -637,12 +798,11 @@
   ],
   "$Research": [],
   "$Morph": [
-    "Mole"
+    "Mole",
+    "MoleRooted"
   ],
-  "$Phase": [
-    "MoleBuried"
-  ],
-  "$Phased": "Mole",
+  "$Phase": [],
+  "$Phased": "MoleRooted",
   "$Producers": [],
   "$Commands": [
     {
@@ -667,6 +827,13 @@
       "Name": "Mobilize Cannon"
     },
     {
+      "AbilCmd": "MoleSubterraneanSensors,On",
+      "id": "SubterraneanSensors",
+      "Icon": "btn-upgrade-terran-nova-detector",
+      "Tooltip": "While burrowed, the <span style=\"color: #FFFF80\">Mole</span> gains +<b>30</b> ground radar range.<br/><br/><span style=\"color: #78F0FF\">Drains <b>2</b> power per second.</span>",
+      "Name": "Subterranean Sensors"
+    },
+    {
       "AbilCmd": "MoleTurnTurret,Execute",
       "id": "Turn",
       "Icon": "btn-command-move",
@@ -674,11 +841,25 @@
       "Name": "Turn"
     },
     {
-      "AbilCmd": "MoleBury,Execute",
-      "id": "MoleConceal",
-      "Icon": "btn-ability-genetron-conceal",
-      "Tooltip": "Buries the Mole's cannon. It will be unable to attack, but cannot be seen without detection.",
-      "Name": "Conceal"
+      "AbilCmd": "MoleUnbury,Execute",
+      "id": "MoleReveal",
+      "Icon": "btn-ability-genetron-ambush",
+      "Tooltip": "Returns the Mole's cannon to the surface.",
+      "Name": "Reveal"
+    },
+    {
+      "AbilCmd": "MoleSubterraneanSensors,Off",
+      "id": "MoleSubterraneanSensorsOff",
+      "Icon": "btn-upgrade-terran-nova-detector",
+      "Tooltip": "Disables the Subterranean Sensors.",
+      "Name": "Subterranean Sensors Off"
+    },
+    {
+      "AbilCmd": "MoleSubterraneanSensors,Off",
+      "id": "MoleSubterraneanSensorsOff",
+      "Icon": "btn-upgrade-terran-nova-detector",
+      "Tooltip": "Disables the Subterranean Sensors.",
+      "Name": "Subterranean Sensors Off"
     }
   ]
 }

@@ -172,12 +172,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -239,12 +233,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -268,7 +256,10 @@
               "DefaultButtonFace": "Cancel"
             },
             "Halt": {
-              "DefaultButtonFace": "Cancel"
+              "DefaultButtonFace": "Halt",
+              "Flags": {
+                "ToSelection": 1
+              }
             }
           },
           "id": "BuildInProgress"
@@ -306,12 +297,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -335,7 +320,10 @@
               "DefaultButtonFace": "Cancel"
             },
             "Halt": {
-              "DefaultButtonFace": "Cancel"
+              "DefaultButtonFace": "Halt",
+              "Flags": {
+                "ToSelection": 1
+              }
             }
           },
           "id": "BuildInProgress"
@@ -361,46 +349,6 @@
         "Hotkey": "T"
       },
       {
-        "Upgrade": "BattlecruiserBehemothReactor",
-        "Info": {
-          "Button": {
-            "Flags": {
-              "AllowMinimap": 0,
-              "ShowInGlossary": 0
-            },
-            "DefaultButtonFace": "ResearchBattlecruiserEnergyUpgrade",
-            "State": "Restricted",
-            "Requirements": "LearnBattlecruiserEnergyUpgrade"
-          },
-          "Resource": {
-            "Minerals": 150,
-            "Vespene": 150
-          },
-          "Time": 80,
-          "Upgrade": "BattlecruiserBehemothReactor"
-        },
-        "Time": 80,
-        "Cost": {
-          "Minerals": 150,
-          "Vespene": 150,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 0,
-        "Column": 3,
-        "Type": "AbilCmd",
-        "AbilCmd": "FusionCoreResearch,Research2",
-        "id": "ResearchBattlecruiserEnergyUpgrade",
-        "Icon": "btn-upgrade-terran-behemothreactor",
-        "Tooltip": "Increases the starting energy of <span style=\"color: #ffff8a\">Battlecruisers</span> by <b>25</b>.",
-        "Name": "Research Behemoth Reactor",
-        "Hotkey": "B"
-      },
-      {
         "Cost": {
           "Minerals": 0,
           "Vespene": 0,
@@ -421,24 +369,23 @@
         "Hotkey": "Q"
       },
       {
-        "Upgrade": "MedivacIncreaseSpeedBoost",
+        "Upgrade": "MedivacCaduceusReactor",
         "Info": {
           "Button": {
             "Flags": {
-              "AllowMinimap": 0,
-              "ShowInGlossary": 1
+              "AllowMinimap": 0
             },
-            "DefaultButtonFace": "ResearchRapidReignitionSystem",
-            "Requirements": "LearnMedivacSpeedBoostUpgrade"
+            "DefaultButtonFace": "ResearchMedivacEnergyUpgrade",
+            "Requirements": "LearnCaduceusReactor"
           },
           "Resource": {
             "Minerals": 100,
             "Vespene": 100
           },
-          "Time": 80,
-          "Upgrade": "MedivacIncreaseSpeedBoost"
+          "Time": 70,
+          "Upgrade": "MedivacCaduceusReactor"
         },
-        "Time": 80,
+        "Time": 70,
         "Cost": {
           "Minerals": 100,
           "Vespene": 100,
@@ -453,11 +400,11 @@
         "Column": 1,
         "Type": "AbilCmd",
         "AbilCmd": "FusionCoreResearch,Research4",
-        "id": "ResearchRapidReignitionSystem",
-        "Icon": "btn-upgrade-terran-highcapacityfueltanks",
-        "Tooltip": "Reduces the cooldown of <span style=\"color: #ffff8a\">Medivac's</span> Ignite Afterburners by <b>7</b> and increases the movement speed of <span style=\"color: #ffff8a\">Medivacs</span>.",
-        "Name": "Research Rapid Reignition System",
-        "Hotkey": "S"
+        "id": "ResearchMedivacEnergyUpgrade",
+        "Icon": "btn-upgrade-terran-caduceusreactor",
+        "Tooltip": "Increases the energy regeneration rate of <span style=\"color: #ffff8a\">Medivacs</span> by <b>100</b>%.",
+        "Name": "Research Caduceus Reactor",
+        "Hotkey": "A"
       },
       {
         "Upgrade": "LiberatorAGRangeUpgrade",
@@ -533,15 +480,13 @@
     "IsFusionCore",
     "FusionCore",
     "FusionCoreSplat",
-    "UnitFusionCoreCompleteOnly",
-    "FusionCore",
-    null
+    "UnitFusionCoreCompleteOnly"
   ],
   "$Requirements": [],
   "$Production": [],
   "$Research": [
     "BattlecruiserEnableSpecializations",
-    "MedivacIncreaseSpeedBoost",
+    "MedivacCaduceusReactor",
     "LiberatorAGRangeUpgrade"
   ],
   "$Morph": [],
@@ -579,18 +524,11 @@
       "Name": "Halt"
     },
     {
-      "AbilCmd": "FusionCoreResearch,Research2",
-      "id": "ResearchBattlecruiserEnergyUpgrade",
-      "Icon": "btn-upgrade-terran-behemothreactor",
-      "Tooltip": "Increases the starting energy of <span style=\"color: #ffff8a\">Battlecruisers</span> by <b>25</b>.",
-      "Name": "Research Behemoth Reactor"
-    },
-    {
       "AbilCmd": "FusionCoreResearch,Research4",
-      "id": "ResearchRapidReignitionSystem",
-      "Icon": "btn-upgrade-terran-highcapacityfueltanks",
-      "Tooltip": "Reduces the cooldown of <span style=\"color: #ffff8a\">Medivac's</span> Ignite Afterburners by <b>7</b> and increases the movement speed of <span style=\"color: #ffff8a\">Medivacs</span>.",
-      "Name": "Research Rapid Reignition System"
+      "id": "ResearchMedivacEnergyUpgrade",
+      "Icon": "btn-upgrade-terran-caduceusreactor",
+      "Tooltip": "Increases the energy regeneration rate of <span style=\"color: #ffff8a\">Medivacs</span> by <b>100</b>%.",
+      "Name": "Research Caduceus Reactor"
     },
     {
       "AbilCmd": "FusionCoreResearch,Research3",

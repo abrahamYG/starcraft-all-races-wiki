@@ -142,22 +142,17 @@
           "SectionArray": {
             "Actor": {
               "DurationArray": {
-                "Duration": 1
-              }
-            },
-            "Mover": {
-              "DurationArray": {
-                "Duration": 1
+                "Duration": 1.125
               }
             },
             "Stats": {
               "DurationArray": {
-                "Duration": 1
+                "Duration": 1.125
               }
             }
           },
           "Unit": "WidowMine",
-          "RandomDelayMax": 0.5
+          "RandomDelayMax": 0.25
         },
         "Unit": "WidowMine",
         "Cost": {
@@ -192,12 +187,6 @@
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
@@ -319,8 +308,11 @@
             1.5
           ],
           "PrepEffect": [
-            "WidowMineTargetingBeamDummy"
+            "WidowMineTargetTintApplyBehavior"
           ],
+          "CancelEffect": {
+            "Prep": "WidowMineTargetTintRemoveBehavior"
+          },
           "id": "WidowMineAttack"
         },
         "Cost": {
@@ -355,12 +347,6 @@
               "DisplayType": "Attack",
               "Color": "255,255,0,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
@@ -436,12 +422,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -550,8 +530,8 @@
           "Shields": 0,
           "Food": 0
         },
-        "Row": 1,
-        "Column": 2,
+        "Row": 2,
+        "Column": 4,
         "Type": "Passive",
         "id": "WidowMineConcealment",
         "Icon": "btn-ability-terran-widowminehidden",
@@ -603,38 +583,26 @@
   "$Upgrades": [
     "WidowMineBurrow",
     "WidowMineBurrowed",
+    "CasterisWidowMineBurrowed",
     "DrillClaws",
-    "WidowMine",
-    "TerranVehicleArmorsLevel1",
-    "TerranVehicleArmorsLevel2",
-    "TerranVehicleArmorsLevel3",
+    "IsWidowMineBurrowed",
     "TerranVehicleWeaponsLevel1",
     "TerranVehicleWeaponsLevel2",
     "TerranVehicleWeaponsLevel3",
     "TerranVehicleAndShipArmorsLevel1",
+    "WidowMine",
     "TerranVehicleAndShipArmors",
     "TerranVehicleAndShipArmorsLevel2",
     "TerranVehicleAndShipArmorsLevel3",
-    "IsWidowMineBurrowed",
-    "TerranVehicleAndShipWeaponsLevel1",
-    "TerranVehicleAndShipWeapons",
-    "TerranVehicleAndShipWeaponsLevel2",
-    "TerranVehicleAndShipWeaponsLevel3",
-    "SynoidVehicleAndShipArmors1",
-    "SynoidVehicleAndShipArmors",
-    "SynoidVehicleAndShipArmors2",
-    "SynoidVehicleAndShipArmors3",
     "WidowMineBurrowedSplat",
     "WidowMineAttackRange",
-    "WidowMine_Burrow",
-    "WalkerBeacon"
+    "WidowMine_Burrow"
   ],
   "$Requirements": [],
   "$Production": [],
   "$Research": [],
   "$Morph": [
-    "WidowMine",
-    null
+    "WidowMine"
   ],
   "$Phase": [],
   "$Phased": "WidowMine",

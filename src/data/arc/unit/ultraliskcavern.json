@@ -128,12 +128,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -195,12 +189,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -224,7 +212,10 @@
               "DefaultButtonFace": "Cancel"
             },
             "Halt": {
-              "DefaultButtonFace": "Cancel"
+              "DefaultButtonFace": "Halt",
+              "Flags": {
+                "ToSelection": 1
+              }
             }
           },
           "id": "BuildInProgress"
@@ -293,7 +284,8 @@
         "Info": {
           "Button": {
             "Flags": {
-              "AllowMinimap": 0
+              "AllowMinimap": 0,
+              "ShowInGlossary": 1
             },
             "DefaultButtonFace": "EvolveAnabolicSynthesis2",
             "Requirements": "LearnAnabolicSynthesis"
@@ -369,13 +361,13 @@
     }
   ],
   "$Upgrades": [
-    "CountUnitUltraliskCavernCompleteOnlyTechTreeCheat",
-    "UltraliskCavern",
     "ZergBuild",
+    "UltraliskCavern",
+    "CountUnitUltraliskCavernCompleteOnlyTechTreeCheat",
     "IsUltraliskCavern",
     "UltraliskCavern",
-    "CountUnitUltraliskCavernCompleteOnly",
-    "UltraliskCavern"
+    "UPLRenameZerg",
+    "CountUnitUltraliskCavernCompleteOnly"
   ],
   "$Requirements": [],
   "$Production": [],

@@ -12,6 +12,7 @@
   "ScoreValue": "WeaponTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "XayidGroundAttacks",
+  "EditorCategories": "Race:Xayid,UpgradeType:AttackBonus",
   "$tokens": {
     "ID": {
       "type": "string",
@@ -22,52 +23,44 @@
   "ScoreResult": "BuildOrder",
   "EffectArray": [
     {
-      "Reference": "Effect,MassiveSporeAirDMG,Amount",
+      "Reference": "Effect,MassiveSporeAAImpact,Amount",
       "Value": "2"
     },
     {
-      "Reference": "Effect,MassiveSporeAGDMG,Amount",
+      "Reference": "Effect,MassiveSporeAGImpact,Amount",
       "Value": "4"
     },
     {
-      "Reference": "Effect,NeedleSpinesDMG,Amount",
+      "Reference": "Effect,NeedleSpinesImpact,Amount",
       "Value": "1"
     },
     {
-      "Reference": "Effect,EvisceratorSpinesDMG,Amount",
+      "Reference": "Effect,EvisceratorSpinesLMImpact,Amount",
       "Value": "2"
     },
     {
-      "Reference": "Effect,VirulentSpitDMG,Amount",
+      "Reference": "Effect,VirulentSpitImpact,Amount",
       "Value": "1"
     },
     {
       "Reference": "Effect,VenomousStrikeDMG,Amount",
-      "Value": "1"
+      "Value": "2"
     },
     {
-      "Reference": "Effect,SpitterSporesDMG,Amount",
-      "Value": "3"
+      "Reference": "Effect,SpitterSporesImpact,Amount",
+      "Value": "4"
     },
     {
       "Reference": "Effect,ThrasherSpineDMG,Amount",
       "Value": "1"
     },
     {
-      "Reference": "Effect,SpitterSporesDMG,AttributeBonus[Armored]",
-      "Value": "1"
-    },
-    {
-      "Reference": "Effect,VenomousStrikeDMG,AttributeBonus[Light]",
-      "Value": "1"
-    },
-    {
       "Reference": "Effect,EnervatorSporesDMG,Amount",
-      "Value": "3"
+      "Value": "2"
     },
     {
-      "Reference": "Effect,EnervatorSporesDMG,AttributeBonus[Light]",
-      "Value": "-1"
+      "Reference": "Effect,EnervatorSporesDMG,AttributeBonus[Armored]",
+      "Value": "1"
     },
     {
       "Reference": "Weapon,MassiveSporeAA,Level",
@@ -151,7 +144,6 @@
       "Value": "Assets\\Textures\\btn-upgrade-zerg-hotsgroovedspines.dds"
     }
   ],
-  "EditorCategories": "Race:Xayid,UpgradeType:AttackBonus",
   "AffectedUnitArray": [
     "Eroder",
     "Massalisk",

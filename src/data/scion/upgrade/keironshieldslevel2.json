@@ -12,6 +12,7 @@
   "ScoreValue": "ArmorTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "KeironShields",
+  "EditorCategories": "Race:Keiron,UpgradeType:ArmorBonus",
   "$tokens": {
     "ID": {
       "type": "string",
@@ -38,15 +39,23 @@
       "Value": "1"
     },
     {
-      "Reference": "Unit,Subjecter,ShieldArmor",
+      "Reference": "Unit,Cataract,ShieldArmor",
       "Value": "1"
     },
     {
-      "Reference": "Unit,Meridian,ShieldArmor",
+      "Reference": "Unit,Crux,ShieldArmor",
       "Value": "1"
     },
     {
       "Reference": "Unit,Umbra,ShieldArmor",
+      "Value": "1"
+    },
+    {
+      "Reference": "Unit,Ward,ShieldArmor",
+      "Value": "1"
+    },
+    {
+      "Reference": "Unit,ShellDome,ShieldArmor",
       "Value": "1"
     },
     {
@@ -178,10 +187,6 @@
       "Value": "1"
     },
     {
-      "Reference": "Unit,AegisShielded,ShieldArmor",
-      "Value": "1"
-    },
-    {
       "Reference": "Unit,Converter,ShieldArmorLevel",
       "Value": "1"
     },
@@ -198,15 +203,23 @@
       "Value": "1"
     },
     {
-      "Reference": "Unit,Subjecter,ShieldArmorLevel",
+      "Reference": "Unit,Cataract,ShieldArmorLevel",
       "Value": "1"
     },
     {
-      "Reference": "Unit,Meridian,ShieldArmorLevel",
+      "Reference": "Unit,Crux,ShieldArmorLevel",
       "Value": "1"
     },
     {
       "Reference": "Unit,Umbra,ShieldArmorLevel",
+      "Value": "1"
+    },
+    {
+      "Reference": "Unit,Ward,ShieldArmorLevel",
+      "Value": "1"
+    },
+    {
+      "Reference": "Unit,ShellDome,ShieldArmorLevel",
       "Value": "1"
     },
     {
@@ -338,10 +351,6 @@
       "Value": "1"
     },
     {
-      "Reference": "Unit,AegisShielded,ShieldArmorLevel",
-      "Value": "1"
-    },
-    {
       "Operation": "Set",
       "Reference": "Actor,Converter,ShieldArmorIcon",
       "Value": "Assets\\Textures\\btn-upgrade-keiron-shields-level2.dds"
@@ -363,17 +372,27 @@
     },
     {
       "Operation": "Set",
-      "Reference": "Actor,Subjecter,ShieldArmorIcon",
+      "Reference": "Actor,Cataract,ShieldArmorIcon",
       "Value": "Assets\\Textures\\btn-upgrade-keiron-shields-level2.dds"
     },
     {
       "Operation": "Set",
-      "Reference": "Actor,Meridian,ShieldArmorIcon",
+      "Reference": "Actor,Crux,ShieldArmorIcon",
       "Value": "Assets\\Textures\\btn-upgrade-keiron-shields-level2.dds"
     },
     {
       "Operation": "Set",
       "Reference": "Actor,Umbra,ShieldArmorIcon",
+      "Value": "Assets\\Textures\\btn-upgrade-keiron-shields-level2.dds"
+    },
+    {
+      "Operation": "Set",
+      "Reference": "Actor,Ward,ShieldArmorIcon",
+      "Value": "Assets\\Textures\\btn-upgrade-keiron-shields-level2.dds"
+    },
+    {
+      "Operation": "Set",
+      "Reference": "Actor,ShellDome,ShieldArmorIcon",
       "Value": "Assets\\Textures\\btn-upgrade-keiron-shields-level2.dds"
     },
     {
@@ -439,11 +458,6 @@
     {
       "Operation": "Set",
       "Reference": "Actor,Citadel,ShieldArmorIcon",
-      "Value": "Assets\\Textures\\btn-upgrade-keiron-shields-level2.dds"
-    },
-    {
-      "Operation": "Set",
-      "Reference": "Actor,CitadelCharged,ShieldArmorIcon",
       "Value": "Assets\\Textures\\btn-upgrade-keiron-shields-level2.dds"
     },
     {
@@ -532,15 +546,16 @@
       "Value": "Assets\\Textures\\btn-upgrade-keiron-shields-level2.dds"
     }
   ],
-  "EditorCategories": "Race:Keiron,UpgradeType:ArmorBonus",
   "AffectedUnitArray": [
     "Converter",
     "Pariah",
     "Volt",
     "Pulsar",
-    "Subjecter",
-    "Meridian",
+    "Cataract",
+    "Crux",
     "Umbra",
+    "Ward",
+    "ShellDome",
     "Inducer",
     "Elytron",
     "Myriad",
@@ -572,8 +587,7 @@
     "Outlet",
     "Empyrean",
     "Zenith",
-    "Aegis",
-    "AegisShielded"
+    "Aegis"
   ],
   "ScoreAmount": 450,
   "LeaderLevel": 2,

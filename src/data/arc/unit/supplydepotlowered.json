@@ -197,8 +197,7 @@
     "TerranBuildingLand",
     "SupplyDepot",
     "SupplyDropModel",
-    "SupplyDepotLowered",
-    "SupplyDepotSkin"
+    "SupplyDepotLowered"
   ],
   "$Requirements": [],
   "$Production": [],

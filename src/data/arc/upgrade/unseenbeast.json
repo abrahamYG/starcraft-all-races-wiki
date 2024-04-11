@@ -12,13 +12,13 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "UnseenBeast",
+  "EditorCategories": "UpgradeType:Talents,Race:Dragon",
   "$tokens": {
     "ID": {
       "type": "string",
       "value": ""
     }
   },
-  "EditorCategories": "UpgradeType:Talents,Race:Dragon",
   "ScoreAmount": 680,
   "Race": "Dragon"
 }

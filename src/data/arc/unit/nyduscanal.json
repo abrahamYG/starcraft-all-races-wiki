@@ -129,12 +129,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -232,12 +226,6 @@
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds",
               "Scale": 0.75
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -315,6 +303,7 @@
             "NotSpawnling",
             "NotWidowMineTarget"
           ],
+          "UnloadCargoEffect": "PurificationNovaTargettedCasterRB",
           "id": "NydusWormTransport"
         },
         "Cost": {
@@ -351,12 +340,6 @@
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds",
               "Scale": 0.75
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -434,6 +417,7 @@
             "NotSpawnling",
             "NotWidowMineTarget"
           ],
+          "UnloadCargoEffect": "PurificationNovaTargettedCasterRB",
           "id": "NydusWormTransport"
         },
         "Cost": {
@@ -507,17 +491,13 @@
     "BuildNydusCanal",
     "NydusCanal",
     "NydusNetwork",
-    "SecretedCoating",
     "NydusRumble",
     "NydusCanal",
     "NydusWorm_Birth",
     "Nydus_ConstructionStart",
     "Nydus_ConstructionFinish",
     "Nydus_Unburrow",
-    "NydusNetworkBase",
-    "NydusNetwork",
-    "NydusNetworkMecha",
-    "NydusNetworkRCZ"
+    "UPLRenameZerg"
   ],
   "$Requirements": [],
   "$Production": [],

@@ -804,7 +804,7 @@
         "AbilCmd": "PulsarDampener,Execute",
         "id": "PulsarDampener",
         "Icon": "btn-ability-keiron-dampener",
-        "Tooltip": "Absorbs <b>100</b>% of spell and splash damage. Lasts for <b>4</b> seconds. This effect can only occur once every <b>14</b> seconds.",
+        "Tooltip": "Absorbs <b>100</b>% of spell and splash damage. Lasts for <b>3</b> seconds. This effect can only occur once every <b>14</b> seconds.",
         "Name": "Dampener",
         "Hotkey": "D"
       },
@@ -953,8 +953,8 @@
   "ShieldArmorName": "Keiron Dispersion Shields",
   "id": "Pulsar",
   "LifeArmor": 1,
-  "ShieldsStart": 60,
-  "ShieldsMax": 60,
+  "ShieldsStart": 50,
+  "ShieldsMax": 50,
   "Speed": 2.75,
   "CostResource": {
     "Minerals": 150,
@@ -967,7 +967,7 @@
     "Mechanical"
   ],
   "Food": -3,
-  "CargoSize": 4,
+  "CargoSize": 2,
   "EffectArray": {
     "Create": "SanctumPulSubDelay"
   },
@@ -988,7 +988,7 @@
       "Kind": "Ranged",
       "TargetFilters": "Ground",
       "Range": 3,
-      "Period": 0.5
+      "Period": 0.5625
     }
   ],
   "Behaviors": [
@@ -1042,11 +1042,11 @@
     }
   ],
   "$Upgrades": [
-    "KeironCitadelMaterialize",
-    "Pulsar",
     "PulsarDampener",
-    "CitadelCharged",
+    "Pulsar",
     "Sanctum",
+    "KeironCitadelMaterialize",
+    "CitadelCharged",
     "KeironBioWeaponsLevel1",
     "KeironBioWeapons",
     "KeironBioWeaponsLevel2",
@@ -1136,7 +1136,7 @@
       "AbilCmd": "PulsarDampener,Execute",
       "id": "PulsarDampener",
       "Icon": "btn-ability-keiron-dampener",
-      "Tooltip": "Absorbs <b>100</b>% of spell and splash damage. Lasts for <b>4</b> seconds. This effect can only occur once every <b>14</b> seconds.",
+      "Tooltip": "Absorbs <b>100</b>% of spell and splash damage. Lasts for <b>3</b> seconds. This effect can only occur once every <b>14</b> seconds.",
       "Name": "Dampener"
     },
     {

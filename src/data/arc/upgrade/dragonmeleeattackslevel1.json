@@ -12,6 +12,7 @@
   "ScoreValue": "WeaponTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "DragonMeleeAttacksLevel1",
+  "EditorCategories": "Race:Dragon,UpgradeType:AttackBonus",
   "$tokens": {
     "ID": {
       "type": "string",
@@ -19,7 +20,6 @@
     }
   },
   "Race": "Dragon",
-  "EditorCategories": "Race:Dragon,UpgradeType:AttackBonus",
   "ScoreResult": "BuildOrder",
   "AffectedUnitArray": [
     "BrimstoneDemolisher",

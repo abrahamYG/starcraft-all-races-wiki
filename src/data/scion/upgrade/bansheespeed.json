@@ -12,6 +12,7 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "BansheeSpeed",
+  "EditorCategories": "Race:Terran,UpgradeType:Spell",
   "$tokens": {
     "ID": {
       "type": "string",
@@ -27,7 +28,6 @@
       "Value": "1"
     }
   ],
-  "EditorCategories": "Race:Terran,UpgradeType:Talents",
   "AffectedUnitArray": [
     "Banshee"
   ]

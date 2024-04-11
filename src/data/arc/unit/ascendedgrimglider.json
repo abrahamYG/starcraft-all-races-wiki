@@ -1,6 +1,6 @@
 {
   "Name": "Ascended Grim Glider",
-  "Description": "Massive flying unit. Can rise units slain nearby as temporary shades.<br/><br/><span style=\"color: #FFE303\">Detector</span><br/><br/><span style=\"color: #00FF00\">Ascended:<br/>+45 Life<br/>+200% Energy Regeneration<br/>+0.5 Speed</span>",
+  "Description": "Massive flying unit. Can rise units slain nearby as temporary shades.<br/><br/><span style=\"color: #FFE303\">Detector</span><br/><br/><span style=\"color: #00FF00\">Ascended:<br/>+120 Life<br/>+200% Energy Regeneration<br/>+1.4 Speed</span>",
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -10,12 +10,12 @@
   "Response": "Acquire",
   "ResourceState": "Unknown",
   "ResourceType": "Unknown",
-  "LifeStart": 195,
-  "LifeMax": 195,
+  "LifeStart": 360,
+  "LifeMax": 360,
   "LifeArmorName": "Dragon Scale Armor",
   "Mover": "Fly",
-  "StationaryTurningRate": 720,
-  "TurningRate": 720,
+  "StationaryTurningRate": 180,
+  "TurningRate": 180,
   "Radius": 1.25,
   "SeparationRadius": 1.25,
   "MinimapRadius": 1.25,
@@ -541,7 +541,7 @@
         "Type": "AbilCmd",
         "AbilCmd": "AscendedGrimGlider,Execute",
         "id": "AscendedGrimGlider",
-        "Tooltip": "<span style=\"color: #00FF00\">+45 Life<br/>+200% Energy Regeneration<br/>+0.7 Speed</span>",
+        "Tooltip": "<span style=\"color: #00FF00\">+120 Life<br/>+200% Energy Regeneration<br/>+1.4 Speed</span>",
         "Name": "Ascend",
         "Hotkey": "X"
       },
@@ -560,7 +560,7 @@
         "Column": 4,
         "Type": "Passive",
         "id": "AscendedGrimGlider",
-        "Tooltip": "<span style=\"color: #00FF00\">+45 Life<br/>+200% Energy Regeneration<br/>+0.7 Speed</span>",
+        "Tooltip": "<span style=\"color: #00FF00\">+120 Life<br/>+200% Energy Regeneration<br/>+1.4 Speed</span>",
         "Name": "Ascend",
         "Hotkey": "X"
       },
@@ -1190,7 +1190,7 @@
         "AbilCmd": "GrimGliderMortalitysEclipse,On",
         "id": "GrimGliderMortalitysEclipseActivate",
         "Icon": "btn-tips-fallenheroes",
-        "Tooltip": "Activates Mortality's Eclipse, raising all combat units that die within <b>10</b> range of a Grim Glider as uncontrollable Shades with half life and damage that last for <b>8</b> seconds.<br/><br/><span style=\"color: #f078ff\">Drains <b>25.0</b> energy per second.</span>",
+        "Tooltip": "Activates Mortality's Eclipse, raising all combat units that die within <b>10</b> range of a Grim Glider as uncontrollable Shades that last for <b>8</b> seconds.<br/><br/><span style=\"color: #f078ff\">Drains <b>25.0</b> energy per second.</span>",
         "Name": "Mortality's Eclipse",
         "Hotkey": "Q"
       },
@@ -1278,7 +1278,7 @@
   ],
   "KillDisplay": "Always",
   "RankDisplay": "Always",
-  "Speed": 1.5,
+  "Speed": 3,
   "Sight": 11,
   "Height": 3,
   "Food": -4,
@@ -1307,12 +1307,16 @@
   "Weapons": [],
   "Behaviors": [
     {
-      "id": "DragonLineageLesser",
-      "Name": "Dragon Lineage"
+      "id": "DragonLineageLesser"
     },
     {
       "id": "Detector11",
-      "Icon": "btn-status-detector"
+      "Icon": "btn-status-detector",
+      "Tooltip": "This unit can detect cloaked or burrowed units within its sight range.",
+      "Name": "Detector"
+    },
+    {
+      "id": "Negative1Armor"
     },
     {
       "id": "DragonAscended",
@@ -1352,8 +1356,9 @@
     }
   ],
   "$Upgrades": [
-    "DragonScaleArmorLevel1",
+    "GrimGliderWraithNight",
     "AscendedGrimGlider",
+    "DragonScaleArmorLevel1",
     "GrimGlider",
     "DragonScaleArmors",
     "DragonScaleArmorLevel2",
@@ -1408,7 +1413,7 @@
     {
       "AbilCmd": "AscendedGrimGlider,Execute",
       "id": "AscendedGrimGlider",
-      "Tooltip": "<span style=\"color: #00FF00\">+45 Life<br/>+200% Energy Regeneration<br/>+0.7 Speed</span>",
+      "Tooltip": "<span style=\"color: #00FF00\">+120 Life<br/>+200% Energy Regeneration<br/>+1.4 Speed</span>",
       "Name": "Ascend"
     },
     {
@@ -1443,7 +1448,7 @@
       "AbilCmd": "GrimGliderMortalitysEclipse,On",
       "id": "GrimGliderMortalitysEclipseActivate",
       "Icon": "btn-tips-fallenheroes",
-      "Tooltip": "Activates Mortality's Eclipse, raising all combat units that die within <b>10</b> range of a Grim Glider as uncontrollable Shades with half life and damage that last for <b>8</b> seconds.<br/><br/><span style=\"color: #f078ff\">Drains <b>25.0</b> energy per second.</span>",
+      "Tooltip": "Activates Mortality's Eclipse, raising all combat units that die within <b>10</b> range of a Grim Glider as uncontrollable Shades that last for <b>8</b> seconds.<br/><br/><span style=\"color: #f078ff\">Drains <b>25.0</b> energy per second.</span>",
       "Name": "Mortality's Eclipse"
     },
     {

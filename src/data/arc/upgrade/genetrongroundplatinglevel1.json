@@ -12,6 +12,7 @@
   "ScoreValue": "ArmorTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "GenetronGroundPlating",
+  "EditorCategories": "Race:Genetron,UpgradeType:ArmorBonus",
   "$tokens": {
     "ID": {
       "type": "string",
@@ -67,6 +68,14 @@
     },
     {
       "Reference": "Unit,Mole,LifeArmorLevel",
+      "Value": "1"
+    },
+    {
+      "Reference": "Unit,MoleRooted,LifeArmor",
+      "Value": "1"
+    },
+    {
+      "Reference": "Unit,MoleRooted,LifeArmorLevel",
       "Value": "1"
     },
     {
@@ -157,7 +166,7 @@
     },
     {
       "Operation": "Set",
-      "Reference": "Actor,MoleBurrowed,LifeArmorIcon",
+      "Reference": "Actor,MoleRooted,LifeArmorIcon",
       "Value": "Assets\\Textures\\btn-upgrade-genetron-groundmechplating-level1.dds"
     },
     {
@@ -191,7 +200,6 @@
       "Value": "Assets\\Textures\\btn-upgrade-genetron-groundmechplating-level1.dds"
     }
   ],
-  "EditorCategories": "Race:Genetron,UpgradeType:ArmorBonus",
   "AffectedUnitArray": [
     "Aquila",
     "Blaze",

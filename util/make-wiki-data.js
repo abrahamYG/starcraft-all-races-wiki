@@ -613,6 +613,10 @@ async function wiki (config) {
 
     for (let upgradeID of upgrades) {
       let upgrade = mod.cache.upgrade[upgradeID]
+      if(!upgrade){
+        console.warn(`invalid upgrade reference ${upgradeID}`)
+        continue;
+      }
       let num = /([@_\w]+?)([0-9]+)$/.exec(upgradeID)
       if (num) {
         if (num[2] !== "1") {
@@ -627,7 +631,6 @@ async function wiki (config) {
           phasedUpgrade._phase.push(upgradeID)
         }
       }
-
     }
     for (let upgradeID of upgrades) {
       let upgrade = mod.cache.upgrade[upgradeID]
@@ -721,7 +724,8 @@ async function wiki (config) {
 
 SCParser.SCGame.directories.mods = `C:\\Program Files (x86)\\StarCraft II\\mods\\all-races-mods`
 SCParser.SCGame.directories.builtin = 'C:\\Program Files (x86)\\StarCraft II\\MODS\\all-races-mods\\builtin'
-
+SCParser.SCGame.directories.dependencies = 'C:\\Program Files (x86)\\StarCraft II\\MODS\\all-races-mods\\dependencies'
+SCParser.SCGame.directories.factions = 'C:\\Program Files (x86)\\StarCraft II\\MODS\\all-races-mods\\factions'
 
 // let localPath = './../../../mods/all-races-mods/factions/'
 // let arcGitPath = 'github:hometlt/starcraft-all-races-mods/'
@@ -732,12 +736,21 @@ await wiki( {
   id:"voidMulti",
   mods: [
     '$builtin/Core.SC2Mod',
-    '$builtin/Liberty.sc2mod',
-    '$builtin/Swarm.sc2mod',
-    '$builtin/Void.sc2mod',
-    '$builtin/VoidMulti2403.sc2mod',
+    // '$builtin/Liberty.sc2mod',
+    // '$builtin/Swarm.sc2mod',
+    // '$builtin/Void.sc2mod',
+    // '$builtin/VoidMulti5013.sc2mod',
+    '$dependencies/Base.SC2Mod',
+    '$dependencies/VoidMulti.SC2Mod',
+    '$factions/Scion.SC2Mod',
+    // '$factions/Dragons.SC2Mod',
+    // '$factions/UED.SC2Mod',
+    // '$factions/UPL.SC2Mod',
+    // '$factions/Hybrids.SC2Mod',
+    // '$factions/Synoid.SC2Mod',
+    // '$factions/Umojan.SC2Mod'
   ],
-  output: './../src/data/balance2403/'
+  output: './../src/data/scion/'
 })
 
 // await wiki( {

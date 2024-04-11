@@ -17,7 +17,7 @@
   "StationaryTurningRate": 999.8437,
   "TurningRate": 999.8437,
   "Radius": 0.375,
-  "SeparationRadius": 0.5,
+  "SeparationRadius": 0.375,
   "MinimapRadius": 0.375,
   "EditorCategories": "ObjectType:Unit,ObjectFamily:Melee",
   "TacticalAIFilters": "-;Player,Ally,Neutral",
@@ -82,7 +82,8 @@
   },
   "Collide": [
     "Ground",
-    "ForceField"
+    "ForceField",
+    "Small"
   ],
   "Attributes": [
     "Mechanical",
@@ -94,7 +95,7 @@
   "PlaneArray": [
     "Ground"
   ],
-  "Sight": 9,
+  "Sight": 8,
   "AttackTargetPriority": 20,
   "GlossaryCategory": "Unit/Category/GenetronUnits",
   "HotkeyCategory": "Unit/Category/GenetronUnits",
@@ -124,12 +125,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -223,12 +218,6 @@
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
               "DisplayType": "Move",
               "Color": "255,35,125,255",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
@@ -317,12 +306,6 @@
               "Color": "255,255,0,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -393,12 +376,6 @@
           "EditorCategories": "Race:Neutral,AbilityorEffectType:Units",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -477,12 +454,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -569,12 +540,6 @@
           "EditorCategories": "Race:Terran,AbilityorEffectType:Units",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -675,12 +640,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -766,7 +725,7 @@
       {
         "Info": {
           "class": "CAbilEffectTarget",
-          "Name": "Abil/Name/MULERepair",
+          "Name": "Abil/Name/ACRRepair",
           "TechPlayer": "Upkeep",
           "EditorCategories": "Race:Terran,AbilityorEffectType:Units",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
@@ -776,18 +735,12 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
             "DisableWhileDead": 1
           },
-          "DataCollection": "MULERepair",
+          "DataCollection": "ACRRepair",
           "$tokens": {
             "ID": {
               "type": "string",
@@ -797,7 +750,7 @@
           "RangeSlop": 0.2,
           "ArcSlop": 11.25,
           "AutoCastAcquireLevel": "Defensive",
-          "AutoCastFilters": "-;Neutral,Enemy",
+          "AutoCastFilters": "Visible;Neutral,Enemy",
           "Flags": {
             "AbortOnAllianceChange": 1,
             "CancelResetAutoCast": 1,
@@ -815,12 +768,12 @@
             "PassengerAcquirePassengers": 1
           },
           "Effect": [
-            "Repair"
+            "ACRRepair"
           ],
           "EffectRange": [
             "0,1000"
           ],
-          "AINotifyEffect": "Repair",
+          "AINotifyEffect": "ACRRepairHealer",
           "RefundArray": {
             "Approach": 1,
             "Prep": 1,
@@ -877,30 +830,26 @@
             }
           },
           "FollowRange": 5,
+          "Alignment": "Positive",
           "AbilSetId": "Repair",
           "TargetFilters": [
-            "Mechanical,Visible;Self,Enemy,Missile,Stasis,UnderConstruction,Dead,Hidden"
+            "Mechanical,Visible;Self,Enemy,Missile,Stasis,UnderConstruction,Dead"
           ],
           "AutoCastRange": 7,
-          "AutoCastValidatorArray": [
-            "HackingTRace"
-          ],
           "Marker": {
             "MatchFlags": {
               "Link": 0
             },
             "MismatchFlags": {
               "Id": 0
-            },
-            "Link": "Abil/Repair"
+            }
           },
           "InheritAttackPriorityArray": {
             "Prep": 1,
             "Cast": 1,
             "Channel": 1
           },
-          "Alignment": "Positive",
-          "id": "MULERepair"
+          "id": "ACRRepair"
         },
         "Cost": {
           "Minerals": 0,
@@ -915,10 +864,10 @@
         "Row": 2,
         "Column": 2,
         "Type": "AbilCmd",
-        "AbilCmd": "MULERepair,Execute",
-        "id": "Repair",
+        "AbilCmd": "ACRRepair,Execute",
+        "id": "ACRRepair",
         "Icon": "btn-ability-terran-repair",
-        "Tooltip": "Restores life to mechanical units and structures at the cost of resources.",
+        "Tooltip": "Restores life to mechanical units at the cost of power.",
         "Name": "Repair",
         "Hotkey": "R"
       },
@@ -977,12 +926,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -1006,7 +949,8 @@
             "IgnoreUnitBuildTime": 1,
             "PeonMaintained": 0,
             "RangeIncludesBuilding": 1,
-            "PeonDisableCollision": 1
+            "PeonDisableCollision": 1,
+            "RequireFacing": 1
           },
           "RefundFraction": {
             "Resource": {
@@ -1026,12 +970,6 @@
                 },
                 "DefaultButtonFace": "ProcessingCore"
               },
-              "Charge": {
-                "Link": "Abil/MechStructures"
-              },
-              "Cooldown": {
-                "Link": "Abil/MechStructures"
-              },
               "Unit": "ProcessingCore",
               "Time": 100
             },
@@ -1043,12 +981,6 @@
                 "DefaultButtonFace": "Node",
                 "Requirements": "HaveProcessingCore"
               },
-              "Charge": {
-                "Link": "Abil/MechStructures"
-              },
-              "Cooldown": {
-                "Link": "Abil/MechStructures"
-              },
               "Unit": "Node",
               "Time": 25
             },
@@ -1058,12 +990,6 @@
                   "AllowMinimap": 0
                 },
                 "DefaultButtonFace": "FilteringPlant"
-              },
-              "Charge": {
-                "Link": "Abil/MechStructures"
-              },
-              "Cooldown": {
-                "Link": "Abil/MechStructures"
               },
               "ValidatorArray": [
                 "HasVespene"
@@ -1079,14 +1005,8 @@
                 "DefaultButtonFace": "Manufacturer",
                 "Requirements": "HaveNode"
               },
-              "Charge": {
-                "Link": "Abil/MechStructures"
-              },
-              "Cooldown": {
-                "Link": "Abil/MechStructures"
-              },
               "Unit": "Manufacturer",
-              "Time": 65
+              "Time": 70
             },
             "Build5": {
               "Button": {
@@ -1095,12 +1015,6 @@
                 },
                 "DefaultButtonFace": "Uploader",
                 "Requirements": "HaveNode"
-              },
-              "Charge": {
-                "Link": "Abil/MechStructures"
-              },
-              "Cooldown": {
-                "Link": "Abil/MechStructures"
               },
               "Unit": "Uploader",
               "Time": 30
@@ -1111,16 +1025,10 @@
                   "AllowMinimap": 0
                 },
                 "DefaultButtonFace": "OutfittingStation",
-                "Requirements": "HaveManufacturer"
-              },
-              "Charge": {
-                "Link": "Abil/MechStructures"
-              },
-              "Cooldown": {
-                "Link": "Abil/MechStructures"
+                "Requirements": "HaveAnalysisTerminal"
               },
               "Unit": "OutfittingStation",
-              "Time": 50
+              "Time": 65
             },
             "Build7": {
               "Button": {
@@ -1129,12 +1037,6 @@
                 },
                 "DefaultButtonFace": "Repulsor",
                 "Requirements": "HaveAnalysisTerminal"
-              },
-              "Charge": {
-                "Link": "Abil/MechStructures"
-              },
-              "Cooldown": {
-                "Link": "Abil/MechStructures"
               },
               "Unit": "Repulsor",
               "Time": 45
@@ -1147,12 +1049,6 @@
                 "DefaultButtonFace": "Interdictor",
                 "Requirements": "HaveAnalysisTerminal"
               },
-              "Charge": {
-                "Link": "Abil/MechStructures"
-              },
-              "Cooldown": {
-                "Link": "Abil/MechStructures"
-              },
               "Unit": "Interdictor",
               "Time": 30
             },
@@ -1164,14 +1060,8 @@
                 "DefaultButtonFace": "RelayTower",
                 "Requirements": "HaveManufacturer"
               },
-              "Charge": {
-                "Link": "Abil/MechStructures"
-              },
-              "Cooldown": {
-                "Link": "Abil/MechStructures"
-              },
               "Unit": "RelayTower",
-              "Time": 30
+              "Time": 40
             },
             "Build10": {
               "Button": {
@@ -1181,14 +1071,8 @@
                 "DefaultButtonFace": "Fabricator",
                 "Requirements": "HaveManufacturer"
               },
-              "Charge": {
-                "Link": "Abil/MechStructures"
-              },
-              "Cooldown": {
-                "Link": "Abil/MechStructures"
-              },
               "Unit": "Fabricator",
-              "Time": 60
+              "Time": 70
             },
             "Build11": {
               "Button": {
@@ -1196,16 +1080,10 @@
                   "AllowMinimap": 0
                 },
                 "DefaultButtonFace": "TechVault",
-                "Requirements": "HaveOutfittingStation"
-              },
-              "Charge": {
-                "Link": "Abil/MechStructures"
-              },
-              "Cooldown": {
-                "Link": "Abil/MechStructures"
+                "Requirements": "HaveAnalysisTerminal"
               },
               "Unit": "TechVault",
-              "Time": 60
+              "Time": 65
             },
             "Build12": {
               "Button": {
@@ -1213,16 +1091,10 @@
                   "AllowMinimap": 0
                 },
                 "DefaultButtonFace": "AssemblyArray",
-                "Requirements": "HaveFabricationStation"
-              },
-              "Charge": {
-                "Link": "Abil/MechStructures"
-              },
-              "Cooldown": {
-                "Link": "Abil/MechStructures"
+                "Requirements": "HaveRelayTower"
               },
               "Unit": "AssemblyArray",
-              "Time": 60
+              "Time": 70
             },
             "Build13": {
               "Button": {
@@ -1231,12 +1103,6 @@
                 },
                 "DefaultButtonFace": "AnalysisTerminal",
                 "Requirements": "HaveNode"
-              },
-              "Charge": {
-                "Link": "Abil/MechStructures"
-              },
-              "Cooldown": {
-                "Link": "Abil/MechStructures"
               },
               "Unit": "AnalysisTerminal",
               "Time": 50
@@ -1249,12 +1115,6 @@
                 "DefaultButtonFace": "Generator",
                 "Requirements": "HaveRelayTower"
               },
-              "Charge": {
-                "Link": "Abil/MechStructures"
-              },
-              "Cooldown": {
-                "Link": "Abil/MechStructures"
-              },
               "Unit": "Generator",
               "Time": 40
             },
@@ -1262,52 +1122,40 @@
               "Button": {
                 "Flags": {
                   "AllowMinimap": 0
-                }
+                },
+                "DefaultButtonFace": "Olympus",
+                "Requirements": "HaveGenerator"
               },
-              "Charge": {
-                "Link": "Abil/MechStructures"
-              },
-              "Cooldown": {
-                "Link": "Abil/MechStructures"
-              }
+              "Unit": "Olympus",
+              "Time": 75
             },
             "Build16": {
               "Button": {
                 "Flags": {
                   "AllowMinimap": 0
-                }
+                },
+                "DefaultButtonFace": "ChemicalFirm",
+                "Requirements": "HaveTechVault"
               },
-              "Charge": {
-                "Link": "Abil/MechStructures"
-              },
-              "Cooldown": {
-                "Link": "Abil/MechStructures"
-              }
+              "Unit": "ChemicalFirm",
+              "Time": 65
             },
             "Build17": {
               "Button": {
                 "Flags": {
                   "AllowMinimap": 0
-                }
+                },
+                "DefaultButtonFace": "OrdnanceCache",
+                "Requirements": "HaveTechVault"
               },
-              "Charge": {
-                "Link": "Abil/MechStructures"
-              },
-              "Cooldown": {
-                "Link": "Abil/MechStructures"
-              }
+              "Unit": "OrdnanceCache",
+              "Time": 65
             },
             "Build18": {
               "Button": {
                 "Flags": {
                   "AllowMinimap": 0
                 }
-              },
-              "Charge": {
-                "Link": "Abil/MechStructures"
-              },
-              "Cooldown": {
-                "Link": "Abil/MechStructures"
               }
             },
             "Build19": {
@@ -1315,12 +1163,6 @@
                 "Flags": {
                   "AllowMinimap": 0
                 }
-              },
-              "Charge": {
-                "Link": "Abil/MechStructures"
-              },
-              "Cooldown": {
-                "Link": "Abil/MechStructures"
               }
             },
             "Build20": {
@@ -1328,12 +1170,6 @@
                 "Flags": {
                   "AllowMinimap": 0
                 }
-              },
-              "Charge": {
-                "Link": "Abil/MechStructures"
-              },
-              "Cooldown": {
-                "Link": "Abil/MechStructures"
               }
             },
             "Build21": {
@@ -1341,12 +1177,6 @@
                 "Flags": {
                   "AllowMinimap": 0
                 }
-              },
-              "Charge": {
-                "Link": "Abil/MechStructures"
-              },
-              "Cooldown": {
-                "Link": "Abil/MechStructures"
               }
             },
             "Build22": {
@@ -1354,12 +1184,6 @@
                 "Flags": {
                   "AllowMinimap": 0
                 }
-              },
-              "Charge": {
-                "Link": "Abil/MechStructures"
-              },
-              "Cooldown": {
-                "Link": "Abil/MechStructures"
               }
             },
             "Build23": {
@@ -1367,12 +1191,6 @@
                 "Flags": {
                   "AllowMinimap": 0
                 }
-              },
-              "Charge": {
-                "Link": "Abil/MechStructures"
-              },
-              "Cooldown": {
-                "Link": "Abil/MechStructures"
               }
             },
             "Build24": {
@@ -1380,12 +1198,6 @@
                 "Flags": {
                   "AllowMinimap": 0
                 }
-              },
-              "Charge": {
-                "Link": "Abil/MechStructures"
-              },
-              "Cooldown": {
-                "Link": "Abil/MechStructures"
               }
             },
             "Build25": {
@@ -1393,12 +1205,6 @@
                 "Flags": {
                   "AllowMinimap": 0
                 }
-              },
-              "Charge": {
-                "Link": "Abil/MechStructures"
-              },
-              "Cooldown": {
-                "Link": "Abil/MechStructures"
               }
             },
             "Build26": {
@@ -1406,12 +1212,6 @@
                 "Flags": {
                   "AllowMinimap": 0
                 }
-              },
-              "Charge": {
-                "Link": "Abil/MechStructures"
-              },
-              "Cooldown": {
-                "Link": "Abil/MechStructures"
               }
             },
             "Build27": {
@@ -1419,12 +1219,6 @@
                 "Flags": {
                   "AllowMinimap": 0
                 }
-              },
-              "Charge": {
-                "Link": "Abil/MechStructures"
-              },
-              "Cooldown": {
-                "Link": "Abil/MechStructures"
               }
             },
             "Build28": {
@@ -1432,12 +1226,6 @@
                 "Flags": {
                   "AllowMinimap": 0
                 }
-              },
-              "Charge": {
-                "Link": "Abil/MechStructures"
-              },
-              "Cooldown": {
-                "Link": "Abil/MechStructures"
               }
             },
             "Build29": {
@@ -1445,12 +1233,6 @@
                 "Flags": {
                   "AllowMinimap": 0
                 }
-              },
-              "Charge": {
-                "Link": "Abil/MechStructures"
-              },
-              "Cooldown": {
-                "Link": "Abil/MechStructures"
               }
             },
             "Build30": {
@@ -1458,20 +1240,14 @@
                 "Flags": {
                   "AllowMinimap": 0
                 }
-              },
-              "Charge": {
-                "Link": "Abil/MechStructures"
-              },
-              "Cooldown": {
-                "Link": "Abil/MechStructures"
               }
             }
           },
-          "FidgetDelayMin": 5,
-          "FidgetDelayMax": 10,
           "ConstructionMover": "Construction",
           "EffectArray": {
-            "Start": "GenetronConstructionInit"
+            "Start": "GenetronConstructionStart",
+            "Finish": "ScionStaticBuilderSuppressMovementClear",
+            "Cancel": "ScionStaticBuilderSuppressMovementClear"
           },
           "id": "ACRBuild"
         },
@@ -1507,12 +1283,6 @@
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -1622,26 +1392,12 @@
                 "Location": "Player",
                 "TimeStart": 300,
                 "TimeUse": 300
-              },
-              "Cooldown": {
-                "Link": "Abil/SprayTerran"
               }
             }
           ],
-          "InterruptCost": {
-            "Charge": {
-              "Link": "Abil/SprayTerran"
-            },
-            "Cooldown": {
-              "Link": "Abil/SprayTerran"
-            }
-          },
           "Range": [
             1
           ],
-          "Marker": {
-            "Link": "Abil/SprayTerran"
-          },
           "id": "SprayTerran"
         },
         "Cost": {
@@ -1674,12 +1430,6 @@
             },
             "DefaultButtonFace": "ProcessingCore"
           },
-          "Charge": {
-            "Link": "Abil/MechStructures"
-          },
-          "Cooldown": {
-            "Link": "Abil/MechStructures"
-          },
           "Unit": "ProcessingCore",
           "Time": 100
         },
@@ -1701,7 +1451,7 @@
         "AbilCmd": "ACRBuild,Build1",
         "id": "ProcessingCore",
         "Icon": "btn-building-genetron-processingcore",
-        "Tooltip": "Primary structure. Used to receive gathered resources. Can use Mining Priority and System Recharge<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- ACRs",
+        "Tooltip": "Primary structure. Used to receive gathered resources. Generates power. Increases power storage by <b>400</b>. Can use Mining Priority and System Recharge<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- ACRs",
         "Name": "Build Processing Core",
         "Hotkey": "C"
       },
@@ -1713,12 +1463,6 @@
             },
             "DefaultButtonFace": "Node",
             "Requirements": "HaveProcessingCore"
-          },
-          "Charge": {
-            "Link": "Abil/MechStructures"
-          },
-          "Cooldown": {
-            "Link": "Abil/MechStructures"
           },
           "Unit": "Node",
           "Time": 25
@@ -1741,7 +1485,7 @@
         "AbilCmd": "ACRBuild,Build2",
         "id": "Node",
         "Icon": "btn-building-genetron-node",
-        "Tooltip": "Provides supply and energy.",
+        "Tooltip": "Provides supply and generates power.",
         "Name": "Build Node",
         "Hotkey": "E"
       },
@@ -1752,12 +1496,6 @@
               "AllowMinimap": 0
             },
             "DefaultButtonFace": "FilteringPlant"
-          },
-          "Charge": {
-            "Link": "Abil/MechStructures"
-          },
-          "Cooldown": {
-            "Link": "Abil/MechStructures"
           },
           "ValidatorArray": [
             "HasVespene"
@@ -1816,19 +1554,13 @@
             "DefaultButtonFace": "Manufacturer",
             "Requirements": "HaveNode"
           },
-          "Charge": {
-            "Link": "Abil/MechStructures"
-          },
-          "Cooldown": {
-            "Link": "Abil/MechStructures"
-          },
           "Unit": "Manufacturer",
-          "Time": 65
+          "Time": 70
         },
         "Unit": "Manufacturer",
-        "Time": 65,
+        "Time": 70,
         "Cost": {
-          "Minerals": 150,
+          "Minerals": 175,
           "Vespene": 0,
           "Terazine": 0,
           "Custom": 0,
@@ -1856,12 +1588,6 @@
             "DefaultButtonFace": "AnalysisTerminal",
             "Requirements": "HaveNode"
           },
-          "Charge": {
-            "Link": "Abil/MechStructures"
-          },
-          "Cooldown": {
-            "Link": "Abil/MechStructures"
-          },
           "Unit": "AnalysisTerminal",
           "Time": 50
         },
@@ -1883,7 +1609,7 @@
         "AbilCmd": "ACRBuild,Build13",
         "id": "AnalysisTerminal",
         "Icon": "btn-building-genetron-analysisterminal",
-        "Tooltip": "Contains weapon upgrades for Genetron light ground units, and armor upgrades for all Genetron ground units.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Repulsors from ACRs<br/>- Interdictors from ACRs",
+        "Tooltip": "Contains weapon upgrades for Genetron light ground units, and armor upgrades for all Genetron ground units, and upgrades for the Spitfire.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Blitzers at the Manufacturer<br/>- Moles at the Fabricator<br/>- Repulsors from ACRs<br/>- Interdictors from ACRs",
         "Name": "Build Analysis Terminal",
         "Hotkey": "S"
       },
@@ -1895,12 +1621,6 @@
             },
             "DefaultButtonFace": "Repulsor",
             "Requirements": "HaveAnalysisTerminal"
-          },
-          "Charge": {
-            "Link": "Abil/MechStructures"
-          },
-          "Cooldown": {
-            "Link": "Abil/MechStructures"
           },
           "Unit": "Repulsor",
           "Time": 45
@@ -1918,7 +1638,7 @@
           "Food": 0
         },
         "Row": 2,
-        "Column": 0,
+        "Column": 1,
         "Type": "AbilCmd",
         "AbilCmd": "ACRBuild,Build7",
         "id": "Repulsor",
@@ -1936,12 +1656,6 @@
             "DefaultButtonFace": "Interdictor",
             "Requirements": "HaveAnalysisTerminal"
           },
-          "Charge": {
-            "Link": "Abil/MechStructures"
-          },
-          "Cooldown": {
-            "Link": "Abil/MechStructures"
-          },
           "Unit": "Interdictor",
           "Time": 30
         },
@@ -1958,13 +1672,47 @@
           "Food": 0
         },
         "Row": 2,
-        "Column": 1,
+        "Column": 2,
         "Type": "AbilCmd",
         "AbilCmd": "ACRBuild,Build8",
         "id": "Interdictor",
         "Icon": "btn-building-genetron-interdictor",
         "Tooltip": "Anti-air defensive structure. Can burrow, disabling its weapon, and rendering itself invisible to enemies.<br/><br/><span style=\"color: #FFFF80\">Can attack air units.</span><br/><span style=\"color: #FFE303\">Detector</span>",
         "Name": "Build Interdictor",
+        "Hotkey": "D"
+      },
+      {
+        "Info": {
+          "Button": {
+            "Flags": {
+              "AllowMinimap": 0
+            },
+            "DefaultButtonFace": "RelayTower",
+            "Requirements": "HaveManufacturer"
+          },
+          "Unit": "RelayTower",
+          "Time": 40
+        },
+        "Unit": "RelayTower",
+        "Time": 40,
+        "Cost": {
+          "Minerals": 100,
+          "Vespene": 0,
+          "Terazine": 0,
+          "Custom": 0,
+          "Energy": 0,
+          "Life": 0,
+          "Shields": 0,
+          "Food": 0
+        },
+        "Row": 2,
+        "Column": 0,
+        "Type": "AbilCmd",
+        "AbilCmd": "ACRBuild,Build9",
+        "id": "RelayTower",
+        "Icon": "btn-building-genetron-relaytower",
+        "Tooltip": "Increases power storage by <b>100</b>. Can use System Recharge.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Processors at the Processing Core",
+        "Name": "Build Relay Tower",
         "Hotkey": "T"
       }
     ],
@@ -1998,17 +1746,11 @@
             "DefaultButtonFace": "Fabricator",
             "Requirements": "HaveManufacturer"
           },
-          "Charge": {
-            "Link": "Abil/MechStructures"
-          },
-          "Cooldown": {
-            "Link": "Abil/MechStructures"
-          },
           "Unit": "Fabricator",
-          "Time": 60
+          "Time": 70
         },
         "Unit": "Fabricator",
-        "Time": 60,
+        "Time": 70,
         "Cost": {
           "Minerals": 200,
           "Vespene": 100,
@@ -2035,20 +1777,14 @@
             "Flags": {
               "AllowMinimap": 0
             },
-            "DefaultButtonFace": "OutfittingStation",
-            "Requirements": "HaveManufacturer"
+            "DefaultButtonFace": "TechVault",
+            "Requirements": "HaveAnalysisTerminal"
           },
-          "Charge": {
-            "Link": "Abil/MechStructures"
-          },
-          "Cooldown": {
-            "Link": "Abil/MechStructures"
-          },
-          "Unit": "OutfittingStation",
-          "Time": 50
+          "Unit": "TechVault",
+          "Time": 65
         },
-        "Unit": "OutfittingStation",
-        "Time": 50,
+        "Unit": "TechVault",
+        "Time": 65,
         "Cost": {
           "Minerals": 125,
           "Vespene": 75,
@@ -2062,52 +1798,12 @@
         "Row": 0,
         "Column": 2,
         "Type": "AbilCmd",
-        "AbilCmd": "ACRBuild,Build6",
-        "id": "OutfittingStation",
-        "Icon": "btn-building-genetron-outfittingstation",
-        "Tooltip": "Contains upgrades for Genetron units.<br/><br/><span style=\"color: #FFFF80\">Enables:<br/></span>- Equalizers at the Manufacturer<br/>- Inciters at the Fabricator<br/>- Teslas at the Fabricator<br/>- Jupiters at the Assembly Array<br/>- Boars at the Assembly Array",
-        "Name": "Build Outfitting Station",
-        "Hotkey": "S"
-      },
-      {
-        "Info": {
-          "Button": {
-            "Flags": {
-              "AllowMinimap": 0
-            },
-            "DefaultButtonFace": "RelayTower",
-            "Requirements": "HaveManufacturer"
-          },
-          "Charge": {
-            "Link": "Abil/MechStructures"
-          },
-          "Cooldown": {
-            "Link": "Abil/MechStructures"
-          },
-          "Unit": "RelayTower",
-          "Time": 30
-        },
-        "Unit": "RelayTower",
-        "Time": 30,
-        "Cost": {
-          "Minerals": 100,
-          "Vespene": 50,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 0,
-        "Column": 1,
-        "Type": "AbilCmd",
-        "AbilCmd": "ACRBuild,Build9",
-        "id": "RelayTower",
-        "Icon": "btn-building-genetron-relaytower",
-        "Tooltip": "Facilitates global energy management. Can use System Recharge.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Processors at the Processing Core",
-        "Name": "Build Relay Tower",
-        "Hotkey": "R"
+        "AbilCmd": "ACRBuild,Build11",
+        "id": "TechVault",
+        "Icon": "btn-building-genetron-techvault",
+        "Tooltip": "Contains weapon upgrades for Genetron heavy ground units, and weapon and armor upgrades for Genetron air units.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Inciters at the Fabricator<br/>- Virtus at the Fabricator",
+        "Name": "Build Tech Vault",
+        "Hotkey": "V"
       },
       {
         "Info": {
@@ -2116,22 +1812,16 @@
               "AllowMinimap": 0
             },
             "DefaultButtonFace": "AssemblyArray",
-            "Requirements": "HaveFabricationStation"
-          },
-          "Charge": {
-            "Link": "Abil/MechStructures"
-          },
-          "Cooldown": {
-            "Link": "Abil/MechStructures"
+            "Requirements": "HaveRelayTower"
           },
           "Unit": "AssemblyArray",
-          "Time": 60
+          "Time": 70
         },
         "Unit": "AssemblyArray",
-        "Time": 60,
+        "Time": 70,
         "Cost": {
           "Minerals": 200,
-          "Vespene": 100,
+          "Vespene": 150,
           "Terazine": 0,
           "Custom": 0,
           "Energy": 0,
@@ -2158,19 +1848,13 @@
             "DefaultButtonFace": "Generator",
             "Requirements": "HaveRelayTower"
           },
-          "Charge": {
-            "Link": "Abil/MechStructures"
-          },
-          "Cooldown": {
-            "Link": "Abil/MechStructures"
-          },
           "Unit": "Generator",
           "Time": 40
         },
         "Unit": "Generator",
         "Time": 40,
         "Cost": {
-          "Minerals": 150,
+          "Minerals": 200,
           "Vespene": 50,
           "Terazine": 0,
           "Custom": 0,
@@ -2179,13 +1863,13 @@
           "Shields": 0,
           "Food": 0
         },
-        "Row": 1,
+        "Row": 0,
         "Column": 1,
         "Type": "AbilCmd",
         "AbilCmd": "ACRBuild,Build14",
         "id": "Generator",
         "Icon": "btn-building-genetron-generator",
-        "Tooltip": "Provides energy. Contains upgrades for the Processor.",
+        "Tooltip": "Generates power. Increases power storage by <b>50</b>.",
         "Name": "Build Generator",
         "Hotkey": "G"
       },
@@ -2195,23 +1879,17 @@
             "Flags": {
               "AllowMinimap": 0
             },
-            "DefaultButtonFace": "TechVault",
-            "Requirements": "HaveOutfittingStation"
+            "DefaultButtonFace": "ChemicalFirm",
+            "Requirements": "HaveTechVault"
           },
-          "Charge": {
-            "Link": "Abil/MechStructures"
-          },
-          "Cooldown": {
-            "Link": "Abil/MechStructures"
-          },
-          "Unit": "TechVault",
-          "Time": 60
+          "Unit": "ChemicalFirm",
+          "Time": 65
         },
-        "Unit": "TechVault",
-        "Time": 60,
+        "Unit": "ChemicalFirm",
+        "Time": 65,
         "Cost": {
           "Minerals": 150,
-          "Vespene": 100,
+          "Vespene": 150,
           "Terazine": 0,
           "Custom": 0,
           "Energy": 0,
@@ -2222,12 +1900,114 @@
         "Row": 1,
         "Column": 2,
         "Type": "AbilCmd",
-        "AbilCmd": "ACRBuild,Build11",
-        "id": "TechVault",
-        "Icon": "btn-building-genetron-techvault",
-        "Tooltip": "Contains weapon upgrades for Genetron heavy ground units, and weapon and armor upgrades for Genetron air units.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Aquilas at the Manufacturer<br/>- Virtus at the Fabricator<br/>- Badgers at the Assembly Array",
-        "Name": "Build Tech Vault",
-        "Hotkey": "V"
+        "AbilCmd": "ACRBuild,Build16",
+        "id": "ChemicalFirm",
+        "Icon": "btn-building-genetron-chemicalfirm",
+        "Tooltip": "<span style=\"color: #FFFF80\">Enables:</span><br/>- Aquilas at the Manufacturer<br/>- Teslas at the Fabricator",
+        "Name": "Build Chemical Firm",
+        "Hotkey": "C"
+      },
+      {
+        "Info": {
+          "Button": {
+            "Flags": {
+              "AllowMinimap": 0
+            },
+            "DefaultButtonFace": "OrdnanceCache",
+            "Requirements": "HaveTechVault"
+          },
+          "Unit": "OrdnanceCache",
+          "Time": 65
+        },
+        "Unit": "OrdnanceCache",
+        "Time": 65,
+        "Cost": {
+          "Minerals": 150,
+          "Vespene": 150,
+          "Terazine": 0,
+          "Custom": 0,
+          "Energy": 0,
+          "Life": 0,
+          "Shields": 0,
+          "Food": 0
+        },
+        "Row": 1,
+        "Column": 3,
+        "Type": "AbilCmd",
+        "AbilCmd": "ACRBuild,Build17",
+        "id": "OrdnanceCache",
+        "Icon": "btn-building-genetron-ordnancecache",
+        "Tooltip": "<span style=\"color: #FFFF80\">Enables:</span><br/>- Jupiters at the Assembly Array<br/>- Badgers at the Assembly Array",
+        "Name": "Build Ordnance Cache",
+        "Hotkey": "D"
+      },
+      {
+        "Info": {
+          "Button": {
+            "Flags": {
+              "AllowMinimap": 0
+            },
+            "DefaultButtonFace": "OutfittingStation",
+            "Requirements": "HaveAnalysisTerminal"
+          },
+          "Unit": "OutfittingStation",
+          "Time": 65
+        },
+        "Unit": "OutfittingStation",
+        "Time": 65,
+        "Cost": {
+          "Minerals": 150,
+          "Vespene": 100,
+          "Terazine": 0,
+          "Custom": 0,
+          "Energy": 0,
+          "Life": 0,
+          "Shields": 0,
+          "Food": 0
+        },
+        "Row": 0,
+        "Column": 3,
+        "Type": "AbilCmd",
+        "AbilCmd": "ACRBuild,Build6",
+        "id": "OutfittingStation",
+        "Icon": "btn-building-genetron-outfittingstation",
+        "Tooltip": "<span style=\"color: #FFFF80\">Enables:<br/></span>- Fixers at the Manufacturer</n>- Equalizers at the Manufacturer",
+        "Name": "Build Outfitting Station",
+        "Hotkey": "S"
+      },
+      {
+        "Info": {
+          "Button": {
+            "Flags": {
+              "AllowMinimap": 0
+            },
+            "DefaultButtonFace": "Olympus",
+            "Requirements": "HaveGenerator"
+          },
+          "Unit": "Olympus",
+          "Time": 75
+        },
+        "Unit": "Olympus",
+        "Time": 75,
+        "Cost": {
+          "Minerals": 250,
+          "Vespene": 250,
+          "Terazine": 0,
+          "Custom": 0,
+          "Energy": 0,
+          "Life": 0,
+          "Shields": 0,
+          "Food": 0
+        },
+        "Row": 1,
+        "Column": 1,
+        "Type": "AbilCmd",
+        "AbilCmd": "ACRBuild,Build15",
+        "id": "Olympus",
+        "Icon": "btn-building-genetron-olympus",
+        "Tooltip": "Weapon of mass destruction. Uses power to energize a global strike weapon that deals damage in a large area.",
+        "Name": "Build Olympus",
+        "Hotkey": "Y"
       }
     ]
   },
@@ -2237,10 +2017,10 @@
   "CostResource": {
     "Minerals": 50
   },
-  "RepairTime": 17,
+  "RepairTime": 16.667,
   "AIOverideTargetPriority": 10,
   "InnerRadius": 0.375,
-  "SubgroupPriority": 40,
+  "SubgroupPriority": 6,
   "Icon": "btn-unit-genetron-acr",
   "LifeArmorIcon": "btn-upgrade-genetron-groundmechplating-level0",
   "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
@@ -2252,11 +2032,18 @@
       "Amount": 5,
       "Kind": "Melee",
       "TargetFilters": "Ground",
-      "Range": 0.1,
+      "Range": 0.2,
       "Period": 1.5
     }
   ],
-  "Behaviors": [],
+  "Behaviors": [
+    {
+      "id": "GenetronPowerSupplyTracker"
+    },
+    {
+      "id": "TrackGenetronPowerSupplyUnit"
+    }
+  ],
   "Abilities": [
     {
       "id": "move",
@@ -2275,8 +2062,8 @@
       "Name": "Gather (SCV)"
     },
     {
-      "id": "MULERepair",
-      "Name": "Repair"
+      "id": "ACRRepair",
+      "Name": "ACR - Repair"
     },
     {
       "id": "ACRBuild"
@@ -2295,7 +2082,8 @@
     "GenetronGroundPlatingLevel3",
     "ProcessingCore",
     "Gen",
-    "ProcessingCore"
+    "ProcessingCore",
+    "GenetronGroundPlatingRevert"
   ],
   "$Requirements": [],
   "$Production": [
@@ -2306,12 +2094,15 @@
     "AnalysisTerminal",
     "Repulsor",
     "Interdictor",
-    "Fabricator",
-    "OutfittingStation",
     "RelayTower",
+    "Fabricator",
+    "TechVault",
     "AssemblyArray",
     "Generator",
-    "TechVault"
+    "ChemicalFirm",
+    "OrdnanceCache",
+    "OutfittingStation",
+    "Olympus"
   ],
   "$Research": [],
   "$Morph": [],
@@ -2370,10 +2161,10 @@
       "Name": "Return Cargo"
     },
     {
-      "AbilCmd": "MULERepair,Execute",
-      "id": "Repair",
+      "AbilCmd": "ACRRepair,Execute",
+      "id": "ACRRepair",
       "Icon": "btn-ability-terran-repair",
-      "Tooltip": "Restores life to mechanical units and structures at the cost of resources.",
+      "Tooltip": "Restores life to mechanical units at the cost of power.",
       "Name": "Repair"
     },
     {
@@ -2394,14 +2185,14 @@
       "AbilCmd": "ACRBuild,Build1",
       "id": "ProcessingCore",
       "Icon": "btn-building-genetron-processingcore",
-      "Tooltip": "Primary structure. Used to receive gathered resources. Can use Mining Priority and System Recharge<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- ACRs",
+      "Tooltip": "Primary structure. Used to receive gathered resources. Generates power. Increases power storage by <b>400</b>. Can use Mining Priority and System Recharge<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- ACRs",
       "Name": "Build Processing Core"
     },
     {
       "AbilCmd": "ACRBuild,Build2",
       "id": "Node",
       "Icon": "btn-building-genetron-node",
-      "Tooltip": "Provides supply and energy.",
+      "Tooltip": "Provides supply and generates power.",
       "Name": "Build Node"
     },
     {
@@ -2422,7 +2213,7 @@
       "AbilCmd": "ACRBuild,Build13",
       "id": "AnalysisTerminal",
       "Icon": "btn-building-genetron-analysisterminal",
-      "Tooltip": "Contains weapon upgrades for Genetron light ground units, and armor upgrades for all Genetron ground units.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Repulsors from ACRs<br/>- Interdictors from ACRs",
+      "Tooltip": "Contains weapon upgrades for Genetron light ground units, and armor upgrades for all Genetron ground units, and upgrades for the Spitfire.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Blitzers at the Manufacturer<br/>- Moles at the Fabricator<br/>- Repulsors from ACRs<br/>- Interdictors from ACRs",
       "Name": "Build Analysis Terminal"
     },
     {
@@ -2440,6 +2231,13 @@
       "Name": "Build Interdictor"
     },
     {
+      "AbilCmd": "ACRBuild,Build9",
+      "id": "RelayTower",
+      "Icon": "btn-building-genetron-relaytower",
+      "Tooltip": "Increases power storage by <b>100</b>. Can use System Recharge.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Processors at the Processing Core",
+      "Name": "Build Relay Tower"
+    },
+    {
       "AbilCmd": "ACRBuild,Build10",
       "id": "Fabricator",
       "Icon": "btn-building-genetron-fabricator",
@@ -2447,18 +2245,11 @@
       "Name": "Build Fabricator"
     },
     {
-      "AbilCmd": "ACRBuild,Build6",
-      "id": "OutfittingStation",
-      "Icon": "btn-building-genetron-outfittingstation",
-      "Tooltip": "Contains upgrades for Genetron units.<br/><br/><span style=\"color: #FFFF80\">Enables:<br/></span>- Equalizers at the Manufacturer<br/>- Inciters at the Fabricator<br/>- Teslas at the Fabricator<br/>- Jupiters at the Assembly Array<br/>- Boars at the Assembly Array",
-      "Name": "Build Outfitting Station"
-    },
-    {
-      "AbilCmd": "ACRBuild,Build9",
-      "id": "RelayTower",
-      "Icon": "btn-building-genetron-relaytower",
-      "Tooltip": "Facilitates global energy management. Can use System Recharge.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Processors at the Processing Core",
-      "Name": "Build Relay Tower"
+      "AbilCmd": "ACRBuild,Build11",
+      "id": "TechVault",
+      "Icon": "btn-building-genetron-techvault",
+      "Tooltip": "Contains weapon upgrades for Genetron heavy ground units, and weapon and armor upgrades for Genetron air units.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Inciters at the Fabricator<br/>- Virtus at the Fabricator",
+      "Name": "Build Tech Vault"
     },
     {
       "AbilCmd": "ACRBuild,Build12",
@@ -2471,15 +2262,36 @@
       "AbilCmd": "ACRBuild,Build14",
       "id": "Generator",
       "Icon": "btn-building-genetron-generator",
-      "Tooltip": "Provides energy. Contains upgrades for the Processor.",
+      "Tooltip": "Generates power. Increases power storage by <b>50</b>.",
       "Name": "Build Generator"
     },
     {
-      "AbilCmd": "ACRBuild,Build11",
-      "id": "TechVault",
-      "Icon": "btn-building-genetron-techvault",
-      "Tooltip": "Contains weapon upgrades for Genetron heavy ground units, and weapon and armor upgrades for Genetron air units.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Aquilas at the Manufacturer<br/>- Virtus at the Fabricator<br/>- Badgers at the Assembly Array",
-      "Name": "Build Tech Vault"
+      "AbilCmd": "ACRBuild,Build16",
+      "id": "ChemicalFirm",
+      "Icon": "btn-building-genetron-chemicalfirm",
+      "Tooltip": "<span style=\"color: #FFFF80\">Enables:</span><br/>- Aquilas at the Manufacturer<br/>- Teslas at the Fabricator",
+      "Name": "Build Chemical Firm"
+    },
+    {
+      "AbilCmd": "ACRBuild,Build17",
+      "id": "OrdnanceCache",
+      "Icon": "btn-building-genetron-ordnancecache",
+      "Tooltip": "<span style=\"color: #FFFF80\">Enables:</span><br/>- Jupiters at the Assembly Array<br/>- Badgers at the Assembly Array",
+      "Name": "Build Ordnance Cache"
+    },
+    {
+      "AbilCmd": "ACRBuild,Build6",
+      "id": "OutfittingStation",
+      "Icon": "btn-building-genetron-outfittingstation",
+      "Tooltip": "<span style=\"color: #FFFF80\">Enables:<br/></span>- Fixers at the Manufacturer</n>- Equalizers at the Manufacturer",
+      "Name": "Build Outfitting Station"
+    },
+    {
+      "AbilCmd": "ACRBuild,Build15",
+      "id": "Olympus",
+      "Icon": "btn-building-genetron-olympus",
+      "Tooltip": "Weapon of mass destruction. Uses power to energize a global strike weapon that deals damage in a large area.",
+      "Name": "Build Olympus"
     }
   ]
 }

@@ -85,7 +85,8 @@
   ],
   "Collide": [
     "Ground",
-    "ForceField"
+    "ForceField",
+    "Small"
   ],
   "LifeRegenRate": 0.2734,
   "Acceleration": 2.5,
@@ -782,7 +783,9 @@
             "PeonMaintained": 1,
             "RangeIncludesBuilding": 1,
             "Interruptible": 1,
-            "PeonDisableCollision": 1
+            "PeonDisableCollision": 1,
+            "PeonCanBeMoved": 1,
+            "RequireFacing": 1
           },
           "RefundFraction": {
             "Resource": {
@@ -835,7 +838,7 @@
                 "Requirements": "HaveReliquary"
               },
               "Unit": "Nullifier",
-              "Time": 50
+              "Time": 40
             },
             "Build5": {
               "Button": {
@@ -901,7 +904,7 @@
                 "Requirements": "HaveSanctum"
               },
               "Unit": "Foundry",
-              "Time": 50
+              "Time": 60
             },
             "Build11": {
               "Button": {
@@ -1071,9 +1074,13 @@
               }
             }
           },
+          "TechAliasArray": "AliasScion_GenericBuild",
           "Range": [
             4.5
           ],
+          "FidgetDelayMin": 5,
+          "FidgetDelayMax": 10,
+          "ConstructionMover": "Construction",
           "EffectArray": {
             "Start": "KeironConstructionStart",
             "Finish": "KeironConstructionStop",
@@ -1228,6 +1235,147 @@
         "Tooltip": "Releases the Fuses inhabiting this unit, losing the associated bonus.",
         "Name": "Unfuse",
         "Hotkey": "U"
+      },
+      {
+        "Info": {
+          "class": "CAbilEffectTarget",
+          "Name": "Abil/Name/SprayProtoss",
+          "TechPlayer": "Upkeep",
+          "EditorCategories": "AbilityorEffectType:Units,Race:Protoss",
+          "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
+          "OrderArray": [
+            {
+              "DisplayType": "Confirm",
+              "Color": "255,0,255,0",
+              "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
+              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
+            }
+          ],
+          "SharedFlags": {
+            "DisableWhileDead": 1
+          },
+          "DataCollection": "SprayProtoss",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
+          "RangeSlop": 1,
+          "ArcSlop": 11.25,
+          "AutoCastAcquireLevel": "Offensive",
+          "AutoCastFilters": "Visible;Player,Ally",
+          "Flags": {
+            "AbortOnAllianceChange": 1,
+            "CancelResetAutoCast": 1,
+            "ChannelingMinimum": 1,
+            "RangeUseCasterRadius": 1,
+            "ReApproachable": 1,
+            "RequireTargetVision": 1,
+            "WaitToSpend": 1,
+            "UpdateChargesOnLevelChange": 1,
+            "BestUnit": 1
+          },
+          "Effect": [
+            "SprayProtoss"
+          ],
+          "EffectRange": [
+            "0,1000"
+          ],
+          "AINotifyEffect": "SprayProtoss",
+          "RefundArray": {
+            "Approach": 1,
+            "Prep": 1,
+            "Cast": 1
+          },
+          "RefundFraction": {
+            "Resource": {
+              "Minerals": -1,
+              "Vespene": -1,
+              "Terrazine": -1,
+              "Custom": -1
+            },
+            "Charge": -1,
+            "Cooldown": -1
+          },
+          "UseMarkerArray": {
+            "Approach": 1,
+            "Prep": 1,
+            "Cast": 1,
+            "Channel": 1
+          },
+          "PauseableArray": {
+            "Approach": 1,
+            "Prep": 1,
+            "Cast": 1,
+            "Channel": 1,
+            "Finish": 1
+          },
+          "PreemptableArray": {
+            "Approach": 1,
+            "Prep": 1,
+            "Cast": 1,
+            "Channel": 1,
+            "Finish": 1
+          },
+          "ValidatedArray": {
+            "Approach": 1,
+            "Prep": 1,
+            "Cast": 1,
+            "Channel": 1
+          },
+          "DefaultError": "MustTargetUnit",
+          "AcquirePriority": 3,
+          "SetLastTarget": "Unknown",
+          "VeterancyLevelMin": 0,
+          "VeterancyLevelSkip": 0,
+          "CmdButtonArray": {
+            "Execute": {
+              "Flags": {
+                "ShowInGlossary": 1
+              },
+              "DefaultButtonFace": "Spray",
+              "Requirements": "HaveSprayProtoss"
+            }
+          },
+          "FollowRange": 5,
+          "Cost": [
+            {
+              "Charge": {
+                "CountMax": 5,
+                "CountStart": 1,
+                "CountUse": 1,
+                "Link": "Spray",
+                "Location": "Player",
+                "TimeStart": 300,
+                "TimeUse": 300
+              }
+            }
+          ],
+          "Range": [
+            1
+          ],
+          "id": "SprayProtoss"
+        },
+        "Cost": {
+          "Minerals": 0,
+          "Vespene": 0,
+          "Terazine": 0,
+          "Custom": 0,
+          "Energy": 0,
+          "Life": 0,
+          "Shields": 0,
+          "Food": 0
+        },
+        "Row": 2,
+        "Column": 3,
+        "Type": "AbilCmd",
+        "AbilCmd": "SprayProtoss,Execute",
+        "id": "Spray",
+        "Icon": "btn-command-spray",
+        "Tooltip": "Orders the unit to apply your currently selected spray to the terrain at the target location.",
+        "Name": "Spray",
+        "Hotkey": "Y"
       }
     ],
     "0002": [
@@ -1246,6 +1394,7 @@
         "Column": 4,
         "Type": "CancelSubmenu",
         "id": "Cancel",
+        "Icon": "btn-command-cancel",
         "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
         "Name": "Cancel",
         "Hotkey": "Esc"
@@ -1313,7 +1462,7 @@
         "AbilCmd": "KeironBuild,Build8",
         "id": "Sanctum",
         "Icon": "btn-building-keiron-sanctum",
-        "Tooltip": "Contains upgrades for Pulsars and Subjectors.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Pulsars from Citadels<br/>- Subjecters from Citadels",
+        "Tooltip": "Contains upgrades for Pulsars and Cataracts.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Pulsars from Citadels<br/>- Cataracts from Citadels",
         "Name": "Shape Sanctum",
         "Hotkey": "S"
       },
@@ -1332,7 +1481,7 @@
         "Unit": "Edifice",
         "Time": 60,
         "Cost": {
-          "Minerals": 175,
+          "Minerals": 200,
           "Vespene": 0,
           "Terazine": 0,
           "Custom": 0,
@@ -1361,12 +1510,12 @@
             "Requirements": "HaveReliquary"
           },
           "Unit": "Nullifier",
-          "Time": 50
+          "Time": 40
         },
         "Unit": "Nullifier",
-        "Time": 50,
+        "Time": 40,
         "Cost": {
-          "Minerals": 125,
+          "Minerals": 150,
           "Vespene": 0,
           "Terazine": 0,
           "Custom": 0,
@@ -1401,7 +1550,7 @@
         "Time": 25,
         "Cost": {
           "Minerals": 75,
-          "Vespene": 50,
+          "Vespene": 0,
           "Terazine": 0,
           "Custom": 0,
           "Energy": 0,
@@ -1501,7 +1650,7 @@
         "Unit": "Reliquary",
         "Time": 35,
         "Cost": {
-          "Minerals": 175,
+          "Minerals": 200,
           "Vespene": 0,
           "Terazine": 0,
           "Custom": 0,
@@ -1571,6 +1720,7 @@
         "Column": 4,
         "Type": "CancelSubmenu",
         "id": "Cancel",
+        "Icon": "btn-command-cancel",
         "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
         "Name": "Cancel",
         "Hotkey": "Esc"
@@ -1619,10 +1769,10 @@
             "Requirements": "HaveSanctum"
           },
           "Unit": "Foundry",
-          "Time": 50
+          "Time": 60
         },
         "Unit": "Foundry",
-        "Time": 50,
+        "Time": 60,
         "Cost": {
           "Minerals": 225,
           "Vespene": 75,
@@ -1845,6 +1995,8 @@
   "Food": -1,
   "GlossaryPriority": 10,
   "SubgroupPriority": 3,
+  "AIOverideTargetPriority": 10,
+  "InnerRadius": 0.375,
   "Icon": "btn-unit-keiron-converter",
   "LifeArmorIcon": "btn-upgrade-keiron-biologicalarmorlevel0",
   "ShieldArmorIcon": "btn-upgrade-keiron-shields-level0",
@@ -1889,12 +2041,14 @@
     {
       "id": "KeironBuild",
       "Name": "Keiron Build"
+    },
+    {
+      "id": "SprayProtoss"
     }
   ],
   "$Upgrades": [
-    "Keir",
-    "Converter",
     "KeironCitadelTrain",
+    "Converter",
     "CitadelCharged",
     "KeironBioArmorLevel1",
     "Converter",
@@ -1906,6 +2060,7 @@
     "KeironShieldsLevel2",
     "KeironShieldsLevel3",
     "Citadel",
+    "Keir",
     "IsConverter",
     "KeironBioArmorRevert",
     "KeironShieldsRevert"
@@ -2001,6 +2156,13 @@
       "Name": "Unfuse"
     },
     {
+      "AbilCmd": "SprayProtoss,Execute",
+      "id": "Spray",
+      "Icon": "btn-command-spray",
+      "Tooltip": "Orders the unit to apply your currently selected spray to the terrain at the target location.",
+      "Name": "Spray"
+    },
+    {
       "AbilCmd": "KeironBuild,Build1",
       "id": "Citadel",
       "Icon": "btn-building-keiron-citadel",
@@ -2011,7 +2173,7 @@
       "AbilCmd": "KeironBuild,Build8",
       "id": "Sanctum",
       "Icon": "btn-building-keiron-sanctum",
-      "Tooltip": "Contains upgrades for Pulsars and Subjectors.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Pulsars from Citadels<br/>- Subjecters from Citadels",
+      "Tooltip": "Contains upgrades for Pulsars and Cataracts.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Pulsars from Citadels<br/>- Cataracts from Citadels",
       "Name": "Shape Sanctum"
     },
     {

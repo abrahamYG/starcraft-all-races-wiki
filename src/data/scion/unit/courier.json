@@ -1,6 +1,6 @@
 {
   "Name": "Courier",
-  "Description": "Stealth transport. Can use Cloak.<br/><br/><span style=\"color: #f078ff\">Energy user.</span>",
+  "Description": "Stealth transport. Can use Cloak and Optical Disruption.<br/><br/><span style=\"color: #78F0FF\">Power user.</span>",
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -10,15 +10,15 @@
   "Response": "Acquire",
   "ResourceState": "Unknown",
   "ResourceType": "Unknown",
-  "LifeStart": 175,
-  "LifeMax": 175,
+  "LifeStart": 150,
+  "LifeMax": 150,
   "LifeArmorName": "Mechanical Aircraft Plating",
   "Mover": "Fly",
   "StationaryTurningRate": 990,
   "TurningRate": 990,
-  "Radius": 0.6875,
-  "SeparationRadius": 0.6875,
-  "MinimapRadius": 0.6875,
+  "Radius": 0.875,
+  "SeparationRadius": 0.875,
+  "MinimapRadius": 1,
   "EditorCategories": "ObjectType:Unit,ObjectFamily:Melee",
   "TacticalAIFilters": "-;Player,Ally,Neutral",
   "AIEvalFactor": 1,
@@ -107,8 +107,8 @@
     "Vespene": 1
   },
   "id": "Courier",
-  "Speed": 3.25,
-  "Acceleration": 1,
+  "Speed": 2.9531,
+  "Acceleration": 2.5,
   "CostCategory": "Army",
   "CardLayouts": {
     "Root": [
@@ -124,12 +124,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -223,12 +217,6 @@
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
               "DisplayType": "Move",
               "Color": "255,35,125,255",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
@@ -317,12 +305,6 @@
               "Color": "255,255,0,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -393,12 +375,6 @@
           "EditorCategories": "Race:Neutral,AbilityorEffectType:Units",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -477,12 +453,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -576,12 +546,6 @@
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
               "DisplayType": "Move",
               "Color": "255,35,125,255",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
@@ -670,12 +634,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -723,7 +681,6 @@
           "MaxUnloadRange": 3,
           "TargetFilters": [
             "Visible;Ally,Neutral,Enemy,Buried,Dead,Hidden",
-            "Visible;Ally,Neutral,Enemy,Buried,UnderConstruction,Dead,Hidden",
             "Visible;Self,Ally,Neutral,Enemy,Buried,UnderConstruction,Dead,Hidden"
           ],
           "Flags": {
@@ -740,123 +697,9 @@
             ]
           },
           "ErrorAlert": "Error",
-          "MaxCargoCount": 10,
+          "MaxCargoCount": 8,
           "MaxCargoSize": 8,
-          "TotalCargoSpace": 10,
-          "UnloadPeriod": 1,
-          "AbilSetId": "ULdM",
-          "LoadValidatorArray": [
-            "NotWidowMineTarget"
-          ],
-          "UnloadCargoEffect": "CargoUnloadStopOrder",
-          "id": "CourierTransport"
-        },
-        "Cost": {
-          "Minerals": 0,
-          "Vespene": 0,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 2,
-        "Column": 2,
-        "Type": "AbilCmd",
-        "AbilCmd": "CourierTransport,Load",
-        "id": "CourierLoad",
-        "Icon": "btn-ability-terran-load",
-        "Tooltip": "Loads units into the Courier's hold.",
-        "Name": "Load (Courier)",
-        "Hotkey": "L"
-      },
-      {
-        "Info": {
-          "class": "CAbilTransport",
-          "Name": "Abil/Name/CourierTransport",
-          "TechPlayer": "Upkeep",
-          "EditorCategories": "Race:Genetron,AbilityorEffectType:Units",
-          "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
-          "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            }
-          ],
-          "SharedFlags": {
-            "DisableWhileDead": 1
-          },
-          "DataCollection": "MedivacTransport",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
-          "CmdButtonArray": {
-            "Load": {
-              "Flags": {
-                "ShowInGlossary": 1
-              },
-              "DefaultButtonFace": "CourierLoad"
-            },
-            "LoadAll": {
-              "Flags": {
-                "ShowInGlossary": 1,
-                "Hidden": 1
-              }
-            },
-            "UnloadAll": {
-              "Flags": {
-                "Hidden": 1,
-                "ToSelection": 1
-              }
-            },
-            "UnloadAt": {
-              "DefaultButtonFace": "CourierUnloadAll"
-            },
-            "UnloadUnit": {
-              "Flags": {
-                "Hidden": 1
-              }
-            }
-          },
-          "Alignment": "Positive",
-          "Range": [
-            1
-          ],
-          "MaxUnloadRange": 3,
-          "TargetFilters": [
-            "Visible;Ally,Neutral,Enemy,Buried,Dead,Hidden",
-            "Visible;Ally,Neutral,Enemy,Buried,UnderConstruction,Dead,Hidden",
-            "Visible;Self,Ally,Neutral,Enemy,Buried,UnderConstruction,Dead,Hidden"
-          ],
-          "Flags": {
-            "AllowPassengerSmartCmd": 1,
-            "AllowSmartCmd": 1,
-            "ShowCargoSize": 1,
-            "ShowStatus": 1,
-            "CargoDeath": 1
-          },
-          "TargetSorts": {
-            "SortArray": [
-              "TSInterruptible",
-              "TSDistance"
-            ]
-          },
-          "ErrorAlert": "Error",
-          "MaxCargoCount": 10,
-          "MaxCargoSize": 8,
-          "TotalCargoSpace": 10,
+          "TotalCargoSpace": 8,
           "UnloadPeriod": 1,
           "AbilSetId": "ULdM",
           "LoadValidatorArray": [
@@ -882,13 +725,13 @@
         "id": "CourierUnloadAll",
         "Icon": "btn-ability-terran-unloadall",
         "Tooltip": "Unloads all units.",
-        "Name": "Unload All (Courier)",
+        "Name": "Unload All",
         "Hotkey": "D"
       },
       {
         "Info": {
-          "class": "CAbilBehavior",
-          "Name": "Abil/Name/CourierCloak",
+          "class": "CAbilEffectTarget",
+          "Name": "Abil/Name/CourierOpticalDisruption",
           "TechPlayer": "Upkeep",
           "EditorCategories": "Race:Genetron,AbilityorEffectType:Units",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
@@ -896,85 +739,132 @@
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
+              "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
             "DisableWhileDead": 1
           },
-          "DataCollection": "CourierCloak",
+          "DataCollection": "CourierOpticalDisruption",
           "$tokens": {
             "ID": {
               "type": "string",
               "value": ""
             }
           },
-          "CmdButtonArray": {
-            "On": {
-              "Flags": {
-                "ShowInGlossary": 1,
-                "ToSelection": 1
-              },
-              "DefaultButtonFace": "CloakOnCourier"
-            },
-            "Off": {
-              "Flags": {
-                "ToSelection": 1
-              },
-              "DefaultButtonFace": "CloakOffCourier"
-            }
+          "RangeSlop": 1,
+          "ArcSlop": 11.25,
+          "AutoCastAcquireLevel": "Offensive",
+          "AutoCastFilters": "Visible;Player,Ally",
+          "Flags": {
+            "AbortOnAllianceChange": 1,
+            "CancelResetAutoCast": 1,
+            "ChannelingMinimum": 1,
+            "RangeUseCasterRadius": 1,
+            "ReApproachable": 1,
+            "RequireTargetVision": 1,
+            "WaitToSpend": 1,
+            "UpdateChargesOnLevelChange": 1,
+            "BestUnit": 1,
+            "AllowMovement": 1,
+            "TransientPreferred": 1
           },
+          "Effect": [
+            "CourierOpticalDisruptionInitTarget"
+          ],
+          "EffectRange": [
+            "0,1000"
+          ],
+          "AINotifyEffect": "CourierOpticalDisruptionCreatePersistent",
+          "RefundArray": {
+            "Approach": 1,
+            "Prep": 1,
+            "Cast": 1
+          },
+          "RefundFraction": {
+            "Resource": {
+              "Minerals": -1,
+              "Vespene": -1,
+              "Terrazine": -1,
+              "Custom": -1
+            },
+            "Charge": -1,
+            "Cooldown": -1
+          },
+          "UseMarkerArray": {
+            "Approach": 1,
+            "Prep": 1,
+            "Cast": 1,
+            "Channel": 1
+          },
+          "PauseableArray": {
+            "Approach": 1,
+            "Prep": 1,
+            "Cast": 1,
+            "Channel": 1,
+            "Finish": 1
+          },
+          "PreemptableArray": {
+            "Approach": 1,
+            "Prep": 1,
+            "Cast": 1,
+            "Channel": 1,
+            "Finish": 1
+          },
+          "ValidatedArray": {
+            "Approach": 1,
+            "Prep": 1,
+            "Cast": 1,
+            "Channel": 1
+          },
+          "DefaultError": "MustTargetUnit",
+          "AcquirePriority": 3,
+          "SetLastTarget": "Unknown",
           "VeterancyLevelMin": 0,
           "VeterancyLevelSkip": 0,
-          "AbilSetId": "Clok",
-          "Flags": {
-            "Toggle": 1,
-            "Transient": 1
+          "CmdButtonArray": {
+            "Execute": {
+              "Flags": {
+                "ShowInGlossary": 1
+              },
+              "DefaultButtonFace": "OpticalDisruption",
+              "Requirements": "CourierOpticalDisruptionReq"
+            }
           },
+          "FollowRange": 5,
+          "Range": [
+            10
+          ],
+          "Arc": 360,
           "Cost": [
             {
               "Vital": {
-                "Energy": 25
-              },
-              "Charge": {
-                "Link": "Abil/BansheeCloak"
-              },
-              "Cooldown": {
-                "Link": "Abil/BansheeCloak"
+                "Energy": 50
               }
             }
           ],
-          "BehaviorArray": [
-            "CourierCloak"
-          ],
-          "id": "CourierCloak"
+          "id": "CourierOpticalDisruption"
         },
         "Cost": {
           "Minerals": 0,
           "Vespene": 0,
           "Terazine": 0,
           "Custom": 0,
-          "Energy": 25,
+          "Energy": 50,
           "Life": 0,
           "Shields": 0,
           "Food": 0
         },
         "Row": 2,
-        "Column": 0,
+        "Column": 4,
         "Type": "AbilCmd",
-        "AbilCmd": "CourierCloak,On",
-        "id": "CloakOnCourier",
-        "Icon": "btn-ability-hornerhan-wraith-permanentcloak",
-        "Tooltip": "Cloaks the unit, preventing enemy units from seeing or attacking it. A cloaked unit will only be revealed by detectors or effects.<br/><br/><span style=\"color: #f078ff\">Drains <b>0.9</b> energy per second.</span>",
-        "Name": "Cloak",
-        "Hotkey": "C"
+        "AbilCmd": "CourierOpticalDisruption,Execute",
+        "id": "OpticalDisruption",
+        "Icon": "btn-upgrade-genetron-integratedoptics",
+        "Tooltip": "Reduces the attack and vision range of units in an area around the target unit. The effect lasts up to <b>9</b> seconds.<br/><br/><span style=\"color: #78F0FF\">Uses <b>50</b> power.</span>",
+        "Name": "Optical Disruption",
+        "Hotkey": "T"
       },
       {
         "Info": {
@@ -984,12 +874,6 @@
           "EditorCategories": "Race:Genetron,AbilityorEffectType:Units",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -1013,7 +897,8 @@
                 "ShowInGlossary": 1,
                 "ToSelection": 1
               },
-              "DefaultButtonFace": "CloakOnCourier"
+              "DefaultButtonFace": "CloakOnCourier",
+              "Requirements": "CourierCloakingFieldReq"
             },
             "Off": {
               "Flags": {
@@ -1066,32 +951,235 @@
         "Tooltip": "Decloaks the selected unit, making it visible to enemies.",
         "Name": "Decloak (Courier)",
         "Hotkey": "V"
+      },
+      {
+        "Info": {
+          "class": "CAbilTransport",
+          "Name": "Abil/Name/CourierTransport",
+          "TechPlayer": "Upkeep",
+          "EditorCategories": "Race:Genetron,AbilityorEffectType:Units",
+          "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
+          "OrderArray": [
+            {
+              "DisplayType": "Confirm",
+              "Color": "255,0,255,0",
+              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
+              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
+            }
+          ],
+          "SharedFlags": {
+            "DisableWhileDead": 1
+          },
+          "DataCollection": "MedivacTransport",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
+          "CmdButtonArray": {
+            "Load": {
+              "Flags": {
+                "ShowInGlossary": 1
+              },
+              "DefaultButtonFace": "CourierLoad"
+            },
+            "LoadAll": {
+              "Flags": {
+                "ShowInGlossary": 1,
+                "Hidden": 1
+              }
+            },
+            "UnloadAll": {
+              "Flags": {
+                "Hidden": 1,
+                "ToSelection": 1
+              }
+            },
+            "UnloadAt": {
+              "DefaultButtonFace": "CourierUnloadAll"
+            },
+            "UnloadUnit": {
+              "Flags": {
+                "Hidden": 1
+              }
+            }
+          },
+          "Alignment": "Positive",
+          "Range": [
+            1
+          ],
+          "MaxUnloadRange": 3,
+          "TargetFilters": [
+            "Visible;Ally,Neutral,Enemy,Buried,Dead,Hidden",
+            "Visible;Self,Ally,Neutral,Enemy,Buried,UnderConstruction,Dead,Hidden"
+          ],
+          "Flags": {
+            "AllowPassengerSmartCmd": 1,
+            "AllowSmartCmd": 1,
+            "ShowCargoSize": 1,
+            "ShowStatus": 1,
+            "CargoDeath": 1
+          },
+          "TargetSorts": {
+            "SortArray": [
+              "TSInterruptible",
+              "TSDistance"
+            ]
+          },
+          "ErrorAlert": "Error",
+          "MaxCargoCount": 8,
+          "MaxCargoSize": 8,
+          "TotalCargoSpace": 8,
+          "UnloadPeriod": 1,
+          "AbilSetId": "ULdM",
+          "LoadValidatorArray": [
+            "NotWidowMineTarget"
+          ],
+          "UnloadCargoEffect": "CargoUnloadStopOrder",
+          "id": "CourierTransport"
+        },
+        "Cost": {
+          "Minerals": 0,
+          "Vespene": 0,
+          "Terazine": 0,
+          "Custom": 0,
+          "Energy": 0,
+          "Life": 0,
+          "Shields": 0,
+          "Food": 0
+        },
+        "Row": 2,
+        "Column": 2,
+        "Type": "AbilCmd",
+        "AbilCmd": "CourierTransport,Load",
+        "id": "CourierLoad",
+        "Icon": "btn-ability-terran-load",
+        "Tooltip": "Loads units into the Courier's hold.",
+        "Name": "Load",
+        "Hotkey": "L"
+      },
+      {
+        "Info": {
+          "class": "CAbilBehavior",
+          "Name": "Abil/Name/CourierCloak",
+          "TechPlayer": "Upkeep",
+          "EditorCategories": "Race:Genetron,AbilityorEffectType:Units",
+          "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
+          "OrderArray": [
+            {
+              "DisplayType": "Confirm",
+              "Color": "255,0,255,0",
+              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
+              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
+            }
+          ],
+          "SharedFlags": {
+            "DisableWhileDead": 1
+          },
+          "DataCollection": "CourierCloak",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
+          "CmdButtonArray": {
+            "On": {
+              "Flags": {
+                "ShowInGlossary": 1,
+                "ToSelection": 1
+              },
+              "DefaultButtonFace": "CloakOnCourier",
+              "Requirements": "CourierCloakingFieldReq"
+            },
+            "Off": {
+              "Flags": {
+                "ToSelection": 1
+              },
+              "DefaultButtonFace": "CloakOffCourier"
+            }
+          },
+          "VeterancyLevelMin": 0,
+          "VeterancyLevelSkip": 0,
+          "AbilSetId": "Clok",
+          "Flags": {
+            "Toggle": 1,
+            "Transient": 1
+          },
+          "Cost": [
+            {
+              "Vital": {
+                "Energy": 25
+              },
+              "Charge": {
+                "Link": "Abil/BansheeCloak"
+              },
+              "Cooldown": {
+                "Link": "Abil/BansheeCloak"
+              }
+            }
+          ],
+          "BehaviorArray": [
+            "CourierCloak"
+          ],
+          "id": "CourierCloak"
+        },
+        "Cost": {
+          "Minerals": 0,
+          "Vespene": 0,
+          "Terazine": 0,
+          "Custom": 0,
+          "Energy": 25,
+          "Life": 0,
+          "Shields": 0,
+          "Food": 0
+        },
+        "Row": 2,
+        "Column": 0,
+        "Type": "AbilCmd",
+        "AbilCmd": "CourierCloak,On",
+        "id": "CloakOnCourier",
+        "Icon": "btn-ability-hornerhan-wraith-permanentcloak",
+        "Tooltip": "Cloaks the unit, preventing enemy units from seeing or attacking it. A cloaked unit will only be revealed by detectors or effects.<br/><br/><span style=\"color: #f078ff\">Drains <b>0.9</b> energy and <span style=\"color: #78F0FF\">power</span> per second.</span><br/><span style=\"color: #78F0FF\">Uses <b>25</b> power.</span>",
+        "Name": "Cloak",
+        "Hotkey": "C"
       }
     ]
   },
   "CargoSize": 0,
   "Height": 3.75,
   "VisionHeight": 4,
-  "EnergyStart": 200,
-  "EnergyMax": 200,
+  "EnergyStart": 150,
+  "EnergyMax": 150,
   "Deceleration": 1.5,
   "LateralAcceleration": 2,
-  "Food": -3,
+  "Food": -2,
   "CostResource": {
-    "Minerals": 150,
+    "Minerals": 125,
     "Vespene": 50
   },
   "RepairTime": 35,
-  "SubgroupPriority": 44,
+  "SubgroupPriority": 45,
   "GlossaryPriority": 14,
   "Mob": "Multiplayer",
+  "EnergyRegenRate": 0.5625,
   "Icon": "btn-unit-genetron-courier",
   "LifeArmorIcon": "btn-upgrade-genetron-aircraftplating-level0",
   "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
   "Weapons": [],
   "Behaviors": [
     {
-      "id": "GenetronUnitEnergyRegen"
+      "id": "GenetronPowerSupplyTracker"
+    },
+    {
+      "id": "TrackGenetronPowerSupplyUnit"
+    },
+    {
+      "id": "CourierCloakingFieldReq"
+    },
+    {
+      "id": "CourierOpticalDisruptionReq"
     }
   ],
   "Abilities": [
@@ -1110,6 +1198,10 @@
     {
       "id": "CourierCloak",
       "Name": "Cloaking Field"
+    },
+    {
+      "id": "CourierOpticalDisruption",
+      "Name": "Courier - Optical Disruption"
     }
   ],
   "$Upgrades": [
@@ -1120,8 +1212,11 @@
     "GenetronAircraftPlatingLevel2",
     "GenetronAircraftPlatingLevel3",
     "BuildAircraft",
+    "CountUnitCourierQueuedOrBetterAtUnit",
     "AssemblyArray",
     "AssemblyArray",
+    "CountUnitCourierInProgressOnlyAtUnit",
+    "GenetronAircraftPlatingRevert",
     "StealthSystems",
     "UnitThreatensCourier",
     "TacticalCourierCloakThreatSearch",
@@ -1179,25 +1274,18 @@
       "Name": "Scan Move"
     },
     {
-      "AbilCmd": "CourierTransport,Load",
-      "id": "CourierLoad",
-      "Icon": "btn-ability-terran-load",
-      "Tooltip": "Loads units into the Courier's hold.",
-      "Name": "Load (Courier)"
-    },
-    {
       "AbilCmd": "CourierTransport,UnloadAt",
       "id": "CourierUnloadAll",
       "Icon": "btn-ability-terran-unloadall",
       "Tooltip": "Unloads all units.",
-      "Name": "Unload All (Courier)"
+      "Name": "Unload All"
     },
     {
-      "AbilCmd": "CourierCloak,On",
-      "id": "CloakOnCourier",
-      "Icon": "btn-ability-hornerhan-wraith-permanentcloak",
-      "Tooltip": "Cloaks the unit, preventing enemy units from seeing or attacking it. A cloaked unit will only be revealed by detectors or effects.<br/><br/><span style=\"color: #f078ff\">Drains <b>0.9</b> energy per second.</span>",
-      "Name": "Cloak"
+      "AbilCmd": "CourierOpticalDisruption,Execute",
+      "id": "OpticalDisruption",
+      "Icon": "btn-upgrade-genetron-integratedoptics",
+      "Tooltip": "Reduces the attack and vision range of units in an area around the target unit. The effect lasts up to <b>9</b> seconds.<br/><br/><span style=\"color: #78F0FF\">Uses <b>50</b> power.</span>",
+      "Name": "Optical Disruption"
     },
     {
       "AbilCmd": "CourierCloak,Off",
@@ -1205,6 +1293,20 @@
       "Icon": "btn-ability-genetron-courierdecloak",
       "Tooltip": "Decloaks the selected unit, making it visible to enemies.",
       "Name": "Decloak (Courier)"
+    },
+    {
+      "AbilCmd": "CourierTransport,Load",
+      "id": "CourierLoad",
+      "Icon": "btn-ability-terran-load",
+      "Tooltip": "Loads units into the Courier's hold.",
+      "Name": "Load"
+    },
+    {
+      "AbilCmd": "CourierCloak,On",
+      "id": "CloakOnCourier",
+      "Icon": "btn-ability-hornerhan-wraith-permanentcloak",
+      "Tooltip": "Cloaks the unit, preventing enemy units from seeing or attacking it. A cloaked unit will only be revealed by detectors or effects.<br/><br/><span style=\"color: #f078ff\">Drains <b>0.9</b> energy and <span style=\"color: #78F0FF\">power</span> per second.</span><br/><span style=\"color: #78F0FF\">Uses <b>25</b> power.</span>",
+      "Name": "Cloak"
     }
   ]
 }

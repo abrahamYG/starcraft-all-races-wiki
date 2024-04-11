@@ -17,8 +17,8 @@
   "StationaryTurningRate": 990,
   "TurningRate": 990,
   "Radius": 0.4375,
-  "SeparationRadius": 0.5,
-  "MinimapRadius": 0.5,
+  "SeparationRadius": 0.4375,
+  "MinimapRadius": 0.375,
   "EditorCategories": "ObjectType:Unit,ObjectFamily:Melee",
   "TacticalAIFilters": "-;Player,Ally,Neutral",
   "AIEvalFactor": 1,
@@ -100,12 +100,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -197,12 +191,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -276,12 +264,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -375,12 +357,6 @@
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
               "DisplayType": "Move",
               "Color": "255,35,125,255",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
@@ -469,12 +445,6 @@
               "Color": "255,255,0,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -549,12 +519,6 @@
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
@@ -652,7 +616,7 @@
               },
               "Cooldown": {
                 "Link": "Abil/Dash",
-                "TimeUse": 10
+                "TimeUse": 9.8
               }
             }
           ],
@@ -663,6 +627,7 @@
             "Cast": 1,
             "Channel": 1
           },
+          "Arc": 360,
           "id": "XayidlingDash"
         },
         "Cost": {
@@ -684,25 +649,6 @@
         "Tooltip": "Dash a short distance at high speed.",
         "Name": "Dash",
         "Hotkey": "D"
-      },
-      {
-        "Cost": {
-          "Minerals": 0,
-          "Vespene": 0,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 2,
-        "Column": 1,
-        "Type": "Passive",
-        "id": "OcularAcuity",
-        "Icon": "btn-upgrade-xayid-ocularacuity",
-        "Tooltip": "<span style=\"color: #FFFF80\">Xayidlings</span> gain +1 attack range and +1(+3 vs Armored) attack damage.",
-        "Name": "Ocular Acuity"
       }
     ]
   },
@@ -713,8 +659,6 @@
     "Ground",
     "ForceField"
   ],
-  "LifeRegenDelay": 3,
-  "LifeRegenRate": 0.5,
   "Sight": 9,
   "CostCategory": "Army",
   "ScoreResult": "BuildOrder",
@@ -730,7 +674,7 @@
   },
   "id": "Xayidling",
   "Speed": 2.25,
-  "Food": -1,
+  "Food": -1.5,
   "CostResource": {
     "Minerals": 75
   },
@@ -750,7 +694,7 @@
       "Kind": "Ranged",
       "TargetFilters": "",
       "Range": 3,
-      "Period": 1.05
+      "Period": 0.91
     }
   ],
   "Behaviors": [],
@@ -775,11 +719,11 @@
   "$Upgrades": [
     "MutateXayidUnits",
     "Xayidling",
-    "OcularAcuity",
     "XayidGroundCarapaceLevel1",
     "Xayidling",
     "XayidGroundCarapace",
     "PiercingThrust",
+    "OcularAcuity",
     "DexterousJoints",
     "XayidGroundCarapaceLevel2",
     "XayidGroundCarapaceLevel3",
@@ -788,7 +732,10 @@
     "XayidGroundAttacksLevel2",
     "XayidGroundAttacksLevel3",
     "Worm",
-    "ChangelingXayidling"
+    "ChangelingXayidling",
+    "XayidGroundAttacksRevert",
+    "XayidGroundCarapaceRevert",
+    null
   ],
   "$Requirements": [],
   "$Production": [],

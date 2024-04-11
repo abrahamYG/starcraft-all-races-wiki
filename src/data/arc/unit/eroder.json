@@ -10,8 +10,8 @@
   "Response": "Acquire",
   "ResourceState": "Unknown",
   "ResourceType": "Unknown",
-  "LifeStart": 200,
-  "LifeMax": 200,
+  "LifeStart": 180,
+  "LifeMax": 180,
   "LifeArmorName": "Xayid Ground Carapace",
   "Mover": "Ground",
   "StationaryTurningRate": 630,
@@ -522,7 +522,7 @@
         "Type": "Passive",
         "id": "EnervatingSpores",
         "Icon": "btn-ability-xayid-enervatingspores",
-        "Tooltip": "Enemies which have been attacked by the Eroder will have their weapon damage reduced by 15% for a few seconds.",
+        "Tooltip": "Enemies which have been attacked by the Eroder will have their weapon damage reduced by <b>20</b>% for a few seconds.",
         "Name": "Enervating Spores"
       }
     ]
@@ -534,7 +534,7 @@
     "Ground",
     "ForceField"
   ],
-  "Sight": 9,
+  "Sight": 10,
   "CostCategory": "Army",
   "ScoreResult": "BuildOrder",
   "GlossaryCategory": "Unit/Category/XayidUnits",
@@ -548,11 +548,10 @@
     "Vespene": 1
   },
   "id": "Eroder",
-  "LifeArmor": 1,
   "Speed": 2.25,
   "CostResource": {
     "Minerals": 100,
-    "Vespene": 100
+    "Vespene": 75
   },
   "InnerRadius": 0.5,
   "GlossaryPriority": 7,
@@ -567,9 +566,9 @@
     {
       "id": "EnervatorSpores",
       "Name": "Enervator Spores",
-      "Amount": 25,
+      "Amount": 16,
       "AttributeBonus": {
-        "Light": -10
+        "Armored": 9
       },
       "Kind": "Ranged",
       "TargetFilters": "Ground",
@@ -595,6 +594,7 @@
   "$Upgrades": [
     "XayidGroundCarapaceLevel1",
     "Eroder",
+    "IsNotEroder",
     "Eroder",
     "XayidGroundCarapace",
     "CasnoliskDen",

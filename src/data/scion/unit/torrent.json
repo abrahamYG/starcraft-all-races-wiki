@@ -129,12 +129,6 @@
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
               "DisplayType": "Move",
               "Color": "255,35,125,255",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
@@ -222,12 +216,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -319,12 +307,6 @@
               "Color": "255,255,0,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -395,12 +377,6 @@
           "EditorCategories": "Race:Neutral,AbilityorEffectType:Units",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -479,12 +455,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -573,7 +543,7 @@
   },
   "RepairTime": 28,
   "InnerRadius": 0.5,
-  "SubgroupPriority": 42,
+  "SubgroupPriority": 30,
   "GlossaryPriority": 7,
   "GlossaryStrongArray": [
     "Badger",
@@ -590,11 +560,11 @@
       "id": "HurricaneMissiles",
       "Icon": "btn-upgrade-genetron-heavymechweapons-level0",
       "Name": "Hurricane Missiles",
-      "Amount": 10,
+      "Amount": 12,
       "Kind": "Ranged",
       "TargetFilters": "Air",
-      "Range": 7,
-      "Period": 0.525
+      "Range": 10,
+      "Period": 0.625
     },
     {
       "Turret": "Phoenix",
@@ -604,8 +574,8 @@
       "Amount": 6,
       "Kind": "Ranged",
       "TargetFilters": "Ground",
-      "Range": 5,
-      "Period": 1.4
+      "Range": 6,
+      "Period": 1.12
     }
   ],
   "Behaviors": [],
@@ -624,20 +594,24 @@
     }
   ],
   "$Upgrades": [
-    "TrainHeavyweightMechs",
+    "GenetronGroundPlatingLevel1",
     "Torrent",
+    "Torrent",
+    "GenetronGroundPlating",
     "GenetronHeavyWeaponsLevel1",
     "GenetronHeavyWeapons",
     "GenetronHeavyWeaponsLevel2",
     "GenetronHeavyWeaponsLevel3",
-    "Fabricator",
-    "EnhancedTargeting",
-    "GenetronGroundPlatingLevel1",
-    "Torrent",
-    "GenetronGroundPlating",
     "GenetronGroundPlatingLevel2",
     "GenetronGroundPlatingLevel3",
-    "Fabricator"
+    "TrainHeavyweightMechs",
+    "CountUnitTorrentQueuedOrBetterAtUnit",
+    "Fabricator",
+    "EnhancedTargeting",
+    "Fabricator",
+    "CountUnitTorrentInProgressOnlyAtUnit",
+    "GenetronGroundPlatingRevert",
+    "GenetronHeavyWeaponsRevert"
   ],
   "$Requirements": [],
   "$Production": [],

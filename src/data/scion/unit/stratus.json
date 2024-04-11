@@ -1,6 +1,6 @@
 {
   "Name": "Stratus",
-  "Description": "Anti-air defensive structure. <br/><br/><span style=\"color: #ffff8a\">Can attack air units.</span><br/><span style=\"color: #FFE303\">Detector</span>",
+  "Description": "Anti-air defensive structure. <br/><br/><span style=\"color: #ffff8a\">Can attack air units.</span><br/>",
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 2,
   "DeathRevealDuration": 4,
@@ -10,15 +10,15 @@
   "Response": "Acquire",
   "ResourceState": "Unknown",
   "ResourceType": "Unknown",
-  "LifeStart": 250,
-  "LifeMax": 250,
+  "LifeStart": 225,
+  "LifeMax": 225,
   "LifeArmorName": "Keiron Structure Armor",
   "Mover": "Fly",
   "StationaryTurningRate": 720,
   "TurningRate": 720,
   "Radius": 1,
   "SeparationRadius": 1,
-  "MinimapRadius": 1,
+  "MinimapRadius": 0.75,
   "EditorCategories": "ObjectType:Structure,ObjectFamily:Melee",
   "TacticalAIFilters": "-;Player,Ally,Neutral",
   "AIEvalFactor": 1,
@@ -87,24 +87,23 @@
     "Air"
   ],
   "Collide": [
-    "Flying"
+    "Flying",
+    "Flying5"
   ],
   "Attributes": [
     "Armored",
     "Structure"
   ],
   "LifeArmor": 2,
-  "Sight": 10,
+  "Sight": 11,
   "CostCategory": "Technology",
   "ScoreResult": "BuildOrder",
   "HotkeyCategory": "Unit/Category/KeironUnits",
-  "LifeRegenRate": 0.25,
+  "LifeRegenRate": 0.2734,
   "Food": 0,
   "Footprint": "Footprint2x2AirContour",
   "PlacementFootprint": "Footprint2x2Air",
   "ShieldArmorName": "Keiron Dispersion Shields",
-  "ShieldRegenDelay": 4,
-  "ShieldRegenRate": 1.25,
   "CardLayouts": {
     "Root": [
       {
@@ -115,12 +114,6 @@
           "EditorCategories": "Race:Neutral,AbilityorEffectType:Units",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -200,12 +193,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -258,86 +245,6 @@
         "Hotkey": "Esc"
       },
       {
-        "Info": {
-          "class": "CAbilAttack",
-          "Name": "Abil/Name/attack",
-          "TechPlayer": "Upkeep",
-          "EditorCategories": "Race:Neutral,AbilityorEffectType:Units",
-          "TargetMessage": "Abil/TargetMessage/attack",
-          "OrderArray": [
-            {
-              "DisplayType": "Attack",
-              "Color": "255,255,0,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            }
-          ],
-          "SharedFlags": {
-            "DisableWhileDead": 1
-          },
-          "DataCollection": "attack",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
-          "AbilSetId": "Attack",
-          "Alignment": "Negative",
-          "AcquireFilters": "-;Player,Ally,Neutral,Dead,Hidden,Invulnerable,Benign",
-          "SmartFilters": "-;Player,Ally",
-          "SupportedFilters": "-;Self,Outer",
-          "CmdButtonArray": {
-            "Execute": {
-              "Flags": {
-                "ToSelection": 1
-              },
-              "DefaultButtonFace": "Attack"
-            },
-            "Towards": {
-              "Flags": {
-                "ToSelection": 1
-              },
-              "DefaultButtonFace": "AttackTowards"
-            },
-            "Barrage": {
-              "Flags": {
-                "ToSelection": 1
-              },
-              "DefaultButtonFace": "AttackBarrage"
-            }
-          },
-          "MaxAttackSpeedMultiplier": 128,
-          "MinAttackSpeedMultiplier": 0.25,
-          "AcquirePriority": 2,
-          "id": "attack"
-        },
-        "Cost": {
-          "Minerals": 0,
-          "Vespene": 0,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 0,
-        "Column": 4,
-        "Type": "AbilCmd",
-        "AbilCmd": "attack,Execute",
-        "id": "MothershipCoreAttack",
-        "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
-        "Name": "Attack",
-        "Hotkey": "A"
-      },
-      {
         "Cost": {
           "Minerals": 0,
           "Vespene": 0,
@@ -356,35 +263,16 @@
         "Tooltip": "Selects the unit constructing this structure.",
         "Name": "Select Builder",
         "Hotkey": "Q"
-      },
-      {
-        "Cost": {
-          "Minerals": 0,
-          "Vespene": 0,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 2,
-        "Column": 3,
-        "Type": "Passive",
-        "id": "Detector",
-        "Icon": "btn-status-detector",
-        "Tooltip": "This unit can detect cloaked, burrowed, and hallucinated units.",
-        "Name": "Detector"
       }
     ]
   },
   "id": "Stratus",
   "Height": 4,
   "VisionHeight": 4,
-  "ShieldsStart": 125,
-  "ShieldsMax": 125,
+  "ShieldsStart": 100,
+  "ShieldsMax": 100,
   "CostResource": {
-    "Minerals": 125
+    "Minerals": 100
   },
   "GlossaryCategory": "Unit/Category/KeironUnits",
   "AttackTargetPriority": 20,
@@ -422,11 +310,10 @@
   ],
   "Behaviors": [
     {
-      "id": "KeironConstructionFreeze"
+      "id": "KeironShellRestoration"
     },
     {
-      "id": "Detector9",
-      "Icon": "btn-status-detector"
+      "id": "KeironConstructionFreeze"
     }
   ],
   "Abilities": [
@@ -435,12 +322,12 @@
       "Name": "Build in Progress"
     },
     {
-      "id": "attack",
-      "Name": "Attack"
-    },
-    {
       "id": "stop",
       "Name": "Stop"
+    },
+    {
+      "id": "attack",
+      "Name": "Attack"
     }
   ],
   "$Upgrades": [
@@ -450,7 +337,8 @@
     "KeironShields",
     "KeironShieldsLevel2",
     "KeironShieldsLevel3",
-    "KeironBuild"
+    "KeironBuild",
+    "KeironShieldsRevert"
   ],
   "$Requirements": [],
   "$Production": [],
@@ -474,12 +362,6 @@
       "Icon": "btn-command-cancel",
       "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
       "Name": "Cancel"
-    },
-    {
-      "AbilCmd": "attack,Execute",
-      "id": "MothershipCoreAttack",
-      "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
-      "Name": "Attack"
     }
   ]
 }

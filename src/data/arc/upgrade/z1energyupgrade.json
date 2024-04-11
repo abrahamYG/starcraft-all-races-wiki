@@ -12,6 +12,7 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "Z1EnergyUpgrade",
+  "EditorCategories": "Race:UPL,UpgradeType:Talents",
   "$tokens": {
     "ID": {
       "type": "string",
@@ -27,6 +28,5 @@
       "Reference": "Unit,Z1,EnergyStart",
       "Value": "25"
     }
-  ],
-  "EditorCategories": "Race:UPL,UpgradeType:Talents"
+  ]
 }

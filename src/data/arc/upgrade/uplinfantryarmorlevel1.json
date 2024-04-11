@@ -12,6 +12,7 @@
   "ScoreValue": "ArmorTechnologyValue",
   "WebPriority": 0,
   "LeaderAlias": "TechInfantryArmors",
+  "EditorCategories": "Race:UPL,UpgradeType:ArmorBonus",
   "$tokens": {
     "ID": {
       "type": "string",
@@ -400,7 +401,6 @@
       "Value": "Assets\\Textures\\btn-upgrades-upl-infantryarmor-lvl1.dds"
     }
   ],
-  "EditorCategories": "Race:UPL,UpgradeType:ArmorBonus",
   "AffectedUnitArray": [
     "InfantryRifle",
     "InfantryHeavy",

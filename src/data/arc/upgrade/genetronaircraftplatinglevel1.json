@@ -12,6 +12,7 @@
   "ScoreValue": "ArmorTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "GenetronAircraftPlating",
+  "EditorCategories": "Race:Genetron,UpgradeType:ArmorBonus",
   "$tokens": {
     "ID": {
       "type": "string",
@@ -121,7 +122,6 @@
       "Value": "Assets\\Textures\\btn-upgrade-genetron-aircraftplating-level1.dds"
     }
   ],
-  "EditorCategories": "Race:Genetron,UpgradeType:ArmorBonus",
   "AffectedUnitArray": [
     "Scion_Avenger",
     "Badger",

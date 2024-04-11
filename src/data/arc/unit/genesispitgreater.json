@@ -12,6 +12,7 @@
   "ResourceType": "Unknown",
   "LifeStart": 600,
   "LifeMax": 600,
+  "LifeArmorName": "Dragon Plate Armor",
   "Mover": "Ground",
   "StationaryTurningRate": 720,
   "TurningRate": 720,
@@ -172,6 +173,7 @@
         "Type": "AbilCmd",
         "AbilCmd": "que5PassiveCancelToSelection,CancelLast",
         "id": "Cancel",
+        "Icon": "btn-command-cancel",
         "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
         "Name": "Cancel",
         "Hotkey": "Esc"
@@ -296,7 +298,7 @@
         "AbilCmd": "GreaterDeepOneTrain,Train1",
         "id": "Berserker",
         "Icon": "btn-unit-zerg-primalultralisk",
-        "Tooltip": "Durable melee unit.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span><br/><br/><span style=\"color: #00FF00\">Ascended:<br/>+90 Life<br/>+4 Damage<br/>Massive<br/>Not Light</span><br/>",
+        "Tooltip": "Durable melee unit.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span><br/><br/><span style=\"color: #00FF00\">Ascended:<br/>+75 Life<br/>+7 Damage<br/>Massive<br/>Not Light<br/>Berserk</span>",
         "Name": "Spawn Berserker",
         "Hotkey": "Q"
       },
@@ -412,7 +414,7 @@
         "AbilCmd": "GreaterDeepOneTrain,Train4",
         "id": "BrimstoneDemolisher",
         "Icon": "btn-unit-zerg-brakk",
-        "Tooltip": "Powerful massive unit. Deals heavy melee and ranged splash damage.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span><br/><br/><span style=\"color: #00FF00\">Ascended:<br/>+90 Life<br/>+100% Energy Regeneration<br/>Adaptive Armor</span>",
+        "Tooltip": "Powerful massive unit. Deals heavy melee and ranged splash damage.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span><br/><br/><span style=\"color: #00FF00\">Ascended:<br/>+75 Life<br/>+100% Energy Regeneration<br/>Adaptive Armor</span>",
         "Name": "Spawn Brimstone Demolisher",
         "Hotkey": "R"
       }
@@ -436,8 +438,7 @@
   "Weapons": [],
   "Behaviors": [
     {
-      "id": "DragonLineage",
-      "Name": "Dragon Lineage"
+      "id": "DragonLineage"
     }
   ],
   "Abilities": [
@@ -495,6 +496,7 @@
     {
       "AbilCmd": "que5PassiveCancelToSelection,CancelLast",
       "id": "Cancel",
+      "Icon": "btn-command-cancel",
       "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
       "Name": "Cancel"
     },
@@ -516,7 +518,7 @@
       "AbilCmd": "GreaterDeepOneTrain,Train1",
       "id": "Berserker",
       "Icon": "btn-unit-zerg-primalultralisk",
-      "Tooltip": "Durable melee unit.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span><br/><br/><span style=\"color: #00FF00\">Ascended:<br/>+90 Life<br/>+4 Damage<br/>Massive<br/>Not Light</span><br/>",
+      "Tooltip": "Durable melee unit.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span><br/><br/><span style=\"color: #00FF00\">Ascended:<br/>+75 Life<br/>+7 Damage<br/>Massive<br/>Not Light<br/>Berserk</span>",
       "Name": "Spawn Berserker"
     },
     {
@@ -537,7 +539,7 @@
       "AbilCmd": "GreaterDeepOneTrain,Train4",
       "id": "BrimstoneDemolisher",
       "Icon": "btn-unit-zerg-brakk",
-      "Tooltip": "Powerful massive unit. Deals heavy melee and ranged splash damage.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span><br/><br/><span style=\"color: #00FF00\">Ascended:<br/>+90 Life<br/>+100% Energy Regeneration<br/>Adaptive Armor</span>",
+      "Tooltip": "Powerful massive unit. Deals heavy melee and ranged splash damage.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span><br/><br/><span style=\"color: #00FF00\">Ascended:<br/>+75 Life<br/>+100% Energy Regeneration<br/>Adaptive Armor</span>",
       "Name": "Spawn Brimstone Demolisher"
     }
   ]

@@ -13,6 +13,7 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "EvolveGroovedSpines",
+  "EditorCategories": "Race:Zerg,UpgradeType:Spell",
   "$tokens": {
     "ID": {
       "type": "string",
@@ -32,7 +33,6 @@
       "Value": "1"
     }
   ],
-  "EditorCategories": "Race:Zerg,UpgradeType:Talents",
   "AffectedUnitArray": [
     "Hydralisk",
     "HydraliskBurrowed"

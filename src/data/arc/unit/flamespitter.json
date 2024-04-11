@@ -10,8 +10,8 @@
   "Response": "Acquire",
   "ResourceState": "Unknown",
   "ResourceType": "Unknown",
-  "LifeStart": 75,
-  "LifeMax": 75,
+  "LifeStart": 90,
+  "LifeMax": 90,
   "LifeArmorName": "Dragon Scale Armor",
   "Mover": "Ground",
   "StationaryTurningRate": 720,
@@ -1088,12 +1088,10 @@
   ],
   "Behaviors": [
     {
-      "id": "DragonLineageLesser",
-      "Name": "Dragon Lineage"
+      "id": "DragonLineageLesser"
     },
     {
-      "id": "Negative1Armor",
-      "Name": "-1 Armor"
+      "id": "Negative1Armor"
     }
   ],
   "Abilities": [
@@ -1127,10 +1125,11 @@
     }
   ],
   "$Upgrades": [
-    "LesserDeepOneTrain",
+    "ChangelingFlamespitter",
     "Flamespitter",
     "AscendedFlamespitter",
     "FlamespitterFervidReconstitution",
+    "LesserDeepOneTrain",
     "DragonMeleeAttacksLevel1",
     "DragonMeleeAttacks",
     "DragonMeleeAttacksLevel2",
@@ -1144,7 +1143,6 @@
     "DragonScaleArmors",
     "DragonScaleArmorLevel2",
     "DragonScaleArmorLevel3",
-    "ChangelingFlamespitter",
     "Flamespitter_Death"
   ],
   "$Requirements": [],

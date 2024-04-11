@@ -106,7 +106,7 @@
   "CostCategory": "Economy",
   "ScoreResult": "BuildOrder",
   "HotkeyCategory": "Unit/Category/KeironUnits",
-  "LifeRegenRate": 0.25,
+  "LifeRegenRate": 0.2734,
   "Food": 18,
   "Footprint": "FootprintCitadelContour",
   "PlacementFootprint": "FootprintCitadelDropOff",
@@ -169,6 +169,7 @@
         "Type": "AbilCmd",
         "AbilCmd": "que5,CancelLast",
         "id": "Cancel",
+        "Icon": "btn-command-cancel",
         "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
         "Name": "Cancel",
         "Hotkey": "Esc"
@@ -234,28 +235,6 @@
         "id": "CancelBuilding",
         "Icon": "btn-command-cancel",
         "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-        "Name": "Cancel",
-        "Hotkey": "Esc"
-      },
-      {
-        "Info": {},
-        "Cost": {
-          "Minerals": 0,
-          "Vespene": 0,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 2,
-        "Column": 4,
-        "Type": "AbilCmd",
-        "AbilCmd": "CitadelCharge,255",
-        "id": "CancelUpgradeMorph",
-        "Icon": "btn-command-cancel",
-        "Tooltip": "Cancels the upgrade order, returning the structure to its original state.",
         "Name": "Cancel",
         "Hotkey": "Esc"
       },
@@ -525,14 +504,14 @@
           "Cost": [
             {
               "Resource": {
-                "Minerals": 125
+                "Minerals": 175
               }
             }
           ],
           "id": "CitadelChargeMorph"
         },
         "Cost": {
-          "Minerals": 125,
+          "Minerals": 175,
           "Vespene": 0,
           "Terazine": 0,
           "Custom": 0,
@@ -550,6 +529,139 @@
         "Tooltip": "Upgrades the Citadel, unlocking the Energize ability.",
         "Name": "Charge Citadel",
         "Hotkey": "C"
+      },
+      {
+        "Info": {
+          "class": "CAbilEffectInstant",
+          "Name": "Abil/Name/CitadelEnergize",
+          "TechPlayer": "Upkeep",
+          "EditorCategories": "Race:Keiron,AbilityorEffectType:Units",
+          "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
+          "OrderArray": [
+            {
+              "DisplayType": "Confirm",
+              "Color": "255,0,255,0",
+              "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
+              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
+            }
+          ],
+          "SharedFlags": {
+            "DisableWhileDead": 1
+          },
+          "DataCollection": "CitadelEnergize",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
+          "RangeSlop": 1,
+          "ArcSlop": 11.25,
+          "AutoCastAcquireLevel": "Offensive",
+          "AutoCastFilters": "Visible;Player,Ally",
+          "Flags": {
+            "AbortOnAllianceChange": 1,
+            "CancelResetAutoCast": 1,
+            "ChannelingMinimum": 1,
+            "RangeUseCasterRadius": 1,
+            "ReApproachable": 1,
+            "RequireTargetVision": 1,
+            "WaitToSpend": 1,
+            "UpdateChargesOnLevelChange": 1
+          },
+          "Effect": [
+            "CitadelEnergize"
+          ],
+          "EffectRange": [
+            "0,1000"
+          ],
+          "AINotifyEffect": "CitadelEnergize",
+          "RefundArray": {
+            "Approach": 1,
+            "Prep": 1,
+            "Cast": 1
+          },
+          "RefundFraction": {
+            "Resource": {
+              "Minerals": -1,
+              "Vespene": -1,
+              "Terrazine": -1,
+              "Custom": -1
+            },
+            "Charge": -1,
+            "Cooldown": -1
+          },
+          "UseMarkerArray": {
+            "Approach": 1,
+            "Prep": 1,
+            "Cast": 1,
+            "Channel": 1
+          },
+          "PauseableArray": {
+            "Approach": 1,
+            "Prep": 1,
+            "Cast": 1,
+            "Channel": 1,
+            "Finish": 1
+          },
+          "PreemptableArray": {
+            "Approach": 1,
+            "Prep": 1,
+            "Cast": 1,
+            "Channel": 1,
+            "Finish": 1
+          },
+          "ValidatedArray": {
+            "Approach": 1,
+            "Prep": 1,
+            "Cast": 1,
+            "Channel": 1
+          },
+          "DefaultError": "MustTargetUnit",
+          "AcquirePriority": 3,
+          "SetLastTarget": "Unknown",
+          "VeterancyLevelMin": 0,
+          "VeterancyLevelSkip": 0,
+          "CmdButtonArray": {
+            "Execute": {
+              "Flags": {
+                "ShowInGlossary": 1
+              },
+              "DefaultButtonFace": "CitadelEnergize",
+              "Requirements": "CitadelIsCharged"
+            }
+          },
+          "Cost": [
+            {
+              "Vital": {
+                "Energy": 50
+              },
+              "Cooldown": {
+                "TimeUse": 21
+              }
+            }
+          ],
+          "id": "CitadelEnergize"
+        },
+        "Cost": {
+          "Minerals": 0,
+          "Vespene": 0,
+          "Terazine": 0,
+          "Custom": 0,
+          "Energy": 50,
+          "Life": 0,
+          "Shields": 0,
+          "Food": 0
+        },
+        "Row": 2,
+        "Column": 2,
+        "Type": "AbilCmd",
+        "AbilCmd": "CitadelEnergize,Execute",
+        "id": "CitadelEnergize",
+        "Icon": "btn-progression-protoss-fenix-10-acceleratedtech",
+        "Tooltip": "Boosts the movement speed, shield armor, and regeneration of nearby units.<br/><br/><span style=\"color: #FFFF80\">Also increases worker harvesting speeds.</span>",
+        "Name": "Energize",
+        "Hotkey": "G"
       }
     ],
     "0002": [
@@ -688,7 +800,7 @@
             "Flags": {
               "AllowMinimap": 1
             },
-            "DefaultButtonFace": "MaterializeSubjecter"
+            "DefaultButtonFace": "MaterializeCataract"
           },
           "Charge": {
             "CountMax": 500000,
@@ -701,9 +813,9 @@
             "Location": "Player"
           },
           "Time": 5,
-          "Unit": "Subjecter"
+          "Unit": "Cataract"
         },
-        "Unit": "Subjecter",
+        "Unit": "Cataract",
         "Time": 5,
         "Cost": {
           "Minerals": 125,
@@ -719,11 +831,11 @@
         "Column": 3,
         "Type": "AbilCmd",
         "AbilCmd": "KeironCitadelMaterialize,Train4",
-        "id": "MaterializeSubjecter",
-        "Icon": "btn-unit-keiron-subjecter",
+        "id": "MaterializeCataract",
+        "Icon": "btn-unit-keiron-cataract",
         "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Sanctum</span>.<br/><br/>",
-        "Name": "Materialize Subjecter",
-        "Hotkey": "S"
+        "Name": "Materialize Cataract",
+        "Hotkey": "C"
       },
       {
         "Info": {
@@ -928,7 +1040,7 @@
           "Energy": 0,
           "Life": 0,
           "Shields": 0,
-          "Food": -6
+          "Food": -5
         },
         "Row": 1,
         "Column": 2,
@@ -955,6 +1067,7 @@
         "Column": 4,
         "Type": "CancelSubmenu",
         "id": "Cancel",
+        "Icon": "btn-command-cancel",
         "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
         "Name": "Cancel",
         "Hotkey": "Esc"
@@ -1019,7 +1132,7 @@
         "AbilCmd": "KeironCitadelMaterialize,Train9",
         "id": "MaterializeTitan",
         "Icon": "btn-unit-keiron-titan",
-        "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Pantheon</span>.<br/><br/>",
+        "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Pantheon</span>.</n><br/>",
         "Name": "Materialize Titan",
         "Hotkey": "T"
       }
@@ -1099,7 +1212,7 @@
           "Energy": 0,
           "Life": 0,
           "Shields": 0,
-          "Food": -2
+          "Food": -1.5
         },
         "Row": 0,
         "Column": 1,
@@ -1107,7 +1220,6 @@
         "AbilCmd": "KeironCitadelMaterialize,Train17",
         "id": "MaterializeFuse",
         "Icon": "btn-unit-keiron-fuse",
-        "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Conduit</span>.<br/><br/>",
         "Name": "Materialize Fuse",
         "Hotkey": "F"
       },
@@ -1179,7 +1291,7 @@
         "Time": 5,
         "Cost": {
           "Minerals": 100,
-          "Vespene": 125,
+          "Vespene": 100,
           "Terazine": 0,
           "Custom": 0,
           "Energy": 0,
@@ -1310,7 +1422,7 @@
           "Energy": 0,
           "Life": 0,
           "Shields": 0,
-          "Food": -8
+          "Food": -7
         },
         "Row": 1,
         "Column": 2,
@@ -1337,6 +1449,7 @@
         "Column": 4,
         "Type": "CancelSubmenu",
         "id": "Cancel",
+        "Icon": "btn-command-cancel",
         "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
         "Name": "Cancel",
         "Hotkey": "Esc"
@@ -1366,12 +1479,12 @@
   },
   "id": "Citadel",
   "Facing": 315,
-  "ShieldsStart": 500,
-  "ShieldsMax": 500,
   "ResourceDropOff": {
     "Minerals": 1,
     "Vespene": 1
   },
+  "ShieldsStart": 500,
+  "ShieldsMax": 500,
   "CostResource": {
     "Minerals": 400
   },
@@ -1385,7 +1498,7 @@
     "Pariah",
     "Volt",
     "Pulsar",
-    "Subjecter",
+    "Cataract",
     "Crux",
     "Umbra",
     "Ward",
@@ -1443,26 +1556,27 @@
       "Name": "Keiron - Citadel Materialize"
     },
     {
-      "id": "CitadelChargeMorph",
-      "Name": "Citadel Charge Instant"
-    },
-    {
       "id": "CitadelEnergize",
       "Name": "Citadel - Energize"
+    },
+    {
+      "id": "CitadelChargeMorph",
+      "Name": "Citadel Charge Instant"
     }
   ],
   "$Upgrades": [
-    "NotCitadelNormal",
     "Keir",
+    "Citadel",
     "KeironBuild",
     "IsCitadelNormal",
     "CitadelCharged",
     "KeironShieldsLevel1",
     "Citadel",
+    "KeironCitadelPlayerDecalMacro",
     "KeironShields",
     "KeironShieldsLevel2",
     "KeironShieldsLevel3",
-    "Citadel",
+    "NotCitadelNormal",
     "KeironShieldsRevert"
   ],
   "$Requirements": [],
@@ -1479,7 +1593,7 @@
     "Pariah",
     "Volt",
     "Pulsar",
-    "Subjecter",
+    "Cataract",
     "Myriad",
     "Crux",
     "Umbra",
@@ -1499,6 +1613,7 @@
     {
       "AbilCmd": "que5,CancelLast",
       "id": "Cancel",
+      "Icon": "btn-command-cancel",
       "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
       "Name": "Cancel"
     },
@@ -1545,6 +1660,13 @@
       "Name": "Charge Citadel"
     },
     {
+      "AbilCmd": "CitadelEnergize,Execute",
+      "id": "CitadelEnergize",
+      "Icon": "btn-progression-protoss-fenix-10-acceleratedtech",
+      "Tooltip": "Boosts the movement speed, shield armor, and regeneration of nearby units.<br/><br/><span style=\"color: #FFFF80\">Also increases worker harvesting speeds.</span>",
+      "Name": "Energize"
+    },
+    {
       "AbilCmd": "KeironCitadelMaterialize,Train1",
       "id": "MaterializePariah",
       "Icon": "btn-unit-keiron-pariah",
@@ -1567,10 +1689,10 @@
     },
     {
       "AbilCmd": "KeironCitadelMaterialize,Train4",
-      "id": "MaterializeSubjecter",
-      "Icon": "btn-unit-keiron-subjecter",
+      "id": "MaterializeCataract",
+      "Icon": "btn-unit-keiron-cataract",
       "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Sanctum</span>.<br/><br/>",
-      "Name": "Materialize Subjecter"
+      "Name": "Materialize Cataract"
     },
     {
       "AbilCmd": "KeironCitadelMaterialize,Train8",
@@ -1611,7 +1733,7 @@
       "AbilCmd": "KeironCitadelMaterialize,Train9",
       "id": "MaterializeTitan",
       "Icon": "btn-unit-keiron-titan",
-      "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Pantheon</span>.<br/><br/>",
+      "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Pantheon</span>.</n><br/>",
       "Name": "Materialize Titan"
     },
     {
@@ -1625,7 +1747,6 @@
       "AbilCmd": "KeironCitadelMaterialize,Train17",
       "id": "MaterializeFuse",
       "Icon": "btn-unit-keiron-fuse",
-      "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Conduit</span>.<br/><br/>",
       "Name": "Materialize Fuse"
     },
     {

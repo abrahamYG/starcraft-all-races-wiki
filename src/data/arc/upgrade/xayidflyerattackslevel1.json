@@ -12,6 +12,7 @@
   "ScoreValue": "WeaponTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "XayidFlyerAttacks",
+  "EditorCategories": "Race:Xayid,UpgradeType:AttackBonus",
   "$tokens": {
     "ID": {
       "type": "string",
@@ -74,7 +75,6 @@
       "Value": "Assets\\Textures\\btn-upgrade-xayid-airweaponslevel1.dds"
     }
   ],
-  "EditorCategories": "Race:Xayid,UpgradeType:AttackBonus",
   "AffectedUnitArray": [
     "Raptor",
     "Assailant",

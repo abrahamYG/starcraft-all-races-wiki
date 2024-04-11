@@ -1,8 +1,12 @@
 {
   "mods": [
     {
-      "id": "VoidMulti5012",
-      "name": "VoidMulti5012"
+      "name": "LOTV 5.0.12",
+      "id": "lotv5012"
+    },
+    {
+      "name": "LOTV 5.0.13",
+      "id": "lotv5013"
     },
     {
       "id": "scion",

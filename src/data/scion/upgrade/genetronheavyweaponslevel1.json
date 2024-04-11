@@ -12,6 +12,7 @@
   "ScoreValue": "WeaponTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "GenetronHeavyWeapons",
+  "EditorCategories": "Race:Genetron,UpgradeType:AttackBonus",
   "$tokens": {
     "ID": {
       "type": "string",
@@ -27,11 +28,7 @@
     },
     {
       "Reference": "Effect,LynxCannonImpact,Amount",
-      "Value": "4"
-    },
-    {
-      "Reference": "Effect,LynxCannonImpact,AttributeBonus[Armored]",
-      "Value": "1"
+      "Value": "5"
     },
     {
       "Reference": "Effect,TwinP1Dash0Guns,Amount",
@@ -103,11 +100,10 @@
       "Value": "Assets\\Textures\\btn-upgrade-genetron-heavymechweapons-level1.dds"
     }
   ],
-  "EditorCategories": "Race:Genetron,UpgradeType:AttackBonus",
   "AffectedUnitArray": [
     "Torrent",
     "Mole",
-    "MoleBurrowed",
+    "MoleRooted",
     "Inciter",
     "Virtus"
   ],

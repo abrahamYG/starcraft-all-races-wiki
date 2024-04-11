@@ -16,7 +16,7 @@
   "Mover": "Fly",
   "StationaryTurningRate": 1499.9414,
   "TurningRate": 699.961,
-  "Radius": 0.75,
+  "Radius": 1.375,
   "SeparationRadius": 0.75,
   "MinimapRadius": 0.75,
   "EditorCategories": "ObjectType:Unit,ObjectFamily:Melee",
@@ -663,7 +663,8 @@
         "id": "ButtonStrikeFighterGroundAttack",
         "Icon": "btn-ability-protoss-voidrayprismaticalignment",
         "Tooltip": "Take on board weapons against ground targets.",
-        "Name": "Anti-ground mode"
+        "Name": "Anti-ground mode",
+        "Hotkey": "E"
       },
       {
         "Info": {
@@ -795,7 +796,8 @@
         "id": "ButtonStrikeFighterAirAttack",
         "Icon": "btn-ability-stetmann-corruptormissilebarrage",
         "Tooltip": "Take on board weapons against aerial targets.",
-        "Name": "Anti-aircraft mode"
+        "Name": "Anti-aircraft mode",
+        "Hotkey": "R"
       },
       {
         "Info": {
@@ -903,7 +905,7 @@
           "Cost": [
             {
               "Cooldown": {
-                "TimeUse": 18
+                "TimeUse": 15
               }
             }
           ],
@@ -926,7 +928,8 @@
         "id": "ButtonStrikeFighterSpeed",
         "Icon": "btn-upgrade-terran-nova-specialordance",
         "Tooltip": "The speed of movement increases significantly within 4 seconds.",
-        "Name": "Plasma fuel"
+        "Name": "Plasma fuel",
+        "Hotkey": "W"
       }
     ]
   },

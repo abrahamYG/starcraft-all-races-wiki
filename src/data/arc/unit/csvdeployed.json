@@ -505,7 +505,7 @@
           "Food": -6
         },
         "Row": 2,
-        "Column": 1,
+        "Column": 0,
         "Type": "AbilCmd",
         "AbilCmd": "CSVDeploy,Execute",
         "id": "CSVDeploy",
@@ -884,9 +884,9 @@
             "TargetNotStasis"
           ],
           "DeathUnloadEffect": "TransportUnloadDeath",
-          "id": "CSVTransport",
           "LoadCargoEffect": "UPLOspreyTransportCargoLoad",
-          "UnloadCargoEffect": "UPLOspreyTransportCargoUnload"
+          "UnloadCargoEffect": "UPLOspreyTransportCargoUnload",
+          "id": "CSVTransport"
         },
         "Cost": {
           "Minerals": 0,
@@ -898,8 +898,8 @@
           "Shields": 0,
           "Food": 0
         },
-        "Row": 1,
-        "Column": 3,
+        "Row": 2,
+        "Column": 4,
         "Type": "AbilCmd",
         "AbilCmd": "CSVTransport,UnloadAll",
         "id": "CSVUnloadAll",
@@ -1190,9 +1190,9 @@
             "TargetNotStasis"
           ],
           "DeathUnloadEffect": "TransportUnloadDeath",
-          "id": "CSVTransport",
           "LoadCargoEffect": "UPLOspreyTransportCargoLoad",
-          "UnloadCargoEffect": "UPLOspreyTransportCargoUnload"
+          "UnloadCargoEffect": "UPLOspreyTransportCargoUnload",
+          "id": "CSVTransport"
         },
         "Cost": {
           "Minerals": 0,
@@ -1205,7 +1205,7 @@
           "Food": 0
         },
         "Row": 1,
-        "Column": 2,
+        "Column": 3,
         "Type": "AbilCmd",
         "AbilCmd": "CSVTransport,Load",
         "id": "CSVLoad",

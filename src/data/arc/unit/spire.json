@@ -179,12 +179,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -250,12 +244,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -279,7 +267,10 @@
               "DefaultButtonFace": "Cancel"
             },
             "Halt": {
-              "DefaultButtonFace": "Cancel"
+              "DefaultButtonFace": "Halt",
+              "Flags": {
+                "ToSelection": 1
+              }
             }
           },
           "id": "BuildInProgress"
@@ -481,16 +472,16 @@
             "Requirements": "LearnZergFlyerArmor1"
           },
           "Resource": {
-            "Minerals": 150,
-            "Vespene": 150
+            "Minerals": 100,
+            "Vespene": 100
           },
           "Time": 160,
           "Upgrade": "ZergFlyerArmorsLevel1"
         },
         "Time": 160,
         "Cost": {
-          "Minerals": 150,
-          "Vespene": 150,
+          "Minerals": 100,
+          "Vespene": 100,
           "Terazine": 0,
           "Custom": 0,
           "Energy": 0,
@@ -520,16 +511,16 @@
             "Requirements": "LearnZergFlyerArmor2"
           },
           "Resource": {
-            "Minerals": 225,
-            "Vespene": 225
+            "Minerals": 175,
+            "Vespene": 175
           },
           "Time": 190,
           "Upgrade": "ZergFlyerArmorsLevel2"
         },
         "Time": 190,
         "Cost": {
-          "Minerals": 225,
-          "Vespene": 225,
+          "Minerals": 175,
+          "Vespene": 175,
           "Terazine": 0,
           "Custom": 0,
           "Energy": 0,
@@ -559,16 +550,16 @@
             "Requirements": "LearnZergFlyerArmor3"
           },
           "Resource": {
-            "Minerals": 300,
-            "Vespene": 300
+            "Minerals": 250,
+            "Vespene": 250
           },
           "Time": 220,
           "Upgrade": "ZergFlyerArmorsLevel3"
         },
         "Time": 220,
         "Cost": {
-          "Minerals": 300,
-          "Vespene": 300,
+          "Minerals": 250,
+          "Vespene": 250,
           "Terazine": 0,
           "Custom": 0,
           "Energy": 0,
@@ -634,13 +625,13 @@
     }
   ],
   "$Upgrades": [
-    "CountUnitAlias_SpireCompleteOnly836078744TechTreeCheat",
-    "Spire",
     "ZergBuild",
+    "Spire",
+    "CountUnitAlias_SpireCompleteOnly836078744TechTreeCheat",
     "IsSpire",
     "Spire",
-    "NotSpire",
-    "Spire"
+    "UPLRenameZerg",
+    "NotSpire"
   ],
   "$Requirements": [],
   "$Production": [],

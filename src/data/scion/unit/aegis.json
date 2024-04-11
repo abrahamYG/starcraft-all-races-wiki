@@ -81,14 +81,10 @@
   "PlaneArray": [
     "Air"
   ],
-  "Collide": [
-    "Flying"
-  ],
-  "LifeRegenRate": 0.1718,
-  "ShieldRegenDelay": 4,
-  "ShieldRegenRate": 1.25,
+  "Collide": [],
+  "LifeRegenRate": 0.2734,
   "Acceleration": 0,
-  "Sight": 9,
+  "Sight": 11,
   "CostCategory": "Army",
   "AttackTargetPriority": 20,
   "CardLayouts": {
@@ -101,12 +97,6 @@
           "EditorCategories": "Race:Neutral,AbilityorEffectType:Units",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -186,12 +176,6 @@
               "Color": "255,255,0,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -266,12 +250,6 @@
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
@@ -414,22 +392,248 @@
       },
       {
         "Info": {
-          "SectionArray": {
-            "Abils": {
-              "DurationArray": {
-                "Delay": 0.0625
-              },
-              "EffectArray": {
-                "Start": "AegisShieldRestore"
-              }
+          "class": "CAbilEffectInstant",
+          "Name": "Abil/Name/AegisActivateShield",
+          "TechPlayer": "Upkeep",
+          "EditorCategories": "Race:Keiron,AbilityorEffectType:Units",
+          "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
+          "OrderArray": [
+            {
+              "DisplayType": "Confirm",
+              "Color": "255,0,255,0",
+              "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
+              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
+            }
+          ],
+          "SharedFlags": {
+            "DisableWhileDead": 1
+          },
+          "DataCollection": "AegisActivateShield",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
             }
           },
-          "Unit": "AegisShielded"
+          "RangeSlop": 1,
+          "ArcSlop": 11.25,
+          "AutoCastAcquireLevel": "Offensive",
+          "AutoCastFilters": "Visible;Player,Ally",
+          "Flags": {
+            "AbortOnAllianceChange": 1,
+            "CancelResetAutoCast": 1,
+            "ChannelingMinimum": 1,
+            "RangeUseCasterRadius": 1,
+            "ReApproachable": 1,
+            "RequireTargetVision": 1,
+            "WaitToSpend": 1,
+            "UpdateChargesOnLevelChange": 1
+          },
+          "Effect": [
+            "AegisShieldAuraActivationSet"
+          ],
+          "EffectRange": [
+            "0,1000"
+          ],
+          "AINotifyEffect": "AegisActivateShield",
+          "RefundArray": {
+            "Approach": 1,
+            "Prep": 1,
+            "Cast": 1
+          },
+          "RefundFraction": {
+            "Resource": {
+              "Minerals": -1,
+              "Vespene": -1,
+              "Terrazine": -1,
+              "Custom": -1
+            },
+            "Charge": -1,
+            "Cooldown": -1
+          },
+          "UseMarkerArray": {
+            "Approach": 1,
+            "Prep": 1,
+            "Cast": 1,
+            "Channel": 1
+          },
+          "PauseableArray": {
+            "Approach": 1,
+            "Prep": 1,
+            "Cast": 1,
+            "Channel": 1,
+            "Finish": 1
+          },
+          "PreemptableArray": {
+            "Approach": 1,
+            "Prep": 1,
+            "Cast": 1,
+            "Channel": 1,
+            "Finish": 1
+          },
+          "ValidatedArray": {
+            "Approach": 1,
+            "Prep": 1,
+            "Cast": 1,
+            "Channel": 1
+          },
+          "DefaultError": "MustTargetUnit",
+          "AcquirePriority": 3,
+          "SetLastTarget": "Unknown",
+          "VeterancyLevelMin": 0,
+          "VeterancyLevelSkip": 0,
+          "CmdButtonArray": {
+            "Execute": {
+              "Flags": {
+                "ShowInGlossary": 1
+              },
+              "DefaultButtonFace": "ActivateShield"
+            }
+          },
+          "Cost": [
+            {
+              "Vital": {
+                "Energy": 25
+              },
+              "Cooldown": {
+                "TimeUse": 28
+              }
+            }
+          ],
+          "id": "AegisActivateShield"
         },
-        "Unit": "AegisShielded",
         "Cost": {
-          "Minerals": 400,
-          "Vespene": 400,
+          "Minerals": 0,
+          "Vespene": 0,
+          "Terazine": 0,
+          "Custom": 0,
+          "Energy": 25,
+          "Life": 0,
+          "Shields": 0,
+          "Food": 0
+        },
+        "Row": 2,
+        "Column": 1,
+        "Type": "AbilCmd",
+        "AbilCmd": "AegisActivateShield,Execute",
+        "id": "ActivateShield",
+        "Icon": "btn-ability-keiron-aegisshield",
+        "Tooltip": "Activates a shield, rendering all friendly units within it invulnerable to attack. Enemy units are unable to enter the shields area.",
+        "Name": "Activate Shield",
+        "Hotkey": "C"
+      },
+      {
+        "Info": {
+          "class": "CAbilEffectInstant",
+          "Name": "Abil/Name/AegisDeactivateShield",
+          "TechPlayer": "Upkeep",
+          "EditorCategories": "Race:Keiron,AbilityorEffectType:Units",
+          "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
+          "OrderArray": [
+            {
+              "DisplayType": "Confirm",
+              "Color": "255,0,255,0",
+              "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
+              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
+            }
+          ],
+          "SharedFlags": {
+            "DisableWhileDead": 1
+          },
+          "DataCollection": "AegisDeactivateShield",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
+          "RangeSlop": 1,
+          "ArcSlop": 11.25,
+          "AutoCastAcquireLevel": "Offensive",
+          "AutoCastFilters": "Visible;Player,Ally",
+          "Flags": {
+            "AbortOnAllianceChange": 1,
+            "CancelResetAutoCast": 1,
+            "ChannelingMinimum": 1,
+            "RangeUseCasterRadius": 1,
+            "ReApproachable": 1,
+            "RequireTargetVision": 1,
+            "WaitToSpend": 1,
+            "UpdateChargesOnLevelChange": 1
+          },
+          "Effect": [
+            "AegisDeactivateShield"
+          ],
+          "EffectRange": [
+            "0,1000"
+          ],
+          "AINotifyEffect": "AegisDeactivateShield",
+          "RefundArray": {
+            "Approach": 1,
+            "Prep": 1,
+            "Cast": 1
+          },
+          "RefundFraction": {
+            "Resource": {
+              "Minerals": -1,
+              "Vespene": -1,
+              "Terrazine": -1,
+              "Custom": -1
+            },
+            "Charge": -1,
+            "Cooldown": -1
+          },
+          "UseMarkerArray": {
+            "Approach": 1,
+            "Prep": 1,
+            "Cast": 1,
+            "Channel": 1
+          },
+          "PauseableArray": {
+            "Approach": 1,
+            "Prep": 1,
+            "Cast": 1,
+            "Channel": 1,
+            "Finish": 1
+          },
+          "PreemptableArray": {
+            "Approach": 1,
+            "Prep": 1,
+            "Cast": 1,
+            "Channel": 1,
+            "Finish": 1
+          },
+          "ValidatedArray": {
+            "Approach": 1,
+            "Prep": 1,
+            "Cast": 1,
+            "Channel": 1
+          },
+          "DefaultError": "MustTargetUnit",
+          "AcquirePriority": 3,
+          "SetLastTarget": "Unknown",
+          "VeterancyLevelMin": 0,
+          "VeterancyLevelSkip": 0,
+          "CmdButtonArray": {
+            "Execute": {
+              "Flags": {
+                "ShowInGlossary": 1
+              },
+              "DefaultButtonFace": "Cancel",
+              "Requirements": "AegisDeactivate"
+            }
+          },
+          "FinishTime": [
+            0.5
+          ],
+          "UninterruptibleArray": {
+            "Finish": 1
+          },
+          "id": "AegisDeactivateShield"
+        },
+        "Cost": {
+          "Minerals": 0,
+          "Vespene": 0,
           "Terazine": 0,
           "Custom": 0,
           "Energy": 0,
@@ -438,14 +642,14 @@
           "Food": 0
         },
         "Row": 2,
-        "Column": 1,
+        "Column": 4,
         "Type": "AbilCmd",
-        "AbilCmd": "AegisMorphToShielded,Execute",
-        "id": "ActivateShield",
-        "Icon": "btn-ability-keiron-aegisshield",
-        "Tooltip": "Activates a shield, rendering all friendly units within it invulnerable to attack. Enemy units are unable to enter the shields area.",
-        "Name": "Activate Shield",
-        "Hotkey": "C"
+        "AbilCmd": "AegisDeactivateShield,Execute",
+        "id": "Cancel",
+        "Icon": "btn-command-cancel",
+        "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
+        "Name": "Cancel",
+        "Hotkey": "Esc"
       }
     ]
   },
@@ -473,7 +677,7 @@
   ],
   "LifeArmor": 3,
   "EnergyStart": 50,
-  "EnergyMax": 200,
+  "EnergyMax": 100,
   "EnergyRegenRate": 0.5625,
   "ShieldsStart": 400,
   "ShieldsMax": 400,
@@ -482,7 +686,7 @@
     "Vespene": 400
   },
   "SubgroupPriority": 35,
-  "GlossaryPriority": 140,
+  "GlossaryPriority": 50,
   "TechAliasArray": [
     "Alias_Aegis"
   ],
@@ -501,7 +705,11 @@
       "Period": 1
     }
   ],
-  "Behaviors": [],
+  "Behaviors": [
+    {
+      "id": "KeironShellRestoration"
+    }
+  ],
   "Abilities": [
     {
       "id": "stop",
@@ -516,19 +724,18 @@
       "Name": "Aegis Relocate"
     },
     {
-      "id": "AegisMorphToShielded",
-      "Name": "Aegis - Morph To Shielded"
+      "id": "AegisActivateShield",
+      "Name": "Aegis - Activate Shield"
     },
     {
-      "id": "AegisMorphToNormal",
-      "Name": "Aegis - Morph To Normal"
+      "id": "AegisDeactivateShield",
+      "Name": "Aegis - Deactivate Shield"
     }
   ],
   "$Upgrades": [
-    "KeironCitadelAegisTrain",
+    "NotAegis",
     "Aegis",
-    "AegisShielded",
-    "AegisMorphToNormal",
+    "KeironCitadelAegisTrain",
     "CitadelCharged",
     "KeironShieldsLevel1",
     "Aegis",
@@ -536,14 +743,12 @@
     "KeironShieldsLevel2",
     "KeironShieldsLevel3",
     "Citadel",
-    "NotAegisNormal"
+    "KeironShieldsRevert"
   ],
   "$Requirements": [],
   "$Production": [],
   "$Research": [],
-  "$Morph": [
-    "AegisShielded"
-  ],
+  "$Morph": [],
   "$Phase": [],
   "$Producers": [
     "Citadel",
@@ -572,11 +777,18 @@
       "Name": "Relocate"
     },
     {
-      "AbilCmd": "AegisMorphToShielded,Execute",
+      "AbilCmd": "AegisActivateShield,Execute",
       "id": "ActivateShield",
       "Icon": "btn-ability-keiron-aegisshield",
       "Tooltip": "Activates a shield, rendering all friendly units within it invulnerable to attack. Enemy units are unable to enter the shields area.",
       "Name": "Activate Shield"
+    },
+    {
+      "AbilCmd": "AegisDeactivateShield,Execute",
+      "id": "Cancel",
+      "Icon": "btn-command-cancel",
+      "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
+      "Name": "Cancel"
     }
   ]
 }

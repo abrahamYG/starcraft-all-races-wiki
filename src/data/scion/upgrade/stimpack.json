@@ -12,6 +12,7 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "Stimpack",
+  "EditorCategories": "Race:Terran,UpgradeType:Spell",
   "$tokens": {
     "ID": {
       "type": "string",
@@ -19,7 +20,6 @@
     }
   },
   "InfoTooltipPriority": 1,
-  "EditorCategories": "Race:Terran,UpgradeType:Talents",
   "Race": "Terr",
   "ScoreResult": "BuildOrder",
   "AffectedUnitArray": [

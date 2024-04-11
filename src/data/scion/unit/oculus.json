@@ -98,17 +98,15 @@
     "Structure"
   ],
   "LifeArmor": 1,
-  "Sight": 13,
+  "Sight": 14,
   "CostCategory": "Technology",
   "ScoreResult": "BuildOrder",
   "HotkeyCategory": "Unit/Category/KeironUnits",
-  "LifeRegenRate": 0.25,
+  "LifeRegenRate": 0.2734,
   "Food": 0,
   "Footprint": "Footprint2x2Contour",
   "PlacementFootprint": "Footprint2x2",
   "ShieldArmorName": "Keiron Dispersion Shields",
-  "ShieldRegenDelay": 4,
-  "ShieldRegenRate": 1.25,
   "CardLayouts": {
     "Root": [
       {
@@ -119,12 +117,6 @@
           "EditorCategories": "Race:Neutral,AbilityorEffectType:Units",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -214,12 +206,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -248,12 +234,12 @@
             "BestUnit": 1
           },
           "Effect": [
-            "OculusReveal"
+            "OculusRevealInit"
           ],
           "EffectRange": [
             "0,1000"
           ],
-          "AINotifyEffect": "OculusReveal",
+          "AINotifyEffect": "OculusRevealVision",
           "RefundArray": {
             "Approach": 1,
             "Prep": 1,
@@ -305,7 +291,8 @@
               "Flags": {
                 "ShowInGlossary": 1
               },
-              "DefaultButtonFace": "Reveal"
+              "DefaultButtonFace": "Reveal",
+              "Requirements": "OculusIsCharged"
             }
           },
           "FollowRange": 5,
@@ -317,11 +304,11 @@
             }
           ],
           "Range": [
-            40
+            45
           ],
           "Arc": 360,
           "CursorEffect": [
-            "OculusReveal"
+            "OculusRevealVision"
           ],
           "id": "OculusReveal"
         },
@@ -353,12 +340,6 @@
           "EditorCategories": "Race:Neutral,AbilityorEffectType:Units",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -424,16 +405,164 @@
         "Tooltip": "Orders selected units to cancel all orders and stop moving.",
         "Name": "Stop",
         "Hotkey": "S"
+      },
+      {
+        "Cost": {
+          "Minerals": 0,
+          "Vespene": 0,
+          "Terazine": 0,
+          "Custom": 0,
+          "Energy": 0,
+          "Life": 0,
+          "Shields": 0,
+          "Food": 0
+        },
+        "Row": 2,
+        "Column": 3,
+        "Type": "Passive",
+        "id": "Detector",
+        "Icon": "btn-status-detector",
+        "Tooltip": "This unit can detect cloaked, burrowed, and hallucinated units.",
+        "Name": "Detector"
+      },
+      {
+        "Info": {
+          "class": "CAbilEffectInstant",
+          "Name": "Abil/Name/OculusChargeInstant",
+          "TechPlayer": "Upkeep",
+          "EditorCategories": "Race:Keiron,AbilityorEffectType:Units",
+          "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
+          "OrderArray": [
+            {
+              "DisplayType": "Confirm",
+              "Color": "255,0,255,0",
+              "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
+              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
+            }
+          ],
+          "SharedFlags": {
+            "DisableWhileDead": 1
+          },
+          "DataCollection": "OculusChargeInstant",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
+          "RangeSlop": 1,
+          "ArcSlop": 11.25,
+          "AutoCastAcquireLevel": "Offensive",
+          "AutoCastFilters": "Visible;Player,Ally",
+          "Flags": {
+            "AbortOnAllianceChange": 1,
+            "CancelResetAutoCast": 1,
+            "ChannelingMinimum": 1,
+            "RangeUseCasterRadius": 1,
+            "ReApproachable": 1,
+            "RequireTargetVision": 1,
+            "WaitToSpend": 1,
+            "UpdateChargesOnLevelChange": 1,
+            "Transient": 1
+          },
+          "Effect": [
+            "OculusChargeInstant"
+          ],
+          "EffectRange": [
+            "0,1000"
+          ],
+          "AINotifyEffect": "OculusChargeInstant",
+          "RefundArray": {
+            "Approach": 1,
+            "Prep": 1,
+            "Cast": 1
+          },
+          "RefundFraction": {
+            "Resource": {
+              "Minerals": -1,
+              "Vespene": -1,
+              "Terrazine": -1,
+              "Custom": -1
+            },
+            "Charge": -1,
+            "Cooldown": -1
+          },
+          "UseMarkerArray": {
+            "Approach": 1,
+            "Prep": 1,
+            "Cast": 1,
+            "Channel": 1
+          },
+          "PauseableArray": {
+            "Approach": 1,
+            "Prep": 1,
+            "Cast": 1,
+            "Channel": 1,
+            "Finish": 1
+          },
+          "PreemptableArray": {
+            "Approach": 1,
+            "Prep": 1,
+            "Cast": 1,
+            "Channel": 1,
+            "Finish": 1
+          },
+          "ValidatedArray": {
+            "Approach": 1,
+            "Prep": 1,
+            "Cast": 1,
+            "Channel": 1
+          },
+          "DefaultError": "MustTargetUnit",
+          "AcquirePriority": 3,
+          "SetLastTarget": "Unknown",
+          "VeterancyLevelMin": 0,
+          "VeterancyLevelSkip": 0,
+          "CmdButtonArray": {
+            "Execute": {
+              "Flags": {
+                "ShowInGlossary": 1
+              },
+              "DefaultButtonFace": "ChargeOculus"
+            }
+          },
+          "Cost": [
+            {
+              "Resource": {
+                "Vespene": 75
+              }
+            }
+          ],
+          "id": "OculusChargeInstant"
+        },
+        "Cost": {
+          "Minerals": 0,
+          "Vespene": 75,
+          "Terazine": 0,
+          "Custom": 0,
+          "Energy": 0,
+          "Life": 0,
+          "Shields": 0,
+          "Food": 0
+        },
+        "Row": 0,
+        "Column": 4,
+        "Type": "AbilCmd",
+        "AbilCmd": "OculusChargeInstant,Execute",
+        "id": "ChargeOculus",
+        "Icon": "btn-ability-keiron-oculuscharge",
+        "Tooltip": "Upgrades the Oculus, unlocking the Reveal ability.",
+        "Name": "Charge Oculus",
+        "Hotkey": "C"
       }
     ]
   },
   "id": "Oculus",
   "Facing": 45,
-  "ShieldsStart": 200,
-  "ShieldsMax": 200,
+  "ShieldsStart": 100,
+  "ShieldsMax": 100,
   "CostResource": {
-    "Minerals": 75,
-    "Vespene": 50
+    "Minerals": 75
   },
   "GlossaryPriority": 53,
   "ScoreMake": 125,
@@ -445,10 +574,14 @@
   "Weapons": [],
   "Behaviors": [
     {
-      "id": "Detector12",
-      "Icon": "btn-status-detector",
-      "Tooltip": "This unit can detect cloaked or burrowed units within its sight range.",
-      "Name": "Detector"
+      "id": "KeironShellRestoration"
+    },
+    {
+      "id": "Detector14",
+      "Icon": "btn-status-detector"
+    },
+    {
+      "id": "UnderConstruction"
     }
   ],
   "Abilities": [
@@ -463,21 +596,29 @@
     {
       "id": "OculusReveal",
       "Name": "Oculus - Reveal"
+    },
+    {
+      "id": "OculusChargeInstant",
+      "Name": "Oculus Charge Instant"
     }
   ],
   "$Upgrades": [
     "KeironShieldsLevel1",
     "Oculus",
+    "OculusCharged",
     "Oculus",
     "KeironShields",
     "KeironShieldsLevel2",
     "KeironShieldsLevel3",
-    "KeironBuild"
+    "KeironBuild",
+    "KeironShieldsRevert"
   ],
   "$Requirements": [],
   "$Production": [],
   "$Research": [],
-  "$Morph": [],
+  "$Morph": [
+    "OculusCharged"
+  ],
   "$Phase": [],
   "$Producers": [
     "Converter"
@@ -503,6 +644,13 @@
       "Icon": "btn-command-stop",
       "Tooltip": "Orders selected units to cancel all orders and stop moving.",
       "Name": "Stop"
+    },
+    {
+      "AbilCmd": "OculusChargeInstant,Execute",
+      "id": "ChargeOculus",
+      "Icon": "btn-ability-keiron-oculuscharge",
+      "Tooltip": "Upgrades the Oculus, unlocking the Reveal ability.",
+      "Name": "Charge Oculus"
     }
   ]
 }

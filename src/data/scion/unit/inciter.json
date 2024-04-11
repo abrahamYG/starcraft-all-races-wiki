@@ -1,6 +1,6 @@
 {
   "Name": "Inciter",
-  "Description": "Grenade attacker. Can jump up and down cliffs. Can use ELOR Protocol.<br/><br/><span style=\"color: #f078ff\">Energy user.</span><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
+  "Description": "Grenade attacker. Can jump up and down cliffs. Can use ELOR Protocol.<br/><br/><span style=\"color: #78F0FF\">Power user.</span><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -10,15 +10,15 @@
   "Response": "Acquire",
   "ResourceState": "Unknown",
   "ResourceType": "Unknown",
-  "LifeStart": 210,
-  "LifeMax": 210,
+  "LifeStart": 185,
+  "LifeMax": 185,
   "LifeArmorName": "Ground Mechanical Plating",
   "Mover": "CliffJumper",
   "StationaryTurningRate": 990,
   "TurningRate": 360,
   "Radius": 0.75,
-  "SeparationRadius": 0.5,
-  "MinimapRadius": 0.5,
+  "SeparationRadius": 0.75,
+  "MinimapRadius": 0.75,
   "EditorCategories": "ObjectType:Unit,ObjectFamily:Melee",
   "TacticalAIFilters": "-;Player,Ally,Neutral",
   "AIEvalFactor": 1,
@@ -108,7 +108,7 @@
     "Vespene": 1
   },
   "id": "Inciter",
-  "Speed": 3,
+  "Speed": 3.125,
   "Acceleration": 15,
   "CostCategory": "Army",
   "CardLayouts": {
@@ -125,12 +125,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -224,12 +218,6 @@
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
               "DisplayType": "Move",
               "Color": "255,35,125,255",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
@@ -318,12 +306,6 @@
               "Color": "255,255,0,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -394,12 +376,6 @@
           "EditorCategories": "Race:Neutral,AbilityorEffectType:Units",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -478,12 +454,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -584,7 +554,7 @@
       {
         "Info": {
           "class": "CAbilEffectTarget",
-          "Name": "Abil/Name/ELORProtocol",
+          "Name": "Abil/Name/InciterELORProtocol",
           "TechPlayer": "Upkeep",
           "EditorCategories": "Race:Genetron,AbilityorEffectType:Units",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
@@ -594,18 +564,12 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
             "DisableWhileDead": 1
           },
-          "DataCollection": "ELORProtocol",
+          "DataCollection": "InciterELORProtocol",
           "$tokens": {
             "ID": {
               "type": "string",
@@ -629,7 +593,7 @@
             "AllowMovement": 1
           },
           "Effect": [
-            "ELORProtocol"
+            "ELORProtocolInitTarget"
           ],
           "EffectRange": [
             "1,500"
@@ -686,14 +650,15 @@
               "Flags": {
                 "ShowInGlossary": 1
               },
-              "DefaultButtonFace": "ELORProtocol"
+              "DefaultButtonFace": "ELORProtocol",
+              "Requirements": "InciterELORReq"
             }
           },
           "FollowRange": 5,
           "Cost": [
             {
               "Vital": {
-                "Energy": 50
+                "Energy": 75
               }
             }
           ],
@@ -703,14 +668,15 @@
           "Range": [
             10
           ],
-          "id": "ELORProtocol"
+          "Arc": 225,
+          "id": "InciterELORProtocol"
         },
         "Cost": {
           "Minerals": 0,
           "Vespene": 0,
           "Terazine": 0,
           "Custom": 0,
-          "Energy": 50,
+          "Energy": 75,
           "Life": 0,
           "Shields": 0,
           "Food": 0
@@ -718,12 +684,87 @@
         "Row": 2,
         "Column": 0,
         "Type": "AbilCmd",
-        "AbilCmd": "ELORProtocol,Execute",
+        "AbilCmd": "InciterELORProtocol,Execute",
         "id": "ELORProtocol",
         "Icon": "btn-ability-genetron-elorprotocol",
-        "Tooltip": "Relocates the <span style=\"color: #FFFF80\">Inciter</span> to the target location.",
+        "Tooltip": "Relocates the <span style=\"color: #FFFF80\">Inciter</span> to the target location.<br/><br/><span style=\"color: #78F0FF\">Uses <b>75</b> power.</span>",
         "Name": "ELOR Protocol",
         "Hotkey": "E"
+      },
+      {
+        "Info": {
+          "class": "CAbilAttack",
+          "Name": "Abil/Name/attack",
+          "TechPlayer": "Upkeep",
+          "EditorCategories": "Race:Neutral,AbilityorEffectType:Units",
+          "TargetMessage": "Abil/TargetMessage/attack",
+          "OrderArray": [
+            {
+              "DisplayType": "Attack",
+              "Color": "255,255,0,0",
+              "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
+              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
+            }
+          ],
+          "SharedFlags": {
+            "DisableWhileDead": 1
+          },
+          "DataCollection": "attack",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
+          "AbilSetId": "Attack",
+          "Alignment": "Negative",
+          "AcquireFilters": "-;Player,Ally,Neutral,Dead,Hidden,Invulnerable,Benign",
+          "SmartFilters": "-;Player,Ally",
+          "SupportedFilters": "-;Self,Outer",
+          "CmdButtonArray": {
+            "Execute": {
+              "Flags": {
+                "ToSelection": 1
+              },
+              "DefaultButtonFace": "Attack"
+            },
+            "Towards": {
+              "Flags": {
+                "ToSelection": 1
+              },
+              "DefaultButtonFace": "AttackTowards"
+            },
+            "Barrage": {
+              "Flags": {
+                "ToSelection": 1
+              },
+              "DefaultButtonFace": "AttackBarrage"
+            }
+          },
+          "MaxAttackSpeedMultiplier": 128,
+          "MinAttackSpeedMultiplier": 0.25,
+          "AcquirePriority": 2,
+          "id": "attack"
+        },
+        "Cost": {
+          "Minerals": 0,
+          "Vespene": 0,
+          "Terazine": 0,
+          "Custom": 0,
+          "Energy": 0,
+          "Life": 0,
+          "Shields": 0,
+          "Food": 0
+        },
+        "Row": 1,
+        "Column": 4,
+        "Type": "AbilCmd",
+        "AbilCmd": "attack,Barrage",
+        "id": "AttackBarrage",
+        "Icon": "btn-command-attack",
+        "Tooltip": "Orders the selected units which can use this function to fire upon the selected point on the ground.",
+        "Name": "Attack Ground",
+        "Hotkey": "G"
       }
     ]
   },
@@ -731,12 +772,12 @@
   "Height": 0.15,
   "Food": -3,
   "CostResource": {
-    "Minerals": 150,
-    "Vespene": 150
+    "Minerals": 175,
+    "Vespene": 125
   },
   "RepairTime": 56,
-  "InnerRadius": 0.5,
-  "SubgroupPriority": 30,
+  "InnerRadius": 0.375,
+  "SubgroupPriority": 31,
   "GlossaryPriority": 9,
   "GlossaryStrongArray": [
     "Spitfire",
@@ -750,8 +791,9 @@
     "Marauder",
     "Roach"
   ],
-  "EnergyStart": 100,
-  "EnergyMax": 100,
+  "EnergyStart": 75,
+  "EnergyMax": 75,
+  "EnergyRegenRate": 1.6875,
   "Icon": "btn-unit-genetron-inciter",
   "LifeArmorIcon": "btn-upgrade-genetron-groundmechplating-level0",
   "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
@@ -760,9 +802,9 @@
       "id": "HalifaxGrenades",
       "Icon": "btn-upgrade-genetron-heavymechweapons-level0",
       "Name": "Halifax Grenades",
-      "Amount": 8,
+      "Amount": 12,
       "AttributeBonus": {
-        "Light": 8
+        "Light": 4
       },
       "Kind": "Ranged",
       "DisplayAttackCount": 2,
@@ -773,11 +815,17 @@
   ],
   "Behaviors": [
     {
-      "id": "InciterJump",
-      "Icon": "btn-ability-genetron-incitercliffjump"
+      "id": "GenetronPowerSupplyTracker"
     },
     {
-      "id": "GenetronUnitEnergyRegenx2"
+      "id": "TrackGenetronPowerSupplyUnit"
+    },
+    {
+      "id": "InciterJump",
+      "Icon": "btn-ability-genetron-cliffjump-inciter"
+    },
+    {
+      "id": "InciterELORReq"
     }
   ],
   "Abilities": [
@@ -794,25 +842,29 @@
       "Name": "Attack"
     },
     {
-      "id": "ELORProtocol",
-      "Name": "ELOR Protocol"
+      "id": "InciterELORProtocol",
+      "Name": "Inciter - ELOR Protocol"
     }
   ],
   "$Upgrades": [
-    "TrainHeavyweightMechs",
+    "GenetronGroundPlatingLevel1",
     "Inciter",
+    "Inciter",
+    "GenetronGroundPlating",
     "GenetronHeavyWeaponsLevel1",
     "GenetronHeavyWeapons",
     "GenetronHeavyWeaponsLevel2",
     "GenetronHeavyWeaponsLevel3",
-    "Fabricator",
-    "OutfittingStation",
-    "GenetronGroundPlatingLevel1",
-    "Inciter",
-    "GenetronGroundPlating",
+    "TechVault",
     "GenetronGroundPlatingLevel2",
     "GenetronGroundPlatingLevel3",
+    "TrainHeavyweightMechs",
+    "CountUnitInciterQueuedOrBetterAtUnit",
     "Fabricator",
+    "Fabricator",
+    "CountUnitInciterInProgressOnlyAtUnit",
+    "GenetronGroundPlatingRevert",
+    "GenetronHeavyWeaponsRevert",
     "IsInciter"
   ],
   "$Requirements": [],
@@ -862,11 +914,18 @@
       "Name": "Move"
     },
     {
-      "AbilCmd": "ELORProtocol,Execute",
+      "AbilCmd": "InciterELORProtocol,Execute",
       "id": "ELORProtocol",
       "Icon": "btn-ability-genetron-elorprotocol",
-      "Tooltip": "Relocates the <span style=\"color: #FFFF80\">Inciter</span> to the target location.",
+      "Tooltip": "Relocates the <span style=\"color: #FFFF80\">Inciter</span> to the target location.<br/><br/><span style=\"color: #78F0FF\">Uses <b>75</b> power.</span>",
       "Name": "ELOR Protocol"
+    },
+    {
+      "AbilCmd": "attack,Barrage",
+      "id": "AttackBarrage",
+      "Icon": "btn-command-attack",
+      "Tooltip": "Orders the selected units which can use this function to fire upon the selected point on the ground.",
+      "Name": "Attack Ground"
     }
   ]
 }

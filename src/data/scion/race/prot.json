@@ -16,6 +16,7 @@
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "ProtossGroundWeapons",
+        "EditorCategories": "Race:Protoss,UpgradeType:Bonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -23,7 +24,6 @@
           }
         },
         "Race": "Prot",
-        "EditorCategories": "Race:Protoss,UpgradeType:AttackBonus",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -248,6 +248,7 @@
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "ProtossGroundWeapons",
+        "EditorCategories": "Race:Protoss,UpgradeType:Bonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -255,7 +256,6 @@
           }
         },
         "Race": "Prot",
-        "EditorCategories": "Race:Protoss,UpgradeType:AttackBonus",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -477,6 +477,7 @@
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "ProtossGroundWeapons",
+        "EditorCategories": "Race:Protoss,UpgradeType:Bonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -484,7 +485,6 @@
           }
         },
         "Race": "Prot",
-        "EditorCategories": "Race:Protoss,UpgradeType:AttackBonus",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -706,6 +706,7 @@
         "ScoreValue": "ArmorTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "ProtossGroundArmors",
+        "EditorCategories": "Race:Protoss,UpgradeType:Bonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -713,7 +714,6 @@
           }
         },
         "Race": "Prot",
-        "EditorCategories": "Race:Protoss,UpgradeType:ArmorBonus",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -903,6 +903,7 @@
         "ScoreValue": "ArmorTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "ProtossGroundArmors",
+        "EditorCategories": "Race:Protoss,UpgradeType:Bonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -910,7 +911,6 @@
           }
         },
         "Race": "Prot",
-        "EditorCategories": "Race:Protoss,UpgradeType:ArmorBonus",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -1097,6 +1097,7 @@
         "ScoreValue": "ArmorTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "ProtossGroundArmors",
+        "EditorCategories": "Race:Protoss,UpgradeType:Bonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -1104,7 +1105,6 @@
           }
         },
         "Race": "Prot",
-        "EditorCategories": "Race:Protoss,UpgradeType:ArmorBonus",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -1291,6 +1291,7 @@
         "ScoreValue": "ArmorTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "ProtossShields",
+        "EditorCategories": "Race:Protoss,UpgradeType:Bonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -1298,7 +1299,6 @@
           }
         },
         "Race": "Prot",
-        "EditorCategories": "Race:Protoss,UpgradeType:ArmorBonus",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -1894,6 +1894,7 @@
         "ScoreValue": "ArmorTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "ProtossShields",
+        "EditorCategories": "Race:Protoss,UpgradeType:Bonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -1901,7 +1902,6 @@
           }
         },
         "Race": "Prot",
-        "EditorCategories": "Race:Protoss,UpgradeType:ArmorBonus",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -2493,6 +2493,7 @@
         "ScoreValue": "ArmorTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "ProtossShields",
+        "EditorCategories": "Race:Protoss,UpgradeType:Bonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -2500,7 +2501,6 @@
           }
         },
         "Race": "Prot",
-        "EditorCategories": "Race:Protoss,UpgradeType:ArmorBonus",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -3092,6 +3092,7 @@
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "ProtossAirWeapons",
+        "EditorCategories": "Race:Protoss,UpgradeType:Bonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -3099,7 +3100,6 @@
           }
         },
         "Race": "Prot",
-        "EditorCategories": "Race:Protoss,UpgradeType:AttackBonus",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -3292,6 +3292,7 @@
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "ProtossAirWeapons",
+        "EditorCategories": "Race:Protoss,UpgradeType:Bonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -3299,7 +3300,6 @@
           }
         },
         "Race": "Prot",
-        "EditorCategories": "Race:Protoss,UpgradeType:AttackBonus",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -3489,6 +3489,7 @@
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "ProtossAirWeapons",
+        "EditorCategories": "Race:Protoss,UpgradeType:Bonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -3496,7 +3497,6 @@
           }
         },
         "Race": "Prot",
-        "EditorCategories": "Race:Protoss,UpgradeType:AttackBonus",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -3686,6 +3686,7 @@
         "ScoreValue": "ArmorTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "ProtossAirArmors",
+        "EditorCategories": "Race:Protoss,UpgradeType:Bonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -3693,7 +3694,6 @@
           }
         },
         "Race": "Prot",
-        "EditorCategories": "Race:Protoss,UpgradeType:ArmorBonus",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -3880,6 +3880,7 @@
         "ScoreValue": "ArmorTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "ProtossAirArmors",
+        "EditorCategories": "Race:Protoss,UpgradeType:Bonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -3887,7 +3888,6 @@
           }
         },
         "Race": "Prot",
-        "EditorCategories": "Race:Protoss,UpgradeType:ArmorBonus",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -4071,6 +4071,7 @@
         "ScoreValue": "ArmorTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "ProtossAirArmors",
+        "EditorCategories": "Race:Protoss,UpgradeType:Bonus",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -4078,7 +4079,6 @@
           }
         },
         "Race": "Prot",
-        "EditorCategories": "Race:Protoss,UpgradeType:ArmorBonus",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -4262,6 +4262,7 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "WarpGateResearch",
+        "EditorCategories": "Race:Protoss,UpgradeType:Spell",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -4270,7 +4271,6 @@
         },
         "Race": "Prot",
         "Icon": "btn-building-protoss-warpgate",
-        "EditorCategories": "Race:Protoss,UpgradeType:Talents",
         "ScoreResult": "BuildOrder",
         "AffectedUnitArray": [
           "Gateway"
@@ -4290,6 +4290,7 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "PsiStormTech",
+        "EditorCategories": "Race:Protoss,UpgradeType:Spell",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -4298,7 +4299,6 @@
         },
         "Race": "Prot",
         "Icon": "btn-ability-protoss-psistorm-color",
-        "EditorCategories": "Race:Protoss,UpgradeType:Talents",
         "ScoreResult": "BuildOrder",
         "AffectedUnitArray": [
           "HighTemplar"
@@ -4309,7 +4309,8 @@
       "VoidRaySpeedUpgrade": {
         "class": "CUpgrade",
         "Flags": {
-          "UpgradeCheat": 1
+          "UpgradeCheat": 1,
+          "TechTreeCheat": 1
         },
         "Name": "Flux Vanes",
         "MaxLevel": 1,
@@ -4318,6 +4319,7 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "VoidRaySpeedUpgrade",
+        "EditorCategories": "Race:Protoss,UpgradeType:Spell",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -4328,19 +4330,19 @@
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
+            "Operation": "Set",
             "Reference": "Unit,VoidRay,Speed",
-            "Value": "3.320300",
-            "Operation": "Set"
+            "Value": "3.320300"
           },
           {
+            "Operation": "Set",
             "Reference": "Unit,VoidRay,Acceleration",
-            "Value": "2.687500",
-            "Operation": "Set"
+            "Value": "2.687500"
           },
           {
             "Operation": "Set",
             "Reference": "Behavior,VoidRaySwarmDamageBoost,Modification.MoveSpeedMultiplier",
-            "Value": "0.5644"
+            "Value": "0.621"
           },
           {
             "Operation": "Set",
@@ -4348,7 +4350,6 @@
             "Value": "0.7441"
           }
         ],
-        "EditorCategories": "Race:Protoss,UpgradeType:Talents",
         "Icon": "btn-upgrade-protoss-fluxvanes",
         "Race": "Prot",
         "AffectedUnitArray": [
@@ -4368,6 +4369,7 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "PhoenixRangeUpgrade",
+        "EditorCategories": "Race:Protoss,UpgradeType:Spell",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -4384,7 +4386,6 @@
             "Value": "2"
           }
         ],
-        "EditorCategories": "Race:Protoss,UpgradeType:Talents",
         "AffectedUnitArray": [
           "Phoenix"
         ],
@@ -4403,6 +4404,7 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "TempestGroundAttackUpgrade",
+        "EditorCategories": "Race:Protoss,UpgradeType:Spell",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -4416,9 +4418,12 @@
           {
             "Reference": "Effect,TempestDamageGround,AttributeBonus[Structure]",
             "Value": "40"
+          },
+          {
+            "Reference": "Effect,TempestDamage,AttributeBonus[Structure]",
+            "Value": "40"
           }
         ],
-        "EditorCategories": "Race:Protoss,UpgradeType:Talents",
         "AffectedUnitArray": [
           "Tempest"
         ],
@@ -4436,6 +4441,7 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "DarkTemplarBlinkUpgrade",
+        "EditorCategories": "Race:Protoss,UpgradeType:Spell",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -4446,7 +4452,6 @@
         "Race": "Prot",
         "ScoreAmount": 200,
         "ScoreResult": "BuildOrder",
-        "EditorCategories": "Race:Protoss,UpgradeType:SpellResearch",
         "AffectedUnitArray": [
           "DarkTemplar"
         ],
@@ -4464,6 +4469,7 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "BlinkTech",
+        "EditorCategories": "Race:Protoss,UpgradeType:Spell",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -4472,7 +4478,6 @@
         },
         "Race": "Prot",
         "Icon": "btn-ability-protoss-blink-color",
-        "EditorCategories": "Race:Protoss,UpgradeType:Talents",
         "ScoreResult": "BuildOrder",
         "AffectedUnitArray": [
           "Stalker"
@@ -4493,6 +4498,7 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "Charge",
+        "EditorCategories": "Race:Protoss,UpgradeType:Spell",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -4501,7 +4507,6 @@
         },
         "Race": "Prot",
         "Icon": "btn-ability-protoss-charge-color",
-        "EditorCategories": "Race:Protoss,UpgradeType:Talents",
         "ScoreResult": "BuildOrder",
         "AffectedUnitArray": [
           "Zealot"
@@ -4527,6 +4532,7 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "AdeptPiercingAttack",
+        "EditorCategories": "Race:Protoss,UpgradeType:Spell",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -4540,7 +4546,6 @@
             "Value": "0.45"
           }
         ],
-        "EditorCategories": "Race:Protoss,UpgradeType:AttackBonus",
         "AffectedUnitArray": [
           "Adept"
         ],
@@ -4561,6 +4566,7 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "ExtendedThermalLance",
+        "EditorCategories": "Race:Protoss,UpgradeType:Spell",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -4587,7 +4593,6 @@
             "Value": "2"
           }
         ],
-        "EditorCategories": "Race:Protoss,UpgradeType:Talents",
         "ScoreResult": "BuildOrder",
         "AffectedUnitArray": [
           "Colossus"
@@ -4608,6 +4613,7 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "ObserverGraviticBooster",
+        "EditorCategories": "Race:Protoss,UpgradeType:Spell",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -4616,7 +4622,6 @@
         },
         "Race": "Prot",
         "Icon": "btn-upgrade-protoss-graviticbooster",
-        "EditorCategories": "Race:Protoss,UpgradeType:Talents",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -4647,6 +4652,7 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "GraviticDrive",
+        "EditorCategories": "Race:Protoss,UpgradeType:Spell",
         "$tokens": {
           "ID": {
             "type": "string",
@@ -4655,7 +4661,6 @@
         },
         "Race": "Prot",
         "Icon": "btn-upgrade-protoss-graviticdrive",
-        "EditorCategories": "Race:Protoss,UpgradeType:Talents",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -5199,6 +5204,24 @@
         "ShieldArmorName": "Protoss Plasma Shields",
         "priority": 20
       },
+      "AdeptPhaseShift": {
+        "id": "AdeptPhaseShift",
+        "Icon": "btn-unit-protoss-adept",
+        "Description": "Projects an invulnerable Shade that can move but cannot attack. After <b>10</b>, the Adept teleports to the Shade's location.",
+        "Name": "Shade",
+        "LifeMax": 90,
+        "LifeArmor": 1,
+        "ShieldsMax": 50,
+        "Food": -2,
+        "Production": [],
+        "Research": [],
+        "Morph": [],
+        "$Phase": [],
+        "LifeArmorIcon": "btn-upgrade-protoss-groundarmorlevel0",
+        "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+        "LifeArmorName": "Protoss Armor",
+        "ShieldArmorName": "Protoss Plasma Shields"
+      },
       "Disruptor": {
         "id": "Disruptor",
         "Icon": "btn-unit-protoss-disruptor",
@@ -5207,7 +5230,7 @@
         "LifeMax": 100,
         "LifeArmor": 1,
         "ShieldsMax": 100,
-        "Food": -3,
+        "Food": -4,
         "CostResource": {
           "Minerals": 150,
           "Vespene": 150
@@ -5223,6 +5246,24 @@
         "LifeArmorName": "Protoss Armor",
         "ShieldArmorName": "Protoss Plasma Shields",
         "priority": 135
+      },
+      "DisruptorPhased": {
+        "id": "DisruptorPhased",
+        "Icon": "btn-unit-protoss-disruptor",
+        "Description": "Robotic disruption unit. Can use Purification Nova to deal heavy area damage.",
+        "Name": "Disruptor",
+        "LifeMax": 100,
+        "LifeArmor": 1,
+        "ShieldsMax": 100,
+        "Food": -4,
+        "Production": [],
+        "Research": [],
+        "Morph": [],
+        "$Phase": [],
+        "LifeArmorIcon": "btn-upgrade-protoss-groundarmorlevel0",
+        "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+        "LifeArmorName": "Protoss Armor",
+        "ShieldArmorName": "Protoss Plasma Shields"
       },
       "Forge": {
         "id": "Forge",
@@ -5379,26 +5420,6 @@
         "ShieldArmorName": "Protoss Plasma Shields",
         "priority": 170
       },
-      "Interceptor": {
-        "id": "Interceptor",
-        "Icon": "btn-unit-protoss-interceptor",
-        "Description": "Combat drones that automatically strafe their Carrier's target. Carriers may not attack without Interceptors.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units.</span>",
-        "Name": "Interceptor",
-        "LifeMax": 40,
-        "ShieldsMax": 40,
-        "CostResource": {
-          "Minerals": 15
-        },
-        "Production": [],
-        "Research": [],
-        "Morph": [],
-        "$Phase": [],
-        "LifeArmorIcon": "btn-upgrade-protoss-airarmorlevel0",
-        "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Protoss Plating",
-        "ShieldArmorName": "Protoss Plasma Shields",
-        "priority": 180
-      },
       "Tempest": {
         "id": "Tempest",
         "Icon": "btn-unit-protoss-tempest",
@@ -5436,8 +5457,7 @@
         },
         "Production": [],
         "Research": [
-          "PsiStormTech",
-          ""
+          "PsiStormTech"
         ],
         "Morph": [],
         "$Phase": [],
@@ -5480,7 +5500,7 @@
         "Description": "Flying spy. Cloak renders the unit invisible to enemies without detection.<br/><br/><span style=\"color: #FFE303\">Detector</span>",
         "Name": "Observer",
         "LifeMax": 40,
-        "ShieldsMax": 20,
+        "ShieldsMax": 30,
         "Food": -1,
         "CostResource": {
           "Minerals": 25,
@@ -5504,7 +5524,7 @@
         "Description": "Flying spy. Cloak renders the unit invisible to enemies without detection.<br/><br/><span style=\"color: #FFE303\">Detector</span>",
         "Name": "Observer",
         "LifeMax": 40,
-        "ShieldsMax": 20,
+        "ShieldsMax": 30,
         "Food": -1,
         "CostResource": {
           "Minerals": 25,
@@ -5628,15 +5648,15 @@
       "Mothership": {
         "id": "Mothership",
         "Icon": "btn-unit-protoss-mothership",
-        "Description": "Ultimate Protoss vessel. Can use Photon Overcharge, Mass Recall, and Time Warp abilities. Cloaks nearby friendly units and structures.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>",
+        "Description": "Ultimate Protoss vessel. Can use Strategic Recall, Time Warp, and Cloaking Field abilities.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>",
         "Name": "Mothership",
-        "LifeMax": 350,
+        "LifeMax": 250,
         "LifeArmor": 2,
-        "ShieldsMax": 350,
-        "Food": -8,
+        "ShieldsMax": 250,
+        "Food": -6,
         "CostResource": {
-          "Minerals": 400,
-          "Vespene": 400
+          "Minerals": 300,
+          "Vespene": 300
         },
         "Production": [],
         "Research": [],
@@ -5676,9 +5696,10 @@
     "Oracle",
     "OracleStasisTrap",
     "Adept",
+    "AdeptPhaseShift",
     "Disruptor",
+    "DisruptorPhased",
     "Carrier",
-    "Interceptor",
     "Tempest",
     "Observer",
     "ObserverSiegeMode",

@@ -12,6 +12,7 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "BrimstoneDemolisherInfernalBreath",
+  "EditorCategories": "Race:Dragon,UpgradeType:Talents",
   "$tokens": {
     "ID": {
       "type": "string",
@@ -19,7 +20,6 @@
     }
   },
   "InfoTooltipPriority": 1,
-  "EditorCategories": "Race:Dragon,UpgradeType:Talents",
   "Race": "Dragon",
   "EffectArray": [
     {

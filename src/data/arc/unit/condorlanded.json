@@ -1036,7 +1036,8 @@
         "id": "CondorCloak",
         "Icon": "btn-ability-upl-metamateria-suit",
         "Tooltip": "Temporarily activates the <span style=\"color: #FFFF80\"><b>Raptor Jet</b></span> armor material coating, preventing enemy units from seeing or attacking the unit. A cloaked unit will only be revealed by detectors or effects.<br/><br/>Attacking or using abilities during the effect clears it.<br/><br/><span style=\"color: #FFFF80\">Effect last for <b>10</b> seconds</span>",
-        "Name": "Metamateria Coating"
+        "Name": "Metamateria Coating",
+        "Hotkey": "C"
       }
     ]
   },

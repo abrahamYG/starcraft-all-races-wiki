@@ -138,12 +138,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -205,12 +199,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -234,7 +222,10 @@
               "DefaultButtonFace": "Cancel"
             },
             "Halt": {
-              "DefaultButtonFace": "Cancel"
+              "DefaultButtonFace": "Halt",
+              "Flags": {
+                "ToSelection": 1
+              }
             }
           },
           "id": "BuildInProgress"
@@ -375,45 +366,6 @@
         "Tooltip": "Upgrades the <span style=\"color: #ffff8a\">Marauder</span> weapons to slow down opponents.",
         "Name": "Research Concussive Shells",
         "Hotkey": "G"
-      },
-      {
-        "Upgrade": "",
-        "Info": {
-          "Button": {
-            "Flags": {
-              "AllowMinimap": 0,
-              "ShowInGlossary": 0
-            },
-            "DefaultButtonFace": "",
-            "Requirements": ""
-          },
-          "Resource": {
-            "Minerals": 0,
-            "Vespene": 0
-          },
-          "Time": 0,
-          "Upgrade": ""
-        },
-        "Time": 0,
-        "Cost": {
-          "Minerals": 0,
-          "Vespene": 0,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 0,
-        "Column": 3,
-        "Type": "AbilCmd",
-        "AbilCmd": "BarracksTechLabResearch,Research4",
-        "id": "ReaperSpeed",
-        "Icon": "btn-upgrade-terran-reapernitropacks",
-        "Tooltip": "Increases the movement speed of Reapers.",
-        "Name": "Research Nitro Packs",
-        "Hotkey": "N"
       }
     ]
   },
@@ -473,15 +425,14 @@
     }
   ],
   "$Upgrades": [
-    "BarracksTechLabMorph",
-    "BarracksTechLab",
-    "BarracksAddOns",
     "CountUnitBarracksTechLabCompleteOnlyAtUnit2589852481TechTreeCheat",
+    "BarracksTechLab",
+    "BarracksTechLabMorph",
+    "BarracksAddOns",
     "TerranBuildingArmor",
     "IsBarracksTechLab",
     "BarracksTechLab",
-    "BarracksTechLabSplat",
-    null
+    "BarracksTechLabSplat"
   ],
   "$Requirements": [],
   "$Production": [],
@@ -489,7 +440,7 @@
     "ShieldWall",
     "Stimpack",
     "PunisherGrenades",
-    ""
+    null
   ],
   "$Morph": [],
   "$Phase": [],
@@ -532,13 +483,6 @@
       "Icon": "btn-ability-terran-punishergrenade-color",
       "Tooltip": "Upgrades the <span style=\"color: #ffff8a\">Marauder</span> weapons to slow down opponents.",
       "Name": "Research Concussive Shells"
-    },
-    {
-      "AbilCmd": "BarracksTechLabResearch,Research4",
-      "id": "ReaperSpeed",
-      "Icon": "btn-upgrade-terran-reapernitropacks",
-      "Tooltip": "Increases the movement speed of Reapers.",
-      "Name": "Research Nitro Packs"
     }
   ]
 }

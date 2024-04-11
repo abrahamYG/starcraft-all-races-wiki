@@ -731,6 +731,7 @@
         "Type": "AbilCmd",
         "AbilCmd": "que1Passive,CancelLast",
         "id": "Cancel",
+        "Icon": "btn-command-cancel",
         "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
         "Name": "Cancel",
         "Hotkey": "Esc"
@@ -839,7 +840,7 @@
           },
           "FollowRange": 5,
           "Range": [
-            9
+            10
           ],
           "Cost": [
             {
@@ -856,6 +857,9 @@
           ],
           "Arc": 360,
           "IgnoreFilters": "-;Ally,Neutral,Enemy",
+          "CursorEffect": [
+            "TeslaShockChargeExpireSearch"
+          ],
           "id": "LaunchShockCharge"
         },
         "Cost": {
@@ -874,7 +878,7 @@
         "AbilCmd": "LaunchShockCharge,Execute",
         "id": "LaunchShockCharge",
         "Icon": "btn-unit-genetron-teslashockcharge",
-        "Tooltip": "Launches the Tesla's charge to the target point with the Shock Charge configuration.<br/><br/>Shock Charges deal <b>18</b> damage in an area every <b>2</b> seconds at the cost of energy. Each unit hit uses <b>3</b> energy and has <b>18</b> energy taken from them.<br/><br/>The charge is destroyed when its energy is exhausted.<br/><br/><span style=\"color: #78F0FF\">Uses power.</span>",
+        "Tooltip": "Launches the Tesla's charge to the target point with the Shock Charge configuration.<br/><br/>Shock Charges deal <b>18</b> damage in an area every <b>2</b> seconds at the cost of energy. Each unit hit uses <b>3</b> energy and has <b>18</b> energy taken from them.<br/><br/>The charge is destroyed when its energy is exhausted.<br/><br/><span style=\"color: #78F0FF\">Uses <b>150</b> power.<c/>",
         "Name": "Launch Shock Charge",
         "Hotkey": "E"
       },
@@ -982,7 +986,7 @@
           },
           "FollowRange": 5,
           "Range": [
-            9
+            10
           ],
           "Cost": [
             {
@@ -1001,6 +1005,9 @@
           ],
           "Arc": 360,
           "IgnoreFilters": "-;Ally,Neutral,Enemy",
+          "CursorEffect": [
+            "CloakChargeFieldSA"
+          ],
           "id": "LaunchCloakCharge"
         },
         "Cost": {
@@ -1019,7 +1026,7 @@
         "AbilCmd": "LaunchCloakCharge,Execute",
         "id": "LaunchCloakCharge",
         "Icon": "btn-unit-genetron-teslastealthcharge",
-        "Tooltip": "Launches the Tesla's charge to the target point with the Cloak Charge configuration.<br/><br/>Cloak Charges cloak units in an area. Energy is used over time.<br/><br/>The charge is destroyed when its energy is exhausted.<br/><br/><span style=\"color: #78F0FF\">Uses power.</span>",
+        "Tooltip": "Launches the Tesla's charge to the target point with the Cloak Charge configuration.<br/><br/>Cloak Charges cloak units in an area. Energy is used over time.<br/><br/>The charge is destroyed when its energy is exhausted.<br/><br/><span style=\"color: #78F0FF\">Uses <b>150</b> power.<c/>",
         "Name": "Launch Cloak Charge",
         "Hotkey": "R"
       }
@@ -1034,7 +1041,7 @@
   "RepairTime": 56,
   "InnerRadius": 0.75,
   "SubgroupPriority": 50,
-  "GlossaryPriority": 10,
+  "GlossaryPriority": 11,
   "GlossaryStrongArray": [
     "Mole",
     "Carrier",
@@ -1102,10 +1109,10 @@
     "GenetronGroundPlatingLevel3",
     "ChemicalFirm",
     "TrainHeavyweightMechs",
-    "CountUnitTeslaInProgressOnlyAtUnit",
     "CountUnitTeslaQueuedOrBetterAtUnit",
     "Fabricator",
     "Fabricator",
+    "CountUnitTeslaInProgressOnlyAtUnit",
     "GenetronGroundPlatingRevert",
     "InternalProducers"
   ],
@@ -1173,6 +1180,7 @@
     {
       "AbilCmd": "que1Passive,CancelLast",
       "id": "Cancel",
+      "Icon": "btn-command-cancel",
       "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
       "Name": "Cancel"
     },
@@ -1180,14 +1188,14 @@
       "AbilCmd": "LaunchShockCharge,Execute",
       "id": "LaunchShockCharge",
       "Icon": "btn-unit-genetron-teslashockcharge",
-      "Tooltip": "Launches the Tesla's charge to the target point with the Shock Charge configuration.<br/><br/>Shock Charges deal <b>18</b> damage in an area every <b>2</b> seconds at the cost of energy. Each unit hit uses <b>3</b> energy and has <b>18</b> energy taken from them.<br/><br/>The charge is destroyed when its energy is exhausted.<br/><br/><span style=\"color: #78F0FF\">Uses power.</span>",
+      "Tooltip": "Launches the Tesla's charge to the target point with the Shock Charge configuration.<br/><br/>Shock Charges deal <b>18</b> damage in an area every <b>2</b> seconds at the cost of energy. Each unit hit uses <b>3</b> energy and has <b>18</b> energy taken from them.<br/><br/>The charge is destroyed when its energy is exhausted.<br/><br/><span style=\"color: #78F0FF\">Uses <b>150</b> power.<c/>",
       "Name": "Launch Shock Charge"
     },
     {
       "AbilCmd": "LaunchCloakCharge,Execute",
       "id": "LaunchCloakCharge",
       "Icon": "btn-unit-genetron-teslastealthcharge",
-      "Tooltip": "Launches the Tesla's charge to the target point with the Cloak Charge configuration.<br/><br/>Cloak Charges cloak units in an area. Energy is used over time.<br/><br/>The charge is destroyed when its energy is exhausted.<br/><br/><span style=\"color: #78F0FF\">Uses power.</span>",
+      "Tooltip": "Launches the Tesla's charge to the target point with the Cloak Charge configuration.<br/><br/>Cloak Charges cloak units in an area. Energy is used over time.<br/><br/>The charge is destroyed when its energy is exhausted.<br/><br/><span style=\"color: #78F0FF\">Uses <b>150</b> power.<c/>",
       "Name": "Launch Cloak Charge"
     }
   ]

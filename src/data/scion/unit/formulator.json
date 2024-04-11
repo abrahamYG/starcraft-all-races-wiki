@@ -10,15 +10,15 @@
   "Response": "Acquire",
   "ResourceState": "Harvestable",
   "ResourceType": "Vespene",
-  "LifeStart": 600,
-  "LifeMax": 600,
+  "LifeStart": 350,
+  "LifeMax": 350,
   "LifeArmorName": "Protoss Armor",
   "Mover": "Ground",
   "StationaryTurningRate": 719.4726,
   "TurningRate": 719.4726,
   "Radius": 1.5,
   "SeparationRadius": 1.5,
-  "MinimapRadius": 1.5,
+  "MinimapRadius": 1.75,
   "EditorCategories": "ObjectType:Structure,ObjectFamily:Melee",
   "TacticalAIFilters": "-;Player,Ally,Neutral",
   "AIEvalFactor": 1,
@@ -104,13 +104,11 @@
   "CostCategory": "Economy",
   "ScoreResult": "BuildOrder",
   "HotkeyCategory": "Unit/Category/KeironUnits",
-  "LifeRegenRate": 0.25,
+  "LifeRegenRate": 0.2734,
   "Food": 0,
   "Footprint": "FootprintGeyserRoundedBuilt",
   "PlacementFootprint": "Footprint3x3CappedGeyser",
   "ShieldArmorName": "Keiron Dispersion Shields",
-  "ShieldRegenDelay": 10,
-  "ShieldRegenRate": 2,
   "CardLayouts": {
     "Root": [
       {
@@ -121,12 +119,6 @@
           "EditorCategories": "Race:Neutral,AbilityorEffectType:Units",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -207,8 +199,8 @@
   },
   "id": "Formulator",
   "Mob": "Multiplayer",
-  "ShieldsStart": 300,
-  "ShieldsMax": 300,
+  "ShieldsStart": 175,
+  "ShieldsMax": 175,
   "CostResource": {
     "Minerals": 75
   },
@@ -234,6 +226,9 @@
   "Weapons": [],
   "Behaviors": [
     {
+      "id": "KeironShellRestoration"
+    },
+    {
       "id": "HarvestableVespeneGeyserGasKeiron",
       "Icon": "icon-gas"
     }
@@ -256,7 +251,8 @@
     "Formulator",
     "KeironShields",
     "KeironShieldsLevel2",
-    "KeironShieldsLevel3"
+    "KeironShieldsLevel3",
+    "KeironShieldsRevert"
   ],
   "$Requirements": [],
   "$Production": [],

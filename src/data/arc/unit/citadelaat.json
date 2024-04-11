@@ -687,7 +687,8 @@
         "id": "UEDButtonCitadelAbility",
         "Icon": "btn-ability-protoss-shieldrecharge",
         "Tooltip": "The device temporarily creates strong magnetic fields that immobilizes the tank, but allows you to fire faster with a longer range and the effect of buckshot behind standing targets.",
-        "Name": "Magnetic wave acceleration"
+        "Name": "Magnetic wave acceleration",
+        "Hotkey": "D"
       }
     ]
   },

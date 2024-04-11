@@ -1,6 +1,6 @@
 {
   "id": "InfantryRifleRangeUpgrade",
-  "Icon": "btn-ability-upl-assaultrifle",
+  "Icon": "btn-ability-upl-longrange",
   "Name": "Upgrade/Name/InfantryRifleRangeUpgrade",
   "class": "CUpgrade",
   "Flags": {
@@ -12,6 +12,7 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "InfantryRifleRangeUpgrade",
+  "EditorCategories": "UpgradeType:Talents,Race:UPL",
   "$tokens": {
     "ID": {
       "type": "string",
@@ -20,20 +21,19 @@
   },
   "EffectArray": [
     {
-      "Reference": "Weapon,InfantryRifle,Range",
-      "Value": "1"
-    },
-    {
       "Reference": "Weapon,InfantryHeavy,Range",
       "Value": "1"
     },
     {
       "Reference": "Weapon,InfantryRocket,Range",
       "Value": "1"
+    },
+    {
+      "Reference": "Weapon,InfantryRifle,Range",
+      "Value": "1"
     }
   ],
   "Race": "UPL",
-  "EditorCategories": "UpgradeType:Talents,Race:UPL",
   "AffectedUnitArray": [
     "InfantryRifle"
   ]

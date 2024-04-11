@@ -1,6 +1,6 @@
 {
   "Name": "Zenith",
-  "Description": "Highly advanced tech facility.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>  - Paragons from the Citadel",
+  "Description": "<span style=\"color: #FFFF80\">Enables:</span><br/>- Paragons from Citadels<br/>- Aegis from a Citadel",
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 2,
   "DeathRevealDuration": 4,
@@ -18,7 +18,7 @@
   "TurningRate": 720,
   "Radius": 1.5,
   "SeparationRadius": 1.5,
-  "MinimapRadius": 1.5,
+  "MinimapRadius": 2,
   "EditorCategories": "ObjectType:Structure,ObjectFamily:Melee",
   "TacticalAIFilters": "-;Player,Ally,Neutral",
   "AIEvalFactor": 1,
@@ -87,7 +87,8 @@
     "Air"
   ],
   "Collide": [
-    "Flying"
+    "Flying",
+    "Flying5"
   ],
   "Attributes": [
     "Armored",
@@ -98,13 +99,11 @@
   "CostCategory": "Technology",
   "ScoreResult": "BuildOrder",
   "HotkeyCategory": "Unit/Category/KeironUnits",
-  "LifeRegenRate": 0.25,
-  "Food": 6,
+  "LifeRegenRate": 0.2734,
+  "Food": 8,
   "Footprint": "Footprint4x4AirContour",
   "PlacementFootprint": "Footprint4x4Air",
   "ShieldArmorName": "Keiron Dispersion Shields",
-  "ShieldRegenDelay": 4,
-  "ShieldRegenRate": 1.25,
   "CardLayouts": {
     "Root": [
       {
@@ -154,12 +153,6 @@
           "EditorCategories": "Race:Neutral,AbilityorEffectType:Units",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -224,12 +217,6 @@
           "EditorCategories": "Race:Neutral,AbilityorEffectType:Structures",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -310,6 +297,9 @@
   "Weapons": [],
   "Behaviors": [
     {
+      "id": "KeironShellRestoration"
+    },
+    {
       "id": "ZenithParagonBase"
     }
   ],
@@ -337,7 +327,7 @@
     "KeironShieldsLevel2",
     "KeironShieldsLevel3",
     "KeironBuild",
-    "CountUnitZenithCompleteOnly"
+    "KeironShieldsRevert"
   ],
   "$Requirements": [],
   "$Production": [],

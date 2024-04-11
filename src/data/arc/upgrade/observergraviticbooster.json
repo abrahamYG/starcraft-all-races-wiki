@@ -13,6 +13,7 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "ObserverGraviticBooster",
+  "EditorCategories": "Race:Protoss,UpgradeType:Spell",
   "$tokens": {
     "ID": {
       "type": "string",
@@ -20,7 +21,6 @@
     }
   },
   "Race": "Prot",
-  "EditorCategories": "Race:Protoss,UpgradeType:Talents",
   "ScoreResult": "BuildOrder",
   "EffectArray": [
     {

@@ -167,6 +167,7 @@
         "Type": "AbilCmd",
         "AbilCmd": "que5CancelToSelection,CancelLast",
         "id": "Cancel",
+        "Icon": "btn-command-cancel",
         "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
         "Name": "Cancel",
         "Hotkey": "Esc"
@@ -351,44 +352,6 @@
         "Hotkey": "E"
       },
       {
-        "Info": {
-          "Button": {
-            "Flags": {
-              "AllowMinimap": 0
-            },
-            "DefaultButtonFace": "CARR",
-            "Requirements": "CARRRequirements"
-          },
-          "Unit": [
-            "CARR"
-          ],
-          "Time": 75
-        },
-        "Unit": [
-          "CARR"
-        ],
-        "Time": 75,
-        "Cost": {
-          "Minerals": 350,
-          "Vespene": 150,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": -2
-        },
-        "Row": 0,
-        "Column": 1,
-        "Type": "AbilCmd",
-        "AbilCmd": "UPLHeadquartersTrain,Train3",
-        "id": "CARR",
-        "Icon": "btn-unit-upl-carr",
-        "Tooltip": "Combat and Reconnaisance Robot<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units</span>",
-        "Name": "CARR",
-        "Hotkey": "C"
-      },
-      {
         "Upgrade": "UPLMiningDronesGrenadeLauncher",
         "Info": {
           "Button": {
@@ -496,6 +459,10 @@
     {
       "id": "UPLForwardOperatingBaseResearch",
       "Name": "Research"
+    },
+    {
+      "id": "UPLManufacturingFacilityTrain",
+      "Name": "Train"
     }
   ],
   "$Upgrades": [
@@ -505,7 +472,8 @@
     "IsUPLHeadquarters",
     "UPLHeadquarters",
     "UPLHeadquartersSplat",
-    "UPLHeadquarters"
+    "UPLHeadquarters",
+    null
   ],
   "$Requirements": [],
   "$Production": [
@@ -524,6 +492,7 @@
     {
       "AbilCmd": "que5CancelToSelection,CancelLast",
       "id": "Cancel",
+      "Icon": "btn-command-cancel",
       "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
       "Name": "Cancel"
     },
@@ -554,13 +523,6 @@
       "Icon": "btn-unit-upl-miningdrone",
       "Tooltip": "Nano-Enabled Construction Robot<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units</span>",
       "Name": "Build Mining Drone"
-    },
-    {
-      "AbilCmd": "UPLHeadquartersTrain,Train3",
-      "id": "CARR",
-      "Icon": "btn-unit-upl-carr",
-      "Tooltip": "Combat and Reconnaisance Robot<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units</span>",
-      "Name": "CARR"
     },
     {
       "AbilCmd": "UPLForwardOperatingBaseResearch,Research5",

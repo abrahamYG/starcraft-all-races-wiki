@@ -246,6 +246,7 @@
         "Type": "AbilCmd",
         "AbilCmd": "que5CancelToSelection,CancelLast",
         "id": "Cancel",
+        "Icon": "btn-command-cancel",
         "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
         "Name": "Cancel",
         "Hotkey": "Esc"
@@ -606,6 +607,7 @@
         "Type": "AbilCmd",
         "AbilCmd": "UEDCalldownStructure,Halt",
         "id": "Cancel",
+        "Icon": "btn-command-cancel",
         "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
         "Name": "Cancel",
         "Hotkey": "Esc"
@@ -860,6 +862,25 @@
           "Food": 0
         },
         "Row": 2,
+        "Column": 0,
+        "Type": "Passive",
+        "id": "UEDButtonAmmunitionDepot",
+        "Icon": "btn-ability-mengsk-siegetank-flyingtankarmament",
+        "Tooltip": "Allows you to store ammunition for a Strikefighters and issue it as needed.",
+        "Name": "Ammunition depot"
+      },
+      {
+        "Cost": {
+          "Minerals": 0,
+          "Vespene": 0,
+          "Terazine": 0,
+          "Custom": 0,
+          "Energy": 0,
+          "Life": 0,
+          "Shields": 0,
+          "Food": 0
+        },
+        "Row": 2,
         "Column": 1,
         "Type": "Submenu",
         "SubmenuCardId": "0003",
@@ -1032,6 +1053,7 @@
         "Column": 4,
         "Type": "Submenu",
         "id": "Cancel",
+        "Icon": "btn-command-cancel",
         "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
         "Name": "Cancel",
         "Hotkey": "Esc"
@@ -1142,7 +1164,7 @@
         "AbilCmd": "UEDCalldownStructure,Build4",
         "id": "TeleportationNode",
         "Icon": "btn-ued-teleportation-node",
-        "Tooltip": "Universal production structure for the Directorate army, capable of deploying any combat units.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Garmrs<br/>- Strike Troopers<br/>- Enrichment Towers",
+        "Tooltip": "Universal production structure for the Directorate army, capable of deploying any combat units.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Garmrs<br/>- Strike Troopers<br/>",
         "Name": "Calldown Teleportation Node",
         "Hotkey": "E"
       },
@@ -1236,6 +1258,7 @@
         "Column": 4,
         "Type": "Submenu",
         "id": "Cancel",
+        "Icon": "btn-command-cancel",
         "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
         "Name": "Cancel",
         "Hotkey": "Esc"
@@ -1485,21 +1508,19 @@
     {
       "id": "UEDCalldownStructure",
       "Name": "UED Calldown Structure"
-    },
-    {}
+    }
   ],
   "$Upgrades": [
     "UED",
     "OperationHeadquarters",
     "BeaconBuild",
-    "UpgradeTowerMining",
     "ValidateComandCentrUED",
+    "UpgradeTowerMining",
     "UEDCalldownStructure",
     "UEDPlacementDummy",
     "OperationHeadquarters",
     "OperationHeadquartersSplat",
-    "CountUnitOperationHeadquartersCompleteOnly4096103108TechTreeCheat",
-    null
+    "CountUnitOperationHeadquartersCompleteOnly4096103108TechTreeCheat"
   ],
   "$Requirements": [],
   "$Production": [
@@ -1542,12 +1563,14 @@
     {
       "AbilCmd": "que5CancelToSelection,CancelLast",
       "id": "Cancel",
+      "Icon": "btn-command-cancel",
       "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
       "Name": "Cancel"
     },
     {
       "AbilCmd": "UEDCalldownStructure,Halt",
       "id": "Cancel",
+      "Icon": "btn-command-cancel",
       "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
       "Name": "Cancel"
     },
@@ -1590,7 +1613,7 @@
       "AbilCmd": "UEDCalldownStructure,Build4",
       "id": "TeleportationNode",
       "Icon": "btn-ued-teleportation-node",
-      "Tooltip": "Universal production structure for the Directorate army, capable of deploying any combat units.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Garmrs<br/>- Strike Troopers<br/>- Enrichment Towers",
+      "Tooltip": "Universal production structure for the Directorate army, capable of deploying any combat units.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Garmrs<br/>- Strike Troopers<br/>",
       "Name": "Calldown Teleportation Node"
     },
     {

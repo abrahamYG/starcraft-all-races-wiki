@@ -12,6 +12,7 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "SpitfireMadcapRounds",
+  "EditorCategories": "Race:Genetron,UpgradeType:Talents",
   "$tokens": {
     "ID": {
       "type": "string",
@@ -19,10 +20,9 @@
     }
   },
   "InfoTooltipPriority": 1,
-  "EditorCategories": "Race:Genetron,UpgradeType:Talents",
   "Race": "Gen",
   "ScoreResult": "BuildOrder",
-  "ScoreAmount": 400,
+  "ScoreAmount": 200,
   "EffectArray": [
     {
       "Reference": "Weapon,RiotGun,Range",
@@ -30,11 +30,11 @@
     },
     {
       "Reference": "Weapon,RiotGun,MinScanRange",
-      "Value": "0.5"
+      "Value": "1"
     },
     {
       "Reference": "Weapon,RiotGun,Period",
-      "Value": "-0.084000"
+      "Value": "-0.056000"
     }
   ],
   "AffectedUnitArray": [

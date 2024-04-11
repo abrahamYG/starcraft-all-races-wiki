@@ -1,6 +1,6 @@
 {
   "Name": "Node",
-  "Description": "Provides supply and energy.",
+  "Description": "Provides supply and generates power.",
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -18,7 +18,7 @@
   "TurningRate": 720,
   "Radius": 1,
   "SeparationRadius": 0.5,
-  "MinimapRadius": 1,
+  "MinimapRadius": 1.25,
   "EditorCategories": "ObjectType:Structure,ObjectFamily:Melee",
   "TacticalAIFilters": "-;Player,Ally,Neutral",
   "AIEvalFactor": 1,
@@ -102,7 +102,7 @@
   "PlaneArray": [
     "Ground"
   ],
-  "Sight": 10,
+  "Sight": 9,
   "AttackTargetPriority": 11,
   "GlossaryCategory": "",
   "HotkeyCategory": "Unit/Category/GenetronUnits",
@@ -117,7 +117,7 @@
   "id": "Node",
   "Facing": 0,
   "FogVisibility": "Snapshot",
-  "CostCategory": "Technology",
+  "CostCategory": "Economy",
   "CardLayouts": {
     "Root": [
       {
@@ -128,12 +128,6 @@
           "EditorCategories": "Race:Neutral,AbilityorEffectType:Units",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -204,10 +198,10 @@
         "Row": 2,
         "Column": 0,
         "Type": "Passive",
-        "id": "EnergyGrid",
+        "id": "NodePowerGrid",
         "Icon": "btn-tips-computerterminals",
-        "Tooltip": "<span style=\"color: #f078ff\">Generates <b>0.7</b> energy per second.</span>",
-        "Name": "Energy Grid"
+        "Tooltip": "<span style=\"color: #78f0ff\">Generates <b>0.71</b> power per second.</span>",
+        "Name": "Power Grid"
       }
     ]
   },
@@ -217,8 +211,7 @@
   "CostResource": {
     "Minerals": 100
   },
-  "RepairTime": 30,
-  "SubgroupPriority": 3,
+  "RepairTime": 25,
   "GlossaryPriority": 3,
   "Icon": "btn-building-genetron-node",
   "LifeArmorIcon": "btn-upgrade-genetron-mechstructurearmor",
@@ -226,14 +219,23 @@
   "Weapons": [],
   "Behaviors": [
     {
+      "id": "GenetronPowerSupplyTracker"
+    },
+    {
       "id": "LockdownMode",
       "Icon": "btn-ability-genetron-structurelockdownmode",
       "Tooltip": "Under lockdown due to severe damage. Takes reduced damage, and cannot fully function. Must be repaired in order to resume a regular state.",
       "Name": "Lockdown Mode"
     },
     {
+      "id": "TrackGenetronPowerSupply"
+    },
+    {
       "id": "NodePower",
       "Icon": "btn-tips-computerterminals"
+    },
+    {
+      "id": "UnderConstruction"
     }
   ],
   "Abilities": [
@@ -246,7 +248,9 @@
     "ACRBuild",
     "Node",
     "CountUnitNodeCompleteOnlyTechTreeCheat",
-    "Node"
+    "Node",
+    "IsNode",
+    null
   ],
   "$Requirements": [],
   "$Production": [],

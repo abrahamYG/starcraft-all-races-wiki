@@ -618,10 +618,10 @@
     "GenetronAircraftWeaponsLevel2",
     "GenetronAircraftWeaponsLevel3",
     "BuildAircraft",
-    "CountUnitHornetInProgressOnlyAtUnit",
     "CountUnitHornetQueuedOrBetterAtUnit",
     "AssemblyArray",
     "AssemblyArray",
+    "CountUnitHornetInProgressOnlyAtUnit",
     "GenetronAircraftPlatingRevert",
     "GenetronAircraftWeaponsRevert",
     "BoreDrills"

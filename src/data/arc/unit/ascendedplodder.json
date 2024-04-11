@@ -281,6 +281,7 @@
         "Column": 4,
         "Type": "CancelSubmenu",
         "id": "Cancel",
+        "Icon": "btn-command-cancel",
         "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
         "Name": "Cancel",
         "Hotkey": "Esc"
@@ -1348,6 +1349,147 @@
         "Hotkey": "C"
       },
       {
+        "Info": {
+          "class": "CAbilEffectTarget",
+          "Name": "Abil/Name/SprayDragon",
+          "TechPlayer": "Upkeep",
+          "EditorCategories": "AbilityorEffectType:Units,Race:Dragon",
+          "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
+          "OrderArray": [
+            {
+              "DisplayType": "Confirm",
+              "Color": "255,0,255,0",
+              "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
+              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
+            }
+          ],
+          "SharedFlags": {
+            "DisableWhileDead": 1
+          },
+          "DataCollection": "SprayDragon",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
+          "RangeSlop": 1,
+          "ArcSlop": 11.25,
+          "AutoCastAcquireLevel": "Offensive",
+          "AutoCastFilters": "Visible;Player,Ally",
+          "Flags": {
+            "AbortOnAllianceChange": 1,
+            "CancelResetAutoCast": 1,
+            "ChannelingMinimum": 1,
+            "RangeUseCasterRadius": 1,
+            "ReApproachable": 1,
+            "RequireTargetVision": 1,
+            "WaitToSpend": 1,
+            "UpdateChargesOnLevelChange": 1,
+            "BestUnit": 1
+          },
+          "Effect": [
+            "SprayDragon"
+          ],
+          "EffectRange": [
+            "0,1000"
+          ],
+          "AINotifyEffect": "SprayDragon",
+          "RefundArray": {
+            "Approach": 1,
+            "Prep": 1,
+            "Cast": 1
+          },
+          "RefundFraction": {
+            "Resource": {
+              "Minerals": -1,
+              "Vespene": -1,
+              "Terrazine": -1,
+              "Custom": -1
+            },
+            "Charge": -1,
+            "Cooldown": -1
+          },
+          "UseMarkerArray": {
+            "Approach": 1,
+            "Prep": 1,
+            "Cast": 1,
+            "Channel": 1
+          },
+          "PauseableArray": {
+            "Approach": 1,
+            "Prep": 1,
+            "Cast": 1,
+            "Channel": 1,
+            "Finish": 1
+          },
+          "PreemptableArray": {
+            "Approach": 1,
+            "Prep": 1,
+            "Cast": 1,
+            "Channel": 1,
+            "Finish": 1
+          },
+          "ValidatedArray": {
+            "Approach": 1,
+            "Prep": 1,
+            "Cast": 1,
+            "Channel": 1
+          },
+          "DefaultError": "MustTargetUnit",
+          "AcquirePriority": 3,
+          "SetLastTarget": "Unknown",
+          "VeterancyLevelMin": 0,
+          "VeterancyLevelSkip": 0,
+          "CmdButtonArray": {
+            "Execute": {
+              "Flags": {
+                "ShowInGlossary": 1
+              },
+              "DefaultButtonFace": "Spray",
+              "Requirements": "HaveSprayDragon"
+            }
+          },
+          "FollowRange": 5,
+          "Cost": [
+            {
+              "Charge": {
+                "CountMax": 5,
+                "CountStart": 1,
+                "CountUse": 1,
+                "Link": "Spray",
+                "Location": "Player",
+                "TimeStart": 300,
+                "TimeUse": 300
+              }
+            }
+          ],
+          "Range": [
+            1
+          ],
+          "id": "SprayDragon"
+        },
+        "Cost": {
+          "Minerals": 0,
+          "Vespene": 0,
+          "Terazine": 0,
+          "Custom": 0,
+          "Energy": 0,
+          "Life": 0,
+          "Shields": 0,
+          "Food": 0
+        },
+        "Row": 2,
+        "Column": 3,
+        "Type": "AbilCmd",
+        "AbilCmd": "SprayDragon,Execute",
+        "id": "Spray",
+        "Icon": "btn-command-spray",
+        "Tooltip": "Orders the unit to apply your currently selected spray to the terrain at the target location.",
+        "Name": "Spray",
+        "Hotkey": "Y"
+      },
+      {
         "Cost": {
           "Minerals": 0,
           "Vespene": 0,
@@ -1411,8 +1553,7 @@
   ],
   "Behaviors": [
     {
-      "id": "DragonLineageLesser",
-      "Name": "Dragon Lineage"
+      "id": "DragonLineageLesser"
     },
     {
       "id": "DragonAscended",
@@ -1457,6 +1598,9 @@
     {
       "id": "DroneHarvest",
       "Name": "Gather (Drone)"
+    },
+    {
+      "id": "SprayDragon"
     }
   ],
   "$Upgrades": [
@@ -1559,6 +1703,13 @@
       "Icon": "btn-command-returncargo",
       "Tooltip": "Returns the carried resources to the nearest drop-off point.",
       "Name": "Return Cargo"
+    },
+    {
+      "AbilCmd": "SprayDragon,Execute",
+      "id": "Spray",
+      "Icon": "btn-command-spray",
+      "Tooltip": "Orders the unit to apply your currently selected spray to the terrain at the target location.",
+      "Name": "Spray"
     },
     {
       "AbilCmd": "PlodderBuild,Build1",

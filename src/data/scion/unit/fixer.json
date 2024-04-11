@@ -1,6 +1,6 @@
 {
   "Name": "Fixer",
-  "Description": "Anti-light specialist. Can use Speed Cloak and Repair.<br/><span style=\"color: #FFFF80\"><br/>Can attack ground units.</span>",
+  "Description": "Anti-light specialist. Can use Repair.<br/><span style=\"color: #FFFF80\"><br/>Can attack ground units.</span>",
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -107,7 +107,7 @@
     "Vespene": 1
   },
   "id": "Fixer",
-  "Speed": 2.75,
+  "Speed": 2.8125,
   "Acceleration": 1000,
   "CostCategory": "Army",
   "CardLayouts": {
@@ -124,12 +124,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -223,12 +217,6 @@
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
               "DisplayType": "Move",
               "Color": "255,35,125,255",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
@@ -317,12 +305,6 @@
               "Color": "255,255,0,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -393,12 +375,6 @@
           "EditorCategories": "Race:Neutral,AbilityorEffectType:Units",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -480,12 +456,6 @@
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
               "DisplayType": "Move",
               "Color": "255,35,125,255",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
@@ -563,143 +533,6 @@
       },
       {
         "Info": {
-          "class": "CAbilEffectInstant",
-          "Name": "Abil/Name/SpeedCloak",
-          "TechPlayer": "Upkeep",
-          "EditorCategories": "Race:Genetron,AbilityorEffectType:Units",
-          "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
-          "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            }
-          ],
-          "SharedFlags": {
-            "DisableWhileDead": 1,
-            "RegisterCooldownEvent": 1
-          },
-          "DataCollection": "SpeedCloak",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
-          "RangeSlop": 1,
-          "ArcSlop": 11.25,
-          "AutoCastAcquireLevel": "Offensive",
-          "AutoCastFilters": "Visible;Player,Ally",
-          "Flags": {
-            "AbortOnAllianceChange": 1,
-            "CancelResetAutoCast": 1,
-            "ChannelingMinimum": 1,
-            "RangeUseCasterRadius": 1,
-            "ReApproachable": 1,
-            "RequireTargetVision": 1,
-            "WaitToSpend": 1,
-            "UpdateChargesOnLevelChange": 1,
-            "Transient": 1
-          },
-          "Effect": [
-            "SpeedCloak"
-          ],
-          "EffectRange": [
-            "0,1000"
-          ],
-          "AINotifyEffect": "SpeedCloak",
-          "RefundArray": {
-            "Approach": 1,
-            "Prep": 1,
-            "Cast": 1
-          },
-          "RefundFraction": {
-            "Resource": {
-              "Minerals": -1,
-              "Vespene": -1,
-              "Terrazine": -1,
-              "Custom": -1
-            },
-            "Charge": -1,
-            "Cooldown": -1
-          },
-          "UseMarkerArray": {
-            "Approach": 1,
-            "Prep": 1,
-            "Cast": 1,
-            "Channel": 1
-          },
-          "PauseableArray": {
-            "Approach": 1,
-            "Prep": 1,
-            "Cast": 1,
-            "Channel": 1,
-            "Finish": 1
-          },
-          "PreemptableArray": {
-            "Approach": 1,
-            "Prep": 1,
-            "Cast": 1,
-            "Channel": 1,
-            "Finish": 1
-          },
-          "ValidatedArray": {
-            "Approach": 1,
-            "Prep": 1,
-            "Cast": 1,
-            "Channel": 1
-          },
-          "DefaultError": "MustTargetUnit",
-          "AcquirePriority": 3,
-          "SetLastTarget": "Unknown",
-          "VeterancyLevelMin": 0,
-          "VeterancyLevelSkip": 0,
-          "CmdButtonArray": {
-            "Execute": {
-              "Flags": {
-                "ShowInGlossary": 1
-              },
-              "DefaultButtonFace": "SpeedCloak"
-            }
-          },
-          "Cost": [
-            {
-              "Cooldown": {
-                "TimeUse": 10
-              }
-            }
-          ],
-          "id": "SpeedCloak"
-        },
-        "Cost": {
-          "Minerals": 0,
-          "Vespene": 0,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 2,
-        "Column": 0,
-        "Type": "AbilCmd",
-        "AbilCmd": "SpeedCloak,Execute",
-        "id": "FixerSpeedCloak",
-        "Icon": "btn-ability-genetron-blazeshield",
-        "Tooltip": "Cloaks, and increases movement speed by 40% for <b>2.0</b> seconds.",
-        "Name": "Speed Cloak",
-        "Hotkey": "C"
-      },
-      {
-        "Info": {
           "class": "CAbilEffectTarget",
           "Name": "Abil/Name/FixerRepair",
           "TechPlayer": "Upkeep",
@@ -710,12 +543,6 @@
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
@@ -729,7 +556,7 @@
               "value": ""
             }
           },
-          "RangeSlop": 0.25,
+          "RangeSlop": 0.5,
           "ArcSlop": 11.25,
           "AutoCastAcquireLevel": "Defensive",
           "AutoCastFilters": "Visible;Neutral,Enemy",
@@ -756,7 +583,7 @@
           "EffectRange": [
             "0,1000"
           ],
-          "AINotifyEffect": "FixerRepair",
+          "AINotifyEffect": "FixerRepairHealer",
           "RefundArray": {
             "Approach": 1,
             "Prep": 1,
@@ -816,7 +643,7 @@
           "Alignment": "Positive",
           "AbilSetId": "Repair",
           "TargetFilters": [
-            "Mechanical,Visible;Self,Enemy,Missile,Stasis,UnderConstruction,Dead,Hidden"
+            "Mechanical,Visible;Self,Enemy,Missile,Stasis,UnderConstruction,Dead"
           ],
           "AutoCastRange": 7,
           "Marker": {
@@ -833,7 +660,10 @@
             "Channel": 1
           },
           "Range": [
-            0.25
+            2
+          ],
+          "AutoCastValidatorArray": [
+            "NotStructureTarget"
           ],
           "id": "FixerRepair"
         },
@@ -848,12 +678,12 @@
           "Food": 0
         },
         "Row": 2,
-        "Column": 1,
+        "Column": 0,
         "Type": "AbilCmd",
         "AbilCmd": "FixerRepair,Execute",
-        "id": "Repair",
+        "id": "ACRRepair",
         "Icon": "btn-ability-terran-repair",
-        "Tooltip": "Restores life to mechanical units and structures at the cost of resources.",
+        "Tooltip": "Restores life to mechanical units at the cost of power.",
         "Name": "Repair",
         "Hotkey": "R"
       },
@@ -869,12 +699,263 @@
           "Food": 0
         },
         "Row": 2,
-        "Column": 2,
+        "Column": 1,
         "Type": "Passive",
         "id": "ReactiveArmor",
         "Icon": "btn-upgrade-genetron-reactivearmor",
         "Tooltip": "Incoming ranged damage reduced by 2.",
         "Name": "Reactive Armor"
+      },
+      {
+        "Info": {
+          "class": "CAbilEffectInstant",
+          "Name": "Abil/Name/GhostHoldFire",
+          "TechPlayer": "Upkeep",
+          "EditorCategories": "Race:Terran,AbilityorEffectType:Units",
+          "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
+          "OrderArray": [
+            {
+              "DisplayType": "Confirm",
+              "Color": "255,0,255,0",
+              "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
+              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
+            }
+          ],
+          "SharedFlags": {
+            "DisableWhileDead": 1
+          },
+          "DataCollection": "GhostHoldFire",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
+          "RangeSlop": 1,
+          "ArcSlop": 11.25,
+          "AutoCastAcquireLevel": "Offensive",
+          "AutoCastFilters": "Visible;Player,Ally",
+          "Flags": {
+            "AbortOnAllianceChange": 1,
+            "CancelResetAutoCast": 1,
+            "ChannelingMinimum": 1,
+            "RangeUseCasterRadius": 1,
+            "ReApproachable": 1,
+            "RequireTargetVision": 1,
+            "WaitToSpend": 1,
+            "UpdateChargesOnLevelChange": 1,
+            "Transient": 1
+          },
+          "Effect": [
+            "GhostHoldFire"
+          ],
+          "EffectRange": [
+            "0,1000"
+          ],
+          "AINotifyEffect": "GhostHoldFire",
+          "RefundArray": {
+            "Approach": 1,
+            "Prep": 1,
+            "Cast": 1
+          },
+          "RefundFraction": {
+            "Resource": {
+              "Minerals": -1,
+              "Vespene": -1,
+              "Terrazine": -1,
+              "Custom": -1
+            },
+            "Charge": -1,
+            "Cooldown": -1
+          },
+          "UseMarkerArray": {
+            "Approach": 1,
+            "Prep": 1,
+            "Cast": 1,
+            "Channel": 1
+          },
+          "PauseableArray": {
+            "Approach": 1,
+            "Prep": 1,
+            "Cast": 1,
+            "Channel": 1,
+            "Finish": 1
+          },
+          "PreemptableArray": {
+            "Approach": 1,
+            "Prep": 1,
+            "Cast": 1,
+            "Channel": 1,
+            "Finish": 1
+          },
+          "ValidatedArray": {
+            "Approach": 1,
+            "Prep": 1,
+            "Cast": 1,
+            "Channel": 1
+          },
+          "DefaultError": "MustTargetUnit",
+          "AcquirePriority": 3,
+          "SetLastTarget": "Unknown",
+          "VeterancyLevelMin": 0,
+          "VeterancyLevelSkip": 0,
+          "CmdButtonArray": {
+            "Execute": {
+              "Flags": {
+                "ShowInGlossary": 0,
+                "ToSelection": 1
+              },
+              "DefaultButtonFace": "HoldFire",
+              "Requirements": "GhostNotHoldingFire"
+            }
+          },
+          "id": "GhostHoldFire",
+          "AbilSetId": "HoldFire"
+        },
+        "Cost": {
+          "Minerals": 0,
+          "Vespene": 0,
+          "Terazine": 0,
+          "Custom": 0,
+          "Energy": 0,
+          "Life": 0,
+          "Shields": 0,
+          "Food": 0
+        },
+        "Row": 1,
+        "Column": 2,
+        "Type": "AbilCmd",
+        "AbilCmd": "GhostHoldFire,Execute",
+        "id": "GhostHoldFire",
+        "Icon": "btn-ability-terran-holdfire",
+        "Tooltip": "Orders selected units to holster their weapons and avoid engaging enemies, unless given a direct command. Units holding fire will flee if attacked.",
+        "Name": "Hold Fire",
+        "Hotkey": "F"
+      },
+      {
+        "Info": {
+          "class": "CAbilEffectInstant",
+          "Name": "Abil/Name/GhostWeaponsFree",
+          "TechPlayer": "Upkeep",
+          "EditorCategories": "Race:Terran,AbilityorEffectType:Units",
+          "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
+          "OrderArray": [
+            {
+              "DisplayType": "Confirm",
+              "Color": "255,0,255,0",
+              "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
+              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
+            }
+          ],
+          "SharedFlags": {
+            "DisableWhileDead": 1
+          },
+          "DataCollection": "GhostWeaponsFree",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
+          "RangeSlop": 1,
+          "ArcSlop": 11.25,
+          "AutoCastAcquireLevel": "Offensive",
+          "AutoCastFilters": "Visible;Player,Ally",
+          "Flags": {
+            "AbortOnAllianceChange": 1,
+            "CancelResetAutoCast": 1,
+            "ChannelingMinimum": 1,
+            "RangeUseCasterRadius": 1,
+            "ReApproachable": 1,
+            "RequireTargetVision": 1,
+            "WaitToSpend": 1,
+            "UpdateChargesOnLevelChange": 1,
+            "Transient": 1
+          },
+          "Effect": [
+            "GhostWeaponsFree"
+          ],
+          "EffectRange": [
+            "0,1000"
+          ],
+          "AINotifyEffect": "GhostWeaponsFree",
+          "RefundArray": {
+            "Approach": 1,
+            "Prep": 1,
+            "Cast": 1
+          },
+          "RefundFraction": {
+            "Resource": {
+              "Minerals": -1,
+              "Vespene": -1,
+              "Terrazine": -1,
+              "Custom": -1
+            },
+            "Charge": -1,
+            "Cooldown": -1
+          },
+          "UseMarkerArray": {
+            "Approach": 1,
+            "Prep": 1,
+            "Cast": 1,
+            "Channel": 1
+          },
+          "PauseableArray": {
+            "Approach": 1,
+            "Prep": 1,
+            "Cast": 1,
+            "Channel": 1,
+            "Finish": 1
+          },
+          "PreemptableArray": {
+            "Approach": 1,
+            "Prep": 1,
+            "Cast": 1,
+            "Channel": 1,
+            "Finish": 1
+          },
+          "ValidatedArray": {
+            "Approach": 1,
+            "Prep": 1,
+            "Cast": 1,
+            "Channel": 1
+          },
+          "DefaultError": "MustTargetUnit",
+          "AcquirePriority": 3,
+          "SetLastTarget": "Unknown",
+          "VeterancyLevelMin": 0,
+          "VeterancyLevelSkip": 0,
+          "CmdButtonArray": {
+            "Execute": {
+              "Flags": {
+                "ShowInGlossary": 0,
+                "ToSelection": 1
+              },
+              "DefaultButtonFace": "WeaponsFree",
+              "Requirements": "GhostHoldingFire"
+            }
+          },
+          "id": "GhostWeaponsFree"
+        },
+        "Cost": {
+          "Minerals": 0,
+          "Vespene": 0,
+          "Terazine": 0,
+          "Custom": 0,
+          "Energy": 0,
+          "Life": 0,
+          "Shields": 0,
+          "Food": 0
+        },
+        "Row": 1,
+        "Column": 3,
+        "Type": "AbilCmd",
+        "AbilCmd": "GhostWeaponsFree,Execute",
+        "id": "WeaponsFree",
+        "Icon": "btn-ability-terran-weaponsfree",
+        "Tooltip": "Orders selected units to fire at will. They will engage enemy units within range and chase them as normal.",
+        "Name": "Weapons Free",
+        "Hotkey": "G"
       }
     ]
   },
@@ -884,7 +965,7 @@
     "Minerals": 100,
     "Vespene": 50
   },
-  "RepairTime": 33.6,
+  "RepairTime": 39.2,
   "InnerRadius": 0.4375,
   "SubgroupPriority": 44,
   "GlossaryPriority": 4,
@@ -920,6 +1001,12 @@
   ],
   "Behaviors": [
     {
+      "id": "GenetronPowerSupplyTracker"
+    },
+    {
+      "id": "TrackGenetronPowerSupplyUnit"
+    },
+    {
       "id": "FixerReactiveArmor",
       "Icon": "btn-upgrade-genetron-reactivearmor"
     }
@@ -938,25 +1025,32 @@
       "Name": "Attack"
     },
     {
-      "id": "SpeedCloak",
-      "Name": "Speed Cloak"
-    },
-    {
       "id": "FixerRepair",
       "Name": "Repair"
+    },
+    {
+      "id": "GhostHoldFire",
+      "Name": "Hold Fire"
+    },
+    {
+      "id": "GhostWeaponsFree",
+      "Name": "Weapons Free"
     }
   ],
   "$Upgrades": [
-    "FixerReactiveArmor",
+    "OutfittingStation",
     "Fixer",
-    "TrainLightweightMechs",
-    "Manufacturer",
     "GenetronGroundPlatingLevel1",
     "Fixer",
+    "FixerReactiveArmor",
     "GenetronGroundPlating",
     "GenetronGroundPlatingLevel2",
     "GenetronGroundPlatingLevel3",
+    "TrainLightweightMechs",
+    "CountUnitFixerQueuedOrBetterAtUnit",
     "Manufacturer",
+    "Manufacturer",
+    "CountUnitFixerInProgressOnlyAtUnit",
     "FixerFusionWelders"
   ],
   "$Requirements": [],
@@ -1004,18 +1098,25 @@
       "Name": "Move"
     },
     {
-      "AbilCmd": "SpeedCloak,Execute",
-      "id": "FixerSpeedCloak",
-      "Icon": "btn-ability-genetron-blazeshield",
-      "Tooltip": "Cloaks, and increases movement speed by 40% for <b>2.0</b> seconds.",
-      "Name": "Speed Cloak"
+      "AbilCmd": "FixerRepair,Execute",
+      "id": "ACRRepair",
+      "Icon": "btn-ability-terran-repair",
+      "Tooltip": "Restores life to mechanical units at the cost of power.",
+      "Name": "Repair"
     },
     {
-      "AbilCmd": "FixerRepair,Execute",
-      "id": "Repair",
-      "Icon": "btn-ability-terran-repair",
-      "Tooltip": "Restores life to mechanical units and structures at the cost of resources.",
-      "Name": "Repair"
+      "AbilCmd": "GhostHoldFire,Execute",
+      "id": "GhostHoldFire",
+      "Icon": "btn-ability-terran-holdfire",
+      "Tooltip": "Orders selected units to holster their weapons and avoid engaging enemies, unless given a direct command. Units holding fire will flee if attacked.",
+      "Name": "Hold Fire"
+    },
+    {
+      "AbilCmd": "GhostWeaponsFree,Execute",
+      "id": "WeaponsFree",
+      "Icon": "btn-ability-terran-weaponsfree",
+      "Tooltip": "Orders selected units to fire at will. They will engage enemy units within range and chase them as normal.",
+      "Name": "Weapons Free"
     }
   ]
 }

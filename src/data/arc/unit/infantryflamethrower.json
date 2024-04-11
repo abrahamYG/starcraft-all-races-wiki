@@ -1,6 +1,5 @@
 {
   "Name": "Incinerator",
-  "Description": "Flamethrower Infantry<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units</span>",
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -10,8 +9,8 @@
   "Response": "Acquire",
   "ResourceState": "Unknown",
   "ResourceType": "Unknown",
-  "LifeStart": 65,
-  "LifeMax": 65,
+  "LifeStart": 40,
+  "LifeMax": 40,
   "LifeArmorName": "UPL Infantry Armor",
   "Mover": "Ground",
   "StationaryTurningRate": 999.8437,
@@ -90,7 +89,11 @@
     "Ground",
     "ForceField"
   ],
-  "Speed": 2.5,
+  "Speed": 2.25,
+  "Attributes": [
+    "Light",
+    "Biological"
+  ],
   "Acceleration": 1000,
   "LateralAcceleration": 69.125,
   "Sight": 10,
@@ -662,25 +665,6 @@
         "Row": 1,
         "Column": 0,
         "Type": "Passive",
-        "id": "InfantryFlamethrowerNanoweaveBodyArmor",
-        "Icon": "btn-ability-upl-nanoweave",
-        "Tooltip": "Provides the <c val=\"#ColorAttackInfo\"><d stringRef=\"Unit,InfantryFlamethrower,Name\"/></span> with <span style=\"color: #80FFFF\">+1 Armor</span>",
-        "Name": "Nano-Weave Body Armor"
-      },
-      {
-        "Cost": {
-          "Minerals": 0,
-          "Vespene": 0,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 1,
-        "Column": 1,
-        "Type": "Passive",
         "id": "InfantryFlamethrowerIncendiary",
         "Icon": "btn-ability-upl-thermite",
         "Tooltip": "Target receives periodic damage from Incinerator's flamethrower for <span style=\"color: #FFFF80\"><b>3</b></span>",
@@ -698,7 +682,7 @@
           "Food": 0
         },
         "Row": 1,
-        "Column": 2,
+        "Column": 1,
         "Type": "Passive",
         "id": "InfantryFlamethrowerBurningUpgraded",
         "Icon": "btn-ability-upl-naniteignition",
@@ -722,7 +706,7 @@
         "Type": "Passive",
         "id": "InfantryMedkit",
         "Icon": "btn-ability-upl-medkit",
-        "Tooltip": "This unit will use a Medkit when they have less than 25% of their life, which will heal <span style=\"color: #FFFF80\"><b>50</b></span> life over <span style=\"color: #FFFF80\"><b>5</b></span>. Once activated it will be on cooldown for <b>180</b>.",
+        "Tooltip": "This unit will use a Medkit when they have less than 25% of their life, which will heal <span style=\"color: #FFFF80\"><b>45</b></span> life over <span style=\"color: #FFFF80\"><b>8</b></span>. Once activated it will be on cooldown for <b>180</b>.",
         "Name": "Personal Medkit"
       },
       {
@@ -741,7 +725,7 @@
         "Type": "Passive",
         "id": "InfantryMedkit",
         "Icon": "btn-ability-upl-medkit",
-        "Tooltip": "This unit will use a Medkit when they have less than 25% of their life, which will heal <span style=\"color: #FFFF80\"><b>50</b></span> life over <span style=\"color: #FFFF80\"><b>5</b></span>. Once activated it will be on cooldown for <b>180</b>.",
+        "Tooltip": "This unit will use a Medkit when they have less than 25% of their life, which will heal <span style=\"color: #FFFF80\"><b>45</b></span> life over <span style=\"color: #FFFF80\"><b>8</b></span>. Once activated it will be on cooldown for <b>180</b>.",
         "Name": "Personal Medkit"
       }
     ]
@@ -759,7 +743,6 @@
     "Dance": 5
   },
   "id": "InfantryFlamethrower",
-  "LifeArmor": 1,
   "CostResource": {
     "Minerals": 50,
     "Vespene": 25
@@ -773,12 +756,8 @@
     "Roach",
     "Ultralisk"
   ],
-  "Attributes": [
-    "Biological",
-    "Light"
-  ],
-  "AlliedPushPriority": 6,
   "GlossaryAlias": "InfantryFlamethrower",
+  "AlliedPushPriority": 6,
   "Icon": "btn-unit-upl-infantryflamethrower",
   "LifeArmorIcon": "btn-upgrades-upl-infantryarmor-lvl0",
   "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
@@ -787,11 +766,11 @@
       "id": "InfantryFlamethrower",
       "Icon": "btn-upgrades-upl-infantryweapons-lvl0",
       "Name": "REG-8 Flame Thrower \"The Regent\"",
-      "Amount": 7,
+      "Amount": 4,
       "Kind": "Melee",
       "TargetFilters": "Ground",
       "Range": 2.5,
-      "Period": 1.75
+      "Period": 1.25
     }
   ],
   "Behaviors": [
@@ -825,6 +804,7 @@
   "$Upgrades": [
     "InfantryMedkit",
     "InfantryFlamethrower",
+    "InfantryRifle",
     "UPLBilletTrain",
     "UPLBillet",
     "UPLInfantryWeaponsLevel1",
@@ -837,9 +817,9 @@
     "UPLInfantryArmorLevel2",
     "UPLInfantryArmorLevel3",
     "IsInfantryFlamethrower",
-    "InfantryRifle",
     "ChangelingInfantryRifle",
-    "InfantryFlamethrower"
+    "InfantryFlamethrower",
+    null
   ],
   "$Requirements": [],
   "$Production": [],

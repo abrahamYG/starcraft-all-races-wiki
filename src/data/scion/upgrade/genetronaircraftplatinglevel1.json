@@ -12,6 +12,7 @@
   "ScoreValue": "ArmorTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "GenetronAircraftPlating",
+  "EditorCategories": "Race:Genetron,UpgradeType:ArmorBonus",
   "$tokens": {
     "ID": {
       "type": "string",
@@ -22,7 +23,7 @@
   "ScoreResult": "BuildOrder",
   "EffectArray": [
     {
-      "Reference": "Unit,AvengerGenetron,LifeArmor",
+      "Reference": "Unit,Scion_Avenger,LifeArmor",
       "Value": "1"
     },
     {
@@ -46,11 +47,15 @@
       "Value": "1"
     },
     {
-      "Reference": "Unit,Processor,LifeArmor",
+      "Reference": "Unit,Scion_Processor,LifeArmor",
       "Value": "1"
     },
     {
-      "Reference": "Unit,AvengerGenetron,LifeArmorLevel",
+      "Reference": "Unit,Scion_ProcessorStatic,LifeArmor",
+      "Value": "1"
+    },
+    {
+      "Reference": "Unit,Scion_Avenger,LifeArmorLevel",
       "Value": "1"
     },
     {
@@ -74,12 +79,16 @@
       "Value": "1"
     },
     {
-      "Reference": "Unit,Processor,LifeArmorLevel",
+      "Reference": "Unit,Scion_Processor,LifeArmorLevel",
+      "Value": "1"
+    },
+    {
+      "Reference": "Unit,Scion_ProcessorStatic,LifeArmorLevel",
       "Value": "1"
     },
     {
       "Operation": "Set",
-      "Reference": "Actor,AvengerGenetron,LifeArmorIcon",
+      "Reference": "Actor,Scion_Avenger,LifeArmorIcon",
       "Value": "Assets\\Textures\\btn-upgrade-genetron-aircraftplating-level1.dds"
     },
     {
@@ -109,19 +118,19 @@
     },
     {
       "Operation": "Set",
-      "Reference": "Actor,Processor,LifeArmorIcon",
+      "Reference": "Actor,Scion_Processor,LifeArmorIcon",
       "Value": "Assets\\Textures\\btn-upgrade-genetron-aircraftplating-level1.dds"
     }
   ],
-  "EditorCategories": "Race:Genetron,UpgradeType:ArmorBonus",
   "AffectedUnitArray": [
-    "AvengerGenetron",
+    "Scion_Avenger",
     "Badger",
     "Boar",
     "Courier",
     "Hornet",
     "Jupiter",
-    "Processor"
+    "Scion_Processor",
+    "Scion_ProcessorStatic"
   ],
   "ScoreAmount": 200,
   "LeaderLevel": 1

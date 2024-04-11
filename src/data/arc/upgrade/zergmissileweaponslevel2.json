@@ -12,6 +12,7 @@
   "ScoreValue": "WeaponTechnologyValue",
   "WebPriority": 0,
   "LeaderAlias": "ZergMissileWeapons",
+  "EditorCategories": "Race:Zerg,UpgradeType:Bonus",
   "$tokens": {
     "ID": {
       "type": "string",
@@ -19,7 +20,6 @@
     }
   },
   "Race": "Zerg",
-  "EditorCategories": "Race:Zerg,UpgradeType:AttackBonus",
   "ScoreResult": "BuildOrder",
   "EffectArray": [
     {
@@ -188,6 +188,15 @@
     {
       "Operation": "Set",
       "Reference": "Weapon,InfestedAcidSpines,Icon",
+      "Value": "Assets\\Textures\\btn-upgrade-zerg-missileattacks-level2.dds"
+    },
+    {
+      "Reference": "Weapon,Spinesdisabled,Level",
+      "Value": "1"
+    },
+    {
+      "Operation": "Set",
+      "Reference": "Weapon,Spinesdisabled,Icon",
       "Value": "Assets\\Textures\\btn-upgrade-zerg-missileattacks-level2.dds"
     }
   ],

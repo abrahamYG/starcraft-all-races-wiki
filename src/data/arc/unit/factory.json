@@ -313,12 +313,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -342,7 +336,10 @@
               "DefaultButtonFace": "Cancel"
             },
             "Halt": {
-              "DefaultButtonFace": "Cancel"
+              "DefaultButtonFace": "Halt",
+              "Flags": {
+                "ToSelection": 1
+              }
             }
           },
           "id": "BuildInProgress"
@@ -431,7 +428,7 @@
         "AbilCmd": "FactoryAddOns,Build1",
         "id": "TechLabFactory",
         "Icon": "btn-building-terran-techlab",
-        "Tooltip": "Vehicle-research structure. A Tech Lab can fit onto any production structure.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Siege Tanks<br/>- Thor with Armory<br/>- Cyclones",
+        "Tooltip": "Vehicle-research structure. A Tech Lab can fit onto any production structure.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Siege Tanks<br/>- Thor with Armory",
         "Name": "Build Tech Lab",
         "Hotkey": "X"
       },
@@ -443,12 +440,6 @@
           "EditorCategories": "Race:Neutral,AbilityorEffectType:Structures",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -510,12 +501,6 @@
           "EditorCategories": "Race:Terran,AbilityorEffectType:Structures",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -815,12 +800,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -844,7 +823,10 @@
               "DefaultButtonFace": "Cancel"
             },
             "Halt": {
-              "DefaultButtonFace": "Cancel"
+              "DefaultButtonFace": "Halt",
+              "Flags": {
+                "ToSelection": 1
+              }
             }
           },
           "id": "BuildInProgress"
@@ -895,47 +877,7 @@
             "Flags": {
               "AllowMinimap": 0
             },
-            "DefaultButtonFace": "WarHound",
-            "Requirements": "HaveAttachedTechLab",
-            "State": "Restricted"
-          },
-          "Unit": [
-            "WarHound"
-          ],
-          "Time": 45
-        },
-        "Unit": [
-          "WarHound"
-        ],
-        "Time": 45,
-        "Cost": {
-          "Minerals": 150,
-          "Vespene": 75,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": -3
-        },
-        "Row": 1,
-        "Column": 2,
-        "Type": "AbilCmd",
-        "AbilCmd": "FactoryTrain,Train13",
-        "id": "WarHound",
-        "Icon": "btn-unit-terran-warhound",
-        "Tooltip": "Anti-vehicle mech. Haywire missiles do bonus damage to mechanical units. <br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
-        "Name": "Build Warhound",
-        "Hotkey": "R"
-      },
-      {
-        "Info": {
-          "Button": {
-            "Flags": {
-              "AllowMinimap": 0
-            },
-            "DefaultButtonFace": "BuildCyclone",
-            "Requirements": "HaveAttachedTechLab"
+            "DefaultButtonFace": "BuildCyclone"
           },
           "Unit": [
             "Cyclone"
@@ -947,14 +889,14 @@
         ],
         "Time": 45,
         "Cost": {
-          "Minerals": 150,
-          "Vespene": 100,
+          "Minerals": 125,
+          "Vespene": 50,
           "Terazine": 0,
           "Custom": 0,
           "Energy": 0,
           "Life": 0,
           "Shields": 0,
-          "Food": -3
+          "Food": -2
         },
         "Row": 0,
         "Column": 2,
@@ -1098,16 +1040,16 @@
   "$Upgrades": [
     "CountUnitAlias_FactoryCompleteOnlyAtUnit",
     "Factory",
-    "FactoryTechLab",
-    "StarportReactor",
+    "StarportTechLab",
+    "FactoryReactor",
     "BarracksReactor",
     "Reactor",
-    "FactoryReactor",
+    "StarportReactor",
+    "FactoryTechLab",
     "FactoryFlying",
     "FactoryLand",
-    "BarracksTechLab",
     "TechLab",
-    "StarportTechLab",
+    "BarracksTechLab",
     "CountUnitFactoryCompleteOnly96167438TechTreeCheat",
     "TerranBuildingArmor",
     "TerranBuild",
@@ -1115,9 +1057,7 @@
     "IsFactory",
     "Factory",
     "FactoryLand",
-    "FactorySplat",
-    "Factory",
-    null
+    "FactorySplat"
   ],
   "$Requirements": [],
   "$Production": [
@@ -1192,7 +1132,7 @@
       "AbilCmd": "FactoryAddOns,Build1",
       "id": "TechLabFactory",
       "Icon": "btn-building-terran-techlab",
-      "Tooltip": "Vehicle-research structure. A Tech Lab can fit onto any production structure.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Siege Tanks<br/>- Thor with Armory<br/>- Cyclones",
+      "Tooltip": "Vehicle-research structure. A Tech Lab can fit onto any production structure.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Siege Tanks<br/>- Thor with Armory",
       "Name": "Build Tech Lab"
     },
     {
@@ -1215,13 +1155,6 @@
       "Icon": "btn-command-cancel",
       "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
       "Name": "Cancel"
-    },
-    {
-      "AbilCmd": "FactoryTrain,Train13",
-      "id": "WarHound",
-      "Icon": "btn-unit-terran-warhound",
-      "Tooltip": "Anti-vehicle mech. Haywire missiles do bonus damage to mechanical units. <br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
-      "Name": "Build Warhound"
     },
     {
       "AbilCmd": "FactoryTrain,Train8",

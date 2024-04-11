@@ -107,7 +107,7 @@
     "Vespene": 1
   },
   "id": "Equalizer",
-  "Speed": 3.375,
+  "Speed": 3.25,
   "Acceleration": 1000,
   "CostCategory": "Army",
   "CardLayouts": {
@@ -530,6 +530,25 @@
         "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
         "Name": "Move",
         "Hotkey": "M"
+      },
+      {
+        "Cost": {
+          "Minerals": 0,
+          "Vespene": 0,
+          "Terazine": 0,
+          "Custom": 0,
+          "Energy": 0,
+          "Life": 0,
+          "Shields": 0,
+          "Food": 0
+        },
+        "Row": 2,
+        "Column": 0,
+        "Type": "Passive",
+        "id": "StratumMissilePod",
+        "Icon": "btn-ability-genetron-stratummissilepod",
+        "Tooltip": "This weapon deals bonus damage equal to <b>8.5</b>% of the target's total maximum health. Caps at +<b>25</b>.",
+        "Name": "Stratum Missile Pod"
       }
     ]
   },
@@ -563,14 +582,11 @@
       "id": "StratumMissilePod",
       "Icon": "btn-upgrade-genetron-lightmechweapons-level0",
       "Name": "Stratum Missile Pod",
-      "Amount": 30,
-      "AttributeBonus": {
-        "Armored": 30
-      },
+      "Amount": 20,
       "Kind": "Ranged",
       "TargetFilters": "Ground",
       "Range": 6,
-      "Period": 2.8
+      "Period": 2.38
     }
   ],
   "Behaviors": [],
@@ -589,8 +605,10 @@
     }
   ],
   "$Upgrades": [
-    "GenetronGroundPlatingLevel1",
+    "OutfittingStation",
     "Equalizer",
+    "TrainLightweightMechs",
+    "GenetronGroundPlatingLevel1",
     "Equalizer",
     "GenetronGroundPlating",
     "GenetronGroundPlatingLevel2",
@@ -599,12 +617,10 @@
     "GenetronLightWeapons",
     "GenetronLightWeaponsLevel2",
     "GenetronLightWeaponsLevel3",
-    "OutfittingStation",
-    "TrainLightweightMechs",
-    "CountUnitEqualizerInProgressOnlyAtUnit",
     "CountUnitEqualizerQueuedOrBetterAtUnit",
     "Manufacturer",
     "Manufacturer",
+    "CountUnitEqualizerInProgressOnlyAtUnit",
     "GenetronGroundPlatingRevert",
     "GenetronLightWeaponsRevert",
     "ReinforcedPlating"

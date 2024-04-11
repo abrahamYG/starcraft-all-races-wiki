@@ -12,6 +12,7 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "CalibratedEngines",
+  "EditorCategories": "Race:Genetron,UpgradeType:Talents",
   "$tokens": {
     "ID": {
       "type": "string",
@@ -19,14 +20,13 @@
     }
   },
   "InfoTooltipPriority": 1,
-  "EditorCategories": "Race:Genetron,UpgradeType:Talents",
   "Race": "Gen",
   "ScoreResult": "BuildOrder",
   "ScoreAmount": 200,
   "EffectArray": [
     {
       "Reference": "Unit,Spitfire,Speed",
-      "Value": "1.49"
+      "Value": "1.250000"
     }
   ],
   "AffectedUnitArray": [

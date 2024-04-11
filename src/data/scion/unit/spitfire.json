@@ -10,8 +10,8 @@
   "Response": "Acquire",
   "ResourceState": "Unknown",
   "ResourceType": "Unknown",
-  "LifeStart": 100,
-  "LifeMax": 100,
+  "LifeStart": 85,
+  "LifeMax": 85,
   "LifeArmorName": "Ground Mechanical Plating",
   "Mover": "Ground",
   "StationaryTurningRate": 990,
@@ -108,7 +108,7 @@
   },
   "id": "Spitfire",
   "Speed": 2.5,
-  "Acceleration": 1000,
+  "Acceleration": 30,
   "CostCategory": "Army",
   "CardLayouts": {
     "Root": [
@@ -124,12 +124,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -223,12 +217,6 @@
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
               "DisplayType": "Move",
               "Color": "255,35,125,255",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
@@ -317,12 +305,6 @@
               "Color": "255,255,0,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -393,12 +375,6 @@
           "EditorCategories": "Race:Neutral,AbilityorEffectType:Units",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -480,12 +456,6 @@
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
               "DisplayType": "Move",
               "Color": "255,35,125,255",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
@@ -564,12 +534,13 @@
     ]
   },
   "CargoSize": 2,
+  "Deceleration": 1000,
   "LateralAcceleration": 46,
   "Food": -2,
   "CostResource": {
     "Minerals": 100
   },
-  "RepairTime": 33.6,
+  "RepairTime": 39.2,
   "InnerRadius": 0.375,
   "SubgroupPriority": 30,
   "GlossaryPriority": 2,
@@ -594,11 +565,11 @@
       "id": "RiotGun",
       "Icon": "btn-upgrade-genetron-lightmechweapons-level0",
       "Name": "Riot Gun",
-      "Amount": 7,
+      "Amount": 5,
       "Kind": "Ranged",
       "TargetFilters": "Ground",
       "Range": 4,
-      "Period": 0.56
+      "Period": 0.392
     }
   ],
   "Behaviors": [],
@@ -619,11 +590,10 @@
   "$Upgrades": [
     "TrainLightweightMechs",
     "Spitfire",
-    "CalibratedEngines",
-    "SpitfireMadcapRounds",
-    "Manufacturer",
     "GenetronGroundPlatingLevel1",
     "Spitfire",
+    "CalibratedEngines",
+    "SpitfireMadcapRounds",
     "GenetronGroundPlating",
     "GenetronGroundPlatingLevel2",
     "GenetronGroundPlatingLevel3",
@@ -631,8 +601,13 @@
     "GenetronLightWeapons",
     "GenetronLightWeaponsLevel2",
     "GenetronLightWeaponsLevel3",
+    "CountUnitSpitfireQueuedOrBetterAtUnit",
+    "Manufacturer",
     "ChangelingSpitfire",
-    "Manufacturer"
+    "Manufacturer",
+    "CountUnitSpitfireInProgressOnlyAtUnit",
+    "GenetronGroundPlatingRevert",
+    "GenetronLightWeaponsRevert"
   ],
   "$Requirements": [],
   "$Production": [],

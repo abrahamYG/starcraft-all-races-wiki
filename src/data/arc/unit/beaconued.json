@@ -498,80 +498,6 @@
         "Tooltip": "Request advanced structures from the orbiting fleet.",
         "Name": "Calldown advanced structures",
         "Hotkey": "V"
-      },
-      {
-        "Info": {
-          "class": "CAbilAttack",
-          "Name": "Abil/Name/attackUED",
-          "TechPlayer": "Upkeep",
-          "EditorCategories": "Race:UED,AbilityorEffectType:Units",
-          "TargetMessage": "Abil/TargetMessage/attackUED",
-          "OrderArray": [
-            {
-              "DisplayType": "Attack",
-              "Color": "255,255,0,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointAttack_Zerg\\WayPointAttack_Zerg.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            }
-          ],
-          "SharedFlags": {
-            "DisableWhileDead": 1
-          },
-          "DataCollection": "attackUED",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
-          "AbilSetId": "Attack",
-          "Alignment": "Negative",
-          "AcquireFilters": "-;Player,Ally,Neutral,Dead,Hidden,Invulnerable,Benign",
-          "SmartFilters": "-;Player,Ally",
-          "SupportedFilters": "-;Self,Outer",
-          "CmdButtonArray": {
-            "Execute": {
-              "Flags": {
-                "ToSelection": 1
-              },
-              "DefaultButtonFace": "Attack"
-            },
-            "Towards": {
-              "Flags": {
-                "ToSelection": 1
-              },
-              "DefaultButtonFace": "AttackTowards"
-            },
-            "Barrage": {
-              "Flags": {
-                "ToSelection": 1
-              },
-              "DefaultButtonFace": "AttackBarrage"
-            }
-          },
-          "MaxAttackSpeedMultiplier": 128,
-          "MinAttackSpeedMultiplier": 0.25,
-          "AcquirePriority": 2,
-          "id": "attackUED"
-        },
-        "Cost": {
-          "Minerals": 0,
-          "Vespene": 0,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 0,
-        "Column": 4,
-        "Type": "AbilCmd",
-        "AbilCmd": "attackUED,Execute",
-        "id": "MothershipCoreAttack",
-        "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
-        "Name": "Attack",
-        "Hotkey": "A"
       }
     ],
     "ZBl1": [
@@ -659,6 +585,7 @@
         "Column": 4,
         "Type": "Submenu",
         "id": "Cancel",
+        "Icon": "btn-command-cancel",
         "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
         "Name": "Cancel",
         "Hotkey": "Esc"
@@ -693,7 +620,7 @@
         "AbilCmd": "BeaconBuild,Build4",
         "id": "TeleportationNode",
         "Icon": "btn-ued-teleportation-node",
-        "Tooltip": "Universal production structure for the Directorate army, capable of deploying any combat units.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Garmrs<br/>- Strike Troopers<br/>- Enrichment Towers",
+        "Tooltip": "Universal production structure for the Directorate army, capable of deploying any combat units.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Garmrs<br/>- Strike Troopers<br/>",
         "Name": "Calldown Teleportation Node",
         "Hotkey": "E"
       },
@@ -781,6 +708,7 @@
         "Column": 4,
         "Type": "Submenu",
         "id": "Cancel",
+        "Icon": "btn-command-cancel",
         "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
         "Name": "Cancel",
         "Hotkey": "Esc"
@@ -973,6 +901,7 @@
         "Type": "Submenu",
         "AbilCmd": "BeaconBuild,Build1",
         "id": "Cancel",
+        "Icon": "btn-command-cancel",
         "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
         "Name": "Cancel",
         "Hotkey": "Esc"
@@ -983,7 +912,7 @@
   "CargoSize": 2,
   "ScoreMake": 50,
   "ScoreKill": 50,
-  "ScoreResult": "Units",
+  "ScoreResult": "BuildOrder",
   "SubgroupPriority": 95,
   "GlossaryCategory": "Unit/Category/UEDUnits",
   "GlossaryPriority": 20,
@@ -1072,12 +1001,6 @@
       "Name": "Patrol"
     },
     {
-      "AbilCmd": "attackUED,Execute",
-      "id": "MothershipCoreAttack",
-      "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
-      "Name": "Attack"
-    },
-    {
       "AbilCmd": "BeaconBuild,Build1",
       "id": "OperationHeadquarters",
       "Icon": "btn-structure-ued-biodome",
@@ -1095,7 +1018,7 @@
       "AbilCmd": "BeaconBuild,Build4",
       "id": "TeleportationNode",
       "Icon": "btn-ued-teleportation-node",
-      "Tooltip": "Universal production structure for the Directorate army, capable of deploying any combat units.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Garmrs<br/>- Strike Troopers<br/>- Enrichment Towers",
+      "Tooltip": "Universal production structure for the Directorate army, capable of deploying any combat units.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Garmrs<br/>- Strike Troopers<br/>",
       "Name": "Calldown Teleportation Node"
     },
     {
@@ -1150,6 +1073,7 @@
     {
       "AbilCmd": "BeaconBuild,Build1",
       "id": "Cancel",
+      "Icon": "btn-command-cancel",
       "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
       "Name": "Cancel"
     }

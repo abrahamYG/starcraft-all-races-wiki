@@ -12,6 +12,7 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "SkyrazerEmberCore",
+  "EditorCategories": "Race:Dragon,UpgradeType:Talents",
   "$tokens": {
     "ID": {
       "type": "string",
@@ -93,7 +94,6 @@
       "Value": "3"
     }
   ],
-  "EditorCategories": "Race:Dragon,UpgradeType:Talents",
   "AffectedUnitArray": [
     "Skyrazer"
   ],

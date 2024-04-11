@@ -130,12 +130,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -192,12 +186,6 @@
           "EditorCategories": "Race:Neutral,AbilityorEffectType:Units",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -292,45 +280,6 @@
         "Tooltip": "Allows <span style=\"color: #ffff8a\">High Templar</span> to summon a storm of psionic energy, causing heavy damage to every unit in the target area.",
         "Name": "Research Psionic Storm",
         "Hotkey": "T"
-      },
-      {
-        "Upgrade": "",
-        "Info": {
-          "Button": {
-            "Flags": {
-              "AllowMinimap": 0,
-              "ShowInGlossary": 0
-            },
-            "DefaultButtonFace": "",
-            "Requirements": ""
-          },
-          "Resource": {
-            "Minerals": 0,
-            "Vespene": 0
-          },
-          "Time": 0,
-          "Upgrade": ""
-        },
-        "Time": 0,
-        "Cost": {
-          "Minerals": 0,
-          "Vespene": 0,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 0,
-        "Column": 1,
-        "Type": "AbilCmd",
-        "AbilCmd": "TemplarArchivesResearch,Research1",
-        "id": "ResearchHighTemplarEnergyUpgrade",
-        "Icon": "btn-upgrade-protoss-khaydarinamulet",
-        "Tooltip": "Increases the starting energy of <span style=\"color: #ffff8a\">High Templar</span> by <b>25</b>.",
-        "Name": "Research Khaydarin Amulet",
-        "Hotkey": "K"
       }
     ]
   },
@@ -381,14 +330,12 @@
     "ProtossShieldsLevel3",
     "ProtossBuild",
     "IsTemplarArchives",
-    "TemplarArchivesSplat",
-    "TemplarArchive"
+    "TemplarArchivesSplat"
   ],
   "$Requirements": [],
   "$Production": [],
   "$Research": [
-    "PsiStormTech",
-    ""
+    "PsiStormTech"
   ],
   "$Morph": [],
   "$Phase": [],
@@ -416,13 +363,6 @@
       "Icon": "btn-ability-protoss-psistorm-color",
       "Tooltip": "Allows <span style=\"color: #ffff8a\">High Templar</span> to summon a storm of psionic energy, causing heavy damage to every unit in the target area.",
       "Name": "Research Psionic Storm"
-    },
-    {
-      "AbilCmd": "TemplarArchivesResearch,Research1",
-      "id": "ResearchHighTemplarEnergyUpgrade",
-      "Icon": "btn-upgrade-protoss-khaydarinamulet",
-      "Tooltip": "Increases the starting energy of <span style=\"color: #ffff8a\">High Templar</span> by <b>25</b>.",
-      "Name": "Research Khaydarin Amulet"
     }
   ]
 }

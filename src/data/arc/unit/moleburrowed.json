@@ -10,8 +10,8 @@
   "Response": "Acquire",
   "ResourceState": "Unknown",
   "ResourceType": "Unknown",
-  "LifeStart": 150,
-  "LifeMax": 150,
+  "LifeStart": 125,
+  "LifeMax": 125,
   "LifeArmorName": "Ground Mechanical Plating",
   "Mover": "Ground",
   "StationaryTurningRate": 990,
@@ -39,6 +39,7 @@
     "AlwaysThreatens",
     "AISupport",
     "AIPressForwardDisabled",
+    "Cloaked",
     "Buried"
   ],
   "EditorFlags": [
@@ -84,8 +85,6 @@
     }
   },
   "Collide": [
-    "Ground",
-    "ForceField",
     "Burrow"
   ],
   "Attributes": [
@@ -279,7 +278,7 @@
             }
           },
           "Unit": "Mole",
-          "RandomDelayMax": 0.5
+          "RandomDelayMax": 0.25
         },
         "Unit": "Mole",
         "Cost": {
@@ -366,7 +365,7 @@
         "AbilCmd": "MoleSubterraneanSensors,On",
         "id": "SubterraneanSensors",
         "Icon": "btn-upgrade-terran-nova-detector",
-        "Tooltip": "While buried, the <span style=\"color: #FFFF80\">Mole</span> gains +<b>30</b> ground radar range.<br/><br/><span style=\"color: #78F0FF\">Drains <b>2</b> power per second.</span>",
+        "Tooltip": "While burrowed, the <span style=\"color: #FFFF80\">Mole</span> gains +<b>30</b> ground radar range.<br/><br/><span style=\"color: #78F0FF\">Drains <b>2</b> power per second.</span>",
         "Name": "Subterranean Sensors",
         "Hotkey": "Q"
       },
@@ -504,7 +503,7 @@
           "SectionArray": {
             "Actor": {
               "DurationArray": {
-                "Duration": 1.4
+                "Duration": 1.25
               },
               "EffectArray": {
                 "Start": "MoleLockTurret",
@@ -514,13 +513,14 @@
             },
             "Stats": {
               "DurationArray": {
-                "Delay": 1.4
+                "Duration": 1.25
               }
             }
           },
-          "Unit": "MoleBuried"
+          "Unit": "MoleRooted",
+          "RandomDelayMax": 0.0625
         },
-        "Unit": "MoleBuried",
+        "Unit": "MoleRooted",
         "Cost": {
           "Minerals": 150,
           "Vespene": 100,
@@ -532,284 +532,14 @@
           "Food": -3
         },
         "Row": 2,
-        "Column": 2,
-        "Type": "AbilCmd",
-        "AbilCmd": "MoleBury,Execute",
-        "id": "MoleConceal",
-        "Icon": "btn-ability-genetron-conceal",
-        "Tooltip": "Buries the Mole's cannon. It will be unable to attack, but cannot be seen without detection.",
-        "Name": "Conceal",
-        "Hotkey": "R"
-      },
-      {
-        "Info": {
-          "class": "CAbilMove",
-          "Name": "Abil/Name/move",
-          "TechPlayer": "Upkeep",
-          "EditorCategories": "Race:Neutral,AbilityorEffectType:Units",
-          "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
-          "OrderArray": [
-            {
-              "DisplayType": "Move",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Move",
-              "Color": "255,35,125,255",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            }
-          ],
-          "SharedFlags": {
-            "DisableWhileDead": 1
-          },
-          "DataCollection": "move",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
-          "CmdButtonArray": {
-            "Move": {
-              "Flags": {
-                "ToSelection": 1
-              },
-              "DefaultButtonFace": "Move"
-            },
-            "Patrol": {
-              "Flags": {
-                "ToSelection": 1
-              },
-              "DefaultButtonFace": "MovePatrol"
-            },
-            "HoldPos": {
-              "Flags": {
-                "ToSelection": 1
-              },
-              "DefaultButtonFace": "MoveHoldPosition"
-            },
-            "AcquireMove": {
-              "Flags": {
-                "ToSelection": 1
-              },
-              "DefaultButtonFace": "AcquireMove"
-            },
-            "Turn": {
-              "Flags": {
-                "ToSelection": 1
-              },
-              "DefaultButtonFace": "Turn"
-            }
-          },
-          "FleeRange": 5,
-          "FleeTime": 5,
-          "FollowRangeSlop": 1,
-          "FollowAcquireRange": 6,
-          "MinPatrolDistance": 1,
-          "id": "move"
-        },
-        "Cost": {
-          "Minerals": 0,
-          "Vespene": 0,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 0,
-        "Column": 0,
-        "Type": "AbilCmd",
-        "AbilCmd": "move,Move",
-        "id": "Move",
-        "Icon": "btn-command-move",
-        "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
-        "Name": "Move",
-        "Hotkey": "M"
-      },
-      {
-        "Info": {
-          "class": "CAbilMove",
-          "Name": "Abil/Name/move",
-          "TechPlayer": "Upkeep",
-          "EditorCategories": "Race:Neutral,AbilityorEffectType:Units",
-          "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
-          "OrderArray": [
-            {
-              "DisplayType": "Move",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Move",
-              "Color": "255,35,125,255",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            }
-          ],
-          "SharedFlags": {
-            "DisableWhileDead": 1
-          },
-          "DataCollection": "move",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
-          "CmdButtonArray": {
-            "Move": {
-              "Flags": {
-                "ToSelection": 1
-              },
-              "DefaultButtonFace": "Move"
-            },
-            "Patrol": {
-              "Flags": {
-                "ToSelection": 1
-              },
-              "DefaultButtonFace": "MovePatrol"
-            },
-            "HoldPos": {
-              "Flags": {
-                "ToSelection": 1
-              },
-              "DefaultButtonFace": "MoveHoldPosition"
-            },
-            "AcquireMove": {
-              "Flags": {
-                "ToSelection": 1
-              },
-              "DefaultButtonFace": "AcquireMove"
-            },
-            "Turn": {
-              "Flags": {
-                "ToSelection": 1
-              },
-              "DefaultButtonFace": "Turn"
-            }
-          },
-          "FleeRange": 5,
-          "FleeTime": 5,
-          "FollowRangeSlop": 1,
-          "FollowAcquireRange": 6,
-          "MinPatrolDistance": 1,
-          "id": "move"
-        },
-        "Cost": {
-          "Minerals": 0,
-          "Vespene": 0,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 0,
-        "Column": 2,
-        "Type": "AbilCmd",
-        "AbilCmd": "move,HoldPos",
-        "id": "MoveHoldPosition",
-        "Icon": "btn-command-holdposition",
-        "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
-        "Name": "Hold Position",
-        "Hotkey": "H"
-      },
-      {
-        "Info": {
-          "class": "CAbilMove",
-          "Name": "Abil/Name/move",
-          "TechPlayer": "Upkeep",
-          "EditorCategories": "Race:Neutral,AbilityorEffectType:Units",
-          "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
-          "OrderArray": [
-            {
-              "DisplayType": "Move",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Move",
-              "Color": "255,35,125,255",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            }
-          ],
-          "SharedFlags": {
-            "DisableWhileDead": 1
-          },
-          "DataCollection": "move",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
-          "CmdButtonArray": {
-            "Move": {
-              "Flags": {
-                "ToSelection": 1
-              },
-              "DefaultButtonFace": "Move"
-            },
-            "Patrol": {
-              "Flags": {
-                "ToSelection": 1
-              },
-              "DefaultButtonFace": "MovePatrol"
-            },
-            "HoldPos": {
-              "Flags": {
-                "ToSelection": 1
-              },
-              "DefaultButtonFace": "MoveHoldPosition"
-            },
-            "AcquireMove": {
-              "Flags": {
-                "ToSelection": 1
-              },
-              "DefaultButtonFace": "AcquireMove"
-            },
-            "Turn": {
-              "Flags": {
-                "ToSelection": 1
-              },
-              "DefaultButtonFace": "Turn"
-            }
-          },
-          "FleeRange": 5,
-          "FleeTime": 5,
-          "FollowRangeSlop": 1,
-          "FollowAcquireRange": 6,
-          "MinPatrolDistance": 1,
-          "id": "move"
-        },
-        "Cost": {
-          "Minerals": 0,
-          "Vespene": 0,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 0,
         "Column": 3,
         "Type": "AbilCmd",
-        "AbilCmd": "move,Patrol",
-        "id": "MovePatrol",
-        "Icon": "btn-command-patrol",
-        "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
-        "Name": "Patrol",
-        "Hotkey": "P"
+        "AbilCmd": "MoleUnbury,Execute",
+        "id": "MoleReveal",
+        "Icon": "btn-ability-genetron-ambush",
+        "Tooltip": "Returns the Mole's cannon to the surface.",
+        "Name": "Reveal",
+        "Hotkey": "F"
       },
       {
         "Info": {
@@ -875,7 +605,96 @@
         "AbilCmd": "MoleSubterraneanSensors,Off",
         "id": "MoleSubterraneanSensorsOff",
         "Icon": "btn-upgrade-terran-nova-detector",
-        "Tooltip": "Dsiables the <span style=\"color: #FFFF80\">Mole's</span> Subterranean Sensors.",
+        "Tooltip": "Disables the Subterranean Sensors.",
+        "Name": "Subterranean Sensors Off",
+        "Hotkey": "W"
+      },
+      {
+        "Cost": {
+          "Minerals": 0,
+          "Vespene": 0,
+          "Terazine": 0,
+          "Custom": 0,
+          "Energy": 0,
+          "Life": 0,
+          "Shields": 0,
+          "Food": 0
+        },
+        "Row": 1,
+        "Column": 0,
+        "Type": "Passive",
+        "AbilCmd": "",
+        "id": "SubterraneanSensors",
+        "Icon": "btn-upgrade-terran-nova-detector",
+        "Tooltip": "While burrowed, the <span style=\"color: #FFFF80\">Mole</span> gains +<b>30</b> ground radar range.<br/><br/><span style=\"color: #78F0FF\">Drains <b>2</b> power per second.</span>",
+        "Name": "Subterranean Sensors",
+        "Hotkey": "Q"
+      },
+      {
+        "Info": {
+          "class": "CAbilBehavior",
+          "Name": "Abil/Name/MoleSubterraneanSensors",
+          "TechPlayer": "Upkeep",
+          "EditorCategories": "Race:Genetron,AbilityorEffectType:Units",
+          "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
+          "OrderArray": [
+            {
+              "DisplayType": "Confirm",
+              "Color": "255,0,255,0",
+              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
+              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
+            }
+          ],
+          "SharedFlags": {
+            "DisableWhileDead": 1
+          },
+          "DataCollection": "MoleSubterraneanSensors",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
+          "CmdButtonArray": {
+            "On": {
+              "Flags": {
+                "ShowInGlossary": 1
+              },
+              "DefaultButtonFace": "SubterraneanSensors"
+            },
+            "Off": {
+              "DefaultButtonFace": "MoleSubterraneanSensorsOff"
+            }
+          },
+          "VeterancyLevelMin": 0,
+          "VeterancyLevelSkip": 0,
+          "Flags": {
+            "Toggle": 1,
+            "ToggledOn": 1,
+            "Transient": 1
+          },
+          "BehaviorArray": [
+            "MoleSubterraneanSensors"
+          ],
+          "id": "MoleSubterraneanSensors"
+        },
+        "Cost": {
+          "Minerals": 0,
+          "Vespene": 0,
+          "Terazine": 0,
+          "Custom": 0,
+          "Energy": 0,
+          "Life": 0,
+          "Shields": 0,
+          "Food": 0
+        },
+        "Row": 1,
+        "Column": 1,
+        "Type": "AbilCmd",
+        "AbilCmd": "MoleSubterraneanSensors,Off",
+        "id": "MoleSubterraneanSensorsOff",
+        "Icon": "btn-upgrade-terran-nova-detector",
+        "Tooltip": "Disables the Subterranean Sensors.",
         "Name": "Subterranean Sensors Off",
         "Hotkey": "W"
       }
@@ -895,7 +714,15 @@
   "TechAliasArray": [
     "Alias_Mole"
   ],
-  "EquipmentArray": [],
+  "EquipmentArray": [
+    {
+      "Effect": "",
+      "Icon": "",
+      "Name": "",
+      "Tooltip": "",
+      "Weapon": "LynxCannon"
+    }
+  ],
   "GlossaryPriority": 8,
   "GlossaryStrongArray": [
     "Inciter",
@@ -910,22 +737,11 @@
     "Zergling"
   ],
   "KillDisplay": "Always",
+  "Footprint": "",
   "Icon": "btn-unit-genetron-mole",
   "LifeArmorIcon": "btn-upgrade-genetron-groundmechplating-level0",
   "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-  "Weapons": [
-    {
-      "Turret": "MoleTurret",
-      "id": "LynxCannon",
-      "Icon": "btn-upgrade-genetron-heavymechweapons-level0",
-      "Name": "Lynx Cannon",
-      "Amount": 50,
-      "Kind": "Ranged",
-      "TargetFilters": "Ground",
-      "Range": 13,
-      "Period": 1.75
-    }
-  ],
+  "Weapons": [],
   "Behaviors": [
     {
       "id": "GenetronPowerSupplyTracker"
@@ -952,8 +768,8 @@
       "Name": "MoleDeactivate"
     },
     {
-      "id": "MoleBury",
-      "Name": "MoleBury"
+      "id": "MoleUnbury",
+      "Name": "MoleUnbury"
     },
     {
       "id": "MoleTurnTurret",
@@ -961,26 +777,20 @@
     }
   ],
   "$Upgrades": [
-    "MoleUnbury",
-    "MoleBuried",
-    "MoleActivate",
+    "IsMoleBurrowed",
+    "MoleBuryFull",
     "GenetronGroundPlatingLevel1",
     "Mole",
-    "MoleBurrowed",
-    "SubterraneanSensors",
+    "MoleRooted",
     "GenetronGroundPlating",
-    "GenetronHeavyWeaponsLevel1",
-    "GenetronHeavyWeapons",
-    "GenetronHeavyWeaponsLevel2",
-    "GenetronHeavyWeaponsLevel3",
     "GenetronGroundPlatingLevel2",
     "GenetronGroundPlatingLevel3",
+    "MoleBury",
+    "IsNotMoleBurrowed",
     "MoleAttackRange",
     "MoleTurret",
     "MoleBurrowSound",
-    "MoleBurrowedSplat",
-    "IsMoleBurrowed",
-    "GenetronHeavyWeaponsRevert"
+    "MoleBurrowedSplat"
   ],
   "$Requirements": [],
   "$Production": [
@@ -988,12 +798,11 @@
   ],
   "$Research": [],
   "$Morph": [
-    "Mole"
+    "Mole",
+    "MoleRooted"
   ],
-  "$Phase": [
-    "MoleBuried"
-  ],
-  "$Phased": "Mole",
+  "$Phase": [],
+  "$Phased": "MoleRooted",
   "$Producers": [],
   "$Commands": [
     {
@@ -1021,7 +830,7 @@
       "AbilCmd": "MoleSubterraneanSensors,On",
       "id": "SubterraneanSensors",
       "Icon": "btn-upgrade-terran-nova-detector",
-      "Tooltip": "While buried, the <span style=\"color: #FFFF80\">Mole</span> gains +<b>30</b> ground radar range.<br/><br/><span style=\"color: #78F0FF\">Drains <b>2</b> power per second.</span>",
+      "Tooltip": "While burrowed, the <span style=\"color: #FFFF80\">Mole</span> gains +<b>30</b> ground radar range.<br/><br/><span style=\"color: #78F0FF\">Drains <b>2</b> power per second.</span>",
       "Name": "Subterranean Sensors"
     },
     {
@@ -1032,38 +841,24 @@
       "Name": "Turn"
     },
     {
-      "AbilCmd": "MoleBury,Execute",
-      "id": "MoleConceal",
-      "Icon": "btn-ability-genetron-conceal",
-      "Tooltip": "Buries the Mole's cannon. It will be unable to attack, but cannot be seen without detection.",
-      "Name": "Conceal"
-    },
-    {
-      "AbilCmd": "move,Move",
-      "id": "Move",
-      "Icon": "btn-command-move",
-      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
-      "Name": "Move"
-    },
-    {
-      "AbilCmd": "move,HoldPos",
-      "id": "MoveHoldPosition",
-      "Icon": "btn-command-holdposition",
-      "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
-      "Name": "Hold Position"
-    },
-    {
-      "AbilCmd": "move,Patrol",
-      "id": "MovePatrol",
-      "Icon": "btn-command-patrol",
-      "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
-      "Name": "Patrol"
+      "AbilCmd": "MoleUnbury,Execute",
+      "id": "MoleReveal",
+      "Icon": "btn-ability-genetron-ambush",
+      "Tooltip": "Returns the Mole's cannon to the surface.",
+      "Name": "Reveal"
     },
     {
       "AbilCmd": "MoleSubterraneanSensors,Off",
       "id": "MoleSubterraneanSensorsOff",
       "Icon": "btn-upgrade-terran-nova-detector",
-      "Tooltip": "Dsiables the <span style=\"color: #FFFF80\">Mole's</span> Subterranean Sensors.",
+      "Tooltip": "Disables the Subterranean Sensors.",
+      "Name": "Subterranean Sensors Off"
+    },
+    {
+      "AbilCmd": "MoleSubterraneanSensors,Off",
+      "id": "MoleSubterraneanSensorsOff",
+      "Icon": "btn-upgrade-terran-nova-detector",
+      "Tooltip": "Disables the Subterranean Sensors.",
       "Name": "Subterranean Sensors Off"
     }
   ]

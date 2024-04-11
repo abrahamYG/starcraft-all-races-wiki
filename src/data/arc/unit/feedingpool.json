@@ -101,7 +101,7 @@
   ],
   "LifeArmor": 1,
   "Sight": 9,
-  "CostCategory": "Technology",
+  "CostCategory": "Economy",
   "ScoreResult": "BuildOrder",
   "HotkeyCategory": "Unit/Category/XayidUnits",
   "id": "FeedingPool",

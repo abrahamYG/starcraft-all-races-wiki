@@ -94,24 +94,23 @@
     "Ground",
     "Structure",
     "RoachBurrow",
-    "ForceField"
+    "ForceField",
+    "Flying5"
   ],
   "Attributes": [
     "Armored",
     "Structure"
   ],
   "LifeArmor": 1,
-  "Sight": 10,
+  "Sight": 11,
   "CostCategory": "Economy",
   "ScoreResult": "BuildOrder",
   "HotkeyCategory": "Unit/Category/KeironUnits",
-  "LifeRegenRate": 0.25,
+  "LifeRegenRate": 0.2734,
   "Food": 18,
-  "Footprint": "Footprint5x5Contour",
-  "PlacementFootprint": "Footprint5x5DropOff",
+  "Footprint": "FootprintCitadelContour",
+  "PlacementFootprint": "FootprintCitadelDropOff",
   "ShieldArmorName": "Keiron Dispersion Shields",
-  "ShieldRegenDelay": 4,
-  "ShieldRegenRate": 1.25,
   "CardLayouts": {
     "Root": [
       {
@@ -122,12 +121,6 @@
           "EditorCategories": "Race:Neutral,AbilityorEffectType:Structures",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -189,12 +182,6 @@
           "EditorCategories": "Race:Neutral,AbilityorEffectType:Units",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -364,12 +351,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -454,7 +435,8 @@
               "Flags": {
                 "ShowInGlossary": 1
               },
-              "DefaultButtonFace": "CitadelEnergize"
+              "DefaultButtonFace": "CitadelEnergize",
+              "Requirements": "CitadelIsCharged"
             }
           },
           "Cost": [
@@ -502,6 +484,9 @@
           "Unit": [
             "Aegis"
           ],
+          "Flags": {
+            "IgnorePlacement": 1
+          },
           "Time": 100
         },
         "Unit": [
@@ -591,7 +576,7 @@
         "AbilCmd": "KeironCitadelMaterialize,Train1",
         "id": "MaterializePariah",
         "Icon": "btn-unit-keiron-pariah",
-        "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Edifice</span>.<br/><br/>Light melee warrior. Can use Projection.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
+        "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Edifice</span>.<br/><br/>",
         "Name": "Materialize Pariah",
         "Hotkey": "A"
       },
@@ -634,7 +619,7 @@
         "AbilCmd": "KeironCitadelMaterialize,Train2",
         "id": "MaterializeVolt",
         "Icon": "btn-unit-keiron-volt",
-        "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Edifice</span>.<br/><br/>Light ranged warrior.<br/><br/><span style=\"color: #FFFF80\">Can attack ground and air units.</span>",
+        "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Edifice</span>.<br/><br/>",
         "Name": "Materialize Volt",
         "Hotkey": "V"
       },
@@ -677,7 +662,7 @@
         "AbilCmd": "KeironCitadelMaterialize,Train3",
         "id": "MaterializePulsar",
         "Icon": "btn-unit-keiron-pulsar",
-        "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Sanctum</span>.<br/><br/>Durable close range combat unit. Can be upgraded to use the Dampener ability.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
+        "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Sanctum</span>.<br/><br/>",
         "Name": "Materialize Pulsar",
         "Hotkey": "R"
       },
@@ -687,7 +672,7 @@
             "Flags": {
               "AllowMinimap": 1
             },
-            "DefaultButtonFace": "MaterializeSubjecter"
+            "DefaultButtonFace": "MaterializeCataract"
           },
           "Charge": {
             "CountMax": 500000,
@@ -700,9 +685,9 @@
             "Location": "Player"
           },
           "Time": 5,
-          "Unit": "Subjecter"
+          "Unit": "Cataract"
         },
-        "Unit": "Subjecter",
+        "Unit": "Cataract",
         "Time": 5,
         "Cost": {
           "Minerals": 125,
@@ -718,11 +703,11 @@
         "Column": 3,
         "Type": "AbilCmd",
         "AbilCmd": "KeironCitadelMaterialize,Train4",
-        "id": "MaterializeSubjecter",
-        "Icon": "btn-unit-keiron-subjecter",
-        "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Sanctum</span>.<br/><br/>Ranged anti-air support unit.<br/><br/><span style=\"color: #FFFF80\">Can attack ground and air units.</span>",
-        "Name": "Materialize Subjecter",
-        "Hotkey": "S"
+        "id": "MaterializeCataract",
+        "Icon": "btn-unit-keiron-cataract",
+        "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Sanctum</span>.<br/><br/>",
+        "Name": "Materialize Cataract",
+        "Hotkey": "C"
       },
       {
         "Info": {
@@ -730,7 +715,50 @@
             "Flags": {
               "AllowMinimap": 1
             },
-            "DefaultButtonFace": "MaterializeMeridian"
+            "DefaultButtonFace": "MaterializeMyriad"
+          },
+          "Charge": {
+            "CountMax": 500000,
+            "CountUse": 1,
+            "Link": "Abil/KeironCitadelMaterializeIndMyr",
+            "Location": "Player"
+          },
+          "Cooldown": {
+            "Link": "Abil/KeironCitadelMaterializeIndMyr",
+            "Location": "Player"
+          },
+          "Time": 5,
+          "Unit": "Myriad"
+        },
+        "Unit": "Myriad",
+        "Time": 5,
+        "Cost": {
+          "Minerals": 250,
+          "Vespene": 200,
+          "Terazine": 0,
+          "Custom": 0,
+          "Energy": 0,
+          "Life": 0,
+          "Shields": 0,
+          "Food": -6
+        },
+        "Row": 1,
+        "Column": 3,
+        "Type": "AbilCmd",
+        "AbilCmd": "KeironCitadelMaterialize,Train8",
+        "id": "MaterializeMyriad",
+        "Icon": "btn-unit-keiron-myriad",
+        "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Atrium</span>.<br/><br/>",
+        "Name": "Materialize Myriad",
+        "Hotkey": "Y"
+      },
+      {
+        "Info": {
+          "Button": {
+            "Flags": {
+              "AllowMinimap": 1
+            },
+            "DefaultButtonFace": "MaterializeCrux"
           },
           "Charge": {
             "CountMax": 500000,
@@ -743,9 +771,9 @@
             "Location": "Player"
           },
           "Time": 5,
-          "Unit": "Meridian"
+          "Unit": "Crux"
         },
-        "Unit": "Meridian",
+        "Unit": "Crux",
         "Time": 5,
         "Cost": {
           "Minerals": 175,
@@ -761,54 +789,11 @@
         "Column": 4,
         "Type": "AbilCmd",
         "AbilCmd": "KeironCitadelMaterialize,Train5",
-        "id": "MaterializeMeridian",
+        "id": "MaterializeCrux",
         "Icon": "btn-unit-keiron-meridian",
-        "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Elysium</span>.<br/><br/>Spell caster. Can use Beholder and Lightning Bolt. Can be upgraded to use Convergence.<br/><br/><span style=\"color: #FFFF80\">Can attack ground and air units.</span>",
-        "Name": "Materialize Meridian",
+        "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Elysium</span>.<br/><br/>",
+        "Name": "Materialize Crux",
         "Hotkey": "E"
-      },
-      {
-        "Info": {
-          "Button": {
-            "Flags": {
-              "AllowMinimap": 1
-            },
-            "DefaultButtonFace": "MaterializeTitan"
-          },
-          "Charge": {
-            "CountMax": 500000,
-            "CountUse": 1,
-            "Link": "Abil/KeironCitadelMaterializeTitan",
-            "Location": "Player"
-          },
-          "Cooldown": {
-            "Link": "Abil/KeironCitadelMaterializeTitan",
-            "Location": "Player"
-          },
-          "Time": 10,
-          "Unit": "Titan"
-        },
-        "Unit": "Titan",
-        "Time": 10,
-        "Cost": {
-          "Minerals": 325,
-          "Vespene": 225,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": -6
-        },
-        "Row": 1,
-        "Column": 3,
-        "Type": "AbilCmd",
-        "AbilCmd": "KeironCitadelMaterialize,Train9",
-        "id": "MaterializeTitan",
-        "Icon": "btn-unit-keiron-titan",
-        "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Pantheon</span>.</n><br/>Heavy assault walker.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
-        "Name": "Materialize Titan",
-        "Hotkey": "T"
       },
       {
         "Info": {
@@ -849,9 +834,52 @@
         "AbilCmd": "KeironCitadelMaterialize,Train6",
         "id": "MaterializeUmbra",
         "Icon": "btn-unit-keiron-umbra",
-        "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Foundry</span>.<br/><br/>Tactical cloaking anti-armored specialist. Can be upgraded to use Stealth Compulsion.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
+        "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Foundry</span>.<br/><br/>",
         "Name": "Materialize Umbra",
         "Hotkey": "B"
+      },
+      {
+        "Info": {
+          "Button": {
+            "Flags": {
+              "AllowMinimap": 1
+            },
+            "DefaultButtonFace": "MaterializeWard"
+          },
+          "Charge": {
+            "CountMax": 500000,
+            "CountUse": 1,
+            "Link": "Abil/KeironCitadelMaterializeUmbra",
+            "Location": "Player"
+          },
+          "Cooldown": {
+            "Link": "Abil/KeironCitadelMaterializeUmbra",
+            "Location": "Player"
+          },
+          "Time": 5,
+          "Unit": "Ward"
+        },
+        "Unit": "Ward",
+        "Time": 5,
+        "Cost": {
+          "Minerals": 150,
+          "Vespene": 150,
+          "Terazine": 0,
+          "Custom": 0,
+          "Energy": 0,
+          "Life": 0,
+          "Shields": 0,
+          "Food": -3
+        },
+        "Row": 1,
+        "Column": 1,
+        "Type": "AbilCmd",
+        "AbilCmd": "KeironCitadelMaterialize,Train18",
+        "id": "MaterializeWard",
+        "Icon": "btn-unit-keiron-ward",
+        "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Foundry</span>.<br/><br/>",
+        "Name": "Materialize Ward",
+        "Hotkey": "W"
       },
       {
         "Info": {
@@ -884,60 +912,17 @@
           "Energy": 0,
           "Life": 0,
           "Shields": 0,
-          "Food": -6
-        },
-        "Row": 1,
-        "Column": 1,
-        "Type": "AbilCmd",
-        "AbilCmd": "KeironCitadelMaterialize,Train7",
-        "id": "MaterializeInducer",
-        "Icon": "btn-unit-keiron-inducer",
-        "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Atrium</span>.<br/><br/>Siege unit which launches an orb that must return before firing again.<br/><br/><span style=\"color: #FFFF80\">Can attack ground and air units.</span>",
-        "Name": "Materialize Inducer",
-        "Hotkey": "D"
-      },
-      {
-        "Info": {
-          "Button": {
-            "Flags": {
-              "AllowMinimap": 1
-            },
-            "DefaultButtonFace": "MaterializeMyriad"
-          },
-          "Charge": {
-            "CountMax": 500000,
-            "CountUse": 1,
-            "Link": "Abil/KeironCitadelMaterializeIndMyr",
-            "Location": "Player"
-          },
-          "Cooldown": {
-            "Link": "Abil/KeironCitadelMaterializeIndMyr",
-            "Location": "Player"
-          },
-          "Time": 5,
-          "Unit": "Myriad"
-        },
-        "Unit": "Myriad",
-        "Time": 5,
-        "Cost": {
-          "Minerals": 250,
-          "Vespene": 175,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": -6
+          "Food": -5
         },
         "Row": 1,
         "Column": 2,
         "Type": "AbilCmd",
-        "AbilCmd": "KeironCitadelMaterialize,Train8",
-        "id": "MaterializeMyriad",
-        "Icon": "btn-unit-keiron-myriad",
-        "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Atrium</span>.<br/><br/>Siege unit. Can produce and attack with Elytra.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
-        "Name": "Materialize Myriad",
-        "Hotkey": "Y"
+        "AbilCmd": "KeironCitadelMaterialize,Train7",
+        "id": "MaterializeInducer",
+        "Icon": "btn-unit-keiron-inducer",
+        "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Atrium</span>.<br/><br/>",
+        "Name": "Materialize Inducer",
+        "Hotkey": "D"
       },
       {
         "Cost": {
@@ -979,6 +964,49 @@
         "Tooltip": "A list of air units.",
         "Name": "Materialize Air Units",
         "Hotkey": "X"
+      },
+      {
+        "Info": {
+          "Button": {
+            "Flags": {
+              "AllowMinimap": 1
+            },
+            "DefaultButtonFace": "MaterializeTitan"
+          },
+          "Charge": {
+            "CountMax": 500000,
+            "CountUse": 1,
+            "Link": "Abil/KeironCitadelMaterializeTitan",
+            "Location": "Player"
+          },
+          "Cooldown": {
+            "Link": "Abil/KeironCitadelMaterializeTitan",
+            "Location": "Player"
+          },
+          "Time": 10,
+          "Unit": "Titan"
+        },
+        "Unit": "Titan",
+        "Time": 10,
+        "Cost": {
+          "Minerals": 325,
+          "Vespene": 225,
+          "Terazine": 0,
+          "Custom": 0,
+          "Energy": 0,
+          "Life": 0,
+          "Shields": 0,
+          "Food": -6
+        },
+        "Row": 1,
+        "Column": 4,
+        "Type": "AbilCmd",
+        "AbilCmd": "KeironCitadelMaterialize,Train9",
+        "id": "MaterializeTitan",
+        "Icon": "btn-unit-keiron-titan",
+        "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Pantheon</span>.</n><br/>",
+        "Name": "Materialize Titan",
+        "Hotkey": "T"
       }
     ],
     "0003": [
@@ -1021,7 +1049,7 @@
         "AbilCmd": "KeironCitadelMaterialize,Train10",
         "id": "MaterializeEcho",
         "Icon": "btn-unit-keiron-echo",
-        "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Conduit</span>.<br/><br/>Melee air fighter. Can use Discord Mode and Reverb.<br/><br/><span style=\"color: #FFFF80\">Can attack air units.</span>",
+        "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Conduit</span>.<br/><br/>",
         "Name": "Materialize Echo",
         "Hotkey": "E"
       },
@@ -1049,14 +1077,14 @@
         "Unit": "Fuse",
         "Time": 5,
         "Cost": {
-          "Minerals": 75,
+          "Minerals": 100,
           "Vespene": 50,
           "Terazine": 0,
           "Custom": 0,
           "Energy": 0,
           "Life": 0,
           "Shields": 0,
-          "Food": -2
+          "Food": -1.5
         },
         "Row": 0,
         "Column": 1,
@@ -1064,7 +1092,6 @@
         "AbilCmd": "KeironCitadelMaterialize,Train17",
         "id": "MaterializeFuse",
         "Icon": "btn-unit-keiron-fuse",
-        "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Conduit</span>.<br/><br/>Support unit. Can use Fusion.",
         "Name": "Materialize Fuse",
         "Hotkey": "F"
       },
@@ -1107,7 +1134,7 @@
         "AbilCmd": "KeironCitadelMaterialize,Train11",
         "id": "MaterializeAurora",
         "Icon": "btn-unit-keiron-aurora",
-        "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Outlet</span>.<br/><br/>Tactical-strike aircraft. Can use Emanator.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
+        "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Outlet</span>.<br/><br/>",
         "Name": "Materialize Aurora",
         "Hotkey": "A"
       },
@@ -1136,7 +1163,7 @@
         "Time": 5,
         "Cost": {
           "Minerals": 100,
-          "Vespene": 125,
+          "Vespene": 100,
           "Terazine": 0,
           "Custom": 0,
           "Energy": 0,
@@ -1150,7 +1177,7 @@
         "AbilCmd": "KeironCitadelMaterialize,Train12",
         "id": "MaterializeAperture",
         "Icon": "btn-unit-keiron-aperture",
-        "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Outlet</span>.<br/><br/>Transport unit. Can be upgraded to use Keyhole.",
+        "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Outlet</span>.<br/><br/>",
         "Name": "Materialize Aperture",
         "Hotkey": "T"
       },
@@ -1178,7 +1205,7 @@
         "Unit": "Harbinger",
         "Time": 5,
         "Cost": {
-          "Minerals": 250,
+          "Minerals": 275,
           "Vespene": 175,
           "Terazine": 0,
           "Custom": 0,
@@ -1193,7 +1220,7 @@
         "AbilCmd": "KeironCitadelMaterialize,Train13",
         "id": "MaterializeHarbinger",
         "Icon": "btn-unit-keiron-harbinger",
-        "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Empyrean</span>.<br/><br/>Assault frigate. Can use Judgement Mode.<br/><br/><span style=\"color: #FFFF80\">Can attack ground and air units.</span>",
+        "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Empyrean</span>.<br/><br/>",
         "Name": "Materialize Harbinger",
         "Hotkey": "H"
       },
@@ -1232,7 +1259,7 @@
         "AbilCmd": "KeironCitadelMaterialize,Train14",
         "id": "MaterializeGyre",
         "Icon": "btn-unit-keiron-paradox",
-        "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Empyrean</span>.<br/><br/>Support unit. Can use Annex and Shackle.<br/><br/><span style=\"color: #FFE303\">Detector</span>",
+        "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Empyrean</span>.<br/><br/>",
         "Name": "Materialize Gyre",
         "Hotkey": "R"
       },
@@ -1267,7 +1294,7 @@
           "Energy": 0,
           "Life": 0,
           "Shields": 0,
-          "Food": -8
+          "Food": -7
         },
         "Row": 1,
         "Column": 2,
@@ -1275,7 +1302,7 @@
         "AbilCmd": "KeironCitadelMaterialize,Train15",
         "id": "MaterializeParagon",
         "Icon": "btn-unit-keiron-paragon",
-        "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Zenith</span>.<br/><br/>Capital ship. Can use Emissary Orb.<br/><br/><span style=\"color: #FFFF80\">Can attack ground and air units.</span>",
+        "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Zenith</span>.<br/><br/>",
         "Name": "Materialize Paragon",
         "Hotkey": "G"
       },
@@ -1324,17 +1351,17 @@
   },
   "id": "CitadelCharged",
   "Facing": 315,
-  "ShieldsStart": 500,
-  "ShieldsMax": 500,
   "ResourceDropOff": {
     "Minerals": 1,
     "Vespene": 1
   },
+  "ShieldsStart": 500,
+  "ShieldsMax": 500,
   "CostResource": {
-    "Minerals": 125
+    "Minerals": 575
   },
-  "ScoreMake": 125,
-  "ScoreKill": 525,
+  "ScoreMake": 150,
+  "ScoreKill": 550,
   "TechAliasArray": [
     "Alias_Citadel"
   ],
@@ -1343,9 +1370,10 @@
     "Pariah",
     "Volt",
     "Pulsar",
-    "Subjecter",
-    "Meridian",
+    "Cataract",
+    "Crux",
     "Umbra",
+    "Ward",
     "Inducer",
     "Myriad",
     "Titan",
@@ -1367,8 +1395,17 @@
   "Weapons": [],
   "Behaviors": [
     {
+      "id": "KeironShellRestoration"
+    },
+    {
       "id": "CitadelPowerSource",
       "Icon": "btn-building-keiron-citadel"
+    },
+    {
+      "id": "KeironShellRestorationAura"
+    },
+    {
+      "id": "KeironStructureCharged"
     }
   ],
   "Abilities": [
@@ -1402,14 +1439,16 @@
     }
   ],
   "$Upgrades": [
-    "KeironShieldsLevel1",
     "IsCitadelCharged",
+    "KeironShieldsLevel1",
     "CitadelChargeMorph",
     "Citadel",
+    "KeironCitadelPlayerDecalMacro",
     "KeironShields",
     "KeironShieldsLevel2",
     "KeironShieldsLevel3",
-    "NotCitadelCharged"
+    "NotCitadelCharged",
+    "KeironShieldsRevert"
   ],
   "$Requirements": [],
   "$Production": [
@@ -1425,12 +1464,13 @@
     "Pariah",
     "Volt",
     "Pulsar",
-    "Subjecter",
-    "Meridian",
-    "Titan",
+    "Cataract",
+    "Myriad",
+    "Crux",
     "Umbra",
+    "Ward",
     "Inducer",
-    "Myriad"
+    "Titan"
   ],
   "$Research": [],
   "$Morph": [],
@@ -1452,7 +1492,7 @@
       "Name": "Cancel"
     },
     {
-      "AbilCmd": "CitadelCharge,Cancel",
+      "AbilCmd": "CitadelCharge,255",
       "id": "CancelUpgradeMorph",
       "Icon": "btn-command-cancel",
       "Tooltip": "Cancels the upgrade order, returning the structure to its original state.",
@@ -1490,112 +1530,118 @@
       "AbilCmd": "KeironCitadelMaterialize,Train1",
       "id": "MaterializePariah",
       "Icon": "btn-unit-keiron-pariah",
-      "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Edifice</span>.<br/><br/>Light melee warrior. Can use Projection.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
+      "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Edifice</span>.<br/><br/>",
       "Name": "Materialize Pariah"
     },
     {
       "AbilCmd": "KeironCitadelMaterialize,Train2",
       "id": "MaterializeVolt",
       "Icon": "btn-unit-keiron-volt",
-      "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Edifice</span>.<br/><br/>Light ranged warrior.<br/><br/><span style=\"color: #FFFF80\">Can attack ground and air units.</span>",
+      "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Edifice</span>.<br/><br/>",
       "Name": "Materialize Volt"
     },
     {
       "AbilCmd": "KeironCitadelMaterialize,Train3",
       "id": "MaterializePulsar",
       "Icon": "btn-unit-keiron-pulsar",
-      "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Sanctum</span>.<br/><br/>Durable close range combat unit. Can be upgraded to use the Dampener ability.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
+      "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Sanctum</span>.<br/><br/>",
       "Name": "Materialize Pulsar"
     },
     {
       "AbilCmd": "KeironCitadelMaterialize,Train4",
-      "id": "MaterializeSubjecter",
-      "Icon": "btn-unit-keiron-subjecter",
-      "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Sanctum</span>.<br/><br/>Ranged anti-air support unit.<br/><br/><span style=\"color: #FFFF80\">Can attack ground and air units.</span>",
-      "Name": "Materialize Subjecter"
-    },
-    {
-      "AbilCmd": "KeironCitadelMaterialize,Train5",
-      "id": "MaterializeMeridian",
-      "Icon": "btn-unit-keiron-meridian",
-      "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Elysium</span>.<br/><br/>Spell caster. Can use Beholder and Lightning Bolt. Can be upgraded to use Convergence.<br/><br/><span style=\"color: #FFFF80\">Can attack ground and air units.</span>",
-      "Name": "Materialize Meridian"
-    },
-    {
-      "AbilCmd": "KeironCitadelMaterialize,Train9",
-      "id": "MaterializeTitan",
-      "Icon": "btn-unit-keiron-titan",
-      "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Pantheon</span>.</n><br/>Heavy assault walker.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
-      "Name": "Materialize Titan"
-    },
-    {
-      "AbilCmd": "KeironCitadelMaterialize,Train6",
-      "id": "MaterializeUmbra",
-      "Icon": "btn-unit-keiron-umbra",
-      "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Foundry</span>.<br/><br/>Tactical cloaking anti-armored specialist. Can be upgraded to use Stealth Compulsion.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
-      "Name": "Materialize Umbra"
-    },
-    {
-      "AbilCmd": "KeironCitadelMaterialize,Train7",
-      "id": "MaterializeInducer",
-      "Icon": "btn-unit-keiron-inducer",
-      "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Atrium</span>.<br/><br/>Siege unit which launches an orb that must return before firing again.<br/><br/><span style=\"color: #FFFF80\">Can attack ground and air units.</span>",
-      "Name": "Materialize Inducer"
+      "id": "MaterializeCataract",
+      "Icon": "btn-unit-keiron-cataract",
+      "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Sanctum</span>.<br/><br/>",
+      "Name": "Materialize Cataract"
     },
     {
       "AbilCmd": "KeironCitadelMaterialize,Train8",
       "id": "MaterializeMyriad",
       "Icon": "btn-unit-keiron-myriad",
-      "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Atrium</span>.<br/><br/>Siege unit. Can produce and attack with Elytra.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
+      "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Atrium</span>.<br/><br/>",
       "Name": "Materialize Myriad"
+    },
+    {
+      "AbilCmd": "KeironCitadelMaterialize,Train5",
+      "id": "MaterializeCrux",
+      "Icon": "btn-unit-keiron-meridian",
+      "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Elysium</span>.<br/><br/>",
+      "Name": "Materialize Crux"
+    },
+    {
+      "AbilCmd": "KeironCitadelMaterialize,Train6",
+      "id": "MaterializeUmbra",
+      "Icon": "btn-unit-keiron-umbra",
+      "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Foundry</span>.<br/><br/>",
+      "Name": "Materialize Umbra"
+    },
+    {
+      "AbilCmd": "KeironCitadelMaterialize,Train18",
+      "id": "MaterializeWard",
+      "Icon": "btn-unit-keiron-ward",
+      "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Foundry</span>.<br/><br/>",
+      "Name": "Materialize Ward"
+    },
+    {
+      "AbilCmd": "KeironCitadelMaterialize,Train7",
+      "id": "MaterializeInducer",
+      "Icon": "btn-unit-keiron-inducer",
+      "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Atrium</span>.<br/><br/>",
+      "Name": "Materialize Inducer"
+    },
+    {
+      "AbilCmd": "KeironCitadelMaterialize,Train9",
+      "id": "MaterializeTitan",
+      "Icon": "btn-unit-keiron-titan",
+      "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Pantheon</span>.</n><br/>",
+      "Name": "Materialize Titan"
     },
     {
       "AbilCmd": "KeironCitadelMaterialize,Train10",
       "id": "MaterializeEcho",
       "Icon": "btn-unit-keiron-echo",
-      "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Conduit</span>.<br/><br/>Melee air fighter. Can use Discord Mode and Reverb.<br/><br/><span style=\"color: #FFFF80\">Can attack air units.</span>",
+      "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Conduit</span>.<br/><br/>",
       "Name": "Materialize Echo"
     },
     {
       "AbilCmd": "KeironCitadelMaterialize,Train17",
       "id": "MaterializeFuse",
       "Icon": "btn-unit-keiron-fuse",
-      "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Conduit</span>.<br/><br/>Support unit. Can use Fusion.",
       "Name": "Materialize Fuse"
     },
     {
       "AbilCmd": "KeironCitadelMaterialize,Train11",
       "id": "MaterializeAurora",
       "Icon": "btn-unit-keiron-aurora",
-      "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Outlet</span>.<br/><br/>Tactical-strike aircraft. Can use Emanator.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
+      "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Outlet</span>.<br/><br/>",
       "Name": "Materialize Aurora"
     },
     {
       "AbilCmd": "KeironCitadelMaterialize,Train12",
       "id": "MaterializeAperture",
       "Icon": "btn-unit-keiron-aperture",
-      "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Outlet</span>.<br/><br/>Transport unit. Can be upgraded to use Keyhole.",
+      "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Outlet</span>.<br/><br/>",
       "Name": "Materialize Aperture"
     },
     {
       "AbilCmd": "KeironCitadelMaterialize,Train13",
       "id": "MaterializeHarbinger",
       "Icon": "btn-unit-keiron-harbinger",
-      "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Empyrean</span>.<br/><br/>Assault frigate. Can use Judgement Mode.<br/><br/><span style=\"color: #FFFF80\">Can attack ground and air units.</span>",
+      "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Empyrean</span>.<br/><br/>",
       "Name": "Materialize Harbinger"
     },
     {
       "AbilCmd": "KeironCitadelMaterialize,Train14",
       "id": "MaterializeGyre",
       "Icon": "btn-unit-keiron-paradox",
-      "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Empyrean</span>.<br/><br/>Support unit. Can use Annex and Shackle.<br/><br/><span style=\"color: #FFE303\">Detector</span>",
+      "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Empyrean</span>.<br/><br/>",
       "Name": "Materialize Gyre"
     },
     {
       "AbilCmd": "KeironCitadelMaterialize,Train15",
       "id": "MaterializeParagon",
       "Icon": "btn-unit-keiron-paragon",
-      "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Zenith</span>.<br/><br/>Capital ship. Can use Emissary Orb.<br/><br/><span style=\"color: #FFFF80\">Can attack ground and air units.</span>",
+      "Tooltip": "Produced by the <span style=\"color: #FFFF80\">Zenith</span>.<br/><br/>",
       "Name": "Materialize Paragon"
     }
   ]

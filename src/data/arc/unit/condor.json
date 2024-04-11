@@ -1,6 +1,5 @@
 {
   "Name": "Condor",
-  "Description": "Reinforced Aerial Transport",
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 4,
   "DeathRevealDuration": 4,
@@ -1015,10 +1014,16 @@
         "id": "CondorCloak",
         "Icon": "btn-ability-upl-metamateria-suit",
         "Tooltip": "Temporarily activates the <span style=\"color: #FFFF80\"><b>Raptor Jet</b></span> armor material coating, preventing enemy units from seeing or attacking the unit. A cloaked unit will only be revealed by detectors or effects.<br/><br/>Attacking or using abilities during the effect clears it.<br/><br/><span style=\"color: #FFFF80\">Effect last for <b>10</b> seconds</span>",
-        "Name": "Metamateria Coating"
+        "Name": "Metamateria Coating",
+        "Hotkey": "C"
       }
     ]
   },
+  "AddedOnArray": [
+    {
+      "BehaviorLink": "Detector13p75"
+    }
+  ],
   "InnerRadius": 1.25,
   "ScoreMake": 250,
   "ScoreKill": 325,
@@ -1038,11 +1043,6 @@
   "AlliedPushPriority": 15,
   "ScoreLost": 250,
   "id": "Condor",
-  "AddedOnArray": [
-    {
-      "BehaviorLink": "Detector13p75"
-    }
-  ],
   "Icon": "btn-unit-upl-condortransport",
   "LifeArmorIcon": "btn-upgrades-upl-vehicleplating-lvl0",
   "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
@@ -1114,7 +1114,8 @@
     "UPLShipPlatingLevel2",
     "UPLShipPlatingLevel3",
     "IsCondor",
-    "Condor"
+    "Condor",
+    null
   ],
   "$Requirements": [],
   "$Production": [],

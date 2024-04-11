@@ -456,12 +456,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -526,12 +520,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -588,12 +576,6 @@
           "EditorCategories": "Race:Terran,AbilityorEffectType:Structures",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -893,12 +875,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -1063,27 +1039,25 @@
     }
   ],
   "$Upgrades": [
-    "StarportFlying",
-    "Starport",
     "CountUnitAlias_StarportCompleteOnlyAtUnit",
-    "FactoryTechLab",
-    "StarportReactor",
+    "Starport",
+    "StarportTechLab",
+    "FactoryReactor",
     "BarracksReactor",
     "Reactor",
-    "FactoryReactor",
-    "BarracksTechLab",
-    "TechLab",
-    "StarportTechLab",
+    "StarportReactor",
+    "StarportFlying",
     "StarportLand",
+    "FactoryTechLab",
+    "TechLab",
+    "BarracksTechLab",
     "TerranBuildingArmor",
     "TerranBuild",
     "CountUnitAlias_StarportCompleteOnly4195804750TechTreeCheat",
     "IsStarport",
     "Starport",
     "StarportLand",
-    "StarportSplat",
-    "Starport",
-    null
+    "StarportSplat"
   ],
   "$Requirements": [],
   "$Production": [

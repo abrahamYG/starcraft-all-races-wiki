@@ -12,6 +12,7 @@
   "ScoreValue": "ArmorTechnologyValue",
   "WebPriority": 0,
   "LeaderAlias": "TechInfantryArmors",
+  "EditorCategories": "Race:UED,UpgradeType:ArmorBonus",
   "$tokens": {
     "ID": {
       "type": "string",
@@ -19,7 +20,6 @@
     }
   },
   "Race": "UED",
-  "EditorCategories": "Race:UED,UpgradeType:ArmorBonus",
   "ScoreResult": "BuildOrder",
   "EffectArray": [
     {
@@ -206,15 +206,15 @@
     },
     {
       "Operation": "Set",
-      "Reference": "Actor,UEDUnitGoliath,LifeArmorIcon",
+      "Reference": "Actor,UEDUnitSpartan,LifeArmorIcon",
       "Value": "Assets\\btn-upgrade-ued-armor-level3.dds"
     },
     {
-      "Reference": "Unit,UEDUnitGoliath,LifeArmor",
+      "Reference": "Unit,UEDUnitSpartan,LifeArmor",
       "Value": "1"
     },
     {
-      "Reference": "Unit,UEDUnitGoliath,LifeArmorLevel",
+      "Reference": "Unit,UEDUnitSpartan,LifeArmorLevel",
       "Value": "1"
     }
   ],
@@ -232,7 +232,7 @@
     "TransportShuttle",
     "Huracan",
     "Salvager",
-    "UEDUnitGoliath"
+    "UEDUnitSpartan"
   ],
   "InfoTooltipPriority": 0,
   "ScoreAmount": 200,

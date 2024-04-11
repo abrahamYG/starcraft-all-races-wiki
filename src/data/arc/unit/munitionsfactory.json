@@ -170,6 +170,7 @@
         "Type": "AbilCmd",
         "AbilCmd": "que5,CancelLast",
         "id": "Cancel",
+        "Icon": "btn-command-cancel",
         "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
         "Name": "Cancel",
         "Hotkey": "Esc"
@@ -311,7 +312,8 @@
         "id": "ButtonAuthorizeChargeNapoleon",
         "Icon": "btn-ability-protoss-voidstasis",
         "Tooltip": "Allows <span style=\"color: #ffff8a\">Napoleon</span> accumulate special projectiles until he attacks. Each is spent when fired, but increases the attack range by 1 and the attack speed by 0.5. Maximum 6 shells.",
-        "Name": "Authorization Request: Speed projectile"
+        "Name": "Authorization Request: Speed projectile",
+        "Hotkey": "E"
       },
       {
         "Upgrade": "UEDUpgradeGoliath",
@@ -346,9 +348,9 @@
         "Type": "AbilCmd",
         "AbilCmd": "ArmoryResearch2,Research5",
         "id": "UEDButtonUpgraideGoliath",
-        "Icon": "btn-techupgrade-terran-fullborecanisterammo",
-        "Tooltip": "Changing the technical process of manufacturing cartridges for the universal machine gun H11 the <span style=\"color: #FFFF80\">Goliath combat robot</span> allows you to get a +3 bonus on armored targets.",
-        "Name": "Authorization request: Armor-piercing cartridges",
+        "Icon": "btn-techupgrade-terran-multilocktargetingsystem",
+        "Tooltip": "Increases the range of Hallo Rockets weapons  the <span style=\"color: #FFFF80\">Spartan AAC</span> by 3.",
+        "Name": "Authorization Request: Long-range missiles",
         "Hotkey": "R"
       }
     ]
@@ -403,8 +405,7 @@
     "MunitionsFactory",
     "MunitionsFactorySplat",
     "CountUnitArmoryCompleteOnly2",
-    "CountUnitArmoryCompleteOnlyTechTreeCheat2",
-    null
+    "CountUnitArmoryCompleteOnlyTechTreeCheat2"
   ],
   "$Requirements": [],
   "$Production": [],
@@ -423,6 +424,7 @@
     {
       "AbilCmd": "que5,CancelLast",
       "id": "Cancel",
+      "Icon": "btn-command-cancel",
       "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
       "Name": "Cancel"
     },
@@ -450,9 +452,9 @@
     {
       "AbilCmd": "ArmoryResearch2,Research5",
       "id": "UEDButtonUpgraideGoliath",
-      "Icon": "btn-techupgrade-terran-fullborecanisterammo",
-      "Tooltip": "Changing the technical process of manufacturing cartridges for the universal machine gun H11 the <span style=\"color: #FFFF80\">Goliath combat robot</span> allows you to get a +3 bonus on armored targets.",
-      "Name": "Authorization request: Armor-piercing cartridges"
+      "Icon": "btn-techupgrade-terran-multilocktargetingsystem",
+      "Tooltip": "Increases the range of Hallo Rockets weapons  the <span style=\"color: #FFFF80\">Spartan AAC</span> by 3.",
+      "Name": "Authorization Request: Long-range missiles"
     }
   ]
 }

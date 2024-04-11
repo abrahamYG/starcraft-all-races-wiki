@@ -12,6 +12,7 @@
   "ScoreValue": "WeaponTechnologyValue",
   "WebPriority": 0,
   "LeaderAlias": "TechInfantryWeapons",
+  "EditorCategories": "Race:UED,UpgradeType:AttackBonus",
   "$tokens": {
     "ID": {
       "type": "string",
@@ -19,7 +20,6 @@
     }
   },
   "Race": "UED",
-  "EditorCategories": "Race:UED,UpgradeType:AttackBonus",
   "ScoreResult": "BuildOrder",
   "EffectArray": [
     {

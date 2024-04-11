@@ -12,6 +12,7 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "DexterousJoints",
+  "EditorCategories": "Race:Xayid,UpgradeType:Talents",
   "$tokens": {
     "ID": {
       "type": "string",
@@ -19,11 +20,14 @@
     }
   },
   "InfoTooltipPriority": 1,
-  "EditorCategories": "Race:Xayid,UpgradeType:Talents",
   "Race": "Xayi",
   "ScoreResult": "BuildOrder",
   "ScoreAmount": 200,
   "EffectArray": [
+    {
+      "Reference": "Unit,Xayidling,Speed",
+      "Value": "0.500000"
+    },
     {
       "Reference": "Abil,XayidlingDash,Cost[0].Cooldown.TimeUse",
       "Value": "-7.200000"

@@ -10,8 +10,8 @@
   "Response": "Acquire",
   "ResourceState": "Unknown",
   "ResourceType": "Unknown",
-  "LifeStart": 550,
-  "LifeMax": 550,
+  "LifeStart": 500,
+  "LifeMax": 500,
   "LifeArmorName": "Xayid Ground Carapace",
   "Mover": "Ground",
   "StationaryTurningRate": 149.9414,
@@ -361,7 +361,7 @@
     "Structure",
     "RoachBurrow"
   ],
-  "Sight": 10,
+  "Sight": 11,
   "CostCategory": "Army",
   "ScoreResult": "BuildOrder",
   "GlossaryCategory": "",
@@ -375,7 +375,7 @@
     "Vespene": 1
   },
   "id": "MassaliskHunkered",
-  "LifeArmor": 5,
+  "LifeArmor": 3,
   "Speed": 0,
   "Food": -6,
   "CostResource": {
@@ -390,7 +390,6 @@
   "TechAliasArray": [
     "Alias_Massalisk"
   ],
-  "LifeRegenRate": 3,
   "Icon": "btn-unit-xayid-massalisk",
   "LifeArmorIcon": "btn-upgrade-xayid-organiccarapace-level0",
   "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
@@ -414,7 +413,14 @@
       "Period": 1.4
     }
   ],
-  "Behaviors": [],
+  "Behaviors": [
+    {
+      "id": "MassaliskHunkered",
+      "Icon": "btn-ability-xayid-massaliskhunker",
+      "Tooltip": "Takes <b>-79</b>% reduced damage.",
+      "Name": "Hunkered"
+    }
+  ],
   "Abilities": [
     {
       "id": "Mobile",

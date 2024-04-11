@@ -130,12 +130,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -192,12 +186,6 @@
           "EditorCategories": "Race:Neutral,AbilityorEffectType:Units",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -294,46 +282,6 @@
         "Hotkey": "F"
       },
       {
-        "Upgrade": "CarrierLaunchSpeedUpgrade",
-        "Info": {
-          "Button": {
-            "Flags": {
-              "AllowMinimap": 0,
-              "ShowInGlossary": 1
-            },
-            "DefaultButtonFace": "ResearchInterceptorLaunchSpeedUpgrade",
-            "Requirements": "LearnInterceptorLaunchSpeedUpgrade",
-            "State": "Restricted"
-          },
-          "Resource": {
-            "Minerals": 150,
-            "Vespene": 150
-          },
-          "Time": 80,
-          "Upgrade": "CarrierLaunchSpeedUpgrade"
-        },
-        "Time": 80,
-        "Cost": {
-          "Minerals": 150,
-          "Vespene": 150,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 1,
-        "Column": 0,
-        "Type": "AbilCmd",
-        "AbilCmd": "FleetBeaconResearch,Research2",
-        "id": "ResearchInterceptorLaunchSpeedUpgrade",
-        "Icon": "btn-upgrade-protoss-gravitoncatapult",
-        "Tooltip": "Makes the <span style=\"color: #ffff8a\">Carrier</span> launch Interceptors more quickly.",
-        "Name": "Research Graviton Catapult",
-        "Hotkey": "G"
-      },
-      {
         "Upgrade": "PhoenixRangeUpgrade",
         "Info": {
           "Button": {
@@ -372,89 +320,12 @@
         "Name": "Research Anion Pulse-Crystals"
       },
       {
-        "Upgrade": "OracleEnergyUpgrade",
-        "Info": {
-          "Button": {
-            "Flags": {
-              "AllowMinimap": 0
-            },
-            "DefaultButtonFace": "OracleEnergyUpgrade",
-            "Requirements": "LearnOracleEnergyUpgrade",
-            "State": "Restricted"
-          },
-          "Resource": {
-            "Minerals": 100,
-            "Vespene": 100
-          },
-          "Time": 90,
-          "Upgrade": "OracleEnergyUpgrade"
-        },
-        "Time": 90,
-        "Cost": {
-          "Minerals": 100,
-          "Vespene": 100,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 1,
-        "Column": 1,
-        "Type": "AbilCmd",
-        "AbilCmd": "FleetBeaconResearch,Research5",
-        "id": "OracleEnergyUpgrade",
-        "Icon": "btn-upgrade-protoss-researchbosoniccore",
-        "Tooltip": "Increases the starting energy of Oracles by 25.",
-        "Name": "Research Bosonic Core",
-        "Hotkey": "A"
-      },
-      {
-        "Upgrade": "TempestRangeUpgrade",
-        "Info": {
-          "Button": {
-            "Flags": {
-              "AllowMinimap": 0
-            },
-            "DefaultButtonFace": "TempestRangeUpgrade",
-            "Requirements": "LearnTempestRangeUpgrade",
-            "State": "Restricted"
-          },
-          "Resource": {
-            "Minerals": 200,
-            "Vespene": 200
-          },
-          "Time": 110,
-          "Upgrade": "TempestRangeUpgrade"
-        },
-        "Time": 110,
-        "Cost": {
-          "Minerals": 200,
-          "Vespene": 200,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 1,
-        "Column": 2,
-        "Type": "AbilCmd",
-        "AbilCmd": "FleetBeaconResearch,Research4",
-        "id": "TempestRangeUpgrade",
-        "Icon": "btn-upgrade-protoss-researchgravitysling",
-        "Tooltip": "Hypercharges the Tempest's Overload to deal +30 damage vs. massive units.",
-        "Name": "Research Quantum Reactor",
-        "Hotkey": "Q"
-      },
-      {
         "Upgrade": "TempestGroundAttackUpgrade",
         "Info": {
           "Button": {
             "Flags": {
-              "AllowMinimap": 0
+              "AllowMinimap": 0,
+              "ShowInGlossary": 1
             },
             "DefaultButtonFace": "TempestResearchGroundAttackUpgrade",
             "Requirements": "LearnTempestGroundAttackUpgrade"
@@ -537,9 +408,7 @@
     "ProtossShieldsLevel3",
     "ProtossBuild",
     "IsFleetBeacon",
-    "FleetBeaconSplat",
-    "FleetBeacon",
-    "FleetBeaconTaldarim"
+    "FleetBeaconSplat"
   ],
   "$Requirements": [],
   "$Production": [],
@@ -576,32 +445,11 @@
       "Name": "Research Flux Vanes"
     },
     {
-      "AbilCmd": "FleetBeaconResearch,Research2",
-      "id": "ResearchInterceptorLaunchSpeedUpgrade",
-      "Icon": "btn-upgrade-protoss-gravitoncatapult",
-      "Tooltip": "Makes the <span style=\"color: #ffff8a\">Carrier</span> launch Interceptors more quickly.",
-      "Name": "Research Graviton Catapult"
-    },
-    {
       "AbilCmd": "FleetBeaconResearch,Research3",
       "id": "AnionPulseCrystals",
       "Icon": "btn-upgrade-protoss-phoenixrange",
       "Tooltip": "Increases <span style=\"color: #ffff8a\">Phoenix's</span> attack range by 2.",
       "Name": "Research Anion Pulse-Crystals"
-    },
-    {
-      "AbilCmd": "FleetBeaconResearch,Research5",
-      "id": "OracleEnergyUpgrade",
-      "Icon": "btn-upgrade-protoss-researchbosoniccore",
-      "Tooltip": "Increases the starting energy of Oracles by 25.",
-      "Name": "Research Bosonic Core"
-    },
-    {
-      "AbilCmd": "FleetBeaconResearch,Research4",
-      "id": "TempestRangeUpgrade",
-      "Icon": "btn-upgrade-protoss-researchgravitysling",
-      "Tooltip": "Hypercharges the Tempest's Overload to deal +30 damage vs. massive units.",
-      "Name": "Research Quantum Reactor"
     },
     {
       "AbilCmd": "FleetBeaconResearch,Research6",

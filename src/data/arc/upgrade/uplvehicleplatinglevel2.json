@@ -12,6 +12,7 @@
   "ScoreValue": "ArmorTechnologyValue",
   "WebPriority": 0,
   "LeaderAlias": "TechVehicleArmors",
+  "EditorCategories": "Race:UPL,UpgradeType:ArmorBonus",
   "$tokens": {
     "ID": {
       "type": "string",
@@ -158,11 +159,11 @@
       "Value": "1"
     },
     {
-      "Reference": "Unit,Z2,LifeArmor",
+      "Reference": "Unit,UPLZ2,LifeArmor",
       "Value": "1.000000"
     },
     {
-      "Reference": "Unit,Z2,LifeArmorLevel",
+      "Reference": "Unit,UPLZ2,LifeArmorLevel",
       "Value": "1"
     },
     {
@@ -256,7 +257,6 @@
       "Value": "Assets\\Textures\\btn-upgrades-upl-vehicleplating-lvl2.dds"
     }
   ],
-  "EditorCategories": "Race:UPL,UpgradeType:ArmorBonus",
   "AffectedUnitArray": [
     "A6",
     "TR17",
@@ -275,7 +275,7 @@
     "PoliceCruiser",
     "AltonPetersZ1",
     "CARR",
-    "Z2"
+    "UPLZ2"
   ],
   "ScoreAmount": 350,
   "LeaderLevel": 2,

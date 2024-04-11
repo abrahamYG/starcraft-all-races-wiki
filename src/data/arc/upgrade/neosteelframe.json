@@ -13,6 +13,7 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "NeosteelFrame",
+  "EditorCategories": "Race:Terran,UpgradeType:Spell",
   "$tokens": {
     "ID": {
       "type": "string",
@@ -47,7 +48,6 @@
       "Value": "Assets\\Textures\\wireframe-terran-bunker-neosteelframe.dds"
     }
   ],
-  "EditorCategories": "Race:Terran,UpgradeType:Talents",
   "ScoreResult": "BuildOrder",
   "AffectedUnitArray": [
     "Bunker",

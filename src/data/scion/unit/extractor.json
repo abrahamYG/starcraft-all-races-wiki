@@ -128,12 +128,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -222,16 +216,14 @@
     }
   ],
   "$Upgrades": [
-    "Siphoner",
+    "ZergBuild",
     "Extractor",
     "ExtractorRich",
-    "ZergBuild",
+    "Siphoner",
     "IsExtractor",
     "Extractor",
     "SiphonerRich",
-    "Siphoner",
-    "Extractor",
-    null
+    "Siphoner"
   ],
   "$Requirements": [],
   "$Production": [],

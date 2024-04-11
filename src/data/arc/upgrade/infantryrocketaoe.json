@@ -12,6 +12,7 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "InfantryRocketAOE",
+  "EditorCategories": "UpgradeType:Talents,Race:UPL",
   "$tokens": {
     "ID": {
       "type": "string",
@@ -19,7 +20,6 @@
     }
   },
   "Race": "UPL",
-  "EditorCategories": "UpgradeType:Talents,Race:UPL",
   "EffectArray": [
     {
       "Operation": "Set",

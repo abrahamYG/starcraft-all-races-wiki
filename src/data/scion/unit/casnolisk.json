@@ -10,15 +10,15 @@
   "Response": "Acquire",
   "ResourceState": "Unknown",
   "ResourceType": "Unknown",
-  "LifeStart": 135,
-  "LifeMax": 135,
+  "LifeStart": 110,
+  "LifeMax": 110,
   "LifeArmorName": "Xayid Ground Carapace",
   "Mover": "Ground",
   "StationaryTurningRate": 720,
   "TurningRate": 720,
-  "Radius": 0.6875,
-  "SeparationRadius": 0.6875,
-  "MinimapRadius": 0.6875,
+  "Radius": 0.625,
+  "SeparationRadius": 0.625,
+  "MinimapRadius": 0.625,
   "EditorCategories": "ObjectType:Unit,ObjectFamily:Melee",
   "TacticalAIFilters": "-;Player,Ally,Neutral",
   "AIEvalFactor": 1,
@@ -110,12 +110,6 @@
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
               "DisplayType": "Move",
               "Color": "255,35,125,255",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
@@ -204,12 +198,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -283,12 +271,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -382,12 +364,6 @@
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
               "DisplayType": "Move",
               "Color": "255,35,125,255",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
@@ -476,12 +452,6 @@
               "Color": "255,255,0,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -556,12 +526,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -653,12 +617,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -690,7 +648,7 @@
             "StagnatingBile"
           ],
           "EffectRange": [
-            "0,1000"
+            "1.75,1000"
           ],
           "AINotifyEffect": "StagnatingBile",
           "RefundArray": {
@@ -762,7 +720,7 @@
             13
           ],
           "CursorEffect": [
-            "StagnatingBileSA"
+            "StagnatingBileImpact"
           ],
           "id": "StagnatingBile"
         },
@@ -782,7 +740,7 @@
         "AbilCmd": "StagnatingBile,Execute",
         "id": "StagnatingBile",
         "Icon": "btn-ability-xayid-stagnatingbile",
-        "Tooltip": "Lobs bile at a point, stunning units in it's impact area for <b>7</b> seconds.",
+        "Tooltip": "Launches a missile at the target location, stunning units in an area for <b>7</b> seconds.",
         "Name": "Stagnating Bile",
         "Hotkey": "T"
       },
@@ -798,12 +756,6 @@
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
@@ -833,7 +785,7 @@
             "BestUnit": 1
           },
           "Effect": [
-            "ExplosiveGlob"
+            "CasnoliskExplosiveGlobInit"
           ],
           "EffectRange": [
             "0,1000"
@@ -934,7 +886,7 @@
         "AbilCmd": "ExplosiveGlob,Execute",
         "id": "ExplosiveGlob",
         "Icon": "btn-ability-xayid-explosiveglob",
-        "Tooltip": "Rolls out a glob containing explosive acids. Deals 60 damage on impact in an area, while also knocking back affected units.",
+        "Tooltip": "Rolls a projectile across the terrain. Deals <b>60</b> damage and knocks back enemy ground units in an area on contact with an enemy ground unit.",
         "Name": "Explosive Glob",
         "Hotkey": "E"
       }
@@ -947,8 +899,6 @@
     "Ground",
     "ForceField"
   ],
-  "LifeRegenDelay": 3,
-  "LifeRegenRate": 0.5,
   "Sight": 9,
   "CostCategory": "Army",
   "ScoreResult": "BuildOrder",
@@ -968,13 +918,13 @@
   "EnergyMax": 200,
   "EnergyRegenRate": 0.5625,
   "Speed": 2.5,
-  "Food": -3,
+  "Food": -2,
   "CostResource": {
-    "Minerals": 100,
+    "Minerals": 50,
     "Vespene": 150
   },
   "InnerRadius": 0.5,
-  "CargoSize": 4,
+  "CargoSize": 2,
   "SubgroupPriority": 80,
   "GlossaryPriority": 7,
   "KillDisplay": "Always",
@@ -1015,7 +965,8 @@
     "XayidGroundCarapaceLevel2",
     "XayidGroundCarapaceLevel3",
     "MutateXayidUnits",
-    "Worm"
+    "Worm",
+    "XayidGroundCarapaceRevert"
   ],
   "$Requirements": [],
   "$Production": [],
@@ -1072,14 +1023,14 @@
       "AbilCmd": "StagnatingBile,Execute",
       "id": "StagnatingBile",
       "Icon": "btn-ability-xayid-stagnatingbile",
-      "Tooltip": "Lobs bile at a point, stunning units in it's impact area for <b>7</b> seconds.",
+      "Tooltip": "Launches a missile at the target location, stunning units in an area for <b>7</b> seconds.",
       "Name": "Stagnating Bile"
     },
     {
       "AbilCmd": "ExplosiveGlob,Execute",
       "id": "ExplosiveGlob",
       "Icon": "btn-ability-xayid-explosiveglob",
-      "Tooltip": "Rolls out a glob containing explosive acids. Deals 60 damage on impact in an area, while also knocking back affected units.",
+      "Tooltip": "Rolls a projectile across the terrain. Deals <b>60</b> damage and knocks back enemy ground units in an area on contact with an enemy ground unit.",
       "Name": "Explosive Glob"
     }
   ]

@@ -12,7 +12,7 @@
   "ResourceType": "Unknown",
   "LifeStart": 550,
   "LifeMax": 550,
-  "LifeArmorName": "Synoid Armor",
+  "LifeArmorName": "Protoss Armor",
   "Mover": "Ground",
   "StationaryTurningRate": 719.4726,
   "TurningRate": 719.4726,
@@ -242,16 +242,16 @@
             "Requirements": "LearnProtossAirArmor1"
           },
           "Resource": {
-            "Minerals": 150,
-            "Vespene": 150
+            "Minerals": 100,
+            "Vespene": 100
           },
           "Time": 180,
           "Upgrade": "ProtossAirArmorsLevel1"
         },
         "Time": 180,
         "Cost": {
-          "Minerals": 150,
-          "Vespene": 150,
+          "Minerals": 100,
+          "Vespene": 100,
           "Terazine": 0,
           "Custom": 0,
           "Energy": 0,
@@ -280,16 +280,16 @@
             "Requirements": "LearnProtossAirArmor2"
           },
           "Resource": {
-            "Minerals": 225,
-            "Vespene": 225
+            "Minerals": 175,
+            "Vespene": 175
           },
           "Time": 215,
           "Upgrade": "ProtossAirArmorsLevel2"
         },
         "Time": 215,
         "Cost": {
-          "Minerals": 225,
-          "Vespene": 225,
+          "Minerals": 175,
+          "Vespene": 175,
           "Terazine": 0,
           "Custom": 0,
           "Energy": 0,
@@ -318,16 +318,16 @@
             "Requirements": "LearnProtossAirArmor3"
           },
           "Resource": {
-            "Minerals": 300,
-            "Vespene": 300
+            "Minerals": 250,
+            "Vespene": 250
           },
           "Time": 250,
           "Upgrade": "ProtossAirArmorsLevel3"
         },
         "Time": 250,
         "Cost": {
-          "Minerals": 300,
-          "Vespene": 300,
+          "Minerals": 250,
+          "Vespene": 250,
           "Terazine": 0,
           "Custom": 0,
           "Energy": 0,
@@ -353,12 +353,6 @@
           "EditorCategories": "Race:Neutral,AbilityorEffectType:Structures",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -425,12 +419,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -454,7 +442,10 @@
               "DefaultButtonFace": "Cancel"
             },
             "Halt": {
-              "DefaultButtonFace": "Cancel"
+              "DefaultButtonFace": "Halt",
+              "Flags": {
+                "ToSelection": 1
+              }
             }
           },
           "id": "BuildInProgress"
@@ -517,46 +508,6 @@
         "Tooltip": "Enables <span style=\"color: #ffff8a\">Gateways</span> to upgrade to Warp Gates.",
         "Name": "Research Warp Gate",
         "Hotkey": "G"
-      },
-      {
-        "Upgrade": "haltech",
-        "Info": {
-          "Button": {
-            "Flags": {
-              "AllowMinimap": 0,
-              "ShowInGlossary": 1
-            },
-            "DefaultButtonFace": "ResearchHallucination",
-            "Requirements": "LearnHallucination",
-            "State": "Restricted"
-          },
-          "Resource": {
-            "Minerals": 100,
-            "Vespene": 100
-          },
-          "Time": 80,
-          "Upgrade": "haltech"
-        },
-        "Time": 80,
-        "Cost": {
-          "Minerals": 100,
-          "Vespene": 100,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 0,
-        "Column": 2,
-        "Type": "AbilCmd",
-        "AbilCmd": "CyberneticsCoreResearch,Research10",
-        "id": "ResearchHallucination",
-        "Icon": "btn-ability-protoss-hallucination-color",
-        "Tooltip": "Allows <span style=\"color: #ffff8a\">Sentries</span> to use Hallucination.<br/><br/>Hallucination creates copies of the selected unit. These copies function like the original unit, but they cannot use active abilities, cannot deal damage, and die more easily. Hallucinations last <b>60</b> seconds before they disappear. Enemy detectors are able to distinguish between hallucinated Protoss units and real Protoss units.",
-        "Name": "Research Hallucination",
-        "Hotkey": "H"
       }
     ]
   },
@@ -607,8 +558,7 @@
     "ProtossShieldsLevel3",
     "ProtossBuild",
     "IsCyberneticsCore",
-    "CyberneticsCoreSplat",
-    "CyberneticsCore"
+    "CyberneticsCoreSplat"
   ],
   "$Requirements": [],
   "$Production": [],
@@ -689,13 +639,6 @@
       "Icon": "btn-building-protoss-warpgate",
       "Tooltip": "Enables <span style=\"color: #ffff8a\">Gateways</span> to upgrade to Warp Gates.",
       "Name": "Research Warp Gate"
-    },
-    {
-      "AbilCmd": "CyberneticsCoreResearch,Research10",
-      "id": "ResearchHallucination",
-      "Icon": "btn-ability-protoss-hallucination-color",
-      "Tooltip": "Allows <span style=\"color: #ffff8a\">Sentries</span> to use Hallucination.<br/><br/>Hallucination creates copies of the selected unit. These copies function like the original unit, but they cannot use active abilities, cannot deal damage, and die more easily. Hallucinations last <b>60</b> seconds before they disappear. Enemy detectors are able to distinguish between hallucinated Protoss units and real Protoss units.",
-      "Name": "Research Hallucination"
     }
   ]
 }

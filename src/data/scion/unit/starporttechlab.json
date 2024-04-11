@@ -138,12 +138,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -205,12 +199,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -263,28 +251,27 @@
         "Hotkey": "Esc"
       },
       {
-        "Upgrade": "MedivacCaduceusReactor",
+        "Upgrade": "BansheeSpeed",
         "Info": {
           "Button": {
             "Flags": {
               "AllowMinimap": 0,
               "ShowInGlossary": 1
             },
-            "DefaultButtonFace": "ResearchMedivacEnergyUpgrade",
-            "Requirements": "LearnMedivacEnergyUpgrade",
-            "State": "Restricted"
+            "DefaultButtonFace": "BansheeSpeed",
+            "Requirements": "LearnBansheeSpeed"
           },
           "Resource": {
-            "Minerals": 100,
-            "Vespene": 100
+            "Minerals": 125,
+            "Vespene": 125
           },
-          "Time": 80,
-          "Upgrade": "MedivacCaduceusReactor"
+          "Time": 140,
+          "Upgrade": "BansheeSpeed"
         },
-        "Time": 80,
+        "Time": 140,
         "Cost": {
-          "Minerals": 100,
-          "Vespene": 100,
+          "Minerals": 125,
+          "Vespene": 125,
           "Terazine": 0,
           "Custom": 0,
           "Energy": 0,
@@ -292,15 +279,53 @@
           "Shields": 0,
           "Food": 0
         },
-        "Row": 1,
-        "Column": 0,
+        "Row": 0,
+        "Column": 1,
         "Type": "AbilCmd",
-        "AbilCmd": "StarportTechLabResearch,Research3",
-        "id": "ResearchMedivacEnergyUpgrade",
-        "Icon": "btn-upgrade-terran-caduceusreactor",
-        "Tooltip": "Increases the starting energy of <span style=\"color: #ffff8a\">Medivacs</span> by <b>25</b>.",
-        "Name": "Research Caduceus Reactor",
-        "Hotkey": "A"
+        "AbilCmd": "StarportTechLabResearch,Research10",
+        "id": "BansheeSpeed",
+        "Icon": "btn-upgrade-terran-hyperflightrotors",
+        "Tooltip": "Increases the movement speed of <span style=\"color: #ffff8a\">Banshees</span>.",
+        "Name": "Research Hyperflight Rotors",
+        "Hotkey": "B"
+      },
+      {
+        "Upgrade": "InterferenceMatrix",
+        "Info": {
+          "Button": {
+            "Flags": {
+              "AllowMinimap": 0
+            },
+            "DefaultButtonFace": "ResearchRavenInterferenceMatrix",
+            "Requirements": "LearnRavenInterferenceMatrixUpgrade"
+          },
+          "Resource": {
+            "Minerals": 50,
+            "Vespene": 50
+          },
+          "Time": 80,
+          "Upgrade": "InterferenceMatrix"
+        },
+        "Time": 80,
+        "Cost": {
+          "Minerals": 50,
+          "Vespene": 50,
+          "Terazine": 0,
+          "Custom": 0,
+          "Energy": 0,
+          "Life": 0,
+          "Shields": 0,
+          "Food": 0
+        },
+        "Row": 0,
+        "Column": 2,
+        "Type": "AbilCmd",
+        "AbilCmd": "StarportTechLabResearch,Research18",
+        "id": "ResearchRavenInterferenceMatrix",
+        "Icon": "btn-upgrade-terran-interferencematrix",
+        "Tooltip": "Allows <span style=\"color: #ffff8a\">Ravens</span> to use the Interference Matrix ability.",
+        "Name": "Research Interference Matrix",
+        "Hotkey": "T"
       },
       {
         "Upgrade": "BansheeCloak",
@@ -332,7 +357,7 @@
           "Food": 0
         },
         "Row": 0,
-        "Column": 1,
+        "Column": 0,
         "Type": "AbilCmd",
         "AbilCmd": "StarportTechLabResearch,Research1",
         "id": "ResearchBansheeCloak",
@@ -340,204 +365,6 @@
         "Tooltip": "Enables <span style=\"color: #ffff8a\">Banshees</span> to use the Cloak ability. Cloak renders the <span style=\"color: #ffff8a\">Banshee</span> invisible to enemies unless the unit is revealed by detectors or effects.",
         "Name": "Research Cloaking Field",
         "Hotkey": "C"
-      },
-      {
-        "Upgrade": "RavenCorvidReactor",
-        "Info": {
-          "Button": {
-            "Flags": {
-              "AllowMinimap": 0,
-              "ShowInGlossary": 1
-            },
-            "DefaultButtonFace": "ResearchRavenEnergyUpgrade",
-            "Requirements": "LearnRavenEnergyUpgrade"
-          },
-          "Resource": {
-            "Minerals": 150,
-            "Vespene": 150
-          },
-          "Time": 110,
-          "Upgrade": "RavenCorvidReactor"
-        },
-        "Time": 110,
-        "Cost": {
-          "Minerals": 150,
-          "Vespene": 150,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 0,
-        "Column": 0,
-        "Type": "AbilCmd",
-        "AbilCmd": "StarportTechLabResearch,Research4",
-        "id": "ResearchRavenEnergyUpgrade",
-        "Icon": "btn-upgrade-terran-corvidreactor",
-        "Tooltip": "Increases the starting energy of <span style=\"color: #ffff8a\">Ravens</span> by <b>25</b>.",
-        "Name": "Research Corvid Reactor",
-        "Hotkey": "T"
-      },
-      {
-        "Upgrade": "DurableMaterials",
-        "Info": {
-          "Button": {
-            "Flags": {
-              "AllowMinimap": 0,
-              "ShowInGlossary": 1
-            },
-            "DefaultButtonFace": "ResearchDurableMaterials",
-            "State": "Restricted",
-            "Requirements": "LearnDurableMaterials"
-          },
-          "Resource": {
-            "Minerals": 150,
-            "Vespene": 150
-          },
-          "Time": 110,
-          "Upgrade": "DurableMaterials"
-        },
-        "Time": 110,
-        "Cost": {
-          "Minerals": 150,
-          "Vespene": 150,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 1,
-        "Column": 1,
-        "Type": "AbilCmd",
-        "AbilCmd": "StarportTechLabResearch,Research8",
-        "id": "ResearchDurableMaterials",
-        "Icon": "btn-upgrade-terran-durablematerials",
-        "Tooltip": "Extends the timed duration of Raven <span style=\"color: #ffff8a\">Auto-Turrets</span> and <span style=\"color: #ffff8a\">Point Defense Drones</span>.",
-        "Name": "Research Durable Materials",
-        "Hotkey": "D"
-      },
-      {
-        "Upgrade": "HunterSeeker",
-        "Info": {
-          "Button": {
-            "Flags": {
-              "AllowMinimap": 0,
-              "ShowInGlossary": 1
-            },
-            "DefaultButtonFace": "ResearchSeekerMissile",
-            "State": "Restricted",
-            "Requirements": "LearnHunterSeekerMissiles"
-          },
-          "Resource": {
-            "Minerals": 150,
-            "Vespene": 150
-          },
-          "Time": 110,
-          "Upgrade": "HunterSeeker"
-        },
-        "Time": 110,
-        "Cost": {
-          "Minerals": 150,
-          "Vespene": 150,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 1,
-        "Column": 2,
-        "Type": "AbilCmd",
-        "AbilCmd": "StarportTechLabResearch,Research7",
-        "id": "ResearchSeekerMissile",
-        "Icon": "btn-ability-terran-huntermissile-color",
-        "Tooltip": "Enables <span style=\"color: #ffff8a\">Ravens</span> to use the Seeker Missile armament. This missile activates after <b>5</b> seconds, dealing <b>100</b> AoE damage to the target if they are still within range.",
-        "Name": "Research Seeker Missile",
-        "Hotkey": "R"
-      },
-      {
-        "Upgrade": "LiberatorMorph",
-        "Info": {
-          "Button": {
-            "Flags": {
-              "AllowMinimap": 0,
-              "ShowInGlossary": 1
-            },
-            "DefaultButtonFace": "ResearchLiberatorAGMode",
-            "Requirements": "LearnLiberatorMorph",
-            "State": "Restricted"
-          },
-          "Resource": {
-            "Minerals": 150,
-            "Vespene": 150
-          },
-          "Time": 110,
-          "Upgrade": "LiberatorMorph"
-        },
-        "Time": 110,
-        "Cost": {
-          "Minerals": 150,
-          "Vespene": 150,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 2,
-        "Column": 0,
-        "Type": "AbilCmd",
-        "AbilCmd": "StarportTechLabResearch,Research11",
-        "id": "ResearchLiberatorAGMode",
-        "Icon": "btn-upgrade-terran-liberator-agmode",
-        "Tooltip": "Enables <span style=\"color: #ffff8a\">Liberators</span> to transform into a siege ranged anti-ground unit.",
-        "Name": "Research Defender Mode",
-        "Hotkey": "N"
-      },
-      {
-        "Upgrade": "BansheeSpeed",
-        "Info": {
-          "Button": {
-            "Flags": {
-              "AllowMinimap": 0,
-              "ShowInGlossary": 1
-            },
-            "DefaultButtonFace": "BansheeSpeed",
-            "Requirements": "LearnBansheeSpeed"
-          },
-          "Resource": {
-            "Minerals": 125,
-            "Vespene": 125
-          },
-          "Time": 140,
-          "Upgrade": "BansheeSpeed"
-        },
-        "Time": 140,
-        "Cost": {
-          "Minerals": 125,
-          "Vespene": 125,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 0,
-        "Column": 2,
-        "Type": "AbilCmd",
-        "AbilCmd": "StarportTechLabResearch,Research10",
-        "id": "BansheeSpeed",
-        "Icon": "btn-upgrade-terran-hyperflightrotors",
-        "Tooltip": "Increases the movement speed of <span style=\"color: #ffff8a\">Banshees</span>.",
-        "Name": "Research Hyperflight Rotors",
-        "Hotkey": "B"
       }
     ]
   },
@@ -603,15 +430,14 @@
     "TerranBuildingArmor",
     "IsStarportTechLab",
     "StarportTechLab",
-    "StarportTechLabSplat",
-    null
+    "StarportTechLabSplat"
   ],
   "$Requirements": [],
   "$Production": [],
   "$Research": [
-    "BansheeCloak",
-    "RavenCorvidReactor",
-    "BansheeSpeed"
+    "BansheeSpeed",
+    "InterferenceMatrix",
+    "BansheeCloak"
   ],
   "$Morph": [],
   "$Phase": [],
@@ -635,11 +461,18 @@
       "Name": "Cancel"
     },
     {
-      "AbilCmd": "StarportTechLabResearch,Research3",
-      "id": "ResearchMedivacEnergyUpgrade",
-      "Icon": "btn-upgrade-terran-caduceusreactor",
-      "Tooltip": "Increases the starting energy of <span style=\"color: #ffff8a\">Medivacs</span> by <b>25</b>.",
-      "Name": "Research Caduceus Reactor"
+      "AbilCmd": "StarportTechLabResearch,Research10",
+      "id": "BansheeSpeed",
+      "Icon": "btn-upgrade-terran-hyperflightrotors",
+      "Tooltip": "Increases the movement speed of <span style=\"color: #ffff8a\">Banshees</span>.",
+      "Name": "Research Hyperflight Rotors"
+    },
+    {
+      "AbilCmd": "StarportTechLabResearch,Research18",
+      "id": "ResearchRavenInterferenceMatrix",
+      "Icon": "btn-upgrade-terran-interferencematrix",
+      "Tooltip": "Allows <span style=\"color: #ffff8a\">Ravens</span> to use the Interference Matrix ability.",
+      "Name": "Research Interference Matrix"
     },
     {
       "AbilCmd": "StarportTechLabResearch,Research1",
@@ -647,41 +480,6 @@
       "Icon": "btn-ability-terran-cloak-color",
       "Tooltip": "Enables <span style=\"color: #ffff8a\">Banshees</span> to use the Cloak ability. Cloak renders the <span style=\"color: #ffff8a\">Banshee</span> invisible to enemies unless the unit is revealed by detectors or effects.",
       "Name": "Research Cloaking Field"
-    },
-    {
-      "AbilCmd": "StarportTechLabResearch,Research4",
-      "id": "ResearchRavenEnergyUpgrade",
-      "Icon": "btn-upgrade-terran-corvidreactor",
-      "Tooltip": "Increases the starting energy of <span style=\"color: #ffff8a\">Ravens</span> by <b>25</b>.",
-      "Name": "Research Corvid Reactor"
-    },
-    {
-      "AbilCmd": "StarportTechLabResearch,Research8",
-      "id": "ResearchDurableMaterials",
-      "Icon": "btn-upgrade-terran-durablematerials",
-      "Tooltip": "Extends the timed duration of Raven <span style=\"color: #ffff8a\">Auto-Turrets</span> and <span style=\"color: #ffff8a\">Point Defense Drones</span>.",
-      "Name": "Research Durable Materials"
-    },
-    {
-      "AbilCmd": "StarportTechLabResearch,Research7",
-      "id": "ResearchSeekerMissile",
-      "Icon": "btn-ability-terran-huntermissile-color",
-      "Tooltip": "Enables <span style=\"color: #ffff8a\">Ravens</span> to use the Seeker Missile armament. This missile activates after <b>5</b> seconds, dealing <b>100</b> AoE damage to the target if they are still within range.",
-      "Name": "Research Seeker Missile"
-    },
-    {
-      "AbilCmd": "StarportTechLabResearch,Research11",
-      "id": "ResearchLiberatorAGMode",
-      "Icon": "btn-upgrade-terran-liberator-agmode",
-      "Tooltip": "Enables <span style=\"color: #ffff8a\">Liberators</span> to transform into a siege ranged anti-ground unit.",
-      "Name": "Research Defender Mode"
-    },
-    {
-      "AbilCmd": "StarportTechLabResearch,Research10",
-      "id": "BansheeSpeed",
-      "Icon": "btn-upgrade-terran-hyperflightrotors",
-      "Tooltip": "Increases the movement speed of <span style=\"color: #ffff8a\">Banshees</span>.",
-      "Name": "Research Hyperflight Rotors"
     }
   ]
 }

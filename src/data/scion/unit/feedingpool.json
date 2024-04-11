@@ -1,6 +1,6 @@
 {
   "Name": "Feeding Pool",
-  "Description": "<span style=\"color: #FFFF80\">Provides supply.</span><br/>Supply allows you to create more units.<br/>Boosts production of nearby structures and heals nearby damaged units.",
+  "Description": "Provides supply.<br/>Supply allows you to create more units.<br/>Boosts the production of nearby structures and heals nearby units.",
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -16,9 +16,9 @@
   "Mover": "Ground",
   "StationaryTurningRate": 720,
   "TurningRate": 720,
-  "Radius": 1,
-  "SeparationRadius": 0.9375,
-  "MinimapRadius": 1,
+  "Radius": 1.25,
+  "SeparationRadius": 1.25,
+  "MinimapRadius": 1.25,
   "EditorCategories": "ObjectType:Structure,ObjectFamily:Melee",
   "TacticalAIFilters": "-;Player,Ally,Neutral",
   "AIEvalFactor": 1,
@@ -86,6 +86,7 @@
   "PlaneArray": [
     "Ground"
   ],
+  "AttackTargetPriority": 11,
   "Collide": [
     "Burrow",
     "Ground",
@@ -99,10 +100,8 @@
     "Structure"
   ],
   "LifeArmor": 1,
-  "LifeRegenDelay": 3,
-  "LifeRegenRate": 0.5,
-  "Sight": 10,
-  "CostCategory": "Technology",
+  "Sight": 9,
+  "CostCategory": "Economy",
   "ScoreResult": "BuildOrder",
   "HotkeyCategory": "Unit/Category/XayidUnits",
   "id": "FeedingPool",
@@ -120,12 +119,6 @@
           "EditorCategories": "Race:Neutral,AbilityorEffectType:Units",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -197,13 +190,31 @@
         "Column": 0,
         "Type": "Passive",
         "id": "Supplimentation",
-        "Icon": "btn-ability-zerg-transfusion-color",
-        "Tooltip": "Improves nearby owned production spawn rate by 7%. <span style=\"color: #FFFF80\">Can stack up to 3 times.</span> Also passively heals up to 3 nearby units if they are under 75% health.",
+        "Icon": "btn-ability-xayid-supplimentation",
+        "Tooltip": "Improves the spawn rate of nearby owned production by 7%.<br/><br/><span style=\"color: #FFFF80\">Can stack up to 3 times.</span>",
         "Name": "Supplimentation"
+      },
+      {
+        "Cost": {
+          "Minerals": 0,
+          "Vespene": 0,
+          "Terazine": 0,
+          "Custom": 0,
+          "Energy": 0,
+          "Life": 0,
+          "Shields": 0,
+          "Food": 0
+        },
+        "Row": 2,
+        "Column": 1,
+        "Type": "Passive",
+        "id": "FeedingPoolHealingAura",
+        "Icon": "btn-ability-xayid-mendlingheal",
+        "Tooltip": "Heals up to 3 nearby friendly units at a time.",
+        "Name": "Healing Aura"
       }
     ]
   },
-  "InnerRadius": 0.9375,
   "Footprint": "Footprint2x2Xayid",
   "PlacementFootprint": "Footprint2x2Xayid",
   "ScoreMake": 100,

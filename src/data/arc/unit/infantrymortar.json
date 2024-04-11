@@ -92,6 +92,10 @@
     "ForceField"
   ],
   "Speed": 2.25,
+  "Attributes": [
+    "Light",
+    "Biological"
+  ],
   "Acceleration": 1000,
   "LateralAcceleration": 69.125,
   "Sight": 10,
@@ -1041,7 +1045,7 @@
         "Type": "Passive",
         "id": "InfantryMedkit",
         "Icon": "btn-ability-upl-medkit",
-        "Tooltip": "This unit will use a Medkit when they have less than 25% of their life, which will heal <span style=\"color: #FFFF80\"><b>50</b></span> life over <span style=\"color: #FFFF80\"><b>5</b></span>. Once activated it will be on cooldown for <b>180</b>.",
+        "Tooltip": "This unit will use a Medkit when they have less than 25% of their life, which will heal <span style=\"color: #FFFF80\"><b>45</b></span> life over <span style=\"color: #FFFF80\"><b>8</b></span>. Once activated it will be on cooldown for <b>180</b>.",
         "Name": "Personal Medkit"
       },
       {
@@ -1060,7 +1064,7 @@
         "Type": "Passive",
         "id": "InfantryMedkit",
         "Icon": "btn-ability-upl-medkit",
-        "Tooltip": "This unit will use a Medkit when they have less than 25% of their life, which will heal <span style=\"color: #FFFF80\"><b>50</b></span> life over <span style=\"color: #FFFF80\"><b>5</b></span>. Once activated it will be on cooldown for <b>180</b>.",
+        "Tooltip": "This unit will use a Medkit when they have less than 25% of their life, which will heal <span style=\"color: #FFFF80\"><b>45</b></span> life over <span style=\"color: #FFFF80\"><b>8</b></span>. Once activated it will be on cooldown for <b>180</b>.",
         "Name": "Personal Medkit"
       }
     ]
@@ -1091,10 +1095,6 @@
     "Zergling",
     "Hydralisk"
   ],
-  "Attributes": [
-    "Light",
-    "Biological"
-  ],
   "AlliedPushPriority": 5,
   "Icon": "btn-unit-upl-infantrymortar",
   "LifeArmorIcon": "btn-upgrades-upl-infantryarmor-lvl0",
@@ -1119,8 +1119,7 @@
     {
       "id": "InfantryMedkit@Handler",
       "Icon": "btn-ability-upl-medkit"
-    },
-    {}
+    }
   ],
   "Abilities": [
     {
@@ -1153,10 +1152,10 @@
     "InfantryMortar",
     "InfantryMortarRangeUpgrade",
     "UPLBilletTrain",
+    "IsInfantryMortar",
     "AllowUnitInfantryMortar",
     "UPLBillet",
     "UPLInfantryWeaponsLevel1",
-    "IsInfantryMortar",
     "UPLInfantryWeapons",
     "UPLInfantryWeaponsLevel2",
     "UPLInfantryWeaponsLevel3",
@@ -1167,7 +1166,8 @@
     "UPLInfantryArmor",
     "UPLInfantryArmorLevel2",
     "UPLInfantryArmorLevel3",
-    "InfantryMortar"
+    "InfantryMortar",
+    null
   ],
   "$Requirements": [],
   "$Production": [],

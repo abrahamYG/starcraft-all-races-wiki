@@ -114,7 +114,7 @@
           "Energy": 0,
           "Life": 0,
           "Shields": 0,
-          "Food": -1
+          "Food": -1.5
         },
         "Row": 0,
         "Column": 0,
@@ -122,7 +122,6 @@
         "AbilCmd": "MutateXayidUnits,Train1",
         "id": "Xayidling",
         "Icon": "btn-unit-xayid-xayidling",
-        "Tooltip": "Mid-ranged fighter.<br/><br/><span style=\"color: #FFFF80\">Can attack ground and air units</span>",
         "Name": "Mutate into Xayidling",
         "Hotkey": "X"
       },
@@ -138,12 +137,12 @@
           "Unit": [
             "Roamer"
           ],
-          "Time": 35
+          "Time": 30
         },
         "Unit": [
           "Roamer"
         ],
-        "Time": 35,
+        "Time": 30,
         "Cost": {
           "Minerals": 75,
           "Vespene": 25,
@@ -160,7 +159,7 @@
         "AbilCmd": "MutateXayidUnits,Train8",
         "id": "Roamer",
         "Icon": "btn-unit-xayid-roamer",
-        "Tooltip": "Quick ranged anti-light fighter. Can use Scour.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
+        "Tooltip": "Fast anti-light skirmisher. Can use Scour.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
         "Name": "Mutate into Roamer",
         "Hotkey": "R"
       },
@@ -259,14 +258,14 @@
         ],
         "Time": 40,
         "Cost": {
-          "Minerals": 100,
+          "Minerals": 50,
           "Vespene": 150,
           "Terazine": 0,
           "Custom": 0,
           "Energy": 0,
           "Life": 0,
           "Shields": 0,
-          "Food": -3
+          "Food": -2
         },
         "Row": 0,
         "Column": 3,
@@ -286,12 +285,6 @@
           "EditorCategories": "Race:Neutral,AbilityorEffectType:Structures",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -365,7 +358,7 @@
         "Time": 35,
         "Cost": {
           "Minerals": 100,
-          "Vespene": 100,
+          "Vespene": 75,
           "Terazine": 0,
           "Custom": 0,
           "Energy": 0,
@@ -391,8 +384,6 @@
   "Collide": [
     "Larva"
   ],
-  "LifeRegenDelay": 3,
-  "LifeRegenRate": 0.5,
   "Sight": 5,
   "CostCategory": "Army",
   "ScoreResult": "BuildOrder",
@@ -440,7 +431,7 @@
     }
   ],
   "$Upgrades": [
-    "XayidDenSpawnLarva",
+    "XayidDenSpawnWorm",
     "Worm",
     "XayidDen",
     "Worm"
@@ -470,14 +461,13 @@
       "AbilCmd": "MutateXayidUnits,Train1",
       "id": "Xayidling",
       "Icon": "btn-unit-xayid-xayidling",
-      "Tooltip": "Mid-ranged fighter.<br/><br/><span style=\"color: #FFFF80\">Can attack ground and air units</span>",
       "Name": "Mutate into Xayidling"
     },
     {
       "AbilCmd": "MutateXayidUnits,Train8",
       "id": "Roamer",
       "Icon": "btn-unit-xayid-roamer",
-      "Tooltip": "Quick ranged anti-light fighter. Can use Scour.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
+      "Tooltip": "Fast anti-light skirmisher. Can use Scour.<br/><br/><span style=\"color: #FFFF80\">Can attack ground units.</span>",
       "Name": "Mutate into Roamer"
     },
     {

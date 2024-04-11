@@ -168,16 +168,16 @@
             "Requirements": "LearnTerranInfantryWeapon2"
           },
           "Resource": {
-            "Minerals": 175,
-            "Vespene": 175
+            "Minerals": 150,
+            "Vespene": 150
           },
           "Time": 190,
           "Upgrade": "TerranInfantryWeaponsLevel2"
         },
         "Time": 190,
         "Cost": {
-          "Minerals": 175,
-          "Vespene": 175,
+          "Minerals": 150,
+          "Vespene": 150,
           "Terazine": 0,
           "Custom": 0,
           "Energy": 0,
@@ -206,16 +206,16 @@
             "Requirements": "LearnTerranInfantryWeapon3"
           },
           "Resource": {
-            "Minerals": 250,
-            "Vespene": 250
+            "Minerals": 200,
+            "Vespene": 200
           },
           "Time": 220,
           "Upgrade": "TerranInfantryWeaponsLevel3"
         },
         "Time": 220,
         "Cost": {
-          "Minerals": 250,
-          "Vespene": 250,
+          "Minerals": 200,
+          "Vespene": 200,
           "Terazine": 0,
           "Custom": 0,
           "Energy": 0,
@@ -241,12 +241,6 @@
           "EditorCategories": "Race:Neutral,AbilityorEffectType:Structures",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -313,12 +307,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -378,12 +366,6 @@
           "EditorCategories": "Race:Neutral,AbilityorEffectType:Units",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -480,46 +462,6 @@
         "Hotkey": "N"
       },
       {
-        "Upgrade": "TerranBuildingArmor",
-        "Info": {
-          "Button": {
-            "Flags": {
-              "AllowMinimap": 0,
-              "ShowInGlossary": 1
-            },
-            "DefaultButtonFace": "UpgradeBuildingArmorLevel1",
-            "Requirements": "LearnTerranBuildingArmor",
-            "State": "Restricted"
-          },
-          "Resource": {
-            "Minerals": 150,
-            "Vespene": 150
-          },
-          "Time": 140,
-          "Upgrade": "TerranBuildingArmor"
-        },
-        "Time": 140,
-        "Cost": {
-          "Minerals": 150,
-          "Vespene": 150,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 1,
-        "Column": 2,
-        "Type": "AbilCmd",
-        "AbilCmd": "EngineeringBayResearch,Research2",
-        "id": "UpgradeBuildingArmorLevel1",
-        "Icon": "btn-upgrade-terran-buildingarmor",
-        "Tooltip": "Upgrades the armor of <span style=\"color: #ffff8a\">structures</span> by 2.",
-        "Name": "Upgrade Structure Armor",
-        "Hotkey": "B"
-      },
-      {
         "Upgrade": "HiSecAutoTracking",
         "Info": {
           "Button": {
@@ -607,16 +549,16 @@
             "Requirements": "LearnTerranInfantryArmor2"
           },
           "Resource": {
-            "Minerals": 175,
-            "Vespene": 175
+            "Minerals": 150,
+            "Vespene": 150
           },
           "Time": 190,
           "Upgrade": "TerranInfantryArmorsLevel2"
         },
         "Time": 190,
         "Cost": {
-          "Minerals": 175,
-          "Vespene": 175,
+          "Minerals": 150,
+          "Vespene": 150,
           "Terazine": 0,
           "Custom": 0,
           "Energy": 0,
@@ -645,16 +587,16 @@
             "Requirements": "LearnTerranInfantryArmor3"
           },
           "Resource": {
-            "Minerals": 250,
-            "Vespene": 250
+            "Minerals": 200,
+            "Vespene": 200
           },
           "Time": 220,
           "Upgrade": "TerranInfantryArmorsLevel3"
         },
         "Time": 220,
         "Cost": {
-          "Minerals": 250,
-          "Vespene": 250,
+          "Minerals": 200,
+          "Vespene": 200,
           "Terazine": 0,
           "Custom": 0,
           "Energy": 0,
@@ -721,15 +663,13 @@
     }
   ],
   "$Upgrades": [
-    "TerranBuild",
+    "CountUnitEngineeringBayCompleteOnlyTechTreeCheat",
     "EngineeringBay",
     "TerranBuildingArmor",
-    "CountUnitEngineeringBayCompleteOnlyTechTreeCheat",
+    "TerranBuild",
     "IsEngineeringBay",
     "EngineeringBay",
-    "EngineeringBaySplat",
-    "EngineeringBay",
-    null
+    "EngineeringBaySplat"
   ],
   "$Requirements": [],
   "$Production": [],
@@ -797,13 +737,6 @@
       "Icon": "btn-upgrade-terran-neosteelframe",
       "Tooltip": "Increases the cargo space of <span style=\"color: #ffff8a\">Bunkers</span> by 2. Also provides extra cargo space for <span style=\"color: #ffff8a\">Command Centers</span> and <span style=\"color: #ffff8a\">Planetary Fortresses</span>.",
       "Name": "Research Neosteel Frame"
-    },
-    {
-      "AbilCmd": "EngineeringBayResearch,Research2",
-      "id": "UpgradeBuildingArmorLevel1",
-      "Icon": "btn-upgrade-terran-buildingarmor",
-      "Tooltip": "Upgrades the armor of <span style=\"color: #ffff8a\">structures</span> by 2.",
-      "Name": "Upgrade Structure Armor"
     },
     {
       "AbilCmd": "EngineeringBayResearch,Research1",

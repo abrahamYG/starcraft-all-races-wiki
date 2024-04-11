@@ -1,6 +1,6 @@
 {
   "Name": "Conduit",
-  "Description": "Basic air tech facility.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>  - Echoes from the Citadel<br/>  - Fuses from the Citadel<br/>",
+  "Description": "Contains upgrades for Echoes and Fuses.<br/><br/><span style=\"color: #FFFF80\">Enables:</span><br/>- Echoes from Citadels<br/>- Fuses from Citadels",
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 2,
   "DeathRevealDuration": 4,
@@ -18,7 +18,7 @@
   "TurningRate": 720,
   "Radius": 1.5,
   "SeparationRadius": 1.5,
-  "MinimapRadius": 1.5,
+  "MinimapRadius": 2,
   "EditorCategories": "ObjectType:Structure,ObjectFamily:Melee",
   "TacticalAIFilters": "-;Player,Ally,Neutral",
   "AIEvalFactor": 1,
@@ -87,7 +87,8 @@
     "Air"
   ],
   "Collide": [
-    "Flying"
+    "Flying",
+    "Flying5"
   ],
   "Attributes": [
     "Armored",
@@ -98,13 +99,11 @@
   "CostCategory": "Technology",
   "ScoreResult": "BuildOrder",
   "HotkeyCategory": "Unit/Category/KeironUnits",
-  "LifeRegenRate": 0.25,
+  "LifeRegenRate": 0.2734,
   "Food": 6,
   "Footprint": "Footprint4x4AirContour",
   "PlacementFootprint": "Footprint4x4Air",
   "ShieldArmorName": "Keiron Dispersion Shields",
-  "ShieldRegenDelay": 4,
-  "ShieldRegenRate": 1.25,
   "CardLayouts": {
     "Root": [
       {
@@ -154,12 +153,6 @@
           "EditorCategories": "Race:Neutral,AbilityorEffectType:Units",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -224,12 +217,6 @@
           "EditorCategories": "Race:Neutral,AbilityorEffectType:Structures",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
             {
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
@@ -318,9 +305,48 @@
         "AbilCmd": "ConduitResearch,Research1",
         "id": "DevelopDissonanceProjector",
         "Icon": "btn-upgrade-keiron-dissonanceprojector",
-        "Tooltip": "Echoes in Discord Mode become cloaked.",
+        "Tooltip": "<span style=\"color: #FFFF80\">Echoes</span> in Discord Mode become cloaked.",
         "Name": "Develop Dissonance Projector",
         "Hotkey": "D"
+      },
+      {
+        "Upgrade": "InterlacingBond",
+        "Info": {
+          "Button": {
+            "Flags": {
+              "AllowMinimap": 0,
+              "ShowInGlossary": 1
+            },
+            "DefaultButtonFace": "DevelopInterlacingBond",
+            "Requirements": "LearnInterlacingBond"
+          },
+          "Resource": {
+            "Minerals": 100,
+            "Vespene": 100
+          },
+          "Time": 110,
+          "Upgrade": "InterlacingBond"
+        },
+        "Time": 110,
+        "Cost": {
+          "Minerals": 100,
+          "Vespene": 100,
+          "Terazine": 0,
+          "Custom": 0,
+          "Energy": 0,
+          "Life": 0,
+          "Shields": 0,
+          "Food": 0
+        },
+        "Row": 0,
+        "Column": 1,
+        "Type": "AbilCmd",
+        "AbilCmd": "ConduitResearch,Research2",
+        "id": "DevelopInterlacingBond",
+        "Icon": "btn-upgrade-stetmann-zerglinghardenedshield",
+        "Tooltip": "The <span style=\"color: #FFFF80\">Fuses</span> Fusion buff gains a +0.5 shield armor bonus.",
+        "Name": "Develop Interlacing Bond",
+        "Hotkey": "B"
       }
     ]
   },
@@ -348,6 +374,9 @@
   "ShieldArmorIcon": "btn-upgrade-keiron-shields-level0",
   "Weapons": [],
   "Behaviors": [
+    {
+      "id": "KeironShellRestoration"
+    },
     {
       "id": "KeironChargeDummyCreation"
     }
@@ -380,12 +409,14 @@
     "KeironShieldsLevel2",
     "KeironShieldsLevel3",
     "KeironBuild",
-    "CountUnitConduitCompleteOnly"
+    "KeironShieldsRevert",
+    "CountUnitConduitCompleteOnlyTechTreeCheat"
   ],
   "$Requirements": [],
   "$Production": [],
   "$Research": [
-    "DissonanceProjector"
+    "DissonanceProjector",
+    "InterlacingBond"
   ],
   "$Morph": [],
   "$Phase": [],
@@ -411,8 +442,15 @@
       "AbilCmd": "ConduitResearch,Research1",
       "id": "DevelopDissonanceProjector",
       "Icon": "btn-upgrade-keiron-dissonanceprojector",
-      "Tooltip": "Echoes in Discord Mode become cloaked.",
+      "Tooltip": "<span style=\"color: #FFFF80\">Echoes</span> in Discord Mode become cloaked.",
       "Name": "Develop Dissonance Projector"
+    },
+    {
+      "AbilCmd": "ConduitResearch,Research2",
+      "id": "DevelopInterlacingBond",
+      "Icon": "btn-upgrade-stetmann-zerglinghardenedshield",
+      "Tooltip": "The <span style=\"color: #FFFF80\">Fuses</span> Fusion buff gains a +0.5 shield armor bonus.",
+      "Name": "Develop Interlacing Bond"
     }
   ]
 }

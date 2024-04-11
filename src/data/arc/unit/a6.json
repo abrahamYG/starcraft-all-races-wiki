@@ -1,6 +1,5 @@
 {
   "Name": "A-6",
-  "Description": "Mobile Anti-Air Platform<br/><br/><c val=\"#ColorAttackInfo\">Can attack air units</span>",
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -17,7 +16,7 @@
   "StationaryTurningRate": 720,
   "TurningRate": 360,
   "Radius": 0.875,
-  "SeparationRadius": 1,
+  "SeparationRadius": 0.875,
   "MinimapRadius": 1,
   "EditorCategories": "ObjectType:Unit,ObjectFamily:Melee",
   "TacticalAIFilters": "-;Player,Ally,Neutral",
@@ -559,7 +558,7 @@
   "ScoreResult": "BuildOrder",
   "SubgroupPriority": 12,
   "GlossaryCategory": "Unit/Category/0UPLUnits",
-  "GlossaryPriority": 41,
+  "GlossaryPriority": 44,
   "GlossaryStrongArray": [
     "Marine",
     "Hydralisk",
@@ -621,7 +620,8 @@
     "UPLManufacturingFacility",
     "IsA6",
     "A6Turret",
-    "A6"
+    "A6",
+    null
   ],
   "$Requirements": [],
   "$Production": [],

@@ -111,12 +111,6 @@
               "Color": "255,255,0,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -182,14 +176,9 @@
       {
         "Info": {
           "SectionArray": {
-            "Abils": {
-              "DurationArray": {
-                "Delay": 1.0625
-              }
-            },
             "Actor": {
               "DurationArray": {
-                "Duration": 1
+                "Duration": 0.5
               }
             }
           },
@@ -247,11 +236,11 @@
   "$Upgrades": [
     "BurrowZerglingDown",
     "ZerglingBurrowed",
+    "Burrow",
     "IsZerglingBurrowed",
-    "zerglingattackspeed",
     "Zergling",
     "zerglingmovementspeed",
-    "Burrow",
+    "zerglingattackspeed",
     "ZergMeleeWeaponsLevel1",
     "ZergMeleeWeapons",
     "ZergMeleeWeaponsLevel2",
@@ -260,10 +249,8 @@
     "ZergGroundArmors",
     "ZergGroundArmorsLevel2",
     "ZergGroundArmorsLevel3",
-    "ZerglingSkin",
     "Zergling_Death",
     "ZerglingBurrowedSplat",
-    "ZergBurrowMove",
     "TacticalBurrowZerglingBurrowedBullyTest",
     "TacticalBurrowZerglingCampaignNoHostilesBullyBurrow"
   ],

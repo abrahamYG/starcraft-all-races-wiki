@@ -86,11 +86,9 @@
   "Collide": [
     "Flying"
   ],
-  "LifeRegenRate": 0.1718,
-  "ShieldRegenDelay": 4,
-  "ShieldRegenRate": 1.25,
+  "LifeRegenRate": 0.2734,
   "Acceleration": 1,
-  "Sight": 10,
+  "Sight": 12,
   "CostCategory": "Army",
   "AttackTargetPriority": 20,
   "CardLayouts": {
@@ -107,12 +105,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -204,12 +196,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -283,12 +269,6 @@
               "DisplayType": "Move",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
@@ -382,12 +362,6 @@
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             },
             {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
               "DisplayType": "Move",
               "Color": "255,35,125,255",
               "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
@@ -475,12 +449,6 @@
               "DisplayType": "Attack",
               "Color": "255,255,0,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
@@ -579,12 +547,6 @@
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
           "SharedFlags": {
@@ -615,7 +577,7 @@
             "NoDeceleration": 1
           },
           "Effect": [
-            "EmissaryOrb"
+            "ParagonEmissaryOrbChannel"
           ],
           "EffectRange": [
             "0,1000"
@@ -687,27 +649,21 @@
             }
           ],
           "UninterruptibleArray": {
-            "Prep": 1,
-            "Cast": 1,
-            "Channel": 1,
-            "Finish": 1
+            "Channel": 1
           },
           "TargetFilters": [
-            "-;Self,Missile,Stasis,Dead,Hidden,Invulnerable"
+            "Ground;Self,Missile,Stasis,Dead,Hidden,Invulnerable"
           ],
           "Alignment": "Negative",
-          "PrepEffect": [
-            "ParagonDisableAntiAir"
-          ],
-          "PrepTime": [
-            3
-          ],
           "ShowProgressArray": {
-            "Prep": 1
+            "Channel": 1
           },
           "ProgressButtonArray": {
-            "Prep": "EmissaryOrb"
+            "Channel": "EmissaryOrb"
           },
+          "CastOutroTime": [
+            3
+          ],
           "id": "EmissaryOrb"
         },
         "Cost": {
@@ -726,7 +682,7 @@
         "AbilCmd": "EmissaryOrb,Execute",
         "id": "EmissaryOrb",
         "Icon": "btn-ability-keiron-emissaryorb",
-        "Tooltip": "Deals <b>160</b> damage to the primary target. Deals damage in an area.",
+        "Tooltip": "Deals <b>150</b> damage to the primary target. Deals damage in an area.",
         "Name": "Emissary Orb",
         "Hotkey": "E"
       },
@@ -742,12 +698,6 @@
               "DisplayType": "Confirm",
               "Color": "255,0,255,0",
               "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
               "LineTexture": "Assets\\Textures\\WayPointLine.dds"
             }
           ],
@@ -860,7 +810,7 @@
         "AbilCmd": "FuseUnfuse,Execute",
         "id": "Unfuse",
         "Icon": "btn-ability-zerg-dehaka-levelup",
-        "Tooltip": "Releases the Fuse inhabiting this unit, losing the associated bonus.",
+        "Tooltip": "Releases the Fuses inhabiting this unit, losing the associated bonus.",
         "Name": "Unfuse",
         "Hotkey": "U"
       }
@@ -887,12 +837,12 @@
     "Mechanical",
     "Massive"
   ],
-  "LifeArmor": 2,
+  "LifeArmor": 3,
   "ShieldsStart": 200,
   "ShieldsMax": 200,
-  "Speed": 1.875,
+  "Speed": 1.7851,
   "LateralAcceleration": 46,
-  "Food": -8,
+  "Food": -7,
   "CostResource": {
     "Minerals": 450,
     "Vespene": 350
@@ -914,10 +864,10 @@
       "id": "ParagonAirWeapon",
       "Icon": "btn-upgrade-keiron-mechanicalweaponslevel0",
       "Name": "Paragon - Air Weapon",
-      "Amount": 40,
+      "Amount": 44,
       "Kind": "Ranged",
       "TargetFilters": "Air",
-      "Range": 9,
+      "Range": 10,
       "Period": 1.75
     },
     {
@@ -928,10 +878,13 @@
       "Kind": "Ranged",
       "TargetFilters": "Ground",
       "Range": 6,
-      "Period": 0.375
+      "Period": 0.42
     }
   ],
   "Behaviors": [
+    {
+      "id": "KeironShellRestoration"
+    },
     {
       "id": "KeironConstructionFreeze"
     }
@@ -971,6 +924,7 @@
     "Paragon",
     "Zenith",
     "KeironCitadelMaterialize",
+    "CitadelCharged",
     "KeironMechWeaponsLevel1",
     "KeironMechWeapons",
     "KeironMechWeaponsLevel2",
@@ -981,11 +935,13 @@
     "KeironMechArmorLevel2",
     "KeironMechArmorLevel3",
     "KeironShieldsLevel1",
-    "CitadelCharged",
     "KeironShields",
     "KeironShieldsLevel2",
     "KeironShieldsLevel3",
-    "Citadel"
+    "Citadel",
+    "KeironMechArmorRevert",
+    "KeironMechWeaponsRevert",
+    "KeironShieldsRevert"
   ],
   "$Requirements": [],
   "$Production": [],
@@ -1043,14 +999,14 @@
       "AbilCmd": "EmissaryOrb,Execute",
       "id": "EmissaryOrb",
       "Icon": "btn-ability-keiron-emissaryorb",
-      "Tooltip": "Deals <b>160</b> damage to the primary target. Deals damage in an area.",
+      "Tooltip": "Deals <b>150</b> damage to the primary target. Deals damage in an area.",
       "Name": "Emissary Orb"
     },
     {
       "AbilCmd": "FuseUnfuse,Execute",
       "id": "Unfuse",
       "Icon": "btn-ability-zerg-dehaka-levelup",
-      "Tooltip": "Releases the Fuse inhabiting this unit, losing the associated bonus.",
+      "Tooltip": "Releases the Fuses inhabiting this unit, losing the associated bonus.",
       "Name": "Unfuse"
     }
   ]

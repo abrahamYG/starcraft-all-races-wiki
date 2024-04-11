@@ -13,6 +13,7 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "HighCapacityBarrels",
+  "EditorCategories": "Race:Terran,UpgradeType:Spell",
   "$tokens": {
     "ID": {
       "type": "string",
@@ -26,26 +27,10 @@
       "Value": "5"
     },
     {
-      "Operation": "Set",
-      "Reference": "Button,HellionTank,Icon",
-      "Value": "Assets\\Textures\\btn-unit-terran-helliontank-junker.dds"
-    },
-    {
-      "Operation": "Set",
-      "Reference": "Actor,HellionTank,Wireframe.Image[0]",
-      "Value": "Assets\\Textures\\wireframe-terran-helliontank-junker.dds"
-    },
-    {
-      "Operation": "Set",
-      "Reference": "Actor,HellionTank,GroupIcon.Image[0]",
-      "Value": "Assets\\Textures\\btn-unit-terran-helliontank-junker.dds"
-    },
-    {
       "Reference": "Effect,HellionTankDamage,AttributeBonus[Light]",
       "Value": "12"
     }
   ],
-  "EditorCategories": "Race:Terran,UpgradeType:Talents",
   "ScoreResult": "BuildOrder",
   "ScoreAmount": 200,
   "AffectedUnitArray": [

@@ -12,6 +12,7 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "UpgradePhosphoricFire",
+  "EditorCategories": "Race:UED,UpgradeType:SpellResearch",
   "$tokens": {
     "ID": {
       "type": "string",
@@ -19,11 +20,21 @@
     }
   },
   "InfoTooltipPriority": 1,
-  "EditorCategories": "Race:UED,UpgradeType:SpellResearch",
   "Race": "UED",
   "ScoreAmount": 200,
   "ScoreResult": "BuildOrder",
   "AffectedUnitArray": [
     "Huracan"
+  ],
+  "EffectArray": [
+    {
+      "Reference": "Effect,DamageOnBuildingHurakan,Amount",
+      "Value": "8"
+    },
+    {
+      "Operation": "Subtract",
+      "Reference": "Effect,DamageOnBuildingHurakan,ArmorReduction",
+      "Value": "1"
+    }
   ]
 }

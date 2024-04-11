@@ -1,6 +1,6 @@
 {
   "Name": "Aperture",
-  "Description": "Transport unit. Can be upgraded to use Keyhole.",
+  "Description": "Transport unit. Can use Keyhole.",
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -18,7 +18,7 @@
   "TurningRate": 720,
   "Radius": 0.875,
   "SeparationRadius": 0.875,
-  "MinimapRadius": 0.875,
+  "MinimapRadius": 1,
   "EditorCategories": "ObjectType:Unit,ObjectFamily:Melee",
   "TacticalAIFilters": "-;Player,Ally,Neutral",
   "AIEvalFactor": 1,
@@ -89,7 +89,7 @@
   ],
   "LifeRegenRate": 0.2734,
   "Acceleration": 3,
-  "Sight": 9,
+  "Sight": 10,
   "CostCategory": "Army",
   "AttackTargetPriority": 20,
   "CardLayouts": {
@@ -1129,7 +1129,7 @@
   "Food": -2,
   "CostResource": {
     "Minerals": 100,
-    "Vespene": 125
+    "Vespene": 100
   },
   "Attributes": [
     "Armored",
@@ -1183,8 +1183,8 @@
     "Outlet",
     "Aperture",
     "IsAperture",
-    "CitadelCharged",
     "KeironCitadelMaterialize",
+    "CitadelCharged",
     "KeironMechArmorLevel1",
     "Aperture",
     "KeironMechArmor",

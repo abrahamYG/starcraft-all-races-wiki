@@ -18,7 +18,7 @@
   "TurningRate": 720,
   "Radius": 1,
   "SeparationRadius": 0.5,
-  "MinimapRadius": 1,
+  "MinimapRadius": 0.75,
   "EditorCategories": "ObjectType:Structure,ObjectFamily:Melee",
   "TacticalAIFilters": "-;Player,Ally,Neutral",
   "AIEvalFactor": 1,
@@ -101,7 +101,7 @@
     "Structure"
   ],
   "LifeArmor": 2,
-  "Sight": 10,
+  "Sight": 11,
   "CostCategory": "Technology",
   "ScoreResult": "BuildOrder",
   "HotkeyCategory": "Unit/Category/XayidUnits",
@@ -396,7 +396,9 @@
   "Behaviors": [
     {
       "id": "Detector11",
-      "Icon": "btn-status-detector"
+      "Icon": "btn-status-detector",
+      "Tooltip": "This unit can detect cloaked or burrowed units within its sight range.",
+      "Name": "Detector"
     },
     {
       "id": "FeedingPoolPowerUser",
