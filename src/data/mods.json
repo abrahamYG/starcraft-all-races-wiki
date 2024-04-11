@@ -1,6 +1,10 @@
 {
   "mods": [
     {
+      "name": "LOTV 5.0.11",
+      "id": "lotv5011"
+    },
+    {
       "name": "LOTV 5.0.12",
       "id": "lotv5012"
     },

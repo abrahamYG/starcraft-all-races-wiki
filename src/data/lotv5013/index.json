@@ -1,18 +1,21 @@
 {
-  "discord": "https://discord.gg/Xx9xurbb4u",
-  "id": "voidMulti",
+  "id":"arc",
+  "discord": "https://discord.gg/8T4MUA3xXr",
   "races": [
     {
       "id": "Terr",
-      "Name": "Terran"
+      "Name": "Terran",
+      "Icon": "lobby-terran"
     },
     {
       "id": "Prot",
-      "Name": "Protoss"
+      "Name": "Protoss",
+      "Icon": "lobby-protoss"
     },
     {
       "id": "Zerg",
-      "Name": "Zerg"
+      "Name": "Zerg",
+      "Icon": "lobby-zerg"
     }
   ]
 }

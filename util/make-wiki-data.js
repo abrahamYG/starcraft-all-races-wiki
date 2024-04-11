@@ -736,13 +736,13 @@ await wiki( {
   id:"voidMulti",
   mods: [
     '$builtin/Core.SC2Mod',
-    // '$builtin/Liberty.sc2mod',
-    // '$builtin/Swarm.sc2mod',
-    // '$builtin/Void.sc2mod',
-    // '$builtin/VoidMulti5013.sc2mod',
-    '$dependencies/Base.SC2Mod',
-    '$dependencies/VoidMulti.SC2Mod',
-    '$factions/Scion.SC2Mod',
+    '$builtin/Liberty.sc2mod',
+    '$builtin/Swarm.sc2mod',
+    '$builtin/Void.sc2mod',
+    '$builtin/VoidMulti5011.sc2mod',
+    // '$dependencies/Base.SC2Mod',
+    // '$dependencies/VoidMulti.SC2Mod',
+    // '$factions/Scion.SC2Mod',
     // '$factions/Dragons.SC2Mod',
     // '$factions/UED.SC2Mod',
     // '$factions/UPL.SC2Mod',
@@ -750,7 +750,7 @@ await wiki( {
     // '$factions/Synoid.SC2Mod',
     // '$factions/Umojan.SC2Mod'
   ],
-  output: './../src/data/scion/'
+  output: './../src/data/lotv5011/'
 })
 
 // await wiki( {
