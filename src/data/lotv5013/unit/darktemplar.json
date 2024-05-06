@@ -1,6 +1,12 @@
 {
-  "Name": "Dark Templar",
-  "Description": "Deadly warrior-assassin. Cloak renders the unit invisible to enemies without detection. Can transform into an Archon.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+  "Name": {
+    "enUS": "Dark Templar",
+    "ruRU": "Dark Templar"
+  },
+  "Description": {
+    "enUS": "Deadly warrior-assassin. Cloak renders the unit invisible to enemies without detection. Can transform into an Archon.<br/><br/><span style=\"color: ffff8a\">Can attack ground units.</span>",
+    "ruRU": "Deadly warrior-assassin. Cloak renders the unit invisible to enemies without detection. Can transform into an Archon.<br/><br/><span style=\"color: ffff8a\">Can attack ground units.</span>"
+  },
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -12,7 +18,10 @@
   "ResourceType": "Unknown",
   "LifeStart": 40,
   "LifeMax": 40,
-  "LifeArmorName": "Protoss Armor",
+  "LifeArmorName": {
+    "enUS": "Protoss Armor",
+    "ruRU": "Protoss Armor"
+  },
   "Mover": "Ground",
   "StationaryTurningRate": 999.8437,
   "TurningRate": 999.8437,
@@ -75,12 +84,21 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "Mob": "Multiplayer",
   "LifeArmor": 1,
   "ShieldsStart": 80,
   "ShieldsMax": 80,
   "ShieldRegenRate": 2,
-  "ShieldArmorName": "Protoss Plasma Shields",
+  "ShieldArmorName": {
+    "enUS": "Protoss Plasma Shields",
+    "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+  },
   "Speed": 2.8125,
   "Acceleration": 1000,
   "LateralAcceleration": 46.0625,
@@ -101,8 +119,7 @@
   "Collide": [
     "Ground",
     "ForceField",
-    "Small",
-    "Locust"
+    "Small"
   ],
   "Sight": 8,
   "CardLayouts": {
@@ -132,6 +149,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -169,8 +192,7 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move",
-          "AbilSetId": "Move"
+          "id": "move"
         },
         "Cost": {
           "Minerals": 0,
@@ -188,8 +210,14 @@
         "AbilCmd": "move,Move",
         "id": "Move",
         "Icon": "btn-command-move",
-        "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
-        "Name": "Move",
+        "Name": {
+          "enUS": "Move",
+          "ruRU": "Двигаться /// Move"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+          "ruRU": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies."
+        },
         "Hotkey": "M"
       },
       {
@@ -211,6 +239,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "stop",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "AbilSetId": "Stop",
           "CmdButtonArray": {
             "Stop": {
@@ -256,8 +290,14 @@
         "AbilCmd": "stop,Stop",
         "id": "Stop",
         "Icon": "btn-command-stop",
-        "Tooltip": "Orders selected units to cancel all orders and stop moving.",
-        "Name": "Stop",
+        "Name": {
+          "enUS": "Stop",
+          "ruRU": "Отставить /// Stop"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to cancel all orders and stop moving.",
+          "ruRU": "Orders selected units to cancel all orders and stop moving."
+        },
         "Hotkey": "S"
       },
       {
@@ -285,6 +325,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -322,8 +368,7 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move",
-          "AbilSetId": "Move"
+          "id": "move"
         },
         "Cost": {
           "Minerals": 0,
@@ -341,8 +386,14 @@
         "AbilCmd": "move,HoldPos",
         "id": "MoveHoldPosition",
         "Icon": "btn-command-holdposition",
-        "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
-        "Name": "Hold Position",
+        "Name": {
+          "enUS": "Hold Position",
+          "ruRU": "Удерживать позицию /// Hold Position"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+          "ruRU": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage."
+        },
         "Hotkey": "H"
       },
       {
@@ -364,6 +415,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "attack",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "AbilSetId": "Attack",
           "Alignment": "Negative",
           "AcquireFilters": "-;Player,Ally,Neutral,Dead,Hidden,Invulnerable,Benign",
@@ -410,8 +467,14 @@
         "AbilCmd": "attack,Execute",
         "id": "Attack",
         "Icon": "btn-command-attack",
-        "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
-        "Name": "Attack",
+        "Name": {
+          "enUS": "Attack",
+          "ruRU": "Атаковать /// Attack"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+          "ruRU": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed."
+        },
         "Hotkey": "A"
       },
       {
@@ -439,6 +502,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -476,8 +545,7 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move",
-          "AbilSetId": "Move"
+          "id": "move"
         },
         "Cost": {
           "Minerals": 0,
@@ -495,8 +563,14 @@
         "AbilCmd": "move,Patrol",
         "id": "MovePatrol",
         "Icon": "btn-command-patrol",
-        "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
-        "Name": "Patrol",
+        "Name": {
+          "enUS": "Patrol",
+          "ruRU": "Патрулировать /// Patrol"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+          "ruRU": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies."
+        },
         "Hotkey": "P"
       },
       {
@@ -517,16 +591,18 @@
         "AbilCmd": "ProgressRally,Rally1",
         "id": "Rally",
         "Icon": "btn-ability-terran-setrallypoint",
-        "Tooltip": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
-        "Name": "Set Rally Point",
+        "Name": {
+          "enUS": "Set Rally Point",
+          "ruRU": "Задать точку сбора /// Set Rally Point"
+        },
+        "Tooltip": {
+          "enUS": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
+          "ruRU": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically."
+        },
         "Hotkey": "Y"
       },
       {
         "Info": {
-          "Resource": {
-            "Minerals": 0,
-            "Vespene": 0
-          },
           "Unit": "Archon",
           "Time": 12
         },
@@ -548,8 +624,14 @@
         "AbilCmd": "ArchonWarp,SelectedUnits",
         "id": "AWrp",
         "Icon": "btn-unit-protoss-archon",
-        "Tooltip": "Sacrifices 2 Templar to create an Archon.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>",
-        "Name": "Archon Merge",
+        "Name": {
+          "enUS": "Archon Merge",
+          "ruRU": "Archon Merge"
+        },
+        "Tooltip": {
+          "enUS": "Sacrifices 2 Templar to create an Archon.<br/><br/><span style=\"color: ffff8a\">Can attack ground and air units.</span>",
+          "ruRU": "Sacrifices 2 Templar to create an Archon.<br/><br/><span style=\"color: ffff8a\">Can attack ground and air units.</span>"
+        },
         "Hotkey": "C"
       },
       {
@@ -568,8 +650,14 @@
         "Type": "Passive",
         "id": "PermanentlyCloaked",
         "Icon": "btn-ability-protoss-permanentlycloaked-darktemplar-color",
-        "Tooltip": "The Dark Templar is permanently cloaked.",
-        "Name": "Permanently Cloaked"
+        "Name": {
+          "enUS": "Permanently Cloaked",
+          "ruRU": "Permanently Cloaked"
+        },
+        "Tooltip": {
+          "enUS": "The Dark Templar is permanently cloaked.",
+          "ruRU": "The Dark Templar is permanently cloaked."
+        }
       },
       {
         "Info": {
@@ -590,6 +678,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "DarkTemplarBlink",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "RangeSlop": 1,
           "ArcSlop": 11.25,
           "AutoCastAcquireLevel": "Offensive",
@@ -601,7 +695,7 @@
             "RangeUseCasterRadius": 1,
             "ReApproachable": 1,
             "RequireTargetVision": 0,
-            "WaitToSpend": 0,
+            "WaitToSpend": 1,
             "UpdateChargesOnLevelChange": 1,
             "BestUnit": 0
           },
@@ -698,8 +792,12 @@
         "AbilCmd": "DarkTemplarBlink,Execute",
         "id": "DarkTemplarBlink",
         "Icon": "btn-ability-protoss-stealth-blink",
-        "Tooltip": "Teleports the Dark Templar to a nearby target location. Ability can only be used once every <b>20</b> seconds.",
-        "Name": "Shadow Stride",
+        "Name": {
+          "enUS": "Shadow Stride"
+        },
+        "Tooltip": {
+          "enUS": "Teleports the Dark Templar to a nearby target location. Ability can only be used once every <b>20</b> seconds."
+        },
         "Hotkey": "B"
       }
     ]
@@ -718,7 +816,6 @@
     "Vespene": 125
   },
   "ShieldRegenDelay": 10,
-  "id": "DarkTemplar",
   "GlossaryStrongArray": [
     "SCV",
     "Drone",
@@ -729,6 +826,7 @@
     "Overseer",
     "Observer"
   ],
+  "id": "DarkTemplar",
   "Icon": "btn-unit-protoss-darktemplar",
   "LifeArmorIcon": "btn-upgrade-protoss-groundarmorlevel0",
   "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
@@ -736,7 +834,10 @@
     {
       "id": "WarpBlades",
       "Icon": "btn-upgrade-protoss-groundweaponslevel0",
-      "Name": "Warp Blades",
+      "Name": {
+        "enUS": "Warp Blades",
+        "ruRU": "Warp Blades"
+      },
       "Amount": 45,
       "Kind": "Melee",
       "TargetFilters": "Ground",
@@ -748,31 +849,52 @@
   "Abilities": [
     {
       "id": "stop",
-      "Name": "Stop"
+      "Name": {
+        "enUS": "Stop",
+        "ruRU": "Stop"
+      }
     },
     {
       "id": "attack",
-      "Name": "Attack"
+      "Name": {
+        "ruRU": "Attack",
+        "enUS": "Attack"
+      }
     },
     {
       "id": "move",
-      "Name": "Move"
+      "Name": {
+        "enUS": "Move",
+        "ruRU": "Move"
+      }
     },
     {
       "id": "Warpable",
-      "Name": "Warpable"
+      "Name": {
+        "enUS": "Warpable",
+        "ruRU": "Warpable"
+      }
     },
     {
       "id": "ArchonWarp",
-      "Name": "Archon Merge"
+      "Name": {
+        "enUS": "Archon Merge",
+        "ruRU": "Archon Merge"
+      }
     },
     {
       "id": "ProgressRally",
-      "Name": "Progress Rally"
+      "Name": {
+        "enUS": "Progress Rally",
+        "ruRU": "Progress Rally"
+      }
     },
     {
       "id": "DarkTemplarBlink",
-      "Name": "Dark Templar Blink"
+      "Name": {
+        "enUS": "Dark Templar Blink",
+        "ruRU": "Dark Templar Blink"
+      }
     }
   ],
   "$Upgrades": [
@@ -796,21 +918,7 @@
     "ProtossShieldsLevel2",
     "ProtossShieldsLevel3",
     "DarkTemplar_Death",
-    "IsDarkTemplar",
-    "Combat_Mechanic_Shields_DarkTemplar",
-    "DarkTemplarBase",
-    "DarkTemplar00Base",
-    "DarkTemplar01Base",
-    "DarkTemplar",
-    "DarkTemplarTaldarim",
-    "DarkTemplarPurifier",
-    "DarkTemplarGolden",
-    "DarkTemplarIhanrii",
-    "DefaultSkinPack",
-    "DarkTemplarTaldarimSkinPack",
-    "DarkTemplarPurifierSkinPack",
-    "DarkTemplarGolden",
-    "DarkTemplarIhanrii"
+    "IsDarkTemplar"
   ],
   "$Requirements": [],
   "$Production": [],
@@ -828,57 +936,103 @@
       "AbilCmd": "move,Move",
       "id": "Move",
       "Icon": "btn-command-move",
-      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
-      "Name": "Move"
+      "Name": {
+        "enUS": "Move",
+        "ruRU": "Двигаться /// Move"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+        "ruRU": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies."
+      }
     },
     {
       "AbilCmd": "stop,Stop",
       "id": "Stop",
       "Icon": "btn-command-stop",
-      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
-      "Name": "Stop"
+      "Name": {
+        "enUS": "Stop",
+        "ruRU": "Отставить /// Stop"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to cancel all orders and stop moving.",
+        "ruRU": "Orders selected units to cancel all orders and stop moving."
+      }
     },
     {
       "AbilCmd": "move,HoldPos",
       "id": "MoveHoldPosition",
       "Icon": "btn-command-holdposition",
-      "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
-      "Name": "Hold Position"
+      "Name": {
+        "enUS": "Hold Position",
+        "ruRU": "Удерживать позицию /// Hold Position"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+        "ruRU": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage."
+      }
     },
     {
       "AbilCmd": "attack,Execute",
       "id": "Attack",
       "Icon": "btn-command-attack",
-      "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
-      "Name": "Attack"
+      "Name": {
+        "enUS": "Attack",
+        "ruRU": "Атаковать /// Attack"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+        "ruRU": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed."
+      }
     },
     {
       "AbilCmd": "move,Patrol",
       "id": "MovePatrol",
       "Icon": "btn-command-patrol",
-      "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
-      "Name": "Patrol"
+      "Name": {
+        "enUS": "Patrol",
+        "ruRU": "Патрулировать /// Patrol"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+        "ruRU": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies."
+      }
     },
     {
       "AbilCmd": "ProgressRally,Rally1",
       "id": "Rally",
       "Icon": "btn-ability-terran-setrallypoint",
-      "Tooltip": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
-      "Name": "Set Rally Point"
+      "Name": {
+        "enUS": "Set Rally Point",
+        "ruRU": "Задать точку сбора /// Set Rally Point"
+      },
+      "Tooltip": {
+        "enUS": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
+        "ruRU": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically."
+      }
     },
     {
       "AbilCmd": "ArchonWarp,SelectedUnits",
       "id": "AWrp",
       "Icon": "btn-unit-protoss-archon",
-      "Tooltip": "Sacrifices 2 Templar to create an Archon.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>",
-      "Name": "Archon Merge"
+      "Name": {
+        "enUS": "Archon Merge",
+        "ruRU": "Archon Merge"
+      },
+      "Tooltip": {
+        "enUS": "Sacrifices 2 Templar to create an Archon.<br/><br/><span style=\"color: ffff8a\">Can attack ground and air units.</span>",
+        "ruRU": "Sacrifices 2 Templar to create an Archon.<br/><br/><span style=\"color: ffff8a\">Can attack ground and air units.</span>"
+      }
     },
     {
       "AbilCmd": "DarkTemplarBlink,Execute",
       "id": "DarkTemplarBlink",
       "Icon": "btn-ability-protoss-stealth-blink",
-      "Tooltip": "Teleports the Dark Templar to a nearby target location. Ability can only be used once every <b>20</b> seconds.",
-      "Name": "Shadow Stride"
+      "Name": {
+        "enUS": "Shadow Stride"
+      },
+      "Tooltip": {
+        "enUS": "Teleports the Dark Templar to a nearby target location. Ability can only be used once every <b>20</b> seconds."
+      }
     }
   ]
 }

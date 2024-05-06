@@ -12,8 +12,14 @@
   "ScoreValue": "WeaponTechnologyValue",
   "WebPriority": 0,
   "LeaderAlias": "ZergMeleeArmors",
+  "EditorCategories": "Race:Zerg,UpgradeType:Bonus",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "Race": "Zerg",
-  "EditorCategories": "Race:Zerg,UpgradeType:AttackBonus",
   "ScoreResult": "BuildOrder",
   "EffectArray": [
     {
@@ -69,14 +75,14 @@
       "Value": "1"
     },
     {
+      "Operation": "Set",
       "Reference": "Weapon,Claws,Icon",
-      "Value": "Assets\\Textures\\btn-upgrade-zerg-meleeattacks-level1.dds",
-      "Operation": "Set"
+      "Value": "Assets\\Textures\\btn-upgrade-zerg-meleeattacks-level1.dds"
     },
     {
+      "Operation": "Set",
       "Reference": "Weapon,NeedleClaws,Icon",
-      "Value": "Assets\\Textures\\btn-upgrade-zerg-meleeattacks-level1.dds",
-      "Operation": "Set"
+      "Value": "Assets\\Textures\\btn-upgrade-zerg-meleeattacks-level1.dds"
     },
     {
       "Operation": "Set",
@@ -89,12 +95,10 @@
       "Value": "Assets\\Textures\\btn-upgrade-zerg-meleeattacks-level1.dds"
     },
     {
-      "Operation": "Add",
       "Reference": "Effect,BurrowChargeMPTargetDamage,Amount",
       "Value": "2"
     },
     {
-      "Operation": "Add",
       "Reference": "Effect,BurrowChargeMPTargetDamage,AttributeBonus[Armored]",
       "Value": "2"
     },
@@ -104,7 +108,7 @@
     },
     {
       "Reference": "Effect,VolatileBurstDirectFallbackEnemyNeutralUnit,Amount",
-      "Value": "2"
+      "Value": "5"
     }
   ],
   "AffectedUnitArray": [

@@ -1,6 +1,12 @@
 {
-  "Name": "Tech Lab",
-  "Description": "Enables additional units and research options. A Tech Lab can fit onto any production structure.",
+  "Name": {
+    "enUS": "Tech Lab",
+    "ruRU": "Tech Lab"
+  },
+  "Description": {
+    "enUS": "Enables additional units and research options. A Tech Lab can fit onto any production structure.",
+    "ruRU": "Enables additional units and research options. A Tech Lab can fit onto any production structure."
+  },
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -12,7 +18,10 @@
   "ResourceType": "Unknown",
   "LifeStart": 400,
   "LifeMax": 400,
-  "LifeArmorName": "Terran Building Plating",
+  "LifeArmorName": {
+    "enUS": "Terran Building Plating",
+    "ruRU": "Terran Building Plating"
+  },
   "Mover": "Ground",
   "StationaryTurningRate": 719.4726,
   "TurningRate": 719.4726,
@@ -77,6 +86,12 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "TechAliasArray": [
     "Alias_TechLab"
   ],
@@ -114,7 +129,6 @@
     "RoachBurrow",
     "ForceField",
     "Small",
-    "Locust",
     "Phased"
   ],
   "Sight": 9,
@@ -139,6 +153,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "que5Addon",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "QueueCount": 1,
           "Flags": {
             "BestUnit": 1,
@@ -171,49 +191,15 @@
         "AbilCmd": "que5Addon,CancelLast",
         "id": "Cancel",
         "Icon": "btn-command-cancel",
-        "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
-        "Name": "Cancel",
+        "Name": {
+          "enUS": "Cancel",
+          "ruRU": "Отменить /// Cancel"
+        },
+        "Tooltip": {
+          "enUS": "Drops the current order without performing it, and allows you to select a different order.",
+          "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+        },
         "Hotkey": "Esc"
-      },
-      {
-        "Upgrade": "HighCapacityBarrels",
-        "Info": {
-          "Button": {
-            "Flags": {
-              "AllowMinimap": 0,
-              "ShowInGlossary": 1
-            },
-            "DefaultButtonFace": "ResearchHighCapacityBarrels",
-            "State": "Restricted",
-            "Requirements": "LearnHighCapacityBarrels"
-          },
-          "Resource": {
-            "Minerals": 100,
-            "Vespene": 100
-          },
-          "Time": 110,
-          "Upgrade": "HighCapacityBarrels"
-        },
-        "Time": 110,
-        "Cost": {
-          "Minerals": 100,
-          "Vespene": 100,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 0,
-        "Column": 0,
-        "Type": "AbilCmd",
-        "AbilCmd": "FactoryTechLabResearch,Research2",
-        "id": "ResearchHighCapacityBarrels",
-        "Icon": "btn-upgrade-terran-infernalpreigniter",
-        "Tooltip": "Improves the <span style=\"color: #ffff8a\">Hellion's</span> Infernal Flamethrower to deal +5 damage vs. light units and the <span style=\"color: #ffff8a\">Hellbat's</span> Napalm Spray to deal +12 damage vs. light units.",
-        "Name": "Research Infernal Pre-Igniter",
-        "Hotkey": "I"
       },
       {
         "Info": {
@@ -234,6 +220,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "BuildInProgress",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "Activity": "UI/Building",
           "VitalStartFactor": {
             "Life": 0.1,
@@ -260,15 +252,151 @@
           "Shields": 0,
           "Food": 0
         },
-        "Row": 2,
-        "Column": 4,
+        "Row": 1,
+        "Column": 0,
         "Type": "AbilCmd",
         "AbilCmd": "BuildInProgress,Cancel",
         "id": "CancelBuilding",
         "Icon": "btn-command-cancel",
-        "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-        "Name": "Cancel",
+        "Name": {
+          "enUS": "Cancel",
+          "ruRU": "Отменить /// Cancel"
+        },
+        "Tooltip": {
+          "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+          "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+        },
         "Hotkey": "Esc"
+      },
+      {
+        "Upgrade": "HighCapacityBarrels",
+        "Info": {
+          "Button": {
+            "Flags": {
+              "AllowMinimap": 0,
+              "ShowInGlossary": 1
+            },
+            "DefaultButtonFace": "ResearchHighCapacityBarrels",
+            "Requirements": "LearnHighCapacityBarrels"
+          },
+          "Resource": {
+            "Minerals": 100,
+            "Vespene": 100
+          },
+          "Time": 110,
+          "Upgrade": "HighCapacityBarrels"
+        },
+        "Time": 110,
+        "Cost": {
+          "Minerals": 100,
+          "Vespene": 100,
+          "Terazine": 0,
+          "Custom": 0,
+          "Energy": 0,
+          "Life": 0,
+          "Shields": 0,
+          "Food": 0
+        },
+        "Row": 0,
+        "Column": 0,
+        "Type": "AbilCmd",
+        "AbilCmd": "FactoryTechLabResearch,Research2",
+        "id": "ResearchHighCapacityBarrels",
+        "Icon": "btn-upgrade-terran-infernalpreigniter",
+        "Name": {
+          "enUS": "Research Infernal Pre-Igniter",
+          "ruRU": "Research Infernal Pre-Igniter"
+        },
+        "Tooltip": {
+          "enUS": "Improves the <span style=\"color: ffff8a\">Hellion's</span> Infernal Flamethrower to deal +5 damage vs. light units.<br/><br/><span style=\"color: #ffff8a\">Does not affect Hellbat.</span>",
+          "ruRU": "Improves the <span style=\"color: ffff8a\">Hellion's</span> Infernal Flamethrower to deal +5 damage vs. light units.<br/><br/><span style=\"color: #ffff8a\">Does not affect Hellbat.</span>"
+        },
+        "Hotkey": "I"
+      },
+      {
+        "Upgrade": "HurricaneThrusters",
+        "Info": {
+          "Button": {
+            "Flags": {
+              "AllowMinimap": 0
+            },
+            "DefaultButtonFace": "CycloneResearchHurricaneThrusters",
+            "Requirements": "LearnCycloneSpeedUpgrade"
+          },
+          "Resource": {
+            "Minerals": 100,
+            "Vespene": 100
+          },
+          "Time": 140,
+          "Upgrade": "HurricaneThrusters"
+        },
+        "Time": 140,
+        "Cost": {
+          "Minerals": 100,
+          "Vespene": 100,
+          "Terazine": 0,
+          "Custom": 0,
+          "Energy": 0,
+          "Life": 0,
+          "Shields": 0,
+          "Food": 0
+        },
+        "Row": 0,
+        "Column": 1,
+        "Type": "AbilCmd",
+        "AbilCmd": "FactoryTechLabResearch,Research11",
+        "id": "CycloneResearchHurricaneThrusters",
+        "Icon": "btn-upgrade-mengsk-armory-smartservos",
+        "Name": {
+          "enUS": "Research Hurricane Engines"
+        },
+        "Tooltip": {
+          "enUS": "Increases the move speed of <span style=\"color: ffff8a\">Cyclones</span>."
+        },
+        "Hotkey": "R"
+      },
+      {
+        "Upgrade": "SmartServos",
+        "Info": {
+          "Button": {
+            "Flags": {
+              "AllowMinimap": 0,
+              "ShowInGlossary": 1
+            },
+            "DefaultButtonFace": "ResearchSmartServos",
+            "Requirements": "LearnSmartServos"
+          },
+          "Resource": {
+            "Minerals": 100,
+            "Vespene": 100
+          },
+          "Time": 110,
+          "Upgrade": "SmartServos"
+        },
+        "Time": 110,
+        "Cost": {
+          "Minerals": 100,
+          "Vespene": 100,
+          "Terazine": 0,
+          "Custom": 0,
+          "Energy": 0,
+          "Life": 0,
+          "Shields": 0,
+          "Food": 0
+        },
+        "Row": 0,
+        "Column": 3,
+        "Type": "AbilCmd",
+        "AbilCmd": "FactoryTechLabResearch,Research7",
+        "id": "ResearchSmartServos",
+        "Icon": "btn-upgrade-terran-transformationservos",
+        "Name": {
+          "enUS": "Research Smart Servos"
+        },
+        "Tooltip": {
+          "enUS": "Allows <span style=\"color: ffff8a\">Hellions</span>, <span style=\"color: ffff8a\">Hellbats</span>, <span style=\"color: ffff8a\">Vikings</span>, and <span style=\"color: ffff8a\">Thors</span> to transform quickly between combat modes."
+        },
+        "Hotkey": "S"
       },
       {
         "Upgrade": "DrillClaws",
@@ -305,86 +433,15 @@
         "AbilCmd": "FactoryTechLabResearch,Research5",
         "id": "ResearchDrillClaws",
         "Icon": "btn-upgrade-terran-researchdrillingclaws",
-        "Tooltip": "Allows <span style=\"color: #ffff8a\">Widow Mines</span> to burrow and unburrow two times as fast.",
-        "Name": "Research Drilling Claws",
+        "Name": {
+          "enUS": "Research Drilling Claws",
+          "ruRU": "Research Drilling Claws"
+        },
+        "Tooltip": {
+          "enUS": "Allows <span style=\"color: ffff8a\">Widow Mines</span> to burrow and unburrow two times as fast.",
+          "ruRU": "Allows <span style=\"color: ffff8a\">Widow Mines</span> to burrow and activate three times as fast."
+        },
         "Hotkey": "C"
-      },
-      {
-        "Upgrade": "SmartServos",
-        "Info": {
-          "Button": {
-            "Flags": {
-              "AllowMinimap": 0,
-              "ShowInGlossary": 1
-            },
-            "DefaultButtonFace": "ResearchSmartServos",
-            "Requirements": "LearnSmartServos"
-          },
-          "Resource": {
-            "Minerals": 100,
-            "Vespene": 100
-          },
-          "Upgrade": "SmartServos",
-          "Time": 110
-        },
-        "Time": 110,
-        "Cost": {
-          "Minerals": 100,
-          "Vespene": 100,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 0,
-        "Column": 3,
-        "Type": "AbilCmd",
-        "AbilCmd": "FactoryTechLabResearch,Research7",
-        "id": "ResearchSmartServos",
-        "Icon": "btn-upgrade-terran-transformationservos",
-        "Tooltip": "Allows <span style=\"color: #ffff8a\">Hellions</span>, <span style=\"color: #ffff8a\">Hellbats</span>, <span style=\"color: #ffff8a\">Vikings</span>, and <span style=\"color: #ffff8a\">Thors</span> to transform quickly between combat modes.",
-        "Name": "Research Smart Servos",
-        "Hotkey": "S"
-      },
-      {
-        "Upgrade": "HurricaneThrusters",
-        "Info": {
-          "Button": {
-            "Flags": {
-              "AllowMinimap": 0
-            },
-            "DefaultButtonFace": "CycloneResearchHurricaneThrusters",
-            "Requirements": "LearnCycloneSpeedUpgrade"
-          },
-          "Resource": {
-            "Minerals": 100,
-            "Vespene": 100
-          },
-          "Time": 140,
-          "Upgrade": "HurricaneThrusters"
-        },
-        "Time": 140,
-        "Cost": {
-          "Minerals": 100,
-          "Vespene": 100,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 0,
-        "Column": 1,
-        "Type": "AbilCmd",
-        "AbilCmd": "FactoryTechLabResearch,Research11",
-        "id": "CycloneResearchHurricaneThrusters",
-        "Icon": "btn-upgrade-mengsk-armory-smartservos",
-        "Tooltip": "Increases the move speed of <span style=\"color: #ffff8a\">Cyclones</span>.",
-        "Name": "Research Hurricane Engines",
-        "Hotkey": "R"
       }
     ]
   },
@@ -414,33 +471,56 @@
   "Weapons": [],
   "Behaviors": [
     {
-      "id": "TerranBuildingBurnDown"
+      "id": "TerranBuildingBurnDown",
+      "Name": {
+        "enUS": "Building Burnout",
+        "ruRU": "Building Burnout"
+      },
+      "Tooltip": "-"
     }
   ],
   "Abilities": [
     {
       "id": "BuildInProgress",
-      "Name": "Build in Progress"
+      "Name": {
+        "enUS": "Build in Progress",
+        "ruRU": "Build in Progress"
+      }
     },
     {
       "id": "que5Addon",
-      "Name": "Queue"
+      "Name": {
+        "ruRU": "Queue",
+        "enUS": "Queue"
+      }
     },
     {
       "id": "BarracksTechLabMorph",
-      "Name": "Tech Lab Morph (Barracks)"
+      "Name": {
+        "enUS": "Tech Lab Morph (Barracks)",
+        "ruRU": "Tech Lab Morph (Barracks)"
+      }
     },
     {
       "id": "TechLabMorph",
-      "Name": "Tech Lab Morph (Detached)"
+      "Name": {
+        "enUS": "Tech Lab Morph (Detached)",
+        "ruRU": "Tech Lab Morph (Detached)"
+      }
     },
     {
       "id": "StarportTechLabMorph",
-      "Name": "Tech Lab Morph (Starport)"
+      "Name": {
+        "enUS": "Tech Lab Morph (Starport)",
+        "ruRU": "Tech Lab Morph (Starport)"
+      }
     },
     {
       "id": "FactoryTechLabResearch",
-      "Name": "Tech Lab Research (Factory)"
+      "Name": {
+        "enUS": "Tech Lab Research (Factory)",
+        "ruRU": "Tech Lab Research (Factory)"
+      }
     }
   ],
   "$Upgrades": [
@@ -457,9 +537,9 @@
   "$Production": [],
   "$Research": [
     "HighCapacityBarrels",
-    "DrillClaws",
+    "HurricaneThrusters",
     "SmartServos",
-    "HurricaneThrusters"
+    "DrillClaws"
   ],
   "$Morph": [],
   "$Phase": [],
@@ -472,43 +552,75 @@
       "AbilCmd": "que5Addon,CancelLast",
       "id": "Cancel",
       "Icon": "btn-command-cancel",
-      "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
-      "Name": "Cancel"
-    },
-    {
-      "AbilCmd": "FactoryTechLabResearch,Research2",
-      "id": "ResearchHighCapacityBarrels",
-      "Icon": "btn-upgrade-terran-infernalpreigniter",
-      "Tooltip": "Improves the <span style=\"color: #ffff8a\">Hellion's</span> Infernal Flamethrower to deal +5 damage vs. light units and the <span style=\"color: #ffff8a\">Hellbat's</span> Napalm Spray to deal +12 damage vs. light units.",
-      "Name": "Research Infernal Pre-Igniter"
+      "Name": {
+        "enUS": "Cancel",
+        "ruRU": "Отменить /// Cancel"
+      },
+      "Tooltip": {
+        "enUS": "Drops the current order without performing it, and allows you to select a different order.",
+        "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+      }
     },
     {
       "AbilCmd": "BuildInProgress,Cancel",
       "id": "CancelBuilding",
       "Icon": "btn-command-cancel",
-      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-      "Name": "Cancel"
+      "Name": {
+        "enUS": "Cancel",
+        "ruRU": "Отменить /// Cancel"
+      },
+      "Tooltip": {
+        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+        "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+      }
     },
     {
-      "AbilCmd": "FactoryTechLabResearch,Research5",
-      "id": "ResearchDrillClaws",
-      "Icon": "btn-upgrade-terran-researchdrillingclaws",
-      "Tooltip": "Allows <span style=\"color: #ffff8a\">Widow Mines</span> to burrow and unburrow two times as fast.",
-      "Name": "Research Drilling Claws"
-    },
-    {
-      "AbilCmd": "FactoryTechLabResearch,Research7",
-      "id": "ResearchSmartServos",
-      "Icon": "btn-upgrade-terran-transformationservos",
-      "Tooltip": "Allows <span style=\"color: #ffff8a\">Hellions</span>, <span style=\"color: #ffff8a\">Hellbats</span>, <span style=\"color: #ffff8a\">Vikings</span>, and <span style=\"color: #ffff8a\">Thors</span> to transform quickly between combat modes.",
-      "Name": "Research Smart Servos"
+      "AbilCmd": "FactoryTechLabResearch,Research2",
+      "id": "ResearchHighCapacityBarrels",
+      "Icon": "btn-upgrade-terran-infernalpreigniter",
+      "Name": {
+        "enUS": "Research Infernal Pre-Igniter",
+        "ruRU": "Research Infernal Pre-Igniter"
+      },
+      "Tooltip": {
+        "enUS": "Improves the <span style=\"color: ffff8a\">Hellion's</span> Infernal Flamethrower to deal +5 damage vs. light units.<br/><br/><span style=\"color: #ffff8a\">Does not affect Hellbat.</span>",
+        "ruRU": "Improves the <span style=\"color: ffff8a\">Hellion's</span> Infernal Flamethrower to deal +5 damage vs. light units.<br/><br/><span style=\"color: #ffff8a\">Does not affect Hellbat.</span>"
+      }
     },
     {
       "AbilCmd": "FactoryTechLabResearch,Research11",
       "id": "CycloneResearchHurricaneThrusters",
       "Icon": "btn-upgrade-mengsk-armory-smartservos",
-      "Tooltip": "Increases the move speed of <span style=\"color: #ffff8a\">Cyclones</span>.",
-      "Name": "Research Hurricane Engines"
+      "Name": {
+        "enUS": "Research Hurricane Engines"
+      },
+      "Tooltip": {
+        "enUS": "Increases the move speed of <span style=\"color: ffff8a\">Cyclones</span>."
+      }
+    },
+    {
+      "AbilCmd": "FactoryTechLabResearch,Research7",
+      "id": "ResearchSmartServos",
+      "Icon": "btn-upgrade-terran-transformationservos",
+      "Name": {
+        "enUS": "Research Smart Servos"
+      },
+      "Tooltip": {
+        "enUS": "Allows <span style=\"color: ffff8a\">Hellions</span>, <span style=\"color: ffff8a\">Hellbats</span>, <span style=\"color: ffff8a\">Vikings</span>, and <span style=\"color: ffff8a\">Thors</span> to transform quickly between combat modes."
+      }
+    },
+    {
+      "AbilCmd": "FactoryTechLabResearch,Research5",
+      "id": "ResearchDrillClaws",
+      "Icon": "btn-upgrade-terran-researchdrillingclaws",
+      "Name": {
+        "enUS": "Research Drilling Claws",
+        "ruRU": "Research Drilling Claws"
+      },
+      "Tooltip": {
+        "enUS": "Allows <span style=\"color: ffff8a\">Widow Mines</span> to burrow and unburrow two times as fast.",
+        "ruRU": "Allows <span style=\"color: ffff8a\">Widow Mines</span> to burrow and activate three times as fast."
+      }
     }
   ]
 }

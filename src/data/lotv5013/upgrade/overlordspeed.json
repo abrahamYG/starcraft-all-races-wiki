@@ -13,8 +13,14 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "overlordspeed",
+  "EditorCategories": "Race:Zerg,UpgradeType:Spell",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "Race": "Zerg",
-  "EditorCategories": "Race:Zerg,UpgradeType:Talents",
   "ScoreResult": "BuildOrder",
   "EffectArray": [
     {
@@ -22,9 +28,9 @@
       "Value": "1.500000"
     },
     {
+      "Operation": "Set",
       "Reference": "Unit,Overlord,Speed",
-      "Value": "1.879000",
-      "Operation": "Set"
+      "Value": "1.879000"
     },
     {
       "Operation": "Set",

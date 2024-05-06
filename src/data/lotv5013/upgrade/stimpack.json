@@ -12,9 +12,15 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "Stimpack",
+  "EditorCategories": "Race:Terran,UpgradeType:Spell",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "InfoTooltipPriority": 1,
   "Race": "Terr",
-  "EditorCategories": "Race:Terran,UpgradeType:SpellResearch",
   "ScoreResult": "BuildOrder",
   "AffectedUnitArray": [
     "Marine",

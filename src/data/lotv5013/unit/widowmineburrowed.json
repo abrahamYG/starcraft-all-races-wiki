@@ -1,6 +1,12 @@
 {
-  "Name": "Widow Mine",
-  "Description": "Robotic mine. Launches missiles at nearby enemy units while burrowed. Attacks deal splash damage in a small area around the target. Widow Mine is revealed when Sentinel Missile is on cooldown. <br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units.</span>",
+  "Name": {
+    "ruRU": "Widow Mine",
+    "enUS": "Widow Mine"
+  },
+  "Description": {
+    "enUS": "Robotic mine. Launches missiles at nearby enemy units while burrowed. Attacks deal splash damage in a small area around the target. <br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>",
+    "ruRU": "Robotic mine. Launches missiles at nearby enemy units while burrowed. Attacks deal splash damage in a small area around the target. <br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>"
+  },
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 7,
   "DeathRevealDuration": 3,
@@ -12,14 +18,17 @@
   "ResourceType": "Unknown",
   "LifeStart": 90,
   "LifeMax": 90,
-  "LifeArmorName": "Terran Vehicle Plating",
+  "LifeArmorName": {
+    "enUS": "Terran Vehicle Plating",
+    "ruRU": "Terran Vehicle Plating"
+  },
   "Mover": "Ground",
   "StationaryTurningRate": 2292.8906,
   "TurningRate": 720,
   "Radius": 0.5,
   "SeparationRadius": 0.5,
   "MinimapRadius": 0.375,
-  "EditorCategories": "ObjectType:Unit,ObjectFamily:Campaign",
+  "EditorCategories": "ObjectType:Unit,ObjectFamily:Melee",
   "TacticalAIFilters": "-;Player,Ally,Neutral",
   "AIEvalFactor": 1,
   "Mass": 0.4,
@@ -79,6 +88,12 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "TechAliasArray": [
     "Alias_WidowMine"
   ],
@@ -122,14 +137,20 @@
           "Shields": 0,
           "Food": 0
         },
-        "Row": 2,
+        "Row": 1,
         "Column": 0,
         "Type": "Passive",
         "AbilCmd": "WidowMineAttack,Execute",
         "id": "WidowMineBioSplash",
         "Icon": "btn-ability-terran-unstablepayload",
-        "Tooltip": "Attacks air and ground units in proximity dealing <b>125</b> (+<b>35</b> vs. shields) damage to their primary target and <b>40</b> (+<b>25</b> vs. shields) splash damage to units nearby. This unit is revealed while reloading.<br/><br/><c val=\"#ColorAttackInfo\">Cooldown: <b>40</b> seconds.</span>",
-        "Name": "Sentinel Missiles"
+        "Name": {
+          "enUS": "Sentinel Missiles",
+          "ruRU": "Sentinel Missiles"
+        },
+        "Tooltip": {
+          "enUS": "Attacks by launching missiles at enemy ground and air units that get too close. Missiles deal <b>125</b> (+35 vs. shields) damage to their primary target, and <b>40</b> (+<b>40</b> vs. shields) splash damage to units nearby.<br/><br/><span style=\"color: #ffff8a\">Cooldown: <b>40</b> seconds.</span>",
+          "ruRU": "Attacks by launching missiles at enemy ground and air units that get too close. Missiles deal <b>125</b> (+35 vs. shields) damage to their primary target, and <b>40</b> (+<b>40</b> vs. shields) splash damage to units nearby.<br/><br/><span style=\"color: #ffff8a\">Cooldown: <b>40</b> seconds.</span>"
+        }
       },
       {
         "Info": {
@@ -137,11 +158,6 @@
             "Actor": {
               "DurationArray": {
                 "Duration": 1.125
-              }
-            },
-            "Mover": {
-              "DurationArray": {
-                "Duration": 0
               }
             },
             "Stats": {
@@ -165,13 +181,19 @@
           "Food": -2
         },
         "Row": 2,
-        "Column": 2,
+        "Column": 1,
         "Type": "AbilCmd",
         "AbilCmd": "WidowMineUnburrow,Execute",
         "id": "WidowMineUnburrow",
         "Icon": "btn-ability-terran-deactivatemine",
-        "Tooltip": "Unburrows the Widow Mine and deactivates its weapon, allowing it to move.",
-        "Name": "Deactivate Mine",
+        "Name": {
+          "enUS": "Deactivate Mine",
+          "ruRU": "Deactivate Mine"
+        },
+        "Tooltip": {
+          "enUS": "Unburrows the Widow Mine and deactivates its weapon, allowing it to move.",
+          "ruRU": "Unburrows the Widow Mine and deactivates its weapon, allowing it to move."
+        },
         "Hotkey": "D"
       },
       {
@@ -179,7 +201,7 @@
           "class": "CAbilEffectTarget",
           "Name": "Abil/Name/WidowMineAttack",
           "TechPlayer": "Upkeep",
-          "EditorCategories": "Race:Neutral,AbilityorEffectType:Units",
+          "EditorCategories": "Race:Terran,AbilityorEffectType:Units",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
             {
@@ -193,6 +215,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "WidowMineAttack",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "RangeSlop": 0,
           "ArcSlop": 11.25,
           "AutoCastAcquireLevel": "Offensive",
@@ -204,7 +232,7 @@
             "RangeUseCasterRadius": 1,
             "ReApproachable": 1,
             "RequireTargetVision": 1,
-            "WaitToSpend": 0,
+            "WaitToSpend": 1,
             "UpdateChargesOnLevelChange": 1,
             "BestUnit": 1,
             "AutoCast": 1,
@@ -275,24 +303,6 @@
             }
           },
           "FollowRange": 5,
-          "PrepTime": [
-            1.5
-          ],
-          "TargetFilters": [
-            "Visible;Player,Ally,Neutral,Structure,Missile,Item,Stasis,Dead,Hidden,Invulnerable"
-          ],
-          "AutoCastRange": 5,
-          "Range": [
-            5
-          ],
-          "Arc": 360,
-          "AutoCastValidatorArray": [
-            "IsNotDisguisedChangeling",
-            "NotHallucinationOrNotDetected",
-            "noMarkers",
-            "NotLarvaEgg",
-            "IsNotNeuralParasited"
-          ],
           "Cost": [
             {
               "Cooldown": {
@@ -300,13 +310,31 @@
               }
             }
           ],
-          "id": "WidowMineAttack",
+          "TargetFilters": [
+            "Visible;Player,Ally,Neutral,Structure,Missile,Item,Stasis,Dead,Hidden,Invulnerable"
+          ],
+          "Range": [
+            5
+          ],
+          "Arc": 360,
+          "AutoCastRange": 5,
+          "AutoCastValidatorArray": [
+            "IsNotDisguisedChangeling",
+            "NotHallucinationOrNotDetected",
+            "noMarkers",
+            "NotLarvaEgg",
+            "IsNotNeuralParasited"
+          ],
+          "PrepTime": [
+            1.5
+          ],
           "PrepEffect": [
             "WidowMineTargetTintApplyBehavior"
           ],
           "CancelEffect": {
             "Prep": "WidowMineTargetTintRemoveBehavior"
-          }
+          },
+          "id": "WidowMineAttack"
         },
         "Cost": {
           "Minerals": 0,
@@ -318,14 +346,20 @@
           "Shields": 0,
           "Food": 0
         },
-        "Row": 2,
-        "Column": 0,
+        "Row": 0,
+        "Column": 4,
         "Type": "AbilCmd",
         "AbilCmd": "WidowMineAttack,Execute",
         "id": "WidowMineAttack",
         "Icon": "btn-command-attack",
-        "Tooltip": "Attacks any nearby enemy unit. ",
-        "Name": "Attack",
+        "Name": {
+          "enUS": "Attack",
+          "ruRU": "Attack"
+        },
+        "Tooltip": {
+          "enUS": "Attacks any nearby enemy unit.",
+          "ruRU": "Attacks any nearby enemy unit."
+        },
         "Hotkey": "C"
       },
       {
@@ -347,6 +381,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "attack",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "AbilSetId": "Attack",
           "Alignment": "Negative",
           "AcquireFilters": "-;Player,Ally,Neutral,Dead,Hidden,Invulnerable,Benign",
@@ -393,8 +433,14 @@
         "AbilCmd": "attack,Execute",
         "id": "Attack",
         "Icon": "btn-command-attack",
-        "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
-        "Name": "Attack",
+        "Name": {
+          "enUS": "Attack",
+          "ruRU": "Атаковать /// Attack"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+          "ruRU": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed."
+        },
         "Hotkey": "A"
       },
       {
@@ -422,6 +468,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -459,8 +511,7 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move",
-          "AbilSetId": "Move"
+          "id": "move"
         },
         "Cost": {
           "Minerals": 0,
@@ -478,8 +529,14 @@
         "AbilCmd": "move,AcquireMove",
         "id": "AcquireMove",
         "Icon": "btn-command-attack",
-        "Tooltip": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies.",
-        "Name": "Scan Move",
+        "Name": {
+          "enUS": "Scan Move",
+          "ruRU": "Двигаться в режиме наблюдения /// Scan Move"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies.",
+          "ruRU": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies."
+        },
         "Hotkey": "A"
       },
       {
@@ -493,13 +550,17 @@
           "Shields": 0,
           "Food": 0
         },
-        "Row": 2,
-        "Column": 3,
+        "Row": 1,
+        "Column": 1,
         "Type": "Passive",
         "id": "DrillClaws",
         "Icon": "btn-upgrade-terran-researchdrillingclaws",
-        "Tooltip": "This unit burrows faster.",
-        "Name": "Drilling Claws"
+        "Name": {
+          "enUS": "Drilling Claws"
+        },
+        "Tooltip": {
+          "enUS": "This unit burrows faster."
+        }
       },
       {
         "Cost": {
@@ -517,8 +578,12 @@
         "Type": "Passive",
         "id": "WidowMineConcealment",
         "Icon": "btn-ability-terran-widowminehidden",
-        "Tooltip": "This unit is no longer revealed while reloading.",
-        "Name": "Concealment"
+        "Name": {
+          "enUS": "Concealment"
+        },
+        "Tooltip": {
+          "enUS": "This unit is no longer revealed while reloading."
+        }
       }
     ]
   },
@@ -526,7 +591,6 @@
   "KillDisplay": "Always",
   "RankDisplay": "Always",
   "ScoreKill": 100,
-  "id": "WidowMineBurrowed",
   "GlossaryStrongArray": [
     "Marauder",
     "Roach",
@@ -537,6 +601,7 @@
     "Overseer",
     "Observer"
   ],
+  "id": "WidowMineBurrowed",
   "Icon": "btn-unit-terran-widowmine",
   "LifeArmorIcon": "btn-upgrade-terran-vehicleplatinglevel0",
   "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
@@ -544,46 +609,59 @@
   "Behaviors": [
     {
       "id": "WidowMineArmed",
-      "Name": "Widow Mine Armed"
+      "Name": {
+        "enUS": "Must be Activated",
+        "ruRU": "Must be Activated ///Auto - Copied from enUS Locale"
+      },
+      "Tooltip": "-"
     },
     {
-      "id": "WidowMineBurrowedCloakingBehavior"
+      "id": "WidowMineBurrowedCloakingBehavior",
+      "Name": {
+        "enUS": "Widow Mine Burrowed Cloaking Behavior",
+        "ruRU": "Widow Mine Burrowed Cloaking Behavior"
+      },
+      "Tooltip": "-"
     },
     {
-      "id": "WidowMineArmoryTracker"
+      "id": "WidowMineArmoryTracker",
+      "Name": {
+        "enUS": "Widow Mine Armory Tracker",
+        "ruRU": "Widow Mine Armory Tracker"
+      },
+      "Tooltip": "-"
     }
   ],
   "Abilities": [
     {
       "id": "WidowMineUnburrow",
-      "Name": "Widow Mine Unburrow"
+      "Name": {
+        "enUS": "Widow Mine Unburrow",
+        "ruRU": "Widow Mine Unburrow"
+      }
     },
     {
       "id": "WidowMineAttack",
-      "Name": "Widow Mine Attack"
+      "Name": {
+        "enUS": "Widow Mine Attack",
+        "ruRU": "Widow Mine Attack"
+      }
     }
   ],
   "$Upgrades": [
     "WidowMineBurrow",
     "WidowMineBurrowed",
+    "CasterisWidowMineBurrowed",
     "DrillClaws",
-    "WidowMine",
-    "TerranVehicleArmorsLevel1",
-    "TerranVehicleArmorsLevel2",
-    "TerranVehicleArmorsLevel3",
+    "IsWidowMineBurrowed",
     "TerranVehicleWeaponsLevel1",
     "TerranVehicleWeaponsLevel2",
     "TerranVehicleWeaponsLevel3",
     "TerranVehicleAndShipArmorsLevel1",
+    "WidowMine",
     "TerranVehicleAndShipArmors",
     "TerranVehicleAndShipArmorsLevel2",
     "TerranVehicleAndShipArmorsLevel3",
-    "IsWidowMineBurrowed",
-    "CasterisWidowMineBurrowed",
-    "TerranVehicleAndShipWeaponsLevel1",
-    "TerranVehicleAndShipWeapons",
-    "TerranVehicleAndShipWeaponsLevel2",
-    "TerranVehicleAndShipWeaponsLevel3",
     "WidowMineBurrowedSplat",
     "WidowMineAttackRange",
     "WidowMine_Burrow"
@@ -602,36 +680,66 @@
       "AbilCmd": "WidowMineAttack,Execute",
       "id": "WidowMineBioSplash",
       "Icon": "btn-ability-terran-unstablepayload",
-      "Tooltip": "Attacks air and ground units in proximity dealing <b>125</b> (+<b>35</b> vs. shields) damage to their primary target and <b>40</b> (+<b>25</b> vs. shields) splash damage to units nearby. This unit is revealed while reloading.<br/><br/><c val=\"#ColorAttackInfo\">Cooldown: <b>40</b> seconds.</span>",
-      "Name": "Sentinel Missiles"
+      "Name": {
+        "enUS": "Sentinel Missiles",
+        "ruRU": "Sentinel Missiles"
+      },
+      "Tooltip": {
+        "enUS": "Attacks by launching missiles at enemy ground and air units that get too close. Missiles deal <b>125</b> (+35 vs. shields) damage to their primary target, and <b>40</b> (+<b>40</b> vs. shields) splash damage to units nearby.<br/><br/><span style=\"color: #ffff8a\">Cooldown: <b>40</b> seconds.</span>",
+        "ruRU": "Attacks by launching missiles at enemy ground and air units that get too close. Missiles deal <b>125</b> (+35 vs. shields) damage to their primary target, and <b>40</b> (+<b>40</b> vs. shields) splash damage to units nearby.<br/><br/><span style=\"color: #ffff8a\">Cooldown: <b>40</b> seconds.</span>"
+      }
     },
     {
       "AbilCmd": "WidowMineUnburrow,Execute",
       "id": "WidowMineUnburrow",
       "Icon": "btn-ability-terran-deactivatemine",
-      "Tooltip": "Unburrows the Widow Mine and deactivates its weapon, allowing it to move.",
-      "Name": "Deactivate Mine"
+      "Name": {
+        "enUS": "Deactivate Mine",
+        "ruRU": "Deactivate Mine"
+      },
+      "Tooltip": {
+        "enUS": "Unburrows the Widow Mine and deactivates its weapon, allowing it to move.",
+        "ruRU": "Unburrows the Widow Mine and deactivates its weapon, allowing it to move."
+      }
     },
     {
       "AbilCmd": "WidowMineAttack,Execute",
       "id": "WidowMineAttack",
       "Icon": "btn-command-attack",
-      "Tooltip": "Attacks any nearby enemy unit. ",
-      "Name": "Attack"
+      "Name": {
+        "enUS": "Attack",
+        "ruRU": "Attack"
+      },
+      "Tooltip": {
+        "enUS": "Attacks any nearby enemy unit.",
+        "ruRU": "Attacks any nearby enemy unit."
+      }
     },
     {
       "AbilCmd": "attack,Execute",
       "id": "Attack",
       "Icon": "btn-command-attack",
-      "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
-      "Name": "Attack"
+      "Name": {
+        "enUS": "Attack",
+        "ruRU": "Атаковать /// Attack"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+        "ruRU": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed."
+      }
     },
     {
       "AbilCmd": "move,AcquireMove",
       "id": "AcquireMove",
       "Icon": "btn-command-attack",
-      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies.",
-      "Name": "Scan Move"
+      "Name": {
+        "enUS": "Scan Move",
+        "ruRU": "Двигаться в режиме наблюдения /// Scan Move"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies.",
+        "ruRU": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies."
+      }
     }
   ]
 }

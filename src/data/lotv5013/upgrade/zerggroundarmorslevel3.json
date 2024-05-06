@@ -12,8 +12,14 @@
   "ScoreValue": "ArmorTechnologyValue",
   "WebPriority": 0,
   "LeaderAlias": "ZergGroundArmors",
+  "EditorCategories": "Race:Zerg,UpgradeType:Bonus",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "Race": "Zerg",
-  "EditorCategories": "Race:Zerg,UpgradeType:ArmorBonus",
   "ScoreResult": "BuildOrder",
   "EffectArray": [
     {
@@ -371,6 +377,6 @@
     "InfestorTerran",
     "InfestorTerranBurrowed"
   ],
-  "ScoreAmount": 500,
+  "ScoreAmount": 600,
   "LeaderLevel": 3
 }

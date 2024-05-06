@@ -1,6 +1,12 @@
 {
-  "Name": "Barracks",
-  "Description": "Barracks must land to start unit production.",
+  "Name": {
+    "enUS": "Barracks",
+    "ruRU": "Barracks"
+  },
+  "Description": {
+    "enUS": "Barracks must land to start unit production.",
+    "ruRU": "Barracks must land to start unit production."
+  },
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -12,7 +18,10 @@
   "ResourceType": "Unknown",
   "LifeStart": 1000,
   "LifeMax": 1000,
-  "LifeArmorName": "Terran Building Plating",
+  "LifeArmorName": {
+    "enUS": "Terran Building Plating",
+    "ruRU": "Terran Building Plating"
+  },
   "Mover": "Fly",
   "StationaryTurningRate": 720,
   "TurningRate": 720,
@@ -78,6 +87,12 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "GlossaryAlias": "Barracks",
   "TechAliasArray": [
     "Alias_Barracks"
@@ -107,7 +122,7 @@
   "Collide": [
     "Flying"
   ],
-  "VisionHeight": 15,
+  "VisionHeight": 4,
   "Sight": 9,
   "CardLayouts": {
     "Root": [
@@ -162,8 +177,14 @@
         "AbilCmd": "BarracksLand,Execute",
         "id": "Land",
         "Icon": "btn-ability-terran-land",
-        "Tooltip": "Lands the structure at a target location, allowing it to once again produce units, research upgrades, and use abilities.",
-        "Name": "Land ",
+        "Name": {
+          "enUS": "Land",
+          "ruRU": "Land"
+        },
+        "Tooltip": {
+          "enUS": "Lands the structure at a target location, allowing it to once again produce units, research upgrades, and use abilities.",
+          "ruRU": "Lands the structure at a target location, allowing it to once again produce units, research upgrades, and use abilities."
+        },
         "Hotkey": "L"
       },
       {
@@ -172,8 +193,7 @@
             "Flags": {
               "AllowMinimap": 0
             },
-            "DefaultButtonFace": "Reactor",
-            "State": "Restricted"
+            "DefaultButtonFace": "Reactor"
           },
           "Unit": "BarracksReactor",
           "Time": 50,
@@ -197,8 +217,14 @@
         "AbilCmd": "BarracksAddOns,Build2",
         "id": "Reactor",
         "Icon": "btn-building-terran-reactor",
-        "Tooltip": "Allows 2 units to be created simultaneously.",
-        "Name": "Build Reactor",
+        "Name": {
+          "enUS": "Build Reactor",
+          "ruRU": "Build Reactor"
+        },
+        "Tooltip": {
+          "enUS": "Allows 2 units to be created simultaneously.",
+          "ruRU": "Allows 2 units to be created simultaneously."
+        },
         "Hotkey": "C"
       },
       {
@@ -207,8 +233,7 @@
             "Flags": {
               "AllowMinimap": 0
             },
-            "DefaultButtonFace": "BuildTechLabBarracks",
-            "State": "Suppressed"
+            "DefaultButtonFace": "BuildTechLabBarracks"
           },
           "Unit": "BarracksTechLab",
           "Time": 25,
@@ -232,8 +257,14 @@
         "AbilCmd": "BarracksAddOns,Build1",
         "id": "TechLabBarracks",
         "Icon": "btn-building-terran-techlab",
-        "Tooltip": "Infantry-research structure. A Tech Lab can fit onto any production structure.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Marauders<br/>- Ghosts with Ghost Academy",
-        "Name": "Build Tech Lab",
+        "Name": {
+          "enUS": "Build Tech Lab",
+          "ruRU": "Build Tech Lab"
+        },
+        "Tooltip": {
+          "enUS": "Infantry-research structure. A Tech Lab can fit onto any production structure.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Marauders<br/>- Ghosts with Ghost Academy",
+          "ruRU": "Infantry-research structure. A Tech Lab can fit onto any production structure.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Marauders<br/>- Ghosts with Ghost Academy"
+        },
         "Hotkey": "X"
       },
       {
@@ -255,6 +286,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "stop",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "AbilSetId": "Stop",
           "CmdButtonArray": {
             "Stop": {
@@ -300,8 +337,14 @@
         "AbilCmd": "stop,Stop",
         "id": "Stop",
         "Icon": "btn-command-stop",
-        "Tooltip": "Orders selected units to cancel all orders and stop moving.",
-        "Name": "Stop",
+        "Name": {
+          "enUS": "Stop",
+          "ruRU": "Отставить /// Stop"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to cancel all orders and stop moving.",
+          "ruRU": "Orders selected units to cancel all orders and stop moving."
+        },
         "Hotkey": "S"
       },
       {
@@ -329,6 +372,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -366,8 +415,7 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move",
-          "AbilSetId": "Move"
+          "id": "move"
         },
         "Cost": {
           "Minerals": 0,
@@ -385,8 +433,14 @@
         "AbilCmd": "move,Move",
         "id": "Move",
         "Icon": "btn-command-move",
-        "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
-        "Name": "Move",
+        "Name": {
+          "enUS": "Move",
+          "ruRU": "Двигаться /// Move"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+          "ruRU": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies."
+        },
         "Hotkey": "M"
       },
       {
@@ -414,6 +468,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -451,8 +511,7 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move",
-          "AbilSetId": "Move"
+          "id": "move"
         },
         "Cost": {
           "Minerals": 0,
@@ -470,8 +529,14 @@
         "AbilCmd": "move,HoldPos",
         "id": "MoveHoldPosition",
         "Icon": "btn-command-holdposition",
-        "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
-        "Name": "Hold Position",
+        "Name": {
+          "enUS": "Hold Position",
+          "ruRU": "Удерживать позицию /// Hold Position"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+          "ruRU": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage."
+        },
         "Hotkey": "H"
       },
       {
@@ -499,6 +564,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -536,8 +607,7 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move",
-          "AbilSetId": "Move"
+          "id": "move"
         },
         "Cost": {
           "Minerals": 0,
@@ -555,8 +625,14 @@
         "AbilCmd": "move,Patrol",
         "id": "MovePatrol",
         "Icon": "btn-command-patrol",
-        "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
-        "Name": "Patrol",
+        "Name": {
+          "enUS": "Patrol",
+          "ruRU": "Патрулировать /// Patrol"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+          "ruRU": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies."
+        },
         "Hotkey": "P"
       }
     ]
@@ -568,34 +644,51 @@
   "Weapons": [],
   "Behaviors": [
     {
-      "id": "TerranBuildingBurnDown"
+      "id": "TerranBuildingBurnDown",
+      "Name": {
+        "enUS": "Building Burnout",
+        "ruRU": "Building Burnout"
+      },
+      "Tooltip": "-"
     }
   ],
   "Abilities": [
     {
       "id": "BarracksLand",
-      "Name": "Land"
+      "Name": {
+        "enUS": "Land",
+        "ruRU": "Land"
+      }
     },
     {
       "id": "BarracksAddOns",
-      "Name": "AddOns"
+      "Name": {
+        "enUS": "AddOns",
+        "ruRU": "AddOns"
+      }
     },
     {
       "id": "move",
-      "Name": "Move"
+      "Name": {
+        "enUS": "Move",
+        "ruRU": "Move"
+      }
     },
     {
       "id": "stop",
-      "Name": "Stop"
+      "Name": {
+        "enUS": "Stop",
+        "ruRU": "Stop"
+      }
     }
   ],
   "$Upgrades": [
-    "NotFlyingBarracks",
-    "BarracksFlying",
     "BarracksLiftOff",
+    "BarracksFlying",
     "TerranBuildingArmor",
     "TerranBuildingLiftOff",
-    "Barracks"
+    "Barracks",
+    "NotFlyingBarracks"
   ],
   "$Requirements": [],
   "$Production": [
@@ -614,50 +707,92 @@
       "AbilCmd": "BarracksLand,Execute",
       "id": "Land",
       "Icon": "btn-ability-terran-land",
-      "Tooltip": "Lands the structure at a target location, allowing it to once again produce units, research upgrades, and use abilities.",
-      "Name": "Land "
+      "Name": {
+        "enUS": "Land",
+        "ruRU": "Land"
+      },
+      "Tooltip": {
+        "enUS": "Lands the structure at a target location, allowing it to once again produce units, research upgrades, and use abilities.",
+        "ruRU": "Lands the structure at a target location, allowing it to once again produce units, research upgrades, and use abilities."
+      }
     },
     {
       "AbilCmd": "BarracksAddOns,Build2",
       "id": "Reactor",
       "Icon": "btn-building-terran-reactor",
-      "Tooltip": "Allows 2 units to be created simultaneously.",
-      "Name": "Build Reactor"
+      "Name": {
+        "enUS": "Build Reactor",
+        "ruRU": "Build Reactor"
+      },
+      "Tooltip": {
+        "enUS": "Allows 2 units to be created simultaneously.",
+        "ruRU": "Allows 2 units to be created simultaneously."
+      }
     },
     {
       "AbilCmd": "BarracksAddOns,Build1",
       "id": "TechLabBarracks",
       "Icon": "btn-building-terran-techlab",
-      "Tooltip": "Infantry-research structure. A Tech Lab can fit onto any production structure.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Marauders<br/>- Ghosts with Ghost Academy",
-      "Name": "Build Tech Lab"
+      "Name": {
+        "enUS": "Build Tech Lab",
+        "ruRU": "Build Tech Lab"
+      },
+      "Tooltip": {
+        "enUS": "Infantry-research structure. A Tech Lab can fit onto any production structure.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Marauders<br/>- Ghosts with Ghost Academy",
+        "ruRU": "Infantry-research structure. A Tech Lab can fit onto any production structure.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Marauders<br/>- Ghosts with Ghost Academy"
+      }
     },
     {
       "AbilCmd": "stop,Stop",
       "id": "Stop",
       "Icon": "btn-command-stop",
-      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
-      "Name": "Stop"
+      "Name": {
+        "enUS": "Stop",
+        "ruRU": "Отставить /// Stop"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to cancel all orders and stop moving.",
+        "ruRU": "Orders selected units to cancel all orders and stop moving."
+      }
     },
     {
       "AbilCmd": "move,Move",
       "id": "Move",
       "Icon": "btn-command-move",
-      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
-      "Name": "Move"
+      "Name": {
+        "enUS": "Move",
+        "ruRU": "Двигаться /// Move"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+        "ruRU": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies."
+      }
     },
     {
       "AbilCmd": "move,HoldPos",
       "id": "MoveHoldPosition",
       "Icon": "btn-command-holdposition",
-      "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
-      "Name": "Hold Position"
+      "Name": {
+        "enUS": "Hold Position",
+        "ruRU": "Удерживать позицию /// Hold Position"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+        "ruRU": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage."
+      }
     },
     {
       "AbilCmd": "move,Patrol",
       "id": "MovePatrol",
       "Icon": "btn-command-patrol",
-      "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
-      "Name": "Patrol"
+      "Name": {
+        "enUS": "Patrol",
+        "ruRU": "Патрулировать /// Patrol"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+        "ruRU": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies."
+      }
     }
   ]
 }

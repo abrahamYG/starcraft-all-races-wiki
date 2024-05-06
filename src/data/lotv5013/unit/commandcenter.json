@@ -1,6 +1,12 @@
 {
-  "Name": "Command Center",
-  "Description": "Primary structure. Used to receive gathered resources. Can use the Lift Off ability and can upgrade into an Orbital Command or a Planetary Fortress.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- SCVs",
+  "Name": {
+    "enUS": "Command Center",
+    "ruRU": "Command Center"
+  },
+  "Description": {
+    "enUS": "Primary structure. Used to receive gathered resources. Can use the Lift Off ability and can upgrade into an Orbital Command or a Planetary Fortress.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- SCVs",
+    "ruRU": "Primary structure. Used to receive gathered resources. Can use the Lift Off ability and can upgrade into an Orbital Command or a Planetary Fortress.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- SCVs"
+  },
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -12,7 +18,10 @@
   "ResourceType": "Unknown",
   "LifeStart": 1500,
   "LifeMax": 1500,
-  "LifeArmorName": "Terran Building Plating",
+  "LifeArmorName": {
+    "enUS": "Terran Building Plating",
+    "ruRU": "Terran Building Plating"
+  },
   "Mover": "Ground",
   "StationaryTurningRate": 719.4726,
   "TurningRate": 719.4726,
@@ -78,6 +87,12 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "TechAliasArray": [
     "Alias_CommandCenter"
   ],
@@ -118,9 +133,8 @@
     "Structure",
     "RoachBurrow",
     "ForceField",
-    "Small",
-    "Locust",
-    "Phased"
+    "Phased",
+    "Small"
   ],
   "Sight": 11,
   "TacticalAIThink": "AIThinkCommandCenter",
@@ -133,8 +147,7 @@
               "AllowMinimap": 0,
               "ToSelection": 1
             },
-            "DefaultButtonFace": "SCV",
-            "State": "Restricted"
+            "DefaultButtonFace": "SCV"
           },
           "Unit": [
             "SCV"
@@ -161,8 +174,14 @@
         "AbilCmd": "CommandCenterTrain,Train1",
         "id": "SCV",
         "Icon": "btn-unit-terran-scv",
-        "Tooltip": "Basic worker unit. Can gather resources, build Terran structures, and repair.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
-        "Name": "Train SCV",
+        "Name": {
+          "enUS": "Train SCV",
+          "ruRU": "Train SCV"
+        },
+        "Tooltip": {
+          "enUS": "Basic worker unit. Can gather resources, build Terran structures, and repair.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+          "ruRU": "Basic worker unit. Can gather resources, build Terran structures, and repair.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>"
+        },
         "Hotkey": "S"
       },
       {
@@ -204,8 +223,14 @@
         "AbilCmd": "UpgradeToOrbital,Execute",
         "id": "OrbitalCommand",
         "Icon": "btn-building-terran-surveillancestation",
-        "Tooltip": "Upgrades Command Center to an Orbital Command, unlocking Scanner Sweep, Calldown: MULE, and Calldown: Extra Supplies. Cannot load SCVs.",
-        "Name": "Upgrade to Orbital Command",
+        "Name": {
+          "enUS": "Upgrade to Orbital Command",
+          "ruRU": "Upgrade to Orbital Command"
+        },
+        "Tooltip": {
+          "enUS": "Upgrades Command Center to an Orbital Command, unlocking Scanner Sweep, Calldown: MULE, and Calldown: Extra Supplies. Cannot load SCVs.",
+          "ruRU": "Upgrades Command Center to an Orbital Command, unlocking Scanner Sweep, Calldown: MULE, and Calldown: Extra Supplies. Cannot load SCVs."
+        },
         "Hotkey": "B"
       },
       {
@@ -247,8 +272,14 @@
         "AbilCmd": "UpgradeToPlanetaryFortress,Execute",
         "id": "UpgradeToPlanetaryFortress",
         "Icon": "btn-building-terran-planetaryfortress",
-        "Tooltip": "Upgrades Command Center to a Planetary Fortress, greatly increasing its armor and arming it with a powerful defensive turret. Cannot lift off.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
-        "Name": "Upgrade to Planetary Fortress",
+        "Name": {
+          "enUS": "Upgrade to Planetary Fortress",
+          "ruRU": "Upgrade to Planetary Fortress"
+        },
+        "Tooltip": {
+          "enUS": "Upgrades Command Center to a Planetary Fortress, greatly increasing its armor and arming it with a powerful defensive turret. Cannot lift off.<br/><br/><span style=\"color: ffff8a\">Can attack ground units.</span>",
+          "ruRU": "Upgrades Command Center to a Planetary Fortress, greatly increasing its armor and arming it with a powerful defensive turret. Cannot lift off.<br/><br/><span style=\"color: ffff8a\">Can attack ground units.</span>"
+        },
         "Hotkey": "P"
       },
       {
@@ -269,8 +300,14 @@
         "AbilCmd": "RallyCommand,Rally1",
         "id": "Rally",
         "Icon": "btn-ability-terran-setrallypoint",
-        "Tooltip": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
-        "Name": "Set Rally Point",
+        "Name": {
+          "enUS": "Set Rally Point",
+          "ruRU": "Задать точку сбора /// Set Rally Point"
+        },
+        "Tooltip": {
+          "enUS": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
+          "ruRU": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically."
+        },
         "Hotkey": "Y"
       },
       {
@@ -292,6 +329,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "CommandCenterTransport",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Load": {
               "Flags": {
@@ -374,8 +417,14 @@
         "AbilCmd": "CommandCenterTransport,LoadAll",
         "id": "CommandCenterLoad",
         "Icon": "btn-ability-terran-load",
-        "Tooltip": "Loads nearby SCVs into Command Center.",
-        "Name": "Load",
+        "Name": {
+          "enUS": "Load",
+          "ruRU": "Load"
+        },
+        "Tooltip": {
+          "enUS": "Loads nearby SCVs into Command Center.",
+          "ruRU": "Loads nearby SCVs into Command Center."
+        },
         "Hotkey": "O"
       },
       {
@@ -397,6 +446,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "CommandCenterTransport",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Load": {
               "Flags": {
@@ -479,8 +534,14 @@
         "AbilCmd": "CommandCenterTransport,UnloadAll",
         "id": "CommandCenterUnloadAll",
         "Icon": "btn-ability-terran-unloadall",
-        "Tooltip": "Unloads all units.",
-        "Name": "Unload All",
+        "Name": {
+          "enUS": "Unload All",
+          "ruRU": "Unload All"
+        },
+        "Tooltip": {
+          "enUS": "Unloads all units.",
+          "ruRU": "Unloads all units."
+        },
         "Hotkey": "D"
       },
       {
@@ -521,8 +582,14 @@
         "AbilCmd": "CommandCenterLiftOff,Execute",
         "id": "Lift",
         "Icon": "btn-ability-terran-liftoff",
-        "Tooltip": "Transforms structure into a slow air unit for redeployment. May not produce units, research upgrades, or use abilities until it has landed.",
-        "Name": "Lift Off",
+        "Name": {
+          "enUS": "Lift Off",
+          "ruRU": "Lift Off"
+        },
+        "Tooltip": {
+          "enUS": "Transforms structure into a slow air unit for redeployment. May not produce units, research upgrades, or use abilities until it has landed.",
+          "ruRU": "Transforms structure into a slow air unit for redeployment. May not produce units, research upgrades, or use abilities until it has landed."
+        },
         "Hotkey": "L"
       },
       {
@@ -544,6 +611,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "BuildInProgress",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "Activity": "UI/Building",
           "VitalStartFactor": {
             "Life": 0.1,
@@ -576,8 +649,14 @@
         "AbilCmd": "BuildInProgress,Halt",
         "id": "Halt",
         "Icon": "btn-command-stop",
-        "Tooltip": "Halts construction of this structure. The partial construction will remain.",
-        "Name": "Halt",
+        "Name": {
+          "enUS": "Halt",
+          "ruRU": "Приостановить /// Halt"
+        },
+        "Tooltip": {
+          "enUS": "Halts construction of this structure. The partial construction will remain.",
+          "ruRU": "Приостановить сооружение этого строения. Впоследствии его можно будет продолжить. /// Halts construction of this structure. The partial construction will remain."
+        },
         "Hotkey": "T"
       },
       {
@@ -599,6 +678,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "que5CancelToSelection",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "QueueCount": 1,
           "Flags": {
             "BestUnit": 1,
@@ -635,8 +720,14 @@
         "AbilCmd": "que5CancelToSelection,CancelLast",
         "id": "Cancel",
         "Icon": "btn-command-cancel",
-        "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
-        "Name": "Cancel",
+        "Name": {
+          "enUS": "Cancel",
+          "ruRU": "Отменить /// Cancel"
+        },
+        "Tooltip": {
+          "enUS": "Drops the current order without performing it, and allows you to select a different order.",
+          "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+        },
         "Hotkey": "Esc"
       },
       {
@@ -678,8 +769,14 @@
         "AbilCmd": "UpgradeToPlanetaryFortress,Cancel",
         "id": "CancelUpgradeMorph",
         "Icon": "btn-command-cancel",
-        "Tooltip": "Cancels the upgrade order, returning the structure to its original state.",
-        "Name": "Cancel",
+        "Name": {
+          "enUS": "Cancel",
+          "ruRU": "Cancel"
+        },
+        "Tooltip": {
+          "enUS": "Cancels the upgrade order, returning the structure to its original state.",
+          "ruRU": "Cancels the upgrade order, returning the structure to its original state."
+        },
         "Hotkey": "Esc"
       },
       {
@@ -721,8 +818,14 @@
         "AbilCmd": "UpgradeToOrbital,Cancel",
         "id": "CancelUpgradeMorph",
         "Icon": "btn-command-cancel",
-        "Tooltip": "Cancels the upgrade order, returning the structure to its original state.",
-        "Name": "Cancel",
+        "Name": {
+          "enUS": "Cancel",
+          "ruRU": "Cancel"
+        },
+        "Tooltip": {
+          "enUS": "Cancels the upgrade order, returning the structure to its original state.",
+          "ruRU": "Cancels the upgrade order, returning the structure to its original state."
+        },
         "Hotkey": "Esc"
       },
       {
@@ -744,6 +847,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "BuildInProgress",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "Activity": "UI/Building",
           "VitalStartFactor": {
             "Life": 0.1,
@@ -776,8 +885,14 @@
         "AbilCmd": "BuildInProgress,Cancel",
         "id": "CancelBuilding",
         "Icon": "btn-command-cancel",
-        "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-        "Name": "Cancel",
+        "Name": {
+          "enUS": "Cancel",
+          "ruRU": "Отменить /// Cancel"
+        },
+        "Tooltip": {
+          "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+          "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+        },
         "Hotkey": "Esc"
       },
       {
@@ -797,8 +912,14 @@
         "AbilCmd": "CommandCenterTrain,Train1",
         "id": "SelectBuilder",
         "Icon": "btn-upgrade-terran-weaponrefit",
-        "Tooltip": "Selects the unit constructing this structure.",
-        "Name": "Select Builder",
+        "Name": {
+          "enUS": "Select Builder",
+          "ruRU": "Select Builder"
+        },
+        "Tooltip": {
+          "enUS": "Selects the unit constructing this structure.",
+          "ruRU": "Selects the unit constructing this structure."
+        },
         "Hotkey": "Q"
       }
     ]
@@ -821,58 +942,91 @@
   "Weapons": [],
   "Behaviors": [
     {
-      "id": "TerranBuildingBurnDown"
+      "id": "TerranBuildingBurnDown",
+      "Name": {
+        "enUS": "Building Burnout",
+        "ruRU": "Building Burnout"
+      },
+      "Tooltip": "-"
     },
     {
-      "id": "CommandCenterKnockbackBehavior"
+      "id": "CommandCenterKnockbackBehavior",
+      "Name": {
+        "enUS": "Command Center Knockback Behavior",
+        "ruRU": "Command Center Knockback Behavior ///Auto - Copied from enUS Locale"
+      },
+      "Tooltip": "-"
     }
   ],
   "Abilities": [
     {
       "id": "BuildInProgress",
-      "Name": "Build in Progress"
+      "Name": {
+        "enUS": "Build in Progress",
+        "ruRU": "Build in Progress"
+      }
     },
     {
       "id": "que5CancelToSelection",
-      "Name": "Queue (5) (Cancel To Selection)"
+      "Name": {
+        "ruRU": "Queue (5) (Cancel To Selection)",
+        "enUS": "Queue (5) (Cancel To Selection)"
+      }
     },
     {
       "id": "CommandCenterTrain",
-      "Name": "Train (Command Center)"
+      "Name": {
+        "enUS": "Train (Command Center)",
+        "ruRU": "Train (Command Center)"
+      }
     },
     {
       "id": "RallyCommand",
-      "Name": "Command Center - Rally"
+      "Name": {
+        "enUS": "Command Center - Rally",
+        "ruRU": "Command Center - Rally"
+      }
     },
     {
       "id": "CommandCenterTransport",
-      "Name": "Load-Unload (Command Center)"
+      "Name": {
+        "enUS": "Load-Unload (Command Center)",
+        "ruRU": "Load-Unload (Command Center)"
+      }
     },
     {
       "id": "CommandCenterLiftOff",
-      "Name": "Lift Off (Command Center)"
+      "Name": {
+        "enUS": "Lift Off (Command Center)",
+        "ruRU": "Lift Off (Command Center)"
+      }
     },
     {
       "id": "UpgradeToPlanetaryFortress",
-      "Name": "Morph Building (COCE -> Planetary Fortress)"
+      "Name": {
+        "enUS": "Morph Building (COCE -> Planetary Fortress)",
+        "ruRU": "Morph Building (COCE -> Planetary Fortress)"
+      }
     },
     {
       "id": "UpgradeToOrbital",
-      "Name": "Morph Building (COCE -> Orbital Command)"
+      "Name": {
+        "enUS": "Morph Building (COCE -> Orbital Command)",
+        "ruRU": "Morph Building (COCE -> Orbital Command)"
+      }
     }
   ],
   "$Upgrades": [
+    "TerranBuild",
     "Terr",
     "CommandCenter",
-    "TerranBuild",
-    "IsCommandCenter",
     "CommandCenterFlying",
     "CommandCenterLand",
-    "SnowVisualMP",
-    "IsCasterCommandCenter",
-    "CountUnitAlias_CommandCenterCompleteOnly1610623376TechTreeCheat",
     "TerranBuildingArmor",
+    "IsCommandCenter",
+    "IsCasterCommandCenter",
     "NeosteelFrame",
+    "CountUnitAlias_CommandCenterCompleteOnly1610623376TechTreeCheat",
     "CommandCenter",
     "TerranCommandCenterPlayerDecalMacro",
     "CommandCenterLand",
@@ -881,19 +1035,7 @@
     "OrbitalCommand",
     "UpgradeToSurveillance",
     "CasterIsCommandCenter",
-    "NotCommandCenter",
-    "Combat_MapControl_DestroyCommandCenterCount",
-    "Combat_FastExpand_CommandCenterCount",
-    "Combat_TownHallDestroyerCommandCenterCount",
-    "CommandCenterBase",
-    "CommandCenter",
-    "CommandCenterCovertOps",
-    "CommandCenterSilver",
-    "CommandCenterRemastered",
-    "DefaultSkinPack",
-    "CommandCenterCovertOps",
-    "CommandCenterSilver",
-    "CommandCenterRemastered"
+    "NotCommandCenter"
   ],
   "$Requirements": [],
   "$Production": [
@@ -915,92 +1057,170 @@
       "AbilCmd": "CommandCenterTrain,Train1",
       "id": "SCV",
       "Icon": "btn-unit-terran-scv",
-      "Tooltip": "Basic worker unit. Can gather resources, build Terran structures, and repair.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
-      "Name": "Train SCV"
+      "Name": {
+        "enUS": "Train SCV",
+        "ruRU": "Train SCV"
+      },
+      "Tooltip": {
+        "enUS": "Basic worker unit. Can gather resources, build Terran structures, and repair.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+        "ruRU": "Basic worker unit. Can gather resources, build Terran structures, and repair.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>"
+      }
     },
     {
       "AbilCmd": "UpgradeToOrbital,Execute",
       "id": "OrbitalCommand",
       "Icon": "btn-building-terran-surveillancestation",
-      "Tooltip": "Upgrades Command Center to an Orbital Command, unlocking Scanner Sweep, Calldown: MULE, and Calldown: Extra Supplies. Cannot load SCVs.",
-      "Name": "Upgrade to Orbital Command"
+      "Name": {
+        "enUS": "Upgrade to Orbital Command",
+        "ruRU": "Upgrade to Orbital Command"
+      },
+      "Tooltip": {
+        "enUS": "Upgrades Command Center to an Orbital Command, unlocking Scanner Sweep, Calldown: MULE, and Calldown: Extra Supplies. Cannot load SCVs.",
+        "ruRU": "Upgrades Command Center to an Orbital Command, unlocking Scanner Sweep, Calldown: MULE, and Calldown: Extra Supplies. Cannot load SCVs."
+      }
     },
     {
       "AbilCmd": "UpgradeToPlanetaryFortress,Execute",
       "id": "UpgradeToPlanetaryFortress",
       "Icon": "btn-building-terran-planetaryfortress",
-      "Tooltip": "Upgrades Command Center to a Planetary Fortress, greatly increasing its armor and arming it with a powerful defensive turret. Cannot lift off.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
-      "Name": "Upgrade to Planetary Fortress"
+      "Name": {
+        "enUS": "Upgrade to Planetary Fortress",
+        "ruRU": "Upgrade to Planetary Fortress"
+      },
+      "Tooltip": {
+        "enUS": "Upgrades Command Center to a Planetary Fortress, greatly increasing its armor and arming it with a powerful defensive turret. Cannot lift off.<br/><br/><span style=\"color: ffff8a\">Can attack ground units.</span>",
+        "ruRU": "Upgrades Command Center to a Planetary Fortress, greatly increasing its armor and arming it with a powerful defensive turret. Cannot lift off.<br/><br/><span style=\"color: ffff8a\">Can attack ground units.</span>"
+      }
     },
     {
       "AbilCmd": "RallyCommand,Rally1",
       "id": "Rally",
       "Icon": "btn-ability-terran-setrallypoint",
-      "Tooltip": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
-      "Name": "Set Rally Point"
+      "Name": {
+        "enUS": "Set Rally Point",
+        "ruRU": "Задать точку сбора /// Set Rally Point"
+      },
+      "Tooltip": {
+        "enUS": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
+        "ruRU": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically."
+      }
     },
     {
       "AbilCmd": "CommandCenterTransport,LoadAll",
       "id": "CommandCenterLoad",
       "Icon": "btn-ability-terran-load",
-      "Tooltip": "Loads nearby SCVs into Command Center.",
-      "Name": "Load"
+      "Name": {
+        "enUS": "Load",
+        "ruRU": "Load"
+      },
+      "Tooltip": {
+        "enUS": "Loads nearby SCVs into Command Center.",
+        "ruRU": "Loads nearby SCVs into Command Center."
+      }
     },
     {
       "AbilCmd": "CommandCenterTransport,UnloadAll",
       "id": "CommandCenterUnloadAll",
       "Icon": "btn-ability-terran-unloadall",
-      "Tooltip": "Unloads all units.",
-      "Name": "Unload All"
+      "Name": {
+        "enUS": "Unload All",
+        "ruRU": "Unload All"
+      },
+      "Tooltip": {
+        "enUS": "Unloads all units.",
+        "ruRU": "Unloads all units."
+      }
     },
     {
       "AbilCmd": "CommandCenterLiftOff,Execute",
       "id": "Lift",
       "Icon": "btn-ability-terran-liftoff",
-      "Tooltip": "Transforms structure into a slow air unit for redeployment. May not produce units, research upgrades, or use abilities until it has landed.",
-      "Name": "Lift Off"
+      "Name": {
+        "enUS": "Lift Off",
+        "ruRU": "Lift Off"
+      },
+      "Tooltip": {
+        "enUS": "Transforms structure into a slow air unit for redeployment. May not produce units, research upgrades, or use abilities until it has landed.",
+        "ruRU": "Transforms structure into a slow air unit for redeployment. May not produce units, research upgrades, or use abilities until it has landed."
+      }
     },
     {
       "AbilCmd": "BuildInProgress,Halt",
       "id": "Halt",
       "Icon": "btn-command-stop",
-      "Tooltip": "Halts construction of this structure. The partial construction will remain.",
-      "Name": "Halt"
+      "Name": {
+        "enUS": "Halt",
+        "ruRU": "Приостановить /// Halt"
+      },
+      "Tooltip": {
+        "enUS": "Halts construction of this structure. The partial construction will remain.",
+        "ruRU": "Приостановить сооружение этого строения. Впоследствии его можно будет продолжить. /// Halts construction of this structure. The partial construction will remain."
+      }
     },
     {
       "AbilCmd": "que5CancelToSelection,CancelLast",
       "id": "Cancel",
       "Icon": "btn-command-cancel",
-      "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
-      "Name": "Cancel"
+      "Name": {
+        "enUS": "Cancel",
+        "ruRU": "Отменить /// Cancel"
+      },
+      "Tooltip": {
+        "enUS": "Drops the current order without performing it, and allows you to select a different order.",
+        "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+      }
     },
     {
       "AbilCmd": "UpgradeToPlanetaryFortress,Cancel",
       "id": "CancelUpgradeMorph",
       "Icon": "btn-command-cancel",
-      "Tooltip": "Cancels the upgrade order, returning the structure to its original state.",
-      "Name": "Cancel"
+      "Name": {
+        "enUS": "Cancel",
+        "ruRU": "Cancel"
+      },
+      "Tooltip": {
+        "enUS": "Cancels the upgrade order, returning the structure to its original state.",
+        "ruRU": "Cancels the upgrade order, returning the structure to its original state."
+      }
     },
     {
       "AbilCmd": "UpgradeToOrbital,Cancel",
       "id": "CancelUpgradeMorph",
       "Icon": "btn-command-cancel",
-      "Tooltip": "Cancels the upgrade order, returning the structure to its original state.",
-      "Name": "Cancel"
+      "Name": {
+        "enUS": "Cancel",
+        "ruRU": "Cancel"
+      },
+      "Tooltip": {
+        "enUS": "Cancels the upgrade order, returning the structure to its original state.",
+        "ruRU": "Cancels the upgrade order, returning the structure to its original state."
+      }
     },
     {
       "AbilCmd": "BuildInProgress,Cancel",
       "id": "CancelBuilding",
       "Icon": "btn-command-cancel",
-      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-      "Name": "Cancel"
+      "Name": {
+        "enUS": "Cancel",
+        "ruRU": "Отменить /// Cancel"
+      },
+      "Tooltip": {
+        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+        "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+      }
     },
     {
       "AbilCmd": "CommandCenterTrain,Train1",
       "id": "SelectBuilder",
       "Icon": "btn-upgrade-terran-weaponrefit",
-      "Tooltip": "Selects the unit constructing this structure.",
-      "Name": "Select Builder"
+      "Name": {
+        "enUS": "Select Builder",
+        "ruRU": "Select Builder"
+      },
+      "Tooltip": {
+        "enUS": "Selects the unit constructing this structure.",
+        "ruRU": "Selects the unit constructing this structure."
+      }
     }
   ]
 }

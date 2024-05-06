@@ -1,6 +1,12 @@
 {
-  "Name": "Planetary Fortress",
-  "Description": "Defensive stronghold. <br/>Used to receive gathered resources. <br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+  "Name": {
+    "enUS": "Planetary Fortress",
+    "ruRU": "Planetary Fortress"
+  },
+  "Description": {
+    "enUS": "Defensive stronghold. <br/>Used to receive gathered resources. <br/><br/><span style=\"color: ffff8a\">Can attack ground units.</span>",
+    "ruRU": "Defensive stronghold. <br/>Used to receive gathered resources. <br/><br/><span style=\"color: ffff8a\">Can attack ground units.</span>"
+  },
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -12,7 +18,10 @@
   "ResourceType": "Unknown",
   "LifeStart": 1500,
   "LifeMax": 1500,
-  "LifeArmorName": "Terran Building Plating",
+  "LifeArmorName": {
+    "enUS": "Terran Building Plating",
+    "ruRU": "Terran Building Plating"
+  },
   "Mover": "Ground",
   "StationaryTurningRate": 720,
   "TurningRate": 720,
@@ -78,6 +87,12 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "TechAliasArray": [
     "Alias_CommandCenter"
   ],
@@ -119,9 +134,8 @@
     "Structure",
     "RoachBurrow",
     "ForceField",
-    "Small",
-    "Locust",
-    "Phased"
+    "Phased",
+    "Small"
   ],
   "Sight": 11,
   "TacticalAIThink": "AIThinkCommandCenter",
@@ -146,6 +160,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "CommandCenterTransport",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Load": {
               "Flags": {
@@ -228,8 +248,14 @@
         "AbilCmd": "CommandCenterTransport,LoadAll",
         "id": "PlanetaryFortressLoad",
         "Icon": "btn-ability-terran-load",
-        "Tooltip": "Loads nearby SCVs into the Planetary Fortress.",
-        "Name": "Load ",
+        "Name": {
+          "enUS": "Load",
+          "ruRU": "Load"
+        },
+        "Tooltip": {
+          "enUS": "Loads nearby SCVs into the Planetary Fortress.",
+          "ruRU": "Loads nearby SCVs into the Planetary Fortress."
+        },
         "Hotkey": "O"
       },
       {
@@ -251,6 +277,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "CommandCenterTransport",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Load": {
               "Flags": {
@@ -333,8 +365,14 @@
         "AbilCmd": "CommandCenterTransport,UnloadAll",
         "id": "CommandCenterUnloadAll",
         "Icon": "btn-ability-terran-unloadall",
-        "Tooltip": "Unloads all units.",
-        "Name": "Unload All",
+        "Name": {
+          "enUS": "Unload All",
+          "ruRU": "Unload All"
+        },
+        "Tooltip": {
+          "enUS": "Unloads all units.",
+          "ruRU": "Unloads all units."
+        },
         "Hotkey": "D"
       },
       {
@@ -356,6 +394,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "stop",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "AbilSetId": "Stop",
           "CmdButtonArray": {
             "Stop": {
@@ -401,8 +445,14 @@
         "AbilCmd": "stop,Stop",
         "id": "StopPlanetaryFortress",
         "Icon": "btn-command-stop",
-        "Tooltip": "Orders selected units to cancel all orders and stop moving.",
-        "Name": "Stop",
+        "Name": {
+          "enUS": "Stop",
+          "ruRU": "Stop"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to cancel all orders and stop moving.",
+          "ruRU": "Orders selected units to cancel all orders and stop moving."
+        },
         "Hotkey": "P"
       },
       {
@@ -424,6 +474,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "attack",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "AbilSetId": "Attack",
           "Alignment": "Negative",
           "AcquireFilters": "-;Player,Ally,Neutral,Dead,Hidden,Invulnerable,Benign",
@@ -469,8 +525,14 @@
         "Type": "AbilCmd",
         "AbilCmd": "attack,Execute",
         "id": "AttackBuildingPFort",
-        "Tooltip": "Targets and attacks the target unit until it is destroyed or moves out of range.",
-        "Name": "Attack",
+        "Name": {
+          "enUS": "Attack",
+          "ruRU": "Attack"
+        },
+        "Tooltip": {
+          "enUS": "Targets and attacks the target unit until it is destroyed or moves out of range.",
+          "ruRU": "Targets and attacks the target unit until it is destroyed or moves out of range."
+        },
         "Hotkey": "A"
       },
       {
@@ -492,6 +554,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "que5PassiveCancelToSelection",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "QueueCount": 1,
           "Flags": {
             "BestUnit": 1,
@@ -529,8 +597,14 @@
         "AbilCmd": "que5PassiveCancelToSelection,CancelLast",
         "id": "Cancel",
         "Icon": "btn-command-cancel",
-        "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
-        "Name": "Cancel",
+        "Name": {
+          "enUS": "Cancel",
+          "ruRU": "Отменить /// Cancel"
+        },
+        "Tooltip": {
+          "enUS": "Drops the current order without performing it, and allows you to select a different order.",
+          "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+        },
         "Hotkey": "Esc"
       },
       {
@@ -552,6 +626,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "BuildInProgress",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "Activity": "UI/Building",
           "VitalStartFactor": {
             "Life": 0.1,
@@ -584,8 +664,14 @@
         "AbilCmd": "BuildInProgress,Cancel",
         "id": "CancelBuilding",
         "Icon": "btn-command-cancel",
-        "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-        "Name": "Cancel",
+        "Name": {
+          "enUS": "Cancel",
+          "ruRU": "Отменить /// Cancel"
+        },
+        "Tooltip": {
+          "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+          "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+        },
         "Hotkey": "Esc"
       },
       {
@@ -595,8 +681,7 @@
               "AllowMinimap": 0,
               "ToSelection": 1
             },
-            "DefaultButtonFace": "SCV",
-            "State": "Restricted"
+            "DefaultButtonFace": "SCV"
           },
           "Unit": [
             "SCV"
@@ -623,8 +708,14 @@
         "AbilCmd": "CommandCenterTrain,Train1",
         "id": "SCV",
         "Icon": "btn-unit-terran-scv",
-        "Tooltip": "Basic worker unit. Can gather resources, build Terran structures, and repair.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
-        "Name": "Train SCV",
+        "Name": {
+          "enUS": "Train SCV",
+          "ruRU": "Train SCV"
+        },
+        "Tooltip": {
+          "enUS": "Basic worker unit. Can gather resources, build Terran structures, and repair.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+          "ruRU": "Basic worker unit. Can gather resources, build Terran structures, and repair.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>"
+        },
         "Hotkey": "S"
       },
       {
@@ -645,8 +736,14 @@
         "AbilCmd": "RallyCommand,Rally1",
         "id": "Rally",
         "Icon": "btn-ability-terran-setrallypoint",
-        "Tooltip": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
-        "Name": "Set Rally Point",
+        "Name": {
+          "enUS": "Set Rally Point",
+          "ruRU": "Задать точку сбора /// Set Rally Point"
+        },
+        "Tooltip": {
+          "enUS": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
+          "ruRU": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically."
+        },
         "Hotkey": "Y"
       }
     ]
@@ -673,7 +770,10 @@
       "Turret": "PlanetaryFortress",
       "id": "TwinIbiksCannon",
       "Icon": "btn-upgrade-terran-hisecautotracking",
-      "Name": "Ibiks Cannon",
+      "Name": {
+        "enUS": "Ibiks Cannon",
+        "ruRU": "Ibiks Cannon"
+      },
       "Amount": 40,
       "Kind": "Ranged",
       "TargetFilters": "Ground",
@@ -683,44 +783,70 @@
   ],
   "Behaviors": [
     {
-      "id": "TerranBuildingBurnDown"
+      "id": "TerranBuildingBurnDown",
+      "Name": {
+        "enUS": "Building Burnout",
+        "ruRU": "Building Burnout"
+      },
+      "Tooltip": "-"
     }
   ],
   "Abilities": [
     {
       "id": "BuildInProgress",
-      "Name": "Build in Progress"
+      "Name": {
+        "enUS": "Build in Progress",
+        "ruRU": "Build in Progress"
+      }
     },
     {
       "id": "stop",
-      "Name": "Stop"
+      "Name": {
+        "enUS": "Stop",
+        "ruRU": "Stop"
+      }
     },
     {
       "id": "attack",
-      "Name": "Attack"
+      "Name": {
+        "ruRU": "Attack",
+        "enUS": "Attack"
+      }
     },
     {
       "id": "RallyCommand",
-      "Name": "Command Center - Rally"
+      "Name": {
+        "enUS": "Command Center - Rally",
+        "ruRU": "Command Center - Rally"
+      }
     },
     {
       "id": "CommandCenterTrain",
-      "Name": "Train (Command Center)"
+      "Name": {
+        "enUS": "Train (Command Center)",
+        "ruRU": "Train (Command Center)"
+      }
     },
     {
       "id": "que5PassiveCancelToSelection",
-      "Name": "Queue (5) Passive (Cancel to Selection)"
+      "Name": {
+        "ruRU": "Queue (5) Passive (Cancel to Selection)",
+        "enUS": "Queue (5) Passive (Cancel to Selection)"
+      }
     },
     {
       "id": "CommandCenterTransport",
-      "Name": "Load-Unload (Command Center)"
+      "Name": {
+        "enUS": "Load-Unload (Command Center)",
+        "ruRU": "Load-Unload (Command Center)"
+      }
     }
   ],
   "$Upgrades": [
-    "IsPlanetaryFortress",
-    "PlanetaryFortress",
-    "IsCasterPlanetaryFortress",
     "HiSecAutoTracking",
+    "PlanetaryFortress",
+    "IsPlanetaryFortress",
+    "IsCasterPlanetaryFortress",
     "TerranBuildingArmor",
     "UpgradeToPlanetaryFortress",
     "CommandCenter",
@@ -732,7 +858,6 @@
     "UpgradeToPlanetaryFortress",
     "PlanetaryFortressSplat",
     "NotPlanetaryFortress",
-    "Combat_TownHallDestroyerPlanetaryFortressCount",
     "CountUnitPlanetaryFortressCompleteOnlyTechTreeCheat"
   ],
   "$Requirements": [],
@@ -748,56 +873,104 @@
       "AbilCmd": "CommandCenterTransport,LoadAll",
       "id": "PlanetaryFortressLoad",
       "Icon": "btn-ability-terran-load",
-      "Tooltip": "Loads nearby SCVs into the Planetary Fortress.",
-      "Name": "Load "
+      "Name": {
+        "enUS": "Load",
+        "ruRU": "Load"
+      },
+      "Tooltip": {
+        "enUS": "Loads nearby SCVs into the Planetary Fortress.",
+        "ruRU": "Loads nearby SCVs into the Planetary Fortress."
+      }
     },
     {
       "AbilCmd": "CommandCenterTransport,UnloadAll",
       "id": "CommandCenterUnloadAll",
       "Icon": "btn-ability-terran-unloadall",
-      "Tooltip": "Unloads all units.",
-      "Name": "Unload All"
+      "Name": {
+        "enUS": "Unload All",
+        "ruRU": "Unload All"
+      },
+      "Tooltip": {
+        "enUS": "Unloads all units.",
+        "ruRU": "Unloads all units."
+      }
     },
     {
       "AbilCmd": "stop,Stop",
       "id": "StopPlanetaryFortress",
       "Icon": "btn-command-stop",
-      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
-      "Name": "Stop"
+      "Name": {
+        "enUS": "Stop",
+        "ruRU": "Stop"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to cancel all orders and stop moving.",
+        "ruRU": "Orders selected units to cancel all orders and stop moving."
+      }
     },
     {
       "AbilCmd": "attack,Execute",
       "id": "AttackBuildingPFort",
-      "Tooltip": "Targets and attacks the target unit until it is destroyed or moves out of range.",
-      "Name": "Attack"
+      "Name": {
+        "enUS": "Attack",
+        "ruRU": "Attack"
+      },
+      "Tooltip": {
+        "enUS": "Targets and attacks the target unit until it is destroyed or moves out of range.",
+        "ruRU": "Targets and attacks the target unit until it is destroyed or moves out of range."
+      }
     },
     {
       "AbilCmd": "que5PassiveCancelToSelection,CancelLast",
       "id": "Cancel",
       "Icon": "btn-command-cancel",
-      "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
-      "Name": "Cancel"
+      "Name": {
+        "enUS": "Cancel",
+        "ruRU": "Отменить /// Cancel"
+      },
+      "Tooltip": {
+        "enUS": "Drops the current order without performing it, and allows you to select a different order.",
+        "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+      }
     },
     {
       "AbilCmd": "BuildInProgress,Cancel",
       "id": "CancelBuilding",
       "Icon": "btn-command-cancel",
-      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-      "Name": "Cancel"
+      "Name": {
+        "enUS": "Cancel",
+        "ruRU": "Отменить /// Cancel"
+      },
+      "Tooltip": {
+        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+        "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+      }
     },
     {
       "AbilCmd": "CommandCenterTrain,Train1",
       "id": "SCV",
       "Icon": "btn-unit-terran-scv",
-      "Tooltip": "Basic worker unit. Can gather resources, build Terran structures, and repair.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
-      "Name": "Train SCV"
+      "Name": {
+        "enUS": "Train SCV",
+        "ruRU": "Train SCV"
+      },
+      "Tooltip": {
+        "enUS": "Basic worker unit. Can gather resources, build Terran structures, and repair.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+        "ruRU": "Basic worker unit. Can gather resources, build Terran structures, and repair.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>"
+      }
     },
     {
       "AbilCmd": "RallyCommand,Rally1",
       "id": "Rally",
       "Icon": "btn-ability-terran-setrallypoint",
-      "Tooltip": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
-      "Name": "Set Rally Point"
+      "Name": {
+        "enUS": "Set Rally Point",
+        "ruRU": "Задать точку сбора /// Set Rally Point"
+      },
+      "Tooltip": {
+        "enUS": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
+        "ruRU": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically."
+      }
     }
   ]
 }

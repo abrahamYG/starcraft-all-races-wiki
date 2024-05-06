@@ -1,6 +1,12 @@
 {
-  "Name": "Brood Lord Cocoon",
-  "Description": "This cocoon contains a Corruptor that is morphing into a Brood Lord.",
+  "Name": {
+    "enUS": "Brood Lord Cocoon",
+    "ruRU": "Brood Lord Cocoon"
+  },
+  "Description": {
+    "enUS": "This cocoon contains a Corruptor that is morphing into a Brood Lord.",
+    "ruRU": "This cocoon contains a Corruptor that is morphing into a Brood Lord."
+  },
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -12,7 +18,10 @@
   "ResourceType": "Unknown",
   "LifeStart": 200,
   "LifeMax": 200,
-  "LifeArmorName": "Zerg Flyer Carapace",
+  "LifeArmorName": {
+    "enUS": "Zerg Flyer Carapace",
+    "ruRU": "Zerg Flyer Carapace"
+  },
   "Mover": "Fly",
   "StationaryTurningRate": 719.4726,
   "TurningRate": 719.4726,
@@ -75,9 +84,16 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "LifeRegenRate": 0.2734,
   "Height": 3.75,
   "Food": -2,
+  "Speed": 1.875,
   "AttackTargetPriority": 10,
   "DamageDealtXP": 1,
   "DamageTakenXP": 1,
@@ -89,7 +105,7 @@
   "Collide": [
     "Flying"
   ],
-  "VisionHeight": 15,
+  "VisionHeight": 4,
   "Sight": 5,
   "CardLayouts": {
     "Root": [
@@ -118,6 +134,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -155,8 +177,7 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move",
-          "AbilSetId": "Move"
+          "id": "move"
         },
         "Cost": {
           "Minerals": 0,
@@ -174,8 +195,14 @@
         "AbilCmd": "move,Move",
         "id": "Move",
         "Icon": "btn-command-move",
-        "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
-        "Name": "Move",
+        "Name": {
+          "enUS": "Move",
+          "ruRU": "Двигаться /// Move"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+          "ruRU": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies."
+        },
         "Hotkey": "M"
       },
       {
@@ -197,6 +224,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "stop",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "AbilSetId": "Stop",
           "CmdButtonArray": {
             "Stop": {
@@ -242,8 +275,14 @@
         "AbilCmd": "stop,Stop",
         "id": "Stop",
         "Icon": "btn-command-stop",
-        "Tooltip": "Orders selected units to cancel all orders and stop moving.",
-        "Name": "Stop",
+        "Name": {
+          "enUS": "Stop",
+          "ruRU": "Отставить /// Stop"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to cancel all orders and stop moving.",
+          "ruRU": "Orders selected units to cancel all orders and stop moving."
+        },
         "Hotkey": "S"
       },
       {
@@ -271,6 +310,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -308,8 +353,7 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move",
-          "AbilSetId": "Move"
+          "id": "move"
         },
         "Cost": {
           "Minerals": 0,
@@ -327,8 +371,14 @@
         "AbilCmd": "move,HoldPos",
         "id": "MoveHoldPosition",
         "Icon": "btn-command-holdposition",
-        "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
-        "Name": "Hold Position",
+        "Name": {
+          "enUS": "Hold Position",
+          "ruRU": "Удерживать позицию /// Hold Position"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+          "ruRU": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage."
+        },
         "Hotkey": "H"
       },
       {
@@ -356,6 +406,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -393,8 +449,7 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move",
-          "AbilSetId": "Move"
+          "id": "move"
         },
         "Cost": {
           "Minerals": 0,
@@ -412,8 +467,14 @@
         "AbilCmd": "move,Patrol",
         "id": "MovePatrol",
         "Icon": "btn-command-patrol",
-        "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
-        "Name": "Patrol",
+        "Name": {
+          "enUS": "Patrol",
+          "ruRU": "Патрулировать /// Patrol"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+          "ruRU": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies."
+        },
         "Hotkey": "P"
       },
       {
@@ -435,6 +496,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "attack",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "AbilSetId": "Attack",
           "Alignment": "Negative",
           "AcquireFilters": "-;Player,Ally,Neutral,Dead,Hidden,Invulnerable,Benign",
@@ -481,8 +548,14 @@
         "AbilCmd": "attack,Execute",
         "id": "Attack",
         "Icon": "btn-command-attack",
-        "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
-        "Name": "Attack",
+        "Name": {
+          "enUS": "Attack",
+          "ruRU": "Атаковать /// Attack"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+          "ruRU": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed."
+        },
         "Hotkey": "A"
       },
       {
@@ -508,8 +581,14 @@
         "AbilCmd": "MorphToBroodLord,Cancel",
         "id": "CancelCocoonMorph",
         "Icon": "btn-command-cancel",
-        "Tooltip": "Cancels the morph order.",
-        "Name": "Cancel",
+        "Name": {
+          "enUS": "Cancel",
+          "ruRU": "Cancel"
+        },
+        "Tooltip": {
+          "enUS": "Cancels the morph order.",
+          "ruRU": "Cancels the morph order."
+        },
         "Hotkey": "Esc"
       }
     ]
@@ -518,7 +597,6 @@
     "Biological",
     "Massive"
   ],
-  "Speed": 1.4062,
   "LifeArmor": 2,
   "CostResource": {
     "Minerals": 300,
@@ -534,22 +612,28 @@
   "Abilities": [
     {
       "id": "MorphToBroodLord",
-      "Name": "Morph (Corruptor - > Brood Lord)"
+      "Name": {
+        "enUS": "Morph (Corruptor - > Brood Lord)",
+        "ruRU": "Morph (Corruptor - > Brood Lord)"
+      }
     },
     {
       "id": "move",
-      "Name": "Move"
+      "Name": {
+        "enUS": "Move",
+        "ruRU": "Move"
+      }
     }
   ],
   "$Upgrades": [
-    "IsNotBroodLordCocoon",
+    "MorphToBroodLord",
     "BroodLordCocoon",
     "ZergFlyerArmorsLevel1",
     "BroodLordCocoon",
+    "IsNotBroodLordCocoon",
     "ZergFlyerArmors",
     "ZergFlyerArmorsLevel2",
     "ZergFlyerArmorsLevel3",
-    "MorphToBroodLord",
     "BroodLordCocoonHatch",
     "MutaliskEggBirth",
     "Cocoon_Death",
@@ -567,43 +651,79 @@
       "AbilCmd": "move,Move",
       "id": "Move",
       "Icon": "btn-command-move",
-      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
-      "Name": "Move"
+      "Name": {
+        "enUS": "Move",
+        "ruRU": "Двигаться /// Move"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+        "ruRU": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies."
+      }
     },
     {
       "AbilCmd": "stop,Stop",
       "id": "Stop",
       "Icon": "btn-command-stop",
-      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
-      "Name": "Stop"
+      "Name": {
+        "enUS": "Stop",
+        "ruRU": "Отставить /// Stop"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to cancel all orders and stop moving.",
+        "ruRU": "Orders selected units to cancel all orders and stop moving."
+      }
     },
     {
       "AbilCmd": "move,HoldPos",
       "id": "MoveHoldPosition",
       "Icon": "btn-command-holdposition",
-      "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
-      "Name": "Hold Position"
+      "Name": {
+        "enUS": "Hold Position",
+        "ruRU": "Удерживать позицию /// Hold Position"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+        "ruRU": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage."
+      }
     },
     {
       "AbilCmd": "move,Patrol",
       "id": "MovePatrol",
       "Icon": "btn-command-patrol",
-      "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
-      "Name": "Patrol"
+      "Name": {
+        "enUS": "Patrol",
+        "ruRU": "Патрулировать /// Patrol"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+        "ruRU": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies."
+      }
     },
     {
       "AbilCmd": "attack,Execute",
       "id": "Attack",
       "Icon": "btn-command-attack",
-      "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
-      "Name": "Attack"
+      "Name": {
+        "enUS": "Attack",
+        "ruRU": "Атаковать /// Attack"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+        "ruRU": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed."
+      }
     },
     {
       "AbilCmd": "MorphToBroodLord,Cancel",
       "id": "CancelCocoonMorph",
       "Icon": "btn-command-cancel",
-      "Tooltip": "Cancels the morph order.",
-      "Name": "Cancel"
+      "Name": {
+        "enUS": "Cancel",
+        "ruRU": "Cancel"
+      },
+      "Tooltip": {
+        "enUS": "Cancels the morph order.",
+        "ruRU": "Cancels the morph order."
+      }
     }
   ]
 }

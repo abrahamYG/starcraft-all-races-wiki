@@ -6,8 +6,8 @@
         <td *ngFor="let cell of row" (click)="switchIcon(cell)" [class.disabled]="!cell[0]" [class.interactive]="isInteractive(cell)">
           <ng-container *ngIf="cell.at(-1) as btn">
             <ng-template #HtmlContent>
-              <div><b>{{btn.Name}}<span *ngIf="scdata.developer">({{btn.AbilCmd}})</span></b></div>
-              <div [innerHTML]="btn.Tooltip  | safe: 'html'"></div>
+              <div><b>{{scdata.text(btn.Name)}}<span *ngIf="scdata.developer">({{btn.AbilCmd}})</span></b></div>
+              <div [innerHTML]="scdata.text(btn.Tooltip)  | safe: 'html'"></div>
 
               <span  class="unit-cost">
                 <span class="resources-minerals" *ngIf="btn.Cost.Minerals">{{btn.Cost.Minerals}}</span>
@@ -26,7 +26,7 @@
 
             </ng-template>
             <div  [tooltip]="HtmlContent" contentType="template" tooltipClass="sc-tooltip" [animationDuration]="0" [hideDelay]="0" >
-              <span class="card-hotkey">{{btn.Hotkey}}</span>
+              <span class="card-hotkey">{{scdata.text(btn.Hotkey)}}</span>
 
               <sc-icon class="card" [src]="btn.Icon"></sc-icon>
 

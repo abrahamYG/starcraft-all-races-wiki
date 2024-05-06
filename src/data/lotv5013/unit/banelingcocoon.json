@@ -1,6 +1,12 @@
 {
-  "Name": "Baneling Cocoon",
-  "Description": "This cocoon contains a Zergling that is morphing into a Baneling.",
+  "Name": {
+    "enUS": "Baneling Cocoon",
+    "ruRU": "Baneling Cocoon"
+  },
+  "Description": {
+    "enUS": "This cocoon contains a Zergling that is morphing into a Baneling.",
+    "ruRU": "This cocoon contains a Zergling that is morphing into a Baneling."
+  },
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -12,7 +18,10 @@
   "ResourceType": "Unknown",
   "LifeStart": 50,
   "LifeMax": 50,
-  "LifeArmorName": "Zerg Ground Carapace",
+  "LifeArmorName": {
+    "enUS": "Zerg Ground Carapace",
+    "ruRU": "Zerg Ground Carapace"
+  },
   "Mover": "Ground",
   "StationaryTurningRate": 719.4726,
   "TurningRate": 719.4726,
@@ -75,6 +84,12 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "LifeArmor": 2,
   "LifeRegenRate": 0.2734,
   "Food": -0.5,
@@ -90,35 +105,76 @@
   "Collide": [
     "Ground",
     "ForceField",
-    "Small",
-    "Locust"
+    "Small"
   ],
   "Sight": 5,
   "CardLayouts": {
     "Root": [
       {
         "Info": {
-          "Unit": "BanelingCocoon"
+          "class": "CAbilQueue",
+          "Name": "Abil/Name/que1",
+          "TechPlayer": "Upkeep",
+          "EditorCategories": "Race:Neutral,AbilityorEffectType:Structures",
+          "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
+          "OrderArray": [
+            {
+              "DisplayType": "Confirm",
+              "Color": "255,0,255,0",
+              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
+              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
+            }
+          ],
+          "SharedFlags": {
+            "DisableWhileDead": 1
+          },
+          "DataCollection": "que1",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
+          "QueueCount": 1,
+          "Flags": {
+            "BestUnit": 1,
+            "NotifyAddOn": 1
+          },
+          "CmdButtonArray": {
+            "CancelLast": {
+              "DefaultButtonFace": "Cancel"
+            },
+            "CancelSlot": {
+              "DefaultButtonFace": "CancelSlot"
+            }
+          },
+          "QueueSize": 1,
+          "id": "que1"
         },
-        "Unit": "BanelingCocoon",
         "Cost": {
-          "Minerals": 50,
-          "Vespene": 25,
+          "Minerals": 0,
+          "Vespene": 0,
           "Terazine": 0,
           "Custom": 0,
           "Energy": 0,
           "Life": 0,
           "Shields": 0,
-          "Food": -0.5
+          "Food": 0
         },
         "Row": 2,
         "Column": 4,
         "Type": "AbilCmd",
-        "AbilCmd": "MorphToBaneling,Cancel",
+        "AbilCmd": "que1,CancelLast",
         "id": "CancelCocoonMorph",
         "Icon": "btn-command-cancel",
-        "Tooltip": "Cancels the morph order.",
-        "Name": "Cancel",
+        "Name": {
+          "enUS": "Cancel",
+          "ruRU": "Cancel"
+        },
+        "Tooltip": {
+          "enUS": "Cancels the morph order.",
+          "ruRU": "Cancels the morph order."
+        },
         "Hotkey": "Esc"
       },
       {
@@ -139,8 +195,14 @@
         "AbilCmd": "Rally,Rally1",
         "id": "Rally",
         "Icon": "btn-ability-terran-setrallypoint",
-        "Tooltip": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
-        "Name": "Set Rally Point",
+        "Name": {
+          "enUS": "Set Rally Point",
+          "ruRU": "Задать точку сбора /// Set Rally Point"
+        },
+        "Tooltip": {
+          "enUS": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
+          "ruRU": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically."
+        },
         "Hotkey": "Y"
       },
       {
@@ -162,6 +224,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "attack",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "AbilSetId": "Attack",
           "Alignment": "Negative",
           "AcquireFilters": "-;Player,Ally,Neutral,Dead,Hidden,Invulnerable,Benign",
@@ -208,8 +276,14 @@
         "AbilCmd": "attack,Execute",
         "id": "Attack",
         "Icon": "btn-command-attack",
-        "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
-        "Name": "Attack",
+        "Name": {
+          "enUS": "Attack",
+          "ruRU": "Атаковать /// Attack"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+          "ruRU": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed."
+        },
         "Hotkey": "A"
       }
     ]
@@ -231,19 +305,25 @@
   "Behaviors": [],
   "Abilities": [
     {
-      "id": "MorphToBaneling",
-      "Name": "Morph To Baneling"
+      "id": "que1",
+      "Name": {
+        "ruRU": "Queue (1)",
+        "enUS": "Queue (1)"
+      }
     },
     {
       "id": "Rally",
-      "Name": "Rally"
+      "Name": {
+        "enUS": "Rally",
+        "ruRU": "Rally"
+      }
     }
   ],
   "$Upgrades": [
-    "MorphZerglingToBaneling",
-    "BanelingCocoon",
     "MorphToBaneling",
+    "BanelingCocoon",
     "IsNotBanelingCocoon",
+    "MorphZerglingToBaneling",
     "Zergling",
     "ZergGroundArmorsLevel1",
     "Baneling",
@@ -264,25 +344,43 @@
   "$Producers": [],
   "$Commands": [
     {
-      "AbilCmd": "MorphToBaneling,Cancel",
+      "AbilCmd": "que1,CancelLast",
       "id": "CancelCocoonMorph",
       "Icon": "btn-command-cancel",
-      "Tooltip": "Cancels the morph order.",
-      "Name": "Cancel"
+      "Name": {
+        "enUS": "Cancel",
+        "ruRU": "Cancel"
+      },
+      "Tooltip": {
+        "enUS": "Cancels the morph order.",
+        "ruRU": "Cancels the morph order."
+      }
     },
     {
       "AbilCmd": "Rally,Rally1",
       "id": "Rally",
       "Icon": "btn-ability-terran-setrallypoint",
-      "Tooltip": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
-      "Name": "Set Rally Point"
+      "Name": {
+        "enUS": "Set Rally Point",
+        "ruRU": "Задать точку сбора /// Set Rally Point"
+      },
+      "Tooltip": {
+        "enUS": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
+        "ruRU": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically."
+      }
     },
     {
       "AbilCmd": "attack,Execute",
       "id": "Attack",
       "Icon": "btn-command-attack",
-      "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
-      "Name": "Attack"
+      "Name": {
+        "enUS": "Attack",
+        "ruRU": "Атаковать /// Attack"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+        "ruRU": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed."
+      }
     }
   ]
 }

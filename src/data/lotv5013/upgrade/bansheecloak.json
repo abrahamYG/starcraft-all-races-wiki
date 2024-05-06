@@ -12,8 +12,14 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "BansheeCloak",
+  "EditorCategories": "Race:Terran,UpgradeType:Spell",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "Race": "Terr",
-  "EditorCategories": "Race:Terran,UpgradeType:SpellResearch",
   "ScoreResult": "BuildOrder",
   "AffectedUnitArray": [
     "Banshee"

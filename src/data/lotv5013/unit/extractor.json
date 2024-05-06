@@ -1,6 +1,12 @@
 {
-  "Name": "Extractor",
-  "Description": "Mutated over a Vespene Geyser to allow harvesting of vespene gas.",
+  "Name": {
+    "enUS": "Extractor",
+    "ruRU": "Extractor"
+  },
+  "Description": {
+    "enUS": "Mutated over a Vespene Geyser to allow harvesting of vespene gas.",
+    "ruRU": "Mutated over a Vespene Geyser to allow harvesting of vespene gas."
+  },
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -12,7 +18,10 @@
   "ResourceType": "Vespene",
   "LifeStart": 500,
   "LifeMax": 500,
-  "LifeArmorName": "Zerg Building Armor",
+  "LifeArmorName": {
+    "enUS": "Zerg Building Armor",
+    "ruRU": "Zerg Building Armor"
+  },
   "Mover": "Ground",
   "StationaryTurningRate": 719.4726,
   "TurningRate": 719.4726,
@@ -77,6 +86,12 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "Facing": 329.9963,
   "Mob": "Multiplayer",
   "FogVisibility": "Snapshot",
@@ -103,9 +118,8 @@
     "Structure",
     "RoachBurrow",
     "ForceField",
-    "Small",
-    "Locust",
-    "Phased"
+    "Phased",
+    "Small"
   ],
   "Sight": 9,
   "CardLayouts": {
@@ -129,6 +143,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "BuildInProgress",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "Activity": "UI/Building",
           "VitalStartFactor": {
             "Life": 0.1,
@@ -161,8 +181,14 @@
         "AbilCmd": "BuildInProgress,Cancel",
         "id": "CancelBuilding",
         "Icon": "btn-command-cancel",
-        "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-        "Name": "Cancel",
+        "Name": {
+          "enUS": "Cancel",
+          "ruRU": "Отменить /// Cancel"
+        },
+        "Tooltip": {
+          "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+          "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+        },
         "Hotkey": "Esc"
       }
     ]
@@ -192,28 +218,29 @@
   "Behaviors": [
     {
       "id": "HarvestableVespeneGeyserGasZerg",
-      "Icon": "icon-gas"
+      "Icon": "icon-gas",
+      "Name": {
+        "enUS": "Harvestable Vespene Geyser Gas Zerg",
+        "ruRU": "Harvestable Vespene Geyser Gas Zerg"
+      },
+      "Tooltip": "-"
     }
   ],
   "Abilities": [
     {
       "id": "BuildInProgress",
-      "Name": "Build in Progress"
+      "Name": {
+        "enUS": "Build in Progress",
+        "ruRU": "Build in Progress"
+      }
     }
   ],
   "$Upgrades": [
     "ZergBuild",
     "Extractor",
     "ExtractorRich",
-    "Extractor",
     "IsExtractor",
-    "ExtractorBase",
-    "Extractor",
-    "ExtractorMecha",
-    "ExtractorRCZ",
-    "DefaultSkinPack",
-    "ExtractorMecha",
-    "ExtractorRCZ"
+    "Extractor"
   ],
   "$Requirements": [],
   "$Production": [],
@@ -228,8 +255,14 @@
       "AbilCmd": "BuildInProgress,Cancel",
       "id": "CancelBuilding",
       "Icon": "btn-command-cancel",
-      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-      "Name": "Cancel"
+      "Name": {
+        "enUS": "Cancel",
+        "ruRU": "Отменить /// Cancel"
+      },
+      "Tooltip": {
+        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+        "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+      }
     }
   ]
 }

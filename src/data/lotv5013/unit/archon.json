@@ -1,6 +1,12 @@
 {
-  "Name": "Archon",
-  "Description": "Powerful psionic attacker.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>",
+  "Name": {
+    "enUS": "Archon",
+    "ruRU": "Archon"
+  },
+  "Description": {
+    "enUS": "Powerful psionic attacker.<br/><br/><span style=\"color: ffff8a\">Can attack ground and air units.</span>",
+    "ruRU": "Powerful psionic attacker.<br/><br/><span style=\"color: ffff8a\">Can attack ground and air units.</span>"
+  },
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -12,7 +18,10 @@
   "ResourceType": "Unknown",
   "LifeStart": 10,
   "LifeMax": 10,
-  "LifeArmorName": "Protoss Armor",
+  "LifeArmorName": {
+    "enUS": "Protoss Armor",
+    "ruRU": "Protoss Armor"
+  },
   "Mover": "Ground",
   "StationaryTurningRate": 999.8437,
   "TurningRate": 999.8437,
@@ -74,11 +83,20 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "Mob": "Multiplayer",
   "ShieldsStart": 350,
   "ShieldsMax": 350,
   "ShieldRegenRate": 2,
-  "ShieldArmorName": "Protoss Plasma Shields",
+  "ShieldArmorName": {
+    "enUS": "Protoss Plasma Shields",
+    "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+  },
   "Speed": 2.8125,
   "Acceleration": 1000,
   "LateralAcceleration": 46,
@@ -96,8 +114,7 @@
   ],
   "Collide": [
     "Ground",
-    "Small",
-    "Locust"
+    "Small"
   ],
   "Sight": 9,
   "CardLayouts": {
@@ -127,6 +144,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -164,8 +187,7 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move",
-          "AbilSetId": "Move"
+          "id": "move"
         },
         "Cost": {
           "Minerals": 0,
@@ -183,8 +205,14 @@
         "AbilCmd": "move,Move",
         "id": "Move",
         "Icon": "btn-command-move",
-        "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
-        "Name": "Move",
+        "Name": {
+          "enUS": "Move",
+          "ruRU": "Двигаться /// Move"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+          "ruRU": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies."
+        },
         "Hotkey": "M"
       },
       {
@@ -206,6 +234,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "stop",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "AbilSetId": "Stop",
           "CmdButtonArray": {
             "Stop": {
@@ -251,8 +285,14 @@
         "AbilCmd": "stop,Stop",
         "id": "Stop",
         "Icon": "btn-command-stop",
-        "Tooltip": "Orders selected units to cancel all orders and stop moving.",
-        "Name": "Stop",
+        "Name": {
+          "enUS": "Stop",
+          "ruRU": "Отставить /// Stop"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to cancel all orders and stop moving.",
+          "ruRU": "Orders selected units to cancel all orders and stop moving."
+        },
         "Hotkey": "S"
       },
       {
@@ -280,6 +320,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -317,8 +363,7 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move",
-          "AbilSetId": "Move"
+          "id": "move"
         },
         "Cost": {
           "Minerals": 0,
@@ -336,8 +381,14 @@
         "AbilCmd": "move,HoldPos",
         "id": "MoveHoldPosition",
         "Icon": "btn-command-holdposition",
-        "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
-        "Name": "Hold Position",
+        "Name": {
+          "enUS": "Hold Position",
+          "ruRU": "Удерживать позицию /// Hold Position"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+          "ruRU": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage."
+        },
         "Hotkey": "H"
       },
       {
@@ -359,6 +410,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "attack",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "AbilSetId": "Attack",
           "Alignment": "Negative",
           "AcquireFilters": "-;Player,Ally,Neutral,Dead,Hidden,Invulnerable,Benign",
@@ -405,8 +462,14 @@
         "AbilCmd": "attack,Execute",
         "id": "Attack",
         "Icon": "btn-command-attack",
-        "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
-        "Name": "Attack",
+        "Name": {
+          "enUS": "Attack",
+          "ruRU": "Атаковать /// Attack"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+          "ruRU": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed."
+        },
         "Hotkey": "A"
       },
       {
@@ -434,6 +497,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -471,8 +540,7 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move",
-          "AbilSetId": "Move"
+          "id": "move"
         },
         "Cost": {
           "Minerals": 0,
@@ -490,8 +558,14 @@
         "AbilCmd": "move,Patrol",
         "id": "MovePatrol",
         "Icon": "btn-command-patrol",
-        "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
-        "Name": "Patrol",
+        "Name": {
+          "enUS": "Patrol",
+          "ruRU": "Патрулировать /// Patrol"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+          "ruRU": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies."
+        },
         "Hotkey": "P"
       },
       {
@@ -512,8 +586,14 @@
         "AbilCmd": "ProgressRally,Rally1",
         "id": "Rally",
         "Icon": "btn-ability-terran-setrallypoint",
-        "Tooltip": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
-        "Name": "Set Rally Point",
+        "Name": {
+          "enUS": "Set Rally Point",
+          "ruRU": "Задать точку сбора /// Set Rally Point"
+        },
+        "Tooltip": {
+          "enUS": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
+          "ruRU": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically."
+        },
         "Hotkey": "Y"
       }
     ]
@@ -550,7 +630,10 @@
     {
       "id": "PsionicShockwave",
       "Icon": "btn-upgrade-protoss-groundweaponslevel0",
-      "Name": "Psionic Shockwave",
+      "Name": {
+        "enUS": "Psionic Shockwave",
+        "ruRU": "Psionic Shockwave"
+      },
       "Amount": 25,
       "AttributeBonus": {
         "Biological": 10
@@ -565,23 +648,38 @@
   "Abilities": [
     {
       "id": "stop",
-      "Name": "Stop"
+      "Name": {
+        "enUS": "Stop",
+        "ruRU": "Stop"
+      }
     },
     {
       "id": "attack",
-      "Name": "Attack"
+      "Name": {
+        "ruRU": "Attack",
+        "enUS": "Attack"
+      }
     },
     {
       "id": "move",
-      "Name": "Move"
+      "Name": {
+        "enUS": "Move",
+        "ruRU": "Move"
+      }
     },
     {
       "id": "Mergeable",
-      "Name": "Mergeable"
+      "Name": {
+        "enUS": "Mergeable",
+        "ruRU": "Mergeable"
+      }
     },
     {
       "id": "ProgressRally",
-      "Name": "Progress Rally"
+      "Name": {
+        "enUS": "Progress Rally",
+        "ruRU": "Progress Rally"
+      }
     }
   ],
   "$Upgrades": [
@@ -604,19 +702,7 @@
     "ProtossShieldsLevel2",
     "ProtossShieldsLevel3",
     "IsArchon",
-    "NotArchon",
-    "Combat_Mechanic_Shields_Archon",
-    "HighTemplarBase",
-    "ArchonBase",
-    "HighTemplar",
-    "Archon",
-    "HighTemplarTaldarim",
-    "HighTemplarPurifier",
-    "HighTemplarGolden",
-    "HighTemplarIhanrii",
-    "DefaultSkinPack",
-    "HighTemplarTaldarimSkinPack",
-    "HighTemplarPurifierSkinPack"
+    "NotArchon"
   ],
   "$Requirements": [],
   "$Production": [],
@@ -629,43 +715,79 @@
       "AbilCmd": "move,Move",
       "id": "Move",
       "Icon": "btn-command-move",
-      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
-      "Name": "Move"
+      "Name": {
+        "enUS": "Move",
+        "ruRU": "Двигаться /// Move"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+        "ruRU": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies."
+      }
     },
     {
       "AbilCmd": "stop,Stop",
       "id": "Stop",
       "Icon": "btn-command-stop",
-      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
-      "Name": "Stop"
+      "Name": {
+        "enUS": "Stop",
+        "ruRU": "Отставить /// Stop"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to cancel all orders and stop moving.",
+        "ruRU": "Orders selected units to cancel all orders and stop moving."
+      }
     },
     {
       "AbilCmd": "move,HoldPos",
       "id": "MoveHoldPosition",
       "Icon": "btn-command-holdposition",
-      "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
-      "Name": "Hold Position"
+      "Name": {
+        "enUS": "Hold Position",
+        "ruRU": "Удерживать позицию /// Hold Position"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+        "ruRU": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage."
+      }
     },
     {
       "AbilCmd": "attack,Execute",
       "id": "Attack",
       "Icon": "btn-command-attack",
-      "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
-      "Name": "Attack"
+      "Name": {
+        "enUS": "Attack",
+        "ruRU": "Атаковать /// Attack"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+        "ruRU": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed."
+      }
     },
     {
       "AbilCmd": "move,Patrol",
       "id": "MovePatrol",
       "Icon": "btn-command-patrol",
-      "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
-      "Name": "Patrol"
+      "Name": {
+        "enUS": "Patrol",
+        "ruRU": "Патрулировать /// Patrol"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+        "ruRU": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies."
+      }
     },
     {
       "AbilCmd": "ProgressRally,Rally1",
       "id": "Rally",
       "Icon": "btn-ability-terran-setrallypoint",
-      "Tooltip": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
-      "Name": "Set Rally Point"
+      "Name": {
+        "enUS": "Set Rally Point",
+        "ruRU": "Задать точку сбора /// Set Rally Point"
+      },
+      "Tooltip": {
+        "enUS": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
+        "ruRU": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically."
+      }
     }
   ]
 }

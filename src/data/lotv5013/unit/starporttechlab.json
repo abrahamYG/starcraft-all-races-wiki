@@ -1,6 +1,12 @@
 {
-  "Name": "Tech Lab",
-  "Description": "Enables additional units and research options. A Tech Lab can fit onto any production structure.",
+  "Name": {
+    "enUS": "Tech Lab",
+    "ruRU": "Tech Lab"
+  },
+  "Description": {
+    "enUS": "Enables additional units and research options. A Tech Lab can fit onto any production structure.",
+    "ruRU": "Enables additional units and research options. A Tech Lab can fit onto any production structure."
+  },
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -12,7 +18,10 @@
   "ResourceType": "Unknown",
   "LifeStart": 400,
   "LifeMax": 400,
-  "LifeArmorName": "Terran Building Plating",
+  "LifeArmorName": {
+    "enUS": "Terran Building Plating",
+    "ruRU": "Terran Building Plating"
+  },
   "Mover": "Ground",
   "StationaryTurningRate": 719.4726,
   "TurningRate": 719.4726,
@@ -77,6 +86,12 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "TechAliasArray": [
     "Alias_TechLab"
   ],
@@ -114,7 +129,6 @@
     "RoachBurrow",
     "ForceField",
     "Small",
-    "Locust",
     "Phased"
   ],
   "Sight": 9,
@@ -139,6 +153,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "que5Addon",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "QueueCount": 1,
           "Flags": {
             "BestUnit": 1,
@@ -171,8 +191,14 @@
         "AbilCmd": "que5Addon,CancelLast",
         "id": "Cancel",
         "Icon": "btn-command-cancel",
-        "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
-        "Name": "Cancel",
+        "Name": {
+          "enUS": "Cancel",
+          "ruRU": "Отменить /// Cancel"
+        },
+        "Tooltip": {
+          "enUS": "Drops the current order without performing it, and allows you to select a different order.",
+          "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+        },
         "Hotkey": "Esc"
       },
       {
@@ -194,6 +220,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "BuildInProgress",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "Activity": "UI/Building",
           "VitalStartFactor": {
             "Life": 0.1,
@@ -226,49 +258,15 @@
         "AbilCmd": "BuildInProgress,Cancel",
         "id": "CancelBuilding",
         "Icon": "btn-command-cancel",
-        "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-        "Name": "Cancel",
+        "Name": {
+          "enUS": "Cancel",
+          "ruRU": "Отменить /// Cancel"
+        },
+        "Tooltip": {
+          "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+          "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+        },
         "Hotkey": "Esc"
-      },
-      {
-        "Upgrade": "BansheeCloak",
-        "Info": {
-          "Button": {
-            "Flags": {
-              "AllowMinimap": 0,
-              "ShowInGlossary": 1
-            },
-            "DefaultButtonFace": "ResearchBansheeCloak",
-            "State": "Restricted",
-            "Requirements": "LearnCloakingField"
-          },
-          "Resource": {
-            "Minerals": 100,
-            "Vespene": 100
-          },
-          "Time": 110,
-          "Upgrade": "BansheeCloak"
-        },
-        "Time": 110,
-        "Cost": {
-          "Minerals": 100,
-          "Vespene": 100,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 0,
-        "Column": 0,
-        "Type": "AbilCmd",
-        "AbilCmd": "StarportTechLabResearch,Research1",
-        "id": "ResearchBansheeCloak",
-        "Icon": "btn-ability-terran-cloak-color",
-        "Tooltip": "Enables <span style=\"color: #ffff8a\">Banshees</span> to use the Cloak ability. Cloak renders the <span style=\"color: #ffff8a\">Banshee</span> invisible to enemies unless the unit is revealed by detectors or effects.",
-        "Name": "Research Cloaking Field",
-        "Hotkey": "C"
       },
       {
         "Upgrade": "BansheeSpeed",
@@ -305,8 +303,14 @@
         "AbilCmd": "StarportTechLabResearch,Research10",
         "id": "BansheeSpeed",
         "Icon": "btn-upgrade-terran-hyperflightrotors",
-        "Tooltip": "Increases the movement speed of <span style=\"color: #ffff8a\">Banshees</span>.",
-        "Name": "Research Hyperflight Rotors",
+        "Name": {
+          "enUS": "Research Hyperflight Rotors",
+          "ruRU": "Research Hyperflight Rotors"
+        },
+        "Tooltip": {
+          "enUS": "Increases the movement speed of <span style=\"color: ffff8a\">Banshees</span>.",
+          "ruRU": "Increases the movement speed of <span style=\"color: ffff8a\">Banshees</span>."
+        },
         "Hotkey": "B"
       },
       {
@@ -343,33 +347,36 @@
         "AbilCmd": "StarportTechLabResearch,Research18",
         "id": "ResearchRavenInterferenceMatrix",
         "Icon": "btn-upgrade-terran-interferencematrix",
-        "Tooltip": "Allows <span style=\"color: #ffff8a\">Ravens</span> to use the Interference Matrix ability.",
-        "Name": "Research Interference Matrix",
+        "Name": {
+          "enUS": "Research Interference Matrix"
+        },
+        "Tooltip": {
+          "enUS": "Allows <span style=\"color: ffff8a\">Ravens</span> to use the Interference Matrix ability."
+        },
         "Hotkey": "T"
       },
       {
-        "Upgrade": "HunterSeeker",
+        "Upgrade": "BansheeCloak",
         "Info": {
           "Button": {
             "Flags": {
               "AllowMinimap": 0,
               "ShowInGlossary": 1
             },
-            "DefaultButtonFace": "ResearchSeekerMissile",
-            "State": "Restricted",
-            "Requirements": "LearnHunterSeekerMissiles"
+            "DefaultButtonFace": "ResearchBansheeCloak",
+            "Requirements": "LearnCloakingField"
           },
           "Resource": {
-            "Minerals": 150,
-            "Vespene": 150
+            "Minerals": 100,
+            "Vespene": 100
           },
           "Time": 110,
-          "Upgrade": "HunterSeeker"
+          "Upgrade": "BansheeCloak"
         },
         "Time": 110,
         "Cost": {
-          "Minerals": 150,
-          "Vespene": 150,
+          "Minerals": 100,
+          "Vespene": 100,
           "Terazine": 0,
           "Custom": 0,
           "Energy": 0,
@@ -378,14 +385,20 @@
           "Food": 0
         },
         "Row": 0,
-        "Column": 2,
+        "Column": 0,
         "Type": "AbilCmd",
-        "AbilCmd": "StarportTechLabResearch,Research7",
-        "id": "ResearchSeekerMissile",
-        "Icon": "btn-ability-terran-huntermissile-color",
-        "Tooltip": "Enables <span style=\"color: #ffff8a\">Ravens</span> to use the Seeker Missile armament. This missile activates after <b>5</b> seconds, dealing <b>100</b> AoE damage to the target if they are still within range.",
-        "Name": "Research Seeker Missile",
-        "Hotkey": "R"
+        "AbilCmd": "StarportTechLabResearch,Research1",
+        "id": "ResearchBansheeCloak",
+        "Icon": "btn-ability-terran-cloak-color",
+        "Name": {
+          "enUS": "Research Cloaking Field",
+          "ruRU": "Research Cloaking Field"
+        },
+        "Tooltip": {
+          "enUS": "Enables <span style=\"color: ffff8a\">Banshees</span> to use the Cloak ability. Cloak renders the <span style=\"color: ffff8a\">Banshee</span> invisible to enemies unless the unit is revealed by detectors or effects.",
+          "ruRU": "Enables <span style=\"color: ffff8a\">Banshees</span> to use the Cloak ability. Cloak renders the <span style=\"color: ffff8a\">Banshee</span> invisible to enemies unless the unit is revealed by detectors or effects."
+        },
+        "Hotkey": "C"
       }
     ]
   },
@@ -415,33 +428,56 @@
   "Weapons": [],
   "Behaviors": [
     {
-      "id": "TerranBuildingBurnDown"
+      "id": "TerranBuildingBurnDown",
+      "Name": {
+        "enUS": "Building Burnout",
+        "ruRU": "Building Burnout"
+      },
+      "Tooltip": "-"
     }
   ],
   "Abilities": [
     {
       "id": "BuildInProgress",
-      "Name": "Build in Progress"
+      "Name": {
+        "enUS": "Build in Progress",
+        "ruRU": "Build in Progress"
+      }
     },
     {
       "id": "que5Addon",
-      "Name": "Queue"
+      "Name": {
+        "ruRU": "Queue",
+        "enUS": "Queue"
+      }
     },
     {
       "id": "BarracksTechLabMorph",
-      "Name": "Tech Lab Morph (Barracks)"
+      "Name": {
+        "enUS": "Tech Lab Morph (Barracks)",
+        "ruRU": "Tech Lab Morph (Barracks)"
+      }
     },
     {
       "id": "FactoryTechLabMorph",
-      "Name": "Tech Lab Morph (Factory)"
+      "Name": {
+        "enUS": "Tech Lab Morph (Factory)",
+        "ruRU": "Tech Lab Morph (Factory)"
+      }
     },
     {
       "id": "TechLabMorph",
-      "Name": "Tech Lab Morph (Detached)"
+      "Name": {
+        "enUS": "Tech Lab Morph (Detached)",
+        "ruRU": "Tech Lab Morph (Detached)"
+      }
     },
     {
       "id": "StarportTechLabResearch",
-      "Name": "Tech Lab Research (Starport)"
+      "Name": {
+        "enUS": "Tech Lab Research (Starport)",
+        "ruRU": "Tech Lab Research (Starport)"
+      }
     }
   ],
   "$Upgrades": [
@@ -456,10 +492,9 @@
   "$Requirements": [],
   "$Production": [],
   "$Research": [
-    "BansheeCloak",
     "BansheeSpeed",
     "InterferenceMatrix",
-    "HunterSeeker"
+    "BansheeCloak"
   ],
   "$Morph": [],
   "$Phase": [],
@@ -472,43 +507,64 @@
       "AbilCmd": "que5Addon,CancelLast",
       "id": "Cancel",
       "Icon": "btn-command-cancel",
-      "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
-      "Name": "Cancel"
+      "Name": {
+        "enUS": "Cancel",
+        "ruRU": "Отменить /// Cancel"
+      },
+      "Tooltip": {
+        "enUS": "Drops the current order without performing it, and allows you to select a different order.",
+        "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+      }
     },
     {
       "AbilCmd": "BuildInProgress,Cancel",
       "id": "CancelBuilding",
       "Icon": "btn-command-cancel",
-      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-      "Name": "Cancel"
-    },
-    {
-      "AbilCmd": "StarportTechLabResearch,Research1",
-      "id": "ResearchBansheeCloak",
-      "Icon": "btn-ability-terran-cloak-color",
-      "Tooltip": "Enables <span style=\"color: #ffff8a\">Banshees</span> to use the Cloak ability. Cloak renders the <span style=\"color: #ffff8a\">Banshee</span> invisible to enemies unless the unit is revealed by detectors or effects.",
-      "Name": "Research Cloaking Field"
+      "Name": {
+        "enUS": "Cancel",
+        "ruRU": "Отменить /// Cancel"
+      },
+      "Tooltip": {
+        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+        "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+      }
     },
     {
       "AbilCmd": "StarportTechLabResearch,Research10",
       "id": "BansheeSpeed",
       "Icon": "btn-upgrade-terran-hyperflightrotors",
-      "Tooltip": "Increases the movement speed of <span style=\"color: #ffff8a\">Banshees</span>.",
-      "Name": "Research Hyperflight Rotors"
+      "Name": {
+        "enUS": "Research Hyperflight Rotors",
+        "ruRU": "Research Hyperflight Rotors"
+      },
+      "Tooltip": {
+        "enUS": "Increases the movement speed of <span style=\"color: ffff8a\">Banshees</span>.",
+        "ruRU": "Increases the movement speed of <span style=\"color: ffff8a\">Banshees</span>."
+      }
     },
     {
       "AbilCmd": "StarportTechLabResearch,Research18",
       "id": "ResearchRavenInterferenceMatrix",
       "Icon": "btn-upgrade-terran-interferencematrix",
-      "Tooltip": "Allows <span style=\"color: #ffff8a\">Ravens</span> to use the Interference Matrix ability.",
-      "Name": "Research Interference Matrix"
+      "Name": {
+        "enUS": "Research Interference Matrix"
+      },
+      "Tooltip": {
+        "enUS": "Allows <span style=\"color: ffff8a\">Ravens</span> to use the Interference Matrix ability."
+      }
     },
     {
-      "AbilCmd": "StarportTechLabResearch,Research7",
-      "id": "ResearchSeekerMissile",
-      "Icon": "btn-ability-terran-huntermissile-color",
-      "Tooltip": "Enables <span style=\"color: #ffff8a\">Ravens</span> to use the Seeker Missile armament. This missile activates after <b>5</b> seconds, dealing <b>100</b> AoE damage to the target if they are still within range.",
-      "Name": "Research Seeker Missile"
+      "AbilCmd": "StarportTechLabResearch,Research1",
+      "id": "ResearchBansheeCloak",
+      "Icon": "btn-ability-terran-cloak-color",
+      "Name": {
+        "enUS": "Research Cloaking Field",
+        "ruRU": "Research Cloaking Field"
+      },
+      "Tooltip": {
+        "enUS": "Enables <span style=\"color: ffff8a\">Banshees</span> to use the Cloak ability. Cloak renders the <span style=\"color: ffff8a\">Banshee</span> invisible to enemies unless the unit is revealed by detectors or effects.",
+        "ruRU": "Enables <span style=\"color: ffff8a\">Banshees</span> to use the Cloak ability. Cloak renders the <span style=\"color: ffff8a\">Banshee</span> invisible to enemies unless the unit is revealed by detectors or effects."
+      }
     }
   ]
 }

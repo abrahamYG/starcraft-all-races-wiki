@@ -1,6 +1,12 @@
 {
-  "Name": "Hydralisk Den",
-  "Description": "Contains upgrades for Hydralisks.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Hydralisks from Larvae",
+  "Name": {
+    "enUS": "Hydralisk Den",
+    "ruRU": "Hydralisk Den"
+  },
+  "Description": {
+    "enUS": "Contains an upgrade for Hydralisks. Can mutate into a Lurker Den.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Hydralisks from Larvae",
+    "ruRU": "Contains an upgrade for Hydralisks. Can mutate into a Lurker Den.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Hydralisks from Larvae"
+  },
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -12,7 +18,10 @@
   "ResourceType": "Unknown",
   "LifeStart": 850,
   "LifeMax": 850,
-  "LifeArmorName": "Zerg Building Armor",
+  "LifeArmorName": {
+    "enUS": "Zerg Building Armor",
+    "ruRU": "Zerg Building Armor"
+  },
   "Mover": "Ground",
   "StationaryTurningRate": 719.4726,
   "TurningRate": 719.4726,
@@ -77,6 +86,12 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "TechAliasArray": [
     "Alias_HydraliskDen"
   ],
@@ -106,9 +121,8 @@
     "Structure",
     "RoachBurrow",
     "ForceField",
-    "Small",
-    "Locust",
-    "Phased"
+    "Phased",
+    "Small"
   ],
   "Sight": 9,
   "CardLayouts": {
@@ -132,6 +146,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "que5",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "QueueCount": 1,
           "Flags": {
             "BestUnit": 1,
@@ -164,8 +184,14 @@
         "AbilCmd": "que5,CancelLast",
         "id": "Cancel",
         "Icon": "btn-command-cancel",
-        "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
-        "Name": "Cancel",
+        "Name": {
+          "enUS": "Cancel",
+          "ruRU": "Отменить /// Cancel"
+        },
+        "Tooltip": {
+          "enUS": "Drops the current order without performing it, and allows you to select a different order.",
+          "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+        },
         "Hotkey": "Esc"
       },
       {
@@ -187,6 +213,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "BuildInProgress",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "Activity": "UI/Building",
           "VitalStartFactor": {
             "Life": 0.1,
@@ -219,97 +251,15 @@
         "AbilCmd": "BuildInProgress,Cancel",
         "id": "CancelBuilding",
         "Icon": "btn-command-cancel",
-        "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-        "Name": "Cancel",
+        "Name": {
+          "enUS": "Cancel",
+          "ruRU": "Отменить /// Cancel"
+        },
+        "Tooltip": {
+          "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+          "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+        },
         "Hotkey": "Esc"
-      },
-      {
-        "Info": {
-          "SectionArray": {
-            "Abils": {
-              "DurationArray": {
-                "Delay": 120
-              }
-            },
-            "Actor": {
-              "DurationArray": {
-                "Duration": 120
-              }
-            },
-            "Facing": {
-              "DurationArray": {
-                "Delay": 10
-              }
-            },
-            "Stats": {
-              "DurationArray": {
-                "Delay": 120
-              }
-            }
-          },
-          "Score": 1,
-          "Unit": "LurkerDenMP"
-        },
-        "Unit": "LurkerDenMP",
-        "Cost": {
-          "Minerals": 150,
-          "Vespene": 150,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 2,
-        "Column": 4,
-        "Type": "AbilCmd",
-        "AbilCmd": "UpgradeToLurkerDenMP,Cancel",
-        "id": "Cancel",
-        "Icon": "btn-command-cancel",
-        "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
-        "Name": "Cancel",
-        "Hotkey": "Esc"
-      },
-      {
-        "Upgrade": "EvolveGroovedSpines",
-        "Info": {
-          "Button": {
-            "Flags": {
-              "AllowMinimap": 0,
-              "ShowInGlossary": 1
-            },
-            "DefaultButtonFace": "EvolveGroovedSpines",
-            "State": "Restricted",
-            "Requirements": "LearnEvolveGroovedSpines"
-          },
-          "Resource": {
-            "Minerals": 75,
-            "Vespene": 75
-          },
-          "Time": 70,
-          "Upgrade": "EvolveGroovedSpines"
-        },
-        "Time": 70,
-        "Cost": {
-          "Minerals": 75,
-          "Vespene": 75,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 0,
-        "Column": 0,
-        "Type": "AbilCmd",
-        "AbilCmd": "HydraliskDenResearch,Research1",
-        "id": "EvolveGroovedSpines",
-        "Icon": "btn-upgrade-zerg-hotsgroovedspines",
-        "Tooltip": "Increases <span style=\"color: #ffff8a\">Hydralisk</span> attack range by +<b>1</b>.",
-        "Name": "Evolve Grooved Spines",
-        "Hotkey": "G"
       },
       {
         "Upgrade": "EvolveMuscularAugments",
@@ -320,7 +270,6 @@
               "ShowInGlossary": 1
             },
             "DefaultButtonFace": "EvolveMuscularAugments",
-            "State": "Restricted",
             "Requirements": "LearnEvolveMuscularAugments"
           },
           "Resource": {
@@ -342,14 +291,61 @@
           "Food": 0
         },
         "Row": 0,
-        "Column": 1,
+        "Column": 0,
         "Type": "AbilCmd",
         "AbilCmd": "HydraliskDenResearch,Research2",
         "id": "EvolveMuscularAugments",
         "Icon": "btn-upgrade-zerg-evolvemuscularaugments",
-        "Tooltip": "Increases the movement speed of <span style=\"color: #ffff8a\">Hydralisks</span>.",
-        "Name": "Evolve Muscular Augments",
+        "Name": {
+          "enUS": "Evolve Muscular Augments"
+        },
+        "Tooltip": {
+          "enUS": "Increases the movement speed of <span style=\"color: ffff8a\">Hydralisks</span>."
+        },
         "Hotkey": "H"
+      },
+      {
+        "Upgrade": "EvolveGroovedSpines",
+        "Info": {
+          "Button": {
+            "Flags": {
+              "AllowMinimap": 0,
+              "ShowInGlossary": 1
+            },
+            "DefaultButtonFace": "EvolveGroovedSpines",
+            "Requirements": "LearnEvolveGroovedSpines"
+          },
+          "Resource": {
+            "Minerals": 75,
+            "Vespene": 75
+          },
+          "Time": 100,
+          "Upgrade": "EvolveGroovedSpines"
+        },
+        "Time": 100,
+        "Cost": {
+          "Minerals": 75,
+          "Vespene": 75,
+          "Terazine": 0,
+          "Custom": 0,
+          "Energy": 0,
+          "Life": 0,
+          "Shields": 0,
+          "Food": 0
+        },
+        "Row": 0,
+        "Column": 1,
+        "Type": "AbilCmd",
+        "AbilCmd": "HydraliskDenResearch,Research1",
+        "id": "EvolveGroovedSpines",
+        "Icon": "btn-upgrade-zerg-hotsgroovedspines",
+        "Name": {
+          "enUS": "Evolve Grooved Spines"
+        },
+        "Tooltip": {
+          "enUS": "Increases <span style=\"color: ffff8a\">Hydralisk</span> attack range by +<b>1</b>."
+        },
+        "Hotkey": "G"
       }
     ]
   },
@@ -370,27 +366,51 @@
   "Weapons": [],
   "Behaviors": [
     {
-      "id": "OnCreep"
+      "id": "OnCreep",
+      "Name": {
+        "enUS": "On Creep",
+        "ruRU": "On Creep"
+      },
+      "Tooltip": "-"
     },
     {
-      "id": "ZergBuildingNotOnCreep"
+      "id": "ZergBuildingNotOnCreep",
+      "Name": {
+        "enUS": "Building Not On Creep",
+        "ruRU": "Building Not On Creep"
+      },
+      "Tooltip": "-"
     },
     {
-      "id": "ZergBuildingDies6"
+      "id": "ZergBuildingDies6",
+      "Name": {
+        "enUS": "Zerg Building Dies 6",
+        "ruRU": "Zerg Building Dies 6"
+      },
+      "Tooltip": "-"
     }
   ],
   "Abilities": [
     {
       "id": "BuildInProgress",
-      "Name": "Build in Progress"
+      "Name": {
+        "enUS": "Build in Progress",
+        "ruRU": "Build in Progress"
+      }
     },
     {
       "id": "que5",
-      "Name": "Queue (5)"
+      "Name": {
+        "ruRU": "Queue (5)",
+        "enUS": "Queue (5)"
+      }
     },
     {
       "id": "HydraliskDenResearch",
-      "Name": "Research (Hydralisk Den)"
+      "Name": {
+        "enUS": "Research (Hydralisk Den)",
+        "ruRU": "Research (Hydralisk Den)"
+      }
     }
   ],
   "$Upgrades": [
@@ -398,20 +418,15 @@
     "HydraliskDen",
     "ZergBuild",
     "IsHydraliskDen",
-    "HydraliskDen",
-    "HydraliskDenBase",
-    "HydraliskDen",
-    "HydraliskDenMecha",
-    "HydraliskDenRCZ",
-    "DefaultSkinPack",
-    "HydraliskDenMecha",
-    "HydraliskDenRCZ"
+    "HydraliskDen"
   ],
   "$Requirements": [],
-  "$Production": [],
+  "$Production": [
+    "Broodling"
+  ],
   "$Research": [
-    "EvolveGroovedSpines",
-    "EvolveMuscularAugments"
+    "EvolveMuscularAugments",
+    "EvolveGroovedSpines"
   ],
   "$Morph": [],
   "$Phase": [],
@@ -423,36 +438,49 @@
       "AbilCmd": "que5,CancelLast",
       "id": "Cancel",
       "Icon": "btn-command-cancel",
-      "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
-      "Name": "Cancel"
+      "Name": {
+        "enUS": "Cancel",
+        "ruRU": "Отменить /// Cancel"
+      },
+      "Tooltip": {
+        "enUS": "Drops the current order without performing it, and allows you to select a different order.",
+        "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+      }
     },
     {
       "AbilCmd": "BuildInProgress,Cancel",
       "id": "CancelBuilding",
       "Icon": "btn-command-cancel",
-      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-      "Name": "Cancel"
-    },
-    {
-      "AbilCmd": "UpgradeToLurkerDenMP,Cancel",
-      "id": "Cancel",
-      "Icon": "btn-command-cancel",
-      "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
-      "Name": "Cancel"
-    },
-    {
-      "AbilCmd": "HydraliskDenResearch,Research1",
-      "id": "EvolveGroovedSpines",
-      "Icon": "btn-upgrade-zerg-hotsgroovedspines",
-      "Tooltip": "Increases <span style=\"color: #ffff8a\">Hydralisk</span> attack range by +<b>1</b>.",
-      "Name": "Evolve Grooved Spines"
+      "Name": {
+        "enUS": "Cancel",
+        "ruRU": "Отменить /// Cancel"
+      },
+      "Tooltip": {
+        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+        "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+      }
     },
     {
       "AbilCmd": "HydraliskDenResearch,Research2",
       "id": "EvolveMuscularAugments",
       "Icon": "btn-upgrade-zerg-evolvemuscularaugments",
-      "Tooltip": "Increases the movement speed of <span style=\"color: #ffff8a\">Hydralisks</span>.",
-      "Name": "Evolve Muscular Augments"
+      "Name": {
+        "enUS": "Evolve Muscular Augments"
+      },
+      "Tooltip": {
+        "enUS": "Increases the movement speed of <span style=\"color: ffff8a\">Hydralisks</span>."
+      }
+    },
+    {
+      "AbilCmd": "HydraliskDenResearch,Research1",
+      "id": "EvolveGroovedSpines",
+      "Icon": "btn-upgrade-zerg-hotsgroovedspines",
+      "Name": {
+        "enUS": "Evolve Grooved Spines"
+      },
+      "Tooltip": {
+        "enUS": "Increases <span style=\"color: ffff8a\">Hydralisk</span> attack range by +<b>1</b>."
+      }
     }
   ]
 }

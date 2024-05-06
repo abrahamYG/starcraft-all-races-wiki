@@ -30,12 +30,31 @@ export class SCDataService {
   raceData: any | null
   modLoading: boolean
   developer: boolean = false
+  locales: any = [
+    {locale: "enUS", title: "EN"},
+    {locale: "ruRU", title: "RU"},
+    {locale: "koKR", title: "KR"},
+    {locale: "zhCN", title: "CN"},
+  ]
+  locale: any
 
+  setLocale(locale){
+    this.locale = locale
+  }
   filteredWeapons(weapons){
     return weapons?.filter(Boolean).filter(item => item.id) || []
   }
   filteredUnits(units){
     return units?.map(u => u && this.raceData?.cache?.units?.[u]).filter(Boolean) || []
+  }
+  text(textValue){
+    if(!textValue){
+      return ""
+    }
+    if(textValue.constructor === String){
+      return textValue
+    }
+    return textValue[this.locale.locales] || textValue["enUS"] || Object.values(textValue)[0]
   }
   filteredUpgrades(upgrades){
     return upgrades?.map(u => u && this.raceData?.cache?.upgrades?.[u.id]).filter(Boolean) || []
@@ -47,6 +66,7 @@ export class SCDataService {
               @Optional() @Inject(ENVIRONMENT) environment: any
   ) {
     this.environment = environment !== null ? environment : {};
+    this.locale = this.locales[0]
 
     this.http.get(`data/mods.json`).subscribe(data => this.modsData = data)
 

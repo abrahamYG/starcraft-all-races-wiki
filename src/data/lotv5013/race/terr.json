@@ -1,6 +1,10 @@
 {
   "id": "Terr",
-  "Name": "Terran",
+  "Name": {
+    "ruRU": "Terran",
+    "enUS": "Terran"
+  },
+  "Icon": "decal_terran_0056_01",
   "cache": {
     "upgrades": {
       "ShieldWall": {
@@ -9,18 +13,27 @@
           "UpgradeCheat": 1,
           "TechTreeCheat": 1
         },
-        "Name": "Combat Shield",
+        "Name": {
+          "enUS": "Combat Shield",
+          "ruRU": "Combat Shield"
+        },
         "MaxLevel": 1,
         "Alert": "ResearchComplete",
         "ScoreCount": "MiscTechnologyCount",
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "ShieldWall",
+        "EditorCategories": "Race:Terran,UpgradeType:Spell",
+        "$tokens": {
+          "ID": {
+            "type": "string",
+            "value": ""
+          }
+        },
         "InfoTooltipPriority": 2,
         "id": "ShieldWall",
         "Race": "Terr",
         "Icon": "btn-techupgrade-terran-combatshield-color",
-        "EditorCategories": "Race:Terran,UpgradeType:Talents",
         "ScoreResult": "BuildOrder",
         "AffectedUnitArray": [
           "Marine"
@@ -52,18 +65,27 @@
         "Flags": {
           "UpgradeCheat": 1
         },
-        "Name": "Stimpack",
+        "Name": {
+          "enUS": "Stimpack",
+          "ruRU": "Stimpack"
+        },
         "MaxLevel": 1,
         "Alert": "ResearchComplete",
         "ScoreCount": "MiscTechnologyCount",
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "Stimpack",
+        "EditorCategories": "Race:Terran,UpgradeType:Spell",
+        "$tokens": {
+          "ID": {
+            "type": "string",
+            "value": ""
+          }
+        },
         "InfoTooltipPriority": 1,
         "id": "Stimpack",
         "Race": "Terr",
         "Icon": "btn-ability-terran-stimpack-color",
-        "EditorCategories": "Race:Terran,UpgradeType:SpellResearch",
         "ScoreResult": "BuildOrder",
         "AffectedUnitArray": [
           "Marine",
@@ -76,18 +98,27 @@
         "Flags": {
           "UpgradeCheat": 1
         },
-        "Name": "Concussive Shells",
+        "Name": {
+          "enUS": "Concussive Shells",
+          "ruRU": "Concussive Shells"
+        },
         "MaxLevel": 1,
         "Alert": "ResearchComplete",
         "ScoreCount": "MiscTechnologyCount",
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "PunisherGrenades",
+        "EditorCategories": "Race:Terran,UpgradeType:Spell",
+        "$tokens": {
+          "ID": {
+            "type": "string",
+            "value": ""
+          }
+        },
         "Icon": "btn-ability-terran-punishergrenade-color",
         "Race": "Terr",
         "ScoreAmount": 100,
         "ScoreResult": "BuildOrder",
-        "EditorCategories": "Race:Terran,UpgradeType:Talents",
         "AffectedUnitArray": [
           "Marauder"
         ],
@@ -98,15 +129,24 @@
         "Flags": {
           "UpgradeCheat": 1
         },
-        "Name": "Terran Infantry Weapons Level 1",
+        "Name": {
+          "enUS": "Terran Infantry Weapons Level 1",
+          "ruRU": "Terran Infantry Weapons Level 1"
+        },
         "MaxLevel": 1,
         "Alert": "UpgradeComplete",
         "ScoreCount": "WeaponTechnologyCount",
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "TechInfantryWeapons",
+        "EditorCategories": "Race:Terran,UpgradeType:Bonus",
+        "$tokens": {
+          "ID": {
+            "type": "string",
+            "value": ""
+          }
+        },
         "Race": "Terr",
-        "EditorCategories": "Race:Terran,UpgradeType:AttackBonus",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -218,15 +258,24 @@
         "Flags": {
           "UpgradeCheat": 1
         },
-        "Name": "Terran Infantry Weapons Level 2",
+        "Name": {
+          "enUS": "Terran Infantry Weapons Level 2",
+          "ruRU": "Terran Infantry Weapons Level 2"
+        },
         "MaxLevel": 1,
         "Alert": "UpgradeComplete",
         "ScoreCount": "WeaponTechnologyCount",
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "TechInfantryWeapons",
+        "EditorCategories": "Race:Terran,UpgradeType:Bonus",
+        "$tokens": {
+          "ID": {
+            "type": "string",
+            "value": ""
+          }
+        },
         "Race": "Terr",
-        "EditorCategories": "Race:Terran,UpgradeType:AttackBonus",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -335,15 +384,24 @@
         "Flags": {
           "UpgradeCheat": 1
         },
-        "Name": "Terran Infantry Weapons Level 3",
+        "Name": {
+          "enUS": "Terran Infantry Weapons Level 3",
+          "ruRU": "Terran Infantry Weapons Level 3"
+        },
         "MaxLevel": 1,
         "Alert": "UpgradeComplete",
         "ScoreCount": "WeaponTechnologyCount",
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "TechInfantryWeapons",
+        "EditorCategories": "Race:Terran,UpgradeType:Bonus",
+        "$tokens": {
+          "ID": {
+            "type": "string",
+            "value": ""
+          }
+        },
         "Race": "Terr",
-        "EditorCategories": "Race:Terran,UpgradeType:AttackBonus",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -447,276 +505,30 @@
         "LeaderLevel": 3,
         "$Phased": "TerranInfantryWeaponsLevel1"
       },
-      "TerranBuildingArmor": {
+      "NeosteelFrame": {
         "class": "CUpgrade",
         "Flags": {
-          "UpgradeCheat": 1
+          "UpgradeCheat": 1,
+          "TechTreeCheat": 1
         },
-        "Name": "Neosteel Armor",
+        "Name": {
+          "enUS": "Neosteel Frame",
+          "ruRU": "Neosteel Frame"
+        },
         "MaxLevel": 1,
-        "Alert": "UpgradeComplete",
-        "ScoreCount": "ArmorTechnologyCount",
-        "ScoreValue": "ArmorTechnologyValue",
+        "Alert": "ResearchComplete",
+        "ScoreCount": "MiscTechnologyCount",
+        "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
-        "LeaderAlias": "TerranBuildingArmor",
-        "Icon": "btn-upgrade-terran-buildingarmor",
+        "LeaderAlias": "NeosteelFrame",
+        "EditorCategories": "Race:Terran,UpgradeType:Spell",
+        "$tokens": {
+          "ID": {
+            "type": "string",
+            "value": ""
+          }
+        },
         "EffectArray": [
-          {
-            "Reference": "Unit,CommandCenter,LifeArmor",
-            "Value": "2.000000"
-          },
-          {
-            "Reference": "Unit,CommandCenter,LifeArmorLevel",
-            "Value": "2"
-          },
-          {
-            "Reference": "Unit,CommandCenterFlying,LifeArmor",
-            "Value": "2.000000"
-          },
-          {
-            "Reference": "Unit,CommandCenterFlying,LifeArmorLevel",
-            "Value": "2"
-          },
-          {
-            "Reference": "Unit,OrbitalCommand,LifeArmor",
-            "Value": "2.000000"
-          },
-          {
-            "Reference": "Unit,OrbitalCommand,LifeArmorLevel",
-            "Value": "2"
-          },
-          {
-            "Reference": "Unit,OrbitalCommandFlying,LifeArmor",
-            "Value": "2.000000"
-          },
-          {
-            "Reference": "Unit,OrbitalCommandFlying,LifeArmorLevel",
-            "Value": "2"
-          },
-          {
-            "Reference": "Unit,PlanetaryFortress,LifeArmor",
-            "Value": "2.000000"
-          },
-          {
-            "Reference": "Unit,PlanetaryFortress,LifeArmorLevel",
-            "Value": "2"
-          },
-          {
-            "Reference": "Unit,Refinery,LifeArmor",
-            "Value": "2.000000"
-          },
-          {
-            "Reference": "Unit,Refinery,LifeArmorLevel",
-            "Value": "2"
-          },
-          {
-            "Reference": "Unit,SupplyDepot,LifeArmor",
-            "Value": "2.000000"
-          },
-          {
-            "Reference": "Unit,SupplyDepot,LifeArmorLevel",
-            "Value": "2"
-          },
-          {
-            "Reference": "Unit,SupplyDepotLowered,LifeArmor",
-            "Value": "2.000000"
-          },
-          {
-            "Reference": "Unit,SupplyDepotLowered,LifeArmorLevel",
-            "Value": "2"
-          },
-          {
-            "Reference": "Unit,EngineeringBay,LifeArmor",
-            "Value": "2.000000"
-          },
-          {
-            "Reference": "Unit,EngineeringBay,LifeArmorLevel",
-            "Value": "2"
-          },
-          {
-            "Reference": "Unit,Barracks,LifeArmor",
-            "Value": "2.000000"
-          },
-          {
-            "Reference": "Unit,Barracks,LifeArmorLevel",
-            "Value": "2"
-          },
-          {
-            "Reference": "Unit,BarracksFlying,LifeArmor",
-            "Value": "2.000000"
-          },
-          {
-            "Reference": "Unit,BarracksFlying,LifeArmorLevel",
-            "Value": "2"
-          },
-          {
-            "Reference": "Unit,StarportReactor,LifeArmor",
-            "Value": "2.000000"
-          },
-          {
-            "Reference": "Unit,StarportReactor,LifeArmorLevel",
-            "Value": "2"
-          },
-          {
-            "Reference": "Unit,FactoryReactor,LifeArmor",
-            "Value": "2.000000"
-          },
-          {
-            "Reference": "Unit,FactoryReactor,LifeArmorLevel",
-            "Value": "2"
-          },
-          {
-            "Reference": "Unit,BarracksReactor,LifeArmor",
-            "Value": "2.000000"
-          },
-          {
-            "Reference": "Unit,BarracksReactor,LifeArmorLevel",
-            "Value": "2"
-          },
-          {
-            "Reference": "Unit,Reactor,LifeArmor",
-            "Value": "2.000000"
-          },
-          {
-            "Reference": "Unit,Reactor,LifeArmorLevel",
-            "Value": "2"
-          },
-          {
-            "Reference": "Unit,TechLab,LifeArmor",
-            "Value": "2.000000"
-          },
-          {
-            "Reference": "Unit,TechLab,LifeArmorLevel",
-            "Value": "2"
-          },
-          {
-            "Reference": "Unit,BarracksTechLab,LifeArmor",
-            "Value": "2.000000"
-          },
-          {
-            "Reference": "Unit,BarracksTechLab,LifeArmorLevel",
-            "Value": "2"
-          },
-          {
-            "Reference": "Unit,FactoryTechLab,LifeArmor",
-            "Value": "2.000000"
-          },
-          {
-            "Reference": "Unit,FactoryTechLab,LifeArmorLevel",
-            "Value": "2"
-          },
-          {
-            "Reference": "Unit,StarportTechLab,LifeArmor",
-            "Value": "2.000000"
-          },
-          {
-            "Reference": "Unit,StarportTechLab,LifeArmorLevel",
-            "Value": "2"
-          },
-          {
-            "Reference": "Unit,GhostAcademy,LifeArmor",
-            "Value": "2.000000"
-          },
-          {
-            "Reference": "Unit,GhostAcademy,LifeArmorLevel",
-            "Value": "2"
-          },
-          {
-            "Reference": "Unit,MissileTurret,LifeArmor",
-            "Value": "2.000000"
-          },
-          {
-            "Reference": "Unit,MissileTurret,LifeArmorLevel",
-            "Value": "2"
-          },
-          {
-            "Reference": "Unit,SensorTower,LifeArmor",
-            "Value": "2.000000"
-          },
-          {
-            "Reference": "Unit,SensorTower,LifeArmorLevel",
-            "Value": "2"
-          },
-          {
-            "Reference": "Unit,Bunker,LifeArmor",
-            "Value": "2.000000"
-          },
-          {
-            "Reference": "Unit,Bunker,LifeArmorLevel",
-            "Value": "2"
-          },
-          {
-            "Reference": "Unit,Factory,LifeArmor",
-            "Value": "2.000000"
-          },
-          {
-            "Reference": "Unit,Factory,LifeArmorLevel",
-            "Value": "2"
-          },
-          {
-            "Reference": "Unit,FactoryFlying,LifeArmor",
-            "Value": "2.000000"
-          },
-          {
-            "Reference": "Unit,FactoryFlying,LifeArmorLevel",
-            "Value": "2"
-          },
-          {
-            "Reference": "Unit,Armory,LifeArmor",
-            "Value": "2.000000"
-          },
-          {
-            "Reference": "Unit,Armory,LifeArmorLevel",
-            "Value": "2"
-          },
-          {
-            "Reference": "Unit,Starport,LifeArmor",
-            "Value": "2.000000"
-          },
-          {
-            "Reference": "Unit,Starport,LifeArmorLevel",
-            "Value": "2"
-          },
-          {
-            "Reference": "Unit,StarportFlying,LifeArmor",
-            "Value": "2.000000"
-          },
-          {
-            "Reference": "Unit,StarportFlying,LifeArmorLevel",
-            "Value": "2"
-          },
-          {
-            "Reference": "Unit,FusionCore,LifeArmor",
-            "Value": "2.000000"
-          },
-          {
-            "Reference": "Unit,FusionCore,LifeArmorLevel",
-            "Value": "2"
-          },
-          {
-            "Reference": "Unit,PointDefenseDrone,LifeArmorLevel",
-            "Value": "2"
-          },
-          {
-            "Reference": "Unit,PointDefenseDrone,LifeArmor",
-            "Value": "2"
-          },
-          {
-            "Reference": "Unit,BypassArmorDrone,LifeArmorLevel",
-            "Value": "2"
-          },
-          {
-            "Reference": "Unit,BypassArmorDrone,LifeArmor",
-            "Value": "2"
-          },
-          {
-            "Reference": "Unit,RavenRepairDrone,LifeArmorLevel",
-            "Value": "2"
-          },
-          {
-            "Reference": "Unit,RavenRepairDrone,LifeArmor",
-            "Value": "2"
-          },
           {
             "Reference": "Abil,BunkerTransport,MaxCargoCount",
             "Value": "2"
@@ -742,56 +554,19 @@
             "Operation": "Set",
             "Reference": "Actor,Bunker,GroupIcon.Image[0]",
             "Value": "Assets\\Textures\\wireframe-terran-bunker-neosteelframe.dds"
-          },
-          {
-            "Reference": "Unit,RefineryRich,LifeArmor",
-            "Value": "2"
-          },
-          {
-            "Reference": "Unit,RefineryRich,LifeArmorLevel",
-            "Value": "2"
           }
         ],
-        "EditorCategories": "Race:Terran,UpgradeType:ArmorBonus",
         "ScoreResult": "BuildOrder",
+        "Icon": "btn-upgrade-terran-neosteelframe",
         "AffectedUnitArray": [
-          "Armory",
-          "Barracks",
-          "BarracksFlying",
           "Bunker",
           "CommandCenter",
-          "CommandCenterFlying",
-          "EngineeringBay",
-          "Factory",
-          "FactoryFlying",
-          "FusionCore",
-          "GhostAcademy",
-          "MissileTurret",
-          "OrbitalCommand",
-          "OrbitalCommandFlying",
-          "PlanetaryFortress",
-          "Reactor",
-          "BarracksReactor",
-          "FactoryReactor",
-          "StarportReactor",
-          "Refinery",
-          "SensorTower",
-          "Starport",
-          "StarportFlying",
-          "SupplyDepot",
-          "SupplyDepotLowered",
-          "TechLab",
-          "BarracksTechLab",
-          "FactoryTechLab",
-          "StarportTechLab",
-          "PointDefenseDrone",
-          "BypassArmorDrone",
-          "RavenRepairDrone",
-          "RefineryRich"
+          "CommandCenterFlying"
         ],
-        "ScoreAmount": 300,
-        "InfoTooltipPriority": 41,
-        "id": "TerranBuildingArmor"
+        "ScoreAmount": 200,
+        "Race": "Terr",
+        "InfoTooltipPriority": 21,
+        "id": "NeosteelFrame"
       },
       "HiSecAutoTracking": {
         "class": "CUpgrade",
@@ -799,13 +574,23 @@
           "UpgradeCheat": 1,
           "TechTreeCheat": 1
         },
-        "Name": "Hi-Sec Auto Tracking",
+        "Name": {
+          "enUS": "Hi-Sec Auto Tracking",
+          "ruRU": "Hi-Sec Auto Tracking"
+        },
         "MaxLevel": 1,
         "Alert": "ResearchComplete",
         "ScoreCount": "MiscTechnologyCount",
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "HiSecAutoTracking",
+        "EditorCategories": "Race:Terran,UpgradeType:Spell",
+        "$tokens": {
+          "ID": {
+            "type": "string",
+            "value": ""
+          }
+        },
         "InfoTooltipPriority": 31,
         "id": "HiSecAutoTracking",
         "Icon": "btn-upgrade-terran-hisecautotracking",
@@ -831,7 +616,6 @@
             "Value": "1"
           }
         ],
-        "EditorCategories": "Race:Terran,UpgradeType:Talents",
         "ScoreResult": "BuildOrder",
         "AffectedUnitArray": [
           "AutoTurret",
@@ -847,15 +631,24 @@
         "Flags": {
           "UpgradeCheat": 1
         },
-        "Name": "Terran Infantry Armor Level 1",
+        "Name": {
+          "enUS": "Terran Infantry Armor Level 1",
+          "ruRU": "Terran Infantry Armor Level 1"
+        },
         "MaxLevel": 1,
         "Alert": "UpgradeComplete",
         "ScoreCount": "ArmorTechnologyCount",
         "ScoreValue": "ArmorTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "TechInfantryArmors",
+        "EditorCategories": "Race:Terran,UpgradeType:Bonus",
+        "$tokens": {
+          "ID": {
+            "type": "string",
+            "value": ""
+          }
+        },
         "Race": "Terr",
-        "EditorCategories": "Race:Terran,UpgradeType:ArmorBonus",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -1001,15 +794,24 @@
         "Flags": {
           "UpgradeCheat": 1
         },
-        "Name": "Terran Infantry Armor Level 2",
+        "Name": {
+          "enUS": "Terran Infantry Armor Level 2",
+          "ruRU": "Terran Infantry Armor Level 2"
+        },
         "MaxLevel": 1,
         "Alert": "UpgradeComplete",
         "ScoreCount": "ArmorTechnologyCount",
         "ScoreValue": "ArmorTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "TechInfantryArmors",
+        "EditorCategories": "Race:Terran,UpgradeType:Bonus",
+        "$tokens": {
+          "ID": {
+            "type": "string",
+            "value": ""
+          }
+        },
         "Race": "Terr",
-        "EditorCategories": "Race:Terran,UpgradeType:ArmorBonus",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -1152,15 +954,24 @@
         "Flags": {
           "UpgradeCheat": 1
         },
-        "Name": "Terran Infantry Armor Level 3",
+        "Name": {
+          "enUS": "Terran Infantry Armor Level 3",
+          "ruRU": "Terran Infantry Armor Level 3"
+        },
         "MaxLevel": 1,
         "Alert": "UpgradeComplete",
         "ScoreCount": "ArmorTechnologyCount",
         "ScoreValue": "ArmorTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "TechInfantryArmors",
+        "EditorCategories": "Race:Terran,UpgradeType:Bonus",
+        "$tokens": {
+          "ID": {
+            "type": "string",
+            "value": ""
+          }
+        },
         "Race": "Terr",
-        "EditorCategories": "Race:Terran,UpgradeType:ArmorBonus",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -1303,16 +1114,25 @@
         "Flags": {
           "UpgradeCheat": 1
         },
-        "Name": "Personal Cloaking",
+        "Name": {
+          "enUS": "Personal Cloaking",
+          "ruRU": "Personal Cloaking"
+        },
         "MaxLevel": 1,
         "Alert": "ResearchComplete",
         "ScoreCount": "MiscTechnologyCount",
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "PersonalCloaking",
+        "EditorCategories": "Race:Terran,UpgradeType:Spell",
+        "$tokens": {
+          "ID": {
+            "type": "string",
+            "value": ""
+          }
+        },
         "Race": "Terr",
         "Icon": "btn-ability-terran-cloak-color",
-        "EditorCategories": "Race:Terran,UpgradeType:SpellResearch",
         "ScoreResult": "BuildOrder",
         "AffectedUnitArray": [
           "Ghost",
@@ -1328,13 +1148,23 @@
           "UpgradeCheat": 1,
           "TechTreeCheat": 1
         },
-        "Name": "Infernal Pre-Igniter",
+        "Name": {
+          "enUS": "Infernal Pre-igniter",
+          "ruRU": "Infernal Pre-igniter"
+        },
         "MaxLevel": 1,
         "Alert": "ResearchComplete",
         "ScoreCount": "MiscTechnologyCount",
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "HighCapacityBarrels",
+        "EditorCategories": "Race:Terran,UpgradeType:Spell",
+        "$tokens": {
+          "ID": {
+            "type": "string",
+            "value": ""
+          }
+        },
         "Race": "Terr",
         "Icon": "btn-upgrade-terran-infernalpreigniter",
         "EffectArray": [
@@ -1343,79 +1173,55 @@
             "Value": "5"
           },
           {
-            "Operation": "Set",
-            "Reference": "Button,HellionTank,Icon",
-            "Value": "Assets\\Textures\\btn-unit-terran-helliontank-junker.dds"
-          },
-          {
-            "Operation": "Set",
-            "Reference": "Actor,HellionTank,Wireframe.Image[0]",
-            "Value": "Assets\\Textures\\wireframe-terran-helliontank-junker.dds"
-          },
-          {
-            "Operation": "Set",
-            "Reference": "Actor,HellionTank,GroupIcon.Image[0]",
-            "Value": "Assets\\Textures\\btn-unit-terran-helliontank-junker.dds"
-          },
-          {
             "Reference": "Effect,HellionTankDamage,AttributeBonus[Light]",
             "Value": "12"
           }
         ],
-        "EditorCategories": "Race:Terran,UpgradeType:SpellResearch",
         "ScoreResult": "BuildOrder",
         "ScoreAmount": 200,
-        "id": "HighCapacityBarrels",
         "AffectedUnitArray": [
           "Hellion",
           "HellionTank"
-        ]
+        ],
+        "id": "HighCapacityBarrels"
       },
-      "DrillClaws": {
+      "HurricaneThrusters": {
         "class": "CUpgrade",
         "Flags": {
           "UpgradeCheat": 1,
           "TechTreeCheat": 1
         },
-        "Name": "Drilling Claws",
+        "Name": {
+          "enUS": "Hurricane Thrusters"
+        },
         "MaxLevel": 1,
-        "Alert": "ResearchComplete",
+        "Alert": "UpgradeComplete",
         "ScoreCount": "MiscTechnologyCount",
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
-        "LeaderAlias": "DrillClaws",
-        "Icon": "btn-upgrade-terran-researchdrillingclaws",
+        "LeaderAlias": "HurricaneThrusters",
+        "EditorCategories": "Race:Terran,UpgradeType:Spell",
+        "$tokens": {
+          "ID": {
+            "type": "string",
+            "value": ""
+          }
+        },
+        "Icon": "btn-upgrade-mengsk-armory-smartservos",
         "Race": "Terr",
-        "ScoreAmount": 150,
+        "ScoreAmount": 200,
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
-            "Operation": "Subtract",
-            "Reference": "Abil,WidowMineBurrow,InfoArray[0].SectionArray[Actor].DurationArray[Duration]",
-            "Value": "1.500000"
-          },
-          {
-            "Operation": "Subtract",
-            "Reference": "Abil,WidowMineBurrow,InfoArray[0].SectionArray[Stats].DurationArray[Delay]",
-            "Value": "1.500000"
-          },
-          {
-            "Operation": "Subtract",
-            "Reference": "Abil,WidowMineUnburrow,InfoArray[0].SectionArray[Actor].DurationArray[Duration]",
-            "Value": "0.500000"
-          },
-          {
-            "Operation": "Subtract",
-            "Reference": "Abil,WidowMineUnburrow,InfoArray[0].SectionArray[Stats].DurationArray[Duration]",
-            "Value": "0.500000"
+            "Operation": "Set",
+            "Reference": "Unit,Cyclone,Speed",
+            "Value": "3.375000"
           }
         ],
-        "EditorCategories": "Race:Terran,UpgradeType:Talents",
         "AffectedUnitArray": [
-          "WidowMine",
-          "WidowMineBurrowed"
+          "Cyclone"
         ],
-        "id": "DrillClaws"
+        "id": "HurricaneThrusters"
       },
       "SmartServos": {
         "class": "CUpgrade",
@@ -1423,18 +1229,26 @@
           "UpgradeCheat": 1,
           "TechTreeCheat": 1
         },
-        "Name": "Smart Servos",
+        "Name": {
+          "enUS": "Smart Servos"
+        },
         "MaxLevel": 1,
         "Alert": "ResearchComplete",
         "ScoreCount": "MiscTechnologyCount",
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "SmartServos",
+        "EditorCategories": "Race:Terran,UpgradeType:Spell",
+        "$tokens": {
+          "ID": {
+            "type": "string",
+            "value": ""
+          }
+        },
         "Icon": "btn-upgrade-terran-transformationservos",
         "Race": "Terr",
         "ScoreAmount": 200,
         "ScoreResult": "BuildOrder",
-        "EditorCategories": "Race:Terran,UpgradeType:Talents",
         "EffectArray": [
           {
             "Operation": "Subtract",
@@ -1591,50 +1405,84 @@
         ],
         "id": "SmartServos"
       },
-      "HurricaneThrusters": {
+      "DrillClaws": {
         "class": "CUpgrade",
         "Flags": {
           "UpgradeCheat": 1,
           "TechTreeCheat": 1
         },
-        "Name": "Hurricane Engines",
+        "Name": {
+          "enUS": "Drilling Claws",
+          "ruRU": "Drilling Claws"
+        },
         "MaxLevel": 1,
-        "Alert": "UpgradeComplete",
+        "Alert": "ResearchComplete",
         "ScoreCount": "MiscTechnologyCount",
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
-        "LeaderAlias": "HurricaneThrusters",
-        "Icon": "btn-upgrade-mengsk-armory-smartservos",
+        "LeaderAlias": "DrillClaws",
+        "EditorCategories": "Race:Terran,UpgradeType:Spell",
+        "$tokens": {
+          "ID": {
+            "type": "string",
+            "value": ""
+          }
+        },
+        "Icon": "btn-upgrade-terran-researchdrillingclaws",
         "Race": "Terr",
-        "ScoreAmount": 200,
+        "ScoreAmount": 150,
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
-            "Operation": "Set",
-            "Reference": "Unit,Cyclone,Speed",
-            "Value": "3.375000"
+            "Operation": "Subtract",
+            "Reference": "Abil,WidowMineBurrow,InfoArray[0].SectionArray[Actor].DurationArray[Duration]",
+            "Value": "1.500000"
+          },
+          {
+            "Operation": "Subtract",
+            "Reference": "Abil,WidowMineBurrow,InfoArray[0].SectionArray[Stats].DurationArray[Delay]",
+            "Value": "1.500000"
+          },
+          {
+            "Operation": "Subtract",
+            "Reference": "Abil,WidowMineUnburrow,InfoArray[0].SectionArray[Actor].DurationArray[Duration]",
+            "Value": "0.500000"
+          },
+          {
+            "Operation": "Subtract",
+            "Reference": "Abil,WidowMineUnburrow,InfoArray[0].SectionArray[Stats].DurationArray[Duration]",
+            "Value": "0.500000"
           }
         ],
-        "EditorCategories": "Race:Terran,UpgradeType:Talents",
         "AffectedUnitArray": [
-          "Cyclone"
+          "WidowMine",
+          "WidowMineBurrowed"
         ],
-        "id": "HurricaneThrusters"
+        "id": "DrillClaws"
       },
       "TerranVehicleWeaponsLevel1": {
         "class": "CUpgrade",
         "Flags": {
           "UpgradeCheat": 1
         },
-        "Name": "Terran Vehicle Weapons Level 1",
+        "Name": {
+          "enUS": "Terran Vehicle Weapons Level 1",
+          "ruRU": "Terran Vehicle Weapons Level 1"
+        },
         "MaxLevel": 1,
         "Alert": "UpgradeComplete",
         "ScoreCount": "WeaponTechnologyCount",
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "TechVehicleWeapons",
+        "EditorCategories": "Race:Terran,UpgradeType:Bonus",
+        "$tokens": {
+          "ID": {
+            "type": "string",
+            "value": ""
+          }
+        },
         "Race": "Terr",
-        "EditorCategories": "Race:Terran,UpgradeType:AttackBonus",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -1794,22 +1642,20 @@
             "Value": "1"
           },
           {
+            "Operation": "Set",
             "Reference": "Weapon,LanceMissileLaunchers,Icon",
-            "Value": "Assets\\Textures\\btn-upgrade-terran-vehicleweaponslevel1.dds",
-            "Operation": "Set"
+            "Value": "Assets\\Textures\\btn-upgrade-terran-vehicleweaponslevel1.dds"
           },
           {
-            "Operation": "Add",
             "Reference": "Weapon,TyphoonMissilePod,Level",
             "Value": "1"
           },
           {
+            "Operation": "Set",
             "Reference": "Weapon,TyphoonMissilePod,Icon",
-            "Value": "Assets\\Textures\\btn-upgrade-terran-vehicleweaponslevel1.dds",
-            "Operation": "Set"
+            "Value": "Assets\\Textures\\btn-upgrade-terran-vehicleweaponslevel1.dds"
           },
           {
-            "Operation": "Add",
             "Reference": "Effect,LanceMissileLaunchersDamage,AttributeBonus[Massive]",
             "Value": "1"
           }
@@ -1840,15 +1686,24 @@
         "Flags": {
           "UpgradeCheat": 1
         },
-        "Name": "Terran Vehicle Weapons Level 2",
+        "Name": {
+          "enUS": "Terran Vehicle Weapons Level 2",
+          "ruRU": "Terran Vehicle Weapons Level 2"
+        },
         "MaxLevel": 1,
         "Alert": "UpgradeComplete",
         "ScoreCount": "WeaponTechnologyCount",
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "TechVehicleWeapons",
+        "EditorCategories": "Race:Terran,UpgradeType:Bonus",
+        "$tokens": {
+          "ID": {
+            "type": "string",
+            "value": ""
+          }
+        },
         "Race": "Terr",
-        "EditorCategories": "Race:Terran,UpgradeType:AttackBonus",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -2008,22 +1863,20 @@
             "Value": "1"
           },
           {
+            "Operation": "Set",
             "Reference": "Weapon,LanceMissileLaunchers,Icon",
-            "Value": "Assets\\Textures\\btn-upgrade-terran-vehicleweaponslevel2.dds",
-            "Operation": "Set"
+            "Value": "Assets\\Textures\\btn-upgrade-terran-vehicleweaponslevel2.dds"
           },
           {
-            "Operation": "Add",
             "Reference": "Weapon,TyphoonMissilePod,Level",
             "Value": "1"
           },
           {
+            "Operation": "Set",
             "Reference": "Weapon,TyphoonMissilePod,Icon",
-            "Value": "Assets\\Textures\\btn-upgrade-terran-vehicleweaponslevel2.dds",
-            "Operation": "Set"
+            "Value": "Assets\\Textures\\btn-upgrade-terran-vehicleweaponslevel2.dds"
           },
           {
-            "Operation": "Add",
             "Reference": "Effect,LanceMissileLaunchersDamage,AttributeBonus[Massive]",
             "Value": "1"
           }
@@ -2051,15 +1904,24 @@
         "Flags": {
           "UpgradeCheat": 1
         },
-        "Name": "Terran Vehicle Weapons Level 3",
+        "Name": {
+          "enUS": "Terran Vehicle Weapons Level 3",
+          "ruRU": "Terran Vehicle Weapons Level 3"
+        },
         "MaxLevel": 1,
         "Alert": "UpgradeComplete",
         "ScoreCount": "WeaponTechnologyCount",
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "TechVehicleWeapons",
+        "EditorCategories": "Race:Terran,UpgradeType:Bonus",
+        "$tokens": {
+          "ID": {
+            "type": "string",
+            "value": ""
+          }
+        },
         "Race": "Terr",
-        "EditorCategories": "Race:Terran,UpgradeType:AttackBonus",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -2219,22 +2081,20 @@
             "Value": "1"
           },
           {
+            "Operation": "Set",
             "Reference": "Weapon,LanceMissileLaunchers,Icon",
-            "Value": "Assets\\Textures\\btn-upgrade-terran-vehicleweaponslevel3.dds",
-            "Operation": "Set"
+            "Value": "Assets\\Textures\\btn-upgrade-terran-vehicleweaponslevel3.dds"
           },
           {
-            "Operation": "Add",
             "Reference": "Weapon,TyphoonMissilePod,Level",
             "Value": "1"
           },
           {
+            "Operation": "Set",
             "Reference": "Weapon,TyphoonMissilePod,Icon",
-            "Value": "Assets\\Textures\\btn-upgrade-terran-vehicleweaponslevel3.dds",
-            "Operation": "Set"
+            "Value": "Assets\\Textures\\btn-upgrade-terran-vehicleweaponslevel3.dds"
           },
           {
-            "Operation": "Add",
             "Reference": "Effect,LanceMissileLaunchersDamage,AttributeBonus[Massive]",
             "Value": "1"
           }
@@ -2262,15 +2122,24 @@
         "Flags": {
           "UpgradeCheat": 1
         },
-        "Name": "Terran Ship Weapons Level 1",
+        "Name": {
+          "enUS": "Terran Ship Weapons Level 1",
+          "ruRU": "Terran Ship Weapons Level 1"
+        },
         "MaxLevel": 1,
         "Alert": "UpgradeComplete",
         "ScoreCount": "WeaponTechnologyCount",
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "TerranShipWeapons",
+        "EditorCategories": "Race:Terran,UpgradeType:Bonus",
+        "$tokens": {
+          "ID": {
+            "type": "string",
+            "value": ""
+          }
+        },
         "Race": "Terr",
-        "EditorCategories": "Race:Terran,UpgradeType:AttackBonus",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -2392,15 +2261,24 @@
         "Flags": {
           "UpgradeCheat": 1
         },
-        "Name": "Terran Ship Weapons Level 2",
+        "Name": {
+          "enUS": "Terran Ship Weapons Level 2",
+          "ruRU": "Terran Ship Weapons Level 2"
+        },
         "MaxLevel": 1,
         "Alert": "UpgradeComplete",
         "ScoreCount": "WeaponTechnologyCount",
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "TerranShipWeapons",
+        "EditorCategories": "Race:Terran,UpgradeType:Bonus",
+        "$tokens": {
+          "ID": {
+            "type": "string",
+            "value": ""
+          }
+        },
         "Race": "Terr",
-        "EditorCategories": "Race:Terran,UpgradeType:AttackBonus",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -2519,15 +2397,24 @@
         "Flags": {
           "UpgradeCheat": 1
         },
-        "Name": "Terran Ship Weapons Level 3",
+        "Name": {
+          "enUS": "Terran Ship Weapons Level 3",
+          "ruRU": "Terran Ship Weapons Level 3"
+        },
         "MaxLevel": 1,
         "Alert": "UpgradeComplete",
         "ScoreCount": "WeaponTechnologyCount",
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "TerranShipWeapons",
+        "EditorCategories": "Race:Terran,UpgradeType:Bonus",
+        "$tokens": {
+          "ID": {
+            "type": "string",
+            "value": ""
+          }
+        },
         "Race": "Terr",
-        "EditorCategories": "Race:Terran,UpgradeType:AttackBonus",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -2646,15 +2533,24 @@
         "Flags": {
           "UpgradeCheat": 1
         },
-        "Name": "Terran Vehicle and Ship Plating Level 1",
+        "Name": {
+          "enUS": "Terran Vehicle And Ship Plating Level 1",
+          "ruRU": "Terran Vehicle And Ship Plating Level 1"
+        },
         "MaxLevel": 1,
         "Alert": "UpgradeComplete",
         "ScoreCount": "ArmorTechnologyCount",
         "ScoreValue": "ArmorTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "TerranVehicleAndShipArmors",
+        "EditorCategories": "Race:Terran,UpgradeType:Bonus",
+        "$tokens": {
+          "ID": {
+            "type": "string",
+            "value": ""
+          }
+        },
         "Race": "Terr",
-        "EditorCategories": "Race:Terran,UpgradeType:ArmorBonus",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -2906,15 +2802,24 @@
         "Flags": {
           "UpgradeCheat": 1
         },
-        "Name": "Terran Vehicle and Ship Plating Level 2",
+        "Name": {
+          "enUS": "Terran Vehicle And Ship Plating Level 2",
+          "ruRU": "Terran Vehicle And Ship Plating Level 2"
+        },
         "MaxLevel": 1,
         "Alert": "UpgradeComplete",
         "ScoreCount": "ArmorTechnologyCount",
         "ScoreValue": "ArmorTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "TerranVehicleAndShipArmors",
+        "EditorCategories": "Race:Terran,UpgradeType:Bonus",
+        "$tokens": {
+          "ID": {
+            "type": "string",
+            "value": ""
+          }
+        },
         "Race": "Terr",
-        "EditorCategories": "Race:Terran,UpgradeType:ArmorBonus",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -3163,15 +3068,24 @@
         "Flags": {
           "UpgradeCheat": 1
         },
-        "Name": "Terran Vehicle and Ship Plating Level 3",
+        "Name": {
+          "enUS": "Terran Vehicle And Ship Plating Level 3",
+          "ruRU": "Terran Vehicle And Ship Plating Level 3"
+        },
         "MaxLevel": 1,
         "Alert": "UpgradeComplete",
         "ScoreCount": "ArmorTechnologyCount",
         "ScoreValue": "ArmorTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "TerranVehicleAndShipArmors",
+        "EditorCategories": "Race:Terran,UpgradeType:Bonus",
+        "$tokens": {
+          "ID": {
+            "type": "string",
+            "value": ""
+          }
+        },
         "Race": "Terr",
-        "EditorCategories": "Race:Terran,UpgradeType:ArmorBonus",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -3415,180 +3329,27 @@
         "LeaderLevel": 3,
         "$Phased": "TerranVehicleAndShipArmorsLevel1"
       },
-      "TerranShipArmorsLevel3": {
-        "class": "CUpgrade",
-        "Flags": {
-          "UpgradeCheat": 1
-        },
-        "Name": "Terran Ship Plating Level 3",
-        "MaxLevel": 1,
-        "Alert": "UpgradeComplete",
-        "ScoreCount": "ArmorTechnologyCount",
-        "ScoreValue": "ArmorTechnologyValue",
-        "WebPriority": 0,
-        "LeaderAlias": "TerranShipArmors",
-        "Race": "Terr",
-        "EditorCategories": "Race:Terran,UpgradeType:ArmorBonus",
-        "ScoreResult": "BuildOrder",
-        "EffectArray": [
-          {
-            "Reference": "Unit,Banshee,LifeArmorLevel",
-            "Value": "1"
-          },
-          {
-            "Reference": "Unit,Banshee,LifeArmor",
-            "Value": "1"
-          },
-          {
-            "Reference": "Unit,Battlecruiser,LifeArmorLevel",
-            "Value": "1"
-          },
-          {
-            "Reference": "Unit,Battlecruiser,LifeArmor",
-            "Value": "1"
-          },
-          {
-            "Reference": "Unit,Medivac,LifeArmorLevel",
-            "Value": "1"
-          },
-          {
-            "Reference": "Unit,Medivac,LifeArmor",
-            "Value": "1"
-          },
-          {
-            "Reference": "Unit,Raven,LifeArmorLevel",
-            "Value": "1"
-          },
-          {
-            "Reference": "Unit,Raven,LifeArmor",
-            "Value": "1"
-          },
-          {
-            "Reference": "Unit,VikingAssault,LifeArmor",
-            "Value": "1.000000"
-          },
-          {
-            "Reference": "Unit,VikingAssault,LifeArmorLevel",
-            "Value": "1"
-          },
-          {
-            "Reference": "Unit,VikingFighter,LifeArmor",
-            "Value": "1.000000"
-          },
-          {
-            "Reference": "Unit,VikingFighter,LifeArmorLevel",
-            "Value": "1"
-          },
-          {
-            "Operation": "Set",
-            "Reference": "Actor,Banshee,LifeArmorIcon",
-            "Value": "Assets\\Textures\\btn-upgrade-terran-shipplatinglevel3.dds"
-          },
-          {
-            "Operation": "Set",
-            "Reference": "Actor,Battlecruiser,LifeArmorIcon",
-            "Value": "Assets\\Textures\\btn-upgrade-terran-shipplatinglevel3.dds"
-          },
-          {
-            "Operation": "Set",
-            "Reference": "Actor,Raven,LifeArmorIcon",
-            "Value": "Assets\\Textures\\btn-upgrade-terran-shipplatinglevel3.dds"
-          },
-          {
-            "Operation": "Set",
-            "Reference": "Actor,Medivac,LifeArmorIcon",
-            "Value": "Assets\\Textures\\btn-upgrade-terran-shipplatinglevel3.dds"
-          },
-          {
-            "Operation": "Set",
-            "Reference": "Actor,VikingAssault,LifeArmorIcon",
-            "Value": "Assets\\Textures\\btn-upgrade-terran-shipplatinglevel3.dds"
-          },
-          {
-            "Operation": "Set",
-            "Reference": "Actor,VikingFighter,LifeArmorIcon",
-            "Value": "Assets\\Textures\\btn-upgrade-terran-shipplatinglevel3.dds"
-          },
-          {
-            "Operation": "Set",
-            "Reference": "Actor,Liberator,LifeArmorIcon",
-            "Value": "Assets\\Textures\\btn-upgrade-terran-shipplatinglevel3.dds"
-          },
-          {
-            "Operation": "Set",
-            "Reference": "Actor,LiberatorAG,LifeArmorIcon",
-            "Value": "Assets\\Textures\\btn-upgrade-terran-shipplatinglevel3.dds"
-          },
-          {
-            "Reference": "Unit,Liberator,LifeArmor",
-            "Value": "1"
-          },
-          {
-            "Reference": "Unit,Liberator,LifeArmorLevel",
-            "Value": "1"
-          },
-          {
-            "Reference": "Unit,LiberatorAG,LifeArmor",
-            "Value": "1"
-          },
-          {
-            "Reference": "Unit,LiberatorAG,LifeArmorLevel",
-            "Value": "1"
-          },
-          {
-            "Operation": "Set",
-            "Reference": "Actor,LiberatorAG,LifeArmorIcon",
-            "Value": "Assets\\Textures\\btn-upgrade-terran-shipplatinglevel3.dds"
-          }
-        ],
-        "AffectedUnitArray": [
-          "Banshee",
-          "Battlecruiser",
-          "Medivac",
-          "Raven",
-          "VikingAssault",
-          "VikingFighter"
-        ],
-        "id": "TerranShipArmorsLevel3",
-        "Icon": "btn-upgrade-terran-shipplatinglevel3",
-        "ScoreAmount": 600,
-        "LeaderLevel": 3,
-        "$Phased": "TerranShipArmorsLevel1"
-      },
-      "BansheeCloak": {
-        "class": "CUpgrade",
-        "Flags": {
-          "UpgradeCheat": 1
-        },
-        "Name": "Cloaking Field",
-        "MaxLevel": 1,
-        "Alert": "ResearchComplete",
-        "ScoreCount": "MiscTechnologyCount",
-        "ScoreValue": "MiscTechnologyValue",
-        "WebPriority": 1,
-        "LeaderAlias": "BansheeCloak",
-        "Race": "Terr",
-        "Icon": "btn-ability-terran-cloak-color",
-        "EditorCategories": "Race:Terran,UpgradeType:SpellResearch",
-        "ScoreResult": "BuildOrder",
-        "AffectedUnitArray": [
-          "Banshee"
-        ],
-        "ScoreAmount": 200,
-        "id": "BansheeCloak"
-      },
       "BansheeSpeed": {
         "class": "CUpgrade",
         "Flags": {
           "UpgradeCheat": 1
         },
-        "Name": "Hyperflight Rotors",
+        "Name": {
+          "enUS": "Hyperflight Rotors"
+        },
         "MaxLevel": 1,
         "Alert": "ResearchComplete",
         "ScoreCount": "MiscTechnologyCount",
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "BansheeSpeed",
+        "EditorCategories": "Race:Terran,UpgradeType:Spell",
+        "$tokens": {
+          "ID": {
+            "type": "string",
+            "value": ""
+          }
+        },
         "Icon": "btn-upgrade-terran-hyperflightrotors",
         "Race": "Terr",
         "ScoreAmount": 250,
@@ -3599,7 +3360,6 @@
             "Value": "1"
           }
         ],
-        "EditorCategories": "Race:Terran,UpgradeType:Talents",
         "AffectedUnitArray": [
           "Banshee"
         ],
@@ -3611,60 +3371,86 @@
           "UpgradeCheat": 1,
           "TechTreeCheat": 1
         },
-        "Name": "Interference Matrix",
+        "Name": {
+          "enUS": "Interference Matrix"
+        },
         "MaxLevel": 1,
         "Alert": "ResearchComplete",
         "ScoreCount": "MiscTechnologyCount",
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "InterferenceMatrix",
+        "EditorCategories": "Race:Terran,UpgradeType:Spell",
+        "$tokens": {
+          "ID": {
+            "type": "string",
+            "value": ""
+          }
+        },
         "Icon": "btn-upgrade-terran-interferencematrix",
         "Race": "Terr",
         "ScoreAmount": 100,
         "ScoreResult": "BuildOrder",
-        "EditorCategories": "Race:Terran,UpgradeType:SpellResearch",
         "AffectedUnitArray": [
           "Raven"
         ],
         "id": "InterferenceMatrix"
       },
-      "HunterSeeker": {
+      "BansheeCloak": {
         "class": "CUpgrade",
         "Flags": {
           "UpgradeCheat": 1
         },
-        "Name": "Seeker Missile",
+        "Name": {
+          "enUS": "Cloaking Field",
+          "ruRU": "Cloaking Field"
+        },
         "MaxLevel": 1,
         "Alert": "ResearchComplete",
         "ScoreCount": "MiscTechnologyCount",
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
-        "LeaderAlias": "HunterSeeker",
-        "Icon": "btn-ability-terran-huntermissile-color",
+        "LeaderAlias": "BansheeCloak",
+        "EditorCategories": "Race:Terran,UpgradeType:Spell",
+        "$tokens": {
+          "ID": {
+            "type": "string",
+            "value": ""
+          }
+        },
         "Race": "Terr",
-        "EditorCategories": "Race:Terran,UpgradeType:SpellResearch",
+        "Icon": "btn-ability-terran-cloak-color",
         "ScoreResult": "BuildOrder",
         "AffectedUnitArray": [
-          "Raven"
+          "Banshee"
         ],
-        "ScoreAmount": 300,
-        "id": "HunterSeeker"
+        "ScoreAmount": 200,
+        "id": "BansheeCloak"
       },
       "BattlecruiserEnableSpecializations": {
         "class": "CUpgrade",
         "Flags": {
           "UpgradeCheat": 1
         },
-        "Name": "Weapon Refit",
+        "Name": {
+          "enUS": "Weapon Refit",
+          "ruRU": "Weapon Refit"
+        },
         "MaxLevel": 1,
         "Alert": "ResearchComplete",
         "ScoreCount": "MiscTechnologyCount",
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "BattlecruiserEnableSpecializations",
+        "EditorCategories": "Race:Terran,UpgradeType:Spell",
+        "$tokens": {
+          "ID": {
+            "type": "string",
+            "value": ""
+          }
+        },
         "ScoreAmount": 300,
         "ScoreResult": "BuildOrder",
-        "EditorCategories": "Race:Terran,UpgradeType:Talents",
         "Icon": "btn-ability-terran-yamatogun-color",
         "Race": "Terr",
         "InfoTooltipPriority": 1,
@@ -3673,19 +3459,69 @@
         ],
         "id": "BattlecruiserEnableSpecializations"
       },
+      "MedivacCaduceusReactor": {
+        "class": "CUpgrade",
+        "Flags": {
+          "UpgradeCheat": 1,
+          "TechTreeCheat": 1
+        },
+        "Name": {
+          "enUS": "Caduceus Reactor",
+          "ruRU": "Caduceus Reactor"
+        },
+        "MaxLevel": 1,
+        "Alert": "ResearchComplete",
+        "ScoreCount": "MiscTechnologyCount",
+        "ScoreValue": "MiscTechnologyValue",
+        "WebPriority": 1,
+        "LeaderAlias": "MedivacCaduceusReactor",
+        "EditorCategories": "Race:Terran,UpgradeType:Spell",
+        "$tokens": {
+          "ID": {
+            "type": "string",
+            "value": ""
+          }
+        },
+        "ScoreAmount": 200,
+        "ScoreResult": "BuildOrder",
+        "EffectArray": [
+          {
+            "Operation": "Multiply",
+            "Reference": "Unit,Medivac,EnergyRegenRate",
+            "Value": "2.000000"
+          }
+        ],
+        "Icon": "btn-upgrade-terran-caduceusreactor",
+        "Race": "Terr",
+        "AffectedUnitArray": [
+          "Medivac"
+        ],
+        "id": "MedivacCaduceusReactor"
+      },
       "LiberatorAGRangeUpgrade": {
         "class": "CUpgrade",
         "Flags": {
           "UpgradeCheat": 1
         },
-        "Name": "Advanced Ballistics",
+        "Name": {
+          "enUS": "Advanced Ballistics"
+        },
         "MaxLevel": 1,
         "Alert": "UpgradeComplete",
         "ScoreCount": "MiscTechnologyCount",
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "LiberatorAGRangeUpgrade",
+        "EditorCategories": "Race:Terran,UpgradeType:Spell",
+        "$tokens": {
+          "ID": {
+            "type": "string",
+            "value": ""
+          }
+        },
         "Icon": "btn-upgrade-terran-advanceballistics",
+        "ScoreAmount": 300,
+        "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
             "Reference": "Abil,LiberatorAGTarget,Range[0]",
@@ -3696,52 +3532,25 @@
             "Value": "2"
           }
         ],
-        "EditorCategories": "Race:Protoss,UpgradeType:SpellResearch",
         "AffectedUnitArray": [
           "Liberator",
           "LiberatorAG"
         ],
-        "ScoreAmount": 300,
-        "ScoreResult": "BuildOrder",
         "id": "LiberatorAGRangeUpgrade"
-      },
-      "MedivacCaduceusReactor": {
-        "class": "CUpgrade",
-        "Flags": {
-          "UpgradeCheat": 1,
-          "TechTreeCheat": 1
-        },
-        "Name": "Caduceus Reactor",
-        "MaxLevel": 1,
-        "Alert": "ResearchComplete",
-        "ScoreCount": "MiscTechnologyCount",
-        "ScoreValue": "MiscTechnologyValue",
-        "WebPriority": 1,
-        "LeaderAlias": "MedivacCaduceusReactor",
-        "ScoreAmount": 200,
-        "ScoreResult": "BuildOrder",
-        "EffectArray": [
-          {
-            "Reference": "Unit,Medivac,EnergyRegenRate",
-            "Value": "2.000000",
-            "Operation": "Multiply"
-          }
-        ],
-        "EditorCategories": "Race:Terran,UpgradeType:Talents",
-        "Icon": "btn-upgrade-terran-caduceusreactor",
-        "Race": "Terr",
-        "id": "MedivacCaduceusReactor",
-        "AffectedUnitArray": [
-          "Medivac"
-        ]
       }
     },
     "units": {
       "CommandCenter": {
         "id": "CommandCenter",
         "Icon": "btn-building-terran-commandcenter",
-        "Description": "Primary structure. Used to receive gathered resources. Can use the Lift Off ability and can upgrade into an Orbital Command or a Planetary Fortress.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- SCVs",
-        "Name": "Command Center",
+        "Name": {
+          "enUS": "Command Center",
+          "ruRU": "Command Center"
+        },
+        "Description": {
+          "enUS": "Primary structure. Used to receive gathered resources. Can use the Lift Off ability and can upgrade into an Orbital Command or a Planetary Fortress.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- SCVs",
+          "ruRU": "Primary structure. Used to receive gathered resources. Can use the Lift Off ability and can upgrade into an Orbital Command or a Planetary Fortress.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- SCVs"
+        },
         "LifeMax": 1500,
         "LifeArmor": 1,
         "Food": 15,
@@ -3761,14 +3570,23 @@
         ],
         "LifeArmorIcon": "btn-upgrade-terran-buildingarmor",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Terran Building Plating",
+        "LifeArmorName": {
+          "enUS": "Terran Building Plating",
+          "ruRU": "Terran Building Plating"
+        },
         "priority": 30
       },
       "OrbitalCommand": {
         "id": "OrbitalCommand",
         "Icon": "btn-building-terran-surveillancestation",
-        "Description": "Primary structure. Used to train SCVs and receive gathered resources. Can use the Scanner Sweep ability. Can use the abilities Calldown: MULE and Calldown: Extra Supplies.",
-        "Name": "Orbital Command",
+        "Name": {
+          "enUS": "Orbital Command",
+          "ruRU": "Orbital Command"
+        },
+        "Description": {
+          "enUS": "Primary structure. Used to train SCVs and receive gathered resources. Can use the Scanner Sweep ability. Can use the abilities Calldown: MULE and Calldown: Extra Supplies.",
+          "ruRU": "Primary structure. Used to train SCVs and receive gathered resources. Can use the Scanner Sweep ability. Can use the abilities Calldown: MULE and Calldown: Extra Supplies."
+        },
         "LifeMax": 1500,
         "LifeArmor": 1,
         "Food": 15,
@@ -3786,14 +3604,23 @@
         ],
         "LifeArmorIcon": "btn-upgrade-terran-buildingarmor",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Terran Building Plating",
+        "LifeArmorName": {
+          "enUS": "Terran Building Plating",
+          "ruRU": "Terran Building Plating"
+        },
         "priority": 32
       },
       "OrbitalCommandFlying": {
         "id": "OrbitalCommandFlying",
         "Icon": "btn-building-terran-surveillancestation",
-        "Description": "Primary structure. Must land to receive resources, produce units, or use abilities.",
-        "Name": "Orbital Command",
+        "Name": {
+          "enUS": "Orbital Command",
+          "ruRU": "Orbital Command"
+        },
+        "Description": {
+          "enUS": "Primary structure. Must land to receive resources, produce units, or use abilities.",
+          "ruRU": "Primary structure. Must land to receive resources, produce units, or use abilities."
+        },
         "LifeMax": 1500,
         "LifeArmor": 1,
         "Food": 15,
@@ -3809,13 +3636,22 @@
         "$Phased": "OrbitalCommand",
         "LifeArmorIcon": "btn-upgrade-terran-buildingarmor",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Terran Building Plating"
+        "LifeArmorName": {
+          "enUS": "Terran Building Plating",
+          "ruRU": "Terran Building Plating"
+        }
       },
       "SCV": {
         "id": "SCV",
         "Icon": "btn-unit-terran-scv",
-        "Description": "Basic worker unit. Can gather resources, build Terran structures, and repair.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
-        "Name": "SCV",
+        "Name": {
+          "enUS": "SCV",
+          "ruRU": "SCV"
+        },
+        "Description": {
+          "enUS": "Basic worker unit. Can gather resources, build Terran structures, and repair.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+          "ruRU": "Basic worker unit. Can gather resources, build Terran structures, and repair.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>"
+        },
         "LifeMax": 45,
         "Food": -1,
         "CostResource": {
@@ -3841,14 +3677,23 @@
         "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-terran-infantryarmorlevel0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Terran Infantry Armor",
+        "LifeArmorName": {
+          "enUS": "Terran Infantry Armor",
+          "ruRU": "Terran Infantry Armor"
+        },
         "priority": 10
       },
       "Refinery": {
         "id": "Refinery",
         "Icon": "btn-building-terran-refinery",
-        "Description": "Built over a Vespene Geyser to allow harvesting of vespene gas.",
-        "Name": "Refinery",
+        "Name": {
+          "enUS": "Refinery",
+          "ruRU": "Refinery"
+        },
+        "Description": {
+          "enUS": "Built over a Vespene Geyser to allow harvesting of vespene gas.",
+          "ruRU": "Built over a Vespene Geyser to allow harvesting of vespene gas."
+        },
         "LifeMax": 500,
         "LifeArmor": 1,
         "CostResource": {
@@ -3860,14 +3705,23 @@
         "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-terran-buildingarmor",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Terran Building Plating",
+        "LifeArmorName": {
+          "enUS": "Terran Building Plating",
+          "ruRU": "Terran Building Plating"
+        },
         "priority": 244
       },
       "SupplyDepot": {
         "id": "SupplyDepot",
         "Icon": "btn-building-terran-supplydepot",
-        "Description": "Provides supply.<br/>Supply allows you to create more units.<br/>Supply Depots can be lowered to allow units to walk over them.",
-        "Name": "Supply Depot",
+        "Name": {
+          "enUS": "Supply Depot",
+          "ruRU": "Supply Depot"
+        },
+        "Description": {
+          "enUS": "Provides supply.<br/>Supply allows you to create more units.<br/>Supply Depots can be lowered to allow units to walk over them.",
+          "ruRU": "Provides supply.<br/>Supply allows you to create more units.<br/>Supply Depots can be lowered to allow units to walk over them."
+        },
         "LifeMax": 400,
         "LifeArmor": 1,
         "Food": 8,
@@ -3882,14 +3736,23 @@
         ],
         "LifeArmorIcon": "btn-upgrade-terran-buildingarmor",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Terran Building Plating",
+        "LifeArmorName": {
+          "enUS": "Terran Building Plating",
+          "ruRU": "Terran Building Plating"
+        },
         "priority": 248
       },
       "SupplyDepotLowered": {
         "id": "SupplyDepotLowered",
         "Icon": "btn-building-terran-supplydepotlowered",
-        "Description": "Provides supply.<br/>Supply allows you to create more units.<br/>Supply Depots can be lowered to allow units to walk over them.",
-        "Name": "Supply Depot",
+        "Name": {
+          "enUS": "Supply Depot",
+          "ruRU": "Supply Depot"
+        },
+        "Description": {
+          "enUS": "Provides supply.<br/>Supply allows you to create more units.<br/>Supply Depots can be lowered to allow units to walk over them.",
+          "ruRU": "Provides supply.<br/>Supply allows you to create more units.<br/>Supply Depots can be lowered to allow units to walk over them."
+        },
         "LifeMax": 400,
         "LifeArmor": 1,
         "Food": 8,
@@ -3905,13 +3768,22 @@
         "$Phased": "SupplyDepot",
         "LifeArmorIcon": "btn-upgrade-terran-buildingarmor",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Terran Building Plating"
+        "LifeArmorName": {
+          "enUS": "Terran Building Plating",
+          "ruRU": "Terran Building Plating"
+        }
       },
       "Barracks": {
         "id": "Barracks",
         "Icon": "btn-building-terran-barracks",
-        "Description": "Infantry-production facility.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Marines<br/>- Reapers<br/>- Bunkers from SCVs<br/>- Orbital Commands from Command Centers",
-        "Name": "Barracks",
+        "Name": {
+          "enUS": "Barracks",
+          "ruRU": "Barracks"
+        },
+        "Description": {
+          "enUS": "Infantry-production facility.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Marines<br/>- Reapers<br/>- Bunkers from SCVs<br/>- Orbital Commands from Command Centers",
+          "ruRU": "Infantry-production facility.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Marines<br/>- Reapers<br/>- Bunkers from SCVs<br/>- Orbital Commands from Command Centers"
+        },
         "LifeMax": 1000,
         "LifeArmor": 1,
         "CostResource": {
@@ -3920,10 +3792,10 @@
         "Production": [
           "Marine",
           "Marauder",
+          "Reaper",
           "Ghost",
           "BarracksReactor",
-          "BarracksTechLab",
-          "Reaper"
+          "BarracksTechLab"
         ],
         "Research": [],
         "Morph": [],
@@ -3932,14 +3804,23 @@
         ],
         "LifeArmorIcon": "btn-upgrade-terran-buildingarmor",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Terran Building Plating",
+        "LifeArmorName": {
+          "enUS": "Terran Building Plating",
+          "ruRU": "Terran Building Plating"
+        },
         "priority": 252
       },
       "BarracksFlying": {
         "id": "BarracksFlying",
         "Icon": "btn-building-terran-barracks",
-        "Description": "Barracks must land to start unit production.",
-        "Name": "Barracks",
+        "Name": {
+          "enUS": "Barracks",
+          "ruRU": "Barracks"
+        },
+        "Description": {
+          "enUS": "Barracks must land to start unit production.",
+          "ruRU": "Barracks must land to start unit production."
+        },
         "LifeMax": 1000,
         "LifeArmor": 1,
         "CostResource": {
@@ -3957,13 +3838,22 @@
         "$Phased": "Barracks",
         "LifeArmorIcon": "btn-upgrade-terran-buildingarmor",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Terran Building Plating"
+        "LifeArmorName": {
+          "enUS": "Terran Building Plating",
+          "ruRU": "Terran Building Plating"
+        }
       },
       "BarracksReactor": {
         "id": "BarracksReactor",
         "Icon": "btn-building-terran-reactor",
-        "Description": "Allows 2 units to be created simultaneously.",
-        "Name": "Reactor",
+        "Name": {
+          "enUS": "Reactor",
+          "ruRU": "Reactor"
+        },
+        "Description": {
+          "enUS": "Allows 2 units to be created simultaneously.",
+          "ruRU": "Allows 2 units to be created simultaneously."
+        },
         "LifeMax": 400,
         "LifeArmor": 1,
         "CostResource": {
@@ -3976,13 +3866,22 @@
         "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-terran-buildingarmor",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Terran Building Plating"
+        "LifeArmorName": {
+          "enUS": "Terran Building Plating",
+          "ruRU": "Terran Building Plating"
+        }
       },
       "BarracksTechLab": {
         "id": "BarracksTechLab",
         "Icon": "btn-building-terran-techlab",
-        "Description": "Enables additional units and research options. A Tech Lab can fit onto any production structure.",
-        "Name": "Tech Lab",
+        "Name": {
+          "enUS": "Tech Lab",
+          "ruRU": "Tech Lab"
+        },
+        "Description": {
+          "enUS": "Enables additional units and research options. A Tech Lab can fit onto any production structure.",
+          "ruRU": "Enables additional units and research options. A Tech Lab can fit onto any production structure."
+        },
         "LifeMax": 400,
         "LifeArmor": 1,
         "CostResource": {
@@ -3993,20 +3892,30 @@
         "Research": [
           "ShieldWall",
           "Stimpack",
-          "PunisherGrenades"
+          "PunisherGrenades",
+          null
         ],
         "Morph": [],
         "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-terran-buildingarmor",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Terran Building Plating",
+        "LifeArmorName": {
+          "enUS": "Terran Building Plating",
+          "ruRU": "Terran Building Plating"
+        },
         "priority": 337
       },
       "Marine": {
         "id": "Marine",
         "Icon": "btn-unit-terran-marine",
-        "Description": "General-purpose infantry.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units.</span>",
-        "Name": "Marine",
+        "Name": {
+          "enUS": "Marine",
+          "ruRU": "Marine"
+        },
+        "Description": {
+          "enUS": "General-purpose infantry.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>",
+          "ruRU": "General-purpose infantry.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>"
+        },
         "LifeMax": 45,
         "Food": -1,
         "CostResource": {
@@ -4018,14 +3927,23 @@
         "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-terran-infantryarmorlevel0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Terran Infantry Armor",
+        "LifeArmorName": {
+          "enUS": "Terran Infantry Armor",
+          "ruRU": "Terran Infantry Armor"
+        },
         "priority": 21
       },
       "Marauder": {
         "id": "Marauder",
         "Icon": "btn-unit-terran-marauder",
-        "Description": "Heavy assault infantry.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
-        "Name": "Marauder",
+        "Name": {
+          "enUS": "Marauder",
+          "ruRU": "Marauder"
+        },
+        "Description": {
+          "enUS": "Heavy assault infantry.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+          "ruRU": "Heavy assault infantry.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>"
+        },
         "LifeMax": 125,
         "LifeArmor": 1,
         "Food": -2,
@@ -4039,34 +3957,23 @@
         "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-terran-infantryarmorlevel0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Terran Infantry Armor",
-        "priority": 60
-      },
-      "Ghost": {
-        "id": "Ghost",
-        "Icon": "btn-unit-terran-ghost",
-        "Description": "Sniper. Can use Steady Targeting, EMP Round, and be upgraded to use Cloak. Can call down Tactical Nukes built at the Ghost Academy.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units.</span>",
-        "Name": "Ghost",
-        "LifeMax": 100,
-        "Food": -2,
-        "CostResource": {
-          "Minerals": 150,
-          "Vespene": 125
+        "LifeArmorName": {
+          "enUS": "Terran Infantry Armor",
+          "ruRU": "Terran Infantry Armor"
         },
-        "Production": [],
-        "Research": [],
-        "Morph": [],
-        "$Phase": [],
-        "LifeArmorIcon": "btn-upgrade-terran-infantryarmorlevel0",
-        "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Terran Infantry Armor",
-        "priority": 70
+        "priority": 60
       },
       "Reaper": {
         "id": "Reaper",
         "Icon": "btn-unit-terran-reaper",
-        "Description": "Raider. Can jump up and down cliffs. Regenerates life quickly while out of combat. Can use KD8 Charge.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
-        "Name": "Reaper",
+        "Name": {
+          "enUS": "Reaper",
+          "ruRU": "Reaper"
+        },
+        "Description": {
+          "enUS": "Raider. Can jump up and down cliffs. Regenerates life quickly while out of combat. Can use KD8 Charge.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+          "ruRU": "Raider. Can jump up and down cliffs. Regenerates life quickly while out of combat. Can use KD8 Charge.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>"
+        },
         "LifeMax": 60,
         "Food": -1,
         "CostResource": {
@@ -4081,14 +3988,52 @@
         "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-terran-infantryarmorlevel0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Terran Infantry Armor",
+        "LifeArmorName": {
+          "enUS": "Terran Infantry Armor",
+          "ruRU": "Terran Infantry Armor"
+        },
         "priority": 50
+      },
+      "Ghost": {
+        "id": "Ghost",
+        "Icon": "btn-unit-terran-ghost",
+        "Name": {
+          "enUS": "Ghost",
+          "ruRU": "Ghost"
+        },
+        "Description": {
+          "enUS": "Sniper. Can use Snipe, EMP Round, and be upgraded to use Cloak. Can call down Tactical Nukes built at the Ghost Academy.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>",
+          "ruRU": "Sniper. Can use Snipe, EMP Round, and be upgraded to use Cloak. Can call down Tactical Nukes built at the Ghost Academy.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>"
+        },
+        "LifeMax": 100,
+        "Food": -2,
+        "CostResource": {
+          "Minerals": 150,
+          "Vespene": 125
+        },
+        "Production": [],
+        "Research": [],
+        "Morph": [],
+        "$Phase": [],
+        "LifeArmorIcon": "btn-upgrade-terran-infantryarmorlevel0",
+        "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+        "LifeArmorName": {
+          "enUS": "Terran Infantry Armor",
+          "ruRU": "Terran Infantry Armor"
+        },
+        "priority": 70
       },
       "EngineeringBay": {
         "id": "EngineeringBay",
         "Icon": "btn-building-terran-engineeringbay",
-        "Description": "Contains upgrades for Terran infantry and structures. <br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Missile Turrets from SCVs<br/>- Sensor Towers from SCVs<br/>- Planetary Fortresses from Command Centers",
-        "Name": "Engineering Bay",
+        "Name": {
+          "enUS": "Engineering Bay",
+          "ruRU": "Engineering Bay"
+        },
+        "Description": {
+          "enUS": "Contains upgrades for Terran infantry and structures. <br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Missile Turrets from SCVs<br/>- Sensor Towers from SCVs<br/>- Planetary Fortresses from Command Centers",
+          "ruRU": "Contains upgrades for Terran infantry and structures. <br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Missile Turrets from SCVs<br/>- Sensor Towers from SCVs<br/>- Planetary Fortresses from Command Centers"
+        },
         "LifeMax": 850,
         "LifeArmor": 1,
         "CostResource": {
@@ -4099,7 +4044,7 @@
           "TerranInfantryWeaponsLevel1",
           "TerranInfantryWeaponsLevel2",
           "TerranInfantryWeaponsLevel3",
-          "TerranBuildingArmor",
+          "NeosteelFrame",
           "HiSecAutoTracking",
           "TerranInfantryArmorsLevel1",
           "TerranInfantryArmorsLevel2",
@@ -4109,14 +4054,23 @@
         "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-terran-buildingarmor",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Terran Building Plating",
+        "LifeArmorName": {
+          "enUS": "Terran Building Plating",
+          "ruRU": "Terran Building Plating"
+        },
         "priority": 256
       },
       "Bunker": {
         "id": "Bunker",
         "Icon": "btn-building-terran-bunker",
-        "Description": "Defensive structure. <br/>Infantry fights from inside. <br/><br/><c val=\"#ColorAttackInfo\">Bonus: +1 range to units inside.</span>",
-        "Name": "Bunker",
+        "Name": {
+          "enUS": "Bunker",
+          "ruRU": "Bunker"
+        },
+        "Description": {
+          "enUS": "Defensive structure. <br/>Infantry fights from inside. <br/><br/><span style=\"color: #ffff8a\">Bonus: +1 range to units inside.</span>",
+          "ruRU": "Defensive structure. <br/>Infantry fights from inside. <br/><br/><span style=\"color: #ffff8a\">Bonus: +1 range to units inside.</span>"
+        },
         "LifeMax": 400,
         "LifeArmor": 1,
         "CostResource": {
@@ -4128,14 +4082,23 @@
         "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-terran-buildingarmor",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Terran Building Plating",
+        "LifeArmorName": {
+          "enUS": "Terran Building Plating",
+          "ruRU": "Terran Building Plating"
+        },
         "priority": 300
       },
       "MissileTurret": {
         "id": "MissileTurret",
         "Icon": "btn-building-terran-missileturret",
-        "Description": "Anti-air defensive structure.<br/><br/><c val=\"#ColorAttackInfo\">Can attack air units.</span><br/><span style=\"color: #FFE303\">Detector</span>",
-        "Name": "Missile Turret",
+        "Name": {
+          "enUS": "Missile Turret",
+          "ruRU": "Missile Turret"
+        },
+        "Description": {
+          "enUS": "Anti-air defensive structure.<br/><br/><span style=\"color: #ffff8a\">Can attack air units.</span><br/><span style=\"color: FFE303\">Detector</span>",
+          "ruRU": "Anti-air defensive structure.<br/><br/><span style=\"color: #ffff8a\">Can attack air units.</span><br/><span style=\"color: FFE303\">Detector</span>"
+        },
         "LifeMax": 250,
         "CostResource": {
           "Minerals": 100
@@ -4146,14 +4109,23 @@
         "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-terran-buildingarmor",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Terran Building Plating",
+        "LifeArmorName": {
+          "enUS": "Terran Building Plating",
+          "ruRU": "Terran Building Plating"
+        },
         "priority": 310
       },
       "SensorTower": {
         "id": "SensorTower",
         "Icon": "btn-building-terran-sensordome",
-        "Description": "Reveals the locations of enemy units at long range. The Sensor Tower's detection area is visible to the enemy.",
-        "Name": "Sensor Tower",
+        "Name": {
+          "enUS": "Sensor Tower",
+          "ruRU": "Sensor Tower"
+        },
+        "Description": {
+          "enUS": "Reveals the locations of enemy units at long range. The Sensor Tower's detection area is visible to the enemy.",
+          "ruRU": "Reveals the locations of enemy units at long range. The Sensor Tower's detection area is visible to the enemy."
+        },
         "LifeMax": 200,
         "CostResource": {
           "Minerals": 125,
@@ -4165,14 +4137,23 @@
         "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-terran-buildingarmor",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Terran Building Plating",
+        "LifeArmorName": {
+          "enUS": "Terran Building Plating",
+          "ruRU": "Terran Building Plating"
+        },
         "priority": 314
       },
       "GhostAcademy": {
         "id": "GhostAcademy",
         "Icon": "btn-building-terran-ghostacademy",
-        "Description": "Contains upgrades for Ghosts. Can build Nukes for Ghosts.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Ghosts at the Barracks",
-        "Name": "Ghost Academy",
+        "Name": {
+          "enUS": "Ghost Academy",
+          "ruRU": "Ghost Academy"
+        },
+        "Description": {
+          "enUS": "Contains upgrades for Ghosts. Can build Nukes for Ghosts.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Ghosts at the Barracks",
+          "ruRU": "Contains upgrades for Ghosts. Can build Nukes for Ghosts.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Ghosts at the Barracks"
+        },
         "LifeMax": 1250,
         "LifeArmor": 1,
         "CostResource": {
@@ -4189,14 +4170,23 @@
         "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-terran-buildingarmor",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Terran Building Plating",
+        "LifeArmorName": {
+          "enUS": "Terran Building Plating",
+          "ruRU": "Terran Building Plating"
+        },
         "priority": 318
       },
       "Factory": {
         "id": "Factory",
         "Icon": "btn-building-terran-factory",
-        "Description": "Vehicle-production facility. <br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Hellions<br/>- Widow Mines<br/>- Cyclones",
-        "Name": "Factory",
+        "Name": {
+          "enUS": "Factory",
+          "ruRU": "Factory"
+        },
+        "Description": {
+          "enUS": "Vehicle-production facility. <br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Hellions<br/>- Widow Mines",
+          "ruRU": "Vehicle-production facility. <br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Hellions<br/>- Widow Mines"
+        },
         "LifeMax": 1250,
         "LifeArmor": 1,
         "CostResource": {
@@ -4206,12 +4196,12 @@
         "Production": [
           "Hellion",
           "SiegeTank",
+          "Thor",
           "FactoryReactor",
           "FactoryTechLab",
-          "WidowMine",
           "Cyclone",
-          "Thor",
-          "HellionTank"
+          "HellionTank",
+          "WidowMine"
         ],
         "Research": [],
         "Morph": [],
@@ -4220,14 +4210,23 @@
         ],
         "LifeArmorIcon": "btn-upgrade-terran-buildingarmor",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Terran Building Plating",
+        "LifeArmorName": {
+          "enUS": "Terran Building Plating",
+          "ruRU": "Terran Building Plating"
+        },
         "priority": 322
       },
       "FactoryFlying": {
         "id": "FactoryFlying",
         "Icon": "btn-building-terran-factory",
-        "Description": "Factory must land to start unit production.",
-        "Name": "Factory",
+        "Name": {
+          "enUS": "Factory",
+          "ruRU": "Factory"
+        },
+        "Description": {
+          "enUS": "Factory must land to start unit production.",
+          "ruRU": "Factory must land to start unit production."
+        },
         "LifeMax": 1250,
         "LifeArmor": 1,
         "CostResource": {
@@ -4246,13 +4245,22 @@
         "$Phased": "Factory",
         "LifeArmorIcon": "btn-upgrade-terran-buildingarmor",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Terran Building Plating"
+        "LifeArmorName": {
+          "enUS": "Terran Building Plating",
+          "ruRU": "Terran Building Plating"
+        }
       },
       "FactoryReactor": {
         "id": "FactoryReactor",
         "Icon": "btn-building-terran-reactor",
-        "Description": "Allows 2 units to be created simultaneously.",
-        "Name": "Reactor",
+        "Name": {
+          "enUS": "Reactor",
+          "ruRU": "Reactor"
+        },
+        "Description": {
+          "enUS": "Allows 2 units to be created simultaneously.",
+          "ruRU": "Allows 2 units to be created simultaneously."
+        },
         "LifeMax": 400,
         "LifeArmor": 1,
         "CostResource": {
@@ -4265,13 +4273,22 @@
         "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-terran-buildingarmor",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Terran Building Plating"
+        "LifeArmorName": {
+          "enUS": "Terran Building Plating",
+          "ruRU": "Terran Building Plating"
+        }
       },
       "FactoryTechLab": {
         "id": "FactoryTechLab",
         "Icon": "btn-building-terran-techlab",
-        "Description": "Enables additional units and research options. A Tech Lab can fit onto any production structure.",
-        "Name": "Tech Lab",
+        "Name": {
+          "enUS": "Tech Lab",
+          "ruRU": "Tech Lab"
+        },
+        "Description": {
+          "enUS": "Enables additional units and research options. A Tech Lab can fit onto any production structure.",
+          "ruRU": "Enables additional units and research options. A Tech Lab can fit onto any production structure."
+        },
         "LifeMax": 400,
         "LifeArmor": 1,
         "CostResource": {
@@ -4281,22 +4298,31 @@
         "Production": [],
         "Research": [
           "HighCapacityBarrels",
-          "DrillClaws",
+          "HurricaneThrusters",
           "SmartServos",
-          "HurricaneThrusters"
+          "DrillClaws"
         ],
         "Morph": [],
         "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-terran-buildingarmor",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Terran Building Plating",
+        "LifeArmorName": {
+          "enUS": "Terran Building Plating",
+          "ruRU": "Terran Building Plating"
+        },
         "priority": 337
       },
       "Hellion": {
         "id": "Hellion",
         "Icon": "btn-unit-terran-hellion",
-        "Description": "Fast scout. Has a flame attack that damages all enemy units in its line of fire. Can transform into a close range combat unit.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
-        "Name": "Hellion",
+        "Name": {
+          "enUS": "Hellion",
+          "ruRU": "Hellion"
+        },
+        "Description": {
+          "enUS": "Fast scout. Has a flame attack that damages all enemy units in its line of fire. Can transform into a close range combat unit.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+          "ruRU": "Fast scout. Has a flame attack that damages all enemy units in its line of fire. Can transform into a close range combat unit.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>"
+        },
         "LifeMax": 90,
         "Food": -2,
         "CostResource": {
@@ -4310,14 +4336,23 @@
         ],
         "LifeArmorIcon": "btn-upgrade-terran-vehicleplatinglevel0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Terran Vehicle Plating",
+        "LifeArmorName": {
+          "enUS": "Terran Vehicle Plating",
+          "ruRU": "Terran Vehicle Plating"
+        },
         "priority": 80
       },
       "HellionTank": {
         "id": "HellionTank",
         "Icon": "btn-unit-terran-hellionbattlemode",
-        "Description": "Close range combat unit. Deals damage in a small frontal cone. Can transform into a fast scout unit.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
-        "Name": "Hellbat",
+        "Name": {
+          "ruRU": "Hellbat",
+          "enUS": "Hellbat"
+        },
+        "Description": {
+          "enUS": "Close range combat unit. Deals damage in a small frontal cone. Can transform into a fast scout unit.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+          "ruRU": "Close range combat unit. Deals damage in a small frontal cone. Can transform into a fast scout unit.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>"
+        },
         "LifeMax": 135,
         "Food": -2,
         "CostResource": {
@@ -4332,37 +4367,23 @@
         "$Phased": "Hellion",
         "LifeArmorIcon": "btn-upgrade-terran-vehicleplatinglevel0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Terran Vehicle Plating",
+        "LifeArmorName": {
+          "enUS": "Terran Vehicle Plating",
+          "ruRU": "Terran Vehicle Plating"
+        },
         "priority": 81
       },
       "SiegeTank": {
         "id": "SiegeTank",
         "Icon": "btn-unit-terran-siegetank",
-        "Description": "Heavy tank. Can switch into Siege Mode to provide long-range artillery support.<br/><br/><span style=\"color: #FFFF8A\">Can attack ground units.</span>",
-        "Name": "Siege Tank",
-        "LifeMax": 175,
-        "LifeArmor": 1,
-        "Food": -3,
-        "CostResource": {
-          "Minerals": 150,
-          "Vespene": 125
+        "Name": {
+          "enUS": "Siege Tank",
+          "ruRU": "Siege Tank"
         },
-        "Production": [],
-        "Research": [],
-        "Morph": [],
-        "$Phase": [
-          "SiegeTankSieged"
-        ],
-        "LifeArmorIcon": "btn-upgrade-terran-vehicleplatinglevel0",
-        "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Terran Vehicle Plating",
-        "priority": 130
-      },
-      "SiegeTankSieged": {
-        "id": "SiegeTankSieged",
-        "Icon": "btn-unit-terran-siegetanksiegemode",
-        "Description": "Heavy tank. Can switch into Tank Mode to provide mobile tank support.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
-        "Name": "Siege Tank",
+        "Description": {
+          "enUS": "Heavy tank. Can switch into Siege Mode to provide long-range artillery support.<br/><br/><span style=\"color: FFFF8A\">Can attack ground units.</span>",
+          "ruRU": "Heavy tank. Can switch into Siege Mode to provide long-range artillery support.<br/><br/><span style=\"color: FFFF8A\">Can attack ground units.</span>"
+        },
         "LifeMax": 175,
         "LifeArmor": 1,
         "Food": -3,
@@ -4373,20 +4394,161 @@
         "Production": [],
         "Research": [],
         "Morph": [
-          "SiegeTank"
+          null
+        ],
+        "$Phase": [
+          "SiegeTankSieged"
+        ],
+        "LifeArmorIcon": "btn-upgrade-terran-vehicleplatinglevel0",
+        "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+        "LifeArmorName": {
+          "enUS": "Terran Vehicle Plating",
+          "ruRU": "Terran Vehicle Plating"
+        },
+        "priority": 130
+      },
+      "SiegeTankSieged": {
+        "id": "SiegeTankSieged",
+        "Icon": "btn-unit-terran-siegetanksiegemode",
+        "Name": {
+          "enUS": "Siege Tank",
+          "ruRU": "Siege Tank"
+        },
+        "Description": {
+          "enUS": "Heavy tank. Can switch into Tank Mode to provide mobile tank support.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+          "ruRU": "Heavy tank. Can switch into Tank Mode to provide mobile tank support.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>"
+        },
+        "LifeMax": 175,
+        "LifeArmor": 1,
+        "Food": -3,
+        "CostResource": {
+          "Minerals": 150,
+          "Vespene": 125
+        },
+        "Production": [],
+        "Research": [],
+        "Morph": [
+          "SiegeTank",
+          null
         ],
         "$Phase": [],
         "$Phased": "SiegeTank",
         "LifeArmorIcon": "btn-upgrade-terran-vehicleplatinglevel0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Terran Vehicle Plating",
+        "LifeArmorName": {
+          "enUS": "Terran Vehicle Plating",
+          "ruRU": "Terran Vehicle Plating"
+        },
         "priority": 135
+      },
+      "Thor": {
+        "id": "Thor",
+        "Icon": "btn-unit-terran-thor",
+        "Name": {
+          "enUS": "Thor",
+          "ruRU": "Thor"
+        },
+        "Description": {
+          "enUS": "Heavy assault mech.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>",
+          "ruRU": "Heavy assault mech.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>"
+        },
+        "LifeMax": 400,
+        "LifeArmor": 1,
+        "Food": -6,
+        "CostResource": {
+          "Minerals": 300,
+          "Vespene": 200
+        },
+        "Production": [],
+        "Research": [],
+        "Morph": [
+          null
+        ],
+        "$Phase": [
+          "ThorAP"
+        ],
+        "LifeArmorIcon": "btn-upgrade-terran-vehicleplatinglevel0",
+        "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+        "LifeArmorName": {
+          "enUS": "Terran Vehicle Plating",
+          "ruRU": "Terran Vehicle Plating"
+        },
+        "priority": 140
+      },
+      "ThorAP": {
+        "id": "ThorAP",
+        "Icon": "btn-unit-terran-thor",
+        "Name": {
+          "enUS": "Thor",
+          "ruRU": "Thor"
+        },
+        "Description": {
+          "enUS": "Heavy assault mech.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>",
+          "ruRU": "Heavy assault mech.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>"
+        },
+        "LifeMax": 400,
+        "LifeArmor": 1,
+        "Food": -6,
+        "CostResource": {
+          "Minerals": 300,
+          "Vespene": 200
+        },
+        "Production": [],
+        "Research": [],
+        "Morph": [
+          "Thor",
+          null
+        ],
+        "$Phase": [],
+        "$Phased": "Thor",
+        "LifeArmorIcon": "btn-upgrade-terran-vehicleplatinglevel0",
+        "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+        "LifeArmorName": {
+          "enUS": "Terran Vehicle Plating",
+          "ruRU": "Terran Vehicle Plating"
+        },
+        "priority": 141
+      },
+      "Cyclone": {
+        "id": "Cyclone",
+        "Icon": "btn-unit-terran-cyclone",
+        "Name": {
+          "enUS": "Cyclone",
+          "ruRU": "Cyclone"
+        },
+        "Description": {
+          "enUS": "Mobile assault vehicle. Can use Lock On to quickly fire while moving.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>",
+          "ruRU": "Mobile assault vehicle. Can use Lock On to quickly fire while moving.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>"
+        },
+        "LifeMax": 130,
+        "Food": -2,
+        "CostResource": {
+          "Minerals": 125,
+          "Vespene": 50
+        },
+        "Production": [],
+        "Research": [],
+        "Morph": [],
+        "$Phase": [],
+        "LifeArmorIcon": "btn-upgrade-terran-vehicleplatinglevel0",
+        "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+        "LifeArmorName": {
+          "enUS": "Terran Vehicle Plating",
+          "ruRU": "Terran Vehicle Plating"
+        },
+        "priority": 136
       },
       "WidowMine": {
         "id": "WidowMine",
         "Icon": "btn-unit-terran-widowmine",
-        "Description": "Robotic mine. Launches missiles at nearby enemy units while burrowed. Attacks deal splash damage in a small area around the target. Widow Mine is revealed when Sentinel Missile is on cooldown. <br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units.</span>",
-        "Name": "Widow Mine",
+        "Name": {
+          "ruRU": "Widow Mine",
+          "enUS": "Widow Mine"
+        },
+        "Description": {
+          "enUS": "Robotic mine. Launches missiles at nearby enemy units while burrowed. Attacks deal splash damage in a small area around the target. <br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>",
+          "ruRU": "Robotic mine. Launches missiles at nearby enemy units while burrowed. Attacks deal splash damage in a small area around the target. <br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>"
+        },
         "LifeMax": 90,
         "Food": -2,
         "CostResource": {
@@ -4401,14 +4563,23 @@
         ],
         "LifeArmorIcon": "btn-upgrade-terran-vehicleplatinglevel0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Terran Vehicle Plating",
+        "LifeArmorName": {
+          "enUS": "Terran Vehicle Plating",
+          "ruRU": "Terran Vehicle Plating"
+        },
         "priority": 129
       },
       "WidowMineBurrowed": {
         "id": "WidowMineBurrowed",
         "Icon": "btn-unit-terran-widowmine",
-        "Description": "Robotic mine. Launches missiles at nearby enemy units while burrowed. Attacks deal splash damage in a small area around the target. Widow Mine is revealed when Sentinel Missile is on cooldown. <br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units.</span>",
-        "Name": "Widow Mine",
+        "Name": {
+          "ruRU": "Widow Mine",
+          "enUS": "Widow Mine"
+        },
+        "Description": {
+          "enUS": "Robotic mine. Launches missiles at nearby enemy units while burrowed. Attacks deal splash damage in a small area around the target. <br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>",
+          "ruRU": "Robotic mine. Launches missiles at nearby enemy units while burrowed. Attacks deal splash damage in a small area around the target. <br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>"
+        },
         "LifeMax": 90,
         "Food": -2,
         "CostResource": {
@@ -4424,81 +4595,22 @@
         "$Phased": "WidowMine",
         "LifeArmorIcon": "btn-upgrade-terran-vehicleplatinglevel0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Terran Vehicle Plating"
-      },
-      "Cyclone": {
-        "id": "Cyclone",
-        "Icon": "btn-unit-terran-cyclone",
-        "Description": "Mobile assault vehicle. Can use Lock On to quickly fire while moving.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units.</span>",
-        "Name": "Cyclone",
-        "LifeMax": 130,
-        "LifeArmor": 0,
-        "Food": -2,
-        "CostResource": {
-          "Minerals": 125,
-          "Vespene": 50
-        },
-        "Production": [],
-        "Research": [],
-        "Morph": [],
-        "$Phase": [],
-        "LifeArmorIcon": "btn-upgrade-terran-vehicleplatinglevel0",
-        "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Terran Vehicle Plating",
-        "priority": 136
-      },
-      "Thor": {
-        "id": "Thor",
-        "Icon": "btn-unit-terran-thor",
-        "Description": "Heavy assault mech.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units.</span>",
-        "Name": "Thor",
-        "LifeMax": 400,
-        "LifeArmor": 1,
-        "Food": -6,
-        "CostResource": {
-          "Minerals": 300,
-          "Vespene": 200
-        },
-        "Production": [],
-        "Research": [],
-        "Morph": [],
-        "$Phase": [
-          "ThorAP"
-        ],
-        "LifeArmorIcon": "btn-upgrade-terran-vehicleplatinglevel0",
-        "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Terran Vehicle Plating",
-        "priority": 140
-      },
-      "ThorAP": {
-        "id": "ThorAP",
-        "Icon": "btn-unit-terran-thor",
-        "Description": "Heavy assault mech.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units.</span>",
-        "Name": "Thor",
-        "LifeMax": 400,
-        "LifeArmor": 1,
-        "Food": -6,
-        "CostResource": {
-          "Minerals": 300,
-          "Vespene": 200
-        },
-        "Production": [],
-        "Research": [],
-        "Morph": [
-          "Thor"
-        ],
-        "$Phase": [],
-        "$Phased": "Thor",
-        "LifeArmorIcon": "btn-upgrade-terran-vehicleplatinglevel0",
-        "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Terran Vehicle Plating",
-        "priority": 141
+        "LifeArmorName": {
+          "enUS": "Terran Vehicle Plating",
+          "ruRU": "Terran Vehicle Plating"
+        }
       },
       "Armory": {
         "id": "Armory",
         "Icon": "btn-building-terran-armory",
-        "Description": "Contains weapon and armor upgrades for Factory and Starport units. <br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Hellbat at the Factory<br/>- Thor at the Factory",
-        "Name": "Armory",
+        "Name": {
+          "enUS": "Armory",
+          "ruRU": "Armory"
+        },
+        "Description": {
+          "enUS": "Contains weapon and armor upgrades for Factory and Starport units. <br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Hellbat at the Factory<br/>- Thor at the Factory",
+          "ruRU": "Contains weapon and armor upgrades for Factory and Starport units. <br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Hellbat at the Factory<br/>- Thor at the Factory"
+        },
         "LifeMax": 750,
         "LifeArmor": 1,
         "CostResource": {
@@ -4510,26 +4622,40 @@
           "TerranVehicleWeaponsLevel1",
           "TerranVehicleWeaponsLevel2",
           "TerranVehicleWeaponsLevel3",
+          "TerranVehicleArmorsLevel1",
+          "TerranVehicleArmorsLevel2",
+          "TerranVehicleArmorsLevel3",
           "TerranShipWeaponsLevel1",
           "TerranShipWeaponsLevel2",
           "TerranShipWeaponsLevel3",
+          "TerranShipArmorsLevel1",
+          "TerranShipArmorsLevel2",
+          "TerranShipArmorsLevel3",
           "TerranVehicleAndShipArmorsLevel1",
           "TerranVehicleAndShipArmorsLevel2",
-          "TerranVehicleAndShipArmorsLevel3",
-          "TerranShipArmorsLevel3"
+          "TerranVehicleAndShipArmorsLevel3"
         ],
         "Morph": [],
         "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-terran-buildingarmor",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Terran Building Plating",
+        "LifeArmorName": {
+          "enUS": "Terran Building Plating",
+          "ruRU": "Terran Building Plating"
+        },
         "priority": 326
       },
       "Starport": {
         "id": "Starport",
         "Icon": "btn-building-terran-starport",
-        "Description": "Air-unit production facility. <br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Vikings<br/>- Medivacs<br/>- Liberators",
-        "Name": "Starport",
+        "Name": {
+          "enUS": "Starport",
+          "ruRU": "Starport"
+        },
+        "Description": {
+          "enUS": "Air-unit production facility. <br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Vikings<br/>- Medivacs",
+          "ruRU": "Air-unit production facility. <br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Vikings<br/>- Medivacs"
+        },
         "LifeMax": 1300,
         "LifeArmor": 1,
         "CostResource": {
@@ -4553,14 +4679,23 @@
         ],
         "LifeArmorIcon": "btn-upgrade-terran-buildingarmor",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Terran Building Plating",
+        "LifeArmorName": {
+          "enUS": "Terran Building Plating",
+          "ruRU": "Terran Building Plating"
+        },
         "priority": 329
       },
       "StarportFlying": {
         "id": "StarportFlying",
         "Icon": "btn-building-terran-starport",
-        "Description": "Starport must land to start unit production.",
-        "Name": "Starport",
+        "Name": {
+          "enUS": "Starport",
+          "ruRU": "Starport"
+        },
+        "Description": {
+          "enUS": "Starport must land to start unit production.",
+          "ruRU": "Starport must land to start unit production."
+        },
         "LifeMax": 1300,
         "LifeArmor": 1,
         "CostResource": {
@@ -4579,13 +4714,22 @@
         "$Phased": "Starport",
         "LifeArmorIcon": "btn-upgrade-terran-buildingarmor",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Terran Building Plating"
+        "LifeArmorName": {
+          "enUS": "Terran Building Plating",
+          "ruRU": "Terran Building Plating"
+        }
       },
       "StarportReactor": {
         "id": "StarportReactor",
         "Icon": "btn-building-terran-reactor",
-        "Description": "Allows 2 units to be created simultaneously.",
-        "Name": "Reactor",
+        "Name": {
+          "enUS": "Reactor",
+          "ruRU": "Reactor"
+        },
+        "Description": {
+          "enUS": "Allows 2 units to be created simultaneously.",
+          "ruRU": "Allows 2 units to be created simultaneously."
+        },
         "LifeMax": 400,
         "LifeArmor": 1,
         "CostResource": {
@@ -4598,14 +4742,23 @@
         "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-terran-buildingarmor",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Terran Building Plating",
+        "LifeArmorName": {
+          "enUS": "Terran Building Plating",
+          "ruRU": "Terran Building Plating"
+        },
         "priority": 27
       },
       "StarportTechLab": {
         "id": "StarportTechLab",
         "Icon": "btn-building-terran-techlab",
-        "Description": "Enables additional units and research options. A Tech Lab can fit onto any production structure.",
-        "Name": "Tech Lab",
+        "Name": {
+          "enUS": "Tech Lab",
+          "ruRU": "Tech Lab"
+        },
+        "Description": {
+          "enUS": "Enables additional units and research options. A Tech Lab can fit onto any production structure.",
+          "ruRU": "Enables additional units and research options. A Tech Lab can fit onto any production structure."
+        },
         "LifeMax": 400,
         "LifeArmor": 1,
         "CostResource": {
@@ -4614,23 +4767,31 @@
         },
         "Production": [],
         "Research": [
-          "BansheeCloak",
           "BansheeSpeed",
           "InterferenceMatrix",
-          "HunterSeeker"
+          "BansheeCloak"
         ],
         "Morph": [],
         "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-terran-buildingarmor",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Terran Building Plating",
+        "LifeArmorName": {
+          "enUS": "Terran Building Plating",
+          "ruRU": "Terran Building Plating"
+        },
         "priority": 337
       },
       "VikingFighter": {
         "id": "VikingFighter",
         "Icon": "btn-unit-terran-vikingfighter",
-        "Description": "Durable support flyer. Loaded with strong anti-capital air missiles. Can switch into Assault Mode to attack ground units.<br/><br/><c val=\"#ColorAttackInfo\">Can attack air units.</span>",
-        "Name": "Viking",
+        "Name": {
+          "enUS": "Viking",
+          "ruRU": "Viking"
+        },
+        "Description": {
+          "enUS": "Durable support flyer. Loaded with strong anti-capital air missiles. Can switch into Assault Mode to attack ground units.<br/><br/><span style=\"color: #ffff8a\">Can attack air units.</span>",
+          "ruRU": "Durable support flyer. Loaded with strong anti-capital air missiles. Can switch into Assault Mode to attack ground units.<br/><br/><span style=\"color: #ffff8a\">Can attack air units.</span>"
+        },
         "LifeMax": 135,
         "Food": -2,
         "CostResource": {
@@ -4645,14 +4806,23 @@
         ],
         "LifeArmorIcon": "btn-upgrade-terran-shipplatinglevel0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Terran Ship Plating",
+        "LifeArmorName": {
+          "enUS": "Terran Ship Plating",
+          "ruRU": "Terran Ship Plating"
+        },
         "priority": 150
       },
       "VikingAssault": {
         "id": "VikingAssault",
         "Icon": "btn-unit-terran-vikingassault",
-        "Description": "Durable support unit. Can switch into Fighter Mode to attack air units.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
-        "Name": "Viking",
+        "Name": {
+          "enUS": "Viking",
+          "ruRU": "Viking"
+        },
+        "Description": {
+          "enUS": "Durable support unit. Can switch into Fighter Mode to attack air units.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+          "ruRU": "Durable support unit. Can switch into Fighter Mode to attack air units.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>"
+        },
         "LifeMax": 135,
         "Food": -2,
         "CostResource": {
@@ -4668,14 +4838,23 @@
         "$Phased": "VikingFighter",
         "LifeArmorIcon": "btn-upgrade-terran-shipplatinglevel0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Terran Ship Plating",
+        "LifeArmorName": {
+          "enUS": "Terran Ship Plating",
+          "ruRU": "Terran Ship Plating"
+        },
         "priority": 155
       },
       "Medivac": {
         "id": "Medivac",
         "Icon": "btn-unit-terran-medivac",
-        "Description": "Air transport. Heals nearby biological units. Can use Afterburners.",
-        "Name": "Medivac",
+        "Name": {
+          "enUS": "Medivac",
+          "ruRU": "Medivac"
+        },
+        "Description": {
+          "enUS": "Air transport. Heals nearby biological units. Can use Afterburners.",
+          "ruRU": "Air transport. Heals nearby biological units. Can use Afterburners."
+        },
         "LifeMax": 150,
         "LifeArmor": 1,
         "Food": -2,
@@ -4689,14 +4868,23 @@
         "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-terran-shipplatinglevel0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Terran Ship Plating",
+        "LifeArmorName": {
+          "enUS": "Terran Ship Plating",
+          "ruRU": "Terran Ship Plating"
+        },
         "priority": 185
       },
       "Raven": {
         "id": "Raven",
         "Icon": "btn-unit-terran-raven",
-        "Description": "Aerial support unit. Can use Auto-Turret, Interference Matrix, and Anti-Armor Missile.<br/><br/><span style=\"color: #FFE303\">Detector</span>",
-        "Name": "Raven",
+        "Name": {
+          "enUS": "Raven",
+          "ruRU": "Raven"
+        },
+        "Description": {
+          "enUS": "Aerial support unit. Can use Auto-Turret, Point Defense Drone, and Seeker Missile.<br/><br/><span style=\"color: FFE303\">Detector</span>",
+          "ruRU": "Aerial support unit. Can use Auto-Turret, Point Defense Drone, and Seeker Missile.<br/><br/><span style=\"color: FFE303\">Detector</span>"
+        },
         "LifeMax": 140,
         "LifeArmor": 1,
         "Food": -2,
@@ -4712,16 +4900,24 @@
         "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-terran-shipplatinglevel0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Terran Ship Plating",
+        "LifeArmorName": {
+          "enUS": "Terran Ship Plating",
+          "ruRU": "Terran Ship Plating"
+        },
         "priority": 190
       },
       "AutoTurret": {
         "id": "AutoTurret",
         "Icon": "btn-building-terran-autoturret",
-        "Description": "Automated defensive turret. Times out after <b>11</b> seconds.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units.</span>",
-        "Name": "Auto-Turret",
+        "Name": {
+          "enUS": "Auto-Turret",
+          "ruRU": "Auto-Turret"
+        },
+        "Description": {
+          "enUS": "Automated defensive turret. Times out after <b>11</b> seconds.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>",
+          "ruRU": "Automated defensive turret. Times out after <b>11</b> seconds.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>"
+        },
         "LifeMax": 100,
-        "LifeArmor": 0,
         "CostResource": {
           "Minerals": 100
         },
@@ -4731,14 +4927,23 @@
         "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-terran-buildingarmor",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Terran Building Plating",
+        "LifeArmorName": {
+          "enUS": "Terran Building Plating",
+          "ruRU": "Terran Building Plating"
+        },
         "priority": 346
       },
       "Banshee": {
         "id": "Banshee",
         "Icon": "btn-unit-terran-banshee",
-        "Description": "Tactical-strike aircraft. Can be upgraded to use cloak.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
-        "Name": "Banshee",
+        "Name": {
+          "enUS": "Banshee",
+          "ruRU": "Banshee"
+        },
+        "Description": {
+          "enUS": "Tactical-strike aircraft. Can be upgraded to use cloak.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+          "ruRU": "Tactical-strike aircraft. Can be upgraded to use cloak.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>"
+        },
         "LifeMax": 140,
         "Food": -3,
         "CostResource": {
@@ -4751,14 +4956,23 @@
         "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-terran-shipplatinglevel0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Terran Ship Plating",
+        "LifeArmorName": {
+          "enUS": "Terran Ship Plating",
+          "ruRU": "Terran Ship Plating"
+        },
         "priority": 210
       },
       "Battlecruiser": {
         "id": "Battlecruiser",
         "Icon": "btn-unit-terran-battlecruiser",
-        "Description": "Powerful warship. Can use Yamato Cannon and Tactical Jump.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units.</span>",
-        "Name": "Battlecruiser",
+        "Name": {
+          "enUS": "Battlecruiser",
+          "ruRU": "Battlecruiser"
+        },
+        "Description": {
+          "enUS": "Powerful warship. Can use Yamato Cannon and Tactical Jump.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>",
+          "ruRU": "Powerful warship. Can use Yamato Cannon and Tactical Jump.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>"
+        },
         "LifeMax": 550,
         "LifeArmor": 3,
         "Food": -6,
@@ -4766,20 +4980,31 @@
           "Minerals": 400,
           "Vespene": 300
         },
-        "Production": [],
+        "Production": [
+          "Battlecruiser"
+        ],
         "Research": [],
         "Morph": [],
         "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-terran-shipplatinglevel0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Terran Ship Plating",
+        "LifeArmorName": {
+          "enUS": "Terran Ship Plating",
+          "ruRU": "Terran Ship Plating"
+        },
         "priority": 210
       },
       "Liberator": {
         "id": "Liberator",
         "Icon": "btn-ability-terran-liberator-aamode",
-        "Description": "Artillery fighter. Loaded with missiles that deal area damage to enemy air targets. Can switch into Defender Mode to provide siege support.<br/><br/><c val=\"#ColorAttackInfo\">Can attack air units.</span>",
-        "Name": "Liberator",
+        "Name": {
+          "enUS": "Liberator",
+          "ruRU": "Liberator"
+        },
+        "Description": {
+          "enUS": "Artillery fighter. Loaded with missiles that deal area damage to enemy air targets. Can switch into Defender Mode to provide siege support.<br/><br/><span style=\"color: #ffff8a\">Can attack air units.</span>",
+          "ruRU": "Artillery fighter. Loaded with missiles that deal area damage to enemy air targets. Can switch into Defender Mode to provide siege support.<br/><br/><span style=\"color: #ffff8a\">Can attack air units.</span>"
+        },
         "LifeMax": 180,
         "Food": -3,
         "CostResource": {
@@ -4792,14 +5017,23 @@
         "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-terran-shipplatinglevel0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Terran Ship Plating",
+        "LifeArmorName": {
+          "enUS": "Terran Ship Plating",
+          "ruRU": "Terran Ship Plating"
+        },
         "priority": 188
       },
       "FusionCore": {
         "id": "FusionCore",
         "Icon": "btn-building-terran-fusioncore",
-        "Description": "Contains Medivac, Liberator, and Battlecruiser upgrades. <br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Battlecruisers at the Starport",
-        "Name": "Fusion Core",
+        "Name": {
+          "enUS": "Fusion Core",
+          "ruRU": "Fusion Core"
+        },
+        "Description": {
+          "enUS": "Contains Battlecruiser upgrades. <br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Battlecruisers at the Starport",
+          "ruRU": "Contains Battlecruiser upgrades. <br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Battlecruisers at the Starport"
+        },
         "LifeMax": 750,
         "LifeArmor": 1,
         "CostResource": {
@@ -4809,21 +5043,30 @@
         "Production": [],
         "Research": [
           "BattlecruiserEnableSpecializations",
-          "LiberatorAGRangeUpgrade",
-          "MedivacCaduceusReactor"
+          "MedivacCaduceusReactor",
+          "LiberatorAGRangeUpgrade"
         ],
         "Morph": [],
         "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-terran-buildingarmor",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Terran Building Plating",
+        "LifeArmorName": {
+          "enUS": "Terran Building Plating",
+          "ruRU": "Terran Building Plating"
+        },
         "priority": 333
       },
       "MULE": {
         "id": "MULE",
         "Icon": "btn-unit-terran-mule",
-        "Description": "Prototype harvesting unit. Gathers minerals more quickly than regular SCVs. MULEs last <b>90</b> before their systems fail.",
-        "Name": "MULE",
+        "Name": {
+          "enUS": "MULE",
+          "ruRU": "MULE"
+        },
+        "Description": {
+          "enUS": "Prototype harvesting unit. Gathers minerals more quickly than regular SCVs. MULEs last <b>90</b> before their systems fail.",
+          "ruRU": "Prototype harvesting unit. Gathers minerals more quickly than regular SCVs. MULEs last <b>90</b> before their systems fail."
+        },
         "LifeMax": 60,
         "CostResource": {
           "Minerals": 50
@@ -4834,14 +5077,23 @@
         "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-terran-infantryarmorlevel0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Terran Infantry Armor",
+        "LifeArmorName": {
+          "enUS": "Terran Infantry Armor",
+          "ruRU": "Terran Infantry Armor"
+        },
         "priority": 20
       },
       "PlanetaryFortress": {
         "id": "PlanetaryFortress",
         "Icon": "btn-building-terran-planetaryfortress",
-        "Description": "Defensive stronghold. <br/>Used to receive gathered resources. <br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
-        "Name": "Planetary Fortress",
+        "Name": {
+          "enUS": "Planetary Fortress",
+          "ruRU": "Planetary Fortress"
+        },
+        "Description": {
+          "enUS": "Defensive stronghold. <br/>Used to receive gathered resources. <br/><br/><span style=\"color: ffff8a\">Can attack ground units.</span>",
+          "ruRU": "Defensive stronghold. <br/>Used to receive gathered resources. <br/><br/><span style=\"color: ffff8a\">Can attack ground units.</span>"
+        },
         "LifeMax": 1500,
         "LifeArmor": 3,
         "Food": 15,
@@ -4857,14 +5109,23 @@
         "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-terran-buildingarmor",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Terran Building Plating",
+        "LifeArmorName": {
+          "enUS": "Terran Building Plating",
+          "ruRU": "Terran Building Plating"
+        },
         "priority": 240
       },
       "CommandCenterFlying": {
         "id": "CommandCenterFlying",
         "Icon": "btn-building-terran-commandcenter",
-        "Description": "Primary structure. Must land to receive resources, produce units, or use abilities.",
-        "Name": "Command Center",
+        "Name": {
+          "enUS": "Command Center",
+          "ruRU": "Command Center"
+        },
+        "Description": {
+          "enUS": "Primary structure. Must land to receive resources, produce units, or use abilities.",
+          "ruRU": "Primary structure. Must land to receive resources, produce units, or use abilities."
+        },
         "LifeMax": 1500,
         "LifeArmor": 1,
         "Food": 15,
@@ -4880,7 +5141,10 @@
         "$Phased": "CommandCenter",
         "LifeArmorIcon": "btn-upgrade-terran-buildingarmor",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Terran Building Plating"
+        "LifeArmorName": {
+          "enUS": "Terran Building Plating",
+          "ruRU": "Terran Building Plating"
+        }
       }
     }
   },
@@ -4897,17 +5161,17 @@
     "SCV",
     "Marine",
     "Marauder",
-    "Ghost",
     "Reaper",
+    "Ghost",
     "Hellion",
     "HellionTank",
     "SiegeTank",
     "SiegeTankSieged",
-    "WidowMine",
-    "WidowMineBurrowed",
-    "Cyclone",
     "Thor",
     "ThorAP",
+    "Cyclone",
+    "WidowMine",
+    "WidowMineBurrowed",
     "VikingFighter",
     "VikingAssault",
     "Medivac",
@@ -4954,32 +5218,36 @@
     "TerranInfantryWeaponsLevel1",
     "TerranInfantryWeaponsLevel2",
     "TerranInfantryWeaponsLevel3",
-    "TerranBuildingArmor",
+    "NeosteelFrame",
     "HiSecAutoTracking",
     "TerranInfantryArmorsLevel1",
     "TerranInfantryArmorsLevel2",
     "TerranInfantryArmorsLevel3",
     "PersonalCloaking",
     "HighCapacityBarrels",
-    "DrillClaws",
-    "SmartServos",
     "HurricaneThrusters",
+    "SmartServos",
+    "DrillClaws",
     "TerranVehicleWeaponsLevel1",
     "TerranVehicleWeaponsLevel2",
     "TerranVehicleWeaponsLevel3",
+    "TerranVehicleArmorsLevel1",
+    "TerranVehicleArmorsLevel2",
+    "TerranVehicleArmorsLevel3",
     "TerranShipWeaponsLevel1",
     "TerranShipWeaponsLevel2",
     "TerranShipWeaponsLevel3",
+    "TerranShipArmorsLevel1",
+    "TerranShipArmorsLevel2",
+    "TerranShipArmorsLevel3",
     "TerranVehicleAndShipArmorsLevel1",
     "TerranVehicleAndShipArmorsLevel2",
     "TerranVehicleAndShipArmorsLevel3",
-    "TerranShipArmorsLevel3",
-    "BansheeCloak",
     "BansheeSpeed",
     "InterferenceMatrix",
-    "HunterSeeker",
+    "BansheeCloak",
     "BattlecruiserEnableSpecializations",
-    "LiberatorAGRangeUpgrade",
-    "MedivacCaduceusReactor"
+    "MedivacCaduceusReactor",
+    "LiberatorAGRangeUpgrade"
   ]
 }

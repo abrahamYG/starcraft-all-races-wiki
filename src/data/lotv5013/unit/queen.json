@@ -1,6 +1,12 @@
 {
-  "Name": "Queen",
-  "Description": "Defensive unit. Can use Spawn Larvae, Spawn Creep Tumor, and Transfusion. Moves much faster on creep.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>",
+  "Name": {
+    "enUS": "Queen",
+    "ruRU": "Queen"
+  },
+  "Description": {
+    "enUS": "Defensive unit. Can use Spawn Larvae, Spawn Creep Tumor, and Transfusion. Moves much faster on creep.<br/><br/><span style=\"color: ffff8a\">Can attack ground and air units.</span>",
+    "ruRU": "Defensive unit. Can use Spawn Larvae, Spawn Creep Tumor, and Transfusion. Moves much faster on creep.<br/><br/><span style=\"color: ffff8a\">Can attack ground and air units.</span>"
+  },
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -12,7 +18,10 @@
   "ResourceType": "Unknown",
   "LifeStart": 175,
   "LifeMax": 175,
-  "LifeArmorName": "Zerg Ground Carapace",
+  "LifeArmorName": {
+    "enUS": "Zerg Ground Carapace",
+    "ruRU": "Zerg Ground Carapace"
+  },
   "Mover": "Ground",
   "StationaryTurningRate": 999.8437,
   "TurningRate": 999.8437,
@@ -77,6 +86,12 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "TechAliasArray": [
     "Alias_Queen"
   ],
@@ -105,8 +120,7 @@
   "Collide": [
     "Ground",
     "ForceField",
-    "Small",
-    "Locust"
+    "Small"
   ],
   "Sight": 9,
   "TacticalAIThink": "AIThinkQueen",
@@ -137,6 +151,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -174,8 +194,7 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move",
-          "AbilSetId": "Move"
+          "id": "move"
         },
         "Cost": {
           "Minerals": 0,
@@ -193,8 +212,14 @@
         "AbilCmd": "move,Move",
         "id": "Move",
         "Icon": "btn-command-move",
-        "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
-        "Name": "Move",
+        "Name": {
+          "enUS": "Move",
+          "ruRU": "Двигаться /// Move"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+          "ruRU": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies."
+        },
         "Hotkey": "M"
       },
       {
@@ -216,6 +241,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "stop",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "AbilSetId": "Stop",
           "CmdButtonArray": {
             "Stop": {
@@ -261,8 +292,14 @@
         "AbilCmd": "stop,Stop",
         "id": "Stop",
         "Icon": "btn-command-stop",
-        "Tooltip": "Orders selected units to cancel all orders and stop moving.",
-        "Name": "Stop",
+        "Name": {
+          "enUS": "Stop",
+          "ruRU": "Отставить /// Stop"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to cancel all orders and stop moving.",
+          "ruRU": "Orders selected units to cancel all orders and stop moving."
+        },
         "Hotkey": "S"
       },
       {
@@ -290,6 +327,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -327,8 +370,7 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move",
-          "AbilSetId": "Move"
+          "id": "move"
         },
         "Cost": {
           "Minerals": 0,
@@ -346,8 +388,14 @@
         "AbilCmd": "move,HoldPos",
         "id": "MoveHoldPosition",
         "Icon": "btn-command-holdposition",
-        "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
-        "Name": "Hold Position",
+        "Name": {
+          "enUS": "Hold Position",
+          "ruRU": "Удерживать позицию /// Hold Position"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+          "ruRU": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage."
+        },
         "Hotkey": "H"
       },
       {
@@ -375,6 +423,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -412,8 +466,7 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move",
-          "AbilSetId": "Move"
+          "id": "move"
         },
         "Cost": {
           "Minerals": 0,
@@ -431,8 +484,14 @@
         "AbilCmd": "move,Patrol",
         "id": "MovePatrol",
         "Icon": "btn-command-patrol",
-        "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
-        "Name": "Patrol",
+        "Name": {
+          "enUS": "Patrol",
+          "ruRU": "Патрулировать /// Patrol"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+          "ruRU": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies."
+        },
         "Hotkey": "P"
       },
       {
@@ -454,6 +513,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "attack",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "AbilSetId": "Attack",
           "Alignment": "Negative",
           "AcquireFilters": "-;Player,Ally,Neutral,Dead,Hidden,Invulnerable,Benign",
@@ -500,8 +565,14 @@
         "AbilCmd": "attack,Execute",
         "id": "Attack",
         "Icon": "btn-command-attack",
-        "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
-        "Name": "Attack",
+        "Name": {
+          "enUS": "Attack",
+          "ruRU": "Атаковать /// Attack"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+          "ruRU": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed."
+        },
         "Hotkey": "A"
       },
       {
@@ -523,6 +594,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "SpawnLarva",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "RangeSlop": 1,
           "ArcSlop": 11.25,
           "AutoCastAcquireLevel": "Offensive",
@@ -534,7 +611,7 @@
             "RangeUseCasterRadius": 1,
             "ReApproachable": 1,
             "RequireTargetVision": 1,
-            "WaitToSpend": 0,
+            "WaitToSpend": 1,
             "UpdateChargesOnLevelChange": 1,
             "BestUnit": 1
           },
@@ -649,8 +726,14 @@
         "AbilCmd": "SpawnLarva,Execute",
         "id": "MorphMorphalisk",
         "Icon": "btn-unit-zerg-larva",
-        "Tooltip": "Target Hatchery, Lair, or Hive spawns <b>3</b> Larvae in <b>40</b> seconds. If Hatchery, Lair, or Hive has more than 3 Larvae at one time, regular Larva production will stop until there are fewer than 3 Larvae. This will stack and queue if the target is already spawning additional Larva.",
-        "Name": "Spawn Larvae",
+        "Name": {
+          "enUS": "Spawn Larvae",
+          "ruRU": "Spawn Larvae"
+        },
+        "Tooltip": {
+          "enUS": "Target Hatchery, Lair, or Hive spawns 4 Larvae in <b>40</b> seconds. If Hatchery, Lair, or Hive has more than 3 Larvae at one time, regular Larva production will stop until there are fewer than 3 Larvae.",
+          "ruRU": "Target Hatchery, Lair, or Hive spawns 4 Larvae in <b>40</b> seconds. If Hatchery, Lair, or Hive has more than 3 Larvae at one time, regular Larva production will stop until there are fewer than 3 Larvae."
+        },
         "Hotkey": "V"
       },
       {
@@ -687,8 +770,14 @@
         "AbilCmd": "QueenBuild,Build1",
         "id": "BuildCreepTumor",
         "Icon": "btn-building-zerg-creeptumor",
-        "Tooltip": "A burrowed creep generator. Creep feeds nearby Zerg structures. A Creep Tumor can spawn one additional Creep Tumor.<br/><br/><c val=\"#ColorAttackInfo\">Bonus: Zerg move faster on creep.</span>",
-        "Name": "Spawn Creep Tumor",
+        "Name": {
+          "enUS": "Spawn Creep Tumor",
+          "ruRU": "Spawn Creep Tumor"
+        },
+        "Tooltip": {
+          "enUS": "A burrowed creep generator. Creep feeds nearby Zerg structures. A Creep Tumor can spawn one additional Creep Tumor.<br/><br/><span style=\"color: #ffff8a\">Bonus: Zerg move faster on creep.</span>",
+          "ruRU": "A burrowed creep generator. Creep feeds nearby Zerg structures. A Creep Tumor can spawn one additional Creep Tumor.<br/><br/><span style=\"color: #ffff8a\">Bonus: Zerg move faster on creep.</span>"
+        },
         "Hotkey": "C"
       },
       {
@@ -696,7 +785,7 @@
           "class": "CAbilEffectTarget",
           "Name": "Abil/Name/Transfusion",
           "TechPlayer": "Upkeep",
-          "EditorCategories": "Race:Terran,AbilityorEffectType:Units",
+          "EditorCategories": "Race:Zerg,AbilityorEffectType:Units",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
             {
@@ -710,6 +799,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "Transfusion",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "RangeSlop": 1,
           "ArcSlop": 11.25,
           "AutoCastAcquireLevel": "Offensive",
@@ -721,7 +816,7 @@
             "RangeUseCasterRadius": 1,
             "ReApproachable": 1,
             "RequireTargetVision": 1,
-            "WaitToSpend": 0,
+            "WaitToSpend": 1,
             "UpdateChargesOnLevelChange": 1,
             "BestUnit": 1,
             "AllowMovement": 1,
@@ -816,8 +911,8 @@
           "CastIntroTime": [
             0.2
           ],
-          "id": "Transfusion",
-          "Alignment": "Positive"
+          "Alignment": "Positive",
+          "id": "Transfusion"
         },
         "Cost": {
           "Minerals": 0,
@@ -835,8 +930,14 @@
         "AbilCmd": "Transfusion,Execute",
         "id": "Transfusion",
         "Icon": "btn-ability-zerg-transfusion-color",
-        "Tooltip": "Instantly heals target biological unit or structure for <b>75</b> life. An additional <b>50.000</b> life regenerates over <b>10</b> seconds.",
-        "Name": "Transfusion",
+        "Name": {
+          "enUS": "Transfusion",
+          "ruRU": "Transfusion"
+        },
+        "Tooltip": {
+          "enUS": "Instantly restores 125 life to target biological unit or structure.",
+          "ruRU": "Instantly restores 125 life to target biological unit or structure."
+        },
         "Hotkey": "T"
       },
       {
@@ -878,894 +979,15 @@
         "AbilCmd": "BurrowQueenDown,Execute",
         "id": "BurrowDown",
         "Icon": "btn-ability-zerg-burrow-color",
-        "Tooltip": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
-        "Name": "Burrow",
+        "Name": {
+          "enUS": "Burrow",
+          "ruRU": "Burrow"
+        },
+        "Tooltip": {
+          "enUS": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
+          "ruRU": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection."
+        },
         "Hotkey": "D"
-      },
-      {
-        "Info": {
-          "SectionArray": {
-            "Actor": {
-              "DurationArray": {
-                "Duration": 1.333
-              }
-            },
-            "Collide": {
-              "DurationArray": {
-                "Delay": 0.8332
-              }
-            },
-            "Stats": {
-              "DurationArray": {
-                "Delay": 1.1665
-              }
-            }
-          },
-          "Unit": "DroneBurrowed",
-          "RandomDelayMax": 0.25
-        },
-        "Unit": "DroneBurrowed",
-        "Cost": {
-          "Minerals": 50,
-          "Vespene": 0,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": -1
-        },
-        "Row": 2,
-        "Column": 3,
-        "Type": "AbilCmd",
-        "AbilCmd": "BurrowDroneDown,Execute",
-        "id": "BurrowDown",
-        "Icon": "btn-ability-zerg-burrow-color",
-        "Tooltip": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
-        "Name": "Burrow",
-        "Hotkey": "D"
-      },
-      {
-        "Info": {
-          "SectionArray": {
-            "Actor": {
-              "DurationArray": {
-                "Duration": 1.333
-              }
-            },
-            "Collide": {
-              "DurationArray": {
-                "Delay": 0.5556
-              }
-            },
-            "Stats": {
-              "DurationArray": {
-                "Delay": 1
-              }
-            }
-          },
-          "Unit": "ZerglingBurrowed",
-          "RandomDelayMax": 0.3703
-        },
-        "Unit": "ZerglingBurrowed",
-        "Cost": {
-          "Minerals": 25,
-          "Vespene": 0,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": -0.5
-        },
-        "Row": 2,
-        "Column": 3,
-        "Type": "AbilCmd",
-        "AbilCmd": "BurrowZerglingDown,Execute",
-        "id": "BurrowDown",
-        "Icon": "btn-ability-zerg-burrow-color",
-        "Tooltip": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
-        "Name": "Burrow",
-        "Hotkey": "D"
-      },
-      {
-        "Info": {
-          "SectionArray": {
-            "Actor": {
-              "DurationArray": {
-                "Duration": 1
-              }
-            },
-            "Collide": {
-              "DurationArray": {
-                "Delay": 0.5556
-              }
-            },
-            "Stats": {
-              "DurationArray": {
-                "Delay": 1
-              }
-            }
-          },
-          "Unit": "BanelingBurrowed",
-          "RandomDelayMax": 0.3703
-        },
-        "Unit": "BanelingBurrowed",
-        "Cost": {
-          "Minerals": 50,
-          "Vespene": 25,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": -0.5
-        },
-        "Row": 2,
-        "Column": 3,
-        "Type": "AbilCmd",
-        "AbilCmd": "BurrowBanelingDown,Execute",
-        "id": "BurrowDown",
-        "Icon": "btn-ability-zerg-burrow-color",
-        "Tooltip": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
-        "Name": "Burrow",
-        "Hotkey": "D"
-      },
-      {
-        "Info": {
-          "SectionArray": {
-            "Actor": {
-              "DurationArray": {
-                "Duration": 0.5556
-              }
-            },
-            "Collide": {
-              "DurationArray": {
-                "Delay": 0.5556
-              }
-            },
-            "Stats": {
-              "DurationArray": {
-                "Delay": 0.5556
-              }
-            }
-          },
-          "Unit": "RoachBurrowed",
-          "RandomDelayMax": 0.1
-        },
-        "Unit": "RoachBurrowed",
-        "Cost": {
-          "Minerals": 75,
-          "Vespene": 25,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": -2
-        },
-        "Row": 2,
-        "Column": 3,
-        "Type": "AbilCmd",
-        "AbilCmd": "BurrowRoachDown,Execute",
-        "id": "BurrowDown",
-        "Icon": "btn-ability-zerg-burrow-color",
-        "Tooltip": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
-        "Name": "Burrow",
-        "Hotkey": "D"
-      },
-      {
-        "Info": {
-          "SectionArray": {
-            "Actor": {
-              "DurationArray": {
-                "Duration": 1.333
-              }
-            },
-            "Collide": {
-              "DurationArray": {
-                "Delay": 0.5556
-              }
-            },
-            "Stats": {
-              "DurationArray": {
-                "Delay": 1.166
-              }
-            }
-          },
-          "Unit": "HydraliskBurrowed",
-          "RandomDelayMax": 0.3703
-        },
-        "Unit": "HydraliskBurrowed",
-        "Cost": {
-          "Minerals": 100,
-          "Vespene": 50,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": -2
-        },
-        "Row": 2,
-        "Column": 3,
-        "Type": "AbilCmd",
-        "AbilCmd": "BurrowHydraliskDown,Execute",
-        "id": "BurrowDown",
-        "Icon": "btn-ability-zerg-burrow-color",
-        "Tooltip": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
-        "Name": "Burrow",
-        "Hotkey": "D"
-      },
-      {
-        "Info": {
-          "SectionArray": {
-            "Actor": {
-              "DurationArray": {
-                "Duration": 0.5556
-              }
-            },
-            "Collide": {
-              "DurationArray": {
-                "Delay": 0.5556
-              }
-            },
-            "Stats": {
-              "DurationArray": {
-                "Delay": 0.5556
-              }
-            }
-          },
-          "Unit": "RavagerBurrowed",
-          "RandomDelayMax": 0.1
-        },
-        "Unit": "RavagerBurrowed",
-        "Cost": {
-          "Minerals": 100,
-          "Vespene": 100,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": -3
-        },
-        "Row": 2,
-        "Column": 3,
-        "Type": "AbilCmd",
-        "AbilCmd": "BurrowRavagerDown,Execute",
-        "id": "BurrowDown",
-        "Icon": "btn-ability-zerg-burrow-color",
-        "Tooltip": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
-        "Name": "Burrow",
-        "Hotkey": "D"
-      },
-      {
-        "Info": {
-          "SectionArray": {
-            "Actor": {
-              "DurationArray": {
-                "Duration": 2.5
-              }
-            },
-            "Stats": {
-              "DurationArray": {
-                "Delay": 2.5
-              }
-            }
-          },
-          "Unit": "SwarmHostBurrowedMP",
-          "RallyResetPhase": "Delay",
-          "RandomDelayMax": 0.25
-        },
-        "Unit": "SwarmHostBurrowedMP",
-        "Cost": {
-          "Minerals": 100,
-          "Vespene": 75,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": -3
-        },
-        "Row": 2,
-        "Column": 3,
-        "Type": "AbilCmd",
-        "AbilCmd": "MorphToSwarmHostBurrowedMP,Execute",
-        "id": "BurrowDown",
-        "Icon": "btn-ability-zerg-burrow-color",
-        "Tooltip": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
-        "Name": "Burrow",
-        "Hotkey": "D"
-      },
-      {
-        "Info": {
-          "SectionArray": {
-            "Actor": {
-              "DurationArray": {
-                "Duration": 0.8332
-              }
-            },
-            "Collide": {
-              "DurationArray": {
-                "Delay": 0.5556
-              }
-            },
-            "Stats": {
-              "DurationArray": {
-                "Delay": 0.6665
-              }
-            }
-          },
-          "Unit": "QueenBurrowed",
-          "RandomDelayMax": 0.25
-        },
-        "Unit": "QueenBurrowed",
-        "Cost": {
-          "Minerals": 150,
-          "Vespene": 0,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": -2
-        },
-        "Row": 2,
-        "Column": 3,
-        "Type": "AbilCmd",
-        "AbilCmd": "BurrowQueenDown,Execute",
-        "id": "BurrowDown",
-        "Icon": "btn-ability-zerg-burrow-color",
-        "Tooltip": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
-        "Name": "Burrow",
-        "Hotkey": "D"
-      },
-      {
-        "Info": {
-          "SectionArray": {
-            "Actor": {
-              "DurationArray": {
-                "Duration": 1.333
-              }
-            },
-            "Collide": {
-              "DurationArray": {
-                "Delay": 0.5556
-              }
-            },
-            "Stats": {
-              "DurationArray": {
-                "Delay": 1
-              }
-            }
-          },
-          "Unit": "InfestorTerranBurrowed",
-          "RandomDelayMax": 0.3703
-        },
-        "Unit": "InfestorTerranBurrowed",
-        "Cost": {
-          "Minerals": 0,
-          "Vespene": 0,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 2,
-        "Column": 3,
-        "Type": "AbilCmd",
-        "AbilCmd": "BurrowInfestorTerranDown,Execute",
-        "id": "BurrowDown",
-        "Icon": "btn-ability-zerg-burrow-color",
-        "Tooltip": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
-        "Name": "Burrow",
-        "Hotkey": "D"
-      },
-      {
-        "Info": {
-          "SectionArray": {
-            "Actor": {
-              "DurationArray": {
-                "Duration": 0.5
-              }
-            },
-            "Collide": {
-              "DurationArray": {
-                "Delay": 0.5
-              }
-            },
-            "Stats": {
-              "DurationArray": {
-                "Delay": 0.5
-              }
-            }
-          },
-          "Unit": "InfestorBurrowed",
-          "RandomDelayMax": 0.3703
-        },
-        "Unit": "InfestorBurrowed",
-        "Cost": {
-          "Minerals": 100,
-          "Vespene": 150,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": -2
-        },
-        "Row": 2,
-        "Column": 3,
-        "Type": "AbilCmd",
-        "AbilCmd": "BurrowInfestorDown,Execute",
-        "id": "BurrowDown",
-        "Icon": "btn-ability-zerg-burrow-color",
-        "Tooltip": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
-        "Name": "Burrow",
-        "Hotkey": "D"
-      },
-      {
-        "Info": {
-          "SectionArray": {
-            "Actor": {
-              "DurationArray": {
-                "Duration": 1.25
-              }
-            },
-            "Collide": {
-              "DurationArray": {
-                "Delay": 0.9375
-              }
-            },
-            "Stats": {
-              "DurationArray": {
-                "Delay": 1.1457
-              }
-            }
-          },
-          "Unit": "UltraliskBurrowed",
-          "RandomDelayMax": 0.25
-        },
-        "Unit": "UltraliskBurrowed",
-        "Cost": {
-          "Minerals": 275,
-          "Vespene": 200,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": -6
-        },
-        "Row": 2,
-        "Column": 3,
-        "Type": "AbilCmd",
-        "AbilCmd": "BurrowUltraliskDown,Execute",
-        "id": "BurrowDown",
-        "Icon": "btn-ability-zerg-burrow-color",
-        "Tooltip": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
-        "Name": "Burrow",
-        "Hotkey": "D"
-      },
-      {
-        "Info": {
-          "SectionArray": {
-            "Actor": {
-              "DurationArray": {
-                "Duration": 1
-              }
-            },
-            "Stats": {
-              "DurationArray": {
-                "Duration": 0.4443
-              }
-            }
-          },
-          "Unit": "Drone",
-          "RandomDelayMax": 0.25
-        },
-        "Unit": "Drone",
-        "Cost": {
-          "Minerals": 50,
-          "Vespene": 0,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": -1
-        },
-        "Row": 2,
-        "Column": 4,
-        "Type": "AbilCmd",
-        "AbilCmd": "BurrowDroneUp,Execute",
-        "id": "BurrowUp",
-        "Icon": "btn-ability-zerg-upburrow-color",
-        "Tooltip": "Returns the unit to the surface.",
-        "Name": "Unburrow",
-        "Hotkey": "R"
-      },
-      {
-        "Info": {
-          "SectionArray": {
-            "Abils": {
-              "DurationArray": {
-                "Delay": 0
-              }
-            },
-            "Actor": {
-              "DurationArray": {
-                "Duration": 0.5
-              }
-            }
-          },
-          "Unit": "Zergling",
-          "RandomDelayMax": 0.1125
-        },
-        "Unit": "Zergling",
-        "Cost": {
-          "Minerals": 25,
-          "Vespene": 0,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": -0.5
-        },
-        "Row": 2,
-        "Column": 4,
-        "Type": "AbilCmd",
-        "AbilCmd": "BurrowZerglingUp,Execute",
-        "id": "BurrowUp",
-        "Icon": "btn-ability-zerg-upburrow-color",
-        "Tooltip": "Returns the unit to the surface.",
-        "Name": "Unburrow",
-        "Hotkey": "R"
-      },
-      {
-        "Info": {
-          "SectionArray": {
-            "Actor": {
-              "DurationArray": {
-                "Duration": 1
-              }
-            }
-          },
-          "Unit": "Baneling",
-          "RandomDelayMax": 0.5
-        },
-        "Unit": "Baneling",
-        "Cost": {
-          "Minerals": 50,
-          "Vespene": 25,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": -0.5
-        },
-        "Row": 2,
-        "Column": 4,
-        "Type": "AbilCmd",
-        "AbilCmd": "BurrowBanelingUp,Execute",
-        "id": "BurrowUp",
-        "Icon": "btn-ability-zerg-upburrow-color",
-        "Tooltip": "Returns the unit to the surface.",
-        "Name": "Unburrow",
-        "Hotkey": "R"
-      },
-      {
-        "Info": {
-          "SectionArray": {
-            "Actor": {
-              "DurationArray": {
-                "Duration": 0.4443
-              }
-            },
-            "Stats": {
-              "DurationArray": {
-                "Duration": 0.4443
-              }
-            }
-          },
-          "Unit": "Roach",
-          "RandomDelayMax": 0.1
-        },
-        "Unit": "Roach",
-        "Cost": {
-          "Minerals": 75,
-          "Vespene": 25,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": -2
-        },
-        "Row": 2,
-        "Column": 4,
-        "Type": "AbilCmd",
-        "AbilCmd": "BurrowRoachUp,Execute",
-        "id": "BurrowUp",
-        "Icon": "btn-ability-zerg-upburrow-color",
-        "Tooltip": "Returns the unit to the surface.",
-        "Name": "Unburrow",
-        "Hotkey": "R"
-      },
-      {
-        "Info": {
-          "SectionArray": {
-            "Actor": {
-              "DurationArray": {
-                "Duration": 0.5
-              }
-            },
-            "Stats": {
-              "DurationArray": {
-                "Duration": 0.2221
-              }
-            }
-          },
-          "Unit": "Hydralisk",
-          "RandomDelayMax": 0.1125
-        },
-        "Unit": "Hydralisk",
-        "Cost": {
-          "Minerals": 100,
-          "Vespene": 50,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": -2
-        },
-        "Row": 2,
-        "Column": 4,
-        "Type": "AbilCmd",
-        "AbilCmd": "BurrowHydraliskUp,Execute",
-        "id": "BurrowUp",
-        "Icon": "btn-ability-zerg-upburrow-color",
-        "Tooltip": "Returns the unit to the surface.",
-        "Name": "Unburrow",
-        "Hotkey": "R"
-      },
-      {
-        "Info": {
-          "SectionArray": {
-            "Actor": {
-              "DurationArray": {
-                "Duration": 0.4443
-              }
-            },
-            "Stats": {
-              "DurationArray": {
-                "Duration": 0.4443
-              }
-            }
-          },
-          "Unit": "Ravager",
-          "RandomDelayMax": 0.1
-        },
-        "Unit": "Ravager",
-        "Cost": {
-          "Minerals": 100,
-          "Vespene": 100,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": -3
-        },
-        "Row": 2,
-        "Column": 4,
-        "Type": "AbilCmd",
-        "AbilCmd": "BurrowRavagerUp,Execute",
-        "id": "BurrowUp",
-        "Icon": "btn-ability-zerg-upburrow-color",
-        "Tooltip": "Returns the unit to the surface.",
-        "Name": "Unburrow",
-        "Hotkey": "R"
-      },
-      {
-        "Info": {
-          "SectionArray": {
-            "Abils": {
-              "DurationArray": {
-                "Delay": 0
-              }
-            },
-            "Actor": {
-              "DurationArray": {
-                "Delay": 0.5,
-                "Duration": 1
-              }
-            },
-            "Mover": {
-              "DurationArray": {
-                "Delay": 0,
-                "Duration": 1
-              }
-            },
-            "Stats": {
-              "DurationArray": {
-                "Delay": 0.5,
-                "Duration": 1
-              }
-            }
-          },
-          "Unit": "SwarmHostMP",
-          "RandomDelayMax": 0.5
-        },
-        "Unit": "SwarmHostMP",
-        "Cost": {
-          "Minerals": 100,
-          "Vespene": 75,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": -3
-        },
-        "Row": 2,
-        "Column": 4,
-        "Type": "AbilCmd",
-        "AbilCmd": "MorphToSwarmHostMP,Execute",
-        "id": "BurrowUp",
-        "Icon": "btn-ability-zerg-upburrow-color",
-        "Tooltip": "Returns the unit to the surface.",
-        "Name": "Unburrow",
-        "Hotkey": "R"
-      },
-      {
-        "Info": {
-          "SectionArray": {
-            "Actor": {
-              "DurationArray": {
-                "Duration": 1
-              }
-            },
-            "Stats": {
-              "DurationArray": {
-                "Duration": 0.4443
-              }
-            }
-          },
-          "Unit": "Queen",
-          "RandomDelayMax": 0.5
-        },
-        "Unit": "Queen",
-        "Cost": {
-          "Minerals": 150,
-          "Vespene": 0,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": -2
-        },
-        "Row": 2,
-        "Column": 4,
-        "Type": "AbilCmd",
-        "AbilCmd": "BurrowQueenUp,Execute",
-        "id": "BurrowUp",
-        "Icon": "btn-ability-zerg-upburrow-color",
-        "Tooltip": "Returns the unit to the surface.",
-        "Name": "Unburrow",
-        "Hotkey": "R"
-      },
-      {
-        "Info": {
-          "SectionArray": {
-            "Actor": {
-              "DurationArray": {
-                "Duration": 1
-              }
-            }
-          },
-          "Unit": "InfestorTerran",
-          "RandomDelayMax": 0.5
-        },
-        "Unit": "InfestorTerran",
-        "Cost": {
-          "Minerals": 0,
-          "Vespene": 0,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 2,
-        "Column": 4,
-        "Type": "AbilCmd",
-        "AbilCmd": "BurrowInfestorTerranUp,Execute",
-        "id": "BurrowUp",
-        "Icon": "btn-ability-zerg-upburrow-color",
-        "Tooltip": "Returns the unit to the surface.",
-        "Name": "Unburrow",
-        "Hotkey": "R"
-      },
-      {
-        "Info": {
-          "SectionArray": {
-            "Actor": {
-              "DurationArray": {
-                "Duration": 0.875
-              }
-            },
-            "Stats": {
-              "DurationArray": {
-                "Duration": 0.875
-              }
-            }
-          },
-          "Unit": "Infestor",
-          "RandomDelayMax": 0.125
-        },
-        "Unit": "Infestor",
-        "Cost": {
-          "Minerals": 100,
-          "Vespene": 150,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": -2
-        },
-        "Row": 2,
-        "Column": 4,
-        "Type": "AbilCmd",
-        "AbilCmd": "BurrowInfestorUp,Execute",
-        "id": "BurrowUp",
-        "Icon": "btn-ability-zerg-upburrow-color",
-        "Tooltip": "Returns the unit to the surface.",
-        "Name": "Unburrow",
-        "Hotkey": "R"
-      },
-      {
-        "Info": {
-          "SectionArray": {
-            "Actor": {
-              "DurationArray": {
-                "Duration": 1.25
-              }
-            }
-          },
-          "Unit": "Ultralisk",
-          "RandomDelayMax": 0.5
-        },
-        "Unit": "Ultralisk",
-        "Cost": {
-          "Minerals": 275,
-          "Vespene": 200,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": -6
-        },
-        "Row": 2,
-        "Column": 4,
-        "Type": "AbilCmd",
-        "AbilCmd": "BurrowUltraliskUp,Execute",
-        "id": "BurrowUp",
-        "Icon": "btn-ability-zerg-upburrow-color",
-        "Tooltip": "Returns the unit to the surface.",
-        "Name": "Unburrow",
-        "Hotkey": "R"
       }
     ]
   },
@@ -1787,7 +1009,6 @@
   "TauntDuration": {
     "Dance": 5
   },
-  "id": "Queen",
   "GlossaryStrongArray": [
     "Hellion",
     "Mutalisk",
@@ -1798,6 +1019,7 @@
     "Zergling",
     "Zealot"
   ],
+  "id": "Queen",
   "Icon": "btn-unit-zerg-queen",
   "LifeArmorIcon": "btn-upgrade-zerg-groundcarapace-level0",
   "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
@@ -1805,7 +1027,10 @@
     {
       "id": "AcidSpines",
       "Icon": "btn-upgrade-zerg-missileattacks-level0",
-      "Name": "Acid Spines",
+      "Name": {
+        "enUS": "Acid Spines",
+        "ruRU": "Acid Spines"
+      },
       "Amount": 9,
       "Kind": "Ranged",
       "TargetFilters": "Air",
@@ -1815,7 +1040,10 @@
     {
       "id": "Talons",
       "Icon": "btn-upgrade-zerg-missileattacks-level0",
-      "Name": "Talons",
+      "Name": {
+        "enUS": "Talons",
+        "ruRU": "Talons"
+      },
       "Amount": 4,
       "Kind": "Ranged",
       "DisplayAttackCount": 2,
@@ -1826,7 +1054,10 @@
     {
       "id": "TalonsMissile",
       "Icon": "btn-upgrade-zerg-missileattacks-level0",
-      "Name": "Talons",
+      "Name": {
+        "enUS": "Talons",
+        "ruRU": "Talons"
+      },
       "Amount": 4,
       "Kind": "Ranged",
       "DisplayAttackCount": 2,
@@ -1837,48 +1068,76 @@
   ],
   "Behaviors": [
     {
-      "id": "QueenMustBeOnCreep"
+      "id": "QueenMustBeOnCreep",
+      "Name": {
+        "enUS": "Queen Must Be On Creep",
+        "ruRU": "Queen Must Be On Creep"
+      },
+      "Tooltip": {
+        "enUS": "Queen Must Be On Creep",
+        "ruRU": "Queen Must Be On Creep"
+      }
     }
   ],
   "Abilities": [
     {
       "id": "stop",
-      "Name": "Stop"
+      "Name": {
+        "enUS": "Stop",
+        "ruRU": "Stop"
+      }
     },
     {
       "id": "attack",
-      "Name": "Attack"
+      "Name": {
+        "ruRU": "Attack",
+        "enUS": "Attack"
+      }
     },
     {
       "id": "move",
-      "Name": "Move"
+      "Name": {
+        "enUS": "Move",
+        "ruRU": "Move"
+      }
     },
     {
       "id": "QueenBuild",
-      "Name": "Build"
+      "Name": {
+        "enUS": "Build",
+        "ruRU": "Build"
+      }
     },
     {
       "id": "BurrowQueenDown",
-      "Name": "Burrow"
+      "Name": {
+        "enUS": "Burrow",
+        "ruRU": "Burrow"
+      }
     },
     {
       "id": "SpawnLarva",
-      "Name": "Larva Swarm"
+      "Name": {
+        "enUS": "Larva Swarm",
+        "ruRU": "Larva Swarm"
+      }
     },
     {
       "id": "Transfusion",
-      "Name": "Transfusion"
+      "Name": {
+        "enUS": "Transfusion",
+        "ruRU": "Transfusion"
+      }
     }
   ],
   "$Upgrades": [
-    "NotQueen",
+    "Burrow",
     "Queen",
     "QueenBurrowed",
     "BurrowQueenUp",
+    "NotQueen",
     "TrainQueen",
     "SpawningPool",
-    "Burrow",
-    "Hatchery",
     "ZergGroundArmorsLevel1",
     "Queen",
     "ZergGroundArmors",
@@ -1888,6 +1147,7 @@
     "ZergMissileWeapons",
     "ZergMissileWeaponsLevel2",
     "ZergMissileWeaponsLevel3",
+    "Hatchery",
     "DigesterQueen",
     "QueenLand",
     "Queen_Death",
@@ -1897,19 +1157,7 @@
     "TacticalBurrowQueenThreatSearchEmpty",
     "TacticalBurrowQueenThreatTest",
     "TacticalBurrowQueenBullyTest",
-    "UnitQueenQueuedOrBetter",
-    "QueenBaseNoTumor",
-    "QueenBase",
-    "Queen",
-    "QueenWebby",
-    "QueenPrimal",
-    "QueenMecha",
-    "QueenRCZ",
-    "DefaultSkinPack",
-    "QueenWebbySkinPack",
-    "QueenPrimalSkinPack",
-    "QueenMecha",
-    "QueenRCZ"
+    "UnitQueenQueuedOrBetter"
   ],
   "$Requirements": [],
   "$Production": [
@@ -1918,62 +1166,8 @@
   "$Research": [],
   "$Morph": [],
   "$Phase": [
-    "Ultralisk",
-    "Infestor",
-    "InfestorTerran",
-    "Queen",
-    "Queen",
-    "SwarmHostMP",
-    "SwarmHostMP",
-    "Ravager",
-    "Ravager",
-    "Hydralisk",
-    "Hydralisk",
-    "Roach",
-    "Roach",
-    "Baneling",
-    "Baneling",
-    "Zergling",
-    "Zergling",
-    "Drone",
-    "Drone",
-    "UltraliskBurrowed",
-    "UltraliskBurrowed",
-    "InfestorBurrowed",
-    "InfestorBurrowed",
-    "InfestorTerranBurrowed",
-    "InfestorTerranBurrowed",
-    "SwarmHostBurrowedMP",
-    "SwarmHostBurrowedMP",
-    "RavagerBurrowed",
-    "RavagerBurrowed",
-    "HydraliskBurrowed",
-    "HydraliskBurrowed",
-    "RoachBurrowed",
-    "RoachBurrowed",
-    "BanelingBurrowed",
-    "BanelingBurrowed",
-    "ZerglingBurrowed",
-    "ZerglingBurrowed",
-    "DroneBurrowed",
-    "DroneBurrowed",
-    "QueenBurrowed",
-    "QueenBurrowed",
-    "Ultralisk",
-    "Infestor",
-    "InfestorTerran",
-    "SwarmHostMP",
-    "Ravager",
-    "Hydralisk",
-    "Roach",
-    "Baneling",
-    "Zergling",
-    "Drone",
-    "UltraliskBurrowed",
-    "InfestorBurrowed",
-    "InfestorTerranBurrowed"
+    "QueenBurrowed"
   ],
-  "$Phased": "Queen",
   "$Producers": [
     "Hatchery",
     "Lair",
@@ -1984,218 +1178,118 @@
       "AbilCmd": "move,Move",
       "id": "Move",
       "Icon": "btn-command-move",
-      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
-      "Name": "Move"
+      "Name": {
+        "enUS": "Move",
+        "ruRU": "Двигаться /// Move"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+        "ruRU": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies."
+      }
     },
     {
       "AbilCmd": "stop,Stop",
       "id": "Stop",
       "Icon": "btn-command-stop",
-      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
-      "Name": "Stop"
+      "Name": {
+        "enUS": "Stop",
+        "ruRU": "Отставить /// Stop"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to cancel all orders and stop moving.",
+        "ruRU": "Orders selected units to cancel all orders and stop moving."
+      }
     },
     {
       "AbilCmd": "move,HoldPos",
       "id": "MoveHoldPosition",
       "Icon": "btn-command-holdposition",
-      "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
-      "Name": "Hold Position"
+      "Name": {
+        "enUS": "Hold Position",
+        "ruRU": "Удерживать позицию /// Hold Position"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+        "ruRU": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage."
+      }
     },
     {
       "AbilCmd": "move,Patrol",
       "id": "MovePatrol",
       "Icon": "btn-command-patrol",
-      "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
-      "Name": "Patrol"
+      "Name": {
+        "enUS": "Patrol",
+        "ruRU": "Патрулировать /// Patrol"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+        "ruRU": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies."
+      }
     },
     {
       "AbilCmd": "attack,Execute",
       "id": "Attack",
       "Icon": "btn-command-attack",
-      "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
-      "Name": "Attack"
+      "Name": {
+        "enUS": "Attack",
+        "ruRU": "Атаковать /// Attack"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+        "ruRU": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed."
+      }
     },
     {
       "AbilCmd": "SpawnLarva,Execute",
       "id": "MorphMorphalisk",
       "Icon": "btn-unit-zerg-larva",
-      "Tooltip": "Target Hatchery, Lair, or Hive spawns <b>3</b> Larvae in <b>40</b> seconds. If Hatchery, Lair, or Hive has more than 3 Larvae at one time, regular Larva production will stop until there are fewer than 3 Larvae. This will stack and queue if the target is already spawning additional Larva.",
-      "Name": "Spawn Larvae"
+      "Name": {
+        "enUS": "Spawn Larvae",
+        "ruRU": "Spawn Larvae"
+      },
+      "Tooltip": {
+        "enUS": "Target Hatchery, Lair, or Hive spawns 4 Larvae in <b>40</b> seconds. If Hatchery, Lair, or Hive has more than 3 Larvae at one time, regular Larva production will stop until there are fewer than 3 Larvae.",
+        "ruRU": "Target Hatchery, Lair, or Hive spawns 4 Larvae in <b>40</b> seconds. If Hatchery, Lair, or Hive has more than 3 Larvae at one time, regular Larva production will stop until there are fewer than 3 Larvae."
+      }
     },
     {
       "AbilCmd": "QueenBuild,Build1",
       "id": "BuildCreepTumor",
       "Icon": "btn-building-zerg-creeptumor",
-      "Tooltip": "A burrowed creep generator. Creep feeds nearby Zerg structures. A Creep Tumor can spawn one additional Creep Tumor.<br/><br/><c val=\"#ColorAttackInfo\">Bonus: Zerg move faster on creep.</span>",
-      "Name": "Spawn Creep Tumor"
+      "Name": {
+        "enUS": "Spawn Creep Tumor",
+        "ruRU": "Spawn Creep Tumor"
+      },
+      "Tooltip": {
+        "enUS": "A burrowed creep generator. Creep feeds nearby Zerg structures. A Creep Tumor can spawn one additional Creep Tumor.<br/><br/><span style=\"color: #ffff8a\">Bonus: Zerg move faster on creep.</span>",
+        "ruRU": "A burrowed creep generator. Creep feeds nearby Zerg structures. A Creep Tumor can spawn one additional Creep Tumor.<br/><br/><span style=\"color: #ffff8a\">Bonus: Zerg move faster on creep.</span>"
+      }
     },
     {
       "AbilCmd": "Transfusion,Execute",
       "id": "Transfusion",
       "Icon": "btn-ability-zerg-transfusion-color",
-      "Tooltip": "Instantly heals target biological unit or structure for <b>75</b> life. An additional <b>50.000</b> life regenerates over <b>10</b> seconds.",
-      "Name": "Transfusion"
+      "Name": {
+        "enUS": "Transfusion",
+        "ruRU": "Transfusion"
+      },
+      "Tooltip": {
+        "enUS": "Instantly restores 125 life to target biological unit or structure.",
+        "ruRU": "Instantly restores 125 life to target biological unit or structure."
+      }
     },
     {
       "AbilCmd": "BurrowQueenDown,Execute",
       "id": "BurrowDown",
       "Icon": "btn-ability-zerg-burrow-color",
-      "Tooltip": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
-      "Name": "Burrow"
-    },
-    {
-      "AbilCmd": "BurrowDroneDown,Execute",
-      "id": "BurrowDown",
-      "Icon": "btn-ability-zerg-burrow-color",
-      "Tooltip": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
-      "Name": "Burrow"
-    },
-    {
-      "AbilCmd": "BurrowZerglingDown,Execute",
-      "id": "BurrowDown",
-      "Icon": "btn-ability-zerg-burrow-color",
-      "Tooltip": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
-      "Name": "Burrow"
-    },
-    {
-      "AbilCmd": "BurrowBanelingDown,Execute",
-      "id": "BurrowDown",
-      "Icon": "btn-ability-zerg-burrow-color",
-      "Tooltip": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
-      "Name": "Burrow"
-    },
-    {
-      "AbilCmd": "BurrowRoachDown,Execute",
-      "id": "BurrowDown",
-      "Icon": "btn-ability-zerg-burrow-color",
-      "Tooltip": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
-      "Name": "Burrow"
-    },
-    {
-      "AbilCmd": "BurrowHydraliskDown,Execute",
-      "id": "BurrowDown",
-      "Icon": "btn-ability-zerg-burrow-color",
-      "Tooltip": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
-      "Name": "Burrow"
-    },
-    {
-      "AbilCmd": "BurrowRavagerDown,Execute",
-      "id": "BurrowDown",
-      "Icon": "btn-ability-zerg-burrow-color",
-      "Tooltip": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
-      "Name": "Burrow"
-    },
-    {
-      "AbilCmd": "MorphToSwarmHostBurrowedMP,Execute",
-      "id": "BurrowDown",
-      "Icon": "btn-ability-zerg-burrow-color",
-      "Tooltip": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
-      "Name": "Burrow"
-    },
-    {
-      "AbilCmd": "BurrowQueenDown,Execute",
-      "id": "BurrowDown",
-      "Icon": "btn-ability-zerg-burrow-color",
-      "Tooltip": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
-      "Name": "Burrow"
-    },
-    {
-      "AbilCmd": "BurrowInfestorTerranDown,Execute",
-      "id": "BurrowDown",
-      "Icon": "btn-ability-zerg-burrow-color",
-      "Tooltip": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
-      "Name": "Burrow"
-    },
-    {
-      "AbilCmd": "BurrowInfestorDown,Execute",
-      "id": "BurrowDown",
-      "Icon": "btn-ability-zerg-burrow-color",
-      "Tooltip": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
-      "Name": "Burrow"
-    },
-    {
-      "AbilCmd": "BurrowUltraliskDown,Execute",
-      "id": "BurrowDown",
-      "Icon": "btn-ability-zerg-burrow-color",
-      "Tooltip": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
-      "Name": "Burrow"
-    },
-    {
-      "AbilCmd": "BurrowDroneUp,Execute",
-      "id": "BurrowUp",
-      "Icon": "btn-ability-zerg-upburrow-color",
-      "Tooltip": "Returns the unit to the surface.",
-      "Name": "Unburrow"
-    },
-    {
-      "AbilCmd": "BurrowZerglingUp,Execute",
-      "id": "BurrowUp",
-      "Icon": "btn-ability-zerg-upburrow-color",
-      "Tooltip": "Returns the unit to the surface.",
-      "Name": "Unburrow"
-    },
-    {
-      "AbilCmd": "BurrowBanelingUp,Execute",
-      "id": "BurrowUp",
-      "Icon": "btn-ability-zerg-upburrow-color",
-      "Tooltip": "Returns the unit to the surface.",
-      "Name": "Unburrow"
-    },
-    {
-      "AbilCmd": "BurrowRoachUp,Execute",
-      "id": "BurrowUp",
-      "Icon": "btn-ability-zerg-upburrow-color",
-      "Tooltip": "Returns the unit to the surface.",
-      "Name": "Unburrow"
-    },
-    {
-      "AbilCmd": "BurrowHydraliskUp,Execute",
-      "id": "BurrowUp",
-      "Icon": "btn-ability-zerg-upburrow-color",
-      "Tooltip": "Returns the unit to the surface.",
-      "Name": "Unburrow"
-    },
-    {
-      "AbilCmd": "BurrowRavagerUp,Execute",
-      "id": "BurrowUp",
-      "Icon": "btn-ability-zerg-upburrow-color",
-      "Tooltip": "Returns the unit to the surface.",
-      "Name": "Unburrow"
-    },
-    {
-      "AbilCmd": "MorphToSwarmHostMP,Execute",
-      "id": "BurrowUp",
-      "Icon": "btn-ability-zerg-upburrow-color",
-      "Tooltip": "Returns the unit to the surface.",
-      "Name": "Unburrow"
-    },
-    {
-      "AbilCmd": "BurrowQueenUp,Execute",
-      "id": "BurrowUp",
-      "Icon": "btn-ability-zerg-upburrow-color",
-      "Tooltip": "Returns the unit to the surface.",
-      "Name": "Unburrow"
-    },
-    {
-      "AbilCmd": "BurrowInfestorTerranUp,Execute",
-      "id": "BurrowUp",
-      "Icon": "btn-ability-zerg-upburrow-color",
-      "Tooltip": "Returns the unit to the surface.",
-      "Name": "Unburrow"
-    },
-    {
-      "AbilCmd": "BurrowInfestorUp,Execute",
-      "id": "BurrowUp",
-      "Icon": "btn-ability-zerg-upburrow-color",
-      "Tooltip": "Returns the unit to the surface.",
-      "Name": "Unburrow"
-    },
-    {
-      "AbilCmd": "BurrowUltraliskUp,Execute",
-      "id": "BurrowUp",
-      "Icon": "btn-ability-zerg-upburrow-color",
-      "Tooltip": "Returns the unit to the surface.",
-      "Name": "Unburrow"
+      "Name": {
+        "enUS": "Burrow",
+        "ruRU": "Burrow"
+      },
+      "Tooltip": {
+        "enUS": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
+        "ruRU": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection."
+      }
     }
   ]
 }

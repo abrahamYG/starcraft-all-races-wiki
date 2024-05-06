@@ -1,6 +1,12 @@
 {
-  "Name": "Siege Tank",
-  "Description": "Heavy tank. Can switch into Tank Mode to provide mobile tank support.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
+  "Name": {
+    "enUS": "Siege Tank",
+    "ruRU": "Siege Tank"
+  },
+  "Description": {
+    "enUS": "Heavy tank. Can switch into Tank Mode to provide mobile tank support.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+    "ruRU": "Heavy tank. Can switch into Tank Mode to provide mobile tank support.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>"
+  },
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -12,7 +18,10 @@
   "ResourceType": "Unknown",
   "LifeStart": 175,
   "LifeMax": 175,
-  "LifeArmorName": "Terran Vehicle Plating",
+  "LifeArmorName": {
+    "enUS": "Terran Vehicle Plating",
+    "ruRU": "Terran Vehicle Plating"
+  },
   "Mover": "Ground",
   "StationaryTurningRate": 720,
   "TurningRate": 720,
@@ -74,6 +83,12 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "TechAliasArray": [
     "Alias_SiegeTank"
   ],
@@ -101,8 +116,7 @@
   "Collide": [
     "Ground",
     "ForceField",
-    "Small",
-    "Locust"
+    "Small"
   ],
   "Sight": 11,
   "Attributes": [
@@ -136,6 +150,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -173,8 +193,7 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move",
-          "AbilSetId": "Move"
+          "id": "move"
         },
         "Cost": {
           "Minerals": 0,
@@ -192,8 +211,14 @@
         "AbilCmd": "move,Move",
         "id": "Move",
         "Icon": "btn-command-move",
-        "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
-        "Name": "Move",
+        "Name": {
+          "enUS": "Move",
+          "ruRU": "Двигаться /// Move"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+          "ruRU": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies."
+        },
         "Hotkey": "M"
       },
       {
@@ -215,6 +240,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "stop",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "AbilSetId": "Stop",
           "CmdButtonArray": {
             "Stop": {
@@ -260,8 +291,14 @@
         "AbilCmd": "stop,Stop",
         "id": "Stop",
         "Icon": "btn-command-stop",
-        "Tooltip": "Orders selected units to cancel all orders and stop moving.",
-        "Name": "Stop",
+        "Name": {
+          "enUS": "Stop",
+          "ruRU": "Отставить /// Stop"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to cancel all orders and stop moving.",
+          "ruRU": "Orders selected units to cancel all orders and stop moving."
+        },
         "Hotkey": "S"
       },
       {
@@ -289,6 +326,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -326,8 +369,7 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move",
-          "AbilSetId": "Move"
+          "id": "move"
         },
         "Cost": {
           "Minerals": 0,
@@ -345,8 +387,14 @@
         "AbilCmd": "move,HoldPos",
         "id": "MoveHoldPosition",
         "Icon": "btn-command-holdposition",
-        "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
-        "Name": "Hold Position",
+        "Name": {
+          "enUS": "Hold Position",
+          "ruRU": "Удерживать позицию /// Hold Position"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+          "ruRU": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage."
+        },
         "Hotkey": "H"
       },
       {
@@ -368,6 +416,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "attack",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "AbilSetId": "Attack",
           "Alignment": "Negative",
           "AcquireFilters": "-;Player,Ally,Neutral,Dead,Hidden,Invulnerable,Benign",
@@ -414,8 +468,14 @@
         "AbilCmd": "attack,Execute",
         "id": "AttackBuilding",
         "Icon": "btn-command-attack",
-        "Tooltip": "Targets and attacks the target unit until it is destroyed or moves out of range.",
-        "Name": "Attack",
+        "Name": {
+          "enUS": "Attack",
+          "ruRU": "Attack"
+        },
+        "Tooltip": {
+          "enUS": "Targets and attacks the target unit until it is destroyed or moves out of range.",
+          "ruRU": "Targets and attacks the target unit until it is destroyed or moves out of range."
+        },
         "Hotkey": "A"
       },
       {
@@ -443,6 +503,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -480,8 +546,7 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move",
-          "AbilSetId": "Move"
+          "id": "move"
         },
         "Cost": {
           "Minerals": 0,
@@ -499,8 +564,14 @@
         "AbilCmd": "move,Patrol",
         "id": "MovePatrol",
         "Icon": "btn-command-patrol",
-        "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
-        "Name": "Patrol",
+        "Name": {
+          "enUS": "Patrol",
+          "ruRU": "Патрулировать /// Patrol"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+          "ruRU": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies."
+        },
         "Hotkey": "P"
       },
       {
@@ -514,11 +585,6 @@
             "Stats": {
               "DurationArray": {
                 "Duration": 3.5417
-              }
-            },
-            "Abils": {
-              "EffectArray": {
-                "Start": "SiegeTankUnmorphDisableDummyWeaponAB"
               }
             }
           },
@@ -542,8 +608,14 @@
         "AbilCmd": "Unsiege,Execute",
         "id": "Unsiege",
         "Icon": "btn-unit-terran-siegetank",
-        "Tooltip": "Reverts to Tank Mode. In this mode Siege Tanks can move, but they do less damage.",
-        "Name": "Tank Mode",
+        "Name": {
+          "enUS": "Tank Mode",
+          "ruRU": "Tank Mode"
+        },
+        "Tooltip": {
+          "enUS": "Reverts to Tank Mode. In this mode Siege Tanks can move, but they do less damage.",
+          "ruRU": "Reverts to Tank Mode. In this mode Siege Tanks can move, but they do less damage."
+        },
         "Hotkey": "D"
       }
     ]
@@ -551,7 +623,6 @@
   "GlossaryCategory": "Unit/Category/TerranUnits",
   "HotkeyCategory": "Unit/Category/TerranUnits",
   "GlossaryPriority": 135,
-  "id": "SiegeTankSieged",
   "GlossaryStrongArray": [
     "Marine",
     "Roach",
@@ -562,6 +633,7 @@
     "Mutalisk",
     "Immortal"
   ],
+  "id": "SiegeTankSieged",
   "Icon": "btn-unit-terran-siegetanksiegemode",
   "LifeArmorIcon": "btn-upgrade-terran-vehicleplatinglevel0",
   "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
@@ -570,7 +642,10 @@
       "Turret": "SiegeTankSieged",
       "id": "CrucioShockCannon",
       "Icon": "btn-upgrade-terran-vehicleweaponslevel0",
-      "Name": "Crucio Shock Cannon",
+      "Name": {
+        "enUS": "Crucio Shock Cannon",
+        "ruRU": "Crucio Shock Cannon"
+      },
       "Amount": 40,
       "AttributeBonus": {
         "Armored": 30
@@ -585,60 +660,55 @@
   "Abilities": [
     {
       "id": "stop",
-      "Name": "Stop"
+      "Name": {
+        "enUS": "Stop",
+        "ruRU": "Stop"
+      }
     },
     {
       "id": "attack",
-      "Name": "Attack"
+      "Name": {
+        "ruRU": "Attack",
+        "enUS": "Attack"
+      }
     },
     {
       "id": "Unsiege",
-      "Name": "Unsiege"
+      "Name": {
+        "enUS": "Unsiege",
+        "ruRU": "Unsiege"
+      }
     }
   ],
   "$Upgrades": [
+    "TerranVehicleWeaponsLevel1",
     "SiegeMode",
     "SiegeTankSieged",
-    "SiegeTankLoadTargetIsSiegedTank",
-    "TerranVehicleArmorsLevel1",
-    "SiegeTankSieged",
-    "TerranVehicleArmors",
-    "TerranVehicleArmorsLevel2",
-    "TerranVehicleArmorsLevel3",
-    "TerranVehicleWeaponsLevel1",
     "TerranVehicleWeapons",
     "TerranVehicleWeaponsLevel2",
     "TerranVehicleWeaponsLevel3",
-    "Medivac",
     "TerranVehicleAndShipArmorsLevel1",
+    "SiegeTankSieged",
+    "Medivac",
     "TerranVehicleAndShipArmors",
     "TerranVehicleAndShipArmorsLevel2",
     "TerranVehicleAndShipArmorsLevel3",
-    "NotSiegedTank",
-    "TerranVehicleAndShipWeaponsLevel1",
-    "TerranVehicleAndShipWeapons",
-    "TerranVehicleAndShipWeaponsLevel2",
-    "TerranVehicleAndShipWeaponsLevel3",
     "TankModeMorphModel",
     "SiegeModeMorphModel",
     "SiegeTankSiegedRange",
     "SiegeTankSiegedTurret",
     "SiegeModeSound",
+    "SiegeTankLoadTargetIsSiegedTank",
     "IsNotSiegedSiegeTank",
     "IsSiegedSiegeTank",
-    "SiegeTankBase",
-    "SiegeTank",
-    "SiegeTankMerc",
-    "SiegeTankCovertOps",
-    "SiegeTankJunker",
-    "SiegeTankUmojan",
-    "SiegeTankSilver"
+    "NotSiegedTank"
   ],
   "$Requirements": [],
   "$Production": [],
   "$Research": [],
   "$Morph": [
-    "SiegeTank"
+    "SiegeTank",
+    null
   ],
   "$Phase": [],
   "$Phased": "SiegeTank",
@@ -648,43 +718,79 @@
       "AbilCmd": "move,Move",
       "id": "Move",
       "Icon": "btn-command-move",
-      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
-      "Name": "Move"
+      "Name": {
+        "enUS": "Move",
+        "ruRU": "Двигаться /// Move"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+        "ruRU": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies."
+      }
     },
     {
       "AbilCmd": "stop,Stop",
       "id": "Stop",
       "Icon": "btn-command-stop",
-      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
-      "Name": "Stop"
+      "Name": {
+        "enUS": "Stop",
+        "ruRU": "Отставить /// Stop"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to cancel all orders and stop moving.",
+        "ruRU": "Orders selected units to cancel all orders and stop moving."
+      }
     },
     {
       "AbilCmd": "move,HoldPos",
       "id": "MoveHoldPosition",
       "Icon": "btn-command-holdposition",
-      "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
-      "Name": "Hold Position"
+      "Name": {
+        "enUS": "Hold Position",
+        "ruRU": "Удерживать позицию /// Hold Position"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+        "ruRU": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage."
+      }
     },
     {
       "AbilCmd": "attack,Execute",
       "id": "AttackBuilding",
       "Icon": "btn-command-attack",
-      "Tooltip": "Targets and attacks the target unit until it is destroyed or moves out of range.",
-      "Name": "Attack"
+      "Name": {
+        "enUS": "Attack",
+        "ruRU": "Attack"
+      },
+      "Tooltip": {
+        "enUS": "Targets and attacks the target unit until it is destroyed or moves out of range.",
+        "ruRU": "Targets and attacks the target unit until it is destroyed or moves out of range."
+      }
     },
     {
       "AbilCmd": "move,Patrol",
       "id": "MovePatrol",
       "Icon": "btn-command-patrol",
-      "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
-      "Name": "Patrol"
+      "Name": {
+        "enUS": "Patrol",
+        "ruRU": "Патрулировать /// Patrol"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+        "ruRU": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies."
+      }
     },
     {
       "AbilCmd": "Unsiege,Execute",
       "id": "Unsiege",
       "Icon": "btn-unit-terran-siegetank",
-      "Tooltip": "Reverts to Tank Mode. In this mode Siege Tanks can move, but they do less damage.",
-      "Name": "Tank Mode"
+      "Name": {
+        "enUS": "Tank Mode",
+        "ruRU": "Tank Mode"
+      },
+      "Tooltip": {
+        "enUS": "Reverts to Tank Mode. In this mode Siege Tanks can move, but they do less damage.",
+        "ruRU": "Reverts to Tank Mode. In this mode Siege Tanks can move, but they do less damage."
+      }
     }
   ]
 }

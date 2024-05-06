@@ -1,6 +1,12 @@
 {
-  "Name": "Sensor Tower",
-  "Description": "Reveals the locations of enemy units at long range. The Sensor Tower's detection area is visible to the enemy.",
+  "Name": {
+    "enUS": "Sensor Tower",
+    "ruRU": "Sensor Tower"
+  },
+  "Description": {
+    "enUS": "Reveals the locations of enemy units at long range. The Sensor Tower's detection area is visible to the enemy.",
+    "ruRU": "Reveals the locations of enemy units at long range. The Sensor Tower's detection area is visible to the enemy."
+  },
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -12,7 +18,10 @@
   "ResourceType": "Unknown",
   "LifeStart": 200,
   "LifeMax": 200,
-  "LifeArmorName": "Terran Building Plating",
+  "LifeArmorName": {
+    "enUS": "Terran Building Plating",
+    "ruRU": "Terran Building Plating"
+  },
   "Mover": "Ground",
   "StationaryTurningRate": 719.4726,
   "TurningRate": 719.4726,
@@ -77,6 +86,12 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "Facing": 315,
   "Mob": "Multiplayer",
   "FogVisibility": "Snapshot",
@@ -107,9 +122,9 @@
     "Structure",
     "RoachBurrow",
     "ForceField",
-    "Small",
     "Locust",
-    "Phased"
+    "Phased",
+    "Small"
   ],
   "Sight": 12,
   "CardLayouts": {
@@ -130,8 +145,14 @@
         "Type": "Passive",
         "id": "RadarField",
         "Icon": "btn-status-radar",
-        "Tooltip": "Able to expose enemy movements within its radar capability. Does not reveal the area.",
-        "Name": "Radar"
+        "Name": {
+          "enUS": "Radar",
+          "ruRU": "Radar"
+        },
+        "Tooltip": {
+          "enUS": "Able to expose enemy movements within its radar capability. Does not reveal the area.",
+          "ruRU": "Able to expose enemy movements within its radar capability. Does not reveal the area."
+        }
       },
       {
         "Info": {
@@ -152,6 +173,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "BuildInProgress",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "Activity": "UI/Building",
           "VitalStartFactor": {
             "Life": 0.1,
@@ -184,8 +211,14 @@
         "AbilCmd": "BuildInProgress,Halt",
         "id": "Halt",
         "Icon": "btn-command-stop",
-        "Tooltip": "Halts construction of this structure. The partial construction will remain.",
-        "Name": "Halt",
+        "Name": {
+          "enUS": "Halt",
+          "ruRU": "Приостановить /// Halt"
+        },
+        "Tooltip": {
+          "enUS": "Halts construction of this structure. The partial construction will remain.",
+          "ruRU": "Приостановить сооружение этого строения. Впоследствии его можно будет продолжить. /// Halts construction of this structure. The partial construction will remain."
+        },
         "Hotkey": "T"
       },
       {
@@ -207,6 +240,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "BuildInProgress",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "Activity": "UI/Building",
           "VitalStartFactor": {
             "Life": 0.1,
@@ -239,8 +278,14 @@
         "AbilCmd": "BuildInProgress,Cancel",
         "id": "CancelBuilding",
         "Icon": "btn-command-cancel",
-        "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-        "Name": "Cancel",
+        "Name": {
+          "enUS": "Cancel",
+          "ruRU": "Отменить /// Cancel"
+        },
+        "Tooltip": {
+          "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+          "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+        },
         "Hotkey": "Esc"
       },
       {
@@ -259,8 +304,14 @@
         "Type": "SelectBuilder",
         "id": "SelectBuilder",
         "Icon": "btn-upgrade-terran-weaponrefit",
-        "Tooltip": "Selects the unit constructing this structure.",
-        "Name": "Select Builder",
+        "Name": {
+          "enUS": "Select Builder",
+          "ruRU": "Select Builder"
+        },
+        "Tooltip": {
+          "enUS": "Selects the unit constructing this structure.",
+          "ruRU": "Selects the unit constructing this structure."
+        },
         "Hotkey": "Q"
       }
     ]
@@ -275,19 +326,40 @@
   "Behaviors": [
     {
       "id": "SensorTowerRadar",
-      "Icon": "btn-status-radar"
+      "Icon": "btn-status-radar",
+      "Name": {
+        "enUS": "Radar",
+        "ruRU": "Radar"
+      },
+      "Tooltip": {
+        "enUS": "This structure is able to expose enemy movements within its search radius. Does not reveal the area.",
+        "ruRU": "This structure is able to expose enemy movements within its search radius. Does not reveal the area."
+      }
     },
     {
-      "id": "TerranBuildingBurnDown"
+      "id": "TerranBuildingBurnDown",
+      "Name": {
+        "enUS": "Building Burnout",
+        "ruRU": "Building Burnout"
+      },
+      "Tooltip": "-"
     },
     {
-      "id": "UnderConstruction"
+      "id": "UnderConstruction",
+      "Name": {
+        "enUS": "Under Construction",
+        "ruRU": "Under Construction"
+      },
+      "Tooltip": "-"
     }
   ],
   "Abilities": [
     {
       "id": "BuildInProgress",
-      "Name": "Build in Progress"
+      "Name": {
+        "enUS": "Build in Progress",
+        "ruRU": "Build in Progress"
+      }
     }
   ],
   "$Upgrades": [
@@ -295,14 +367,7 @@
     "SensorTower",
     "TerranBuild",
     "SensorTowerRadar",
-    "SensorTower",
-    "SensorTowerBase",
-    "SensorTower",
-    "SensorTowerCovertOps",
-    "SensorTowerSilver",
-    "DefaultSkinPack",
-    "SensorTowerCovertOps",
-    "SensorTowerSilver"
+    "SensorTower"
   ],
   "$Requirements": [],
   "$Production": [],
@@ -317,15 +382,27 @@
       "AbilCmd": "BuildInProgress,Halt",
       "id": "Halt",
       "Icon": "btn-command-stop",
-      "Tooltip": "Halts construction of this structure. The partial construction will remain.",
-      "Name": "Halt"
+      "Name": {
+        "enUS": "Halt",
+        "ruRU": "Приостановить /// Halt"
+      },
+      "Tooltip": {
+        "enUS": "Halts construction of this structure. The partial construction will remain.",
+        "ruRU": "Приостановить сооружение этого строения. Впоследствии его можно будет продолжить. /// Halts construction of this structure. The partial construction will remain."
+      }
     },
     {
       "AbilCmd": "BuildInProgress,Cancel",
       "id": "CancelBuilding",
       "Icon": "btn-command-cancel",
-      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-      "Name": "Cancel"
+      "Name": {
+        "enUS": "Cancel",
+        "ruRU": "Отменить /// Cancel"
+      },
+      "Tooltip": {
+        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+        "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+      }
     }
   ]
 }

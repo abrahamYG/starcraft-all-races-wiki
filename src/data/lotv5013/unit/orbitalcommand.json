@@ -1,6 +1,12 @@
 {
-  "Name": "Orbital Command",
-  "Description": "Primary structure. Used to train SCVs and receive gathered resources. Can use the Scanner Sweep ability. Can use the abilities Calldown: MULE and Calldown: Extra Supplies.",
+  "Name": {
+    "enUS": "Orbital Command",
+    "ruRU": "Orbital Command"
+  },
+  "Description": {
+    "enUS": "Primary structure. Used to train SCVs and receive gathered resources. Can use the Scanner Sweep ability. Can use the abilities Calldown: MULE and Calldown: Extra Supplies.",
+    "ruRU": "Primary structure. Used to train SCVs and receive gathered resources. Can use the Scanner Sweep ability. Can use the abilities Calldown: MULE and Calldown: Extra Supplies."
+  },
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -12,7 +18,10 @@
   "ResourceType": "Unknown",
   "LifeStart": 1500,
   "LifeMax": 1500,
-  "LifeArmorName": "Terran Building Plating",
+  "LifeArmorName": {
+    "enUS": "Terran Building Plating",
+    "ruRU": "Terran Building Plating"
+  },
   "Mover": "Ground",
   "StationaryTurningRate": 719.4726,
   "TurningRate": 719.4726,
@@ -78,6 +87,12 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "TechAliasArray": [
     "Alias_CommandCenter"
   ],
@@ -121,9 +136,8 @@
     "Structure",
     "RoachBurrow",
     "ForceField",
-    "Small",
-    "Locust",
-    "Phased"
+    "Phased",
+    "Small"
   ],
   "Sight": 11,
   "TacticalAIThink": "AIThinkOrbitalCommand",
@@ -136,8 +150,7 @@
               "AllowMinimap": 0,
               "ToSelection": 1
             },
-            "DefaultButtonFace": "SCV",
-            "State": "Restricted"
+            "DefaultButtonFace": "SCV"
           },
           "Unit": [
             "SCV"
@@ -164,8 +177,14 @@
         "AbilCmd": "CommandCenterTrain,Train1",
         "id": "SCV",
         "Icon": "btn-unit-terran-scv",
-        "Tooltip": "Basic worker unit. Can gather resources, build Terran structures, and repair.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
-        "Name": "Train SCV",
+        "Name": {
+          "enUS": "Train SCV",
+          "ruRU": "Train SCV"
+        },
+        "Tooltip": {
+          "enUS": "Basic worker unit. Can gather resources, build Terran structures, and repair.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+          "ruRU": "Basic worker unit. Can gather resources, build Terran structures, and repair.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>"
+        },
         "Hotkey": "S"
       },
       {
@@ -206,8 +225,14 @@
         "AbilCmd": "OrbitalLiftOff,Execute",
         "id": "Lift",
         "Icon": "btn-ability-terran-liftoff",
-        "Tooltip": "Transforms structure into a slow air unit for redeployment. May not produce units, research upgrades, or use abilities until it has landed.",
-        "Name": "Lift Off",
+        "Name": {
+          "enUS": "Lift Off",
+          "ruRU": "Lift Off"
+        },
+        "Tooltip": {
+          "enUS": "Transforms structure into a slow air unit for redeployment. May not produce units, research upgrades, or use abilities until it has landed.",
+          "ruRU": "Transforms structure into a slow air unit for redeployment. May not produce units, research upgrades, or use abilities until it has landed."
+        },
         "Hotkey": "L"
       },
       {
@@ -229,6 +254,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "BuildInProgress",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "Activity": "UI/Building",
           "VitalStartFactor": {
             "Life": 0.1,
@@ -261,8 +292,14 @@
         "AbilCmd": "BuildInProgress,Cancel",
         "id": "CancelBuilding",
         "Icon": "btn-command-cancel",
-        "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-        "Name": "Cancel",
+        "Name": {
+          "enUS": "Cancel",
+          "ruRU": "Отменить /// Cancel"
+        },
+        "Tooltip": {
+          "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+          "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+        },
         "Hotkey": "Esc"
       },
       {
@@ -284,6 +321,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "que5CancelToSelection",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "QueueCount": 1,
           "Flags": {
             "BestUnit": 1,
@@ -320,8 +363,14 @@
         "AbilCmd": "que5CancelToSelection,CancelLast",
         "id": "Cancel",
         "Icon": "btn-command-cancel",
-        "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
-        "Name": "Cancel",
+        "Name": {
+          "enUS": "Cancel",
+          "ruRU": "Отменить /// Cancel"
+        },
+        "Tooltip": {
+          "enUS": "Drops the current order without performing it, and allows you to select a different order.",
+          "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+        },
         "Hotkey": "Esc"
       },
       {
@@ -343,6 +392,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "ScannerSweep",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "RangeSlop": 1,
           "ArcSlop": 11.25,
           "AutoCastAcquireLevel": "Offensive",
@@ -354,7 +409,7 @@
             "RangeUseCasterRadius": 1,
             "ReApproachable": 1,
             "RequireTargetVision": 0,
-            "WaitToSpend": 0,
+            "WaitToSpend": 1,
             "UpdateChargesOnLevelChange": 1,
             "BestUnit": 1,
             "Transient": 1
@@ -453,8 +508,14 @@
         "AbilCmd": "ScannerSweep,Execute",
         "id": "Scan",
         "Icon": "btn-ability-terran-scannersweep-color",
-        "Tooltip": "Reveals an area of the map, detecting cloaked and burrowed units. Lasts <b>12</b>.",
-        "Name": "Scanner Sweep",
+        "Name": {
+          "enUS": "Scanner Sweep",
+          "ruRU": "Scanner Sweep"
+        },
+        "Tooltip": {
+          "enUS": "Reveals an area of the map, detecting cloaked and burrowed units. Lasts <b>12</b>.",
+          "ruRU": "Reveals an area of the map, detecting cloaked and burrowed units. Lasts <b>12</b>."
+        },
         "Hotkey": "C"
       },
       {
@@ -475,8 +536,14 @@
         "AbilCmd": "RallyCommand,Rally1",
         "id": "Rally",
         "Icon": "btn-ability-terran-setrallypoint",
-        "Tooltip": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
-        "Name": "Set Rally Point",
+        "Name": {
+          "enUS": "Set Rally Point",
+          "ruRU": "Задать точку сбора /// Set Rally Point"
+        },
+        "Tooltip": {
+          "enUS": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
+          "ruRU": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically."
+        },
         "Hotkey": "Y"
       },
       {
@@ -498,6 +565,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "CalldownMULE",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "RangeSlop": 1,
           "ArcSlop": 11.25,
           "AutoCastAcquireLevel": "Offensive",
@@ -509,7 +582,7 @@
             "RangeUseCasterRadius": 1,
             "ReApproachable": 1,
             "RequireTargetVision": 1,
-            "WaitToSpend": 0,
+            "WaitToSpend": 1,
             "UpdateChargesOnLevelChange": 1,
             "BestUnit": 1,
             "Transient": 1
@@ -605,8 +678,14 @@
         "AbilCmd": "CalldownMULE,Execute",
         "id": "CalldownMULE",
         "Icon": "btn-unit-terran-mule",
-        "Tooltip": "Drops an experimental robotic MULE miner onto the target Mineral Field. MULEs collect minerals more quickly than SCVs.  <br/><br/>MULEs last <b>90</b> seconds before their systems fail.",
-        "Name": "Calldown: MULE",
+        "Name": {
+          "enUS": "Calldown: MULE",
+          "ruRU": "Calldown: MULE"
+        },
+        "Tooltip": {
+          "enUS": "Drops an experimental robotic MULE miner onto the target Mineral Field. MULEs collect minerals more quickly than SCVs.  <br/><br/>MULEs last <b>90</b> before their systems fail.",
+          "ruRU": "Drops an experimental robotic MULE miner onto the target Mineral Field. MULEs collect minerals more quickly than SCVs.  <br/><br/>MULEs last <b>90</b> before their systems fail."
+        },
         "Hotkey": "E"
       },
       {
@@ -628,6 +707,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "SupplyDrop",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "RangeSlop": 1,
           "ArcSlop": 11.25,
           "AutoCastAcquireLevel": "Offensive",
@@ -639,7 +724,7 @@
             "RangeUseCasterRadius": 1,
             "ReApproachable": 1,
             "RequireTargetVision": 1,
-            "WaitToSpend": 0,
+            "WaitToSpend": 1,
             "UpdateChargesOnLevelChange": 1,
             "BestUnit": 1,
             "Transient": 1
@@ -741,8 +826,14 @@
         "AbilCmd": "SupplyDrop,Execute",
         "id": "SupplyDrop",
         "Icon": "btn-ability-terran-calldownextrasupplies-color",
-        "Tooltip": "Drops additional supplies, permanently increasing the supply output of the target Supply Depot by <b>8</b>.",
-        "Name": "Calldown: Extra Supplies",
+        "Name": {
+          "enUS": "Calldown: Extra Supplies",
+          "ruRU": "Calldown: Extra Supplies"
+        },
+        "Tooltip": {
+          "enUS": "Drops additional supplies, permanently increasing the supply output of the target Supply Depot by <b>8</b>.",
+          "ruRU": "Drops additional supplies, permanently increasing the supply output of the target Supply Depot by <b>8</b>."
+        },
         "Hotkey": "X"
       }
     ]
@@ -757,55 +848,89 @@
   "Weapons": [],
   "Behaviors": [
     {
-      "id": "TerranBuildingBurnDown"
+      "id": "TerranBuildingBurnDown",
+      "Name": {
+        "enUS": "Building Burnout",
+        "ruRU": "Building Burnout"
+      },
+      "Tooltip": "-"
     },
     {
-      "id": "CommandCenterKnockbackBehavior"
+      "id": "CommandCenterKnockbackBehavior",
+      "Name": {
+        "enUS": "Command Center Knockback Behavior",
+        "ruRU": "Command Center Knockback Behavior ///Auto - Copied from enUS Locale"
+      },
+      "Tooltip": "-"
     }
   ],
   "Abilities": [
     {
       "id": "BuildInProgress",
-      "Name": "Build in Progress"
+      "Name": {
+        "enUS": "Build in Progress",
+        "ruRU": "Build in Progress"
+      }
     },
     {
       "id": "CalldownMULE",
-      "Name": "Calldown MULE"
+      "Name": {
+        "enUS": "Calldown MULE",
+        "ruRU": "Calldown MULE"
+      }
     },
     {
       "id": "SupplyDrop",
-      "Name": "Supply Drop"
+      "Name": {
+        "enUS": "Supply Drop",
+        "ruRU": "Supply Drop"
+      }
     },
     {
       "id": "que5CancelToSelection",
-      "Name": "Queue (5) (Cancel To Selection)"
+      "Name": {
+        "ruRU": "Queue (5) (Cancel To Selection)",
+        "enUS": "Queue (5) (Cancel To Selection)"
+      }
     },
     {
       "id": "RallyCommand",
-      "Name": "Command Center - Rally"
+      "Name": {
+        "enUS": "Command Center - Rally",
+        "ruRU": "Command Center - Rally"
+      }
     },
     {
       "id": "CommandCenterTrain",
-      "Name": "Train (Command Center)"
+      "Name": {
+        "enUS": "Train (Command Center)",
+        "ruRU": "Train (Command Center)"
+      }
     },
     {
       "id": "ScannerSweep",
-      "Name": "Scanner Sweep"
+      "Name": {
+        "enUS": "Scanner Sweep",
+        "ruRU": "Scanner Sweep"
+      }
     },
     {
       "id": "OrbitalLiftOff",
-      "Name": "Lift Off (Orbital Command)"
+      "Name": {
+        "enUS": "Lift Off (Orbital Command)",
+        "ruRU": "Lift Off (Orbital Command)"
+      }
     }
   ],
   "$Upgrades": [
-    "NotOrbitalCommand",
+    "TerranBuildingArmor",
     "OrbitalCommand",
     "IsOrbitalCommand",
     "OrbitalCommandFlying",
     "OrbitalCommandLand",
-    "TerranBuildingArmor",
     "UpgradeToOrbital",
     "CommandCenter",
+    "NotOrbitalCommand",
     "CommandCenter",
     "CommandCenterSplat",
     "CommandCenter_UpgradeCancel",
@@ -813,13 +938,7 @@
     "TerranOrbitalCommandPlayerDecalMacro",
     "OrbitalCommandLand",
     "UpgradeToSurveillance",
-    "OrbitalCommandSplat",
-    "Combat_TownHallDestroyerOrbitalCommandCount",
-    "CommandCenterBase",
-    "CommandCenter",
-    "CommandCenterCovertOps",
-    "CommandCenterSilver",
-    "CommandCenterRemastered"
+    "OrbitalCommandSplat"
   ],
   "$Requirements": [],
   "$Production": [
@@ -837,57 +956,105 @@
       "AbilCmd": "CommandCenterTrain,Train1",
       "id": "SCV",
       "Icon": "btn-unit-terran-scv",
-      "Tooltip": "Basic worker unit. Can gather resources, build Terran structures, and repair.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
-      "Name": "Train SCV"
+      "Name": {
+        "enUS": "Train SCV",
+        "ruRU": "Train SCV"
+      },
+      "Tooltip": {
+        "enUS": "Basic worker unit. Can gather resources, build Terran structures, and repair.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+        "ruRU": "Basic worker unit. Can gather resources, build Terran structures, and repair.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>"
+      }
     },
     {
       "AbilCmd": "OrbitalLiftOff,Execute",
       "id": "Lift",
       "Icon": "btn-ability-terran-liftoff",
-      "Tooltip": "Transforms structure into a slow air unit for redeployment. May not produce units, research upgrades, or use abilities until it has landed.",
-      "Name": "Lift Off"
+      "Name": {
+        "enUS": "Lift Off",
+        "ruRU": "Lift Off"
+      },
+      "Tooltip": {
+        "enUS": "Transforms structure into a slow air unit for redeployment. May not produce units, research upgrades, or use abilities until it has landed.",
+        "ruRU": "Transforms structure into a slow air unit for redeployment. May not produce units, research upgrades, or use abilities until it has landed."
+      }
     },
     {
       "AbilCmd": "BuildInProgress,Cancel",
       "id": "CancelBuilding",
       "Icon": "btn-command-cancel",
-      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-      "Name": "Cancel"
+      "Name": {
+        "enUS": "Cancel",
+        "ruRU": "Отменить /// Cancel"
+      },
+      "Tooltip": {
+        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+        "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+      }
     },
     {
       "AbilCmd": "que5CancelToSelection,CancelLast",
       "id": "Cancel",
       "Icon": "btn-command-cancel",
-      "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
-      "Name": "Cancel"
+      "Name": {
+        "enUS": "Cancel",
+        "ruRU": "Отменить /// Cancel"
+      },
+      "Tooltip": {
+        "enUS": "Drops the current order without performing it, and allows you to select a different order.",
+        "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+      }
     },
     {
       "AbilCmd": "ScannerSweep,Execute",
       "id": "Scan",
       "Icon": "btn-ability-terran-scannersweep-color",
-      "Tooltip": "Reveals an area of the map, detecting cloaked and burrowed units. Lasts <b>12</b>.",
-      "Name": "Scanner Sweep"
+      "Name": {
+        "enUS": "Scanner Sweep",
+        "ruRU": "Scanner Sweep"
+      },
+      "Tooltip": {
+        "enUS": "Reveals an area of the map, detecting cloaked and burrowed units. Lasts <b>12</b>.",
+        "ruRU": "Reveals an area of the map, detecting cloaked and burrowed units. Lasts <b>12</b>."
+      }
     },
     {
       "AbilCmd": "RallyCommand,Rally1",
       "id": "Rally",
       "Icon": "btn-ability-terran-setrallypoint",
-      "Tooltip": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
-      "Name": "Set Rally Point"
+      "Name": {
+        "enUS": "Set Rally Point",
+        "ruRU": "Задать точку сбора /// Set Rally Point"
+      },
+      "Tooltip": {
+        "enUS": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
+        "ruRU": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically."
+      }
     },
     {
       "AbilCmd": "CalldownMULE,Execute",
       "id": "CalldownMULE",
       "Icon": "btn-unit-terran-mule",
-      "Tooltip": "Drops an experimental robotic MULE miner onto the target Mineral Field. MULEs collect minerals more quickly than SCVs.  <br/><br/>MULEs last <b>90</b> seconds before their systems fail.",
-      "Name": "Calldown: MULE"
+      "Name": {
+        "enUS": "Calldown: MULE",
+        "ruRU": "Calldown: MULE"
+      },
+      "Tooltip": {
+        "enUS": "Drops an experimental robotic MULE miner onto the target Mineral Field. MULEs collect minerals more quickly than SCVs.  <br/><br/>MULEs last <b>90</b> before their systems fail.",
+        "ruRU": "Drops an experimental robotic MULE miner onto the target Mineral Field. MULEs collect minerals more quickly than SCVs.  <br/><br/>MULEs last <b>90</b> before their systems fail."
+      }
     },
     {
       "AbilCmd": "SupplyDrop,Execute",
       "id": "SupplyDrop",
       "Icon": "btn-ability-terran-calldownextrasupplies-color",
-      "Tooltip": "Drops additional supplies, permanently increasing the supply output of the target Supply Depot by <b>8</b>.",
-      "Name": "Calldown: Extra Supplies"
+      "Name": {
+        "enUS": "Calldown: Extra Supplies",
+        "ruRU": "Calldown: Extra Supplies"
+      },
+      "Tooltip": {
+        "enUS": "Drops additional supplies, permanently increasing the supply output of the target Supply Depot by <b>8</b>.",
+        "ruRU": "Drops additional supplies, permanently increasing the supply output of the target Supply Depot by <b>8</b>."
+      }
     }
   ]
 }

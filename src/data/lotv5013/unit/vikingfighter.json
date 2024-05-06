@@ -1,6 +1,12 @@
 {
-  "Name": "Viking",
-  "Description": "Durable support flyer. Loaded with strong anti-capital air missiles. Can switch into Assault Mode to attack ground units.<br/><br/><c val=\"#ColorAttackInfo\">Can attack air units.</span>",
+  "Name": {
+    "enUS": "Viking",
+    "ruRU": "Viking"
+  },
+  "Description": {
+    "enUS": "Durable support flyer. Loaded with strong anti-capital air missiles. Can switch into Assault Mode to attack ground units.<br/><br/><span style=\"color: #ffff8a\">Can attack air units.</span>",
+    "ruRU": "Durable support flyer. Loaded with strong anti-capital air missiles. Can switch into Assault Mode to attack ground units.<br/><br/><span style=\"color: #ffff8a\">Can attack air units.</span>"
+  },
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -12,7 +18,10 @@
   "ResourceType": "Unknown",
   "LifeStart": 135,
   "LifeMax": 135,
-  "LifeArmorName": "Terran Ship Plating",
+  "LifeArmorName": {
+    "enUS": "Terran Ship Plating",
+    "ruRU": "Terran Ship Plating"
+  },
   "Mover": "Fly",
   "StationaryTurningRate": 999.8437,
   "TurningRate": 999.8437,
@@ -76,6 +85,12 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "TechAliasArray": [
     "Alias_Viking"
   ],
@@ -103,7 +118,7 @@
   "Collide": [
     "Flying"
   ],
-  "VisionHeight": 15,
+  "VisionHeight": 4,
   "Sight": 10,
   "Attributes": [
     "Armored",
@@ -151,6 +166,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -188,8 +209,7 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move",
-          "AbilSetId": "Move"
+          "id": "move"
         },
         "Cost": {
           "Minerals": 0,
@@ -207,8 +227,14 @@
         "AbilCmd": "move,Move",
         "id": "Move",
         "Icon": "btn-command-move",
-        "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
-        "Name": "Move",
+        "Name": {
+          "enUS": "Move",
+          "ruRU": "Двигаться /// Move"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+          "ruRU": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies."
+        },
         "Hotkey": "M"
       },
       {
@@ -236,6 +262,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -273,8 +305,7 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move",
-          "AbilSetId": "Move"
+          "id": "move"
         },
         "Cost": {
           "Minerals": 0,
@@ -292,8 +323,14 @@
         "AbilCmd": "move,Patrol",
         "id": "MovePatrol",
         "Icon": "btn-command-patrol",
-        "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
-        "Name": "Patrol",
+        "Name": {
+          "enUS": "Patrol",
+          "ruRU": "Патрулировать /// Patrol"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+          "ruRU": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies."
+        },
         "Hotkey": "P"
       },
       {
@@ -321,6 +358,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -358,8 +401,7 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move",
-          "AbilSetId": "Move"
+          "id": "move"
         },
         "Cost": {
           "Minerals": 0,
@@ -377,8 +419,14 @@
         "AbilCmd": "move,HoldPos",
         "id": "MoveHoldPosition",
         "Icon": "btn-command-holdposition",
-        "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
-        "Name": "Hold Position",
+        "Name": {
+          "enUS": "Hold Position",
+          "ruRU": "Удерживать позицию /// Hold Position"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+          "ruRU": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage."
+        },
         "Hotkey": "H"
       },
       {
@@ -400,6 +448,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "stop",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "AbilSetId": "Stop",
           "CmdButtonArray": {
             "Stop": {
@@ -445,8 +499,14 @@
         "AbilCmd": "stop,Stop",
         "id": "Stop",
         "Icon": "btn-command-stop",
-        "Tooltip": "Orders selected units to cancel all orders and stop moving.",
-        "Name": "Stop",
+        "Name": {
+          "enUS": "Stop",
+          "ruRU": "Отставить /// Stop"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to cancel all orders and stop moving.",
+          "ruRU": "Orders selected units to cancel all orders and stop moving."
+        },
         "Hotkey": "S"
       },
       {
@@ -468,6 +528,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "attack",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "AbilSetId": "Attack",
           "Alignment": "Negative",
           "AcquireFilters": "-;Player,Ally,Neutral,Dead,Hidden,Invulnerable,Benign",
@@ -514,8 +580,14 @@
         "AbilCmd": "attack,Execute",
         "id": "Attack",
         "Icon": "btn-command-attack",
-        "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
-        "Name": "Attack",
+        "Name": {
+          "enUS": "Attack",
+          "ruRU": "Атаковать /// Attack"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+          "ruRU": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed."
+        },
         "Hotkey": "A"
       },
       {
@@ -559,11 +631,20 @@
         "AbilCmd": "AssaultMode,Execute",
         "id": "AssaultMode",
         "Icon": "btn-unit-terran-vikingassault",
-        "Tooltip": "Transforms the Viking to Assault Mode. In this mode Vikings move on the ground and can only attack ground targets.",
-        "Name": "Assault Mode",
+        "Name": {
+          "enUS": "Assault Mode",
+          "ruRU": "Assault Mode"
+        },
+        "Tooltip": {
+          "enUS": "Transforms the Viking to Assault Mode. In this mode Vikings move on the ground and can only attack ground targets.",
+          "ruRU": "Transforms the Viking to Assault Mode. In this mode Vikings move on the ground and can only attack ground targets."
+        },
         "Hotkey": "D"
       }
     ]
+  },
+  "TauntDuration": {
+    "Dance": 5
   },
   "id": "VikingFighter",
   "Icon": "btn-unit-terran-vikingfighter",
@@ -573,7 +654,10 @@
     {
       "id": "LanzerTorpedoes",
       "Icon": "btn-upgrade-terran-shipweaponslevel0",
-      "Name": "Lanzer Torpedoes",
+      "Name": {
+        "enUS": "Lanzer Torpedoes",
+        "ruRU": "Lanzer Torpedoes"
+      },
       "Amount": 10,
       "AttributeBonus": {
         "Armored": 4
@@ -589,59 +673,54 @@
   "Abilities": [
     {
       "id": "stop",
-      "Name": "Stop"
+      "Name": {
+        "enUS": "Stop",
+        "ruRU": "Stop"
+      }
     },
     {
       "id": "attack",
-      "Name": "Attack"
+      "Name": {
+        "ruRU": "Attack",
+        "enUS": "Attack"
+      }
     },
     {
       "id": "move",
-      "Name": "Move"
+      "Name": {
+        "enUS": "Move",
+        "ruRU": "Move"
+      }
     },
     {
       "id": "AssaultMode",
-      "Name": "Assault Mode"
+      "Name": {
+        "enUS": "Assault Mode",
+        "ruRU": "Assault Mode"
+      }
     }
   ],
   "$Upgrades": [
-    "FighterMode",
-    "VikingFighter",
     "VikingAssault",
-    "YoinkStartCreatePlaceholderVikingAir",
-    "StarportTrain",
-    "SmartServos",
-    "Starport",
-    "TerranShipArmorsLevel1",
     "VikingFighter",
-    "TerranShipArmors",
-    "TerranShipArmorsLevel2",
-    "TerranShipArmorsLevel3",
+    "FighterMode",
     "TerranShipWeaponsLevel1",
     "TerranShipWeapons",
     "TerranShipWeaponsLevel2",
     "TerranShipWeaponsLevel3",
     "TerranVehicleAndShipArmorsLevel1",
+    "VikingFighter",
     "TerranVehicleAndShipArmors",
     "TerranVehicleAndShipArmorsLevel2",
     "TerranVehicleAndShipArmorsLevel3",
-    "TerranVehicleAndShipWeaponsLevel1",
-    "TerranVehicleAndShipWeapons",
-    "TerranVehicleAndShipWeaponsLevel2",
-    "TerranVehicleAndShipWeaponsLevel3",
+    "YoinkStartCreatePlaceholderVikingAir",
+    "StarportTrain",
+    "Starport",
+    "SmartServos",
     "AssaultMorphModel",
     "FighterMorphModel",
     "FighterMode",
-    "VikingJotunBoosters",
-    "RewardDanceViking",
-    "IsVikingFighter",
-    "VikingBase",
-    "Viking",
-    "VikingMecha",
-    "VikingCovertOps",
-    "VikingJunker",
-    "VikingUmojan",
-    "VikingSilver"
+    "IsVikingFighter"
   ],
   "$Requirements": [],
   "$Production": [],
@@ -658,43 +737,79 @@
       "AbilCmd": "move,Move",
       "id": "Move",
       "Icon": "btn-command-move",
-      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
-      "Name": "Move"
+      "Name": {
+        "enUS": "Move",
+        "ruRU": "Двигаться /// Move"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+        "ruRU": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies."
+      }
     },
     {
       "AbilCmd": "move,Patrol",
       "id": "MovePatrol",
       "Icon": "btn-command-patrol",
-      "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
-      "Name": "Patrol"
+      "Name": {
+        "enUS": "Patrol",
+        "ruRU": "Патрулировать /// Patrol"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+        "ruRU": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies."
+      }
     },
     {
       "AbilCmd": "move,HoldPos",
       "id": "MoveHoldPosition",
       "Icon": "btn-command-holdposition",
-      "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
-      "Name": "Hold Position"
+      "Name": {
+        "enUS": "Hold Position",
+        "ruRU": "Удерживать позицию /// Hold Position"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+        "ruRU": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage."
+      }
     },
     {
       "AbilCmd": "stop,Stop",
       "id": "Stop",
       "Icon": "btn-command-stop",
-      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
-      "Name": "Stop"
+      "Name": {
+        "enUS": "Stop",
+        "ruRU": "Отставить /// Stop"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to cancel all orders and stop moving.",
+        "ruRU": "Orders selected units to cancel all orders and stop moving."
+      }
     },
     {
       "AbilCmd": "attack,Execute",
       "id": "Attack",
       "Icon": "btn-command-attack",
-      "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
-      "Name": "Attack"
+      "Name": {
+        "enUS": "Attack",
+        "ruRU": "Атаковать /// Attack"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+        "ruRU": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed."
+      }
     },
     {
       "AbilCmd": "AssaultMode,Execute",
       "id": "AssaultMode",
       "Icon": "btn-unit-terran-vikingassault",
-      "Tooltip": "Transforms the Viking to Assault Mode. In this mode Vikings move on the ground and can only attack ground targets.",
-      "Name": "Assault Mode"
+      "Name": {
+        "enUS": "Assault Mode",
+        "ruRU": "Assault Mode"
+      },
+      "Tooltip": {
+        "enUS": "Transforms the Viking to Assault Mode. In this mode Vikings move on the ground and can only attack ground targets.",
+        "ruRU": "Transforms the Viking to Assault Mode. In this mode Vikings move on the ground and can only attack ground targets."
+      }
     }
   ]
 }

@@ -12,8 +12,14 @@
   "ScoreValue": "WeaponTechnologyValue",
   "WebPriority": 0,
   "LeaderAlias": "ZergFlyerWeapons",
+  "EditorCategories": "Race:Zerg,UpgradeType:Bonus",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "Race": "Zerg",
-  "EditorCategories": "Race:Zerg,UpgradeType:AttackBonus",
   "ScoreResult": "BuildOrder",
   "EffectArray": [
     {

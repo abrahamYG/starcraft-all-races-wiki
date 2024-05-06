@@ -1,6 +1,12 @@
 {
-  "Name": "Overseer",
-  "Description": "Advanced aerial observer. Maintains the unit cap set by the Overlord. Can use the Oversight, Spawn Changeling, and Contaminate abilities.<br/><br/><span style=\"color: #FFE303\">Detector</span>",
+  "Name": {
+    "enUS": "Overseer",
+    "ruRU": "Overseer"
+  },
+  "Description": {
+    "enUS": "Advanced aerial observer. Maintains the unit cap set by the Overlord. Can use the Spawn Changeling and Contaminate abilities.<br/><br/><span style=\"color: FFE303\">Detector</span>",
+    "ruRU": "Advanced aerial observer. Maintains the unit cap set by the Overlord. Can use the Spawn Changeling and Contaminate abilities.<br/><br/><span style=\"color: FFE303\">Detector</span>"
+  },
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -12,7 +18,10 @@
   "ResourceType": "Unknown",
   "LifeStart": 200,
   "LifeMax": 200,
-  "LifeArmorName": "Zerg Flyer Carapace",
+  "LifeArmorName": {
+    "enUS": "Zerg Flyer Carapace",
+    "ruRU": "Zerg Flyer Carapace"
+  },
   "Mover": "Fly",
   "StationaryTurningRate": 999.8437,
   "TurningRate": 999.8437,
@@ -35,9 +44,9 @@
     "PlayerRevivable",
     "CameraFollow",
     "PreventDestroy",
+    "UseLineOfSight",
     "AISupport",
-    "ArmySelect",
-    "UseLineOfSight"
+    "ArmySelect"
   ],
   "EditorFlags": [
     "BlockStructures"
@@ -75,6 +84,12 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "TechAliasArray": [
     "Alias_Overlord"
   ],
@@ -100,7 +115,7 @@
   "Collide": [
     "Flying"
   ],
-  "VisionHeight": 15,
+  "VisionHeight": 4,
   "Sight": 11,
   "CardLayouts": {
     "Root": [
@@ -129,6 +144,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -166,8 +187,7 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move",
-          "AbilSetId": "Move"
+          "id": "move"
         },
         "Cost": {
           "Minerals": 0,
@@ -185,8 +205,14 @@
         "AbilCmd": "move,Move",
         "id": "Move",
         "Icon": "btn-command-move",
-        "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
-        "Name": "Move",
+        "Name": {
+          "enUS": "Move",
+          "ruRU": "Двигаться /// Move"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+          "ruRU": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies."
+        },
         "Hotkey": "M"
       },
       {
@@ -208,6 +234,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "stop",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "AbilSetId": "Stop",
           "CmdButtonArray": {
             "Stop": {
@@ -253,8 +285,14 @@
         "AbilCmd": "stop,Stop",
         "id": "Stop",
         "Icon": "btn-command-stop",
-        "Tooltip": "Orders selected units to cancel all orders and stop moving.",
-        "Name": "Stop",
+        "Name": {
+          "enUS": "Stop",
+          "ruRU": "Отставить /// Stop"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to cancel all orders and stop moving.",
+          "ruRU": "Orders selected units to cancel all orders and stop moving."
+        },
         "Hotkey": "S"
       },
       {
@@ -282,6 +320,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -319,8 +363,7 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move",
-          "AbilSetId": "Move"
+          "id": "move"
         },
         "Cost": {
           "Minerals": 0,
@@ -338,8 +381,14 @@
         "AbilCmd": "move,HoldPos",
         "id": "MoveHoldPosition",
         "Icon": "btn-command-holdposition",
-        "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
-        "Name": "Hold Position",
+        "Name": {
+          "enUS": "Hold Position",
+          "ruRU": "Удерживать позицию /// Hold Position"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+          "ruRU": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage."
+        },
         "Hotkey": "H"
       },
       {
@@ -361,6 +410,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "attack",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "AbilSetId": "Attack",
           "Alignment": "Negative",
           "AcquireFilters": "-;Player,Ally,Neutral,Dead,Hidden,Invulnerable,Benign",
@@ -407,8 +462,14 @@
         "AbilCmd": "attack,Execute",
         "id": "Attack",
         "Icon": "btn-command-attack",
-        "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
-        "Name": "Attack",
+        "Name": {
+          "enUS": "Attack",
+          "ruRU": "Атаковать /// Attack"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+          "ruRU": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed."
+        },
         "Hotkey": "A"
       },
       {
@@ -436,6 +497,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -473,8 +540,7 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move",
-          "AbilSetId": "Move"
+          "id": "move"
         },
         "Cost": {
           "Minerals": 0,
@@ -492,8 +558,14 @@
         "AbilCmd": "move,AcquireMove",
         "id": "AcquireMove",
         "Icon": "btn-command-attack",
-        "Tooltip": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies.",
-        "Name": "Scan Move",
+        "Name": {
+          "enUS": "Scan Move",
+          "ruRU": "Двигаться в режиме наблюдения /// Scan Move"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies.",
+          "ruRU": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies."
+        },
         "Hotkey": "A"
       },
       {
@@ -521,6 +593,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -558,8 +636,7 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move",
-          "AbilSetId": "Move"
+          "id": "move"
         },
         "Cost": {
           "Minerals": 0,
@@ -577,8 +654,14 @@
         "AbilCmd": "move,Patrol",
         "id": "MovePatrol",
         "Icon": "btn-command-patrol",
-        "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
-        "Name": "Patrol",
+        "Name": {
+          "enUS": "Patrol",
+          "ruRU": "Патрулировать /// Patrol"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+          "ruRU": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies."
+        },
         "Hotkey": "P"
       },
       {
@@ -600,6 +683,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "SpawnChangeling",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "RangeSlop": 1,
           "ArcSlop": 11.25,
           "AutoCastAcquireLevel": "Offensive",
@@ -611,7 +700,7 @@
             "RangeUseCasterRadius": 1,
             "ReApproachable": 1,
             "RequireTargetVision": 1,
-            "WaitToSpend": 0,
+            "WaitToSpend": 1,
             "UpdateChargesOnLevelChange": 1,
             "BestUnit": 1
           },
@@ -704,8 +793,14 @@
         "AbilCmd": "SpawnChangeling,Execute",
         "id": "SpawnChangeling",
         "Icon": "btn-unit-zerg-changeling",
-        "Tooltip": "Creates a Changeling. Changelings cannot attack and die after <b>150</b>. When a Changeling first encounters an enemy unit, it will match that unit's color and change into a Zealot, Marine, or Zergling, depending on the enemy race.",
-        "Name": "Spawn Changeling",
+        "Name": {
+          "enUS": "Spawn Changeling",
+          "ruRU": "Spawn Changeling"
+        },
+        "Tooltip": {
+          "enUS": "Creates a Changeling. Changelings cannot attack and die after <b>150</b>. When a Changeling first encounters an enemy unit, it will match that unit's color and change into a Zealot, Marine, or Zergling, depending on the enemy race.",
+          "ruRU": "Creates a Changeling. Changelings cannot attack and die after <b>150</b>. When a Changeling first encounters an enemy unit, it will match that unit's color and change into a Zealot, Marine, or Zergling, depending on the enemy race."
+        },
         "Hotkey": "C"
       },
       {
@@ -724,8 +819,14 @@
         "Type": "Passive",
         "id": "Detector",
         "Icon": "btn-status-detector",
-        "Tooltip": "This unit can detect cloaked, burrowed, and hallucinated units.",
-        "Name": "Detector"
+        "Name": {
+          "enUS": "Detector",
+          "ruRU": "Detector"
+        },
+        "Tooltip": {
+          "enUS": "This unit can detect cloaked, burrowed, and hallucinated units.",
+          "ruRU": "This unit can detect cloaked, burrowed, and hallucinated units."
+        }
       },
       {
         "Info": {
@@ -746,6 +847,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "Contaminate",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "RangeSlop": 1,
           "ArcSlop": 11.25,
           "AutoCastAcquireLevel": "Offensive",
@@ -757,7 +864,7 @@
             "RangeUseCasterRadius": 1,
             "ReApproachable": 1,
             "RequireTargetVision": 1,
-            "WaitToSpend": 0,
+            "WaitToSpend": 1,
             "UpdateChargesOnLevelChange": 1,
             "BestUnit": 1,
             "AllowMovement": 1,
@@ -862,8 +969,14 @@
         "AbilCmd": "Contaminate,Execute",
         "id": "Contaminate",
         "Icon": "btn-ability-zerg-contaminate-color",
-        "Tooltip": "The target structure will be unable to train units or research upgrades for <b>30</b> seconds.",
-        "Name": "Contaminate",
+        "Name": {
+          "enUS": "Contaminate",
+          "ruRU": "Contaminate"
+        },
+        "Tooltip": {
+          "enUS": "The target structure will be unable to train units or research upgrades for <b>30</b> seconds.",
+          "ruRU": "The target structure will be unable to train units or research upgrades for <b>30</b> seconds."
+        },
         "Hotkey": "E"
       },
       {
@@ -914,8 +1027,14 @@
         "AbilCmd": "OverseerMorphtoOverseerSiegeMode,Execute",
         "id": "MorphtoOverseerSiege",
         "Icon": "btn-ability-zerg-overlord-oversight",
-        "Tooltip": "Grants the Overseer <b>25</b>% wider vision, but removes its ability to move. This ability can be canceled after activation.",
-        "Name": "Oversight",
+        "Name": {
+          "enUS": "Oversight",
+          "ruRU": "Oversight"
+        },
+        "Tooltip": {
+          "enUS": "Grants the Overseer <b>25</b>% wider vision, but removes its ability to move. This ability can be canceled after activation.",
+          "ruRU": "Grants the Overseer <b>25</b>% wider vision, but removes its ability to move. This ability can be canceled after activation."
+        },
         "Hotkey": "W"
       }
     ]
@@ -937,7 +1056,6 @@
   },
   "TacticalAIThink": "AIThinkOverseer",
   "Facing": 45,
-  "id": "Overseer",
   "GlossaryStrongArray": [
     "Banshee",
     "LurkerMP",
@@ -948,6 +1066,7 @@
     "Mutalisk",
     "Stalker"
   ],
+  "id": "Overseer",
   "Icon": "btn-unit-zerg-overseer",
   "LifeArmorIcon": "btn-upgrade-zerg-flyercarapace-level0",
   "ShieldArmorIcon": "btn-upgrade-zerg-swarmfrenzy",
@@ -956,30 +1075,51 @@
     {
       "id": "Detector11",
       "Icon": "btn-status-detector",
-      "Tooltip": "This unit can detect cloaked or burrowed units within its sight range.",
-      "Name": "Detector"
+      "Name": {
+        "enUS": "Detector",
+        "ruRU": "Детектор /// Detector"
+      },
+      "Tooltip": {
+        "enUS": "This unit can detect cloaked or burrowed units within its sight range.",
+        "ruRU": "Эта боевая единица может обнаруживать замаскированные или закопанные войска в поле обзора."
+      }
     }
   ],
   "Abilities": [
     {
       "id": "stop",
-      "Name": "Stop"
+      "Name": {
+        "enUS": "Stop",
+        "ruRU": "Stop"
+      }
     },
     {
       "id": "move",
-      "Name": "Move"
+      "Name": {
+        "enUS": "Move",
+        "ruRU": "Move"
+      }
     },
     {
       "id": "SpawnChangeling",
-      "Name": "Spawn Changeling"
+      "Name": {
+        "enUS": "Spawn Changeling",
+        "ruRU": "Spawn Changeling"
+      }
     },
     {
       "id": "Contaminate",
-      "Name": "Contaminate"
+      "Name": {
+        "enUS": "Contaminate",
+        "ruRU": "Contaminate"
+      }
     },
     {
       "id": "OverseerMorphtoOverseerSiegeMode",
-      "Name": "Overseer Morph to Overseer Siege Mode"
+      "Name": {
+        "enUS": "Overseer Morph to Overseer Siege Mode",
+        "ruRU": "Overseer Morph to Overseer Siege Mode"
+      }
     }
   ],
   "$Upgrades": [
@@ -990,26 +1130,13 @@
     "Overseer",
     "OverseerSiegeMode",
     "OverseerSiegeModeMorphtoOverseer",
+    "Button/Tooltip/MorphtoOverseerSiege",
     "ZergFlyerArmors",
     "ZergFlyerArmorsLevel2",
     "ZergFlyerArmorsLevel3",
     "Lair",
     "Overseer_Death",
-    "IsOverseer",
-    "OverseerBaseNoMorph",
-    "OverseerBase",
-    "Overseer",
-    "OverSeerWebby",
-    "OverseerPrimal",
-    "OverseerMecha",
-    "OverseerRCZ",
-    "DefaultSkinPack",
-    "OverSeerWebbySkinPack",
-    "OverSeerPrimalSkinPack",
-    "OverseerMecha",
-    "OverseerRCZ",
-    null,
-    null
+    "IsOverseer"
   ],
   "$Requirements": [],
   "$Production": [
@@ -1026,64 +1153,118 @@
       "AbilCmd": "move,Move",
       "id": "Move",
       "Icon": "btn-command-move",
-      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
-      "Name": "Move"
+      "Name": {
+        "enUS": "Move",
+        "ruRU": "Двигаться /// Move"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+        "ruRU": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies."
+      }
     },
     {
       "AbilCmd": "stop,Stop",
       "id": "Stop",
       "Icon": "btn-command-stop",
-      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
-      "Name": "Stop"
+      "Name": {
+        "enUS": "Stop",
+        "ruRU": "Отставить /// Stop"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to cancel all orders and stop moving.",
+        "ruRU": "Orders selected units to cancel all orders and stop moving."
+      }
     },
     {
       "AbilCmd": "move,HoldPos",
       "id": "MoveHoldPosition",
       "Icon": "btn-command-holdposition",
-      "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
-      "Name": "Hold Position"
+      "Name": {
+        "enUS": "Hold Position",
+        "ruRU": "Удерживать позицию /// Hold Position"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+        "ruRU": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage."
+      }
     },
     {
       "AbilCmd": "attack,Execute",
       "id": "Attack",
       "Icon": "btn-command-attack",
-      "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
-      "Name": "Attack"
+      "Name": {
+        "enUS": "Attack",
+        "ruRU": "Атаковать /// Attack"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+        "ruRU": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed."
+      }
     },
     {
       "AbilCmd": "move,AcquireMove",
       "id": "AcquireMove",
       "Icon": "btn-command-attack",
-      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies.",
-      "Name": "Scan Move"
+      "Name": {
+        "enUS": "Scan Move",
+        "ruRU": "Двигаться в режиме наблюдения /// Scan Move"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies.",
+        "ruRU": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies."
+      }
     },
     {
       "AbilCmd": "move,Patrol",
       "id": "MovePatrol",
       "Icon": "btn-command-patrol",
-      "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
-      "Name": "Patrol"
+      "Name": {
+        "enUS": "Patrol",
+        "ruRU": "Патрулировать /// Patrol"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+        "ruRU": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies."
+      }
     },
     {
       "AbilCmd": "SpawnChangeling,Execute",
       "id": "SpawnChangeling",
       "Icon": "btn-unit-zerg-changeling",
-      "Tooltip": "Creates a Changeling. Changelings cannot attack and die after <b>150</b>. When a Changeling first encounters an enemy unit, it will match that unit's color and change into a Zealot, Marine, or Zergling, depending on the enemy race.",
-      "Name": "Spawn Changeling"
+      "Name": {
+        "enUS": "Spawn Changeling",
+        "ruRU": "Spawn Changeling"
+      },
+      "Tooltip": {
+        "enUS": "Creates a Changeling. Changelings cannot attack and die after <b>150</b>. When a Changeling first encounters an enemy unit, it will match that unit's color and change into a Zealot, Marine, or Zergling, depending on the enemy race.",
+        "ruRU": "Creates a Changeling. Changelings cannot attack and die after <b>150</b>. When a Changeling first encounters an enemy unit, it will match that unit's color and change into a Zealot, Marine, or Zergling, depending on the enemy race."
+      }
     },
     {
       "AbilCmd": "Contaminate,Execute",
       "id": "Contaminate",
       "Icon": "btn-ability-zerg-contaminate-color",
-      "Tooltip": "The target structure will be unable to train units or research upgrades for <b>30</b> seconds.",
-      "Name": "Contaminate"
+      "Name": {
+        "enUS": "Contaminate",
+        "ruRU": "Contaminate"
+      },
+      "Tooltip": {
+        "enUS": "The target structure will be unable to train units or research upgrades for <b>30</b> seconds.",
+        "ruRU": "The target structure will be unable to train units or research upgrades for <b>30</b> seconds."
+      }
     },
     {
       "AbilCmd": "OverseerMorphtoOverseerSiegeMode,Execute",
       "id": "MorphtoOverseerSiege",
       "Icon": "btn-ability-zerg-overlord-oversight",
-      "Tooltip": "Grants the Overseer <b>25</b>% wider vision, but removes its ability to move. This ability can be canceled after activation.",
-      "Name": "Oversight"
+      "Name": {
+        "enUS": "Oversight",
+        "ruRU": "Oversight"
+      },
+      "Tooltip": {
+        "enUS": "Grants the Overseer <b>25</b>% wider vision, but removes its ability to move. This ability can be canceled after activation.",
+        "ruRU": "Grants the Overseer <b>25</b>% wider vision, but removes its ability to move. This ability can be canceled after activation."
+      }
     }
   ]
 }

@@ -12,8 +12,14 @@
   "ScoreValue": "ArmorTechnologyValue",
   "WebPriority": 0,
   "LeaderAlias": "ProtossShields",
+  "EditorCategories": "Race:Protoss,UpgradeType:Bonus",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "Race": "Prot",
-  "EditorCategories": "Race:Protoss,UpgradeType:ArmorBonus",
   "ScoreResult": "BuildOrder",
   "EffectArray": [
     {

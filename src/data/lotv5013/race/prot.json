@@ -1,6 +1,10 @@
 {
   "id": "Prot",
-  "Name": "Protoss",
+  "Name": {
+    "ruRU": "Protoss",
+    "enUS": "Protoss"
+  },
+  "Icon": "decal_terran_0053_01",
   "cache": {
     "upgrades": {
       "ProtossGroundWeaponsLevel1": {
@@ -8,15 +12,24 @@
         "Flags": {
           "UpgradeCheat": 1
         },
-        "Name": "Protoss Ground Weapons Level 1",
+        "Name": {
+          "enUS": "Protoss Ground Weapons Level 1",
+          "ruRU": "Protoss Ground Weapons Level 1"
+        },
         "MaxLevel": 1,
         "Alert": "UpgradeComplete",
         "ScoreCount": "WeaponTechnologyCount",
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "ProtossGroundWeapons",
+        "EditorCategories": "Race:Protoss,UpgradeType:Bonus",
+        "$tokens": {
+          "ID": {
+            "type": "string",
+            "value": ""
+          }
+        },
         "Race": "Prot",
-        "EditorCategories": "Race:Protoss,UpgradeType:AttackBonus",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -234,15 +247,24 @@
         "Flags": {
           "UpgradeCheat": 1
         },
-        "Name": "Protoss Ground Weapons Level 2",
+        "Name": {
+          "enUS": "Protoss Ground Weapons Level 2",
+          "ruRU": "Protoss Ground Weapons Level 2"
+        },
         "MaxLevel": 1,
         "Alert": "UpgradeComplete",
         "ScoreCount": "WeaponTechnologyCount",
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "ProtossGroundWeapons",
+        "EditorCategories": "Race:Protoss,UpgradeType:Bonus",
+        "$tokens": {
+          "ID": {
+            "type": "string",
+            "value": ""
+          }
+        },
         "Race": "Prot",
-        "EditorCategories": "Race:Protoss,UpgradeType:AttackBonus",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -457,15 +479,24 @@
         "Flags": {
           "UpgradeCheat": 1
         },
-        "Name": "Protoss Ground Weapons Level 3",
+        "Name": {
+          "enUS": "Protoss Ground Weapons Level 3",
+          "ruRU": "Protoss Ground Weapons Level 3"
+        },
         "MaxLevel": 1,
         "Alert": "UpgradeComplete",
         "ScoreCount": "WeaponTechnologyCount",
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "ProtossGroundWeapons",
+        "EditorCategories": "Race:Protoss,UpgradeType:Bonus",
+        "$tokens": {
+          "ID": {
+            "type": "string",
+            "value": ""
+          }
+        },
         "Race": "Prot",
-        "EditorCategories": "Race:Protoss,UpgradeType:AttackBonus",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -680,15 +711,24 @@
         "Flags": {
           "UpgradeCheat": 1
         },
-        "Name": "Protoss Ground Armor Level 1",
+        "Name": {
+          "enUS": "Protoss Ground Armor Level 1",
+          "ruRU": "Protoss Ground Armor Level 1"
+        },
         "MaxLevel": 1,
         "Alert": "UpgradeComplete",
         "ScoreCount": "ArmorTechnologyCount",
         "ScoreValue": "ArmorTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "ProtossGroundArmors",
+        "EditorCategories": "Race:Protoss,UpgradeType:Bonus",
+        "$tokens": {
+          "ID": {
+            "type": "string",
+            "value": ""
+          }
+        },
         "Race": "Prot",
-        "EditorCategories": "Race:Protoss,UpgradeType:ArmorBonus",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -871,15 +911,24 @@
         "Flags": {
           "UpgradeCheat": 1
         },
-        "Name": "Protoss Ground Armor Level 2",
+        "Name": {
+          "enUS": "Protoss Ground Armor Level 2",
+          "ruRU": "Protoss Ground Armor Level 2"
+        },
         "MaxLevel": 1,
         "Alert": "UpgradeComplete",
         "ScoreCount": "ArmorTechnologyCount",
         "ScoreValue": "ArmorTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "ProtossGroundArmors",
+        "EditorCategories": "Race:Protoss,UpgradeType:Bonus",
+        "$tokens": {
+          "ID": {
+            "type": "string",
+            "value": ""
+          }
+        },
         "Race": "Prot",
-        "EditorCategories": "Race:Protoss,UpgradeType:ArmorBonus",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -1059,15 +1108,24 @@
         "Flags": {
           "UpgradeCheat": 1
         },
-        "Name": "Protoss Ground Armor Level 3",
+        "Name": {
+          "enUS": "Protoss Ground Armor Level 3",
+          "ruRU": "Protoss Ground Armor Level 3"
+        },
         "MaxLevel": 1,
         "Alert": "UpgradeComplete",
         "ScoreCount": "ArmorTechnologyCount",
         "ScoreValue": "ArmorTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "ProtossGroundArmors",
+        "EditorCategories": "Race:Protoss,UpgradeType:Bonus",
+        "$tokens": {
+          "ID": {
+            "type": "string",
+            "value": ""
+          }
+        },
         "Race": "Prot",
-        "EditorCategories": "Race:Protoss,UpgradeType:ArmorBonus",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -1247,15 +1305,24 @@
         "Flags": {
           "UpgradeCheat": 1
         },
-        "Name": "Protoss Shields Level 1",
+        "Name": {
+          "enUS": "Protoss Shields Level 1",
+          "ruRU": "Protoss Shields Level 1"
+        },
         "MaxLevel": 1,
         "Alert": "UpgradeComplete",
         "ScoreCount": "ArmorTechnologyCount",
         "ScoreValue": "ArmorTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "ProtossShields",
+        "EditorCategories": "Race:Protoss,UpgradeType:Bonus",
+        "$tokens": {
+          "ID": {
+            "type": "string",
+            "value": ""
+          }
+        },
         "Race": "Prot",
-        "EditorCategories": "Race:Protoss,UpgradeType:ArmorBonus",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -1844,15 +1911,24 @@
         "Flags": {
           "UpgradeCheat": 1
         },
-        "Name": "Protoss Shields Level 2",
+        "Name": {
+          "enUS": "Protoss Shields Level 2",
+          "ruRU": "Protoss Shields Level 2"
+        },
         "MaxLevel": 1,
         "Alert": "UpgradeComplete",
         "ScoreCount": "ArmorTechnologyCount",
         "ScoreValue": "ArmorTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "ProtossShields",
+        "EditorCategories": "Race:Protoss,UpgradeType:Bonus",
+        "$tokens": {
+          "ID": {
+            "type": "string",
+            "value": ""
+          }
+        },
         "Race": "Prot",
-        "EditorCategories": "Race:Protoss,UpgradeType:ArmorBonus",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -2428,7 +2504,7 @@
         ],
         "id": "ProtossShieldsLevel2",
         "Icon": "btn-upgrade-protoss-shieldslevel2",
-        "ScoreAmount": 400,
+        "ScoreAmount": 450,
         "LeaderLevel": 2,
         "$Phased": "ProtossShieldsLevel1"
       },
@@ -2437,15 +2513,24 @@
         "Flags": {
           "UpgradeCheat": 1
         },
-        "Name": "Protoss Shields Level 3",
+        "Name": {
+          "enUS": "Protoss Shields Level 3",
+          "ruRU": "Protoss Shields Level 3"
+        },
         "MaxLevel": 1,
         "Alert": "UpgradeComplete",
         "ScoreCount": "ArmorTechnologyCount",
         "ScoreValue": "ArmorTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "ProtossShields",
+        "EditorCategories": "Race:Protoss,UpgradeType:Bonus",
+        "$tokens": {
+          "ID": {
+            "type": "string",
+            "value": ""
+          }
+        },
         "Race": "Prot",
-        "EditorCategories": "Race:Protoss,UpgradeType:ArmorBonus",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -3021,7 +3106,7 @@
         ],
         "id": "ProtossShieldsLevel3",
         "Icon": "btn-upgrade-protoss-shieldslevel3",
-        "ScoreAmount": 500,
+        "ScoreAmount": 600,
         "LeaderLevel": 3,
         "$Phased": "ProtossShieldsLevel1"
       },
@@ -3030,15 +3115,24 @@
         "Flags": {
           "UpgradeCheat": 1
         },
-        "Name": "Protoss Air Weapons Level 1",
+        "Name": {
+          "enUS": "Protoss Air Weapons Level 1",
+          "ruRU": "Protoss Air Weapons Level 1"
+        },
         "MaxLevel": 1,
         "Alert": "UpgradeComplete",
         "ScoreCount": "WeaponTechnologyCount",
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "ProtossAirWeapons",
+        "EditorCategories": "Race:Protoss,UpgradeType:Bonus",
+        "$tokens": {
+          "ID": {
+            "type": "string",
+            "value": ""
+          }
+        },
         "Race": "Prot",
-        "EditorCategories": "Race:Protoss,UpgradeType:AttackBonus",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -3224,15 +3318,24 @@
         "Flags": {
           "UpgradeCheat": 1
         },
-        "Name": "Protoss Air Weapons Level 2",
+        "Name": {
+          "enUS": "Protoss Air Weapons Level 2",
+          "ruRU": "Protoss Air Weapons Level 2"
+        },
         "MaxLevel": 1,
         "Alert": "UpgradeComplete",
         "ScoreCount": "WeaponTechnologyCount",
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "ProtossAirWeapons",
+        "EditorCategories": "Race:Protoss,UpgradeType:Bonus",
+        "$tokens": {
+          "ID": {
+            "type": "string",
+            "value": ""
+          }
+        },
         "Race": "Prot",
-        "EditorCategories": "Race:Protoss,UpgradeType:AttackBonus",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -3415,15 +3518,24 @@
         "Flags": {
           "UpgradeCheat": 1
         },
-        "Name": "Protoss Air Weapons Level 3",
+        "Name": {
+          "enUS": "Protoss Air Weapons Level 3",
+          "ruRU": "Protoss Air Weapons Level 3"
+        },
         "MaxLevel": 1,
         "Alert": "UpgradeComplete",
         "ScoreCount": "WeaponTechnologyCount",
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "ProtossAirWeapons",
+        "EditorCategories": "Race:Protoss,UpgradeType:Bonus",
+        "$tokens": {
+          "ID": {
+            "type": "string",
+            "value": ""
+          }
+        },
         "Race": "Prot",
-        "EditorCategories": "Race:Protoss,UpgradeType:AttackBonus",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -3606,15 +3718,24 @@
         "Flags": {
           "UpgradeCheat": 1
         },
-        "Name": "Protoss Air Armor Level 1",
+        "Name": {
+          "enUS": "Protoss Air Armor Level 1",
+          "ruRU": "Protoss Air Armor Level 1"
+        },
         "MaxLevel": 1,
         "Alert": "UpgradeComplete",
         "ScoreCount": "ArmorTechnologyCount",
         "ScoreValue": "ArmorTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "ProtossAirArmors",
+        "EditorCategories": "Race:Protoss,UpgradeType:Bonus",
+        "$tokens": {
+          "ID": {
+            "type": "string",
+            "value": ""
+          }
+        },
         "Race": "Prot",
-        "EditorCategories": "Race:Protoss,UpgradeType:ArmorBonus",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -3782,7 +3903,7 @@
         ],
         "id": "ProtossAirArmorsLevel1",
         "Icon": "btn-upgrade-protoss-airarmorlevel1",
-        "ScoreAmount": 200,
+        "ScoreAmount": 300,
         "LeaderLevel": 1,
         "$Phase": [
           "ProtossAirArmorsLevel2",
@@ -3794,15 +3915,24 @@
         "Flags": {
           "UpgradeCheat": 1
         },
-        "Name": "Protoss Air Armor Level 2",
+        "Name": {
+          "enUS": "Protoss Air Armor Level 2",
+          "ruRU": "Protoss Air Armor Level 2"
+        },
         "MaxLevel": 1,
         "Alert": "UpgradeComplete",
         "ScoreCount": "ArmorTechnologyCount",
         "ScoreValue": "ArmorTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "ProtossAirArmors",
+        "EditorCategories": "Race:Protoss,UpgradeType:Bonus",
+        "$tokens": {
+          "ID": {
+            "type": "string",
+            "value": ""
+          }
+        },
         "Race": "Prot",
-        "EditorCategories": "Race:Protoss,UpgradeType:ArmorBonus",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -3970,7 +4100,7 @@
         ],
         "id": "ProtossAirArmorsLevel2",
         "Icon": "btn-upgrade-protoss-airarmorlevel2",
-        "ScoreAmount": 350,
+        "ScoreAmount": 450,
         "LeaderLevel": 2,
         "$Phased": "ProtossAirArmorsLevel1"
       },
@@ -3979,15 +4109,24 @@
         "Flags": {
           "UpgradeCheat": 1
         },
-        "Name": "Protoss Air Armor Level 3",
+        "Name": {
+          "enUS": "Protoss Air Armor Level 3",
+          "ruRU": "Protoss Air Armor Level 3"
+        },
         "MaxLevel": 1,
         "Alert": "UpgradeComplete",
         "ScoreCount": "ArmorTechnologyCount",
         "ScoreValue": "ArmorTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "ProtossAirArmors",
+        "EditorCategories": "Race:Protoss,UpgradeType:Bonus",
+        "$tokens": {
+          "ID": {
+            "type": "string",
+            "value": ""
+          }
+        },
         "Race": "Prot",
-        "EditorCategories": "Race:Protoss,UpgradeType:ArmorBonus",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -4155,7 +4294,7 @@
         ],
         "id": "ProtossAirArmorsLevel3",
         "Icon": "btn-upgrade-protoss-airarmorlevel3",
-        "ScoreAmount": 500,
+        "ScoreAmount": 600,
         "LeaderLevel": 3,
         "$Phased": "ProtossAirArmorsLevel1"
       },
@@ -4164,16 +4303,25 @@
         "Flags": {
           "UpgradeCheat": 1
         },
-        "Name": "Warp Gate",
+        "Name": {
+          "enUS": "Warp Gate",
+          "ruRU": "Warp Gate"
+        },
         "MaxLevel": 1,
         "Alert": "ResearchComplete",
         "ScoreCount": "MiscTechnologyCount",
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "WarpGateResearch",
+        "EditorCategories": "Race:Protoss,UpgradeType:Spell",
+        "$tokens": {
+          "ID": {
+            "type": "string",
+            "value": ""
+          }
+        },
         "Race": "Prot",
         "Icon": "btn-building-protoss-warpgate",
-        "EditorCategories": "Race:Protoss,UpgradeType:SpellResearch",
         "ScoreResult": "BuildOrder",
         "AffectedUnitArray": [
           "Gateway"
@@ -4186,16 +4334,25 @@
         "Flags": {
           "UpgradeCheat": 1
         },
-        "Name": "Psionic Storm",
+        "Name": {
+          "enUS": "Psionic Storm",
+          "ruRU": "Psionic Storm"
+        },
         "MaxLevel": 1,
         "Alert": "ResearchComplete",
         "ScoreCount": "MiscTechnologyCount",
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "PsiStormTech",
+        "EditorCategories": "Race:Protoss,UpgradeType:Spell",
+        "$tokens": {
+          "ID": {
+            "type": "string",
+            "value": ""
+          }
+        },
         "Race": "Prot",
         "Icon": "btn-ability-protoss-psistorm-color",
-        "EditorCategories": "Race:Protoss,UpgradeType:SpellResearch",
         "ScoreResult": "BuildOrder",
         "AffectedUnitArray": [
           "HighTemplar"
@@ -4203,60 +4360,41 @@
         "ScoreAmount": 400,
         "id": "PsiStormTech"
       },
-      "PhoenixRangeUpgrade": {
-        "class": "CUpgrade",
-        "Flags": {
-          "UpgradeCheat": 1
-        },
-        "Name": "Anion Pulse-Crystals",
-        "MaxLevel": 1,
-        "Alert": "ResearchComplete",
-        "ScoreCount": "MiscTechnologyCount",
-        "ScoreValue": "MiscTechnologyValue",
-        "WebPriority": 1,
-        "LeaderAlias": "PhoenixRangeUpgrade",
-        "Race": "Prot",
-        "InfoTooltipPriority": 1,
-        "ScoreAmount": 300,
-        "ScoreResult": "BuildOrder",
-        "EffectArray": [
-          {
-            "Reference": "Weapon,IonCannons,Range",
-            "Value": "2"
-          }
-        ],
-        "EditorCategories": "Race:Protoss,UpgradeType:SpellResearch",
-        "AffectedUnitArray": [
-          "Phoenix"
-        ],
-        "Icon": "btn-upgrade-protoss-phoenixrange",
-        "id": "PhoenixRangeUpgrade"
-      },
       "VoidRaySpeedUpgrade": {
         "class": "CUpgrade",
         "Flags": {
           "UpgradeCheat": 1,
           "TechTreeCheat": 1
         },
-        "Name": "Flux Vanes",
+        "Name": {
+          "enUS": "Flux Vanes",
+          "ruRU": "Flux Vanes"
+        },
         "MaxLevel": 1,
         "Alert": "ResearchComplete",
         "ScoreCount": "MiscTechnologyCount",
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "VoidRaySpeedUpgrade",
+        "EditorCategories": "Race:Protoss,UpgradeType:Spell",
+        "$tokens": {
+          "ID": {
+            "type": "string",
+            "value": ""
+          }
+        },
         "ScoreAmount": 200,
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
+            "Operation": "Set",
             "Reference": "Unit,VoidRay,Speed",
-            "Value": "3.320300",
-            "Operation": "Set"
+            "Value": "3.320300"
           },
           {
+            "Operation": "Set",
             "Reference": "Unit,VoidRay,Acceleration",
-            "Value": "2.687500",
-            "Operation": "Set"
+            "Value": "2.687500"
           },
           {
             "Operation": "Set",
@@ -4269,7 +4407,6 @@
             "Value": "0.7441"
           }
         ],
-        "EditorCategories": "Race:Protoss,UpgradeType:Talents",
         "Icon": "btn-upgrade-protoss-fluxvanes",
         "Race": "Prot",
         "AffectedUnitArray": [
@@ -4277,18 +4414,65 @@
         ],
         "id": "VoidRaySpeedUpgrade"
       },
+      "PhoenixRangeUpgrade": {
+        "class": "CUpgrade",
+        "Flags": {
+          "UpgradeCheat": 1
+        },
+        "Name": {
+          "enUS": "Anion Pulse-Crystals",
+          "ruRU": "Anion Pulse-Crystals"
+        },
+        "MaxLevel": 1,
+        "Alert": "ResearchComplete",
+        "ScoreCount": "MiscTechnologyCount",
+        "ScoreValue": "MiscTechnologyValue",
+        "WebPriority": 1,
+        "LeaderAlias": "PhoenixRangeUpgrade",
+        "EditorCategories": "Race:Protoss,UpgradeType:Spell",
+        "$tokens": {
+          "ID": {
+            "type": "string",
+            "value": ""
+          }
+        },
+        "Race": "Prot",
+        "InfoTooltipPriority": 1,
+        "ScoreAmount": 300,
+        "ScoreResult": "BuildOrder",
+        "EffectArray": [
+          {
+            "Reference": "Weapon,IonCannons,Range",
+            "Value": "2"
+          }
+        ],
+        "AffectedUnitArray": [
+          "Phoenix"
+        ],
+        "Icon": "btn-upgrade-protoss-phoenixrange",
+        "id": "PhoenixRangeUpgrade"
+      },
       "TempestGroundAttackUpgrade": {
         "class": "CUpgrade",
         "Flags": {
           "UpgradeCheat": 1
         },
-        "Name": "Tectonic Destabilizers",
+        "Name": {
+          "enUS": "Tectonic Destabilizers"
+        },
         "MaxLevel": 1,
         "Alert": "UpgradeComplete",
         "ScoreCount": "MiscTechnologyCount",
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "TempestGroundAttackUpgrade",
+        "EditorCategories": "Race:Protoss,UpgradeType:Spell",
+        "$tokens": {
+          "ID": {
+            "type": "string",
+            "value": ""
+          }
+        },
         "Icon": "btn-ability-protoss-disruptionblast",
         "ScoreAmount": 300,
         "ScoreResult": "BuildOrder",
@@ -4312,18 +4496,26 @@
         "Flags": {
           "UpgradeCheat": 1
         },
-        "Name": "Shadow Stride",
+        "Name": {
+          "enUS": "Shadow Stride"
+        },
         "MaxLevel": 1,
         "Alert": "ResearchComplete",
         "ScoreCount": "MiscTechnologyCount",
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "DarkTemplarBlinkUpgrade",
+        "EditorCategories": "Race:Protoss,UpgradeType:Spell",
+        "$tokens": {
+          "ID": {
+            "type": "string",
+            "value": ""
+          }
+        },
         "Icon": "btn-ability-protoss-stealth-blink",
         "Race": "Prot",
         "ScoreAmount": 200,
         "ScoreResult": "BuildOrder",
-        "EditorCategories": "Race:Protoss,UpgradeType:SpellResearch",
         "AffectedUnitArray": [
           "DarkTemplar"
         ],
@@ -4334,16 +4526,25 @@
         "Flags": {
           "UpgradeCheat": 1
         },
-        "Name": "Blink",
+        "Name": {
+          "enUS": "Blink",
+          "ruRU": "Blink"
+        },
         "MaxLevel": 1,
         "Alert": "ResearchComplete",
         "ScoreCount": "MiscTechnologyCount",
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "BlinkTech",
+        "EditorCategories": "Race:Protoss,UpgradeType:Spell",
+        "$tokens": {
+          "ID": {
+            "type": "string",
+            "value": ""
+          }
+        },
         "Race": "Prot",
         "Icon": "btn-ability-protoss-blink-color",
-        "EditorCategories": "Race:Protoss,UpgradeType:SpellResearch",
         "ScoreResult": "BuildOrder",
         "AffectedUnitArray": [
           "Stalker"
@@ -4357,16 +4558,25 @@
           "UpgradeCheat": 1,
           "TechTreeCheat": 1
         },
-        "Name": "Charge",
+        "Name": {
+          "enUS": "Charge",
+          "ruRU": "Charge"
+        },
         "MaxLevel": 1,
         "Alert": "ResearchComplete",
         "ScoreCount": "MiscTechnologyCount",
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "Charge",
+        "EditorCategories": "Race:Protoss,UpgradeType:Spell",
+        "$tokens": {
+          "ID": {
+            "type": "string",
+            "value": ""
+          }
+        },
         "Race": "Prot",
         "Icon": "btn-ability-protoss-charge-color",
-        "EditorCategories": "Race:Protoss,UpgradeType:Talents",
         "ScoreResult": "BuildOrder",
         "AffectedUnitArray": [
           "Zealot"
@@ -4385,13 +4595,23 @@
         "Flags": {
           "UpgradeCheat": 1
         },
-        "Name": "Resonating Glaives",
+        "Name": {
+          "enUS": "Resonating Glaives",
+          "ruRU": "Resonating Glaives"
+        },
         "MaxLevel": 1,
         "Alert": "UpgradeComplete",
         "ScoreCount": "MiscTechnologyCount",
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "AdeptPiercingAttack",
+        "EditorCategories": "Race:Protoss,UpgradeType:Spell",
+        "$tokens": {
+          "ID": {
+            "type": "string",
+            "value": ""
+          }
+        },
         "Icon": "btn-upgrade-protoss-resonatingglaives-orange",
         "EffectArray": [
           {
@@ -4399,13 +4619,12 @@
             "Value": "0.45"
           }
         ],
-        "EditorCategories": "Race:Protoss,UpgradeType:AttackBonus",
         "AffectedUnitArray": [
           "Adept"
         ],
-        "id": "AdeptPiercingAttack",
         "ScoreAmount": 200,
-        "ScoreResult": "BuildOrder"
+        "ScoreResult": "BuildOrder",
+        "id": "AdeptPiercingAttack"
       },
       "ExtendedThermalLance": {
         "class": "CUpgrade",
@@ -4413,13 +4632,23 @@
           "UpgradeCheat": 1,
           "TechTreeCheat": 1
         },
-        "Name": "Extended Thermal Lance",
+        "Name": {
+          "enUS": "Extended Thermal Lance",
+          "ruRU": "Extended Thermal Lance"
+        },
         "MaxLevel": 1,
         "Alert": "ResearchComplete",
         "ScoreCount": "MiscTechnologyCount",
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "ExtendedThermalLance",
+        "EditorCategories": "Race:Protoss,UpgradeType:Spell",
+        "$tokens": {
+          "ID": {
+            "type": "string",
+            "value": ""
+          }
+        },
         "Race": "Prot",
         "Icon": "btn-upgrade-protoss-extendedthermallance",
         "EffectArray": [
@@ -4434,9 +4663,12 @@
           {
             "Reference": "Weapon,ThermalLances,MinScanRange",
             "Value": "2"
+          },
+          {
+            "Reference": "Validator,ColossusAttackDamageMaxRange,Range",
+            "Value": "2"
           }
         ],
-        "EditorCategories": "Race:Protoss,UpgradeType:Talents",
         "ScoreResult": "BuildOrder",
         "AffectedUnitArray": [
           "Colossus"
@@ -4450,16 +4682,25 @@
           "UpgradeCheat": 1,
           "TechTreeCheat": 1
         },
-        "Name": "Gravitic Boosters",
+        "Name": {
+          "enUS": "Gravitic Boosters",
+          "ruRU": "Gravitic Boosters"
+        },
         "MaxLevel": 1,
         "Alert": "ResearchComplete",
         "ScoreCount": "MiscTechnologyCount",
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "ObserverGraviticBooster",
+        "EditorCategories": "Race:Protoss,UpgradeType:Spell",
+        "$tokens": {
+          "ID": {
+            "type": "string",
+            "value": ""
+          }
+        },
         "Race": "Prot",
         "Icon": "btn-upgrade-protoss-graviticbooster",
-        "EditorCategories": "Race:Protoss,UpgradeType:Talents",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -4483,16 +4724,25 @@
           "UpgradeCheat": 1,
           "TechTreeCheat": 1
         },
-        "Name": "Gravitic Drive",
+        "Name": {
+          "enUS": "Gravitic Drive",
+          "ruRU": "Gravitic Drive"
+        },
         "MaxLevel": 1,
         "Alert": "ResearchComplete",
         "ScoreCount": "MiscTechnologyCount",
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "GraviticDrive",
+        "EditorCategories": "Race:Protoss,UpgradeType:Spell",
+        "$tokens": {
+          "ID": {
+            "type": "string",
+            "value": ""
+          }
+        },
         "Race": "Prot",
         "Icon": "btn-upgrade-protoss-graviticdrive",
-        "EditorCategories": "Race:Protoss,UpgradeType:Talents",
         "ScoreResult": "BuildOrder",
         "EffectArray": [
           {
@@ -4516,8 +4766,14 @@
       "Nexus": {
         "id": "Nexus",
         "Icon": "btn-building-protoss-nexus",
-        "Description": "Primary structure. Can receive gathered resources. Can use the Chrono Boost and Mass Recall abilities.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Probes<br/>- Mothership",
-        "Name": "Nexus",
+        "Name": {
+          "enUS": "Nexus",
+          "ruRU": "Nexus"
+        },
+        "Description": {
+          "enUS": "Primary structure. Can receive gathered resources. Can use the Chrono Boost ability.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Probes<br/>- Mothership Core",
+          "ruRU": "Primary structure. Can receive gathered resources. Can use the Chrono Boost ability.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Probes<br/>- Mothership Core"
+        },
         "LifeMax": 1000,
         "LifeArmor": 1,
         "ShieldsMax": 1000,
@@ -4534,15 +4790,27 @@
         "$Phase": [],
         "LifeArmorIcon": "btn-armor-protoss-buildingplating",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Protoss Armor",
-        "ShieldArmorName": "Protoss Plasma Shields",
+        "LifeArmorName": {
+          "enUS": "Protoss Armor",
+          "ruRU": "Protoss Armor"
+        },
+        "ShieldArmorName": {
+          "enUS": "Protoss Plasma Shields",
+          "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+        },
         "priority": 10
       },
       "Probe": {
         "id": "Probe",
         "Icon": "btn-unit-protoss-probe",
-        "Description": "Basic worker unit. Can gather resources and warp in Protoss structures.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
-        "Name": "Probe",
+        "Name": {
+          "enUS": "Probe",
+          "ruRU": "Probe"
+        },
+        "Description": {
+          "enUS": "Basic worker unit. Can gather resources and warp in Protoss structures.<br/><br/><span style=\"color: ffff8a\">Can attack ground units.</span>",
+          "ruRU": "Basic worker unit. Can gather resources and warp in Protoss structures.<br/><br/><span style=\"color: ffff8a\">Can attack ground units.</span>"
+        },
         "LifeMax": 20,
         "ShieldsMax": 20,
         "Food": -1,
@@ -4553,10 +4821,10 @@
           "Nexus",
           "Assimilator",
           "Pylon",
+          "Gateway",
           "Forge",
           "CyberneticsCore",
           "PhotonCannon",
-          "Gateway",
           "ShieldBattery",
           "Stargate",
           "TemplarArchive",
@@ -4571,15 +4839,27 @@
         "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-protoss-groundarmorlevel0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Protoss Armor",
-        "ShieldArmorName": "Protoss Plasma Shields",
+        "LifeArmorName": {
+          "enUS": "Protoss Armor",
+          "ruRU": "Protoss Armor"
+        },
+        "ShieldArmorName": {
+          "enUS": "Protoss Plasma Shields",
+          "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+        },
         "priority": 10
       },
       "Assimilator": {
         "id": "Assimilator",
         "Icon": "btn-building-protoss-assimilator",
-        "Description": "Warped in over a Vespene Geyser to allow harvesting of vespene gas.",
-        "Name": "Assimilator",
+        "Name": {
+          "enUS": "Assimilator",
+          "ruRU": "Assimilator"
+        },
+        "Description": {
+          "enUS": "Warped in over a Vespene Geyser to allow harvesting of vespene gas.",
+          "ruRU": "Warped in over a Vespene Geyser to allow harvesting of vespene gas."
+        },
         "LifeMax": 300,
         "LifeArmor": 1,
         "ShieldsMax": 300,
@@ -4592,15 +4872,27 @@
         "$Phase": [],
         "LifeArmorIcon": "btn-armor-protoss-buildingplating",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Protoss Armor",
-        "ShieldArmorName": "Protoss Plasma Shields",
+        "LifeArmorName": {
+          "enUS": "Protoss Armor",
+          "ruRU": "Protoss Armor"
+        },
+        "ShieldArmorName": {
+          "enUS": "Protoss Plasma Shields",
+          "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+        },
         "priority": 14
       },
       "Pylon": {
         "id": "Pylon",
         "Icon": "btn-building-protoss-pylon",
-        "Description": "Provides supply.<br/>Supply allows you to warp in more units.<br/>Creates power for nearby structures.",
-        "Name": "Pylon",
+        "Name": {
+          "enUS": "Pylon",
+          "ruRU": "Pylon"
+        },
+        "Description": {
+          "enUS": "Provides supply.<br/>Supply allows you to warp in more units.<br/>Creates power for nearby structures.",
+          "ruRU": "Provides supply.<br/>Supply allows you to warp in more units.<br/>Creates power for nearby structures."
+        },
         "LifeMax": 200,
         "LifeArmor": 1,
         "ShieldsMax": 200,
@@ -4614,96 +4906,27 @@
         "$Phase": [],
         "LifeArmorIcon": "btn-armor-protoss-buildingplating",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Protoss Armor",
-        "ShieldArmorName": "Protoss Plasma Shields",
+        "LifeArmorName": {
+          "enUS": "Protoss Armor",
+          "ruRU": "Protoss Armor"
+        },
+        "ShieldArmorName": {
+          "enUS": "Protoss Plasma Shields",
+          "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+        },
         "priority": 18
-      },
-      "Forge": {
-        "id": "Forge",
-        "Icon": "btn-building-protoss-forge",
-        "Description": "Contains weapon and armor upgrades for Protoss ground units and shield upgrades for all Protoss units and structures.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Photon Cannons from Probes",
-        "Name": "Forge",
-        "LifeMax": 400,
-        "LifeArmor": 1,
-        "ShieldsMax": 400,
-        "CostResource": {
-          "Minerals": 150
-        },
-        "Production": [],
-        "Research": [
-          "ProtossGroundWeaponsLevel1",
-          "ProtossGroundWeaponsLevel2",
-          "ProtossGroundWeaponsLevel3",
-          "ProtossGroundArmorsLevel1",
-          "ProtossGroundArmorsLevel2",
-          "ProtossGroundArmorsLevel3",
-          "ProtossShieldsLevel1",
-          "ProtossShieldsLevel2",
-          "ProtossShieldsLevel3"
-        ],
-        "Morph": [],
-        "$Phase": [],
-        "LifeArmorIcon": "btn-armor-protoss-buildingplating",
-        "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Protoss Armor",
-        "ShieldArmorName": "Protoss Plasma Shields",
-        "priority": 26
-      },
-      "CyberneticsCore": {
-        "id": "CyberneticsCore",
-        "Icon": "btn-building-protoss-cyberneticscore",
-        "Description": "Contains weapon and armor upgrades for Protoss air units and the Warp Gate upgrade.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Sentries at the Gateway<br/>- Stalkers at the Gateway<br/>- Adepts at the Gateway<br/>- Shield Batteries from Probes",
-        "Name": "Cybernetics Core",
-        "LifeMax": 550,
-        "LifeArmor": 1,
-        "ShieldsMax": 550,
-        "CostResource": {
-          "Minerals": 150
-        },
-        "Production": [],
-        "Research": [
-          "ProtossAirWeaponsLevel1",
-          "ProtossAirWeaponsLevel2",
-          "ProtossAirWeaponsLevel3",
-          "ProtossAirArmorsLevel1",
-          "ProtossAirArmorsLevel2",
-          "ProtossAirArmorsLevel3",
-          "WarpGateResearch"
-        ],
-        "Morph": [],
-        "$Phase": [],
-        "LifeArmorIcon": "btn-armor-protoss-buildingplating",
-        "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Protoss Armor",
-        "ShieldArmorName": "Protoss Plasma Shields",
-        "priority": 29
-      },
-      "PhotonCannon": {
-        "id": "PhotonCannon",
-        "Icon": "btn-building-protoss-photoncannon",
-        "Description": "Primary defensive structure.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span><br/><span style=\"color: #FFE303\">Detector</span>",
-        "Name": "Photon Cannon",
-        "LifeMax": 150,
-        "LifeArmor": 1,
-        "ShieldsMax": 150,
-        "CostResource": {
-          "Minerals": 150
-        },
-        "Production": [],
-        "Research": [],
-        "Morph": [],
-        "$Phase": [],
-        "LifeArmorIcon": "btn-armor-protoss-buildingplating",
-        "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Protoss Armor",
-        "ShieldArmorName": "Protoss Plasma Shields",
-        "priority": 200
       },
       "Gateway": {
         "id": "Gateway",
         "Icon": "btn-building-protoss-gateway",
-        "Description": "Warps in Protoss ground units.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Zealots",
-        "Name": "Gateway",
+        "Name": {
+          "enUS": "Gateway",
+          "ruRU": "Gateway"
+        },
+        "Description": {
+          "enUS": "Warps in Protoss ground units.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Zealots",
+          "ruRU": "Warps in Protoss ground units.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Zealots"
+        },
         "LifeMax": 500,
         "LifeArmor": 1,
         "ShieldsMax": 500,
@@ -4725,15 +4948,27 @@
         ],
         "LifeArmorIcon": "btn-armor-protoss-buildingplating",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Protoss Armor",
-        "ShieldArmorName": "Protoss Plasma Shields",
+        "LifeArmorName": {
+          "enUS": "Protoss Armor",
+          "ruRU": "Protoss Armor"
+        },
+        "ShieldArmorName": {
+          "enUS": "Protoss Plasma Shields",
+          "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+        },
         "priority": 22
       },
       "WarpGate": {
         "id": "WarpGate",
         "Icon": "btn-building-protoss-warpgate",
-        "Description": "Enables warp in of Protoss ground units.",
-        "Name": "Warp Gate",
+        "Name": {
+          "enUS": "Warp Gate",
+          "ruRU": "Warp Gate"
+        },
+        "Description": {
+          "enUS": "Enables warp in of Protoss ground units.",
+          "ruRU": "Enables warp in of Protoss ground units."
+        },
         "LifeMax": 500,
         "LifeArmor": 1,
         "ShieldsMax": 500,
@@ -4750,21 +4985,34 @@
         ],
         "Research": [],
         "Morph": [
-          "Gateway"
+          "Gateway",
+          null
         ],
         "$Phase": [],
         "$Phased": "Gateway",
         "LifeArmorIcon": "btn-armor-protoss-buildingplating",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Protoss Armor",
-        "ShieldArmorName": "Protoss Plasma Shields",
+        "LifeArmorName": {
+          "enUS": "Protoss Armor",
+          "ruRU": "Protoss Armor"
+        },
+        "ShieldArmorName": {
+          "enUS": "Protoss Plasma Shields",
+          "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+        },
         "priority": 24
       },
       "Zealot": {
         "id": "Zealot",
         "Icon": "btn-unit-protoss-zealot",
-        "Description": "Powerful melee warrior.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
-        "Name": "Zealot",
+        "Name": {
+          "enUS": "Zealot",
+          "ruRU": "Zealot"
+        },
+        "Description": {
+          "enUS": "Powerful melee warrior.<br/><br/><span style=\"color: ffff8a\">Can attack ground units.</span>",
+          "ruRU": "Powerful melee warrior.<br/><br/><span style=\"color: ffff8a\">Can attack ground units.</span>"
+        },
         "LifeMax": 100,
         "LifeArmor": 1,
         "ShieldsMax": 50,
@@ -4778,15 +5026,27 @@
         "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-protoss-groundarmorlevel0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Protoss Armor",
-        "ShieldArmorName": "Protoss Plasma Shields",
+        "LifeArmorName": {
+          "enUS": "Protoss Armor",
+          "ruRU": "Protoss Armor"
+        },
+        "ShieldArmorName": {
+          "enUS": "Protoss Plasma Shields",
+          "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+        },
         "priority": 20
       },
       "Stalker": {
         "id": "Stalker",
         "Icon": "btn-unit-protoss-stalker",
-        "Description": "Ranged support strider.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>",
-        "Name": "Stalker",
+        "Name": {
+          "enUS": "Stalker",
+          "ruRU": "Stalker"
+        },
+        "Description": {
+          "enUS": "Ranged support strider.<br/><br/><span style=\"color: ffff8a\">Can attack ground and air units.</span>",
+          "ruRU": "Ranged support strider.<br/><br/><span style=\"color: ffff8a\">Can attack ground and air units.</span>"
+        },
         "LifeMax": 80,
         "LifeArmor": 1,
         "ShieldsMax": 80,
@@ -4801,15 +5061,27 @@
         "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-protoss-groundarmorlevel0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Protoss Armor",
-        "ShieldArmorName": "Protoss Plasma Shields",
+        "LifeArmorName": {
+          "enUS": "Protoss Armor",
+          "ruRU": "Protoss Armor"
+        },
+        "ShieldArmorName": {
+          "enUS": "Protoss Plasma Shields",
+          "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+        },
         "priority": 30
       },
       "HighTemplar": {
         "id": "HighTemplar",
         "Icon": "btn-unit-protoss-hightemplar",
-        "Description": "Potent psionic master. Can use Feedback and be upgraded to use Psionic Storm. Can transform into an Archon.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
-        "Name": "High Templar",
+        "Name": {
+          "enUS": "High Templar",
+          "ruRU": "High Templar"
+        },
+        "Description": {
+          "enUS": "Potent psionic master. Can use Feedback and be upgraded to use Psionic Storm. Can transform into an Archon.",
+          "ruRU": "Potent psionic master. Can use Feedback and be upgraded to use Psionic Storm. Can transform into an Archon."
+        },
         "LifeMax": 40,
         "ShieldsMax": 40,
         "Food": -2,
@@ -4825,15 +5097,27 @@
         "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-protoss-groundarmorlevel0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Protoss Armor",
-        "ShieldArmorName": "Protoss Plasma Shields",
+        "LifeArmorName": {
+          "enUS": "Protoss Armor",
+          "ruRU": "Protoss Armor"
+        },
+        "ShieldArmorName": {
+          "enUS": "Protoss Plasma Shields",
+          "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+        },
         "priority": 80
       },
       "Archon": {
         "id": "Archon",
         "Icon": "btn-unit-protoss-archon",
-        "Description": "Powerful psionic attacker.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>",
-        "Name": "Archon",
+        "Name": {
+          "enUS": "Archon",
+          "ruRU": "Archon"
+        },
+        "Description": {
+          "enUS": "Powerful psionic attacker.<br/><br/><span style=\"color: ffff8a\">Can attack ground and air units.</span>",
+          "ruRU": "Powerful psionic attacker.<br/><br/><span style=\"color: ffff8a\">Can attack ground and air units.</span>"
+        },
         "LifeMax": 10,
         "ShieldsMax": 350,
         "Food": -4,
@@ -4847,15 +5131,27 @@
         "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-protoss-groundarmorlevel0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Protoss Armor",
-        "ShieldArmorName": "Protoss Plasma Shields",
+        "LifeArmorName": {
+          "enUS": "Protoss Armor",
+          "ruRU": "Protoss Armor"
+        },
+        "ShieldArmorName": {
+          "enUS": "Protoss Plasma Shields",
+          "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+        },
         "priority": 90
       },
       "DarkTemplar": {
         "id": "DarkTemplar",
         "Icon": "btn-unit-protoss-darktemplar",
-        "Description": "Deadly warrior-assassin. Cloak renders the unit invisible to enemies without detection. Can transform into an Archon.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
-        "Name": "Dark Templar",
+        "Name": {
+          "enUS": "Dark Templar",
+          "ruRU": "Dark Templar"
+        },
+        "Description": {
+          "enUS": "Deadly warrior-assassin. Cloak renders the unit invisible to enemies without detection. Can transform into an Archon.<br/><br/><span style=\"color: ffff8a\">Can attack ground units.</span>",
+          "ruRU": "Deadly warrior-assassin. Cloak renders the unit invisible to enemies without detection. Can transform into an Archon.<br/><br/><span style=\"color: ffff8a\">Can attack ground units.</span>"
+        },
         "LifeMax": 40,
         "LifeArmor": 1,
         "ShieldsMax": 80,
@@ -4872,15 +5168,27 @@
         "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-protoss-groundarmorlevel0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Protoss Armor",
-        "ShieldArmorName": "Protoss Plasma Shields",
+        "LifeArmorName": {
+          "enUS": "Protoss Armor",
+          "ruRU": "Protoss Armor"
+        },
+        "ShieldArmorName": {
+          "enUS": "Protoss Plasma Shields",
+          "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+        },
         "priority": 70
       },
       "Sentry": {
         "id": "Sentry",
         "Icon": "btn-unit-protoss-sentry",
-        "Description": "Energy-manipulator unit. Can use Force Field, Guardian Shield, and Hallucination.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units.</span>",
-        "Name": "Sentry",
+        "Name": {
+          "enUS": "Sentry",
+          "ruRU": "Sentry"
+        },
+        "Description": {
+          "enUS": "Energy-manipulator unit. Can use Force Field, Guardian Shield, and Hallucination.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>",
+          "ruRU": "Energy-manipulator unit. Can use Force Field, Guardian Shield, and Hallucination.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>"
+        },
         "LifeMax": 40,
         "LifeArmor": 1,
         "ShieldsMax": 40,
@@ -4910,15 +5218,27 @@
         "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-protoss-groundarmorlevel0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Protoss Armor",
-        "ShieldArmorName": "Protoss Plasma Shields",
+        "LifeArmorName": {
+          "enUS": "Protoss Armor",
+          "ruRU": "Protoss Armor"
+        },
+        "ShieldArmorName": {
+          "enUS": "Protoss Plasma Shields",
+          "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+        },
         "priority": 25
       },
       "Immortal": {
         "id": "Immortal",
         "Icon": "btn-unit-protoss-immortal",
-        "Description": "Assault strider. Can use Barrier to absorb damage.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
-        "Name": "Immortal",
+        "Name": {
+          "enUS": "Immortal",
+          "ruRU": "Immortal"
+        },
+        "Description": {
+          "enUS": "Assault strider. Can use Barrier to absorb damage.<br/><br/><span style=\"color: ffff8a\">Can attack ground units.</span>",
+          "ruRU": "Assault strider. Can use Barrier to absorb damage.<br/><br/><span style=\"color: ffff8a\">Can attack ground units.</span>"
+        },
         "LifeMax": 200,
         "LifeArmor": 1,
         "ShieldsMax": 100,
@@ -4933,15 +5253,27 @@
         "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-protoss-groundarmorlevel0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Protoss Armor",
-        "ShieldArmorName": "Protoss Plasma Shields",
+        "LifeArmorName": {
+          "enUS": "Protoss Armor",
+          "ruRU": "Protoss Armor"
+        },
+        "ShieldArmorName": {
+          "enUS": "Protoss Plasma Shields",
+          "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+        },
         "priority": 120
       },
       "VoidRay": {
         "id": "VoidRay",
         "Icon": "btn-unit-protoss-warpray",
-        "Description": "Surgical strike craft.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units.</span>",
-        "Name": "Void Ray",
+        "Name": {
+          "enUS": "Void Ray",
+          "ruRU": "Void Ray"
+        },
+        "Description": {
+          "enUS": "Surgical strike craft.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>",
+          "ruRU": "Surgical strike craft.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>"
+        },
         "LifeMax": 150,
         "ShieldsMax": 100,
         "Food": -4,
@@ -4955,15 +5287,27 @@
         "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-protoss-airarmorlevel0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Protoss Plating",
-        "ShieldArmorName": "Protoss Plasma Shields",
+        "LifeArmorName": {
+          "enUS": "Protoss Plating",
+          "ruRU": "Protoss Plating"
+        },
+        "ShieldArmorName": {
+          "enUS": "Protoss Plasma Shields",
+          "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+        },
         "priority": 160
       },
       "Phoenix": {
         "id": "Phoenix",
         "Icon": "btn-unit-protoss-phoenix",
-        "Description": "Air-superiority fighter.<br/><br/><span style=\"color: #ffff8a\">Can attack air units.</span>",
-        "Name": "Phoenix",
+        "Name": {
+          "enUS": "Phoenix",
+          "ruRU": "Phoenix"
+        },
+        "Description": {
+          "enUS": "Air-superiority fighter.<br/><br/><span style=\"color: ffff8a\">Can attack air units.</span>",
+          "ruRU": "Air-superiority fighter.<br/><br/><span style=\"color: ffff8a\">Can attack air units.</span>"
+        },
         "LifeMax": 120,
         "ShieldsMax": 60,
         "Food": -2,
@@ -4977,15 +5321,27 @@
         "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-protoss-airarmorlevel0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Protoss Plating",
-        "ShieldArmorName": "Protoss Plasma Shields",
+        "LifeArmorName": {
+          "enUS": "Protoss Plating",
+          "ruRU": "Protoss Plating"
+        },
+        "ShieldArmorName": {
+          "enUS": "Protoss Plasma Shields",
+          "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+        },
         "priority": 140
       },
       "WarpPrism": {
         "id": "WarpPrism",
         "Icon": "btn-unit-protoss-warpprism",
-        "Description": "Flying transport. Can load units from a distance. Can also deploy to create a power field.",
-        "Name": "Warp Prism",
+        "Name": {
+          "enUS": "Warp Prism",
+          "ruRU": "Warp Prism"
+        },
+        "Description": {
+          "enUS": "Flying transport. Can load and unload units. Can also deploy to create a power field.",
+          "ruRU": "Flying transport. Can load and unload units. Can also deploy to create a power field."
+        },
         "LifeMax": 80,
         "ShieldsMax": 100,
         "Food": -2,
@@ -5000,15 +5356,27 @@
         ],
         "LifeArmorIcon": "btn-upgrade-protoss-airarmorlevel0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Protoss Plating",
-        "ShieldArmorName": "Protoss Plasma Shields",
+        "LifeArmorName": {
+          "enUS": "Protoss Plating",
+          "ruRU": "Protoss Plating"
+        },
+        "ShieldArmorName": {
+          "enUS": "Protoss Plasma Shields",
+          "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+        },
         "priority": 110
       },
       "WarpPrismPhasing": {
         "id": "WarpPrismPhasing",
         "Icon": "btn-unit-protoss-warpprismstationary",
-        "Description": "Immobile power provider. Can load units from a distance. Can switch to a mobile Transport Mode.",
-        "Name": "Warp Prism",
+        "Name": {
+          "enUS": "Warp Prism",
+          "ruRU": "Warp Prism"
+        },
+        "Description": {
+          "enUS": "Immobile power provider. Can load and unload units. Can switch to a mobile Transport Mode.",
+          "ruRU": "Immobile power provider. Can load and unload units. Can switch to a mobile Transport Mode."
+        },
         "LifeMax": 80,
         "ShieldsMax": 100,
         "Food": -2,
@@ -5024,14 +5392,26 @@
         "$Phased": "WarpPrism",
         "LifeArmorIcon": "btn-upgrade-protoss-airarmorlevel0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Protoss Plating",
-        "ShieldArmorName": "Protoss Plasma Shields"
+        "LifeArmorName": {
+          "enUS": "Protoss Plating",
+          "ruRU": "Protoss Plating"
+        },
+        "ShieldArmorName": {
+          "enUS": "Protoss Plasma Shields",
+          "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+        }
       },
       "Colossus": {
         "id": "Colossus",
         "Icon": "btn-unit-protoss-colossus",
-        "Description": "Battle strider with a powerful area attack. Can step up and down cliffs. Can be targeted by anti-air weapons.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
-        "Name": "Colossus",
+        "Name": {
+          "enUS": "Colossus",
+          "ruRU": "Colossus"
+        },
+        "Description": {
+          "enUS": "Battle strider with a powerful area attack. Can step up and down cliffs. Can be targeted by anti-air weapons.<br/><br/><span style=\"color: ffff8a\">Can attack ground units.</span>",
+          "ruRU": "Battle strider with a powerful area attack. Can step up and down cliffs. Can be targeted by anti-air weapons.<br/><br/><span style=\"color: ffff8a\">Can attack ground units.</span>"
+        },
         "LifeMax": 200,
         "LifeArmor": 1,
         "ShieldsMax": 150,
@@ -5046,15 +5426,27 @@
         "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-protoss-groundarmorlevel0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Protoss Armor",
-        "ShieldArmorName": "Protoss Plasma Shields",
+        "LifeArmorName": {
+          "enUS": "Protoss Armor",
+          "ruRU": "Protoss Armor"
+        },
+        "ShieldArmorName": {
+          "enUS": "Protoss Plasma Shields",
+          "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+        },
         "priority": 130
       },
       "Oracle": {
         "id": "Oracle",
         "Icon": "btn-unit-protoss-oracle",
-        "Description": "Flying caster. Can use Revelation, Stasis Ward, and Pulsar Beam.",
-        "Name": "Oracle",
+        "Name": {
+          "ruRU": "Oracle",
+          "enUS": "Oracle"
+        },
+        "Description": {
+          "enUS": "Flying caster. Can use Revelation, Stasis Ward, and Pulsar Beam.",
+          "ruRU": "Flying caster. Can use Revelation, Stasis Ward, and Pulsar Beam."
+        },
         "LifeMax": 100,
         "ShieldsMax": 60,
         "Food": -3,
@@ -5070,15 +5462,27 @@
         "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-protoss-airarmorlevel0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Protoss Plating",
-        "ShieldArmorName": "Protoss Plasma Shields",
+        "LifeArmorName": {
+          "enUS": "Protoss Plating",
+          "ruRU": "Protoss Plating"
+        },
+        "ShieldArmorName": {
+          "enUS": "Protoss Plasma Shields",
+          "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+        },
         "priority": 168
       },
       "OracleStasisTrap": {
         "id": "OracleStasisTrap",
         "Icon": "btn-ability-protoss-oracle-stasisward",
-        "Description": "Ground unit trap. Cloak renders the Stasis Ward invisible to enemies without detection.",
-        "Name": "Stasis Ward",
+        "Name": {
+          "enUS": "Stasis Ward",
+          "ruRU": "Stasis Ward"
+        },
+        "Description": {
+          "enUS": "Ground unit trap. Cloak renders the Stasis Ward invisible to enemies without detection.",
+          "ruRU": "Ground unit trap. Cloak renders the Stasis Ward invisible to enemies without detection."
+        },
         "LifeMax": 30,
         "ShieldsMax": 30,
         "Production": [],
@@ -5087,15 +5491,27 @@
         "$Phase": [],
         "LifeArmorIcon": "btn-armor-protoss-buildingplating",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Protoss Armor",
-        "ShieldArmorName": "Protoss Plasma Shields",
+        "LifeArmorName": {
+          "enUS": "Protoss Armor",
+          "ruRU": "Protoss Armor"
+        },
+        "ShieldArmorName": {
+          "enUS": "Protoss Plasma Shields",
+          "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+        },
         "priority": 250
       },
       "Adept": {
         "id": "Adept",
         "Icon": "btn-unit-protoss-adept",
-        "Description": "Ranged specialist. Can use Psionic Transfer.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
-        "Name": "Adept",
+        "Name": {
+          "enUS": "Adept",
+          "ruRU": "Adept"
+        },
+        "Description": {
+          "enUS": "Ranged specialist. Can use Psionic Transfer.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+          "ruRU": "Ranged specialist. Can use Psionic Transfer.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>"
+        },
         "LifeMax": 70,
         "LifeArmor": 1,
         "ShieldsMax": 70,
@@ -5112,15 +5528,27 @@
         "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-protoss-groundarmorlevel0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Protoss Armor",
-        "ShieldArmorName": "Protoss Plasma Shields",
+        "LifeArmorName": {
+          "enUS": "Protoss Armor",
+          "ruRU": "Protoss Armor"
+        },
+        "ShieldArmorName": {
+          "enUS": "Protoss Plasma Shields",
+          "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+        },
         "priority": 20
       },
       "AdeptPhaseShift": {
         "id": "AdeptPhaseShift",
         "Icon": "btn-unit-protoss-adept",
-        "Description": "Projects an invulnerable Shade that can move but cannot attack. After <b>10</b>, the Adept teleports to the Shade's location.",
-        "Name": "Shade",
+        "Name": {
+          "enUS": "Shade",
+          "ruRU": "Shade"
+        },
+        "Description": {
+          "enUS": "Projects an invulnerable Shade that can move but cannot attack. After <b>10</b>, the Adept teleports to the Shade's location.",
+          "ruRU": "Projects an invulnerable Shade that can move but cannot attack. After <b>10</b>, the Adept teleports to the Shade's location."
+        },
         "LifeMax": 90,
         "LifeArmor": 1,
         "ShieldsMax": 50,
@@ -5131,14 +5559,26 @@
         "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-protoss-groundarmorlevel0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Protoss Armor",
-        "ShieldArmorName": "Protoss Plasma Shields"
+        "LifeArmorName": {
+          "enUS": "Protoss Armor",
+          "ruRU": "Protoss Armor"
+        },
+        "ShieldArmorName": {
+          "enUS": "Protoss Plasma Shields",
+          "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+        }
       },
       "Disruptor": {
         "id": "Disruptor",
         "Icon": "btn-unit-protoss-disruptor",
-        "Description": "Robotic disruption unit. Can use Purification Nova to deal heavy area damage.",
-        "Name": "Disruptor",
+        "Name": {
+          "enUS": "Disruptor",
+          "ruRU": "Disruptor"
+        },
+        "Description": {
+          "enUS": "Robotic disruption unit. Can use Purification Nova to deal heavy area damage.",
+          "ruRU": "Robotic disruption unit. Can use Purification Nova to deal heavy area damage."
+        },
         "LifeMax": 100,
         "LifeArmor": 1,
         "ShieldsMax": 100,
@@ -5155,37 +5595,174 @@
         "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-protoss-groundarmorlevel0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Protoss Armor",
-        "ShieldArmorName": "Protoss Plasma Shields",
+        "LifeArmorName": {
+          "enUS": "Protoss Armor",
+          "ruRU": "Protoss Armor"
+        },
+        "ShieldArmorName": {
+          "enUS": "Protoss Plasma Shields",
+          "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+        },
         "priority": 135
       },
       "DisruptorPhased": {
         "id": "DisruptorPhased",
         "Icon": "btn-unit-protoss-disruptor",
-        "Description": "Highly concentrated solar energy. Explodes after <b>3</b> seconds, dealing area damage.",
-        "Name": "Purifier Orb",
+        "Name": {
+          "enUS": "Disruptor",
+          "ruRU": "Disruptor"
+        },
+        "Description": {
+          "enUS": "Robotic disruption unit. Can use Purification Nova to deal heavy area damage.",
+          "ruRU": "Robotic disruption unit. Can use Purification Nova to deal heavy area damage."
+        },
         "LifeMax": 100,
         "LifeArmor": 1,
         "ShieldsMax": 100,
-        "Food": -3,
-        "CostResource": {
-          "Minerals": 0,
-          "Vespene": 0
-        },
+        "Food": -4,
         "Production": [],
         "Research": [],
         "Morph": [],
         "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-protoss-groundarmorlevel0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Protoss Armor",
-        "ShieldArmorName": "Protoss Plasma Shields"
+        "LifeArmorName": {
+          "enUS": "Protoss Armor",
+          "ruRU": "Protoss Armor"
+        },
+        "ShieldArmorName": {
+          "enUS": "Protoss Plasma Shields",
+          "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+        }
+      },
+      "Forge": {
+        "id": "Forge",
+        "Icon": "btn-building-protoss-forge",
+        "Name": {
+          "enUS": "Forge",
+          "ruRU": "Forge"
+        },
+        "Description": {
+          "enUS": "Contains weapon and armor upgrades for Protoss ground units and shield upgrades for all Protoss units and structures.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Photon Cannons from Probes",
+          "ruRU": "Contains weapon and armor upgrades for Protoss ground units and shield upgrades for all Protoss units and structures.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Photon Cannons from Probes"
+        },
+        "LifeMax": 400,
+        "LifeArmor": 1,
+        "ShieldsMax": 400,
+        "CostResource": {
+          "Minerals": 150
+        },
+        "Production": [],
+        "Research": [
+          "ProtossGroundWeaponsLevel1",
+          "ProtossGroundWeaponsLevel2",
+          "ProtossGroundWeaponsLevel3",
+          "ProtossGroundArmorsLevel1",
+          "ProtossGroundArmorsLevel2",
+          "ProtossGroundArmorsLevel3",
+          "ProtossShieldsLevel1",
+          "ProtossShieldsLevel2",
+          "ProtossShieldsLevel3"
+        ],
+        "Morph": [],
+        "$Phase": [],
+        "LifeArmorIcon": "btn-armor-protoss-buildingplating",
+        "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+        "LifeArmorName": {
+          "enUS": "Protoss Armor",
+          "ruRU": "Protoss Armor"
+        },
+        "ShieldArmorName": {
+          "enUS": "Protoss Plasma Shields",
+          "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+        },
+        "priority": 26
+      },
+      "CyberneticsCore": {
+        "id": "CyberneticsCore",
+        "Icon": "btn-building-protoss-cyberneticscore",
+        "Name": {
+          "enUS": "Cybernetics Core",
+          "ruRU": "Cybernetics Core"
+        },
+        "Description": {
+          "ruRU": "Contains weapon and armor upgrades for Protoss air units and the Warp Gate upgrade.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Sentries at the Gateway<br/>- Stalkers at the Gateway<br/>- Adepts at the Gateway<br/>- Mothership Core at the Nexus",
+          "enUS": "Contains weapon and armor upgrades for Protoss air units and the Warp Gate upgrade.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Sentries at the Gateway<br/>- Stalkers at the Gateway<br/>- Adepts at the Gateway<br/>- Mothership Core at the Nexus"
+        },
+        "LifeMax": 550,
+        "LifeArmor": 1,
+        "ShieldsMax": 550,
+        "CostResource": {
+          "Minerals": 150
+        },
+        "Production": [],
+        "Research": [
+          "ProtossAirWeaponsLevel1",
+          "ProtossAirWeaponsLevel2",
+          "ProtossAirWeaponsLevel3",
+          "ProtossAirArmorsLevel1",
+          "ProtossAirArmorsLevel2",
+          "ProtossAirArmorsLevel3",
+          "WarpGateResearch"
+        ],
+        "Morph": [],
+        "$Phase": [],
+        "LifeArmorIcon": "btn-armor-protoss-buildingplating",
+        "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+        "LifeArmorName": {
+          "enUS": "Protoss Armor",
+          "ruRU": "Protoss Armor"
+        },
+        "ShieldArmorName": {
+          "enUS": "Protoss Plasma Shields",
+          "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+        },
+        "priority": 29
+      },
+      "PhotonCannon": {
+        "id": "PhotonCannon",
+        "Icon": "btn-building-protoss-photoncannon",
+        "Name": {
+          "enUS": "Photon Cannon",
+          "ruRU": "Photon Cannon"
+        },
+        "Description": {
+          "enUS": "Primary defensive structure.<br/><br/><span style=\"color: ffff8a\">Can attack ground and air units.</span><br/><span style=\"color: FFE303\">Detector</span>",
+          "ruRU": "Primary defensive structure.<br/><br/><span style=\"color: ffff8a\">Can attack ground and air units.</span><br/><span style=\"color: FFE303\">Detector</span>"
+        },
+        "LifeMax": 150,
+        "LifeArmor": 1,
+        "ShieldsMax": 150,
+        "CostResource": {
+          "Minerals": 150
+        },
+        "Production": [],
+        "Research": [],
+        "Morph": [],
+        "$Phase": [],
+        "LifeArmorIcon": "btn-armor-protoss-buildingplating",
+        "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
+        "LifeArmorName": {
+          "enUS": "Protoss Armor",
+          "ruRU": "Protoss Armor"
+        },
+        "ShieldArmorName": {
+          "enUS": "Protoss Plasma Shields",
+          "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+        },
+        "priority": 200
       },
       "ShieldBattery": {
         "id": "ShieldBattery",
         "Icon": "btn-building-protoss-shieldbattery",
-        "Description": "Defensive structure. Recharges shields of nearby units.",
-        "Name": "Shield Battery",
+        "Name": {
+          "enUS": "Shield Battery",
+          "ruRU": "Shield Battery"
+        },
+        "Description": {
+          "enUS": "Defensive structure. Recharges shields of nearby units.",
+          "ruRU": "Defensive structure. Recharges shields of nearby units."
+        },
         "LifeMax": 150,
         "LifeArmor": 1,
         "ShieldsMax": 150,
@@ -5198,15 +5775,27 @@
         "$Phase": [],
         "LifeArmorIcon": "btn-armor-protoss-buildingplating",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Protoss Armor",
-        "ShieldArmorName": "Protoss Plasma Shields",
+        "LifeArmorName": {
+          "enUS": "Protoss Armor",
+          "ruRU": "Protoss Armor"
+        },
+        "ShieldArmorName": {
+          "enUS": "Protoss Plasma Shields",
+          "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+        },
         "priority": 201
       },
       "Stargate": {
         "id": "Stargate",
         "Icon": "btn-building-protoss-stargate",
-        "Description": "Warps in Protoss air units.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Phoenixes<br/>- Void Rays<br/>- Oracles",
-        "Name": "Stargate",
+        "Name": {
+          "enUS": "Stargate",
+          "ruRU": "Stargate"
+        },
+        "Description": {
+          "enUS": "Warps in Protoss air units.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Phoenixes<br/>- Void Rays<br/>- Oracles",
+          "ruRU": "Warps in Protoss air units.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Phoenixes<br/>- Void Rays<br/>- Oracles"
+        },
         "LifeMax": 600,
         "LifeArmor": 1,
         "ShieldsMax": 600,
@@ -5226,15 +5815,27 @@
         "$Phase": [],
         "LifeArmorIcon": "btn-armor-protoss-buildingplating",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Protoss Armor",
-        "ShieldArmorName": "Protoss Plasma Shields",
+        "LifeArmorName": {
+          "enUS": "Protoss Armor",
+          "ruRU": "Protoss Armor"
+        },
+        "ShieldArmorName": {
+          "enUS": "Protoss Plasma Shields",
+          "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+        },
         "priority": 207
       },
       "Carrier": {
         "id": "Carrier",
         "Icon": "btn-unit-protoss-carrier",
-        "Description": "Capital ship. Can build and launch Interceptors to make attacks.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>",
-        "Name": "Carrier",
+        "Name": {
+          "enUS": "Carrier",
+          "ruRU": "Carrier"
+        },
+        "Description": {
+          "enUS": "Capital ship. Can build and launch Interceptors to make attacks.<br/><br/><span style=\"color: ffff8a\">Can attack ground and air units.</span>",
+          "ruRU": "Capital ship. Can build and launch Interceptors to make attacks.<br/><br/><span style=\"color: ffff8a\">Can attack ground and air units.</span>"
+        },
         "LifeMax": 300,
         "LifeArmor": 2,
         "ShieldsMax": 150,
@@ -5251,15 +5852,27 @@
         "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-protoss-airarmorlevel0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Protoss Plating",
-        "ShieldArmorName": "Protoss Plasma Shields",
+        "LifeArmorName": {
+          "enUS": "Protoss Plating",
+          "ruRU": "Protoss Plating"
+        },
+        "ShieldArmorName": {
+          "enUS": "Protoss Plasma Shields",
+          "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+        },
         "priority": 170
       },
       "Tempest": {
         "id": "Tempest",
         "Icon": "btn-unit-protoss-tempest",
-        "Description": "Siege artillery craft. Attacks from long range.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>",
-        "Name": "Tempest",
+        "Name": {
+          "ruRU": "Tempest",
+          "enUS": "Tempest"
+        },
+        "Description": {
+          "enUS": "Siege artillery craft. Attacks from long range. Can use Disintegration.<br/><br/><span style=\"color: ffff8a\">Can attack ground and air units.</span>",
+          "ruRU": "Siege artillery craft. Attacks from long range. Can use Disintegration.<br/><br/><span style=\"color: ffff8a\">Can attack ground and air units.</span>"
+        },
         "LifeMax": 200,
         "LifeArmor": 2,
         "ShieldsMax": 100,
@@ -5274,15 +5887,27 @@
         "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-protoss-airarmorlevel0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Protoss Plating",
-        "ShieldArmorName": "Protoss Plasma Shields",
+        "LifeArmorName": {
+          "enUS": "Protoss Plating",
+          "ruRU": "Protoss Plating"
+        },
+        "ShieldArmorName": {
+          "enUS": "Protoss Plasma Shields",
+          "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+        },
         "priority": 170
       },
       "TemplarArchive": {
         "id": "TemplarArchive",
         "Icon": "btn-building-protoss-templararchives",
-        "Description": "Contains an upgrade for High Templar.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- High Templar at the Gateway<br/>- Archon Merge from High Templar",
-        "Name": "Templar Archives",
+        "Name": {
+          "enUS": "Templar Archives",
+          "ruRU": "Templar Archives"
+        },
+        "Description": {
+          "enUS": "Contains an upgrade for High Templar.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- High Templar at the Gateway<br/>- Archon Merge from High Templar",
+          "ruRU": "Contains an upgrade for High Templar.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- High Templar at the Gateway<br/>- Archon Merge from High Templar"
+        },
         "LifeMax": 500,
         "LifeArmor": 1,
         "ShieldsMax": 500,
@@ -5298,15 +5923,27 @@
         "$Phase": [],
         "LifeArmorIcon": "btn-armor-protoss-buildingplating",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Protoss Armor",
-        "ShieldArmorName": "Protoss Plasma Shields",
+        "LifeArmorName": {
+          "enUS": "Protoss Armor",
+          "ruRU": "Protoss Armor"
+        },
+        "ShieldArmorName": {
+          "enUS": "Protoss Plasma Shields",
+          "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+        },
         "priority": 214
       },
       "RoboticsFacility": {
         "id": "RoboticsFacility",
         "Icon": "btn-building-protoss-roboticsfacility",
-        "Description": "Warps in Protoss robotic units.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Observers<br/>- Warp Prisms<br/>- Immortals",
-        "Name": "Robotics Facility",
+        "Name": {
+          "enUS": "Robotics Facility",
+          "ruRU": "Robotics Facility"
+        },
+        "Description": {
+          "enUS": "Warps in Protoss robotic units.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Observers<br/>- Warp Prisms<br/>- Immortals",
+          "ruRU": "Warps in Protoss robotic units.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Observers<br/>- Warp Prisms<br/>- Immortals"
+        },
         "LifeMax": 450,
         "LifeArmor": 1,
         "ShieldsMax": 450,
@@ -5318,23 +5955,34 @@
           "Colossus",
           "Observer",
           "WarpPrism",
-          "Immortal",
-          "Disruptor"
+          "Immortal"
         ],
         "Research": [],
         "Morph": [],
         "$Phase": [],
         "LifeArmorIcon": "btn-armor-protoss-buildingplating",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Protoss Armor",
-        "ShieldArmorName": "Protoss Plasma Shields",
+        "LifeArmorName": {
+          "enUS": "Protoss Armor",
+          "ruRU": "Protoss Armor"
+        },
+        "ShieldArmorName": {
+          "enUS": "Protoss Plasma Shields",
+          "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+        },
         "priority": 211
       },
       "Observer": {
         "id": "Observer",
         "Icon": "btn-unit-protoss-observer",
-        "Description": "Flying spy. Cloak renders the unit invisible to enemies without detection.<br/><br/><span style=\"color: #FFE303\">Detector</span>",
-        "Name": "Observer",
+        "Name": {
+          "enUS": "Observer",
+          "ruRU": "Observer"
+        },
+        "Description": {
+          "enUS": "Flying spy. Cloak renders the unit invisible to enemies without detection.<br/><br/><span style=\"color: FFE303\">Detector</span>",
+          "ruRU": "Flying spy. Cloak renders the unit invisible to enemies without detection.<br/><br/><span style=\"color: FFE303\">Detector</span>"
+        },
         "LifeMax": 40,
         "ShieldsMax": 30,
         "Food": -1,
@@ -5350,15 +5998,27 @@
         ],
         "LifeArmorIcon": "btn-upgrade-protoss-airarmorlevel0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Protoss Plating",
-        "ShieldArmorName": "Protoss Plasma Shields",
+        "LifeArmorName": {
+          "enUS": "Protoss Plating",
+          "ruRU": "Protoss Plating"
+        },
+        "ShieldArmorName": {
+          "enUS": "Protoss Plasma Shields",
+          "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+        },
         "priority": 110
       },
       "ObserverSiegeMode": {
         "id": "ObserverSiegeMode",
         "Icon": "btn-unit-protoss-observer",
-        "Description": "Flying spy. Cloak renders the unit invisible to enemies without detection.<br/><br/><span style=\"color: #FFE303\">Detector</span>",
-        "Name": "Observer",
+        "Name": {
+          "enUS": "Observer",
+          "ruRU": "Observer"
+        },
+        "Description": {
+          "enUS": "Flying spy. Cloak renders the unit invisible to enemies without detection.<br/><br/><span style=\"color: FFE303\">Detector</span>",
+          "ruRU": "Flying spy. Cloak renders the unit invisible to enemies without detection.<br/><br/><span style=\"color: FFE303\">Detector</span>"
+        },
         "LifeMax": 40,
         "ShieldsMax": 30,
         "Food": -1,
@@ -5375,15 +6035,27 @@
         "$Phased": "Observer",
         "LifeArmorIcon": "btn-upgrade-protoss-airarmorlevel0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Protoss Plating",
-        "ShieldArmorName": "Protoss Plasma Shields",
+        "LifeArmorName": {
+          "enUS": "Protoss Plating",
+          "ruRU": "Protoss Plating"
+        },
+        "ShieldArmorName": {
+          "enUS": "Protoss Plasma Shields",
+          "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+        },
         "priority": 110
       },
       "FleetBeacon": {
         "id": "FleetBeacon",
         "Icon": "btn-building-protoss-fleetbeacon",
-        "Description": "Contains upgrades for Phoenixes and Void Rays.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Tempests at the Stargate</n>- Carriers at the Stargate<br/>- Mothership from the Nexus",
-        "Name": "Fleet Beacon",
+        "Name": {
+          "enUS": "Fleet Beacon",
+          "ruRU": "Fleet Beacon"
+        },
+        "Description": {
+          "enUS": "Contains upgrades for Phoenixes and Carriers.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Tempests at the Stargate<br/>- Carriers at the Stargate<br/>- Mothership from the Mothership Core",
+          "ruRU": "Contains upgrades for Phoenixes and Carriers.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Tempests at the Stargate<br/>- Carriers at the Stargate<br/>- Mothership from the Mothership Core"
+        },
         "LifeMax": 500,
         "LifeArmor": 1,
         "ShieldsMax": 500,
@@ -5393,23 +6065,35 @@
         },
         "Production": [],
         "Research": [
-          "PhoenixRangeUpgrade",
           "VoidRaySpeedUpgrade",
+          "PhoenixRangeUpgrade",
           "TempestGroundAttackUpgrade"
         ],
         "Morph": [],
         "$Phase": [],
         "LifeArmorIcon": "btn-armor-protoss-buildingplating",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Protoss Armor",
-        "ShieldArmorName": "Protoss Plasma Shields",
+        "LifeArmorName": {
+          "enUS": "Protoss Armor",
+          "ruRU": "Protoss Armor"
+        },
+        "ShieldArmorName": {
+          "enUS": "Protoss Plasma Shields",
+          "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+        },
         "priority": 217
       },
       "DarkShrine": {
         "id": "DarkShrine",
         "Icon": "btn-building-protoss-darkshrine",
-        "Description": "Contains an upgrade for Dark Templar.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Dark Templar at the Gateway<br/>- Archon Merge from Dark Templar",
-        "Name": "Dark Shrine",
+        "Name": {
+          "enUS": "Dark Shrine",
+          "ruRU": "Dark Shrine"
+        },
+        "Description": {
+          "enUS": "Dark Templar tech structure.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Dark Templar at the Gateway<br/>- Archon Merge from Dark Templar",
+          "ruRU": "Dark Templar tech structure.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Dark Templar at the Gateway<br/>- Archon Merge from Dark Templar"
+        },
         "LifeMax": 500,
         "LifeArmor": 1,
         "ShieldsMax": 500,
@@ -5425,15 +6109,27 @@
         "$Phase": [],
         "LifeArmorIcon": "btn-armor-protoss-buildingplating",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Protoss Armor",
-        "ShieldArmorName": "Protoss Plasma Shields",
+        "LifeArmorName": {
+          "enUS": "Protoss Armor",
+          "ruRU": "Protoss Armor"
+        },
+        "ShieldArmorName": {
+          "enUS": "Protoss Plasma Shields",
+          "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+        },
         "priority": 221
       },
       "TwilightCouncil": {
         "id": "TwilightCouncil",
         "Icon": "btn-building-protoss-twilightcouncil",
-        "Description": "Contains upgrades for Zealots, Stalkers, and Adepts.",
-        "Name": "Twilight Council",
+        "Name": {
+          "enUS": "Twilight Council",
+          "ruRU": "Twilight Council"
+        },
+        "Description": {
+          "enUS": "Contains upgrades for Zealots, Stalkers, and Adepts.",
+          "ruRU": "Contains upgrades for Zealots, Stalkers, and Adepts."
+        },
         "LifeMax": 500,
         "LifeArmor": 1,
         "ShieldsMax": 500,
@@ -5451,15 +6147,27 @@
         "$Phase": [],
         "LifeArmorIcon": "btn-armor-protoss-buildingplating",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Protoss Armor",
-        "ShieldArmorName": "Protoss Plasma Shields",
+        "LifeArmorName": {
+          "enUS": "Protoss Armor",
+          "ruRU": "Protoss Armor"
+        },
+        "ShieldArmorName": {
+          "enUS": "Protoss Plasma Shields",
+          "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+        },
         "priority": 203
       },
       "RoboticsBay": {
         "id": "RoboticsBay",
         "Icon": "btn-building-protoss-roboticssupportbay",
-        "Description": "Contains upgrades for the Observer, Warp Prism, and Colossus.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Colossi at the Robotics Facility<br/>- Disruptors at the Robotics Facility",
-        "Name": "Robotics Bay",
+        "Name": {
+          "enUS": "Robotics Bay",
+          "ruRU": "Robotics Bay"
+        },
+        "Description": {
+          "enUS": "Contains upgrades for the Observer, Warp Prism, and Colossus.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Colossi at the Robotics Facility<br/>- Disruptors at the Robotics Facility",
+          "ruRU": "Contains upgrades for the Observer, Warp Prism, and Colossus.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Colossi at the Robotics Facility<br/>- Disruptors at the Robotics Facility"
+        },
         "LifeMax": 500,
         "LifeArmor": 1,
         "ShieldsMax": 500,
@@ -5477,15 +6185,27 @@
         "$Phase": [],
         "LifeArmorIcon": "btn-armor-protoss-buildingplating",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Protoss Armor",
-        "ShieldArmorName": "Protoss Plasma Shields",
+        "LifeArmorName": {
+          "enUS": "Protoss Armor",
+          "ruRU": "Protoss Armor"
+        },
+        "ShieldArmorName": {
+          "enUS": "Protoss Plasma Shields",
+          "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+        },
         "priority": 219
       },
       "Mothership": {
         "id": "Mothership",
         "Icon": "btn-unit-protoss-mothership",
-        "Description": "Ultimate Protoss vessel. Can use Strategic Recall, Time Warp, and Cloaking Field abilities.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>",
-        "Name": "Mothership",
+        "Name": {
+          "enUS": "Mothership",
+          "ruRU": "Mothership"
+        },
+        "Description": {
+          "enUS": "Ultimate Protoss vessel. Can use Strategic Recall, Time Warp, and Cloaking Field abilities.<br/><br/><span style=\"color: ffff8a\">Can attack ground and air units.</span>",
+          "ruRU": "Ultimate Protoss vessel. Can use Photon Overcharge, Mass Recall, and Time Warp abilities. Cloaks nearby friendly units and structures.<br/><br/><span style=\"color: ffff8a\">Can attack ground and air units.</span>"
+        },
         "LifeMax": 250,
         "LifeArmor": 2,
         "ShieldsMax": 250,
@@ -5500,8 +6220,14 @@
         "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-protoss-airarmorlevel0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": "Protoss Armor",
-        "ShieldArmorName": "Protoss Plasma Shields",
+        "LifeArmorName": {
+          "enUS": "Protoss Armor",
+          "ruRU": "Protoss Armor"
+        },
+        "ShieldArmorName": {
+          "enUS": "Protoss Plasma Shields",
+          "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+        },
         "priority": 190
       }
     }
@@ -5545,11 +6271,11 @@
     "Nexus",
     "Assimilator",
     "Pylon",
+    "Gateway",
+    "WarpGate",
     "Forge",
     "CyberneticsCore",
     "PhotonCannon",
-    "Gateway",
-    "WarpGate",
     "ShieldBattery",
     "Stargate",
     "TemplarArchive",
@@ -5577,8 +6303,8 @@
     "ProtossAirArmorsLevel3",
     "WarpGateResearch",
     "PsiStormTech",
-    "PhoenixRangeUpgrade",
     "VoidRaySpeedUpgrade",
+    "PhoenixRangeUpgrade",
     "TempestGroundAttackUpgrade",
     "DarkTemplarBlinkUpgrade",
     "BlinkTech",

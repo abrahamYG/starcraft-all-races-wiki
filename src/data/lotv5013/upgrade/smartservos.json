@@ -13,10 +13,16 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "SmartServos",
+  "EditorCategories": "Race:Terran,UpgradeType:Spell",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "Race": "Terr",
   "ScoreAmount": 200,
   "ScoreResult": "BuildOrder",
-  "EditorCategories": "Race:Terran,UpgradeType:Talents",
   "EffectArray": [
     {
       "Operation": "Subtract",

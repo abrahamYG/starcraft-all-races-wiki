@@ -1,6 +1,12 @@
 {
-  "Name": "Battlecruiser",
-  "Description": "Powerful warship. Can use Yamato Cannon and Tactical Jump.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units.</span>",
+  "Name": {
+    "enUS": "Battlecruiser",
+    "ruRU": "Battlecruiser"
+  },
+  "Description": {
+    "enUS": "Powerful warship. Can use Yamato Cannon and Tactical Jump.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>",
+    "ruRU": "Powerful warship. Can use Yamato Cannon and Tactical Jump.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>"
+  },
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -12,7 +18,10 @@
   "ResourceType": "Unknown",
   "LifeStart": 550,
   "LifeMax": 550,
-  "LifeArmorName": "Terran Ship Plating",
+  "LifeArmorName": {
+    "enUS": "Terran Ship Plating",
+    "ruRU": "Terran Ship Plating"
+  },
   "Mover": "Fly",
   "StationaryTurningRate": 720,
   "TurningRate": 720,
@@ -74,14 +83,17 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "TechAliasArray": [
     "Alias_BattlecruiserClass"
   ],
   "Mob": "Multiplayer",
   "LifeArmor": 3,
-  "EnergyStart": 0,
-  "EnergyMax": 0,
-  "EnergyRegenRate": 0,
   "Speed": 1.875,
   "Acceleration": 1,
   "Height": 3.75,
@@ -106,16 +118,16 @@
   "Collide": [
     "Flying"
   ],
-  "VisionHeight": 15,
+  "VisionHeight": 4,
   "Sight": 12,
   "CardLayouts": {
     "Root": [
       {
         "Info": {
           "class": "CAbilMove",
-          "Name": "Abil/Name/BattlecruiserMove",
+          "Name": "Abil/Name/move",
           "TechPlayer": "Upkeep",
-          "EditorCategories": "Race:Terran,AbilityorEffectType:Units",
+          "EditorCategories": "Race:Neutral,AbilityorEffectType:Units",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
             {
@@ -134,7 +146,13 @@
           "SharedFlags": {
             "DisableWhileDead": 1
           },
-          "DataCollection": "BattlecruiserMove",
+          "DataCollection": "move",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -167,8 +185,12 @@
               "DefaultButtonFace": "Turn"
             }
           },
-          "AbilSetId": "Move",
-          "id": "BattlecruiserMove"
+          "FleeRange": 5,
+          "FleeTime": 5,
+          "FollowRangeSlop": 1,
+          "FollowAcquireRange": 6,
+          "MinPatrolDistance": 1,
+          "id": "move"
         },
         "Cost": {
           "Minerals": 0,
@@ -183,19 +205,25 @@
         "Row": 0,
         "Column": 0,
         "Type": "AbilCmd",
-        "AbilCmd": "BattlecruiserMove,Move",
+        "AbilCmd": "move,Move",
         "id": "Move",
         "Icon": "btn-command-move",
-        "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
-        "Name": "Move",
+        "Name": {
+          "enUS": "Move",
+          "ruRU": "Двигаться /// Move"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+          "ruRU": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies."
+        },
         "Hotkey": "M"
       },
       {
         "Info": {
           "class": "CAbilStop",
-          "Name": "Abil/Name/BattlecruiserStop",
+          "Name": "Abil/Name/stop",
           "TechPlayer": "Upkeep",
-          "EditorCategories": "Race:Terran,AbilityorEffectType:Units",
+          "EditorCategories": "Race:Neutral,AbilityorEffectType:Units",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
             {
@@ -208,7 +236,13 @@
           "SharedFlags": {
             "DisableWhileDead": 1
           },
-          "DataCollection": "BattlecruiserStop",
+          "DataCollection": "stop",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "AbilSetId": "Stop",
           "CmdButtonArray": {
             "Stop": {
@@ -221,7 +255,7 @@
               "Flags": {
                 "ToSelection": 1
               },
-              "DefaultButtonFace": "HoldFire"
+              "DefaultButtonFace": "HoldFireSpecial"
             },
             "Cheer": {
               "Flags": {
@@ -236,7 +270,7 @@
               "DefaultButtonFace": "Dance"
             }
           },
-          "id": "BattlecruiserStop"
+          "id": "stop"
         },
         "Cost": {
           "Minerals": 0,
@@ -251,19 +285,25 @@
         "Row": 0,
         "Column": 1,
         "Type": "AbilCmd",
-        "AbilCmd": "BattlecruiserStop,Stop",
+        "AbilCmd": "stop,Stop",
         "id": "Stop",
         "Icon": "btn-command-stop",
-        "Tooltip": "Orders selected units to cancel all orders and stop moving.",
-        "Name": "Stop",
+        "Name": {
+          "enUS": "Stop",
+          "ruRU": "Отставить /// Stop"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to cancel all orders and stop moving.",
+          "ruRU": "Orders selected units to cancel all orders and stop moving."
+        },
         "Hotkey": "S"
       },
       {
         "Info": {
           "class": "CAbilMove",
-          "Name": "Abil/Name/BattlecruiserMove",
+          "Name": "Abil/Name/move",
           "TechPlayer": "Upkeep",
-          "EditorCategories": "Race:Terran,AbilityorEffectType:Units",
+          "EditorCategories": "Race:Neutral,AbilityorEffectType:Units",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
             {
@@ -282,7 +322,13 @@
           "SharedFlags": {
             "DisableWhileDead": 1
           },
-          "DataCollection": "BattlecruiserMove",
+          "DataCollection": "move",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -315,8 +361,12 @@
               "DefaultButtonFace": "Turn"
             }
           },
-          "AbilSetId": "Move",
-          "id": "BattlecruiserMove"
+          "FleeRange": 5,
+          "FleeTime": 5,
+          "FollowRangeSlop": 1,
+          "FollowAcquireRange": 6,
+          "MinPatrolDistance": 1,
+          "id": "move"
         },
         "Cost": {
           "Minerals": 0,
@@ -331,19 +381,25 @@
         "Row": 0,
         "Column": 2,
         "Type": "AbilCmd",
-        "AbilCmd": "BattlecruiserMove,HoldPos",
+        "AbilCmd": "move,HoldPos",
         "id": "MoveHoldPosition",
         "Icon": "btn-command-holdposition",
-        "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
-        "Name": "Hold Position",
+        "Name": {
+          "enUS": "Hold Position",
+          "ruRU": "Удерживать позицию /// Hold Position"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+          "ruRU": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage."
+        },
         "Hotkey": "H"
       },
       {
         "Info": {
           "class": "CAbilMove",
-          "Name": "Abil/Name/BattlecruiserMove",
+          "Name": "Abil/Name/move",
           "TechPlayer": "Upkeep",
-          "EditorCategories": "Race:Terran,AbilityorEffectType:Units",
+          "EditorCategories": "Race:Neutral,AbilityorEffectType:Units",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
             {
@@ -362,7 +418,13 @@
           "SharedFlags": {
             "DisableWhileDead": 1
           },
-          "DataCollection": "BattlecruiserMove",
+          "DataCollection": "move",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -395,8 +457,12 @@
               "DefaultButtonFace": "Turn"
             }
           },
-          "AbilSetId": "Move",
-          "id": "BattlecruiserMove"
+          "FleeRange": 5,
+          "FleeTime": 5,
+          "FollowRangeSlop": 1,
+          "FollowAcquireRange": 6,
+          "MinPatrolDistance": 1,
+          "id": "move"
         },
         "Cost": {
           "Minerals": 0,
@@ -411,19 +477,25 @@
         "Row": 0,
         "Column": 3,
         "Type": "AbilCmd",
-        "AbilCmd": "BattlecruiserMove,Patrol",
+        "AbilCmd": "move,Patrol",
         "id": "MovePatrol",
         "Icon": "btn-command-patrol",
-        "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
-        "Name": "Patrol",
+        "Name": {
+          "enUS": "Patrol",
+          "ruRU": "Патрулировать /// Patrol"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+          "ruRU": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies."
+        },
         "Hotkey": "P"
       },
       {
         "Info": {
           "class": "CAbilAttack",
-          "Name": "Abil/Name/BattlecruiserAttack",
+          "Name": "Abil/Name/attack",
           "TechPlayer": "Upkeep",
-          "EditorCategories": "Race:Terran,AbilityorEffectType:Units",
+          "EditorCategories": "Race:Neutral,AbilityorEffectType:Units",
           "TargetMessage": "Abil/TargetMessage/attack",
           "OrderArray": [
             {
@@ -436,7 +508,13 @@
           "SharedFlags": {
             "DisableWhileDead": 1
           },
-          "DataCollection": "BattlecruiserAttack",
+          "DataCollection": "attack",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "AbilSetId": "Attack",
           "Alignment": "Negative",
           "AcquireFilters": "-;Player,Ally,Neutral,Dead,Hidden,Invulnerable,Benign",
@@ -465,7 +543,7 @@
           "MaxAttackSpeedMultiplier": 128,
           "MinAttackSpeedMultiplier": 0.25,
           "AcquirePriority": 2,
-          "id": "BattlecruiserAttack"
+          "id": "attack"
         },
         "Cost": {
           "Minerals": 0,
@@ -480,11 +558,17 @@
         "Row": 0,
         "Column": 4,
         "Type": "AbilCmd",
-        "AbilCmd": "BattlecruiserAttack,Execute",
+        "AbilCmd": "attack,Execute",
         "id": "Attack",
         "Icon": "btn-command-attack",
-        "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
-        "Name": "Attack",
+        "Name": {
+          "enUS": "Attack",
+          "ruRU": "Атаковать /// Attack"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+          "ruRU": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed."
+        },
         "Hotkey": "A"
       },
       {
@@ -506,6 +590,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "Yamato",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "RangeSlop": 10,
           "ArcSlop": 11.25,
           "AutoCastAcquireLevel": "Offensive",
@@ -517,12 +607,12 @@
             "RangeUseCasterRadius": 1,
             "ReApproachable": 1,
             "RequireTargetVision": 1,
-            "WaitToSpend": 0,
+            "WaitToSpend": 1,
             "UpdateChargesOnLevelChange": 1,
             "BestUnit": 1,
             "AllowMovement": 1,
-            "NoDeceleration": 1,
-            "IgnoreOrderPlayerIdInStageValidate": 1
+            "IgnoreOrderPlayerIdInStageValidate": 1,
+            "NoDeceleration": 1
           },
           "Effect": [
             "Yamato"
@@ -595,9 +685,6 @@
           ],
           "Cost": [
             {
-              "Vital": {
-                "Energy": 0
-              },
               "Cooldown": {
                 "Link": "Yamato",
                 "TimeUse": 100
@@ -616,7 +703,6 @@
           "ProgressButtonArray": {
             "Prep": "YamatoGun"
           },
-          "id": "Yamato",
           "Alignment": "Negative",
           "InterruptCost": {
             "Cooldown": {
@@ -625,7 +711,8 @@
           },
           "CancelEffect": {
             "Prep": "BattlecruiserYamatoCD"
-          }
+          },
+          "id": "Yamato"
         },
         "Cost": {
           "Minerals": 0,
@@ -643,8 +730,14 @@
         "AbilCmd": "Yamato,Execute",
         "id": "YamatoGun",
         "Icon": "btn-ability-terran-yamatogun-color",
-        "Tooltip": "Blasts a target with a devastating plasma cannon, causing <b>240</b> damage.",
-        "Name": "Yamato Cannon",
+        "Name": {
+          "enUS": "Yamato Cannon",
+          "ruRU": "Yamato Cannon"
+        },
+        "Tooltip": {
+          "enUS": "Blasts a target with a devastating plasma cannon, causing 300 damage.",
+          "ruRU": "Blasts a target with a devastating plasma cannon, causing 300 damage."
+        },
         "Hotkey": "Y"
       },
       {
@@ -652,7 +745,7 @@
           "class": "CAbilEffectTarget",
           "Name": "Abil/Name/Hyperjump",
           "TechPlayer": "Upkeep",
-          "EditorCategories": "AbilityorEffectType:Units",
+          "EditorCategories": "AbilityorEffectType:Units,Race:Terran",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
             {
@@ -666,6 +759,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "Hyperjump",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "RangeSlop": 1,
           "ArcSlop": 11.25,
           "AutoCastAcquireLevel": "Offensive",
@@ -677,7 +776,7 @@
             "RangeUseCasterRadius": 1,
             "ReApproachable": 1,
             "RequireTargetVision": 0,
-            "WaitToSpend": 0,
+            "WaitToSpend": 1,
             "UpdateChargesOnLevelChange": 1,
             "BestUnit": 0,
             "AllowMovement": 1,
@@ -747,9 +846,6 @@
           "FollowRange": 5,
           "Cost": [
             {
-              "Vital": {
-                "Energy": 0
-              },
               "Cooldown": {
                 "TimeUse": 100
               }
@@ -768,15 +864,14 @@
             "Channel": 1
           },
           "UninterruptibleArray": {
-            "Channel": 1,
             "Prep": 1,
+            "Channel": 1,
             "Finish": 1
           },
           "ProgressButtonArray": {
-            "Channel": "Hyperjump",
-            "Prep": "Hyperjump"
+            "Prep": "Hyperjump",
+            "Channel": "Hyperjump"
           },
-          "id": "Hyperjump",
           "InterruptCost": {
             "Cooldown": {
               "TimeUse": 120
@@ -787,7 +882,8 @@
           },
           "FinishTime": [
             6
-          ]
+          ],
+          "id": "Hyperjump"
         },
         "Cost": {
           "Minerals": 0,
@@ -805,8 +901,14 @@
         "AbilCmd": "Hyperjump,Execute",
         "id": "Hyperjump",
         "Icon": "btn-ability-terran-warpjump",
-        "Tooltip": "After <b>6</b>, warps to the target location. Battlecruiser is invulnerable while warping.<br/><br/><c val=\"#ColorAttackInfo\">Does not require vision.</span>",
-        "Name": "Tactical Jump",
+        "Name": {
+          "enUS": "Tactical Jump",
+          "ruRU": "Tactical Jump"
+        },
+        "Tooltip": {
+          "enUS": "After <b>6</b>, warps to the target location. Battlecruiser is invulnerable while warping.<br/><br/><span style=\"color: #ffff8a\">Does not require vision.</span>",
+          "ruRU": "After <b>6</b>, warps to the target location. Battlecruiser is invulnerable while warping.<br/><br/><span style=\"color: #ffff8a\">Does not require vision.</span>"
+        },
         "Hotkey": "T"
       }
     ]
@@ -830,7 +932,6 @@
     "Corruptor",
     "VoidRay"
   ],
-  "id": "Battlecruiser",
   "EquipmentArray": [
     {
       "Effect": "ATSLaserBatteryU",
@@ -843,6 +944,7 @@
       "Weapon": "ATALaserBattery"
     }
   ],
+  "id": "Battlecruiser",
   "Icon": "btn-unit-terran-battlecruiser",
   "LifeArmorIcon": "btn-upgrade-terran-shipplatinglevel0",
   "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
@@ -851,7 +953,9 @@
       "Turret": "Battlecruiser",
       "id": "BattlecruiserWeaponSwitch",
       "Icon": "btn-upgrade-terran-shipweaponslevel0",
-      "Name": "BattlecruiserWeaponSwitch",
+      "Name": {
+        "enUS": "BattlecruiserWeaponSwitch"
+      },
       "Amount": 8,
       "Kind": "Ranged",
       "TargetFilters": "",
@@ -862,74 +966,72 @@
   "Behaviors": [],
   "Abilities": [
     {
-      "id": "BattlecruiserStop",
-      "Name": "Battlecruiser Stop"
+      "id": "stop",
+      "Name": {
+        "enUS": "Stop",
+        "ruRU": "Stop"
+      }
     },
     {
-      "id": "BattlecruiserAttack",
-      "Name": "Battlecruiser Attack"
+      "id": "attack",
+      "Name": {
+        "ruRU": "Attack",
+        "enUS": "Attack"
+      }
     },
     {
-      "id": "BattlecruiserMove",
-      "Name": "Battlecruiser Move"
+      "id": "move",
+      "Name": {
+        "enUS": "Move",
+        "ruRU": "Move"
+      }
     },
     {
       "id": "Yamato",
-      "Name": "Yamato Gun"
+      "Name": {
+        "enUS": "Yamato Gun",
+        "ruRU": "Yamato Gun"
+      }
     },
     {
       "id": "que1",
-      "Name": "Queue (1)"
+      "Name": {
+        "ruRU": "Queue (1)",
+        "enUS": "Queue (1)"
+      }
     },
     {
       "id": "Hyperjump",
-      "Name": "Tactical Jump"
+      "Name": {
+        "enUS": "Tactical Jump",
+        "ruRU": "Tactical Jump"
+      }
     }
   ],
   "$Upgrades": [
     "HyperjumpCreatePrecursor",
     "Battlecruiser",
     "BattlecruiserEnableSpecializations",
-    "BattlecruiserPlacementCheck",
     "ThreatensBattlecruiser",
-    "FusionCore",
-    "StarportTrain",
-    "Starport",
-    "TerranShipArmorsLevel1",
-    "Battlecruiser",
-    "TerranShipArmors",
-    "TerranShipArmorsLevel2",
-    "TerranShipArmorsLevel3",
     "TerranShipWeaponsLevel1",
     "TerranShipWeapons",
     "TerranShipWeaponsLevel2",
     "TerranShipWeaponsLevel3",
     "TerranVehicleAndShipArmorsLevel1",
+    "Battlecruiser",
     "TerranVehicleAndShipArmors",
     "TerranVehicleAndShipArmorsLevel2",
     "TerranVehicleAndShipArmorsLevel3",
-    "TerranVehicleAndShipWeaponsLevel1",
-    "TerranVehicleAndShipWeapons",
-    "TerranVehicleAndShipWeaponsLevel2",
-    "TerranVehicleAndShipWeaponsLevel3",
-    "IsBattlecruiser",
-    "BattlecruiserBehemothReactor",
-    "BattlecruiserBase",
-    "Battlecruiser",
-    "BattlecruiserCovertOps",
-    "BattlecruiserJunker",
-    "BattlecruiserUmojan",
-    "BattlecruiserRemastered",
-    "BattlecruiserSilver",
-    "DefaultSkinPack",
-    "BattlecruiserCovertOpsSkinPack",
-    "BattlecruiserJunkerSkinPack",
-    "BattlecruiserUmojan",
-    "BattlecruiserRemastered",
-    "BattlecruiserSilver"
+    "FusionCore",
+    "StarportTrain",
+    "Starport",
+    "BattlecruiserPlacementCheck",
+    "IsBattlecruiser"
   ],
   "$Requirements": [],
-  "$Production": [],
+  "$Production": [
+    "Battlecruiser"
+  ],
   "$Research": [],
   "$Morph": [],
   "$Phase": [],
@@ -938,53 +1040,95 @@
   ],
   "$Commands": [
     {
-      "AbilCmd": "BattlecruiserMove,Move",
+      "AbilCmd": "move,Move",
       "id": "Move",
       "Icon": "btn-command-move",
-      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
-      "Name": "Move"
+      "Name": {
+        "enUS": "Move",
+        "ruRU": "Двигаться /// Move"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+        "ruRU": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies."
+      }
     },
     {
-      "AbilCmd": "BattlecruiserStop,Stop",
+      "AbilCmd": "stop,Stop",
       "id": "Stop",
       "Icon": "btn-command-stop",
-      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
-      "Name": "Stop"
+      "Name": {
+        "enUS": "Stop",
+        "ruRU": "Отставить /// Stop"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to cancel all orders and stop moving.",
+        "ruRU": "Orders selected units to cancel all orders and stop moving."
+      }
     },
     {
-      "AbilCmd": "BattlecruiserMove,HoldPos",
+      "AbilCmd": "move,HoldPos",
       "id": "MoveHoldPosition",
       "Icon": "btn-command-holdposition",
-      "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
-      "Name": "Hold Position"
+      "Name": {
+        "enUS": "Hold Position",
+        "ruRU": "Удерживать позицию /// Hold Position"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+        "ruRU": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage."
+      }
     },
     {
-      "AbilCmd": "BattlecruiserMove,Patrol",
+      "AbilCmd": "move,Patrol",
       "id": "MovePatrol",
       "Icon": "btn-command-patrol",
-      "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
-      "Name": "Patrol"
+      "Name": {
+        "enUS": "Patrol",
+        "ruRU": "Патрулировать /// Patrol"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+        "ruRU": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies."
+      }
     },
     {
-      "AbilCmd": "BattlecruiserAttack,Execute",
+      "AbilCmd": "attack,Execute",
       "id": "Attack",
       "Icon": "btn-command-attack",
-      "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
-      "Name": "Attack"
+      "Name": {
+        "enUS": "Attack",
+        "ruRU": "Атаковать /// Attack"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+        "ruRU": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed."
+      }
     },
     {
       "AbilCmd": "Yamato,Execute",
       "id": "YamatoGun",
       "Icon": "btn-ability-terran-yamatogun-color",
-      "Tooltip": "Blasts a target with a devastating plasma cannon, causing <b>240</b> damage.",
-      "Name": "Yamato Cannon"
+      "Name": {
+        "enUS": "Yamato Cannon",
+        "ruRU": "Yamato Cannon"
+      },
+      "Tooltip": {
+        "enUS": "Blasts a target with a devastating plasma cannon, causing 300 damage.",
+        "ruRU": "Blasts a target with a devastating plasma cannon, causing 300 damage."
+      }
     },
     {
       "AbilCmd": "Hyperjump,Execute",
       "id": "Hyperjump",
       "Icon": "btn-ability-terran-warpjump",
-      "Tooltip": "After <b>6</b>, warps to the target location. Battlecruiser is invulnerable while warping.<br/><br/><c val=\"#ColorAttackInfo\">Does not require vision.</span>",
-      "Name": "Tactical Jump"
+      "Name": {
+        "enUS": "Tactical Jump",
+        "ruRU": "Tactical Jump"
+      },
+      "Tooltip": {
+        "enUS": "After <b>6</b>, warps to the target location. Battlecruiser is invulnerable while warping.<br/><br/><span style=\"color: #ffff8a\">Does not require vision.</span>",
+        "ruRU": "After <b>6</b>, warps to the target location. Battlecruiser is invulnerable while warping.<br/><br/><span style=\"color: #ffff8a\">Does not require vision.</span>"
+      }
     }
   ]
 }

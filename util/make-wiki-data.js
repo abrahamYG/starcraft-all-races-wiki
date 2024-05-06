@@ -2,9 +2,23 @@ import fs from "fs-extra";
 // import * as SCParser from "sc-parser"
 import * as SCParser from "./../../parser/index.js"
 
+
 async function wiki (config) {
   fs.mkdirSync(config.output + 'ww/ww'.replace('\\','/').substring('ww/ww'.toLowerCase(), 'ww/ww'.lastIndexOf("/")), {recursive: true})
 
+  let mod = await SCParser.createMod({
+    mods: config.mods
+  })
+
+  function textValue(id){
+    if(!id){
+      return null
+    }
+    if(!mod.text[id]){
+      return "-"
+    }
+    return mod.text[id].Value
+  }
   function getNestedCardLayouts(cardLayouts,cardLayout, result) {
     if(!cardLayouts){
       return []
@@ -50,16 +64,23 @@ async function wiki (config) {
   }
   function shortInfo(entity){
 
-    let strings = entity.$mod.locales.enUS.GameStrings
+    // let strings = entity.$mod.locales.enUS.GameStrings
+    // let strings = entity.$mod.text
 
     let data = entity.getResolvedData()
-    return {
+    let result = {
       id: entity.id,
       Icon: mod.checkImage(entity.Icon || entity.InfoIcon,[entity.class,entity.id]),
-      Tooltip: strings[data.Tooltip],
-      Description: strings[data.Description],
-      Name:  strings[data.Name]
+      Name:  textValue(data.Name)
     }
+
+    if(data.Tooltip){
+      result.Tooltip = textValue(data.Tooltip)
+    }
+    if(data.Description){
+      result.Description = textValue(data.Description)
+    }
+    return result
   }
   function getCardData(entity) {
     // if(entity.id === "SCV"){
@@ -387,20 +408,39 @@ async function wiki (config) {
 
     let behaviorUnits = behaviors.filter(bh => bh.data().class === "CBehaviorSpawn").map(bh => bh.data().InfoArray.map(ia => ia.Unit) ).flat()
 
+    let behaviorBuffs = behaviors.filter(bh => bh.data().class === "CBehaviorBuff")
+
+    let relatedEffects = []
+    function addRelatedEffects(entity){
+      let rels = entity.$$relations.filter(r => r.type === "effect").map(r => r.link)
+      for(let rel of rels){
+        if(!relatedEffects.includes(rel)){
+          if(mod.cache.effect[rel]){
+            relatedEffects.push(rel)
+            addRelatedEffects(mod.cache.effect[rel])
+          }
+          else{
+            console.log(`entity not exist ` + rel)
+          }
+        }
+      }
+    }
+    for(let behaviorBuff of behaviorBuffs){
+      addRelatedEffects(behaviorBuff)
+    }
+
     for(let behaviorUnit of behaviorUnits){
       if(!productionUnits.includes(behaviorUnit)){
         productionUnits.push(behaviorUnit)
       }
     }
 
-    // console.log({
-    //     morphUnits,
-    //     researchUpgrades,
-    //     productionUnits
-    // })
+    let effectSpawnUnits = [...new Set(relatedEffects.map(relID => mod.cache.effect[relID]).filter(relEntity => relEntity?.data().SpawnUnit).map(rel => rel.data().SpawnUnit).flat())]
+    productionUnits.push(...effectSpawnUnits)
+
 
     return {
-      morphUnits,
+      morphUnits:  [...new Set(morphUnits)],
       researchUpgrades,
       productionUnits
     }
@@ -417,6 +457,9 @@ async function wiki (config) {
 
     if(units) {
       for (let unitID of units) {
+        if(unitID === "DroneSCBW"){
+          unitID
+        }
         if(!unitID){
           console.warn(`undefined reference ${path.join(".")}`)
           continue;
@@ -475,11 +518,10 @@ async function wiki (config) {
     return {units: raceUnits,upgrades: raceUpgrades}
   }
 
-  let mod = await SCParser.createMod({
-    mods: config.mods
-  })
-
-
+  // mod.cache.unit.ProbeSCBW.resolveButtons()
+  // mod.cache.unit.CommandCenterSCBW.resolveButtons()
+  // mod.resolveDataTextValues()
+  mod.resolveButtons()
 
   mod.makeAbilCmds()
 //do not add the following entities and its children to the output data
@@ -507,6 +549,46 @@ async function wiki (config) {
 //pick specific races
 // mod.pick({race: ["Terr","Zerg","Prot"]})
   mod.index()
+
+  let locales = mod.components?.filter(entity => entity.Type.toLowerCase() === "text").map(entity => entity.Locale)
+  for(let textKey in mod.text){
+    let textEntity = mod.text[textKey]
+
+    let uniqueTargets = []
+    let relationsPerLocale = {}
+    for(let locale of locales){
+      relationsPerLocale[locale] = textEntity.$$relations.filter(rel => rel.path.endsWith("." + locale))
+      if(!textEntity.Value[locale]){
+        if(textEntity.$category === "GameStrings" && textEntity.$modname === "SCEvo"){
+          console.log(`Text Value ${textEntity.$category} ${textKey}  is not defined in locale ${locale}`)
+        }
+      }
+
+      for(let relation of relationsPerLocale[locale] ){
+        if(!uniqueTargets.includes(relation.target)){
+          uniqueTargets.push(relation.target)
+        }
+      }
+    }
+    for(let target of uniqueTargets){
+      let count = {}
+      for(let locale of locales){
+        if(textEntity.Value[locale]){
+          count[locale] = relationsPerLocale[locale].filter(rel => rel.target === target).length
+        }
+      }
+      // let uniqueValues = [...new Set(Object.values(count))].length;
+      if(Object.values(count).includes(0)){
+        if(textEntity.$category === "GameStrings" && textEntity.$modname === "SCEvo") {
+          console.log(`GameString ${textKey} might be not relevant. Reference ${target.id} usages: ${Object.entries(count).map(el => el.join(":")).join(",")}`)
+        }
+      }
+
+      // if(uniqueValues > 1){
+      //   console.log(`Relations are different ${Object.entries({"enUS": 2, "ruRU": 2}).map(el => el.join(":")).join(",")}`)
+      // }
+    }
+  }
 //replace text strings expressions with data values
   mod.resolveTextValues()
 //load the list of available icons
@@ -516,7 +598,7 @@ async function wiki (config) {
 //add actor data to units
   mod.resolveUnitActors()
 
-  let strings = mod.locales.enUS.GameStrings
+ // let strings = mod.locales.enUS.GameStrings
 
   let output = {}
 
@@ -550,7 +632,7 @@ async function wiki (config) {
     id: config.id,
     races: racesData.map(race => ({
       id: race.id,
-      Name: strings[race.Name],
+      Name: textValue(race.Name),
       Icon: race.Icon?.toLowerCase().replace(/\\/g, '/').replace(/.*\//, '').replace('.dds', ''),
     }))
   }
@@ -559,7 +641,7 @@ async function wiki (config) {
 
     let outputRaceData = output[`race/${raceData.id}`] = {
       id: raceData.id,
-      Name: strings[raceData.Name],
+      Name: textValue(raceData.Name),
       Icon: raceData.Icon?.toLowerCase().replace(/\\/g, '/').replace(/.*\//, '').replace('.dds', ''),
       cache: {
         upgrades: {},
@@ -661,15 +743,14 @@ async function wiki (config) {
       let unitData = unit.data()
       let shortUnitData = shortInfo(unit)
 
-
       output[`unit/${unit.id}`] = {
         ...unitData,
         ...shortUnitData,
         Icon: unit._icon,
         LifeArmorIcon: unit._actor?.LifeArmorIcon,
         ShieldArmorIcon: unit._actor?.ShieldArmorIcon,
-        LifeArmorName: strings[unitData.LifeArmorName],
-        ShieldArmorName: strings[unitData.ShieldArmorName],
+        LifeArmorName: textValue(unitData.LifeArmorName),
+        ShieldArmorName: textValue(unitData.ShieldArmorName),
         class: null,
         BehaviorArray: null,
         WeaponArray: null,
@@ -705,8 +786,8 @@ async function wiki (config) {
         $Phased: unit._phased,
         LifeArmorIcon: unit._actor?.LifeArmorIcon,
         ShieldArmorIcon: unit._actor?.ShieldArmorIcon,
-        LifeArmorName: strings[unitData.LifeArmorName],
-        ShieldArmorName: strings[unitData.ShieldArmorName],
+        LifeArmorName: textValue(unitData.LifeArmorName),
+        ShieldArmorName: textValue(unitData.ShieldArmorName),
         priority: unitData.GlossaryPriority
       }
     }
@@ -731,17 +812,39 @@ SCParser.SCGame.directories.factions = 'C:\\Program Files (x86)\\StarCraft II\\M
 // let arcGitPath = 'github:hometlt/starcraft-all-races-mods/'
 // let scionGitPath = 'github:Solstice245/scion-keiron-dev/'
 
+// await wiki( {
+//   discord:"https://discord.gg/Xx9xurbb4u",
+//   id:"voidMulti",
+//   mods: [
+//     '$builtin/Core.SC2Mod',
+//     '$builtin/Liberty.sc2mod',
+//     '$builtin/Swarm.sc2mod',
+//     '$builtin/Void.sc2mod',
+//     '$builtin/VoidMulti5011.sc2mod',
+//     // '$dependencies/Base.SC2Mod',
+//     // '$dependencies/VoidMulti.SC2Mod',
+//     // '$factions/Scion.SC2Mod',
+//     // '$factions/Dragons.SC2Mod',
+//     // '$factions/UED.SC2Mod',
+//     // '$factions/UPL.SC2Mod',
+//     // '$factions/Hybrids.SC2Mod',
+//     // '$factions/Synoid.SC2Mod',
+//     // '$factions/Umojan.SC2Mod'
+//   ],
+//   output: './../src/data/lotv5011/'
+// })
+
 await wiki( {
   discord:"https://discord.gg/Xx9xurbb4u",
-  id:"voidMulti",
+  id:"scevo",
   mods: [
     '$builtin/Core.SC2Mod',
-    '$builtin/Liberty.sc2mod',
-    '$builtin/Swarm.sc2mod',
-    '$builtin/Void.sc2mod',
-    '$builtin/VoidMulti5011.sc2mod',
-    // '$dependencies/Base.SC2Mod',
-    // '$dependencies/VoidMulti.SC2Mod',
+    // '$builtin/Liberty.sc2mod',
+    // '$builtin/Swarm.sc2mod',
+    // '$builtin/Void.sc2mod',
+    '$dependencies/Base.SC2Mod',
+    '$dependencies/VoidMulti.SC2Mod',
+    '$factions/SCEvo.SC2Mod',
     // '$factions/Scion.SC2Mod',
     // '$factions/Dragons.SC2Mod',
     // '$factions/UED.SC2Mod',
@@ -750,7 +853,7 @@ await wiki( {
     // '$factions/Synoid.SC2Mod',
     // '$factions/Umojan.SC2Mod'
   ],
-  output: './../src/data/lotv5011/'
+  output: './../src/data/scevo/'
 })
 
 // await wiki( {

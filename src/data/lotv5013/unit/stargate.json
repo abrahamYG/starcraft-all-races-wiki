@@ -1,6 +1,12 @@
 {
-  "Name": "Stargate",
-  "Description": "Warps in Protoss air units.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Phoenixes<br/>- Void Rays<br/>- Oracles",
+  "Name": {
+    "enUS": "Stargate",
+    "ruRU": "Stargate"
+  },
+  "Description": {
+    "enUS": "Warps in Protoss air units.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Phoenixes<br/>- Void Rays<br/>- Oracles",
+    "ruRU": "Warps in Protoss air units.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Phoenixes<br/>- Void Rays<br/>- Oracles"
+  },
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -12,7 +18,10 @@
   "ResourceType": "Unknown",
   "LifeStart": 600,
   "LifeMax": 600,
-  "LifeArmorName": "Protoss Armor",
+  "LifeArmorName": {
+    "enUS": "Protoss Armor",
+    "ruRU": "Protoss Armor"
+  },
   "Mover": "Ground",
   "StationaryTurningRate": 719.4726,
   "TurningRate": 719.4726,
@@ -77,6 +86,12 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "Facing": 315,
   "Mob": "Multiplayer",
   "FogVisibility": "Snapshot",
@@ -84,7 +99,10 @@
   "ShieldsStart": 600,
   "ShieldsMax": 600,
   "ShieldRegenRate": 2,
-  "ShieldArmorName": "Protoss Plasma Shields",
+  "ShieldArmorName": {
+    "enUS": "Protoss Plasma Shields",
+    "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+  },
   "AttackTargetPriority": 11,
   "Footprint": "Footprint3x3Contour",
   "PlacementFootprint": "Footprint3x3",
@@ -105,9 +123,8 @@
     "Structure",
     "RoachBurrow",
     "ForceField",
-    "Small",
-    "Locust",
-    "Phased"
+    "Phased",
+    "Small"
   ],
   "Sight": 9,
   "CardLayouts": {
@@ -131,6 +148,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "que5",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "QueueCount": 1,
           "Flags": {
             "BestUnit": 1,
@@ -163,8 +186,14 @@
         "AbilCmd": "que5,CancelLast",
         "id": "Cancel",
         "Icon": "btn-command-cancel",
-        "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
-        "Name": "Cancel",
+        "Name": {
+          "enUS": "Cancel",
+          "ruRU": "Отменить /// Cancel"
+        },
+        "Tooltip": {
+          "enUS": "Drops the current order without performing it, and allows you to select a different order.",
+          "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+        },
         "Hotkey": "Esc"
       },
       {
@@ -186,6 +215,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "BuildInProgress",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "Activity": "UI/Building",
           "VitalStartFactor": {
             "Life": 0.1,
@@ -218,8 +253,14 @@
         "AbilCmd": "BuildInProgress,Cancel",
         "id": "CancelBuilding",
         "Icon": "btn-command-cancel",
-        "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-        "Name": "Cancel",
+        "Name": {
+          "enUS": "Cancel",
+          "ruRU": "Отменить /// Cancel"
+        },
+        "Tooltip": {
+          "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+          "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+        },
         "Hotkey": "Esc"
       },
       {
@@ -228,8 +269,7 @@
             "Flags": {
               "AllowMinimap": 0
             },
-            "DefaultButtonFace": "Phoenix",
-            "State": "Restricted"
+            "DefaultButtonFace": "Phoenix"
           },
           "Unit": [
             "Phoenix"
@@ -257,8 +297,14 @@
         "AbilCmd": "StargateTrain,Train1",
         "id": "Phoenix",
         "Icon": "btn-unit-protoss-phoenix",
-        "Tooltip": "Air-superiority fighter.<br/><br/><span style=\"color: #ffff8a\">Can attack air units.</span>",
-        "Name": "Warp In Phoenix",
+        "Name": {
+          "enUS": "Warp In Phoenix",
+          "ruRU": "Warp In Phoenix"
+        },
+        "Tooltip": {
+          "enUS": "Air-superiority fighter.<br/><br/><span style=\"color: ffff8a\">Can attack air units.</span>",
+          "ruRU": "Air-superiority fighter.<br/><br/><span style=\"color: ffff8a\">Can attack air units.</span>"
+        },
         "Hotkey": "X"
       },
       {
@@ -268,7 +314,6 @@
               "AllowMinimap": 0
             },
             "DefaultButtonFace": "Carrier",
-            "State": "Restricted",
             "Requirements": "HaveFleetBeacon"
           },
           "Unit": [
@@ -292,13 +337,19 @@
           "Food": -6
         },
         "Row": 0,
-        "Column": 4,
+        "Column": 3,
         "Type": "AbilCmd",
         "AbilCmd": "StargateTrain,Train3",
         "id": "Carrier",
         "Icon": "btn-unit-protoss-carrier",
-        "Tooltip": "Capital ship. Can build and launch Interceptors to make attacks.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>",
-        "Name": "Warp In Carrier",
+        "Name": {
+          "enUS": "Warp In Carrier",
+          "ruRU": "Warp In Carrier"
+        },
+        "Tooltip": {
+          "enUS": "Capital ship. Can build and launch Interceptors to make attacks.<br/><br/><span style=\"color: ffff8a\">Can attack ground and air units.</span>",
+          "ruRU": "Capital ship. Can build and launch Interceptors to make attacks.<br/><br/><span style=\"color: ffff8a\">Can attack ground and air units.</span>"
+        },
         "Hotkey": "C"
       },
       {
@@ -319,8 +370,14 @@
         "AbilCmd": "Rally,Rally1",
         "id": "Rally",
         "Icon": "btn-ability-terran-setrallypoint",
-        "Tooltip": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
-        "Name": "Set Rally Point",
+        "Name": {
+          "enUS": "Set Rally Point",
+          "ruRU": "Задать точку сбора /// Set Rally Point"
+        },
+        "Tooltip": {
+          "enUS": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
+          "ruRU": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically."
+        },
         "Hotkey": "Y"
       },
       {
@@ -329,8 +386,7 @@
             "Flags": {
               "AllowMinimap": 0
             },
-            "DefaultButtonFace": "VoidRay",
-            "State": "Restricted"
+            "DefaultButtonFace": "VoidRay"
           },
           "Unit": [
             "VoidRay"
@@ -358,8 +414,14 @@
         "AbilCmd": "StargateTrain,Train5",
         "id": "VoidRay",
         "Icon": "btn-unit-protoss-warpray",
-        "Tooltip": "Surgical strike craft.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units.</span>",
-        "Name": "Warp In Void Ray",
+        "Name": {
+          "enUS": "Warp In Void Ray",
+          "ruRU": "Warp In Void Ray"
+        },
+        "Tooltip": {
+          "enUS": "Surgical strike craft.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>",
+          "ruRU": "Surgical strike craft.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>"
+        },
         "Hotkey": "V"
       },
       {
@@ -396,8 +458,14 @@
         "AbilCmd": "StargateTrain,Train9",
         "id": "Oracle",
         "Icon": "btn-unit-protoss-oracle",
-        "Tooltip": "Flying caster. Can use Revelation, Stasis Ward, and Pulsar Beam.",
-        "Name": "Warp In Oracle",
+        "Name": {
+          "enUS": "Warp In Oracle",
+          "ruRU": "Warp In Oracle"
+        },
+        "Tooltip": {
+          "enUS": "Flying caster. Can use Revelation, Stasis Ward, and Pulsar Beam.",
+          "ruRU": "Flying caster. Can use Revelation, Stasis Ward, and Pulsar Beam."
+        },
         "Hotkey": "E"
       },
       {
@@ -430,13 +498,19 @@
           "Food": -5
         },
         "Row": 0,
-        "Column": 3,
+        "Column": 4,
         "Type": "AbilCmd",
         "AbilCmd": "StargateTrain,Train10",
         "id": "Tempest",
         "Icon": "btn-unit-protoss-tempest",
-        "Tooltip": "Siege artillery craft. Attacks from long range.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>",
-        "Name": "Warp In Tempest",
+        "Name": {
+          "enUS": "Warp In Tempest",
+          "ruRU": "Warp In Tempest"
+        },
+        "Tooltip": {
+          "enUS": "Siege artillery craft. Attacks from long range. Can use Disintegration.<br/><br/><span style=\"color: ffff8a\">Can attack ground and air units.</span>",
+          "ruRU": "Siege artillery craft. Attacks from long range. Can use Disintegration.<br/><br/><span style=\"color: ffff8a\">Can attack ground and air units.</span>"
+        },
         "Hotkey": "T"
       }
     ]
@@ -450,6 +524,8 @@
   },
   "TechTreeProducedUnitArray": [
     "Phoenix",
+    "VoidRay",
+    "Carrier",
     "Oracle",
     "VoidRay",
     "Tempest",
@@ -464,25 +540,42 @@
   "Behaviors": [
     {
       "id": "PowerUserQueue",
-      "Icon": "btn-building-protoss-pylon"
+      "Icon": "btn-building-protoss-pylon",
+      "Name": {
+        "enUS": "Power User (Queue)",
+        "ruRU": "Power User (Queue)"
+      },
+      "Tooltip": "-"
     }
   ],
   "Abilities": [
     {
       "id": "BuildInProgress",
-      "Name": "Build in Progress"
+      "Name": {
+        "enUS": "Build in Progress",
+        "ruRU": "Build in Progress"
+      }
     },
     {
       "id": "que5",
-      "Name": "Queue (5)"
+      "Name": {
+        "ruRU": "Queue (5)",
+        "enUS": "Queue (5)"
+      }
     },
     {
       "id": "Rally",
-      "Name": "Rally"
+      "Name": {
+        "enUS": "Rally",
+        "ruRU": "Rally"
+      }
     },
     {
       "id": "StargateTrain",
-      "Name": "Train (Stargate)"
+      "Name": {
+        "enUS": "Train (Stargate)",
+        "ruRU": "Train (Stargate)"
+      }
     }
   ],
   "$Upgrades": [
@@ -495,16 +588,7 @@
     "CountUnitStargateCompleteOnlyTechTreeCheat",
     "ProtossBuild",
     "IsStarGate",
-    "StargateSplat",
-    "CinematicMode",
-    "StargateBase",
-    "Stargate",
-    "StargateTaldarim",
-    "StargateForged",
-    "StargateIhanrii",
-    "DefaultSkinPack",
-    "StargateForged",
-    "StargateIhanrii"
+    "StargateSplat"
   ],
   "$Requirements": [],
   "$Production": [
@@ -525,57 +609,105 @@
       "AbilCmd": "que5,CancelLast",
       "id": "Cancel",
       "Icon": "btn-command-cancel",
-      "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
-      "Name": "Cancel"
+      "Name": {
+        "enUS": "Cancel",
+        "ruRU": "Отменить /// Cancel"
+      },
+      "Tooltip": {
+        "enUS": "Drops the current order without performing it, and allows you to select a different order.",
+        "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+      }
     },
     {
       "AbilCmd": "BuildInProgress,Cancel",
       "id": "CancelBuilding",
       "Icon": "btn-command-cancel",
-      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-      "Name": "Cancel"
+      "Name": {
+        "enUS": "Cancel",
+        "ruRU": "Отменить /// Cancel"
+      },
+      "Tooltip": {
+        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+        "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+      }
     },
     {
       "AbilCmd": "StargateTrain,Train1",
       "id": "Phoenix",
       "Icon": "btn-unit-protoss-phoenix",
-      "Tooltip": "Air-superiority fighter.<br/><br/><span style=\"color: #ffff8a\">Can attack air units.</span>",
-      "Name": "Warp In Phoenix"
+      "Name": {
+        "enUS": "Warp In Phoenix",
+        "ruRU": "Warp In Phoenix"
+      },
+      "Tooltip": {
+        "enUS": "Air-superiority fighter.<br/><br/><span style=\"color: ffff8a\">Can attack air units.</span>",
+        "ruRU": "Air-superiority fighter.<br/><br/><span style=\"color: ffff8a\">Can attack air units.</span>"
+      }
     },
     {
       "AbilCmd": "StargateTrain,Train3",
       "id": "Carrier",
       "Icon": "btn-unit-protoss-carrier",
-      "Tooltip": "Capital ship. Can build and launch Interceptors to make attacks.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>",
-      "Name": "Warp In Carrier"
+      "Name": {
+        "enUS": "Warp In Carrier",
+        "ruRU": "Warp In Carrier"
+      },
+      "Tooltip": {
+        "enUS": "Capital ship. Can build and launch Interceptors to make attacks.<br/><br/><span style=\"color: ffff8a\">Can attack ground and air units.</span>",
+        "ruRU": "Capital ship. Can build and launch Interceptors to make attacks.<br/><br/><span style=\"color: ffff8a\">Can attack ground and air units.</span>"
+      }
     },
     {
       "AbilCmd": "Rally,Rally1",
       "id": "Rally",
       "Icon": "btn-ability-terran-setrallypoint",
-      "Tooltip": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
-      "Name": "Set Rally Point"
+      "Name": {
+        "enUS": "Set Rally Point",
+        "ruRU": "Задать точку сбора /// Set Rally Point"
+      },
+      "Tooltip": {
+        "enUS": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
+        "ruRU": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically."
+      }
     },
     {
       "AbilCmd": "StargateTrain,Train5",
       "id": "VoidRay",
       "Icon": "btn-unit-protoss-warpray",
-      "Tooltip": "Surgical strike craft.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units.</span>",
-      "Name": "Warp In Void Ray"
+      "Name": {
+        "enUS": "Warp In Void Ray",
+        "ruRU": "Warp In Void Ray"
+      },
+      "Tooltip": {
+        "enUS": "Surgical strike craft.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>",
+        "ruRU": "Surgical strike craft.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>"
+      }
     },
     {
       "AbilCmd": "StargateTrain,Train9",
       "id": "Oracle",
       "Icon": "btn-unit-protoss-oracle",
-      "Tooltip": "Flying caster. Can use Revelation, Stasis Ward, and Pulsar Beam.",
-      "Name": "Warp In Oracle"
+      "Name": {
+        "enUS": "Warp In Oracle",
+        "ruRU": "Warp In Oracle"
+      },
+      "Tooltip": {
+        "enUS": "Flying caster. Can use Revelation, Stasis Ward, and Pulsar Beam.",
+        "ruRU": "Flying caster. Can use Revelation, Stasis Ward, and Pulsar Beam."
+      }
     },
     {
       "AbilCmd": "StargateTrain,Train10",
       "id": "Tempest",
       "Icon": "btn-unit-protoss-tempest",
-      "Tooltip": "Siege artillery craft. Attacks from long range.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>",
-      "Name": "Warp In Tempest"
+      "Name": {
+        "enUS": "Warp In Tempest",
+        "ruRU": "Warp In Tempest"
+      },
+      "Tooltip": {
+        "enUS": "Siege artillery craft. Attacks from long range. Can use Disintegration.<br/><br/><span style=\"color: ffff8a\">Can attack ground and air units.</span>",
+        "ruRU": "Siege artillery craft. Attacks from long range. Can use Disintegration.<br/><br/><span style=\"color: ffff8a\">Can attack ground and air units.</span>"
+      }
     }
   ]
 }

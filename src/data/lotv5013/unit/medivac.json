@@ -1,6 +1,12 @@
 {
-  "Name": "Medivac",
-  "Description": "Air transport. Heals nearby biological units. Can use Afterburners.",
+  "Name": {
+    "enUS": "Medivac",
+    "ruRU": "Medivac"
+  },
+  "Description": {
+    "enUS": "Air transport. Heals nearby biological units. Can use Afterburners.",
+    "ruRU": "Air transport. Heals nearby biological units. Can use Afterburners."
+  },
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -12,7 +18,10 @@
   "ResourceType": "Unknown",
   "LifeStart": 150,
   "LifeMax": 150,
-  "LifeArmorName": "Terran Ship Plating",
+  "LifeArmorName": {
+    "enUS": "Terran Ship Plating",
+    "ruRU": "Terran Ship Plating"
+  },
   "Mover": "Fly",
   "StationaryTurningRate": 999.8437,
   "TurningRate": 999.8437,
@@ -77,6 +86,12 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "Mob": "Multiplayer",
   "LifeArmor": 1,
   "EnergyStart": 50,
@@ -135,6 +150,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -172,8 +193,7 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move",
-          "AbilSetId": "Move"
+          "id": "move"
         },
         "Cost": {
           "Minerals": 0,
@@ -191,8 +211,14 @@
         "AbilCmd": "move,Move",
         "id": "Move",
         "Icon": "btn-command-move",
-        "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
-        "Name": "Move",
+        "Name": {
+          "enUS": "Move",
+          "ruRU": "Двигаться /// Move"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+          "ruRU": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies."
+        },
         "Hotkey": "M"
       },
       {
@@ -214,6 +240,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "stop",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "AbilSetId": "Stop",
           "CmdButtonArray": {
             "Stop": {
@@ -259,8 +291,14 @@
         "AbilCmd": "stop,Stop",
         "id": "Stop",
         "Icon": "btn-command-stop",
-        "Tooltip": "Orders selected units to cancel all orders and stop moving.",
-        "Name": "Stop",
+        "Name": {
+          "enUS": "Stop",
+          "ruRU": "Отставить /// Stop"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to cancel all orders and stop moving.",
+          "ruRU": "Orders selected units to cancel all orders and stop moving."
+        },
         "Hotkey": "S"
       },
       {
@@ -288,6 +326,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -325,8 +369,7 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move",
-          "AbilSetId": "Move"
+          "id": "move"
         },
         "Cost": {
           "Minerals": 0,
@@ -344,8 +387,14 @@
         "AbilCmd": "move,HoldPos",
         "id": "MoveHoldPosition",
         "Icon": "btn-command-holdposition",
-        "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
-        "Name": "Hold Position",
+        "Name": {
+          "enUS": "Hold Position",
+          "ruRU": "Удерживать позицию /// Hold Position"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+          "ruRU": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage."
+        },
         "Hotkey": "H"
       },
       {
@@ -373,6 +422,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -410,8 +465,7 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move",
-          "AbilSetId": "Move"
+          "id": "move"
         },
         "Cost": {
           "Minerals": 0,
@@ -429,8 +483,14 @@
         "AbilCmd": "move,Patrol",
         "id": "MovePatrol",
         "Icon": "btn-command-patrol",
-        "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
-        "Name": "Patrol",
+        "Name": {
+          "enUS": "Patrol",
+          "ruRU": "Патрулировать /// Patrol"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+          "ruRU": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies."
+        },
         "Hotkey": "P"
       },
       {
@@ -452,6 +512,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "MedivacTransport",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Load": {
               "Flags": {
@@ -487,7 +553,6 @@
           "MaxUnloadRange": 3,
           "TargetFilters": [
             "Visible;Ally,Neutral,Enemy,Buried,Dead,Hidden",
-            "Visible;Ally,Neutral,Enemy,Buried,UnderConstruction,Dead,Hidden",
             "Visible;Self,Ally,Neutral,Enemy,Buried,UnderConstruction,Dead,Hidden"
           ],
           "Flags": {
@@ -509,15 +574,11 @@
           "TotalCargoSpace": 8,
           "UnloadPeriod": 1,
           "AbilSetId": "ULdM",
-          "id": "MedivacTransport",
           "LoadValidatorArray": [
             "NotWidowMineTarget"
           ],
-          "UnloadCargoEffect": [
-            {
-              "value": "PurificationNovaTargettedCasterRB"
-            }
-          ]
+          "UnloadCargoEffect": "PurificationNovaTargettedCasterRB",
+          "id": "MedivacTransport"
         },
         "Cost": {
           "Minerals": 0,
@@ -535,8 +596,14 @@
         "AbilCmd": "MedivacTransport,Load",
         "id": "MedivacLoad",
         "Icon": "btn-ability-terran-load",
-        "Tooltip": "Loads units into the Medivac's hold.",
-        "Name": "Load",
+        "Name": {
+          "enUS": "Load",
+          "ruRU": "Load"
+        },
+        "Tooltip": {
+          "enUS": "Loads units into the Medivac's hold.",
+          "ruRU": "Loads units into the Medivac's hold."
+        },
         "Hotkey": "L"
       },
       {
@@ -558,6 +625,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "attack",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "AbilSetId": "Attack",
           "Alignment": "Negative",
           "AcquireFilters": "-;Player,Ally,Neutral,Dead,Hidden,Invulnerable,Benign",
@@ -604,8 +677,14 @@
         "AbilCmd": "attack,Execute",
         "id": "Attack",
         "Icon": "btn-command-attack",
-        "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
-        "Name": "Attack",
+        "Name": {
+          "enUS": "Attack",
+          "ruRU": "Атаковать /// Attack"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+          "ruRU": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed."
+        },
         "Hotkey": "A"
       },
       {
@@ -633,6 +712,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -670,8 +755,7 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move",
-          "AbilSetId": "Move"
+          "id": "move"
         },
         "Cost": {
           "Minerals": 0,
@@ -689,8 +773,14 @@
         "AbilCmd": "move,AcquireMove",
         "id": "AcquireMove",
         "Icon": "btn-command-attack",
-        "Tooltip": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies.",
-        "Name": "Scan Move",
+        "Name": {
+          "enUS": "Scan Move",
+          "ruRU": "Двигаться в режиме наблюдения /// Scan Move"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies.",
+          "ruRU": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies."
+        },
         "Hotkey": "A"
       },
       {
@@ -712,6 +802,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "MedivacHeal",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "RangeSlop": 1,
           "ArcSlop": 11.25,
           "AutoCastAcquireLevel": "Defensive",
@@ -723,7 +819,7 @@
             "RangeUseCasterRadius": 1,
             "ReApproachable": 1,
             "RequireTargetVision": 1,
-            "WaitToSpend": 0,
+            "WaitToSpend": 1,
             "UpdateChargesOnLevelChange": 1,
             "BestUnit": 1,
             "AllowMovement": 1,
@@ -820,8 +916,8 @@
             "healCasterMinEnergy",
             "NotWarpingIn"
           ],
-          "id": "MedivacHeal",
-          "Alignment": "Positive"
+          "Alignment": "Positive",
+          "id": "MedivacHeal"
         },
         "Cost": {
           "Minerals": 0,
@@ -839,8 +935,14 @@
         "AbilCmd": "MedivacHeal,Execute",
         "id": "Heal",
         "Icon": "btn-ability-terran-heal-color",
-        "Tooltip": "Heals a friendly biological target.<br/><br/><span style=\"color: #f078ff\">Heals <b>3</b> life per 1 energy.</span>",
-        "Name": "Heal",
+        "Name": {
+          "enUS": "Heal",
+          "ruRU": "Heal"
+        },
+        "Tooltip": {
+          "enUS": "Heals a friendly biological target.<br/><br/><span style=\"color: f078ff\">Heals <b>9</b> life per 1 energy.</span>",
+          "ruRU": "Heals a friendly biological target.<br/><br/><span style=\"color: f078ff\">Heals <b>9</b> life per 1 energy.</span>"
+        },
         "Hotkey": "E"
       },
       {
@@ -862,6 +964,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "MedivacTransport",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Load": {
               "Flags": {
@@ -897,7 +1005,6 @@
           "MaxUnloadRange": 3,
           "TargetFilters": [
             "Visible;Ally,Neutral,Enemy,Buried,Dead,Hidden",
-            "Visible;Ally,Neutral,Enemy,Buried,UnderConstruction,Dead,Hidden",
             "Visible;Self,Ally,Neutral,Enemy,Buried,UnderConstruction,Dead,Hidden"
           ],
           "Flags": {
@@ -919,15 +1026,11 @@
           "TotalCargoSpace": 8,
           "UnloadPeriod": 1,
           "AbilSetId": "ULdM",
-          "id": "MedivacTransport",
           "LoadValidatorArray": [
             "NotWidowMineTarget"
           ],
-          "UnloadCargoEffect": [
-            {
-              "value": "PurificationNovaTargettedCasterRB"
-            }
-          ]
+          "UnloadCargoEffect": "PurificationNovaTargettedCasterRB",
+          "id": "MedivacTransport"
         },
         "Cost": {
           "Minerals": 0,
@@ -945,8 +1048,14 @@
         "AbilCmd": "MedivacTransport,UnloadAt",
         "id": "MedivacUnloadAll",
         "Icon": "btn-ability-terran-unloadall",
-        "Tooltip": "Unloads all units.",
-        "Name": "Unload All",
+        "Name": {
+          "enUS": "Unload All",
+          "ruRU": "Unload All"
+        },
+        "Tooltip": {
+          "enUS": "Unloads all units.",
+          "ruRU": "Unloads all units."
+        },
         "Hotkey": "D"
       },
       {
@@ -968,6 +1077,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "MedivacSpeedBoost",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "RangeSlop": 1,
           "ArcSlop": 11.25,
           "AutoCastAcquireLevel": "Offensive",
@@ -979,7 +1094,7 @@
             "RangeUseCasterRadius": 1,
             "ReApproachable": 1,
             "RequireTargetVision": 1,
-            "WaitToSpend": 0,
+            "WaitToSpend": 1,
             "UpdateChargesOnLevelChange": 1,
             "Transient": 1
           },
@@ -1047,9 +1162,6 @@
           },
           "Cost": [
             {
-              "Vital": {
-                "Energy": 0
-              },
               "Cooldown": {
                 "TimeUse": 20
               }
@@ -1073,8 +1185,14 @@
         "AbilCmd": "MedivacSpeedBoost,Execute",
         "id": "MedivacSpeedBoost",
         "Icon": "btn-upgrade-terran-medivacemergencythrusters",
-        "Tooltip": "Increases the Medivac's movement speed for <b>8</b> seconds.",
-        "Name": "Ignite Afterburners",
+        "Name": {
+          "enUS": "Ignite Afterburners",
+          "ruRU": "Ignite Afterburners"
+        },
+        "Tooltip": {
+          "enUS": "Increases the Medivac's movement speed by 70% for <b>8</b>.",
+          "ruRU": "Increases the Medivac's movement speed by 70% for <b>8</b>."
+        },
         "Hotkey": "B"
       },
       {
@@ -1093,9 +1211,13 @@
         "Type": "Passive",
         "id": "CaduceusReactor",
         "Icon": "btn-upgrade-terran-caduceusreactor",
-        "Tooltip": "Increases the energy regeneration rate of <span style=\"color: #ffff8a\">Medivacs</span> by <b>100</b>%.",
-        "Name": "Caduceus Reactor",
-        "Hotkey": ""
+        "Name": {
+          "enUS": "Caduceus Reactor",
+          "ruRU": "Caduceus Reactor"
+        },
+        "Tooltip": {
+          "enUS": "Increases the energy regeneration rate of <span style=\"color: ffff8a\">Medivacs</span> by <b>100</b>%."
+        }
       }
     ]
   },
@@ -1106,7 +1228,6 @@
   "GlossaryCategory": "Unit/Category/TerranUnits",
   "HotkeyCategory": "Unit/Category/TerranUnits",
   "GlossaryPriority": 185,
-  "id": "Medivac",
   "TacticalAIThink": "AIThinkMedivac",
   "LateralAcceleration": 1000,
   "GlossaryWeakArray": [
@@ -1114,6 +1235,7 @@
     "SporeCrawler",
     "PhotonCannon"
   ],
+  "id": "Medivac",
   "Icon": "btn-unit-terran-medivac",
   "LifeArmorIcon": "btn-upgrade-terran-shipplatinglevel0",
   "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
@@ -1122,54 +1244,51 @@
   "Abilities": [
     {
       "id": "MedivacHeal",
-      "Name": "Heal"
+      "Name": {
+        "enUS": "Heal",
+        "ruRU": "Heal"
+      }
     },
     {
       "id": "stop",
-      "Name": "Stop"
+      "Name": {
+        "enUS": "Stop",
+        "ruRU": "Stop"
+      }
     },
     {
       "id": "move",
-      "Name": "Move"
+      "Name": {
+        "enUS": "Move",
+        "ruRU": "Move"
+      }
     },
     {
       "id": "MedivacTransport",
-      "Name": "Load-Unload (Medivac)"
+      "Name": {
+        "enUS": "Load-Unload (Medivac)",
+        "ruRU": "Load-Unload (Medivac)"
+      }
     },
     {
       "id": "MedivacSpeedBoost",
-      "Name": "Emergency Thrusters"
+      "Name": {
+        "enUS": "Emergency Thrusters",
+        "ruRU": "Emergency Thrusters"
+      }
     }
   ],
   "$Upgrades": [
-    "StarportTrain",
+    "TerranVehicleAndShipArmorsLevel1",
     "Medivac",
     "MedivacCaduceusReactor",
-    "MedivacIncreaseSpeedBoost",
-    "MedivacRapidDeployment",
-    "Starport",
-    "TerranShipArmorsLevel1",
     "Medivac",
-    "TerranShipArmors",
-    "TerranShipArmorsLevel2",
-    "TerranShipArmorsLevel3",
-    "TerranVehicleAndShipArmorsLevel1",
     "TerranVehicleAndShipArmors",
     "TerranVehicleAndShipArmorsLevel2",
     "TerranVehicleAndShipArmorsLevel3",
-    "IsMedivac",
-    "Combat_Mechanic_KillTransport_Medivac",
-    "MedivacBase",
-    "Medivac",
-    "MedivacCovertOps",
-    "MedivacJunker",
-    "MedivacUmojan",
-    "MedivacSilver",
-    "DefaultSkinPack",
-    "MedivacCovertOpsSkinPack",
-    "MedivacJunkerSkinPack",
-    "MedivacUmojan",
-    "MedivacSilver"
+    "StarportTrain",
+    "Starport",
+    "IsMedivac"
   ],
   "$Requirements": [],
   "$Production": [],
@@ -1184,71 +1303,131 @@
       "AbilCmd": "move,Move",
       "id": "Move",
       "Icon": "btn-command-move",
-      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
-      "Name": "Move"
+      "Name": {
+        "enUS": "Move",
+        "ruRU": "Двигаться /// Move"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+        "ruRU": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies."
+      }
     },
     {
       "AbilCmd": "stop,Stop",
       "id": "Stop",
       "Icon": "btn-command-stop",
-      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
-      "Name": "Stop"
+      "Name": {
+        "enUS": "Stop",
+        "ruRU": "Отставить /// Stop"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to cancel all orders and stop moving.",
+        "ruRU": "Orders selected units to cancel all orders and stop moving."
+      }
     },
     {
       "AbilCmd": "move,HoldPos",
       "id": "MoveHoldPosition",
       "Icon": "btn-command-holdposition",
-      "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
-      "Name": "Hold Position"
+      "Name": {
+        "enUS": "Hold Position",
+        "ruRU": "Удерживать позицию /// Hold Position"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+        "ruRU": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage."
+      }
     },
     {
       "AbilCmd": "move,Patrol",
       "id": "MovePatrol",
       "Icon": "btn-command-patrol",
-      "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
-      "Name": "Patrol"
+      "Name": {
+        "enUS": "Patrol",
+        "ruRU": "Патрулировать /// Patrol"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+        "ruRU": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies."
+      }
     },
     {
       "AbilCmd": "MedivacTransport,Load",
       "id": "MedivacLoad",
       "Icon": "btn-ability-terran-load",
-      "Tooltip": "Loads units into the Medivac's hold.",
-      "Name": "Load"
+      "Name": {
+        "enUS": "Load",
+        "ruRU": "Load"
+      },
+      "Tooltip": {
+        "enUS": "Loads units into the Medivac's hold.",
+        "ruRU": "Loads units into the Medivac's hold."
+      }
     },
     {
       "AbilCmd": "attack,Execute",
       "id": "Attack",
       "Icon": "btn-command-attack",
-      "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
-      "Name": "Attack"
+      "Name": {
+        "enUS": "Attack",
+        "ruRU": "Атаковать /// Attack"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+        "ruRU": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed."
+      }
     },
     {
       "AbilCmd": "move,AcquireMove",
       "id": "AcquireMove",
       "Icon": "btn-command-attack",
-      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies.",
-      "Name": "Scan Move"
+      "Name": {
+        "enUS": "Scan Move",
+        "ruRU": "Двигаться в режиме наблюдения /// Scan Move"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies.",
+        "ruRU": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies."
+      }
     },
     {
       "AbilCmd": "MedivacHeal,Execute",
       "id": "Heal",
       "Icon": "btn-ability-terran-heal-color",
-      "Tooltip": "Heals a friendly biological target.<br/><br/><span style=\"color: #f078ff\">Heals <b>3</b> life per 1 energy.</span>",
-      "Name": "Heal"
+      "Name": {
+        "enUS": "Heal",
+        "ruRU": "Heal"
+      },
+      "Tooltip": {
+        "enUS": "Heals a friendly biological target.<br/><br/><span style=\"color: f078ff\">Heals <b>9</b> life per 1 energy.</span>",
+        "ruRU": "Heals a friendly biological target.<br/><br/><span style=\"color: f078ff\">Heals <b>9</b> life per 1 energy.</span>"
+      }
     },
     {
       "AbilCmd": "MedivacTransport,UnloadAt",
       "id": "MedivacUnloadAll",
       "Icon": "btn-ability-terran-unloadall",
-      "Tooltip": "Unloads all units.",
-      "Name": "Unload All"
+      "Name": {
+        "enUS": "Unload All",
+        "ruRU": "Unload All"
+      },
+      "Tooltip": {
+        "enUS": "Unloads all units.",
+        "ruRU": "Unloads all units."
+      }
     },
     {
       "AbilCmd": "MedivacSpeedBoost,Execute",
       "id": "MedivacSpeedBoost",
       "Icon": "btn-upgrade-terran-medivacemergencythrusters",
-      "Tooltip": "Increases the Medivac's movement speed for <b>8</b> seconds.",
-      "Name": "Ignite Afterburners"
+      "Name": {
+        "enUS": "Ignite Afterburners",
+        "ruRU": "Ignite Afterburners"
+      },
+      "Tooltip": {
+        "enUS": "Increases the Medivac's movement speed by 70% for <b>8</b>.",
+        "ruRU": "Increases the Medivac's movement speed by 70% for <b>8</b>."
+      }
     }
   ]
 }

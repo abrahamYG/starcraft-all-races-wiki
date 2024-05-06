@@ -12,6 +12,13 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "PhoenixRangeUpgrade",
+  "EditorCategories": "Race:Protoss,UpgradeType:Spell",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "Race": "Prot",
   "InfoTooltipPriority": 1,
   "ScoreAmount": 300,
@@ -22,7 +29,6 @@
       "Value": "2"
     }
   ],
-  "EditorCategories": "Race:Protoss,UpgradeType:SpellResearch",
   "AffectedUnitArray": [
     "Phoenix"
   ]

@@ -1,6 +1,12 @@
 {
-  "Name": "Spore Crawler",
-  "Description": "Anti-air defensive structure. <br/><br/><span style=\"color: #ffff8a\">Can attack air units.</span><br/><span style=\"color: #FFE303\">Detector</span>",
+  "Name": {
+    "enUS": "Spore Crawler",
+    "ruRU": "Spore Crawler"
+  },
+  "Description": {
+    "enUS": "Anti-air defensive structure. <br/><br/><span style=\"color: ffff8a\">Can attack air units.</span><br/><span style=\"color: FFE303\">Detector</span>",
+    "ruRU": "Anti-air defensive structure. <br/><br/><span style=\"color: ffff8a\">Can attack air units.</span><br/><span style=\"color: FFE303\">Detector</span>"
+  },
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -12,7 +18,10 @@
   "ResourceType": "Unknown",
   "LifeStart": 400,
   "LifeMax": 400,
-  "LifeArmorName": "Zerg Building Armor",
+  "LifeArmorName": {
+    "enUS": "Zerg Building Armor",
+    "ruRU": "Zerg Building Armor"
+  },
   "Mover": "Ground",
   "StationaryTurningRate": 719.4726,
   "TurningRate": 719.4726,
@@ -80,6 +89,12 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "Facing": 315,
   "Mob": "Multiplayer",
   "FogVisibility": "Snapshot",
@@ -107,9 +122,8 @@
     "Structure",
     "RoachBurrow",
     "ForceField",
-    "Small",
-    "Locust",
-    "Phased"
+    "Phased",
+    "Small"
   ],
   "Sight": 11,
   "CardLayouts": {
@@ -133,6 +147,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "BuildInProgress",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "Activity": "UI/Building",
           "VitalStartFactor": {
             "Life": 0.1,
@@ -165,8 +185,14 @@
         "AbilCmd": "BuildInProgress,Cancel",
         "id": "CancelBuilding",
         "Icon": "btn-command-cancel",
-        "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-        "Name": "Cancel",
+        "Name": {
+          "enUS": "Cancel",
+          "ruRU": "Отменить /// Cancel"
+        },
+        "Tooltip": {
+          "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+          "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+        },
         "Hotkey": "Esc"
       },
       {
@@ -188,6 +214,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "stop",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "AbilSetId": "Stop",
           "CmdButtonArray": {
             "Stop": {
@@ -233,8 +265,14 @@
         "AbilCmd": "stop,Stop",
         "id": "Stop",
         "Icon": "btn-command-stop",
-        "Tooltip": "Orders selected units to cancel all orders and stop moving.",
-        "Name": "Stop",
+        "Name": {
+          "enUS": "Stop",
+          "ruRU": "Отставить /// Stop"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to cancel all orders and stop moving.",
+          "ruRU": "Orders selected units to cancel all orders and stop moving."
+        },
         "Hotkey": "S"
       },
       {
@@ -256,6 +294,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "attack",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "AbilSetId": "Attack",
           "Alignment": "Negative",
           "AcquireFilters": "-;Player,Ally,Neutral,Dead,Hidden,Invulnerable,Benign",
@@ -302,8 +346,14 @@
         "AbilCmd": "attack,Execute",
         "id": "AttackBuilding",
         "Icon": "btn-command-attack",
-        "Tooltip": "Targets and attacks the target unit until it is destroyed or moves out of range.",
-        "Name": "Attack",
+        "Name": {
+          "enUS": "Attack",
+          "ruRU": "Attack"
+        },
+        "Tooltip": {
+          "enUS": "Targets and attacks the target unit until it is destroyed or moves out of range.",
+          "ruRU": "Targets and attacks the target unit until it is destroyed or moves out of range."
+        },
         "Hotkey": "A"
       },
       {
@@ -344,8 +394,14 @@
         "AbilCmd": "SporeCrawlerUproot,Execute",
         "id": "SporeCrawlerUproot",
         "Icon": "btn-ability-zerg-uproot-color",
-        "Tooltip": "Uproots the Spore Crawler. An uprooted Spore Crawler has the ability to move but cannot attack. Moves much faster on creep.",
-        "Name": "Uproot",
+        "Name": {
+          "enUS": "Uproot",
+          "ruRU": "Uproot"
+        },
+        "Tooltip": {
+          "enUS": "Uproots the Spore Crawler. An uprooted Spore Crawler has the ability to move but cannot attack. Moves much faster on creep.",
+          "ruRU": "Uproots the Spore Crawler. An uprooted Spore Crawler has the ability to move but cannot attack. Moves much faster on creep."
+        },
         "Hotkey": "R"
       },
       {
@@ -364,8 +420,14 @@
         "Type": "Passive",
         "id": "Detector",
         "Icon": "btn-status-detector",
-        "Tooltip": "This unit can detect cloaked, burrowed, and hallucinated units.",
-        "Name": "Detector"
+        "Name": {
+          "enUS": "Detector",
+          "ruRU": "Detector"
+        },
+        "Tooltip": {
+          "enUS": "This unit can detect cloaked, burrowed, and hallucinated units.",
+          "ruRU": "This unit can detect cloaked, burrowed, and hallucinated units."
+        }
       }
     ]
   },
@@ -378,7 +440,6 @@
   "RankDisplay": "Always",
   "GlossaryCategory": "Unit/Category/ZergUnits",
   "HotkeyCategory": "Unit/Category/ZergUnits",
-  "id": "SporeCrawler",
   "GlossaryStrongArray": [
     "Banshee",
     "Mutalisk",
@@ -389,6 +450,7 @@
     "Zergling",
     "Zealot"
   ],
+  "id": "SporeCrawler",
   "Icon": "btn-building-zerg-sporecrawler",
   "LifeArmorIcon": "btn-armor-zerg-building",
   "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
@@ -397,7 +459,10 @@
       "Turret": "SporeCrawler",
       "id": "AcidSpew",
       "Icon": "btn-upgrade-zerg-missileattacks-level0",
-      "Name": "Acid Spew",
+      "Name": {
+        "enUS": "Acid Spew",
+        "ruRU": "Acid Spew"
+      },
       "Amount": 15,
       "AttributeBonus": {
         "Biological": 15
@@ -412,35 +477,68 @@
     {
       "id": "Detector11",
       "Icon": "btn-status-detector",
-      "Tooltip": "This unit can detect cloaked or burrowed units within its sight range.",
-      "Name": "Detector"
+      "Name": {
+        "enUS": "Detector",
+        "ruRU": "Детектор /// Detector"
+      },
+      "Tooltip": {
+        "enUS": "This unit can detect cloaked or burrowed units within its sight range.",
+        "ruRU": "Эта боевая единица может обнаруживать замаскированные или закопанные войска в поле обзора."
+      }
     },
     {
-      "id": "OnCreep"
+      "id": "OnCreep",
+      "Name": {
+        "enUS": "On Creep",
+        "ruRU": "On Creep"
+      },
+      "Tooltip": "-"
     },
     {
-      "id": "ZergBuildingNotOnCreep"
+      "id": "ZergBuildingNotOnCreep",
+      "Name": {
+        "enUS": "Building Not On Creep",
+        "ruRU": "Building Not On Creep"
+      },
+      "Tooltip": "-"
     },
     {
-      "id": "UnderConstruction"
+      "id": "UnderConstruction",
+      "Name": {
+        "enUS": "Under Construction",
+        "ruRU": "Under Construction"
+      },
+      "Tooltip": "-"
     }
   ],
   "Abilities": [
     {
       "id": "BuildInProgress",
-      "Name": "Build in Progress"
+      "Name": {
+        "enUS": "Build in Progress",
+        "ruRU": "Build in Progress"
+      }
     },
     {
       "id": "stop",
-      "Name": "Stop"
+      "Name": {
+        "enUS": "Stop",
+        "ruRU": "Stop"
+      }
     },
     {
       "id": "attack",
-      "Name": "Attack"
+      "Name": {
+        "ruRU": "Attack",
+        "enUS": "Attack"
+      }
     },
     {
       "id": "SporeCrawlerUproot",
-      "Name": "Uproot"
+      "Name": {
+        "enUS": "Uproot",
+        "ruRU": "Uproot"
+      }
     }
   ],
   "$Upgrades": [
@@ -451,14 +549,7 @@
     "ZergBuild",
     "SporeCrawler",
     "SporeCrawlerSplat",
-    "SporeCrawler_Death",
-    "SporeCrawlerBase",
-    "SporeCrawler",
-    "SporeCrawlerMecha",
-    "SporeCrawlerRCZ",
-    "DefaultSkinPack",
-    "SporeCrawlerMecha",
-    "SporeCrawlerRCZ"
+    "SporeCrawler_Death"
   ],
   "$Requirements": [],
   "$Production": [],
@@ -475,29 +566,53 @@
       "AbilCmd": "BuildInProgress,Cancel",
       "id": "CancelBuilding",
       "Icon": "btn-command-cancel",
-      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-      "Name": "Cancel"
+      "Name": {
+        "enUS": "Cancel",
+        "ruRU": "Отменить /// Cancel"
+      },
+      "Tooltip": {
+        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+        "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+      }
     },
     {
       "AbilCmd": "stop,Stop",
       "id": "Stop",
       "Icon": "btn-command-stop",
-      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
-      "Name": "Stop"
+      "Name": {
+        "enUS": "Stop",
+        "ruRU": "Отставить /// Stop"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to cancel all orders and stop moving.",
+        "ruRU": "Orders selected units to cancel all orders and stop moving."
+      }
     },
     {
       "AbilCmd": "attack,Execute",
       "id": "AttackBuilding",
       "Icon": "btn-command-attack",
-      "Tooltip": "Targets and attacks the target unit until it is destroyed or moves out of range.",
-      "Name": "Attack"
+      "Name": {
+        "enUS": "Attack",
+        "ruRU": "Attack"
+      },
+      "Tooltip": {
+        "enUS": "Targets and attacks the target unit until it is destroyed or moves out of range.",
+        "ruRU": "Targets and attacks the target unit until it is destroyed or moves out of range."
+      }
     },
     {
       "AbilCmd": "SporeCrawlerUproot,Execute",
       "id": "SporeCrawlerUproot",
       "Icon": "btn-ability-zerg-uproot-color",
-      "Tooltip": "Uproots the Spore Crawler. An uprooted Spore Crawler has the ability to move but cannot attack. Moves much faster on creep.",
-      "Name": "Uproot"
+      "Name": {
+        "enUS": "Uproot",
+        "ruRU": "Uproot"
+      },
+      "Tooltip": {
+        "enUS": "Uproots the Spore Crawler. An uprooted Spore Crawler has the ability to move but cannot attack. Moves much faster on creep.",
+        "ruRU": "Uproots the Spore Crawler. An uprooted Spore Crawler has the ability to move but cannot attack. Moves much faster on creep."
+      }
     }
   ]
 }

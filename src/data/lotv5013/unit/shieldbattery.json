@@ -1,6 +1,12 @@
 {
-  "Name": "Shield Battery",
-  "Description": "Defensive structure. Recharges shields of nearby units.",
+  "Name": {
+    "enUS": "Shield Battery",
+    "ruRU": "Shield Battery"
+  },
+  "Description": {
+    "enUS": "Defensive structure. Recharges shields of nearby units.",
+    "ruRU": "Defensive structure. Recharges shields of nearby units."
+  },
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -12,7 +18,10 @@
   "ResourceType": "Unknown",
   "LifeStart": 150,
   "LifeMax": 150,
-  "LifeArmorName": "Protoss Armor",
+  "LifeArmorName": {
+    "enUS": "Protoss Armor",
+    "ruRU": "Protoss Armor"
+  },
   "Mover": "Ground",
   "StationaryTurningRate": 720,
   "TurningRate": 720,
@@ -78,6 +87,12 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "Mob": "Multiplayer",
   "FogVisibility": "Snapshot",
   "PlaneArray": [
@@ -97,14 +112,17 @@
     "Structure"
   ],
   "LifeArmor": 1,
-  "EnergyStart": 50,
+  "EnergyStart": 100,
   "EnergyMax": 100,
   "EnergyRegenRate": 0.5625,
   "ShieldsStart": 150,
   "ShieldsMax": 150,
   "ShieldRegenDelay": 10,
   "ShieldRegenRate": 2,
-  "ShieldArmorName": "Protoss Plasma Shields",
+  "ShieldArmorName": {
+    "enUS": "Protoss Plasma Shields",
+    "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+  },
   "Sight": 9,
   "CostCategory": "Technology",
   "CostResource": {
@@ -113,162 +131,6 @@
   "AttackTargetPriority": 11,
   "CardLayouts": {
     "Root": [
-      {
-        "Info": {
-          "class": "CAbilEffectTarget",
-          "Name": "Abil/Name/ShieldBatteryRechargeEx5",
-          "TechPlayer": "Upkeep",
-          "EditorCategories": "Race:Protoss,AbilityorEffectType:Units",
-          "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
-          "OrderArray": [
-            {
-              "DisplayType": "Confirm",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            }
-          ],
-          "SharedFlags": {
-            "DisableWhileDead": 1
-          },
-          "DataCollection": "ShieldBatteryRechargeEx5",
-          "RangeSlop": 1,
-          "ArcSlop": 11.25,
-          "AutoCastAcquireLevel": "Defensive",
-          "AutoCastFilters": "Visible;Self,Neutral,Enemy,Missile,UnderConstruction,Dead,Hidden",
-          "Flags": {
-            "AbortOnAllianceChange": 1,
-            "CancelResetAutoCast": 0,
-            "ChannelingMinimum": 1,
-            "RangeUseCasterRadius": 1,
-            "ReApproachable": 1,
-            "RequireTargetVision": 1,
-            "WaitToSpend": 0,
-            "UpdateChargesOnLevelChange": 1,
-            "BestUnit": 0,
-            "AutoCast": 1,
-            "AutoCastOn": 1,
-            "ReExecutable": 1,
-            "Smart": 1
-          },
-          "Effect": [
-            "ShieldBatteryRechargeEx5"
-          ],
-          "EffectRange": [
-            "0,1000"
-          ],
-          "AINotifyEffect": "ShieldBatteryRechargeEx5",
-          "RefundArray": {
-            "Approach": 1,
-            "Prep": 1,
-            "Cast": 1
-          },
-          "RefundFraction": {
-            "Resource": {
-              "Minerals": -1,
-              "Vespene": -1,
-              "Terrazine": -1,
-              "Custom": -1
-            },
-            "Charge": -1,
-            "Cooldown": -1
-          },
-          "UseMarkerArray": {
-            "Approach": 0,
-            "Prep": 0,
-            "Cast": 1,
-            "Channel": 1
-          },
-          "PauseableArray": {
-            "Approach": 1,
-            "Prep": 1,
-            "Cast": 1,
-            "Channel": 1,
-            "Finish": 1
-          },
-          "PreemptableArray": {
-            "Approach": 1,
-            "Prep": 1,
-            "Cast": 1,
-            "Channel": 1,
-            "Finish": 1
-          },
-          "ValidatedArray": {
-            "Approach": 1,
-            "Prep": 1,
-            "Cast": 1,
-            "Channel": 1
-          },
-          "DefaultError": "RequiresHealTarget",
-          "AcquirePriority": 3,
-          "SetLastTarget": "Unknown",
-          "VeterancyLevelMin": 0,
-          "VeterancyLevelSkip": 0,
-          "CmdButtonArray": {
-            "Execute": {
-              "Flags": {
-                "ShowInGlossary": 1,
-                "UseDefaultButton": 1,
-                "CreateDefaultButton": 0
-              },
-              "DefaultButtonFace": "ShieldBatteryRecharge"
-            },
-            "Cancel": {
-              "Flags": {
-                "ToSelection": 1,
-                "UseDefaultButton": 1,
-                "CreateDefaultButton": 0
-              },
-              "DefaultButtonFace": "Stop"
-            }
-          },
-          "FollowRange": 5,
-          "TargetFilters": [
-            "Visible;Self,Enemy,Missile,Stasis,UnderConstruction,Dead,Hidden,Invulnerable"
-          ],
-          "TargetSorts": {
-            "SortArray": [
-              "TSAlliancePassive",
-              "TSShieldsFraction",
-              "TSDistance"
-            ],
-            "RequestCount": 1
-          },
-          "Range": [
-            6
-          ],
-          "Arc": 360,
-          "AutoCastRange": 6,
-          "AutoCastValidatorArray": [
-            "Casterhas10EnergyorCasterisBatteryOvercharged",
-            "UnitOrAttackingStructure",
-            "NotHaveBatteryCooldownBehavior"
-          ],
-          "CancelableArray": {
-            "Channel": 1
-          },
-          "id": "ShieldBatteryRechargeEx5"
-        },
-        "Cost": {
-          "Minerals": 0,
-          "Vespene": 0,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 0,
-        "Column": 1,
-        "Type": "AbilCmd",
-        "AbilCmd": "ShieldBatteryRechargeEx5,Cancel",
-        "id": "Stop",
-        "Icon": "btn-command-stop",
-        "Tooltip": "Orders selected units to cancel all orders and stop moving.",
-        "Name": "Stop",
-        "Hotkey": "S"
-      },
       {
         "Info": {
           "class": "CAbilBuildable",
@@ -288,6 +150,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "BuildInProgress",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "Activity": "UI/Building",
           "VitalStartFactor": {
             "Life": 0.1,
@@ -320,8 +188,14 @@
         "AbilCmd": "BuildInProgress,Cancel",
         "id": "CancelBuilding",
         "Icon": "btn-command-cancel",
-        "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-        "Name": "Cancel",
+        "Name": {
+          "enUS": "Cancel",
+          "ruRU": "Отменить /// Cancel"
+        },
+        "Tooltip": {
+          "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+          "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+        },
         "Hotkey": "Esc"
       },
       {
@@ -343,6 +217,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "ShieldBatteryRechargeEx5",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "RangeSlop": 1,
           "ArcSlop": 11.25,
           "AutoCastAcquireLevel": "Defensive",
@@ -354,7 +234,7 @@
             "RangeUseCasterRadius": 1,
             "ReApproachable": 1,
             "RequireTargetVision": 1,
-            "WaitToSpend": 0,
+            "WaitToSpend": 1,
             "UpdateChargesOnLevelChange": 1,
             "BestUnit": 0,
             "AutoCast": 1,
@@ -476,8 +356,12 @@
         "AbilCmd": "ShieldBatteryRechargeEx5,Execute",
         "id": "ShieldBatteryRecharge",
         "Icon": "btn-ability-protoss-shieldbattery-color",
-        "Tooltip": "Restores target unit or structure's shields.",
-        "Name": "Restore",
+        "Name": {
+          "enUS": "Restore"
+        },
+        "Tooltip": {
+          "enUS": "Restores target unit or structure's shields."
+        },
         "Hotkey": "R"
       },
       {
@@ -499,6 +383,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "stop",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "AbilSetId": "Stop",
           "CmdButtonArray": {
             "Stop": {
@@ -544,9 +434,162 @@
         "AbilCmd": "stop,Stop",
         "id": "Stop",
         "Icon": "btn-command-stop",
-        "Tooltip": "Orders selected units to cancel all orders and stop moving.",
-        "Name": "Stop",
+        "Name": {
+          "enUS": "Stop",
+          "ruRU": "Отставить /// Stop"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to cancel all orders and stop moving.",
+          "ruRU": "Orders selected units to cancel all orders and stop moving."
+        },
         "Hotkey": "S"
+      },
+      {
+        "Info": {
+          "class": "CAbilStop",
+          "Name": "Abil/Name/stop",
+          "TechPlayer": "Upkeep",
+          "EditorCategories": "Race:Neutral,AbilityorEffectType:Units",
+          "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
+          "OrderArray": [
+            {
+              "DisplayType": "Confirm",
+              "Color": "255,0,255,0",
+              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
+              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
+            }
+          ],
+          "SharedFlags": {
+            "DisableWhileDead": 1
+          },
+          "DataCollection": "stop",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
+          "AbilSetId": "Stop",
+          "CmdButtonArray": {
+            "Stop": {
+              "Flags": {
+                "ToSelection": 1
+              },
+              "DefaultButtonFace": "Stop"
+            },
+            "HoldFire": {
+              "Flags": {
+                "ToSelection": 1
+              },
+              "DefaultButtonFace": "HoldFireSpecial"
+            },
+            "Cheer": {
+              "Flags": {
+                "ToSelection": 1
+              },
+              "DefaultButtonFace": "Cheer"
+            },
+            "Dance": {
+              "Flags": {
+                "ToSelection": 1
+              },
+              "DefaultButtonFace": "Dance"
+            }
+          },
+          "id": "stop"
+        },
+        "Cost": {
+          "Minerals": 0,
+          "Vespene": 0,
+          "Terazine": 0,
+          "Custom": 0,
+          "Energy": 0,
+          "Life": 0,
+          "Shields": 0,
+          "Food": 0
+        },
+        "Row": 0,
+        "Column": 1,
+        "Type": "AbilCmd",
+        "AbilCmd": "stop,Stop",
+        "id": "Stop",
+        "Icon": "btn-command-stop",
+        "Name": {
+          "enUS": "Stop",
+          "ruRU": "Отставить /// Stop"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to cancel all orders and stop moving.",
+          "ruRU": "Orders selected units to cancel all orders and stop moving."
+        },
+        "Hotkey": "S"
+      },
+      {
+        "Info": {
+          "class": "CAbilBuildable",
+          "Name": "Abil/Name/BuildInProgress",
+          "TechPlayer": "Upkeep",
+          "EditorCategories": "Race:Neutral,AbilityorEffectType:Units",
+          "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
+          "OrderArray": [
+            {
+              "DisplayType": "Confirm",
+              "Color": "255,0,255,0",
+              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
+              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
+            }
+          ],
+          "SharedFlags": {
+            "DisableWhileDead": 1
+          },
+          "DataCollection": "BuildInProgress",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
+          "Activity": "UI/Building",
+          "VitalStartFactor": {
+            "Life": 0.1,
+            "Shields": 0.1,
+            "Energy": 1
+          },
+          "CmdButtonArray": {
+            "Cancel": {
+              "DefaultButtonFace": "Cancel"
+            },
+            "Halt": {
+              "DefaultButtonFace": "Cancel"
+            }
+          },
+          "id": "BuildInProgress"
+        },
+        "Cost": {
+          "Minerals": 0,
+          "Vespene": 0,
+          "Terazine": 0,
+          "Custom": 0,
+          "Energy": 0,
+          "Life": 0,
+          "Shields": 0,
+          "Food": 0
+        },
+        "Row": 2,
+        "Column": 4,
+        "Type": "AbilCmd",
+        "AbilCmd": "BuildInProgress,Cancel",
+        "id": "CancelBuilding",
+        "Icon": "btn-command-cancel",
+        "Name": {
+          "enUS": "Cancel",
+          "ruRU": "Отменить /// Cancel"
+        },
+        "Tooltip": {
+          "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+          "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+        },
+        "Hotkey": "Esc"
       }
     ]
   },
@@ -566,20 +609,36 @@
   "Weapons": [],
   "Behaviors": [
     {
-      "id": "PowerUserQueueSmall"
+      "id": "PowerUserQueueSmall",
+      "Name": {
+        "enUS": "Power User (Queue, Small)",
+        "ruRU": "Power User (Queue, Small)"
+      },
+      "Tooltip": "-"
     },
     {
-      "id": "BatteryEnergy"
+      "id": "BatteryEnergy",
+      "Name": {
+        "enUS": "BatteryEnergy",
+        "ruRU": "BatteryEnergy"
+      },
+      "Tooltip": "-"
     }
   ],
   "Abilities": [
     {
       "id": "BuildInProgress",
-      "Name": "Build in Progress"
+      "Name": {
+        "enUS": "Build in Progress",
+        "ruRU": "Build in Progress"
+      }
     },
     {
       "id": "ShieldBatteryRechargeEx5",
-      "Name": ""
+      "Name": {
+        "enUS": "",
+        "ruRU": ""
+      }
     }
   ],
   "$Upgrades": [
@@ -591,13 +650,7 @@
     "ProtossShieldsLevel2",
     "ProtossShieldsLevel3",
     "ProtossBuild",
-    "ShieldBatteryBase",
-    "ShieldBattery",
-    "ShieldBatteryForged",
-    "ShieldBatteryIhanrii",
-    "DefaultSkinPack",
-    "ShieldBatteryForged",
-    "ShieldBatteryIhanrii"
+    "ProtossBuildingBirthSmall"
   ],
   "$Requirements": [],
   "$Production": [],
@@ -609,32 +662,67 @@
   ],
   "$Commands": [
     {
-      "AbilCmd": "ShieldBatteryRechargeEx5,Cancel",
-      "id": "Stop",
-      "Icon": "btn-command-stop",
-      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
-      "Name": "Stop"
-    },
-    {
       "AbilCmd": "BuildInProgress,Cancel",
       "id": "CancelBuilding",
       "Icon": "btn-command-cancel",
-      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-      "Name": "Cancel"
+      "Name": {
+        "enUS": "Cancel",
+        "ruRU": "Отменить /// Cancel"
+      },
+      "Tooltip": {
+        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+        "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+      }
     },
     {
       "AbilCmd": "ShieldBatteryRechargeEx5,Execute",
       "id": "ShieldBatteryRecharge",
       "Icon": "btn-ability-protoss-shieldbattery-color",
-      "Tooltip": "Restores target unit or structure's shields.",
-      "Name": "Restore"
+      "Name": {
+        "enUS": "Restore"
+      },
+      "Tooltip": {
+        "enUS": "Restores target unit or structure's shields."
+      }
     },
     {
       "AbilCmd": "stop,Stop",
       "id": "Stop",
       "Icon": "btn-command-stop",
-      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
-      "Name": "Stop"
+      "Name": {
+        "enUS": "Stop",
+        "ruRU": "Отставить /// Stop"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to cancel all orders and stop moving.",
+        "ruRU": "Orders selected units to cancel all orders and stop moving."
+      }
+    },
+    {
+      "AbilCmd": "stop,Stop",
+      "id": "Stop",
+      "Icon": "btn-command-stop",
+      "Name": {
+        "enUS": "Stop",
+        "ruRU": "Отставить /// Stop"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to cancel all orders and stop moving.",
+        "ruRU": "Orders selected units to cancel all orders and stop moving."
+      }
+    },
+    {
+      "AbilCmd": "BuildInProgress,Cancel",
+      "id": "CancelBuilding",
+      "Icon": "btn-command-cancel",
+      "Name": {
+        "enUS": "Cancel",
+        "ruRU": "Отменить /// Cancel"
+      },
+      "Tooltip": {
+        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+        "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+      }
     }
   ]
 }

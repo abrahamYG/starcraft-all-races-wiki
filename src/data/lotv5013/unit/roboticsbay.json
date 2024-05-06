@@ -1,6 +1,12 @@
 {
-  "Name": "Robotics Bay",
-  "Description": "Contains upgrades for the Observer, Warp Prism, and Colossus.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Colossi at the Robotics Facility<br/>- Disruptors at the Robotics Facility",
+  "Name": {
+    "enUS": "Robotics Bay",
+    "ruRU": "Robotics Bay"
+  },
+  "Description": {
+    "enUS": "Contains upgrades for the Observer, Warp Prism, and Colossus.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Colossi at the Robotics Facility<br/>- Disruptors at the Robotics Facility",
+    "ruRU": "Contains upgrades for the Observer, Warp Prism, and Colossus.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Colossi at the Robotics Facility<br/>- Disruptors at the Robotics Facility"
+  },
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -12,7 +18,10 @@
   "ResourceType": "Unknown",
   "LifeStart": 500,
   "LifeMax": 500,
-  "LifeArmorName": "Protoss Armor",
+  "LifeArmorName": {
+    "enUS": "Protoss Armor",
+    "ruRU": "Protoss Armor"
+  },
   "Mover": "Ground",
   "StationaryTurningRate": 719.4726,
   "TurningRate": 719.4726,
@@ -77,12 +86,21 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "FogVisibility": "Snapshot",
   "LifeArmor": 1,
   "ShieldsStart": 500,
   "ShieldsMax": 500,
   "ShieldRegenRate": 2,
-  "ShieldArmorName": "Protoss Plasma Shields",
+  "ShieldArmorName": {
+    "enUS": "Protoss Plasma Shields",
+    "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+  },
   "AttackTargetPriority": 11,
   "Footprint": "Footprint3x3Contour",
   "PlacementFootprint": "Footprint3x3",
@@ -103,9 +121,8 @@
     "Structure",
     "RoachBurrow",
     "ForceField",
-    "Small",
-    "Locust",
-    "Phased"
+    "Phased",
+    "Small"
   ],
   "Sight": 9,
   "CardLayouts": {
@@ -119,7 +136,6 @@
               "ShowInGlossary": 1
             },
             "DefaultButtonFace": "ResearchExtendedThermalLance",
-            "State": "Restricted",
             "Requirements": "LearnExtendedThermalLance"
           },
           "Resource": {
@@ -146,8 +162,14 @@
         "AbilCmd": "RoboticsBayResearch,Research6",
         "id": "ResearchExtendedThermalLance",
         "Icon": "btn-upgrade-protoss-extendedthermallance",
-        "Tooltip": "Increases the range of the <span style=\"color: #ffff8a\">Colossus</span> weapon by <b>3</b>.",
-        "Name": "Research Extended Thermal Lance",
+        "Name": {
+          "enUS": "Research Extended Thermal Lance",
+          "ruRU": "Research Extended Thermal Lance"
+        },
+        "Tooltip": {
+          "enUS": "Increases the range of the <span style=\"color: ffff8a\">Colossus</span> weapon.",
+          "ruRU": "Increases the range of the <span style=\"color: ffff8a\">Colossus</span> weapon."
+        },
         "Hotkey": "E"
       },
       {
@@ -169,6 +191,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "que5",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "QueueCount": 1,
           "Flags": {
             "BestUnit": 1,
@@ -201,8 +229,14 @@
         "AbilCmd": "que5,CancelLast",
         "id": "Cancel",
         "Icon": "btn-command-cancel",
-        "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
-        "Name": "Cancel",
+        "Name": {
+          "enUS": "Cancel",
+          "ruRU": "Отменить /// Cancel"
+        },
+        "Tooltip": {
+          "enUS": "Drops the current order without performing it, and allows you to select a different order.",
+          "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+        },
         "Hotkey": "Esc"
       },
       {
@@ -224,6 +258,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "BuildInProgress",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "Activity": "UI/Building",
           "VitalStartFactor": {
             "Life": 0.1,
@@ -256,8 +296,14 @@
         "AbilCmd": "BuildInProgress,Cancel",
         "id": "CancelBuilding",
         "Icon": "btn-command-cancel",
-        "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-        "Name": "Cancel",
+        "Name": {
+          "enUS": "Cancel",
+          "ruRU": "Отменить /// Cancel"
+        },
+        "Tooltip": {
+          "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+          "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+        },
         "Hotkey": "Esc"
       },
       {
@@ -269,7 +315,6 @@
               "ShowInGlossary": 1
             },
             "DefaultButtonFace": "ResearchGraviticBooster",
-            "State": "Restricted",
             "Requirements": "LearnGraviticBooster"
           },
           "Resource": {
@@ -296,8 +341,14 @@
         "AbilCmd": "RoboticsBayResearch,Research2",
         "id": "ResearchGraviticBooster",
         "Icon": "btn-upgrade-protoss-graviticbooster",
-        "Tooltip": "Increases the movement speed of <span style=\"color: #ffff8a\">Observers</span>.",
-        "Name": "Research Gravitic Boosters",
+        "Name": {
+          "enUS": "Research Gravitic Boosters",
+          "ruRU": "Research Gravitic Boosters"
+        },
+        "Tooltip": {
+          "enUS": "Increases the movement speed of <span style=\"color: ffff8a\">Observers</span>.",
+          "ruRU": "Increases the movement speed of <span style=\"color: ffff8a\">Observers</span>."
+        },
         "Hotkey": "B"
       },
       {
@@ -309,7 +360,6 @@
               "ShowInGlossary": 1
             },
             "DefaultButtonFace": "ResearchGraviticDrive",
-            "State": "Restricted",
             "Requirements": "LearnGraviticDrive"
           },
           "Resource": {
@@ -336,8 +386,14 @@
         "AbilCmd": "RoboticsBayResearch,Research3",
         "id": "ResearchGraviticDrive",
         "Icon": "btn-upgrade-protoss-graviticdrive",
-        "Tooltip": "Increases the movement speed of <span style=\"color: #ffff8a\">Warp Prisms</span>.",
-        "Name": "Research Gravitic Drive",
+        "Name": {
+          "enUS": "Research Gravitic Drive",
+          "ruRU": "Research Gravitic Drive"
+        },
+        "Tooltip": {
+          "enUS": "Increases the movement speed of <span style=\"color: ffff8a\">Warp Prisms</span>.",
+          "ruRU": "Increases the movement speed of <span style=\"color: ffff8a\">Warp Prisms</span>."
+        },
         "Hotkey": "G"
       }
     ]
@@ -363,42 +419,48 @@
   "Behaviors": [
     {
       "id": "PowerUserQueue",
-      "Icon": "btn-building-protoss-pylon"
+      "Icon": "btn-building-protoss-pylon",
+      "Name": {
+        "enUS": "Power User (Queue)",
+        "ruRU": "Power User (Queue)"
+      },
+      "Tooltip": "-"
     }
   ],
   "Abilities": [
     {
       "id": "BuildInProgress",
-      "Name": "Build in Progress"
+      "Name": {
+        "enUS": "Build in Progress",
+        "ruRU": "Build in Progress"
+      }
     },
     {
       "id": "RoboticsBayResearch",
-      "Name": "Research (Robotics Bay)"
+      "Name": {
+        "enUS": "Research (Robotics Bay)",
+        "ruRU": "Research (Robotics Bay)"
+      }
     },
     {
       "id": "que5",
-      "Name": "Queue (5)"
+      "Name": {
+        "ruRU": "Queue (5)",
+        "enUS": "Queue (5)"
+      }
     }
   ],
   "$Upgrades": [
-    "ProtossShieldsLevel1",
+    "CountUnitRoboticsBayCompleteOnlyTechTreeCheat",
     "RoboticsBay",
+    "ProtossShieldsLevel1",
     "RoboticsBay",
     "ProtossShields",
     "ProtossShieldsLevel2",
     "ProtossShieldsLevel3",
     "ProtossBuild",
-    "CountUnitRoboticsBayCompleteOnlyTechTreeCheat",
     "IsRoboticsBay",
-    "RoboticsBaySplat",
-    "CinematicMode",
-    "RoboticsBayBase",
-    "RoboticsBay",
-    "RoboticsBayForged",
-    "RoboticsBayIhanrii",
-    "DefaultSkinPack",
-    "RoboticsBayForged",
-    "RoboticsBayIhanrii"
+    "RoboticsBaySplat"
   ],
   "$Requirements": [],
   "$Production": [],
@@ -417,36 +479,66 @@
       "AbilCmd": "RoboticsBayResearch,Research6",
       "id": "ResearchExtendedThermalLance",
       "Icon": "btn-upgrade-protoss-extendedthermallance",
-      "Tooltip": "Increases the range of the <span style=\"color: #ffff8a\">Colossus</span> weapon by <b>3</b>.",
-      "Name": "Research Extended Thermal Lance"
+      "Name": {
+        "enUS": "Research Extended Thermal Lance",
+        "ruRU": "Research Extended Thermal Lance"
+      },
+      "Tooltip": {
+        "enUS": "Increases the range of the <span style=\"color: ffff8a\">Colossus</span> weapon.",
+        "ruRU": "Increases the range of the <span style=\"color: ffff8a\">Colossus</span> weapon."
+      }
     },
     {
       "AbilCmd": "que5,CancelLast",
       "id": "Cancel",
       "Icon": "btn-command-cancel",
-      "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
-      "Name": "Cancel"
+      "Name": {
+        "enUS": "Cancel",
+        "ruRU": "Отменить /// Cancel"
+      },
+      "Tooltip": {
+        "enUS": "Drops the current order without performing it, and allows you to select a different order.",
+        "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+      }
     },
     {
       "AbilCmd": "BuildInProgress,Cancel",
       "id": "CancelBuilding",
       "Icon": "btn-command-cancel",
-      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-      "Name": "Cancel"
+      "Name": {
+        "enUS": "Cancel",
+        "ruRU": "Отменить /// Cancel"
+      },
+      "Tooltip": {
+        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+        "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+      }
     },
     {
       "AbilCmd": "RoboticsBayResearch,Research2",
       "id": "ResearchGraviticBooster",
       "Icon": "btn-upgrade-protoss-graviticbooster",
-      "Tooltip": "Increases the movement speed of <span style=\"color: #ffff8a\">Observers</span>.",
-      "Name": "Research Gravitic Boosters"
+      "Name": {
+        "enUS": "Research Gravitic Boosters",
+        "ruRU": "Research Gravitic Boosters"
+      },
+      "Tooltip": {
+        "enUS": "Increases the movement speed of <span style=\"color: ffff8a\">Observers</span>.",
+        "ruRU": "Increases the movement speed of <span style=\"color: ffff8a\">Observers</span>."
+      }
     },
     {
       "AbilCmd": "RoboticsBayResearch,Research3",
       "id": "ResearchGraviticDrive",
       "Icon": "btn-upgrade-protoss-graviticdrive",
-      "Tooltip": "Increases the movement speed of <span style=\"color: #ffff8a\">Warp Prisms</span>.",
-      "Name": "Research Gravitic Drive"
+      "Name": {
+        "enUS": "Research Gravitic Drive",
+        "ruRU": "Research Gravitic Drive"
+      },
+      "Tooltip": {
+        "enUS": "Increases the movement speed of <span style=\"color: ffff8a\">Warp Prisms</span>.",
+        "ruRU": "Increases the movement speed of <span style=\"color: ffff8a\">Warp Prisms</span>."
+      }
     }
   ]
 }

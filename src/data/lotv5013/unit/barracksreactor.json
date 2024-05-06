@@ -1,6 +1,12 @@
 {
-  "Name": "Reactor",
-  "Description": "Allows 2 units to be created simultaneously.",
+  "Name": {
+    "enUS": "Reactor",
+    "ruRU": "Reactor"
+  },
+  "Description": {
+    "enUS": "Allows 2 units to be created simultaneously.",
+    "ruRU": "Allows 2 units to be created simultaneously."
+  },
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -12,7 +18,10 @@
   "ResourceType": "Unknown",
   "LifeStart": 400,
   "LifeMax": 400,
-  "LifeArmorName": "Terran Building Plating",
+  "LifeArmorName": {
+    "enUS": "Terran Building Plating",
+    "ruRU": "Terran Building Plating"
+  },
   "Mover": "Ground",
   "StationaryTurningRate": 719.4726,
   "TurningRate": 719.4726,
@@ -76,6 +85,12 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "Facing": 315,
   "FogVisibility": "Snapshot",
   "PlaneArray": [
@@ -87,8 +102,7 @@
     "Structure",
     "RoachBurrow",
     "ForceField",
-    "Small",
-    "Locust"
+    "Small"
   ],
   "Attributes": [
     "Armored",
@@ -125,6 +139,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "BuildInProgress",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "Activity": "UI/Building",
           "VitalStartFactor": {
             "Life": 0.1,
@@ -157,8 +177,14 @@
         "AbilCmd": "BuildInProgress,Cancel",
         "id": "CancelBuilding",
         "Icon": "btn-command-cancel",
-        "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-        "Name": "Cancel",
+        "Name": {
+          "enUS": "Cancel",
+          "ruRU": "Отменить /// Cancel"
+        },
+        "Tooltip": {
+          "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+          "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+        },
         "Hotkey": "Esc"
       }
     ]
@@ -195,25 +221,42 @@
   "Weapons": [],
   "Behaviors": [
     {
-      "id": "TerranBuildingBurnDown"
+      "id": "TerranBuildingBurnDown",
+      "Name": {
+        "enUS": "Building Burnout",
+        "ruRU": "Building Burnout"
+      },
+      "Tooltip": "-"
     }
   ],
   "Abilities": [
     {
       "id": "BuildInProgress",
-      "Name": "Build in Progress"
+      "Name": {
+        "enUS": "Build in Progress",
+        "ruRU": "Build in Progress"
+      }
     },
     {
       "id": "FactoryReactorMorph",
-      "Name": "Nuclear Reactor Morph (Factory)"
+      "Name": {
+        "enUS": "Nuclear Reactor Morph (Factory)",
+        "ruRU": "Nuclear Reactor Morph (Factory)"
+      }
     },
     {
       "id": "StarportReactorMorph",
-      "Name": "Nuclear Reactor Morph (Starport)"
+      "Name": {
+        "enUS": "Nuclear Reactor Morph (Starport)",
+        "ruRU": "Nuclear Reactor Morph (Starport)"
+      }
     },
     {
       "id": "ReactorMorph",
-      "Name": "Nuclear Reactor Morph"
+      "Name": {
+        "enUS": "Nuclear Reactor Morph",
+        "ruRU": "Nuclear Reactor Morph"
+      }
     }
   ],
   "$Upgrades": [
@@ -238,8 +281,14 @@
       "AbilCmd": "BuildInProgress,Cancel",
       "id": "CancelBuilding",
       "Icon": "btn-command-cancel",
-      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-      "Name": "Cancel"
+      "Name": {
+        "enUS": "Cancel",
+        "ruRU": "Отменить /// Cancel"
+      },
+      "Tooltip": {
+        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+        "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+      }
     }
   ]
 }

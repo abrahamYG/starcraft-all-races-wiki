@@ -1,6 +1,12 @@
 {
-  "Name": "Orbital Command",
-  "Description": "Primary structure. Must land to receive resources, produce units, or use abilities.",
+  "Name": {
+    "enUS": "Orbital Command",
+    "ruRU": "Orbital Command"
+  },
+  "Description": {
+    "enUS": "Primary structure. Must land to receive resources, produce units, or use abilities.",
+    "ruRU": "Primary structure. Must land to receive resources, produce units, or use abilities."
+  },
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -12,7 +18,10 @@
   "ResourceType": "Unknown",
   "LifeStart": 1500,
   "LifeMax": 1500,
-  "LifeArmorName": "Terran Building Plating",
+  "LifeArmorName": {
+    "enUS": "Terran Building Plating",
+    "ruRU": "Terran Building Plating"
+  },
   "Mover": "Fly",
   "StationaryTurningRate": 720,
   "TurningRate": 720,
@@ -78,6 +87,12 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "GlossaryAlias": "OrbitalCommand",
   "TechAliasArray": [
     "Alias_CommandCenter"
@@ -169,8 +184,14 @@
         "AbilCmd": "OrbitalCommandLand,Execute",
         "id": "Land",
         "Icon": "btn-ability-terran-land",
-        "Tooltip": "Lands the structure at a target location, allowing it to once again produce units, research upgrades, and use abilities.",
-        "Name": "Land ",
+        "Name": {
+          "enUS": "Land",
+          "ruRU": "Land"
+        },
+        "Tooltip": {
+          "enUS": "Lands the structure at a target location, allowing it to once again produce units, research upgrades, and use abilities.",
+          "ruRU": "Lands the structure at a target location, allowing it to once again produce units, research upgrades, and use abilities."
+        },
         "Hotkey": "L"
       },
       {
@@ -192,6 +213,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "stop",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "AbilSetId": "Stop",
           "CmdButtonArray": {
             "Stop": {
@@ -237,8 +264,14 @@
         "AbilCmd": "stop,Stop",
         "id": "Stop",
         "Icon": "btn-command-stop",
-        "Tooltip": "Orders selected units to cancel all orders and stop moving.",
-        "Name": "Stop",
+        "Name": {
+          "enUS": "Stop",
+          "ruRU": "Отставить /// Stop"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to cancel all orders and stop moving.",
+          "ruRU": "Orders selected units to cancel all orders and stop moving."
+        },
         "Hotkey": "S"
       },
       {
@@ -266,6 +299,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -303,8 +342,7 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move",
-          "AbilSetId": "Move"
+          "id": "move"
         },
         "Cost": {
           "Minerals": 0,
@@ -322,9 +360,249 @@
         "AbilCmd": "move,Move",
         "id": "Move",
         "Icon": "btn-command-move",
-        "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
-        "Name": "Move",
+        "Name": {
+          "enUS": "Move",
+          "ruRU": "Двигаться /// Move"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+          "ruRU": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies."
+        },
         "Hotkey": "M"
+      },
+      {
+        "Info": {
+          "class": "CAbilTransport",
+          "Name": "Abil/Name/CommandCenterTransport",
+          "TechPlayer": "Upkeep",
+          "EditorCategories": "Race:Terran,AbilityorEffectType:Structures",
+          "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
+          "OrderArray": [
+            {
+              "DisplayType": "Confirm",
+              "Color": "255,0,255,0",
+              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
+              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
+            }
+          ],
+          "SharedFlags": {
+            "DisableWhileDead": 1
+          },
+          "DataCollection": "CommandCenterTransport",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
+          "CmdButtonArray": {
+            "Load": {
+              "Flags": {
+                "ShowInGlossary": 1,
+                "Hidden": 1
+              }
+            },
+            "LoadAll": {
+              "Flags": {
+                "ShowInGlossary": 1
+              },
+              "DefaultButtonFace": "CommandCenterLoad"
+            },
+            "UnloadAll": {
+              "Flags": {
+                "ToSelection": 1
+              },
+              "DefaultButtonFace": "CommandCenterUnloadAll"
+            },
+            "UnloadAt": {
+              "Flags": {
+                "Hidden": 1
+              }
+            },
+            "UnloadUnit": {
+              "Flags": {
+                "Hidden": 1
+              }
+            }
+          },
+          "Alignment": "Positive",
+          "Range": [
+            1
+          ],
+          "MaxUnloadRange": 3,
+          "TargetFilters": [
+            "Visible;Ally,Neutral,Enemy,Buried,Dead,Hidden"
+          ],
+          "Flags": {
+            "AllowPassengerSmartCmd": 0,
+            "AllowSmartCmd": 0,
+            "ShowCargoSize": 1,
+            "ShowStatus": 1
+          },
+          "TargetSorts": {
+            "SortArray": [
+              "TSInterruptible",
+              "TSDistance"
+            ]
+          },
+          "ErrorAlert": "Error",
+          "MaxCargoCount": 5,
+          "MaxCargoSize": 1,
+          "TotalCargoSpace": 5,
+          "SearchRadius": 8,
+          "LoadValidatorArray": [
+            "CommandCenterTransportCombine",
+            "NotWidowMineTarget"
+          ],
+          "LoadCargoBehavior": "CCTransportDummy",
+          "AbilSetId": "ULdS",
+          "DeathUnloadEffect": "RemoveCommandCenterCargo",
+          "LoadCargoEffect": "CCLoadDummy",
+          "UnloadCargoEffect": "CCUnloadDummy",
+          "id": "CommandCenterTransport"
+        },
+        "Cost": {
+          "Minerals": 0,
+          "Vespene": 0,
+          "Terazine": 0,
+          "Custom": 0,
+          "Energy": 0,
+          "Life": 0,
+          "Shields": 0,
+          "Food": 0
+        },
+        "Row": 2,
+        "Column": 0,
+        "Type": "AbilCmd",
+        "AbilCmd": "CommandCenterTransport,LoadAll",
+        "id": "CommandCenterLoad",
+        "Icon": "btn-ability-terran-load",
+        "Name": {
+          "enUS": "Load",
+          "ruRU": "Load"
+        },
+        "Tooltip": {
+          "enUS": "Loads nearby SCVs into Command Center.",
+          "ruRU": "Loads nearby SCVs into Command Center."
+        },
+        "Hotkey": "O"
+      },
+      {
+        "Info": {
+          "class": "CAbilTransport",
+          "Name": "Abil/Name/CommandCenterTransport",
+          "TechPlayer": "Upkeep",
+          "EditorCategories": "Race:Terran,AbilityorEffectType:Structures",
+          "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
+          "OrderArray": [
+            {
+              "DisplayType": "Confirm",
+              "Color": "255,0,255,0",
+              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
+              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
+            }
+          ],
+          "SharedFlags": {
+            "DisableWhileDead": 1
+          },
+          "DataCollection": "CommandCenterTransport",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
+          "CmdButtonArray": {
+            "Load": {
+              "Flags": {
+                "ShowInGlossary": 1,
+                "Hidden": 1
+              }
+            },
+            "LoadAll": {
+              "Flags": {
+                "ShowInGlossary": 1
+              },
+              "DefaultButtonFace": "CommandCenterLoad"
+            },
+            "UnloadAll": {
+              "Flags": {
+                "ToSelection": 1
+              },
+              "DefaultButtonFace": "CommandCenterUnloadAll"
+            },
+            "UnloadAt": {
+              "Flags": {
+                "Hidden": 1
+              }
+            },
+            "UnloadUnit": {
+              "Flags": {
+                "Hidden": 1
+              }
+            }
+          },
+          "Alignment": "Positive",
+          "Range": [
+            1
+          ],
+          "MaxUnloadRange": 3,
+          "TargetFilters": [
+            "Visible;Ally,Neutral,Enemy,Buried,Dead,Hidden"
+          ],
+          "Flags": {
+            "AllowPassengerSmartCmd": 0,
+            "AllowSmartCmd": 0,
+            "ShowCargoSize": 1,
+            "ShowStatus": 1
+          },
+          "TargetSorts": {
+            "SortArray": [
+              "TSInterruptible",
+              "TSDistance"
+            ]
+          },
+          "ErrorAlert": "Error",
+          "MaxCargoCount": 5,
+          "MaxCargoSize": 1,
+          "TotalCargoSpace": 5,
+          "SearchRadius": 8,
+          "LoadValidatorArray": [
+            "CommandCenterTransportCombine",
+            "NotWidowMineTarget"
+          ],
+          "LoadCargoBehavior": "CCTransportDummy",
+          "AbilSetId": "ULdS",
+          "DeathUnloadEffect": "RemoveCommandCenterCargo",
+          "LoadCargoEffect": "CCLoadDummy",
+          "UnloadCargoEffect": "CCUnloadDummy",
+          "id": "CommandCenterTransport"
+        },
+        "Cost": {
+          "Minerals": 0,
+          "Vespene": 0,
+          "Terazine": 0,
+          "Custom": 0,
+          "Energy": 0,
+          "Life": 0,
+          "Shields": 0,
+          "Food": 0
+        },
+        "Row": 2,
+        "Column": 1,
+        "Type": "AbilCmd",
+        "AbilCmd": "CommandCenterTransport,UnloadAll",
+        "id": "BunkerUnloadAll",
+        "Icon": "btn-ability-terran-unloadall",
+        "Name": {
+          "enUS": "Unload All",
+          "ruRU": "Unload All"
+        },
+        "Tooltip": {
+          "enUS": "Unloads all units.",
+          "ruRU": "Unloads all units."
+        },
+        "Hotkey": "D"
       },
       {
         "Info": {
@@ -351,6 +629,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -388,8 +672,7 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move",
-          "AbilSetId": "Move"
+          "id": "move"
         },
         "Cost": {
           "Minerals": 0,
@@ -407,8 +690,14 @@
         "AbilCmd": "move,HoldPos",
         "id": "MoveHoldPosition",
         "Icon": "btn-command-holdposition",
-        "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
-        "Name": "Hold Position",
+        "Name": {
+          "enUS": "Hold Position",
+          "ruRU": "Удерживать позицию /// Hold Position"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+          "ruRU": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage."
+        },
         "Hotkey": "H"
       },
       {
@@ -436,6 +725,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -473,8 +768,7 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move",
-          "AbilSetId": "Move"
+          "id": "move"
         },
         "Cost": {
           "Minerals": 0,
@@ -492,93 +786,14 @@
         "AbilCmd": "move,Patrol",
         "id": "MovePatrol",
         "Icon": "btn-command-patrol",
-        "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
-        "Name": "Patrol",
-        "Hotkey": "P"
-      },
-      {
-        "Info": {
-          "class": "CAbilMove",
-          "Name": "Abil/Name/move",
-          "TechPlayer": "Upkeep",
-          "EditorCategories": "Race:Neutral,AbilityorEffectType:Units",
-          "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
-          "OrderArray": [
-            {
-              "DisplayType": "Move",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Move",
-              "Color": "255,35,125,255",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            }
-          ],
-          "SharedFlags": {
-            "DisableWhileDead": 1
-          },
-          "DataCollection": "move",
-          "CmdButtonArray": {
-            "Move": {
-              "Flags": {
-                "ToSelection": 1
-              },
-              "DefaultButtonFace": "Move"
-            },
-            "Patrol": {
-              "Flags": {
-                "ToSelection": 1
-              },
-              "DefaultButtonFace": "MovePatrol"
-            },
-            "HoldPos": {
-              "Flags": {
-                "ToSelection": 1
-              },
-              "DefaultButtonFace": "MoveHoldPosition"
-            },
-            "AcquireMove": {
-              "Flags": {
-                "ToSelection": 1
-              },
-              "DefaultButtonFace": "AcquireMove"
-            },
-            "Turn": {
-              "Flags": {
-                "ToSelection": 1
-              },
-              "DefaultButtonFace": "Turn"
-            }
-          },
-          "FleeRange": 5,
-          "FleeTime": 5,
-          "FollowRangeSlop": 1,
-          "FollowAcquireRange": 6,
-          "MinPatrolDistance": 1,
-          "id": "move",
-          "AbilSetId": "Move"
+        "Name": {
+          "enUS": "Patrol",
+          "ruRU": "Патрулировать /// Patrol"
         },
-        "Cost": {
-          "Minerals": 0,
-          "Vespene": 0,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
+        "Tooltip": {
+          "enUS": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+          "ruRU": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies."
         },
-        "Row": 0,
-        "Column": 3,
-        "Type": "AbilCmd",
-        "AbilCmd": "move,Patrol",
-        "id": "MovePatrol",
-        "Icon": "btn-command-patrol",
-        "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
-        "Name": "Patrol",
         "Hotkey": "P"
       }
     ]
@@ -590,33 +805,47 @@
   "Weapons": [],
   "Behaviors": [
     {
-      "id": "TerranBuildingBurnDown"
+      "id": "TerranBuildingBurnDown",
+      "Name": {
+        "enUS": "Building Burnout",
+        "ruRU": "Building Burnout"
+      },
+      "Tooltip": "-"
     }
   ],
   "Abilities": [
     {
       "id": "move",
-      "Name": "Move"
+      "Name": {
+        "enUS": "Move",
+        "ruRU": "Move"
+      }
     },
     {
       "id": "stop",
-      "Name": "Stop"
+      "Name": {
+        "enUS": "Stop",
+        "ruRU": "Stop"
+      }
     },
     {
       "id": "OrbitalCommandLand",
-      "Name": "Land (Orbital Command)"
+      "Name": {
+        "enUS": "Land (Orbital Command)",
+        "ruRU": "Land (Orbital Command)"
+      }
     }
   ],
   "$Upgrades": [
     "OrbitalLiftOff",
     "OrbitalCommandFlying",
-    "NotOrbitalCommandFlying",
-    "NotFlyingOrbitalCommand",
     "TerranBuildingArmor",
+    "NotOrbitalCommandFlying",
     "TerranBuildingLiftOff",
     "OrbitalCommand",
     "TerranOrbitalCommandPlayerDecalMacro",
-    "OrbitalCommandLand"
+    "OrbitalCommandLand",
+    "NotFlyingOrbitalCommand"
   ],
   "$Requirements": [],
   "$Production": [],
@@ -632,43 +861,92 @@
       "AbilCmd": "OrbitalCommandLand,Execute",
       "id": "Land",
       "Icon": "btn-ability-terran-land",
-      "Tooltip": "Lands the structure at a target location, allowing it to once again produce units, research upgrades, and use abilities.",
-      "Name": "Land "
+      "Name": {
+        "enUS": "Land",
+        "ruRU": "Land"
+      },
+      "Tooltip": {
+        "enUS": "Lands the structure at a target location, allowing it to once again produce units, research upgrades, and use abilities.",
+        "ruRU": "Lands the structure at a target location, allowing it to once again produce units, research upgrades, and use abilities."
+      }
     },
     {
       "AbilCmd": "stop,Stop",
       "id": "Stop",
       "Icon": "btn-command-stop",
-      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
-      "Name": "Stop"
+      "Name": {
+        "enUS": "Stop",
+        "ruRU": "Отставить /// Stop"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to cancel all orders and stop moving.",
+        "ruRU": "Orders selected units to cancel all orders and stop moving."
+      }
     },
     {
       "AbilCmd": "move,Move",
       "id": "Move",
       "Icon": "btn-command-move",
-      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
-      "Name": "Move"
+      "Name": {
+        "enUS": "Move",
+        "ruRU": "Двигаться /// Move"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+        "ruRU": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies."
+      }
+    },
+    {
+      "AbilCmd": "CommandCenterTransport,LoadAll",
+      "id": "CommandCenterLoad",
+      "Icon": "btn-ability-terran-load",
+      "Name": {
+        "enUS": "Load",
+        "ruRU": "Load"
+      },
+      "Tooltip": {
+        "enUS": "Loads nearby SCVs into Command Center.",
+        "ruRU": "Loads nearby SCVs into Command Center."
+      }
+    },
+    {
+      "AbilCmd": "CommandCenterTransport,UnloadAll",
+      "id": "BunkerUnloadAll",
+      "Icon": "btn-ability-terran-unloadall",
+      "Name": {
+        "enUS": "Unload All",
+        "ruRU": "Unload All"
+      },
+      "Tooltip": {
+        "enUS": "Unloads all units.",
+        "ruRU": "Unloads all units."
+      }
     },
     {
       "AbilCmd": "move,HoldPos",
       "id": "MoveHoldPosition",
       "Icon": "btn-command-holdposition",
-      "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
-      "Name": "Hold Position"
+      "Name": {
+        "enUS": "Hold Position",
+        "ruRU": "Удерживать позицию /// Hold Position"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+        "ruRU": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage."
+      }
     },
     {
       "AbilCmd": "move,Patrol",
       "id": "MovePatrol",
       "Icon": "btn-command-patrol",
-      "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
-      "Name": "Patrol"
-    },
-    {
-      "AbilCmd": "move,Patrol",
-      "id": "MovePatrol",
-      "Icon": "btn-command-patrol",
-      "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
-      "Name": "Patrol"
+      "Name": {
+        "enUS": "Patrol",
+        "ruRU": "Патрулировать /// Patrol"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+        "ruRU": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies."
+      }
     }
   ]
 }

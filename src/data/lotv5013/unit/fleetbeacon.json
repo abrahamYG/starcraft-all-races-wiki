@@ -1,6 +1,12 @@
 {
-  "Name": "Fleet Beacon",
-  "Description": "Contains upgrades for Phoenixes and Void Rays.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Tempests at the Stargate</n>- Carriers at the Stargate<br/>- Mothership from the Nexus",
+  "Name": {
+    "enUS": "Fleet Beacon",
+    "ruRU": "Fleet Beacon"
+  },
+  "Description": {
+    "enUS": "Contains upgrades for Phoenixes and Carriers.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Tempests at the Stargate<br/>- Carriers at the Stargate<br/>- Mothership from the Mothership Core",
+    "ruRU": "Contains upgrades for Phoenixes and Carriers.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Tempests at the Stargate<br/>- Carriers at the Stargate<br/>- Mothership from the Mothership Core"
+  },
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -12,7 +18,10 @@
   "ResourceType": "Unknown",
   "LifeStart": 500,
   "LifeMax": 500,
-  "LifeArmorName": "Protoss Armor",
+  "LifeArmorName": {
+    "enUS": "Protoss Armor",
+    "ruRU": "Protoss Armor"
+  },
   "Mover": "Ground",
   "StationaryTurningRate": 719.4726,
   "TurningRate": 719.4726,
@@ -77,6 +86,12 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "Facing": 315,
   "Mob": "Multiplayer",
   "FogVisibility": "Snapshot",
@@ -84,7 +99,10 @@
   "ShieldsStart": 500,
   "ShieldsMax": 500,
   "ShieldRegenRate": 2,
-  "ShieldArmorName": "Protoss Plasma Shields",
+  "ShieldArmorName": {
+    "enUS": "Protoss Plasma Shields",
+    "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+  },
   "AttackTargetPriority": 11,
   "Footprint": "Footprint3x3Contour",
   "PlacementFootprint": "Footprint3x3",
@@ -105,9 +123,8 @@
     "Structure",
     "RoachBurrow",
     "ForceField",
-    "Small",
-    "Locust",
-    "Phased"
+    "Phased",
+    "Small"
   ],
   "Sight": 9,
   "CardLayouts": {
@@ -131,6 +148,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "que5",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "QueueCount": 1,
           "Flags": {
             "BestUnit": 1,
@@ -163,8 +186,14 @@
         "AbilCmd": "que5,CancelLast",
         "id": "Cancel",
         "Icon": "btn-command-cancel",
-        "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
-        "Name": "Cancel",
+        "Name": {
+          "enUS": "Cancel",
+          "ruRU": "Отменить /// Cancel"
+        },
+        "Tooltip": {
+          "enUS": "Drops the current order without performing it, and allows you to select a different order.",
+          "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+        },
         "Hotkey": "Esc"
       },
       {
@@ -186,6 +215,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "BuildInProgress",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "Activity": "UI/Building",
           "VitalStartFactor": {
             "Life": 0.1,
@@ -218,9 +253,60 @@
         "AbilCmd": "BuildInProgress,Cancel",
         "id": "CancelBuilding",
         "Icon": "btn-command-cancel",
-        "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-        "Name": "Cancel",
+        "Name": {
+          "enUS": "Cancel",
+          "ruRU": "Отменить /// Cancel"
+        },
+        "Tooltip": {
+          "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+          "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+        },
         "Hotkey": "Esc"
+      },
+      {
+        "Upgrade": "VoidRaySpeedUpgrade",
+        "Info": {
+          "Button": {
+            "Flags": {
+              "AllowMinimap": 0,
+              "ShowInGlossary": 1
+            },
+            "DefaultButtonFace": "ResearchVoidRaySpeedUpgrade",
+            "Requirements": "LearnVoidRaySpeedUpgrade"
+          },
+          "Resource": {
+            "Minerals": 100,
+            "Vespene": 100
+          },
+          "Time": 80,
+          "Upgrade": "VoidRaySpeedUpgrade"
+        },
+        "Time": 80,
+        "Cost": {
+          "Minerals": 100,
+          "Vespene": 100,
+          "Terazine": 0,
+          "Custom": 0,
+          "Energy": 0,
+          "Life": 0,
+          "Shields": 0,
+          "Food": 0
+        },
+        "Row": 0,
+        "Column": 1,
+        "Type": "AbilCmd",
+        "AbilCmd": "FleetBeaconResearch,Research1",
+        "id": "ResearchVoidRaySpeedUpgrade",
+        "Icon": "btn-upgrade-protoss-fluxvanes",
+        "Name": {
+          "enUS": "Research Flux Vanes",
+          "ruRU": "Research Flux Vanes"
+        },
+        "Tooltip": {
+          "enUS": "Increases the speed and acceleration of the <span style=\"color: ffff8a\">Void Ray</span>.",
+          "ruRU": "Increases the speed and acceleration of the <span style=\"color: ffff8a\">Void Ray</span>."
+        },
+        "Hotkey": "F"
       },
       {
         "Upgrade": "PhoenixRangeUpgrade",
@@ -257,86 +343,14 @@
         "AbilCmd": "FleetBeaconResearch,Research3",
         "id": "AnionPulseCrystals",
         "Icon": "btn-upgrade-protoss-phoenixrange",
-        "Tooltip": "Increases <span style=\"color: #ffff8a\">Phoenix's</span> attack range by <b>2</b>.",
-        "Name": "Research Anion Pulse-Crystals"
-      },
-      {
-        "Upgrade": "VoidRaySpeedUpgrade",
-        "Info": {
-          "Button": {
-            "Flags": {
-              "AllowMinimap": 0,
-              "ShowInGlossary": 1
-            },
-            "DefaultButtonFace": "ResearchVoidRaySpeedUpgrade",
-            "Requirements": "LearnVoidRaySpeedUpgrade"
-          },
-          "Resource": {
-            "Minerals": 100,
-            "Vespene": 100
-          },
-          "Time": 80,
-          "Upgrade": "VoidRaySpeedUpgrade"
+        "Name": {
+          "enUS": "Research Anion Pulse-Crystals",
+          "ruRU": "Research Anion Pulse-Crystals"
         },
-        "Time": 80,
-        "Cost": {
-          "Minerals": 100,
-          "Vespene": 100,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 0,
-        "Column": 1,
-        "Type": "AbilCmd",
-        "AbilCmd": "FleetBeaconResearch,Research5",
-        "id": "ResearchVoidRaySpeedUpgrade",
-        "Icon": "btn-upgrade-protoss-fluxvanes",
-        "Tooltip": "Increases the speed and acceleration of the <span style=\"color: #ffff8a\">Void Ray</span>.",
-        "Name": "Research Flux Vanes",
-        "Hotkey": "F"
-      },
-      {
-        "Upgrade": "VoidRaySpeedUpgrade",
-        "Info": {
-          "Button": {
-            "Flags": {
-              "AllowMinimap": 0,
-              "ShowInGlossary": 1
-            },
-            "DefaultButtonFace": "ResearchVoidRaySpeedUpgrade",
-            "Requirements": "LearnVoidRaySpeedUpgrade"
-          },
-          "Resource": {
-            "Minerals": 100,
-            "Vespene": 100
-          },
-          "Time": 80,
-          "Upgrade": "VoidRaySpeedUpgrade"
-        },
-        "Time": 80,
-        "Cost": {
-          "Minerals": 100,
-          "Vespene": 100,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 0,
-        "Column": 1,
-        "Type": "AbilCmd",
-        "AbilCmd": "FleetBeaconResearch,Research5",
-        "id": "OracleEnergyUpgrade",
-        "Icon": "btn-upgrade-protoss-researchbosoniccore",
-        "Tooltip": "Increases the starting energy of Oracles by 25.",
-        "Name": "Research Bosonic Core",
-        "Hotkey": "A"
+        "Tooltip": {
+          "enUS": "Increases <span style=\"color: ffff8a\">Phoenix's</span> attack range by 2.",
+          "ruRU": "Increases <span style=\"color: ffff8a\">Phoenix's</span> attack range by 2."
+        }
       },
       {
         "Upgrade": "TempestGroundAttackUpgrade",
@@ -373,8 +387,12 @@
         "AbilCmd": "FleetBeaconResearch,Research6",
         "id": "TempestResearchGroundAttackUpgrade",
         "Icon": "btn-ability-protoss-disruptionblast",
-        "Tooltip": "Improves the <span style=\"color: #ffff8a\">Tempest's</span> weapon to deal +<b>40</b> damage vs structures.",
-        "Name": "Research Tectonic Destabilizers",
+        "Name": {
+          "enUS": "Research Tectonic Destabilizers"
+        },
+        "Tooltip": {
+          "enUS": "Improves the <span style=\"color: ffff8a\">Tempest's</span> Resonance Coil to deal +<b>40</b> damage vs structures."
+        },
         "Hotkey": "T"
       }
     ]
@@ -387,8 +405,8 @@
     "Vespene": 200
   },
   "TechTreeUnlockedUnitArray": [
-    "Mothership",
     "Carrier",
+    "Mothership",
     "Tempest"
   ],
   "ShieldRegenDelay": 10,
@@ -400,21 +418,35 @@
   "Behaviors": [
     {
       "id": "PowerUserQueue",
-      "Icon": "btn-building-protoss-pylon"
+      "Icon": "btn-building-protoss-pylon",
+      "Name": {
+        "enUS": "Power User (Queue)",
+        "ruRU": "Power User (Queue)"
+      },
+      "Tooltip": "-"
     }
   ],
   "Abilities": [
     {
       "id": "BuildInProgress",
-      "Name": "Build in Progress"
+      "Name": {
+        "enUS": "Build in Progress",
+        "ruRU": "Build in Progress"
+      }
     },
     {
       "id": "que5",
-      "Name": "Queue (5)"
+      "Name": {
+        "ruRU": "Queue (5)",
+        "enUS": "Queue (5)"
+      }
     },
     {
       "id": "FleetBeaconResearch",
-      "Name": "Research"
+      "Name": {
+        "enUS": "Research",
+        "ruRU": "Research"
+      }
     }
   ],
   "$Upgrades": [
@@ -427,22 +459,13 @@
     "ProtossShieldsLevel3",
     "ProtossBuild",
     "IsFleetBeacon",
-    "FleetBeaconSplat",
-    "CinematicMode",
-    "FleetBeaconBase",
-    "FleetBeacon",
-    "FleetBeaconTaldarim",
-    "FleetBeaconForged",
-    "FleetBeaconIhanrii",
-    "DefaultSkinPack",
-    "FleetBeaconForged",
-    "FleetBeaconIhanrii"
+    "FleetBeaconSplat"
   ],
   "$Requirements": [],
   "$Production": [],
   "$Research": [
-    "PhoenixRangeUpgrade",
     "VoidRaySpeedUpgrade",
+    "PhoenixRangeUpgrade",
     "TempestGroundAttackUpgrade"
   ],
   "$Morph": [],
@@ -455,43 +478,64 @@
       "AbilCmd": "que5,CancelLast",
       "id": "Cancel",
       "Icon": "btn-command-cancel",
-      "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
-      "Name": "Cancel"
+      "Name": {
+        "enUS": "Cancel",
+        "ruRU": "Отменить /// Cancel"
+      },
+      "Tooltip": {
+        "enUS": "Drops the current order without performing it, and allows you to select a different order.",
+        "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+      }
     },
     {
       "AbilCmd": "BuildInProgress,Cancel",
       "id": "CancelBuilding",
       "Icon": "btn-command-cancel",
-      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-      "Name": "Cancel"
+      "Name": {
+        "enUS": "Cancel",
+        "ruRU": "Отменить /// Cancel"
+      },
+      "Tooltip": {
+        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+        "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+      }
+    },
+    {
+      "AbilCmd": "FleetBeaconResearch,Research1",
+      "id": "ResearchVoidRaySpeedUpgrade",
+      "Icon": "btn-upgrade-protoss-fluxvanes",
+      "Name": {
+        "enUS": "Research Flux Vanes",
+        "ruRU": "Research Flux Vanes"
+      },
+      "Tooltip": {
+        "enUS": "Increases the speed and acceleration of the <span style=\"color: ffff8a\">Void Ray</span>.",
+        "ruRU": "Increases the speed and acceleration of the <span style=\"color: ffff8a\">Void Ray</span>."
+      }
     },
     {
       "AbilCmd": "FleetBeaconResearch,Research3",
       "id": "AnionPulseCrystals",
       "Icon": "btn-upgrade-protoss-phoenixrange",
-      "Tooltip": "Increases <span style=\"color: #ffff8a\">Phoenix's</span> attack range by <b>2</b>.",
-      "Name": "Research Anion Pulse-Crystals"
-    },
-    {
-      "AbilCmd": "FleetBeaconResearch,Research5",
-      "id": "ResearchVoidRaySpeedUpgrade",
-      "Icon": "btn-upgrade-protoss-fluxvanes",
-      "Tooltip": "Increases the speed and acceleration of the <span style=\"color: #ffff8a\">Void Ray</span>.",
-      "Name": "Research Flux Vanes"
-    },
-    {
-      "AbilCmd": "FleetBeaconResearch,Research5",
-      "id": "OracleEnergyUpgrade",
-      "Icon": "btn-upgrade-protoss-researchbosoniccore",
-      "Tooltip": "Increases the starting energy of Oracles by 25.",
-      "Name": "Research Bosonic Core"
+      "Name": {
+        "enUS": "Research Anion Pulse-Crystals",
+        "ruRU": "Research Anion Pulse-Crystals"
+      },
+      "Tooltip": {
+        "enUS": "Increases <span style=\"color: ffff8a\">Phoenix's</span> attack range by 2.",
+        "ruRU": "Increases <span style=\"color: ffff8a\">Phoenix's</span> attack range by 2."
+      }
     },
     {
       "AbilCmd": "FleetBeaconResearch,Research6",
       "id": "TempestResearchGroundAttackUpgrade",
       "Icon": "btn-ability-protoss-disruptionblast",
-      "Tooltip": "Improves the <span style=\"color: #ffff8a\">Tempest's</span> weapon to deal +<b>40</b> damage vs structures.",
-      "Name": "Research Tectonic Destabilizers"
+      "Name": {
+        "enUS": "Research Tectonic Destabilizers"
+      },
+      "Tooltip": {
+        "enUS": "Improves the <span style=\"color: ffff8a\">Tempest's</span> Resonance Coil to deal +<b>40</b> damage vs structures."
+      }
     }
   ]
 }

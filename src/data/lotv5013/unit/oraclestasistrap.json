@@ -1,6 +1,12 @@
 {
-  "Name": "Stasis Ward",
-  "Description": "Ground unit trap. Cloak renders the Stasis Ward invisible to enemies without detection.",
+  "Name": {
+    "enUS": "Stasis Ward",
+    "ruRU": "Stasis Ward"
+  },
+  "Description": {
+    "enUS": "Ground unit trap. Cloak renders the Stasis Ward invisible to enemies without detection.",
+    "ruRU": "Ground unit trap. Cloak renders the Stasis Ward invisible to enemies without detection."
+  },
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 2,
   "DeathRevealDuration": 4,
@@ -12,7 +18,10 @@
   "ResourceType": "Unknown",
   "LifeStart": 30,
   "LifeMax": 30,
-  "LifeArmorName": "Protoss Armor",
+  "LifeArmorName": {
+    "enUS": "Protoss Armor",
+    "ruRU": "Protoss Armor"
+  },
   "Mover": "Ground",
   "StationaryTurningRate": 720,
   "TurningRate": 720,
@@ -33,13 +42,13 @@
     "ClearRallyOnTargetLost",
     "PlayerRevivable",
     "CameraFollow",
+    "UseLineOfSight",
+    "NoScore",
     "NoPortraitTalk",
     "AIThreatGround",
     "AILifetime",
     "AISplash",
-    "AIHighPrioTarget",
-    "UseLineOfSight",
-    "NoScore"
+    "AIHighPrioTarget"
   ],
   "EditorFlags": [
     "BlockStructures"
@@ -77,6 +86,12 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "Mob": "Multiplayer",
   "PlaneArray": [
     "Ground"
@@ -88,7 +103,10 @@
   "ShieldsStart": 30,
   "ShieldsMax": 30,
   "ShieldRegenRate": 2,
-  "ShieldArmorName": "Protoss Plasma Shields",
+  "ShieldArmorName": {
+    "enUS": "Protoss Plasma Shields",
+    "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+  },
   "Sight": 7,
   "AttackTargetPriority": 20,
   "CardLayouts": {
@@ -110,8 +128,14 @@
         "AbilCmd": "OracleStasisTrapActivate,Execute",
         "id": "ActivateStasisWard",
         "Icon": "btn-ability-protoss-stasistrap",
-        "Tooltip": "Traps nearby enemies in stasis for <b>30</b> seconds. Trapped units cannot be attacked or affected by abilities.",
-        "Name": "Stasis Trap"
+        "Name": {
+          "enUS": "Stasis",
+          "ruRU": "Stasis"
+        },
+        "Tooltip": {
+          "enUS": "Traps nearby enemies in stasis for <b>30</b> seconds. Trapped units cannot be attacked or affected by abilities.",
+          "ruRU": "Traps nearby enemies in stasis for <b>30</b> seconds. Trapped units cannot be attacked or affected by abilities."
+        }
       },
       {
         "Info": {
@@ -132,6 +156,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "BuildInProgress",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "Activity": "UI/Building",
           "VitalStartFactor": {
             "Life": 0.1,
@@ -164,8 +194,14 @@
         "AbilCmd": "BuildInProgress,Cancel",
         "id": "CancelBuilding",
         "Icon": "btn-command-cancel",
-        "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-        "Name": "Cancel",
+        "Name": {
+          "enUS": "Cancel",
+          "ruRU": "Отменить /// Cancel"
+        },
+        "Tooltip": {
+          "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+          "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+        },
         "Hotkey": "Esc"
       },
       {
@@ -184,8 +220,14 @@
         "Type": "Passive",
         "id": "PermanentlyCloakedStasis",
         "Icon": "btn-upgrade-vorazun-stasiswardpermanentlycloaked",
-        "Tooltip": "The Stasis Ward is permanently cloaked.",
-        "Name": "Permanently Cloaked"
+        "Name": {
+          "enUS": "Permanently Cloaked",
+          "ruRU": "Permanently Cloaked"
+        },
+        "Tooltip": {
+          "enUS": "The Stasis Ward is permanently cloaked.",
+          "ruRU": "The Stasis Ward is permanently cloaked."
+        }
       }
     ]
   },
@@ -204,7 +246,6 @@
   "GlossaryPriority": 250,
   "AINotifyEffect": "OracleStasisTrapActivate",
   "Footprint": "OracleStasisTrap",
-  "id": "OracleStasisTrap",
   "GlossaryStrongArray": [
     "Marine",
     "Zergling",
@@ -215,26 +256,40 @@
     "Overseer",
     "Observer"
   ],
+  "id": "OracleStasisTrap",
   "Icon": "btn-ability-protoss-oracle-stasisward",
   "LifeArmorIcon": "btn-armor-protoss-buildingplating",
   "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
   "Weapons": [],
   "Behaviors": [
     {
-      "id": "OracleStasisTrapCloak"
+      "id": "OracleStasisTrapCloak",
+      "Name": {
+        "enUS": "Oracle Stasis Ward Cloak",
+        "ruRU": "Oracle Stasis Ward Cloak ///Auto - Copied from enUS Locale"
+      },
+      "Tooltip": "-"
     },
     {
-      "id": "StasisWardTimedLife"
+      "id": "StasisWardTimedLife",
+      "Name": "-",
+      "Tooltip": "-"
     }
   ],
   "Abilities": [
     {
       "id": "OracleStasisTrapActivate",
-      "Name": "Activate"
+      "Name": {
+        "enUS": "Activate",
+        "ruRU": "Activate"
+      }
     },
     {
       "id": "BuildInProgress",
-      "Name": "Build in Progress"
+      "Name": {
+        "enUS": "Build in Progress",
+        "ruRU": "Build in Progress"
+      }
     }
   ],
   "$Upgrades": [
@@ -260,15 +315,27 @@
       "AbilCmd": "OracleStasisTrapActivate,Execute",
       "id": "ActivateStasisWard",
       "Icon": "btn-ability-protoss-stasistrap",
-      "Tooltip": "Traps nearby enemies in stasis for <b>30</b> seconds. Trapped units cannot be attacked or affected by abilities.",
-      "Name": "Stasis Trap"
+      "Name": {
+        "enUS": "Stasis",
+        "ruRU": "Stasis"
+      },
+      "Tooltip": {
+        "enUS": "Traps nearby enemies in stasis for <b>30</b> seconds. Trapped units cannot be attacked or affected by abilities.",
+        "ruRU": "Traps nearby enemies in stasis for <b>30</b> seconds. Trapped units cannot be attacked or affected by abilities."
+      }
     },
     {
       "AbilCmd": "BuildInProgress,Cancel",
       "id": "CancelBuilding",
       "Icon": "btn-command-cancel",
-      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-      "Name": "Cancel"
+      "Name": {
+        "enUS": "Cancel",
+        "ruRU": "Отменить /// Cancel"
+      },
+      "Tooltip": {
+        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+        "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+      }
     }
   ]
 }

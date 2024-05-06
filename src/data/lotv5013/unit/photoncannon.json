@@ -1,6 +1,12 @@
 {
-  "Name": "Photon Cannon",
-  "Description": "Primary defensive structure.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span><br/><span style=\"color: #FFE303\">Detector</span>",
+  "Name": {
+    "enUS": "Photon Cannon",
+    "ruRU": "Photon Cannon"
+  },
+  "Description": {
+    "enUS": "Primary defensive structure.<br/><br/><span style=\"color: ffff8a\">Can attack ground and air units.</span><br/><span style=\"color: FFE303\">Detector</span>",
+    "ruRU": "Primary defensive structure.<br/><br/><span style=\"color: ffff8a\">Can attack ground and air units.</span><br/><span style=\"color: FFE303\">Detector</span>"
+  },
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 2,
   "DeathRevealDuration": 4,
@@ -12,7 +18,10 @@
   "ResourceType": "Unknown",
   "LifeStart": 150,
   "LifeMax": 150,
-  "LifeArmorName": "Protoss Armor",
+  "LifeArmorName": {
+    "enUS": "Protoss Armor",
+    "ruRU": "Protoss Armor"
+  },
   "Mover": "Ground",
   "StationaryTurningRate": 720,
   "TurningRate": 720,
@@ -78,6 +87,12 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "Facing": 45,
   "Mob": "Multiplayer",
   "FogVisibility": "Snapshot",
@@ -85,7 +100,10 @@
   "ShieldsStart": 150,
   "ShieldsMax": 150,
   "ShieldRegenRate": 2,
-  "ShieldArmorName": "Protoss Plasma Shields",
+  "ShieldArmorName": {
+    "enUS": "Protoss Plasma Shields",
+    "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+  },
   "AttackTargetPriority": 20,
   "Footprint": "Footprint2x2Contour",
   "PlacementFootprint": "Footprint2x2",
@@ -106,9 +124,8 @@
     "Structure",
     "RoachBurrow",
     "ForceField",
-    "Small",
-    "Locust",
-    "Phased"
+    "Phased",
+    "Small"
   ],
   "Sight": 11,
   "CardLayouts": {
@@ -132,6 +149,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "BuildInProgress",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "Activity": "UI/Building",
           "VitalStartFactor": {
             "Life": 0.1,
@@ -164,8 +187,14 @@
         "AbilCmd": "BuildInProgress,Cancel",
         "id": "CancelBuilding",
         "Icon": "btn-command-cancel",
-        "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-        "Name": "Cancel",
+        "Name": {
+          "enUS": "Cancel",
+          "ruRU": "Отменить /// Cancel"
+        },
+        "Tooltip": {
+          "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+          "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+        },
         "Hotkey": "Esc"
       },
       {
@@ -187,6 +216,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "stop",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "AbilSetId": "Stop",
           "CmdButtonArray": {
             "Stop": {
@@ -232,8 +267,14 @@
         "AbilCmd": "stop,Stop",
         "id": "Stop",
         "Icon": "btn-command-stop",
-        "Tooltip": "Orders selected units to cancel all orders and stop moving.",
-        "Name": "Stop",
+        "Name": {
+          "enUS": "Stop",
+          "ruRU": "Отставить /// Stop"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to cancel all orders and stop moving.",
+          "ruRU": "Orders selected units to cancel all orders and stop moving."
+        },
         "Hotkey": "S"
       },
       {
@@ -255,6 +296,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "attack",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "AbilSetId": "Attack",
           "Alignment": "Negative",
           "AcquireFilters": "-;Player,Ally,Neutral,Dead,Hidden,Invulnerable,Benign",
@@ -301,8 +348,14 @@
         "AbilCmd": "attack,Execute",
         "id": "AttackBuilding",
         "Icon": "btn-command-attack",
-        "Tooltip": "Targets and attacks the target unit until it is destroyed or moves out of range.",
-        "Name": "Attack",
+        "Name": {
+          "enUS": "Attack",
+          "ruRU": "Attack"
+        },
+        "Tooltip": {
+          "enUS": "Targets and attacks the target unit until it is destroyed or moves out of range.",
+          "ruRU": "Targets and attacks the target unit until it is destroyed or moves out of range."
+        },
         "Hotkey": "A"
       },
       {
@@ -321,8 +374,14 @@
         "Type": "Passive",
         "id": "Detector",
         "Icon": "btn-status-detector",
-        "Tooltip": "This unit can detect cloaked, burrowed, and hallucinated units.",
-        "Name": "Detector"
+        "Name": {
+          "enUS": "Detector",
+          "ruRU": "Detector"
+        },
+        "Tooltip": {
+          "enUS": "This unit can detect cloaked, burrowed, and hallucinated units.",
+          "ruRU": "This unit can detect cloaked, burrowed, and hallucinated units."
+        }
       }
     ]
   },
@@ -334,7 +393,6 @@
   "HotkeyCategory": "Unit/Category/ProtossUnits",
   "ShieldRegenDelay": 10,
   "CostCategory": "Technology",
-  "id": "PhotonCannon",
   "GlossaryStrongArray": [
     "Banshee",
     "Mutalisk",
@@ -345,6 +403,7 @@
     "BroodLord",
     "Immortal"
   ],
+  "id": "PhotonCannon",
   "Icon": "btn-building-protoss-photoncannon",
   "LifeArmorIcon": "btn-armor-protoss-buildingplating",
   "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
@@ -353,7 +412,10 @@
       "Turret": "PhotonCannon",
       "id": "PhotonCannon",
       "Icon": "btn-building-protoss-photoncannon",
-      "Name": "Photon Cannon",
+      "Name": {
+        "enUS": "Photon Cannon",
+        "ruRU": "Photon Cannon"
+      },
       "Amount": 20,
       "Kind": "Ranged",
       "TargetFilters": "",
@@ -365,50 +427,66 @@
     {
       "id": "Detector11",
       "Icon": "btn-status-detector",
-      "Tooltip": "This unit can detect cloaked or burrowed units within its sight range.",
-      "Name": "Detector"
+      "Name": {
+        "enUS": "Detector",
+        "ruRU": "Детектор /// Detector"
+      },
+      "Tooltip": {
+        "enUS": "This unit can detect cloaked or burrowed units within its sight range.",
+        "ruRU": "Эта боевая единица может обнаруживать замаскированные или закопанные войска в поле обзора."
+      }
     },
     {
-      "id": "PowerUserBaseDefenseSmall"
+      "id": "PowerUserBaseDefenseSmall",
+      "Name": {
+        "enUS": "Power User (Queue, Base defense)",
+        "ruRU": "Power User (Queue, Base defense)"
+      },
+      "Tooltip": "-"
     },
     {
-      "id": "UnderConstruction"
+      "id": "UnderConstruction",
+      "Name": {
+        "enUS": "Under Construction",
+        "ruRU": "Under Construction"
+      },
+      "Tooltip": "-"
     }
   ],
   "Abilities": [
     {
       "id": "BuildInProgress",
-      "Name": "Build in Progress"
+      "Name": {
+        "enUS": "Build in Progress",
+        "ruRU": "Build in Progress"
+      }
     },
     {
       "id": "stop",
-      "Name": "Stop"
+      "Name": {
+        "enUS": "Stop",
+        "ruRU": "Stop"
+      }
     },
     {
       "id": "attack",
-      "Name": "Attack"
+      "Name": {
+        "ruRU": "Attack",
+        "enUS": "Attack"
+      }
     }
   ],
   "$Upgrades": [
-    "ProtossShieldsLevel1",
+    "IsPhotonCannon",
     "PhotonCannon",
+    "ProtossShieldsLevel1",
     "PhotonCannon",
     "ProtossShields",
     "ProtossShieldsLevel2",
     "ProtossShieldsLevel3",
     "ProtossBuild",
-    "IsPhotonCannon",
     "PhotonCannonSplat",
-    "NotPhotonCannon",
-    "CinematicMode",
-    "PhotonCannonBase",
-    "PhotonCannon",
-    "PhotonCannonTaldarim",
-    "PhotonCannonForged",
-    "PhotonCannonIhanrii",
-    "DefaultSkinPack",
-    "PhotonCannonForged",
-    "PhotonCannonIhanrii"
+    "NotPhotonCannon"
   ],
   "$Requirements": [],
   "$Production": [],
@@ -423,22 +501,40 @@
       "AbilCmd": "BuildInProgress,Cancel",
       "id": "CancelBuilding",
       "Icon": "btn-command-cancel",
-      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-      "Name": "Cancel"
+      "Name": {
+        "enUS": "Cancel",
+        "ruRU": "Отменить /// Cancel"
+      },
+      "Tooltip": {
+        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+        "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+      }
     },
     {
       "AbilCmd": "stop,Stop",
       "id": "Stop",
       "Icon": "btn-command-stop",
-      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
-      "Name": "Stop"
+      "Name": {
+        "enUS": "Stop",
+        "ruRU": "Отставить /// Stop"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to cancel all orders and stop moving.",
+        "ruRU": "Orders selected units to cancel all orders and stop moving."
+      }
     },
     {
       "AbilCmd": "attack,Execute",
       "id": "AttackBuilding",
       "Icon": "btn-command-attack",
-      "Tooltip": "Targets and attacks the target unit until it is destroyed or moves out of range.",
-      "Name": "Attack"
+      "Name": {
+        "enUS": "Attack",
+        "ruRU": "Attack"
+      },
+      "Tooltip": {
+        "enUS": "Targets and attacks the target unit until it is destroyed or moves out of range.",
+        "ruRU": "Targets and attacks the target unit until it is destroyed or moves out of range."
+      }
     }
   ]
 }

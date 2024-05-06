@@ -12,13 +12,19 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "AdeptPiercingAttack",
+  "EditorCategories": "Race:Protoss,UpgradeType:Spell",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "EffectArray": [
     {
       "Reference": "Weapon,Adept,RateMultiplier",
       "Value": "0.45"
     }
   ],
-  "EditorCategories": "Race:Protoss,UpgradeType:AttackBonus",
   "AffectedUnitArray": [
     "Adept"
   ],

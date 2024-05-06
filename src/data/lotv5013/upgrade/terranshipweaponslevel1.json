@@ -12,8 +12,14 @@
   "ScoreValue": "WeaponTechnologyValue",
   "WebPriority": 0,
   "LeaderAlias": "TerranShipWeapons",
+  "EditorCategories": "Race:Terran,UpgradeType:Bonus",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "Race": "Terr",
-  "EditorCategories": "Race:Terran,UpgradeType:AttackBonus",
   "ScoreResult": "BuildOrder",
   "EffectArray": [
     {

@@ -13,16 +13,22 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "MedivacCaduceusReactor",
+  "EditorCategories": "Race:Terran,UpgradeType:Spell",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "ScoreAmount": 200,
   "ScoreResult": "BuildOrder",
   "EffectArray": [
     {
+      "Operation": "Multiply",
       "Reference": "Unit,Medivac,EnergyRegenRate",
-      "Value": "2.000000",
-      "Operation": "Multiply"
+      "Value": "2.000000"
     }
   ],
-  "EditorCategories": "Race:Terran,UpgradeType:Talents",
   "Race": "Terr",
   "AffectedUnitArray": [
     "Medivac"

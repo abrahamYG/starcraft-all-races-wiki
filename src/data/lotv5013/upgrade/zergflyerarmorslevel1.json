@@ -12,8 +12,14 @@
   "ScoreValue": "ArmorTechnologyValue",
   "WebPriority": 0,
   "LeaderAlias": "ZergFlyerArmors",
+  "EditorCategories": "Race:Zerg,UpgradeType:Bonus",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "Race": "Zerg",
-  "EditorCategories": "Race:Zerg,UpgradeType:ArmorBonus",
   "ScoreResult": "BuildOrder",
   "EffectArray": [
     {
@@ -166,6 +172,6 @@
     "TransportOverlordCocoon",
     "OverseerSiegeMode"
   ],
-  "ScoreAmount": 200,
+  "ScoreAmount": 300,
   "LeaderLevel": 1
 }

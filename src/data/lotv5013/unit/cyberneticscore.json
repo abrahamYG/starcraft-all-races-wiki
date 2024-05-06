@@ -1,6 +1,12 @@
 {
-  "Name": "Cybernetics Core",
-  "Description": "Contains weapon and armor upgrades for Protoss air units and the Warp Gate upgrade.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Sentries at the Gateway<br/>- Stalkers at the Gateway<br/>- Adepts at the Gateway<br/>- Shield Batteries from Probes",
+  "Name": {
+    "enUS": "Cybernetics Core",
+    "ruRU": "Cybernetics Core"
+  },
+  "Description": {
+    "ruRU": "Contains weapon and armor upgrades for Protoss air units and the Warp Gate upgrade.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Sentries at the Gateway<br/>- Stalkers at the Gateway<br/>- Adepts at the Gateway<br/>- Mothership Core at the Nexus",
+    "enUS": "Contains weapon and armor upgrades for Protoss air units and the Warp Gate upgrade.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Sentries at the Gateway<br/>- Stalkers at the Gateway<br/>- Adepts at the Gateway<br/>- Mothership Core at the Nexus"
+  },
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -12,7 +18,10 @@
   "ResourceType": "Unknown",
   "LifeStart": 550,
   "LifeMax": 550,
-  "LifeArmorName": "Protoss Armor",
+  "LifeArmorName": {
+    "enUS": "Protoss Armor",
+    "ruRU": "Protoss Armor"
+  },
   "Mover": "Ground",
   "StationaryTurningRate": 719.4726,
   "TurningRate": 719.4726,
@@ -77,6 +86,12 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "Facing": 315,
   "Mob": "Multiplayer",
   "FogVisibility": "Snapshot",
@@ -84,7 +99,10 @@
   "ShieldsStart": 550,
   "ShieldsMax": 550,
   "ShieldRegenRate": 2,
-  "ShieldArmorName": "Protoss Plasma Shields",
+  "ShieldArmorName": {
+    "enUS": "Protoss Plasma Shields",
+    "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+  },
   "AttackTargetPriority": 11,
   "Footprint": "Footprint3x3Contour",
   "PlacementFootprint": "Footprint3x3",
@@ -105,9 +123,8 @@
     "Structure",
     "RoachBurrow",
     "ForceField",
-    "Small",
-    "Locust",
-    "Phased"
+    "Phased",
+    "Small"
   ],
   "Sight": 9,
   "CardLayouts": {
@@ -120,7 +137,6 @@
               "AllowMinimap": 0
             },
             "DefaultButtonFace": "ProtossAirWeaponsLevel1",
-            "State": "Restricted",
             "Requirements": "LearnProtossAirWeapon1"
           },
           "Resource": {
@@ -147,8 +163,14 @@
         "AbilCmd": "CyberneticsCoreResearch,Research1",
         "id": "ProtossAirWeaponsLevel1",
         "Icon": "btn-upgrade-protoss-airweaponslevel1",
-        "Tooltip": "Upgrades the damage dealt by Protoss air units.",
-        "Name": "Upgrade Air Weapons Level 1",
+        "Name": {
+          "enUS": "Upgrade Air Weapons Level 1",
+          "ruRU": "Upgrade Air Weapons Level 1"
+        },
+        "Tooltip": {
+          "enUS": "Upgrades the damage dealt by Protoss air units.",
+          "ruRU": "Upgrades the damage dealt by Protoss air units."
+        },
         "Hotkey": "E"
       },
       {
@@ -159,7 +181,6 @@
               "AllowMinimap": 0
             },
             "DefaultButtonFace": "ProtossAirWeaponsLevel2",
-            "State": "Restricted",
             "Requirements": "LearnProtossAirWeapon2"
           },
           "Resource": {
@@ -186,8 +207,14 @@
         "AbilCmd": "CyberneticsCoreResearch,Research2",
         "id": "ProtossAirWeaponsLevel2",
         "Icon": "btn-upgrade-protoss-airweaponslevel2",
-        "Tooltip": "Further upgrades the damage dealt by Protoss air units.",
-        "Name": "Upgrade Air Weapons Level 2",
+        "Name": {
+          "enUS": "Upgrade Air Weapons Level 2",
+          "ruRU": "Upgrade Air Weapons Level 2"
+        },
+        "Tooltip": {
+          "enUS": "Further upgrades the damage dealt by Protoss air units.",
+          "ruRU": "Further upgrades the damage dealt by Protoss air units."
+        },
         "Hotkey": "E"
       },
       {
@@ -198,7 +225,6 @@
               "AllowMinimap": 0
             },
             "DefaultButtonFace": "ProtossAirWeaponsLevel3",
-            "State": "Restricted",
             "Requirements": "LearnProtossAirWeapon3"
           },
           "Resource": {
@@ -225,8 +251,14 @@
         "AbilCmd": "CyberneticsCoreResearch,Research3",
         "id": "ProtossAirWeaponsLevel3",
         "Icon": "btn-upgrade-protoss-airweaponslevel3",
-        "Tooltip": "Maximizes the damage dealt by Protoss air units.",
-        "Name": "Upgrade Air Weapons Level 3",
+        "Name": {
+          "enUS": "Upgrade Air Weapons Level 3",
+          "ruRU": "Upgrade Air Weapons Level 3"
+        },
+        "Tooltip": {
+          "enUS": "Maximizes the damage dealt by Protoss air units.",
+          "ruRU": "Maximizes the damage dealt by Protoss air units."
+        },
         "Hotkey": "E"
       },
       {
@@ -237,7 +269,6 @@
               "AllowMinimap": 0
             },
             "DefaultButtonFace": "ProtossAirArmorLevel1",
-            "State": "Restricted",
             "Requirements": "LearnProtossAirArmor1"
           },
           "Resource": {
@@ -264,8 +295,14 @@
         "AbilCmd": "CyberneticsCoreResearch,Research4",
         "id": "ProtossAirArmorLevel1",
         "Icon": "btn-upgrade-protoss-airarmorlevel1",
-        "Tooltip": "Upgrades the armor of Protoss air units.",
-        "Name": "Upgrade Air Armor Level 1",
+        "Name": {
+          "enUS": "Upgrade Air Armor Level 1",
+          "ruRU": "Upgrade Air Armor Level 1"
+        },
+        "Tooltip": {
+          "enUS": "Upgrades the armor of Protoss air units.",
+          "ruRU": "Upgrades the armor of Protoss air units."
+        },
         "Hotkey": "A"
       },
       {
@@ -276,7 +313,6 @@
               "AllowMinimap": 0
             },
             "DefaultButtonFace": "ProtossAirArmorLevel2",
-            "State": "Restricted",
             "Requirements": "LearnProtossAirArmor2"
           },
           "Resource": {
@@ -303,8 +339,14 @@
         "AbilCmd": "CyberneticsCoreResearch,Research5",
         "id": "ProtossAirArmorLevel2",
         "Icon": "btn-upgrade-protoss-airarmorlevel2",
-        "Tooltip": "Further upgrades the armor of Protoss air units.",
-        "Name": "Upgrade Air Armor Level 2",
+        "Name": {
+          "enUS": "Upgrade Air Armor Level 2",
+          "ruRU": "Upgrade Air Armor Level 2"
+        },
+        "Tooltip": {
+          "enUS": "Further upgrades the armor of Protoss air units.",
+          "ruRU": "Further upgrades the armor of Protoss air units."
+        },
         "Hotkey": "A"
       },
       {
@@ -315,7 +357,6 @@
               "AllowMinimap": 0
             },
             "DefaultButtonFace": "ProtossAirArmorLevel3",
-            "State": "Restricted",
             "Requirements": "LearnProtossAirArmor3"
           },
           "Resource": {
@@ -342,8 +383,14 @@
         "AbilCmd": "CyberneticsCoreResearch,Research6",
         "id": "ProtossAirArmorLevel3",
         "Icon": "btn-upgrade-protoss-airarmorlevel3",
-        "Tooltip": "Maximizes the armor of Protoss air units.",
-        "Name": "Upgrade Air Armor Level 3",
+        "Name": {
+          "enUS": "Upgrade Air Armor Level 3",
+          "ruRU": "Upgrade Air Armor Level 3"
+        },
+        "Tooltip": {
+          "enUS": "Maximizes the armor of Protoss air units.",
+          "ruRU": "Maximizes the armor of Protoss air units."
+        },
         "Hotkey": "A"
       },
       {
@@ -365,6 +412,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "que5",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "QueueCount": 1,
           "Flags": {
             "BestUnit": 1,
@@ -397,8 +450,14 @@
         "AbilCmd": "que5,CancelLast",
         "id": "Cancel",
         "Icon": "btn-command-cancel",
-        "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
-        "Name": "Cancel",
+        "Name": {
+          "enUS": "Cancel",
+          "ruRU": "Отменить /// Cancel"
+        },
+        "Tooltip": {
+          "enUS": "Drops the current order without performing it, and allows you to select a different order.",
+          "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+        },
         "Hotkey": "Esc"
       },
       {
@@ -420,6 +479,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "BuildInProgress",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "Activity": "UI/Building",
           "VitalStartFactor": {
             "Life": 0.1,
@@ -452,8 +517,14 @@
         "AbilCmd": "BuildInProgress,Cancel",
         "id": "CancelBuilding",
         "Icon": "btn-command-cancel",
-        "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-        "Name": "Cancel",
+        "Name": {
+          "enUS": "Cancel",
+          "ruRU": "Отменить /// Cancel"
+        },
+        "Tooltip": {
+          "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+          "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+        },
         "Hotkey": "Esc"
       },
       {
@@ -465,7 +536,6 @@
               "ShowInGlossary": 1
             },
             "DefaultButtonFace": "ResearchWarpGate",
-            "State": "Restricted",
             "Requirements": "LearnWarpGate"
           },
           "Resource": {
@@ -492,8 +562,14 @@
         "AbilCmd": "CyberneticsCoreResearch,Research7",
         "id": "ResearchWarpGate",
         "Icon": "btn-building-protoss-warpgate",
-        "Tooltip": "Enables <span style=\"color: #ffff8a\">Gateways</span> to upgrade to Warp Gates.",
-        "Name": "Research Warp Gate",
+        "Name": {
+          "enUS": "Research Warp Gate",
+          "ruRU": "Research Warp Gate"
+        },
+        "Tooltip": {
+          "enUS": "Enables <span style=\"color: ffff8a\">Gateways</span> to upgrade to Warp Gates.",
+          "ruRU": "Enables <span style=\"color: ffff8a\">Gateways</span> to upgrade to Warp Gates."
+        },
         "Hotkey": "G"
       }
     ]
@@ -518,21 +594,35 @@
   "Behaviors": [
     {
       "id": "PowerUserQueue",
-      "Icon": "btn-building-protoss-pylon"
+      "Icon": "btn-building-protoss-pylon",
+      "Name": {
+        "enUS": "Power User (Queue)",
+        "ruRU": "Power User (Queue)"
+      },
+      "Tooltip": "-"
     }
   ],
   "Abilities": [
     {
       "id": "BuildInProgress",
-      "Name": "Build in Progress"
+      "Name": {
+        "enUS": "Build in Progress",
+        "ruRU": "Build in Progress"
+      }
     },
     {
       "id": "que5",
-      "Name": "Queue (5)"
+      "Name": {
+        "ruRU": "Queue (5)",
+        "enUS": "Queue (5)"
+      }
     },
     {
       "id": "CyberneticsCoreResearch",
-      "Name": "Research"
+      "Name": {
+        "enUS": "Research",
+        "ruRU": "Research"
+      }
     }
   ],
   "$Upgrades": [
@@ -545,14 +635,7 @@
     "ProtossShieldsLevel3",
     "ProtossBuild",
     "IsCyberneticsCore",
-    "CyberneticsCoreSplat",
-    "CyberneticsCoreBase",
-    "CyberneticsCore",
-    "CyberneticsCoreForged",
-    "CyberneticsCoreIhanrii",
-    "DefaultSkinPack",
-    "CyberneticsCoreForged",
-    "CyberneticsCoreIhanrii"
+    "CyberneticsCoreSplat"
   ],
   "$Requirements": [],
   "$Production": [],
@@ -575,64 +658,118 @@
       "AbilCmd": "CyberneticsCoreResearch,Research1",
       "id": "ProtossAirWeaponsLevel1",
       "Icon": "btn-upgrade-protoss-airweaponslevel1",
-      "Tooltip": "Upgrades the damage dealt by Protoss air units.",
-      "Name": "Upgrade Air Weapons Level 1"
+      "Name": {
+        "enUS": "Upgrade Air Weapons Level 1",
+        "ruRU": "Upgrade Air Weapons Level 1"
+      },
+      "Tooltip": {
+        "enUS": "Upgrades the damage dealt by Protoss air units.",
+        "ruRU": "Upgrades the damage dealt by Protoss air units."
+      }
     },
     {
       "AbilCmd": "CyberneticsCoreResearch,Research2",
       "id": "ProtossAirWeaponsLevel2",
       "Icon": "btn-upgrade-protoss-airweaponslevel2",
-      "Tooltip": "Further upgrades the damage dealt by Protoss air units.",
-      "Name": "Upgrade Air Weapons Level 2"
+      "Name": {
+        "enUS": "Upgrade Air Weapons Level 2",
+        "ruRU": "Upgrade Air Weapons Level 2"
+      },
+      "Tooltip": {
+        "enUS": "Further upgrades the damage dealt by Protoss air units.",
+        "ruRU": "Further upgrades the damage dealt by Protoss air units."
+      }
     },
     {
       "AbilCmd": "CyberneticsCoreResearch,Research3",
       "id": "ProtossAirWeaponsLevel3",
       "Icon": "btn-upgrade-protoss-airweaponslevel3",
-      "Tooltip": "Maximizes the damage dealt by Protoss air units.",
-      "Name": "Upgrade Air Weapons Level 3"
+      "Name": {
+        "enUS": "Upgrade Air Weapons Level 3",
+        "ruRU": "Upgrade Air Weapons Level 3"
+      },
+      "Tooltip": {
+        "enUS": "Maximizes the damage dealt by Protoss air units.",
+        "ruRU": "Maximizes the damage dealt by Protoss air units."
+      }
     },
     {
       "AbilCmd": "CyberneticsCoreResearch,Research4",
       "id": "ProtossAirArmorLevel1",
       "Icon": "btn-upgrade-protoss-airarmorlevel1",
-      "Tooltip": "Upgrades the armor of Protoss air units.",
-      "Name": "Upgrade Air Armor Level 1"
+      "Name": {
+        "enUS": "Upgrade Air Armor Level 1",
+        "ruRU": "Upgrade Air Armor Level 1"
+      },
+      "Tooltip": {
+        "enUS": "Upgrades the armor of Protoss air units.",
+        "ruRU": "Upgrades the armor of Protoss air units."
+      }
     },
     {
       "AbilCmd": "CyberneticsCoreResearch,Research5",
       "id": "ProtossAirArmorLevel2",
       "Icon": "btn-upgrade-protoss-airarmorlevel2",
-      "Tooltip": "Further upgrades the armor of Protoss air units.",
-      "Name": "Upgrade Air Armor Level 2"
+      "Name": {
+        "enUS": "Upgrade Air Armor Level 2",
+        "ruRU": "Upgrade Air Armor Level 2"
+      },
+      "Tooltip": {
+        "enUS": "Further upgrades the armor of Protoss air units.",
+        "ruRU": "Further upgrades the armor of Protoss air units."
+      }
     },
     {
       "AbilCmd": "CyberneticsCoreResearch,Research6",
       "id": "ProtossAirArmorLevel3",
       "Icon": "btn-upgrade-protoss-airarmorlevel3",
-      "Tooltip": "Maximizes the armor of Protoss air units.",
-      "Name": "Upgrade Air Armor Level 3"
+      "Name": {
+        "enUS": "Upgrade Air Armor Level 3",
+        "ruRU": "Upgrade Air Armor Level 3"
+      },
+      "Tooltip": {
+        "enUS": "Maximizes the armor of Protoss air units.",
+        "ruRU": "Maximizes the armor of Protoss air units."
+      }
     },
     {
       "AbilCmd": "que5,CancelLast",
       "id": "Cancel",
       "Icon": "btn-command-cancel",
-      "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
-      "Name": "Cancel"
+      "Name": {
+        "enUS": "Cancel",
+        "ruRU": "Отменить /// Cancel"
+      },
+      "Tooltip": {
+        "enUS": "Drops the current order without performing it, and allows you to select a different order.",
+        "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+      }
     },
     {
       "AbilCmd": "BuildInProgress,Cancel",
       "id": "CancelBuilding",
       "Icon": "btn-command-cancel",
-      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-      "Name": "Cancel"
+      "Name": {
+        "enUS": "Cancel",
+        "ruRU": "Отменить /// Cancel"
+      },
+      "Tooltip": {
+        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+        "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+      }
     },
     {
       "AbilCmd": "CyberneticsCoreResearch,Research7",
       "id": "ResearchWarpGate",
       "Icon": "btn-building-protoss-warpgate",
-      "Tooltip": "Enables <span style=\"color: #ffff8a\">Gateways</span> to upgrade to Warp Gates.",
-      "Name": "Research Warp Gate"
+      "Name": {
+        "enUS": "Research Warp Gate",
+        "ruRU": "Research Warp Gate"
+      },
+      "Tooltip": {
+        "enUS": "Enables <span style=\"color: ffff8a\">Gateways</span> to upgrade to Warp Gates.",
+        "ruRU": "Enables <span style=\"color: ffff8a\">Gateways</span> to upgrade to Warp Gates."
+      }
     }
   ]
 }

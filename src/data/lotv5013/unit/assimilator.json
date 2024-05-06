@@ -1,6 +1,12 @@
 {
-  "Name": "Assimilator",
-  "Description": "Warped in over a Vespene Geyser to allow harvesting of vespene gas.",
+  "Name": {
+    "enUS": "Assimilator",
+    "ruRU": "Assimilator"
+  },
+  "Description": {
+    "enUS": "Warped in over a Vespene Geyser to allow harvesting of vespene gas.",
+    "ruRU": "Warped in over a Vespene Geyser to allow harvesting of vespene gas."
+  },
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -12,7 +18,10 @@
   "ResourceType": "Vespene",
   "LifeStart": 300,
   "LifeMax": 300,
-  "LifeArmorName": "Protoss Armor",
+  "LifeArmorName": {
+    "enUS": "Protoss Armor",
+    "ruRU": "Protoss Armor"
+  },
   "Mover": "Ground",
   "StationaryTurningRate": 719.4726,
   "TurningRate": 719.4726,
@@ -77,6 +86,12 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "Facing": 315,
   "Mob": "Multiplayer",
   "FogVisibility": "Snapshot",
@@ -84,7 +99,10 @@
   "ShieldsStart": 300,
   "ShieldsMax": 300,
   "ShieldRegenRate": 2,
-  "ShieldArmorName": "Protoss Plasma Shields",
+  "ShieldArmorName": {
+    "enUS": "Protoss Plasma Shields",
+    "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+  },
   "AttackTargetPriority": 11,
   "Footprint": "FootprintGeyserRoundedBuilt",
   "PlacementFootprint": "Footprint3x3CappedGeyser",
@@ -105,9 +123,8 @@
     "Structure",
     "RoachBurrow",
     "ForceField",
-    "Small",
-    "Locust",
-    "Phased"
+    "Phased",
+    "Small"
   ],
   "Sight": 9,
   "CardLayouts": {
@@ -131,6 +148,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "BuildInProgress",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "Activity": "UI/Building",
           "VitalStartFactor": {
             "Life": 0.1,
@@ -163,8 +186,14 @@
         "AbilCmd": "BuildInProgress,Cancel",
         "id": "CancelBuilding",
         "Icon": "btn-command-cancel",
-        "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-        "Name": "Cancel",
+        "Name": {
+          "enUS": "Cancel",
+          "ruRU": "Отменить /// Cancel"
+        },
+        "Tooltip": {
+          "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+          "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+        },
         "Hotkey": "Esc"
       }
     ]
@@ -195,13 +224,21 @@
   "Behaviors": [
     {
       "id": "HarvestableVespeneGeyserGasProtoss",
-      "Icon": "icon-gas"
+      "Icon": "icon-gas",
+      "Name": {
+        "enUS": "Harvestable Vespene Geyser Gas Protoss",
+        "ruRU": "Harvestable Vespene Geyser Gas Protoss"
+      },
+      "Tooltip": "-"
     }
   ],
   "Abilities": [
     {
       "id": "BuildInProgress",
-      "Name": "Build in Progress"
+      "Name": {
+        "enUS": "Build in Progress",
+        "ruRU": "Build in Progress"
+      }
     }
   ],
   "$Upgrades": [
@@ -213,16 +250,8 @@
     "ProtossShields",
     "ProtossShieldsLevel2",
     "ProtossShieldsLevel3",
-    "AssimilatorSplat",
     "IsAssimilator",
-    "AssimilatorBase",
-    "Assimilator",
-    "AssimilatorTaldarim",
-    "AssimilatorForged",
-    "AssimilatorIhanrii",
-    "DefaultSkinPack",
-    "AssimilatorForged",
-    "AssimilatorIhanrii"
+    "AssimilatorSplat"
   ],
   "$Requirements": [],
   "$Production": [],
@@ -237,8 +266,14 @@
       "AbilCmd": "BuildInProgress,Cancel",
       "id": "CancelBuilding",
       "Icon": "btn-command-cancel",
-      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-      "Name": "Cancel"
+      "Name": {
+        "enUS": "Cancel",
+        "ruRU": "Отменить /// Cancel"
+      },
+      "Tooltip": {
+        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+        "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+      }
     }
   ]
 }

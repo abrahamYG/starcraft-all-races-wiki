@@ -1,6 +1,12 @@
 {
-  "Name": "MULE",
-  "Description": "Prototype harvesting unit. Gathers minerals more quickly than regular SCVs. MULEs last <b>90</b> before their systems fail.",
+  "Name": {
+    "enUS": "MULE",
+    "ruRU": "MULE"
+  },
+  "Description": {
+    "enUS": "Prototype harvesting unit. Gathers minerals more quickly than regular SCVs. MULEs last <b>90</b> before their systems fail.",
+    "ruRU": "Prototype harvesting unit. Gathers minerals more quickly than regular SCVs. MULEs last <b>90</b> before their systems fail."
+  },
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -12,7 +18,10 @@
   "ResourceType": "Unknown",
   "LifeStart": 60,
   "LifeMax": 60,
-  "LifeArmorName": "Terran Infantry Armor",
+  "LifeArmorName": {
+    "enUS": "Terran Infantry Armor",
+    "ruRU": "Terran Infantry Armor"
+  },
   "Mover": "Ground",
   "StationaryTurningRate": 999.8437,
   "TurningRate": 999.8437,
@@ -78,6 +87,12 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "Mob": "Multiplayer",
   "PlaneArray": [
     "Ground"
@@ -85,8 +100,7 @@
   "Collide": [
     "Ground",
     "ForceField",
-    "Small",
-    "Locust"
+    "Small"
   ],
   "Attributes": [
     "Light",
@@ -132,6 +146,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -169,8 +189,7 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move",
-          "AbilSetId": "Move"
+          "id": "move"
         },
         "Cost": {
           "Minerals": 0,
@@ -188,8 +207,14 @@
         "AbilCmd": "move,Move",
         "id": "Move",
         "Icon": "btn-command-move",
-        "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
-        "Name": "Move",
+        "Name": {
+          "enUS": "Move",
+          "ruRU": "Двигаться /// Move"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+          "ruRU": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies."
+        },
         "Hotkey": "M"
       },
       {
@@ -211,6 +236,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "stop",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "AbilSetId": "Stop",
           "CmdButtonArray": {
             "Stop": {
@@ -256,8 +287,14 @@
         "AbilCmd": "stop,Stop",
         "id": "Stop",
         "Icon": "btn-command-stop",
-        "Tooltip": "Orders selected units to cancel all orders and stop moving.",
-        "Name": "Stop",
+        "Name": {
+          "enUS": "Stop",
+          "ruRU": "Отставить /// Stop"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to cancel all orders and stop moving.",
+          "ruRU": "Orders selected units to cancel all orders and stop moving."
+        },
         "Hotkey": "S"
       },
       {
@@ -285,6 +322,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -322,8 +365,7 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move",
-          "AbilSetId": "Move"
+          "id": "move"
         },
         "Cost": {
           "Minerals": 0,
@@ -341,8 +383,14 @@
         "AbilCmd": "move,HoldPos",
         "id": "MoveHoldPosition",
         "Icon": "btn-command-holdposition",
-        "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
-        "Name": "Hold Position",
+        "Name": {
+          "enUS": "Hold Position",
+          "ruRU": "Удерживать позицию /// Hold Position"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+          "ruRU": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage."
+        },
         "Hotkey": "H"
       },
       {
@@ -364,6 +412,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "attack",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "AbilSetId": "Attack",
           "Alignment": "Negative",
           "AcquireFilters": "-;Player,Ally,Neutral,Dead,Hidden,Invulnerable,Benign",
@@ -409,8 +463,14 @@
         "Type": "AbilCmd",
         "AbilCmd": "attack,Execute",
         "id": "AttackWorker",
-        "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
-        "Name": "Attack",
+        "Name": {
+          "enUS": "Attack",
+          "ruRU": "Атаковать /// Attack"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+          "ruRU": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed."
+        },
         "Hotkey": "A"
       },
       {
@@ -438,6 +498,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -475,8 +541,7 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move",
-          "AbilSetId": "Move"
+          "id": "move"
         },
         "Cost": {
           "Minerals": 0,
@@ -494,8 +559,14 @@
         "AbilCmd": "move,AcquireMove",
         "id": "AcquireMove",
         "Icon": "btn-command-attack",
-        "Tooltip": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies.",
-        "Name": "Scan Move",
+        "Name": {
+          "enUS": "Scan Move",
+          "ruRU": "Двигаться в режиме наблюдения /// Scan Move"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies.",
+          "ruRU": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies."
+        },
         "Hotkey": "A"
       },
       {
@@ -523,6 +594,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -560,8 +637,7 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move",
-          "AbilSetId": "Move"
+          "id": "move"
         },
         "Cost": {
           "Minerals": 0,
@@ -579,8 +655,14 @@
         "AbilCmd": "move,Patrol",
         "id": "MovePatrol",
         "Icon": "btn-command-patrol",
-        "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
-        "Name": "Patrol",
+        "Name": {
+          "enUS": "Patrol",
+          "ruRU": "Патрулировать /// Patrol"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+          "ruRU": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies."
+        },
         "Hotkey": "P"
       },
       {
@@ -602,6 +684,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "MULEGather",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Gather": {
               "Flags": {
@@ -650,17 +738,14 @@
           "UninterruptibleArray": {
             "WaitToReturn": 1
           },
-          "FlagArray": {
-            "BypassResourceQueue": 0
-          },
           "Range": [
             0.5
           ],
-          "id": "MULEGather",
           "ResourceAmountRequest": {
             "Minerals": 25
           },
-          "ResourceQueueIndex": 1
+          "ResourceQueueIndex": 1,
+          "id": "MULEGather"
         },
         "Cost": {
           "Minerals": 0,
@@ -678,8 +763,14 @@
         "AbilCmd": "MULEGather,Gather",
         "id": "GatherMULE",
         "Icon": "btn-ability-terran-gather",
-        "Tooltip": "Orders MULE to gather minerals from a selected Mineral Field.",
-        "Name": "Gather",
+        "Name": {
+          "enUS": "Gather",
+          "ruRU": "Gather"
+        },
+        "Tooltip": {
+          "enUS": "Orders MULE to gather minerals from a selected Mineral Field.",
+          "ruRU": "Orders MULE to gather minerals from a selected Mineral Field."
+        },
         "Hotkey": "G"
       },
       {
@@ -701,10 +792,16 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "MULERepair",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "RangeSlop": 0.2,
           "ArcSlop": 11.25,
           "AutoCastAcquireLevel": "Defensive",
-          "AutoCastFilters": "Visible;Neutral,Enemy",
+          "AutoCastFilters": "-;Neutral,Enemy",
           "Flags": {
             "AbortOnAllianceChange": 1,
             "CancelResetAutoCast": 1,
@@ -712,7 +809,7 @@
             "RangeUseCasterRadius": 1,
             "ReApproachable": 1,
             "RequireTargetVision": 1,
-            "WaitToSpend": 0,
+            "WaitToSpend": 1,
             "UpdateChargesOnLevelChange": 1,
             "BestUnit": 0,
             "AutoCast": 1,
@@ -786,7 +883,7 @@
           "FollowRange": 5,
           "AbilSetId": "Repair",
           "TargetFilters": [
-            "Mechanical,Visible;Self,Enemy,Missile,Stasis,UnderConstruction,Dead,Hidden,Hallucination"
+            "Mechanical,Visible;Self,Enemy,Missile,Stasis,UnderConstruction,Dead,Hidden"
           ],
           "AutoCastRange": 7,
           "AutoCastValidatorArray": [
@@ -806,8 +903,8 @@
             "Cast": 1,
             "Channel": 1
           },
-          "id": "MULERepair",
-          "Alignment": "Positive"
+          "Alignment": "Positive",
+          "id": "MULERepair"
         },
         "Cost": {
           "Minerals": 0,
@@ -825,8 +922,14 @@
         "AbilCmd": "MULERepair,Execute",
         "id": "Repair",
         "Icon": "btn-ability-terran-repair",
-        "Tooltip": "Restores life to mechanical units and structures at the cost of resources.",
-        "Name": "Repair",
+        "Name": {
+          "enUS": "Repair",
+          "ruRU": "Repair"
+        },
+        "Tooltip": {
+          "enUS": "Restores life to mechanical units and structures at the cost of resources.",
+          "ruRU": "Restores life to mechanical units and structures at the cost of resources."
+        },
         "Hotkey": "R"
       },
       {
@@ -848,6 +951,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "MULEGather",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Gather": {
               "Flags": {
@@ -896,17 +1005,14 @@
           "UninterruptibleArray": {
             "WaitToReturn": 1
           },
-          "FlagArray": {
-            "BypassResourceQueue": 0
-          },
           "Range": [
             0.5
           ],
-          "id": "MULEGather",
           "ResourceAmountRequest": {
             "Minerals": 25
           },
-          "ResourceQueueIndex": 1
+          "ResourceQueueIndex": 1,
+          "id": "MULEGather"
         },
         "Cost": {
           "Minerals": 0,
@@ -924,8 +1030,14 @@
         "AbilCmd": "MULEGather,Return",
         "id": "ReturnCargo",
         "Icon": "btn-command-returncargo",
-        "Tooltip": "Returns the carried resources to the nearest drop-off point.",
-        "Name": "Return Cargo",
+        "Name": {
+          "enUS": "Return Cargo",
+          "ruRU": "Return Cargo"
+        },
+        "Tooltip": {
+          "enUS": "Returns the carried resources to the nearest drop-off point.",
+          "ruRU": "Returns the carried resources to the nearest drop-off point."
+        },
         "Hotkey": "C"
       },
       {
@@ -947,6 +1059,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "SCVHarvest",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Gather": {
               "Flags": {
@@ -1013,8 +1131,14 @@
         "AbilCmd": "SCVHarvest,Return",
         "id": "ReturnCargo",
         "Icon": "btn-command-returncargo",
-        "Tooltip": "Returns the carried resources to the nearest drop-off point.",
-        "Name": "Return Cargo",
+        "Name": {
+          "enUS": "Return Cargo",
+          "ruRU": "Return Cargo"
+        },
+        "Tooltip": {
+          "enUS": "Returns the carried resources to the nearest drop-off point.",
+          "ruRU": "Returns the carried resources to the nearest drop-off point."
+        },
         "Hotkey": "C"
       }
     ]
@@ -1024,8 +1148,9 @@
   "GlossaryPriority": 20,
   "GlossaryCategory": "Unit/Category/TerranUnits",
   "HotkeyCategory": "Unit/Category/TerranUnits",
-  "ScoreMake": 0,
-  "ScoreKill": 0,
+  "TauntDuration": {
+    "Dance": 5
+  },
   "id": "MULE",
   "Icon": "btn-unit-terran-mule",
   "LifeArmorIcon": "btn-upgrade-terran-infantryarmorlevel0",
@@ -1035,32 +1160,43 @@
   "Abilities": [
     {
       "id": "stop",
-      "Name": "Stop"
+      "Name": {
+        "enUS": "Stop",
+        "ruRU": "Stop"
+      }
     },
     {
       "id": "move",
-      "Name": "Move"
+      "Name": {
+        "enUS": "Move",
+        "ruRU": "Move"
+      }
     },
     {
       "id": "MULEGather",
-      "Name": "Gather"
+      "Name": {
+        "enUS": "Gather",
+        "ruRU": "Gather"
+      }
     },
     {
       "id": "MULERepair",
-      "Name": "Repair"
+      "Name": {
+        "enUS": "Repair",
+        "ruRU": "Repair"
+      }
     }
   ],
   "$Upgrades": [
     "CalldownMULECreateUnit",
     "MULE",
     "MULEPlacementCheck",
-    "NotWorkerMULE",
     "TerranInfantryArmorsLevel1",
     "MULE",
     "TerranInfantryArmors",
     "TerranInfantryArmorsLevel2",
     "TerranInfantryArmorsLevel3",
-    "RewardDanceMule",
+    "NotWorkerMULE",
     "IsMULE"
   ],
   "$Requirements": [],
@@ -1074,70 +1210,130 @@
       "AbilCmd": "move,Move",
       "id": "Move",
       "Icon": "btn-command-move",
-      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
-      "Name": "Move"
+      "Name": {
+        "enUS": "Move",
+        "ruRU": "Двигаться /// Move"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+        "ruRU": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies."
+      }
     },
     {
       "AbilCmd": "stop,Stop",
       "id": "Stop",
       "Icon": "btn-command-stop",
-      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
-      "Name": "Stop"
+      "Name": {
+        "enUS": "Stop",
+        "ruRU": "Отставить /// Stop"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to cancel all orders and stop moving.",
+        "ruRU": "Orders selected units to cancel all orders and stop moving."
+      }
     },
     {
       "AbilCmd": "move,HoldPos",
       "id": "MoveHoldPosition",
       "Icon": "btn-command-holdposition",
-      "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
-      "Name": "Hold Position"
+      "Name": {
+        "enUS": "Hold Position",
+        "ruRU": "Удерживать позицию /// Hold Position"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+        "ruRU": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage."
+      }
     },
     {
       "AbilCmd": "attack,Execute",
       "id": "AttackWorker",
-      "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
-      "Name": "Attack"
+      "Name": {
+        "enUS": "Attack",
+        "ruRU": "Атаковать /// Attack"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+        "ruRU": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed."
+      }
     },
     {
       "AbilCmd": "move,AcquireMove",
       "id": "AcquireMove",
       "Icon": "btn-command-attack",
-      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies.",
-      "Name": "Scan Move"
+      "Name": {
+        "enUS": "Scan Move",
+        "ruRU": "Двигаться в режиме наблюдения /// Scan Move"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies.",
+        "ruRU": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies."
+      }
     },
     {
       "AbilCmd": "move,Patrol",
       "id": "MovePatrol",
       "Icon": "btn-command-patrol",
-      "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
-      "Name": "Patrol"
+      "Name": {
+        "enUS": "Patrol",
+        "ruRU": "Патрулировать /// Patrol"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+        "ruRU": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies."
+      }
     },
     {
       "AbilCmd": "MULEGather,Gather",
       "id": "GatherMULE",
       "Icon": "btn-ability-terran-gather",
-      "Tooltip": "Orders MULE to gather minerals from a selected Mineral Field.",
-      "Name": "Gather"
+      "Name": {
+        "enUS": "Gather",
+        "ruRU": "Gather"
+      },
+      "Tooltip": {
+        "enUS": "Orders MULE to gather minerals from a selected Mineral Field.",
+        "ruRU": "Orders MULE to gather minerals from a selected Mineral Field."
+      }
     },
     {
       "AbilCmd": "MULERepair,Execute",
       "id": "Repair",
       "Icon": "btn-ability-terran-repair",
-      "Tooltip": "Restores life to mechanical units and structures at the cost of resources.",
-      "Name": "Repair"
+      "Name": {
+        "enUS": "Repair",
+        "ruRU": "Repair"
+      },
+      "Tooltip": {
+        "enUS": "Restores life to mechanical units and structures at the cost of resources.",
+        "ruRU": "Restores life to mechanical units and structures at the cost of resources."
+      }
     },
     {
       "AbilCmd": "MULEGather,Return",
       "id": "ReturnCargo",
       "Icon": "btn-command-returncargo",
-      "Tooltip": "Returns the carried resources to the nearest drop-off point.",
-      "Name": "Return Cargo"
+      "Name": {
+        "enUS": "Return Cargo",
+        "ruRU": "Return Cargo"
+      },
+      "Tooltip": {
+        "enUS": "Returns the carried resources to the nearest drop-off point.",
+        "ruRU": "Returns the carried resources to the nearest drop-off point."
+      }
     },
     {
       "AbilCmd": "SCVHarvest,Return",
       "id": "ReturnCargo",
       "Icon": "btn-command-returncargo",
-      "Tooltip": "Returns the carried resources to the nearest drop-off point.",
-      "Name": "Return Cargo"
+      "Name": {
+        "enUS": "Return Cargo",
+        "ruRU": "Return Cargo"
+      },
+      "Tooltip": {
+        "enUS": "Returns the carried resources to the nearest drop-off point.",
+        "ruRU": "Returns the carried resources to the nearest drop-off point."
+      }
     }
   ]
 }

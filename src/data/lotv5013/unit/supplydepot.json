@@ -1,6 +1,12 @@
 {
-  "Name": "Supply Depot",
-  "Description": "Provides supply.<br/>Supply allows you to create more units.<br/>Supply Depots can be lowered to allow units to walk over them.",
+  "Name": {
+    "enUS": "Supply Depot",
+    "ruRU": "Supply Depot"
+  },
+  "Description": {
+    "enUS": "Provides supply.<br/>Supply allows you to create more units.<br/>Supply Depots can be lowered to allow units to walk over them.",
+    "ruRU": "Provides supply.<br/>Supply allows you to create more units.<br/>Supply Depots can be lowered to allow units to walk over them."
+  },
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -12,7 +18,10 @@
   "ResourceType": "Unknown",
   "LifeStart": 400,
   "LifeMax": 400,
-  "LifeArmorName": "Terran Building Plating",
+  "LifeArmorName": {
+    "enUS": "Terran Building Plating",
+    "ruRU": "Terran Building Plating"
+  },
   "Mover": "Ground",
   "StationaryTurningRate": 719.4726,
   "TurningRate": 719.4726,
@@ -77,6 +86,12 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "TechAliasArray": [
     "Alias_SupplyDepot"
   ],
@@ -111,9 +126,8 @@
     "Structure",
     "RoachBurrow",
     "ForceField",
-    "Small",
-    "Locust",
-    "Phased"
+    "Phased",
+    "Small"
   ],
   "Sight": 9,
   "CardLayouts": {
@@ -137,6 +151,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "BuildInProgress",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "Activity": "UI/Building",
           "VitalStartFactor": {
             "Life": 0.1,
@@ -169,8 +189,14 @@
         "AbilCmd": "BuildInProgress,Halt",
         "id": "Halt",
         "Icon": "btn-command-stop",
-        "Tooltip": "Halts construction of this structure. The partial construction will remain.",
-        "Name": "Halt",
+        "Name": {
+          "enUS": "Halt",
+          "ruRU": "Приостановить /// Halt"
+        },
+        "Tooltip": {
+          "enUS": "Halts construction of this structure. The partial construction will remain.",
+          "ruRU": "Приостановить сооружение этого строения. Впоследствии его можно будет продолжить. /// Halts construction of this structure. The partial construction will remain."
+        },
         "Hotkey": "T"
       },
       {
@@ -192,6 +218,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "BuildInProgress",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "Activity": "UI/Building",
           "VitalStartFactor": {
             "Life": 0.1,
@@ -224,8 +256,14 @@
         "AbilCmd": "BuildInProgress,Cancel",
         "id": "CancelBuilding",
         "Icon": "btn-command-cancel",
-        "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-        "Name": "Cancel",
+        "Name": {
+          "enUS": "Cancel",
+          "ruRU": "Отменить /// Cancel"
+        },
+        "Tooltip": {
+          "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+          "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+        },
         "Hotkey": "Esc"
       },
       {
@@ -277,8 +315,14 @@
         "AbilCmd": "SupplyDepotLower,Execute",
         "id": "Lower",
         "Icon": "btn-building-terran-supplydepotlowered",
-        "Tooltip": "Lowers the structure, allowing ground units to move across it.",
-        "Name": "Lower",
+        "Name": {
+          "enUS": "Lower",
+          "ruRU": "Lower"
+        },
+        "Tooltip": {
+          "enUS": "Lowers the structure, allowing ground units to move across it.",
+          "ruRU": "Lowers the structure, allowing ground units to move across it."
+        },
         "Hotkey": "R"
       },
       {
@@ -297,8 +341,14 @@
         "Type": "SelectBuilder",
         "id": "SelectBuilder",
         "Icon": "btn-upgrade-terran-weaponrefit",
-        "Tooltip": "Selects the unit constructing this structure.",
-        "Name": "Select Builder",
+        "Name": {
+          "enUS": "Select Builder",
+          "ruRU": "Select Builder"
+        },
+        "Tooltip": {
+          "enUS": "Selects the unit constructing this structure.",
+          "ruRU": "Selects the unit constructing this structure."
+        },
         "Hotkey": "Q"
       }
     ]
@@ -312,41 +362,42 @@
   "Weapons": [],
   "Behaviors": [
     {
-      "id": "TerranBuildingBurnDown"
+      "id": "TerranBuildingBurnDown",
+      "Name": {
+        "enUS": "Building Burnout",
+        "ruRU": "Building Burnout"
+      },
+      "Tooltip": "-"
     }
   ],
   "Abilities": [
     {
       "id": "BuildInProgress",
-      "Name": "Build in Progress"
+      "Name": {
+        "enUS": "Build in Progress",
+        "ruRU": "Build in Progress"
+      }
     },
     {
       "id": "SupplyDepotLower",
-      "Name": "Lower"
+      "Name": {
+        "enUS": "Lower",
+        "ruRU": "Lower"
+      }
     }
   ],
   "$Upgrades": [
-    "TerranBuild",
-    "SupplyDepot",
     "SupplyDepotLowered",
+    "SupplyDepot",
     "SupplyDepotRaise",
     "IsSupplyDepotEitherFlavor",
     "TerranBuildingArmor",
+    "TerranBuild",
     "TerranBuildingLiftOff",
     "SupplyDepot",
     "SupplyDropModel",
     "SupplyDepotLowered",
-    "SupplyDepotSplat",
-    "SupplyDepotSkin",
-    "SupplyDepotBase",
-    "SupplyDepotXPR",
-    "SupplyDepot",
-    "SupplyDepotCovertOps",
-    "SupplyDepotSilver",
-    "SupplyDepotMercenarySkinPack",
-    "DefaultSkinPack",
-    "SupplyDepotCovertOps",
-    "SupplyDepotSilver"
+    "SupplyDepotSplat"
   ],
   "$Requirements": [],
   "$Production": [],
@@ -363,22 +414,40 @@
       "AbilCmd": "BuildInProgress,Halt",
       "id": "Halt",
       "Icon": "btn-command-stop",
-      "Tooltip": "Halts construction of this structure. The partial construction will remain.",
-      "Name": "Halt"
+      "Name": {
+        "enUS": "Halt",
+        "ruRU": "Приостановить /// Halt"
+      },
+      "Tooltip": {
+        "enUS": "Halts construction of this structure. The partial construction will remain.",
+        "ruRU": "Приостановить сооружение этого строения. Впоследствии его можно будет продолжить. /// Halts construction of this structure. The partial construction will remain."
+      }
     },
     {
       "AbilCmd": "BuildInProgress,Cancel",
       "id": "CancelBuilding",
       "Icon": "btn-command-cancel",
-      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-      "Name": "Cancel"
+      "Name": {
+        "enUS": "Cancel",
+        "ruRU": "Отменить /// Cancel"
+      },
+      "Tooltip": {
+        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+        "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+      }
     },
     {
       "AbilCmd": "SupplyDepotLower,Execute",
       "id": "Lower",
       "Icon": "btn-building-terran-supplydepotlowered",
-      "Tooltip": "Lowers the structure, allowing ground units to move across it.",
-      "Name": "Lower"
+      "Name": {
+        "enUS": "Lower",
+        "ruRU": "Lower"
+      },
+      "Tooltip": {
+        "enUS": "Lowers the structure, allowing ground units to move across it.",
+        "ruRU": "Lowers the structure, allowing ground units to move across it."
+      }
     }
   ]
 }

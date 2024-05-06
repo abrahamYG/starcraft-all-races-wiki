@@ -1,6 +1,12 @@
 {
-  "Name": "Lurker",
-  "Description": "Anti-ground ambusher. Has a spine attack that damages all enemy units in its line of fire.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.<br/>Must burrow to attack.</span>",
+  "Name": {
+    "enUS": "Lurker",
+    "ruRU": "Lurker"
+  },
+  "Description": {
+    "enUS": "Anti-ground ambusher. Has a spine attack that damages all enemy units in its line of fire.<br/><br/><span style=\"color: ffff8a\">Can attack ground units.<br/>Must burrow to attack.</span>",
+    "ruRU": "Anti-ground ambusher. Has a spine attack that damages all enemy units in its line of fire.<br/><br/><span style=\"color: ffff8a\">Can attack ground units.<br/>Must burrow to attack.</span>"
+  },
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -12,7 +18,10 @@
   "ResourceType": "Unknown",
   "LifeStart": 200,
   "LifeMax": 200,
-  "LifeArmorName": "Zerg Ground Carapace",
+  "LifeArmorName": {
+    "enUS": "Zerg Ground Carapace",
+    "ruRU": "Zerg Ground Carapace"
+  },
   "Mover": "Ground",
   "StationaryTurningRate": 999.8437,
   "TurningRate": 999.8437,
@@ -36,12 +45,12 @@
     "CameraFollow",
     "PreventDestroy",
     "UseLineOfSight",
+    "AlwaysThreatens",
     "AIThreatGround",
     "AISplash",
     "AIPressForwardDisabled",
     "AIPreferBurrow",
-    "ArmySelect",
-    "AlwaysThreatens"
+    "ArmySelect"
   ],
   "EditorFlags": [
     "BlockStructures"
@@ -79,6 +88,12 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "Facing": 45,
   "Mob": "Multiplayer",
   "PlaneArray": [
@@ -86,9 +101,7 @@
   ],
   "Collide": [
     "Ground",
-    "Small",
-    "ForceField",
-    "Locust"
+    "Small"
   ],
   "Attributes": [
     "Armored",
@@ -138,6 +151,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -175,8 +194,7 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move",
-          "AbilSetId": "Move"
+          "id": "move"
         },
         "Cost": {
           "Minerals": 0,
@@ -194,8 +212,14 @@
         "AbilCmd": "move,Move",
         "id": "Move",
         "Icon": "btn-command-move",
-        "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
-        "Name": "Move",
+        "Name": {
+          "enUS": "Move",
+          "ruRU": "Двигаться /// Move"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+          "ruRU": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies."
+        },
         "Hotkey": "M"
       },
       {
@@ -217,6 +241,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "stop",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "AbilSetId": "Stop",
           "CmdButtonArray": {
             "Stop": {
@@ -262,8 +292,14 @@
         "AbilCmd": "stop,Stop",
         "id": "Stop",
         "Icon": "btn-command-stop",
-        "Tooltip": "Orders selected units to cancel all orders and stop moving.",
-        "Name": "Stop",
+        "Name": {
+          "enUS": "Stop",
+          "ruRU": "Отставить /// Stop"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to cancel all orders and stop moving.",
+          "ruRU": "Orders selected units to cancel all orders and stop moving."
+        },
         "Hotkey": "S"
       },
       {
@@ -291,6 +327,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -328,8 +370,7 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move",
-          "AbilSetId": "Move"
+          "id": "move"
         },
         "Cost": {
           "Minerals": 0,
@@ -347,8 +388,14 @@
         "AbilCmd": "move,HoldPos",
         "id": "MoveHoldPosition",
         "Icon": "btn-command-holdposition",
-        "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
-        "Name": "Hold Position",
+        "Name": {
+          "enUS": "Hold Position",
+          "ruRU": "Удерживать позицию /// Hold Position"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+          "ruRU": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage."
+        },
         "Hotkey": "H"
       },
       {
@@ -376,6 +423,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -413,8 +466,7 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move",
-          "AbilSetId": "Move"
+          "id": "move"
         },
         "Cost": {
           "Minerals": 0,
@@ -432,8 +484,14 @@
         "AbilCmd": "move,Patrol",
         "id": "MovePatrol",
         "Icon": "btn-command-patrol",
-        "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
-        "Name": "Patrol",
+        "Name": {
+          "enUS": "Patrol",
+          "ruRU": "Патрулировать /// Patrol"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+          "ruRU": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies."
+        },
         "Hotkey": "P"
       },
       {
@@ -455,6 +513,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "attack",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "AbilSetId": "Attack",
           "Alignment": "Negative",
           "AcquireFilters": "-;Player,Ally,Neutral,Dead,Hidden,Invulnerable,Benign",
@@ -501,8 +565,14 @@
         "AbilCmd": "attack,Execute",
         "id": "Attack",
         "Icon": "btn-command-attack",
-        "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
-        "Name": "Attack",
+        "Name": {
+          "enUS": "Attack",
+          "ruRU": "Атаковать /// Attack"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+          "ruRU": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed."
+        },
         "Hotkey": "A"
       },
       {
@@ -530,6 +600,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -567,8 +643,7 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move",
-          "AbilSetId": "Move"
+          "id": "move"
         },
         "Cost": {
           "Minerals": 0,
@@ -586,8 +661,14 @@
         "AbilCmd": "move,AcquireMove",
         "id": "AcquireMove",
         "Icon": "btn-command-attack",
-        "Tooltip": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies.",
-        "Name": "Scan Move",
+        "Name": {
+          "enUS": "Scan Move",
+          "ruRU": "Двигаться в режиме наблюдения /// Scan Move"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies.",
+          "ruRU": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies."
+        },
         "Hotkey": "A"
       },
       {
@@ -595,7 +676,7 @@
           "SectionArray": {
             "Actor": {
               "DurationArray": {
-                "Duration": 2.5
+                "Duration": 2
               }
             },
             "Collide": {
@@ -629,8 +710,14 @@
         "AbilCmd": "BurrowLurkerMPDown,Execute",
         "id": "BurrowLurkerMP",
         "Icon": "btn-ability-zerg-burrow-color",
-        "Tooltip": "Buries the Lurker underground. Burrowed Lurkers are unable to move, but are able to attack. They cannot be seen without detection.",
-        "Name": "Burrow",
+        "Name": {
+          "enUS": "Burrow",
+          "ruRU": "Burrow"
+        },
+        "Tooltip": {
+          "enUS": "Buries the Lurker underground. Burrowed Lurkers are unable to move, but are able to attack. They cannot be seen without detection.",
+          "ruRU": "Buries the Lurker underground. Burrowed Lurkers are unable to move, but are able to attack. They cannot be seen without detection."
+        },
         "Hotkey": "D"
       }
     ]
@@ -659,9 +746,9 @@
   ],
   "KillDisplay": "Always",
   "RankDisplay": "Always",
-  "id": "LurkerMP",
   "GlossaryCategory": "Unit/Category/ZergUnits",
   "HotkeyCategory": "Unit/Category/ZergUnits",
+  "id": "LurkerMP",
   "Icon": "btn-unit-zerg-lurker",
   "LifeArmorIcon": "btn-upgrade-zerg-groundcarapace-level0",
   "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
@@ -670,31 +757,41 @@
   "Abilities": [
     {
       "id": "stop",
-      "Name": "Stop"
+      "Name": {
+        "enUS": "Stop",
+        "ruRU": "Stop"
+      }
     },
     {
       "id": "move",
-      "Name": "Move"
+      "Name": {
+        "enUS": "Move",
+        "ruRU": "Move"
+      }
     },
     {
       "id": "BurrowLurkerMPDown",
-      "Name": "Burrow Lurker MPDown"
+      "Name": {
+        "enUS": "Burrow Lurker MPDown",
+        "ruRU": "Burrow Lurker MPDown"
+      }
     },
     {
       "id": "attack",
-      "Name": "Attack"
+      "Name": {
+        "ruRU": "Attack",
+        "enUS": "Attack"
+      }
     }
   ],
   "$Upgrades": [
-    "BurrowLurkerMPUp",
-    "LurkerMP",
     "LurkerMPBurrowed",
+    "LurkerMP",
+    "BurrowLurkerMPUp",
     "DiggingClaws",
     "LurkerRange",
     "LurkerDenMP",
     "MorphToLurker",
-    "LurkerAspectMPFromHydraliskBurrowed",
-    "LurkerAspectMP",
     "LurkerMP",
     "ZergGroundArmorsLevel1",
     "ZergGroundArmorsLevel2",
@@ -702,26 +799,18 @@
     "ZergMissileWeaponsLevel1",
     "ZergMissileWeaponsLevel2",
     "ZergMissileWeaponsLevel3",
+    "LurkerAspectMPFromHydraliskBurrowed",
+    "LurkerAspectMP",
     "LurkerAttackRange",
     "LurkerMPBurrowedSplat",
-    "Lurker_DeathMP",
-    "LurkerBaseNoMorph",
-    "LurkerBase",
-    "Lurker",
-    "LurkerWebby",
-    "LurkerPrimal",
-    "LurkerMecha",
-    "LurkerRCZ",
-    "DefaultSkinPack",
-    "LurkerWebbySkinPack",
-    "LurkerPrimalSkinPack",
-    "LurkerMecha",
-    "LurkerRCZ"
+    "Lurker_DeathMP"
   ],
   "$Requirements": [],
   "$Production": [],
   "$Research": [],
-  "$Morph": [],
+  "$Morph": [
+    null
+  ],
   "$Phase": [
     "LurkerMPBurrowed"
   ],
@@ -731,50 +820,92 @@
       "AbilCmd": "move,Move",
       "id": "Move",
       "Icon": "btn-command-move",
-      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
-      "Name": "Move"
+      "Name": {
+        "enUS": "Move",
+        "ruRU": "Двигаться /// Move"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+        "ruRU": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies."
+      }
     },
     {
       "AbilCmd": "stop,Stop",
       "id": "Stop",
       "Icon": "btn-command-stop",
-      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
-      "Name": "Stop"
+      "Name": {
+        "enUS": "Stop",
+        "ruRU": "Отставить /// Stop"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to cancel all orders and stop moving.",
+        "ruRU": "Orders selected units to cancel all orders and stop moving."
+      }
     },
     {
       "AbilCmd": "move,HoldPos",
       "id": "MoveHoldPosition",
       "Icon": "btn-command-holdposition",
-      "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
-      "Name": "Hold Position"
+      "Name": {
+        "enUS": "Hold Position",
+        "ruRU": "Удерживать позицию /// Hold Position"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+        "ruRU": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage."
+      }
     },
     {
       "AbilCmd": "move,Patrol",
       "id": "MovePatrol",
       "Icon": "btn-command-patrol",
-      "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
-      "Name": "Patrol"
+      "Name": {
+        "enUS": "Patrol",
+        "ruRU": "Патрулировать /// Patrol"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+        "ruRU": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies."
+      }
     },
     {
       "AbilCmd": "attack,Execute",
       "id": "Attack",
       "Icon": "btn-command-attack",
-      "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
-      "Name": "Attack"
+      "Name": {
+        "enUS": "Attack",
+        "ruRU": "Атаковать /// Attack"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+        "ruRU": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed."
+      }
     },
     {
       "AbilCmd": "move,AcquireMove",
       "id": "AcquireMove",
       "Icon": "btn-command-attack",
-      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies.",
-      "Name": "Scan Move"
+      "Name": {
+        "enUS": "Scan Move",
+        "ruRU": "Двигаться в режиме наблюдения /// Scan Move"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies.",
+        "ruRU": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies."
+      }
     },
     {
       "AbilCmd": "BurrowLurkerMPDown,Execute",
       "id": "BurrowLurkerMP",
       "Icon": "btn-ability-zerg-burrow-color",
-      "Tooltip": "Buries the Lurker underground. Burrowed Lurkers are unable to move, but are able to attack. They cannot be seen without detection.",
-      "Name": "Burrow"
+      "Name": {
+        "enUS": "Burrow",
+        "ruRU": "Burrow"
+      },
+      "Tooltip": {
+        "enUS": "Buries the Lurker underground. Burrowed Lurkers are unable to move, but are able to attack. They cannot be seen without detection.",
+        "ruRU": "Buries the Lurker underground. Burrowed Lurkers are unable to move, but are able to attack. They cannot be seen without detection."
+      }
     }
   ]
 }

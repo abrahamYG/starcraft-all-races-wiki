@@ -1,6 +1,12 @@
 {
-  "Name": "Twilight Council",
-  "Description": "Contains upgrades for Zealots, Stalkers, and Adepts.",
+  "Name": {
+    "enUS": "Twilight Council",
+    "ruRU": "Twilight Council"
+  },
+  "Description": {
+    "enUS": "Contains upgrades for Zealots, Stalkers, and Adepts.",
+    "ruRU": "Contains upgrades for Zealots, Stalkers, and Adepts."
+  },
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -12,7 +18,10 @@
   "ResourceType": "Unknown",
   "LifeStart": 500,
   "LifeMax": 500,
-  "LifeArmorName": "Protoss Armor",
+  "LifeArmorName": {
+    "enUS": "Protoss Armor",
+    "ruRU": "Protoss Armor"
+  },
   "Mover": "Ground",
   "StationaryTurningRate": 719.4726,
   "TurningRate": 719.4726,
@@ -77,6 +86,12 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "Facing": 315,
   "Mob": "Multiplayer",
   "FogVisibility": "Snapshot",
@@ -84,7 +99,10 @@
   "ShieldsStart": 500,
   "ShieldsMax": 500,
   "ShieldRegenRate": 2,
-  "ShieldArmorName": "Protoss Plasma Shields",
+  "ShieldArmorName": {
+    "enUS": "Protoss Plasma Shields",
+    "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+  },
   "AttackTargetPriority": 11,
   "Footprint": "Footprint3x3Contour",
   "PlacementFootprint": "Footprint3x3",
@@ -105,9 +123,8 @@
     "Structure",
     "RoachBurrow",
     "ForceField",
-    "Small",
-    "Locust",
-    "Phased"
+    "Phased",
+    "Small"
   ],
   "Sight": 9,
   "CardLayouts": {
@@ -131,6 +148,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "que5",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "QueueCount": 1,
           "Flags": {
             "BestUnit": 1,
@@ -163,8 +186,14 @@
         "AbilCmd": "que5,CancelLast",
         "id": "Cancel",
         "Icon": "btn-command-cancel",
-        "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
-        "Name": "Cancel",
+        "Name": {
+          "enUS": "Cancel",
+          "ruRU": "Отменить /// Cancel"
+        },
+        "Tooltip": {
+          "enUS": "Drops the current order without performing it, and allows you to select a different order.",
+          "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+        },
         "Hotkey": "Esc"
       },
       {
@@ -186,6 +215,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "BuildInProgress",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "Activity": "UI/Building",
           "VitalStartFactor": {
             "Life": 0.1,
@@ -218,8 +253,14 @@
         "AbilCmd": "BuildInProgress,Cancel",
         "id": "CancelBuilding",
         "Icon": "btn-command-cancel",
-        "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-        "Name": "Cancel",
+        "Name": {
+          "enUS": "Cancel",
+          "ruRU": "Отменить /// Cancel"
+        },
+        "Tooltip": {
+          "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+          "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+        },
         "Hotkey": "Esc"
       },
       {
@@ -231,17 +272,16 @@
               "ShowInGlossary": 1
             },
             "DefaultButtonFace": "ResearchStalkerTeleport",
-            "State": "Restricted",
             "Requirements": "LearnBlink"
           },
           "Resource": {
             "Minerals": 150,
             "Vespene": 150
           },
-          "Time": 170,
+          "Time": 140,
           "Upgrade": "BlinkTech"
         },
-        "Time": 170,
+        "Time": 140,
         "Cost": {
           "Minerals": 150,
           "Vespene": 150,
@@ -258,8 +298,14 @@
         "AbilCmd": "TwilightCouncilResearch,Research2",
         "id": "ResearchStalkerTeleport",
         "Icon": "btn-ability-protoss-blink-color",
-        "Tooltip": "Allows <span style=\"color: #ffff8a\">Stalkers</span> to teleport to a nearby target location.",
-        "Name": "Research Blink",
+        "Name": {
+          "enUS": "Research Blink",
+          "ruRU": "Research Blink"
+        },
+        "Tooltip": {
+          "enUS": "Allows <span style=\"color: ffff8a\">Stalkers</span> to teleport to a nearby target location.",
+          "ruRU": "Allows <span style=\"color: ffff8a\">Stalkers</span> to teleport to a nearby target location."
+        },
         "Hotkey": "B"
       },
       {
@@ -271,7 +317,6 @@
               "ShowInGlossary": 1
             },
             "DefaultButtonFace": "ResearchCharge",
-            "State": "Restricted",
             "Requirements": "LearnCharge"
           },
           "Resource": {
@@ -298,8 +343,14 @@
         "AbilCmd": "TwilightCouncilResearch,Research1",
         "id": "ResearchCharge",
         "Icon": "btn-ability-protoss-charge-color",
-        "Tooltip": "Allows <span style=\"color: #ffff8a\">Zealots</span> to intercept nearby enemies. Also increases the movement speed of <span style=\"color: #ffff8a\">Zealots</span>. Ability can only be used once every <b>10</b> seconds.",
-        "Name": "Research Charge",
+        "Name": {
+          "enUS": "Research Charge",
+          "ruRU": "Research Charge"
+        },
+        "Tooltip": {
+          "enUS": "Allows <span style=\"color: ffff8a\">Zealots</span> to intercept nearby enemies. Also increases the movement speed of <span style=\"color: ffff8a\">Zealots</span>.",
+          "ruRU": "Allows <span style=\"color: ffff8a\">Zealots</span> to intercept nearby enemies. Also increases the movement speed of <span style=\"color: ffff8a\">Zealots</span>."
+        },
         "Hotkey": "C"
       },
       {
@@ -317,10 +368,8 @@
             "Minerals": 100,
             "Vespene": 100
           },
-          "Time": 140,
           "Upgrade": "AdeptPiercingAttack"
         },
-        "Time": 140,
         "Cost": {
           "Minerals": 100,
           "Vespene": 100,
@@ -337,8 +386,14 @@
         "AbilCmd": "TwilightCouncilResearch,Research3",
         "id": "AdeptResearchPiercingUpgrade",
         "Icon": "btn-upgrade-protoss-resonatingglaives-orange",
-        "Tooltip": "Increases the attack speed of <span style=\"color: #ffff8a\">Adepts</span> by 45%.",
-        "Name": "Research Resonating Glaives",
+        "Name": {
+          "enUS": "Research Resonating Glaives",
+          "ruRU": "Research Resonating Glaives"
+        },
+        "Tooltip": {
+          "enUS": "Increases the attack speed of <span style=\"color: ffff8a\">Adepts</span> by 45%.",
+          "ruRU": "Increases the attack speed of <span style=\"color: ffff8a\">Adepts</span> by 45%."
+        },
         "Hotkey": "A"
       }
     ]
@@ -359,21 +414,35 @@
   "Behaviors": [
     {
       "id": "PowerUserQueue",
-      "Icon": "btn-building-protoss-pylon"
+      "Icon": "btn-building-protoss-pylon",
+      "Name": {
+        "enUS": "Power User (Queue)",
+        "ruRU": "Power User (Queue)"
+      },
+      "Tooltip": "-"
     }
   ],
   "Abilities": [
     {
       "id": "BuildInProgress",
-      "Name": "Build in Progress"
+      "Name": {
+        "enUS": "Build in Progress",
+        "ruRU": "Build in Progress"
+      }
     },
     {
       "id": "que5",
-      "Name": "Queue (5)"
+      "Name": {
+        "ruRU": "Queue (5)",
+        "enUS": "Queue (5)"
+      }
     },
     {
       "id": "TwilightCouncilResearch",
-      "Name": "Research"
+      "Name": {
+        "enUS": "Research",
+        "ruRU": "Research"
+      }
     }
   ],
   "$Upgrades": [
@@ -386,15 +455,7 @@
     "ProtossShieldsLevel3",
     "ProtossBuild",
     "IsTwilightCouncil",
-    "TwilightCouncilSplat",
-    "Combat_FastTier2_TwilightCouncilCount",
-    "TwilightCouncilBase",
-    "TwilightCouncil",
-    "TwilightCouncilForged",
-    "TwilightCouncilIhanrii",
-    "DefaultSkinPack",
-    "TwilightCouncilForged",
-    "TwilightCouncilIhanrii"
+    "TwilightCouncilSplat"
   ],
   "$Requirements": [],
   "$Production": [],
@@ -413,36 +474,66 @@
       "AbilCmd": "que5,CancelLast",
       "id": "Cancel",
       "Icon": "btn-command-cancel",
-      "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
-      "Name": "Cancel"
+      "Name": {
+        "enUS": "Cancel",
+        "ruRU": "Отменить /// Cancel"
+      },
+      "Tooltip": {
+        "enUS": "Drops the current order without performing it, and allows you to select a different order.",
+        "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+      }
     },
     {
       "AbilCmd": "BuildInProgress,Cancel",
       "id": "CancelBuilding",
       "Icon": "btn-command-cancel",
-      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-      "Name": "Cancel"
+      "Name": {
+        "enUS": "Cancel",
+        "ruRU": "Отменить /// Cancel"
+      },
+      "Tooltip": {
+        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+        "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+      }
     },
     {
       "AbilCmd": "TwilightCouncilResearch,Research2",
       "id": "ResearchStalkerTeleport",
       "Icon": "btn-ability-protoss-blink-color",
-      "Tooltip": "Allows <span style=\"color: #ffff8a\">Stalkers</span> to teleport to a nearby target location.",
-      "Name": "Research Blink"
+      "Name": {
+        "enUS": "Research Blink",
+        "ruRU": "Research Blink"
+      },
+      "Tooltip": {
+        "enUS": "Allows <span style=\"color: ffff8a\">Stalkers</span> to teleport to a nearby target location.",
+        "ruRU": "Allows <span style=\"color: ffff8a\">Stalkers</span> to teleport to a nearby target location."
+      }
     },
     {
       "AbilCmd": "TwilightCouncilResearch,Research1",
       "id": "ResearchCharge",
       "Icon": "btn-ability-protoss-charge-color",
-      "Tooltip": "Allows <span style=\"color: #ffff8a\">Zealots</span> to intercept nearby enemies. Also increases the movement speed of <span style=\"color: #ffff8a\">Zealots</span>. Ability can only be used once every <b>10</b> seconds.",
-      "Name": "Research Charge"
+      "Name": {
+        "enUS": "Research Charge",
+        "ruRU": "Research Charge"
+      },
+      "Tooltip": {
+        "enUS": "Allows <span style=\"color: ffff8a\">Zealots</span> to intercept nearby enemies. Also increases the movement speed of <span style=\"color: ffff8a\">Zealots</span>.",
+        "ruRU": "Allows <span style=\"color: ffff8a\">Zealots</span> to intercept nearby enemies. Also increases the movement speed of <span style=\"color: ffff8a\">Zealots</span>."
+      }
     },
     {
       "AbilCmd": "TwilightCouncilResearch,Research3",
       "id": "AdeptResearchPiercingUpgrade",
       "Icon": "btn-upgrade-protoss-resonatingglaives-orange",
-      "Tooltip": "Increases the attack speed of <span style=\"color: #ffff8a\">Adepts</span> by 45%.",
-      "Name": "Research Resonating Glaives"
+      "Name": {
+        "enUS": "Research Resonating Glaives",
+        "ruRU": "Research Resonating Glaives"
+      },
+      "Tooltip": {
+        "enUS": "Increases the attack speed of <span style=\"color: ffff8a\">Adepts</span> by 45%.",
+        "ruRU": "Increases the attack speed of <span style=\"color: ffff8a\">Adepts</span> by 45%."
+      }
     }
   ]
 }

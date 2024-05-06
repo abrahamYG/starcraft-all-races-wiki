@@ -1,6 +1,12 @@
 {
-  "Name": "Spire",
-  "Description": "Contains upgrades for Zerg air units. Can mutate into a Greater Spire.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Mutalisks from Larvae<br/>- Corruptors from Larvae",
+  "Name": {
+    "enUS": "Spire",
+    "ruRU": "Spire"
+  },
+  "Description": {
+    "enUS": "Contains upgrades for Zerg air units. Can mutate into a Greater Spire.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Mutalisks from Larvae<br/>- Corruptors from Larvae",
+    "ruRU": "Contains upgrades for Zerg air units. Can mutate into a Greater Spire.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Mutalisks from Larvae<br/>- Corruptors from Larvae"
+  },
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -12,7 +18,10 @@
   "ResourceType": "Unknown",
   "LifeStart": 850,
   "LifeMax": 850,
-  "LifeArmorName": "Zerg Building Armor",
+  "LifeArmorName": {
+    "enUS": "Zerg Building Armor",
+    "ruRU": "Zerg Building Armor"
+  },
   "Mover": "Ground",
   "StationaryTurningRate": 719.4726,
   "TurningRate": 719.4726,
@@ -77,6 +86,12 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "TechAliasArray": [
     "Alias_Spire"
   ],
@@ -106,9 +121,8 @@
     "Structure",
     "RoachBurrow",
     "ForceField",
-    "Small",
-    "Locust",
-    "Phased"
+    "Phased",
+    "Small"
   ],
   "Sight": 9,
   "CardLayouts": {
@@ -157,8 +171,14 @@
         "AbilCmd": "UpgradeToGreaterSpire,Cancel",
         "id": "CancelMutateMorph",
         "Icon": "btn-command-cancel",
-        "Tooltip": "Cancels the mutation order, returning the structure to its original state.",
-        "Name": "Cancel",
+        "Name": {
+          "enUS": "Cancel",
+          "ruRU": "Cancel"
+        },
+        "Tooltip": {
+          "enUS": "Cancels the mutation order, returning the structure to its original state.",
+          "ruRU": "Cancels the mutation order, returning the structure to its original state."
+        },
         "Hotkey": "Esc"
       },
       {
@@ -180,6 +200,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "que5CancelToSelection",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "QueueCount": 1,
           "Flags": {
             "BestUnit": 1,
@@ -216,8 +242,14 @@
         "AbilCmd": "que5CancelToSelection,CancelLast",
         "id": "Cancel",
         "Icon": "btn-command-cancel",
-        "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
-        "Name": "Cancel",
+        "Name": {
+          "enUS": "Cancel",
+          "ruRU": "Отменить /// Cancel"
+        },
+        "Tooltip": {
+          "enUS": "Drops the current order without performing it, and allows you to select a different order.",
+          "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+        },
         "Hotkey": "Esc"
       },
       {
@@ -239,6 +271,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "BuildInProgress",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "Activity": "UI/Building",
           "VitalStartFactor": {
             "Life": 0.1,
@@ -271,8 +309,14 @@
         "AbilCmd": "BuildInProgress,Cancel",
         "id": "CancelBuilding",
         "Icon": "btn-command-cancel",
-        "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-        "Name": "Cancel",
+        "Name": {
+          "enUS": "Cancel",
+          "ruRU": "Отменить /// Cancel"
+        },
+        "Tooltip": {
+          "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+          "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+        },
         "Hotkey": "Esc"
       },
       {
@@ -319,8 +363,14 @@
         "AbilCmd": "UpgradeToGreaterSpire,Execute",
         "id": "GreaterSpire",
         "Icon": "btn-building-zerg-greaterspire",
-        "Tooltip": "Contains upgrades for Zerg air units.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Brood Lords from Corruptors",
-        "Name": "Mutate into Greater Spire",
+        "Name": {
+          "enUS": "Mutate into Greater Spire",
+          "ruRU": "Mutate into Greater Spire"
+        },
+        "Tooltip": {
+          "enUS": "Contains upgrades for Zerg air units.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Brood Lords from Corruptors",
+          "ruRU": "Contains upgrades for Zerg air units.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Brood Lords from Corruptors"
+        },
         "Hotkey": "G"
       },
       {
@@ -332,7 +382,6 @@
               "ToSelection": 1
             },
             "DefaultButtonFace": "zergflyerattack1",
-            "State": "Restricted",
             "Requirements": "LearnZergFlyerAttack1"
           },
           "Resource": {
@@ -359,8 +408,14 @@
         "AbilCmd": "SpireResearch,Research1",
         "id": "zergflyerattack1",
         "Icon": "btn-upgrade-zerg-airattacks-level1",
-        "Tooltip": "Upgrades the attacks of all Zerg air units.",
-        "Name": "Evolve Flyer Attacks Level 1",
+        "Name": {
+          "enUS": "Evolve Flyer Attacks Level 1",
+          "ruRU": "Evolve Flyer Attacks Level 1"
+        },
+        "Tooltip": {
+          "enUS": "Upgrades the attacks of all Zerg air units.",
+          "ruRU": "Upgrades the attacks of all Zerg air units."
+        },
         "Hotkey": "A"
       },
       {
@@ -372,7 +427,6 @@
               "ToSelection": 1
             },
             "DefaultButtonFace": "zergflyerattack2",
-            "State": "Restricted",
             "Requirements": "LearnZergFlyerAttack2"
           },
           "Resource": {
@@ -399,8 +453,14 @@
         "AbilCmd": "SpireResearch,Research2",
         "id": "zergflyerattack2",
         "Icon": "btn-upgrade-zerg-airattacks-level2",
-        "Tooltip": "Further upgrades the attacks of all Zerg air units.",
-        "Name": "Evolve Flyer Attacks Level 2",
+        "Name": {
+          "enUS": "Evolve Flyer Attacks Level 2",
+          "ruRU": "Evolve Flyer Attacks Level 2"
+        },
+        "Tooltip": {
+          "enUS": "Further upgrades the attacks of all Zerg air units.",
+          "ruRU": "Further upgrades the attacks of all Zerg air units."
+        },
         "Hotkey": "A"
       },
       {
@@ -412,7 +472,6 @@
               "ToSelection": 1
             },
             "DefaultButtonFace": "zergflyerattack3",
-            "State": "Restricted",
             "Requirements": "LearnZergFlyerAttack3"
           },
           "Resource": {
@@ -439,8 +498,14 @@
         "AbilCmd": "SpireResearch,Research3",
         "id": "zergflyerattack3",
         "Icon": "btn-upgrade-zerg-airattacks-level3",
-        "Tooltip": "Maximizes the attacks of all Zerg air units.",
-        "Name": "Evolve Flyer Attacks Level 3",
+        "Name": {
+          "enUS": "Evolve Flyer Attacks Level 3",
+          "ruRU": "Evolve Flyer Attacks Level 3"
+        },
+        "Tooltip": {
+          "enUS": "Maximizes the attacks of all Zerg air units.",
+          "ruRU": "Maximizes the attacks of all Zerg air units."
+        },
         "Hotkey": "A"
       },
       {
@@ -452,7 +517,6 @@
               "ToSelection": 1
             },
             "DefaultButtonFace": "zergflyerarmor1",
-            "State": "Restricted",
             "Requirements": "LearnZergFlyerArmor1"
           },
           "Resource": {
@@ -479,8 +543,14 @@
         "AbilCmd": "SpireResearch,Research4",
         "id": "zergflyerarmor1",
         "Icon": "btn-upgrade-zerg-flyercarapace-level1",
-        "Tooltip": "Upgrades the armor of all Zerg air units.",
-        "Name": "Evolve Flyer Carapace Level 1",
+        "Name": {
+          "enUS": "Evolve Flyer Carapace Level 1",
+          "ruRU": "Evolve Flyer Carapace Level 1"
+        },
+        "Tooltip": {
+          "enUS": "Upgrades the armor of all Zerg air units.",
+          "ruRU": "Upgrades the armor of all Zerg air units."
+        },
         "Hotkey": "C"
       },
       {
@@ -492,7 +562,6 @@
               "ToSelection": 1
             },
             "DefaultButtonFace": "zergflyerarmor2",
-            "State": "Restricted",
             "Requirements": "LearnZergFlyerArmor2"
           },
           "Resource": {
@@ -519,8 +588,14 @@
         "AbilCmd": "SpireResearch,Research5",
         "id": "zergflyerarmor2",
         "Icon": "btn-upgrade-zerg-flyercarapace-level2",
-        "Tooltip": "Further upgrades the armor of all Zerg air units.",
-        "Name": "Evolve Flyer Carapace Level 2",
+        "Name": {
+          "enUS": "Evolve Flyer Carapace Level 2",
+          "ruRU": "Evolve Flyer Carapace Level 2"
+        },
+        "Tooltip": {
+          "enUS": "Further upgrades the armor of all Zerg air units.",
+          "ruRU": "Further upgrades the armor of all Zerg air units."
+        },
         "Hotkey": "C"
       },
       {
@@ -532,7 +607,6 @@
               "ToSelection": 1
             },
             "DefaultButtonFace": "zergflyerarmor3",
-            "State": "Restricted",
             "Requirements": "LearnZergFlyerArmor3"
           },
           "Resource": {
@@ -559,8 +633,14 @@
         "AbilCmd": "SpireResearch,Research6",
         "id": "zergflyerarmor3",
         "Icon": "btn-upgrade-zerg-flyercarapace-level3",
-        "Tooltip": "Maximizes the armor of all Zerg air units.",
-        "Name": "Evolve Flyer Carapace Level 3",
+        "Name": {
+          "enUS": "Evolve Flyer Carapace Level 3",
+          "ruRU": "Evolve Flyer Carapace Level 3"
+        },
+        "Tooltip": {
+          "enUS": "Maximizes the armor of all Zerg air units.",
+          "ruRU": "Maximizes the armor of all Zerg air units."
+        },
         "Hotkey": "C"
       }
     ]
@@ -583,31 +663,58 @@
   "Weapons": [],
   "Behaviors": [
     {
-      "id": "OnCreep"
+      "id": "OnCreep",
+      "Name": {
+        "enUS": "On Creep",
+        "ruRU": "On Creep"
+      },
+      "Tooltip": "-"
     },
     {
-      "id": "ZergBuildingNotOnCreep"
+      "id": "ZergBuildingNotOnCreep",
+      "Name": {
+        "enUS": "Building Not On Creep",
+        "ruRU": "Building Not On Creep"
+      },
+      "Tooltip": "-"
     },
     {
-      "id": "ZergBuildingDies6"
+      "id": "ZergBuildingDies6",
+      "Name": {
+        "enUS": "Zerg Building Dies 6",
+        "ruRU": "Zerg Building Dies 6"
+      },
+      "Tooltip": "-"
     }
   ],
   "Abilities": [
     {
       "id": "BuildInProgress",
-      "Name": "Build in Progress"
+      "Name": {
+        "enUS": "Build in Progress",
+        "ruRU": "Build in Progress"
+      }
     },
     {
       "id": "que5CancelToSelection",
-      "Name": "Queue (5) (Cancel To Selection)"
+      "Name": {
+        "ruRU": "Queue (5) (Cancel To Selection)",
+        "enUS": "Queue (5) (Cancel To Selection)"
+      }
     },
     {
       "id": "UpgradeToGreaterSpire",
-      "Name": "Morph Building (Spire -> Greater Spire)"
+      "Name": {
+        "enUS": "Morph Building (Spire -> Greater Spire)",
+        "ruRU": "Morph Building (Spire -> Greater Spire)"
+      }
     },
     {
       "id": "SpireResearch",
-      "Name": "Research (Spire & GreaterSpire)"
+      "Name": {
+        "enUS": "Research (Spire & GreaterSpire)",
+        "ruRU": "Research (Spire & GreaterSpire)"
+      }
     }
   ],
   "$Upgrades": [
@@ -616,17 +723,12 @@
     "ZergBuild",
     "IsSpire",
     "Spire",
-    "NotSpire",
-    "SpireBase",
-    "Spire",
-    "SpireMecha",
-    "SpireRCZ",
-    "DefaultSkinPack",
-    "SpireMecha",
-    "SpireRCZ"
+    "NotSpire"
   ],
   "$Requirements": [],
-  "$Production": [],
+  "$Production": [
+    "Broodling"
+  ],
   "$Research": [
     "ZergFlyerWeaponsLevel1",
     "ZergFlyerWeaponsLevel2",
@@ -647,71 +749,131 @@
       "AbilCmd": "UpgradeToGreaterSpire,Cancel",
       "id": "CancelMutateMorph",
       "Icon": "btn-command-cancel",
-      "Tooltip": "Cancels the mutation order, returning the structure to its original state.",
-      "Name": "Cancel"
+      "Name": {
+        "enUS": "Cancel",
+        "ruRU": "Cancel"
+      },
+      "Tooltip": {
+        "enUS": "Cancels the mutation order, returning the structure to its original state.",
+        "ruRU": "Cancels the mutation order, returning the structure to its original state."
+      }
     },
     {
       "AbilCmd": "que5CancelToSelection,CancelLast",
       "id": "Cancel",
       "Icon": "btn-command-cancel",
-      "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
-      "Name": "Cancel"
+      "Name": {
+        "enUS": "Cancel",
+        "ruRU": "Отменить /// Cancel"
+      },
+      "Tooltip": {
+        "enUS": "Drops the current order without performing it, and allows you to select a different order.",
+        "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+      }
     },
     {
       "AbilCmd": "BuildInProgress,Cancel",
       "id": "CancelBuilding",
       "Icon": "btn-command-cancel",
-      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-      "Name": "Cancel"
+      "Name": {
+        "enUS": "Cancel",
+        "ruRU": "Отменить /// Cancel"
+      },
+      "Tooltip": {
+        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+        "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+      }
     },
     {
       "AbilCmd": "UpgradeToGreaterSpire,Execute",
       "id": "GreaterSpire",
       "Icon": "btn-building-zerg-greaterspire",
-      "Tooltip": "Contains upgrades for Zerg air units.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Brood Lords from Corruptors",
-      "Name": "Mutate into Greater Spire"
+      "Name": {
+        "enUS": "Mutate into Greater Spire",
+        "ruRU": "Mutate into Greater Spire"
+      },
+      "Tooltip": {
+        "enUS": "Contains upgrades for Zerg air units.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Brood Lords from Corruptors",
+        "ruRU": "Contains upgrades for Zerg air units.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Brood Lords from Corruptors"
+      }
     },
     {
       "AbilCmd": "SpireResearch,Research1",
       "id": "zergflyerattack1",
       "Icon": "btn-upgrade-zerg-airattacks-level1",
-      "Tooltip": "Upgrades the attacks of all Zerg air units.",
-      "Name": "Evolve Flyer Attacks Level 1"
+      "Name": {
+        "enUS": "Evolve Flyer Attacks Level 1",
+        "ruRU": "Evolve Flyer Attacks Level 1"
+      },
+      "Tooltip": {
+        "enUS": "Upgrades the attacks of all Zerg air units.",
+        "ruRU": "Upgrades the attacks of all Zerg air units."
+      }
     },
     {
       "AbilCmd": "SpireResearch,Research2",
       "id": "zergflyerattack2",
       "Icon": "btn-upgrade-zerg-airattacks-level2",
-      "Tooltip": "Further upgrades the attacks of all Zerg air units.",
-      "Name": "Evolve Flyer Attacks Level 2"
+      "Name": {
+        "enUS": "Evolve Flyer Attacks Level 2",
+        "ruRU": "Evolve Flyer Attacks Level 2"
+      },
+      "Tooltip": {
+        "enUS": "Further upgrades the attacks of all Zerg air units.",
+        "ruRU": "Further upgrades the attacks of all Zerg air units."
+      }
     },
     {
       "AbilCmd": "SpireResearch,Research3",
       "id": "zergflyerattack3",
       "Icon": "btn-upgrade-zerg-airattacks-level3",
-      "Tooltip": "Maximizes the attacks of all Zerg air units.",
-      "Name": "Evolve Flyer Attacks Level 3"
+      "Name": {
+        "enUS": "Evolve Flyer Attacks Level 3",
+        "ruRU": "Evolve Flyer Attacks Level 3"
+      },
+      "Tooltip": {
+        "enUS": "Maximizes the attacks of all Zerg air units.",
+        "ruRU": "Maximizes the attacks of all Zerg air units."
+      }
     },
     {
       "AbilCmd": "SpireResearch,Research4",
       "id": "zergflyerarmor1",
       "Icon": "btn-upgrade-zerg-flyercarapace-level1",
-      "Tooltip": "Upgrades the armor of all Zerg air units.",
-      "Name": "Evolve Flyer Carapace Level 1"
+      "Name": {
+        "enUS": "Evolve Flyer Carapace Level 1",
+        "ruRU": "Evolve Flyer Carapace Level 1"
+      },
+      "Tooltip": {
+        "enUS": "Upgrades the armor of all Zerg air units.",
+        "ruRU": "Upgrades the armor of all Zerg air units."
+      }
     },
     {
       "AbilCmd": "SpireResearch,Research5",
       "id": "zergflyerarmor2",
       "Icon": "btn-upgrade-zerg-flyercarapace-level2",
-      "Tooltip": "Further upgrades the armor of all Zerg air units.",
-      "Name": "Evolve Flyer Carapace Level 2"
+      "Name": {
+        "enUS": "Evolve Flyer Carapace Level 2",
+        "ruRU": "Evolve Flyer Carapace Level 2"
+      },
+      "Tooltip": {
+        "enUS": "Further upgrades the armor of all Zerg air units.",
+        "ruRU": "Further upgrades the armor of all Zerg air units."
+      }
     },
     {
       "AbilCmd": "SpireResearch,Research6",
       "id": "zergflyerarmor3",
       "Icon": "btn-upgrade-zerg-flyercarapace-level3",
-      "Tooltip": "Maximizes the armor of all Zerg air units.",
-      "Name": "Evolve Flyer Carapace Level 3"
+      "Name": {
+        "enUS": "Evolve Flyer Carapace Level 3",
+        "ruRU": "Evolve Flyer Carapace Level 3"
+      },
+      "Tooltip": {
+        "enUS": "Maximizes the armor of all Zerg air units.",
+        "ruRU": "Maximizes the armor of all Zerg air units."
+      }
     }
   ]
 }

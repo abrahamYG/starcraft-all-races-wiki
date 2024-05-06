@@ -1,6 +1,12 @@
 {
-  "Name": "Barracks",
-  "Description": "Infantry-production facility.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Marines<br/>- Reapers<br/>- Bunkers from SCVs<br/>- Orbital Commands from Command Centers",
+  "Name": {
+    "enUS": "Barracks",
+    "ruRU": "Barracks"
+  },
+  "Description": {
+    "enUS": "Infantry-production facility.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Marines<br/>- Reapers<br/>- Bunkers from SCVs<br/>- Orbital Commands from Command Centers",
+    "ruRU": "Infantry-production facility.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Marines<br/>- Reapers<br/>- Bunkers from SCVs<br/>- Orbital Commands from Command Centers"
+  },
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -12,7 +18,10 @@
   "ResourceType": "Unknown",
   "LifeStart": 1000,
   "LifeMax": 1000,
-  "LifeArmorName": "Terran Building Plating",
+  "LifeArmorName": {
+    "enUS": "Terran Building Plating",
+    "ruRU": "Terran Building Plating"
+  },
   "Mover": "Ground",
   "StationaryTurningRate": 719.4726,
   "TurningRate": 719.4726,
@@ -77,6 +86,12 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "TechAliasArray": [
     "Alias_Barracks"
   ],
@@ -110,9 +125,8 @@
     "Structure",
     "RoachBurrow",
     "ForceField",
-    "Small",
-    "Locust",
-    "Phased"
+    "Phased",
+    "Small"
   ],
   "Sight": 9,
   "CardLayouts": {
@@ -123,8 +137,7 @@
             "Flags": {
               "AllowMinimap": 0
             },
-            "DefaultButtonFace": "Marine",
-            "State": "Restricted"
+            "DefaultButtonFace": "Marine"
           },
           "Unit": [
             "Marine"
@@ -151,30 +164,15 @@
         "AbilCmd": "BarracksTrain,Train1",
         "id": "Marine",
         "Icon": "btn-unit-terran-marine",
-        "Tooltip": "General-purpose infantry.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units.</span>",
-        "Name": "Train Marine",
-        "Hotkey": "A"
-      },
-      {
-        "Cost": {
-          "Minerals": 0,
-          "Vespene": 0,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
+        "Name": {
+          "enUS": "Train Marine",
+          "ruRU": "Train Marine"
         },
-        "Row": 1,
-        "Column": 3,
-        "Type": "SelectBuilder",
-        "AbilCmd": "",
-        "id": "SelectBuilder",
-        "Icon": "btn-upgrade-terran-weaponrefit",
-        "Tooltip": "Selects the unit constructing this structure.",
-        "Name": "Select Builder",
-        "Hotkey": "Q"
+        "Tooltip": {
+          "enUS": "General-purpose infantry.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>",
+          "ruRU": "General-purpose infantry.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>"
+        },
+        "Hotkey": "A"
       },
       {
         "Info": {
@@ -183,7 +181,6 @@
               "AllowMinimap": 0
             },
             "DefaultButtonFace": "Marauder",
-            "State": "Restricted",
             "Requirements": "HaveAttachedTechLab"
           },
           "Unit": [
@@ -206,13 +203,19 @@
           "Food": -2
         },
         "Row": 0,
-        "Column": 2,
+        "Column": 1,
         "Type": "AbilCmd",
         "AbilCmd": "BarracksTrain,Train4",
         "id": "Marauder",
         "Icon": "btn-unit-terran-marauder",
-        "Tooltip": "Heavy assault infantry.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
-        "Name": "Train Marauder",
+        "Name": {
+          "enUS": "Train Marauder",
+          "ruRU": "Train Marauder"
+        },
+        "Tooltip": {
+          "enUS": "Heavy assault infantry.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+          "ruRU": "Heavy assault infantry.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>"
+        },
         "Hotkey": "D"
       },
       {
@@ -221,8 +224,50 @@
             "Flags": {
               "AllowMinimap": 0
             },
+            "DefaultButtonFace": "Reaper"
+          },
+          "Unit": [
+            "Reaper"
+          ],
+          "Time": 45
+        },
+        "Unit": [
+          "Reaper"
+        ],
+        "Time": 45,
+        "Cost": {
+          "Minerals": 50,
+          "Vespene": 50,
+          "Terazine": 0,
+          "Custom": 0,
+          "Energy": 0,
+          "Life": 0,
+          "Shields": 0,
+          "Food": -1
+        },
+        "Row": 0,
+        "Column": 2,
+        "Type": "AbilCmd",
+        "AbilCmd": "BarracksTrain,Train2",
+        "id": "Reaper",
+        "Icon": "btn-unit-terran-reaper",
+        "Name": {
+          "enUS": "Train Reaper",
+          "ruRU": "Train Reaper"
+        },
+        "Tooltip": {
+          "enUS": "Raider. Can jump up and down cliffs. Regenerates life quickly while out of combat. Can use KD8 Charge.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+          "ruRU": "Raider. Can jump up and down cliffs. Regenerates life quickly while out of combat. Can use KD8 Charge.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>"
+        },
+        "Hotkey": "R"
+      },
+      {
+        "Info": {
+          "Button": {
+            "Flags": {
+              "AllowMinimap": 0
+            },
             "DefaultButtonFace": "Ghost",
-            "State": "Restricted",
             "Requirements": "HaveAttachedBarrTechLabAndShadowOps"
           },
           "Unit": [
@@ -250,8 +295,14 @@
         "AbilCmd": "BarracksTrain,Train3",
         "id": "Ghost",
         "Icon": "btn-unit-terran-ghost",
-        "Tooltip": "Sniper. Can use Steady Targeting, EMP Round, and be upgraded to use Cloak. Can call down Tactical Nukes built at the Ghost Academy.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units.</span>",
-        "Name": "Train Ghost",
+        "Name": {
+          "enUS": "Train Ghost",
+          "ruRU": "Train Ghost"
+        },
+        "Tooltip": {
+          "enUS": "Sniper. Can use Snipe, EMP Round, and be upgraded to use Cloak. Can call down Tactical Nukes built at the Ghost Academy.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>",
+          "ruRU": "Sniper. Can use Snipe, EMP Round, and be upgraded to use Cloak. Can call down Tactical Nukes built at the Ghost Academy.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>"
+        },
         "Hotkey": "G"
       },
       {
@@ -272,8 +323,14 @@
         "AbilCmd": "Rally,Rally1",
         "id": "Rally",
         "Icon": "btn-ability-terran-setrallypoint",
-        "Tooltip": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
-        "Name": "Set Rally Point",
+        "Name": {
+          "enUS": "Set Rally Point",
+          "ruRU": "Задать точку сбора /// Set Rally Point"
+        },
+        "Tooltip": {
+          "enUS": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
+          "ruRU": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically."
+        },
         "Hotkey": "Y"
       },
       {
@@ -314,8 +371,14 @@
         "AbilCmd": "BarracksLiftOff,Execute",
         "id": "Lift",
         "Icon": "btn-ability-terran-liftoff",
-        "Tooltip": "Transforms structure into a slow air unit for redeployment. May not produce units, research upgrades, or use abilities until it has landed.",
-        "Name": "Lift Off",
+        "Name": {
+          "enUS": "Lift Off",
+          "ruRU": "Lift Off"
+        },
+        "Tooltip": {
+          "enUS": "Transforms structure into a slow air unit for redeployment. May not produce units, research upgrades, or use abilities until it has landed.",
+          "ruRU": "Transforms structure into a slow air unit for redeployment. May not produce units, research upgrades, or use abilities until it has landed."
+        },
         "Hotkey": "L"
       },
       {
@@ -337,6 +400,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "BuildInProgress",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "Activity": "UI/Building",
           "VitalStartFactor": {
             "Life": 0.1,
@@ -369,8 +438,14 @@
         "AbilCmd": "BuildInProgress,Halt",
         "id": "Halt",
         "Icon": "btn-command-stop",
-        "Tooltip": "Halts construction of this structure. The partial construction will remain.",
-        "Name": "Halt",
+        "Name": {
+          "enUS": "Halt",
+          "ruRU": "Приостановить /// Halt"
+        },
+        "Tooltip": {
+          "enUS": "Halts construction of this structure. The partial construction will remain.",
+          "ruRU": "Приостановить сооружение этого строения. Впоследствии его можно будет продолжить. /// Halts construction of this structure. The partial construction will remain."
+        },
         "Hotkey": "T"
       },
       {
@@ -379,8 +454,7 @@
             "Flags": {
               "AllowMinimap": 0
             },
-            "DefaultButtonFace": "Reactor",
-            "State": "Restricted"
+            "DefaultButtonFace": "Reactor"
           },
           "Unit": "BarracksReactor",
           "Time": 50,
@@ -404,8 +478,14 @@
         "AbilCmd": "BarracksAddOns,Build2",
         "id": "Reactor",
         "Icon": "btn-building-terran-reactor",
-        "Tooltip": "Allows 2 units to be created simultaneously.",
-        "Name": "Build Reactor",
+        "Name": {
+          "enUS": "Build Reactor",
+          "ruRU": "Build Reactor"
+        },
+        "Tooltip": {
+          "enUS": "Allows 2 units to be created simultaneously.",
+          "ruRU": "Allows 2 units to be created simultaneously."
+        },
         "Hotkey": "C"
       },
       {
@@ -414,8 +494,7 @@
             "Flags": {
               "AllowMinimap": 0
             },
-            "DefaultButtonFace": "BuildTechLabBarracks",
-            "State": "Suppressed"
+            "DefaultButtonFace": "BuildTechLabBarracks"
           },
           "Unit": "BarracksTechLab",
           "Time": 25,
@@ -439,8 +518,14 @@
         "AbilCmd": "BarracksAddOns,Build1",
         "id": "TechLabBarracks",
         "Icon": "btn-building-terran-techlab",
-        "Tooltip": "Infantry-research structure. A Tech Lab can fit onto any production structure.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Marauders<br/>- Ghosts with Ghost Academy",
-        "Name": "Build Tech Lab",
+        "Name": {
+          "enUS": "Build Tech Lab",
+          "ruRU": "Build Tech Lab"
+        },
+        "Tooltip": {
+          "enUS": "Infantry-research structure. A Tech Lab can fit onto any production structure.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Marauders<br/>- Ghosts with Ghost Academy",
+          "ruRU": "Infantry-research structure. A Tech Lab can fit onto any production structure.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Marauders<br/>- Ghosts with Ghost Academy"
+        },
         "Hotkey": "X"
       },
       {
@@ -462,6 +547,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "que5",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "QueueCount": 1,
           "Flags": {
             "BestUnit": 1,
@@ -494,8 +585,14 @@
         "AbilCmd": "que5,CancelLast",
         "id": "Cancel",
         "Icon": "btn-command-cancel",
-        "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
-        "Name": "Cancel",
+        "Name": {
+          "enUS": "Cancel",
+          "ruRU": "Отменить /// Cancel"
+        },
+        "Tooltip": {
+          "enUS": "Drops the current order without performing it, and allows you to select a different order.",
+          "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+        },
         "Hotkey": "Esc"
       },
       {
@@ -517,6 +614,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "BarracksAddOns",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "HaltCmdButton": {
             "DefaultButtonFace": "Cancel"
           },
@@ -548,8 +651,7 @@
                 "Flags": {
                   "AllowMinimap": 0
                 },
-                "DefaultButtonFace": "BuildTechLabBarracks",
-                "State": "Suppressed"
+                "DefaultButtonFace": "BuildTechLabBarracks"
               },
               "Unit": "BarracksTechLab",
               "Time": 25,
@@ -560,8 +662,7 @@
                 "Flags": {
                   "AllowMinimap": 0
                 },
-                "DefaultButtonFace": "Reactor",
-                "State": "Restricted"
+                "DefaultButtonFace": "Reactor"
               },
               "Unit": "BarracksReactor",
               "Time": 50,
@@ -784,8 +885,14 @@
         "AbilCmd": "BarracksAddOns,Halt",
         "id": "Cancel",
         "Icon": "btn-command-cancel",
-        "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
-        "Name": "Cancel",
+        "Name": {
+          "enUS": "Cancel",
+          "ruRU": "Отменить /// Cancel"
+        },
+        "Tooltip": {
+          "enUS": "Drops the current order without performing it, and allows you to select a different order.",
+          "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+        },
         "Hotkey": "Esc"
       },
       {
@@ -807,6 +914,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "BuildInProgress",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "Activity": "UI/Building",
           "VitalStartFactor": {
             "Life": 0.1,
@@ -839,48 +952,41 @@
         "AbilCmd": "BuildInProgress,Cancel",
         "id": "CancelBuilding",
         "Icon": "btn-command-cancel",
-        "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-        "Name": "Cancel",
+        "Name": {
+          "enUS": "Cancel",
+          "ruRU": "Отменить /// Cancel"
+        },
+        "Tooltip": {
+          "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+          "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+        },
         "Hotkey": "Esc"
       },
       {
-        "Info": {
-          "Button": {
-            "Flags": {
-              "AllowMinimap": 0
-            },
-            "DefaultButtonFace": "Reaper",
-            "State": "Restricted",
-            "Requirements": ""
-          },
-          "Unit": [
-            "Reaper"
-          ],
-          "Time": 45
-        },
-        "Unit": [
-          "Reaper"
-        ],
-        "Time": 45,
         "Cost": {
-          "Minerals": 50,
-          "Vespene": 50,
+          "Minerals": 0,
+          "Vespene": 0,
           "Terazine": 0,
           "Custom": 0,
           "Energy": 0,
           "Life": 0,
           "Shields": 0,
-          "Food": -1
+          "Food": 0
         },
-        "Row": 0,
-        "Column": 1,
-        "Type": "AbilCmd",
-        "AbilCmd": "BarracksTrain,Train2",
-        "id": "Reaper",
-        "Icon": "btn-unit-terran-reaper",
-        "Tooltip": "Raider. Can jump up and down cliffs. Regenerates life quickly while out of combat. Can use KD8 Charge.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
-        "Name": "Train Reaper",
-        "Hotkey": "R"
+        "Row": 1,
+        "Column": 3,
+        "Type": "SelectBuilder",
+        "id": "SelectBuilder",
+        "Icon": "btn-upgrade-terran-weaponrefit",
+        "Name": {
+          "enUS": "Select Builder",
+          "ruRU": "Select Builder"
+        },
+        "Tooltip": {
+          "enUS": "Selects the unit constructing this structure.",
+          "ruRU": "Selects the unit constructing this structure."
+        },
+        "Hotkey": "Q"
       }
     ]
   },
@@ -899,77 +1005,103 @@
   "Weapons": [],
   "Behaviors": [
     {
-      "id": "TerranBuildingBurnDown"
+      "id": "TerranBuildingBurnDown",
+      "Name": {
+        "enUS": "Building Burnout",
+        "ruRU": "Building Burnout"
+      },
+      "Tooltip": "-"
     },
     {
-      "id": "ReactorQueue"
+      "id": "ReactorQueue",
+      "Name": {
+        "enUS": "Nuclear Reactor - Queue Buff",
+        "ruRU": "Nuclear Reactor - Queue Buff"
+      },
+      "Tooltip": "-"
     },
     {
-      "id": "TerranStructuresKnockbackBehavior"
+      "id": "TerranStructuresKnockbackBehavior",
+      "Name": {
+        "enUS": "Terran Structures Knockback Behavior",
+        "ruRU": "Terran Structures Knockback Behavior ///Auto - Copied from enUS Locale"
+      },
+      "Tooltip": "-"
     }
   ],
   "Abilities": [
     {
       "id": "BuildInProgress",
-      "Name": "Build in Progress"
+      "Name": {
+        "enUS": "Build in Progress",
+        "ruRU": "Build in Progress"
+      }
     },
     {
       "id": "que5",
-      "Name": "Queue (5)"
+      "Name": {
+        "ruRU": "Queue (5)",
+        "enUS": "Queue (5)"
+      }
     },
     {
       "id": "BarracksTrain",
-      "Name": "Train"
+      "Name": {
+        "enUS": "Train",
+        "ruRU": "Train"
+      }
     },
     {
       "id": "Rally",
-      "Name": "Rally"
+      "Name": {
+        "enUS": "Rally",
+        "ruRU": "Rally"
+      }
     },
     {
       "id": "BarracksAddOns",
-      "Name": "AddOns"
+      "Name": {
+        "enUS": "AddOns",
+        "ruRU": "AddOns"
+      }
     },
     {
       "id": "BarracksLiftOff",
-      "Name": "Lift Off"
+      "Name": {
+        "enUS": "Lift Off",
+        "ruRU": "Lift Off"
+      }
     }
   ],
   "$Upgrades": [
-    "TerranBuild",
+    "TerranBuildingArmor",
     "Barracks",
     "CountUnitAlias_BarracksCompleteOnlyAtUnit",
-    "FactoryTechLab",
-    "StarportReactor",
+    "StarportTechLab",
+    "FactoryReactor",
     "BarracksReactor",
     "Reactor",
-    "FactoryReactor",
+    "StarportReactor",
+    "FactoryTechLab",
+    "TechLab",
     "BarracksTechLab",
-    "StarportTechLab",
     "BarracksFlying",
     "BarracksLand",
-    "TerranBuildingArmor",
     "CountUnitAlias_BarracksCompleteOnly789532539TechTreeCheat",
+    "TerranBuild",
     "IsBarracks",
-    "TechLab",
     "Barracks",
     "BarracksLand",
-    "BarracksSplat",
-    "BarracksBase",
-    "Barracks",
-    "BarracksCovertOps",
-    "BarracksSilver",
-    "DefaultSkinPack",
-    "BarracksCovertOps",
-    "BarracksSilver"
+    "BarracksSplat"
   ],
   "$Requirements": [],
   "$Production": [
     "Marine",
     "Marauder",
+    "Reaper",
     "Ghost",
     "BarracksReactor",
-    "BarracksTechLab",
-    "Reaper"
+    "BarracksTechLab"
   ],
   "$Research": [],
   "$Morph": [],
@@ -984,85 +1116,157 @@
       "AbilCmd": "BarracksTrain,Train1",
       "id": "Marine",
       "Icon": "btn-unit-terran-marine",
-      "Tooltip": "General-purpose infantry.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units.</span>",
-      "Name": "Train Marine"
+      "Name": {
+        "enUS": "Train Marine",
+        "ruRU": "Train Marine"
+      },
+      "Tooltip": {
+        "enUS": "General-purpose infantry.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>",
+        "ruRU": "General-purpose infantry.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>"
+      }
     },
     {
       "AbilCmd": "BarracksTrain,Train4",
       "id": "Marauder",
       "Icon": "btn-unit-terran-marauder",
-      "Tooltip": "Heavy assault infantry.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
-      "Name": "Train Marauder"
-    },
-    {
-      "AbilCmd": "BarracksTrain,Train3",
-      "id": "Ghost",
-      "Icon": "btn-unit-terran-ghost",
-      "Tooltip": "Sniper. Can use Steady Targeting, EMP Round, and be upgraded to use Cloak. Can call down Tactical Nukes built at the Ghost Academy.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units.</span>",
-      "Name": "Train Ghost"
-    },
-    {
-      "AbilCmd": "Rally,Rally1",
-      "id": "Rally",
-      "Icon": "btn-ability-terran-setrallypoint",
-      "Tooltip": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
-      "Name": "Set Rally Point"
-    },
-    {
-      "AbilCmd": "BarracksLiftOff,Execute",
-      "id": "Lift",
-      "Icon": "btn-ability-terran-liftoff",
-      "Tooltip": "Transforms structure into a slow air unit for redeployment. May not produce units, research upgrades, or use abilities until it has landed.",
-      "Name": "Lift Off"
-    },
-    {
-      "AbilCmd": "BuildInProgress,Halt",
-      "id": "Halt",
-      "Icon": "btn-command-stop",
-      "Tooltip": "Halts construction of this structure. The partial construction will remain.",
-      "Name": "Halt"
-    },
-    {
-      "AbilCmd": "BarracksAddOns,Build2",
-      "id": "Reactor",
-      "Icon": "btn-building-terran-reactor",
-      "Tooltip": "Allows 2 units to be created simultaneously.",
-      "Name": "Build Reactor"
-    },
-    {
-      "AbilCmd": "BarracksAddOns,Build1",
-      "id": "TechLabBarracks",
-      "Icon": "btn-building-terran-techlab",
-      "Tooltip": "Infantry-research structure. A Tech Lab can fit onto any production structure.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Marauders<br/>- Ghosts with Ghost Academy",
-      "Name": "Build Tech Lab"
-    },
-    {
-      "AbilCmd": "que5,CancelLast",
-      "id": "Cancel",
-      "Icon": "btn-command-cancel",
-      "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
-      "Name": "Cancel"
-    },
-    {
-      "AbilCmd": "BarracksAddOns,Halt",
-      "id": "Cancel",
-      "Icon": "btn-command-cancel",
-      "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
-      "Name": "Cancel"
-    },
-    {
-      "AbilCmd": "BuildInProgress,Cancel",
-      "id": "CancelBuilding",
-      "Icon": "btn-command-cancel",
-      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-      "Name": "Cancel"
+      "Name": {
+        "enUS": "Train Marauder",
+        "ruRU": "Train Marauder"
+      },
+      "Tooltip": {
+        "enUS": "Heavy assault infantry.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+        "ruRU": "Heavy assault infantry.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>"
+      }
     },
     {
       "AbilCmd": "BarracksTrain,Train2",
       "id": "Reaper",
       "Icon": "btn-unit-terran-reaper",
-      "Tooltip": "Raider. Can jump up and down cliffs. Regenerates life quickly while out of combat. Can use KD8 Charge.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
-      "Name": "Train Reaper"
+      "Name": {
+        "enUS": "Train Reaper",
+        "ruRU": "Train Reaper"
+      },
+      "Tooltip": {
+        "enUS": "Raider. Can jump up and down cliffs. Regenerates life quickly while out of combat. Can use KD8 Charge.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+        "ruRU": "Raider. Can jump up and down cliffs. Regenerates life quickly while out of combat. Can use KD8 Charge.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>"
+      }
+    },
+    {
+      "AbilCmd": "BarracksTrain,Train3",
+      "id": "Ghost",
+      "Icon": "btn-unit-terran-ghost",
+      "Name": {
+        "enUS": "Train Ghost",
+        "ruRU": "Train Ghost"
+      },
+      "Tooltip": {
+        "enUS": "Sniper. Can use Snipe, EMP Round, and be upgraded to use Cloak. Can call down Tactical Nukes built at the Ghost Academy.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>",
+        "ruRU": "Sniper. Can use Snipe, EMP Round, and be upgraded to use Cloak. Can call down Tactical Nukes built at the Ghost Academy.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>"
+      }
+    },
+    {
+      "AbilCmd": "Rally,Rally1",
+      "id": "Rally",
+      "Icon": "btn-ability-terran-setrallypoint",
+      "Name": {
+        "enUS": "Set Rally Point",
+        "ruRU": "Задать точку сбора /// Set Rally Point"
+      },
+      "Tooltip": {
+        "enUS": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
+        "ruRU": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically."
+      }
+    },
+    {
+      "AbilCmd": "BarracksLiftOff,Execute",
+      "id": "Lift",
+      "Icon": "btn-ability-terran-liftoff",
+      "Name": {
+        "enUS": "Lift Off",
+        "ruRU": "Lift Off"
+      },
+      "Tooltip": {
+        "enUS": "Transforms structure into a slow air unit for redeployment. May not produce units, research upgrades, or use abilities until it has landed.",
+        "ruRU": "Transforms structure into a slow air unit for redeployment. May not produce units, research upgrades, or use abilities until it has landed."
+      }
+    },
+    {
+      "AbilCmd": "BuildInProgress,Halt",
+      "id": "Halt",
+      "Icon": "btn-command-stop",
+      "Name": {
+        "enUS": "Halt",
+        "ruRU": "Приостановить /// Halt"
+      },
+      "Tooltip": {
+        "enUS": "Halts construction of this structure. The partial construction will remain.",
+        "ruRU": "Приостановить сооружение этого строения. Впоследствии его можно будет продолжить. /// Halts construction of this structure. The partial construction will remain."
+      }
+    },
+    {
+      "AbilCmd": "BarracksAddOns,Build2",
+      "id": "Reactor",
+      "Icon": "btn-building-terran-reactor",
+      "Name": {
+        "enUS": "Build Reactor",
+        "ruRU": "Build Reactor"
+      },
+      "Tooltip": {
+        "enUS": "Allows 2 units to be created simultaneously.",
+        "ruRU": "Allows 2 units to be created simultaneously."
+      }
+    },
+    {
+      "AbilCmd": "BarracksAddOns,Build1",
+      "id": "TechLabBarracks",
+      "Icon": "btn-building-terran-techlab",
+      "Name": {
+        "enUS": "Build Tech Lab",
+        "ruRU": "Build Tech Lab"
+      },
+      "Tooltip": {
+        "enUS": "Infantry-research structure. A Tech Lab can fit onto any production structure.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Marauders<br/>- Ghosts with Ghost Academy",
+        "ruRU": "Infantry-research structure. A Tech Lab can fit onto any production structure.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Marauders<br/>- Ghosts with Ghost Academy"
+      }
+    },
+    {
+      "AbilCmd": "que5,CancelLast",
+      "id": "Cancel",
+      "Icon": "btn-command-cancel",
+      "Name": {
+        "enUS": "Cancel",
+        "ruRU": "Отменить /// Cancel"
+      },
+      "Tooltip": {
+        "enUS": "Drops the current order without performing it, and allows you to select a different order.",
+        "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+      }
+    },
+    {
+      "AbilCmd": "BarracksAddOns,Halt",
+      "id": "Cancel",
+      "Icon": "btn-command-cancel",
+      "Name": {
+        "enUS": "Cancel",
+        "ruRU": "Отменить /// Cancel"
+      },
+      "Tooltip": {
+        "enUS": "Drops the current order without performing it, and allows you to select a different order.",
+        "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+      }
+    },
+    {
+      "AbilCmd": "BuildInProgress,Cancel",
+      "id": "CancelBuilding",
+      "Icon": "btn-command-cancel",
+      "Name": {
+        "enUS": "Cancel",
+        "ruRU": "Отменить /// Cancel"
+      },
+      "Tooltip": {
+        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+        "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+      }
     }
   ]
 }

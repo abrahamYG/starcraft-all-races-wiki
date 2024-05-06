@@ -12,8 +12,14 @@
   "ScoreValue": "WeaponTechnologyValue",
   "WebPriority": 0,
   "LeaderAlias": "TechVehicleWeapons",
+  "EditorCategories": "Race:Terran,UpgradeType:Bonus",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "Race": "Terr",
-  "EditorCategories": "Race:Terran,UpgradeType:AttackBonus",
   "ScoreResult": "BuildOrder",
   "EffectArray": [
     {
@@ -173,22 +179,20 @@
       "Value": "1"
     },
     {
+      "Operation": "Set",
       "Reference": "Weapon,LanceMissileLaunchers,Icon",
-      "Value": "Assets\\Textures\\btn-upgrade-terran-vehicleweaponslevel2.dds",
-      "Operation": "Set"
+      "Value": "Assets\\Textures\\btn-upgrade-terran-vehicleweaponslevel2.dds"
     },
     {
-      "Operation": "Add",
       "Reference": "Weapon,TyphoonMissilePod,Level",
       "Value": "1"
     },
     {
+      "Operation": "Set",
       "Reference": "Weapon,TyphoonMissilePod,Icon",
-      "Value": "Assets\\Textures\\btn-upgrade-terran-vehicleweaponslevel2.dds",
-      "Operation": "Set"
+      "Value": "Assets\\Textures\\btn-upgrade-terran-vehicleweaponslevel2.dds"
     },
     {
-      "Operation": "Add",
       "Reference": "Effect,LanceMissileLaunchersDamage,AttributeBonus[Massive]",
       "Value": "1"
     }

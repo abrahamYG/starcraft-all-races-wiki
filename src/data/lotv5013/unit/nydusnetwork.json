@@ -1,6 +1,12 @@
 {
-  "Name": "Nydus Network",
-  "Description": "Friendly ground units can use the Nydus Network to instantly travel to any other Nydus Network or Nydus Worm owned by the player.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Nydus Worm",
+  "Name": {
+    "enUS": "Nydus Network",
+    "ruRU": "Nydus Network"
+  },
+  "Description": {
+    "enUS": "Friendly ground units can use the Nydus Network to instantly travel to any other Nydus Network or Nydus Worm owned by the player.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Nydus Worm",
+    "ruRU": "Friendly ground units can use the Nydus Network to instantly travel to any other Nydus Network or Nydus Worm owned by the player.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Nydus Worm"
+  },
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -12,7 +18,10 @@
   "ResourceType": "Unknown",
   "LifeStart": 850,
   "LifeMax": 850,
-  "LifeArmorName": "Zerg Building Armor",
+  "LifeArmorName": {
+    "enUS": "Zerg Building Armor",
+    "ruRU": "Zerg Building Armor"
+  },
   "Mover": "Ground",
   "StationaryTurningRate": 719.4726,
   "TurningRate": 719.4726,
@@ -78,6 +87,12 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "Facing": 344.9707,
   "Mob": "Multiplayer",
   "FogVisibility": "Snapshot",
@@ -104,9 +119,8 @@
     "Structure",
     "RoachBurrow",
     "ForceField",
-    "Small",
-    "Locust",
-    "Phased"
+    "Phased",
+    "Small"
   ],
   "Sight": 9,
   "CardLayouts": {
@@ -130,6 +144,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "BuildInProgress",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "Activity": "UI/Building",
           "VitalStartFactor": {
             "Life": 0.1,
@@ -162,8 +182,14 @@
         "AbilCmd": "BuildInProgress,Cancel",
         "id": "CancelBuilding",
         "Icon": "btn-command-cancel",
-        "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-        "Name": "Cancel",
+        "Name": {
+          "enUS": "Cancel",
+          "ruRU": "Отменить /// Cancel"
+        },
+        "Tooltip": {
+          "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+          "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+        },
         "Hotkey": "Esc"
       },
       {
@@ -185,6 +211,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "NydusCanalTransport",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Load": {
               "Flags": {
@@ -250,8 +282,8 @@
             "NotWidowMineTarget"
           ],
           "AbilSetId": "ULdS",
-          "id": "NydusCanalTransport",
-          "UnloadCargoEffect": "PurificationNovaTargettedCasterRB"
+          "UnloadCargoEffect": "PurificationNovaTargettedCasterRB",
+          "id": "NydusCanalTransport"
         },
         "Cost": {
           "Minerals": 0,
@@ -264,13 +296,19 @@
           "Food": 0
         },
         "Row": 2,
-        "Column": 0,
+        "Column": 1,
         "Type": "AbilCmd",
         "AbilCmd": "NydusCanalTransport,Load",
         "id": "NydusCanalLoad",
         "Icon": "btn-ability-terran-load",
-        "Tooltip": "Loads units into the Nydus Network.",
-        "Name": "Load",
+        "Name": {
+          "enUS": "Load",
+          "ruRU": "Load"
+        },
+        "Tooltip": {
+          "enUS": "Loads units into the Nydus Network.",
+          "ruRU": "Loads units into the Nydus Network."
+        },
         "Hotkey": "L"
       },
       {
@@ -292,6 +330,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "NydusCanalTransport",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Load": {
               "Flags": {
@@ -357,8 +401,8 @@
             "NotWidowMineTarget"
           ],
           "AbilSetId": "ULdS",
-          "id": "NydusCanalTransport",
-          "UnloadCargoEffect": "PurificationNovaTargettedCasterRB"
+          "UnloadCargoEffect": "PurificationNovaTargettedCasterRB",
+          "id": "NydusCanalTransport"
         },
         "Cost": {
           "Minerals": 0,
@@ -371,13 +415,19 @@
           "Food": 0
         },
         "Row": 2,
-        "Column": 1,
+        "Column": 2,
         "Type": "AbilCmd",
         "AbilCmd": "NydusCanalTransport,UnloadAll",
         "id": "NydusCanalUnloadAll",
         "Icon": "btn-ability-terran-unloadall",
-        "Tooltip": "Unloads all units.",
-        "Name": "Unload All",
+        "Name": {
+          "enUS": "Unload All",
+          "ruRU": "Unload All"
+        },
+        "Tooltip": {
+          "enUS": "Unloads all units.",
+          "ruRU": "Unloads all units."
+        },
         "Hotkey": "D"
       },
       {
@@ -398,8 +448,14 @@
         "AbilCmd": "Rally,Rally1",
         "id": "SetRallyPoint",
         "Icon": "btn-ability-terran-setrallypoint",
-        "Tooltip": "Sends units to the designated point. Workers rallied to resources will begin harvesting automatically.",
-        "Name": "Set Rally Point",
+        "Name": {
+          "enUS": "Set Rally Point",
+          "ruRU": "Задать точку сбора /// Set Rally Point"
+        },
+        "Tooltip": {
+          "enUS": "Sends units to the designated point. Workers rallied to resources will begin harvesting automatically.",
+          "ruRU": "Sends units to the designated point. Workers rallied to resources will begin harvesting automatically."
+        },
         "Hotkey": "Y"
       },
       {
@@ -409,14 +465,13 @@
               "AllowMinimap": 0
             },
             "DefaultButtonFace": "NydusCanal",
-            "State": "Available",
             "Requirements": "HaveNydusNetwork"
           },
-          "Unit": "NydusCanal",
-          "Time": 20,
           "Cooldown": {
             "TimeUse": 20
-          }
+          },
+          "Unit": "NydusCanal",
+          "Time": 20
         },
         "Unit": "NydusCanal",
         "Time": 20,
@@ -430,14 +485,20 @@
           "Shields": 0,
           "Food": 0
         },
-        "Row": 1,
+        "Row": 2,
         "Column": 0,
         "Type": "AbilCmd",
         "AbilCmd": "BuildNydusCanal,Build1",
         "id": "SummonNydusWorm",
         "Icon": "btn-building-zerg-nydusworm",
-        "Tooltip": "Summons a Nydus Worm at the target location.<br/>Friendly ground units can use a Nydus Worm to instantly travel to any other Nydus Worm or Nydus Network owned by the player. Grows creep used to feed nearby Zerg structures.<br/><br/><c val=\"#ColorAttackInfo\">Bonus: Zerg move faster on creep.</span>",
-        "Name": "Summon Nydus Worm",
+        "Name": {
+          "enUS": "Summon Nydus Worm",
+          "ruRU": "Summon Nydus Worm"
+        },
+        "Tooltip": {
+          "enUS": "Summons a Nydus Worm at the target location.<br/>Friendly ground units can use a Nydus Worm to instantly travel to any other Nydus Worm or Nydus Network owned by the player. Grows creep used to feed nearby Zerg structures.<br/><br/><span style=\"color: #ffff8a\">Bonus: Zerg move faster on creep.</span>",
+          "ruRU": "Summons a Nydus Worm at the target location.<br/>Friendly ground units can use a Nydus Worm to instantly travel to any other Nydus Worm or Nydus Network owned by the player. Grows creep used to feed nearby Zerg structures.<br/><br/><span style=\"color: #ffff8a\">Bonus: Zerg move faster on creep.</span>"
+        },
         "Hotkey": "N"
       },
       {
@@ -459,6 +520,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "stop",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "AbilSetId": "Stop",
           "CmdButtonArray": {
             "Stop": {
@@ -504,25 +571,17 @@
         "AbilCmd": "stop,Stop",
         "id": "Stop",
         "Icon": "btn-command-stop",
-        "Tooltip": "Orders selected units to cancel all orders and stop moving.",
-        "Name": "Stop",
+        "Name": {
+          "enUS": "Stop",
+          "ruRU": "Отставить /// Stop"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to cancel all orders and stop moving.",
+          "ruRU": "Orders selected units to cancel all orders and stop moving."
+        },
         "Hotkey": "S"
       },
       {
-        "Info": {
-          "Button": {
-            "Flags": {
-              "AllowMinimap": 0
-            },
-            "DefaultButtonFace": "",
-            "State": "Restricted",
-            "Requirements": ""
-          },
-          "Unit": "",
-          "Time": 0
-        },
-        "Unit": "",
-        "Time": 0,
         "Cost": {
           "Minerals": 0,
           "Vespene": 0,
@@ -534,32 +593,16 @@
           "Food": 0
         },
         "Row": 1,
-        "Column": 2,
-        "Type": "AbilCmd",
-        "AbilCmd": "BuildNydusCanal,Build3",
-        "id": "SummonNydusCanalCreeper",
-        "Icon": "btn-building-zerg-creeptumor",
-        "Tooltip": "Summons a Creep Tower at the target location. Creep Tower can launch creep in a chosen direction.<br/><br/><c val=\"#ColorAttackInfo\">Bonus: Zerg move faster on creep.</span>",
-        "Name": "Summon Creep Tower"
-      },
-      {
-        "Cost": {
-          "Minerals": 0,
-          "Vespene": 0,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 2,
-        "Column": 2,
+        "Column": 1,
         "Type": "Passive",
         "id": "NydusWormIncreasedArmorPassive",
         "Icon": "btn-ability-zerg-armoraura",
-        "Tooltip": "Nydus Worms have <b>3</b> armor when emerging from the ground.",
-        "Name": "Subterranean Scales"
+        "Name": {
+          "enUS": "Subterranean Scales"
+        },
+        "Tooltip": {
+          "enUS": "Nydus Worms have <b>3</b> armor when emerging from the ground."
+        }
       }
     ]
   },
@@ -580,55 +623,77 @@
   "Weapons": [],
   "Behaviors": [
     {
-      "id": "OnCreep"
+      "id": "OnCreep",
+      "Name": {
+        "enUS": "On Creep",
+        "ruRU": "On Creep"
+      },
+      "Tooltip": "-"
     },
     {
-      "id": "ZergBuildingNotOnCreep"
+      "id": "ZergBuildingNotOnCreep",
+      "Name": {
+        "enUS": "Building Not On Creep",
+        "ruRU": "Building Not On Creep"
+      },
+      "Tooltip": "-"
     },
     {
-      "id": "ZergBuildingDies6"
+      "id": "ZergBuildingDies6",
+      "Name": {
+        "enUS": "Zerg Building Dies 6",
+        "ruRU": "Zerg Building Dies 6"
+      },
+      "Tooltip": "-"
     }
   ],
   "Abilities": [
     {
       "id": "stop",
-      "Name": "Stop"
+      "Name": {
+        "enUS": "Stop",
+        "ruRU": "Stop"
+      }
     },
     {
       "id": "Rally",
-      "Name": "Rally"
+      "Name": {
+        "enUS": "Rally",
+        "ruRU": "Rally"
+      }
     },
     {
       "id": "BuildInProgress",
-      "Name": "Build in Progress"
+      "Name": {
+        "enUS": "Build in Progress",
+        "ruRU": "Build in Progress"
+      }
     },
     {
       "id": "NydusCanalTransport",
-      "Name": "Nydus Canal Transport"
+      "Name": {
+        "enUS": "Nydus Canal Transport",
+        "ruRU": "Nydus Canal Transport"
+      }
     },
     {
       "id": "BuildNydusCanal",
-      "Name": "Build Nydus Canal"
+      "Name": {
+        "enUS": "Build Nydus Canal",
+        "ruRU": "Build Nydus Canal"
+      }
     }
   ],
   "$Upgrades": [
-    "SecretedCoating",
-    "NydusNetwork",
-    "CountUnitNydusNetworkCompleteOnlyTechTreeCheat",
     "ZergBuild",
     "NydusNetwork",
-    "NydusNetworkBase",
-    "NydusNetwork",
-    "NydusNetworkMecha",
-    "NydusNetworkRCZ",
-    "DefaultSkinPack",
-    "NydusNetworkMecha",
-    "NydusNetworkRCZ"
+    "CountUnitNydusNetworkCompleteOnlyTechTreeCheat",
+    "NydusNetwork"
   ],
   "$Requirements": [],
   "$Production": [
     "NydusCanal",
-    null
+    "Broodling"
   ],
   "$Research": [],
   "$Morph": [],
@@ -641,50 +706,79 @@
       "AbilCmd": "BuildInProgress,Cancel",
       "id": "CancelBuilding",
       "Icon": "btn-command-cancel",
-      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-      "Name": "Cancel"
+      "Name": {
+        "enUS": "Cancel",
+        "ruRU": "Отменить /// Cancel"
+      },
+      "Tooltip": {
+        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+        "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+      }
     },
     {
       "AbilCmd": "NydusCanalTransport,Load",
       "id": "NydusCanalLoad",
       "Icon": "btn-ability-terran-load",
-      "Tooltip": "Loads units into the Nydus Network.",
-      "Name": "Load"
+      "Name": {
+        "enUS": "Load",
+        "ruRU": "Load"
+      },
+      "Tooltip": {
+        "enUS": "Loads units into the Nydus Network.",
+        "ruRU": "Loads units into the Nydus Network."
+      }
     },
     {
       "AbilCmd": "NydusCanalTransport,UnloadAll",
       "id": "NydusCanalUnloadAll",
       "Icon": "btn-ability-terran-unloadall",
-      "Tooltip": "Unloads all units.",
-      "Name": "Unload All"
+      "Name": {
+        "enUS": "Unload All",
+        "ruRU": "Unload All"
+      },
+      "Tooltip": {
+        "enUS": "Unloads all units.",
+        "ruRU": "Unloads all units."
+      }
     },
     {
       "AbilCmd": "Rally,Rally1",
       "id": "SetRallyPoint",
       "Icon": "btn-ability-terran-setrallypoint",
-      "Tooltip": "Sends units to the designated point. Workers rallied to resources will begin harvesting automatically.",
-      "Name": "Set Rally Point"
+      "Name": {
+        "enUS": "Set Rally Point",
+        "ruRU": "Задать точку сбора /// Set Rally Point"
+      },
+      "Tooltip": {
+        "enUS": "Sends units to the designated point. Workers rallied to resources will begin harvesting automatically.",
+        "ruRU": "Sends units to the designated point. Workers rallied to resources will begin harvesting automatically."
+      }
     },
     {
       "AbilCmd": "BuildNydusCanal,Build1",
       "id": "SummonNydusWorm",
       "Icon": "btn-building-zerg-nydusworm",
-      "Tooltip": "Summons a Nydus Worm at the target location.<br/>Friendly ground units can use a Nydus Worm to instantly travel to any other Nydus Worm or Nydus Network owned by the player. Grows creep used to feed nearby Zerg structures.<br/><br/><c val=\"#ColorAttackInfo\">Bonus: Zerg move faster on creep.</span>",
-      "Name": "Summon Nydus Worm"
+      "Name": {
+        "enUS": "Summon Nydus Worm",
+        "ruRU": "Summon Nydus Worm"
+      },
+      "Tooltip": {
+        "enUS": "Summons a Nydus Worm at the target location.<br/>Friendly ground units can use a Nydus Worm to instantly travel to any other Nydus Worm or Nydus Network owned by the player. Grows creep used to feed nearby Zerg structures.<br/><br/><span style=\"color: #ffff8a\">Bonus: Zerg move faster on creep.</span>",
+        "ruRU": "Summons a Nydus Worm at the target location.<br/>Friendly ground units can use a Nydus Worm to instantly travel to any other Nydus Worm or Nydus Network owned by the player. Grows creep used to feed nearby Zerg structures.<br/><br/><span style=\"color: #ffff8a\">Bonus: Zerg move faster on creep.</span>"
+      }
     },
     {
       "AbilCmd": "stop,Stop",
       "id": "Stop",
       "Icon": "btn-command-stop",
-      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
-      "Name": "Stop"
-    },
-    {
-      "AbilCmd": "BuildNydusCanal,Build3",
-      "id": "SummonNydusCanalCreeper",
-      "Icon": "btn-building-zerg-creeptumor",
-      "Tooltip": "Summons a Creep Tower at the target location. Creep Tower can launch creep in a chosen direction.<br/><br/><c val=\"#ColorAttackInfo\">Bonus: Zerg move faster on creep.</span>",
-      "Name": "Summon Creep Tower"
+      "Name": {
+        "enUS": "Stop",
+        "ruRU": "Отставить /// Stop"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to cancel all orders and stop moving.",
+        "ruRU": "Orders selected units to cancel all orders and stop moving."
+      }
     }
   ]
 }

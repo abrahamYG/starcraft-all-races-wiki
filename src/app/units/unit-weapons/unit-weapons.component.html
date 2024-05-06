@@ -5,9 +5,9 @@
 <div *ngIf="unit?.Weapons?.length">
   <div>
     <div *ngFor="let weapon of scdata.filteredWeapons(unit.Weapons)" class="weapon-container">
-      <sc-icon class="frame" [src]="weapon.Icon" [title]="weapon.Name || weapon.id"></sc-icon>
+      <sc-icon class="frame" [src]="weapon.Icon" [title]="weapon.Name ? scdata.text(weapon.Name) : weapon.id"></sc-icon>
       <div *ngIf="weapon" class="weapon-stats">
-        <p class="weapon-name">{{weapon.Name}}</p>
+        <p class="weapon-name">{{scdata.text(weapon.Name)}}</p>
         <ng-container  *ngFor="let field of weaponFields">
           <ng-container *ngTemplateOutlet="weaponfield; context:{title:  field.title, value:  field.field  ? weapon[field.field] : field.get && field.get(weapon)}"></ng-container>
         </ng-container>

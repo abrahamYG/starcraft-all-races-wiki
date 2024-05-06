@@ -13,8 +13,14 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "zerglingattackspeed",
+  "EditorCategories": "Race:Zerg,UpgradeType:Spell",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "Race": "Zerg",
-  "EditorCategories": "Race:Zerg,UpgradeType:Talents",
   "ScoreResult": "BuildOrder",
   "EffectArray": [
     {

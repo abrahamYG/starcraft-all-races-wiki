@@ -1,6 +1,12 @@
 {
-  "Name": "Nexus",
-  "Description": "Primary structure. Can receive gathered resources. Can use the Chrono Boost and Mass Recall abilities.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Probes<br/>- Mothership",
+  "Name": {
+    "enUS": "Nexus",
+    "ruRU": "Nexus"
+  },
+  "Description": {
+    "enUS": "Primary structure. Can receive gathered resources. Can use the Chrono Boost ability.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Probes<br/>- Mothership Core",
+    "ruRU": "Primary structure. Can receive gathered resources. Can use the Chrono Boost ability.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Probes<br/>- Mothership Core"
+  },
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -12,7 +18,10 @@
   "ResourceType": "Unknown",
   "LifeStart": 1000,
   "LifeMax": 1000,
-  "LifeArmorName": "Protoss Armor",
+  "LifeArmorName": {
+    "enUS": "Protoss Armor",
+    "ruRU": "Protoss Armor"
+  },
   "Mover": "Ground",
   "StationaryTurningRate": 719.4726,
   "TurningRate": 719.4726,
@@ -78,6 +87,12 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "Facing": 315,
   "Mob": "Multiplayer",
   "FogVisibility": "Snapshot",
@@ -85,7 +100,10 @@
   "ShieldsStart": 1000,
   "ShieldsMax": 1000,
   "ShieldRegenRate": 2,
-  "ShieldArmorName": "Protoss Plasma Shields",
+  "ShieldArmorName": {
+    "enUS": "Protoss Plasma Shields",
+    "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+  },
   "Food": 15,
   "AttackTargetPriority": 11,
   "Footprint": "Footprint5x5Contour",
@@ -114,9 +132,8 @@
     "Structure",
     "RoachBurrow",
     "ForceField",
-    "Small",
-    "Locust",
-    "Phased"
+    "Phased",
+    "Small"
   ],
   "Sight": 11,
   "CardLayouts": {
@@ -140,6 +157,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "que5Passive",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "QueueCount": 1,
           "Flags": {
             "BestUnit": 1,
@@ -173,8 +196,14 @@
         "AbilCmd": "que5Passive,CancelLast",
         "id": "Cancel",
         "Icon": "btn-command-cancel",
-        "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
-        "Name": "Cancel",
+        "Name": {
+          "enUS": "Cancel",
+          "ruRU": "Отменить /// Cancel"
+        },
+        "Tooltip": {
+          "enUS": "Drops the current order without performing it, and allows you to select a different order.",
+          "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+        },
         "Hotkey": "Esc"
       },
       {
@@ -196,6 +225,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "BuildInProgress",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "Activity": "UI/Building",
           "VitalStartFactor": {
             "Life": 0.1,
@@ -228,8 +263,14 @@
         "AbilCmd": "BuildInProgress,Cancel",
         "id": "CancelBuilding",
         "Icon": "btn-command-cancel",
-        "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-        "Name": "Cancel",
+        "Name": {
+          "enUS": "Cancel",
+          "ruRU": "Отменить /// Cancel"
+        },
+        "Tooltip": {
+          "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+          "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+        },
         "Hotkey": "Esc"
       },
       {
@@ -265,8 +306,14 @@
         "AbilCmd": "NexusTrain,Train1",
         "id": "Probe",
         "Icon": "btn-unit-protoss-probe",
-        "Tooltip": "Basic worker unit. Can gather resources and warp in Protoss structures.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
-        "Name": "Warp In Probe",
+        "Name": {
+          "enUS": "Warp In Probe",
+          "ruRU": "Warp In Probe"
+        },
+        "Tooltip": {
+          "enUS": "Basic worker unit. Can gather resources and warp in Protoss structures.<br/><br/><span style=\"color: ffff8a\">Can attack ground units.</span>",
+          "ruRU": "Basic worker unit. Can gather resources and warp in Protoss structures.<br/><br/><span style=\"color: ffff8a\">Can attack ground units.</span>"
+        },
         "Hotkey": "E"
       },
       {
@@ -287,16 +334,147 @@
         "AbilCmd": "RallyNexus,Rally1",
         "id": "Rally",
         "Icon": "btn-ability-terran-setrallypoint",
-        "Tooltip": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
-        "Name": "Set Rally Point",
+        "Name": {
+          "enUS": "Set Rally Point",
+          "ruRU": "Задать точку сбора /// Set Rally Point"
+        },
+        "Tooltip": {
+          "enUS": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
+          "ruRU": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically."
+        },
         "Hotkey": "Y"
+      },
+      {
+        "Info": {
+          "Button": {
+            "Flags": {
+              "AllowMinimap": 0
+            },
+            "DefaultButtonFace": "Mothership",
+            "Requirements": "MothershipRequirements"
+          },
+          "Unit": [
+            "Mothership"
+          ],
+          "Time": 125
+        },
+        "Unit": [
+          "Mothership"
+        ],
+        "Time": 125,
+        "Cost": {
+          "Minerals": 300,
+          "Vespene": 300,
+          "Terazine": 0,
+          "Custom": 0,
+          "Energy": 0,
+          "Life": 0,
+          "Shields": 0,
+          "Food": -6
+        },
+        "Row": 0,
+        "Column": 1,
+        "Type": "AbilCmd",
+        "AbilCmd": "NexusTrainMothership,Train1",
+        "id": "Mothership",
+        "Icon": "btn-unit-protoss-mothership",
+        "Name": {
+          "enUS": "Warp In Mothership",
+          "ruRU": "Warp In Mothership"
+        },
+        "Tooltip": {
+          "enUS": "Ultimate Protoss vessel. Can use Strategic Recall, Time Warp, and Cloaking Field abilities.<br/><br/><span style=\"color: ffff8a\">Can attack ground and air units.</span>",
+          "ruRU": "Ultimate Protoss vessel. Can use Photon Overcharge, Mass Recall, and Time Warp abilities. Cloaks nearby friendly units and structures.<br/><br/><span style=\"color: ffff8a\">Can attack ground and air units.</span>"
+        },
+        "Hotkey": "M"
+      },
+      {
+        "Info": {
+          "class": "CAbilStop",
+          "Name": "Abil/Name/stopProtossBuilding",
+          "TechPlayer": "Upkeep",
+          "EditorCategories": "Race:Protoss,AbilityorEffectType:Units",
+          "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
+          "OrderArray": [
+            {
+              "DisplayType": "Confirm",
+              "Color": "255,0,255,0",
+              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
+              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
+            }
+          ],
+          "SharedFlags": {
+            "DisableWhileDead": 1
+          },
+          "DataCollection": "stopProtossBuilding",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
+          "AbilSetId": "Stop",
+          "CmdButtonArray": {
+            "Stop": {
+              "Flags": {
+                "ToSelection": 1
+              },
+              "DefaultButtonFace": "Stop",
+              "Requirements": "PurifyNexusRequirements"
+            },
+            "HoldFire": {
+              "Flags": {
+                "ToSelection": 1
+              },
+              "DefaultButtonFace": "HoldFire"
+            },
+            "Cheer": {
+              "Flags": {
+                "ToSelection": 1
+              },
+              "DefaultButtonFace": "Cheer"
+            },
+            "Dance": {
+              "Flags": {
+                "ToSelection": 1
+              },
+              "DefaultButtonFace": "Dance"
+            }
+          },
+          "id": "stopProtossBuilding"
+        },
+        "Cost": {
+          "Minerals": 0,
+          "Vespene": 0,
+          "Terazine": 0,
+          "Custom": 0,
+          "Energy": 0,
+          "Life": 0,
+          "Shields": 0,
+          "Food": 0
+        },
+        "Row": 0,
+        "Column": 3,
+        "Type": "AbilCmd",
+        "AbilCmd": "stopProtossBuilding,Stop",
+        "id": "Stop",
+        "Icon": "btn-command-stop",
+        "Name": {
+          "enUS": "Stop",
+          "ruRU": "Отставить /// Stop"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to cancel all orders and stop moving.",
+          "ruRU": "Orders selected units to cancel all orders and stop moving."
+        },
+        "Hotkey": "S"
       },
       {
         "Info": {
           "class": "CAbilEffectTarget",
           "Name": "Abil/Name/ChronoBoostEnergyCost",
           "TechPlayer": "Upkeep",
-          "EditorCategories": "Race:Neutral,AbilityorEffectType:Units",
+          "EditorCategories": "Race:Protoss,AbilityorEffectType:Units",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
             {
@@ -310,6 +488,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "ChronoBoostEnergyCost",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "RangeSlop": 1,
           "ArcSlop": 11.25,
           "AutoCastAcquireLevel": "Offensive",
@@ -321,7 +505,7 @@
             "RangeUseCasterRadius": 1,
             "ReApproachable": 1,
             "RequireTargetVision": 1,
-            "WaitToSpend": 0,
+            "WaitToSpend": 1,
             "UpdateChargesOnLevelChange": 1,
             "BestUnit": 1
           },
@@ -426,48 +610,13 @@
         "AbilCmd": "ChronoBoostEnergyCost,Execute",
         "id": "ChronoBoostEnergyCost",
         "Icon": "btn-ability-protoss-protoncharge-color",
-        "Tooltip": "Places target structure in a Chrono Boost, causing it to operate <b>50.0</b>% faster for <b>28</b> seconds.",
-        "Name": "Chrono Boost",
+        "Name": {
+          "enUS": "Chrono Boost"
+        },
+        "Tooltip": {
+          "enUS": "Places target structure in a Chrono Boost, causing it to operate <b>50.0</b>% faster for <b>28</b> seconds."
+        },
         "Hotkey": "C"
-      },
-      {
-        "Info": {
-          "Button": {
-            "Flags": {
-              "AllowMinimap": 0
-            },
-            "DefaultButtonFace": "Mothership",
-            "State": "Restricted",
-            "Requirements": "MothershipRequirements"
-          },
-          "Unit": [
-            "Mothership"
-          ],
-          "Time": 125
-        },
-        "Unit": [
-          "Mothership"
-        ],
-        "Time": 125,
-        "Cost": {
-          "Minerals": 300,
-          "Vespene": 300,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": -6
-        },
-        "Row": 0,
-        "Column": 1,
-        "Type": "AbilCmd",
-        "AbilCmd": "NexusTrainMothership,Train1",
-        "id": "Mothership",
-        "Icon": "btn-unit-protoss-mothership",
-        "Tooltip": "Ultimate Protoss vessel. Can use Strategic Recall, Time Warp, and Cloaking Field abilities.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>",
-        "Name": "Warp In Mothership",
-        "Hotkey": "M"
       },
       {
         "Info": {
@@ -488,6 +637,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "NexusMassRecall",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "RangeSlop": 1,
           "ArcSlop": 11.25,
           "AutoCastAcquireLevel": "Offensive",
@@ -499,7 +654,7 @@
             "RangeUseCasterRadius": 1,
             "ReApproachable": 1,
             "RequireTargetVision": 1,
-            "WaitToSpend": 0,
+            "WaitToSpend": 1,
             "UpdateChargesOnLevelChange": 1,
             "BestUnit": 1
           },
@@ -601,8 +756,12 @@
         "AbilCmd": "NexusMassRecall,Execute",
         "id": "NexusMassRecall",
         "Icon": "btn-ability-protoss-massrecall",
-        "Tooltip": "Recalls all units owned by the player in the target area to the Nexus.",
-        "Name": "Strategic Recall",
+        "Name": {
+          "enUS": "Strategic Recall"
+        },
+        "Tooltip": {
+          "enUS": "Recalls all units owned by the player in the target area to the Nexus."
+        },
         "Hotkey": "R"
       },
       {
@@ -624,6 +783,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "BatteryOvercharge",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "RangeSlop": 1,
           "ArcSlop": 11.25,
           "AutoCastAcquireLevel": "Offensive",
@@ -635,7 +800,7 @@
             "RangeUseCasterRadius": 1,
             "ReApproachable": 1,
             "RequireTargetVision": 1,
-            "WaitToSpend": 0,
+            "WaitToSpend": 1,
             "UpdateChargesOnLevelChange": 1,
             "BestUnit": 1
           },
@@ -738,8 +903,12 @@
         "AbilCmd": "BatteryOvercharge,Execute",
         "id": "BatteryOvercharge",
         "Icon": "btn-ability-zeratul-observer-sensorarray",
-        "Tooltip": "Overcharges a target Shield Battery near a Nexus, increasing its shield restoration rate by <b>50</b>% and allowing it to restore shields without consuming energy for <b>20</b> seconds.",
-        "Name": "Battery Overcharge",
+        "Name": {
+          "enUS": "Battery Overcharge"
+        },
+        "Tooltip": {
+          "enUS": "Overcharges a target Shield Battery near a Nexus, increasing its shield restoration rate by <b>50</b>% and allowing it to restore shields without consuming energy for <b>20</b> seconds."
+        },
         "Hotkey": "B"
       }
     ]
@@ -752,7 +921,8 @@
   },
   "TechTreeProducedUnitArray": [
     "Probe",
-    "Mothership"
+    "Mothership",
+    "MothershipCore"
   ],
   "ShieldRegenDelay": 10,
   "EnergyMax": 200,
@@ -761,8 +931,8 @@
     "Create": "NexusCreateSet",
     "Birth": "NexusBirthSet"
   },
-  "id": "Nexus",
   "EnergyStart": 50,
+  "id": "Nexus",
   "Icon": "btn-building-protoss-nexus",
   "LifeArmorIcon": "btn-armor-protoss-buildingplating",
   "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
@@ -770,83 +940,102 @@
   "Behaviors": [
     {
       "id": "NexusDeath",
-      "Name": "Nexus Death"
+      "Name": {
+        "enUS": "Nexus Death",
+        "ruRU": "Nexus Death"
+      },
+      "Tooltip": "-"
     },
     {
       "id": "FastEnablerPowerSourceNexus",
-      "Icon": "btn-building-protoss-pylon"
+      "Icon": "btn-building-protoss-pylon",
+      "Name": {
+        "enUS": "Fast Enabler Power Source Nexus",
+        "ruRU": "Fast Enabler Power Source Nexus ///Auto - Copied from enUS Locale"
+      },
+      "Tooltip": "-"
     }
   ],
   "Abilities": [
     {
       "id": "BuildInProgress",
-      "Name": "Build in Progress"
-    },
-    {
-      "id": "ChronoBoostEnergyCost",
-      "Name": "Chrono Boost Energy Cost"
+      "Name": {
+        "enUS": "Build in Progress",
+        "ruRU": "Build in Progress"
+      }
     },
     {
       "id": "que5Passive",
-      "Name": "Queue (5) Passive"
+      "Name": {
+        "ruRU": "Queue (5) Passive",
+        "enUS": "Queue (5) Passive"
+      }
     },
     {
       "id": "NexusTrain",
-      "Name": "Train (Nexus)"
-    },
-    {
-      "id": "RallyNexus",
-      "Name": "Nexus - Rally"
-    },
-    {
-      "id": "stopProtossBuilding",
-      "Name": "stop Protoss Building"
-    },
-    {
-      "id": "NexusInvulnerability",
-      "Name": "Invulnerability"
+      "Name": {
+        "enUS": "Train (Nexus)",
+        "ruRU": "Train (Nexus)"
+      }
     },
     {
       "id": "NexusTrainMothership",
-      "Name": "Train Mothership"
+      "Name": {
+        "enUS": "Train Mothership",
+        "ruRU": "Train Mothership"
+      }
+    },
+    {
+      "id": "RallyNexus",
+      "Name": {
+        "enUS": "Nexus - Rally",
+        "ruRU": "Nexus - Rally"
+      }
+    },
+    {
+      "id": "stopProtossBuilding",
+      "Name": {
+        "enUS": "stop Protoss Building",
+        "ruRU": "stop Protoss Building"
+      }
+    },
+    {
+      "id": "ChronoBoostEnergyCost",
+      "Name": {
+        "enUS": "Chrono Boost Energy Cost",
+        "ruRU": "Chrono Boost Energy Cost"
+      }
     },
     {
       "id": "NexusMassRecall",
-      "Name": "Nexus Mass Recall"
+      "Name": {
+        "enUS": "Nexus Mass Recall",
+        "ruRU": "Nexus Mass Recall"
+      }
     },
     {
       "id": "BatteryOvercharge",
-      "Name": "Battery Overcharge"
+      "Name": {
+        "enUS": "Battery Overcharge",
+        "ruRU": "Перегрузка щита"
+      }
     }
   ],
   "$Upgrades": [
     "Prot",
     "Nexus",
-    "IsNexus",
     "ProtossBuild",
     "CountUnitNexusCompleteOnlyTechTreeCheat",
+    "IsNexus",
     "NotNexus",
     "NexusBatteryOverchargeisNexus",
-    "SnowVisualMP",
     "ProtossShieldsLevel1",
     "Nexus",
     "ProtossPlayerDecalMacro",
     "ProtossShields",
     "ProtossShieldsLevel2",
     "ProtossShieldsLevel3",
-    "NexusSplat",
-    "Combat_MapControl_DestroyNexusCount",
-    "Combat_FastExpand_NexusCount",
-    "Combat_TownHallDestroyerNexusCount",
-    "NexusBase",
-    "Nexus",
-    "NexusForged",
-    "NexusIhanrii",
-    "NexusRemastered",
-    "DefaultSkinPack",
-    "NexusForged",
-    "NexusIhanrii",
-    "NexusRemastered"
+    "NexusSplat"
   ],
   "$Requirements": [],
   "$Production": [
@@ -864,57 +1053,112 @@
       "AbilCmd": "que5Passive,CancelLast",
       "id": "Cancel",
       "Icon": "btn-command-cancel",
-      "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
-      "Name": "Cancel"
+      "Name": {
+        "enUS": "Cancel",
+        "ruRU": "Отменить /// Cancel"
+      },
+      "Tooltip": {
+        "enUS": "Drops the current order without performing it, and allows you to select a different order.",
+        "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+      }
     },
     {
       "AbilCmd": "BuildInProgress,Cancel",
       "id": "CancelBuilding",
       "Icon": "btn-command-cancel",
-      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-      "Name": "Cancel"
+      "Name": {
+        "enUS": "Cancel",
+        "ruRU": "Отменить /// Cancel"
+      },
+      "Tooltip": {
+        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+        "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+      }
     },
     {
       "AbilCmd": "NexusTrain,Train1",
       "id": "Probe",
       "Icon": "btn-unit-protoss-probe",
-      "Tooltip": "Basic worker unit. Can gather resources and warp in Protoss structures.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
-      "Name": "Warp In Probe"
+      "Name": {
+        "enUS": "Warp In Probe",
+        "ruRU": "Warp In Probe"
+      },
+      "Tooltip": {
+        "enUS": "Basic worker unit. Can gather resources and warp in Protoss structures.<br/><br/><span style=\"color: ffff8a\">Can attack ground units.</span>",
+        "ruRU": "Basic worker unit. Can gather resources and warp in Protoss structures.<br/><br/><span style=\"color: ffff8a\">Can attack ground units.</span>"
+      }
     },
     {
       "AbilCmd": "RallyNexus,Rally1",
       "id": "Rally",
       "Icon": "btn-ability-terran-setrallypoint",
-      "Tooltip": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
-      "Name": "Set Rally Point"
-    },
-    {
-      "AbilCmd": "ChronoBoostEnergyCost,Execute",
-      "id": "ChronoBoostEnergyCost",
-      "Icon": "btn-ability-protoss-protoncharge-color",
-      "Tooltip": "Places target structure in a Chrono Boost, causing it to operate <b>50.0</b>% faster for <b>28</b> seconds.",
-      "Name": "Chrono Boost"
+      "Name": {
+        "enUS": "Set Rally Point",
+        "ruRU": "Задать точку сбора /// Set Rally Point"
+      },
+      "Tooltip": {
+        "enUS": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
+        "ruRU": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically."
+      }
     },
     {
       "AbilCmd": "NexusTrainMothership,Train1",
       "id": "Mothership",
       "Icon": "btn-unit-protoss-mothership",
-      "Tooltip": "Ultimate Protoss vessel. Can use Strategic Recall, Time Warp, and Cloaking Field abilities.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>",
-      "Name": "Warp In Mothership"
+      "Name": {
+        "enUS": "Warp In Mothership",
+        "ruRU": "Warp In Mothership"
+      },
+      "Tooltip": {
+        "enUS": "Ultimate Protoss vessel. Can use Strategic Recall, Time Warp, and Cloaking Field abilities.<br/><br/><span style=\"color: ffff8a\">Can attack ground and air units.</span>",
+        "ruRU": "Ultimate Protoss vessel. Can use Photon Overcharge, Mass Recall, and Time Warp abilities. Cloaks nearby friendly units and structures.<br/><br/><span style=\"color: ffff8a\">Can attack ground and air units.</span>"
+      }
+    },
+    {
+      "AbilCmd": "stopProtossBuilding,Stop",
+      "id": "Stop",
+      "Icon": "btn-command-stop",
+      "Name": {
+        "enUS": "Stop",
+        "ruRU": "Отставить /// Stop"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to cancel all orders and stop moving.",
+        "ruRU": "Orders selected units to cancel all orders and stop moving."
+      }
+    },
+    {
+      "AbilCmd": "ChronoBoostEnergyCost,Execute",
+      "id": "ChronoBoostEnergyCost",
+      "Icon": "btn-ability-protoss-protoncharge-color",
+      "Name": {
+        "enUS": "Chrono Boost"
+      },
+      "Tooltip": {
+        "enUS": "Places target structure in a Chrono Boost, causing it to operate <b>50.0</b>% faster for <b>28</b> seconds."
+      }
     },
     {
       "AbilCmd": "NexusMassRecall,Execute",
       "id": "NexusMassRecall",
       "Icon": "btn-ability-protoss-massrecall",
-      "Tooltip": "Recalls all units owned by the player in the target area to the Nexus.",
-      "Name": "Strategic Recall"
+      "Name": {
+        "enUS": "Strategic Recall"
+      },
+      "Tooltip": {
+        "enUS": "Recalls all units owned by the player in the target area to the Nexus."
+      }
     },
     {
       "AbilCmd": "BatteryOvercharge,Execute",
       "id": "BatteryOvercharge",
       "Icon": "btn-ability-zeratul-observer-sensorarray",
-      "Tooltip": "Overcharges a target Shield Battery near a Nexus, increasing its shield restoration rate by <b>50</b>% and allowing it to restore shields without consuming energy for <b>20</b> seconds.",
-      "Name": "Battery Overcharge"
+      "Name": {
+        "enUS": "Battery Overcharge"
+      },
+      "Tooltip": {
+        "enUS": "Overcharges a target Shield Battery near a Nexus, increasing its shield restoration rate by <b>50</b>% and allowing it to restore shields without consuming energy for <b>20</b> seconds."
+      }
     }
   ]
 }

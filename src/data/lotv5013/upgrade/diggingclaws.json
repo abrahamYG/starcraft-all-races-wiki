@@ -13,6 +13,13 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "DiggingClaws",
+  "EditorCategories": "Race:Zerg,UpgradeType:Spell",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "Race": "Terr",
   "ScoreAmount": 200,
   "ScoreResult": "BuildOrder",
@@ -38,7 +45,6 @@
       "Value": "0.660000"
     }
   ],
-  "EditorCategories": "Race:Zerg,UpgradeType:Talents",
   "AffectedUnitArray": [
     "LurkerMP",
     "LurkerMPBurrowed"

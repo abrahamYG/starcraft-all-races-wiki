@@ -1,6 +1,12 @@
 {
-  "Name": "Hive",
-  "Description": "Further evolved version of the Hatchery that allows additional upgrades and structures to be produced. Also spawns all Zerg units and receives gathered resources.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Vipers from Larvae",
+  "Name": {
+    "enUS": "Hive",
+    "ruRU": "Hive"
+  },
+  "Description": {
+    "enUS": "Further evolved version of the Hatchery that allows additional upgrades and structures to be produced. Also spawns all Zerg units and receives gathered resources.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Vipers from Larvae",
+    "ruRU": "Further evolved version of the Hatchery that allows additional upgrades and structures to be produced. Also spawns all Zerg units and receives gathered resources.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Vipers from Larvae"
+  },
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -12,7 +18,10 @@
   "ResourceType": "Unknown",
   "LifeStart": 2500,
   "LifeMax": 2500,
-  "LifeArmorName": "Zerg Building Armor",
+  "LifeArmorName": {
+    "enUS": "Zerg Building Armor",
+    "ruRU": "Zerg Building Armor"
+  },
   "Mover": "Ground",
   "StationaryTurningRate": 719.4726,
   "TurningRate": 719.4726,
@@ -78,6 +87,12 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "TechAliasArray": [
     "Alias_Hatchery",
     "Alias_Lair"
@@ -114,9 +129,8 @@
     "Structure",
     "RoachBurrow",
     "ForceField",
-    "Small",
-    "Locust",
-    "Phased"
+    "Phased",
+    "Small"
   ],
   "Sight": 12,
   "CardLayouts": {
@@ -137,8 +151,14 @@
         "Type": "SelectLarva",
         "id": "Larva",
         "Icon": "btn-unit-zerg-larvaex3",
-        "Tooltip": "Morphs into Zerg units.",
-        "Name": "Select Larvae",
+        "Name": {
+          "enUS": "Select Larva",
+          "ruRU": "Select Larva"
+        },
+        "Tooltip": {
+          "enUS": "Morphs into Zerg units.",
+          "ruRU": "Morphs into Zerg units."
+        },
         "Hotkey": "S"
       },
       {
@@ -160,6 +180,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "BuildInProgress",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "Activity": "UI/Building",
           "VitalStartFactor": {
             "Life": 0.1,
@@ -192,8 +218,14 @@
         "AbilCmd": "BuildInProgress,Cancel",
         "id": "CancelBuilding",
         "Icon": "btn-command-cancel",
-        "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-        "Name": "Cancel",
+        "Name": {
+          "enUS": "Cancel",
+          "ruRU": "Отменить /// Cancel"
+        },
+        "Tooltip": {
+          "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+          "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+        },
         "Hotkey": "Esc"
       },
       {
@@ -215,6 +247,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "que5CancelToSelection",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "QueueCount": 1,
           "Flags": {
             "BestUnit": 1,
@@ -251,8 +289,14 @@
         "AbilCmd": "que5CancelToSelection,CancelLast",
         "id": "Cancel",
         "Icon": "btn-command-cancel",
-        "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
-        "Name": "Cancel",
+        "Name": {
+          "enUS": "Cancel",
+          "ruRU": "Отменить /// Cancel"
+        },
+        "Tooltip": {
+          "enUS": "Drops the current order without performing it, and allows you to select a different order.",
+          "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+        },
         "Hotkey": "Esc"
       },
       {
@@ -261,7 +305,8 @@
             "NotResourcesOrEnemyTargetType"
           ],
           "UseValidators": [
-            "NotQueen"
+            "NotQueen",
+            "NotOverlord"
           ],
           "UseFilters": "-;Worker"
         },
@@ -281,8 +326,14 @@
         "AbilCmd": "RallyHatchery,Rally2",
         "id": "RallyEgg",
         "Icon": "btn-ability-zerg-setworkerrallypoint",
-        "Tooltip": "Sends morphed worker units to the designated point. Workers rallied to Mineral Fields or Extractors will begin gathering automatically.",
-        "Name": "Set Worker Rally Point",
+        "Name": {
+          "enUS": "Set Worker Rally Point",
+          "ruRU": "Set Worker Rally Point"
+        },
+        "Tooltip": {
+          "enUS": "Sends morphed worker units to the designated point. Workers rallied to Mineral Fields or Extractors will begin gathering automatically.",
+          "ruRU": "Sends morphed worker units to the designated point. Workers rallied to Mineral Fields or Extractors will begin gathering automatically."
+        },
         "Hotkey": "G"
       },
       {
@@ -291,7 +342,8 @@
             "NotResourcesOrEnemyTargetType"
           ],
           "UseValidators": [
-            "NotQueen"
+            "NotQueen",
+            "NotOverlord"
           ],
           "UseFilters": "-;Worker"
         },
@@ -311,8 +363,14 @@
         "AbilCmd": "RallyHatchery,Rally1",
         "id": "SetRallyPoint2",
         "Icon": "btn-ability-terran-setrallypoint",
-        "Tooltip": "Sends morphed units to the designated point.",
-        "Name": "Set Rally Point",
+        "Name": {
+          "enUS": "Set Rally Point",
+          "ruRU": "Задать точку сбора /// Set Rally Point"
+        },
+        "Tooltip": {
+          "enUS": "Sends morphed units to the designated point.",
+          "ruRU": "Sends morphed units to the designated point."
+        },
         "Hotkey": "Y"
       },
       {
@@ -328,8 +386,7 @@
           "Unit": [
             "Queen"
           ],
-          "Time": 50,
-          "Effect": ""
+          "Time": 50
         },
         "Unit": [
           "Queen"
@@ -351,8 +408,14 @@
         "AbilCmd": "TrainQueen,Train1",
         "id": "Queen",
         "Icon": "btn-unit-zerg-queen",
-        "Tooltip": "Defensive unit. Can use Spawn Larvae, Spawn Creep Tumor, and Transfusion. Moves much faster on creep.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>",
-        "Name": "Birth Queen",
+        "Name": {
+          "enUS": "Birth Queen",
+          "ruRU": "Birth Queen"
+        },
+        "Tooltip": {
+          "enUS": "Defensive unit. Can use Spawn Larvae, Spawn Creep Tumor, and Transfusion. Moves much faster on creep.<br/><br/><span style=\"color: ffff8a\">Can attack ground and air units.</span>",
+          "ruRU": "Defensive unit. Can use Spawn Larvae, Spawn Creep Tumor, and Transfusion. Moves much faster on creep.<br/><br/><span style=\"color: ffff8a\">Can attack ground and air units.</span>"
+        },
         "Hotkey": "Q"
       },
       {
@@ -365,7 +428,6 @@
               "ToSelection": 1
             },
             "DefaultButtonFace": "overlordspeed",
-            "State": "Restricted",
             "Requirements": "LearnPneumatizedCarapace"
           },
           "Resource": {
@@ -392,8 +454,14 @@
         "AbilCmd": "LairResearch,Research2",
         "id": "overlordspeed",
         "Icon": "btn-upgrade-zerg-pneumatizedcarapace",
-        "Tooltip": "Increases the movement speed of <span style=\"color: #ffff8a\">Overlords</span> and <span style=\"color: #ffff8a\">Overseers</span>.",
-        "Name": "Evolve Pneumatized Carapace",
+        "Name": {
+          "enUS": "Evolve Pneumatized Carapace",
+          "ruRU": "Evolve Pneumatized Carapace"
+        },
+        "Tooltip": {
+          "enUS": "Increases the movement speed of <span style=\"color: ffff8a\">Overlords</span> and <span style=\"color: ffff8a\">Overseers</span>.",
+          "ruRU": "Increases the movement speed of <span style=\"color: ffff8a\">Overlords</span> and <span style=\"color: ffff8a\">Overseers</span>."
+        },
         "Hotkey": "P"
       },
       {
@@ -406,7 +474,6 @@
               "ToSelection": 1
             },
             "DefaultButtonFace": "ResearchBurrow",
-            "State": "Restricted",
             "Requirements": "LearnBurrow"
           },
           "Resource": {
@@ -433,8 +500,14 @@
         "AbilCmd": "LairResearch,Research4",
         "id": "ResearchBurrow",
         "Icon": "btn-ability-zerg-burrow-color",
-        "Tooltip": "Enables all Zerg ground units to use the Burrow ability. Burrow allows a unit to take cover underground, rendering it unable to attack. A burrowed unit is invisible unless revealed by detectors or effects.",
-        "Name": "Evolve Burrow",
+        "Name": {
+          "enUS": "Evolve Burrow",
+          "ruRU": "Evolve Burrow"
+        },
+        "Tooltip": {
+          "enUS": "Enables all Zerg ground units to use the Burrow ability. Burrow allows a unit to take cover underground, rendering it unable to attack. A burrowed unit is invisible unless revealed by detectors or effects.",
+          "ruRU": "Enables all Zerg ground units to use the Burrow ability. Burrow allows a unit to take cover underground, rendering it unable to attack. A burrowed unit is invisible unless revealed by detectors or effects."
+        },
         "Hotkey": "B"
       }
     ]
@@ -446,48 +519,79 @@
     "Minerals": 700,
     "Vespene": 250
   },
-  "id": "Hive",
   "TechTreeUnlockedUnitArray": [
     "Viper",
     "SnakeCaster"
   ],
-  "KillDisplay": "Default",
-  "RankDisplay": "Default",
+  "id": "Hive",
   "Icon": "btn-building-zerg-hive",
   "LifeArmorIcon": "btn-armor-zerg-building",
   "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
   "Weapons": [],
   "Behaviors": [
     {
-      "id": "makeCreep8x6"
+      "id": "makeCreep8x6",
+      "Name": {
+        "enUS": "Creep Growth Large",
+        "ruRU": "Creep Growth Large"
+      },
+      "Tooltip": "-"
     },
     {
-      "id": "SpawnLarva"
+      "id": "SpawnLarva",
+      "Name": {
+        "enUS": "Spawn Larvae",
+        "ruRU": "Spawn Larvae"
+      },
+      "Tooltip": {
+        "enUS": "This structure is spawning additional Larvae.",
+        "ruRU": "This structure is spawning additional Larvae."
+      }
     },
     {
-      "id": "ZergBuildingDies9"
+      "id": "ZergBuildingDies9",
+      "Name": {
+        "enUS": "Zerg Building Dies 9",
+        "ruRU": "Zerg Building Dies 9"
+      },
+      "Tooltip": "-"
     }
   ],
   "Abilities": [
     {
       "id": "BuildInProgress",
-      "Name": "Build in Progress"
+      "Name": {
+        "enUS": "Build in Progress",
+        "ruRU": "Build in Progress"
+      }
     },
     {
       "id": "que5CancelToSelection",
-      "Name": "Queue (5) (Cancel To Selection)"
+      "Name": {
+        "ruRU": "Queue (5) (Cancel To Selection)",
+        "enUS": "Queue (5) (Cancel To Selection)"
+      }
     },
     {
       "id": "LairResearch",
-      "Name": "Research (LairHive)"
+      "Name": {
+        "enUS": "Research (LairHive)",
+        "ruRU": "Research (LairHive)"
+      }
     },
     {
       "id": "RallyHatchery",
-      "Name": "Hatchery - Rally"
+      "Name": {
+        "enUS": "Hatchery - Rally",
+        "ruRU": "Hatchery - Rally"
+      }
     },
     {
       "id": "TrainQueen",
-      "Name": "Train Queen"
+      "Name": {
+        "enUS": "Train Queen",
+        "ruRU": "Train Queen"
+      }
     }
   ],
   "$Upgrades": [
@@ -503,20 +607,14 @@
     "ZergBuildingStopSound",
     "ZergBuildingMorphCancel",
     "NotHive",
-    "Combat_MapControl_DestroyHiveCount",
-    "Combat_TownHallDestroyerHiveCount",
     "CountUnitHiveCompleteOnly1229866228TechTreeCheat",
-    "CountUnitHiveCompleteOnly1229866228",
-    "HatcheryBase",
-    "Hatchery",
-    "HatcheryMecha",
-    "HatcheryRCZ",
-    "HatcheryRemastered"
+    "CountUnitHiveCompleteOnly1229866228"
   ],
   "$Requirements": [],
   "$Production": [
     "Queen",
-    "Larva"
+    "Larva",
+    "Broodling"
   ],
   "$Research": [
     "overlordspeed",
@@ -530,50 +628,92 @@
       "AbilCmd": "BuildInProgress,Cancel",
       "id": "CancelBuilding",
       "Icon": "btn-command-cancel",
-      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-      "Name": "Cancel"
+      "Name": {
+        "enUS": "Cancel",
+        "ruRU": "Отменить /// Cancel"
+      },
+      "Tooltip": {
+        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+        "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+      }
     },
     {
       "AbilCmd": "que5CancelToSelection,CancelLast",
       "id": "Cancel",
       "Icon": "btn-command-cancel",
-      "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
-      "Name": "Cancel"
+      "Name": {
+        "enUS": "Cancel",
+        "ruRU": "Отменить /// Cancel"
+      },
+      "Tooltip": {
+        "enUS": "Drops the current order without performing it, and allows you to select a different order.",
+        "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+      }
     },
     {
       "AbilCmd": "RallyHatchery,Rally2",
       "id": "RallyEgg",
       "Icon": "btn-ability-zerg-setworkerrallypoint",
-      "Tooltip": "Sends morphed worker units to the designated point. Workers rallied to Mineral Fields or Extractors will begin gathering automatically.",
-      "Name": "Set Worker Rally Point"
+      "Name": {
+        "enUS": "Set Worker Rally Point",
+        "ruRU": "Set Worker Rally Point"
+      },
+      "Tooltip": {
+        "enUS": "Sends morphed worker units to the designated point. Workers rallied to Mineral Fields or Extractors will begin gathering automatically.",
+        "ruRU": "Sends morphed worker units to the designated point. Workers rallied to Mineral Fields or Extractors will begin gathering automatically."
+      }
     },
     {
       "AbilCmd": "RallyHatchery,Rally1",
       "id": "SetRallyPoint2",
       "Icon": "btn-ability-terran-setrallypoint",
-      "Tooltip": "Sends morphed units to the designated point.",
-      "Name": "Set Rally Point"
+      "Name": {
+        "enUS": "Set Rally Point",
+        "ruRU": "Задать точку сбора /// Set Rally Point"
+      },
+      "Tooltip": {
+        "enUS": "Sends morphed units to the designated point.",
+        "ruRU": "Sends morphed units to the designated point."
+      }
     },
     {
       "AbilCmd": "TrainQueen,Train1",
       "id": "Queen",
       "Icon": "btn-unit-zerg-queen",
-      "Tooltip": "Defensive unit. Can use Spawn Larvae, Spawn Creep Tumor, and Transfusion. Moves much faster on creep.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>",
-      "Name": "Birth Queen"
+      "Name": {
+        "enUS": "Birth Queen",
+        "ruRU": "Birth Queen"
+      },
+      "Tooltip": {
+        "enUS": "Defensive unit. Can use Spawn Larvae, Spawn Creep Tumor, and Transfusion. Moves much faster on creep.<br/><br/><span style=\"color: ffff8a\">Can attack ground and air units.</span>",
+        "ruRU": "Defensive unit. Can use Spawn Larvae, Spawn Creep Tumor, and Transfusion. Moves much faster on creep.<br/><br/><span style=\"color: ffff8a\">Can attack ground and air units.</span>"
+      }
     },
     {
       "AbilCmd": "LairResearch,Research2",
       "id": "overlordspeed",
       "Icon": "btn-upgrade-zerg-pneumatizedcarapace",
-      "Tooltip": "Increases the movement speed of <span style=\"color: #ffff8a\">Overlords</span> and <span style=\"color: #ffff8a\">Overseers</span>.",
-      "Name": "Evolve Pneumatized Carapace"
+      "Name": {
+        "enUS": "Evolve Pneumatized Carapace",
+        "ruRU": "Evolve Pneumatized Carapace"
+      },
+      "Tooltip": {
+        "enUS": "Increases the movement speed of <span style=\"color: ffff8a\">Overlords</span> and <span style=\"color: ffff8a\">Overseers</span>.",
+        "ruRU": "Increases the movement speed of <span style=\"color: ffff8a\">Overlords</span> and <span style=\"color: ffff8a\">Overseers</span>."
+      }
     },
     {
       "AbilCmd": "LairResearch,Research4",
       "id": "ResearchBurrow",
       "Icon": "btn-ability-zerg-burrow-color",
-      "Tooltip": "Enables all Zerg ground units to use the Burrow ability. Burrow allows a unit to take cover underground, rendering it unable to attack. A burrowed unit is invisible unless revealed by detectors or effects.",
-      "Name": "Evolve Burrow"
+      "Name": {
+        "enUS": "Evolve Burrow",
+        "ruRU": "Evolve Burrow"
+      },
+      "Tooltip": {
+        "enUS": "Enables all Zerg ground units to use the Burrow ability. Burrow allows a unit to take cover underground, rendering it unable to attack. A burrowed unit is invisible unless revealed by detectors or effects.",
+        "ruRU": "Enables all Zerg ground units to use the Burrow ability. Burrow allows a unit to take cover underground, rendering it unable to attack. A burrowed unit is invisible unless revealed by detectors or effects."
+      }
     }
   ]
 }

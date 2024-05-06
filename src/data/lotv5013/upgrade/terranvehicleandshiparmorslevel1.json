@@ -12,8 +12,14 @@
   "ScoreValue": "ArmorTechnologyValue",
   "WebPriority": 0,
   "LeaderAlias": "TerranVehicleAndShipArmors",
+  "EditorCategories": "Race:Terran,UpgradeType:Bonus",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "Race": "Terr",
-  "EditorCategories": "Race:Terran,UpgradeType:ArmorBonus",
   "ScoreResult": "BuildOrder",
   "EffectArray": [
     {

@@ -1,6 +1,12 @@
 {
-  "Name": "Gateway",
-  "Description": "Warps in Protoss ground units.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Zealots",
+  "Name": {
+    "enUS": "Gateway",
+    "ruRU": "Gateway"
+  },
+  "Description": {
+    "enUS": "Warps in Protoss ground units.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Zealots",
+    "ruRU": "Warps in Protoss ground units.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Zealots"
+  },
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -12,7 +18,10 @@
   "ResourceType": "Unknown",
   "LifeStart": 500,
   "LifeMax": 500,
-  "LifeArmorName": "Protoss Armor",
+  "LifeArmorName": {
+    "enUS": "Protoss Armor",
+    "ruRU": "Protoss Armor"
+  },
   "Mover": "Ground",
   "StationaryTurningRate": 719.4726,
   "TurningRate": 719.4726,
@@ -77,6 +86,12 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "TechAliasArray": [
     "Alias_Gateway"
   ],
@@ -87,7 +102,10 @@
   "ShieldsStart": 500,
   "ShieldsMax": 500,
   "ShieldRegenRate": 2,
-  "ShieldArmorName": "Protoss Plasma Shields",
+  "ShieldArmorName": {
+    "enUS": "Protoss Plasma Shields",
+    "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+  },
   "AttackTargetPriority": 11,
   "Footprint": "Footprint3x3Contour",
   "PlacementFootprint": "Footprint3x3",
@@ -108,9 +126,8 @@
     "Structure",
     "RoachBurrow",
     "ForceField",
-    "Small",
-    "Locust",
-    "Phased"
+    "Phased",
+    "Small"
   ],
   "Sight": 9,
   "TacticalAIThink": "AIThinkGateway",
@@ -135,6 +152,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "que5",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "QueueCount": 1,
           "Flags": {
             "BestUnit": 1,
@@ -167,8 +190,14 @@
         "AbilCmd": "que5,CancelLast",
         "id": "Cancel",
         "Icon": "btn-command-cancel",
-        "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
-        "Name": "Cancel",
+        "Name": {
+          "enUS": "Cancel",
+          "ruRU": "Отменить /// Cancel"
+        },
+        "Tooltip": {
+          "enUS": "Drops the current order without performing it, and allows you to select a different order.",
+          "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+        },
         "Hotkey": "Esc"
       },
       {
@@ -190,6 +219,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "BuildInProgress",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "Activity": "UI/Building",
           "VitalStartFactor": {
             "Life": 0.1,
@@ -222,8 +257,14 @@
         "AbilCmd": "BuildInProgress,Cancel",
         "id": "CancelBuilding",
         "Icon": "btn-command-cancel",
-        "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-        "Name": "Cancel",
+        "Name": {
+          "enUS": "Cancel",
+          "ruRU": "Отменить /// Cancel"
+        },
+        "Tooltip": {
+          "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+          "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+        },
         "Hotkey": "Esc"
       },
       {
@@ -264,8 +305,14 @@
         "AbilCmd": "UpgradeToWarpGate,Cancel",
         "id": "Cancel",
         "Icon": "btn-command-cancel",
-        "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
-        "Name": "Cancel",
+        "Name": {
+          "enUS": "Cancel",
+          "ruRU": "Отменить /// Cancel"
+        },
+        "Tooltip": {
+          "enUS": "Drops the current order without performing it, and allows you to select a different order.",
+          "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+        },
         "Hotkey": "Esc"
       },
       {
@@ -274,8 +321,7 @@
             "Flags": {
               "AllowMinimap": 0
             },
-            "DefaultButtonFace": "Zealot",
-            "State": "Restricted"
+            "DefaultButtonFace": "Zealot"
           },
           "Unit": [
             "Zealot"
@@ -302,8 +348,14 @@
         "AbilCmd": "GatewayTrain,Train1",
         "id": "Zealot",
         "Icon": "btn-unit-protoss-zealot",
-        "Tooltip": "Powerful melee warrior.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
-        "Name": "Warp In Zealot",
+        "Name": {
+          "enUS": "Warp In Zealot",
+          "ruRU": "Warp In Zealot"
+        },
+        "Tooltip": {
+          "enUS": "Powerful melee warrior.<br/><br/><span style=\"color: ffff8a\">Can attack ground units.</span>",
+          "ruRU": "Powerful melee warrior.<br/><br/><span style=\"color: ffff8a\">Can attack ground units.</span>"
+        },
         "Hotkey": "Z"
       },
       {
@@ -313,7 +365,6 @@
               "AllowMinimap": 0
             },
             "DefaultButtonFace": "Stalker",
-            "State": "Restricted",
             "Requirements": "HaveCyberneticsCore"
           },
           "Unit": [
@@ -341,8 +392,14 @@
         "AbilCmd": "GatewayTrain,Train2",
         "id": "Stalker",
         "Icon": "btn-unit-protoss-stalker",
-        "Tooltip": "Ranged support strider.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>",
-        "Name": "Warp In Stalker",
+        "Name": {
+          "enUS": "Warp In Stalker",
+          "ruRU": "Warp In Stalker"
+        },
+        "Tooltip": {
+          "enUS": "Ranged support strider.<br/><br/><span style=\"color: ffff8a\">Can attack ground and air units.</span>",
+          "ruRU": "Ranged support strider.<br/><br/><span style=\"color: ffff8a\">Can attack ground and air units.</span>"
+        },
         "Hotkey": "S"
       },
       {
@@ -352,7 +409,6 @@
               "AllowMinimap": 0
             },
             "DefaultButtonFace": "HighTemplar",
-            "State": "Restricted",
             "Requirements": "HaveTemplarArchives"
           },
           "Unit": [
@@ -380,8 +436,14 @@
         "AbilCmd": "GatewayTrain,Train4",
         "id": "HighTemplar",
         "Icon": "btn-unit-protoss-hightemplar",
-        "Tooltip": "Potent psionic master. Can use Feedback and be upgraded to use Psionic Storm. Can transform into an Archon.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
-        "Name": "Warp In High Templar",
+        "Name": {
+          "enUS": "Warp In High Templar",
+          "ruRU": "Warp In High Templar"
+        },
+        "Tooltip": {
+          "enUS": "Potent psionic master. Can use Feedback and be upgraded to use Psionic Storm. Can transform into an Archon.",
+          "ruRU": "Potent psionic master. Can use Feedback and be upgraded to use Psionic Storm. Can transform into an Archon."
+        },
         "Hotkey": "T"
       },
       {
@@ -391,7 +453,6 @@
               "AllowMinimap": 0
             },
             "DefaultButtonFace": "DarkTemplar",
-            "State": "Restricted",
             "Requirements": "HaveDarkShrine"
           },
           "Unit": [
@@ -419,8 +480,14 @@
         "AbilCmd": "GatewayTrain,Train5",
         "id": "DarkTemplar",
         "Icon": "btn-unit-protoss-darktemplar",
-        "Tooltip": "Deadly warrior-assassin. Cloak renders the unit invisible to enemies without detection. Can transform into an Archon.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
-        "Name": "Warp In Dark Templar",
+        "Name": {
+          "enUS": "Warp In Dark Templar",
+          "ruRU": "Warp In Dark Templar"
+        },
+        "Tooltip": {
+          "enUS": "Deadly warrior-assassin. Cloak renders the unit invisible to enemies without detection. Can transform into an Archon.<br/><br/><span style=\"color: ffff8a\">Can attack ground units.</span>",
+          "ruRU": "Deadly warrior-assassin. Cloak renders the unit invisible to enemies without detection. Can transform into an Archon.<br/><br/><span style=\"color: ffff8a\">Can attack ground units.</span>"
+        },
         "Hotkey": "D"
       },
       {
@@ -441,8 +508,14 @@
         "AbilCmd": "Rally,Rally1",
         "id": "Rally",
         "Icon": "btn-ability-terran-setrallypoint",
-        "Tooltip": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
-        "Name": "Set Rally Point",
+        "Name": {
+          "enUS": "Set Rally Point",
+          "ruRU": "Задать точку сбора /// Set Rally Point"
+        },
+        "Tooltip": {
+          "enUS": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
+          "ruRU": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically."
+        },
         "Hotkey": "Y"
       },
       {
@@ -483,8 +556,14 @@
         "AbilCmd": "UpgradeToWarpGate,Execute",
         "id": "UpgradeToWarpGate",
         "Icon": "btn-building-protoss-warpgate",
-        "Tooltip": "Upgrades this Gateway to a Warp Gate, allowing it to warp in ground units to any location powered by a Pylon or Warp Prism.",
-        "Name": "Transform to Warp Gate",
+        "Name": {
+          "enUS": "Transform to Warp Gate",
+          "ruRU": "Transform to Warp Gate"
+        },
+        "Tooltip": {
+          "enUS": "Upgrades this Gateway to a Warp Gate, allowing it to warp in ground units to any location powered by a Pylon or Warp Prism.",
+          "ruRU": "Upgrades this Gateway to a Warp Gate, allowing it to warp in ground units to any location powered by a Pylon or Warp Prism."
+        },
         "Hotkey": "G"
       },
       {
@@ -494,7 +573,6 @@
               "AllowMinimap": 0
             },
             "DefaultButtonFace": "Sentry",
-            "State": "Restricted",
             "Requirements": "HaveCyberneticsCore"
           },
           "Unit": [
@@ -522,8 +600,14 @@
         "AbilCmd": "GatewayTrain,Train6",
         "id": "Sentry",
         "Icon": "btn-unit-protoss-sentry",
-        "Tooltip": "Energy-manipulator unit. Can use Force Field, Guardian Shield, and Hallucination.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units.</span>",
-        "Name": "Warp In Sentry",
+        "Name": {
+          "enUS": "Warp In Sentry",
+          "ruRU": "Warp In Sentry"
+        },
+        "Tooltip": {
+          "enUS": "Energy-manipulator unit. Can use Force Field, Guardian Shield, and Hallucination.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>",
+          "ruRU": "Energy-manipulator unit. Can use Force Field, Guardian Shield, and Hallucination.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>"
+        },
         "Hotkey": "E"
       },
       {
@@ -533,7 +617,6 @@
               "AllowMinimap": 0
             },
             "DefaultButtonFace": "WarpInAdept",
-            "State": "Restricted",
             "Requirements": "HaveCyberneticsCore"
           },
           "Unit": [
@@ -561,8 +644,14 @@
         "AbilCmd": "GatewayTrain,Train7",
         "id": "WarpInAdept",
         "Icon": "btn-unit-protoss-adept",
-        "Tooltip": "Ranged specialist. Can use Psionic Transfer.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
-        "Name": "Warp In Adept",
+        "Name": {
+          "enUS": "Warp In Adept",
+          "ruRU": "Warp In Adept"
+        },
+        "Tooltip": {
+          "enUS": "Ranged specialist. Can use Psionic Transfer.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+          "ruRU": "Ranged specialist. Can use Psionic Transfer.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>"
+        },
         "Hotkey": "H"
       }
     ]
@@ -591,36 +680,66 @@
   "Behaviors": [
     {
       "id": "PowerUserQueue",
-      "Icon": "btn-building-protoss-pylon"
+      "Icon": "btn-building-protoss-pylon",
+      "Name": {
+        "enUS": "Power User (Queue)",
+        "ruRU": "Power User (Queue)"
+      },
+      "Tooltip": "-"
     },
     {
       "id": "FastEnablerGatewayMorphingPowerSource",
-      "Icon": "btn-building-protoss-pylon"
+      "Icon": "btn-building-protoss-pylon",
+      "Name": {
+        "enUS": "Fast Enabler Gateway Morphing Power Source",
+        "ruRU": "Fast Enabler Gateway Morphing Power Source ///Auto - Copied from enUS Locale"
+      },
+      "Tooltip": "-"
     },
     {
-      "id": "MorphingintoWarpGate"
+      "id": "MorphingintoWarpGate",
+      "Name": {
+        "enUS": "Morphing into Warp Gate",
+        "ruRU": "Morphing into Warp Gate ///Auto - Copied from enUS Locale"
+      },
+      "Tooltip": "-"
     }
   ],
   "Abilities": [
     {
       "id": "BuildInProgress",
-      "Name": "Build in Progress"
+      "Name": {
+        "enUS": "Build in Progress",
+        "ruRU": "Build in Progress"
+      }
     },
     {
       "id": "que5",
-      "Name": "Queue (5)"
+      "Name": {
+        "ruRU": "Queue (5)",
+        "enUS": "Queue (5)"
+      }
     },
     {
       "id": "GatewayTrain",
-      "Name": "Train (Gateway)"
+      "Name": {
+        "enUS": "Train (Gateway)",
+        "ruRU": "Train (Gateway)"
+      }
     },
     {
       "id": "Rally",
-      "Name": "Rally"
+      "Name": {
+        "enUS": "Rally",
+        "ruRU": "Rally"
+      }
     },
     {
       "id": "UpgradeToWarpGate",
-      "Name": "Morph Building (Gateway -> Warp Gate)"
+      "Name": {
+        "enUS": "Morph Building (Gateway -> Warp Gate)",
+        "ruRU": "Morph Building (Gateway -> Warp Gate)"
+      }
     }
   ],
   "$Upgrades": [
@@ -637,16 +756,7 @@
     "ProtossShieldsLevel3",
     "CountUnitAlias_GatewayCompleteOnly4260347518TechTreeCheat",
     "IsGateway",
-    "GatewaySplat",
-    "CinematicMode",
-    "GatewayBase",
-    "Gateway",
-    "GatewayTaldarim",
-    "GatewayForged",
-    "GatewayIhanrii",
-    "DefaultSkinPack",
-    "GatewayForged",
-    "GatewayIhanrii"
+    "GatewaySplat"
   ],
   "$Requirements": [],
   "$Production": [
@@ -670,78 +780,144 @@
       "AbilCmd": "que5,CancelLast",
       "id": "Cancel",
       "Icon": "btn-command-cancel",
-      "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
-      "Name": "Cancel"
+      "Name": {
+        "enUS": "Cancel",
+        "ruRU": "Отменить /// Cancel"
+      },
+      "Tooltip": {
+        "enUS": "Drops the current order without performing it, and allows you to select a different order.",
+        "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+      }
     },
     {
       "AbilCmd": "BuildInProgress,Cancel",
       "id": "CancelBuilding",
       "Icon": "btn-command-cancel",
-      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-      "Name": "Cancel"
+      "Name": {
+        "enUS": "Cancel",
+        "ruRU": "Отменить /// Cancel"
+      },
+      "Tooltip": {
+        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+        "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+      }
     },
     {
       "AbilCmd": "UpgradeToWarpGate,Cancel",
       "id": "Cancel",
       "Icon": "btn-command-cancel",
-      "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
-      "Name": "Cancel"
+      "Name": {
+        "enUS": "Cancel",
+        "ruRU": "Отменить /// Cancel"
+      },
+      "Tooltip": {
+        "enUS": "Drops the current order without performing it, and allows you to select a different order.",
+        "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+      }
     },
     {
       "AbilCmd": "GatewayTrain,Train1",
       "id": "Zealot",
       "Icon": "btn-unit-protoss-zealot",
-      "Tooltip": "Powerful melee warrior.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
-      "Name": "Warp In Zealot"
+      "Name": {
+        "enUS": "Warp In Zealot",
+        "ruRU": "Warp In Zealot"
+      },
+      "Tooltip": {
+        "enUS": "Powerful melee warrior.<br/><br/><span style=\"color: ffff8a\">Can attack ground units.</span>",
+        "ruRU": "Powerful melee warrior.<br/><br/><span style=\"color: ffff8a\">Can attack ground units.</span>"
+      }
     },
     {
       "AbilCmd": "GatewayTrain,Train2",
       "id": "Stalker",
       "Icon": "btn-unit-protoss-stalker",
-      "Tooltip": "Ranged support strider.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>",
-      "Name": "Warp In Stalker"
+      "Name": {
+        "enUS": "Warp In Stalker",
+        "ruRU": "Warp In Stalker"
+      },
+      "Tooltip": {
+        "enUS": "Ranged support strider.<br/><br/><span style=\"color: ffff8a\">Can attack ground and air units.</span>",
+        "ruRU": "Ranged support strider.<br/><br/><span style=\"color: ffff8a\">Can attack ground and air units.</span>"
+      }
     },
     {
       "AbilCmd": "GatewayTrain,Train4",
       "id": "HighTemplar",
       "Icon": "btn-unit-protoss-hightemplar",
-      "Tooltip": "Potent psionic master. Can use Feedback and be upgraded to use Psionic Storm. Can transform into an Archon.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
-      "Name": "Warp In High Templar"
+      "Name": {
+        "enUS": "Warp In High Templar",
+        "ruRU": "Warp In High Templar"
+      },
+      "Tooltip": {
+        "enUS": "Potent psionic master. Can use Feedback and be upgraded to use Psionic Storm. Can transform into an Archon.",
+        "ruRU": "Potent psionic master. Can use Feedback and be upgraded to use Psionic Storm. Can transform into an Archon."
+      }
     },
     {
       "AbilCmd": "GatewayTrain,Train5",
       "id": "DarkTemplar",
       "Icon": "btn-unit-protoss-darktemplar",
-      "Tooltip": "Deadly warrior-assassin. Cloak renders the unit invisible to enemies without detection. Can transform into an Archon.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
-      "Name": "Warp In Dark Templar"
+      "Name": {
+        "enUS": "Warp In Dark Templar",
+        "ruRU": "Warp In Dark Templar"
+      },
+      "Tooltip": {
+        "enUS": "Deadly warrior-assassin. Cloak renders the unit invisible to enemies without detection. Can transform into an Archon.<br/><br/><span style=\"color: ffff8a\">Can attack ground units.</span>",
+        "ruRU": "Deadly warrior-assassin. Cloak renders the unit invisible to enemies without detection. Can transform into an Archon.<br/><br/><span style=\"color: ffff8a\">Can attack ground units.</span>"
+      }
     },
     {
       "AbilCmd": "Rally,Rally1",
       "id": "Rally",
       "Icon": "btn-ability-terran-setrallypoint",
-      "Tooltip": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
-      "Name": "Set Rally Point"
+      "Name": {
+        "enUS": "Set Rally Point",
+        "ruRU": "Задать точку сбора /// Set Rally Point"
+      },
+      "Tooltip": {
+        "enUS": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
+        "ruRU": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically."
+      }
     },
     {
       "AbilCmd": "UpgradeToWarpGate,Execute",
       "id": "UpgradeToWarpGate",
       "Icon": "btn-building-protoss-warpgate",
-      "Tooltip": "Upgrades this Gateway to a Warp Gate, allowing it to warp in ground units to any location powered by a Pylon or Warp Prism.",
-      "Name": "Transform to Warp Gate"
+      "Name": {
+        "enUS": "Transform to Warp Gate",
+        "ruRU": "Transform to Warp Gate"
+      },
+      "Tooltip": {
+        "enUS": "Upgrades this Gateway to a Warp Gate, allowing it to warp in ground units to any location powered by a Pylon or Warp Prism.",
+        "ruRU": "Upgrades this Gateway to a Warp Gate, allowing it to warp in ground units to any location powered by a Pylon or Warp Prism."
+      }
     },
     {
       "AbilCmd": "GatewayTrain,Train6",
       "id": "Sentry",
       "Icon": "btn-unit-protoss-sentry",
-      "Tooltip": "Energy-manipulator unit. Can use Force Field, Guardian Shield, and Hallucination.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units.</span>",
-      "Name": "Warp In Sentry"
+      "Name": {
+        "enUS": "Warp In Sentry",
+        "ruRU": "Warp In Sentry"
+      },
+      "Tooltip": {
+        "enUS": "Energy-manipulator unit. Can use Force Field, Guardian Shield, and Hallucination.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>",
+        "ruRU": "Energy-manipulator unit. Can use Force Field, Guardian Shield, and Hallucination.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>"
+      }
     },
     {
       "AbilCmd": "GatewayTrain,Train7",
       "id": "WarpInAdept",
       "Icon": "btn-unit-protoss-adept",
-      "Tooltip": "Ranged specialist. Can use Psionic Transfer.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
-      "Name": "Warp In Adept"
+      "Name": {
+        "enUS": "Warp In Adept",
+        "ruRU": "Warp In Adept"
+      },
+      "Tooltip": {
+        "enUS": "Ranged specialist. Can use Psionic Transfer.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+        "ruRU": "Ranged specialist. Can use Psionic Transfer.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>"
+      }
     }
   ]
 }

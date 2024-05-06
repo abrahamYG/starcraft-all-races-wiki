@@ -27,6 +27,10 @@
     {
       "id": "nexus",
       "name": "nexus coop"
+    },
+    {
+      "id": "scevo",
+      "name": "SC Evo"
     }
   ]
 }

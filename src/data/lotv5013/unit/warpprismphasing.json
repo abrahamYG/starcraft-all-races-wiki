@@ -1,6 +1,12 @@
 {
-  "Name": "Warp Prism",
-  "Description": "Immobile power provider. Can load units from a distance. Can switch to a mobile Transport Mode.",
+  "Name": {
+    "enUS": "Warp Prism",
+    "ruRU": "Warp Prism"
+  },
+  "Description": {
+    "enUS": "Immobile power provider. Can load and unload units. Can switch to a mobile Transport Mode.",
+    "ruRU": "Immobile power provider. Can load and unload units. Can switch to a mobile Transport Mode."
+  },
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -12,7 +18,10 @@
   "ResourceType": "Unknown",
   "LifeStart": 80,
   "LifeMax": 80,
-  "LifeArmorName": "Protoss Plating",
+  "LifeArmorName": {
+    "enUS": "Protoss Plating",
+    "ruRU": "Protoss Plating"
+  },
   "Mover": "Fly",
   "StationaryTurningRate": 720,
   "TurningRate": 720,
@@ -74,11 +83,20 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "Mob": "Multiplayer",
   "ShieldsStart": 100,
   "ShieldsMax": 100,
   "ShieldRegenRate": 2,
-  "ShieldArmorName": "Protoss Plasma Shields",
+  "ShieldArmorName": {
+    "enUS": "Protoss Plasma Shields",
+    "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+  },
   "Height": 3.75,
   "Food": -2,
   "AttackTargetPriority": 20,
@@ -95,7 +113,7 @@
   "Collide": [
     "Flying"
   ],
-  "VisionHeight": 15,
+  "VisionHeight": 4,
   "Sight": 11,
   "Attributes": [
     "Armored",
@@ -138,6 +156,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -175,8 +199,7 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move",
-          "AbilSetId": "Move"
+          "id": "move"
         },
         "Cost": {
           "Minerals": 0,
@@ -194,8 +217,14 @@
         "AbilCmd": "move,Move",
         "id": "Move",
         "Icon": "btn-command-move",
-        "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
-        "Name": "Move",
+        "Name": {
+          "enUS": "Move",
+          "ruRU": "Двигаться /// Move"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+          "ruRU": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies."
+        },
         "Hotkey": "M"
       },
       {
@@ -217,6 +246,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "stop",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "AbilSetId": "Stop",
           "CmdButtonArray": {
             "Stop": {
@@ -262,8 +297,14 @@
         "AbilCmd": "stop,Stop",
         "id": "Stop",
         "Icon": "btn-command-stop",
-        "Tooltip": "Orders selected units to cancel all orders and stop moving.",
-        "Name": "Stop",
+        "Name": {
+          "enUS": "Stop",
+          "ruRU": "Отставить /// Stop"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to cancel all orders and stop moving.",
+          "ruRU": "Orders selected units to cancel all orders and stop moving."
+        },
         "Hotkey": "S"
       },
       {
@@ -291,6 +332,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -328,8 +375,7 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move",
-          "AbilSetId": "Move"
+          "id": "move"
         },
         "Cost": {
           "Minerals": 0,
@@ -347,8 +393,14 @@
         "AbilCmd": "move,HoldPos",
         "id": "MoveHoldPosition",
         "Icon": "btn-command-holdposition",
-        "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
-        "Name": "Hold Position",
+        "Name": {
+          "enUS": "Hold Position",
+          "ruRU": "Удерживать позицию /// Hold Position"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+          "ruRU": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage."
+        },
         "Hotkey": "H"
       },
       {
@@ -376,6 +428,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -413,8 +471,7 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move",
-          "AbilSetId": "Move"
+          "id": "move"
         },
         "Cost": {
           "Minerals": 0,
@@ -432,8 +489,14 @@
         "AbilCmd": "move,Patrol",
         "id": "MovePatrol",
         "Icon": "btn-command-patrol",
-        "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
-        "Name": "Patrol",
+        "Name": {
+          "enUS": "Patrol",
+          "ruRU": "Патрулировать /// Patrol"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+          "ruRU": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies."
+        },
         "Hotkey": "P"
       },
       {
@@ -455,6 +518,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "attack",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "AbilSetId": "Attack",
           "Alignment": "Negative",
           "AcquireFilters": "-;Player,Ally,Neutral,Dead,Hidden,Invulnerable,Benign",
@@ -501,8 +570,14 @@
         "AbilCmd": "attack,Execute",
         "id": "Attack",
         "Icon": "btn-command-attack",
-        "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
-        "Name": "Attack",
+        "Name": {
+          "enUS": "Attack",
+          "ruRU": "Атаковать /// Attack"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+          "ruRU": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed."
+        },
         "Hotkey": "A"
       },
       {
@@ -530,6 +605,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -567,8 +648,7 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move",
-          "AbilSetId": "Move"
+          "id": "move"
         },
         "Cost": {
           "Minerals": 0,
@@ -586,8 +666,14 @@
         "AbilCmd": "move,AcquireMove",
         "id": "AcquireMove",
         "Icon": "btn-command-attack",
-        "Tooltip": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies.",
-        "Name": "Scan Move",
+        "Name": {
+          "enUS": "Scan Move",
+          "ruRU": "Двигаться в режиме наблюдения /// Scan Move"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies.",
+          "ruRU": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies."
+        },
         "Hotkey": "A"
       },
       {
@@ -609,6 +695,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "WarpPrismTransport",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Load": {
               "Flags": {
@@ -666,12 +758,12 @@
           "TotalCargoSpace": 8,
           "UnloadPeriod": 1,
           "AbilSetId": "ULdM",
-          "id": "WarpPrismTransport",
           "LoadValidatorArray": [
             "NotWidowMineTarget"
           ],
           "UnloadCargoEffect": "WarpPrismUnloadCargoSetEffect",
-          "LoadCargoEffect": "WarpPrismLoadDummy"
+          "LoadCargoEffect": "WarpPrismLoadDummy",
+          "id": "WarpPrismTransport"
         },
         "Cost": {
           "Minerals": 0,
@@ -689,8 +781,14 @@
         "AbilCmd": "WarpPrismTransport,Load",
         "id": "WarpPrismLoad",
         "Icon": "btn-ability-terran-load",
-        "Tooltip": "Loads units into the Warp Prism's matrix from up to <b>0</b> range away.",
-        "Name": "Load",
+        "Name": {
+          "enUS": "Load",
+          "ruRU": "Load"
+        },
+        "Tooltip": {
+          "enUS": "Loads units into the Warp Prism's matrix.",
+          "ruRU": "Loads units into the Warp Prism's matrix."
+        },
         "Hotkey": "L"
       },
       {
@@ -712,6 +810,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "WarpPrismTransport",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Load": {
               "Flags": {
@@ -769,12 +873,12 @@
           "TotalCargoSpace": 8,
           "UnloadPeriod": 1,
           "AbilSetId": "ULdM",
-          "id": "WarpPrismTransport",
           "LoadValidatorArray": [
             "NotWidowMineTarget"
           ],
           "UnloadCargoEffect": "WarpPrismUnloadCargoSetEffect",
-          "LoadCargoEffect": "WarpPrismLoadDummy"
+          "LoadCargoEffect": "WarpPrismLoadDummy",
+          "id": "WarpPrismTransport"
         },
         "Cost": {
           "Minerals": 0,
@@ -792,8 +896,14 @@
         "AbilCmd": "WarpPrismTransport,UnloadAt",
         "id": "WarpPrismUnloadAll",
         "Icon": "btn-ability-terran-unloadall",
-        "Tooltip": "Unloads all units.",
-        "Name": "Unload All",
+        "Name": {
+          "enUS": "Unload All",
+          "ruRU": "Unload All"
+        },
+        "Tooltip": {
+          "enUS": "Unloads all units.",
+          "ruRU": "Unloads all units."
+        },
         "Hotkey": "D"
       },
       {
@@ -829,8 +939,14 @@
         "AbilCmd": "TransportMode,Execute",
         "id": "TransportMode",
         "Icon": "btn-unit-protoss-warpprism",
-        "Tooltip": "Reverts the Warp Prism back to Transport Mode, allowing it to move.",
-        "Name": "Transport Mode",
+        "Name": {
+          "enUS": "Transport Mode",
+          "ruRU": "Transport Mode"
+        },
+        "Tooltip": {
+          "enUS": "Reverts the Warp Prism back to Transport Mode, allowing it to move.",
+          "ruRU": "Reverts the Warp Prism back to Transport Mode, allowing it to move."
+        },
         "Hotkey": "T"
       },
       {
@@ -849,8 +965,14 @@
         "Type": "Passive",
         "id": "ImprovedEnergy",
         "Icon": "btn-upgrade-artanis-pylonpower",
-        "Tooltip": "Increases the speed of warp in for units warped into the power field to <b>5</b>.",
-        "Name": "Warp Conduit"
+        "Name": {
+          "enUS": "Warp Conduit",
+          "ruRU": "Warp Conduit"
+        },
+        "Tooltip": {
+          "enUS": "Increases the speed of warp in for units warped into the power field to <b>5</b>.",
+          "ruRU": "Increases the speed of warp in for units warped into the power field to <b>5</b>."
+        }
       }
     ]
   },
@@ -862,25 +984,42 @@
   "Weapons": [],
   "Behaviors": [
     {
-      "id": "WarpPrismPowerSourceFast"
+      "id": "WarpPrismPowerSourceFast",
+      "Name": {
+        "enUS": "Warp Prism Power Source Fast",
+        "ruRU": "Warp Prism Power Source Fast ///Auto - Copied from enUS Locale"
+      },
+      "Tooltip": "-"
     }
   ],
   "Abilities": [
     {
       "id": "TransportMode",
-      "Name": "Transport Mode"
+      "Name": {
+        "enUS": "Transport Mode",
+        "ruRU": "Transport Mode"
+      }
     },
     {
       "id": "WarpPrismTransport",
-      "Name": "Load-Unload (Shuttle)"
+      "Name": {
+        "enUS": "Load-Unload (Shuttle)",
+        "ruRU": "Load-Unload (Shuttle)"
+      }
     },
     {
       "id": "AttackWarpPrism",
-      "Name": "Attack (Warp Prism)"
+      "Name": {
+        "enUS": "Attack (Warp Prism)",
+        "ruRU": "Attack (Warp Prism)"
+      }
     },
     {
       "id": "stop",
-      "Name": "Stop"
+      "Name": {
+        "enUS": "Stop",
+        "ruRU": "Stop"
+      }
     }
   ],
   "$Upgrades": [
@@ -899,15 +1038,7 @@
     "ProtossShieldsLevel3",
     "PhasingMode",
     "WarpPrismPhasingRotateTurret",
-    "IsWarpPrismPhasing",
-    "Combat_Mechanic_KillTransport_WarpPrismPhasing",
-    "WarpPrismBase",
-    "WarpPrism",
-    "WarpPrismNerazim",
-    "WarpPrismTaldarim",
-    "WarpPrismPurifier",
-    "WarpPrismGolden",
-    "WarpPrismIhanrii"
+    "IsWarpPrismPhasing"
   ],
   "$Requirements": [],
   "$Production": [],
@@ -923,64 +1054,118 @@
       "AbilCmd": "move,Move",
       "id": "Move",
       "Icon": "btn-command-move",
-      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
-      "Name": "Move"
+      "Name": {
+        "enUS": "Move",
+        "ruRU": "Двигаться /// Move"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+        "ruRU": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies."
+      }
     },
     {
       "AbilCmd": "stop,Stop",
       "id": "Stop",
       "Icon": "btn-command-stop",
-      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
-      "Name": "Stop"
+      "Name": {
+        "enUS": "Stop",
+        "ruRU": "Отставить /// Stop"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to cancel all orders and stop moving.",
+        "ruRU": "Orders selected units to cancel all orders and stop moving."
+      }
     },
     {
       "AbilCmd": "move,HoldPos",
       "id": "MoveHoldPosition",
       "Icon": "btn-command-holdposition",
-      "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
-      "Name": "Hold Position"
+      "Name": {
+        "enUS": "Hold Position",
+        "ruRU": "Удерживать позицию /// Hold Position"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+        "ruRU": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage."
+      }
     },
     {
       "AbilCmd": "move,Patrol",
       "id": "MovePatrol",
       "Icon": "btn-command-patrol",
-      "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
-      "Name": "Patrol"
+      "Name": {
+        "enUS": "Patrol",
+        "ruRU": "Патрулировать /// Patrol"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+        "ruRU": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies."
+      }
     },
     {
       "AbilCmd": "attack,Execute",
       "id": "Attack",
       "Icon": "btn-command-attack",
-      "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
-      "Name": "Attack"
+      "Name": {
+        "enUS": "Attack",
+        "ruRU": "Атаковать /// Attack"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+        "ruRU": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed."
+      }
     },
     {
       "AbilCmd": "move,AcquireMove",
       "id": "AcquireMove",
       "Icon": "btn-command-attack",
-      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies.",
-      "Name": "Scan Move"
+      "Name": {
+        "enUS": "Scan Move",
+        "ruRU": "Двигаться в режиме наблюдения /// Scan Move"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies.",
+        "ruRU": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies."
+      }
     },
     {
       "AbilCmd": "WarpPrismTransport,Load",
       "id": "WarpPrismLoad",
       "Icon": "btn-ability-terran-load",
-      "Tooltip": "Loads units into the Warp Prism's matrix from up to <b>0</b> range away.",
-      "Name": "Load"
+      "Name": {
+        "enUS": "Load",
+        "ruRU": "Load"
+      },
+      "Tooltip": {
+        "enUS": "Loads units into the Warp Prism's matrix.",
+        "ruRU": "Loads units into the Warp Prism's matrix."
+      }
     },
     {
       "AbilCmd": "WarpPrismTransport,UnloadAt",
       "id": "WarpPrismUnloadAll",
       "Icon": "btn-ability-terran-unloadall",
-      "Tooltip": "Unloads all units.",
-      "Name": "Unload All"
+      "Name": {
+        "enUS": "Unload All",
+        "ruRU": "Unload All"
+      },
+      "Tooltip": {
+        "enUS": "Unloads all units.",
+        "ruRU": "Unloads all units."
+      }
     },
     {
       "AbilCmd": "TransportMode,Execute",
       "id": "TransportMode",
       "Icon": "btn-unit-protoss-warpprism",
-      "Tooltip": "Reverts the Warp Prism back to Transport Mode, allowing it to move.",
-      "Name": "Transport Mode"
+      "Name": {
+        "enUS": "Transport Mode",
+        "ruRU": "Transport Mode"
+      },
+      "Tooltip": {
+        "enUS": "Reverts the Warp Prism back to Transport Mode, allowing it to move.",
+        "ruRU": "Reverts the Warp Prism back to Transport Mode, allowing it to move."
+      }
     }
   ]
 }

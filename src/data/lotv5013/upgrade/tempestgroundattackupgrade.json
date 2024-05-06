@@ -12,6 +12,13 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "TempestGroundAttackUpgrade",
+  "EditorCategories": "Race:Protoss,UpgradeType:Spell",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "ScoreAmount": 300,
   "ScoreResult": "BuildOrder",
   "EffectArray": [

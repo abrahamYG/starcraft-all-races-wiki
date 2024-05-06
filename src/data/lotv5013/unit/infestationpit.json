@@ -1,6 +1,12 @@
 {
-  "Name": "Infestation Pit",
-  "Description": "Contains upgrades for Infestors.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Infestors from Larvae<br/>- Swarm Hosts from Larvae",
+  "Name": {
+    "enUS": "Infestation Pit",
+    "ruRU": "Infestation Pit"
+  },
+  "Description": {
+    "enUS": "Contains upgrades for Infestors and Swarm Hosts.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Infestors from Larvae<br/>- Swarm Hosts from Larvae",
+    "ruRU": "Contains upgrades for Infestors and Swarm Hosts.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Infestors from Larvae<br/>- Swarm Hosts from Larvae"
+  },
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -12,7 +18,10 @@
   "ResourceType": "Unknown",
   "LifeStart": 850,
   "LifeMax": 850,
-  "LifeArmorName": "Zerg Building Armor",
+  "LifeArmorName": {
+    "enUS": "Zerg Building Armor",
+    "ruRU": "Zerg Building Armor"
+  },
   "Mover": "Ground",
   "StationaryTurningRate": 719.4726,
   "TurningRate": 719.4726,
@@ -77,6 +86,12 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "Facing": 329.9963,
   "Mob": "Multiplayer",
   "FogVisibility": "Snapshot",
@@ -94,9 +109,8 @@
     "Structure",
     "RoachBurrow",
     "ForceField",
-    "Small",
-    "Locust",
-    "Phased"
+    "Phased",
+    "Small"
   ],
   "LifeArmor": 1,
   "LifeRegenRate": 0.2734,
@@ -123,6 +137,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "que5",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "QueueCount": 1,
           "Flags": {
             "BestUnit": 1,
@@ -155,8 +175,14 @@
         "AbilCmd": "que5,CancelLast",
         "id": "Cancel",
         "Icon": "btn-command-cancel",
-        "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
-        "Name": "Cancel",
+        "Name": {
+          "enUS": "Cancel",
+          "ruRU": "Отменить /// Cancel"
+        },
+        "Tooltip": {
+          "enUS": "Drops the current order without performing it, and allows you to select a different order.",
+          "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+        },
         "Hotkey": "Esc"
       },
       {
@@ -178,6 +204,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "BuildInProgress",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "Activity": "UI/Building",
           "VitalStartFactor": {
             "Life": 0.1,
@@ -210,8 +242,14 @@
         "AbilCmd": "BuildInProgress,Cancel",
         "id": "CancelBuilding",
         "Icon": "btn-command-cancel",
-        "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-        "Name": "Cancel",
+        "Name": {
+          "enUS": "Cancel",
+          "ruRU": "Отменить /// Cancel"
+        },
+        "Tooltip": {
+          "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+          "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+        },
         "Hotkey": "Esc"
       },
       {
@@ -249,8 +287,14 @@
         "AbilCmd": "InfestationPitResearch,Research4",
         "id": "ResearchNeuralParasite",
         "Icon": "btn-ability-zerg-neuralparasite-color",
-        "Tooltip": "Allows <span style=\"color: #ffff8a\">Infestors</span> to use the Neural Parasite ability.",
-        "Name": "Evolve Neural Parasite",
+        "Name": {
+          "enUS": "Evolve Neural Parasite",
+          "ruRU": "Evolve Neural Parasite"
+        },
+        "Tooltip": {
+          "enUS": "Allows <span style=\"color: ffff8a\">Infestors</span> to use the Neural Parasite ability.",
+          "ruRU": "Allows <span style=\"color: ffff8a\">Infestors</span> to use the Neural Parasite ability."
+        },
         "Hotkey": "E"
       }
     ]
@@ -279,27 +323,51 @@
   "Weapons": [],
   "Behaviors": [
     {
-      "id": "OnCreep"
+      "id": "OnCreep",
+      "Name": {
+        "enUS": "On Creep",
+        "ruRU": "On Creep"
+      },
+      "Tooltip": "-"
     },
     {
-      "id": "ZergBuildingNotOnCreep"
+      "id": "ZergBuildingNotOnCreep",
+      "Name": {
+        "enUS": "Building Not On Creep",
+        "ruRU": "Building Not On Creep"
+      },
+      "Tooltip": "-"
     },
     {
-      "id": "ZergBuildingDies6"
+      "id": "ZergBuildingDies6",
+      "Name": {
+        "enUS": "Zerg Building Dies 6",
+        "ruRU": "Zerg Building Dies 6"
+      },
+      "Tooltip": "-"
     }
   ],
   "Abilities": [
     {
       "id": "BuildInProgress",
-      "Name": "Build in Progress"
+      "Name": {
+        "enUS": "Build in Progress",
+        "ruRU": "Build in Progress"
+      }
     },
     {
       "id": "que5",
-      "Name": "Queue (5)"
+      "Name": {
+        "ruRU": "Queue (5)",
+        "enUS": "Queue (5)"
+      }
     },
     {
       "id": "InfestationPitResearch",
-      "Name": "Infestation Pit Research"
+      "Name": {
+        "enUS": "Research",
+        "ruRU": "Research"
+      }
     }
   ],
   "$Upgrades": [
@@ -307,17 +375,12 @@
     "InfestationPit",
     "ZergBuild",
     "IsInfestationPit",
-    "InfestationPit",
-    "InfestationPitBase",
-    "InfestationPit",
-    "InfestationPitMecha",
-    "InfestationPitRCZ",
-    "DefaultSkinPack",
-    "InfestationPitMecha",
-    "InfestationPitRCZ"
+    "InfestationPit"
   ],
   "$Requirements": [],
-  "$Production": [],
+  "$Production": [
+    "Broodling"
+  ],
   "$Research": [
     "NeuralParasite"
   ],
@@ -331,22 +394,40 @@
       "AbilCmd": "que5,CancelLast",
       "id": "Cancel",
       "Icon": "btn-command-cancel",
-      "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
-      "Name": "Cancel"
+      "Name": {
+        "enUS": "Cancel",
+        "ruRU": "Отменить /// Cancel"
+      },
+      "Tooltip": {
+        "enUS": "Drops the current order without performing it, and allows you to select a different order.",
+        "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+      }
     },
     {
       "AbilCmd": "BuildInProgress,Cancel",
       "id": "CancelBuilding",
       "Icon": "btn-command-cancel",
-      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-      "Name": "Cancel"
+      "Name": {
+        "enUS": "Cancel",
+        "ruRU": "Отменить /// Cancel"
+      },
+      "Tooltip": {
+        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+        "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+      }
     },
     {
       "AbilCmd": "InfestationPitResearch,Research4",
       "id": "ResearchNeuralParasite",
       "Icon": "btn-ability-zerg-neuralparasite-color",
-      "Tooltip": "Allows <span style=\"color: #ffff8a\">Infestors</span> to use the Neural Parasite ability.",
-      "Name": "Evolve Neural Parasite"
+      "Name": {
+        "enUS": "Evolve Neural Parasite",
+        "ruRU": "Evolve Neural Parasite"
+      },
+      "Tooltip": {
+        "enUS": "Allows <span style=\"color: ffff8a\">Infestors</span> to use the Neural Parasite ability.",
+        "ruRU": "Allows <span style=\"color: ffff8a\">Infestors</span> to use the Neural Parasite ability."
+      }
     }
   ]
 }

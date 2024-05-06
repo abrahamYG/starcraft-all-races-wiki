@@ -1,6 +1,12 @@
 {
-  "Name": "Supply Depot",
-  "Description": "Provides supply.<br/>Supply allows you to create more units.<br/>Supply Depots can be lowered to allow units to walk over them.",
+  "Name": {
+    "enUS": "Supply Depot",
+    "ruRU": "Supply Depot"
+  },
+  "Description": {
+    "enUS": "Provides supply.<br/>Supply allows you to create more units.<br/>Supply Depots can be lowered to allow units to walk over them.",
+    "ruRU": "Provides supply.<br/>Supply allows you to create more units.<br/>Supply Depots can be lowered to allow units to walk over them."
+  },
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -12,7 +18,10 @@
   "ResourceType": "Unknown",
   "LifeStart": 400,
   "LifeMax": 400,
-  "LifeArmorName": "Terran Building Plating",
+  "LifeArmorName": {
+    "enUS": "Terran Building Plating",
+    "ruRU": "Terran Building Plating"
+  },
   "Mover": "Ground",
   "StationaryTurningRate": 719.4726,
   "TurningRate": 719.4726,
@@ -77,6 +86,12 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "TechAliasArray": [
     "Alias_SupplyDepot"
   ],
@@ -157,8 +172,14 @@
         "AbilCmd": "SupplyDepotRaise,Execute",
         "id": "Raise",
         "Icon": "btn-building-terran-supplydepot",
-        "Tooltip": "Raises the structure, preventing ground units from moving across it.",
-        "Name": "Raise",
+        "Name": {
+          "enUS": "Raise",
+          "ruRU": "Raise"
+        },
+        "Tooltip": {
+          "enUS": "Raises the structure, preventing ground units from moving across it.",
+          "ruRU": "Raises the structure, preventing ground units from moving across it."
+        },
         "Hotkey": "R"
       }
     ]
@@ -170,29 +191,39 @@
   "Weapons": [],
   "Behaviors": [
     {
-      "id": "TerranBuildingBurnDown"
+      "id": "TerranBuildingBurnDown",
+      "Name": {
+        "enUS": "Building Burnout",
+        "ruRU": "Building Burnout"
+      },
+      "Tooltip": "-"
     }
   ],
   "Abilities": [
     {
       "id": "BuildInProgress",
-      "Name": "Build in Progress"
+      "Name": {
+        "enUS": "Build in Progress",
+        "ruRU": "Build in Progress"
+      }
     },
     {
       "id": "SupplyDepotRaise",
-      "Name": "Raise"
+      "Name": {
+        "enUS": "Raise",
+        "ruRU": "Raise"
+      }
     }
   ],
   "$Upgrades": [
+    "IsSupplyDepotLowered",
     "SupplyDepotLower",
     "SupplyDepotLowered",
-    "IsSupplyDepotLowered",
     "TerranBuildingArmor",
     "TerranBuildingLand",
     "SupplyDepot",
     "SupplyDropModel",
-    "SupplyDepotLowered",
-    "SupplyDepotSkin"
+    "SupplyDepotLowered"
   ],
   "$Requirements": [],
   "$Production": [],
@@ -208,8 +239,14 @@
       "AbilCmd": "SupplyDepotRaise,Execute",
       "id": "Raise",
       "Icon": "btn-building-terran-supplydepot",
-      "Tooltip": "Raises the structure, preventing ground units from moving across it.",
-      "Name": "Raise"
+      "Name": {
+        "enUS": "Raise",
+        "ruRU": "Raise"
+      },
+      "Tooltip": {
+        "enUS": "Raises the structure, preventing ground units from moving across it.",
+        "ruRU": "Raises the structure, preventing ground units from moving across it."
+      }
     }
   ]
 }

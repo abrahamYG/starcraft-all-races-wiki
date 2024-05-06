@@ -13,6 +13,13 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "TunnelingClaws",
+  "EditorCategories": "Race:Zerg,UpgradeType:Spell",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "Race": "Zerg",
   "ScoreAmount": 200,
   "ScoreResult": "BuildOrder",
@@ -40,7 +47,6 @@
       "Value": "1"
     }
   ],
-  "EditorCategories": "Race:Zerg,UpgradeType:Talents",
   "AffectedUnitArray": [
     "Roach",
     "RoachBurrowed"

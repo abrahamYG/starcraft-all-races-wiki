@@ -13,6 +13,13 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "ExtendedThermalLance",
+  "EditorCategories": "Race:Protoss,UpgradeType:Spell",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "Race": "Prot",
   "EffectArray": [
     {
@@ -26,9 +33,12 @@
     {
       "Reference": "Weapon,ThermalLances,MinScanRange",
       "Value": "2"
+    },
+    {
+      "Reference": "Validator,ColossusAttackDamageMaxRange,Range",
+      "Value": "2"
     }
   ],
-  "EditorCategories": "Race:Protoss,UpgradeType:Talents",
   "ScoreResult": "BuildOrder",
   "AffectedUnitArray": [
     "Colossus"

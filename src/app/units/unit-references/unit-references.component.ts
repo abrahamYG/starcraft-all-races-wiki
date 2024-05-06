@@ -16,6 +16,9 @@ export class UnitReferencesComponent {
   get unit(): any { return this._unit }
   @Input() set unit(value: any) { this._unit = value }
 
+  constructor(public scdata: SCDataService) {
+  }
+
   weaponFields = [
     {title: 'Id', field: 'Id'},
     {title: 'Name', field: 'Name'},

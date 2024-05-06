@@ -1,6 +1,12 @@
 {
-  "Name": "Hellion",
-  "Description": "Fast scout. Has a flame attack that damages all enemy units in its line of fire. Can transform into a close range combat unit.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
+  "Name": {
+    "enUS": "Hellion",
+    "ruRU": "Hellion"
+  },
+  "Description": {
+    "enUS": "Fast scout. Has a flame attack that damages all enemy units in its line of fire. Can transform into a close range combat unit.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+    "ruRU": "Fast scout. Has a flame attack that damages all enemy units in its line of fire. Can transform into a close range combat unit.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>"
+  },
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -12,7 +18,10 @@
   "ResourceType": "Unknown",
   "LifeStart": 90,
   "LifeMax": 90,
-  "LifeArmorName": "Terran Vehicle Plating",
+  "LifeArmorName": {
+    "enUS": "Terran Vehicle Plating",
+    "ruRU": "Terran Vehicle Plating"
+  },
   "Mover": "Ground",
   "StationaryTurningRate": 1499.9414,
   "TurningRate": 720,
@@ -75,6 +84,12 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "Mob": "Multiplayer",
   "Speed": 4.25,
   "Acceleration": 1000,
@@ -105,8 +120,7 @@
   "Collide": [
     "Ground",
     "ForceField",
-    "Small",
-    "Locust"
+    "Small"
   ],
   "Sight": 10,
   "CardLayouts": {
@@ -136,6 +150,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -173,8 +193,7 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move",
-          "AbilSetId": "Move"
+          "id": "move"
         },
         "Cost": {
           "Minerals": 0,
@@ -192,8 +211,14 @@
         "AbilCmd": "move,Move",
         "id": "Move",
         "Icon": "btn-command-move",
-        "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
-        "Name": "Move",
+        "Name": {
+          "enUS": "Move",
+          "ruRU": "Двигаться /// Move"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+          "ruRU": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies."
+        },
         "Hotkey": "M"
       },
       {
@@ -215,6 +240,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "stop",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "AbilSetId": "Stop",
           "CmdButtonArray": {
             "Stop": {
@@ -260,8 +291,14 @@
         "AbilCmd": "stop,Stop",
         "id": "Stop",
         "Icon": "btn-command-stop",
-        "Tooltip": "Orders selected units to cancel all orders and stop moving.",
-        "Name": "Stop",
+        "Name": {
+          "enUS": "Stop",
+          "ruRU": "Отставить /// Stop"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to cancel all orders and stop moving.",
+          "ruRU": "Orders selected units to cancel all orders and stop moving."
+        },
         "Hotkey": "S"
       },
       {
@@ -289,6 +326,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -326,8 +369,7 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move",
-          "AbilSetId": "Move"
+          "id": "move"
         },
         "Cost": {
           "Minerals": 0,
@@ -345,8 +387,14 @@
         "AbilCmd": "move,HoldPos",
         "id": "MoveHoldPosition",
         "Icon": "btn-command-holdposition",
-        "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
-        "Name": "Hold Position",
+        "Name": {
+          "enUS": "Hold Position",
+          "ruRU": "Удерживать позицию /// Hold Position"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+          "ruRU": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage."
+        },
         "Hotkey": "H"
       },
       {
@@ -368,6 +416,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "attack",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "AbilSetId": "Attack",
           "Alignment": "Negative",
           "AcquireFilters": "-;Player,Ally,Neutral,Dead,Hidden,Invulnerable,Benign",
@@ -414,8 +468,14 @@
         "AbilCmd": "attack,Execute",
         "id": "Attack",
         "Icon": "btn-command-attack",
-        "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
-        "Name": "Attack",
+        "Name": {
+          "enUS": "Attack",
+          "ruRU": "Атаковать /// Attack"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+          "ruRU": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed."
+        },
         "Hotkey": "A"
       },
       {
@@ -443,6 +503,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -480,8 +546,7 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move",
-          "AbilSetId": "Move"
+          "id": "move"
         },
         "Cost": {
           "Minerals": 0,
@@ -499,8 +564,14 @@
         "AbilCmd": "move,Patrol",
         "id": "MovePatrol",
         "Icon": "btn-command-patrol",
-        "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
-        "Name": "Patrol",
+        "Name": {
+          "enUS": "Patrol",
+          "ruRU": "Патрулировать /// Patrol"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+          "ruRU": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies."
+        },
         "Hotkey": "P"
       },
       {
@@ -544,8 +615,14 @@
         "AbilCmd": "MorphToHellionTank,Execute",
         "id": "MorphToHellionTank",
         "Icon": "btn-unit-terran-hellionbattlemode",
-        "Tooltip": "Close range combat unit. Deals damage in a small frontal cone. Can transform into a fast scout unit.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
-        "Name": "Hellbat Mode",
+        "Name": {
+          "enUS": "Hellbat Mode",
+          "ruRU": "Hellbat Mode"
+        },
+        "Tooltip": {
+          "enUS": "Close range combat unit. Deals damage in a small frontal cone. Can transform into a fast scout unit.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+          "ruRU": "Close range combat unit. Deals damage in a small frontal cone. Can transform into a fast scout unit.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>"
+        },
         "Hotkey": "D"
       }
     ]
@@ -567,8 +644,8 @@
     "Roach",
     "Stalker"
   ],
-  "id": "Hellion",
   "TacticalAIThink": "AIThinkHellion",
+  "id": "Hellion",
   "Icon": "btn-unit-terran-hellion",
   "LifeArmorIcon": "btn-upgrade-terran-vehicleplatinglevel0",
   "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
@@ -577,7 +654,10 @@
       "Turret": "Hellion",
       "id": "InfernalFlameThrower",
       "Icon": "btn-upgrade-terran-vehicleweaponslevel0",
-      "Name": "Infernal Flamethrower",
+      "Name": {
+        "enUS": "Infernal Flamethrower",
+        "ruRU": "Infernal Flamethrower"
+      },
       "Amount": 8,
       "AttributeBonus": {
         "Light": 6
@@ -592,64 +672,54 @@
   "Abilities": [
     {
       "id": "stop",
-      "Name": "Stop"
+      "Name": {
+        "enUS": "Stop",
+        "ruRU": "Stop"
+      }
     },
     {
       "id": "attack",
-      "Name": "Attack"
+      "Name": {
+        "ruRU": "Attack",
+        "enUS": "Attack"
+      }
     },
     {
       "id": "move",
-      "Name": "Move"
+      "Name": {
+        "enUS": "Move",
+        "ruRU": "Move"
+      }
     },
     {
       "id": "MorphToHellionTank",
-      "Name": "Morph To Hellbat"
+      "Name": {
+        "enUS": "Morph To Hellbat",
+        "ruRU": "Morph To Hellbat"
+      }
     }
   ],
   "$Upgrades": [
     "HellionTank",
     "Hellion",
-    "MorphToHellion",
-    "NotHellion",
-    "HighCapacityBarrels",
-    "TransformationServos",
-    "SmartServos",
-    "FactoryTrain",
-    "Factory",
-    "TerranVehicleArmorsLevel1",
-    "Hellion",
-    "TerranVehicleArmors",
-    "TerranVehicleArmorsLevel2",
-    "TerranVehicleArmorsLevel3",
     "TerranVehicleWeaponsLevel1",
     "TerranVehicleWeapons",
     "TerranVehicleWeaponsLevel2",
     "TerranVehicleWeaponsLevel3",
     "TerranVehicleAndShipArmorsLevel1",
+    "Hellion",
+    "HighCapacityBarrels",
     "TerranVehicleAndShipArmors",
     "TerranVehicleAndShipArmorsLevel2",
     "TerranVehicleAndShipArmorsLevel3",
-    "TerranVehicleAndShipWeaponsLevel1",
-    "TerranVehicleAndShipWeapons",
-    "TerranVehicleAndShipWeaponsLevel2",
-    "TerranVehicleAndShipWeaponsLevel3",
+    "MorphToHellion",
+    "NotHellion",
+    "SmartServos",
+    "FactoryTrain",
+    "Factory",
     "HellionMorphModel",
     "HellionTankMorphModel",
-    "IsHellion",
-    "HellionBase",
-    "Hellion",
-    "HellionJunker",
-    "HellionCovertOps",
-    "HellionJunkerMM",
-    "HellionUmojan",
-    "HellionSilver",
-    "HellionJunkerSkinPack",
-    "DefaultSkinPack",
-    "HellionCovertOpsSkinPack",
-    "HellionJunkerMMSkinPack",
-    "HellionUmojan",
-    "HellionSilver"
+    "IsHellion"
   ],
   "$Requirements": [],
   "$Production": [],
@@ -666,43 +736,79 @@
       "AbilCmd": "move,Move",
       "id": "Move",
       "Icon": "btn-command-move",
-      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
-      "Name": "Move"
+      "Name": {
+        "enUS": "Move",
+        "ruRU": "Двигаться /// Move"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+        "ruRU": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies."
+      }
     },
     {
       "AbilCmd": "stop,Stop",
       "id": "Stop",
       "Icon": "btn-command-stop",
-      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
-      "Name": "Stop"
+      "Name": {
+        "enUS": "Stop",
+        "ruRU": "Отставить /// Stop"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to cancel all orders and stop moving.",
+        "ruRU": "Orders selected units to cancel all orders and stop moving."
+      }
     },
     {
       "AbilCmd": "move,HoldPos",
       "id": "MoveHoldPosition",
       "Icon": "btn-command-holdposition",
-      "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
-      "Name": "Hold Position"
+      "Name": {
+        "enUS": "Hold Position",
+        "ruRU": "Удерживать позицию /// Hold Position"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+        "ruRU": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage."
+      }
     },
     {
       "AbilCmd": "attack,Execute",
       "id": "Attack",
       "Icon": "btn-command-attack",
-      "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
-      "Name": "Attack"
+      "Name": {
+        "enUS": "Attack",
+        "ruRU": "Атаковать /// Attack"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+        "ruRU": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed."
+      }
     },
     {
       "AbilCmd": "move,Patrol",
       "id": "MovePatrol",
       "Icon": "btn-command-patrol",
-      "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
-      "Name": "Patrol"
+      "Name": {
+        "enUS": "Patrol",
+        "ruRU": "Патрулировать /// Patrol"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+        "ruRU": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies."
+      }
     },
     {
       "AbilCmd": "MorphToHellionTank,Execute",
       "id": "MorphToHellionTank",
       "Icon": "btn-unit-terran-hellionbattlemode",
-      "Tooltip": "Close range combat unit. Deals damage in a small frontal cone. Can transform into a fast scout unit.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
-      "Name": "Hellbat Mode"
+      "Name": {
+        "enUS": "Hellbat Mode",
+        "ruRU": "Hellbat Mode"
+      },
+      "Tooltip": {
+        "enUS": "Close range combat unit. Deals damage in a small frontal cone. Can transform into a fast scout unit.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+        "ruRU": "Close range combat unit. Deals damage in a small frontal cone. Can transform into a fast scout unit.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>"
+      }
     }
   ]
 }

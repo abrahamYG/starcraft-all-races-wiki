@@ -1,6 +1,12 @@
 {
-  "Name": "Roach Warren",
-  "Description": "Contains upgrades for Roaches.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Roaches from Larvae<br/>- Ravagers from Roaches",
+  "Name": {
+    "enUS": "Roach Warren",
+    "ruRU": "Roach Warren"
+  },
+  "Description": {
+    "enUS": "Contains upgrades for Roaches.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Roaches from Larvae<br/>- Ravagers from Roaches",
+    "ruRU": "Contains upgrades for Roaches.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Roaches from Larvae<br/>- Ravagers from Roaches"
+  },
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -12,7 +18,10 @@
   "ResourceType": "Unknown",
   "LifeStart": 850,
   "LifeMax": 850,
-  "LifeArmorName": "Zerg Building Armor",
+  "LifeArmorName": {
+    "enUS": "Zerg Building Armor",
+    "ruRU": "Zerg Building Armor"
+  },
   "Mover": "Ground",
   "StationaryTurningRate": 719.4726,
   "TurningRate": 719.4726,
@@ -77,6 +86,12 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "Facing": 326.997,
   "Mob": "Multiplayer",
   "FogVisibility": "Snapshot",
@@ -103,9 +118,8 @@
     "Structure",
     "RoachBurrow",
     "ForceField",
-    "Small",
-    "Locust",
-    "Phased"
+    "Phased",
+    "Small"
   ],
   "Sight": 9,
   "CardLayouts": {
@@ -129,6 +143,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "que5",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "QueueCount": 1,
           "Flags": {
             "BestUnit": 1,
@@ -161,8 +181,14 @@
         "AbilCmd": "que5,CancelLast",
         "id": "Cancel",
         "Icon": "btn-command-cancel",
-        "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
-        "Name": "Cancel",
+        "Name": {
+          "enUS": "Cancel",
+          "ruRU": "Отменить /// Cancel"
+        },
+        "Tooltip": {
+          "enUS": "Drops the current order without performing it, and allows you to select a different order.",
+          "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+        },
         "Hotkey": "Esc"
       },
       {
@@ -184,6 +210,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "BuildInProgress",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "Activity": "UI/Building",
           "VitalStartFactor": {
             "Life": 0.1,
@@ -216,8 +248,14 @@
         "AbilCmd": "BuildInProgress,Cancel",
         "id": "CancelBuilding",
         "Icon": "btn-command-cancel",
-        "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-        "Name": "Cancel",
+        "Name": {
+          "enUS": "Cancel",
+          "ruRU": "Отменить /// Cancel"
+        },
+        "Tooltip": {
+          "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+          "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+        },
         "Hotkey": "Esc"
       },
       {
@@ -229,7 +267,6 @@
               "ShowInGlossary": 1
             },
             "DefaultButtonFace": "EvolveGlialRegeneration",
-            "State": "Restricted",
             "Requirements": "LearnGlialReconstitution"
           },
           "Resource": {
@@ -256,8 +293,14 @@
         "AbilCmd": "RoachWarrenResearch,Research2",
         "id": "EvolveGlialRegeneration",
         "Icon": "btn-upgrade-zerg-glialreconstitution",
-        "Tooltip": "Increases the movement speed of <span style=\"color: #ffff8a\">Roaches</span>.",
-        "Name": "Evolve Glial Reconstitution",
+        "Name": {
+          "enUS": "Evolve Glial Reconstitution",
+          "ruRU": "Evolve Glial Reconstitution"
+        },
+        "Tooltip": {
+          "enUS": "Increases the movement speed of <span style=\"color: ffff8a\">Roaches</span>.",
+          "ruRU": "Increases the movement speed of <span style=\"color: ffff8a\">Roaches</span>."
+        },
         "Hotkey": "G"
       },
       {
@@ -295,8 +338,14 @@
         "AbilCmd": "RoachWarrenResearch,Research3",
         "id": "EvolveTunnelingClaws",
         "Icon": "btn-upgrade-zerg-tunnelingclaws",
-        "Tooltip": "Enables <span style=\"color: #ffff8a\">Roaches</span> to move while burrowed.",
-        "Name": "Evolve Tunneling Claws",
+        "Name": {
+          "enUS": "Evolve Tunneling Claws",
+          "ruRU": "Evolve Tunneling Claws"
+        },
+        "Tooltip": {
+          "enUS": "Enables <span style=\"color: ffff8a\">Roaches</span> to move while burrowed. Increases the life-regeneration rate of burrowed <span style=\"color: ffff8a\">Roaches</span>.",
+          "ruRU": "Enables <span style=\"color: ffff8a\">Roaches</span> to move while burrowed. Increases the life-regeneration rate of burrowed <span style=\"color: ffff8a\">Roaches</span>."
+        },
         "Hotkey": "T"
       }
     ]
@@ -318,27 +367,51 @@
   "Weapons": [],
   "Behaviors": [
     {
-      "id": "OnCreep"
+      "id": "OnCreep",
+      "Name": {
+        "enUS": "On Creep",
+        "ruRU": "On Creep"
+      },
+      "Tooltip": "-"
     },
     {
-      "id": "ZergBuildingNotOnCreep"
+      "id": "ZergBuildingNotOnCreep",
+      "Name": {
+        "enUS": "Building Not On Creep",
+        "ruRU": "Building Not On Creep"
+      },
+      "Tooltip": "-"
     },
     {
-      "id": "ZergBuildingDies6"
+      "id": "ZergBuildingDies6",
+      "Name": {
+        "enUS": "Zerg Building Dies 6",
+        "ruRU": "Zerg Building Dies 6"
+      },
+      "Tooltip": "-"
     }
   ],
   "Abilities": [
     {
       "id": "RoachWarrenResearch",
-      "Name": "Research (Roach Warren)"
+      "Name": {
+        "enUS": "Research (Roach Warren)",
+        "ruRU": "Research (Roach Warren)"
+      }
     },
     {
       "id": "BuildInProgress",
-      "Name": "Build in Progress"
+      "Name": {
+        "enUS": "Build in Progress",
+        "ruRU": "Build in Progress"
+      }
     },
     {
       "id": "que5",
-      "Name": "Queue (5)"
+      "Name": {
+        "ruRU": "Queue (5)",
+        "enUS": "Queue (5)"
+      }
     }
   ],
   "$Upgrades": [
@@ -347,17 +420,12 @@
     "ZergBuild",
     "IsRoachWarren",
     "RoachWarren",
-    "CountUnitRoachWarrenCompleteOnly",
-    "RoachWarrenBase",
-    "RoachWarren",
-    "RoachWarrenMecha",
-    "RoachWarrenRCZ",
-    "DefaultSkinPack",
-    "RoachWarrenMecha",
-    "RoachWarrenRCZ"
+    "CountUnitRoachWarrenCompleteOnly"
   ],
   "$Requirements": [],
-  "$Production": [],
+  "$Production": [
+    "Broodling"
+  ],
   "$Research": [
     "GlialReconstitution",
     "TunnelingClaws"
@@ -372,29 +440,53 @@
       "AbilCmd": "que5,CancelLast",
       "id": "Cancel",
       "Icon": "btn-command-cancel",
-      "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
-      "Name": "Cancel"
+      "Name": {
+        "enUS": "Cancel",
+        "ruRU": "Отменить /// Cancel"
+      },
+      "Tooltip": {
+        "enUS": "Drops the current order without performing it, and allows you to select a different order.",
+        "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+      }
     },
     {
       "AbilCmd": "BuildInProgress,Cancel",
       "id": "CancelBuilding",
       "Icon": "btn-command-cancel",
-      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-      "Name": "Cancel"
+      "Name": {
+        "enUS": "Cancel",
+        "ruRU": "Отменить /// Cancel"
+      },
+      "Tooltip": {
+        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+        "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+      }
     },
     {
       "AbilCmd": "RoachWarrenResearch,Research2",
       "id": "EvolveGlialRegeneration",
       "Icon": "btn-upgrade-zerg-glialreconstitution",
-      "Tooltip": "Increases the movement speed of <span style=\"color: #ffff8a\">Roaches</span>.",
-      "Name": "Evolve Glial Reconstitution"
+      "Name": {
+        "enUS": "Evolve Glial Reconstitution",
+        "ruRU": "Evolve Glial Reconstitution"
+      },
+      "Tooltip": {
+        "enUS": "Increases the movement speed of <span style=\"color: ffff8a\">Roaches</span>.",
+        "ruRU": "Increases the movement speed of <span style=\"color: ffff8a\">Roaches</span>."
+      }
     },
     {
       "AbilCmd": "RoachWarrenResearch,Research3",
       "id": "EvolveTunnelingClaws",
       "Icon": "btn-upgrade-zerg-tunnelingclaws",
-      "Tooltip": "Enables <span style=\"color: #ffff8a\">Roaches</span> to move while burrowed.",
-      "Name": "Evolve Tunneling Claws"
+      "Name": {
+        "enUS": "Evolve Tunneling Claws",
+        "ruRU": "Evolve Tunneling Claws"
+      },
+      "Tooltip": {
+        "enUS": "Enables <span style=\"color: ffff8a\">Roaches</span> to move while burrowed. Increases the life-regeneration rate of burrowed <span style=\"color: ffff8a\">Roaches</span>.",
+        "ruRU": "Enables <span style=\"color: ffff8a\">Roaches</span> to move while burrowed. Increases the life-regeneration rate of burrowed <span style=\"color: ffff8a\">Roaches</span>."
+      }
     }
   ]
 }

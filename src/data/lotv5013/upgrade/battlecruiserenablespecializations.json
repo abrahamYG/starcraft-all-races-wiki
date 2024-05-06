@@ -12,9 +12,15 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "BattlecruiserEnableSpecializations",
+  "EditorCategories": "Race:Terran,UpgradeType:Spell",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "ScoreAmount": 300,
   "ScoreResult": "BuildOrder",
-  "EditorCategories": "Race:Terran,UpgradeType:Talents",
   "Race": "Terr",
   "InfoTooltipPriority": 1,
   "AffectedUnitArray": [

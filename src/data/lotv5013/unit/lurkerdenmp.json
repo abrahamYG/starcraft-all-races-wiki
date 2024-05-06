@@ -1,6 +1,11 @@
 {
-  "Name": "Lurker Den",
-  "Description": "Contains an upgrade for Lurkers.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Lurkers from Hydralisks",
+  "Name": {
+    "enUS": "Lurker Den",
+    "ruRU": "Lurker Den"
+  },
+  "Description": {
+    "enUS": "Contains an upgrade for Lurkers.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Lurkers from Hydralisks"
+  },
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -12,7 +17,10 @@
   "ResourceType": "Unknown",
   "LifeStart": 850,
   "LifeMax": 850,
-  "LifeArmorName": "Zerg Building Armor",
+  "LifeArmorName": {
+    "enUS": "Zerg Building Armor",
+    "ruRU": "Zerg Building Armor"
+  },
   "Mover": "Ground",
   "StationaryTurningRate": 719.4726,
   "TurningRate": 719.4726,
@@ -77,6 +85,12 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "Facing": 29.9926,
   "Mob": "Multiplayer",
   "FogVisibility": "Snapshot",
@@ -87,9 +101,8 @@
     "Burrow",
     "Ground",
     "Structure",
-    "Small",
-    "Locust",
-    "Phased"
+    "Phased",
+    "Small"
   ],
   "Attributes": [
     "Armored",
@@ -125,6 +138,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "BuildInProgress",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "Activity": "UI/Building",
           "VitalStartFactor": {
             "Life": 0.1,
@@ -157,8 +176,14 @@
         "AbilCmd": "BuildInProgress,Cancel",
         "id": "Cancel",
         "Icon": "btn-command-cancel",
-        "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
-        "Name": "Cancel",
+        "Name": {
+          "enUS": "Cancel",
+          "ruRU": "Отменить /// Cancel"
+        },
+        "Tooltip": {
+          "enUS": "Drops the current order without performing it, and allows you to select a different order.",
+          "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+        },
         "Hotkey": "Esc"
       },
       {
@@ -180,6 +205,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "que5",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "QueueCount": 1,
           "Flags": {
             "BestUnit": 1,
@@ -212,8 +243,14 @@
         "AbilCmd": "que5,CancelLast",
         "id": "Cancel",
         "Icon": "btn-command-cancel",
-        "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
-        "Name": "Cancel",
+        "Name": {
+          "enUS": "Cancel",
+          "ruRU": "Отменить /// Cancel"
+        },
+        "Tooltip": {
+          "enUS": "Drops the current order without performing it, and allows you to select a different order.",
+          "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+        },
         "Hotkey": "Esc"
       },
       {
@@ -225,7 +262,6 @@
               "ShowInGlossary": 1
             },
             "DefaultButtonFace": "EvolveDiggingClaws",
-            "State": "Restricted",
             "Requirements": "LearnEvolveDiggingClaws"
           },
           "Resource": {
@@ -252,8 +288,12 @@
         "AbilCmd": "LurkerDenResearch,Research1",
         "id": "EvolveDiggingClaws",
         "Icon": "btn-upgrade-zerg-adaptivetalons",
-        "Tooltip": "Reduces the time <span style=\"color: #ffff8a\">Lurkers</span> take to burrow from <b>2.5</b> to 1.07 seconds and increases their movement speed.",
-        "Name": "Evolve Adaptive Talons",
+        "Name": {
+          "enUS": "Evolve Adaptive Talons"
+        },
+        "Tooltip": {
+          "enUS": "Reduces the time <span style=\"color: ffff8a\">Lurkers</span> take to burrow from <b>2.5</b> to 1.07 seconds and increases their movement speed."
+        },
         "Hotkey": "D"
       },
       {
@@ -265,7 +305,6 @@
               "ShowInGlossary": 1
             },
             "DefaultButtonFace": "ResearchLurkerRange",
-            "State": "Restricted",
             "Requirements": "LearnEvolveSeismicSpines"
           },
           "Resource": {
@@ -292,8 +331,14 @@
         "AbilCmd": "LurkerDenResearch,Research2",
         "id": "ResearchLurkerRange",
         "Icon": "btn-upgrade-kerrigan-seismicspines",
-        "Tooltip": "Increases the attack range of <span style=\"color: #ffff8a\">Lurkers</span> by +<b>2</b>.",
-        "Name": "Evolve Seismic Spines",
+        "Name": {
+          "enUS": "Evolve Seismic Spines",
+          "ruRU": "Evolve Seismic Spines"
+        },
+        "Tooltip": {
+          "enUS": "Increases the attack range of <span style=\"color: ffff8a\">Lurkers</span> by +3.",
+          "ruRU": "Increases the attack range of <span style=\"color: ffff8a\">Lurkers</span> by +3."
+        },
         "Hotkey": "S"
       }
     ]
@@ -304,63 +349,80 @@
   "ScoreKill": 300,
   "ScoreResult": "BuildOrder",
   "SubgroupPriority": 16,
-  "TechAliasArray": [],
   "GlossaryPriority": 235,
   "TechTreeUnlockedUnitArray": [
     "LurkerMP"
   ],
-  "id": "LurkerDenMP",
   "HotkeyCategory": "Unit/Category/ZergUnits",
+  "id": "LurkerDenMP",
   "Icon": "btn-building-zerg-lurkerden",
   "LifeArmorIcon": "btn-armor-zerg-building",
   "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
   "Weapons": [],
   "Behaviors": [
     {
-      "id": "OnCreep"
+      "id": "OnCreep",
+      "Name": {
+        "enUS": "On Creep",
+        "ruRU": "On Creep"
+      },
+      "Tooltip": "-"
     },
     {
-      "id": "ZergBuildingNotOnCreep"
+      "id": "ZergBuildingNotOnCreep",
+      "Name": {
+        "enUS": "Building Not On Creep",
+        "ruRU": "Building Not On Creep"
+      },
+      "Tooltip": "-"
     },
     {
-      "id": "ZergBuildingDies6"
+      "id": "ZergBuildingDies6",
+      "Name": {
+        "enUS": "Zerg Building Dies 6",
+        "ruRU": "Zerg Building Dies 6"
+      },
+      "Tooltip": "-"
     }
   ],
   "Abilities": [
     {
       "id": "BuildInProgress",
-      "Name": "Build in Progress"
+      "Name": {
+        "enUS": "Build in Progress",
+        "ruRU": "Build in Progress"
+      }
     },
     {
       "id": "que5",
-      "Name": "Queue (5)"
+      "Name": {
+        "ruRU": "Queue (5)",
+        "enUS": "Queue (5)"
+      }
     },
     {
       "id": "LurkerDenResearch",
-      "Name": "Lurker Den Research"
+      "Name": {
+        "enUS": "Lurker Den Research",
+        "ruRU": "Lurker Den Research"
+      }
     }
   ],
   "$Upgrades": [
     "CountUnitLurkerDenMPCompleteOnlyTechTreeCheat",
     "LurkerDenMP",
-    "UpgradeToLurkerDenMP",
     "ZergBuild",
     "IsLurkerDen",
     "LurkerDenMP",
     "HydraliskDen",
     "LurkerDenMPMorph",
     "ZergBuildingStopSound",
-    "ZergBuildingMorphCancel",
-    "LurkerDenBase",
-    "LurkerDen",
-    "LurkerDenMecha",
-    "LurkerDenRCZ",
-    "DefaultSkinPack",
-    "LurkerDenMecha",
-    "LurkerDenRCZ"
+    "ZergBuildingMorphCancel"
   ],
   "$Requirements": [],
-  "$Production": [],
+  "$Production": [
+    "Broodling"
+  ],
   "$Research": [
     "DiggingClaws",
     "LurkerRange"
@@ -375,29 +437,51 @@
       "AbilCmd": "BuildInProgress,Cancel",
       "id": "Cancel",
       "Icon": "btn-command-cancel",
-      "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
-      "Name": "Cancel"
+      "Name": {
+        "enUS": "Cancel",
+        "ruRU": "Отменить /// Cancel"
+      },
+      "Tooltip": {
+        "enUS": "Drops the current order without performing it, and allows you to select a different order.",
+        "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+      }
     },
     {
       "AbilCmd": "que5,CancelLast",
       "id": "Cancel",
       "Icon": "btn-command-cancel",
-      "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
-      "Name": "Cancel"
+      "Name": {
+        "enUS": "Cancel",
+        "ruRU": "Отменить /// Cancel"
+      },
+      "Tooltip": {
+        "enUS": "Drops the current order without performing it, and allows you to select a different order.",
+        "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+      }
     },
     {
       "AbilCmd": "LurkerDenResearch,Research1",
       "id": "EvolveDiggingClaws",
       "Icon": "btn-upgrade-zerg-adaptivetalons",
-      "Tooltip": "Reduces the time <span style=\"color: #ffff8a\">Lurkers</span> take to burrow from <b>2.5</b> to 1.07 seconds and increases their movement speed.",
-      "Name": "Evolve Adaptive Talons"
+      "Name": {
+        "enUS": "Evolve Adaptive Talons"
+      },
+      "Tooltip": {
+        "enUS": "Reduces the time <span style=\"color: ffff8a\">Lurkers</span> take to burrow from <b>2.5</b> to 1.07 seconds and increases their movement speed."
+      }
     },
     {
       "AbilCmd": "LurkerDenResearch,Research2",
       "id": "ResearchLurkerRange",
       "Icon": "btn-upgrade-kerrigan-seismicspines",
-      "Tooltip": "Increases the attack range of <span style=\"color: #ffff8a\">Lurkers</span> by +<b>2</b>.",
-      "Name": "Evolve Seismic Spines"
+      "Name": {
+        "enUS": "Evolve Seismic Spines",
+        "ruRU": "Evolve Seismic Spines"
+      },
+      "Tooltip": {
+        "enUS": "Increases the attack range of <span style=\"color: ffff8a\">Lurkers</span> by +3.",
+        "ruRU": "Increases the attack range of <span style=\"color: ffff8a\">Lurkers</span> by +3."
+      }
     }
   ]
 }

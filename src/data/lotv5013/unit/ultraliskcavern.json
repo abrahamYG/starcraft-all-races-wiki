@@ -1,6 +1,12 @@
 {
-  "Name": "Ultralisk Cavern",
-  "Description": "Contains upgrades for Ultralisks.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Ultralisks from Larvae",
+  "Name": {
+    "enUS": "Ultralisk Cavern",
+    "ruRU": "Ultralisk Cavern"
+  },
+  "Description": {
+    "enUS": "Contains an upgrade for Ultralisks.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Ultralisks from Larvae",
+    "ruRU": "Contains an upgrade for Ultralisks.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Ultralisks from Larvae"
+  },
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -12,7 +18,10 @@
   "ResourceType": "Unknown",
   "LifeStart": 850,
   "LifeMax": 850,
-  "LifeArmorName": "Zerg Building Armor",
+  "LifeArmorName": {
+    "enUS": "Zerg Building Armor",
+    "ruRU": "Zerg Building Armor"
+  },
   "Mover": "Ground",
   "StationaryTurningRate": 719.4726,
   "TurningRate": 719.4726,
@@ -77,6 +86,12 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "Facing": 29.9926,
   "Mob": "Multiplayer",
   "FogVisibility": "Snapshot",
@@ -103,9 +118,8 @@
     "Structure",
     "RoachBurrow",
     "ForceField",
-    "Small",
-    "Locust",
-    "Phased"
+    "Phased",
+    "Small"
   ],
   "Sight": 9,
   "CardLayouts": {
@@ -129,6 +143,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "que5",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "QueueCount": 1,
           "Flags": {
             "BestUnit": 1,
@@ -161,8 +181,14 @@
         "AbilCmd": "que5,CancelLast",
         "id": "Cancel",
         "Icon": "btn-command-cancel",
-        "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
-        "Name": "Cancel",
+        "Name": {
+          "enUS": "Cancel",
+          "ruRU": "Отменить /// Cancel"
+        },
+        "Tooltip": {
+          "enUS": "Drops the current order without performing it, and allows you to select a different order.",
+          "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+        },
         "Hotkey": "Esc"
       },
       {
@@ -184,6 +210,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "BuildInProgress",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "Activity": "UI/Building",
           "VitalStartFactor": {
             "Life": 0.1,
@@ -216,8 +248,14 @@
         "AbilCmd": "BuildInProgress,Cancel",
         "id": "CancelBuilding",
         "Icon": "btn-command-cancel",
-        "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-        "Name": "Cancel",
+        "Name": {
+          "enUS": "Cancel",
+          "ruRU": "Отменить /// Cancel"
+        },
+        "Tooltip": {
+          "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+          "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+        },
         "Hotkey": "Esc"
       },
       {
@@ -255,8 +293,14 @@
         "AbilCmd": "UltraliskCavernResearch,Research3",
         "id": "EvolveChitinousPlating",
         "Icon": "btn-upgrade-zerg-chitinousplating",
-        "Tooltip": "Gives +<b>2</b> armor to <span style=\"color: #ffff8a\">Ultralisks</span>.",
-        "Name": "Evolve Chitinous Plating",
+        "Name": {
+          "enUS": "Evolve Chitinous Plating",
+          "ruRU": "Evolve Chitinous Plating"
+        },
+        "Tooltip": {
+          "enUS": "Grants <span style=\"color: ffff8a\">Ultralisks</span> +2 armor.",
+          "ruRU": "Grants <span style=\"color: ffff8a\">Ultralisks</span> +2 armor."
+        },
         "Hotkey": "C"
       },
       {
@@ -294,8 +338,14 @@
         "AbilCmd": "UltraliskCavernResearch,Research1",
         "id": "EvolveAnabolicSynthesis2",
         "Icon": "btn-upgrade-zerg-anabolicsynthesis",
-        "Tooltip": "Increases the movement speed of <span style=\"color: #ffff8a\">Ultralisks</span> off creep.",
-        "Name": "Evolve Anabolic Synthesis",
+        "Name": {
+          "enUS": "Evolve Anabolic Synthesis",
+          "ruRU": "Evolve Anabolic Synthesis"
+        },
+        "Tooltip": {
+          "enUS": "Increases the movement speed of <span style=\"color: ffff8a\">Ultralisks</span>.",
+          "ruRU": "Increases the movement speed of <span style=\"color: ffff8a\">Ultralisks</span>."
+        },
         "Hotkey": "A"
       }
     ]
@@ -317,27 +367,51 @@
   "Weapons": [],
   "Behaviors": [
     {
-      "id": "OnCreep"
+      "id": "OnCreep",
+      "Name": {
+        "enUS": "On Creep",
+        "ruRU": "On Creep"
+      },
+      "Tooltip": "-"
     },
     {
-      "id": "ZergBuildingNotOnCreep"
+      "id": "ZergBuildingNotOnCreep",
+      "Name": {
+        "enUS": "Building Not On Creep",
+        "ruRU": "Building Not On Creep"
+      },
+      "Tooltip": "-"
     },
     {
-      "id": "ZergBuildingDies6"
+      "id": "ZergBuildingDies6",
+      "Name": {
+        "enUS": "Zerg Building Dies 6",
+        "ruRU": "Zerg Building Dies 6"
+      },
+      "Tooltip": "-"
     }
   ],
   "Abilities": [
     {
       "id": "BuildInProgress",
-      "Name": "Build in Progress"
+      "Name": {
+        "enUS": "Build in Progress",
+        "ruRU": "Build in Progress"
+      }
     },
     {
       "id": "que5",
-      "Name": "Queue (5)"
+      "Name": {
+        "ruRU": "Queue (5)",
+        "enUS": "Queue (5)"
+      }
     },
     {
       "id": "UltraliskCavernResearch",
-      "Name": "Research"
+      "Name": {
+        "enUS": "Research",
+        "ruRU": "Research"
+      }
     }
   ],
   "$Upgrades": [
@@ -346,17 +420,12 @@
     "ZergBuild",
     "IsUltraliskCavern",
     "UltraliskCavern",
-    "CountUnitUltraliskCavernCompleteOnly",
-    "UltraliskCavernBase",
-    "UltraliskCavern",
-    "UltraliskCavernMecha",
-    "UltraliskCavernRCZ",
-    "DefaultSkinPack",
-    "UltraliskCavernMecha",
-    "UltraliskCavernRCZ"
+    "CountUnitUltraliskCavernCompleteOnly"
   ],
   "$Requirements": [],
-  "$Production": [],
+  "$Production": [
+    "Broodling"
+  ],
   "$Research": [
     "ChitinousPlating",
     "AnabolicSynthesis"
@@ -371,29 +440,53 @@
       "AbilCmd": "que5,CancelLast",
       "id": "Cancel",
       "Icon": "btn-command-cancel",
-      "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
-      "Name": "Cancel"
+      "Name": {
+        "enUS": "Cancel",
+        "ruRU": "Отменить /// Cancel"
+      },
+      "Tooltip": {
+        "enUS": "Drops the current order without performing it, and allows you to select a different order.",
+        "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+      }
     },
     {
       "AbilCmd": "BuildInProgress,Cancel",
       "id": "CancelBuilding",
       "Icon": "btn-command-cancel",
-      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-      "Name": "Cancel"
+      "Name": {
+        "enUS": "Cancel",
+        "ruRU": "Отменить /// Cancel"
+      },
+      "Tooltip": {
+        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+        "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+      }
     },
     {
       "AbilCmd": "UltraliskCavernResearch,Research3",
       "id": "EvolveChitinousPlating",
       "Icon": "btn-upgrade-zerg-chitinousplating",
-      "Tooltip": "Gives +<b>2</b> armor to <span style=\"color: #ffff8a\">Ultralisks</span>.",
-      "Name": "Evolve Chitinous Plating"
+      "Name": {
+        "enUS": "Evolve Chitinous Plating",
+        "ruRU": "Evolve Chitinous Plating"
+      },
+      "Tooltip": {
+        "enUS": "Grants <span style=\"color: ffff8a\">Ultralisks</span> +2 armor.",
+        "ruRU": "Grants <span style=\"color: ffff8a\">Ultralisks</span> +2 armor."
+      }
     },
     {
       "AbilCmd": "UltraliskCavernResearch,Research1",
       "id": "EvolveAnabolicSynthesis2",
       "Icon": "btn-upgrade-zerg-anabolicsynthesis",
-      "Tooltip": "Increases the movement speed of <span style=\"color: #ffff8a\">Ultralisks</span> off creep.",
-      "Name": "Evolve Anabolic Synthesis"
+      "Name": {
+        "enUS": "Evolve Anabolic Synthesis",
+        "ruRU": "Evolve Anabolic Synthesis"
+      },
+      "Tooltip": {
+        "enUS": "Increases the movement speed of <span style=\"color: ffff8a\">Ultralisks</span>.",
+        "ruRU": "Increases the movement speed of <span style=\"color: ffff8a\">Ultralisks</span>."
+      }
     }
   ]
 }

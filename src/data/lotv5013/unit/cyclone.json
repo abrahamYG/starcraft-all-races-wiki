@@ -1,6 +1,12 @@
 {
-  "Name": "Cyclone",
-  "Description": "Mobile assault vehicle. Can use Lock On to quickly fire while moving.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units.</span>",
+  "Name": {
+    "enUS": "Cyclone",
+    "ruRU": "Cyclone"
+  },
+  "Description": {
+    "enUS": "Mobile assault vehicle. Can use Lock On to quickly fire while moving.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>",
+    "ruRU": "Mobile assault vehicle. Can use Lock On to quickly fire while moving.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>"
+  },
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -12,7 +18,10 @@
   "ResourceType": "Unknown",
   "LifeStart": 130,
   "LifeMax": 130,
-  "LifeArmorName": "Terran Vehicle Plating",
+  "LifeArmorName": {
+    "enUS": "Terran Vehicle Plating",
+    "ruRU": "Terran Vehicle Plating"
+  },
   "Mover": "Ground",
   "StationaryTurningRate": 720,
   "TurningRate": 360,
@@ -76,6 +85,12 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "Mob": "Multiplayer",
   "PlaneArray": [
     "Ground"
@@ -90,17 +105,11 @@
     "Armored",
     "Mechanical"
   ],
-  "LifeArmor": 0,
   "Speed": 2.8125,
   "Acceleration": 1000,
   "LateralAcceleration": 64,
   "Sight": 11,
-  "Food": -2,
   "CostCategory": "Army",
-  "CostResource": {
-    "Minerals": 125,
-    "Vespene": 50
-  },
   "RepairTime": 45,
   "AttackTargetPriority": 20,
   "DamageDealtXP": 1,
@@ -133,6 +142,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -170,8 +185,7 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move",
-          "AbilSetId": "Move"
+          "id": "move"
         },
         "Cost": {
           "Minerals": 0,
@@ -189,8 +203,14 @@
         "AbilCmd": "move,Move",
         "id": "Move",
         "Icon": "btn-command-move",
-        "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
-        "Name": "Move",
+        "Name": {
+          "enUS": "Move",
+          "ruRU": "Двигаться /// Move"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+          "ruRU": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies."
+        },
         "Hotkey": "M"
       },
       {
@@ -212,6 +232,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "stop",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "AbilSetId": "Stop",
           "CmdButtonArray": {
             "Stop": {
@@ -257,8 +283,14 @@
         "AbilCmd": "stop,Stop",
         "id": "Stop",
         "Icon": "btn-command-stop",
-        "Tooltip": "Orders selected units to cancel all orders and stop moving.",
-        "Name": "Stop",
+        "Name": {
+          "enUS": "Stop",
+          "ruRU": "Отставить /// Stop"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to cancel all orders and stop moving.",
+          "ruRU": "Orders selected units to cancel all orders and stop moving."
+        },
         "Hotkey": "S"
       },
       {
@@ -286,6 +318,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -323,8 +361,7 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move",
-          "AbilSetId": "Move"
+          "id": "move"
         },
         "Cost": {
           "Minerals": 0,
@@ -342,8 +379,14 @@
         "AbilCmd": "move,HoldPos",
         "id": "MoveHoldPosition",
         "Icon": "btn-command-holdposition",
-        "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
-        "Name": "Hold Position",
+        "Name": {
+          "enUS": "Hold Position",
+          "ruRU": "Удерживать позицию /// Hold Position"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+          "ruRU": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage."
+        },
         "Hotkey": "H"
       },
       {
@@ -365,6 +408,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "attack",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "AbilSetId": "Attack",
           "Alignment": "Negative",
           "AcquireFilters": "-;Player,Ally,Neutral,Dead,Hidden,Invulnerable,Benign",
@@ -411,8 +460,14 @@
         "AbilCmd": "attack,Execute",
         "id": "Attack",
         "Icon": "btn-command-attack",
-        "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
-        "Name": "Attack",
+        "Name": {
+          "enUS": "Attack",
+          "ruRU": "Атаковать /// Attack"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+          "ruRU": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed."
+        },
         "Hotkey": "A"
       },
       {
@@ -440,6 +495,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -477,8 +538,7 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move",
-          "AbilSetId": "Move"
+          "id": "move"
         },
         "Cost": {
           "Minerals": 0,
@@ -496,8 +556,14 @@
         "AbilCmd": "move,Patrol",
         "id": "MovePatrol",
         "Icon": "btn-command-patrol",
-        "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
-        "Name": "Patrol",
+        "Name": {
+          "enUS": "Patrol",
+          "ruRU": "Патрулировать /// Patrol"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+          "ruRU": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies."
+        },
         "Hotkey": "P"
       },
       {
@@ -519,6 +585,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "LockOn",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "RangeSlop": 1,
           "ArcSlop": 11.25,
           "AutoCastAcquireLevel": "Offensive",
@@ -530,7 +602,7 @@
             "RangeUseCasterRadius": 1,
             "ReApproachable": 1,
             "RequireTargetVision": 1,
-            "WaitToSpend": 0,
+            "WaitToSpend": 1,
             "UpdateChargesOnLevelChange": 1,
             "BestUnit": 1,
             "AutoCast": 1,
@@ -610,13 +682,10 @@
           "TargetFilters": [
             "Visible;Self,Player,Ally,Missile,Stasis,Dead,Hidden,Invulnerable"
           ],
-          "Range": [
-            6
-          ],
           "Arc": 360,
-          "AutoCastRange": 6.5,
           "AutoCastValidatorArray": [
             "noMarkers",
+            "TargetNotLockOn",
             "IsNotInterceptor",
             "TargetNotChangeling",
             "IsNotNeuralParasited",
@@ -624,20 +693,23 @@
             "IsDefensiveStructure",
             "IsNotBroodlingFate",
             "NotLarva",
-            "CasterIsNotHidden",
-            "NotLarvaEgg"
+            "CasterIsNotHidden"
           ],
           "PrepEffect": [
             "LockOnInitialAB"
           ],
-          "id": "LockOn",
           "TargetSorts": {
             "SortArray": [
               "TSThreatensCyclone",
               "AirTarget",
               "TSDistance"
             ]
-          }
+          },
+          "Range": [
+            6
+          ],
+          "AutoCastRange": 6.5,
+          "id": "LockOn"
         },
         "Cost": {
           "Minerals": 0,
@@ -655,8 +727,14 @@
         "AbilCmd": "LockOn,Execute",
         "id": "LockOn",
         "Icon": "btn-ability-terran-lockon",
-        "Tooltip": "Locks the Cyclone's weapons on the target unit, increasing the Cyclone's range to <b>9</b> and allowing it to move while firing. Cancels if target moves out of range.",
-        "Name": "Lock On",
+        "Name": {
+          "enUS": "Lock On",
+          "ruRU": "Lock On"
+        },
+        "Tooltip": {
+          "enUS": "Locks the Cyclone's weapons on the target unit, increasing the Cyclone's range to <b>9</b> and allowing it to move while firing. Cancels if target moves out of range.",
+          "ruRU": "Locks the Cyclone's weapons on the target unit, dealing <b>6400</b> damage over <b>20</b> seconds. Can move while firing. Cancels if target moves out of range."
+        },
         "Hotkey": "C"
       },
       {
@@ -678,6 +756,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "LockOnCancel",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "RangeSlop": 1,
           "ArcSlop": 11.25,
           "AutoCastAcquireLevel": "Offensive",
@@ -689,7 +773,7 @@
             "RangeUseCasterRadius": 1,
             "ReApproachable": 1,
             "RequireTargetVision": 1,
-            "WaitToSpend": 0,
+            "WaitToSpend": 1,
             "UpdateChargesOnLevelChange": 1,
             "Transient": 1
           },
@@ -773,8 +857,14 @@
         "AbilCmd": "LockOnCancel,Execute",
         "id": "LockOnCancel",
         "Icon": "btn-command-cancel",
-        "Tooltip": "Cancels the current Lock On, and allows you to select a new target.",
-        "Name": "Cancel",
+        "Name": {
+          "enUS": "Cancel",
+          "ruRU": "Cancel"
+        },
+        "Tooltip": {
+          "enUS": "Cancels the current Lock On, and allows you to select a new target.",
+          "ruRU": "Cancels the current Lock On, and allows you to select a new target."
+        },
         "Hotkey": "Esc"
       },
       {
@@ -793,18 +883,19 @@
         "Type": "Passive",
         "id": "HurricaneThrusters",
         "Icon": "btn-upgrade-mengsk-armory-smartservos",
-        "Tooltip": "Increases the move speed of <span style=\"color: #ffff8a\">Cyclones</span>.",
-        "Name": "Hurricane Engines"
+        "Name": {
+          "enUS": "Hurricane Engines"
+        },
+        "Tooltip": {
+          "enUS": "Increases the move speed of <span style=\"color: ffff8a\">Cyclones</span>."
+        }
       }
     ]
   },
   "InnerRadius": 0.5,
   "CargoSize": 4,
-  "ScoreMake": 175,
-  "ScoreKill": 175,
   "ScoreResult": "BuildOrder",
   "SubgroupPriority": 71,
-  "AIKiteRange": 8,
   "GlossaryCategory": "Unit/Category/TerranUnits",
   "GlossaryPriority": 136,
   "GlossaryStrongArray": [
@@ -819,6 +910,14 @@
   ],
   "HotkeyCategory": "Unit/Category/TerranUnits",
   "TacticalAIThink": "AIThinkCyclone",
+  "Food": -2,
+  "CostResource": {
+    "Minerals": 125,
+    "Vespene": 50
+  },
+  "ScoreMake": 175,
+  "ScoreKill": 175,
+  "AIKiteRange": 8,
   "id": "Cyclone",
   "Icon": "btn-unit-terran-cyclone",
   "LifeArmorIcon": "btn-upgrade-terran-vehicleplatinglevel0",
@@ -828,7 +927,10 @@
       "Turret": "CycloneWeaponTurret",
       "id": "TyphoonMissilePod",
       "Icon": "btn-upgrade-terran-vehicleweaponslevel0",
-      "Name": "Typhoon Missile Pod",
+      "Name": {
+        "enUS": "Typhoon Missile Pod",
+        "ruRU": "Typhoon Missile Pod"
+      },
       "Amount": 11,
       "AttributeBonus": {
         "Mechanical": 3
@@ -842,7 +944,10 @@
       "Turret": "CycloneWeaponTurret",
       "id": "CycloneFakeWeapon",
       "Icon": "btn-upgrade-terran-vehicleweaponslevel0",
-      "Name": "Cyclone Fake Weapon",
+      "Name": {
+        "enUS": "Cyclone Fake Weapon",
+        "ruRU": "Cyclone Fake Weapon"
+      },
       "Amount": 20,
       "Kind": "Spell",
       "TargetFilters": "",
@@ -854,55 +959,50 @@
   "Abilities": [
     {
       "id": "attack",
-      "Name": "Attack"
+      "Name": {
+        "ruRU": "Attack",
+        "enUS": "Attack"
+      }
     },
     {
       "id": "stop",
-      "Name": "Stop"
+      "Name": {
+        "enUS": "Stop",
+        "ruRU": "Stop"
+      }
     },
     {
       "id": "move",
-      "Name": "Move"
+      "Name": {
+        "enUS": "Move",
+        "ruRU": "Move"
+      }
     },
     {
       "id": "LockOnCancel",
-      "Name": "Lock On Cancel"
+      "Name": {
+        "enUS": "Lock On Cancel",
+        "ruRU": "Lock On Cancel"
+      }
     },
     {
       "id": "LockOn",
-      "Name": "Lock On"
+      "Name": {
+        "enUS": "Lock On",
+        "ruRU": "Lock On"
+      }
     }
   ],
   "$Upgrades": [
+    "Cyclone",
+    "Cyclone",
     "ThreatensCyclone",
-    "Cyclone",
     "HurricaneThrusters",
-    "CycloneAirUpgrade",
-    "CycloneLockOnRangeUpgrade",
-    "ArmorPiercingRockets",
-    "CycloneRapidFireLaunchers",
-    "CycloneLockOnDamageUpgrade",
-    "FactoryTrain",
-    "Factory",
-    "Cyclone",
-    "TerranVehicleArmorsLevel1",
-    "TerranVehicleArmorsLevel2",
-    "TerranVehicleArmorsLevel3",
     "TerranVehicleAndShipArmorsLevel1",
     "TerranVehicleAndShipArmorsLevel2",
     "TerranVehicleAndShipArmorsLevel3",
-    "MagFieldLaunchers",
-    "CycloneBase",
-    "Cyclone",
-    "CycloneCovertOps",
-    "CycloneJunker",
-    "CycloneUmojan",
-    "CycloneSilver",
-    "DefaultSkinPack",
-    "CycloneCovertOpsSkinPack",
-    "CycloneJunkerSkinPack",
-    "CycloneUmojan",
-    "CycloneSilver"
+    "FactoryTrain",
+    "Factory"
   ],
   "$Requirements": [],
   "$Production": [],
@@ -917,50 +1017,92 @@
       "AbilCmd": "move,Move",
       "id": "Move",
       "Icon": "btn-command-move",
-      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
-      "Name": "Move"
+      "Name": {
+        "enUS": "Move",
+        "ruRU": "Двигаться /// Move"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+        "ruRU": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies."
+      }
     },
     {
       "AbilCmd": "stop,Stop",
       "id": "Stop",
       "Icon": "btn-command-stop",
-      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
-      "Name": "Stop"
+      "Name": {
+        "enUS": "Stop",
+        "ruRU": "Отставить /// Stop"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to cancel all orders and stop moving.",
+        "ruRU": "Orders selected units to cancel all orders and stop moving."
+      }
     },
     {
       "AbilCmd": "move,HoldPos",
       "id": "MoveHoldPosition",
       "Icon": "btn-command-holdposition",
-      "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
-      "Name": "Hold Position"
+      "Name": {
+        "enUS": "Hold Position",
+        "ruRU": "Удерживать позицию /// Hold Position"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+        "ruRU": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage."
+      }
     },
     {
       "AbilCmd": "attack,Execute",
       "id": "Attack",
       "Icon": "btn-command-attack",
-      "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
-      "Name": "Attack"
+      "Name": {
+        "enUS": "Attack",
+        "ruRU": "Атаковать /// Attack"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+        "ruRU": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed."
+      }
     },
     {
       "AbilCmd": "move,Patrol",
       "id": "MovePatrol",
       "Icon": "btn-command-patrol",
-      "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
-      "Name": "Patrol"
+      "Name": {
+        "enUS": "Patrol",
+        "ruRU": "Патрулировать /// Patrol"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+        "ruRU": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies."
+      }
     },
     {
       "AbilCmd": "LockOn,Execute",
       "id": "LockOn",
       "Icon": "btn-ability-terran-lockon",
-      "Tooltip": "Locks the Cyclone's weapons on the target unit, increasing the Cyclone's range to <b>9</b> and allowing it to move while firing. Cancels if target moves out of range.",
-      "Name": "Lock On"
+      "Name": {
+        "enUS": "Lock On",
+        "ruRU": "Lock On"
+      },
+      "Tooltip": {
+        "enUS": "Locks the Cyclone's weapons on the target unit, increasing the Cyclone's range to <b>9</b> and allowing it to move while firing. Cancels if target moves out of range.",
+        "ruRU": "Locks the Cyclone's weapons on the target unit, dealing <b>6400</b> damage over <b>20</b> seconds. Can move while firing. Cancels if target moves out of range."
+      }
     },
     {
       "AbilCmd": "LockOnCancel,Execute",
       "id": "LockOnCancel",
       "Icon": "btn-command-cancel",
-      "Tooltip": "Cancels the current Lock On, and allows you to select a new target.",
-      "Name": "Cancel"
+      "Name": {
+        "enUS": "Cancel",
+        "ruRU": "Cancel"
+      },
+      "Tooltip": {
+        "enUS": "Cancels the current Lock On, and allows you to select a new target.",
+        "ruRU": "Cancels the current Lock On, and allows you to select a new target."
+      }
     }
   ]
 }

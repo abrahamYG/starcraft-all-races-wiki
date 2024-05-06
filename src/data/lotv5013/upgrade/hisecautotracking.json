@@ -13,6 +13,13 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "HiSecAutoTracking",
+  "EditorCategories": "Race:Terran,UpgradeType:Spell",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "InfoTooltipPriority": 31,
   "EffectArray": [
     {
@@ -36,7 +43,6 @@
       "Value": "1"
     }
   ],
-  "EditorCategories": "Race:Terran,UpgradeType:Talents",
   "ScoreResult": "BuildOrder",
   "AffectedUnitArray": [
     "AutoTurret",

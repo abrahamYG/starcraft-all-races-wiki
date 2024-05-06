@@ -1,6 +1,12 @@
 {
-  "Name": "Phoenix",
-  "Description": "Air-superiority fighter.<br/><br/><span style=\"color: #ffff8a\">Can attack air units.</span>",
+  "Name": {
+    "enUS": "Phoenix",
+    "ruRU": "Phoenix"
+  },
+  "Description": {
+    "enUS": "Air-superiority fighter.<br/><br/><span style=\"color: ffff8a\">Can attack air units.</span>",
+    "ruRU": "Air-superiority fighter.<br/><br/><span style=\"color: ffff8a\">Can attack air units.</span>"
+  },
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -12,7 +18,10 @@
   "ResourceType": "Unknown",
   "LifeStart": 120,
   "LifeMax": 120,
-  "LifeArmorName": "Protoss Plating",
+  "LifeArmorName": {
+    "enUS": "Protoss Plating",
+    "ruRU": "Protoss Plating"
+  },
   "Mover": "Fly",
   "StationaryTurningRate": 1499.9414,
   "TurningRate": 1499.9414,
@@ -74,11 +83,20 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "Mob": "Multiplayer",
   "ShieldsStart": 60,
   "ShieldsMax": 60,
   "ShieldRegenRate": 2,
-  "ShieldArmorName": "Protoss Plasma Shields",
+  "ShieldArmorName": {
+    "enUS": "Protoss Plasma Shields",
+    "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+  },
   "Speed": 4.25,
   "Acceleration": 3.25,
   "Height": 3.75,
@@ -126,6 +144,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -163,8 +187,7 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move",
-          "AbilSetId": "Move"
+          "id": "move"
         },
         "Cost": {
           "Minerals": 0,
@@ -182,8 +205,14 @@
         "AbilCmd": "move,Move",
         "id": "Move",
         "Icon": "btn-command-move",
-        "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
-        "Name": "Move",
+        "Name": {
+          "enUS": "Move",
+          "ruRU": "Двигаться /// Move"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+          "ruRU": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies."
+        },
         "Hotkey": "M"
       },
       {
@@ -205,6 +234,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "stop",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "AbilSetId": "Stop",
           "CmdButtonArray": {
             "Stop": {
@@ -250,8 +285,14 @@
         "AbilCmd": "stop,Stop",
         "id": "Stop",
         "Icon": "btn-command-stop",
-        "Tooltip": "Orders selected units to cancel all orders and stop moving.",
-        "Name": "Stop",
+        "Name": {
+          "enUS": "Stop",
+          "ruRU": "Отставить /// Stop"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to cancel all orders and stop moving.",
+          "ruRU": "Orders selected units to cancel all orders and stop moving."
+        },
         "Hotkey": "S"
       },
       {
@@ -279,6 +320,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -316,8 +363,7 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move",
-          "AbilSetId": "Move"
+          "id": "move"
         },
         "Cost": {
           "Minerals": 0,
@@ -335,8 +381,14 @@
         "AbilCmd": "move,HoldPos",
         "id": "MoveHoldPosition",
         "Icon": "btn-command-holdposition",
-        "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
-        "Name": "Hold Position",
+        "Name": {
+          "enUS": "Hold Position",
+          "ruRU": "Удерживать позицию /// Hold Position"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+          "ruRU": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage."
+        },
         "Hotkey": "H"
       },
       {
@@ -358,6 +410,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "attack",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "AbilSetId": "Attack",
           "Alignment": "Negative",
           "AcquireFilters": "-;Player,Ally,Neutral,Dead,Hidden,Invulnerable,Benign",
@@ -404,8 +462,14 @@
         "AbilCmd": "attack,Execute",
         "id": "Attack",
         "Icon": "btn-command-attack",
-        "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
-        "Name": "Attack",
+        "Name": {
+          "enUS": "Attack",
+          "ruRU": "Атаковать /// Attack"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+          "ruRU": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed."
+        },
         "Hotkey": "A"
       },
       {
@@ -433,6 +497,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -470,8 +540,7 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move",
-          "AbilSetId": "Move"
+          "id": "move"
         },
         "Cost": {
           "Minerals": 0,
@@ -489,8 +558,14 @@
         "AbilCmd": "move,Patrol",
         "id": "MovePatrol",
         "Icon": "btn-command-patrol",
-        "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
-        "Name": "Patrol",
+        "Name": {
+          "enUS": "Patrol",
+          "ruRU": "Патрулировать /// Patrol"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+          "ruRU": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies."
+        },
         "Hotkey": "P"
       },
       {
@@ -512,6 +587,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "GravitonBeam",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "RangeSlop": 4,
           "ArcSlop": 11.25,
           "AutoCastAcquireLevel": "Offensive",
@@ -523,7 +604,7 @@
             "RangeUseCasterRadius": 1,
             "ReApproachable": 1,
             "RequireTargetVision": 1,
-            "WaitToSpend": 0,
+            "WaitToSpend": 1,
             "UpdateChargesOnLevelChange": 1,
             "BestUnit": 1,
             "AllowMovement": 1,
@@ -637,8 +718,14 @@
         "AbilCmd": "GravitonBeam,Cancel",
         "id": "Cancel",
         "Icon": "btn-command-cancel",
-        "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
-        "Name": "Cancel",
+        "Name": {
+          "enUS": "Cancel",
+          "ruRU": "Отменить /// Cancel"
+        },
+        "Tooltip": {
+          "enUS": "Drops the current order without performing it, and allows you to select a different order.",
+          "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+        },
         "Hotkey": "Esc"
       },
       {
@@ -660,6 +747,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "GravitonBeam",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "RangeSlop": 4,
           "ArcSlop": 11.25,
           "AutoCastAcquireLevel": "Offensive",
@@ -671,7 +764,7 @@
             "RangeUseCasterRadius": 1,
             "ReApproachable": 1,
             "RequireTargetVision": 1,
-            "WaitToSpend": 0,
+            "WaitToSpend": 1,
             "UpdateChargesOnLevelChange": 1,
             "BestUnit": 1,
             "AllowMovement": 1,
@@ -785,8 +878,14 @@
         "AbilCmd": "GravitonBeam,Execute",
         "id": "GravitonBeam",
         "Icon": "btn-ability-protoss-gravitonbeam-color",
-        "Tooltip": "Makes the target unit float in the air, disabling its abilities. Effect lasts up to <b>10</b>.<br/><br/><c val=\"#ColorAttackInfo\">Massive units are immune.</span><br/><span style=\"color: #ffff8a\">Channeled ability</span>",
-        "Name": "Graviton Beam",
+        "Name": {
+          "enUS": "Graviton Beam",
+          "ruRU": "Graviton Beam"
+        },
+        "Tooltip": {
+          "enUS": "Makes the target unit float in the air, disabling its abilities. Effect lasts up to <b>10</b>.<br/><br/><span style=\"color: #ffff8a\">Massive units are immune.</span><br/><span style=\"color: ffff8a\">Channeled ability</span>",
+          "ruRU": "Makes the target unit float in the air, disabling its abilities. Effect lasts up to <b>10</b>.<br/><br/><span style=\"color: #ffff8a\">Massive units are immune.</span><br/><span style=\"color: ffff8a\">Channeled ability</span>"
+        },
         "Hotkey": "G"
       }
     ]
@@ -827,7 +926,10 @@
       "Turret": "Phoenix",
       "id": "IonCannons",
       "Icon": "btn-upgrade-protoss-airweaponslevel0",
-      "Name": "Ion Cannons",
+      "Name": {
+        "enUS": "Ion Cannons",
+        "ruRU": "Ion Cannons"
+      },
       "Amount": 5,
       "AttributeBonus": {
         "Light": 5
@@ -843,27 +945,39 @@
   "Abilities": [
     {
       "id": "stop",
-      "Name": "Stop"
+      "Name": {
+        "enUS": "Stop",
+        "ruRU": "Stop"
+      }
     },
     {
       "id": "attack",
-      "Name": "Attack"
+      "Name": {
+        "ruRU": "Attack",
+        "enUS": "Attack"
+      }
     },
     {
       "id": "move",
-      "Name": "Move"
+      "Name": {
+        "enUS": "Move",
+        "ruRU": "Move"
+      }
     },
     {
       "id": "GravitonBeam",
-      "Name": "Graviton Beam"
+      "Name": {
+        "enUS": "Graviton Beam",
+        "ruRU": "Graviton Beam"
+      }
     }
   ],
   "$Upgrades": [
-    "PhoenixRangeUpgrade",
-    "Phoenix",
     "ProtossAirWeaponsLevel1",
+    "Phoenix",
     "ProtossAirWeapons",
     "AllowUnitPhoenix",
+    "PhoenixRangeUpgrade",
     "ProtossAirWeaponsLevel2",
     "ProtossAirWeaponsLevel3",
     "ProtossAirArmorsLevel1",
@@ -881,19 +995,7 @@
     "ProtossShieldsLevel3",
     "IsPhoenix",
     "ThreatensPhoenix",
-    "AnionPulseCrystals",
-    "Combat_Mechanic_Shields_Phoenix",
-    "PhoenixBase",
-    "Phoenix",
-    "PhoenixTaldarim",
-    "PhoenixPurifier",
-    "PhoenixGolden",
-    "PhoenixIhanrii",
-    "DefaultSkinPack",
-    "PhoenixTaldarimSkinPack",
-    "PhoenixPurifierSkinPack",
-    "PhoenixGolden",
-    "PhoenixIhanrii"
+    "AnionPulseCrystals"
   ],
   "$Requirements": [],
   "$Production": [],
@@ -908,50 +1010,92 @@
       "AbilCmd": "move,Move",
       "id": "Move",
       "Icon": "btn-command-move",
-      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
-      "Name": "Move"
+      "Name": {
+        "enUS": "Move",
+        "ruRU": "Двигаться /// Move"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+        "ruRU": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies."
+      }
     },
     {
       "AbilCmd": "stop,Stop",
       "id": "Stop",
       "Icon": "btn-command-stop",
-      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
-      "Name": "Stop"
+      "Name": {
+        "enUS": "Stop",
+        "ruRU": "Отставить /// Stop"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to cancel all orders and stop moving.",
+        "ruRU": "Orders selected units to cancel all orders and stop moving."
+      }
     },
     {
       "AbilCmd": "move,HoldPos",
       "id": "MoveHoldPosition",
       "Icon": "btn-command-holdposition",
-      "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
-      "Name": "Hold Position"
+      "Name": {
+        "enUS": "Hold Position",
+        "ruRU": "Удерживать позицию /// Hold Position"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+        "ruRU": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage."
+      }
     },
     {
       "AbilCmd": "attack,Execute",
       "id": "Attack",
       "Icon": "btn-command-attack",
-      "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
-      "Name": "Attack"
+      "Name": {
+        "enUS": "Attack",
+        "ruRU": "Атаковать /// Attack"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+        "ruRU": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed."
+      }
     },
     {
       "AbilCmd": "move,Patrol",
       "id": "MovePatrol",
       "Icon": "btn-command-patrol",
-      "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
-      "Name": "Patrol"
+      "Name": {
+        "enUS": "Patrol",
+        "ruRU": "Патрулировать /// Patrol"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+        "ruRU": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies."
+      }
     },
     {
       "AbilCmd": "GravitonBeam,Cancel",
       "id": "Cancel",
       "Icon": "btn-command-cancel",
-      "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
-      "Name": "Cancel"
+      "Name": {
+        "enUS": "Cancel",
+        "ruRU": "Отменить /// Cancel"
+      },
+      "Tooltip": {
+        "enUS": "Drops the current order without performing it, and allows you to select a different order.",
+        "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+      }
     },
     {
       "AbilCmd": "GravitonBeam,Execute",
       "id": "GravitonBeam",
       "Icon": "btn-ability-protoss-gravitonbeam-color",
-      "Tooltip": "Makes the target unit float in the air, disabling its abilities. Effect lasts up to <b>10</b>.<br/><br/><c val=\"#ColorAttackInfo\">Massive units are immune.</span><br/><span style=\"color: #ffff8a\">Channeled ability</span>",
-      "Name": "Graviton Beam"
+      "Name": {
+        "enUS": "Graviton Beam",
+        "ruRU": "Graviton Beam"
+      },
+      "Tooltip": {
+        "enUS": "Makes the target unit float in the air, disabling its abilities. Effect lasts up to <b>10</b>.<br/><br/><span style=\"color: #ffff8a\">Massive units are immune.</span><br/><span style=\"color: ffff8a\">Channeled ability</span>",
+        "ruRU": "Makes the target unit float in the air, disabling its abilities. Effect lasts up to <b>10</b>.<br/><br/><span style=\"color: #ffff8a\">Massive units are immune.</span><br/><span style=\"color: ffff8a\">Channeled ability</span>"
+      }
     }
   ]
 }

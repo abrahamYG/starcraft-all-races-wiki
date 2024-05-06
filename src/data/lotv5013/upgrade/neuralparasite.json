@@ -12,10 +12,16 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "NeuralParasite",
+  "EditorCategories": "Race:Zerg,UpgradeType:Spell",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "Race": "Zerg",
   "ScoreAmount": 300,
   "ScoreResult": "BuildOrder",
-  "EditorCategories": "Race:Zerg,UpgradeType:SpellResearch",
   "AffectedUnitArray": [
     "Infestor"
   ]

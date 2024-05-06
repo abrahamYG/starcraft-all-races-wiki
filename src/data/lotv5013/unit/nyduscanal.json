@@ -1,6 +1,12 @@
 {
-  "Name": "Nydus Worm",
-  "Description": "Friendly ground units can use a Nydus Worm to instantly travel to any other Nydus Worm or Nydus Network owned by the player. Grows creep used to feed nearby Zerg structures.<br/><br/><c val=\"#ColorAttackInfo\">Bonus: Zerg move faster on creep.</span>",
+  "Name": {
+    "enUS": "Nydus Worm",
+    "ruRU": "Nydus Worm"
+  },
+  "Description": {
+    "enUS": "Friendly ground units can use a Nydus Worm to instantly travel to any other Nydus Worm or Nydus Network owned by the player. Grows creep used to feed nearby Zerg structures.<br/><br/><span style=\"color: #ffff8a\">Bonus: Zerg move faster on creep.</span>",
+    "ruRU": "Friendly ground units can use a Nydus Worm to instantly travel to any other Nydus Worm or Nydus Network owned by the player. Grows creep used to feed nearby Zerg structures.<br/><br/><span style=\"color: #ffff8a\">Bonus: Zerg move faster on creep.</span>"
+  },
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -12,7 +18,10 @@
   "ResourceType": "Unknown",
   "LifeStart": 300,
   "LifeMax": 300,
-  "LifeArmorName": "Zerg Building Armor",
+  "LifeArmorName": {
+    "enUS": "Zerg Building Armor",
+    "ruRU": "Zerg Building Armor"
+  },
   "Mover": "Ground",
   "StationaryTurningRate": 719.4726,
   "TurningRate": 719.4726,
@@ -80,6 +89,12 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "Facing": 29.9707,
   "Mob": "Multiplayer",
   "FogVisibility": "Snapshot",
@@ -103,9 +118,9 @@
     "Structure",
     "RoachBurrow",
     "ForceField",
-    "Small",
     "Locust",
-    "Phased"
+    "Phased",
+    "Small"
   ],
   "Sight": 10,
   "CardLayouts": {
@@ -129,6 +144,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "stop",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "AbilSetId": "Stop",
           "CmdButtonArray": {
             "Stop": {
@@ -174,8 +195,14 @@
         "AbilCmd": "stop,Stop",
         "id": "Stop",
         "Icon": "btn-command-stop",
-        "Tooltip": "Orders selected units to cancel all orders and stop moving.",
-        "Name": "Stop",
+        "Name": {
+          "enUS": "Stop",
+          "ruRU": "Отставить /// Stop"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to cancel all orders and stop moving.",
+          "ruRU": "Orders selected units to cancel all orders and stop moving."
+        },
         "Hotkey": "S"
       },
       {
@@ -196,8 +223,14 @@
         "AbilCmd": "Rally,Rally1",
         "id": "SetRallyPoint",
         "Icon": "btn-ability-terran-setrallypoint",
-        "Tooltip": "Sends units to the designated point. Workers rallied to resources will begin harvesting automatically.",
-        "Name": "Set Rally Point",
+        "Name": {
+          "enUS": "Set Rally Point",
+          "ruRU": "Задать точку сбора /// Set Rally Point"
+        },
+        "Tooltip": {
+          "enUS": "Sends units to the designated point. Workers rallied to resources will begin harvesting automatically.",
+          "ruRU": "Sends units to the designated point. Workers rallied to resources will begin harvesting automatically."
+        },
         "Hotkey": "Y"
       },
       {
@@ -220,6 +253,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "NydusWormTransport",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Load": {
               "Flags": {
@@ -285,8 +324,8 @@
             "NotSpawnling",
             "NotWidowMineTarget"
           ],
-          "id": "NydusWormTransport",
-          "UnloadCargoEffect": "PurificationNovaTargettedCasterRB"
+          "UnloadCargoEffect": "PurificationNovaTargettedCasterRB",
+          "id": "NydusWormTransport"
         },
         "Cost": {
           "Minerals": 0,
@@ -304,8 +343,14 @@
         "AbilCmd": "NydusWormTransport,Load",
         "id": "Load",
         "Icon": "btn-ability-terran-load",
-        "Tooltip": "Loads units into the Nydus Worm.",
-        "Name": "Load",
+        "Name": {
+          "enUS": "Load",
+          "ruRU": "Загрузить /// Load"
+        },
+        "Tooltip": {
+          "enUS": "Loads units into the Nydus Worm.",
+          "ruRU": "Loads units into the Nydus Worm."
+        },
         "Hotkey": "L"
       },
       {
@@ -328,6 +373,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "NydusWormTransport",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Load": {
               "Flags": {
@@ -393,8 +444,8 @@
             "NotSpawnling",
             "NotWidowMineTarget"
           ],
-          "id": "NydusWormTransport",
-          "UnloadCargoEffect": "PurificationNovaTargettedCasterRB"
+          "UnloadCargoEffect": "PurificationNovaTargettedCasterRB",
+          "id": "NydusWormTransport"
         },
         "Cost": {
           "Minerals": 0,
@@ -412,8 +463,14 @@
         "AbilCmd": "NydusWormTransport,UnloadAll",
         "id": "NydusCanalUnloadAll",
         "Icon": "btn-ability-terran-unloadall",
-        "Tooltip": "Unloads all units.",
-        "Name": "Unload All",
+        "Name": {
+          "enUS": "Unload All",
+          "ruRU": "Unload All"
+        },
+        "Tooltip": {
+          "enUS": "Unloads all units.",
+          "ruRU": "Unloads all units."
+        },
         "Hotkey": "D"
       }
     ]
@@ -436,49 +493,67 @@
   "Weapons": [],
   "Behaviors": [
     {
-      "id": "NydusCreepGrowth"
+      "id": "NydusCreepGrowth",
+      "Name": {
+        "enUS": "Nydus Creep Growth",
+        "ruRU": "Nydus Creep Growth"
+      },
+      "Tooltip": "-"
     },
     {
-      "id": "NydusDetect"
+      "id": "NydusDetect",
+      "Name": {
+        "enUS": "Nydus Detect",
+        "ruRU": "Nydus Detect ///Auto - Copied from enUS Locale"
+      },
+      "Tooltip": "-"
     },
     {
-      "id": "NydusWormArmor"
+      "id": "NydusWormArmor",
+      "Name": "-",
+      "Tooltip": "-"
     }
   ],
   "Abilities": [
     {
       "id": "Rally",
-      "Name": "Rally"
+      "Name": {
+        "enUS": "Rally",
+        "ruRU": "Rally"
+      }
     },
     {
       "id": "BuildinProgressNydusCanal",
-      "Name": "Buildin Progress Nydus Canal"
+      "Name": {
+        "enUS": "Buildin Progress Nydus Canal",
+        "ruRU": "Buildin Progress Nydus Canal"
+      }
     },
     {
       "id": "NydusWormTransport",
-      "Name": "Nydus Worm Transport"
+      "Name": {
+        "enUS": "Nydus Worm Transport",
+        "ruRU": "Nydus Worm Transport"
+      }
     },
     {
       "id": "stop",
-      "Name": "Stop"
+      "Name": {
+        "enUS": "Stop",
+        "ruRU": "Stop"
+      }
     }
   ],
   "$Upgrades": [
     "BuildNydusCanal",
     "NydusCanal",
     "NydusNetwork",
-    "SecretedCoating",
     "NydusRumble",
     "NydusCanal",
     "NydusWorm_Birth",
     "Nydus_ConstructionStart",
     "Nydus_ConstructionFinish",
-    "Nydus_Unburrow",
-    "NydusCanalBase",
-    "NydusNetworkBase",
-    "NydusNetwork",
-    "NydusNetworkMecha",
-    "NydusNetworkRCZ"
+    "Nydus_Unburrow"
   ],
   "$Requirements": [],
   "$Production": [],
@@ -493,29 +568,53 @@
       "AbilCmd": "stop,Stop",
       "id": "Stop",
       "Icon": "btn-command-stop",
-      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
-      "Name": "Stop"
+      "Name": {
+        "enUS": "Stop",
+        "ruRU": "Отставить /// Stop"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to cancel all orders and stop moving.",
+        "ruRU": "Orders selected units to cancel all orders and stop moving."
+      }
     },
     {
       "AbilCmd": "Rally,Rally1",
       "id": "SetRallyPoint",
       "Icon": "btn-ability-terran-setrallypoint",
-      "Tooltip": "Sends units to the designated point. Workers rallied to resources will begin harvesting automatically.",
-      "Name": "Set Rally Point"
+      "Name": {
+        "enUS": "Set Rally Point",
+        "ruRU": "Задать точку сбора /// Set Rally Point"
+      },
+      "Tooltip": {
+        "enUS": "Sends units to the designated point. Workers rallied to resources will begin harvesting automatically.",
+        "ruRU": "Sends units to the designated point. Workers rallied to resources will begin harvesting automatically."
+      }
     },
     {
       "AbilCmd": "NydusWormTransport,Load",
       "id": "Load",
       "Icon": "btn-ability-terran-load",
-      "Tooltip": "Loads units into the Nydus Worm.",
-      "Name": "Load"
+      "Name": {
+        "enUS": "Load",
+        "ruRU": "Загрузить /// Load"
+      },
+      "Tooltip": {
+        "enUS": "Loads units into the Nydus Worm.",
+        "ruRU": "Loads units into the Nydus Worm."
+      }
     },
     {
       "AbilCmd": "NydusWormTransport,UnloadAll",
       "id": "NydusCanalUnloadAll",
       "Icon": "btn-ability-terran-unloadall",
-      "Tooltip": "Unloads all units.",
-      "Name": "Unload All"
+      "Name": {
+        "enUS": "Unload All",
+        "ruRU": "Unload All"
+      },
+      "Tooltip": {
+        "enUS": "Unloads all units.",
+        "ruRU": "Unloads all units."
+      }
     }
   ]
 }

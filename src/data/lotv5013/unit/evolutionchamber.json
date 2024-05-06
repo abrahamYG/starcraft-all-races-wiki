@@ -1,6 +1,12 @@
 {
-  "Name": "Evolution Chamber",
-  "Description": "Contains upgrades for Zerg ground units. ",
+  "Name": {
+    "enUS": "Evolution Chamber",
+    "ruRU": "Evolution Chamber"
+  },
+  "Description": {
+    "enUS": "Contains upgrades for Zerg ground units.",
+    "ruRU": "Contains upgrades for Zerg ground units."
+  },
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -12,7 +18,10 @@
   "ResourceType": "Unknown",
   "LifeStart": 750,
   "LifeMax": 750,
-  "LifeArmorName": "Zerg Building Armor",
+  "LifeArmorName": {
+    "enUS": "Zerg Building Armor",
+    "ruRU": "Zerg Building Armor"
+  },
   "Mover": "Ground",
   "StationaryTurningRate": 719.4726,
   "TurningRate": 719.4726,
@@ -77,6 +86,12 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "Facing": 329.9963,
   "Mob": "Multiplayer",
   "FogVisibility": "Snapshot",
@@ -103,9 +118,8 @@
     "Structure",
     "RoachBurrow",
     "ForceField",
-    "Small",
-    "Locust",
-    "Phased"
+    "Phased",
+    "Small"
   ],
   "Sight": 9,
   "CardLayouts": {
@@ -129,6 +143,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "que5",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "QueueCount": 1,
           "Flags": {
             "BestUnit": 1,
@@ -161,8 +181,14 @@
         "AbilCmd": "que5,CancelLast",
         "id": "Cancel",
         "Icon": "btn-command-cancel",
-        "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
-        "Name": "Cancel",
+        "Name": {
+          "enUS": "Cancel",
+          "ruRU": "Отменить /// Cancel"
+        },
+        "Tooltip": {
+          "enUS": "Drops the current order without performing it, and allows you to select a different order.",
+          "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+        },
         "Hotkey": "Esc"
       },
       {
@@ -184,6 +210,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "BuildInProgress",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "Activity": "UI/Building",
           "VitalStartFactor": {
             "Life": 0.1,
@@ -216,8 +248,14 @@
         "AbilCmd": "BuildInProgress,Cancel",
         "id": "CancelBuilding",
         "Icon": "btn-command-cancel",
-        "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-        "Name": "Cancel",
+        "Name": {
+          "enUS": "Cancel",
+          "ruRU": "Отменить /// Cancel"
+        },
+        "Tooltip": {
+          "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+          "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+        },
         "Hotkey": "Esc"
       },
       {
@@ -228,7 +266,6 @@
               "AllowMinimap": 0
             },
             "DefaultButtonFace": "zerggroundarmor1",
-            "State": "Restricted",
             "Requirements": "LearnZergGroundArmor1"
           },
           "Resource": {
@@ -255,8 +292,14 @@
         "AbilCmd": "evolutionchamberresearch,Research4",
         "id": "zerggroundarmor1",
         "Icon": "btn-upgrade-zerg-groundcarapace-level1",
-        "Tooltip": "Upgrades the armor of all Zerg ground units.",
-        "Name": "Evolve Ground Carapace Level 1",
+        "Name": {
+          "enUS": "Evolve Ground Carapace Level 1",
+          "ruRU": "Evolve Ground Carapace Level 1"
+        },
+        "Tooltip": {
+          "enUS": "Upgrades the armor of all Zerg ground units.",
+          "ruRU": "Upgrades the armor of all Zerg ground units."
+        },
         "Hotkey": "C"
       },
       {
@@ -267,7 +310,6 @@
               "AllowMinimap": 0
             },
             "DefaultButtonFace": "zerggroundarmor2",
-            "State": "Restricted",
             "Requirements": "LearnZergGroundArmor2"
           },
           "Resource": {
@@ -294,8 +336,14 @@
         "AbilCmd": "evolutionchamberresearch,Research5",
         "id": "zerggroundarmor2",
         "Icon": "btn-upgrade-zerg-groundcarapace-level2",
-        "Tooltip": "Further upgrades the armor of all Zerg ground units.",
-        "Name": "Evolve Ground Carapace Level 2",
+        "Name": {
+          "enUS": "Evolve Ground Carapace Level 2",
+          "ruRU": "Evolve Ground Carapace Level 2"
+        },
+        "Tooltip": {
+          "enUS": "Further upgrades the armor of all Zerg ground units.",
+          "ruRU": "Further upgrades the armor of all Zerg ground units."
+        },
         "Hotkey": "C"
       },
       {
@@ -306,7 +354,6 @@
               "AllowMinimap": 0
             },
             "DefaultButtonFace": "zerggroundarmor3",
-            "State": "Restricted",
             "Requirements": "LearnZergGroundArmor3"
           },
           "Resource": {
@@ -333,8 +380,14 @@
         "AbilCmd": "evolutionchamberresearch,Research6",
         "id": "zerggroundarmor3",
         "Icon": "btn-upgrade-zerg-groundcarapace-level3",
-        "Tooltip": "Maximizes the armor of all Zerg ground units.",
-        "Name": "Evolve Ground Carapace Level 3",
+        "Name": {
+          "enUS": "Evolve Ground Carapace Level 3",
+          "ruRU": "Evolve Ground Carapace Level 3"
+        },
+        "Tooltip": {
+          "enUS": "Maximizes the armor of all Zerg ground units.",
+          "ruRU": "Maximizes the armor of all Zerg ground units."
+        },
         "Hotkey": "C"
       },
       {
@@ -345,7 +398,6 @@
               "AllowMinimap": 0
             },
             "DefaultButtonFace": "zergmeleeweapons1",
-            "State": "Restricted",
             "Requirements": "LearnZergMeleeWeapon1"
           },
           "Resource": {
@@ -372,8 +424,14 @@
         "AbilCmd": "evolutionchamberresearch,Research1",
         "id": "zergmeleeweapons1",
         "Icon": "btn-upgrade-zerg-meleeattacks-level1",
-        "Tooltip": "Upgrades all Zerg melee attacks.",
-        "Name": "Evolve Melee Attacks Level 1",
+        "Name": {
+          "enUS": "Evolve Melee Attacks Level 1",
+          "ruRU": "Evolve Melee Attacks Level 1"
+        },
+        "Tooltip": {
+          "enUS": "Upgrades all Zerg melee attacks.",
+          "ruRU": "Upgrades all Zerg melee attacks."
+        },
         "Hotkey": "M"
       },
       {
@@ -384,7 +442,6 @@
               "AllowMinimap": 0
             },
             "DefaultButtonFace": "zergmeleeweapons2",
-            "State": "Restricted",
             "Requirements": "LearnZergMeleeWeapon2"
           },
           "Resource": {
@@ -411,8 +468,14 @@
         "AbilCmd": "evolutionchamberresearch,Research2",
         "id": "zergmeleeweapons2",
         "Icon": "btn-upgrade-zerg-meleeattacks-level2",
-        "Tooltip": "Further upgrades all Zerg melee attacks.",
-        "Name": "Evolve Melee Attacks Level 2",
+        "Name": {
+          "enUS": "Evolve Melee Attacks Level 2",
+          "ruRU": "Evolve Melee Attacks Level 2"
+        },
+        "Tooltip": {
+          "enUS": "Further upgrades all Zerg melee attacks.",
+          "ruRU": "Further upgrades all Zerg melee attacks."
+        },
         "Hotkey": "M"
       },
       {
@@ -423,7 +486,6 @@
               "AllowMinimap": 0
             },
             "DefaultButtonFace": "zergmeleeweapons3",
-            "State": "Restricted",
             "Requirements": "LearnZergMeleeWeapon3"
           },
           "Resource": {
@@ -450,8 +512,14 @@
         "AbilCmd": "evolutionchamberresearch,Research3",
         "id": "zergmeleeweapons3",
         "Icon": "btn-upgrade-zerg-meleeattacks-level3",
-        "Tooltip": "Maximizes all Zerg melee attacks.",
-        "Name": "Evolve Melee Attacks Level 3",
+        "Name": {
+          "enUS": "Evolve Melee Attacks Level 3",
+          "ruRU": "Evolve Melee Attacks Level 3"
+        },
+        "Tooltip": {
+          "enUS": "Maximizes all Zerg melee attacks.",
+          "ruRU": "Maximizes all Zerg melee attacks."
+        },
         "Hotkey": "M"
       },
       {
@@ -462,7 +530,6 @@
               "AllowMinimap": 0
             },
             "DefaultButtonFace": "zergmissileweapons1",
-            "State": "Restricted",
             "Requirements": "LearnZergMissileWeapon1"
           },
           "Resource": {
@@ -489,8 +556,14 @@
         "AbilCmd": "evolutionchamberresearch,Research7",
         "id": "zergmissileweapons1",
         "Icon": "btn-upgrade-zerg-missileattacks-level1",
-        "Tooltip": "Upgrades the attacks of all Zerg ground ranged units.",
-        "Name": "Evolve Missile Attacks Level 1",
+        "Name": {
+          "enUS": "Evolve Missile Attacks Level 1",
+          "ruRU": "Evolve Missile Attacks Level 1"
+        },
+        "Tooltip": {
+          "enUS": "Upgrades the attacks of all Zerg ground ranged units.",
+          "ruRU": "Upgrades the attacks of all Zerg ground ranged units."
+        },
         "Hotkey": "A"
       },
       {
@@ -501,7 +574,6 @@
               "AllowMinimap": 0
             },
             "DefaultButtonFace": "zergmissileweapons2",
-            "State": "Restricted",
             "Requirements": "LearnZergMissileWeapon2"
           },
           "Resource": {
@@ -528,8 +600,14 @@
         "AbilCmd": "evolutionchamberresearch,Research8",
         "id": "zergmissileweapons2",
         "Icon": "btn-upgrade-zerg-missileattacks-level2",
-        "Tooltip": "Further upgrades the attacks of all Zerg ground ranged units.",
-        "Name": "Evolve Missile Attacks Level 2",
+        "Name": {
+          "enUS": "Evolve Missile Attacks Level 2",
+          "ruRU": "Evolve Missile Attacks Level 2"
+        },
+        "Tooltip": {
+          "enUS": "Further upgrades the attacks of all Zerg ground ranged units.",
+          "ruRU": "Further upgrades the attacks of all Zerg ground ranged units."
+        },
         "Hotkey": "A"
       },
       {
@@ -540,7 +618,6 @@
               "AllowMinimap": 0
             },
             "DefaultButtonFace": "zergmissileweapons3",
-            "State": "Restricted",
             "Requirements": "LearnZergMissileWeapon3"
           },
           "Resource": {
@@ -567,8 +644,14 @@
         "AbilCmd": "evolutionchamberresearch,Research9",
         "id": "zergmissileweapons3",
         "Icon": "btn-upgrade-zerg-missileattacks-level3",
-        "Tooltip": "Maximizes the attacks of all Zerg ground ranged units.",
-        "Name": "Evolve Missile Attacks Level 3",
+        "Name": {
+          "enUS": "Evolve Missile Attacks Level 3",
+          "ruRU": "Evolve Missile Attacks Level 3"
+        },
+        "Tooltip": {
+          "enUS": "Maximizes the attacks of all Zerg ground ranged units.",
+          "ruRU": "Maximizes the attacks of all Zerg ground ranged units."
+        },
         "Hotkey": "A"
       }
     ]
@@ -586,27 +669,51 @@
   "Weapons": [],
   "Behaviors": [
     {
-      "id": "OnCreep"
+      "id": "OnCreep",
+      "Name": {
+        "enUS": "On Creep",
+        "ruRU": "On Creep"
+      },
+      "Tooltip": "-"
     },
     {
-      "id": "ZergBuildingNotOnCreep"
+      "id": "ZergBuildingNotOnCreep",
+      "Name": {
+        "enUS": "Building Not On Creep",
+        "ruRU": "Building Not On Creep"
+      },
+      "Tooltip": "-"
     },
     {
-      "id": "ZergBuildingDies6"
+      "id": "ZergBuildingDies6",
+      "Name": {
+        "enUS": "Zerg Building Dies 6",
+        "ruRU": "Zerg Building Dies 6"
+      },
+      "Tooltip": "-"
     }
   ],
   "Abilities": [
     {
       "id": "BuildInProgress",
-      "Name": "Build in Progress"
+      "Name": {
+        "enUS": "Build in Progress",
+        "ruRU": "Build in Progress"
+      }
     },
     {
       "id": "que5",
-      "Name": "Queue (5)"
+      "Name": {
+        "ruRU": "Queue (5)",
+        "enUS": "Queue (5)"
+      }
     },
     {
       "id": "evolutionchamberresearch",
-      "Name": "Research (Evolution Chamber)"
+      "Name": {
+        "enUS": "Research (Evolution Chamber)",
+        "ruRU": "Research (Evolution Chamber)"
+      }
     }
   ],
   "$Upgrades": [
@@ -614,17 +721,12 @@
     "EvolutionChamber",
     "IsEvolutionChamber",
     "EvolutionChamber",
-    "CountUnitEvolutionChamberCompleteOnlyTechTreeCheat",
-    "EvolutionChamberBase",
-    "EvolutionChamber",
-    "EvolutionChamberMecha",
-    "EvolutionChamberRCZ",
-    "DefaultSkinPack",
-    "EvolutionChamberMecha",
-    "EvolutionChamberRCZ"
+    "CountUnitEvolutionChamberCompleteOnlyTechTreeCheat"
   ],
   "$Requirements": [],
-  "$Production": [],
+  "$Production": [
+    "Broodling"
+  ],
   "$Research": [
     "ZergGroundArmorsLevel1",
     "ZergGroundArmorsLevel2",
@@ -646,78 +748,144 @@
       "AbilCmd": "que5,CancelLast",
       "id": "Cancel",
       "Icon": "btn-command-cancel",
-      "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
-      "Name": "Cancel"
+      "Name": {
+        "enUS": "Cancel",
+        "ruRU": "Отменить /// Cancel"
+      },
+      "Tooltip": {
+        "enUS": "Drops the current order without performing it, and allows you to select a different order.",
+        "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+      }
     },
     {
       "AbilCmd": "BuildInProgress,Cancel",
       "id": "CancelBuilding",
       "Icon": "btn-command-cancel",
-      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-      "Name": "Cancel"
+      "Name": {
+        "enUS": "Cancel",
+        "ruRU": "Отменить /// Cancel"
+      },
+      "Tooltip": {
+        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+        "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+      }
     },
     {
       "AbilCmd": "evolutionchamberresearch,Research4",
       "id": "zerggroundarmor1",
       "Icon": "btn-upgrade-zerg-groundcarapace-level1",
-      "Tooltip": "Upgrades the armor of all Zerg ground units.",
-      "Name": "Evolve Ground Carapace Level 1"
+      "Name": {
+        "enUS": "Evolve Ground Carapace Level 1",
+        "ruRU": "Evolve Ground Carapace Level 1"
+      },
+      "Tooltip": {
+        "enUS": "Upgrades the armor of all Zerg ground units.",
+        "ruRU": "Upgrades the armor of all Zerg ground units."
+      }
     },
     {
       "AbilCmd": "evolutionchamberresearch,Research5",
       "id": "zerggroundarmor2",
       "Icon": "btn-upgrade-zerg-groundcarapace-level2",
-      "Tooltip": "Further upgrades the armor of all Zerg ground units.",
-      "Name": "Evolve Ground Carapace Level 2"
+      "Name": {
+        "enUS": "Evolve Ground Carapace Level 2",
+        "ruRU": "Evolve Ground Carapace Level 2"
+      },
+      "Tooltip": {
+        "enUS": "Further upgrades the armor of all Zerg ground units.",
+        "ruRU": "Further upgrades the armor of all Zerg ground units."
+      }
     },
     {
       "AbilCmd": "evolutionchamberresearch,Research6",
       "id": "zerggroundarmor3",
       "Icon": "btn-upgrade-zerg-groundcarapace-level3",
-      "Tooltip": "Maximizes the armor of all Zerg ground units.",
-      "Name": "Evolve Ground Carapace Level 3"
+      "Name": {
+        "enUS": "Evolve Ground Carapace Level 3",
+        "ruRU": "Evolve Ground Carapace Level 3"
+      },
+      "Tooltip": {
+        "enUS": "Maximizes the armor of all Zerg ground units.",
+        "ruRU": "Maximizes the armor of all Zerg ground units."
+      }
     },
     {
       "AbilCmd": "evolutionchamberresearch,Research1",
       "id": "zergmeleeweapons1",
       "Icon": "btn-upgrade-zerg-meleeattacks-level1",
-      "Tooltip": "Upgrades all Zerg melee attacks.",
-      "Name": "Evolve Melee Attacks Level 1"
+      "Name": {
+        "enUS": "Evolve Melee Attacks Level 1",
+        "ruRU": "Evolve Melee Attacks Level 1"
+      },
+      "Tooltip": {
+        "enUS": "Upgrades all Zerg melee attacks.",
+        "ruRU": "Upgrades all Zerg melee attacks."
+      }
     },
     {
       "AbilCmd": "evolutionchamberresearch,Research2",
       "id": "zergmeleeweapons2",
       "Icon": "btn-upgrade-zerg-meleeattacks-level2",
-      "Tooltip": "Further upgrades all Zerg melee attacks.",
-      "Name": "Evolve Melee Attacks Level 2"
+      "Name": {
+        "enUS": "Evolve Melee Attacks Level 2",
+        "ruRU": "Evolve Melee Attacks Level 2"
+      },
+      "Tooltip": {
+        "enUS": "Further upgrades all Zerg melee attacks.",
+        "ruRU": "Further upgrades all Zerg melee attacks."
+      }
     },
     {
       "AbilCmd": "evolutionchamberresearch,Research3",
       "id": "zergmeleeweapons3",
       "Icon": "btn-upgrade-zerg-meleeattacks-level3",
-      "Tooltip": "Maximizes all Zerg melee attacks.",
-      "Name": "Evolve Melee Attacks Level 3"
+      "Name": {
+        "enUS": "Evolve Melee Attacks Level 3",
+        "ruRU": "Evolve Melee Attacks Level 3"
+      },
+      "Tooltip": {
+        "enUS": "Maximizes all Zerg melee attacks.",
+        "ruRU": "Maximizes all Zerg melee attacks."
+      }
     },
     {
       "AbilCmd": "evolutionchamberresearch,Research7",
       "id": "zergmissileweapons1",
       "Icon": "btn-upgrade-zerg-missileattacks-level1",
-      "Tooltip": "Upgrades the attacks of all Zerg ground ranged units.",
-      "Name": "Evolve Missile Attacks Level 1"
+      "Name": {
+        "enUS": "Evolve Missile Attacks Level 1",
+        "ruRU": "Evolve Missile Attacks Level 1"
+      },
+      "Tooltip": {
+        "enUS": "Upgrades the attacks of all Zerg ground ranged units.",
+        "ruRU": "Upgrades the attacks of all Zerg ground ranged units."
+      }
     },
     {
       "AbilCmd": "evolutionchamberresearch,Research8",
       "id": "zergmissileweapons2",
       "Icon": "btn-upgrade-zerg-missileattacks-level2",
-      "Tooltip": "Further upgrades the attacks of all Zerg ground ranged units.",
-      "Name": "Evolve Missile Attacks Level 2"
+      "Name": {
+        "enUS": "Evolve Missile Attacks Level 2",
+        "ruRU": "Evolve Missile Attacks Level 2"
+      },
+      "Tooltip": {
+        "enUS": "Further upgrades the attacks of all Zerg ground ranged units.",
+        "ruRU": "Further upgrades the attacks of all Zerg ground ranged units."
+      }
     },
     {
       "AbilCmd": "evolutionchamberresearch,Research9",
       "id": "zergmissileweapons3",
       "Icon": "btn-upgrade-zerg-missileattacks-level3",
-      "Tooltip": "Maximizes the attacks of all Zerg ground ranged units.",
-      "Name": "Evolve Missile Attacks Level 3"
+      "Name": {
+        "enUS": "Evolve Missile Attacks Level 3",
+        "ruRU": "Evolve Missile Attacks Level 3"
+      },
+      "Tooltip": {
+        "enUS": "Maximizes the attacks of all Zerg ground ranged units.",
+        "ruRU": "Maximizes the attacks of all Zerg ground ranged units."
+      }
     }
   ]
 }

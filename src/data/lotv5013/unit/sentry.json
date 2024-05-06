@@ -1,6 +1,12 @@
 {
-  "Name": "Sentry",
-  "Description": "Energy-manipulator unit. Can use Force Field, Guardian Shield, and Hallucination.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground and air units.</span>",
+  "Name": {
+    "enUS": "Sentry",
+    "ruRU": "Sentry"
+  },
+  "Description": {
+    "enUS": "Energy-manipulator unit. Can use Force Field, Guardian Shield, and Hallucination.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>",
+    "ruRU": "Energy-manipulator unit. Can use Force Field, Guardian Shield, and Hallucination.<br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>"
+  },
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -12,7 +18,10 @@
   "ResourceType": "Unknown",
   "LifeStart": 40,
   "LifeMax": 40,
-  "LifeArmorName": "Protoss Armor",
+  "LifeArmorName": {
+    "enUS": "Protoss Armor",
+    "ruRU": "Protoss Armor"
+  },
   "Mover": "Ground",
   "StationaryTurningRate": 999.8437,
   "TurningRate": 999.8437,
@@ -76,6 +85,12 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "Mob": "Multiplayer",
   "LifeArmor": 1,
   "EnergyStart": 50,
@@ -84,7 +99,10 @@
   "ShieldsStart": 40,
   "ShieldsMax": 40,
   "ShieldRegenRate": 2,
-  "ShieldArmorName": "Protoss Plasma Shields",
+  "ShieldArmorName": {
+    "enUS": "Protoss Plasma Shields",
+    "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+  },
   "Speed": 2.5,
   "Acceleration": 1000,
   "LateralAcceleration": 46,
@@ -104,8 +122,7 @@
   "Collide": [
     "Ground",
     "ForceField",
-    "Small",
-    "Locust"
+    "Small"
   ],
   "Sight": 10,
   "CardLayouts": {
@@ -135,6 +152,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -172,8 +195,7 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move",
-          "AbilSetId": "Move"
+          "id": "move"
         },
         "Cost": {
           "Minerals": 0,
@@ -191,8 +213,14 @@
         "AbilCmd": "move,Move",
         "id": "Move",
         "Icon": "btn-command-move",
-        "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
-        "Name": "Move",
+        "Name": {
+          "enUS": "Move",
+          "ruRU": "Двигаться /// Move"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+          "ruRU": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies."
+        },
         "Hotkey": "M"
       },
       {
@@ -214,6 +242,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "stop",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "AbilSetId": "Stop",
           "CmdButtonArray": {
             "Stop": {
@@ -259,8 +293,14 @@
         "AbilCmd": "stop,Stop",
         "id": "Stop",
         "Icon": "btn-command-stop",
-        "Tooltip": "Orders selected units to cancel all orders and stop moving.",
-        "Name": "Stop",
+        "Name": {
+          "enUS": "Stop",
+          "ruRU": "Отставить /// Stop"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to cancel all orders and stop moving.",
+          "ruRU": "Orders selected units to cancel all orders and stop moving."
+        },
         "Hotkey": "S"
       },
       {
@@ -288,6 +328,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -325,8 +371,7 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move",
-          "AbilSetId": "Move"
+          "id": "move"
         },
         "Cost": {
           "Minerals": 0,
@@ -344,8 +389,14 @@
         "AbilCmd": "move,HoldPos",
         "id": "MoveHoldPosition",
         "Icon": "btn-command-holdposition",
-        "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
-        "Name": "Hold Position",
+        "Name": {
+          "enUS": "Hold Position",
+          "ruRU": "Удерживать позицию /// Hold Position"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+          "ruRU": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage."
+        },
         "Hotkey": "H"
       },
       {
@@ -373,6 +424,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -410,8 +467,7 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move",
-          "AbilSetId": "Move"
+          "id": "move"
         },
         "Cost": {
           "Minerals": 0,
@@ -429,8 +485,14 @@
         "AbilCmd": "move,Patrol",
         "id": "MovePatrol",
         "Icon": "btn-command-patrol",
-        "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
-        "Name": "Patrol",
+        "Name": {
+          "enUS": "Patrol",
+          "ruRU": "Патрулировать /// Patrol"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+          "ruRU": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies."
+        },
         "Hotkey": "P"
       },
       {
@@ -452,6 +514,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "attack",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "AbilSetId": "Attack",
           "Alignment": "Negative",
           "AcquireFilters": "-;Player,Ally,Neutral,Dead,Hidden,Invulnerable,Benign",
@@ -498,8 +566,14 @@
         "AbilCmd": "attack,Execute",
         "id": "Attack",
         "Icon": "btn-command-attack",
-        "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
-        "Name": "Attack",
+        "Name": {
+          "enUS": "Attack",
+          "ruRU": "Атаковать /// Attack"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+          "ruRU": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed."
+        },
         "Hotkey": "A"
       },
       {
@@ -520,8 +594,14 @@
         "AbilCmd": "ProgressRally,Rally1",
         "id": "Rally",
         "Icon": "btn-ability-terran-setrallypoint",
-        "Tooltip": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
-        "Name": "Set Rally Point",
+        "Name": {
+          "enUS": "Set Rally Point",
+          "ruRU": "Задать точку сбора /// Set Rally Point"
+        },
+        "Tooltip": {
+          "enUS": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
+          "ruRU": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically."
+        },
         "Hotkey": "Y"
       },
       {
@@ -543,6 +623,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "ForceField",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "RangeSlop": 1,
           "ArcSlop": 11.25,
           "AutoCastAcquireLevel": "Offensive",
@@ -554,7 +640,7 @@
             "RangeUseCasterRadius": 1,
             "ReApproachable": 1,
             "RequireTargetVision": 1,
-            "WaitToSpend": 0,
+            "WaitToSpend": 1,
             "UpdateChargesOnLevelChange": 1,
             "BestUnit": 1
           },
@@ -661,8 +747,14 @@
         "AbilCmd": "ForceField,Execute",
         "id": "ForceField",
         "Icon": "btn-ability-protoss-forcefield-color",
-        "Tooltip": "Barrier that lasts <b>15</b> and impedes movement of ground units. Massive units will shatter Force Fields on contact.",
-        "Name": "Force Field",
+        "Name": {
+          "enUS": "Force Field",
+          "ruRU": "Force Field"
+        },
+        "Tooltip": {
+          "enUS": "Barrier that lasts <b>15</b> and impedes movement of ground units. Massive units will shatter Force Fields on contact.",
+          "ruRU": "Barrier that lasts <b>15</b> and impedes movement of ground units. Massive units will shatter Force Fields on contact."
+        },
         "Hotkey": "F"
       },
       {
@@ -684,6 +776,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "GuardianShield",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "RangeSlop": 1,
           "ArcSlop": 11.25,
           "AutoCastAcquireLevel": "Offensive",
@@ -695,7 +793,7 @@
             "RangeUseCasterRadius": 1,
             "ReApproachable": 1,
             "RequireTargetVision": 1,
-            "WaitToSpend": 0,
+            "WaitToSpend": 1,
             "UpdateChargesOnLevelChange": 1,
             "AllowMovement": 1,
             "BestUnit": 1,
@@ -792,8 +890,14 @@
         "AbilCmd": "GuardianShield,Execute",
         "id": "GuardianShield",
         "Icon": "btn-ability-protoss-shieldbattery-color",
-        "Tooltip": "Creates a range <b>4.5</b> aura that reduces incoming ranged damage to friendly units by <b>2</b>. Lasts <b>23</b>.",
-        "Name": "Guardian Shield",
+        "Name": {
+          "enUS": "Guardian Shield",
+          "ruRU": "Guardian Shield"
+        },
+        "Tooltip": {
+          "enUS": "Creates a range <b>4.5</b> aura that reduces incoming ranged damage to friendly units by <b>2</b>. Lasts <b>23</b>.",
+          "ruRU": "Creates a range 4 aura that reduces incoming ranged damage to friendly units by 2. Lasts <b>15</b>."
+        },
         "Hotkey": "G"
       },
       {
@@ -810,12 +914,18 @@
         "Row": 2,
         "Column": 2,
         "Type": "Submenu",
-        "AbilCmd": "255,255",
+        "AbilCmd": "255",
         "SubmenuCardId": "HTH1",
         "id": "Hallucination",
         "Icon": "btn-ability-protoss-hallucination-color",
-        "Tooltip": "Creates hallucinations that cannot use active abilities, cannot deal damage, and die more easily. Hallucinations last <b>60</b> seconds. Enemy detectors reveal hallucinations.",
-        "Name": "Hallucination",
+        "Name": {
+          "enUS": "Hallucination",
+          "ruRU": "Hallucination"
+        },
+        "Tooltip": {
+          "enUS": "Creates hallucinations that cannot use active abilities, cannot deal damage, and die more easily. Hallucinations last <b>60</b> seconds. Enemy detectors reveal hallucinations.",
+          "ruRU": "Creates hallucinations that cannot use active abilities, cannot deal damage, and die more easily. Hallucinations last <b>60</b> seconds. Enemy detectors reveal hallucinations."
+        },
         "Hotkey": "C"
       }
     ],
@@ -839,6 +949,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "HallucinationProbe",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "RangeSlop": 1,
           "ArcSlop": 11.25,
           "AutoCastAcquireLevel": "Offensive",
@@ -850,7 +966,7 @@
             "RangeUseCasterRadius": 1,
             "ReApproachable": 1,
             "RequireTargetVision": 1,
-            "WaitToSpend": 0,
+            "WaitToSpend": 1,
             "UpdateChargesOnLevelChange": 1,
             "BestUnit": 1
           },
@@ -912,8 +1028,7 @@
               "Flags": {
                 "ShowInGlossary": 1
               },
-              "DefaultButtonFace": "Probe",
-              "Requirements": ""
+              "DefaultButtonFace": "Probe"
             }
           },
           "Cost": [
@@ -941,8 +1056,14 @@
         "AbilCmd": "HallucinationProbe,Execute",
         "id": "ProbeHallucination",
         "Icon": "btn-unit-protoss-probe",
-        "Tooltip": "These hallucinated copies function like the original unit, but they cannot use active abilities, deal damage, warp in structures, or gather resources, and they die more easily. Hallucinations last <b>60</b> before they disappear.",
-        "Name": "Summon 4 Probe Hallucinations",
+        "Name": {
+          "enUS": "Summon 4 Probe Hallucinations",
+          "ruRU": "Summon 4 Probe Hallucinations"
+        },
+        "Tooltip": {
+          "enUS": "These hallucinated copies function like the original unit, but they cannot use active abilities, deal damage, warp in structures, or gather resources, and they die more easily. Hallucinations last <b>60</b> before they disappear.",
+          "ruRU": "These hallucinated copies function like the original unit, but they cannot use active abilities, deal damage, warp in structures, or gather resources, and they die more easily. Hallucinations last <b>60</b> before they disappear."
+        },
         "Hotkey": "E"
       },
       {
@@ -964,6 +1085,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "HallucinationZealot",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "RangeSlop": 1,
           "ArcSlop": 11.25,
           "AutoCastAcquireLevel": "Offensive",
@@ -975,7 +1102,7 @@
             "RangeUseCasterRadius": 1,
             "ReApproachable": 1,
             "RequireTargetVision": 1,
-            "WaitToSpend": 0,
+            "WaitToSpend": 1,
             "UpdateChargesOnLevelChange": 1,
             "BestUnit": 1
           },
@@ -1037,8 +1164,7 @@
               "Flags": {
                 "ShowInGlossary": 1
               },
-              "DefaultButtonFace": "Zealot",
-              "Requirements": ""
+              "DefaultButtonFace": "Zealot"
             }
           },
           "Cost": [
@@ -1066,8 +1192,14 @@
         "AbilCmd": "HallucinationZealot,Execute",
         "id": "ZealotHallucination",
         "Icon": "btn-unit-protoss-zealot",
-        "Tooltip": "These hallucinated copies function like the original unit, but they cannot use active abilities, cannot deal damage, and die more easily. Hallucinations last <b>60</b> before they disappear.",
-        "Name": "Summon 2 Zealot Hallucinations",
+        "Name": {
+          "enUS": "Summon 2 Zealot Hallucinations",
+          "ruRU": "Summon 2 Zealot Hallucinations"
+        },
+        "Tooltip": {
+          "enUS": "These hallucinated copies function like the original unit, but they cannot use active abilities, cannot deal damage, and die more easily. Hallucinations last <b>60</b> before they disappear.",
+          "ruRU": "These hallucinated copies function like the original unit, but they cannot use active abilities, cannot deal damage, and die more easily. Hallucinations last <b>60</b> before they disappear."
+        },
         "Hotkey": "Z"
       },
       {
@@ -1089,6 +1221,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "HallucinationStalker",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "RangeSlop": 1,
           "ArcSlop": 11.25,
           "AutoCastAcquireLevel": "Offensive",
@@ -1100,7 +1238,7 @@
             "RangeUseCasterRadius": 1,
             "ReApproachable": 1,
             "RequireTargetVision": 1,
-            "WaitToSpend": 0,
+            "WaitToSpend": 1,
             "UpdateChargesOnLevelChange": 1,
             "BestUnit": 1
           },
@@ -1162,8 +1300,7 @@
               "Flags": {
                 "ShowInGlossary": 1
               },
-              "DefaultButtonFace": "Stalker",
-              "Requirements": ""
+              "DefaultButtonFace": "Stalker"
             }
           },
           "Cost": [
@@ -1191,8 +1328,14 @@
         "AbilCmd": "HallucinationStalker,Execute",
         "id": "StalkerHallucination",
         "Icon": "btn-unit-protoss-stalker",
-        "Tooltip": "These hallucinated copies function like the original unit, but they cannot use active abilities, cannot deal damage, and die more easily. Hallucinations last <b>60</b> before they disappear.",
-        "Name": "Summon 2 Stalker Hallucinations",
+        "Name": {
+          "enUS": "Summon 2 Stalker Hallucinations",
+          "ruRU": "Summon 2 Stalker Hallucinations"
+        },
+        "Tooltip": {
+          "enUS": "These hallucinated copies function like the original unit, but they cannot use active abilities, cannot deal damage, and die more easily. Hallucinations last <b>60</b> before they disappear.",
+          "ruRU": "These hallucinated copies function like the original unit, but they cannot use active abilities, cannot deal damage, and die more easily. Hallucinations last <b>60</b> before they disappear."
+        },
         "Hotkey": "S"
       },
       {
@@ -1214,6 +1357,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "HallucinationImmortal",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "RangeSlop": 1,
           "ArcSlop": 11.25,
           "AutoCastAcquireLevel": "Offensive",
@@ -1225,7 +1374,7 @@
             "RangeUseCasterRadius": 1,
             "ReApproachable": 1,
             "RequireTargetVision": 1,
-            "WaitToSpend": 0,
+            "WaitToSpend": 1,
             "UpdateChargesOnLevelChange": 1,
             "BestUnit": 1
           },
@@ -1287,8 +1436,7 @@
               "Flags": {
                 "ShowInGlossary": 1
               },
-              "DefaultButtonFace": "Immortal",
-              "Requirements": ""
+              "DefaultButtonFace": "Immortal"
             }
           },
           "Cost": [
@@ -1316,8 +1464,14 @@
         "AbilCmd": "HallucinationImmortal,Execute",
         "id": "ImmortalHallucination",
         "Icon": "btn-unit-protoss-immortal",
-        "Tooltip": "This hallucinated copy functions like the original unit, but it cannot use active abilities, cannot deal damage, and dies more easily. Hallucinations last <b>60</b> before they disappear.",
-        "Name": "Summon Immortal Hallucination",
+        "Name": {
+          "enUS": "Summon Immortal Hallucination",
+          "ruRU": "Summon Immortal Hallucination"
+        },
+        "Tooltip": {
+          "enUS": "This hallucinated copy functions like the original unit, but it cannot use active abilities, cannot deal damage, and dies more easily. Hallucinations last <b>60</b> before they disappear.",
+          "ruRU": "This hallucinated copy functions like the original unit, but it cannot use active abilities, cannot deal damage, and dies more easily. Hallucinations last <b>60</b> before they disappear."
+        },
         "Hotkey": "I"
       },
       {
@@ -1339,6 +1493,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "HallucinationHighTemplar",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "RangeSlop": 1,
           "ArcSlop": 11.25,
           "AutoCastAcquireLevel": "Offensive",
@@ -1350,7 +1510,7 @@
             "RangeUseCasterRadius": 1,
             "ReApproachable": 1,
             "RequireTargetVision": 1,
-            "WaitToSpend": 0,
+            "WaitToSpend": 1,
             "UpdateChargesOnLevelChange": 1,
             "BestUnit": 1
           },
@@ -1412,8 +1572,7 @@
               "Flags": {
                 "ShowInGlossary": 1
               },
-              "DefaultButtonFace": "HighTemplar",
-              "Requirements": ""
+              "DefaultButtonFace": "HighTemplar"
             }
           },
           "Cost": [
@@ -1441,8 +1600,14 @@
         "AbilCmd": "HallucinationHighTemplar,Execute",
         "id": "HighTemplarHallucination",
         "Icon": "btn-unit-protoss-hightemplar",
-        "Tooltip": "These hallucinated copies function like the original unit, but they cannot use active abilities, cannot deal damage, and die more easily. Hallucinations last <b>60</b> before they disappear.",
-        "Name": "Summon 2 High Templar Hallucinations",
+        "Name": {
+          "enUS": "Summon 2 High Templar Hallucinations",
+          "ruRU": "Summon 2 High Templar Hallucinations"
+        },
+        "Tooltip": {
+          "enUS": "These hallucinated copies function like the original unit, but they cannot use active abilities, cannot deal damage, and die more easily. Hallucinations last <b>60</b> before they disappear.",
+          "ruRU": "These hallucinated copies function like the original unit, but they cannot use active abilities, cannot deal damage, and die more easily. Hallucinations last <b>60</b> before they disappear."
+        },
         "Hotkey": "T"
       },
       {
@@ -1464,6 +1629,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "HallucinationArchon",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "RangeSlop": 1,
           "ArcSlop": 11.25,
           "AutoCastAcquireLevel": "Offensive",
@@ -1475,7 +1646,7 @@
             "RangeUseCasterRadius": 1,
             "ReApproachable": 1,
             "RequireTargetVision": 1,
-            "WaitToSpend": 0,
+            "WaitToSpend": 1,
             "UpdateChargesOnLevelChange": 1,
             "BestUnit": 1
           },
@@ -1537,8 +1708,7 @@
               "Flags": {
                 "ShowInGlossary": 1
               },
-              "DefaultButtonFace": "Archon",
-              "Requirements": ""
+              "DefaultButtonFace": "Archon"
             }
           },
           "Cost": [
@@ -1566,8 +1736,14 @@
         "AbilCmd": "HallucinationArchon,Execute",
         "id": "ArchonHallucination",
         "Icon": "btn-unit-protoss-archon",
-        "Tooltip": "This hallucinated copy functions like the original unit, but it cannot use active abilities, cannot deal damage, and dies more easily. Hallucinations last <b>60</b> before they disappear.",
-        "Name": "Summon Archon Hallucination",
+        "Name": {
+          "enUS": "Summon Archon Hallucination",
+          "ruRU": "Summon Archon Hallucination"
+        },
+        "Tooltip": {
+          "enUS": "This hallucinated copy functions like the original unit, but it cannot use active abilities, cannot deal damage, and dies more easily. Hallucinations last <b>60</b> before they disappear.",
+          "ruRU": "This hallucinated copy functions like the original unit, but it cannot use active abilities, cannot deal damage, and dies more easily. Hallucinations last <b>60</b> before they disappear."
+        },
         "Hotkey": "N"
       },
       {
@@ -1589,6 +1765,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "HallucinationVoidRay",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "RangeSlop": 1,
           "ArcSlop": 11.25,
           "AutoCastAcquireLevel": "Offensive",
@@ -1600,7 +1782,7 @@
             "RangeUseCasterRadius": 1,
             "ReApproachable": 1,
             "RequireTargetVision": 1,
-            "WaitToSpend": 0,
+            "WaitToSpend": 1,
             "UpdateChargesOnLevelChange": 1,
             "BestUnit": 1
           },
@@ -1662,8 +1844,7 @@
               "Flags": {
                 "ShowInGlossary": 1
               },
-              "DefaultButtonFace": "VoidRay",
-              "Requirements": ""
+              "DefaultButtonFace": "VoidRay"
             }
           },
           "Cost": [
@@ -1691,8 +1872,14 @@
         "AbilCmd": "HallucinationVoidRay,Execute",
         "id": "VoidRayHallucination",
         "Icon": "btn-unit-protoss-warpray",
-        "Tooltip": "This hallucinated copy functions like the original unit, but it cannot use active abilities, cannot deal damage, and dies more easily. Hallucinations last <b>60</b> before they disappear.",
-        "Name": "Summon Void Ray Hallucination",
+        "Name": {
+          "enUS": "Summon Void Ray Hallucination",
+          "ruRU": "Summon Void Ray Hallucination"
+        },
+        "Tooltip": {
+          "enUS": "This hallucinated copy functions like the original unit, but it cannot use active abilities, cannot deal damage, and dies more easily. Hallucinations last <b>60</b> before they disappear.",
+          "ruRU": "This hallucinated copy functions like the original unit, but it cannot use active abilities, cannot deal damage, and dies more easily. Hallucinations last <b>60</b> before they disappear."
+        },
         "Hotkey": "V"
       },
       {
@@ -1714,6 +1901,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "HallucinationPhoenix",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "RangeSlop": 1,
           "ArcSlop": 11.25,
           "AutoCastAcquireLevel": "Offensive",
@@ -1725,7 +1918,7 @@
             "RangeUseCasterRadius": 1,
             "ReApproachable": 1,
             "RequireTargetVision": 1,
-            "WaitToSpend": 0,
+            "WaitToSpend": 1,
             "UpdateChargesOnLevelChange": 1,
             "BestUnit": 1
           },
@@ -1787,8 +1980,7 @@
               "Flags": {
                 "ShowInGlossary": 1
               },
-              "DefaultButtonFace": "Phoenix",
-              "Requirements": ""
+              "DefaultButtonFace": "Phoenix"
             }
           },
           "Cost": [
@@ -1816,8 +2008,14 @@
         "AbilCmd": "HallucinationPhoenix,Execute",
         "id": "PhoenixHallucination",
         "Icon": "btn-unit-protoss-phoenix",
-        "Tooltip": "This hallucinated copy functions like the original unit, but it cannot use active abilities, cannot deal damage, and dies more easily. Hallucinations last <b>60</b> before they disappear.",
-        "Name": "Summon Phoenix Hallucination",
+        "Name": {
+          "enUS": "Summon Phoenix Hallucination",
+          "ruRU": "Summon Phoenix Hallucination"
+        },
+        "Tooltip": {
+          "enUS": "This hallucinated copy functions like the original unit, but it cannot use active abilities, cannot deal damage, and dies more easily. Hallucinations last <b>60</b> before they disappear.",
+          "ruRU": "This hallucinated copy functions like the original unit, but it cannot use active abilities, cannot deal damage, and dies more easily. Hallucinations last <b>60</b> before they disappear."
+        },
         "Hotkey": "X"
       },
       {
@@ -1839,6 +2037,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "HallucinationWarpPrism",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "RangeSlop": 1,
           "ArcSlop": 11.25,
           "AutoCastAcquireLevel": "Offensive",
@@ -1850,7 +2054,7 @@
             "RangeUseCasterRadius": 1,
             "ReApproachable": 1,
             "RequireTargetVision": 1,
-            "WaitToSpend": 0,
+            "WaitToSpend": 1,
             "UpdateChargesOnLevelChange": 1,
             "BestUnit": 1
           },
@@ -1912,8 +2116,7 @@
               "Flags": {
                 "ShowInGlossary": 1
               },
-              "DefaultButtonFace": "WarpPrism",
-              "Requirements": ""
+              "DefaultButtonFace": "WarpPrism"
             }
           },
           "Cost": [
@@ -1941,8 +2144,14 @@
         "AbilCmd": "HallucinationWarpPrism,Execute",
         "id": "WarpPrismHallucination",
         "Icon": "btn-unit-protoss-warpprism",
-        "Tooltip": "This hallucinated copy functions like the original unit, but it cannot use active abilities, cannot deal damage, and dies more easily. Hallucinations last <b>60</b> before they disappear.",
-        "Name": "Summon Warp Prism Hallucination",
+        "Name": {
+          "enUS": "Summon Warp Prism Hallucination",
+          "ruRU": "Summon Warp Prism Hallucination"
+        },
+        "Tooltip": {
+          "enUS": "This hallucinated copy functions like the original unit, but it cannot use active abilities, cannot deal damage, and dies more easily. Hallucinations last <b>60</b> before they disappear.",
+          "ruRU": "This hallucinated copy functions like the original unit, but it cannot use active abilities, cannot deal damage, and dies more easily. Hallucinations last <b>60</b> before they disappear."
+        },
         "Hotkey": "R"
       },
       {
@@ -1964,6 +2173,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "HallucinationColossus",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "RangeSlop": 1,
           "ArcSlop": 11.25,
           "AutoCastAcquireLevel": "Offensive",
@@ -1975,7 +2190,7 @@
             "RangeUseCasterRadius": 1,
             "ReApproachable": 1,
             "RequireTargetVision": 1,
-            "WaitToSpend": 0,
+            "WaitToSpend": 1,
             "UpdateChargesOnLevelChange": 1,
             "BestUnit": 1
           },
@@ -2037,8 +2252,7 @@
               "Flags": {
                 "ShowInGlossary": 1
               },
-              "DefaultButtonFace": "Colossus",
-              "Requirements": ""
+              "DefaultButtonFace": "Colossus"
             }
           },
           "Cost": [
@@ -2066,8 +2280,14 @@
         "AbilCmd": "HallucinationColossus,Execute",
         "id": "ColossusHallucination",
         "Icon": "btn-unit-protoss-colossus",
-        "Tooltip": "This hallucinated copy functions like the original unit, but it cannot use active abilities, cannot deal damage, and dies more easily. Hallucinations last <b>60</b> before they disappear.",
-        "Name": "Summon Colossus Hallucination",
+        "Name": {
+          "enUS": "Summon Colossus Hallucination",
+          "ruRU": "Summon Colossus Hallucination"
+        },
+        "Tooltip": {
+          "enUS": "This hallucinated copy functions like the original unit, but it cannot use active abilities, cannot deal damage, and dies more easily. Hallucinations last <b>60</b> before they disappear.",
+          "ruRU": "This hallucinated copy functions like the original unit, but it cannot use active abilities, cannot deal damage, and dies more easily. Hallucinations last <b>60</b> before they disappear."
+        },
         "Hotkey": "C"
       },
       {
@@ -2086,8 +2306,14 @@
         "Type": "CancelSubmenu",
         "id": "Cancel",
         "Icon": "btn-command-cancel",
-        "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
-        "Name": "Cancel",
+        "Name": {
+          "enUS": "Cancel",
+          "ruRU": "Отменить /// Cancel"
+        },
+        "Tooltip": {
+          "enUS": "Drops the current order without performing it, and allows you to select a different order.",
+          "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+        },
         "Hotkey": "Esc"
       },
       {
@@ -2109,6 +2335,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "HallucinationOracle",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "RangeSlop": 1,
           "ArcSlop": 11.25,
           "AutoCastAcquireLevel": "Offensive",
@@ -2120,7 +2352,7 @@
             "RangeUseCasterRadius": 1,
             "ReApproachable": 1,
             "RequireTargetVision": 1,
-            "WaitToSpend": 0,
+            "WaitToSpend": 1,
             "UpdateChargesOnLevelChange": 1,
             "BestUnit": 1
           },
@@ -2182,8 +2414,7 @@
               "Flags": {
                 "ShowInGlossary": 1
               },
-              "DefaultButtonFace": "Oracle",
-              "Requirements": ""
+              "DefaultButtonFace": "Oracle"
             }
           },
           "Cost": [
@@ -2211,8 +2442,14 @@
         "AbilCmd": "HallucinationOracle,Execute",
         "id": "OracleHallucination",
         "Icon": "btn-unit-protoss-oracle",
-        "Tooltip": "This hallucinated copy functions like the original unit, but it cannot use active abilities, cannot deal damage, and dies more easily. Hallucinations last <b>60</b> before they disappear.",
-        "Name": "Summon Oracle Hallucination",
+        "Name": {
+          "enUS": "Summon Oracle Hallucination",
+          "ruRU": "Summon Oracle Hallucination"
+        },
+        "Tooltip": {
+          "enUS": "This hallucinated copy functions like the original unit, but it cannot use active abilities, cannot deal damage, and dies more easily. Hallucinations last <b>60</b> before they disappear.",
+          "ruRU": "This hallucinated copy functions like the original unit, but it cannot use active abilities, cannot deal damage, and dies more easily. Hallucinations last <b>60</b> before they disappear."
+        },
         "Hotkey": "L"
       },
       {
@@ -2234,6 +2471,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "HallucinationAdept",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "RangeSlop": 1,
           "ArcSlop": 11.25,
           "AutoCastAcquireLevel": "Offensive",
@@ -2245,7 +2488,7 @@
             "RangeUseCasterRadius": 1,
             "ReApproachable": 1,
             "RequireTargetVision": 1,
-            "WaitToSpend": 0,
+            "WaitToSpend": 1,
             "UpdateChargesOnLevelChange": 1,
             "BestUnit": 1
           },
@@ -2335,8 +2578,14 @@
         "AbilCmd": "HallucinationAdept,Execute",
         "id": "AdeptHallucination",
         "Icon": "btn-unit-protoss-adept",
-        "Tooltip": "This hallucinated copy functions like the original unit, but it cannot use active abilities, cannot deal damage, and dies more easily. Hallucinations last <b>60</b> before they disappear.",
-        "Name": "Summon 2 Adept Hallucinations",
+        "Name": {
+          "enUS": "Summon 2 Adept Hallucinations",
+          "ruRU": "Summon 2 Adept Hallucinations"
+        },
+        "Tooltip": {
+          "enUS": "This hallucinated copy functions like the original unit, but it cannot use active abilities, cannot deal damage, and dies more easily. Hallucinations last <b>60</b> before they disappear.",
+          "ruRU": "This hallucinated copy functions like the original unit, but it cannot use active abilities, cannot deal damage, and dies more easily. Hallucinations last <b>60</b> before they disappear."
+        },
         "Hotkey": "H"
       },
       {
@@ -2358,6 +2607,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "HallucinationDisruptor",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "RangeSlop": 1,
           "ArcSlop": 11.25,
           "AutoCastAcquireLevel": "Offensive",
@@ -2369,7 +2624,7 @@
             "RangeUseCasterRadius": 1,
             "ReApproachable": 1,
             "RequireTargetVision": 1,
-            "WaitToSpend": 0,
+            "WaitToSpend": 1,
             "UpdateChargesOnLevelChange": 1,
             "BestUnit": 1
           },
@@ -2459,8 +2714,14 @@
         "AbilCmd": "HallucinationDisruptor,Execute",
         "id": "DisruptorHallucination",
         "Icon": "btn-unit-protoss-disruptor",
-        "Tooltip": "This hallucinated copy functions like the original unit, but it cannot use active abilities, cannot deal damage, and dies more easily. Hallucinations last <b>60</b> before they disappear.",
-        "Name": "Summon Disruptor Hallucination",
+        "Name": {
+          "enUS": "Summon Disruptor Hallucination",
+          "ruRU": "Summon Disruptor Hallucination"
+        },
+        "Tooltip": {
+          "enUS": "This hallucinated copy functions like the original unit, but it cannot use active abilities, cannot deal damage, and dies more easily. Hallucinations last <b>60</b> before they disappear.",
+          "ruRU": "This hallucinated copy functions like the original unit, but it cannot use active abilities, cannot deal damage, and dies more easily. Hallucinations last <b>60</b> before they disappear."
+        },
         "Hotkey": "D"
       }
     ]
@@ -2491,12 +2752,12 @@
   "InnerRadius": 0.375,
   "ShieldRegenDelay": 10,
   "RepairTime": 42,
-  "id": "Sentry",
   "EquipmentArray": [
     {
       "Weapon": "DisruptionBeamDisplayDummy"
     }
   ],
+  "id": "Sentry",
   "Icon": "btn-unit-protoss-sentry",
   "LifeArmorIcon": "btn-upgrade-protoss-groundarmorlevel0",
   "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
@@ -2504,7 +2765,10 @@
     {
       "id": "DisruptionBeam",
       "Icon": "btn-upgrade-protoss-groundweaponslevel0",
-      "Name": "Disruption Beam",
+      "Name": {
+        "enUS": "Disruption Beam",
+        "ruRU": "Disruption Beam"
+      },
       "Amount": 6,
       "Kind": "Ranged",
       "TargetFilters": "",
@@ -2516,93 +2780,155 @@
   "Abilities": [
     {
       "id": "attack",
-      "Name": "Attack"
+      "Name": {
+        "ruRU": "Attack",
+        "enUS": "Attack"
+      }
     },
     {
       "id": "stop",
-      "Name": "Stop"
+      "Name": {
+        "enUS": "Stop",
+        "ruRU": "Stop"
+      }
     },
     {
       "id": "move",
-      "Name": "Move"
+      "Name": {
+        "enUS": "Move",
+        "ruRU": "Move"
+      }
     },
     {
       "id": "Warpable",
-      "Name": "Warpable"
+      "Name": {
+        "enUS": "Warpable",
+        "ruRU": "Warpable"
+      }
     },
     {
       "id": "ForceField",
-      "Name": "Force Field"
+      "Name": {
+        "enUS": "Force Field",
+        "ruRU": "Force Field"
+      }
     },
     {
       "id": "GuardianShield",
-      "Name": "Guardian Shield"
+      "Name": {
+        "enUS": "Guardian Shield",
+        "ruRU": "Guardian Shield"
+      }
     },
     {
       "id": "ProgressRally",
-      "Name": "Progress Rally"
+      "Name": {
+        "enUS": "Progress Rally",
+        "ruRU": "Progress Rally"
+      }
     },
     {
       "id": "BuildInProgress",
-      "Name": "Build in Progress"
+      "Name": {
+        "enUS": "Build in Progress",
+        "ruRU": "Build in Progress"
+      }
     },
     {
       "id": "HallucinationArchon",
-      "Name": "Hallucination (Archon)"
+      "Name": {
+        "enUS": "Hallucination (Archon)",
+        "ruRU": "Hallucination (Archon)"
+      }
     },
     {
       "id": "HallucinationColossus",
-      "Name": "Hallucination (Colossus)"
+      "Name": {
+        "enUS": "Hallucination (Colossus)",
+        "ruRU": "Hallucination (Colossus)"
+      }
     },
     {
       "id": "HallucinationHighTemplar",
-      "Name": "Hallucination (High Templar)"
+      "Name": {
+        "enUS": "Hallucination (High Templar)",
+        "ruRU": "Hallucination (High Templar)"
+      }
     },
     {
       "id": "HallucinationImmortal",
-      "Name": "Hallucination (Immortal)"
+      "Name": {
+        "enUS": "Hallucination (Immortal)",
+        "ruRU": "Hallucination (Immortal)"
+      }
     },
     {
       "id": "HallucinationPhoenix",
-      "Name": "Hallucination (Phoenix)"
+      "Name": {
+        "enUS": "Hallucination (Phoenix)",
+        "ruRU": "Hallucination (Phoenix)"
+      }
     },
     {
       "id": "HallucinationProbe",
-      "Name": "Hallucination (Probe)"
+      "Name": {
+        "enUS": "Hallucination (Probe)",
+        "ruRU": "Hallucination (Probe)"
+      }
     },
     {
       "id": "HallucinationStalker",
-      "Name": "Hallucination (Stalker)"
+      "Name": {
+        "enUS": "Hallucination (Stalker)",
+        "ruRU": "Hallucination (Stalker)"
+      }
     },
     {
       "id": "HallucinationVoidRay",
-      "Name": "Hallucination (Void Ray)"
+      "Name": {
+        "enUS": "Hallucination (Void Ray)",
+        "ruRU": "Hallucination (Void Ray)"
+      }
     },
     {
       "id": "HallucinationWarpPrism",
-      "Name": "Hallucination (Warp Prism)"
+      "Name": {
+        "enUS": "Hallucination (Warp Prism)",
+        "ruRU": "Hallucination (Warp Prism)"
+      }
     },
     {
       "id": "HallucinationZealot",
-      "Name": "Hallucination (Zealot)"
+      "Name": {
+        "enUS": "Hallucination (Zealot)",
+        "ruRU": "Hallucination (Zealot)"
+      }
     },
     {
       "id": "HallucinationOracle",
-      "Name": "Hallucination Oracle"
+      "Name": {
+        "enUS": "Hallucination Oracle",
+        "ruRU": "Hallucination Oracle"
+      }
     },
     {
       "id": "HallucinationDisruptor",
-      "Name": "Hallucination (Disruptor)"
+      "Name": {
+        "enUS": "Hallucination (Disruptor)",
+        "ruRU": "Hallucination (Disruptor)"
+      }
     },
     {
       "id": "HallucinationAdept",
-      "Name": "Hallucination (Adept)"
+      "Name": {
+        "enUS": "Hallucination (Adept)",
+        "ruRU": "Hallucination (Adept)"
+      }
     }
   ],
   "$Upgrades": [
-    "haltech",
-    "Sentry",
     "CyberneticsCore",
+    "Sentry",
     "GatewayTrain",
     "WarpGateTrain",
     "Gateway",
@@ -2619,19 +2945,7 @@
     "ProtossShields",
     "ProtossShieldsLevel2",
     "ProtossShieldsLevel3",
-    "IsSentry",
-    "Combat_Mechanic_Shields_Disruptor",
-    "SentryBase",
-    "Sentry",
-    "SentryTaldarim",
-    "SentryPurifier",
-    "SentryGolden",
-    "SentryIhanrii",
-    "DefaultSkinPack",
-    "SentryTaldarimSkinPack",
-    "SentryPurifierSkinPack",
-    "SentryGolden",
-    "SentryIhanrii"
+    "IsSentry"
   ],
   "$Requirements": [],
   "$Production": [
@@ -2662,155 +2976,287 @@
       "AbilCmd": "move,Move",
       "id": "Move",
       "Icon": "btn-command-move",
-      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
-      "Name": "Move"
+      "Name": {
+        "enUS": "Move",
+        "ruRU": "Двигаться /// Move"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+        "ruRU": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies."
+      }
     },
     {
       "AbilCmd": "stop,Stop",
       "id": "Stop",
       "Icon": "btn-command-stop",
-      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
-      "Name": "Stop"
+      "Name": {
+        "enUS": "Stop",
+        "ruRU": "Отставить /// Stop"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to cancel all orders and stop moving.",
+        "ruRU": "Orders selected units to cancel all orders and stop moving."
+      }
     },
     {
       "AbilCmd": "move,HoldPos",
       "id": "MoveHoldPosition",
       "Icon": "btn-command-holdposition",
-      "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
-      "Name": "Hold Position"
+      "Name": {
+        "enUS": "Hold Position",
+        "ruRU": "Удерживать позицию /// Hold Position"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+        "ruRU": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage."
+      }
     },
     {
       "AbilCmd": "move,Patrol",
       "id": "MovePatrol",
       "Icon": "btn-command-patrol",
-      "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
-      "Name": "Patrol"
+      "Name": {
+        "enUS": "Patrol",
+        "ruRU": "Патрулировать /// Patrol"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+        "ruRU": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies."
+      }
     },
     {
       "AbilCmd": "attack,Execute",
       "id": "Attack",
       "Icon": "btn-command-attack",
-      "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
-      "Name": "Attack"
+      "Name": {
+        "enUS": "Attack",
+        "ruRU": "Атаковать /// Attack"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+        "ruRU": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed."
+      }
     },
     {
       "AbilCmd": "ProgressRally,Rally1",
       "id": "Rally",
       "Icon": "btn-ability-terran-setrallypoint",
-      "Tooltip": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
-      "Name": "Set Rally Point"
+      "Name": {
+        "enUS": "Set Rally Point",
+        "ruRU": "Задать точку сбора /// Set Rally Point"
+      },
+      "Tooltip": {
+        "enUS": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
+        "ruRU": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically."
+      }
     },
     {
       "AbilCmd": "ForceField,Execute",
       "id": "ForceField",
       "Icon": "btn-ability-protoss-forcefield-color",
-      "Tooltip": "Barrier that lasts <b>15</b> and impedes movement of ground units. Massive units will shatter Force Fields on contact.",
-      "Name": "Force Field"
+      "Name": {
+        "enUS": "Force Field",
+        "ruRU": "Force Field"
+      },
+      "Tooltip": {
+        "enUS": "Barrier that lasts <b>15</b> and impedes movement of ground units. Massive units will shatter Force Fields on contact.",
+        "ruRU": "Barrier that lasts <b>15</b> and impedes movement of ground units. Massive units will shatter Force Fields on contact."
+      }
     },
     {
       "AbilCmd": "GuardianShield,Execute",
       "id": "GuardianShield",
       "Icon": "btn-ability-protoss-shieldbattery-color",
-      "Tooltip": "Creates a range <b>4.5</b> aura that reduces incoming ranged damage to friendly units by <b>2</b>. Lasts <b>23</b>.",
-      "Name": "Guardian Shield"
+      "Name": {
+        "enUS": "Guardian Shield",
+        "ruRU": "Guardian Shield"
+      },
+      "Tooltip": {
+        "enUS": "Creates a range <b>4.5</b> aura that reduces incoming ranged damage to friendly units by <b>2</b>. Lasts <b>23</b>.",
+        "ruRU": "Creates a range 4 aura that reduces incoming ranged damage to friendly units by 2. Lasts <b>15</b>."
+      }
     },
     {
-      "AbilCmd": "255,255",
+      "AbilCmd": "255",
       "id": "Hallucination",
       "Icon": "btn-ability-protoss-hallucination-color",
-      "Tooltip": "Creates hallucinations that cannot use active abilities, cannot deal damage, and die more easily. Hallucinations last <b>60</b> seconds. Enemy detectors reveal hallucinations.",
-      "Name": "Hallucination"
+      "Name": {
+        "enUS": "Hallucination",
+        "ruRU": "Hallucination"
+      },
+      "Tooltip": {
+        "enUS": "Creates hallucinations that cannot use active abilities, cannot deal damage, and die more easily. Hallucinations last <b>60</b> seconds. Enemy detectors reveal hallucinations.",
+        "ruRU": "Creates hallucinations that cannot use active abilities, cannot deal damage, and die more easily. Hallucinations last <b>60</b> seconds. Enemy detectors reveal hallucinations."
+      }
     },
     {
       "AbilCmd": "HallucinationProbe,Execute",
       "id": "ProbeHallucination",
       "Icon": "btn-unit-protoss-probe",
-      "Tooltip": "These hallucinated copies function like the original unit, but they cannot use active abilities, deal damage, warp in structures, or gather resources, and they die more easily. Hallucinations last <b>60</b> before they disappear.",
-      "Name": "Summon 4 Probe Hallucinations"
+      "Name": {
+        "enUS": "Summon 4 Probe Hallucinations",
+        "ruRU": "Summon 4 Probe Hallucinations"
+      },
+      "Tooltip": {
+        "enUS": "These hallucinated copies function like the original unit, but they cannot use active abilities, deal damage, warp in structures, or gather resources, and they die more easily. Hallucinations last <b>60</b> before they disappear.",
+        "ruRU": "These hallucinated copies function like the original unit, but they cannot use active abilities, deal damage, warp in structures, or gather resources, and they die more easily. Hallucinations last <b>60</b> before they disappear."
+      }
     },
     {
       "AbilCmd": "HallucinationZealot,Execute",
       "id": "ZealotHallucination",
       "Icon": "btn-unit-protoss-zealot",
-      "Tooltip": "These hallucinated copies function like the original unit, but they cannot use active abilities, cannot deal damage, and die more easily. Hallucinations last <b>60</b> before they disappear.",
-      "Name": "Summon 2 Zealot Hallucinations"
+      "Name": {
+        "enUS": "Summon 2 Zealot Hallucinations",
+        "ruRU": "Summon 2 Zealot Hallucinations"
+      },
+      "Tooltip": {
+        "enUS": "These hallucinated copies function like the original unit, but they cannot use active abilities, cannot deal damage, and die more easily. Hallucinations last <b>60</b> before they disappear.",
+        "ruRU": "These hallucinated copies function like the original unit, but they cannot use active abilities, cannot deal damage, and die more easily. Hallucinations last <b>60</b> before they disappear."
+      }
     },
     {
       "AbilCmd": "HallucinationStalker,Execute",
       "id": "StalkerHallucination",
       "Icon": "btn-unit-protoss-stalker",
-      "Tooltip": "These hallucinated copies function like the original unit, but they cannot use active abilities, cannot deal damage, and die more easily. Hallucinations last <b>60</b> before they disappear.",
-      "Name": "Summon 2 Stalker Hallucinations"
+      "Name": {
+        "enUS": "Summon 2 Stalker Hallucinations",
+        "ruRU": "Summon 2 Stalker Hallucinations"
+      },
+      "Tooltip": {
+        "enUS": "These hallucinated copies function like the original unit, but they cannot use active abilities, cannot deal damage, and die more easily. Hallucinations last <b>60</b> before they disappear.",
+        "ruRU": "These hallucinated copies function like the original unit, but they cannot use active abilities, cannot deal damage, and die more easily. Hallucinations last <b>60</b> before they disappear."
+      }
     },
     {
       "AbilCmd": "HallucinationImmortal,Execute",
       "id": "ImmortalHallucination",
       "Icon": "btn-unit-protoss-immortal",
-      "Tooltip": "This hallucinated copy functions like the original unit, but it cannot use active abilities, cannot deal damage, and dies more easily. Hallucinations last <b>60</b> before they disappear.",
-      "Name": "Summon Immortal Hallucination"
+      "Name": {
+        "enUS": "Summon Immortal Hallucination",
+        "ruRU": "Summon Immortal Hallucination"
+      },
+      "Tooltip": {
+        "enUS": "This hallucinated copy functions like the original unit, but it cannot use active abilities, cannot deal damage, and dies more easily. Hallucinations last <b>60</b> before they disappear.",
+        "ruRU": "This hallucinated copy functions like the original unit, but it cannot use active abilities, cannot deal damage, and dies more easily. Hallucinations last <b>60</b> before they disappear."
+      }
     },
     {
       "AbilCmd": "HallucinationHighTemplar,Execute",
       "id": "HighTemplarHallucination",
       "Icon": "btn-unit-protoss-hightemplar",
-      "Tooltip": "These hallucinated copies function like the original unit, but they cannot use active abilities, cannot deal damage, and die more easily. Hallucinations last <b>60</b> before they disappear.",
-      "Name": "Summon 2 High Templar Hallucinations"
+      "Name": {
+        "enUS": "Summon 2 High Templar Hallucinations",
+        "ruRU": "Summon 2 High Templar Hallucinations"
+      },
+      "Tooltip": {
+        "enUS": "These hallucinated copies function like the original unit, but they cannot use active abilities, cannot deal damage, and die more easily. Hallucinations last <b>60</b> before they disappear.",
+        "ruRU": "These hallucinated copies function like the original unit, but they cannot use active abilities, cannot deal damage, and die more easily. Hallucinations last <b>60</b> before they disappear."
+      }
     },
     {
       "AbilCmd": "HallucinationArchon,Execute",
       "id": "ArchonHallucination",
       "Icon": "btn-unit-protoss-archon",
-      "Tooltip": "This hallucinated copy functions like the original unit, but it cannot use active abilities, cannot deal damage, and dies more easily. Hallucinations last <b>60</b> before they disappear.",
-      "Name": "Summon Archon Hallucination"
+      "Name": {
+        "enUS": "Summon Archon Hallucination",
+        "ruRU": "Summon Archon Hallucination"
+      },
+      "Tooltip": {
+        "enUS": "This hallucinated copy functions like the original unit, but it cannot use active abilities, cannot deal damage, and dies more easily. Hallucinations last <b>60</b> before they disappear.",
+        "ruRU": "This hallucinated copy functions like the original unit, but it cannot use active abilities, cannot deal damage, and dies more easily. Hallucinations last <b>60</b> before they disappear."
+      }
     },
     {
       "AbilCmd": "HallucinationVoidRay,Execute",
       "id": "VoidRayHallucination",
       "Icon": "btn-unit-protoss-warpray",
-      "Tooltip": "This hallucinated copy functions like the original unit, but it cannot use active abilities, cannot deal damage, and dies more easily. Hallucinations last <b>60</b> before they disappear.",
-      "Name": "Summon Void Ray Hallucination"
+      "Name": {
+        "enUS": "Summon Void Ray Hallucination",
+        "ruRU": "Summon Void Ray Hallucination"
+      },
+      "Tooltip": {
+        "enUS": "This hallucinated copy functions like the original unit, but it cannot use active abilities, cannot deal damage, and dies more easily. Hallucinations last <b>60</b> before they disappear.",
+        "ruRU": "This hallucinated copy functions like the original unit, but it cannot use active abilities, cannot deal damage, and dies more easily. Hallucinations last <b>60</b> before they disappear."
+      }
     },
     {
       "AbilCmd": "HallucinationPhoenix,Execute",
       "id": "PhoenixHallucination",
       "Icon": "btn-unit-protoss-phoenix",
-      "Tooltip": "This hallucinated copy functions like the original unit, but it cannot use active abilities, cannot deal damage, and dies more easily. Hallucinations last <b>60</b> before they disappear.",
-      "Name": "Summon Phoenix Hallucination"
+      "Name": {
+        "enUS": "Summon Phoenix Hallucination",
+        "ruRU": "Summon Phoenix Hallucination"
+      },
+      "Tooltip": {
+        "enUS": "This hallucinated copy functions like the original unit, but it cannot use active abilities, cannot deal damage, and dies more easily. Hallucinations last <b>60</b> before they disappear.",
+        "ruRU": "This hallucinated copy functions like the original unit, but it cannot use active abilities, cannot deal damage, and dies more easily. Hallucinations last <b>60</b> before they disappear."
+      }
     },
     {
       "AbilCmd": "HallucinationWarpPrism,Execute",
       "id": "WarpPrismHallucination",
       "Icon": "btn-unit-protoss-warpprism",
-      "Tooltip": "This hallucinated copy functions like the original unit, but it cannot use active abilities, cannot deal damage, and dies more easily. Hallucinations last <b>60</b> before they disappear.",
-      "Name": "Summon Warp Prism Hallucination"
+      "Name": {
+        "enUS": "Summon Warp Prism Hallucination",
+        "ruRU": "Summon Warp Prism Hallucination"
+      },
+      "Tooltip": {
+        "enUS": "This hallucinated copy functions like the original unit, but it cannot use active abilities, cannot deal damage, and dies more easily. Hallucinations last <b>60</b> before they disappear.",
+        "ruRU": "This hallucinated copy functions like the original unit, but it cannot use active abilities, cannot deal damage, and dies more easily. Hallucinations last <b>60</b> before they disappear."
+      }
     },
     {
       "AbilCmd": "HallucinationColossus,Execute",
       "id": "ColossusHallucination",
       "Icon": "btn-unit-protoss-colossus",
-      "Tooltip": "This hallucinated copy functions like the original unit, but it cannot use active abilities, cannot deal damage, and dies more easily. Hallucinations last <b>60</b> before they disappear.",
-      "Name": "Summon Colossus Hallucination"
+      "Name": {
+        "enUS": "Summon Colossus Hallucination",
+        "ruRU": "Summon Colossus Hallucination"
+      },
+      "Tooltip": {
+        "enUS": "This hallucinated copy functions like the original unit, but it cannot use active abilities, cannot deal damage, and dies more easily. Hallucinations last <b>60</b> before they disappear.",
+        "ruRU": "This hallucinated copy functions like the original unit, but it cannot use active abilities, cannot deal damage, and dies more easily. Hallucinations last <b>60</b> before they disappear."
+      }
     },
     {
       "AbilCmd": "HallucinationOracle,Execute",
       "id": "OracleHallucination",
       "Icon": "btn-unit-protoss-oracle",
-      "Tooltip": "This hallucinated copy functions like the original unit, but it cannot use active abilities, cannot deal damage, and dies more easily. Hallucinations last <b>60</b> before they disappear.",
-      "Name": "Summon Oracle Hallucination"
+      "Name": {
+        "enUS": "Summon Oracle Hallucination",
+        "ruRU": "Summon Oracle Hallucination"
+      },
+      "Tooltip": {
+        "enUS": "This hallucinated copy functions like the original unit, but it cannot use active abilities, cannot deal damage, and dies more easily. Hallucinations last <b>60</b> before they disappear.",
+        "ruRU": "This hallucinated copy functions like the original unit, but it cannot use active abilities, cannot deal damage, and dies more easily. Hallucinations last <b>60</b> before they disappear."
+      }
     },
     {
       "AbilCmd": "HallucinationAdept,Execute",
       "id": "AdeptHallucination",
       "Icon": "btn-unit-protoss-adept",
-      "Tooltip": "This hallucinated copy functions like the original unit, but it cannot use active abilities, cannot deal damage, and dies more easily. Hallucinations last <b>60</b> before they disappear.",
-      "Name": "Summon 2 Adept Hallucinations"
+      "Name": {
+        "enUS": "Summon 2 Adept Hallucinations",
+        "ruRU": "Summon 2 Adept Hallucinations"
+      },
+      "Tooltip": {
+        "enUS": "This hallucinated copy functions like the original unit, but it cannot use active abilities, cannot deal damage, and dies more easily. Hallucinations last <b>60</b> before they disappear.",
+        "ruRU": "This hallucinated copy functions like the original unit, but it cannot use active abilities, cannot deal damage, and dies more easily. Hallucinations last <b>60</b> before they disappear."
+      }
     },
     {
       "AbilCmd": "HallucinationDisruptor,Execute",
       "id": "DisruptorHallucination",
       "Icon": "btn-unit-protoss-disruptor",
-      "Tooltip": "This hallucinated copy functions like the original unit, but it cannot use active abilities, cannot deal damage, and dies more easily. Hallucinations last <b>60</b> before they disappear.",
-      "Name": "Summon Disruptor Hallucination"
+      "Name": {
+        "enUS": "Summon Disruptor Hallucination",
+        "ruRU": "Summon Disruptor Hallucination"
+      },
+      "Tooltip": {
+        "enUS": "This hallucinated copy functions like the original unit, but it cannot use active abilities, cannot deal damage, and dies more easily. Hallucinations last <b>60</b> before they disappear.",
+        "ruRU": "This hallucinated copy functions like the original unit, but it cannot use active abilities, cannot deal damage, and dies more easily. Hallucinations last <b>60</b> before they disappear."
+      }
     }
   ]
 }

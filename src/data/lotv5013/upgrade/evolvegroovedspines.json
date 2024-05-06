@@ -13,8 +13,15 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "EvolveGroovedSpines",
+  "EditorCategories": "Race:Zerg,UpgradeType:Spell",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "Race": "Zerg",
-  "ScoreAmount": 150,
+  "ScoreAmount": 200,
   "ScoreResult": "BuildOrder",
   "EffectArray": [
     {
@@ -26,7 +33,6 @@
       "Value": "1"
     }
   ],
-  "EditorCategories": "Race:Zerg,UpgradeType:Talents",
   "AffectedUnitArray": [
     "Hydralisk",
     "HydraliskBurrowed"

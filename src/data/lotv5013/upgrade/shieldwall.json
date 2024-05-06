@@ -13,9 +13,15 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "ShieldWall",
+  "EditorCategories": "Race:Terran,UpgradeType:Spell",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "InfoTooltipPriority": 2,
   "Race": "Terr",
-  "EditorCategories": "Race:Terran,UpgradeType:Talents",
   "ScoreResult": "BuildOrder",
   "AffectedUnitArray": [
     "Marine"

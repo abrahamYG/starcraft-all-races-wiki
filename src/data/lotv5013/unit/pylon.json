@@ -1,6 +1,12 @@
 {
-  "Name": "Pylon",
-  "Description": "Provides supply.<br/>Supply allows you to warp in more units.<br/>Creates power for nearby structures.",
+  "Name": {
+    "enUS": "Pylon",
+    "ruRU": "Pylon"
+  },
+  "Description": {
+    "enUS": "Provides supply.<br/>Supply allows you to warp in more units.<br/>Creates power for nearby structures.",
+    "ruRU": "Provides supply.<br/>Supply allows you to warp in more units.<br/>Creates power for nearby structures."
+  },
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -12,7 +18,10 @@
   "ResourceType": "Unknown",
   "LifeStart": 200,
   "LifeMax": 200,
-  "LifeArmorName": "Protoss Armor",
+  "LifeArmorName": {
+    "enUS": "Protoss Armor",
+    "ruRU": "Protoss Armor"
+  },
   "Mover": "Ground",
   "StationaryTurningRate": 719.4726,
   "TurningRate": 719.4726,
@@ -77,13 +86,22 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "Mob": "Multiplayer",
   "FogVisibility": "Snapshot",
   "LifeArmor": 1,
   "ShieldsStart": 200,
   "ShieldsMax": 200,
   "ShieldRegenRate": 2,
-  "ShieldArmorName": "Protoss Plasma Shields",
+  "ShieldArmorName": {
+    "enUS": "Protoss Plasma Shields",
+    "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+  },
   "Food": 8,
   "AttackTargetPriority": 11,
   "Footprint": "Footprint2x2Contour",
@@ -105,9 +123,8 @@
     "Structure",
     "RoachBurrow",
     "ForceField",
-    "Small",
-    "Locust",
-    "Phased"
+    "Phased",
+    "Small"
   ],
   "Sight": 10,
   "TurretArray": [
@@ -135,6 +152,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "BuildInProgress",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "Activity": "UI/Building",
           "VitalStartFactor": {
             "Life": 0.1,
@@ -167,8 +190,14 @@
         "AbilCmd": "BuildInProgress,Cancel",
         "id": "CancelBuilding",
         "Icon": "btn-command-cancel",
-        "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-        "Name": "Cancel",
+        "Name": {
+          "enUS": "Cancel",
+          "ruRU": "Отменить /// Cancel"
+        },
+        "Tooltip": {
+          "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+          "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+        },
         "Hotkey": "Esc"
       },
       {
@@ -187,8 +216,14 @@
         "Type": "Passive",
         "id": "ImprovedEnergy",
         "Icon": "btn-upgrade-artanis-pylonpower",
-        "Tooltip": "Increases the speed of warp in for units warped into the power field to <b>5</b>.",
-        "Name": "Warp Conduit"
+        "Name": {
+          "enUS": "Warp Conduit",
+          "ruRU": "Warp Conduit"
+        },
+        "Tooltip": {
+          "enUS": "Increases the speed of warp in for units warped into the power field to <b>5</b>.",
+          "ruRU": "Increases the speed of warp in for units warped into the power field to <b>5</b>."
+        }
       }
     ]
   },
@@ -199,10 +234,11 @@
     "Minerals": 100
   },
   "ShieldRegenDelay": 10,
-  "id": "Pylon",
   "TechAliasArray": [
     "Alias_Pylon"
   ],
+  "KillDisplay": "Always",
+  "id": "Pylon",
   "Icon": "btn-building-protoss-pylon",
   "LifeArmorIcon": "btn-armor-protoss-buildingplating",
   "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
@@ -210,48 +246,50 @@
   "Behaviors": [
     {
       "id": "PowerSource",
-      "Icon": "btn-building-protoss-pylon"
+      "Icon": "btn-building-protoss-pylon",
+      "Name": {
+        "enUS": "Power Source",
+        "ruRU": "Power Source"
+      },
+      "Tooltip": "-"
     },
     {
       "id": "PowerSourceFast",
-      "Icon": "btn-building-protoss-pylon"
+      "Icon": "btn-building-protoss-pylon",
+      "Name": {
+        "enUS": "Power Source Fast",
+        "ruRU": "Power Source Fast ///Auto - Copied from enUS Locale"
+      },
+      "Tooltip": "-"
     },
     {
-      "id": "FastEnablerPowerUser"
+      "id": "FastEnablerPowerUser",
+      "Name": {
+        "enUS": "Fast Enabler Power User",
+        "ruRU": "Fast Enabler Power User ///Auto - Copied from enUS Locale"
+      },
+      "Tooltip": "-"
     }
   ],
   "Abilities": [
     {
       "id": "BuildInProgress",
-      "Name": "Build in Progress"
-    },
-    {
-      "id": "PurifyMorphPylon"
+      "Name": {
+        "enUS": "Build in Progress",
+        "ruRU": "Build in Progress"
+      }
     }
   ],
   "$Upgrades": [
     "ProtossBuild",
     "Pylon",
-    "PylonOvercharged",
-    "PurifyMorphPylonBack",
-    "IsPylon",
     "ProtossShieldsLevel1",
     "Pylon",
     "ProtossShields",
     "ProtossShieldsLevel2",
     "ProtossShieldsLevel3",
-    "PylonSplat",
-    "PylonSkin",
-    "PylonBase",
-    "Pylon",
-    "PylonXPR",
-    "PylonTaldarim",
-    "PylonForged",
-    "PylonIhanrii",
-    "PylonJudicatorSkinPack",
-    "DefaultSkinPack",
-    "PylonForged",
-    "PylonIhanrii"
+    "IsPylon",
+    "PylonSplat"
   ],
   "$Requirements": [],
   "$Production": [],
@@ -266,8 +304,14 @@
       "AbilCmd": "BuildInProgress,Cancel",
       "id": "CancelBuilding",
       "Icon": "btn-command-cancel",
-      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-      "Name": "Cancel"
+      "Name": {
+        "enUS": "Cancel",
+        "ruRU": "Отменить /// Cancel"
+      },
+      "Tooltip": {
+        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+        "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+      }
     }
   ]
 }

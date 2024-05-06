@@ -1,6 +1,12 @@
 {
-  "Name": "Forge",
-  "Description": "Contains weapon and armor upgrades for Protoss ground units and shield upgrades for all Protoss units and structures.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Photon Cannons from Probes",
+  "Name": {
+    "enUS": "Forge",
+    "ruRU": "Forge"
+  },
+  "Description": {
+    "enUS": "Contains weapon and armor upgrades for Protoss ground units and shield upgrades for all Protoss units and structures.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Photon Cannons from Probes",
+    "ruRU": "Contains weapon and armor upgrades for Protoss ground units and shield upgrades for all Protoss units and structures.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Photon Cannons from Probes"
+  },
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -12,7 +18,10 @@
   "ResourceType": "Unknown",
   "LifeStart": 400,
   "LifeMax": 400,
-  "LifeArmorName": "Protoss Armor",
+  "LifeArmorName": {
+    "enUS": "Protoss Armor",
+    "ruRU": "Protoss Armor"
+  },
   "Mover": "Ground",
   "StationaryTurningRate": 719.4726,
   "TurningRate": 719.4726,
@@ -77,6 +86,12 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "Facing": 315,
   "Mob": "Multiplayer",
   "FogVisibility": "Snapshot",
@@ -84,7 +99,10 @@
   "ShieldsStart": 400,
   "ShieldsMax": 400,
   "ShieldRegenRate": 2,
-  "ShieldArmorName": "Protoss Plasma Shields",
+  "ShieldArmorName": {
+    "enUS": "Protoss Plasma Shields",
+    "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+  },
   "AttackTargetPriority": 11,
   "Footprint": "Footprint3x3Contour",
   "PlacementFootprint": "Footprint3x3",
@@ -105,9 +123,8 @@
     "Structure",
     "RoachBurrow",
     "ForceField",
-    "Small",
-    "Locust",
-    "Phased"
+    "Phased",
+    "Small"
   ],
   "Sight": 9,
   "CardLayouts": {
@@ -131,6 +148,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "que5",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "QueueCount": 1,
           "Flags": {
             "BestUnit": 1,
@@ -163,8 +186,14 @@
         "AbilCmd": "que5,CancelLast",
         "id": "Cancel",
         "Icon": "btn-command-cancel",
-        "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
-        "Name": "Cancel",
+        "Name": {
+          "enUS": "Cancel",
+          "ruRU": "Отменить /// Cancel"
+        },
+        "Tooltip": {
+          "enUS": "Drops the current order without performing it, and allows you to select a different order.",
+          "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+        },
         "Hotkey": "Esc"
       },
       {
@@ -186,6 +215,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "BuildInProgress",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "Activity": "UI/Building",
           "VitalStartFactor": {
             "Life": 0.1,
@@ -218,8 +253,14 @@
         "AbilCmd": "BuildInProgress,Cancel",
         "id": "CancelBuilding",
         "Icon": "btn-command-cancel",
-        "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-        "Name": "Cancel",
+        "Name": {
+          "enUS": "Cancel",
+          "ruRU": "Отменить /// Cancel"
+        },
+        "Tooltip": {
+          "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+          "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+        },
         "Hotkey": "Esc"
       },
       {
@@ -230,7 +271,6 @@
               "AllowMinimap": 0
             },
             "DefaultButtonFace": "ProtossGroundWeaponsLevel1",
-            "State": "Restricted",
             "Requirements": "LearnProtossGroundWeapon1"
           },
           "Resource": {
@@ -257,8 +297,14 @@
         "AbilCmd": "ForgeResearch,Research1",
         "id": "ProtossGroundWeaponsLevel1",
         "Icon": "btn-upgrade-protoss-groundweaponslevel1",
-        "Tooltip": "Upgrades the damage dealt by Protoss ground units.",
-        "Name": "Upgrade Ground Weapons Level 1",
+        "Name": {
+          "enUS": "Upgrade Ground Weapons Level 1",
+          "ruRU": "Upgrade Ground Weapons Level 1"
+        },
+        "Tooltip": {
+          "enUS": "Upgrades the damage dealt by Protoss ground units.",
+          "ruRU": "Upgrades the damage dealt by Protoss ground units."
+        },
         "Hotkey": "G"
       },
       {
@@ -269,7 +315,6 @@
               "AllowMinimap": 0
             },
             "DefaultButtonFace": "ProtossGroundWeaponsLevel2",
-            "State": "Restricted",
             "Requirements": "LearnProtossGroundWeapon2"
           },
           "Resource": {
@@ -296,8 +341,14 @@
         "AbilCmd": "ForgeResearch,Research2",
         "id": "ProtossGroundWeaponsLevel2",
         "Icon": "btn-upgrade-protoss-groundweaponslevel2",
-        "Tooltip": "Further upgrades the damage dealt by Protoss ground units.",
-        "Name": "Upgrade Ground Weapons Level 2",
+        "Name": {
+          "enUS": "Upgrade Ground Weapons Level 2",
+          "ruRU": "Upgrade Ground Weapons Level 2"
+        },
+        "Tooltip": {
+          "enUS": "Further upgrades the damage dealt by Protoss ground units.",
+          "ruRU": "Further upgrades the damage dealt by Protoss ground units."
+        },
         "Hotkey": "G"
       },
       {
@@ -308,7 +359,6 @@
               "AllowMinimap": 0
             },
             "DefaultButtonFace": "ProtossGroundWeaponsLevel3",
-            "State": "Restricted",
             "Requirements": "LearnProtossGroundWeapon3"
           },
           "Resource": {
@@ -335,8 +385,14 @@
         "AbilCmd": "ForgeResearch,Research3",
         "id": "ProtossGroundWeaponsLevel3",
         "Icon": "btn-upgrade-protoss-groundweaponslevel3",
-        "Tooltip": "Maximizes the damage dealt by Protoss ground units.",
-        "Name": "Upgrade Ground Weapons Level 3",
+        "Name": {
+          "enUS": "Upgrade Ground Weapons Level 3",
+          "ruRU": "Upgrade Ground Weapons Level 3"
+        },
+        "Tooltip": {
+          "enUS": "Maximizes the damage dealt by Protoss ground units.",
+          "ruRU": "Maximizes the damage dealt by Protoss ground units."
+        },
         "Hotkey": "G"
       },
       {
@@ -347,7 +403,6 @@
               "AllowMinimap": 0
             },
             "DefaultButtonFace": "ProtossGroundArmorLevel1",
-            "State": "Restricted",
             "Requirements": "LearnProtossGroundArmor1"
           },
           "Resource": {
@@ -374,8 +429,14 @@
         "AbilCmd": "ForgeResearch,Research4",
         "id": "ProtossGroundArmorLevel1",
         "Icon": "btn-upgrade-protoss-groundarmorlevel1",
-        "Tooltip": "Upgrades the armor of Protoss ground units.",
-        "Name": "Upgrade Ground Armor Level 1",
+        "Name": {
+          "enUS": "Upgrade Ground Armor Level 1",
+          "ruRU": "Upgrade Ground Armor Level 1"
+        },
+        "Tooltip": {
+          "enUS": "Upgrades the armor of Protoss ground units.",
+          "ruRU": "Upgrades the armor of Protoss ground units."
+        },
         "Hotkey": "A"
       },
       {
@@ -386,7 +447,6 @@
               "AllowMinimap": 0
             },
             "DefaultButtonFace": "ProtossGroundArmorLevel2",
-            "State": "Restricted",
             "Requirements": "LearnProtossGroundArmor2"
           },
           "Resource": {
@@ -413,8 +473,14 @@
         "AbilCmd": "ForgeResearch,Research5",
         "id": "ProtossGroundArmorLevel2",
         "Icon": "btn-upgrade-protoss-groundarmorlevel2",
-        "Tooltip": "Further upgrades the armor of Protoss ground units.",
-        "Name": "Upgrade Ground Armor Level 2",
+        "Name": {
+          "enUS": "Upgrade Ground Armor Level 2",
+          "ruRU": "Upgrade Ground Armor Level 2"
+        },
+        "Tooltip": {
+          "enUS": "Further upgrades the armor of Protoss ground units.",
+          "ruRU": "Further upgrades the armor of Protoss ground units."
+        },
         "Hotkey": "A"
       },
       {
@@ -425,7 +491,6 @@
               "AllowMinimap": 0
             },
             "DefaultButtonFace": "ProtossGroundArmorLevel3",
-            "State": "Restricted",
             "Requirements": "LearnProtossGroundArmor3"
           },
           "Resource": {
@@ -452,8 +517,14 @@
         "AbilCmd": "ForgeResearch,Research6",
         "id": "ProtossGroundArmorLevel3",
         "Icon": "btn-upgrade-protoss-groundarmorlevel3",
-        "Tooltip": "Maximizes the armor of Protoss ground units.",
-        "Name": "Upgrade Ground Armor Level 3",
+        "Name": {
+          "enUS": "Upgrade Ground Armor Level 3",
+          "ruRU": "Upgrade Ground Armor Level 3"
+        },
+        "Tooltip": {
+          "enUS": "Maximizes the armor of Protoss ground units.",
+          "ruRU": "Maximizes the armor of Protoss ground units."
+        },
         "Hotkey": "A"
       },
       {
@@ -464,7 +535,6 @@
               "AllowMinimap": 0
             },
             "DefaultButtonFace": "ProtossShieldsLevel1",
-            "State": "Restricted",
             "Requirements": "LearnProtossShield1"
           },
           "Resource": {
@@ -491,8 +561,14 @@
         "AbilCmd": "ForgeResearch,Research7",
         "id": "ProtossShieldsLevel1",
         "Icon": "btn-upgrade-protoss-shieldslevel1",
-        "Tooltip": "Upgrades the shields of all Protoss units and structures.",
-        "Name": "Upgrade Shields Level 1",
+        "Name": {
+          "enUS": "Upgrade Shields Level 1",
+          "ruRU": "Upgrade Shields Level 1"
+        },
+        "Tooltip": {
+          "enUS": "Upgrades the shields of all Protoss units and structures.",
+          "ruRU": "Upgrades the shields of all Protoss units and structures."
+        },
         "Hotkey": "S"
       },
       {
@@ -503,7 +579,6 @@
               "AllowMinimap": 0
             },
             "DefaultButtonFace": "ProtossShieldsLevel2",
-            "State": "Restricted",
             "Requirements": "LearnProtossShield2"
           },
           "Resource": {
@@ -530,8 +605,14 @@
         "AbilCmd": "ForgeResearch,Research8",
         "id": "ProtossShieldsLevel2",
         "Icon": "btn-upgrade-protoss-shieldslevel2",
-        "Tooltip": "Further upgrades the shields of all Protoss units and structures.",
-        "Name": "Upgrade Shields Level 2",
+        "Name": {
+          "enUS": "Upgrade Shields Level 2",
+          "ruRU": "Upgrade Shields Level 2"
+        },
+        "Tooltip": {
+          "enUS": "Further upgrades the shields of all Protoss units and structures.",
+          "ruRU": "Further upgrades the shields of all Protoss units and structures."
+        },
         "Hotkey": "S"
       },
       {
@@ -542,7 +623,6 @@
               "AllowMinimap": 0
             },
             "DefaultButtonFace": "ProtossShieldsLevel3",
-            "State": "Restricted",
             "Requirements": "LearnProtossShield3"
           },
           "Resource": {
@@ -569,8 +649,14 @@
         "AbilCmd": "ForgeResearch,Research9",
         "id": "ProtossShieldsLevel3",
         "Icon": "btn-upgrade-protoss-shieldslevel3",
-        "Tooltip": "Maximizes the shields of all Protoss units and structures.",
-        "Name": "Upgrade Shields Level 3",
+        "Name": {
+          "enUS": "Upgrade Shields Level 3",
+          "ruRU": "Upgrade Shields Level 3"
+        },
+        "Tooltip": {
+          "enUS": "Maximizes the shields of all Protoss units and structures.",
+          "ruRU": "Maximizes the shields of all Protoss units and structures."
+        },
         "Hotkey": "S"
       }
     ]
@@ -590,21 +676,35 @@
   "Behaviors": [
     {
       "id": "PowerUserQueue",
-      "Icon": "btn-building-protoss-pylon"
+      "Icon": "btn-building-protoss-pylon",
+      "Name": {
+        "enUS": "Power User (Queue)",
+        "ruRU": "Power User (Queue)"
+      },
+      "Tooltip": "-"
     }
   ],
   "Abilities": [
     {
       "id": "BuildInProgress",
-      "Name": "Build in Progress"
+      "Name": {
+        "enUS": "Build in Progress",
+        "ruRU": "Build in Progress"
+      }
     },
     {
       "id": "que5",
-      "Name": "Queue (5)"
+      "Name": {
+        "ruRU": "Queue (5)",
+        "enUS": "Queue (5)"
+      }
     },
     {
       "id": "ForgeResearch",
-      "Name": "Research (Forge)"
+      "Name": {
+        "enUS": "Research (Forge)",
+        "ruRU": "Research (Forge)"
+      }
     }
   ],
   "$Upgrades": [
@@ -617,16 +717,7 @@
     "ProtossShieldsLevel3",
     "CountUnitForgeCompleteOnlyTechTreeCheat",
     "IsForge",
-    "ForgeSplat",
-    "CinematicMode",
-    "ForgeBase",
-    "Forge",
-    "ForgeTaldarim",
-    "ForgeForged",
-    "ForgeIhanrii",
-    "DefaultSkinPack",
-    "ForgeForged",
-    "ForgeIhanrii"
+    "ForgeSplat"
   ],
   "$Requirements": [],
   "$Production": [],
@@ -651,78 +742,144 @@
       "AbilCmd": "que5,CancelLast",
       "id": "Cancel",
       "Icon": "btn-command-cancel",
-      "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
-      "Name": "Cancel"
+      "Name": {
+        "enUS": "Cancel",
+        "ruRU": "Отменить /// Cancel"
+      },
+      "Tooltip": {
+        "enUS": "Drops the current order without performing it, and allows you to select a different order.",
+        "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+      }
     },
     {
       "AbilCmd": "BuildInProgress,Cancel",
       "id": "CancelBuilding",
       "Icon": "btn-command-cancel",
-      "Tooltip": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-      "Name": "Cancel"
+      "Name": {
+        "enUS": "Cancel",
+        "ruRU": "Отменить /// Cancel"
+      },
+      "Tooltip": {
+        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
+        "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+      }
     },
     {
       "AbilCmd": "ForgeResearch,Research1",
       "id": "ProtossGroundWeaponsLevel1",
       "Icon": "btn-upgrade-protoss-groundweaponslevel1",
-      "Tooltip": "Upgrades the damage dealt by Protoss ground units.",
-      "Name": "Upgrade Ground Weapons Level 1"
+      "Name": {
+        "enUS": "Upgrade Ground Weapons Level 1",
+        "ruRU": "Upgrade Ground Weapons Level 1"
+      },
+      "Tooltip": {
+        "enUS": "Upgrades the damage dealt by Protoss ground units.",
+        "ruRU": "Upgrades the damage dealt by Protoss ground units."
+      }
     },
     {
       "AbilCmd": "ForgeResearch,Research2",
       "id": "ProtossGroundWeaponsLevel2",
       "Icon": "btn-upgrade-protoss-groundweaponslevel2",
-      "Tooltip": "Further upgrades the damage dealt by Protoss ground units.",
-      "Name": "Upgrade Ground Weapons Level 2"
+      "Name": {
+        "enUS": "Upgrade Ground Weapons Level 2",
+        "ruRU": "Upgrade Ground Weapons Level 2"
+      },
+      "Tooltip": {
+        "enUS": "Further upgrades the damage dealt by Protoss ground units.",
+        "ruRU": "Further upgrades the damage dealt by Protoss ground units."
+      }
     },
     {
       "AbilCmd": "ForgeResearch,Research3",
       "id": "ProtossGroundWeaponsLevel3",
       "Icon": "btn-upgrade-protoss-groundweaponslevel3",
-      "Tooltip": "Maximizes the damage dealt by Protoss ground units.",
-      "Name": "Upgrade Ground Weapons Level 3"
+      "Name": {
+        "enUS": "Upgrade Ground Weapons Level 3",
+        "ruRU": "Upgrade Ground Weapons Level 3"
+      },
+      "Tooltip": {
+        "enUS": "Maximizes the damage dealt by Protoss ground units.",
+        "ruRU": "Maximizes the damage dealt by Protoss ground units."
+      }
     },
     {
       "AbilCmd": "ForgeResearch,Research4",
       "id": "ProtossGroundArmorLevel1",
       "Icon": "btn-upgrade-protoss-groundarmorlevel1",
-      "Tooltip": "Upgrades the armor of Protoss ground units.",
-      "Name": "Upgrade Ground Armor Level 1"
+      "Name": {
+        "enUS": "Upgrade Ground Armor Level 1",
+        "ruRU": "Upgrade Ground Armor Level 1"
+      },
+      "Tooltip": {
+        "enUS": "Upgrades the armor of Protoss ground units.",
+        "ruRU": "Upgrades the armor of Protoss ground units."
+      }
     },
     {
       "AbilCmd": "ForgeResearch,Research5",
       "id": "ProtossGroundArmorLevel2",
       "Icon": "btn-upgrade-protoss-groundarmorlevel2",
-      "Tooltip": "Further upgrades the armor of Protoss ground units.",
-      "Name": "Upgrade Ground Armor Level 2"
+      "Name": {
+        "enUS": "Upgrade Ground Armor Level 2",
+        "ruRU": "Upgrade Ground Armor Level 2"
+      },
+      "Tooltip": {
+        "enUS": "Further upgrades the armor of Protoss ground units.",
+        "ruRU": "Further upgrades the armor of Protoss ground units."
+      }
     },
     {
       "AbilCmd": "ForgeResearch,Research6",
       "id": "ProtossGroundArmorLevel3",
       "Icon": "btn-upgrade-protoss-groundarmorlevel3",
-      "Tooltip": "Maximizes the armor of Protoss ground units.",
-      "Name": "Upgrade Ground Armor Level 3"
+      "Name": {
+        "enUS": "Upgrade Ground Armor Level 3",
+        "ruRU": "Upgrade Ground Armor Level 3"
+      },
+      "Tooltip": {
+        "enUS": "Maximizes the armor of Protoss ground units.",
+        "ruRU": "Maximizes the armor of Protoss ground units."
+      }
     },
     {
       "AbilCmd": "ForgeResearch,Research7",
       "id": "ProtossShieldsLevel1",
       "Icon": "btn-upgrade-protoss-shieldslevel1",
-      "Tooltip": "Upgrades the shields of all Protoss units and structures.",
-      "Name": "Upgrade Shields Level 1"
+      "Name": {
+        "enUS": "Upgrade Shields Level 1",
+        "ruRU": "Upgrade Shields Level 1"
+      },
+      "Tooltip": {
+        "enUS": "Upgrades the shields of all Protoss units and structures.",
+        "ruRU": "Upgrades the shields of all Protoss units and structures."
+      }
     },
     {
       "AbilCmd": "ForgeResearch,Research8",
       "id": "ProtossShieldsLevel2",
       "Icon": "btn-upgrade-protoss-shieldslevel2",
-      "Tooltip": "Further upgrades the shields of all Protoss units and structures.",
-      "Name": "Upgrade Shields Level 2"
+      "Name": {
+        "enUS": "Upgrade Shields Level 2",
+        "ruRU": "Upgrade Shields Level 2"
+      },
+      "Tooltip": {
+        "enUS": "Further upgrades the shields of all Protoss units and structures.",
+        "ruRU": "Further upgrades the shields of all Protoss units and structures."
+      }
     },
     {
       "AbilCmd": "ForgeResearch,Research9",
       "id": "ProtossShieldsLevel3",
       "Icon": "btn-upgrade-protoss-shieldslevel3",
-      "Tooltip": "Maximizes the shields of all Protoss units and structures.",
-      "Name": "Upgrade Shields Level 3"
+      "Name": {
+        "enUS": "Upgrade Shields Level 3",
+        "ruRU": "Upgrade Shields Level 3"
+      },
+      "Tooltip": {
+        "enUS": "Maximizes the shields of all Protoss units and structures.",
+        "ruRU": "Maximizes the shields of all Protoss units and structures."
+      }
     }
   ]
 }

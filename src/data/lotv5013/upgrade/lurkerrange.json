@@ -13,6 +13,13 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "LurkerRange",
+  "EditorCategories": "Race:Zerg,UpgradeType:Spell",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "Race": "Zerg",
   "ScoreAmount": 300,
   "ScoreResult": "BuildOrder",
@@ -26,7 +33,6 @@
       "Value": "2"
     }
   ],
-  "EditorCategories": "Race:Zerg,UpgradeType:Talents",
   "AffectedUnitArray": [
     "LurkerMP",
     "LurkerMPBurrowed"

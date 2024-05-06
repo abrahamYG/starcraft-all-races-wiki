@@ -1,6 +1,12 @@
 {
-  "Name": "Oracle",
-  "Description": "Flying caster. Can use Revelation, Stasis Ward, and Pulsar Beam.",
+  "Name": {
+    "ruRU": "Oracle",
+    "enUS": "Oracle"
+  },
+  "Description": {
+    "enUS": "Flying caster. Can use Revelation, Stasis Ward, and Pulsar Beam.",
+    "ruRU": "Flying caster. Can use Revelation, Stasis Ward, and Pulsar Beam."
+  },
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -12,7 +18,10 @@
   "ResourceType": "Unknown",
   "LifeStart": 100,
   "LifeMax": 100,
-  "LifeArmorName": "Protoss Plating",
+  "LifeArmorName": {
+    "enUS": "Protoss Plating",
+    "ruRU": "Protoss Plating"
+  },
   "Mover": "Fly",
   "StationaryTurningRate": 999.8437,
   "TurningRate": 999.8437,
@@ -79,6 +88,12 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "Mob": "Multiplayer",
   "PlaneArray": [
     "Air"
@@ -87,9 +102,9 @@
     "Flying"
   ],
   "Attributes": [
+    "Armored",
     "Mechanical",
-    "Psionic",
-    "Armored"
+    "Psionic"
   ],
   "EnergyStart": 50,
   "EnergyMax": 200,
@@ -98,7 +113,10 @@
   "ShieldsMax": 60,
   "ShieldRegenDelay": 10,
   "ShieldRegenRate": 2,
-  "ShieldArmorName": "Protoss Plasma Shields",
+  "ShieldArmorName": {
+    "enUS": "Protoss Plasma Shields",
+    "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+  },
   "Speed": 4,
   "Acceleration": 3,
   "Sight": 10,
@@ -140,6 +158,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -177,8 +201,7 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move",
-          "AbilSetId": "Move"
+          "id": "move"
         },
         "Cost": {
           "Minerals": 0,
@@ -196,8 +219,14 @@
         "AbilCmd": "move,Move",
         "id": "Move",
         "Icon": "btn-command-move",
-        "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
-        "Name": "Move",
+        "Name": {
+          "enUS": "Move",
+          "ruRU": "Двигаться /// Move"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+          "ruRU": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies."
+        },
         "Hotkey": "M"
       },
       {
@@ -219,6 +248,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "stop",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "AbilSetId": "Stop",
           "CmdButtonArray": {
             "Stop": {
@@ -264,8 +299,14 @@
         "AbilCmd": "stop,Stop",
         "id": "Stop",
         "Icon": "btn-command-stop",
-        "Tooltip": "Orders selected units to cancel all orders and stop moving.",
-        "Name": "Stop",
+        "Name": {
+          "enUS": "Stop",
+          "ruRU": "Отставить /// Stop"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to cancel all orders and stop moving.",
+          "ruRU": "Orders selected units to cancel all orders and stop moving."
+        },
         "Hotkey": "S"
       },
       {
@@ -293,6 +334,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -330,8 +377,7 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move",
-          "AbilSetId": "Move"
+          "id": "move"
         },
         "Cost": {
           "Minerals": 0,
@@ -349,8 +395,14 @@
         "AbilCmd": "move,HoldPos",
         "id": "MoveHoldPosition",
         "Icon": "btn-command-holdposition",
-        "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
-        "Name": "Hold Position",
+        "Name": {
+          "enUS": "Hold Position",
+          "ruRU": "Удерживать позицию /// Hold Position"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+          "ruRU": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage."
+        },
         "Hotkey": "H"
       },
       {
@@ -378,6 +430,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -415,8 +473,7 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move",
-          "AbilSetId": "Move"
+          "id": "move"
         },
         "Cost": {
           "Minerals": 0,
@@ -434,163 +491,15 @@
         "AbilCmd": "move,Patrol",
         "id": "MovePatrol",
         "Icon": "btn-command-patrol",
-        "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
-        "Name": "Patrol",
+        "Name": {
+          "enUS": "Patrol",
+          "ruRU": "Патрулировать /// Patrol"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+          "ruRU": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies."
+        },
         "Hotkey": "P"
-      },
-      {
-        "Info": {
-          "class": "CAbilAttack",
-          "Name": "Abil/Name/attack",
-          "TechPlayer": "Upkeep",
-          "EditorCategories": "Race:Neutral,AbilityorEffectType:Units",
-          "TargetMessage": "Abil/TargetMessage/attack",
-          "OrderArray": [
-            {
-              "DisplayType": "Attack",
-              "Color": "255,255,0,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            }
-          ],
-          "SharedFlags": {
-            "DisableWhileDead": 1
-          },
-          "DataCollection": "attack",
-          "AbilSetId": "Attack",
-          "Alignment": "Negative",
-          "AcquireFilters": "-;Player,Ally,Neutral,Dead,Hidden,Invulnerable,Benign",
-          "SmartFilters": "-;Player,Ally",
-          "SupportedFilters": "-;Self,Outer",
-          "CmdButtonArray": {
-            "Execute": {
-              "Flags": {
-                "ToSelection": 1
-              },
-              "DefaultButtonFace": "Attack"
-            },
-            "Towards": {
-              "Flags": {
-                "ToSelection": 1
-              },
-              "DefaultButtonFace": "AttackTowards"
-            },
-            "Barrage": {
-              "Flags": {
-                "ToSelection": 1
-              },
-              "DefaultButtonFace": "AttackBarrage"
-            }
-          },
-          "MaxAttackSpeedMultiplier": 128,
-          "MinAttackSpeedMultiplier": 0.25,
-          "AcquirePriority": 2,
-          "id": "attack"
-        },
-        "Cost": {
-          "Minerals": 0,
-          "Vespene": 0,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 0,
-        "Column": 4,
-        "Type": "AbilCmd",
-        "AbilCmd": "attack,Execute",
-        "id": "OracleAttack",
-        "Icon": "btn-command-attack",
-        "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
-        "Name": "Attack",
-        "Hotkey": "A"
-      },
-      {
-        "Info": {
-          "class": "CAbilMove",
-          "Name": "Abil/Name/move",
-          "TechPlayer": "Upkeep",
-          "EditorCategories": "Race:Neutral,AbilityorEffectType:Units",
-          "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
-          "OrderArray": [
-            {
-              "DisplayType": "Move",
-              "Color": "255,0,255,0",
-              "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            },
-            {
-              "DisplayType": "Move",
-              "Color": "255,35,125,255",
-              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
-              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
-            }
-          ],
-          "SharedFlags": {
-            "DisableWhileDead": 1
-          },
-          "DataCollection": "move",
-          "CmdButtonArray": {
-            "Move": {
-              "Flags": {
-                "ToSelection": 1
-              },
-              "DefaultButtonFace": "Move"
-            },
-            "Patrol": {
-              "Flags": {
-                "ToSelection": 1
-              },
-              "DefaultButtonFace": "MovePatrol"
-            },
-            "HoldPos": {
-              "Flags": {
-                "ToSelection": 1
-              },
-              "DefaultButtonFace": "MoveHoldPosition"
-            },
-            "AcquireMove": {
-              "Flags": {
-                "ToSelection": 1
-              },
-              "DefaultButtonFace": "AcquireMove"
-            },
-            "Turn": {
-              "Flags": {
-                "ToSelection": 1
-              },
-              "DefaultButtonFace": "Turn"
-            }
-          },
-          "FleeRange": 5,
-          "FleeTime": 5,
-          "FollowRangeSlop": 1,
-          "FollowAcquireRange": 6,
-          "MinPatrolDistance": 1,
-          "id": "move",
-          "AbilSetId": "Move"
-        },
-        "Cost": {
-          "Minerals": 0,
-          "Vespene": 0,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 0,
-        "Column": 4,
-        "Type": "AbilCmd",
-        "AbilCmd": "move,AcquireMove",
-        "id": "AcquireMove",
-        "Icon": "btn-command-attack",
-        "Tooltip": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies.",
-        "Name": "Scan Move",
-        "Hotkey": "A"
       },
       {
         "Info": {
@@ -611,6 +520,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "OracleRevelation",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "RangeSlop": 1,
           "ArcSlop": 11.25,
           "AutoCastAcquireLevel": "Offensive",
@@ -622,7 +537,7 @@
             "RangeUseCasterRadius": 1,
             "ReApproachable": 1,
             "RequireTargetVision": 1,
-            "WaitToSpend": 0,
+            "WaitToSpend": 1,
             "UpdateChargesOnLevelChange": 1,
             "BestUnit": 1,
             "AllowMovement": 1
@@ -721,14 +636,197 @@
           "Food": 0
         },
         "Row": 2,
-        "Column": 0,
+        "Column": 1,
         "Type": "AbilCmd",
         "AbilCmd": "OracleRevelation,Execute",
         "id": "OracleRevelation",
         "Icon": "btn-ability-protoss-preordain",
-        "Tooltip": "Causes enemy units and structures within the target area to grant vision for <b>28</b> seconds. Reveals cloaked or burrowed units and structures.",
-        "Name": "Revelation",
+        "Name": {
+          "enUS": "Revelation",
+          "ruRU": "Revelation"
+        },
+        "Tooltip": {
+          "enUS": "Causes enemy units and structures within the target area to grant vision for <b>28</b> seconds. Reveals cloaked or burrowed units and structures.",
+          "ruRU": "Causes enemy units and structures within the target area to grant vision for <b>28</b> seconds. Reveals cloaked or burrowed units and structures."
+        },
         "Hotkey": "R"
+      },
+      {
+        "Info": {
+          "class": "CAbilAttack",
+          "Name": "Abil/Name/attack",
+          "TechPlayer": "Upkeep",
+          "EditorCategories": "Race:Neutral,AbilityorEffectType:Units",
+          "TargetMessage": "Abil/TargetMessage/attack",
+          "OrderArray": [
+            {
+              "DisplayType": "Attack",
+              "Color": "255,255,0,0",
+              "Model": "Assets\\UI\\Cursors\\WayPointAttack_Void\\WayPointAttack_Void.m3",
+              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
+            }
+          ],
+          "SharedFlags": {
+            "DisableWhileDead": 1
+          },
+          "DataCollection": "attack",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
+          "AbilSetId": "Attack",
+          "Alignment": "Negative",
+          "AcquireFilters": "-;Player,Ally,Neutral,Dead,Hidden,Invulnerable,Benign",
+          "SmartFilters": "-;Player,Ally",
+          "SupportedFilters": "-;Self,Outer",
+          "CmdButtonArray": {
+            "Execute": {
+              "Flags": {
+                "ToSelection": 1
+              },
+              "DefaultButtonFace": "Attack"
+            },
+            "Towards": {
+              "Flags": {
+                "ToSelection": 1
+              },
+              "DefaultButtonFace": "AttackTowards"
+            },
+            "Barrage": {
+              "Flags": {
+                "ToSelection": 1
+              },
+              "DefaultButtonFace": "AttackBarrage"
+            }
+          },
+          "MaxAttackSpeedMultiplier": 128,
+          "MinAttackSpeedMultiplier": 0.25,
+          "AcquirePriority": 2,
+          "id": "attack"
+        },
+        "Cost": {
+          "Minerals": 0,
+          "Vespene": 0,
+          "Terazine": 0,
+          "Custom": 0,
+          "Energy": 0,
+          "Life": 0,
+          "Shields": 0,
+          "Food": 0
+        },
+        "Row": 0,
+        "Column": 4,
+        "Type": "AbilCmd",
+        "AbilCmd": "attack,Execute",
+        "id": "OracleAttack",
+        "Icon": "btn-command-attack",
+        "Name": {
+          "enUS": "Attack",
+          "ruRU": "Attack"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+          "ruRU": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed."
+        },
+        "Hotkey": "A"
+      },
+      {
+        "Info": {
+          "class": "CAbilMove",
+          "Name": "Abil/Name/move",
+          "TechPlayer": "Upkeep",
+          "EditorCategories": "Race:Neutral,AbilityorEffectType:Units",
+          "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
+          "OrderArray": [
+            {
+              "DisplayType": "Move",
+              "Color": "255,0,255,0",
+              "Model": "Assets\\UI\\Cursors\\WayPointMove_Void\\WayPointMove_Void.m3",
+              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
+            },
+            {
+              "DisplayType": "Move",
+              "Color": "255,35,125,255",
+              "Model": "Assets\\UI\\Cursors\\WayPointConfirm_Void\\WayPointConfirm_Void.m3",
+              "LineTexture": "Assets\\Textures\\WayPointLine.dds"
+            }
+          ],
+          "SharedFlags": {
+            "DisableWhileDead": 1
+          },
+          "DataCollection": "move",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
+          "CmdButtonArray": {
+            "Move": {
+              "Flags": {
+                "ToSelection": 1
+              },
+              "DefaultButtonFace": "Move"
+            },
+            "Patrol": {
+              "Flags": {
+                "ToSelection": 1
+              },
+              "DefaultButtonFace": "MovePatrol"
+            },
+            "HoldPos": {
+              "Flags": {
+                "ToSelection": 1
+              },
+              "DefaultButtonFace": "MoveHoldPosition"
+            },
+            "AcquireMove": {
+              "Flags": {
+                "ToSelection": 1
+              },
+              "DefaultButtonFace": "AcquireMove"
+            },
+            "Turn": {
+              "Flags": {
+                "ToSelection": 1
+              },
+              "DefaultButtonFace": "Turn"
+            }
+          },
+          "FleeRange": 5,
+          "FleeTime": 5,
+          "FollowRangeSlop": 1,
+          "FollowAcquireRange": 6,
+          "MinPatrolDistance": 1,
+          "id": "move"
+        },
+        "Cost": {
+          "Minerals": 0,
+          "Vespene": 0,
+          "Terazine": 0,
+          "Custom": 0,
+          "Energy": 0,
+          "Life": 0,
+          "Shields": 0,
+          "Food": 0
+        },
+        "Row": 0,
+        "Column": 4,
+        "Type": "AbilCmd",
+        "AbilCmd": "move,AcquireMove",
+        "id": "AcquireMove",
+        "Icon": "btn-command-attack",
+        "Name": {
+          "enUS": "Scan Move",
+          "ruRU": "Двигаться в режиме наблюдения /// Scan Move"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies.",
+          "ruRU": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies."
+        },
+        "Hotkey": "A"
       },
       {
         "Info": {
@@ -758,13 +856,19 @@
           "Food": 0
         },
         "Row": 2,
-        "Column": 1,
+        "Column": 0,
         "Type": "AbilCmd",
         "AbilCmd": "OracleStasisTrapBuild,Build1",
         "id": "OracleBuildStasisTrap",
         "Icon": "btn-ability-protoss-oracle-stasisward",
-        "Tooltip": "Places a cloaked Stasis Ward at the target location that lasts <b>238</b> seconds. Once activated by an enemy ground unit, the ward traps nearby enemies in stasis for <b>30</b> seconds. Trapped units cannot be attacked or affected by abilities.",
-        "Name": "Stasis Ward",
+        "Name": {
+          "enUS": "Stasis Ward",
+          "ruRU": "Stasis Ward"
+        },
+        "Tooltip": {
+          "enUS": "Places a cloaked Stasis Ward at the target location. Once activated by an enemy ground unit, the ward traps nearby enemies in stasis for <b>30</b> seconds. Trapped units cannot be attacked or affected by abilities.",
+          "ruRU": "Places a cloaked Stasis Ward at the target location. Once activated by an enemy ground unit, the ward traps nearby enemies in stasis for <b>30</b> seconds. Trapped units cannot be attacked or affected by abilities."
+        },
         "Hotkey": "T"
       },
       {
@@ -786,6 +890,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "OracleWeapon",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "On": {
               "Flags": {
@@ -838,8 +948,14 @@
         "AbilCmd": "OracleWeapon,On",
         "id": "OracleWeaponOn",
         "Icon": "btn-ability-protoss-oraclepulsarcannonon",
-        "Tooltip": "Charges the Oracle's Pulsar Beam and allows it to attack enemy ground units.<br/><br/><span style=\"color: #f078ff\">Drains <b>1.4</b> energy per second.</span>",
-        "Name": "Activate Pulsar Beam",
+        "Name": {
+          "enUS": "Activate Pulsar Beam",
+          "ruRU": "Activate Pulsar Beam"
+        },
+        "Tooltip": {
+          "enUS": "Charges the Oracle's Pulsar Beam and allows it to attack enemy ground units.<br/><br/><span style=\"color: f078ff\">Drains <b>1.4</b> energy per second.</span>",
+          "ruRU": "Charges the Oracle's Pulsar Beam and allows it to attack enemy ground units.<br/><br/><span style=\"color: f078ff\">Drains <b>1.4</b> energy per second.</span>"
+        },
         "Hotkey": "C"
       },
       {
@@ -861,6 +977,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "OracleWeapon",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "On": {
               "Flags": {
@@ -913,8 +1035,14 @@
         "AbilCmd": "OracleWeapon,Off",
         "id": "OracleWeaponOff",
         "Icon": "btn-ability-protoss-oraclepulsarcannonoff",
-        "Tooltip": "Deactivates the Oracle's Pulsar Beam and prevents it from attacking.",
-        "Name": "Deactivate Pulsar Beam",
+        "Name": {
+          "enUS": "Deactivate Pulsar Beam",
+          "ruRU": "Deactivate Pulsar Beam"
+        },
+        "Tooltip": {
+          "enUS": "Deactivates the Oracle's Pulsar Beam and prevents it from attacking.",
+          "ruRU": "Deactivates the Oracle's Pulsar Beam and prevents it from attacking."
+        },
         "Hotkey": "D"
       },
       {
@@ -936,6 +1064,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "OracleStasisTrapBuild",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "HaltCmdButton": {
             "DefaultButtonFace": "Cancel"
           },
@@ -1204,8 +1338,14 @@
         "AbilCmd": "OracleStasisTrapBuild,Halt",
         "id": "Cancel",
         "Icon": "btn-command-cancel",
-        "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
-        "Name": "Cancel",
+        "Name": {
+          "enUS": "Cancel",
+          "ruRU": "Отменить /// Cancel"
+        },
+        "Tooltip": {
+          "enUS": "Drops the current order without performing it, and allows you to select a different order.",
+          "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+        },
         "Hotkey": "Esc"
       }
     ]
@@ -1217,7 +1357,9 @@
   "GlossaryPriority": 168,
   "ScoreMake": 300,
   "ScoreKill": 300,
-  "id": "Oracle",
+  "TauntDuration": {
+    "Dance": 5
+  },
   "KillDisplay": "Always",
   "RankDisplay": "Always",
   "GlossaryStrongArray": [
@@ -1230,6 +1372,7 @@
     "Mutalisk",
     "Phoenix"
   ],
+  "id": "Oracle",
   "Icon": "btn-unit-protoss-oracle",
   "LifeArmorIcon": "btn-upgrade-protoss-airarmorlevel0",
   "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
@@ -1237,7 +1380,10 @@
     {
       "id": "Oracle",
       "Icon": "btn-ability-protoss-oraclepulsarcannonon",
-      "Name": "Pulsar Beam",
+      "Name": {
+        "enUS": "Pulsar Beam",
+        "ruRU": "Pulsar Beam"
+      },
       "Amount": 15,
       "AttributeBonus": {
         "Light": 7
@@ -1252,37 +1398,58 @@
   "Abilities": [
     {
       "id": "stop",
-      "Name": "Stop"
+      "Name": {
+        "enUS": "Stop",
+        "ruRU": "Stop"
+      }
     },
     {
       "id": "move",
-      "Name": "Move"
+      "Name": {
+        "enUS": "Move",
+        "ruRU": "Move"
+      }
     },
     {
       "id": "OracleRevelation",
-      "Name": "Oracle Revelation"
+      "Name": {
+        "enUS": "Oracle Revelation",
+        "ruRU": "Oracle Revelation"
+      }
     },
     {
       "id": "Warpable",
-      "Name": "Warpable"
+      "Name": {
+        "enUS": "Warpable",
+        "ruRU": "Warpable"
+      }
     },
     {
       "id": "attack",
-      "Name": "Attack"
+      "Name": {
+        "ruRU": "Attack",
+        "enUS": "Attack"
+      }
     },
     {
       "id": "OracleWeapon",
-      "Name": "Oracle Weapon"
+      "Name": {
+        "enUS": "Oracle Weapon",
+        "ruRU": "Oracle Weapon"
+      }
     },
     {
       "id": "OracleStasisTrapBuild",
-      "Name": "Build Stasis Ward"
+      "Name": {
+        "enUS": "Build Stasis Ward",
+        "ruRU": "Build Stasis Ward"
+      }
     }
   ],
   "$Upgrades": [
     "Oracle",
     "Oracle",
-    "NotOracle",
+    "Button/Tooltip/OracleWeaponOn",
     "ProtossAirArmorsLevel1",
     "ProtossAirArmorsLevel2",
     "ProtossAirArmorsLevel3",
@@ -1296,22 +1463,7 @@
     "OracleNormalMode",
     "Oracle_Death",
     "IsOracle",
-    "RewardDanceOracle",
-    "OracleEnergyUpgrade",
-    "RestoreShields",
-    "OracleBase",
-    "Oracle",
-    "OracleTaldarim",
-    "OraclePurifier",
-    "OracleGolden",
-    "OracleIhanrii",
-    "DefaultSkinPack",
-    "OracleTaldarimSkinPack",
-    "OraclePurifierSkinPack",
-    "OracleGolden",
-    "OracleIhanrii",
-    null,
-    null
+    "NotOracle"
   ],
   "$Requirements": [],
   "$Production": [
@@ -1328,78 +1480,144 @@
       "AbilCmd": "move,Move",
       "id": "Move",
       "Icon": "btn-command-move",
-      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
-      "Name": "Move"
+      "Name": {
+        "enUS": "Move",
+        "ruRU": "Двигаться /// Move"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+        "ruRU": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies."
+      }
     },
     {
       "AbilCmd": "stop,Stop",
       "id": "Stop",
       "Icon": "btn-command-stop",
-      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
-      "Name": "Stop"
+      "Name": {
+        "enUS": "Stop",
+        "ruRU": "Отставить /// Stop"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to cancel all orders and stop moving.",
+        "ruRU": "Orders selected units to cancel all orders and stop moving."
+      }
     },
     {
       "AbilCmd": "move,HoldPos",
       "id": "MoveHoldPosition",
       "Icon": "btn-command-holdposition",
-      "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
-      "Name": "Hold Position"
+      "Name": {
+        "enUS": "Hold Position",
+        "ruRU": "Удерживать позицию /// Hold Position"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+        "ruRU": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage."
+      }
     },
     {
       "AbilCmd": "move,Patrol",
       "id": "MovePatrol",
       "Icon": "btn-command-patrol",
-      "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
-      "Name": "Patrol"
-    },
-    {
-      "AbilCmd": "attack,Execute",
-      "id": "OracleAttack",
-      "Icon": "btn-command-attack",
-      "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
-      "Name": "Attack"
-    },
-    {
-      "AbilCmd": "move,AcquireMove",
-      "id": "AcquireMove",
-      "Icon": "btn-command-attack",
-      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies.",
-      "Name": "Scan Move"
+      "Name": {
+        "enUS": "Patrol",
+        "ruRU": "Патрулировать /// Patrol"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+        "ruRU": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies."
+      }
     },
     {
       "AbilCmd": "OracleRevelation,Execute",
       "id": "OracleRevelation",
       "Icon": "btn-ability-protoss-preordain",
-      "Tooltip": "Causes enemy units and structures within the target area to grant vision for <b>28</b> seconds. Reveals cloaked or burrowed units and structures.",
-      "Name": "Revelation"
+      "Name": {
+        "enUS": "Revelation",
+        "ruRU": "Revelation"
+      },
+      "Tooltip": {
+        "enUS": "Causes enemy units and structures within the target area to grant vision for <b>28</b> seconds. Reveals cloaked or burrowed units and structures.",
+        "ruRU": "Causes enemy units and structures within the target area to grant vision for <b>28</b> seconds. Reveals cloaked or burrowed units and structures."
+      }
+    },
+    {
+      "AbilCmd": "attack,Execute",
+      "id": "OracleAttack",
+      "Icon": "btn-command-attack",
+      "Name": {
+        "enUS": "Attack",
+        "ruRU": "Attack"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+        "ruRU": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed."
+      }
+    },
+    {
+      "AbilCmd": "move,AcquireMove",
+      "id": "AcquireMove",
+      "Icon": "btn-command-attack",
+      "Name": {
+        "enUS": "Scan Move",
+        "ruRU": "Двигаться в режиме наблюдения /// Scan Move"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies.",
+        "ruRU": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies."
+      }
     },
     {
       "AbilCmd": "OracleStasisTrapBuild,Build1",
       "id": "OracleBuildStasisTrap",
       "Icon": "btn-ability-protoss-oracle-stasisward",
-      "Tooltip": "Places a cloaked Stasis Ward at the target location that lasts <b>238</b> seconds. Once activated by an enemy ground unit, the ward traps nearby enemies in stasis for <b>30</b> seconds. Trapped units cannot be attacked or affected by abilities.",
-      "Name": "Stasis Ward"
+      "Name": {
+        "enUS": "Stasis Ward",
+        "ruRU": "Stasis Ward"
+      },
+      "Tooltip": {
+        "enUS": "Places a cloaked Stasis Ward at the target location. Once activated by an enemy ground unit, the ward traps nearby enemies in stasis for <b>30</b> seconds. Trapped units cannot be attacked or affected by abilities.",
+        "ruRU": "Places a cloaked Stasis Ward at the target location. Once activated by an enemy ground unit, the ward traps nearby enemies in stasis for <b>30</b> seconds. Trapped units cannot be attacked or affected by abilities."
+      }
     },
     {
       "AbilCmd": "OracleWeapon,On",
       "id": "OracleWeaponOn",
       "Icon": "btn-ability-protoss-oraclepulsarcannonon",
-      "Tooltip": "Charges the Oracle's Pulsar Beam and allows it to attack enemy ground units.<br/><br/><span style=\"color: #f078ff\">Drains <b>1.4</b> energy per second.</span>",
-      "Name": "Activate Pulsar Beam"
+      "Name": {
+        "enUS": "Activate Pulsar Beam",
+        "ruRU": "Activate Pulsar Beam"
+      },
+      "Tooltip": {
+        "enUS": "Charges the Oracle's Pulsar Beam and allows it to attack enemy ground units.<br/><br/><span style=\"color: f078ff\">Drains <b>1.4</b> energy per second.</span>",
+        "ruRU": "Charges the Oracle's Pulsar Beam and allows it to attack enemy ground units.<br/><br/><span style=\"color: f078ff\">Drains <b>1.4</b> energy per second.</span>"
+      }
     },
     {
       "AbilCmd": "OracleWeapon,Off",
       "id": "OracleWeaponOff",
       "Icon": "btn-ability-protoss-oraclepulsarcannonoff",
-      "Tooltip": "Deactivates the Oracle's Pulsar Beam and prevents it from attacking.",
-      "Name": "Deactivate Pulsar Beam"
+      "Name": {
+        "enUS": "Deactivate Pulsar Beam",
+        "ruRU": "Deactivate Pulsar Beam"
+      },
+      "Tooltip": {
+        "enUS": "Deactivates the Oracle's Pulsar Beam and prevents it from attacking.",
+        "ruRU": "Deactivates the Oracle's Pulsar Beam and prevents it from attacking."
+      }
     },
     {
       "AbilCmd": "OracleStasisTrapBuild,Halt",
       "id": "Cancel",
       "Icon": "btn-command-cancel",
-      "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
-      "Name": "Cancel"
+      "Name": {
+        "enUS": "Cancel",
+        "ruRU": "Отменить /// Cancel"
+      },
+      "Tooltip": {
+        "enUS": "Drops the current order without performing it, and allows you to select a different order.",
+        "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+      }
     }
   ]
 }

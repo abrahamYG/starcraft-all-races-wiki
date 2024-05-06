@@ -12,10 +12,16 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "DarkTemplarBlinkUpgrade",
+  "EditorCategories": "Race:Protoss,UpgradeType:Spell",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "Race": "Prot",
   "ScoreAmount": 200,
   "ScoreResult": "BuildOrder",
-  "EditorCategories": "Race:Protoss,UpgradeType:SpellResearch",
   "AffectedUnitArray": [
     "DarkTemplar"
   ]

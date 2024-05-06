@@ -1,6 +1,12 @@
 {
-  "Name": "Drone",
-  "Description": "Basic worker unit. Can harvest minerals and vespene gas. Can mutate into structures.<br/><br/><c val=\"#ColorAttackInfo\">Can attack ground units.</span>",
+  "Name": {
+    "enUS": "Drone",
+    "ruRU": "Drone"
+  },
+  "Description": {
+    "enUS": "Basic worker unit. Can harvest minerals and vespene gas. Can mutate into structures.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
+    "ruRU": "Basic worker unit. Can harvest minerals and vespene gas. Can mutate into structures.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>"
+  },
   "DeathRevealFilters": "Visible;Player,Ally,Neutral,Missile,Dead,Hidden",
   "DeathRevealRadius": 3,
   "DeathRevealDuration": 4,
@@ -12,7 +18,10 @@
   "ResourceType": "Unknown",
   "LifeStart": 40,
   "LifeMax": 40,
-  "LifeArmorName": "Zerg Ground Carapace",
+  "LifeArmorName": {
+    "enUS": "Zerg Ground Carapace",
+    "ruRU": "Zerg Ground Carapace"
+  },
   "Mover": "Ground",
   "StationaryTurningRate": 999.8437,
   "TurningRate": 999.8437,
@@ -74,6 +83,12 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
+  "$tokens": {
+    "ID": {
+      "type": "string",
+      "value": ""
+    }
+  },
   "Mob": "Multiplayer",
   "LifeRegenRate": 0.2734,
   "Speed": 2.8125,
@@ -97,8 +112,7 @@
   "Collide": [
     "Ground",
     "ForceField",
-    "Small",
-    "Locust"
+    "Small"
   ],
   "Sight": 8,
   "CardLayouts": {
@@ -128,6 +142,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -165,8 +185,7 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move",
-          "AbilSetId": "Move"
+          "id": "move"
         },
         "Cost": {
           "Minerals": 0,
@@ -184,8 +203,14 @@
         "AbilCmd": "move,Move",
         "id": "Move",
         "Icon": "btn-command-move",
-        "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
-        "Name": "Move",
+        "Name": {
+          "enUS": "Move",
+          "ruRU": "Двигаться /// Move"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+          "ruRU": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies."
+        },
         "Hotkey": "M"
       },
       {
@@ -207,6 +232,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "stop",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "AbilSetId": "Stop",
           "CmdButtonArray": {
             "Stop": {
@@ -252,8 +283,14 @@
         "AbilCmd": "stop,Stop",
         "id": "Stop",
         "Icon": "btn-command-stop",
-        "Tooltip": "Orders selected units to cancel all orders and stop moving.",
-        "Name": "Stop",
+        "Name": {
+          "enUS": "Stop",
+          "ruRU": "Отставить /// Stop"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to cancel all orders and stop moving.",
+          "ruRU": "Orders selected units to cancel all orders and stop moving."
+        },
         "Hotkey": "S"
       },
       {
@@ -281,6 +318,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -318,8 +361,7 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move",
-          "AbilSetId": "Move"
+          "id": "move"
         },
         "Cost": {
           "Minerals": 0,
@@ -337,8 +379,14 @@
         "AbilCmd": "move,HoldPos",
         "id": "MoveHoldPosition",
         "Icon": "btn-command-holdposition",
-        "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
-        "Name": "Hold Position",
+        "Name": {
+          "enUS": "Hold Position",
+          "ruRU": "Удерживать позицию /// Hold Position"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+          "ruRU": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage."
+        },
         "Hotkey": "H"
       },
       {
@@ -360,6 +408,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "attack",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "AbilSetId": "Attack",
           "Alignment": "Negative",
           "AcquireFilters": "-;Player,Ally,Neutral,Dead,Hidden,Invulnerable,Benign",
@@ -405,8 +459,14 @@
         "Type": "AbilCmd",
         "AbilCmd": "attack,Execute",
         "id": "AttackWorker",
-        "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
-        "Name": "Attack",
+        "Name": {
+          "enUS": "Attack",
+          "ruRU": "Атаковать /// Attack"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+          "ruRU": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed."
+        },
         "Hotkey": "A"
       },
       {
@@ -434,6 +494,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -471,8 +537,7 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move",
-          "AbilSetId": "Move"
+          "id": "move"
         },
         "Cost": {
           "Minerals": 0,
@@ -490,8 +555,14 @@
         "AbilCmd": "move,Patrol",
         "id": "MovePatrol",
         "Icon": "btn-command-patrol",
-        "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
-        "Name": "Patrol",
+        "Name": {
+          "enUS": "Patrol",
+          "ruRU": "Патрулировать /// Patrol"
+        },
+        "Tooltip": {
+          "enUS": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+          "ruRU": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies."
+        },
         "Hotkey": "P"
       },
       {
@@ -513,6 +584,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "DroneHarvest",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Gather": {
               "Flags": {
@@ -579,8 +656,14 @@
         "AbilCmd": "DroneHarvest,Return",
         "id": "ReturnCargo",
         "Icon": "btn-command-returncargo",
-        "Tooltip": "Returns the carried resources to the nearest drop-off point.",
-        "Name": "Return Cargo",
+        "Name": {
+          "enUS": "Return Cargo",
+          "ruRU": "Return Cargo"
+        },
+        "Tooltip": {
+          "enUS": "Returns the carried resources to the nearest drop-off point.",
+          "ruRU": "Returns the carried resources to the nearest drop-off point."
+        },
         "Hotkey": "C"
       },
       {
@@ -601,8 +684,14 @@
         "SubmenuCardId": "ZBl1",
         "id": "ZergBuild",
         "Icon": "btn-ability-zerg-basicmutation",
-        "Tooltip": "A list of basic structures.",
-        "Name": "Basic Mutation",
+        "Name": {
+          "enUS": "Basic Mutation",
+          "ruRU": "Basic Mutation"
+        },
+        "Tooltip": {
+          "enUS": "A list of basic structures.",
+          "ruRU": "A list of basic structures."
+        },
         "Hotkey": "B"
       },
       {
@@ -623,8 +712,14 @@
         "SubmenuCardId": "ZBl2",
         "id": "ZergBuildAdvanced",
         "Icon": "btn-ability-zerg-advancedmutation",
-        "Tooltip": "A list of advanced structures.",
-        "Name": "Advanced Mutation",
+        "Name": {
+          "enUS": "Advanced Mutation",
+          "ruRU": "Advanced Mutation"
+        },
+        "Tooltip": {
+          "enUS": "A list of advanced structures.",
+          "ruRU": "A list of advanced structures."
+        },
         "Hotkey": "V"
       },
       {
@@ -666,8 +761,14 @@
         "AbilCmd": "BurrowDroneDown,Execute",
         "id": "BurrowDown",
         "Icon": "btn-ability-zerg-burrow-color",
-        "Tooltip": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
-        "Name": "Burrow",
+        "Name": {
+          "enUS": "Burrow",
+          "ruRU": "Burrow"
+        },
+        "Tooltip": {
+          "enUS": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
+          "ruRU": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection."
+        },
         "Hotkey": "D"
       },
       {
@@ -689,6 +790,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "DroneHarvest",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "CmdButtonArray": {
             "Gather": {
               "Flags": {
@@ -755,901 +862,22 @@
         "AbilCmd": "DroneHarvest,Gather",
         "id": "GatherZerg",
         "Icon": "btn-ability-zerg-gather",
-        "Tooltip": "Orders Drone to gather resources from a selected Mineral Field or Vespene Geyser.",
-        "Name": "Gather",
+        "Name": {
+          "enUS": "Gather",
+          "ruRU": "Gather"
+        },
+        "Tooltip": {
+          "enUS": "Orders Drone to gather resources from a selected Mineral Field or Vespene Geyser.",
+          "ruRU": "Orders Drone to gather resources from a selected Mineral Field or Vespene Geyser."
+        },
         "Hotkey": "G"
-      },
-      {
-        "Info": {
-          "SectionArray": {
-            "Actor": {
-              "DurationArray": {
-                "Duration": 1.333
-              }
-            },
-            "Collide": {
-              "DurationArray": {
-                "Delay": 0.8332
-              }
-            },
-            "Stats": {
-              "DurationArray": {
-                "Delay": 1.1665
-              }
-            }
-          },
-          "Unit": "DroneBurrowed",
-          "RandomDelayMax": 0.25
-        },
-        "Unit": "DroneBurrowed",
-        "Cost": {
-          "Minerals": 50,
-          "Vespene": 0,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": -1
-        },
-        "Row": 2,
-        "Column": 3,
-        "Type": "AbilCmd",
-        "AbilCmd": "BurrowDroneDown,Execute",
-        "id": "BurrowDown",
-        "Icon": "btn-ability-zerg-burrow-color",
-        "Tooltip": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
-        "Name": "Burrow",
-        "Hotkey": "D"
-      },
-      {
-        "Info": {
-          "SectionArray": {
-            "Actor": {
-              "DurationArray": {
-                "Duration": 1.333
-              }
-            },
-            "Collide": {
-              "DurationArray": {
-                "Delay": 0.5556
-              }
-            },
-            "Stats": {
-              "DurationArray": {
-                "Delay": 1
-              }
-            }
-          },
-          "Unit": "ZerglingBurrowed",
-          "RandomDelayMax": 0.3703
-        },
-        "Unit": "ZerglingBurrowed",
-        "Cost": {
-          "Minerals": 25,
-          "Vespene": 0,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": -0.5
-        },
-        "Row": 2,
-        "Column": 3,
-        "Type": "AbilCmd",
-        "AbilCmd": "BurrowZerglingDown,Execute",
-        "id": "BurrowDown",
-        "Icon": "btn-ability-zerg-burrow-color",
-        "Tooltip": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
-        "Name": "Burrow",
-        "Hotkey": "D"
-      },
-      {
-        "Info": {
-          "SectionArray": {
-            "Actor": {
-              "DurationArray": {
-                "Duration": 1
-              }
-            },
-            "Collide": {
-              "DurationArray": {
-                "Delay": 0.5556
-              }
-            },
-            "Stats": {
-              "DurationArray": {
-                "Delay": 1
-              }
-            }
-          },
-          "Unit": "BanelingBurrowed",
-          "RandomDelayMax": 0.3703
-        },
-        "Unit": "BanelingBurrowed",
-        "Cost": {
-          "Minerals": 50,
-          "Vespene": 25,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": -0.5
-        },
-        "Row": 2,
-        "Column": 3,
-        "Type": "AbilCmd",
-        "AbilCmd": "BurrowBanelingDown,Execute",
-        "id": "BurrowDown",
-        "Icon": "btn-ability-zerg-burrow-color",
-        "Tooltip": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
-        "Name": "Burrow",
-        "Hotkey": "D"
-      },
-      {
-        "Info": {
-          "SectionArray": {
-            "Actor": {
-              "DurationArray": {
-                "Duration": 0.5556
-              }
-            },
-            "Collide": {
-              "DurationArray": {
-                "Delay": 0.5556
-              }
-            },
-            "Stats": {
-              "DurationArray": {
-                "Delay": 0.5556
-              }
-            }
-          },
-          "Unit": "RoachBurrowed",
-          "RandomDelayMax": 0.1
-        },
-        "Unit": "RoachBurrowed",
-        "Cost": {
-          "Minerals": 75,
-          "Vespene": 25,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": -2
-        },
-        "Row": 2,
-        "Column": 3,
-        "Type": "AbilCmd",
-        "AbilCmd": "BurrowRoachDown,Execute",
-        "id": "BurrowDown",
-        "Icon": "btn-ability-zerg-burrow-color",
-        "Tooltip": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
-        "Name": "Burrow",
-        "Hotkey": "D"
-      },
-      {
-        "Info": {
-          "SectionArray": {
-            "Actor": {
-              "DurationArray": {
-                "Duration": 1.333
-              }
-            },
-            "Collide": {
-              "DurationArray": {
-                "Delay": 0.5556
-              }
-            },
-            "Stats": {
-              "DurationArray": {
-                "Delay": 1.166
-              }
-            }
-          },
-          "Unit": "HydraliskBurrowed",
-          "RandomDelayMax": 0.3703
-        },
-        "Unit": "HydraliskBurrowed",
-        "Cost": {
-          "Minerals": 100,
-          "Vespene": 50,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": -2
-        },
-        "Row": 2,
-        "Column": 3,
-        "Type": "AbilCmd",
-        "AbilCmd": "BurrowHydraliskDown,Execute",
-        "id": "BurrowDown",
-        "Icon": "btn-ability-zerg-burrow-color",
-        "Tooltip": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
-        "Name": "Burrow",
-        "Hotkey": "D"
-      },
-      {
-        "Info": {
-          "SectionArray": {
-            "Actor": {
-              "DurationArray": {
-                "Duration": 0.5556
-              }
-            },
-            "Collide": {
-              "DurationArray": {
-                "Delay": 0.5556
-              }
-            },
-            "Stats": {
-              "DurationArray": {
-                "Delay": 0.5556
-              }
-            }
-          },
-          "Unit": "RavagerBurrowed",
-          "RandomDelayMax": 0.1
-        },
-        "Unit": "RavagerBurrowed",
-        "Cost": {
-          "Minerals": 100,
-          "Vespene": 100,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": -3
-        },
-        "Row": 2,
-        "Column": 3,
-        "Type": "AbilCmd",
-        "AbilCmd": "BurrowRavagerDown,Execute",
-        "id": "BurrowDown",
-        "Icon": "btn-ability-zerg-burrow-color",
-        "Tooltip": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
-        "Name": "Burrow",
-        "Hotkey": "D"
-      },
-      {
-        "Info": {
-          "SectionArray": {
-            "Actor": {
-              "DurationArray": {
-                "Duration": 2.5
-              }
-            },
-            "Stats": {
-              "DurationArray": {
-                "Delay": 2.5
-              }
-            }
-          },
-          "Unit": "SwarmHostBurrowedMP",
-          "RallyResetPhase": "Delay",
-          "RandomDelayMax": 0.25
-        },
-        "Unit": "SwarmHostBurrowedMP",
-        "Cost": {
-          "Minerals": 100,
-          "Vespene": 75,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": -3
-        },
-        "Row": 2,
-        "Column": 3,
-        "Type": "AbilCmd",
-        "AbilCmd": "MorphToSwarmHostBurrowedMP,Execute",
-        "id": "BurrowDown",
-        "Icon": "btn-ability-zerg-burrow-color",
-        "Tooltip": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
-        "Name": "Burrow",
-        "Hotkey": "D"
-      },
-      {
-        "Info": {
-          "SectionArray": {
-            "Actor": {
-              "DurationArray": {
-                "Duration": 0.8332
-              }
-            },
-            "Collide": {
-              "DurationArray": {
-                "Delay": 0.5556
-              }
-            },
-            "Stats": {
-              "DurationArray": {
-                "Delay": 0.6665
-              }
-            }
-          },
-          "Unit": "QueenBurrowed",
-          "RandomDelayMax": 0.25
-        },
-        "Unit": "QueenBurrowed",
-        "Cost": {
-          "Minerals": 150,
-          "Vespene": 0,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": -2
-        },
-        "Row": 2,
-        "Column": 3,
-        "Type": "AbilCmd",
-        "AbilCmd": "BurrowQueenDown,Execute",
-        "id": "BurrowDown",
-        "Icon": "btn-ability-zerg-burrow-color",
-        "Tooltip": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
-        "Name": "Burrow",
-        "Hotkey": "D"
-      },
-      {
-        "Info": {
-          "SectionArray": {
-            "Actor": {
-              "DurationArray": {
-                "Duration": 1.333
-              }
-            },
-            "Collide": {
-              "DurationArray": {
-                "Delay": 0.5556
-              }
-            },
-            "Stats": {
-              "DurationArray": {
-                "Delay": 1
-              }
-            }
-          },
-          "Unit": "InfestorTerranBurrowed",
-          "RandomDelayMax": 0.3703
-        },
-        "Unit": "InfestorTerranBurrowed",
-        "Cost": {
-          "Minerals": 0,
-          "Vespene": 0,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 2,
-        "Column": 3,
-        "Type": "AbilCmd",
-        "AbilCmd": "BurrowInfestorTerranDown,Execute",
-        "id": "BurrowDown",
-        "Icon": "btn-ability-zerg-burrow-color",
-        "Tooltip": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
-        "Name": "Burrow",
-        "Hotkey": "D"
-      },
-      {
-        "Info": {
-          "SectionArray": {
-            "Actor": {
-              "DurationArray": {
-                "Duration": 0.5
-              }
-            },
-            "Collide": {
-              "DurationArray": {
-                "Delay": 0.5
-              }
-            },
-            "Stats": {
-              "DurationArray": {
-                "Delay": 0.5
-              }
-            }
-          },
-          "Unit": "InfestorBurrowed",
-          "RandomDelayMax": 0.3703
-        },
-        "Unit": "InfestorBurrowed",
-        "Cost": {
-          "Minerals": 100,
-          "Vespene": 150,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": -2
-        },
-        "Row": 2,
-        "Column": 3,
-        "Type": "AbilCmd",
-        "AbilCmd": "BurrowInfestorDown,Execute",
-        "id": "BurrowDown",
-        "Icon": "btn-ability-zerg-burrow-color",
-        "Tooltip": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
-        "Name": "Burrow",
-        "Hotkey": "D"
-      },
-      {
-        "Info": {
-          "SectionArray": {
-            "Actor": {
-              "DurationArray": {
-                "Duration": 1.25
-              }
-            },
-            "Collide": {
-              "DurationArray": {
-                "Delay": 0.9375
-              }
-            },
-            "Stats": {
-              "DurationArray": {
-                "Delay": 1.1457
-              }
-            }
-          },
-          "Unit": "UltraliskBurrowed",
-          "RandomDelayMax": 0.25
-        },
-        "Unit": "UltraliskBurrowed",
-        "Cost": {
-          "Minerals": 275,
-          "Vespene": 200,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": -6
-        },
-        "Row": 2,
-        "Column": 3,
-        "Type": "AbilCmd",
-        "AbilCmd": "BurrowUltraliskDown,Execute",
-        "id": "BurrowDown",
-        "Icon": "btn-ability-zerg-burrow-color",
-        "Tooltip": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
-        "Name": "Burrow",
-        "Hotkey": "D"
-      },
-      {
-        "Info": {
-          "SectionArray": {
-            "Actor": {
-              "DurationArray": {
-                "Duration": 1
-              }
-            },
-            "Stats": {
-              "DurationArray": {
-                "Duration": 0.4443
-              }
-            }
-          },
-          "Unit": "Drone",
-          "RandomDelayMax": 0.25
-        },
-        "Unit": "Drone",
-        "Cost": {
-          "Minerals": 50,
-          "Vespene": 0,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": -1
-        },
-        "Row": 2,
-        "Column": 4,
-        "Type": "AbilCmd",
-        "AbilCmd": "BurrowDroneUp,Execute",
-        "id": "BurrowUp",
-        "Icon": "btn-ability-zerg-upburrow-color",
-        "Tooltip": "Returns the unit to the surface.",
-        "Name": "Unburrow",
-        "Hotkey": "R"
-      },
-      {
-        "Info": {
-          "SectionArray": {
-            "Abils": {
-              "DurationArray": {
-                "Delay": 0
-              }
-            },
-            "Actor": {
-              "DurationArray": {
-                "Duration": 0.5
-              }
-            }
-          },
-          "Unit": "Zergling",
-          "RandomDelayMax": 0.1125
-        },
-        "Unit": "Zergling",
-        "Cost": {
-          "Minerals": 25,
-          "Vespene": 0,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": -0.5
-        },
-        "Row": 2,
-        "Column": 4,
-        "Type": "AbilCmd",
-        "AbilCmd": "BurrowZerglingUp,Execute",
-        "id": "BurrowUp",
-        "Icon": "btn-ability-zerg-upburrow-color",
-        "Tooltip": "Returns the unit to the surface.",
-        "Name": "Unburrow",
-        "Hotkey": "R"
-      },
-      {
-        "Info": {
-          "SectionArray": {
-            "Actor": {
-              "DurationArray": {
-                "Duration": 1
-              }
-            }
-          },
-          "Unit": "Baneling",
-          "RandomDelayMax": 0.5
-        },
-        "Unit": "Baneling",
-        "Cost": {
-          "Minerals": 50,
-          "Vespene": 25,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": -0.5
-        },
-        "Row": 2,
-        "Column": 4,
-        "Type": "AbilCmd",
-        "AbilCmd": "BurrowBanelingUp,Execute",
-        "id": "BurrowUp",
-        "Icon": "btn-ability-zerg-upburrow-color",
-        "Tooltip": "Returns the unit to the surface.",
-        "Name": "Unburrow",
-        "Hotkey": "R"
-      },
-      {
-        "Info": {
-          "SectionArray": {
-            "Actor": {
-              "DurationArray": {
-                "Duration": 0.4443
-              }
-            },
-            "Stats": {
-              "DurationArray": {
-                "Duration": 0.4443
-              }
-            }
-          },
-          "Unit": "Roach",
-          "RandomDelayMax": 0.1
-        },
-        "Unit": "Roach",
-        "Cost": {
-          "Minerals": 75,
-          "Vespene": 25,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": -2
-        },
-        "Row": 2,
-        "Column": 4,
-        "Type": "AbilCmd",
-        "AbilCmd": "BurrowRoachUp,Execute",
-        "id": "BurrowUp",
-        "Icon": "btn-ability-zerg-upburrow-color",
-        "Tooltip": "Returns the unit to the surface.",
-        "Name": "Unburrow",
-        "Hotkey": "R"
-      },
-      {
-        "Info": {
-          "SectionArray": {
-            "Actor": {
-              "DurationArray": {
-                "Duration": 0.5
-              }
-            },
-            "Stats": {
-              "DurationArray": {
-                "Duration": 0.2221
-              }
-            }
-          },
-          "Unit": "Hydralisk",
-          "RandomDelayMax": 0.1125
-        },
-        "Unit": "Hydralisk",
-        "Cost": {
-          "Minerals": 100,
-          "Vespene": 50,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": -2
-        },
-        "Row": 2,
-        "Column": 4,
-        "Type": "AbilCmd",
-        "AbilCmd": "BurrowHydraliskUp,Execute",
-        "id": "BurrowUp",
-        "Icon": "btn-ability-zerg-upburrow-color",
-        "Tooltip": "Returns the unit to the surface.",
-        "Name": "Unburrow",
-        "Hotkey": "R"
-      },
-      {
-        "Info": {
-          "SectionArray": {
-            "Actor": {
-              "DurationArray": {
-                "Duration": 0.4443
-              }
-            },
-            "Stats": {
-              "DurationArray": {
-                "Duration": 0.4443
-              }
-            }
-          },
-          "Unit": "Ravager",
-          "RandomDelayMax": 0.1
-        },
-        "Unit": "Ravager",
-        "Cost": {
-          "Minerals": 100,
-          "Vespene": 100,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": -3
-        },
-        "Row": 2,
-        "Column": 4,
-        "Type": "AbilCmd",
-        "AbilCmd": "BurrowRavagerUp,Execute",
-        "id": "BurrowUp",
-        "Icon": "btn-ability-zerg-upburrow-color",
-        "Tooltip": "Returns the unit to the surface.",
-        "Name": "Unburrow",
-        "Hotkey": "R"
-      },
-      {
-        "Info": {
-          "SectionArray": {
-            "Abils": {
-              "DurationArray": {
-                "Delay": 0
-              }
-            },
-            "Actor": {
-              "DurationArray": {
-                "Delay": 0.5,
-                "Duration": 1
-              }
-            },
-            "Mover": {
-              "DurationArray": {
-                "Delay": 0,
-                "Duration": 1
-              }
-            },
-            "Stats": {
-              "DurationArray": {
-                "Delay": 0.5,
-                "Duration": 1
-              }
-            }
-          },
-          "Unit": "SwarmHostMP",
-          "RandomDelayMax": 0.5
-        },
-        "Unit": "SwarmHostMP",
-        "Cost": {
-          "Minerals": 100,
-          "Vespene": 75,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": -3
-        },
-        "Row": 2,
-        "Column": 4,
-        "Type": "AbilCmd",
-        "AbilCmd": "MorphToSwarmHostMP,Execute",
-        "id": "BurrowUp",
-        "Icon": "btn-ability-zerg-upburrow-color",
-        "Tooltip": "Returns the unit to the surface.",
-        "Name": "Unburrow",
-        "Hotkey": "R"
-      },
-      {
-        "Info": {
-          "SectionArray": {
-            "Actor": {
-              "DurationArray": {
-                "Duration": 1
-              }
-            },
-            "Stats": {
-              "DurationArray": {
-                "Duration": 0.4443
-              }
-            }
-          },
-          "Unit": "Queen",
-          "RandomDelayMax": 0.5
-        },
-        "Unit": "Queen",
-        "Cost": {
-          "Minerals": 150,
-          "Vespene": 0,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": -2
-        },
-        "Row": 2,
-        "Column": 4,
-        "Type": "AbilCmd",
-        "AbilCmd": "BurrowQueenUp,Execute",
-        "id": "BurrowUp",
-        "Icon": "btn-ability-zerg-upburrow-color",
-        "Tooltip": "Returns the unit to the surface.",
-        "Name": "Unburrow",
-        "Hotkey": "R"
-      },
-      {
-        "Info": {
-          "SectionArray": {
-            "Actor": {
-              "DurationArray": {
-                "Duration": 1
-              }
-            }
-          },
-          "Unit": "InfestorTerran",
-          "RandomDelayMax": 0.5
-        },
-        "Unit": "InfestorTerran",
-        "Cost": {
-          "Minerals": 0,
-          "Vespene": 0,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 2,
-        "Column": 4,
-        "Type": "AbilCmd",
-        "AbilCmd": "BurrowInfestorTerranUp,Execute",
-        "id": "BurrowUp",
-        "Icon": "btn-ability-zerg-upburrow-color",
-        "Tooltip": "Returns the unit to the surface.",
-        "Name": "Unburrow",
-        "Hotkey": "R"
-      },
-      {
-        "Info": {
-          "SectionArray": {
-            "Actor": {
-              "DurationArray": {
-                "Duration": 0.875
-              }
-            },
-            "Stats": {
-              "DurationArray": {
-                "Duration": 0.875
-              }
-            }
-          },
-          "Unit": "Infestor",
-          "RandomDelayMax": 0.125
-        },
-        "Unit": "Infestor",
-        "Cost": {
-          "Minerals": 100,
-          "Vespene": 150,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": -2
-        },
-        "Row": 2,
-        "Column": 4,
-        "Type": "AbilCmd",
-        "AbilCmd": "BurrowInfestorUp,Execute",
-        "id": "BurrowUp",
-        "Icon": "btn-ability-zerg-upburrow-color",
-        "Tooltip": "Returns the unit to the surface.",
-        "Name": "Unburrow",
-        "Hotkey": "R"
-      },
-      {
-        "Info": {
-          "SectionArray": {
-            "Actor": {
-              "DurationArray": {
-                "Duration": 1.25
-              }
-            }
-          },
-          "Unit": "Ultralisk",
-          "RandomDelayMax": 0.5
-        },
-        "Unit": "Ultralisk",
-        "Cost": {
-          "Minerals": 275,
-          "Vespene": 200,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": -6
-        },
-        "Row": 2,
-        "Column": 4,
-        "Type": "AbilCmd",
-        "AbilCmd": "BurrowUltraliskUp,Execute",
-        "id": "BurrowUp",
-        "Icon": "btn-ability-zerg-upburrow-color",
-        "Tooltip": "Returns the unit to the surface.",
-        "Name": "Unburrow",
-        "Hotkey": "R"
       },
       {
         "Info": {
           "class": "CAbilEffectTarget",
           "Name": "Abil/Name/SprayZerg",
           "TechPlayer": "Upkeep",
-          "EditorCategories": "AbilityorEffectType:Units,Race:Terran",
+          "EditorCategories": "AbilityorEffectType:Units,Race:Zerg",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
             {
@@ -1663,6 +891,12 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "SprayZerg",
+          "$tokens": {
+            "ID": {
+              "type": "string",
+              "value": ""
+            }
+          },
           "RangeSlop": 1,
           "ArcSlop": 11.25,
           "AutoCastAcquireLevel": "Offensive",
@@ -1674,7 +908,7 @@
             "RangeUseCasterRadius": 1,
             "ReApproachable": 1,
             "RequireTargetVision": 1,
-            "WaitToSpend": 0,
+            "WaitToSpend": 1,
             "UpdateChargesOnLevelChange": 1,
             "BestUnit": 1
           },
@@ -1775,8 +1009,14 @@
         "AbilCmd": "SprayZerg,Execute",
         "id": "Spray",
         "Icon": "btn-command-spray",
-        "Tooltip": "Orders the unit to apply your currently selected spray to the terrain at the target location.",
-        "Name": "Spray",
+        "Name": {
+          "enUS": "Spray",
+          "ruRU": "Граффити"
+        },
+        "Tooltip": {
+          "enUS": "Orders the unit to apply your currently selected spray to the terrain at the target location.",
+          "ruRU": "Orders the unit to apply your currently selected spray to the terrain at the target location."
+        },
         "Hotkey": "Y"
       }
     ],
@@ -1810,8 +1050,14 @@
         "AbilCmd": "ZergBuild,Build1",
         "id": "Hatchery",
         "Icon": "btn-building-zerg-hatchery",
-        "Tooltip": "Primary structure. Used to spawn all Zerg units and receive gathered resources. Grows creep used to feed nearby Zerg structures. Can mutate into a Lair.<br/><br/><c val=\"#ColorAttackInfo\">Bonus: Zerg move faster on creep.</span>",
-        "Name": "Mutate into Hatchery",
+        "Name": {
+          "enUS": "Mutate into Hatchery",
+          "ruRU": "Mutate into Hatchery"
+        },
+        "Tooltip": {
+          "enUS": "Primary structure. Used to spawn all Zerg units and receive gathered resources. Grows creep used to feed nearby Zerg structures. Can mutate into a Lair.<br/><br/><span style=\"color: #ffff8a\">Bonus: Zerg move faster on creep.</span>",
+          "ruRU": "Primary structure. Used to spawn all Zerg units and receive gathered resources. Grows creep used to feed nearby Zerg structures. Can mutate into a Lair.<br/><br/><span style=\"color: #ffff8a\">Bonus: Zerg move faster on creep.</span>"
+        },
         "Hotkey": "H"
       },
       {
@@ -1846,8 +1092,14 @@
         "AbilCmd": "ZergBuild,Build3",
         "id": "Extractor",
         "Icon": "btn-building-zerg-extractor",
-        "Tooltip": "Mutated over a Vespene Geyser to allow harvesting of vespene gas.",
-        "Name": "Mutate into Extractor",
+        "Name": {
+          "enUS": "Mutate into Extractor",
+          "ruRU": "Mutate into Extractor"
+        },
+        "Tooltip": {
+          "enUS": "Mutated over a Vespene Geyser to allow harvesting of vespene gas.",
+          "ruRU": "Mutated over a Vespene Geyser to allow harvesting of vespene gas."
+        },
         "Hotkey": "E"
       },
       {
@@ -1880,8 +1132,14 @@
         "AbilCmd": "ZergBuild,Build4",
         "id": "SpawningPool",
         "Icon": "btn-building-zerg-spawningpool",
-        "Tooltip": "Contains upgrades for Zerglings.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Queens at the Hatchery, Lair, or Hive<br/>- Zerglings from Larvae<br/>- Spine Crawlers from Drones<br/>- Spore Crawlers from Drones",
-        "Name": "Mutate into Spawning Pool",
+        "Name": {
+          "enUS": "Mutate into Spawning Pool",
+          "ruRU": "Mutate into Spawning Pool"
+        },
+        "Tooltip": {
+          "enUS": "Contains upgrades for Zerglings.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Queens at the Hatchery, Lair, or Hive<br/>- Zerglings from Larvae<br/>- Spine Crawlers from Drones<br/>- Spore Crawlers from Drones",
+          "ruRU": "Contains upgrades for Zerglings.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Queens at the Hatchery, Lair, or Hive<br/>- Zerglings from Larvae<br/>- Spine Crawlers from Drones<br/>- Spore Crawlers from Drones"
+        },
         "Hotkey": "S"
       },
       {
@@ -1908,14 +1166,20 @@
           "Shields": 0,
           "Food": 0
         },
-        "Row": 1,
-        "Column": 1,
+        "Row": 0,
+        "Column": 2,
         "Type": "AbilCmd",
         "AbilCmd": "ZergBuild,Build5",
         "id": "EvolutionChamber",
         "Icon": "btn-building-zerg-evolutionchamber",
-        "Tooltip": "Contains upgrades for Zerg ground units. ",
-        "Name": "Mutate into Evolution Chamber",
+        "Name": {
+          "enUS": "Mutate into Evolution Chamber",
+          "ruRU": "Mutate into Evolution Chamber"
+        },
+        "Tooltip": {
+          "enUS": "Contains upgrades for Zerg ground units.",
+          "ruRU": "Contains upgrades for Zerg ground units."
+        },
         "Hotkey": "V"
       },
       {
@@ -1943,13 +1207,19 @@
           "Food": 0
         },
         "Row": 1,
-        "Column": 3,
+        "Column": 1,
         "Type": "AbilCmd",
         "AbilCmd": "ZergBuild,Build11",
         "id": "BanelingNest",
         "Icon": "btn-building-zerg-banelingnest",
-        "Tooltip": "Contains an upgrade for Banelings.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Banelings from Zerglings",
-        "Name": "Mutate into Baneling Nest",
+        "Name": {
+          "enUS": "Mutate into Baneling Nest",
+          "ruRU": "Mutate into Baneling Nest"
+        },
+        "Tooltip": {
+          "enUS": "Contains an upgrade for Banelings.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Banelings from Zerglings",
+          "ruRU": "Contains an upgrade for Banelings.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Banelings from Zerglings"
+        },
         "Hotkey": "B"
       },
       {
@@ -1968,8 +1238,14 @@
         "Type": "CancelSubmenu",
         "id": "Cancel",
         "Icon": "btn-command-cancel",
-        "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
-        "Name": "Cancel",
+        "Name": {
+          "enUS": "Cancel",
+          "ruRU": "Отменить /// Cancel"
+        },
+        "Tooltip": {
+          "enUS": "Drops the current order without performing it, and allows you to select a different order.",
+          "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+        },
         "Hotkey": "Esc"
       },
       {
@@ -2002,8 +1278,14 @@
         "AbilCmd": "ZergBuild,Build14",
         "id": "RoachWarren",
         "Icon": "btn-building-zerg-roachwarren",
-        "Tooltip": "Contains upgrades for Roaches.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Roaches from Larvae<br/>- Ravagers from Roaches",
-        "Name": "Mutate into Roach Warren",
+        "Name": {
+          "enUS": "Mutate into Roach Warren",
+          "ruRU": "Mutate into Roach Warren"
+        },
+        "Tooltip": {
+          "enUS": "Contains upgrades for Roaches.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Roaches from Larvae<br/>- Ravagers from Roaches",
+          "ruRU": "Contains upgrades for Roaches.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Roaches from Larvae<br/>- Ravagers from Roaches"
+        },
         "Hotkey": "R"
       },
       {
@@ -2036,8 +1318,14 @@
         "AbilCmd": "ZergBuild,Build15",
         "id": "SpineCrawler",
         "Icon": "btn-building-zerg-spinecrawler",
-        "Tooltip": "Anti-ground defensive structure. <br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
-        "Name": "Mutate into Spine Crawler",
+        "Name": {
+          "enUS": "Mutate into Spine Crawler",
+          "ruRU": "Mutate into Spine Crawler"
+        },
+        "Tooltip": {
+          "enUS": "Anti-ground defensive structure. <br/><br/><span style=\"color: ffff8a\">Can attack ground units.</span>",
+          "ruRU": "Anti-ground defensive structure. <br/><br/><span style=\"color: ffff8a\">Can attack ground units.</span>"
+        },
         "Hotkey": "C"
       },
       {
@@ -2070,8 +1358,14 @@
         "AbilCmd": "ZergBuild,Build16",
         "id": "SporeCrawler",
         "Icon": "btn-building-zerg-sporecrawler",
-        "Tooltip": "Anti-air defensive structure. <br/><br/><span style=\"color: #ffff8a\">Can attack air units.</span><br/><span style=\"color: #FFE303\">Detector</span>",
-        "Name": "Mutate into Spore Crawler",
+        "Name": {
+          "enUS": "Mutate into Spore Crawler",
+          "ruRU": "Mutate into Spore Crawler"
+        },
+        "Tooltip": {
+          "enUS": "Anti-air defensive structure. <br/><br/><span style=\"color: ffff8a\">Can attack air units.</span><br/><span style=\"color: FFE303\">Detector</span>",
+          "ruRU": "Anti-air defensive structure. <br/><br/><span style=\"color: ffff8a\">Can attack air units.</span><br/><span style=\"color: FFE303\">Detector</span>"
+        },
         "Hotkey": "A"
       }
     ],
@@ -2106,8 +1400,14 @@
         "AbilCmd": "ZergBuild,Build7",
         "id": "Spire",
         "Icon": "btn-building-zerg-spire",
-        "Tooltip": "Contains upgrades for Zerg air units. Can mutate into a Greater Spire.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Mutalisks from Larvae<br/>- Corruptors from Larvae",
-        "Name": "Mutate into Spire",
+        "Name": {
+          "enUS": "Mutate into Spire",
+          "ruRU": "Mutate into Spire"
+        },
+        "Tooltip": {
+          "enUS": "Contains upgrades for Zerg air units. Can mutate into a Greater Spire.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Mutalisks from Larvae<br/>- Corruptors from Larvae",
+          "ruRU": "Contains upgrades for Zerg air units. Can mutate into a Greater Spire.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Mutalisks from Larvae<br/>- Corruptors from Larvae"
+        },
         "Hotkey": "S"
       },
       {
@@ -2140,8 +1440,14 @@
         "AbilCmd": "ZergBuild,Build8",
         "id": "UltraliskCavern",
         "Icon": "btn-building-zerg-ultraliskcavern",
-        "Tooltip": "Contains upgrades for Ultralisks.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Ultralisks from Larvae",
-        "Name": "Mutate into Ultralisk Cavern",
+        "Name": {
+          "enUS": "Mutate into Ultralisk Cavern",
+          "ruRU": "Mutate into Ultralisk Cavern"
+        },
+        "Tooltip": {
+          "enUS": "Contains an upgrade for Ultralisks.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Ultralisks from Larvae",
+          "ruRU": "Contains an upgrade for Ultralisks.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Ultralisks from Larvae"
+        },
         "Hotkey": "U"
       },
       {
@@ -2160,8 +1466,14 @@
         "Type": "CancelSubmenu",
         "id": "Cancel",
         "Icon": "btn-command-cancel",
-        "Tooltip": "Drops the current order without performing it, and allows you to select a different order.",
-        "Name": "Cancel",
+        "Name": {
+          "enUS": "Cancel",
+          "ruRU": "Отменить /// Cancel"
+        },
+        "Tooltip": {
+          "enUS": "Drops the current order without performing it, and allows you to select a different order.",
+          "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+        },
         "Hotkey": "Esc"
       },
       {
@@ -2194,8 +1506,14 @@
         "AbilCmd": "ZergBuild,Build10",
         "id": "NydusNetwork",
         "Icon": "btn-building-zerg-nydusnetwork",
-        "Tooltip": "Friendly ground units can use the Nydus Network to instantly travel to any other Nydus Network or Nydus Worm owned by the player.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Nydus Worm",
-        "Name": "Mutate into Nydus Network",
+        "Name": {
+          "enUS": "Mutate into Nydus Network",
+          "ruRU": "Mutate into Nydus Network"
+        },
+        "Tooltip": {
+          "enUS": "Friendly ground units can use the Nydus Network to instantly travel to any other Nydus Network or Nydus Worm owned by the player.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Nydus Worm",
+          "ruRU": "Friendly ground units can use the Nydus Network to instantly travel to any other Nydus Network or Nydus Worm owned by the player.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Nydus Worm"
+        },
         "Hotkey": "N"
       },
       {
@@ -2228,8 +1546,14 @@
         "AbilCmd": "ZergBuild,Build9",
         "id": "InfestationPit",
         "Icon": "btn-building-zerg-infestationpit",
-        "Tooltip": "Contains upgrades for Infestors.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Infestors from Larvae<br/>- Swarm Hosts from Larvae",
-        "Name": "Mutate into Infestation Pit",
+        "Name": {
+          "enUS": "Mutate into Infestation Pit",
+          "ruRU": "Mutate into Infestation Pit"
+        },
+        "Tooltip": {
+          "enUS": "Contains upgrades for Infestors and Swarm Hosts.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Infestors from Larvae<br/>- Swarm Hosts from Larvae",
+          "ruRU": "Contains upgrades for Infestors and Swarm Hosts.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Infestors from Larvae<br/>- Swarm Hosts from Larvae"
+        },
         "Hotkey": "I"
       },
       {
@@ -2262,43 +1586,15 @@
         "AbilCmd": "ZergBuild,Build6",
         "id": "HydraliskDen",
         "Icon": "btn-building-zerg-hydraliskden",
-        "Tooltip": "Contains upgrades for Hydralisks.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Hydralisks from Larvae",
-        "Name": "Mutate into Hydralisk Den",
+        "Name": {
+          "enUS": "Mutate into Hydralisk Den",
+          "ruRU": "Mutate into Hydralisk Den"
+        },
+        "Tooltip": {
+          "enUS": "Contains an upgrade for Hydralisks. Can mutate into a Lurker Den.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Hydralisks from Larvae",
+          "ruRU": "Contains an upgrade for Hydralisks. Can mutate into a Lurker Den.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Hydralisks from Larvae"
+        },
         "Hotkey": "H"
-      },
-      {
-        "Info": {
-          "Button": {
-            "Flags": {
-              "AllowMinimap": 0
-            },
-            "DefaultButtonFace": "MutateintoLurkerDen",
-            "Requirements": "HaveHydraliskDen"
-          },
-          "Unit": "LurkerDenMP",
-          "Time": 80
-        },
-        "Unit": "LurkerDenMP",
-        "Time": 80,
-        "Cost": {
-          "Minerals": 150,
-          "Vespene": 150,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 0,
-        "Column": 2,
-        "Type": "AbilCmd",
-        "AbilCmd": "ZergBuild,Build12",
-        "id": "MutateintoLurkerDen",
-        "Icon": "btn-building-zerg-lurkerden",
-        "Tooltip": "Contains an upgrade for Lurkers.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Lurkers from Hydralisks",
-        "Name": "Mutate into Lurker Den",
-        "Hotkey": "D"
       }
     ]
   },
@@ -2323,7 +1619,10 @@
     {
       "id": "Spines",
       "Icon": "btn-upgrade-zerg-meleeattacks-level0",
-      "Name": "Claws",
+      "Name": {
+        "enUS": "Claws",
+        "ruRU": "Claws"
+      },
       "Amount": 5,
       "Kind": "Melee",
       "TargetFilters": "Ground",
@@ -2335,67 +1634,70 @@
   "Abilities": [
     {
       "id": "stop",
-      "Name": "Stop"
+      "Name": {
+        "enUS": "Stop",
+        "ruRU": "Stop"
+      }
     },
     {
       "id": "attack",
-      "Name": "Attack"
+      "Name": {
+        "ruRU": "Attack",
+        "enUS": "Attack"
+      }
     },
     {
       "id": "move",
-      "Name": "Move"
+      "Name": {
+        "enUS": "Move",
+        "ruRU": "Move"
+      }
     },
     {
       "id": "ZergBuild",
-      "Name": "Morph Unit (Drone -> Zerg Buildings)"
+      "Name": {
+        "enUS": "Morph Unit (Drone -> Zerg Buildings)",
+        "ruRU": "Morph Unit (Drone -> Zerg Buildings)"
+      }
     },
     {
       "id": "DroneHarvest",
-      "Name": "Gather (Drone)"
+      "Name": {
+        "enUS": "Gather (Drone)",
+        "ruRU": "Gather (Drone)"
+      }
     },
     {
       "id": "BurrowDroneDown",
-      "Name": "Burrow (Drone)"
+      "Name": {
+        "enUS": "Burrow (Drone)",
+        "ruRU": "Burrow (Drone)"
+      }
     },
     {
-      "id": "SprayZerg"
+      "id": "SprayZerg",
+      "Name": "-"
     }
   ],
   "$Upgrades": [
     "Zerg",
     "Drone",
     "LarvaTrain",
-    "BurrowDroneUp",
-    "SprayZerg",
-    "DroneBurrowed",
-    "NotWorkerDrone",
     "IsDrone",
     "Larva",
     "Burrow",
+    "DroneBurrowed",
+    "BurrowDroneUp",
     "ZergGroundArmorsLevel1",
     "Drone",
     "ZergGroundArmors",
     "ZergGroundArmorsLevel2",
     "ZergGroundArmorsLevel3",
     "DigesterDrone",
+    "NotWorkerDrone",
     "Drone_Death",
     "DroneBurrowedSplat",
-    "ThreatensDrone",
-    "DroneBase",
-    "Drone",
-    "DroneBlizzcon17",
-    "DroneWebby",
-    "DronePrimal",
-    "DroneMecha",
-    "DroneRemastered",
-    "DroneRCZ",
-    "DefaultSkinPack",
-    "DroneWebbySkinPack",
-    "DronePrimalSkinPack",
-    "BlizzCon2017DroneSkinPack",
-    "DroneMecha",
-    "DroneRemastered",
-    "DroneRCZ"
+    "ThreatensDrone"
   ],
   "$Requirements": [],
   "$Production": [
@@ -2415,59 +1717,10 @@
     "LurkerDenMP"
   ],
   "$Research": [],
-  "$Morph": [
-    "DroneBurrowed",
-    "QueenBurrowed",
-    "Queen"
-  ],
+  "$Morph": [],
   "$Phase": [
-    "Ultralisk",
-    "Infestor",
-    "InfestorTerran",
-    "SwarmHostMP",
-    "Ravager",
-    "Hydralisk",
-    "Roach",
-    "Baneling",
-    "Zergling",
-    "Drone",
-    "Drone",
-    "UltraliskBurrowed",
-    "UltraliskBurrowed",
-    "InfestorBurrowed",
-    "InfestorBurrowed",
-    "InfestorTerranBurrowed",
-    "InfestorTerranBurrowed",
-    "SwarmHostBurrowedMP",
-    "SwarmHostBurrowedMP",
-    "RavagerBurrowed",
-    "RavagerBurrowed",
-    "HydraliskBurrowed",
-    "HydraliskBurrowed",
-    "RoachBurrowed",
-    "RoachBurrowed",
-    "BanelingBurrowed",
-    "BanelingBurrowed",
-    "ZerglingBurrowed",
-    "ZerglingBurrowed",
-    "Ultralisk",
-    "Infestor",
-    "InfestorTerran",
-    "SwarmHostMP",
-    "Ravager",
-    "Hydralisk",
-    "Roach",
-    "Baneling",
-    "UltraliskBurrowed",
-    "InfestorBurrowed",
-    "InfestorTerranBurrowed",
-    "SwarmHostBurrowedMP",
-    "RavagerBurrowed",
-    "HydraliskBurrowed",
-    "RoachBurrowed",
-    "BanelingBurrowed"
+    "DroneBurrowed"
   ],
-  "$Phased": "Drone",
   "$Producers": [
     "Larva"
   ],
@@ -2476,329 +1729,312 @@
       "AbilCmd": "move,Move",
       "id": "Move",
       "Icon": "btn-command-move",
-      "Tooltip": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
-      "Name": "Move"
+      "Name": {
+        "enUS": "Move",
+        "ruRU": "Двигаться /// Move"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
+        "ruRU": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies."
+      }
     },
     {
       "AbilCmd": "stop,Stop",
       "id": "Stop",
       "Icon": "btn-command-stop",
-      "Tooltip": "Orders selected units to cancel all orders and stop moving.",
-      "Name": "Stop"
+      "Name": {
+        "enUS": "Stop",
+        "ruRU": "Отставить /// Stop"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to cancel all orders and stop moving.",
+        "ruRU": "Orders selected units to cancel all orders and stop moving."
+      }
     },
     {
       "AbilCmd": "move,HoldPos",
       "id": "MoveHoldPosition",
       "Icon": "btn-command-holdposition",
-      "Tooltip": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
-      "Name": "Hold Position"
+      "Name": {
+        "enUS": "Hold Position",
+        "ruRU": "Удерживать позицию /// Hold Position"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
+        "ruRU": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage."
+      }
     },
     {
       "AbilCmd": "attack,Execute",
       "id": "AttackWorker",
-      "Tooltip": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
-      "Name": "Attack"
+      "Name": {
+        "enUS": "Attack",
+        "ruRU": "Атаковать /// Attack"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
+        "ruRU": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed."
+      }
     },
     {
       "AbilCmd": "move,Patrol",
       "id": "MovePatrol",
       "Icon": "btn-command-patrol",
-      "Tooltip": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
-      "Name": "Patrol"
+      "Name": {
+        "enUS": "Patrol",
+        "ruRU": "Патрулировать /// Patrol"
+      },
+      "Tooltip": {
+        "enUS": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
+        "ruRU": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies."
+      }
     },
     {
       "AbilCmd": "DroneHarvest,Return",
       "id": "ReturnCargo",
       "Icon": "btn-command-returncargo",
-      "Tooltip": "Returns the carried resources to the nearest drop-off point.",
-      "Name": "Return Cargo"
+      "Name": {
+        "enUS": "Return Cargo",
+        "ruRU": "Return Cargo"
+      },
+      "Tooltip": {
+        "enUS": "Returns the carried resources to the nearest drop-off point.",
+        "ruRU": "Returns the carried resources to the nearest drop-off point."
+      }
     },
     {
       "AbilCmd": "255,255",
       "id": "ZergBuild",
       "Icon": "btn-ability-zerg-basicmutation",
-      "Tooltip": "A list of basic structures.",
-      "Name": "Basic Mutation"
+      "Name": {
+        "enUS": "Basic Mutation",
+        "ruRU": "Basic Mutation"
+      },
+      "Tooltip": {
+        "enUS": "A list of basic structures.",
+        "ruRU": "A list of basic structures."
+      }
     },
     {
       "AbilCmd": "255,255",
       "id": "ZergBuildAdvanced",
       "Icon": "btn-ability-zerg-advancedmutation",
-      "Tooltip": "A list of advanced structures.",
-      "Name": "Advanced Mutation"
+      "Name": {
+        "enUS": "Advanced Mutation",
+        "ruRU": "Advanced Mutation"
+      },
+      "Tooltip": {
+        "enUS": "A list of advanced structures.",
+        "ruRU": "A list of advanced structures."
+      }
     },
     {
       "AbilCmd": "BurrowDroneDown,Execute",
       "id": "BurrowDown",
       "Icon": "btn-ability-zerg-burrow-color",
-      "Tooltip": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
-      "Name": "Burrow"
+      "Name": {
+        "enUS": "Burrow",
+        "ruRU": "Burrow"
+      },
+      "Tooltip": {
+        "enUS": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
+        "ruRU": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection."
+      }
     },
     {
       "AbilCmd": "DroneHarvest,Gather",
       "id": "GatherZerg",
       "Icon": "btn-ability-zerg-gather",
-      "Tooltip": "Orders Drone to gather resources from a selected Mineral Field or Vespene Geyser.",
-      "Name": "Gather"
-    },
-    {
-      "AbilCmd": "BurrowDroneDown,Execute",
-      "id": "BurrowDown",
-      "Icon": "btn-ability-zerg-burrow-color",
-      "Tooltip": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
-      "Name": "Burrow"
-    },
-    {
-      "AbilCmd": "BurrowZerglingDown,Execute",
-      "id": "BurrowDown",
-      "Icon": "btn-ability-zerg-burrow-color",
-      "Tooltip": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
-      "Name": "Burrow"
-    },
-    {
-      "AbilCmd": "BurrowBanelingDown,Execute",
-      "id": "BurrowDown",
-      "Icon": "btn-ability-zerg-burrow-color",
-      "Tooltip": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
-      "Name": "Burrow"
-    },
-    {
-      "AbilCmd": "BurrowRoachDown,Execute",
-      "id": "BurrowDown",
-      "Icon": "btn-ability-zerg-burrow-color",
-      "Tooltip": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
-      "Name": "Burrow"
-    },
-    {
-      "AbilCmd": "BurrowHydraliskDown,Execute",
-      "id": "BurrowDown",
-      "Icon": "btn-ability-zerg-burrow-color",
-      "Tooltip": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
-      "Name": "Burrow"
-    },
-    {
-      "AbilCmd": "BurrowRavagerDown,Execute",
-      "id": "BurrowDown",
-      "Icon": "btn-ability-zerg-burrow-color",
-      "Tooltip": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
-      "Name": "Burrow"
-    },
-    {
-      "AbilCmd": "MorphToSwarmHostBurrowedMP,Execute",
-      "id": "BurrowDown",
-      "Icon": "btn-ability-zerg-burrow-color",
-      "Tooltip": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
-      "Name": "Burrow"
-    },
-    {
-      "AbilCmd": "BurrowQueenDown,Execute",
-      "id": "BurrowDown",
-      "Icon": "btn-ability-zerg-burrow-color",
-      "Tooltip": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
-      "Name": "Burrow"
-    },
-    {
-      "AbilCmd": "BurrowInfestorTerranDown,Execute",
-      "id": "BurrowDown",
-      "Icon": "btn-ability-zerg-burrow-color",
-      "Tooltip": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
-      "Name": "Burrow"
-    },
-    {
-      "AbilCmd": "BurrowInfestorDown,Execute",
-      "id": "BurrowDown",
-      "Icon": "btn-ability-zerg-burrow-color",
-      "Tooltip": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
-      "Name": "Burrow"
-    },
-    {
-      "AbilCmd": "BurrowUltraliskDown,Execute",
-      "id": "BurrowDown",
-      "Icon": "btn-ability-zerg-burrow-color",
-      "Tooltip": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
-      "Name": "Burrow"
-    },
-    {
-      "AbilCmd": "BurrowDroneUp,Execute",
-      "id": "BurrowUp",
-      "Icon": "btn-ability-zerg-upburrow-color",
-      "Tooltip": "Returns the unit to the surface.",
-      "Name": "Unburrow"
-    },
-    {
-      "AbilCmd": "BurrowZerglingUp,Execute",
-      "id": "BurrowUp",
-      "Icon": "btn-ability-zerg-upburrow-color",
-      "Tooltip": "Returns the unit to the surface.",
-      "Name": "Unburrow"
-    },
-    {
-      "AbilCmd": "BurrowBanelingUp,Execute",
-      "id": "BurrowUp",
-      "Icon": "btn-ability-zerg-upburrow-color",
-      "Tooltip": "Returns the unit to the surface.",
-      "Name": "Unburrow"
-    },
-    {
-      "AbilCmd": "BurrowRoachUp,Execute",
-      "id": "BurrowUp",
-      "Icon": "btn-ability-zerg-upburrow-color",
-      "Tooltip": "Returns the unit to the surface.",
-      "Name": "Unburrow"
-    },
-    {
-      "AbilCmd": "BurrowHydraliskUp,Execute",
-      "id": "BurrowUp",
-      "Icon": "btn-ability-zerg-upburrow-color",
-      "Tooltip": "Returns the unit to the surface.",
-      "Name": "Unburrow"
-    },
-    {
-      "AbilCmd": "BurrowRavagerUp,Execute",
-      "id": "BurrowUp",
-      "Icon": "btn-ability-zerg-upburrow-color",
-      "Tooltip": "Returns the unit to the surface.",
-      "Name": "Unburrow"
-    },
-    {
-      "AbilCmd": "MorphToSwarmHostMP,Execute",
-      "id": "BurrowUp",
-      "Icon": "btn-ability-zerg-upburrow-color",
-      "Tooltip": "Returns the unit to the surface.",
-      "Name": "Unburrow"
-    },
-    {
-      "AbilCmd": "BurrowQueenUp,Execute",
-      "id": "BurrowUp",
-      "Icon": "btn-ability-zerg-upburrow-color",
-      "Tooltip": "Returns the unit to the surface.",
-      "Name": "Unburrow"
-    },
-    {
-      "AbilCmd": "BurrowInfestorTerranUp,Execute",
-      "id": "BurrowUp",
-      "Icon": "btn-ability-zerg-upburrow-color",
-      "Tooltip": "Returns the unit to the surface.",
-      "Name": "Unburrow"
-    },
-    {
-      "AbilCmd": "BurrowInfestorUp,Execute",
-      "id": "BurrowUp",
-      "Icon": "btn-ability-zerg-upburrow-color",
-      "Tooltip": "Returns the unit to the surface.",
-      "Name": "Unburrow"
-    },
-    {
-      "AbilCmd": "BurrowUltraliskUp,Execute",
-      "id": "BurrowUp",
-      "Icon": "btn-ability-zerg-upburrow-color",
-      "Tooltip": "Returns the unit to the surface.",
-      "Name": "Unburrow"
+      "Name": {
+        "enUS": "Gather",
+        "ruRU": "Gather"
+      },
+      "Tooltip": {
+        "enUS": "Orders Drone to gather resources from a selected Mineral Field or Vespene Geyser.",
+        "ruRU": "Orders Drone to gather resources from a selected Mineral Field or Vespene Geyser."
+      }
     },
     {
       "AbilCmd": "SprayZerg,Execute",
       "id": "Spray",
       "Icon": "btn-command-spray",
-      "Tooltip": "Orders the unit to apply your currently selected spray to the terrain at the target location.",
-      "Name": "Spray"
+      "Name": {
+        "enUS": "Spray",
+        "ruRU": "Граффити"
+      },
+      "Tooltip": {
+        "enUS": "Orders the unit to apply your currently selected spray to the terrain at the target location.",
+        "ruRU": "Orders the unit to apply your currently selected spray to the terrain at the target location."
+      }
     },
     {
       "AbilCmd": "ZergBuild,Build1",
       "id": "Hatchery",
       "Icon": "btn-building-zerg-hatchery",
-      "Tooltip": "Primary structure. Used to spawn all Zerg units and receive gathered resources. Grows creep used to feed nearby Zerg structures. Can mutate into a Lair.<br/><br/><c val=\"#ColorAttackInfo\">Bonus: Zerg move faster on creep.</span>",
-      "Name": "Mutate into Hatchery"
+      "Name": {
+        "enUS": "Mutate into Hatchery",
+        "ruRU": "Mutate into Hatchery"
+      },
+      "Tooltip": {
+        "enUS": "Primary structure. Used to spawn all Zerg units and receive gathered resources. Grows creep used to feed nearby Zerg structures. Can mutate into a Lair.<br/><br/><span style=\"color: #ffff8a\">Bonus: Zerg move faster on creep.</span>",
+        "ruRU": "Primary structure. Used to spawn all Zerg units and receive gathered resources. Grows creep used to feed nearby Zerg structures. Can mutate into a Lair.<br/><br/><span style=\"color: #ffff8a\">Bonus: Zerg move faster on creep.</span>"
+      }
     },
     {
       "AbilCmd": "ZergBuild,Build3",
       "id": "Extractor",
       "Icon": "btn-building-zerg-extractor",
-      "Tooltip": "Mutated over a Vespene Geyser to allow harvesting of vespene gas.",
-      "Name": "Mutate into Extractor"
+      "Name": {
+        "enUS": "Mutate into Extractor",
+        "ruRU": "Mutate into Extractor"
+      },
+      "Tooltip": {
+        "enUS": "Mutated over a Vespene Geyser to allow harvesting of vespene gas.",
+        "ruRU": "Mutated over a Vespene Geyser to allow harvesting of vespene gas."
+      }
     },
     {
       "AbilCmd": "ZergBuild,Build4",
       "id": "SpawningPool",
       "Icon": "btn-building-zerg-spawningpool",
-      "Tooltip": "Contains upgrades for Zerglings.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Queens at the Hatchery, Lair, or Hive<br/>- Zerglings from Larvae<br/>- Spine Crawlers from Drones<br/>- Spore Crawlers from Drones",
-      "Name": "Mutate into Spawning Pool"
+      "Name": {
+        "enUS": "Mutate into Spawning Pool",
+        "ruRU": "Mutate into Spawning Pool"
+      },
+      "Tooltip": {
+        "enUS": "Contains upgrades for Zerglings.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Queens at the Hatchery, Lair, or Hive<br/>- Zerglings from Larvae<br/>- Spine Crawlers from Drones<br/>- Spore Crawlers from Drones",
+        "ruRU": "Contains upgrades for Zerglings.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Queens at the Hatchery, Lair, or Hive<br/>- Zerglings from Larvae<br/>- Spine Crawlers from Drones<br/>- Spore Crawlers from Drones"
+      }
     },
     {
       "AbilCmd": "ZergBuild,Build5",
       "id": "EvolutionChamber",
       "Icon": "btn-building-zerg-evolutionchamber",
-      "Tooltip": "Contains upgrades for Zerg ground units. ",
-      "Name": "Mutate into Evolution Chamber"
+      "Name": {
+        "enUS": "Mutate into Evolution Chamber",
+        "ruRU": "Mutate into Evolution Chamber"
+      },
+      "Tooltip": {
+        "enUS": "Contains upgrades for Zerg ground units.",
+        "ruRU": "Contains upgrades for Zerg ground units."
+      }
     },
     {
       "AbilCmd": "ZergBuild,Build11",
       "id": "BanelingNest",
       "Icon": "btn-building-zerg-banelingnest",
-      "Tooltip": "Contains an upgrade for Banelings.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Banelings from Zerglings",
-      "Name": "Mutate into Baneling Nest"
+      "Name": {
+        "enUS": "Mutate into Baneling Nest",
+        "ruRU": "Mutate into Baneling Nest"
+      },
+      "Tooltip": {
+        "enUS": "Contains an upgrade for Banelings.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Banelings from Zerglings",
+        "ruRU": "Contains an upgrade for Banelings.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Banelings from Zerglings"
+      }
     },
     {
       "AbilCmd": "ZergBuild,Build14",
       "id": "RoachWarren",
       "Icon": "btn-building-zerg-roachwarren",
-      "Tooltip": "Contains upgrades for Roaches.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Roaches from Larvae<br/>- Ravagers from Roaches",
-      "Name": "Mutate into Roach Warren"
+      "Name": {
+        "enUS": "Mutate into Roach Warren",
+        "ruRU": "Mutate into Roach Warren"
+      },
+      "Tooltip": {
+        "enUS": "Contains upgrades for Roaches.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Roaches from Larvae<br/>- Ravagers from Roaches",
+        "ruRU": "Contains upgrades for Roaches.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Roaches from Larvae<br/>- Ravagers from Roaches"
+      }
     },
     {
       "AbilCmd": "ZergBuild,Build15",
       "id": "SpineCrawler",
       "Icon": "btn-building-zerg-spinecrawler",
-      "Tooltip": "Anti-ground defensive structure. <br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>",
-      "Name": "Mutate into Spine Crawler"
+      "Name": {
+        "enUS": "Mutate into Spine Crawler",
+        "ruRU": "Mutate into Spine Crawler"
+      },
+      "Tooltip": {
+        "enUS": "Anti-ground defensive structure. <br/><br/><span style=\"color: ffff8a\">Can attack ground units.</span>",
+        "ruRU": "Anti-ground defensive structure. <br/><br/><span style=\"color: ffff8a\">Can attack ground units.</span>"
+      }
     },
     {
       "AbilCmd": "ZergBuild,Build16",
       "id": "SporeCrawler",
       "Icon": "btn-building-zerg-sporecrawler",
-      "Tooltip": "Anti-air defensive structure. <br/><br/><span style=\"color: #ffff8a\">Can attack air units.</span><br/><span style=\"color: #FFE303\">Detector</span>",
-      "Name": "Mutate into Spore Crawler"
+      "Name": {
+        "enUS": "Mutate into Spore Crawler",
+        "ruRU": "Mutate into Spore Crawler"
+      },
+      "Tooltip": {
+        "enUS": "Anti-air defensive structure. <br/><br/><span style=\"color: ffff8a\">Can attack air units.</span><br/><span style=\"color: FFE303\">Detector</span>",
+        "ruRU": "Anti-air defensive structure. <br/><br/><span style=\"color: ffff8a\">Can attack air units.</span><br/><span style=\"color: FFE303\">Detector</span>"
+      }
     },
     {
       "AbilCmd": "ZergBuild,Build7",
       "id": "Spire",
       "Icon": "btn-building-zerg-spire",
-      "Tooltip": "Contains upgrades for Zerg air units. Can mutate into a Greater Spire.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Mutalisks from Larvae<br/>- Corruptors from Larvae",
-      "Name": "Mutate into Spire"
+      "Name": {
+        "enUS": "Mutate into Spire",
+        "ruRU": "Mutate into Spire"
+      },
+      "Tooltip": {
+        "enUS": "Contains upgrades for Zerg air units. Can mutate into a Greater Spire.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Mutalisks from Larvae<br/>- Corruptors from Larvae",
+        "ruRU": "Contains upgrades for Zerg air units. Can mutate into a Greater Spire.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Mutalisks from Larvae<br/>- Corruptors from Larvae"
+      }
     },
     {
       "AbilCmd": "ZergBuild,Build8",
       "id": "UltraliskCavern",
       "Icon": "btn-building-zerg-ultraliskcavern",
-      "Tooltip": "Contains upgrades for Ultralisks.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Ultralisks from Larvae",
-      "Name": "Mutate into Ultralisk Cavern"
+      "Name": {
+        "enUS": "Mutate into Ultralisk Cavern",
+        "ruRU": "Mutate into Ultralisk Cavern"
+      },
+      "Tooltip": {
+        "enUS": "Contains an upgrade for Ultralisks.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Ultralisks from Larvae",
+        "ruRU": "Contains an upgrade for Ultralisks.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Ultralisks from Larvae"
+      }
     },
     {
       "AbilCmd": "ZergBuild,Build10",
       "id": "NydusNetwork",
       "Icon": "btn-building-zerg-nydusnetwork",
-      "Tooltip": "Friendly ground units can use the Nydus Network to instantly travel to any other Nydus Network or Nydus Worm owned by the player.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Nydus Worm",
-      "Name": "Mutate into Nydus Network"
+      "Name": {
+        "enUS": "Mutate into Nydus Network",
+        "ruRU": "Mutate into Nydus Network"
+      },
+      "Tooltip": {
+        "enUS": "Friendly ground units can use the Nydus Network to instantly travel to any other Nydus Network or Nydus Worm owned by the player.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Nydus Worm",
+        "ruRU": "Friendly ground units can use the Nydus Network to instantly travel to any other Nydus Network or Nydus Worm owned by the player.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Nydus Worm"
+      }
     },
     {
       "AbilCmd": "ZergBuild,Build9",
       "id": "InfestationPit",
       "Icon": "btn-building-zerg-infestationpit",
-      "Tooltip": "Contains upgrades for Infestors.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Infestors from Larvae<br/>- Swarm Hosts from Larvae",
-      "Name": "Mutate into Infestation Pit"
+      "Name": {
+        "enUS": "Mutate into Infestation Pit",
+        "ruRU": "Mutate into Infestation Pit"
+      },
+      "Tooltip": {
+        "enUS": "Contains upgrades for Infestors and Swarm Hosts.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Infestors from Larvae<br/>- Swarm Hosts from Larvae",
+        "ruRU": "Contains upgrades for Infestors and Swarm Hosts.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Infestors from Larvae<br/>- Swarm Hosts from Larvae"
+      }
     },
     {
       "AbilCmd": "ZergBuild,Build6",
       "id": "HydraliskDen",
       "Icon": "btn-building-zerg-hydraliskden",
-      "Tooltip": "Contains upgrades for Hydralisks.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Hydralisks from Larvae",
-      "Name": "Mutate into Hydralisk Den"
-    },
-    {
-      "AbilCmd": "ZergBuild,Build12",
-      "id": "MutateintoLurkerDen",
-      "Icon": "btn-building-zerg-lurkerden",
-      "Tooltip": "Contains an upgrade for Lurkers.<br/><br/><span style=\"color: #ffff8a\">Enables:</span><br/>- Lurkers from Hydralisks",
-      "Name": "Mutate into Lurker Den"
+      "Name": {
+        "enUS": "Mutate into Hydralisk Den",
+        "ruRU": "Mutate into Hydralisk Den"
+      },
+      "Tooltip": {
+        "enUS": "Contains an upgrade for Hydralisks. Can mutate into a Lurker Den.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Hydralisks from Larvae",
+        "ruRU": "Contains an upgrade for Hydralisks. Can mutate into a Lurker Den.<br/><br/><span style=\"color: ffff8a\">Enables:</span><br/>- Hydralisks from Larvae"
+      }
     }
   ]
 }

@@ -1,21 +1,30 @@
 {
-  "id":"arc",
-  "discord": "https://discord.gg/8T4MUA3xXr",
+  "discord": "https://discord.gg/Xx9xurbb4u",
+  "id": "scevo",
   "races": [
     {
       "id": "Terr",
-      "Name": "Terran",
-      "Icon": "lobby-terran"
+      "Name": {
+        "ruRU": "Terran",
+        "enUS": "Terran"
+      },
+      "Icon": "decal_terran_0056_01"
     },
     {
       "id": "Prot",
-      "Name": "Protoss",
-      "Icon": "lobby-protoss"
+      "Name": {
+        "ruRU": "Protoss",
+        "enUS": "Protoss"
+      },
+      "Icon": "decal_terran_0053_01"
     },
     {
       "id": "Zerg",
-      "Name": "Zerg",
-      "Icon": "lobby-zerg"
+      "Name": {
+        "ruRU": "Zerg",
+        "enUS": "Zerg"
+      },
+      "Icon": "decal_terran_0022_01"
     }
   ]
 }
