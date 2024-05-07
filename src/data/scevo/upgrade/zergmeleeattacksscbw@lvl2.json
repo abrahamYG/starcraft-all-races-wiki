@@ -13,13 +13,6 @@
   "ScoreValue": "WeaponTechnologyValue",
   "WebPriority": 0,
   "LeaderAlias": "ZergMeleeAttacksSCBW",
-  "EditorCategories": "Race:Zerg,UpgradeType:AttackBonus",
-  "$tokens": {
-    "ID": {
-      "type": "string",
-      "value": ""
-    }
-  },
   "DataCollection": "ZergMeleeAttacksSCBW",
   "Race": "BWZe",
   "ScoreAmount": 350,
@@ -39,6 +32,7 @@
       "Value": "Assets\\Textures\\btn-upgrade-zerg-meleeattacks-level2.dds"
     }
   ],
+  "EditorCategories": "Race:Zerg,UpgradeType:AttackBonus",
   "BonusResourcePerLevel": {
     "Minerals": 75,
     "Vespene": 75

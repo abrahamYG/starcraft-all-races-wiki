@@ -13,17 +13,11 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "GhostSCBWLockdownResearch",
-  "EditorCategories": "Race:Terran,UpgradeType:SpellResearch",
-  "$tokens": {
-    "ID": {
-      "type": "string",
-      "value": ""
-    }
-  },
   "DataCollection": "GhostSCBWLockdownResearch",
   "Race": "Terr",
   "ScoreAmount": 400,
   "ScoreResult": "BuildOrder",
+  "EditorCategories": "Race:Terran,UpgradeType:SpellResearch",
   "AffectedUnitArray": [
     "GhostSCBW"
   ]

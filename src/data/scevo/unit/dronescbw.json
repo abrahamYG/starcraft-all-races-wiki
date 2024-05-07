@@ -21,8 +21,7 @@
   "LifeStart": 40,
   "LifeMax": 40,
   "LifeArmorName": {
-    "enUS": "Zerg Ground Carapace",
-    "ruRU": "Zerg Ground Carapace"
+    "enUS": "Zerg Ground Carapace"
   },
   "Mover": "Ground",
   "StationaryTurningRate": 999.8437,
@@ -85,12 +84,6 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
-  "$tokens": {
-    "ID": {
-      "type": "string",
-      "value": ""
-    }
-  },
   "Mob": "Multiplayer",
   "EnergyRegenRate": 0.5,
   "id": "DroneSCBW",
@@ -112,7 +105,7 @@
   ],
   "ShieldArmorName": "-",
   "Speed": 2.8125,
-  "Acceleration": 2.5,
+  "Acceleration": 4.1875,
   "LateralAcceleration": 46.0625,
   "Sight": 8,
   "Food": -1,
@@ -152,12 +145,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -195,7 +182,8 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move"
+          "id": "move",
+          "AbilSetId": "Move"
         },
         "Cost": {
           "Minerals": 0,
@@ -214,12 +202,10 @@
         "id": "Move",
         "Icon": "btn-command-move",
         "Name": {
-          "enUS": "Move",
-          "ruRU": "Двигаться /// Move"
+          "enUS": "Move"
         },
         "Tooltip": {
-          "enUS": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
-          "ruRU": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies."
+          "enUS": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies."
         },
         "Hotkey": "M"
       },
@@ -242,12 +228,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "stop",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "AbilSetId": "Stop",
           "CmdButtonArray": {
             "Stop": {
@@ -294,12 +274,10 @@
         "id": "Stop",
         "Icon": "btn-command-stop",
         "Name": {
-          "enUS": "Stop",
-          "ruRU": "Отставить /// Stop"
+          "enUS": "Stop"
         },
         "Tooltip": {
-          "enUS": "Orders selected units to cancel all orders and stop moving.",
-          "ruRU": "Orders selected units to cancel all orders and stop moving."
+          "enUS": "Orders selected units to cancel all orders and stop moving."
         },
         "Hotkey": "S"
       },
@@ -328,12 +306,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -371,7 +343,8 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move"
+          "id": "move",
+          "AbilSetId": "Move"
         },
         "Cost": {
           "Minerals": 0,
@@ -390,12 +363,10 @@
         "id": "MoveHoldPosition",
         "Icon": "btn-command-holdposition",
         "Name": {
-          "enUS": "Hold Position",
-          "ruRU": "Удерживать позицию /// Hold Position"
+          "enUS": "Hold Position"
         },
         "Tooltip": {
-          "enUS": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
-          "ruRU": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage."
+          "enUS": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage."
         },
         "Hotkey": "H"
       },
@@ -418,12 +389,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "attack",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "AbilSetId": "Attack",
           "Alignment": "Negative",
           "AcquireFilters": "-;Player,Ally,Neutral,Dead,Hidden,Invulnerable,Benign",
@@ -470,12 +435,10 @@
         "AbilCmd": "attack,Execute",
         "id": "AttackWorker",
         "Name": {
-          "enUS": "Attack",
-          "ruRU": "Атаковать /// Attack"
+          "enUS": "Attack"
         },
         "Tooltip": {
-          "enUS": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
-          "ruRU": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed."
+          "enUS": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed."
         },
         "Hotkey": "A"
       },
@@ -504,12 +467,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -547,7 +504,8 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move"
+          "id": "move",
+          "AbilSetId": "Move"
         },
         "Cost": {
           "Minerals": 0,
@@ -566,12 +524,10 @@
         "id": "MovePatrol",
         "Icon": "btn-command-patrol",
         "Name": {
-          "enUS": "Patrol",
-          "ruRU": "Патрулировать /// Patrol"
+          "enUS": "Patrol"
         },
         "Tooltip": {
-          "enUS": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
-          "ruRU": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies."
+          "enUS": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies."
         },
         "Hotkey": "P"
       },
@@ -594,12 +550,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "DroneSCBW@Harvest",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "CmdButtonArray": {
             "Gather": {
               "Flags": {
@@ -667,12 +617,10 @@
         "id": "ReturnCargo",
         "Icon": "btn-command-returncargo",
         "Name": {
-          "enUS": "Return Cargo",
-          "ruRU": "Return Cargo"
+          "enUS": "Return Cargo"
         },
         "Tooltip": {
-          "enUS": "Returns the carried resources to the nearest drop-off point.",
-          "ruRU": "Returns the carried resources to the nearest drop-off point."
+          "enUS": "Returns the carried resources to the nearest drop-off point."
         },
         "Hotkey": "C"
       },
@@ -694,12 +642,10 @@
         "id": "ZergBuild",
         "Icon": "btn-ability-zerg-basicmutation",
         "Name": {
-          "enUS": "Basic Mutation",
-          "ruRU": "Basic Mutation"
+          "enUS": "Basic Mutation"
         },
         "Tooltip": {
-          "enUS": "A list of basic structures.",
-          "ruRU": "A list of basic structures."
+          "enUS": "A list of basic structures."
         },
         "Hotkey": "B"
       },
@@ -721,12 +667,10 @@
         "id": "ZergBuildAdvanced",
         "Icon": "btn-ability-zerg-advancedmutation",
         "Name": {
-          "enUS": "Advanced Mutation",
-          "ruRU": "Advanced Mutation"
+          "enUS": "Advanced Mutation"
         },
         "Tooltip": {
-          "enUS": "A list of advanced structures.",
-          "ruRU": "A list of advanced structures."
+          "enUS": "A list of advanced structures."
         },
         "Hotkey": "V"
       },
@@ -770,12 +714,10 @@
         "id": "BurrowDown",
         "Icon": "btn-ability-zerg-burrow-color",
         "Name": {
-          "enUS": "Burrow",
-          "ruRU": "Burrow"
+          "enUS": "Burrow"
         },
         "Tooltip": {
-          "enUS": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
-          "ruRU": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection."
+          "enUS": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection."
         },
         "Hotkey": "D"
       },
@@ -819,12 +761,10 @@
         "id": "BurrowUp",
         "Icon": "btn-ability-zerg-upburrow-color",
         "Name": {
-          "enUS": "Unburrow",
-          "ruRU": "Unburrow"
+          "enUS": "Unburrow"
         },
         "Tooltip": {
-          "enUS": "Returns the unit to the surface.",
-          "ruRU": "Returns the unit to the surface."
+          "enUS": "Returns the unit to the surface."
         },
         "Hotkey": "R"
       },
@@ -863,12 +803,10 @@
         "id": "BurrowUp",
         "Icon": "btn-ability-zerg-upburrow-color",
         "Name": {
-          "enUS": "Unburrow",
-          "ruRU": "Unburrow"
+          "enUS": "Unburrow"
         },
         "Tooltip": {
-          "enUS": "Returns the unit to the surface.",
-          "ruRU": "Returns the unit to the surface."
+          "enUS": "Returns the unit to the surface."
         },
         "Hotkey": "R"
       },
@@ -907,12 +845,10 @@
         "id": "BurrowUp",
         "Icon": "btn-ability-zerg-upburrow-color",
         "Name": {
-          "enUS": "Unburrow",
-          "ruRU": "Unburrow"
+          "enUS": "Unburrow"
         },
         "Tooltip": {
-          "enUS": "Returns the unit to the surface.",
-          "ruRU": "Returns the unit to the surface."
+          "enUS": "Returns the unit to the surface."
         },
         "Hotkey": "R"
       },
@@ -946,12 +882,10 @@
         "id": "BurrowUp",
         "Icon": "btn-ability-zerg-upburrow-color",
         "Name": {
-          "enUS": "Unburrow",
-          "ruRU": "Unburrow"
+          "enUS": "Unburrow"
         },
         "Tooltip": {
-          "enUS": "Returns the unit to the surface.",
-          "ruRU": "Returns the unit to the surface."
+          "enUS": "Returns the unit to the surface."
         },
         "Hotkey": "R"
       },
@@ -990,12 +924,10 @@
         "id": "BurrowUp",
         "Icon": "btn-ability-zerg-upburrow-color",
         "Name": {
-          "enUS": "Unburrow",
-          "ruRU": "Unburrow"
+          "enUS": "Unburrow"
         },
         "Tooltip": {
-          "enUS": "Returns the unit to the surface.",
-          "ruRU": "Returns the unit to the surface."
+          "enUS": "Returns the unit to the surface."
         },
         "Hotkey": "R"
       },
@@ -1029,12 +961,10 @@
         "id": "BurrowUp",
         "Icon": "btn-ability-zerg-upburrow-color",
         "Name": {
-          "enUS": "Unburrow",
-          "ruRU": "Unburrow"
+          "enUS": "Unburrow"
         },
         "Tooltip": {
-          "enUS": "Returns the unit to the surface.",
-          "ruRU": "Returns the unit to the surface."
+          "enUS": "Returns the unit to the surface."
         },
         "Hotkey": "R"
       },
@@ -1057,12 +987,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "DroneSCBW@Harvest",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "CmdButtonArray": {
             "Gather": {
               "Flags": {
@@ -1130,12 +1054,10 @@
         "id": "GatherZerg",
         "Icon": "btn-ability-zerg-gather",
         "Name": {
-          "enUS": "Gather",
-          "ruRU": "Gather"
+          "enUS": "Gather"
         },
         "Tooltip": {
-          "enUS": "Orders Drone to gather resources from a selected Mineral Field or Vespene Geyser.",
-          "ruRU": "Orders Drone to gather resources from a selected Mineral Field or Vespene Geyser."
+          "enUS": "Orders Drone to gather resources from a selected Mineral Field or Vespene Geyser."
         },
         "Hotkey": "G"
       }
@@ -1158,12 +1080,10 @@
         "id": "Cancel",
         "Icon": "btn-command-cancel",
         "Name": {
-          "enUS": "Cancel",
-          "ruRU": "Отменить /// Cancel"
+          "enUS": "Cancel"
         },
         "Tooltip": {
-          "enUS": "Drops the current order without performing it, and allows you to select a different order.",
-          "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+          "enUS": "Drops the current order without performing it, and allows you to select a different order."
         },
         "Hotkey": "Esc"
       },
@@ -1183,7 +1103,7 @@
         },
         "Unit": "HatcherySCBW",
         "Cost": {
-          "Minerals": 300,
+          "Minerals": 350,
           "Vespene": 0,
           "Terazine": 0,
           "Custom": 0,
@@ -1251,7 +1171,7 @@
           "zhCN": "菌毯生成设施。可以变异为<span class=\"style-TooltipHighlightSCBW\"><b>Sunken Colony</b></span>或<span class=\"style-TooltipHighlightSCBW\"><b>Spore Colony</b></span>。菌毯能够为附近的异虫建筑提供给养。",
           "koKR": "크립 생성 구조물입니다. <span class=\"style-TooltipHighlightSCBW\"><b>Sunken Colony</b></span>나 <span class=\"style-TooltipHighlightSCBW\"><b>Spore Colony</b></span>로 변이 가능합니다. 크립은 주변 저그 구조물에 양분을 공급합니다. /// Creep generator structure. Can mutate into <span class=\"style-TooltipHighlightSCBW\"><b>Sunken Colony</b></span> or <span class=\"style-TooltipHighlightSCBW\"><b>Spore Colony</b></span>. Creep feeds nearby Zerg structures."
         },
-        "Hotkey": "A"
+        "Hotkey": "C"
       },
       {
         "Info": {
@@ -1447,12 +1367,10 @@
         "id": "Cancel",
         "Icon": "btn-command-cancel",
         "Name": {
-          "enUS": "Cancel",
-          "ruRU": "Отменить /// Cancel"
+          "enUS": "Cancel"
         },
         "Tooltip": {
-          "enUS": "Drops the current order without performing it, and allows you to select a different order.",
-          "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+          "enUS": "Drops the current order without performing it, and allows you to select a different order."
         },
         "Hotkey": "Esc"
       },
@@ -1629,7 +1547,7 @@
           "zhCN": "为<span class=\"style-TooltipHighlightSCBW\"><b>Defiler</b></span>提供升级方案。<br/><br/><span class=\"style-TooltipHighlightSCBW\">开启：</span><br/>- <b>Larva</b>可以变异为<b>Defiler</b>",
           "koKR": "<span class=\"style-TooltipHighlightSCBW\"><b>Defiler</b></span>를 업그레이드합니다.<br/><br/><span class=\"style-TooltipHighlightSCBW\">사용 가능:</span><br/>- <b>Defiler</b> (<b>Larva</b>에서 변태) /// Contains upgrades for <span class=\"style-TooltipHighlightSCBW\"><b>Defiler</b>s</span>.<br/><br/><span class=\"style-TooltipHighlightSCBW\">Enables:</span><br/>- <b>Defiler</b>s from <b>Larva</b>e"
         },
-        "Hotkey": "R"
+        "Hotkey": "D"
       },
       {
         "Info": {
@@ -1702,8 +1620,8 @@
       "Amount": 5,
       "Kind": "Melee",
       "TargetFilters": "Ground",
-      "Range": 0.2,
-      "Period": 1.5
+      "Range": 1,
+      "Period": 1.375
     }
   ],
   "Behaviors": [],
@@ -1711,22 +1629,19 @@
     {
       "id": "stop",
       "Name": {
-        "enUS": "Stop",
-        "ruRU": "Stop"
+        "enUS": "Stop"
       }
     },
     {
       "id": "attack",
       "Name": {
-        "ruRU": "Attack",
         "enUS": "Attack"
       }
     },
     {
       "id": "move",
       "Name": {
-        "enUS": "Move",
-        "ruRU": "Move"
+        "enUS": "Move"
       }
     },
     {
@@ -1765,25 +1680,25 @@
   "$Upgrades": [
     "ZergSCBWBurrowResearch",
     "DroneSCBW",
-    "LarvaSCBW@Train",
     "DroneSCBW@BurrowUp",
     "DroneSCBW@Burrowed",
     "DefilerSCBW@Burrowed",
-    "LarvaSCBW",
     "Button/Tooltip/HatcherySCBW",
     "BWZe",
+    "LarvaSCBW@Train",
+    "LarvaSCBW",
     "DroneSCBW@BurrowedSplat",
     "DroneSCBW",
     "DroneSCBW@ThreatensDrone",
     "IsDroneSCBW",
     "NotDroneSCBW",
     "CasterIsDroneSCBW",
+    "DroneSCBW",
     "DroneSCBW@AllowUnit",
     "DroneSCBW@CountAtUnit",
     "DroneSCBW@Count",
     "DroneSCBW@QoB",
-    "DroneSCBW@QoBAtUnit",
-    "DroneSCBW"
+    "DroneSCBW@QoBAtUnit"
   ],
   "$Requirements": [],
   "$Production": [
@@ -1800,22 +1715,15 @@
     "UltraliskCavernSCBW"
   ],
   "$Research": [],
-  "$Morph": [],
-  "$Phase": [
-    "ZerglingSCBW",
-    "UltraliskSCBW",
+  "$Morph": [
+    "DroneSCBW@Burrowed",
+    "DefilerSCBW",
+    "DroneSCBW",
     "HydraliskSCBW",
-    "DroneSCBW",
-    "DroneSCBW",
-    "DefilerSCBW",
-    "DefilerSCBW",
-    "DroneSCBW@Burrowed",
-    "DroneSCBW@Burrowed",
-    "ZerglingSCBW@Burrowed",
-    "UltraliskSCBW@Burrowed",
-    "HydraliskSCBW@Burrowed"
+    "UltraliskSCBW",
+    "ZerglingSCBW"
   ],
-  "$Phased": "DroneSCBW",
+  "$Phase": [],
   "$Producers": [
     "AbilTrainHolderSCBW",
     "LarvaSCBW"
@@ -1826,12 +1734,10 @@
       "id": "Move",
       "Icon": "btn-command-move",
       "Name": {
-        "enUS": "Move",
-        "ruRU": "Двигаться /// Move"
+        "enUS": "Move"
       },
       "Tooltip": {
-        "enUS": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
-        "ruRU": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies."
+        "enUS": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies."
       }
     },
     {
@@ -1839,12 +1745,10 @@
       "id": "Stop",
       "Icon": "btn-command-stop",
       "Name": {
-        "enUS": "Stop",
-        "ruRU": "Отставить /// Stop"
+        "enUS": "Stop"
       },
       "Tooltip": {
-        "enUS": "Orders selected units to cancel all orders and stop moving.",
-        "ruRU": "Orders selected units to cancel all orders and stop moving."
+        "enUS": "Orders selected units to cancel all orders and stop moving."
       }
     },
     {
@@ -1852,24 +1756,20 @@
       "id": "MoveHoldPosition",
       "Icon": "btn-command-holdposition",
       "Name": {
-        "enUS": "Hold Position",
-        "ruRU": "Удерживать позицию /// Hold Position"
+        "enUS": "Hold Position"
       },
       "Tooltip": {
-        "enUS": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
-        "ruRU": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage."
+        "enUS": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage."
       }
     },
     {
       "AbilCmd": "attack,Execute",
       "id": "AttackWorker",
       "Name": {
-        "enUS": "Attack",
-        "ruRU": "Атаковать /// Attack"
+        "enUS": "Attack"
       },
       "Tooltip": {
-        "enUS": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
-        "ruRU": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed."
+        "enUS": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed."
       }
     },
     {
@@ -1877,12 +1777,10 @@
       "id": "MovePatrol",
       "Icon": "btn-command-patrol",
       "Name": {
-        "enUS": "Patrol",
-        "ruRU": "Патрулировать /// Patrol"
+        "enUS": "Patrol"
       },
       "Tooltip": {
-        "enUS": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
-        "ruRU": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies."
+        "enUS": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies."
       }
     },
     {
@@ -1890,12 +1788,10 @@
       "id": "ReturnCargo",
       "Icon": "btn-command-returncargo",
       "Name": {
-        "enUS": "Return Cargo",
-        "ruRU": "Return Cargo"
+        "enUS": "Return Cargo"
       },
       "Tooltip": {
-        "enUS": "Returns the carried resources to the nearest drop-off point.",
-        "ruRU": "Returns the carried resources to the nearest drop-off point."
+        "enUS": "Returns the carried resources to the nearest drop-off point."
       }
     },
     {
@@ -1903,12 +1799,10 @@
       "id": "BurrowDown",
       "Icon": "btn-ability-zerg-burrow-color",
       "Name": {
-        "enUS": "Burrow",
-        "ruRU": "Burrow"
+        "enUS": "Burrow"
       },
       "Tooltip": {
-        "enUS": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
-        "ruRU": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection."
+        "enUS": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection."
       }
     },
     {
@@ -1916,12 +1810,10 @@
       "id": "BurrowUp",
       "Icon": "btn-ability-zerg-upburrow-color",
       "Name": {
-        "enUS": "Unburrow",
-        "ruRU": "Unburrow"
+        "enUS": "Unburrow"
       },
       "Tooltip": {
-        "enUS": "Returns the unit to the surface.",
-        "ruRU": "Returns the unit to the surface."
+        "enUS": "Returns the unit to the surface."
       }
     },
     {
@@ -1929,12 +1821,10 @@
       "id": "BurrowUp",
       "Icon": "btn-ability-zerg-upburrow-color",
       "Name": {
-        "enUS": "Unburrow",
-        "ruRU": "Unburrow"
+        "enUS": "Unburrow"
       },
       "Tooltip": {
-        "enUS": "Returns the unit to the surface.",
-        "ruRU": "Returns the unit to the surface."
+        "enUS": "Returns the unit to the surface."
       }
     },
     {
@@ -1942,12 +1832,10 @@
       "id": "BurrowUp",
       "Icon": "btn-ability-zerg-upburrow-color",
       "Name": {
-        "enUS": "Unburrow",
-        "ruRU": "Unburrow"
+        "enUS": "Unburrow"
       },
       "Tooltip": {
-        "enUS": "Returns the unit to the surface.",
-        "ruRU": "Returns the unit to the surface."
+        "enUS": "Returns the unit to the surface."
       }
     },
     {
@@ -1955,12 +1843,10 @@
       "id": "BurrowUp",
       "Icon": "btn-ability-zerg-upburrow-color",
       "Name": {
-        "enUS": "Unburrow",
-        "ruRU": "Unburrow"
+        "enUS": "Unburrow"
       },
       "Tooltip": {
-        "enUS": "Returns the unit to the surface.",
-        "ruRU": "Returns the unit to the surface."
+        "enUS": "Returns the unit to the surface."
       }
     },
     {
@@ -1968,12 +1854,10 @@
       "id": "BurrowUp",
       "Icon": "btn-ability-zerg-upburrow-color",
       "Name": {
-        "enUS": "Unburrow",
-        "ruRU": "Unburrow"
+        "enUS": "Unburrow"
       },
       "Tooltip": {
-        "enUS": "Returns the unit to the surface.",
-        "ruRU": "Returns the unit to the surface."
+        "enUS": "Returns the unit to the surface."
       }
     },
     {
@@ -1981,12 +1865,10 @@
       "id": "BurrowUp",
       "Icon": "btn-ability-zerg-upburrow-color",
       "Name": {
-        "enUS": "Unburrow",
-        "ruRU": "Unburrow"
+        "enUS": "Unburrow"
       },
       "Tooltip": {
-        "enUS": "Returns the unit to the surface.",
-        "ruRU": "Returns the unit to the surface."
+        "enUS": "Returns the unit to the surface."
       }
     },
     {
@@ -1994,12 +1876,10 @@
       "id": "Cancel",
       "Icon": "btn-command-cancel",
       "Name": {
-        "enUS": "Cancel",
-        "ruRU": "Отменить /// Cancel"
+        "enUS": "Cancel"
       },
       "Tooltip": {
-        "enUS": "Drops the current order without performing it, and allows you to select a different order.",
-        "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+        "enUS": "Drops the current order without performing it, and allows you to select a different order."
       }
     },
     {
@@ -2007,12 +1887,10 @@
       "id": "GatherZerg",
       "Icon": "btn-ability-zerg-gather",
       "Name": {
-        "enUS": "Gather",
-        "ruRU": "Gather"
+        "enUS": "Gather"
       },
       "Tooltip": {
-        "enUS": "Orders Drone to gather resources from a selected Mineral Field or Vespene Geyser.",
-        "ruRU": "Orders Drone to gather resources from a selected Mineral Field or Vespene Geyser."
+        "enUS": "Orders Drone to gather resources from a selected Mineral Field or Vespene Geyser."
       }
     },
     {

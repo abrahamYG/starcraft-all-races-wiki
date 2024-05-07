@@ -21,8 +21,7 @@
   "LifeStart": 200,
   "LifeMax": 200,
   "LifeArmorName": {
-    "enUS": "Terran Building Plating",
-    "ruRU": "Terran Building Plating"
+    "enUS": "Terran Building Plating"
   },
   "Mover": "Ground",
   "StationaryTurningRate": 720,
@@ -89,12 +88,6 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
-  "$tokens": {
-    "ID": {
-      "type": "string",
-      "value": ""
-    }
-  },
   "Mob": "Multiplayer",
   "Gender": "Neutral",
   "FogVisibility": "Snapshot",
@@ -151,12 +144,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "BuildInProgress",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "Activity": "UI/Building",
           "VitalStartFactor": {
             "Life": 0.1,
@@ -190,12 +177,10 @@
         "id": "Halt",
         "Icon": "btn-command-stop",
         "Name": {
-          "enUS": "Halt",
-          "ruRU": "Приостановить /// Halt"
+          "enUS": "Halt"
         },
         "Tooltip": {
-          "enUS": "Halts construction of this structure. The partial construction will remain.",
-          "ruRU": "Приостановить сооружение этого строения. Впоследствии его можно будет продолжить. /// Halts construction of this structure. The partial construction will remain."
+          "enUS": "Halts construction of this structure. The partial construction will remain."
         },
         "Hotkey": "T"
       },
@@ -245,12 +230,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "BuildInProgress",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "Activity": "UI/Building",
           "VitalStartFactor": {
             "Life": 0.1,
@@ -284,12 +263,10 @@
         "id": "CancelBuilding",
         "Icon": "btn-command-cancel",
         "Name": {
-          "enUS": "Cancel",
-          "ruRU": "Отменить /// Cancel"
+          "enUS": "Cancel"
         },
         "Tooltip": {
-          "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-          "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+          "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund."
         },
         "Hotkey": "Esc"
       },
@@ -312,12 +289,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "stop",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "AbilSetId": "Stop",
           "CmdButtonArray": {
             "Stop": {
@@ -364,12 +335,10 @@
         "id": "Stop",
         "Icon": "btn-command-stop",
         "Name": {
-          "enUS": "Stop",
-          "ruRU": "Отставить /// Stop"
+          "enUS": "Stop"
         },
         "Tooltip": {
-          "enUS": "Orders selected units to cancel all orders and stop moving.",
-          "ruRU": "Orders selected units to cancel all orders and stop moving."
+          "enUS": "Orders selected units to cancel all orders and stop moving."
         },
         "Hotkey": "S"
       },
@@ -392,12 +361,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "attack",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "AbilSetId": "Attack",
           "Alignment": "Negative",
           "AcquireFilters": "-;Player,Ally,Neutral,Dead,Hidden,Invulnerable,Benign",
@@ -445,12 +408,10 @@
         "id": "AttackBuilding",
         "Icon": "btn-command-attack",
         "Name": {
-          "enUS": "Attack",
-          "ruRU": "Attack"
+          "enUS": "Attack"
         },
         "Tooltip": {
-          "enUS": "Targets and attacks the target unit until it is destroyed or moves out of range.",
-          "ruRU": "Targets and attacks the target unit until it is destroyed or moves out of range."
+          "enUS": "Targets and attacks the target unit until it is destroyed or moves out of range."
         },
         "Hotkey": "A"
       },
@@ -471,12 +432,10 @@
         "id": "SelectBuilder",
         "Icon": "btn-upgrade-terran-weaponrefit",
         "Name": {
-          "enUS": "Select Builder",
-          "ruRU": "Select Builder"
+          "enUS": "Select Builder"
         },
         "Tooltip": {
-          "enUS": "Selects the unit constructing this structure.",
-          "ruRU": "Selects the unit constructing this structure."
+          "enUS": "Selects the unit constructing this structure."
         },
         "Hotkey": "Q"
       }
@@ -512,10 +471,7 @@
         "zhCN": "长箭飞弹",
         "koKR": "장거리 미사일 /// Longbolt Turret"
       },
-      "Amount": 15,
-      "AttributeBonus": {
-        "Armored": 5
-      },
+      "Amount": 19,
       "Kind": "Ranged",
       "TargetFilters": "Air",
       "Range": 7,
@@ -526,9 +482,7 @@
     {
       "id": "TerranBuildingSCBW@Burnout",
       "Name": {
-        "enUS": "Burnout",
-        "zhCN": "Burnout",
-        "koKR": "Burnout"
+        "enUS": "Burnout"
       },
       "Tooltip": "-"
     },
@@ -536,19 +490,16 @@
       "id": "Detector11",
       "Icon": "btn-status-detector",
       "Name": {
-        "enUS": "Detector",
-        "ruRU": "Детектор /// Detector"
+        "enUS": "Detector"
       },
       "Tooltip": {
-        "enUS": "This unit can detect cloaked or burrowed units within its sight range.",
-        "ruRU": "Эта боевая единица может обнаруживать замаскированные или закопанные войска в поле обзора."
+        "enUS": "This unit can detect cloaked or burrowed units within its sight range."
       }
     },
     {
       "id": "UnderConstruction",
       "Name": {
-        "enUS": "Under Construction",
-        "ruRU": "Under Construction"
+        "enUS": "Under Construction"
       },
       "Tooltip": "-"
     }
@@ -557,28 +508,24 @@
     {
       "id": "BuildInProgress",
       "Name": {
-        "enUS": "Build in Progress",
-        "ruRU": "Build in Progress"
+        "enUS": "Build in Progress"
       }
     },
     {
       "id": "stop",
       "Name": {
-        "enUS": "Stop",
-        "ruRU": "Stop"
+        "enUS": "Stop"
       }
     },
     {
       "id": "attack",
       "Name": {
-        "ruRU": "Attack",
         "enUS": "Attack"
       }
     },
     {
       "id": "que1",
       "Name": {
-        "ruRU": "Queue (1)",
         "enUS": "Queue (1)"
       }
     }
@@ -593,8 +540,8 @@
     "IsMissileTurretSCBW",
     "NotMissileTurretSCBW",
     "CasterIsMissileTurretSCBW",
-    "MissileTurretSCBW@Count",
-    "MissileTurretSCBW"
+    "MissileTurretSCBW",
+    "MissileTurretSCBW@Count"
   ],
   "$Requirements": [],
   "$Production": [],
@@ -611,12 +558,10 @@
       "id": "Halt",
       "Icon": "btn-command-stop",
       "Name": {
-        "enUS": "Halt",
-        "ruRU": "Приостановить /// Halt"
+        "enUS": "Halt"
       },
       "Tooltip": {
-        "enUS": "Halts construction of this structure. The partial construction will remain.",
-        "ruRU": "Приостановить сооружение этого строения. Впоследствии его можно будет продолжить. /// Halts construction of this structure. The partial construction will remain."
+        "enUS": "Halts construction of this structure. The partial construction will remain."
       }
     },
     {
@@ -624,12 +569,10 @@
       "id": "CancelBuilding",
       "Icon": "btn-command-cancel",
       "Name": {
-        "enUS": "Cancel",
-        "ruRU": "Отменить /// Cancel"
+        "enUS": "Cancel"
       },
       "Tooltip": {
-        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-        "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund."
       }
     },
     {
@@ -637,12 +580,10 @@
       "id": "Stop",
       "Icon": "btn-command-stop",
       "Name": {
-        "enUS": "Stop",
-        "ruRU": "Отставить /// Stop"
+        "enUS": "Stop"
       },
       "Tooltip": {
-        "enUS": "Orders selected units to cancel all orders and stop moving.",
-        "ruRU": "Orders selected units to cancel all orders and stop moving."
+        "enUS": "Orders selected units to cancel all orders and stop moving."
       }
     },
     {
@@ -650,12 +591,10 @@
       "id": "AttackBuilding",
       "Icon": "btn-command-attack",
       "Name": {
-        "enUS": "Attack",
-        "ruRU": "Attack"
+        "enUS": "Attack"
       },
       "Tooltip": {
-        "enUS": "Targets and attacks the target unit until it is destroyed or moves out of range.",
-        "ruRU": "Targets and attacks the target unit until it is destroyed or moves out of range."
+        "enUS": "Targets and attacks the target unit until it is destroyed or moves out of range."
       }
     }
   ]

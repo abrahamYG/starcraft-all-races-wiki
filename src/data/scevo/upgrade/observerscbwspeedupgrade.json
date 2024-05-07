@@ -13,13 +13,6 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "ObserverSCBWSpeedUpgrade",
-  "EditorCategories": "UpgradeType:Talents,Race:Protoss",
-  "$tokens": {
-    "ID": {
-      "type": "string",
-      "value": ""
-    }
-  },
   "DataCollection": "ObserverSCBWSpeedUpgrade",
   "EffectArrayTemplate": [
     {
@@ -32,6 +25,7 @@
   "Race": "BWPr",
   "ScoreAmount": 300,
   "ScoreResult": "BuildOrder",
+  "EditorCategories": "UpgradeType:Talents,Race:Protoss",
   "AffectedUnitArray": [
     "ObserverSCBW"
   ]

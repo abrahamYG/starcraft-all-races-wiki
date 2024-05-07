@@ -13,17 +13,11 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "ScienceVesselSCBWIrradiateResearch",
-  "EditorCategories": "Race:Terran,UpgradeType:SpellResearch",
-  "$tokens": {
-    "ID": {
-      "type": "string",
-      "value": ""
-    }
-  },
   "DataCollection": "ScienceVesselSCBWIrradiateResearch",
   "Race": "Terr",
   "ScoreAmount": 400,
   "ScoreResult": "BuildOrder",
+  "EditorCategories": "Race:Terran,UpgradeType:SpellResearch",
   "AffectedUnitArray": [
     "ScienceVesselSCBW"
   ]

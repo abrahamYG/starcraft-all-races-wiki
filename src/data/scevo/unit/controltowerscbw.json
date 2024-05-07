@@ -21,8 +21,7 @@
   "LifeStart": 500,
   "LifeMax": 500,
   "LifeArmorName": {
-    "enUS": "Terran Building Plating",
-    "ruRU": "Terran Building Plating"
+    "enUS": "Terran Building Plating"
   },
   "Mover": "Ground",
   "StationaryTurningRate": 720,
@@ -88,12 +87,6 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
-  "$tokens": {
-    "ID": {
-      "type": "string",
-      "value": ""
-    }
-  },
   "Mob": "Multiplayer",
   "Gender": "Neutral",
   "FogVisibility": "Snapshot",
@@ -165,12 +158,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "que5Addon",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "QueueCount": 1,
           "Flags": {
             "BestUnit": 1,
@@ -204,12 +191,10 @@
         "id": "Cancel",
         "Icon": "btn-command-cancel",
         "Name": {
-          "enUS": "Cancel",
-          "ruRU": "Отменить /// Cancel"
+          "enUS": "Cancel"
         },
         "Tooltip": {
-          "enUS": "Drops the current order without performing it, and allows you to select a different order.",
-          "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+          "enUS": "Drops the current order without performing it, and allows you to select a different order."
         },
         "Hotkey": "Esc"
       },
@@ -232,12 +217,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "BuildInProgress",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "Activity": "UI/Building",
           "VitalStartFactor": {
             "Life": 0.1,
@@ -271,12 +250,10 @@
         "id": "CancelBuilding",
         "Icon": "btn-command-cancel",
         "Name": {
-          "enUS": "Cancel",
-          "ruRU": "Отменить /// Cancel"
+          "enUS": "Cancel"
         },
         "Tooltip": {
-          "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-          "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+          "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund."
         },
         "Hotkey": "Esc"
       },
@@ -292,6 +269,7 @@
               "CreateDefaultButton": 1
             },
             "DefaultButtonFace": "WraithSCBWCloakResearch",
+            "State": "Restricted",
             "Requirements": "WraithSCBWCloakResearch"
           },
           "Resource": {
@@ -342,6 +320,7 @@
               "CreateDefaultButton": 1
             },
             "DefaultButtonFace": "WraithSCBWEnergyUpgrade",
+            "State": "Restricted",
             "Requirements": "WraithSCBWEnergyUpgrade"
           },
           "Resource": {
@@ -379,56 +358,6 @@
           "koKR": "<span class=\"style-TooltipHighlightSCBW\"><b>Wraith</b></span>의 에너지가 <span class=\"style-TooltipBuffSCBW\"><d stringref=\"Upgrade,WraithSCBWEnergyUpgrade,EffectArrayTemplate[1].Value\"/></span>만큼 증가하고 초기 에너지가 <span class=\"style-TooltipBuffSCBW\"><d stringref=\"Upgrade,WraithSCBWEnergyUpgrade,EffectArrayTemplate[0].Value\"/></span>만큼 증가합니다. /// Increases the <span class=\"style-TooltipHighlightSCBW\"><b>Wraith</b>'s</span> energy by <span class=\"style-TooltipBuffSCBW\"><d stringref=\"Upgrade,WraithSCBWEnergyUpgrade,EffectArrayTemplate[1].Value\"/></span> and starting energy by <span class=\"style-TooltipBuffSCBW\"><d stringref=\"Upgrade,WraithSCBWEnergyUpgrade,EffectArrayTemplate[0].Value\"/></span>"
         },
         "Hotkey": "R"
-      },
-      {
-        "Upgrade": "DropshipSCBWSpeedBoostResearch",
-        "Info": {
-          "Button": {
-            "Flags": {
-              "AllowMinimap": 0,
-              "ShowInGlossary": 1,
-              "ToSelection": 1,
-              "UseDefaultButton": 1,
-              "CreateDefaultButton": 1
-            },
-            "DefaultButtonFace": "DropshipSCBWSpeedBoostResearch",
-            "Requirements": "DropshipSCBWSpeedBoostResearch"
-          },
-          "Resource": {
-            "Minerals": 100,
-            "Vespene": 100
-          },
-          "Time": 93.75,
-          "Upgrade": "DropshipSCBWSpeedBoostResearch"
-        },
-        "Time": 93.75,
-        "Cost": {
-          "Minerals": 100,
-          "Vespene": 100,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 1,
-        "Column": 0,
-        "Type": "AbilCmd",
-        "AbilCmd": "DropshipSCBWSpeedBoostResearch,Research1",
-        "id": "DropshipSCBWSpeedBoostResearch",
-        "Icon": "btn-upgrade-terran-medivacemergencythrusters",
-        "Name": {
-          "enUS": "Research Emergency Thrusters",
-          "zhCN": "Research Emergency Thrusters",
-          "koKR": "Research Emergency Thrusters"
-        },
-        "Tooltip": {
-          "enUS": "Enables <span class=\"style-TooltipHighlightSCBW\"><b>Dropship</b>s</span> to use the <span class=\"style-TooltipHighlightSCBW\"><b>Emergency Thrusters</b></span> ability.",
-          "zhCN": "Enables <span class=\"style-TooltipHighlightSCBW\"><b>Dropship</b>s</span> to use the <span class=\"style-TooltipHighlightSCBW\"><b>Emergency Thrusters</b></span> ability.",
-          "koKR": "Enables <span class=\"style-TooltipHighlightSCBW\"><b>Dropship</b>s</span> to use the <span class=\"style-TooltipHighlightSCBW\"><b>Emergency Thrusters</b></span> ability."
-        },
-        "Hotkey": "E"
       },
       {
         "Upgrade": "WraithSCBWCloakResearch",
@@ -442,6 +371,7 @@
               "CreateDefaultButton": 1
             },
             "DefaultButtonFace": "WraithSCBWCloakResearch",
+            "State": "Restricted",
             "Requirements": "WraithSCBWCloakResearch"
           },
           "Resource": {
@@ -492,6 +422,7 @@
               "CreateDefaultButton": 1
             },
             "DefaultButtonFace": "WraithSCBWEnergyUpgrade",
+            "State": "Restricted",
             "Requirements": "WraithSCBWEnergyUpgrade"
           },
           "Resource": {
@@ -529,56 +460,6 @@
           "koKR": "<span class=\"style-TooltipHighlightSCBW\"><b>Wraith</b></span>의 에너지가 <span class=\"style-TooltipBuffSCBW\"><d stringref=\"Upgrade,WraithSCBWEnergyUpgrade,EffectArrayTemplate[1].Value\"/></span>만큼 증가하고 초기 에너지가 <span class=\"style-TooltipBuffSCBW\"><d stringref=\"Upgrade,WraithSCBWEnergyUpgrade,EffectArrayTemplate[0].Value\"/></span>만큼 증가합니다. /// Increases the <span class=\"style-TooltipHighlightSCBW\"><b>Wraith</b>'s</span> energy by <span class=\"style-TooltipBuffSCBW\"><d stringref=\"Upgrade,WraithSCBWEnergyUpgrade,EffectArrayTemplate[1].Value\"/></span> and starting energy by <span class=\"style-TooltipBuffSCBW\"><d stringref=\"Upgrade,WraithSCBWEnergyUpgrade,EffectArrayTemplate[0].Value\"/></span>"
         },
         "Hotkey": "R"
-      },
-      {
-        "Upgrade": "DropshipSCBWSpeedBoostResearch",
-        "Info": {
-          "Button": {
-            "Flags": {
-              "AllowMinimap": 0,
-              "ShowInGlossary": 1,
-              "ToSelection": 1,
-              "UseDefaultButton": 1,
-              "CreateDefaultButton": 1
-            },
-            "DefaultButtonFace": "DropshipSCBWSpeedBoostResearch",
-            "Requirements": "DropshipSCBWSpeedBoostResearch"
-          },
-          "Resource": {
-            "Minerals": 100,
-            "Vespene": 100
-          },
-          "Time": 93.75,
-          "Upgrade": "DropshipSCBWSpeedBoostResearch"
-        },
-        "Time": 93.75,
-        "Cost": {
-          "Minerals": 100,
-          "Vespene": 100,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 1,
-        "Column": 0,
-        "Type": "AbilCmd",
-        "AbilCmd": "DropshipSCBWSpeedBoostResearch,Research1",
-        "id": "DropshipSCBWSpeedBoostResearch",
-        "Icon": "btn-upgrade-terran-medivacemergencythrusters",
-        "Name": {
-          "enUS": "Research Emergency Thrusters",
-          "zhCN": "Research Emergency Thrusters",
-          "koKR": "Research Emergency Thrusters"
-        },
-        "Tooltip": {
-          "enUS": "Enables <span class=\"style-TooltipHighlightSCBW\"><b>Dropship</b>s</span> to use the <span class=\"style-TooltipHighlightSCBW\"><b>Emergency Thrusters</b></span> ability.",
-          "zhCN": "Enables <span class=\"style-TooltipHighlightSCBW\"><b>Dropship</b>s</span> to use the <span class=\"style-TooltipHighlightSCBW\"><b>Emergency Thrusters</b></span> ability.",
-          "koKR": "Enables <span class=\"style-TooltipHighlightSCBW\"><b>Dropship</b>s</span> to use the <span class=\"style-TooltipHighlightSCBW\"><b>Emergency Thrusters</b></span> ability."
-        },
-        "Hotkey": "E"
       }
     ]
   },
@@ -594,9 +475,7 @@
     {
       "id": "TerranBuildingSCBW@Burnout",
       "Name": {
-        "enUS": "Burnout",
-        "zhCN": "Burnout",
-        "koKR": "Burnout"
+        "enUS": "Burnout"
       },
       "Tooltip": "-"
     },
@@ -614,15 +493,13 @@
     {
       "id": "que5Addon",
       "Name": {
-        "ruRU": "Queue",
         "enUS": "Queue"
       }
     },
     {
       "id": "BuildInProgress",
       "Name": {
-        "enUS": "Build in Progress",
-        "ruRU": "Build in Progress"
+        "enUS": "Build in Progress"
       }
     },
     {
@@ -640,14 +517,6 @@
         "zhCN": "研究",
         "koKR": "연구 /// Research"
       }
-    },
-    {
-      "id": "DropshipSCBWSpeedBoostResearch",
-      "Name": {
-        "enUS": "Research",
-        "zhCN": "Research",
-        "koKR": "Research"
-      }
     }
   ],
   "$Upgrades": [
@@ -660,17 +529,16 @@
     "IsControlTowerSCBW",
     "NotControlTowerSCBW",
     "CasterIsControlTowerSCBW",
+    "ControlTowerSCBW",
     "ControlTowerSCBW@Count",
     "ControlTowerSCBW@QoB",
-    "ControlTowerSCBW@QoBAtUnit",
-    "ControlTowerSCBW"
+    "ControlTowerSCBW@QoBAtUnit"
   ],
   "$Requirements": [],
   "$Production": [],
   "$Research": [
     "WraithSCBWCloakResearch",
-    "WraithSCBWEnergyUpgrade",
-    "DropshipSCBWSpeedBoostResearch"
+    "WraithSCBWEnergyUpgrade"
   ],
   "$Morph": [],
   "$Phase": [],
@@ -685,12 +553,10 @@
       "id": "Cancel",
       "Icon": "btn-command-cancel",
       "Name": {
-        "enUS": "Cancel",
-        "ruRU": "Отменить /// Cancel"
+        "enUS": "Cancel"
       },
       "Tooltip": {
-        "enUS": "Drops the current order without performing it, and allows you to select a different order.",
-        "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+        "enUS": "Drops the current order without performing it, and allows you to select a different order."
       }
     },
     {
@@ -698,12 +564,10 @@
       "id": "CancelBuilding",
       "Icon": "btn-command-cancel",
       "Name": {
-        "enUS": "Cancel",
-        "ruRU": "Отменить /// Cancel"
+        "enUS": "Cancel"
       },
       "Tooltip": {
-        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-        "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund."
       }
     },
     {
@@ -737,21 +601,6 @@
       }
     },
     {
-      "AbilCmd": "DropshipSCBWSpeedBoostResearch,Research1",
-      "id": "DropshipSCBWSpeedBoostResearch",
-      "Icon": "btn-upgrade-terran-medivacemergencythrusters",
-      "Name": {
-        "enUS": "Research Emergency Thrusters",
-        "zhCN": "Research Emergency Thrusters",
-        "koKR": "Research Emergency Thrusters"
-      },
-      "Tooltip": {
-        "enUS": "Enables <span class=\"style-TooltipHighlightSCBW\"><b>Dropship</b>s</span> to use the <span class=\"style-TooltipHighlightSCBW\"><b>Emergency Thrusters</b></span> ability.",
-        "zhCN": "Enables <span class=\"style-TooltipHighlightSCBW\"><b>Dropship</b>s</span> to use the <span class=\"style-TooltipHighlightSCBW\"><b>Emergency Thrusters</b></span> ability.",
-        "koKR": "Enables <span class=\"style-TooltipHighlightSCBW\"><b>Dropship</b>s</span> to use the <span class=\"style-TooltipHighlightSCBW\"><b>Emergency Thrusters</b></span> ability."
-      }
-    },
-    {
       "AbilCmd": "WraithSCBWCloakResearch,Research1",
       "id": "WraithSCBWCloakResearch",
       "Icon": "btn-upgrade-nova-tacticalstealthsuit",
@@ -779,21 +628,6 @@
         "enUS": "Increases the <span class=\"style-TooltipHighlightSCBW\"><b>Wraith</b>'s</span> energy by <span class=\"style-TooltipBuffSCBW\"><d stringref=\"Upgrade,WraithSCBWEnergyUpgrade,EffectArrayTemplate[1].Value\"/></span> and starting energy by <span class=\"style-TooltipBuffSCBW\"><d stringref=\"Upgrade,WraithSCBWEnergyUpgrade,EffectArrayTemplate[0].Value\"/></span>",
         "zhCN": "<span class=\"style-TooltipHighlightSCBW\"><b>Wraith</b></span>的能量提高<span class=\"style-TooltipBuffSCBW\"><d stringref=\"Upgrade,WraithSCBWEnergyUpgrade,EffectArrayTemplate[1].Value\"/></span>点，起始能量提高<span class=\"style-TooltipBuffSCBW\"><d stringref=\"Upgrade,WraithSCBWEnergyUpgrade,EffectArrayTemplate[0].Value\"/></span>点。",
         "koKR": "<span class=\"style-TooltipHighlightSCBW\"><b>Wraith</b></span>의 에너지가 <span class=\"style-TooltipBuffSCBW\"><d stringref=\"Upgrade,WraithSCBWEnergyUpgrade,EffectArrayTemplate[1].Value\"/></span>만큼 증가하고 초기 에너지가 <span class=\"style-TooltipBuffSCBW\"><d stringref=\"Upgrade,WraithSCBWEnergyUpgrade,EffectArrayTemplate[0].Value\"/></span>만큼 증가합니다. /// Increases the <span class=\"style-TooltipHighlightSCBW\"><b>Wraith</b>'s</span> energy by <span class=\"style-TooltipBuffSCBW\"><d stringref=\"Upgrade,WraithSCBWEnergyUpgrade,EffectArrayTemplate[1].Value\"/></span> and starting energy by <span class=\"style-TooltipBuffSCBW\"><d stringref=\"Upgrade,WraithSCBWEnergyUpgrade,EffectArrayTemplate[0].Value\"/></span>"
-      }
-    },
-    {
-      "AbilCmd": "DropshipSCBWSpeedBoostResearch,Research1",
-      "id": "DropshipSCBWSpeedBoostResearch",
-      "Icon": "btn-upgrade-terran-medivacemergencythrusters",
-      "Name": {
-        "enUS": "Research Emergency Thrusters",
-        "zhCN": "Research Emergency Thrusters",
-        "koKR": "Research Emergency Thrusters"
-      },
-      "Tooltip": {
-        "enUS": "Enables <span class=\"style-TooltipHighlightSCBW\"><b>Dropship</b>s</span> to use the <span class=\"style-TooltipHighlightSCBW\"><b>Emergency Thrusters</b></span> ability.",
-        "zhCN": "Enables <span class=\"style-TooltipHighlightSCBW\"><b>Dropship</b>s</span> to use the <span class=\"style-TooltipHighlightSCBW\"><b>Emergency Thrusters</b></span> ability.",
-        "koKR": "Enables <span class=\"style-TooltipHighlightSCBW\"><b>Dropship</b>s</span> to use the <span class=\"style-TooltipHighlightSCBW\"><b>Emergency Thrusters</b></span> ability."
       }
     }
   ]

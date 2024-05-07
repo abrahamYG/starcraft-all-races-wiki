@@ -2,7 +2,7 @@
   "Name": {
     "enUS": "Templar Archives",
     "zhCN": "圣堂文献馆",
-    "koKR": "템플러 아카이브스 /// Templar Archives"
+    "koKR": "템플러 아카이브 /// Templar Archives"
   },
   "Description": {
     "enUS": "Contains upgrades for Protoss psionic units.<br/><br/><span class=\"style-TooltipHighlightSCBW\">Enables:</span><br/>- <b>High Templar</b>s at the <b>Gateway</b><br/>- <b>Dark Templar</b>s at the <b>Gateway</b><br/>- <b>Arbiter Tribunal</b> with <b>Fleet Beacon</b>",
@@ -21,8 +21,7 @@
   "LifeStart": 500,
   "LifeMax": 500,
   "LifeArmorName": {
-    "enUS": "Protoss Armor",
-    "ruRU": "Protoss Armor"
+    "enUS": "Protoss Armor"
   },
   "Mover": "Ground",
   "StationaryTurningRate": 719.4726,
@@ -88,12 +87,6 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
-  "$tokens": {
-    "ID": {
-      "type": "string",
-      "value": ""
-    }
-  },
   "Facing": 45,
   "Mob": "Multiplayer",
   "FogVisibility": "Snapshot",
@@ -116,10 +109,9 @@
   "LifeArmor": 1,
   "ShieldsStart": 500,
   "ShieldsMax": 500,
-  "ShieldRegenRate": 2,
+  "ShieldRegenRate": 0.4375,
   "ShieldArmorName": {
-    "enUS": "Protoss Plasma Shields",
-    "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+    "enUS": "Protoss Plasma Shields"
   },
   "Sight": 9,
   "CostCategory": "Technology",
@@ -149,12 +141,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "que5",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "QueueCount": 1,
           "Flags": {
             "BestUnit": 1,
@@ -188,12 +174,10 @@
         "id": "Cancel",
         "Icon": "btn-command-cancel",
         "Name": {
-          "enUS": "Cancel",
-          "ruRU": "Отменить /// Cancel"
+          "enUS": "Cancel"
         },
         "Tooltip": {
-          "enUS": "Drops the current order without performing it, and allows you to select a different order.",
-          "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+          "enUS": "Drops the current order without performing it, and allows you to select a different order."
         },
         "Hotkey": "Esc"
       },
@@ -216,12 +200,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "BuildInProgress",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "Activity": "UI/Building",
           "VitalStartFactor": {
             "Life": 0.1,
@@ -255,12 +233,10 @@
         "id": "CancelBuilding",
         "Icon": "btn-command-cancel",
         "Name": {
-          "enUS": "Cancel",
-          "ruRU": "Отменить /// Cancel"
+          "enUS": "Cancel"
         },
         "Tooltip": {
-          "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-          "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+          "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund."
         },
         "Hotkey": "Esc"
       },
@@ -276,6 +252,7 @@
               "CreateDefaultButton": 1
             },
             "DefaultButtonFace": "HighTemplarSCBWPsiStormResearch",
+            "State": "Restricted",
             "Requirements": "HighTemplarSCBWPsiStormResearch"
           },
           "Resource": {
@@ -326,6 +303,7 @@
               "CreateDefaultButton": 1
             },
             "DefaultButtonFace": "HighTemplarSCBWHallucinationResearch",
+            "State": "Restricted",
             "Requirements": "HighTemplarSCBWHallucinationResearch"
           },
           "Resource": {
@@ -376,6 +354,7 @@
               "CreateDefaultButton": 1
             },
             "DefaultButtonFace": "HighTemplarSCBWEnergyUpgrade",
+            "State": "Restricted",
             "Requirements": "HighTemplarSCBWEnergyUpgrade"
           },
           "Resource": {
@@ -426,16 +405,17 @@
               "CreateDefaultButton": 1
             },
             "DefaultButtonFace": "DarkArchonSCBWMindControlResearch",
+            "State": "Restricted",
             "Requirements": "DarkArchonSCBWMindControlResearch"
           },
           "Resource": {
             "Minerals": 200,
             "Vespene": 200
           },
-          "Time": 180,
+          "Time": 112.5,
           "Upgrade": "DarkArchonSCBWMindControlResearch"
         },
-        "Time": 180,
+        "Time": 112.5,
         "Cost": {
           "Minerals": 200,
           "Vespene": 200,
@@ -476,6 +456,7 @@
               "CreateDefaultButton": 1
             },
             "DefaultButtonFace": "DarkArchonSCBWMaelstromResearch",
+            "State": "Restricted",
             "Requirements": "DarkArchonSCBWMaelstromResearch"
           },
           "Resource": {
@@ -526,6 +507,7 @@
               "CreateDefaultButton": 1
             },
             "DefaultButtonFace": "DarkArchonSCBWEnergyUpgrade",
+            "State": "Restricted",
             "Requirements": "DarkArchonSCBWEnergyUpgrade"
           },
           "Resource": {
@@ -576,6 +558,7 @@
               "CreateDefaultButton": 1
             },
             "DefaultButtonFace": "HighTemplarSCBWEnergyUpgrade",
+            "State": "Restricted",
             "Requirements": "HighTemplarSCBWEnergyUpgrade"
           },
           "Resource": {
@@ -626,6 +609,7 @@
               "CreateDefaultButton": 1
             },
             "DefaultButtonFace": "HighTemplarSCBWPsiStormResearch",
+            "State": "Restricted",
             "Requirements": "HighTemplarSCBWPsiStormResearch"
           },
           "Resource": {
@@ -676,6 +660,7 @@
               "CreateDefaultButton": 1
             },
             "DefaultButtonFace": "HighTemplarSCBWHallucinationResearch",
+            "State": "Restricted",
             "Requirements": "HighTemplarSCBWHallucinationResearch"
           },
           "Resource": {
@@ -726,6 +711,7 @@
               "CreateDefaultButton": 1
             },
             "DefaultButtonFace": "DarkArchonSCBWEnergyUpgrade",
+            "State": "Restricted",
             "Requirements": "DarkArchonSCBWEnergyUpgrade"
           },
           "Resource": {
@@ -776,16 +762,17 @@
               "CreateDefaultButton": 1
             },
             "DefaultButtonFace": "DarkArchonSCBWMindControlResearch",
+            "State": "Restricted",
             "Requirements": "DarkArchonSCBWMindControlResearch"
           },
           "Resource": {
             "Minerals": 200,
             "Vespene": 200
           },
-          "Time": 180,
+          "Time": 112.5,
           "Upgrade": "DarkArchonSCBWMindControlResearch"
         },
-        "Time": 180,
+        "Time": 112.5,
         "Cost": {
           "Minerals": 200,
           "Vespene": 200,
@@ -826,6 +813,7 @@
               "CreateDefaultButton": 1
             },
             "DefaultButtonFace": "DarkArchonSCBWMaelstromResearch",
+            "State": "Restricted",
             "Requirements": "DarkArchonSCBWMaelstromResearch"
           },
           "Resource": {
@@ -879,7 +867,6 @@
     "DarkTemplarSCBW"
   ],
   "BuildTime": 50,
-  "ShieldRegenDelay": 10,
   "id": "TemplarArchiveSCBW",
   "Icon": "btn-building-protoss-templararchives",
   "LifeArmorIcon": "btn-armor-protoss-buildingplating",
@@ -890,8 +877,7 @@
       "id": "PowerUserQueue",
       "Icon": "btn-building-protoss-pylon",
       "Name": {
-        "enUS": "Power User (Queue)",
-        "ruRU": "Power User (Queue)"
+        "enUS": "Power User (Queue)"
       },
       "Tooltip": "-"
     }
@@ -900,14 +886,12 @@
     {
       "id": "BuildInProgress",
       "Name": {
-        "enUS": "Build in Progress",
-        "ruRU": "Build in Progress"
+        "enUS": "Build in Progress"
       }
     },
     {
       "id": "que5",
       "Name": {
-        "ruRU": "Queue (5)",
         "enUS": "Queue (5)"
       }
     },
@@ -972,9 +956,9 @@
     "IsTemplarArchiveSCBW",
     "NotTemplarArchiveSCBW",
     "CasterIsTemplarArchiveSCBW",
+    "TemplarArchiveSCBW",
     "TemplarArchiveSCBW@QoB",
-    "TemplarArchiveSCBW@QoBAtUnit",
-    "TemplarArchiveSCBW"
+    "TemplarArchiveSCBW@QoBAtUnit"
   ],
   "$Requirements": [],
   "$Production": [],
@@ -998,12 +982,10 @@
       "id": "Cancel",
       "Icon": "btn-command-cancel",
       "Name": {
-        "enUS": "Cancel",
-        "ruRU": "Отменить /// Cancel"
+        "enUS": "Cancel"
       },
       "Tooltip": {
-        "enUS": "Drops the current order without performing it, and allows you to select a different order.",
-        "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+        "enUS": "Drops the current order without performing it, and allows you to select a different order."
       }
     },
     {
@@ -1011,12 +993,10 @@
       "id": "CancelBuilding",
       "Icon": "btn-command-cancel",
       "Name": {
-        "enUS": "Cancel",
-        "ruRU": "Отменить /// Cancel"
+        "enUS": "Cancel"
       },
       "Tooltip": {
-        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-        "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund."
       }
     },
     {

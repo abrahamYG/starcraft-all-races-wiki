@@ -21,8 +21,7 @@
   "LifeStart": 850,
   "LifeMax": 850,
   "LifeArmorName": {
-    "enUS": "Terran Building Plating",
-    "ruRU": "Terran Building Plating"
+    "enUS": "Terran Building Plating"
   },
   "Mover": "Ground",
   "StationaryTurningRate": 720,
@@ -88,12 +87,6 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
-  "$tokens": {
-    "ID": {
-      "type": "string",
-      "value": ""
-    }
-  },
   "Mob": "Multiplayer",
   "Gender": "Neutral",
   "FogVisibility": "Snapshot",
@@ -173,12 +166,10 @@
         "id": "Lift",
         "Icon": "btn-ability-terran-liftoff",
         "Name": {
-          "enUS": "Lift Off",
-          "ruRU": "Lift Off"
+          "enUS": "Lift Off"
         },
         "Tooltip": {
-          "enUS": "Transforms structure into a slow air unit for redeployment. May not produce units, research upgrades, or use abilities until it has landed.",
-          "ruRU": "Transforms structure into a slow air unit for redeployment. May not produce units, research upgrades, or use abilities until it has landed."
+          "enUS": "Transforms structure into a slow air unit for redeployment. May not produce units, research upgrades, or use abilities until it has landed."
         },
         "Hotkey": "L"
       },
@@ -201,12 +192,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "BuildInProgress",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "Activity": "UI/Building",
           "VitalStartFactor": {
             "Life": 0.1,
@@ -240,12 +225,10 @@
         "id": "Halt",
         "Icon": "btn-command-stop",
         "Name": {
-          "enUS": "Halt",
-          "ruRU": "Приостановить /// Halt"
+          "enUS": "Halt"
         },
         "Tooltip": {
-          "enUS": "Halts construction of this structure. The partial construction will remain.",
-          "ruRU": "Приостановить сооружение этого строения. Впоследствии его можно будет продолжить. /// Halts construction of this structure. The partial construction will remain."
+          "enUS": "Halts construction of this structure. The partial construction will remain."
         },
         "Hotkey": "T"
       },
@@ -268,12 +251,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "que5",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "QueueCount": 1,
           "Flags": {
             "BestUnit": 1,
@@ -307,12 +284,10 @@
         "id": "Cancel",
         "Icon": "btn-command-cancel",
         "Name": {
-          "enUS": "Cancel",
-          "ruRU": "Отменить /// Cancel"
+          "enUS": "Cancel"
         },
         "Tooltip": {
-          "enUS": "Drops the current order without performing it, and allows you to select a different order.",
-          "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+          "enUS": "Drops the current order without performing it, and allows you to select a different order."
         },
         "Hotkey": "Esc"
       },
@@ -335,12 +310,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "ScienceFacilitySCBW@AddOns",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "HaltCmdButton": {
             "DefaultButtonFace": "BuildCancelSCBW",
             "Flags": {
@@ -615,12 +584,10 @@
         "id": "Cancel",
         "Icon": "btn-command-cancel",
         "Name": {
-          "enUS": "Cancel",
-          "ruRU": "Отменить /// Cancel"
+          "enUS": "Cancel"
         },
         "Tooltip": {
-          "enUS": "Drops the current order without performing it, and allows you to select a different order.",
-          "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+          "enUS": "Drops the current order without performing it, and allows you to select a different order."
         },
         "Hotkey": "Esc"
       },
@@ -643,12 +610,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "BuildInProgress",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "Activity": "UI/Building",
           "VitalStartFactor": {
             "Life": 0.1,
@@ -682,12 +643,10 @@
         "id": "CancelBuilding",
         "Icon": "btn-command-cancel",
         "Name": {
-          "enUS": "Cancel",
-          "ruRU": "Отменить /// Cancel"
+          "enUS": "Cancel"
         },
         "Tooltip": {
-          "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-          "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+          "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund."
         },
         "Hotkey": "Esc"
       },
@@ -708,12 +667,10 @@
         "id": "SelectBuilder",
         "Icon": "btn-upgrade-terran-weaponrefit",
         "Name": {
-          "enUS": "Select Builder",
-          "ruRU": "Select Builder"
+          "enUS": "Select Builder"
         },
         "Tooltip": {
-          "enUS": "Selects the unit constructing this structure.",
-          "ruRU": "Selects the unit constructing this structure."
+          "enUS": "Selects the unit constructing this structure."
         },
         "Hotkey": "Q"
       },
@@ -729,6 +686,7 @@
               "CreateDefaultButton": 1
             },
             "DefaultButtonFace": "ScienceVesselSCBWEMPShockwaveResearch",
+            "State": "Restricted",
             "Requirements": "ScienceVesselSCBWEMPShockwaveResearch"
           },
           "Resource": {
@@ -779,6 +737,7 @@
               "CreateDefaultButton": 1
             },
             "DefaultButtonFace": "ScienceVesselSCBWIrradiateResearch",
+            "State": "Restricted",
             "Requirements": "ScienceVesselSCBWIrradiateResearch"
           },
           "Resource": {
@@ -829,6 +788,7 @@
               "CreateDefaultButton": 1
             },
             "DefaultButtonFace": "ScienceVesselSCBWEnergyUpgrade",
+            "State": "Restricted",
             "Requirements": "ScienceVesselSCBWEnergyUpgrade"
           },
           "Resource": {
@@ -879,6 +839,7 @@
               "CreateDefaultButton": 1
             },
             "DefaultButtonFace": "ScienceVesselSCBWEnergyUpgrade",
+            "State": "Restricted",
             "Requirements": "ScienceVesselSCBWEnergyUpgrade"
           },
           "Resource": {
@@ -929,6 +890,7 @@
               "CreateDefaultButton": 1
             },
             "DefaultButtonFace": "ScienceVesselSCBWIrradiateResearch",
+            "State": "Restricted",
             "Requirements": "ScienceVesselSCBWIrradiateResearch"
           },
           "Resource": {
@@ -979,6 +941,7 @@
               "CreateDefaultButton": 1
             },
             "DefaultButtonFace": "ScienceVesselSCBWEMPShockwaveResearch",
+            "State": "Restricted",
             "Requirements": "ScienceVesselSCBWEMPShockwaveResearch"
           },
           "Resource": {
@@ -1110,7 +1073,7 @@
   "ScoreMake": 250,
   "ScoreKill": 250,
   "GlossaryPriority": 322,
-  "BuildTime": 50,
+  "BuildTime": 65,
   "TechTreeUnlockedUnitArray": [
     "ScienceVesselSCBW"
   ],
@@ -1122,9 +1085,7 @@
     {
       "id": "TerranBuildingSCBW@Burnout",
       "Name": {
-        "enUS": "Burnout",
-        "zhCN": "Burnout",
-        "koKR": "Burnout"
+        "enUS": "Burnout"
       },
       "Tooltip": "-"
     }
@@ -1133,14 +1094,12 @@
     {
       "id": "BuildInProgress",
       "Name": {
-        "enUS": "Build in Progress",
-        "ruRU": "Build in Progress"
+        "enUS": "Build in Progress"
       }
     },
     {
       "id": "que5",
       "Name": {
-        "ruRU": "Queue (5)",
         "enUS": "Queue (5)"
       }
     },
@@ -1231,12 +1190,10 @@
       "id": "Lift",
       "Icon": "btn-ability-terran-liftoff",
       "Name": {
-        "enUS": "Lift Off",
-        "ruRU": "Lift Off"
+        "enUS": "Lift Off"
       },
       "Tooltip": {
-        "enUS": "Transforms structure into a slow air unit for redeployment. May not produce units, research upgrades, or use abilities until it has landed.",
-        "ruRU": "Transforms structure into a slow air unit for redeployment. May not produce units, research upgrades, or use abilities until it has landed."
+        "enUS": "Transforms structure into a slow air unit for redeployment. May not produce units, research upgrades, or use abilities until it has landed."
       }
     },
     {
@@ -1244,12 +1201,10 @@
       "id": "Halt",
       "Icon": "btn-command-stop",
       "Name": {
-        "enUS": "Halt",
-        "ruRU": "Приостановить /// Halt"
+        "enUS": "Halt"
       },
       "Tooltip": {
-        "enUS": "Halts construction of this structure. The partial construction will remain.",
-        "ruRU": "Приостановить сооружение этого строения. Впоследствии его можно будет продолжить. /// Halts construction of this structure. The partial construction will remain."
+        "enUS": "Halts construction of this structure. The partial construction will remain."
       }
     },
     {
@@ -1257,12 +1212,10 @@
       "id": "Cancel",
       "Icon": "btn-command-cancel",
       "Name": {
-        "enUS": "Cancel",
-        "ruRU": "Отменить /// Cancel"
+        "enUS": "Cancel"
       },
       "Tooltip": {
-        "enUS": "Drops the current order without performing it, and allows you to select a different order.",
-        "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+        "enUS": "Drops the current order without performing it, and allows you to select a different order."
       }
     },
     {
@@ -1270,12 +1223,10 @@
       "id": "Cancel",
       "Icon": "btn-command-cancel",
       "Name": {
-        "enUS": "Cancel",
-        "ruRU": "Отменить /// Cancel"
+        "enUS": "Cancel"
       },
       "Tooltip": {
-        "enUS": "Drops the current order without performing it, and allows you to select a different order.",
-        "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+        "enUS": "Drops the current order without performing it, and allows you to select a different order."
       }
     },
     {
@@ -1283,12 +1234,10 @@
       "id": "CancelBuilding",
       "Icon": "btn-command-cancel",
       "Name": {
-        "enUS": "Cancel",
-        "ruRU": "Отменить /// Cancel"
+        "enUS": "Cancel"
       },
       "Tooltip": {
-        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-        "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund."
       }
     },
     {

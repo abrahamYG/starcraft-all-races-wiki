@@ -21,8 +21,7 @@
   "LifeStart": 80,
   "LifeMax": 80,
   "LifeArmorName": {
-    "enUS": "Zerg Ground Carapace",
-    "ruRU": "Zerg Ground Carapace"
+    "enUS": "Zerg Ground Carapace"
   },
   "Mover": "Ground",
   "StationaryTurningRate": 999.8437,
@@ -93,12 +92,6 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
-  "$tokens": {
-    "ID": {
-      "type": "string",
-      "value": ""
-    }
-  },
   "Mob": "Multiplayer",
   "EnergyRegenRate": 0.5625,
   "id": "DefilerSCBW",
@@ -159,12 +152,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -202,7 +189,8 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move"
+          "id": "move",
+          "AbilSetId": "Move"
         },
         "Cost": {
           "Minerals": 0,
@@ -221,12 +209,10 @@
         "id": "Move",
         "Icon": "btn-command-move",
         "Name": {
-          "enUS": "Move",
-          "ruRU": "Двигаться /// Move"
+          "enUS": "Move"
         },
         "Tooltip": {
-          "enUS": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
-          "ruRU": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies."
+          "enUS": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies."
         },
         "Hotkey": "M"
       },
@@ -249,12 +235,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "stop",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "AbilSetId": "Stop",
           "CmdButtonArray": {
             "Stop": {
@@ -301,12 +281,10 @@
         "id": "Stop",
         "Icon": "btn-command-stop",
         "Name": {
-          "enUS": "Stop",
-          "ruRU": "Отставить /// Stop"
+          "enUS": "Stop"
         },
         "Tooltip": {
-          "enUS": "Orders selected units to cancel all orders and stop moving.",
-          "ruRU": "Orders selected units to cancel all orders and stop moving."
+          "enUS": "Orders selected units to cancel all orders and stop moving."
         },
         "Hotkey": "S"
       },
@@ -335,12 +313,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -378,7 +350,8 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move"
+          "id": "move",
+          "AbilSetId": "Move"
         },
         "Cost": {
           "Minerals": 0,
@@ -397,12 +370,10 @@
         "id": "MoveHoldPosition",
         "Icon": "btn-command-holdposition",
         "Name": {
-          "enUS": "Hold Position",
-          "ruRU": "Удерживать позицию /// Hold Position"
+          "enUS": "Hold Position"
         },
         "Tooltip": {
-          "enUS": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
-          "ruRU": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage."
+          "enUS": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage."
         },
         "Hotkey": "H"
       },
@@ -431,12 +402,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -474,7 +439,8 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move"
+          "id": "move",
+          "AbilSetId": "Move"
         },
         "Cost": {
           "Minerals": 0,
@@ -493,12 +459,10 @@
         "id": "MovePatrol",
         "Icon": "btn-command-patrol",
         "Name": {
-          "enUS": "Patrol",
-          "ruRU": "Патрулировать /// Patrol"
+          "enUS": "Patrol"
         },
         "Tooltip": {
-          "enUS": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
-          "ruRU": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies."
+          "enUS": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies."
         },
         "Hotkey": "P"
       },
@@ -521,12 +485,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "attack",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "AbilSetId": "Attack",
           "Alignment": "Negative",
           "AcquireFilters": "-;Player,Ally,Neutral,Dead,Hidden,Invulnerable,Benign",
@@ -574,12 +532,10 @@
         "id": "Attack",
         "Icon": "btn-command-attack",
         "Name": {
-          "enUS": "Attack",
-          "ruRU": "Атаковать /// Attack"
+          "enUS": "Attack"
         },
         "Tooltip": {
-          "enUS": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
-          "ruRU": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed."
+          "enUS": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed."
         },
         "Hotkey": "A"
       },
@@ -608,12 +564,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -651,7 +601,8 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move"
+          "id": "move",
+          "AbilSetId": "Move"
         },
         "Cost": {
           "Minerals": 0,
@@ -670,12 +621,10 @@
         "id": "AcquireMove",
         "Icon": "btn-command-attack",
         "Name": {
-          "enUS": "Scan Move",
-          "ruRU": "Двигаться в режиме наблюдения /// Scan Move"
+          "enUS": "Scan Move"
         },
         "Tooltip": {
-          "enUS": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies.",
-          "ruRU": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies."
+          "enUS": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies."
         },
         "Hotkey": "A"
       },
@@ -724,12 +673,10 @@
         "id": "BurrowDown",
         "Icon": "btn-ability-zerg-burrow-color",
         "Name": {
-          "enUS": "Burrow",
-          "ruRU": "Burrow"
+          "enUS": "Burrow"
         },
         "Tooltip": {
-          "enUS": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
-          "ruRU": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection."
+          "enUS": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection."
         },
         "Hotkey": "D"
       },
@@ -773,12 +720,10 @@
         "id": "BurrowUp",
         "Icon": "btn-ability-zerg-upburrow-color",
         "Name": {
-          "enUS": "Unburrow",
-          "ruRU": "Unburrow"
+          "enUS": "Unburrow"
         },
         "Tooltip": {
-          "enUS": "Returns the unit to the surface.",
-          "ruRU": "Returns the unit to the surface."
+          "enUS": "Returns the unit to the surface."
         },
         "Hotkey": "R"
       },
@@ -817,12 +762,10 @@
         "id": "BurrowUp",
         "Icon": "btn-ability-zerg-upburrow-color",
         "Name": {
-          "enUS": "Unburrow",
-          "ruRU": "Unburrow"
+          "enUS": "Unburrow"
         },
         "Tooltip": {
-          "enUS": "Returns the unit to the surface.",
-          "ruRU": "Returns the unit to the surface."
+          "enUS": "Returns the unit to the surface."
         },
         "Hotkey": "R"
       },
@@ -861,12 +804,10 @@
         "id": "BurrowUp",
         "Icon": "btn-ability-zerg-upburrow-color",
         "Name": {
-          "enUS": "Unburrow",
-          "ruRU": "Unburrow"
+          "enUS": "Unburrow"
         },
         "Tooltip": {
-          "enUS": "Returns the unit to the surface.",
-          "ruRU": "Returns the unit to the surface."
+          "enUS": "Returns the unit to the surface."
         },
         "Hotkey": "R"
       },
@@ -900,12 +841,10 @@
         "id": "BurrowUp",
         "Icon": "btn-ability-zerg-upburrow-color",
         "Name": {
-          "enUS": "Unburrow",
-          "ruRU": "Unburrow"
+          "enUS": "Unburrow"
         },
         "Tooltip": {
-          "enUS": "Returns the unit to the surface.",
-          "ruRU": "Returns the unit to the surface."
+          "enUS": "Returns the unit to the surface."
         },
         "Hotkey": "R"
       },
@@ -944,12 +883,10 @@
         "id": "BurrowUp",
         "Icon": "btn-ability-zerg-upburrow-color",
         "Name": {
-          "enUS": "Unburrow",
-          "ruRU": "Unburrow"
+          "enUS": "Unburrow"
         },
         "Tooltip": {
-          "enUS": "Returns the unit to the surface.",
-          "ruRU": "Returns the unit to the surface."
+          "enUS": "Returns the unit to the surface."
         },
         "Hotkey": "R"
       },
@@ -983,12 +920,10 @@
         "id": "BurrowUp",
         "Icon": "btn-ability-zerg-upburrow-color",
         "Name": {
-          "enUS": "Unburrow",
-          "ruRU": "Unburrow"
+          "enUS": "Unburrow"
         },
         "Tooltip": {
-          "enUS": "Returns the unit to the surface.",
-          "ruRU": "Returns the unit to the surface."
+          "enUS": "Returns the unit to the surface."
         },
         "Hotkey": "R"
       },
@@ -1011,12 +946,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "DefilerSCBWDarkSwarm",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "RangeSlop": 1,
           "ArcSlop": 11.25,
           "AutoCastAcquireLevel": "Offensive",
@@ -1028,7 +957,7 @@
             "RangeUseCasterRadius": 1,
             "ReApproachable": 1,
             "RequireTargetVision": 1,
-            "WaitToSpend": 1,
+            "WaitToSpend": 0,
             "UpdateChargesOnLevelChange": 1,
             "BestUnit": 1
           },
@@ -1148,8 +1077,8 @@
           "koKR": "다크 스웜 /// Dark Swarm"
         },
         "Tooltip": {
-          "enUS": "Creates a micro-organism cloud reducing incoming ranged and spell damage for <span class=\"style-TooltipBuffSCBW\"><b>56</b></span> seconds.",
-          "zhCN": "Creates a micro-organism cloud reducing incoming ranged and spell damage for <span class=\"style-TooltipBuffSCBW\"><b>56</b></span> seconds.",
+          "enUS": "Creates a micro-organism cloud preventing all incoming ranged damage for <span class=\"style-TooltipBuffSCBW\"><b>56</b></span> seconds.",
+          "zhCN": "创造一片微生物云，保护其中的单位免受远程攻击的伤害，持续<span class=\"style-TooltipBuffSCBW\"><b>56</b></span>秒。",
           "koKR": "미생물 구름을 생성하여 <span class=\"style-TooltipBuffSCBW\"><b>56</b></span>초 동안 받는 모든 원거리 공격을 회피합니다. /// Creates a micro-organism cloud preventing all incoming ranged damage for <span class=\"style-TooltipBuffSCBW\"><b>56</b></span> seconds."
         },
         "Hotkey": "T"
@@ -1173,12 +1102,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "DefilerSCBWPlague",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "RangeSlop": 1,
           "ArcSlop": 11.25,
           "AutoCastAcquireLevel": "Offensive",
@@ -1190,7 +1113,7 @@
             "RangeUseCasterRadius": 1,
             "ReApproachable": 1,
             "RequireTargetVision": 1,
-            "WaitToSpend": 1,
+            "WaitToSpend": 0,
             "UpdateChargesOnLevelChange": 1,
             "BestUnit": 1
           },
@@ -1305,9 +1228,9 @@
           "koKR": "플레이그 /// Plague"
         },
         "Tooltip": {
-          "enUS": "Infects all enemy units and buildings in the target area, inflicting <span class=\"style-TooltipHighlightSCBW\"><b>0</b></span> damage over <span class=\"style-TooltipBuffSCBW\"><b>38</b></span> seconds. Cannot reduce units or buildings below <span class=\"style-TooltipResourceLifeSCBW\">1</span> life. Ignores shields. Reveals infected cloaked and burrowed units.",
-          "zhCN": "感染目标区域内的所有敌方单位和建筑， 在<span class=\"style-TooltipBuffSCBW\"><b>38</b></span>秒内造成<span class=\"style-TooltipHighlightSCBW\"><b>0</b></span>点伤害。被影响的单位或建筑的生命值最低不会少于<span class=\"style-TooltipResourceLifeSCBW\">1</span>点。无视护盾。使被感染的隐形单位显形。",
-          "koKR": "대상 지역의 모든 적 유닛과 건물을 감염시켜 <span class=\"style-TooltipBuffSCBW\"><b>38</b></span>에 걸쳐 총 <span class=\"style-TooltipHighlightSCBW\"><b>0</b></span>의 피해를 줍니다. 유닛이나 건물의 체력을 <span class=\"style-TooltipResourceLifeSCBW\">1</span> 미만으로 줄일 수 없습니다. 보호막을 무시합니다. 클로크하거나 버로우한 유닛은 모습이 드러납니다. /// Infects all enemy units and buildings in the target area, inflicting <span class=\"style-TooltipHighlightSCBW\"><b>0</b></span> damage over <span class=\"style-TooltipBuffSCBW\"><b>38</b></span> seconds. Cannot reduce units or buildings below <span class=\"style-TooltipResourceLifeSCBW\">1</span> life. Ignores shields. Reveals infected cloaked and burrowed units."
+          "enUS": "Infects all enemy units and buildings in the target area, inflicting <span class=\"style-TooltipHighlightSCBW\"><b>300</b></span> damage over <span class=\"style-TooltipBuffSCBW\"><b>38</b></span> seconds. Cannot reduce units or buildings below <span class=\"style-TooltipResourceLifeSCBW\">1</span> life. Ignores shields. Reveals infected cloaked and burrowed units.",
+          "zhCN": "感染目标区域内的所有敌方单位和建筑， 在<span class=\"style-TooltipBuffSCBW\"><b>38</b></span>秒内造成<span class=\"style-TooltipHighlightSCBW\"><b>300</b></span>点伤害。被影响的单位或建筑的生命值最低不会少于<span class=\"style-TooltipResourceLifeSCBW\">1</span>点。无视护盾。使被感染的隐形单位显形。",
+          "koKR": "대상 지역의 모든 적 유닛과 건물을 감염시켜 <span class=\"style-TooltipBuffSCBW\"><b>38</b></span>에 걸쳐 총 <span class=\"style-TooltipHighlightSCBW\"><b>300</b></span>의 피해를 줍니다. 유닛이나 건물의 체력을 <span class=\"style-TooltipResourceLifeSCBW\">1</span> 미만으로 줄일 수 없습니다. 보호막을 무시합니다. 클로크하거나 버로우한 유닛은 모습이 드러납니다. /// Infects all enemy units and buildings in the target area, inflicting <span class=\"style-TooltipHighlightSCBW\"><b>300</b></span> damage over <span class=\"style-TooltipBuffSCBW\"><b>38</b></span> seconds. Cannot reduce units or buildings below <span class=\"style-TooltipResourceLifeSCBW\">1</span> life. Ignores shields. Reveals infected cloaked and burrowed units."
         },
         "Hotkey": "G"
       },
@@ -1330,12 +1253,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "DefilerSCBWConsume",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "RangeSlop": 1,
           "ArcSlop": 11.25,
           "AutoCastAcquireLevel": "Offensive",
@@ -1347,7 +1264,7 @@
             "RangeUseCasterRadius": 1,
             "ReApproachable": 1,
             "RequireTargetVision": 1,
-            "WaitToSpend": 1,
+            "WaitToSpend": 0,
             "UpdateChargesOnLevelChange": 1,
             "BestUnit": 1
           },
@@ -1458,7 +1375,7 @@
           "koKR": "컨슘 /// Consume"
         },
         "Tooltip": {
-          "enUS": "Kills target friendly unit metabolizing it into <span class=\"style-TooltipResourceEnergySCBW\">+<b>50</b></span> energy.",
+          "enUS": "Kills target friendly unit metabolizing it into <span class=\"style-TooltipResourceEnergySCBW\">+<b>50</b></span> energy. ",
           "zhCN": "消灭目标友方单位，将其转化为<span class=\"style-TooltipResourceEnergySCBW\">+<b>50</b></span>点能量。",
           "koKR": "대상 아군을 섭취하고 대사 작용하여 <span class=\"style-TooltipResourceEnergySCBW\"><b>50</b></span> 에너지를 획득합니다. /// Kills target friendly unit metabolizing it into <span class=\"style-TooltipResourceEnergySCBW\">+<b>50</b></span> energy. "
         },
@@ -1473,7 +1390,7 @@
   "ScoreResult": "BuildOrder",
   "SubgroupPriority": 94,
   "KillDisplay": "Always",
-  "BuildTime": 40,
+  "BuildTime": 50,
   "TacticalAIThink": "AIThinkDefilerSCBW",
   "GlossaryPriority": 90,
   "GlossaryStrongArray": [
@@ -1486,7 +1403,7 @@
     "ZerglingSCBW",
     "DarkArchonSCBW"
   ],
-  "SpeedMultiplierCreep": 1.3,
+  "SpeedMultiplierCreep": 1.2,
   "Icon": "btn-unit-zerg-defiler@scbw",
   "LifeArmorIcon": "btn-upgrade-zerg-groundcarapace-level0",
   "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
@@ -1496,15 +1413,13 @@
     {
       "id": "stop",
       "Name": {
-        "enUS": "Stop",
-        "ruRU": "Stop"
+        "enUS": "Stop"
       }
     },
     {
       "id": "move",
       "Name": {
-        "enUS": "Move",
-        "ruRU": "Move"
+        "enUS": "Move"
       }
     },
     {
@@ -1552,10 +1467,10 @@
     "Button/Tooltip/DefilerSCBWConsumeResearch",
     "DefilerSCBWConsumeResearch",
     "DefilerMoundSCBW",
+    "ZergSCBWBurrowResearch",
     "DefilerSCBW@AllowUnit",
     "LarvaSCBW@Train",
     "LarvaSCBW",
-    "ZergSCBWBurrowResearch",
     "Button/Tooltip/DefilerSCBWDarkSwarmResearch",
     "DefilerSCBW@BurrowedSplat",
     "DefilerSCBW",
@@ -1565,29 +1480,24 @@
     "NotDefilerSCBW",
     "CasterIsDefilerMoundSCBW",
     "CasterIsDefilerSCBW",
+    "DefilerSCBW",
     "DefilerSCBW@Count",
     "DefilerSCBW@CountAtUnit",
     "DefilerSCBW@QoB",
-    "DefilerSCBW@QoBAtUnit",
-    "DefilerSCBW"
+    "DefilerSCBW@QoBAtUnit"
   ],
   "$Requirements": [],
   "$Production": [],
   "$Research": [],
   "$Morph": [
     "DefilerSCBW@Burrowed",
-    "DroneSCBW"
-  ],
-  "$Phase": [
-    "ZerglingSCBW",
-    "UltraliskSCBW",
+    "DefilerSCBW",
+    "DroneSCBW",
     "HydraliskSCBW",
-    "DefilerSCBW",
-    "DefilerSCBW",
-    "ZerglingSCBW",
-    "UltraliskSCBW"
+    "UltraliskSCBW",
+    "ZerglingSCBW"
   ],
-  "$Phased": "DefilerSCBW",
+  "$Phase": [],
   "$Producers": [
     "AbilTrainHolderSCBW",
     "LarvaSCBW"
@@ -1598,12 +1508,10 @@
       "id": "Move",
       "Icon": "btn-command-move",
       "Name": {
-        "enUS": "Move",
-        "ruRU": "Двигаться /// Move"
+        "enUS": "Move"
       },
       "Tooltip": {
-        "enUS": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
-        "ruRU": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies."
+        "enUS": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies."
       }
     },
     {
@@ -1611,12 +1519,10 @@
       "id": "Stop",
       "Icon": "btn-command-stop",
       "Name": {
-        "enUS": "Stop",
-        "ruRU": "Отставить /// Stop"
+        "enUS": "Stop"
       },
       "Tooltip": {
-        "enUS": "Orders selected units to cancel all orders and stop moving.",
-        "ruRU": "Orders selected units to cancel all orders and stop moving."
+        "enUS": "Orders selected units to cancel all orders and stop moving."
       }
     },
     {
@@ -1624,12 +1530,10 @@
       "id": "MoveHoldPosition",
       "Icon": "btn-command-holdposition",
       "Name": {
-        "enUS": "Hold Position",
-        "ruRU": "Удерживать позицию /// Hold Position"
+        "enUS": "Hold Position"
       },
       "Tooltip": {
-        "enUS": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
-        "ruRU": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage."
+        "enUS": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage."
       }
     },
     {
@@ -1637,12 +1541,10 @@
       "id": "MovePatrol",
       "Icon": "btn-command-patrol",
       "Name": {
-        "enUS": "Patrol",
-        "ruRU": "Патрулировать /// Patrol"
+        "enUS": "Patrol"
       },
       "Tooltip": {
-        "enUS": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
-        "ruRU": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies."
+        "enUS": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies."
       }
     },
     {
@@ -1650,12 +1552,10 @@
       "id": "Attack",
       "Icon": "btn-command-attack",
       "Name": {
-        "enUS": "Attack",
-        "ruRU": "Атаковать /// Attack"
+        "enUS": "Attack"
       },
       "Tooltip": {
-        "enUS": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
-        "ruRU": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed."
+        "enUS": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed."
       }
     },
     {
@@ -1663,12 +1563,10 @@
       "id": "AcquireMove",
       "Icon": "btn-command-attack",
       "Name": {
-        "enUS": "Scan Move",
-        "ruRU": "Двигаться в режиме наблюдения /// Scan Move"
+        "enUS": "Scan Move"
       },
       "Tooltip": {
-        "enUS": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies.",
-        "ruRU": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies."
+        "enUS": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies."
       }
     },
     {
@@ -1676,12 +1574,10 @@
       "id": "BurrowDown",
       "Icon": "btn-ability-zerg-burrow-color",
       "Name": {
-        "enUS": "Burrow",
-        "ruRU": "Burrow"
+        "enUS": "Burrow"
       },
       "Tooltip": {
-        "enUS": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
-        "ruRU": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection."
+        "enUS": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection."
       }
     },
     {
@@ -1689,12 +1585,10 @@
       "id": "BurrowUp",
       "Icon": "btn-ability-zerg-upburrow-color",
       "Name": {
-        "enUS": "Unburrow",
-        "ruRU": "Unburrow"
+        "enUS": "Unburrow"
       },
       "Tooltip": {
-        "enUS": "Returns the unit to the surface.",
-        "ruRU": "Returns the unit to the surface."
+        "enUS": "Returns the unit to the surface."
       }
     },
     {
@@ -1702,12 +1596,10 @@
       "id": "BurrowUp",
       "Icon": "btn-ability-zerg-upburrow-color",
       "Name": {
-        "enUS": "Unburrow",
-        "ruRU": "Unburrow"
+        "enUS": "Unburrow"
       },
       "Tooltip": {
-        "enUS": "Returns the unit to the surface.",
-        "ruRU": "Returns the unit to the surface."
+        "enUS": "Returns the unit to the surface."
       }
     },
     {
@@ -1715,12 +1607,10 @@
       "id": "BurrowUp",
       "Icon": "btn-ability-zerg-upburrow-color",
       "Name": {
-        "enUS": "Unburrow",
-        "ruRU": "Unburrow"
+        "enUS": "Unburrow"
       },
       "Tooltip": {
-        "enUS": "Returns the unit to the surface.",
-        "ruRU": "Returns the unit to the surface."
+        "enUS": "Returns the unit to the surface."
       }
     },
     {
@@ -1728,12 +1618,10 @@
       "id": "BurrowUp",
       "Icon": "btn-ability-zerg-upburrow-color",
       "Name": {
-        "enUS": "Unburrow",
-        "ruRU": "Unburrow"
+        "enUS": "Unburrow"
       },
       "Tooltip": {
-        "enUS": "Returns the unit to the surface.",
-        "ruRU": "Returns the unit to the surface."
+        "enUS": "Returns the unit to the surface."
       }
     },
     {
@@ -1741,12 +1629,10 @@
       "id": "BurrowUp",
       "Icon": "btn-ability-zerg-upburrow-color",
       "Name": {
-        "enUS": "Unburrow",
-        "ruRU": "Unburrow"
+        "enUS": "Unburrow"
       },
       "Tooltip": {
-        "enUS": "Returns the unit to the surface.",
-        "ruRU": "Returns the unit to the surface."
+        "enUS": "Returns the unit to the surface."
       }
     },
     {
@@ -1754,12 +1640,10 @@
       "id": "BurrowUp",
       "Icon": "btn-ability-zerg-upburrow-color",
       "Name": {
-        "enUS": "Unburrow",
-        "ruRU": "Unburrow"
+        "enUS": "Unburrow"
       },
       "Tooltip": {
-        "enUS": "Returns the unit to the surface.",
-        "ruRU": "Returns the unit to the surface."
+        "enUS": "Returns the unit to the surface."
       }
     },
     {
@@ -1772,8 +1656,8 @@
         "koKR": "다크 스웜 /// Dark Swarm"
       },
       "Tooltip": {
-        "enUS": "Creates a micro-organism cloud reducing incoming ranged and spell damage for <span class=\"style-TooltipBuffSCBW\"><b>56</b></span> seconds.",
-        "zhCN": "Creates a micro-organism cloud reducing incoming ranged and spell damage for <span class=\"style-TooltipBuffSCBW\"><b>56</b></span> seconds.",
+        "enUS": "Creates a micro-organism cloud preventing all incoming ranged damage for <span class=\"style-TooltipBuffSCBW\"><b>56</b></span> seconds.",
+        "zhCN": "创造一片微生物云，保护其中的单位免受远程攻击的伤害，持续<span class=\"style-TooltipBuffSCBW\"><b>56</b></span>秒。",
         "koKR": "미생물 구름을 생성하여 <span class=\"style-TooltipBuffSCBW\"><b>56</b></span>초 동안 받는 모든 원거리 공격을 회피합니다. /// Creates a micro-organism cloud preventing all incoming ranged damage for <span class=\"style-TooltipBuffSCBW\"><b>56</b></span> seconds."
       }
     },
@@ -1787,9 +1671,9 @@
         "koKR": "플레이그 /// Plague"
       },
       "Tooltip": {
-        "enUS": "Infects all enemy units and buildings in the target area, inflicting <span class=\"style-TooltipHighlightSCBW\"><b>0</b></span> damage over <span class=\"style-TooltipBuffSCBW\"><b>38</b></span> seconds. Cannot reduce units or buildings below <span class=\"style-TooltipResourceLifeSCBW\">1</span> life. Ignores shields. Reveals infected cloaked and burrowed units.",
-        "zhCN": "感染目标区域内的所有敌方单位和建筑， 在<span class=\"style-TooltipBuffSCBW\"><b>38</b></span>秒内造成<span class=\"style-TooltipHighlightSCBW\"><b>0</b></span>点伤害。被影响的单位或建筑的生命值最低不会少于<span class=\"style-TooltipResourceLifeSCBW\">1</span>点。无视护盾。使被感染的隐形单位显形。",
-        "koKR": "대상 지역의 모든 적 유닛과 건물을 감염시켜 <span class=\"style-TooltipBuffSCBW\"><b>38</b></span>에 걸쳐 총 <span class=\"style-TooltipHighlightSCBW\"><b>0</b></span>의 피해를 줍니다. 유닛이나 건물의 체력을 <span class=\"style-TooltipResourceLifeSCBW\">1</span> 미만으로 줄일 수 없습니다. 보호막을 무시합니다. 클로크하거나 버로우한 유닛은 모습이 드러납니다. /// Infects all enemy units and buildings in the target area, inflicting <span class=\"style-TooltipHighlightSCBW\"><b>0</b></span> damage over <span class=\"style-TooltipBuffSCBW\"><b>38</b></span> seconds. Cannot reduce units or buildings below <span class=\"style-TooltipResourceLifeSCBW\">1</span> life. Ignores shields. Reveals infected cloaked and burrowed units."
+        "enUS": "Infects all enemy units and buildings in the target area, inflicting <span class=\"style-TooltipHighlightSCBW\"><b>300</b></span> damage over <span class=\"style-TooltipBuffSCBW\"><b>38</b></span> seconds. Cannot reduce units or buildings below <span class=\"style-TooltipResourceLifeSCBW\">1</span> life. Ignores shields. Reveals infected cloaked and burrowed units.",
+        "zhCN": "感染目标区域内的所有敌方单位和建筑， 在<span class=\"style-TooltipBuffSCBW\"><b>38</b></span>秒内造成<span class=\"style-TooltipHighlightSCBW\"><b>300</b></span>点伤害。被影响的单位或建筑的生命值最低不会少于<span class=\"style-TooltipResourceLifeSCBW\">1</span>点。无视护盾。使被感染的隐形单位显形。",
+        "koKR": "대상 지역의 모든 적 유닛과 건물을 감염시켜 <span class=\"style-TooltipBuffSCBW\"><b>38</b></span>에 걸쳐 총 <span class=\"style-TooltipHighlightSCBW\"><b>300</b></span>의 피해를 줍니다. 유닛이나 건물의 체력을 <span class=\"style-TooltipResourceLifeSCBW\">1</span> 미만으로 줄일 수 없습니다. 보호막을 무시합니다. 클로크하거나 버로우한 유닛은 모습이 드러납니다. /// Infects all enemy units and buildings in the target area, inflicting <span class=\"style-TooltipHighlightSCBW\"><b>300</b></span> damage over <span class=\"style-TooltipBuffSCBW\"><b>38</b></span> seconds. Cannot reduce units or buildings below <span class=\"style-TooltipResourceLifeSCBW\">1</span> life. Ignores shields. Reveals infected cloaked and burrowed units."
       }
     },
     {
@@ -1802,7 +1686,7 @@
         "koKR": "컨슘 /// Consume"
       },
       "Tooltip": {
-        "enUS": "Kills target friendly unit metabolizing it into <span class=\"style-TooltipResourceEnergySCBW\">+<b>50</b></span> energy.",
+        "enUS": "Kills target friendly unit metabolizing it into <span class=\"style-TooltipResourceEnergySCBW\">+<b>50</b></span> energy. ",
         "zhCN": "消灭目标友方单位，将其转化为<span class=\"style-TooltipResourceEnergySCBW\">+<b>50</b></span>点能量。",
         "koKR": "대상 아군을 섭취하고 대사 작용하여 <span class=\"style-TooltipResourceEnergySCBW\"><b>50</b></span> 에너지를 획득합니다. /// Kills target friendly unit metabolizing it into <span class=\"style-TooltipResourceEnergySCBW\">+<b>50</b></span> energy. "
       }

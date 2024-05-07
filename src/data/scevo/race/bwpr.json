@@ -3,7 +3,7 @@
   "Name": {
     "enUS": "BW Protoss",
     "zhCN": "母巢之战星灵",
-    "koKR": "스1 프로토스 /// BW Protoss"
+    "koKR": "스1 토스 /// BW Protoss"
   },
   "cache": {
     "upgrades": {
@@ -24,13 +24,6 @@
         "ScoreValue": "ArmorTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "ProtossGroundArmorsSCBW",
-        "EditorCategories": "Race:Protoss,UpgradeType:ArmorBonus",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "Icon": "btn-upgrade-protoss-groundarmorlevel1",
         "DataCollection": "ProtossGroundArmorsSCBW",
         "id": "ProtossGroundArmorsSCBW@Lvl1",
@@ -51,6 +44,7 @@
             "Value": "Assets\\Textures\\btn-upgrade-protoss-groundarmorlevel1.dds"
           }
         ],
+        "EditorCategories": "Race:Protoss,UpgradeType:ArmorBonus",
         "BonusResourcePerLevel": {
           "Minerals": 75,
           "Vespene": 75
@@ -80,13 +74,6 @@
         "ScoreValue": "ArmorTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "ProtossGroundArmorsSCBW",
-        "EditorCategories": "Race:Protoss,UpgradeType:ArmorBonus",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "Icon": "btn-upgrade-protoss-groundarmorlevel2",
         "DataCollection": "ProtossGroundArmorsSCBW",
         "id": "ProtossGroundArmorsSCBW@Lvl2",
@@ -107,6 +94,7 @@
             "Value": "Assets\\Textures\\btn-upgrade-protoss-groundarmorlevel2.dds"
           }
         ],
+        "EditorCategories": "Race:Protoss,UpgradeType:ArmorBonus",
         "BonusResourcePerLevel": {
           "Minerals": 75,
           "Vespene": 75
@@ -133,13 +121,6 @@
         "ScoreValue": "ArmorTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "ProtossGroundArmorsSCBW",
-        "EditorCategories": "Race:Protoss,UpgradeType:ArmorBonus",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "Icon": "btn-upgrade-protoss-groundarmorlevel3",
         "DataCollection": "ProtossGroundArmorsSCBW",
         "id": "ProtossGroundArmorsSCBW@Lvl3",
@@ -160,6 +141,7 @@
             "Value": "Assets\\Textures\\btn-upgrade-protoss-groundarmorlevel3.dds"
           }
         ],
+        "EditorCategories": "Race:Protoss,UpgradeType:ArmorBonus",
         "BonusResourcePerLevel": {
           "Minerals": 75,
           "Vespene": 75
@@ -186,13 +168,6 @@
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "ProtossGroundWeaponsSCBW",
-        "EditorCategories": "Race:Protoss,UpgradeType:AttackBonus",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "Icon": "btn-upgrade-protoss-groundweaponslevel1",
         "DataCollection": "ProtossGroundWeaponsSCBW",
         "id": "ProtossGroundWeaponsSCBW@Lvl1",
@@ -210,7 +185,7 @@
           },
           {
             "Reference": "Effect,^ParamId^Weapon@DamageExpl,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
+            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice*0.75}"
           },
           {
             "Reference": "Accumulator,^ParamId^Weapon@Damage,Amount",
@@ -231,7 +206,7 @@
           },
           {
             "Reference": "Effect,^ParamId^WeaponGround@DamageExpl,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
+            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice*0.75}"
           },
           {
             "Reference": "Accumulator,^ParamId^WeaponGround@Damage,Amount",
@@ -252,7 +227,7 @@
           },
           {
             "Reference": "Effect,^ParamId^WeaponAir@DamageExpl,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[1].DamagePerDice}"
+            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[1].DamagePerDice*0.75}"
           },
           {
             "Reference": "Accumulator,^ParamId^WeaponAir@Damage,Amount",
@@ -262,47 +237,14 @@
             "Operation": "Set",
             "Reference": "Weapon,^ParamId^WeaponAir,Icon",
             "Value": "Assets\\Textures\\btn-upgrade-protoss-groundweaponslevel1.dds"
-          },
-          {
-            "Reference": "Effect,^ParamId^Weapon@DamageAccum,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
-          },
-          {
-            "Reference": "Effect,^ParamId^WeaponGround@DamageAccum,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
-          },
-          {
-            "Reference": "Effect,^ParamId^WeaponAir@DamageAccum,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[1].DamagePerDice}"
-          },
-          {
-            "Reference": "Effect,^ParamId^Weapon@DamageExpl,AttributeBonus[Armored]",
-            "Value": "1"
-          },
-          {
-            "Reference": "Effect,^ParamId^WeaponGround@DamageExpl,AttributeBonus[Armored]",
-            "Value": "1"
-          },
-          {
-            "Reference": "Effect,^ParamId^WeaponAir@DamageExpl,AttributeBonus[Armored]",
-            "Value": "1"
           }
         ],
+        "EditorCategories": "Race:Protoss,UpgradeType:AttackBonus",
         "BonusResourcePerLevel": {
           "Minerals": 75,
           "Vespene": 75
         },
         "LeaderLevel": 1,
-        "EffectArray": [
-          {
-            "Reference": "Effect,DragoonSCBWWeapon@DamageAccum,AttributeBonus[Armored]",
-            "Value": "1"
-          },
-          {
-            "Reference": "Weapon,ReaverSCBWWeapon,Level",
-            "Value": "1"
-          }
-        ],
         "icon": "Assets\\Textures\\btn-upgrade-protoss-groundweaponslevel1.dds",
         "$Phase": [
           "ProtossGroundWeaponsSCBW@Lvl2",
@@ -326,13 +268,6 @@
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "ProtossGroundWeaponsSCBW",
-        "EditorCategories": "Race:Protoss,UpgradeType:AttackBonus",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "Icon": "btn-upgrade-protoss-groundweaponslevel2",
         "DataCollection": "ProtossGroundWeaponsSCBW",
         "id": "ProtossGroundWeaponsSCBW@Lvl2",
@@ -350,7 +285,7 @@
           },
           {
             "Reference": "Effect,^ParamId^Weapon@DamageExpl,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
+            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice*0.75}"
           },
           {
             "Reference": "Accumulator,^ParamId^Weapon@Damage,Amount",
@@ -371,7 +306,7 @@
           },
           {
             "Reference": "Effect,^ParamId^WeaponGround@DamageExpl,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
+            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice*0.75}"
           },
           {
             "Reference": "Accumulator,^ParamId^WeaponGround@Damage,Amount",
@@ -392,7 +327,7 @@
           },
           {
             "Reference": "Effect,^ParamId^WeaponAir@DamageExpl,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[1].DamagePerDice}"
+            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[1].DamagePerDice*0.75}"
           },
           {
             "Reference": "Accumulator,^ParamId^WeaponAir@Damage,Amount",
@@ -402,47 +337,14 @@
             "Operation": "Set",
             "Reference": "Weapon,^ParamId^WeaponAir,Icon",
             "Value": "Assets\\Textures\\btn-upgrade-protoss-groundweaponslevel2.dds"
-          },
-          {
-            "Reference": "Effect,^ParamId^Weapon@DamageAccum,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
-          },
-          {
-            "Reference": "Effect,^ParamId^WeaponGround@DamageAccum,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
-          },
-          {
-            "Reference": "Effect,^ParamId^WeaponAir@DamageAccum,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[1].DamagePerDice}"
-          },
-          {
-            "Reference": "Effect,^ParamId^Weapon@DamageExpl,AttributeBonus[Armored]",
-            "Value": "1"
-          },
-          {
-            "Reference": "Effect,^ParamId^WeaponGround@DamageExpl,AttributeBonus[Armored]",
-            "Value": "1"
-          },
-          {
-            "Reference": "Effect,^ParamId^WeaponAir@DamageExpl,AttributeBonus[Armored]",
-            "Value": "1"
           }
         ],
+        "EditorCategories": "Race:Protoss,UpgradeType:AttackBonus",
         "BonusResourcePerLevel": {
           "Minerals": 75,
           "Vespene": 75
         },
         "LeaderLevel": 2,
-        "EffectArray": [
-          {
-            "Reference": "Effect,DragoonSCBWWeapon@DamageAccum,AttributeBonus[Armored]",
-            "Value": "1"
-          },
-          {
-            "Reference": "Weapon,ReaverSCBWWeapon,Level",
-            "Value": "1"
-          }
-        ],
         "icon": "Assets\\Textures\\btn-upgrade-protoss-groundweaponslevel2.dds",
         "$Phased": "ProtossGroundWeaponsSCBW@Lvl1"
       },
@@ -463,13 +365,6 @@
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "ProtossGroundWeaponsSCBW",
-        "EditorCategories": "Race:Protoss,UpgradeType:AttackBonus",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "Icon": "btn-upgrade-protoss-groundweaponslevel3",
         "DataCollection": "ProtossGroundWeaponsSCBW",
         "id": "ProtossGroundWeaponsSCBW@Lvl3",
@@ -487,7 +382,7 @@
           },
           {
             "Reference": "Effect,^ParamId^Weapon@DamageExpl,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
+            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice*0.75}"
           },
           {
             "Reference": "Accumulator,^ParamId^Weapon@Damage,Amount",
@@ -508,7 +403,7 @@
           },
           {
             "Reference": "Effect,^ParamId^WeaponGround@DamageExpl,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
+            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice*0.75}"
           },
           {
             "Reference": "Accumulator,^ParamId^WeaponGround@Damage,Amount",
@@ -529,7 +424,7 @@
           },
           {
             "Reference": "Effect,^ParamId^WeaponAir@DamageExpl,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[1].DamagePerDice}"
+            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[1].DamagePerDice*0.75}"
           },
           {
             "Reference": "Accumulator,^ParamId^WeaponAir@Damage,Amount",
@@ -539,47 +434,14 @@
             "Operation": "Set",
             "Reference": "Weapon,^ParamId^WeaponAir,Icon",
             "Value": "Assets\\Textures\\btn-upgrade-protoss-groundweaponslevel3.dds"
-          },
-          {
-            "Reference": "Effect,^ParamId^Weapon@DamageAccum,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
-          },
-          {
-            "Reference": "Effect,^ParamId^WeaponGround@DamageAccum,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
-          },
-          {
-            "Reference": "Effect,^ParamId^WeaponAir@DamageAccum,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[1].DamagePerDice}"
-          },
-          {
-            "Reference": "Effect,^ParamId^Weapon@DamageExpl,AttributeBonus[Armored]",
-            "Value": "1"
-          },
-          {
-            "Reference": "Effect,^ParamId^WeaponGround@DamageExpl,AttributeBonus[Armored]",
-            "Value": "1"
-          },
-          {
-            "Reference": "Effect,^ParamId^WeaponAir@DamageExpl,AttributeBonus[Armored]",
-            "Value": "1"
           }
         ],
+        "EditorCategories": "Race:Protoss,UpgradeType:AttackBonus",
         "BonusResourcePerLevel": {
           "Minerals": 75,
           "Vespene": 75
         },
         "LeaderLevel": 3,
-        "EffectArray": [
-          {
-            "Reference": "Effect,DragoonSCBWWeapon@DamageAccum,AttributeBonus[Armored]",
-            "Value": "1"
-          },
-          {
-            "Reference": "Weapon,ReaverSCBWWeapon,Level",
-            "Value": "1"
-          }
-        ],
         "icon": "Assets\\Textures\\btn-upgrade-protoss-groundweaponslevel3.dds",
         "$Phased": "ProtossGroundWeaponsSCBW@Lvl1"
       },
@@ -600,13 +462,6 @@
         "ScoreValue": "ArmorTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "ProtossShieldsSCBW",
-        "EditorCategories": "Race:Protoss,UpgradeType:ArmorBonus",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "Icon": "btn-upgrade-protoss-shieldslevel1",
         "DataCollection": "ProtossShieldsSCBW",
         "id": "ProtossShieldsSCBW@Lvl1",
@@ -627,6 +482,7 @@
             "Value": "Assets\\Textures\\BTN-Upgrade-Protoss-ShieldsLevel1.dds"
           }
         ],
+        "EditorCategories": "Race:Protoss,UpgradeType:ArmorBonus",
         "BonusResourcePerLevel": {
           "Minerals": 75,
           "Vespene": 75
@@ -656,13 +512,6 @@
         "ScoreValue": "ArmorTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "ProtossShieldsSCBW",
-        "EditorCategories": "Race:Protoss,UpgradeType:ArmorBonus",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "Icon": "btn-upgrade-protoss-shieldslevel2",
         "DataCollection": "ProtossShieldsSCBW",
         "id": "ProtossShieldsSCBW@Lvl2",
@@ -683,6 +532,7 @@
             "Value": "Assets\\Textures\\BTN-Upgrade-Protoss-ShieldsLevel2.dds"
           }
         ],
+        "EditorCategories": "Race:Protoss,UpgradeType:ArmorBonus",
         "BonusResourcePerLevel": {
           "Minerals": 75,
           "Vespene": 75
@@ -709,13 +559,6 @@
         "ScoreValue": "ArmorTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "ProtossShieldsSCBW",
-        "EditorCategories": "Race:Protoss,UpgradeType:ArmorBonus",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "Icon": "btn-upgrade-protoss-shieldslevel3",
         "DataCollection": "ProtossShieldsSCBW",
         "id": "ProtossShieldsSCBW@Lvl3",
@@ -736,6 +579,7 @@
             "Value": "Assets\\Textures\\BTN-Upgrade-Protoss-ShieldsLevel3.dds"
           }
         ],
+        "EditorCategories": "Race:Protoss,UpgradeType:ArmorBonus",
         "BonusResourcePerLevel": {
           "Minerals": 75,
           "Vespene": 75
@@ -762,29 +606,23 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "DragoonSCBWRangeUpgrade",
-        "EditorCategories": "UpgradeType:Talents,Race:Protoss",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "DataCollection": "DragoonSCBWRangeUpgrade",
         "id": "DragoonSCBWRangeUpgrade",
         "Icon": "btn-upgrade-artanis-singularitycharge",
         "EffectArrayTemplate": [
           {
             "Reference": "Weapon,^ParamId^Weapon,Range",
-            "Value": "1"
+            "Value": "2"
           },
           {
             "Reference": "Weapon,^ParamId^Weapon,MinScanRange",
-            "Value": "1"
+            "Value": "2"
           }
         ],
         "Race": "Prot",
         "ScoreAmount": 300,
         "ScoreResult": "BuildOrder",
+        "EditorCategories": "UpgradeType:Talents,Race:Protoss",
         "AffectedUnitArray": [
           "DragoonSCBW"
         ]
@@ -806,13 +644,6 @@
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "ProtossAirWeaponsSCBW",
-        "EditorCategories": "Race:Protoss,UpgradeType:AttackBonus",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "Icon": "btn-upgrade-protoss-airweaponslevel1",
         "DataCollection": "ProtossAirWeaponsSCBW",
         "id": "ProtossAirWeaponsSCBW@Lvl1",
@@ -829,7 +660,7 @@
           },
           {
             "Reference": "Effect,^ParamId^Weapon@DamageExpl,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
+            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice*0.75}"
           },
           {
             "Reference": "Accumulator,^ParamId^Weapon@Damage,Amount",
@@ -850,7 +681,7 @@
           },
           {
             "Reference": "Effect,^ParamId^WeaponGround@DamageExpl,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
+            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice*0.75}"
           },
           {
             "Reference": "Accumulator,^ParamId^WeaponGround@Damage,Amount",
@@ -871,7 +702,7 @@
           },
           {
             "Reference": "Effect,^ParamId^WeaponAir@DamageExpl,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[1].DamagePerDice}"
+            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[1].DamagePerDice*0.75}"
           },
           {
             "Reference": "Accumulator,^ParamId^WeaponAir@Damage,Amount",
@@ -885,52 +716,15 @@
           {
             "Reference": "Weapon,^ParamId^Weapon@Dummy,Level",
             "Value": "1"
-          },
-          {
-            "Reference": "Effect,^ParamId^Weapon@DamageAccum,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
-          },
-          {
-            "Reference": "Effect,^ParamId^WeaponGround@DamageAccum,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
-          },
-          {
-            "Reference": "Effect,^ParamId^WeaponAir@DamageAccum,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[1].DamagePerDice}"
-          },
-          {
-            "Reference": "Effect,^ParamId^Weapon@DamageExpl,AttributeBonus[Armored]",
-            "Value": "1"
-          },
-          {
-            "Reference": "Effect,^ParamId^WeaponGround@DamageExpl,AttributeBonus[Armored]",
-            "Value": "1"
-          },
-          {
-            "Reference": "Effect,^ParamId^WeaponAir@DamageExpl,AttributeBonus[Armored]",
-            "Value": "1"
           }
         ],
+        "EditorCategories": "Race:Protoss,UpgradeType:AttackBonus",
         "BonusResourcePerLevel": {
           "Minerals": 75,
           "Vespene": 75
         },
         "LeaderLevel": 1,
         "ScoreAmount": 200,
-        "EffectArray": [
-          {
-            "Reference": "Effect,ArbiterSCBWWeapon@DamageAccum,AttributeBonus[Armored]",
-            "Value": "1"
-          },
-          {
-            "Reference": "Effect,ScoutSCBWWeaponAir@DamageAccum,AttributeBonus[Armored]",
-            "Value": "1"
-          },
-          {
-            "Reference": "Effect,CorsairSCBWWeapon@DamageAccum,AttributeBonus[Armored]",
-            "Value": "1"
-          }
-        ],
         "icon": "Assets\\Textures\\btn-upgrade-protoss-airweaponslevel1.dds",
         "$Phase": [
           "ProtossAirWeaponsSCBW@Lvl2",
@@ -954,13 +748,6 @@
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "ProtossAirWeaponsSCBW",
-        "EditorCategories": "Race:Protoss,UpgradeType:AttackBonus",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "Icon": "btn-upgrade-protoss-airweaponslevel2",
         "DataCollection": "ProtossAirWeaponsSCBW",
         "id": "ProtossAirWeaponsSCBW@Lvl2",
@@ -977,7 +764,7 @@
           },
           {
             "Reference": "Effect,^ParamId^Weapon@DamageExpl,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
+            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice*0.75}"
           },
           {
             "Reference": "Accumulator,^ParamId^Weapon@Damage,Amount",
@@ -998,7 +785,7 @@
           },
           {
             "Reference": "Effect,^ParamId^WeaponGround@DamageExpl,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
+            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice*0.75}"
           },
           {
             "Reference": "Accumulator,^ParamId^WeaponGround@Damage,Amount",
@@ -1019,7 +806,7 @@
           },
           {
             "Reference": "Effect,^ParamId^WeaponAir@DamageExpl,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[1].DamagePerDice}"
+            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[1].DamagePerDice*0.75}"
           },
           {
             "Reference": "Accumulator,^ParamId^WeaponAir@Damage,Amount",
@@ -1033,52 +820,15 @@
           {
             "Reference": "Weapon,^ParamId^Weapon@Dummy,Level",
             "Value": "1"
-          },
-          {
-            "Reference": "Effect,^ParamId^Weapon@DamageAccum,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
-          },
-          {
-            "Reference": "Effect,^ParamId^WeaponGround@DamageAccum,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
-          },
-          {
-            "Reference": "Effect,^ParamId^WeaponAir@DamageAccum,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[1].DamagePerDice}"
-          },
-          {
-            "Reference": "Effect,^ParamId^Weapon@DamageExpl,AttributeBonus[Armored]",
-            "Value": "1"
-          },
-          {
-            "Reference": "Effect,^ParamId^WeaponGround@DamageExpl,AttributeBonus[Armored]",
-            "Value": "1"
-          },
-          {
-            "Reference": "Effect,^ParamId^WeaponAir@DamageExpl,AttributeBonus[Armored]",
-            "Value": "1"
           }
         ],
+        "EditorCategories": "Race:Protoss,UpgradeType:AttackBonus",
         "BonusResourcePerLevel": {
           "Minerals": 75,
           "Vespene": 75
         },
         "ScoreAmount": 350,
         "LeaderLevel": 2,
-        "EffectArray": [
-          {
-            "Reference": "Effect,ArbiterSCBWWeapon@DamageAccum,AttributeBonus[Armored]",
-            "Value": "1"
-          },
-          {
-            "Reference": "Effect,ScoutSCBWWeaponAir@DamageAccum,AttributeBonus[Armored]",
-            "Value": "1"
-          },
-          {
-            "Reference": "Effect,CorsairSCBWWeapon@DamageAccum,AttributeBonus[Armored]",
-            "Value": "1"
-          }
-        ],
         "icon": "Assets\\Textures\\btn-upgrade-protoss-airweaponslevel2.dds",
         "$Phased": "ProtossAirWeaponsSCBW@Lvl1"
       },
@@ -1099,13 +849,6 @@
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "ProtossAirWeaponsSCBW",
-        "EditorCategories": "Race:Protoss,UpgradeType:AttackBonus",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "Icon": "btn-upgrade-protoss-airweaponslevel3",
         "DataCollection": "ProtossAirWeaponsSCBW",
         "id": "ProtossAirWeaponsSCBW@Lvl3",
@@ -1122,7 +865,7 @@
           },
           {
             "Reference": "Effect,^ParamId^Weapon@DamageExpl,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
+            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice*0.75}"
           },
           {
             "Reference": "Accumulator,^ParamId^Weapon@Damage,Amount",
@@ -1143,7 +886,7 @@
           },
           {
             "Reference": "Effect,^ParamId^WeaponGround@DamageExpl,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
+            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice*0.75}"
           },
           {
             "Reference": "Accumulator,^ParamId^WeaponGround@Damage,Amount",
@@ -1164,7 +907,7 @@
           },
           {
             "Reference": "Effect,^ParamId^WeaponAir@DamageExpl,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[1].DamagePerDice}"
+            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[1].DamagePerDice*0.75}"
           },
           {
             "Reference": "Accumulator,^ParamId^WeaponAir@Damage,Amount",
@@ -1178,52 +921,15 @@
           {
             "Reference": "Weapon,^ParamId^Weapon@Dummy,Level",
             "Value": "1"
-          },
-          {
-            "Reference": "Effect,^ParamId^Weapon@DamageAccum,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
-          },
-          {
-            "Reference": "Effect,^ParamId^WeaponGround@DamageAccum,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
-          },
-          {
-            "Reference": "Effect,^ParamId^WeaponAir@DamageAccum,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[1].DamagePerDice}"
-          },
-          {
-            "Reference": "Effect,^ParamId^Weapon@DamageExpl,AttributeBonus[Armored]",
-            "Value": "1"
-          },
-          {
-            "Reference": "Effect,^ParamId^WeaponGround@DamageExpl,AttributeBonus[Armored]",
-            "Value": "1"
-          },
-          {
-            "Reference": "Effect,^ParamId^WeaponAir@DamageExpl,AttributeBonus[Armored]",
-            "Value": "1"
           }
         ],
+        "EditorCategories": "Race:Protoss,UpgradeType:AttackBonus",
         "BonusResourcePerLevel": {
           "Minerals": 75,
           "Vespene": 75
         },
         "ScoreAmount": 500,
         "LeaderLevel": 3,
-        "EffectArray": [
-          {
-            "Reference": "Effect,ArbiterSCBWWeapon@DamageAccum,AttributeBonus[Armored]",
-            "Value": "1"
-          },
-          {
-            "Reference": "Effect,ScoutSCBWWeaponAir@DamageAccum,AttributeBonus[Armored]",
-            "Value": "1"
-          },
-          {
-            "Reference": "Effect,CorsairSCBWWeapon@DamageAccum,AttributeBonus[Armored]",
-            "Value": "1"
-          }
-        ],
         "icon": "Assets\\Textures\\btn-upgrade-protoss-airweaponslevel3.dds",
         "$Phased": "ProtossAirWeaponsSCBW@Lvl1"
       },
@@ -1244,13 +950,6 @@
         "ScoreValue": "ArmorTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "ProtossAirArmorsSCBW",
-        "EditorCategories": "Race:Protoss,UpgradeType:ArmorBonus",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "Icon": "btn-upgrade-protoss-airarmorlevel1",
         "DataCollection": "ProtossAirArmorsSCBW",
         "id": "ProtossAirArmorsSCBW@Lvl1",
@@ -1271,6 +970,7 @@
             "Value": "Assets\\Textures\\btn-upgrade-protoss-airarmorlevel1.dds"
           }
         ],
+        "EditorCategories": "Race:Protoss,UpgradeType:ArmorBonus",
         "BonusResourcePerLevel": {
           "Minerals": 75,
           "Vespene": 75
@@ -1300,13 +1000,6 @@
         "ScoreValue": "ArmorTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "ProtossAirArmorsSCBW",
-        "EditorCategories": "Race:Protoss,UpgradeType:ArmorBonus",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "Icon": "btn-upgrade-protoss-airarmorlevel2",
         "DataCollection": "ProtossAirArmorsSCBW",
         "id": "ProtossAirArmorsSCBW@Lvl2",
@@ -1327,6 +1020,7 @@
             "Value": "Assets\\Textures\\btn-upgrade-protoss-airarmorlevel2.dds"
           }
         ],
+        "EditorCategories": "Race:Protoss,UpgradeType:ArmorBonus",
         "BonusResourcePerLevel": {
           "Minerals": 75,
           "Vespene": 75
@@ -1353,13 +1047,6 @@
         "ScoreValue": "ArmorTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "ProtossAirArmorsSCBW",
-        "EditorCategories": "Race:Protoss,UpgradeType:ArmorBonus",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "Icon": "btn-upgrade-protoss-airarmorlevel3",
         "DataCollection": "ProtossAirArmorsSCBW",
         "id": "ProtossAirArmorsSCBW@Lvl3",
@@ -1380,6 +1067,7 @@
             "Value": "Assets\\Textures\\btn-upgrade-protoss-airarmorlevel3.dds"
           }
         ],
+        "EditorCategories": "Race:Protoss,UpgradeType:ArmorBonus",
         "BonusResourcePerLevel": {
           "Minerals": 75,
           "Vespene": 75
@@ -1406,13 +1094,6 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "HighTemplarSCBWPsiStormResearch",
-        "EditorCategories": "UpgradeType:SpellResearch,Race:Protoss",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "DataCollection": "HighTemplarSCBWPsiStormResearch",
         "id": "HighTemplarSCBWPsiStormResearch",
         "Icon": "btn-ability-protoss-psistorm-color",
@@ -1420,6 +1101,7 @@
         "Race": "Prot",
         "ScoreAmount": 400,
         "ScoreResult": "BuildOrder",
+        "EditorCategories": "UpgradeType:SpellResearch,Race:Protoss",
         "AffectedUnitArray": [
           "HighTemplarSCBW"
         ]
@@ -1441,13 +1123,6 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "HighTemplarSCBWHallucinationResearch",
-        "EditorCategories": "UpgradeType:SpellResearch,Race:Protoss",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "DataCollection": "HighTemplarSCBWHallucinationResearch",
         "id": "HighTemplarSCBWHallucinationResearch",
         "Icon": "btn-ability-protoss-hallucination-color",
@@ -1455,6 +1130,7 @@
         "Race": "Prot",
         "ScoreAmount": 300,
         "ScoreResult": "BuildOrder",
+        "EditorCategories": "UpgradeType:SpellResearch,Race:Protoss",
         "AffectedUnitArray": [
           "HighTemplarSCBW"
         ]
@@ -1476,13 +1152,6 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "HighTemplarSCBWEnergyUpgrade",
-        "EditorCategories": "UpgradeType:Talents,Race:Protoss",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "DataCollection": "HighTemplarSCBWEnergyUpgrade",
         "id": "HighTemplarSCBWEnergyUpgrade",
         "EffectArrayTemplate": [
@@ -1500,6 +1169,7 @@
         "Race": "Prot",
         "ScoreAmount": 300,
         "ScoreResult": "BuildOrder",
+        "EditorCategories": "UpgradeType:Talents,Race:Protoss",
         "AffectedUnitArray": [
           "HighTemplarSCBW"
         ]
@@ -1521,13 +1191,6 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "DarkArchonSCBWMindControlResearch",
-        "EditorCategories": "UpgradeType:SpellResearch,Race:Protoss",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "DataCollection": "DarkArchonSCBWMindControlResearch",
         "id": "DarkArchonSCBWMindControlResearch",
         "Icon": "btn-ability-protoss-mindcontrol",
@@ -1535,6 +1198,7 @@
         "Race": "Prot",
         "ScoreAmount": 400,
         "ScoreResult": "BuildOrder",
+        "EditorCategories": "UpgradeType:SpellResearch,Race:Protoss",
         "AffectedUnitArray": [
           "DarkArchonSCBW"
         ]
@@ -1556,13 +1220,6 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "DarkArchonSCBWMaelstromResearch",
-        "EditorCategories": "UpgradeType:SpellResearch,Race:Protoss",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "DataCollection": "DarkArchonSCBWMaelstromResearch",
         "id": "DarkArchonSCBWMaelstromResearch",
         "Icon": "btn-ability-protoss-voidstasis",
@@ -1570,6 +1227,7 @@
         "Race": "Prot",
         "ScoreAmount": 200,
         "ScoreResult": "BuildOrder",
+        "EditorCategories": "UpgradeType:SpellResearch,Race:Protoss",
         "AffectedUnitArray": [
           "DarkArchonSCBW"
         ]
@@ -1591,13 +1249,6 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "DarkArchonSCBWEnergyUpgrade",
-        "EditorCategories": "UpgradeType:Talents,Race:Protoss",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "DataCollection": "DarkArchonSCBWEnergyUpgrade",
         "id": "DarkArchonSCBWEnergyUpgrade",
         "EffectArrayTemplate": [
@@ -1615,6 +1266,7 @@
         "Race": "Prot",
         "ScoreAmount": 300,
         "ScoreResult": "BuildOrder",
+        "EditorCategories": "UpgradeType:Talents,Race:Protoss",
         "AffectedUnitArray": [
           "DarkArchonSCBW"
         ]
@@ -1637,60 +1289,23 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "ZealotSCBWSpeedUpgrade",
-        "EditorCategories": "Race:Protoss,UpgradeType:Talents",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "DataCollection": "ZealotSCBWSpeedUpgrade",
         "id": "ZealotSCBWSpeedUpgrade",
         "EffectArrayTemplate": [
           {
             "Operation": "Multiply",
             "Reference": "Unit,^ParamId^,Speed",
-            "Value": "1.55"
+            "Value": "1.6"
           }
         ],
         "Icon": "btn-ability-protoss-charge-color",
         "Race": "Prot",
         "ScoreAmount": 300,
         "ScoreResult": "BuildOrder",
+        "EditorCategories": "Race:Protoss,UpgradeType:Talents",
         "AffectedUnitArray": [
           "ZealotSCBW"
         ]
-      },
-      "GatewaySCBWResonantMatrixResearch": {
-        "class": "CUpgrade",
-        "Flags": {
-          "UpgradeCheat": 1,
-          "TechTreeCheat": 1
-        },
-        "Name": {
-          "enUS": "Resonant Matrix",
-          "zhCN": "Resonant Matrix",
-          "koKR": "Resonant Matrix"
-        },
-        "MaxLevel": 1,
-        "Alert": "UpgradeComplete",
-        "ScoreCount": "MiscTechnologyCount",
-        "ScoreValue": "MiscTechnologyValue",
-        "WebPriority": 1,
-        "LeaderAlias": "GatewaySCBWResonantMatrixResearch",
-        "EditorCategories": "UpgradeType:Talents,Race:Protoss",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
-        "Icon": "btn-ability-spearofadun-chronomancy",
-        "Race": "BWPr",
-        "AffectedUnitArray": [
-          "GatewaySCBW"
-        ],
-        "id": "GatewaySCBWResonantMatrixResearch"
       },
       "ScarabSCBWWeaponDamageUpgrade": {
         "class": "CUpgrade",
@@ -1709,13 +1324,6 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "ScarabSCBWWeaponDamageUpgrade",
-        "EditorCategories": "UpgradeType:AttackBonus,Race:Protoss",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "DataCollection": "ScarabSCBWWeaponDamageUpgrade",
         "id": "ScarabSCBWWeaponDamageUpgrade",
         "InfoTooltipPriority": 1,
@@ -1725,60 +1333,52 @@
         "ScoreResult": "BuildOrder",
         "EffectArrayTemplate": [
           {
-            "Reference": "Effect,^ParamId^Weapon@Damage,AttributeBonus[Armored]",
-            "Value": "40"
-          },
-          {
-            "Operation": "Set",
-            "Reference": "Weapon,^ParamId^Weapon,Icon",
-            "Value": "Assets\\Effects\\Protoss\\SardineS_ReaverMod\\ScarabUpgradePurple.dds"
+            "Reference": "Effect,^ParamId^Weapon@Damage,Amount",
+            "Value": "25"
           }
         ],
+        "EditorCategories": "UpgradeType:AttackBonus,Race:Protoss",
         "AffectedUnitArray": [
           "ReaverSCBW"
         ]
       },
-      "ReaverSCBWWeaponRangeUpgrade": {
+      "ReaverSCBWHangarIncreaseUpgrade": {
         "class": "CUpgrade",
         "Flags": {
           "UpgradeCheat": 1,
           "IgnoreInvalidReferenceInTemplate": 1
         },
         "Name": {
-          "enUS": "Imbued Lenses",
-          "zhCN": "Imbued Lenses",
-          "koKR": "Imbued Lenses"
+          "enUS": "Increased Capacity",
+          "zhCN": "掠夺者扩容",
+          "koKR": "수용력 증가 /// Increased Capacity"
         },
         "MaxLevel": 1,
         "Alert": "ResearchComplete",
         "ScoreCount": "MiscTechnologyCount",
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
-        "LeaderAlias": "ReaverSCBWWeaponRangeUpgrade",
-        "EditorCategories": "UpgradeType:AttackBonus,Race:Protoss",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
+        "LeaderAlias": "ReaverSCBWHangarIncreaseUpgrade",
+        "DataCollection": "ReaverSCBWHangarIncreaseUpgrade",
+        "id": "ReaverSCBWHangarIncreaseUpgrade",
+        "Icon": "btn-upgrade-protoss-increasedscarabcapacity@scbw",
+        "EffectArrayTemplate": [
+          {
+            "Operation": "Set",
+            "Reference": "Abil,^ParamId^Hangar,MaxCount",
+            "Value": "10"
+          },
+          {
+            "Operation": "Set",
+            "Reference": "Abil,^ParamId^Hangar,InfoArray[Ammo1].Button.Requirements",
+            "Value": "ReaverSCBWHangar@ArmUpgrade"
           }
-        },
-        "DataCollection": "ReaverSCBWWeaponRangeUpgrade",
-        "id": "ReaverSCBWWeaponRangeUpgrade",
+        ],
+        "EditorCategories": "UpgradeType:Talents,Race:Protoss",
         "InfoTooltipPriority": 1,
-        "Icon": "btn-ability-protoss-envision",
         "Race": "Prot",
         "ScoreAmount": 400,
         "ScoreResult": "BuildOrder",
-        "EffectArrayTemplate": [
-          {
-            "Reference": "Weapon,^ParamId^Weapon,Range",
-            "Value": "2"
-          },
-          {
-            "Reference": "Weapon,^ParamId^Weapon,MinScanRange",
-            "Value": "1.5"
-          }
-        ],
         "AffectedUnitArray": [
           "ReaverSCBW"
         ]
@@ -1800,13 +1400,6 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "ShuttleSCBWSpeedUpgrade",
-        "EditorCategories": "UpgradeType:Talents,Race:Protoss",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "DataCollection": "ShuttleSCBWSpeedUpgrade",
         "id": "ShuttleSCBWSpeedUpgrade",
         "EffectArrayTemplate": [
@@ -1814,10 +1407,6 @@
             "Operation": "Multiply",
             "Reference": "Unit,^ParamId^,Speed",
             "Value": "1.5"
-          },
-          {
-            "Reference": "Unit,^ParamId^,Acceleration",
-            "Value": "1.125"
           }
         ],
         "Icon": "btn-upgrade-protoss-graviticdrive",
@@ -1825,14 +1414,9 @@
         "Race": "Prot",
         "ScoreAmount": 400,
         "ScoreResult": "BuildOrder",
+        "EditorCategories": "UpgradeType:Talents,Race:Protoss",
         "AffectedUnitArray": [
           "ShuttleSCBW"
-        ],
-        "EffectArray": [
-          {
-            "Reference": "Abil,ShuttleSCBW@Transport,Range",
-            "Value": "1"
-          }
         ]
       },
       "ObserverSCBWSpeedUpgrade": {
@@ -1852,13 +1436,6 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "ObserverSCBWSpeedUpgrade",
-        "EditorCategories": "UpgradeType:Talents,Race:Protoss",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "DataCollection": "ObserverSCBWSpeedUpgrade",
         "id": "ObserverSCBWSpeedUpgrade",
         "EffectArrayTemplate": [
@@ -1873,6 +1450,7 @@
         "Race": "BWPr",
         "ScoreAmount": 300,
         "ScoreResult": "BuildOrder",
+        "EditorCategories": "UpgradeType:Talents,Race:Protoss",
         "AffectedUnitArray": [
           "ObserverSCBW"
         ]
@@ -1894,13 +1472,6 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "ObserverSCBWSightUpgrade",
-        "EditorCategories": "UpgradeType:Talents,Race:Protoss",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "DataCollection": "ObserverSCBWSightUpgrade",
         "id": "ObserverSCBWSightUpgrade",
         "Icon": "btn-ability-zeratul-observer-sensorarray",
@@ -1914,6 +1485,7 @@
             "Value": "2"
           }
         ],
+        "EditorCategories": "UpgradeType:Talents,Race:Protoss",
         "AffectedUnitArray": [
           "ObserverSCBW",
           "ObserverSCBWSieged"
@@ -1940,13 +1512,6 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "ScoutSCBWSightUpgrade",
-        "EditorCategories": "UpgradeType:Talents,Race:Protoss",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "DataCollection": "ScoutSCBWSightUpgrade",
         "id": "ScoutSCBWSightUpgrade",
         "Icon": "btn-upgrade-protoss-apialsensors@scbw",
@@ -1956,6 +1521,7 @@
             "Value": "2"
           }
         ],
+        "EditorCategories": "UpgradeType:Talents,Race:Protoss",
         "InfoTooltipPriority": 1,
         "Race": "BWPr",
         "ScoreAmount": 200,
@@ -1981,13 +1547,6 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "ScoutSCBWSpeedUpgrade",
-        "EditorCategories": "UpgradeType:Talents,Race:Protoss",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "DataCollection": "ScoutSCBWSpeedUpgrade",
         "id": "ScoutSCBWSpeedUpgrade",
         "EffectArrayTemplate": [
@@ -2002,6 +1561,7 @@
         "Race": "BWPr",
         "ScoreAmount": 400,
         "ScoreResult": "BuildOrder",
+        "EditorCategories": "UpgradeType:Talents,Race:Protoss",
         "AffectedUnitArray": [
           "ScoutSCBW"
         ]
@@ -2023,13 +1583,6 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "CarrierSCBWHangarIncreaseUpgrade",
-        "EditorCategories": "UpgradeType:Talents,Race:Protoss",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "DataCollection": "CarrierSCBWHangarIncreaseUpgrade",
         "id": "CarrierSCBWHangarIncreaseUpgrade",
         "Icon": "btn-upgrade-protoss-gravitoncatapult",
@@ -2045,6 +1598,7 @@
             "Value": "CarrierSCBWHangar@ArmUpgrade"
           }
         ],
+        "EditorCategories": "UpgradeType:Talents,Race:Protoss",
         "InfoTooltipPriority": 1,
         "Race": "Prot",
         "ScoreAmount": 200,
@@ -2070,13 +1624,6 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "CorsairSCBWDisruptionWebResearch",
-        "EditorCategories": "UpgradeType:SpellResearch,Race:Protoss",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "DataCollection": "CorsairSCBWDisruptionWebResearch",
         "id": "CorsairSCBWDisruptionWebResearch",
         "Icon": "btn-ability-protoss-disruptionweb",
@@ -2084,6 +1631,7 @@
         "Race": "Prot",
         "ScoreAmount": 400,
         "ScoreResult": "BuildOrder",
+        "EditorCategories": "UpgradeType:SpellResearch,Race:Protoss",
         "AffectedUnitArray": [
           "CorsairSCBW"
         ]
@@ -2105,13 +1653,6 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "CorsairSCBWEnergyUpgrade",
-        "EditorCategories": "UpgradeType:Talents,Race:Protoss",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "DataCollection": "CorsairSCBWEnergyUpgrade",
         "id": "CorsairSCBWEnergyUpgrade",
         "EffectArrayTemplate": [
@@ -2129,6 +1670,7 @@
         "Race": "Prot",
         "ScoreAmount": 200,
         "ScoreResult": "BuildOrder",
+        "EditorCategories": "UpgradeType:Talents,Race:Protoss",
         "AffectedUnitArray": [
           "CorsairSCBW"
         ]
@@ -2150,13 +1692,6 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "ArbiterSCBWRecallResearch",
-        "EditorCategories": "UpgradeType:SpellResearch,Race:Protoss",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "DataCollection": "ArbiterSCBWRecallResearch",
         "id": "ArbiterSCBWRecallResearch",
         "Icon": "btn-ability-protoss-recall",
@@ -2164,6 +1699,7 @@
         "Race": "Prot",
         "ScoreAmount": 300,
         "ScoreResult": "BuildOrder",
+        "EditorCategories": "UpgradeType:SpellResearch,Race:Protoss",
         "AffectedUnitArray": [
           "ArbiterSCBW"
         ]
@@ -2185,13 +1721,6 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "ArbiterSCBWStasisFieldResearch",
-        "EditorCategories": "UpgradeType:SpellResearch,Race:Protoss",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "DataCollection": "ArbiterSCBWStasisFieldResearch",
         "id": "ArbiterSCBWStasisFieldResearch",
         "Icon": "btn-ability-protoss-stasisfield",
@@ -2199,6 +1728,7 @@
         "Race": "Prot",
         "ScoreAmount": 300,
         "ScoreResult": "BuildOrder",
+        "EditorCategories": "UpgradeType:SpellResearch,Race:Protoss",
         "AffectedUnitArray": [
           "ArbiterSCBW"
         ]
@@ -2220,13 +1750,6 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "ArbiterSCBWEnergyUpgrade",
-        "EditorCategories": "UpgradeType:Talents,Race:Protoss",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "DataCollection": "ArbiterSCBWEnergyUpgrade",
         "id": "ArbiterSCBWEnergyUpgrade",
         "EffectArrayTemplate": [
@@ -2244,6 +1767,7 @@
         "Race": "Prot",
         "ScoreAmount": 300,
         "ScoreResult": "BuildOrder",
+        "EditorCategories": "UpgradeType:Talents,Race:Protoss",
         "AffectedUnitArray": [
           "ArbiterSCBW"
         ]
@@ -2268,7 +1792,7 @@
         "ShieldsMax": 750,
         "Food": 15,
         "CostResource": {
-          "Minerals": 350
+          "Minerals": 400
         },
         "Production": [
           "ProbeSCBW"
@@ -2279,12 +1803,10 @@
         "LifeArmorIcon": "btn-armor-protoss-buildingplating",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Protoss Armor",
-          "ruRU": "Protoss Armor"
+          "enUS": "Protoss Armor"
         },
         "ShieldArmorName": {
-          "enUS": "Protoss Plasma Shields",
-          "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+          "enUS": "Protoss Plasma Shields"
         },
         "priority": 10
       },
@@ -2331,12 +1853,10 @@
         "LifeArmorIcon": "btn-upgrade-protoss-groundarmorlevel0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Protoss Armor",
-          "ruRU": "Protoss Armor"
+          "enUS": "Protoss Armor"
         },
         "ShieldArmorName": {
-          "enUS": "Protoss Plasma Shields",
-          "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+          "enUS": "Protoss Plasma Shields"
         },
         "priority": 10
       },
@@ -2366,12 +1886,10 @@
         "LifeArmorIcon": "btn-armor-protoss-buildingplating",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Protoss Armor",
-          "ruRU": "Protoss Armor"
+          "enUS": "Protoss Armor"
         },
         "ShieldArmorName": {
-          "enUS": "Protoss Plasma Shields",
-          "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+          "enUS": "Protoss Plasma Shields"
         },
         "priority": 200
       },
@@ -2388,8 +1906,8 @@
           "zhCN": "提供补给。<br/>拥有补给是生产更多单位的前提。<br/>为附近的建筑提供能量。",
           "koKR": "보급품을 공급합니다.<br/>보급품을 늘리면 더 많은 유닛을 소환할 수 있습니다.<br/>주위 구조물에 동력을 공급합니다. /// Provides supply.<br/>Supply allows you to warp in more units.<br/>Creates power for nearby structures."
         },
-        "LifeMax": 250,
-        "ShieldsMax": 250,
+        "LifeMax": 300,
+        "ShieldsMax": 300,
         "Food": 8,
         "CostResource": {
           "Minerals": 100
@@ -2401,12 +1919,10 @@
         "LifeArmorIcon": "btn-armor-protoss-buildingplating",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Protoss Armor",
-          "ruRU": "Protoss Armor"
+          "enUS": "Protoss Armor"
         },
         "ShieldArmorName": {
-          "enUS": "Protoss Plasma Shields",
-          "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+          "enUS": "Protoss Plasma Shields"
         },
         "priority": 18
       },
@@ -2420,7 +1936,7 @@
         },
         "Description": {
           "enUS": "Warped in over a <span class=\"style-TooltipHighlightSCBW\"><b>Vespene Geyser</b></span> to allow harvesting of vespene gas.",
-          "zhCN": "折跃于<span class=\"style-TooltipHighlightSCBW\"><b>Vespene Geyser</b></span>上，用于采集高能瓦斯。 ",
+          "zhCN": "折跃于<span class=\"style-TooltipHighlightSCBW\"><b>Vespene Geyser</b></span>上，用于采集高能瓦斯。",
           "koKR": "베스핀 가스 채취를 위해 <span class=\"style-TooltipHighlightSCBW\"><b>Vespene Geyser</b></span> 위에 건설하는 구조물입니다. /// Warped in over a <span class=\"style-TooltipHighlightSCBW\"><b>Vespene Geyser</b></span> to allow harvesting of vespene gas."
         },
         "LifeMax": 450,
@@ -2436,12 +1952,10 @@
         "LifeArmorIcon": "btn-armor-protoss-buildingplating",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Protoss Armor",
-          "ruRU": "Protoss Armor"
+          "enUS": "Protoss Armor"
         },
         "ShieldArmorName": {
-          "enUS": "Protoss Plasma Shields",
-          "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+          "enUS": "Protoss Plasma Shields"
         },
         "priority": 14
       },
@@ -2476,12 +1990,10 @@
         "LifeArmorIcon": "btn-armor-protoss-buildingplating",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Protoss Armor",
-          "ruRU": "Protoss Armor"
+          "enUS": "Protoss Armor"
         },
         "ShieldArmorName": {
-          "enUS": "Protoss Plasma Shields",
-          "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+          "enUS": "Protoss Plasma Shields"
         },
         "priority": 22
       },
@@ -2500,7 +2012,7 @@
         },
         "LifeMax": 100,
         "LifeArmor": 1,
-        "ShieldsMax": 60,
+        "ShieldsMax": 70,
         "Food": -2,
         "CostResource": {
           "Minerals": 100
@@ -2512,12 +2024,10 @@
         "LifeArmorIcon": "btn-upgrade-protoss-groundarmorlevel0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Protoss Armor",
-          "ruRU": "Protoss Armor"
+          "enUS": "Protoss Armor"
         },
         "ShieldArmorName": {
-          "enUS": "Protoss Plasma Shields",
-          "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+          "enUS": "Protoss Plasma Shields"
         },
         "priority": 20
       },
@@ -2549,12 +2059,10 @@
         "LifeArmorIcon": "btn-upgrade-protoss-groundarmorlevel0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Protoss Plating",
-          "ruRU": "Protoss Plating"
+          "enUS": "Protoss Plating"
         },
         "ShieldArmorName": {
-          "enUS": "Protoss Plasma Shields",
-          "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+          "enUS": "Protoss Plasma Shields"
         },
         "priority": 50
       },
@@ -2587,12 +2095,10 @@
         "LifeArmorIcon": "btn-upgrade-protoss-groundarmorlevel0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Protoss Armor",
-          "ruRU": "Protoss Armor"
+          "enUS": "Protoss Armor"
         },
         "ShieldArmorName": {
-          "enUS": "Protoss Plasma Shields",
-          "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+          "enUS": "Protoss Plasma Shields"
         },
         "priority": 80
       },
@@ -2619,12 +2125,10 @@
         "LifeArmorIcon": "btn-upgrade-protoss-groundarmorlevel0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Protoss Armor",
-          "ruRU": "Protoss Armor"
+          "enUS": "Protoss Armor"
         },
         "ShieldArmorName": {
-          "enUS": "Protoss Plasma Shields",
-          "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+          "enUS": "Protoss Plasma Shields"
         },
         "priority": 90
       },
@@ -2658,12 +2162,10 @@
         "LifeArmorIcon": "btn-upgrade-protoss-groundarmorlevel0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Protoss Armor",
-          "ruRU": "Protoss Armor"
+          "enUS": "Protoss Armor"
         },
         "ShieldArmorName": {
-          "enUS": "Protoss Plasma Shields",
-          "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+          "enUS": "Protoss Plasma Shields"
         },
         "priority": 70
       },
@@ -2677,7 +2179,7 @@
         },
         "Description": {
           "enUS": "Powerful psionic spellcaster. Can use <b>Feedback</b>, <b>Maelstrom</b> and <b>Mind Control</b></span> abilities.",
-          "zhCN": "Powerful psionic spellcaster. Can use <b>Feedback</b>, <b>Maelstrom</b> and <b>Mind Control</b></span> abilities.",
+          "zhCN": "强大的灵能施法者。可以使用<b>Feedback</b>、<b>Maelstrom</b>和<b>Mind Control</b></span>技能。",
           "koKR": "강력한 사이오닉 주술사입니다. <b>Feedback</b>, <b>Maelstrom</b> 및 <b>Mind Control</b></span> 능력을 사용할 수 있습니다. /// Powerful psionic spellcaster. Can use <b>Feedback</b>, <b>Maelstrom</b> and <b>Mind Control</b></span> abilities."
         },
         "LifeMax": 25,
@@ -2691,12 +2193,10 @@
         "LifeArmorIcon": "btn-upgrade-protoss-groundarmorlevel0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Protoss Armor",
-          "ruRU": "Protoss Armor"
+          "enUS": "Protoss Armor"
         },
         "ShieldArmorName": {
-          "enUS": "Protoss Plasma Shields",
-          "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+          "enUS": "Protoss Plasma Shields"
         },
         "priority": 100
       },
@@ -2736,12 +2236,10 @@
         "LifeArmorIcon": "btn-armor-protoss-buildingplating",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Protoss Armor",
-          "ruRU": "Protoss Armor"
+          "enUS": "Protoss Armor"
         },
         "ShieldArmorName": {
-          "enUS": "Protoss Plasma Shields",
-          "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+          "enUS": "Protoss Plasma Shields"
         },
         "priority": 26
       },
@@ -2771,12 +2269,10 @@
         "LifeArmorIcon": "btn-armor-protoss-buildingplating",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Protoss Armor",
-          "ruRU": "Protoss Armor"
+          "enUS": "Protoss Armor"
         },
         "ShieldArmorName": {
-          "enUS": "Protoss Plasma Shields",
-          "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+          "enUS": "Protoss Plasma Shields"
         },
         "priority": 201
       },
@@ -2814,12 +2310,10 @@
         "LifeArmorIcon": "btn-armor-protoss-buildingplating",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Protoss Armor",
-          "ruRU": "Protoss Armor"
+          "enUS": "Protoss Armor"
         },
         "ShieldArmorName": {
-          "enUS": "Protoss Plasma Shields",
-          "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+          "enUS": "Protoss Plasma Shields"
         },
         "priority": 29
       },
@@ -2840,7 +2334,7 @@
         "LifeArmor": 1,
         "ShieldsMax": 500,
         "CostResource": {
-          "Minerals": 200,
+          "Minerals": 150,
           "Vespene": 100
         },
         "Production": [
@@ -2854,12 +2348,10 @@
         "LifeArmorIcon": "btn-armor-protoss-buildingplating",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Protoss Armor",
-          "ruRU": "Protoss Armor"
+          "enUS": "Protoss Armor"
         },
         "ShieldArmorName": {
-          "enUS": "Protoss Plasma Shields",
-          "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+          "enUS": "Protoss Plasma Shields"
         },
         "priority": 211
       },
@@ -2876,9 +2368,9 @@
           "zhCN": "飞行运输单位。可以装载和卸载单位。",
           "koKR": "비행 수송기입니다. 유닛을 들이거나 내보낼 수 있습니다. /// Flying transport. Can load and unload units."
         },
-        "LifeMax": 80,
+        "LifeMax": 100,
         "LifeArmor": 1,
-        "ShieldsMax": 100,
+        "ShieldsMax": 70,
         "Food": -2,
         "CostResource": {
           "Minerals": 200
@@ -2890,12 +2382,10 @@
         "LifeArmorIcon": "btn-upgrade-protoss-airarmorlevel0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Protoss Plating",
-          "ruRU": "Protoss Plating"
+          "enUS": "Protoss Plating"
         },
         "ShieldArmorName": {
-          "enUS": "Protoss Plasma Shields",
-          "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+          "enUS": "Protoss Plasma Shields"
         },
         "priority": 115
       },
@@ -2926,12 +2416,10 @@
         "LifeArmorIcon": "btn-upgrade-protoss-airarmorlevel0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Protoss Plating",
-          "ruRU": "Protoss Plating"
+          "enUS": "Protoss Plating"
         },
         "ShieldArmorName": {
-          "enUS": "Protoss Plasma Shields",
-          "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+          "enUS": "Protoss Plasma Shields"
         },
         "priority": 110
       },
@@ -2952,8 +2440,8 @@
         "ShieldsMax": 80,
         "Food": -4,
         "CostResource": {
-          "Minerals": 150,
-          "Vespene": 150
+          "Minerals": 200,
+          "Vespene": 100
         },
         "Production": [
           "ScarabSCBW@Dummy"
@@ -2964,12 +2452,10 @@
         "LifeArmorIcon": "btn-upgrade-protoss-groundarmorlevel0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Protoss Plating",
-          "ruRU": "Protoss Plating"
+          "enUS": "Protoss Plating"
         },
         "ShieldArmorName": {
-          "enUS": "Protoss Plasma Shields",
-          "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+          "enUS": "Protoss Plasma Shields"
         },
         "priority": 130
       },
@@ -2984,7 +2470,7 @@
         "Description": {
           "enUS": "Warps in Protoss air units.",
           "zhCN": "折跃星灵空中单位。",
-          "koKR": "프로토스 공중 유닛을 소환합니다.<br/><br/><span class=\"style-TooltipHighlightSCBW\">사용 가능:</span><br/>- <b>Wraith</b> /// Warps in Protoss air units.<br/><br/><span class=\"style-TooltipHighlightSCBW\">Enables:</span><br/>- <b>Scout</b>s<br/>- <b>Corsair</b>s"
+          "koKR": "프로토스 공중 유닛을 소환합니다.<br/><br/><span class=\"style-TooltipHighlightSCBW\">사용 가능:</span><br/>- <b>Scout</b><br/>- <b>Corsair</b> /// Warps in Protoss air units.<br/><br/><span class=\"style-TooltipHighlightSCBW\">Enables:</span><br/>- <b>Scout</b>s<br/>- <b>Corsair</b>s"
         },
         "LifeMax": 600,
         "LifeArmor": 1,
@@ -3005,12 +2491,10 @@
         "LifeArmorIcon": "btn-armor-protoss-buildingplating",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Protoss Armor",
-          "ruRU": "Protoss Armor"
+          "enUS": "Protoss Armor"
         },
         "ShieldArmorName": {
-          "enUS": "Protoss Plasma Shields",
-          "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+          "enUS": "Protoss Plasma Shields"
         },
         "priority": 207
       },
@@ -3041,12 +2525,10 @@
         "LifeArmorIcon": "btn-upgrade-protoss-airarmorlevel0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Protoss Plating",
-          "ruRU": "Protoss Plating"
+          "enUS": "Protoss Plating"
         },
         "ShieldArmorName": {
-          "enUS": "Protoss Plasma Shields",
-          "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+          "enUS": "Protoss Plasma Shields"
         },
         "priority": 140
       },
@@ -3080,12 +2562,10 @@
         "LifeArmorIcon": "btn-upgrade-protoss-airarmorlevel0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Protoss Plating",
-          "ruRU": "Protoss Plating"
+          "enUS": "Protoss Plating"
         },
         "ShieldArmorName": {
-          "enUS": "Protoss Plasma Shields",
-          "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+          "enUS": "Protoss Plasma Shields"
         },
         "priority": 170
       },
@@ -3117,12 +2597,10 @@
         "LifeArmorIcon": "btn-upgrade-protoss-airarmorlevel0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Protoss Plating",
-          "ruRU": "Protoss Plating"
+          "enUS": "Protoss Plating"
         },
         "ShieldArmorName": {
-          "enUS": "Protoss Plasma Shields",
-          "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+          "enUS": "Protoss Plasma Shields"
         },
         "priority": 160
       },
@@ -3154,12 +2632,10 @@
         "LifeArmorIcon": "btn-upgrade-protoss-airarmorlevel0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Protoss Plating",
-          "ruRU": "Protoss Plating"
+          "enUS": "Protoss Plating"
         },
         "ShieldArmorName": {
-          "enUS": "Protoss Plasma Shields",
-          "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+          "enUS": "Protoss Plasma Shields"
         },
         "priority": 160
       },
@@ -3169,7 +2645,7 @@
         "Name": {
           "enUS": "Templar Archives",
           "zhCN": "圣堂文献馆",
-          "koKR": "템플러 아카이브스 /// Templar Archives"
+          "koKR": "템플러 아카이브 /// Templar Archives"
         },
         "Description": {
           "enUS": "Contains upgrades for Protoss psionic units.<br/><br/><span class=\"style-TooltipHighlightSCBW\">Enables:</span><br/>- <b>High Templar</b>s at the <b>Gateway</b><br/>- <b>Dark Templar</b>s at the <b>Gateway</b><br/>- <b>Arbiter Tribunal</b> with <b>Fleet Beacon</b>",
@@ -3197,12 +2673,10 @@
         "LifeArmorIcon": "btn-armor-protoss-buildingplating",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Protoss Armor",
-          "ruRU": "Protoss Armor"
+          "enUS": "Protoss Armor"
         },
         "ShieldArmorName": {
-          "enUS": "Protoss Plasma Shields",
-          "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+          "enUS": "Protoss Plasma Shields"
         },
         "priority": 214
       },
@@ -3228,20 +2702,17 @@
         },
         "Production": [],
         "Research": [
-          "ZealotSCBWSpeedUpgrade",
-          "GatewaySCBWResonantMatrixResearch"
+          "ZealotSCBWSpeedUpgrade"
         ],
         "Morph": [],
         "$Phase": [],
         "LifeArmorIcon": "btn-armor-protoss-buildingplating",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Protoss Armor",
-          "ruRU": "Protoss Armor"
+          "enUS": "Protoss Armor"
         },
         "ShieldArmorName": {
-          "enUS": "Protoss Plasma Shields",
-          "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+          "enUS": "Protoss Plasma Shields"
         },
         "priority": 203
       },
@@ -3268,7 +2739,7 @@
         "Production": [],
         "Research": [
           "ScarabSCBWWeaponDamageUpgrade",
-          "ReaverSCBWWeaponRangeUpgrade",
+          "ReaverSCBWHangarIncreaseUpgrade",
           "ShuttleSCBWSpeedUpgrade"
         ],
         "Morph": [],
@@ -3276,12 +2747,10 @@
         "LifeArmorIcon": "btn-armor-protoss-buildingplating",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Protoss Armor",
-          "ruRU": "Protoss Armor"
+          "enUS": "Protoss Armor"
         },
         "ShieldArmorName": {
-          "enUS": "Protoss Plasma Shields",
-          "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+          "enUS": "Protoss Plasma Shields"
         },
         "priority": 219
       },
@@ -3302,8 +2771,8 @@
         "LifeArmor": 1,
         "ShieldsMax": 250,
         "CostResource": {
-          "Minerals": 50,
-          "Vespene": 100
+          "Minerals": 100,
+          "Vespene": 50
         },
         "Production": [],
         "Research": [
@@ -3315,12 +2784,10 @@
         "LifeArmorIcon": "btn-armor-protoss-buildingplating",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Protoss Armor",
-          "ruRU": "Protoss Armor"
+          "enUS": "Protoss Armor"
         },
         "ShieldArmorName": {
-          "enUS": "Protoss Plasma Shields",
-          "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+          "enUS": "Protoss Plasma Shields"
         },
         "priority": 214
       },
@@ -3357,12 +2824,10 @@
         "LifeArmorIcon": "btn-armor-protoss-buildingplating",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Protoss Armor",
-          "ruRU": "Protoss Armor"
+          "enUS": "Protoss Armor"
         },
         "ShieldArmorName": {
-          "enUS": "Protoss Plasma Shields",
-          "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+          "enUS": "Protoss Plasma Shields"
         },
         "priority": 217
       },
@@ -3397,12 +2862,10 @@
         "LifeArmorIcon": "btn-armor-protoss-buildingplating",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Protoss Armor",
-          "ruRU": "Protoss Armor"
+          "enUS": "Protoss Armor"
         },
         "ShieldArmorName": {
-          "enUS": "Protoss Plasma Shields",
-          "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+          "enUS": "Protoss Plasma Shields"
         },
         "priority": 217
       }
@@ -3475,9 +2938,8 @@
     "DarkArchonSCBWMaelstromResearch",
     "DarkArchonSCBWEnergyUpgrade",
     "ZealotSCBWSpeedUpgrade",
-    "GatewaySCBWResonantMatrixResearch",
     "ScarabSCBWWeaponDamageUpgrade",
-    "ReaverSCBWWeaponRangeUpgrade",
+    "ReaverSCBWHangarIncreaseUpgrade",
     "ShuttleSCBWSpeedUpgrade",
     "ObserverSCBWSpeedUpgrade",
     "ObserverSCBWSightUpgrade",

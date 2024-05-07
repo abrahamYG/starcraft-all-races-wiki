@@ -21,8 +21,7 @@
   "LifeStart": 200,
   "LifeMax": 200,
   "LifeArmorName": {
-    "enUS": "Zerg Flyer Carapace",
-    "ruRU": "Zerg Flyer Carapace"
+    "enUS": "Zerg Flyer Carapace"
   },
   "Mover": "Fly",
   "StationaryTurningRate": 999.8437,
@@ -85,12 +84,6 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
-  "$tokens": {
-    "ID": {
-      "type": "string",
-      "value": ""
-    }
-  },
   "Mob": "Multiplayer",
   "EnergyRegenRate": 0.5,
   "id": "OverlordSCBW",
@@ -108,7 +101,7 @@
     "Biological"
   ],
   "Speed": 0.6445,
-  "Acceleration": 1.0625,
+  "Acceleration": 1.6875,
   "LateralAcceleration": 46.0625,
   "Sight": 10,
   "Height": 3.75,
@@ -149,12 +142,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -192,7 +179,8 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move"
+          "id": "move",
+          "AbilSetId": "Move"
         },
         "Cost": {
           "Minerals": 0,
@@ -211,12 +199,10 @@
         "id": "Move",
         "Icon": "btn-command-move",
         "Name": {
-          "enUS": "Move",
-          "ruRU": "Двигаться /// Move"
+          "enUS": "Move"
         },
         "Tooltip": {
-          "enUS": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
-          "ruRU": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies."
+          "enUS": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies."
         },
         "Hotkey": "M"
       },
@@ -239,12 +225,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "stop",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "AbilSetId": "Stop",
           "CmdButtonArray": {
             "Stop": {
@@ -291,12 +271,10 @@
         "id": "Stop",
         "Icon": "btn-command-stop",
         "Name": {
-          "enUS": "Stop",
-          "ruRU": "Отставить /// Stop"
+          "enUS": "Stop"
         },
         "Tooltip": {
-          "enUS": "Orders selected units to cancel all orders and stop moving.",
-          "ruRU": "Orders selected units to cancel all orders and stop moving."
+          "enUS": "Orders selected units to cancel all orders and stop moving."
         },
         "Hotkey": "S"
       },
@@ -325,12 +303,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -368,7 +340,8 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move"
+          "id": "move",
+          "AbilSetId": "Move"
         },
         "Cost": {
           "Minerals": 0,
@@ -387,12 +360,10 @@
         "id": "MoveHoldPosition",
         "Icon": "btn-command-holdposition",
         "Name": {
-          "enUS": "Hold Position",
-          "ruRU": "Удерживать позицию /// Hold Position"
+          "enUS": "Hold Position"
         },
         "Tooltip": {
-          "enUS": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
-          "ruRU": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage."
+          "enUS": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage."
         },
         "Hotkey": "H"
       },
@@ -415,12 +386,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "attack",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "AbilSetId": "Attack",
           "Alignment": "Negative",
           "AcquireFilters": "-;Player,Ally,Neutral,Dead,Hidden,Invulnerable,Benign",
@@ -468,12 +433,10 @@
         "id": "Attack",
         "Icon": "btn-command-attack",
         "Name": {
-          "enUS": "Attack",
-          "ruRU": "Атаковать /// Attack"
+          "enUS": "Attack"
         },
         "Tooltip": {
-          "enUS": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
-          "ruRU": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed."
+          "enUS": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed."
         },
         "Hotkey": "A"
       },
@@ -502,12 +465,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -545,7 +502,8 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move"
+          "id": "move",
+          "AbilSetId": "Move"
         },
         "Cost": {
           "Minerals": 0,
@@ -564,12 +522,10 @@
         "id": "AcquireMove",
         "Icon": "btn-command-attack",
         "Name": {
-          "enUS": "Scan Move",
-          "ruRU": "Двигаться в режиме наблюдения /// Scan Move"
+          "enUS": "Scan Move"
         },
         "Tooltip": {
-          "enUS": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies.",
-          "ruRU": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies."
+          "enUS": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies."
         },
         "Hotkey": "A"
       },
@@ -598,12 +554,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -641,7 +591,8 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move"
+          "id": "move",
+          "AbilSetId": "Move"
         },
         "Cost": {
           "Minerals": 0,
@@ -660,12 +611,10 @@
         "id": "MovePatrol",
         "Icon": "btn-command-patrol",
         "Name": {
-          "enUS": "Patrol",
-          "ruRU": "Патрулировать /// Patrol"
+          "enUS": "Patrol"
         },
         "Tooltip": {
-          "enUS": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
-          "ruRU": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies."
+          "enUS": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies."
         },
         "Hotkey": "P"
       },
@@ -693,12 +642,10 @@
         "id": "Cancel",
         "Icon": "btn-command-cancel",
         "Name": {
-          "enUS": "Cancel",
-          "ruRU": "Отменить /// Cancel"
+          "enUS": "Cancel"
         },
         "Tooltip": {
-          "enUS": "Drops the current order without performing it, and allows you to select a different order.",
-          "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+          "enUS": "Drops the current order without performing it, and allows you to select a different order."
         },
         "Hotkey": "Esc"
       },
@@ -721,12 +668,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "OverlordSCBW@Transport",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "CmdButtonArray": {
             "Load": {
               "Flags": {
@@ -840,12 +781,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "OverlordSCBW@Transport",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "CmdButtonArray": {
             "Load": {
               "Flags": {
@@ -966,33 +901,6 @@
           "zhCN": "该单位能够侦测到隐形和潜地单位。",
           "koKR": "이 유닛은 클로크하거나 버로우한 유닛을 탐지할 수 있습니다. /// This unit can detect cloaked and burrowed units."
         }
-      },
-      {
-        "Cost": {
-          "Minerals": 0,
-          "Vespene": 0,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 1,
-        "Column": 0,
-        "Type": "Passive",
-        "id": "OverlordSCBWSightUpgrade@Passive",
-        "Icon": "btn-ability-zerg-overlord-oversight-off",
-        "Name": {
-          "enUS": "Antennae",
-          "zhCN": "触须",
-          "koKR": "안테나 /// Antennae"
-        },
-        "Tooltip": {
-          "enUS": "<span class=\"style-TooltipHighlightSCBW\"><b>Overlord</b>s</span> have increased sight range and can detect cloaked and burrowed units.",
-          "zhCN": "<span class=\"style-TooltipHighlightSCBW\"><b>Overlord</b>s</span> have increased sight range and can detect cloaked and burrowed units.",
-          "koKR": "<span class=\"style-TooltipHighlightSCBW\"><b>Overlord</b></span>의 시야 범위가 증가하였습니다. /// <span class=\"style-TooltipHighlightSCBW\"><b>Overlord</b>s</span> have increased sight range."
-        }
       }
     ]
   },
@@ -1026,15 +934,13 @@
     {
       "id": "stop",
       "Name": {
-        "enUS": "Stop",
-        "ruRU": "Stop"
+        "enUS": "Stop"
       }
     },
     {
       "id": "move",
       "Name": {
-        "enUS": "Move",
-        "ruRU": "Move"
+        "enUS": "Move"
       }
     },
     {
@@ -1047,30 +953,30 @@
     }
   ],
   "$Upgrades": [
-    "Button/Tooltip/OverlordSCBWSightUpgrade",
-    "OverlordSCBW",
     "OverlordSCBWTransportResearch",
+    "OverlordSCBW",
+    "Button/Tooltip/OverlordSCBWSightUpgrade",
     "OverlordSCBWSightUpgrade",
-    "Button/Tooltip/OverlordSCBWSightUpgrade@Passive",
     "Button/Tooltip/OverlordSCBWSpeedUpgrade",
     "OverlordSCBWSpeedUpgrade",
     "Button/Tooltip/OverlordSCBWTransportResearch",
+    "BWZe",
     "OverlordSCBW@AllowUnit",
     "LarvaSCBW@Train",
     "LarvaSCBW",
-    "BWZe",
     "OverlordSCBW",
     "OverlordSCBW@Death",
     "Button/Tooltip/OverlordSCBWSpeedUpgrade@Passive",
     "Button/Tooltip/OverlordSCBWTransportResearch@Passive",
+    "Button/Tooltip/OverlordSCBWSightUpgrade@Passive",
     "IsOverlordSCBW",
     "NotOverlordSCBW",
     "CasterIsOverlordSCBW",
+    "OverlordSCBW",
     "OverlordSCBW@Count",
     "OverlordSCBW@CountAtUnit",
     "OverlordSCBW@QoB",
-    "OverlordSCBW@QoBAtUnit",
-    "OverlordSCBW"
+    "OverlordSCBW@QoBAtUnit"
   ],
   "$Requirements": [],
   "$Production": [],
@@ -1087,12 +993,10 @@
       "id": "Move",
       "Icon": "btn-command-move",
       "Name": {
-        "enUS": "Move",
-        "ruRU": "Двигаться /// Move"
+        "enUS": "Move"
       },
       "Tooltip": {
-        "enUS": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
-        "ruRU": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies."
+        "enUS": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies."
       }
     },
     {
@@ -1100,12 +1004,10 @@
       "id": "Stop",
       "Icon": "btn-command-stop",
       "Name": {
-        "enUS": "Stop",
-        "ruRU": "Отставить /// Stop"
+        "enUS": "Stop"
       },
       "Tooltip": {
-        "enUS": "Orders selected units to cancel all orders and stop moving.",
-        "ruRU": "Orders selected units to cancel all orders and stop moving."
+        "enUS": "Orders selected units to cancel all orders and stop moving."
       }
     },
     {
@@ -1113,12 +1015,10 @@
       "id": "MoveHoldPosition",
       "Icon": "btn-command-holdposition",
       "Name": {
-        "enUS": "Hold Position",
-        "ruRU": "Удерживать позицию /// Hold Position"
+        "enUS": "Hold Position"
       },
       "Tooltip": {
-        "enUS": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
-        "ruRU": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage."
+        "enUS": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage."
       }
     },
     {
@@ -1126,12 +1026,10 @@
       "id": "Attack",
       "Icon": "btn-command-attack",
       "Name": {
-        "enUS": "Attack",
-        "ruRU": "Атаковать /// Attack"
+        "enUS": "Attack"
       },
       "Tooltip": {
-        "enUS": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
-        "ruRU": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed."
+        "enUS": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed."
       }
     },
     {
@@ -1139,12 +1037,10 @@
       "id": "AcquireMove",
       "Icon": "btn-command-attack",
       "Name": {
-        "enUS": "Scan Move",
-        "ruRU": "Двигаться в режиме наблюдения /// Scan Move"
+        "enUS": "Scan Move"
       },
       "Tooltip": {
-        "enUS": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies.",
-        "ruRU": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies."
+        "enUS": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies."
       }
     },
     {
@@ -1152,12 +1048,10 @@
       "id": "MovePatrol",
       "Icon": "btn-command-patrol",
       "Name": {
-        "enUS": "Patrol",
-        "ruRU": "Патрулировать /// Patrol"
+        "enUS": "Patrol"
       },
       "Tooltip": {
-        "enUS": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
-        "ruRU": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies."
+        "enUS": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies."
       }
     },
     {
@@ -1165,12 +1059,10 @@
       "id": "Cancel",
       "Icon": "btn-command-cancel",
       "Name": {
-        "enUS": "Cancel",
-        "ruRU": "Отменить /// Cancel"
+        "enUS": "Cancel"
       },
       "Tooltip": {
-        "enUS": "Drops the current order without performing it, and allows you to select a different order.",
-        "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+        "enUS": "Drops the current order without performing it, and allows you to select a different order."
       }
     },
     {

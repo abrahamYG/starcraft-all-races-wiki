@@ -13,19 +13,12 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "OverlordSCBWSpeedUpgrade",
-  "EditorCategories": "Race:Zerg,UpgradeType:Talents",
-  "$tokens": {
-    "ID": {
-      "type": "string",
-      "value": ""
-    }
-  },
   "DataCollection": "OverlordSCBWSpeedUpgrade",
   "EffectArrayTemplate": [
     {
       "Operation": "Set",
       "Reference": "Unit,^ParamId^,Speed",
-      "Value": "1.879000"
+      "Value": "1.879"
     }
   ],
   "AffectedUnitArray": [
@@ -34,5 +27,6 @@
   "InfoTooltipPriority": 1,
   "Race": "Zerg",
   "ScoreAmount": 300,
-  "ScoreResult": "BuildOrder"
+  "ScoreResult": "BuildOrder",
+  "EditorCategories": "Race:Zerg,UpgradeType:Talents"
 }

@@ -3,6 +3,24 @@
   "id": "scevo",
   "races": [
     {
+      "id": "Terr",
+      "Name": {
+        "enUS": "Terran"
+      }
+    },
+    {
+      "id": "Prot",
+      "Name": {
+        "enUS": "Protoss"
+      }
+    },
+    {
+      "id": "Zerg",
+      "Name": {
+        "enUS": "Zerg"
+      }
+    },
+    {
       "id": "BWTe",
       "Name": {
         "enUS": "BW Terran",
@@ -15,7 +33,7 @@
       "Name": {
         "enUS": "BW Protoss",
         "zhCN": "母巢之战星灵",
-        "koKR": "스1 프로토스 /// BW Protoss"
+        "koKR": "스1 토스 /// BW Protoss"
       }
     },
     {

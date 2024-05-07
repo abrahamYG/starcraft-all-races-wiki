@@ -13,17 +13,11 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "MedicSCBWOpticFlareResearch",
-  "EditorCategories": "Race:Terran,UpgradeType:SpellResearch",
-  "$tokens": {
-    "ID": {
-      "type": "string",
-      "value": ""
-    }
-  },
   "DataCollection": "MedicSCBWOpticFlareResearch",
   "Race": "Terr",
   "ScoreAmount": 200,
   "ScoreResult": "BuildOrder",
+  "EditorCategories": "Race:Terran,UpgradeType:SpellResearch",
   "AffectedUnitArray": [
     "MedicSCBW"
   ]

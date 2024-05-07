@@ -3,7 +3,7 @@
     <li>
       <a [title]="scdata.text(race.Name)" [routerLink]="scdata.raceRoute(race)" [queryParams]="{}" class="sc-button" [class.selected]="race.id === scdata.raceID">
         <img *ngIf="race.Icon" [src]="scdata.imagesRoot + race.Icon + '.png'">
-        <span class="text-icon" *ngIf="!race.Icon">{{scdata.text(race.Name)[0].toUpperCase()}}</span>
+        <span class="text-icon" *ngIf="!race.Icon">{{scdata.text(race.Name)}}</span>
       </a>
     </li>
   </ng-container>

@@ -13,13 +13,6 @@
   "ScoreValue": "ArmorTechnologyValue",
   "WebPriority": 0,
   "LeaderAlias": "TerranInfantryArmorsSCBW",
-  "EditorCategories": "Race:Terran,UpgradeType:ArmorBonus",
-  "$tokens": {
-    "ID": {
-      "type": "string",
-      "value": ""
-    }
-  },
   "DataCollection": "TerranInfantryArmorsSCBW",
   "Race": "BWTe",
   "ScoreResult": "BuildOrder",
@@ -38,6 +31,7 @@
       "Value": "Assets\\Textures\\btn-upgrade-terran-infantryarmorlevel3.dds"
     }
   ],
+  "EditorCategories": "Race:Terran,UpgradeType:ArmorBonus",
   "BonusResourcePerLevel": {
     "Minerals": 75,
     "Vespene": 75

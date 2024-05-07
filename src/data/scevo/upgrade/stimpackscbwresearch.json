@@ -13,17 +13,11 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "StimpackSCBWResearch",
-  "EditorCategories": "Race:Terran,UpgradeType:SpellResearch",
-  "$tokens": {
-    "ID": {
-      "type": "string",
-      "value": ""
-    }
-  },
   "DataCollection": "StimpackSCBWResearch",
   "ScoreAmount": 200,
   "ScoreResult": "BuildOrder",
   "Race": "Terr",
+  "EditorCategories": "Race:Terran,UpgradeType:SpellResearch",
   "AffectedUnitArray": [
     "MarineSCBW",
     "FirebatSCBW"

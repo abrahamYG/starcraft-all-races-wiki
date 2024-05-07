@@ -21,8 +21,7 @@
   "LifeStart": 450,
   "LifeMax": 450,
   "LifeArmorName": {
-    "enUS": "Protoss Armor",
-    "ruRU": "Protoss Armor"
+    "enUS": "Protoss Armor"
   },
   "Mover": "Ground",
   "StationaryTurningRate": 719.4726,
@@ -88,12 +87,6 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
-  "$tokens": {
-    "ID": {
-      "type": "string",
-      "value": ""
-    }
-  },
   "Facing": 45,
   "Mob": "Multiplayer",
   "FogVisibility": "Snapshot",
@@ -116,10 +109,9 @@
   "LifeArmor": 1,
   "ShieldsStart": 450,
   "ShieldsMax": 450,
-  "ShieldRegenRate": 2,
+  "ShieldRegenRate": 0.4375,
   "ShieldArmorName": {
-    "enUS": "Protoss Plasma Shields",
-    "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+    "enUS": "Protoss Plasma Shields"
   },
   "Sight": 9,
   "CostCategory": "Technology",
@@ -149,12 +141,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "que5",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "QueueCount": 1,
           "Flags": {
             "BestUnit": 1,
@@ -188,12 +174,10 @@
         "id": "Cancel",
         "Icon": "btn-command-cancel",
         "Name": {
-          "enUS": "Cancel",
-          "ruRU": "Отменить /// Cancel"
+          "enUS": "Cancel"
         },
         "Tooltip": {
-          "enUS": "Drops the current order without performing it, and allows you to select a different order.",
-          "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+          "enUS": "Drops the current order without performing it, and allows you to select a different order."
         },
         "Hotkey": "Esc"
       },
@@ -216,12 +200,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "BuildInProgress",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "Activity": "UI/Building",
           "VitalStartFactor": {
             "Life": 0.1,
@@ -255,12 +233,10 @@
         "id": "CancelBuilding",
         "Icon": "btn-command-cancel",
         "Name": {
-          "enUS": "Cancel",
-          "ruRU": "Отменить /// Cancel"
+          "enUS": "Cancel"
         },
         "Tooltip": {
-          "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-          "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+          "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund."
         },
         "Hotkey": "Esc"
       },
@@ -276,6 +252,7 @@
               "CreateDefaultButton": 1
             },
             "DefaultButtonFace": "ZealotSCBWSpeedUpgrade",
+            "State": "Restricted",
             "Requirements": "ZealotSCBWSpeedUpgrade"
           },
           "Resource": {
@@ -308,61 +285,11 @@
           "koKR": "다리 강화 /// Research Leg Enhancements"
         },
         "Tooltip": {
-          "enUS": "Increases <span class=\"style-TooltipHighlightSCBW\"><b>Zealot</b></span> movement speed by <span class=\"style-TooltipBuffSCBW\"><b>55</b>%</span>.",
-          "zhCN": "<span class=\"style-TooltipHighlightSCBW\"><b>Zealot</b></span>的移动速度提高<span class=\"style-TooltipBuffSCBW\"><b>55</b>%</span>。",
-          "koKR": "<span class=\"style-TooltipHighlightSCBW\"><b>Zealot</b></span>의 이동 속도가 <span class=\"style-TooltipBuffSCBW\"><b>55</b>%</span>만큼 증가합니다. /// Increases <span class=\"style-TooltipHighlightSCBW\"><b>Zealot</b></span> movement speed by <span class=\"style-TooltipBuffSCBW\"><b>55</b>%</span>."
+          "enUS": "Increases <span class=\"style-TooltipHighlightSCBW\"><b>Zealot</b></span> movement speed by <span class=\"style-TooltipBuffSCBW\"><b>60</b>%</span>.",
+          "zhCN": "<span class=\"style-TooltipHighlightSCBW\"><b>Zealot</b></span>的移动速度提高<span class=\"style-TooltipBuffSCBW\"><b>60</b>%</span>。",
+          "koKR": "<span class=\"style-TooltipHighlightSCBW\"><b>Zealot</b></span>의 이동 속도가 <span class=\"style-TooltipBuffSCBW\"><b>60</b>%</span>만큼 증가합니다. /// Increases <span class=\"style-TooltipHighlightSCBW\"><b>Zealot</b></span> movement speed by <span class=\"style-TooltipBuffSCBW\"><b>60</b>%</span>."
         },
         "Hotkey": "R"
-      },
-      {
-        "Upgrade": "GatewaySCBWResonantMatrixResearch",
-        "Info": {
-          "Button": {
-            "Flags": {
-              "AllowMinimap": 0,
-              "ShowInGlossary": 1,
-              "ToSelection": 1,
-              "UseDefaultButton": 1,
-              "CreateDefaultButton": 1
-            },
-            "DefaultButtonFace": "GatewaySCBWResonantMatrixResearch",
-            "Requirements": "GatewaySCBWResonantMatrixResearch"
-          },
-          "Resource": {
-            "Minerals": 200,
-            "Vespene": 200
-          },
-          "Time": 100,
-          "Upgrade": "GatewaySCBWResonantMatrixResearch"
-        },
-        "Time": 100,
-        "Cost": {
-          "Minerals": 200,
-          "Vespene": 200,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 0,
-        "Column": 1,
-        "Type": "AbilCmd",
-        "AbilCmd": "GatewaySCBWResonantMatrixResearch,Research1",
-        "id": "GatewaySCBWResonantMatrixResearch",
-        "Icon": "btn-ability-protoss-resonantmatrix",
-        "Name": {
-          "enUS": "Research Resonant Matrix",
-          "zhCN": "Research Resonant Matrix",
-          "koKR": "Research Resonant Matrix"
-        },
-        "Tooltip": {
-          "enUS": "Allows <span class=\"style-TooltipHighlightSCBW\"><b>Gateway</b>s</span> to produce two units at the same time.",
-          "zhCN": "Allows <span class=\"style-TooltipHighlightSCBW\"><b>Gateway</b>s</span> to produce two units at the same time.",
-          "koKR": "Allows <span class=\"style-TooltipHighlightSCBW\"><b>Gateway</b>s</span> to produce two units at the same time."
-        },
-        "Hotkey": "T"
       },
       {
         "Upgrade": "ZealotSCBWSpeedUpgrade",
@@ -376,6 +303,7 @@
               "CreateDefaultButton": 1
             },
             "DefaultButtonFace": "ZealotSCBWSpeedUpgrade",
+            "State": "Restricted",
             "Requirements": "ZealotSCBWSpeedUpgrade"
           },
           "Resource": {
@@ -408,61 +336,11 @@
           "koKR": "다리 강화 /// Research Leg Enhancements"
         },
         "Tooltip": {
-          "enUS": "Increases <span class=\"style-TooltipHighlightSCBW\"><b>Zealot</b></span> movement speed by <span class=\"style-TooltipBuffSCBW\"><b>55</b>%</span>.",
-          "zhCN": "<span class=\"style-TooltipHighlightSCBW\"><b>Zealot</b></span>的移动速度提高<span class=\"style-TooltipBuffSCBW\"><b>55</b>%</span>。",
-          "koKR": "<span class=\"style-TooltipHighlightSCBW\"><b>Zealot</b></span>의 이동 속도가 <span class=\"style-TooltipBuffSCBW\"><b>55</b>%</span>만큼 증가합니다. /// Increases <span class=\"style-TooltipHighlightSCBW\"><b>Zealot</b></span> movement speed by <span class=\"style-TooltipBuffSCBW\"><b>55</b>%</span>."
+          "enUS": "Increases <span class=\"style-TooltipHighlightSCBW\"><b>Zealot</b></span> movement speed by <span class=\"style-TooltipBuffSCBW\"><b>60</b>%</span>.",
+          "zhCN": "<span class=\"style-TooltipHighlightSCBW\"><b>Zealot</b></span>的移动速度提高<span class=\"style-TooltipBuffSCBW\"><b>60</b>%</span>。",
+          "koKR": "<span class=\"style-TooltipHighlightSCBW\"><b>Zealot</b></span>의 이동 속도가 <span class=\"style-TooltipBuffSCBW\"><b>60</b>%</span>만큼 증가합니다. /// Increases <span class=\"style-TooltipHighlightSCBW\"><b>Zealot</b></span> movement speed by <span class=\"style-TooltipBuffSCBW\"><b>60</b>%</span>."
         },
         "Hotkey": "R"
-      },
-      {
-        "Upgrade": "GatewaySCBWResonantMatrixResearch",
-        "Info": {
-          "Button": {
-            "Flags": {
-              "AllowMinimap": 0,
-              "ShowInGlossary": 1,
-              "ToSelection": 1,
-              "UseDefaultButton": 1,
-              "CreateDefaultButton": 1
-            },
-            "DefaultButtonFace": "GatewaySCBWResonantMatrixResearch",
-            "Requirements": "GatewaySCBWResonantMatrixResearch"
-          },
-          "Resource": {
-            "Minerals": 200,
-            "Vespene": 200
-          },
-          "Time": 100,
-          "Upgrade": "GatewaySCBWResonantMatrixResearch"
-        },
-        "Time": 100,
-        "Cost": {
-          "Minerals": 200,
-          "Vespene": 200,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 0,
-        "Column": 1,
-        "Type": "AbilCmd",
-        "AbilCmd": "GatewaySCBWResonantMatrixResearch,Research1",
-        "id": "GatewaySCBWResonantMatrixResearch",
-        "Icon": "btn-ability-protoss-resonantmatrix",
-        "Name": {
-          "enUS": "Research Resonant Matrix",
-          "zhCN": "Research Resonant Matrix",
-          "koKR": "Research Resonant Matrix"
-        },
-        "Tooltip": {
-          "enUS": "Allows <span class=\"style-TooltipHighlightSCBW\"><b>Gateway</b>s</span> to produce two units at the same time.",
-          "zhCN": "Allows <span class=\"style-TooltipHighlightSCBW\"><b>Gateway</b>s</span> to produce two units at the same time.",
-          "koKR": "Allows <span class=\"style-TooltipHighlightSCBW\"><b>Gateway</b>s</span> to produce two units at the same time."
-        },
-        "Hotkey": "T"
       }
     ]
   },
@@ -475,7 +353,6 @@
   "GlossaryPriority": 203,
   "HotkeyCategory": "Unit/Category/ProtossUnitsSCBW",
   "BuildTime": 50,
-  "ShieldRegenDelay": 10,
   "id": "CitadelOfAdunSCBW",
   "Icon": "btn-building-protoss-citadelofadun@scbw",
   "LifeArmorIcon": "btn-armor-protoss-buildingplating",
@@ -486,8 +363,7 @@
       "id": "PowerUserQueue",
       "Icon": "btn-building-protoss-pylon",
       "Name": {
-        "enUS": "Power User (Queue)",
-        "ruRU": "Power User (Queue)"
+        "enUS": "Power User (Queue)"
       },
       "Tooltip": "-"
     }
@@ -496,14 +372,12 @@
     {
       "id": "BuildInProgress",
       "Name": {
-        "enUS": "Build in Progress",
-        "ruRU": "Build in Progress"
+        "enUS": "Build in Progress"
       }
     },
     {
       "id": "que5",
       "Name": {
-        "ruRU": "Queue (5)",
         "enUS": "Queue (5)"
       }
     },
@@ -513,14 +387,6 @@
         "enUS": "Research",
         "zhCN": "研究",
         "koKR": "연구 /// Research"
-      }
-    },
-    {
-      "id": "GatewaySCBWResonantMatrixResearch",
-      "Name": {
-        "enUS": "Research",
-        "zhCN": "Research",
-        "koKR": "Research"
       }
     }
   ],
@@ -535,15 +401,14 @@
     "IsCitadelOfAdunSCBW",
     "NotCitadelOfAdunSCBW",
     "CasterIsCitadelOfAdunSCBW",
+    "CitadelOfAdunSCBW",
     "CitadelOfAdunSCBW@QoB",
-    "CitadelOfAdunSCBW@QoBAtUnit",
-    "CitadelOfAdunSCBW"
+    "CitadelOfAdunSCBW@QoBAtUnit"
   ],
   "$Requirements": [],
   "$Production": [],
   "$Research": [
-    "ZealotSCBWSpeedUpgrade",
-    "GatewaySCBWResonantMatrixResearch"
+    "ZealotSCBWSpeedUpgrade"
   ],
   "$Morph": [],
   "$Phase": [],
@@ -557,12 +422,10 @@
       "id": "Cancel",
       "Icon": "btn-command-cancel",
       "Name": {
-        "enUS": "Cancel",
-        "ruRU": "Отменить /// Cancel"
+        "enUS": "Cancel"
       },
       "Tooltip": {
-        "enUS": "Drops the current order without performing it, and allows you to select a different order.",
-        "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+        "enUS": "Drops the current order without performing it, and allows you to select a different order."
       }
     },
     {
@@ -570,12 +433,10 @@
       "id": "CancelBuilding",
       "Icon": "btn-command-cancel",
       "Name": {
-        "enUS": "Cancel",
-        "ruRU": "Отменить /// Cancel"
+        "enUS": "Cancel"
       },
       "Tooltip": {
-        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-        "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund."
       }
     },
     {
@@ -588,24 +449,9 @@
         "koKR": "다리 강화 /// Research Leg Enhancements"
       },
       "Tooltip": {
-        "enUS": "Increases <span class=\"style-TooltipHighlightSCBW\"><b>Zealot</b></span> movement speed by <span class=\"style-TooltipBuffSCBW\"><b>55</b>%</span>.",
-        "zhCN": "<span class=\"style-TooltipHighlightSCBW\"><b>Zealot</b></span>的移动速度提高<span class=\"style-TooltipBuffSCBW\"><b>55</b>%</span>。",
-        "koKR": "<span class=\"style-TooltipHighlightSCBW\"><b>Zealot</b></span>의 이동 속도가 <span class=\"style-TooltipBuffSCBW\"><b>55</b>%</span>만큼 증가합니다. /// Increases <span class=\"style-TooltipHighlightSCBW\"><b>Zealot</b></span> movement speed by <span class=\"style-TooltipBuffSCBW\"><b>55</b>%</span>."
-      }
-    },
-    {
-      "AbilCmd": "GatewaySCBWResonantMatrixResearch,Research1",
-      "id": "GatewaySCBWResonantMatrixResearch",
-      "Icon": "btn-ability-protoss-resonantmatrix",
-      "Name": {
-        "enUS": "Research Resonant Matrix",
-        "zhCN": "Research Resonant Matrix",
-        "koKR": "Research Resonant Matrix"
-      },
-      "Tooltip": {
-        "enUS": "Allows <span class=\"style-TooltipHighlightSCBW\"><b>Gateway</b>s</span> to produce two units at the same time.",
-        "zhCN": "Allows <span class=\"style-TooltipHighlightSCBW\"><b>Gateway</b>s</span> to produce two units at the same time.",
-        "koKR": "Allows <span class=\"style-TooltipHighlightSCBW\"><b>Gateway</b>s</span> to produce two units at the same time."
+        "enUS": "Increases <span class=\"style-TooltipHighlightSCBW\"><b>Zealot</b></span> movement speed by <span class=\"style-TooltipBuffSCBW\"><b>60</b>%</span>.",
+        "zhCN": "<span class=\"style-TooltipHighlightSCBW\"><b>Zealot</b></span>的移动速度提高<span class=\"style-TooltipBuffSCBW\"><b>60</b>%</span>。",
+        "koKR": "<span class=\"style-TooltipHighlightSCBW\"><b>Zealot</b></span>의 이동 속도가 <span class=\"style-TooltipBuffSCBW\"><b>60</b>%</span>만큼 증가합니다. /// Increases <span class=\"style-TooltipHighlightSCBW\"><b>Zealot</b></span> movement speed by <span class=\"style-TooltipBuffSCBW\"><b>60</b>%</span>."
       }
     },
     {
@@ -618,24 +464,9 @@
         "koKR": "다리 강화 /// Research Leg Enhancements"
       },
       "Tooltip": {
-        "enUS": "Increases <span class=\"style-TooltipHighlightSCBW\"><b>Zealot</b></span> movement speed by <span class=\"style-TooltipBuffSCBW\"><b>55</b>%</span>.",
-        "zhCN": "<span class=\"style-TooltipHighlightSCBW\"><b>Zealot</b></span>的移动速度提高<span class=\"style-TooltipBuffSCBW\"><b>55</b>%</span>。",
-        "koKR": "<span class=\"style-TooltipHighlightSCBW\"><b>Zealot</b></span>의 이동 속도가 <span class=\"style-TooltipBuffSCBW\"><b>55</b>%</span>만큼 증가합니다. /// Increases <span class=\"style-TooltipHighlightSCBW\"><b>Zealot</b></span> movement speed by <span class=\"style-TooltipBuffSCBW\"><b>55</b>%</span>."
-      }
-    },
-    {
-      "AbilCmd": "GatewaySCBWResonantMatrixResearch,Research1",
-      "id": "GatewaySCBWResonantMatrixResearch",
-      "Icon": "btn-ability-protoss-resonantmatrix",
-      "Name": {
-        "enUS": "Research Resonant Matrix",
-        "zhCN": "Research Resonant Matrix",
-        "koKR": "Research Resonant Matrix"
-      },
-      "Tooltip": {
-        "enUS": "Allows <span class=\"style-TooltipHighlightSCBW\"><b>Gateway</b>s</span> to produce two units at the same time.",
-        "zhCN": "Allows <span class=\"style-TooltipHighlightSCBW\"><b>Gateway</b>s</span> to produce two units at the same time.",
-        "koKR": "Allows <span class=\"style-TooltipHighlightSCBW\"><b>Gateway</b>s</span> to produce two units at the same time."
+        "enUS": "Increases <span class=\"style-TooltipHighlightSCBW\"><b>Zealot</b></span> movement speed by <span class=\"style-TooltipBuffSCBW\"><b>60</b>%</span>.",
+        "zhCN": "<span class=\"style-TooltipHighlightSCBW\"><b>Zealot</b></span>的移动速度提高<span class=\"style-TooltipBuffSCBW\"><b>60</b>%</span>。",
+        "koKR": "<span class=\"style-TooltipHighlightSCBW\"><b>Zealot</b></span>의 이동 속도가 <span class=\"style-TooltipBuffSCBW\"><b>60</b>%</span>만큼 증가합니다. /// Increases <span class=\"style-TooltipHighlightSCBW\"><b>Zealot</b></span> movement speed by <span class=\"style-TooltipBuffSCBW\"><b>60</b>%</span>."
       }
     }
   ]

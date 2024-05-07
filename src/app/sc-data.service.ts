@@ -124,9 +124,9 @@ export class SCDataService {
                 this.unitData = unitData
                 this.upgradeData = null
 
-                let title = data ? 'ARC Wiki - ' + unitData.Race + ' ' + unitData.Name : 'ARC'
-                let icon =  unitData ? 'http://arc.hometlt.ru' + this.imagesRoot + unitData.Icon + '.png' : 'favioon.png'
-                let url =   `http://arc.hometlt.ru/datas/${this.modID}/${unitData.Race}/${unitData.id}`
+                let title = data ? 'SC: Evolution Complete - Wiki - ' + unitData.Race + ' ' + unitData.Name : 'SC: Evolution Complete - Wiki'
+                let icon =  unitData ? './' + this.imagesRoot + unitData.Icon + '.png' : 'favioon.png'
+                let url =   `./datas/${this.modID}/${unitData.Race}/${unitData.id}`
 
                 this.title.setTitle(title);
                 // this.meta.updateTag({property: 'og:title', content: title});
@@ -162,7 +162,7 @@ export class SCDataService {
 
           let title = 'ARC'
           let icon =  'favioon.png'
-          let url =   `http://arc.hometlt.ru/datas/${this.modID}/`
+          let url =   `.//datas/${this.modID}/`
 
           this.title.setTitle(title);
           this.meta.updateTag({property: 'og:title', content: title});

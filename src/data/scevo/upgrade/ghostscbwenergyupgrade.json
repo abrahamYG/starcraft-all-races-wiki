@@ -13,13 +13,6 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "GhostSCBWEnergyUpgrade",
-  "EditorCategories": "Race:Terran,UpgradeType:Talents",
-  "$tokens": {
-    "ID": {
-      "type": "string",
-      "value": ""
-    }
-  },
   "DataCollection": "GhostSCBWEnergyUpgrade",
   "EffectArrayTemplate": [
     {
@@ -34,6 +27,7 @@
   "Race": "Terr",
   "ScoreAmount": 300,
   "ScoreResult": "BuildOrder",
+  "EditorCategories": "Race:Terran,UpgradeType:Talents",
   "AffectedUnitArray": [
     "GhostSCBW"
   ]

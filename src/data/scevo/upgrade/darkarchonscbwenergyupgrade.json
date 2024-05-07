@@ -13,13 +13,6 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "DarkArchonSCBWEnergyUpgrade",
-  "EditorCategories": "UpgradeType:Talents,Race:Protoss",
-  "$tokens": {
-    "ID": {
-      "type": "string",
-      "value": ""
-    }
-  },
   "DataCollection": "DarkArchonSCBWEnergyUpgrade",
   "EffectArrayTemplate": [
     {
@@ -35,6 +28,7 @@
   "Race": "Prot",
   "ScoreAmount": 300,
   "ScoreResult": "BuildOrder",
+  "EditorCategories": "UpgradeType:Talents,Race:Protoss",
   "AffectedUnitArray": [
     "DarkArchonSCBW"
   ]

@@ -13,13 +13,6 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "CorsairSCBWEnergyUpgrade",
-  "EditorCategories": "UpgradeType:Talents,Race:Protoss",
-  "$tokens": {
-    "ID": {
-      "type": "string",
-      "value": ""
-    }
-  },
   "DataCollection": "CorsairSCBWEnergyUpgrade",
   "EffectArrayTemplate": [
     {
@@ -35,6 +28,7 @@
   "Race": "Prot",
   "ScoreAmount": 200,
   "ScoreResult": "BuildOrder",
+  "EditorCategories": "UpgradeType:Talents,Race:Protoss",
   "AffectedUnitArray": [
     "CorsairSCBW"
   ]

@@ -18,11 +18,10 @@
   "Response": "Acquire",
   "ResourceState": "Unknown",
   "ResourceType": "Unknown",
-  "LifeStart": 250,
-  "LifeMax": 250,
+  "LifeStart": 300,
+  "LifeMax": 300,
   "LifeArmorName": {
-    "enUS": "Protoss Armor",
-    "ruRU": "Protoss Armor"
+    "enUS": "Protoss Armor"
   },
   "Mover": "Ground",
   "StationaryTurningRate": 719.4726,
@@ -88,12 +87,6 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
-  "$tokens": {
-    "ID": {
-      "type": "string",
-      "value": ""
-    }
-  },
   "Mob": "Multiplayer",
   "FogVisibility": "Snapshot",
   "PlaneArray": [
@@ -112,12 +105,11 @@
     "Armored",
     "Structure"
   ],
-  "ShieldsStart": 250,
-  "ShieldsMax": 250,
-  "ShieldRegenRate": 2,
+  "ShieldsStart": 300,
+  "ShieldsMax": 300,
+  "ShieldRegenRate": 0.4375,
   "ShieldArmorName": {
-    "enUS": "Protoss Plasma Shields",
-    "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+    "enUS": "Protoss Plasma Shields"
   },
   "Sight": 9,
   "Food": 8,
@@ -151,12 +143,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "BuildInProgress",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "Activity": "UI/Building",
           "VitalStartFactor": {
             "Life": 0.1,
@@ -190,12 +176,10 @@
         "id": "CancelBuilding",
         "Icon": "btn-command-cancel",
         "Name": {
-          "enUS": "Cancel",
-          "ruRU": "Отменить /// Cancel"
+          "enUS": "Cancel"
         },
         "Tooltip": {
-          "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-          "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+          "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund."
         },
         "Hotkey": "Esc"
       }
@@ -210,7 +194,6 @@
   "GlossaryPriority": 18,
   "HotkeyCategory": "Unit/Category/ProtossUnitsSCBW",
   "BuildTime": 25,
-  "ShieldRegenDelay": 10,
   "id": "PylonSCBW",
   "Icon": "btn-building-protoss-pylon",
   "LifeArmorIcon": "btn-armor-protoss-buildingplating",
@@ -221,8 +204,7 @@
       "id": "PowerSource",
       "Icon": "btn-building-protoss-pylon",
       "Name": {
-        "enUS": "Power Source",
-        "ruRU": "Power Source"
+        "enUS": "Power Source"
       },
       "Tooltip": "-"
     }
@@ -231,8 +213,7 @@
     {
       "id": "BuildInProgress",
       "Name": {
-        "enUS": "Build in Progress",
-        "ruRU": "Build in Progress"
+        "enUS": "Build in Progress"
       }
     }
   ],
@@ -247,9 +228,9 @@
     "IsPylonSCBW",
     "NotPylonSCBW",
     "CasterIsPylonSCBW",
+    "PylonSCBW",
     "PylonSCBW@QoB",
-    "PylonSCBW@QoBAtUnit",
-    "PylonSCBW"
+    "PylonSCBW@QoBAtUnit"
   ],
   "$Requirements": [],
   "$Production": [],
@@ -266,12 +247,10 @@
       "id": "CancelBuilding",
       "Icon": "btn-command-cancel",
       "Name": {
-        "enUS": "Cancel",
-        "ruRU": "Отменить /// Cancel"
+        "enUS": "Cancel"
       },
       "Tooltip": {
-        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-        "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund."
       }
     }
   ]

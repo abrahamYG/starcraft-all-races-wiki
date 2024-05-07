@@ -13,13 +13,6 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "GhostSCBWSightUpgrade",
-  "EditorCategories": "Race:Terran,UpgradeType:Talents",
-  "$tokens": {
-    "ID": {
-      "type": "string",
-      "value": ""
-    }
-  },
   "DataCollection": "GhostSCBWSightUpgrade",
   "EffectArrayTemplate": [
     {
@@ -27,6 +20,7 @@
       "Value": "2"
     }
   ],
+  "EditorCategories": "Race:Terran,UpgradeType:Talents",
   "ScoreAmount": 200,
   "ScoreResult": "BuildOrder",
   "Race": "Terr",

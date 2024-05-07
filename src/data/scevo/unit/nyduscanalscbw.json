@@ -21,8 +21,7 @@
   "LifeStart": 250,
   "LifeMax": 250,
   "LifeArmorName": {
-    "enUS": "Zerg Building Armor",
-    "ruRU": "Zerg Building Armor"
+    "enUS": "Zerg Building Armor"
   },
   "Mover": "Ground",
   "StationaryTurningRate": 719.4726,
@@ -90,12 +89,6 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
-  "$tokens": {
-    "ID": {
-      "type": "string",
-      "value": ""
-    }
-  },
   "Mob": "Multiplayer",
   "EnergyRegenRate": 0.5,
   "id": "NydusCanalSCBW",
@@ -147,12 +140,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "BuildInProgress",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "Activity": "UI/Building",
           "VitalStartFactor": {
             "Life": 0.1,
@@ -186,12 +173,10 @@
         "id": "CancelBuilding",
         "Icon": "btn-command-cancel",
         "Name": {
-          "enUS": "Cancel",
-          "ruRU": "Отменить /// Cancel"
+          "enUS": "Cancel"
         },
         "Tooltip": {
-          "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-          "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+          "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund."
         },
         "Hotkey": "Esc"
       },
@@ -289,12 +274,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "stop",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "AbilSetId": "Stop",
           "CmdButtonArray": {
             "Stop": {
@@ -341,12 +320,10 @@
         "id": "Stop",
         "Icon": "btn-command-stop",
         "Name": {
-          "enUS": "Stop",
-          "ruRU": "Отставить /// Stop"
+          "enUS": "Stop"
         },
         "Tooltip": {
-          "enUS": "Orders selected units to cancel all orders and stop moving.",
-          "ruRU": "Orders selected units to cancel all orders and stop moving."
+          "enUS": "Orders selected units to cancel all orders and stop moving."
         },
         "Hotkey": "S"
       }
@@ -370,17 +347,7 @@
     {
       "id": "OnCreep",
       "Name": {
-        "enUS": "On Creep",
-        "ruRU": "On Creep"
-      },
-      "Tooltip": "-"
-    },
-    {
-      "id": "ZergBuildingSCBW@CreepGrowthSmall",
-      "Name": {
-        "enUS": "Creep Growth Small",
-        "zhCN": "Creep Growth Small",
-        "koKR": "Creep Growth Small"
+        "enUS": "On Creep"
       },
       "Tooltip": "-"
     }
@@ -389,22 +356,19 @@
     {
       "id": "stop",
       "Name": {
-        "enUS": "Stop",
-        "ruRU": "Stop"
+        "enUS": "Stop"
       }
     },
     {
       "id": "NydusCanalSCBW@Rally",
       "Name": {
-        "enUS": "Rally",
-        "ruRU": "Rally"
+        "enUS": "Rally"
       }
     },
     {
       "id": "BuildInProgress",
       "Name": {
-        "enUS": "Build in Progress",
-        "ruRU": "Build in Progress"
+        "enUS": "Build in Progress"
       }
     },
     {
@@ -436,11 +400,11 @@
     "IsNydusCanalSCBW",
     "NotNydusCanalSCBW",
     "CasterIsNydusCanalSCBW",
+    "NydusCanalSCBW",
     "NydusCanalSCBW@Count",
     "NydusCanalSCBW@CountAtUnit",
     "NydusCanalSCBW@QoB",
-    "NydusCanalSCBW@QoBAtUnit",
-    "NydusCanalSCBW"
+    "NydusCanalSCBW@QoBAtUnit"
   ],
   "$Requirements": [],
   "$Production": [
@@ -460,12 +424,10 @@
       "id": "CancelBuilding",
       "Icon": "btn-command-cancel",
       "Name": {
-        "enUS": "Cancel",
-        "ruRU": "Отменить /// Cancel"
+        "enUS": "Cancel"
       },
       "Tooltip": {
-        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-        "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund."
       }
     },
     {
@@ -503,12 +465,10 @@
       "id": "Stop",
       "Icon": "btn-command-stop",
       "Name": {
-        "enUS": "Stop",
-        "ruRU": "Отставить /// Stop"
+        "enUS": "Stop"
       },
       "Tooltip": {
-        "enUS": "Orders selected units to cancel all orders and stop moving.",
-        "ruRU": "Orders selected units to cancel all orders and stop moving."
+        "enUS": "Orders selected units to cancel all orders and stop moving."
       }
     }
   ]

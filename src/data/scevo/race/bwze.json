@@ -24,13 +24,6 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "ZerglingSCBWSpeedUpgrade",
-        "EditorCategories": "Race:Zerg,UpgradeType:Talents",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "DataCollection": "ZerglingSCBWSpeedUpgrade",
         "id": "ZerglingSCBWSpeedUpgrade",
         "EffectArrayTemplate": [
@@ -47,7 +40,8 @@
         "InfoTooltipPriority": 1,
         "Race": "Zerg",
         "ScoreAmount": 200,
-        "ScoreResult": "BuildOrder"
+        "ScoreResult": "BuildOrder",
+        "EditorCategories": "Race:Zerg,UpgradeType:Talents"
       },
       "ZerglingSCBWAttackSpeedUpgrade": {
         "class": "CUpgrade",
@@ -66,13 +60,6 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "ZerglingSCBWAttackSpeedUpgrade",
-        "EditorCategories": "Race:Zerg,UpgradeType:Talents",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "DataCollection": "ZerglingSCBWAttackSpeedUpgrade",
         "id": "ZerglingSCBWAttackSpeedUpgrade",
         "Icon": "btn-upgrade-zerg-adrenalglands",
@@ -88,7 +75,8 @@
         "InfoTooltipPriority": 1,
         "Race": "Zerg",
         "ScoreAmount": 400,
-        "ScoreResult": "BuildOrder"
+        "ScoreResult": "BuildOrder",
+        "EditorCategories": "Race:Zerg,UpgradeType:Talents"
       },
       "ZergGroundCarapaceSCBW@Lvl1": {
         "class": "CUpgrade",
@@ -107,13 +95,6 @@
         "ScoreValue": "ArmorTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "ZergGroundCarapaceSCBW",
-        "EditorCategories": "Race:Zerg,UpgradeType:ArmorBonus",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "Icon": "btn-upgrade-zerg-groundcarapace-level1",
         "DataCollection": "ZergGroundCarapaceSCBW",
         "id": "ZergGroundCarapaceSCBW@Lvl1",
@@ -135,6 +116,7 @@
             "Value": "Assets\\Textures\\btn-upgrade-zerg-groundcarapace-level1.dds"
           }
         ],
+        "EditorCategories": "Race:Zerg,UpgradeType:ArmorBonus",
         "BonusResourcePerLevel": {
           "Minerals": 75,
           "Vespene": 75
@@ -142,6 +124,8 @@
         "LeaderLevel": 1,
         "icon": "Assets\\Textures\\btn-upgrade-zerg-groundcarapace-level1.dds",
         "$Phase": [
+          "ZergGroundCarapaceSCBW@Lvl2",
+          "ZergGroundCarapaceSCBW@Lvl3",
           "ZergGroundCarapaceSCBW@Lvl2",
           "ZergGroundCarapaceSCBW@Lvl3"
         ]
@@ -163,13 +147,6 @@
         "ScoreValue": "ArmorTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "ZergGroundCarapaceSCBW",
-        "EditorCategories": "Race:Zerg,UpgradeType:ArmorBonus",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "Icon": "btn-upgrade-zerg-groundcarapace-level2",
         "DataCollection": "ZergGroundCarapaceSCBW",
         "id": "ZergGroundCarapaceSCBW@Lvl2",
@@ -191,6 +168,7 @@
             "Value": "Assets\\Textures\\btn-upgrade-zerg-groundcarapace-level2.dds"
           }
         ],
+        "EditorCategories": "Race:Zerg,UpgradeType:ArmorBonus",
         "BonusResourcePerLevel": {
           "Minerals": 75,
           "Vespene": 75
@@ -216,13 +194,6 @@
         "ScoreValue": "ArmorTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "ZergGroundCarapaceSCBW",
-        "EditorCategories": "Race:Zerg,UpgradeType:ArmorBonus",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "Icon": "btn-upgrade-zerg-groundcarapace-level3",
         "DataCollection": "ZergGroundCarapaceSCBW",
         "id": "ZergGroundCarapaceSCBW@Lvl3",
@@ -244,6 +215,7 @@
             "Value": "Assets\\Textures\\btn-upgrade-zerg-groundcarapace-level3.dds"
           }
         ],
+        "EditorCategories": "Race:Zerg,UpgradeType:ArmorBonus",
         "BonusResourcePerLevel": {
           "Minerals": 75,
           "Vespene": 75
@@ -269,13 +241,6 @@
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "ZergMeleeAttacksSCBW",
-        "EditorCategories": "Race:Zerg,UpgradeType:AttackBonus",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "Icon": "btn-upgrade-zerg-meleeattacks-level1",
         "DataCollection": "ZergMeleeAttacksSCBW",
         "id": "ZergMeleeAttacksSCBW@Lvl1",
@@ -297,6 +262,7 @@
             "Value": "Assets\\Textures\\btn-upgrade-zerg-meleeattacks-level1.dds"
           }
         ],
+        "EditorCategories": "Race:Zerg,UpgradeType:AttackBonus",
         "BonusResourcePerLevel": {
           "Minerals": 75,
           "Vespene": 75
@@ -304,6 +270,8 @@
         "LeaderLevel": 1,
         "icon": "Assets\\Textures\\btn-upgrade-zerg-meleeattacks-level1.dds",
         "$Phase": [
+          "ZergMeleeAttacksSCBW@Lvl2",
+          "ZergMeleeAttacksSCBW@Lvl3",
           "ZergMeleeAttacksSCBW@Lvl2",
           "ZergMeleeAttacksSCBW@Lvl3"
         ]
@@ -325,13 +293,6 @@
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "ZergMeleeAttacksSCBW",
-        "EditorCategories": "Race:Zerg,UpgradeType:AttackBonus",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "Icon": "btn-upgrade-zerg-meleeattacks-level2",
         "DataCollection": "ZergMeleeAttacksSCBW",
         "id": "ZergMeleeAttacksSCBW@Lvl2",
@@ -353,6 +314,7 @@
             "Value": "Assets\\Textures\\btn-upgrade-zerg-meleeattacks-level2.dds"
           }
         ],
+        "EditorCategories": "Race:Zerg,UpgradeType:AttackBonus",
         "BonusResourcePerLevel": {
           "Minerals": 75,
           "Vespene": 75
@@ -378,13 +340,6 @@
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "ZergMeleeAttacksSCBW",
-        "EditorCategories": "Race:Zerg,UpgradeType:AttackBonus",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "Icon": "btn-upgrade-zerg-meleeattacks-level3",
         "DataCollection": "ZergMeleeAttacksSCBW",
         "id": "ZergMeleeAttacksSCBW@Lvl3",
@@ -406,6 +361,7 @@
             "Value": "Assets\\Textures\\btn-upgrade-zerg-meleeattacks-level3.dds"
           }
         ],
+        "EditorCategories": "Race:Zerg,UpgradeType:AttackBonus",
         "BonusResourcePerLevel": {
           "Minerals": 75,
           "Vespene": 75
@@ -431,13 +387,6 @@
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "ZergMissileAttacksSCBW",
-        "EditorCategories": "Race:Zerg,UpgradeType:AttackBonus",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "Icon": "btn-upgrade-zerg-missileattacks-level1",
         "DataCollection": "ZergMissileAttacksSCBW",
         "id": "ZergMissileAttacksSCBW@Lvl1",
@@ -455,7 +404,7 @@
           },
           {
             "Reference": "Effect,^ParamId^Weapon@DamageExpl,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
+            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice*0.75}"
           },
           {
             "Reference": "Accumulator,^ParamId^Weapon@Damage,Amount",
@@ -465,29 +414,18 @@
             "Operation": "Set",
             "Reference": "Weapon,^ParamId^Weapon,Icon",
             "Value": "Assets\\Textures\\btn-upgrade-zerg-missileattacks-level1.dds"
-          },
-          {
-            "Reference": "Effect,^ParamId^Weapon@DamageAccum,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
-          },
-          {
-            "Reference": "Effect,^ParamId^Weapon@DamageExpl,AttributeBonus[Armored]",
-            "Value": "1"
           }
         ],
+        "EditorCategories": "Race:Zerg,UpgradeType:AttackBonus",
         "BonusResourcePerLevel": {
           "Minerals": 75,
           "Vespene": 75
         },
         "LeaderLevel": 1,
-        "EffectArray": [
-          {
-            "Reference": "Effect,HydraliskSCBWWeapon@DamageAccum,AttributeBonus[Armored]",
-            "Value": "1"
-          }
-        ],
         "icon": "Assets\\Textures\\btn-upgrade-zerg-missileattacks-level1.dds",
         "$Phase": [
+          "ZergMissileAttacksSCBW@Lvl2",
+          "ZergMissileAttacksSCBW@Lvl3",
           "ZergMissileAttacksSCBW@Lvl2",
           "ZergMissileAttacksSCBW@Lvl3"
         ]
@@ -509,13 +447,6 @@
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "ZergMissileAttacksSCBW",
-        "EditorCategories": "Race:Zerg,UpgradeType:AttackBonus",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "Icon": "btn-upgrade-zerg-missileattacks-level2",
         "DataCollection": "ZergMissileAttacksSCBW",
         "id": "ZergMissileAttacksSCBW@Lvl2",
@@ -533,7 +464,7 @@
           },
           {
             "Reference": "Effect,^ParamId^Weapon@DamageExpl,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
+            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice*0.75}"
           },
           {
             "Reference": "Accumulator,^ParamId^Weapon@Damage,Amount",
@@ -543,27 +474,14 @@
             "Operation": "Set",
             "Reference": "Weapon,^ParamId^Weapon,Icon",
             "Value": "Assets\\Textures\\btn-upgrade-zerg-missileattacks-level2.dds"
-          },
-          {
-            "Reference": "Effect,^ParamId^Weapon@DamageAccum,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
-          },
-          {
-            "Reference": "Effect,^ParamId^Weapon@DamageExpl,AttributeBonus[Armored]",
-            "Value": "1"
           }
         ],
+        "EditorCategories": "Race:Zerg,UpgradeType:AttackBonus",
         "BonusResourcePerLevel": {
           "Minerals": 75,
           "Vespene": 75
         },
         "LeaderLevel": 2,
-        "EffectArray": [
-          {
-            "Reference": "Effect,HydraliskSCBWWeapon@DamageAccum,AttributeBonus[Armored]",
-            "Value": "1"
-          }
-        ],
         "icon": "Assets\\Textures\\btn-upgrade-zerg-missileattacks-level2.dds",
         "$Phased": "ZergMissileAttacksSCBW@Lvl1"
       },
@@ -584,13 +502,6 @@
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "ZergMissileAttacksSCBW",
-        "EditorCategories": "Race:Zerg,UpgradeType:AttackBonus",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "Icon": "btn-upgrade-zerg-missileattacks-level3",
         "DataCollection": "ZergMissileAttacksSCBW",
         "id": "ZergMissileAttacksSCBW@Lvl3",
@@ -608,7 +519,7 @@
           },
           {
             "Reference": "Effect,^ParamId^Weapon@DamageExpl,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
+            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice*0.75}"
           },
           {
             "Reference": "Accumulator,^ParamId^Weapon@Damage,Amount",
@@ -618,27 +529,14 @@
             "Operation": "Set",
             "Reference": "Weapon,^ParamId^Weapon,Icon",
             "Value": "Assets\\Textures\\btn-upgrade-zerg-missileattacks-level3.dds"
-          },
-          {
-            "Reference": "Effect,^ParamId^Weapon@DamageAccum,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
-          },
-          {
-            "Reference": "Effect,^ParamId^Weapon@DamageExpl,AttributeBonus[Armored]",
-            "Value": "1"
           }
         ],
+        "EditorCategories": "Race:Zerg,UpgradeType:AttackBonus",
         "BonusResourcePerLevel": {
           "Minerals": 75,
           "Vespene": 75
         },
         "LeaderLevel": 3,
-        "EffectArray": [
-          {
-            "Reference": "Effect,HydraliskSCBWWeapon@DamageAccum,AttributeBonus[Armored]",
-            "Value": "1"
-          }
-        ],
         "icon": "Assets\\Textures\\btn-upgrade-zerg-missileattacks-level3.dds",
         "$Phased": "ZergMissileAttacksSCBW@Lvl1"
       },
@@ -659,13 +557,6 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "HydraliskSCBWSpeedUpgrade",
-        "EditorCategories": "Race:Zerg,UpgradeType:Talents",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "DataCollection": "HydraliskSCBWSpeedUpgrade",
         "id": "HydraliskSCBWSpeedUpgrade",
         "EffectArrayTemplate": [
@@ -682,7 +573,8 @@
         "InfoTooltipPriority": 1,
         "Race": "Zerg",
         "ScoreAmount": 300,
-        "ScoreResult": "BuildOrder"
+        "ScoreResult": "BuildOrder",
+        "EditorCategories": "Race:Zerg,UpgradeType:Talents"
       },
       "HydraliskSCBWRangeUpgrade": {
         "class": "CUpgrade",
@@ -701,13 +593,6 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "HydraliskSCBWRangeUpgrade",
-        "EditorCategories": "Race:Zerg,UpgradeType:Talents",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "DataCollection": "HydraliskSCBWRangeUpgrade",
         "id": "HydraliskSCBWRangeUpgrade",
         "Icon": "btn-upgrade-zerg-groovedspines",
@@ -727,7 +612,8 @@
         "InfoTooltipPriority": 1,
         "Race": "Zerg",
         "ScoreAmount": 300,
-        "ScoreResult": "BuildOrder"
+        "ScoreResult": "BuildOrder",
+        "EditorCategories": "Race:Zerg,UpgradeType:Talents"
       },
       "LurkerSCBWResearch": {
         "class": "CUpgrade",
@@ -746,13 +632,6 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "LurkerSCBWResearch",
-        "EditorCategories": "Race:Zerg,UpgradeType:Talents",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "DataCollection": "LurkerSCBWResearch",
         "id": "LurkerSCBWResearch",
         "Icon": "btn-unit-zerg-lurker",
@@ -762,7 +641,8 @@
         "InfoTooltipPriority": 1,
         "Race": "Zerg",
         "ScoreAmount": 400,
-        "ScoreResult": "BuildOrder"
+        "ScoreResult": "BuildOrder",
+        "EditorCategories": "Race:Zerg,UpgradeType:Talents"
       },
       "ZergFlyerAttacksSCBW@Lvl1": {
         "class": "CUpgrade",
@@ -781,13 +661,6 @@
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "ZergFlyerAttacksSCBW",
-        "EditorCategories": "Race:Zerg,UpgradeType:AttackBonus",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "Icon": "btn-upgrade-zerg-airattacks-level1",
         "DataCollection": "ZergFlyerAttacksSCBW",
         "id": "ZergFlyerAttacksSCBW@Lvl1",
@@ -805,7 +678,7 @@
           },
           {
             "Reference": "Effect,^ParamId^Weapon@DamageExpl,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
+            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice*0.75}"
           },
           {
             "Reference": "Accumulator,^ParamId^Weapon@Damage,Amount",
@@ -815,29 +688,18 @@
             "Operation": "Set",
             "Reference": "Weapon,^ParamId^Weapon,Icon",
             "Value": "Assets\\Textures\\btn-upgrade-zerg-airattacks-level1.dds"
-          },
-          {
-            "Reference": "Effect,^ParamId^Weapon@DamageAccum,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
-          },
-          {
-            "Reference": "Effect,^ParamId^Weapon@DamageExpl,AttributeBonus[Armored]",
-            "Value": "1"
           }
         ],
+        "EditorCategories": "Race:Zerg,UpgradeType:AttackBonus",
         "BonusResourcePerLevel": {
           "Minerals": 75,
           "Vespene": 75
         },
         "LeaderLevel": 1,
-        "EffectArray": [
-          {
-            "Reference": "Effect,DevourerSCBWWeapon@DamageAccum,AttributeBonus[Armored]",
-            "Value": "1"
-          }
-        ],
         "icon": "Assets\\Textures\\btn-upgrade-zerg-airattacks-level1.dds",
         "$Phase": [
+          "ZergFlyerAttacksSCBW@Lvl2",
+          "ZergFlyerAttacksSCBW@Lvl3",
           "ZergFlyerAttacksSCBW@Lvl2",
           "ZergFlyerAttacksSCBW@Lvl3"
         ]
@@ -859,13 +721,6 @@
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "ZergFlyerAttacksSCBW",
-        "EditorCategories": "Race:Zerg,UpgradeType:AttackBonus",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "Icon": "btn-upgrade-zerg-airattacks-level2",
         "DataCollection": "ZergFlyerAttacksSCBW",
         "id": "ZergFlyerAttacksSCBW@Lvl2",
@@ -883,7 +738,7 @@
           },
           {
             "Reference": "Effect,^ParamId^Weapon@DamageExpl,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
+            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice*0.75}"
           },
           {
             "Reference": "Accumulator,^ParamId^Weapon@Damage,Amount",
@@ -893,27 +748,14 @@
             "Operation": "Set",
             "Reference": "Weapon,^ParamId^Weapon,Icon",
             "Value": "Assets\\Textures\\btn-upgrade-zerg-airattacks-level2.dds"
-          },
-          {
-            "Reference": "Effect,^ParamId^Weapon@DamageAccum,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
-          },
-          {
-            "Reference": "Effect,^ParamId^Weapon@DamageExpl,AttributeBonus[Armored]",
-            "Value": "1"
           }
         ],
+        "EditorCategories": "Race:Zerg,UpgradeType:AttackBonus",
         "BonusResourcePerLevel": {
           "Minerals": 75,
           "Vespene": 75
         },
         "LeaderLevel": 2,
-        "EffectArray": [
-          {
-            "Reference": "Effect,DevourerSCBWWeapon@DamageAccum,AttributeBonus[Armored]",
-            "Value": "1"
-          }
-        ],
         "icon": "Assets\\Textures\\btn-upgrade-zerg-airattacks-level2.dds",
         "$Phased": "ZergFlyerAttacksSCBW@Lvl1"
       },
@@ -934,13 +776,6 @@
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "ZergFlyerAttacksSCBW",
-        "EditorCategories": "Race:Zerg,UpgradeType:AttackBonus",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "Icon": "btn-upgrade-zerg-airattacks-level3",
         "DataCollection": "ZergFlyerAttacksSCBW",
         "id": "ZergFlyerAttacksSCBW@Lvl3",
@@ -958,7 +793,7 @@
           },
           {
             "Reference": "Effect,^ParamId^Weapon@DamageExpl,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
+            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice*0.75}"
           },
           {
             "Reference": "Accumulator,^ParamId^Weapon@Damage,Amount",
@@ -968,27 +803,14 @@
             "Operation": "Set",
             "Reference": "Weapon,^ParamId^Weapon,Icon",
             "Value": "Assets\\Textures\\btn-upgrade-zerg-airattacks-level3.dds"
-          },
-          {
-            "Reference": "Effect,^ParamId^Weapon@DamageAccum,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
-          },
-          {
-            "Reference": "Effect,^ParamId^Weapon@DamageExpl,AttributeBonus[Armored]",
-            "Value": "1"
           }
         ],
+        "EditorCategories": "Race:Zerg,UpgradeType:AttackBonus",
         "BonusResourcePerLevel": {
           "Minerals": 75,
           "Vespene": 75
         },
         "LeaderLevel": 3,
-        "EffectArray": [
-          {
-            "Reference": "Effect,DevourerSCBWWeapon@DamageAccum,AttributeBonus[Armored]",
-            "Value": "1"
-          }
-        ],
         "icon": "Assets\\Textures\\btn-upgrade-zerg-airattacks-level3.dds",
         "$Phased": "ZergFlyerAttacksSCBW@Lvl1"
       },
@@ -1009,13 +831,6 @@
         "ScoreValue": "ArmorTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "ZergFlyerCarapaceSCBW",
-        "EditorCategories": "Race:Zerg,UpgradeType:ArmorBonus",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "Icon": "btn-upgrade-zerg-flyercarapace-level1",
         "DataCollection": "ZergFlyerCarapaceSCBW",
         "id": "ZergFlyerCarapaceSCBW@Lvl1",
@@ -1037,6 +852,7 @@
             "Value": "Assets\\Textures\\btn-upgrade-zerg-flyercarapace-level1.dds"
           }
         ],
+        "EditorCategories": "Race:Zerg,UpgradeType:ArmorBonus",
         "BonusResourcePerLevel": {
           "Minerals": 75,
           "Vespene": 75
@@ -1044,6 +860,8 @@
         "LeaderLevel": 1,
         "icon": "Assets\\Textures\\btn-upgrade-zerg-flyercarapace-level1.dds",
         "$Phase": [
+          "ZergFlyerCarapaceSCBW@Lvl2",
+          "ZergFlyerCarapaceSCBW@Lvl3",
           "ZergFlyerCarapaceSCBW@Lvl2",
           "ZergFlyerCarapaceSCBW@Lvl3"
         ]
@@ -1065,13 +883,6 @@
         "ScoreValue": "ArmorTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "ZergFlyerCarapaceSCBW",
-        "EditorCategories": "Race:Zerg,UpgradeType:ArmorBonus",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "Icon": "btn-upgrade-zerg-flyercarapace-level2",
         "DataCollection": "ZergFlyerCarapaceSCBW",
         "id": "ZergFlyerCarapaceSCBW@Lvl2",
@@ -1093,6 +904,7 @@
             "Value": "Assets\\Textures\\btn-upgrade-zerg-flyercarapace-level2.dds"
           }
         ],
+        "EditorCategories": "Race:Zerg,UpgradeType:ArmorBonus",
         "BonusResourcePerLevel": {
           "Minerals": 75,
           "Vespene": 75
@@ -1118,13 +930,6 @@
         "ScoreValue": "ArmorTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "ZergFlyerCarapaceSCBW",
-        "EditorCategories": "Race:Zerg,UpgradeType:ArmorBonus",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "Icon": "btn-upgrade-zerg-flyercarapace-level3",
         "DataCollection": "ZergFlyerCarapaceSCBW",
         "id": "ZergFlyerCarapaceSCBW@Lvl3",
@@ -1146,6 +951,7 @@
             "Value": "Assets\\Textures\\btn-upgrade-zerg-flyercarapace-level3.dds"
           }
         ],
+        "EditorCategories": "Race:Zerg,UpgradeType:ArmorBonus",
         "BonusResourcePerLevel": {
           "Minerals": 75,
           "Vespene": 75
@@ -1171,13 +977,6 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "QueenSCBWSpawnBroodlingsResearch",
-        "EditorCategories": "Race:Zerg,UpgradeType:SpellResearch",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "DataCollection": "QueenSCBWSpawnBroodlingsResearch",
         "id": "QueenSCBWSpawnBroodlingsResearch",
         "Icon": "btn-ability-zerg-swarmseeds-color",
@@ -1187,7 +986,8 @@
         "InfoTooltipPriority": 1,
         "Race": "Zerg",
         "ScoreAmount": 200,
-        "ScoreResult": "BuildOrder"
+        "ScoreResult": "BuildOrder",
+        "EditorCategories": "Race:Zerg,UpgradeType:SpellResearch"
       },
       "QueenSCBWEnsnareResearch": {
         "class": "CUpgrade",
@@ -1206,13 +1006,6 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "QueenSCBWEnsnareResearch",
-        "EditorCategories": "Race:Zerg,UpgradeType:SpellResearch",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "DataCollection": "QueenSCBWEnsnareResearch",
         "id": "QueenSCBWEnsnareResearch",
         "Icon": "btn-ability-zerg-fungalgrowth-color",
@@ -1222,7 +1015,8 @@
         "InfoTooltipPriority": 1,
         "Race": "Zerg",
         "ScoreAmount": 200,
-        "ScoreResult": "BuildOrder"
+        "ScoreResult": "BuildOrder",
+        "EditorCategories": "Race:Zerg,UpgradeType:SpellResearch"
       },
       "QueenSCBWEnergyUpgrade": {
         "class": "CUpgrade",
@@ -1241,13 +1035,6 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "QueenSCBWEnergyUpgrade",
-        "EditorCategories": "Race:Zerg,UpgradeType:Talents",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "DataCollection": "QueenSCBWEnergyUpgrade",
         "id": "QueenSCBWEnergyUpgrade",
         "EffectArrayTemplate": [
@@ -1267,7 +1054,8 @@
         "InfoTooltipPriority": 1,
         "Race": "Zerg",
         "ScoreAmount": 300,
-        "ScoreResult": "BuildOrder"
+        "ScoreResult": "BuildOrder",
+        "EditorCategories": "Race:Zerg,UpgradeType:Talents"
       },
       "DefilerSCBWPlagueResearch": {
         "class": "CUpgrade",
@@ -1286,13 +1074,6 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "DefilerSCBWPlagueResearch",
-        "EditorCategories": "Race:Zerg,UpgradeType:SpellResearch",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "DataCollection": "DefilerSCBWPlagueResearch",
         "id": "DefilerSCBWPlagueResearch",
         "Icon": "btn-ability-zerg-defilerplague",
@@ -1302,7 +1083,8 @@
         "InfoTooltipPriority": 1,
         "Race": "Zerg",
         "ScoreAmount": 400,
-        "ScoreResult": "BuildOrder"
+        "ScoreResult": "BuildOrder",
+        "EditorCategories": "Race:Zerg,UpgradeType:SpellResearch"
       },
       "DefilerSCBWConsumeResearch": {
         "class": "CUpgrade",
@@ -1321,13 +1103,6 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "DefilerSCBWConsumeResearch",
-        "EditorCategories": "Race:Zerg,UpgradeType:SpellResearch",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "DataCollection": "DefilerSCBWConsumeResearch",
         "id": "DefilerSCBWConsumeResearch",
         "Icon": "btn-ability-zerg-consume",
@@ -1337,7 +1112,8 @@
         "InfoTooltipPriority": 1,
         "Race": "Zerg",
         "ScoreAmount": 200,
-        "ScoreResult": "BuildOrder"
+        "ScoreResult": "BuildOrder",
+        "EditorCategories": "Race:Zerg,UpgradeType:SpellResearch"
       },
       "DefilerSCBWEnergyUpgrade": {
         "class": "CUpgrade",
@@ -1356,13 +1132,6 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "DefilerSCBWEnergyUpgrade",
-        "EditorCategories": "Race:Zerg,UpgradeType:Talents",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "DataCollection": "DefilerSCBWEnergyUpgrade",
         "id": "DefilerSCBWEnergyUpgrade",
         "EffectArrayTemplate": [
@@ -1382,7 +1151,8 @@
         "InfoTooltipPriority": 1,
         "Race": "Zerg",
         "ScoreAmount": 300,
-        "ScoreResult": "BuildOrder"
+        "ScoreResult": "BuildOrder",
+        "EditorCategories": "Race:Zerg,UpgradeType:Talents"
       },
       "UltraliskSCBWSpeedUpgrade": {
         "class": "CUpgrade",
@@ -1401,13 +1171,6 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "UltraliskSCBWSpeedUpgrade",
-        "EditorCategories": "Race:Zerg,UpgradeType:Talents",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "DataCollection": "UltraliskSCBWSpeedUpgrade",
         "id": "UltraliskSCBWSpeedUpgrade",
         "EffectArrayTemplate": [
@@ -1424,7 +1187,8 @@
         "InfoTooltipPriority": 1,
         "Race": "Zerg",
         "ScoreAmount": 400,
-        "ScoreResult": "BuildOrder"
+        "ScoreResult": "BuildOrder",
+        "EditorCategories": "Race:Zerg,UpgradeType:Talents"
       },
       "UltraliskSCBWArmorUpgrade": {
         "class": "CUpgrade",
@@ -1443,13 +1207,6 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "UltraliskSCBWArmorUpgrade",
-        "EditorCategories": "Race:Zerg,UpgradeType:ArmorBonus",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "DataCollection": "UltraliskSCBWArmorUpgrade",
         "id": "UltraliskSCBWArmorUpgrade",
         "InfoTooltipPriority": 1,
@@ -1463,6 +1220,7 @@
             "Value": "2"
           }
         ],
+        "EditorCategories": "Race:Zerg,UpgradeType:ArmorBonus",
         "AffectedUnitArray": [
           "UltraliskSCBW"
         ]
@@ -1484,13 +1242,6 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "OverlordSCBWSightUpgrade",
-        "EditorCategories": "Race:Zerg,UpgradeType:Talents",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "DataCollection": "OverlordSCBWSightUpgrade",
         "id": "OverlordSCBWSightUpgrade",
         "EffectArrayTemplate": [
@@ -1503,6 +1254,7 @@
             "Value": "2"
           }
         ],
+        "EditorCategories": "Race:Zerg,UpgradeType:Talents",
         "Icon": "btn-ability-zerg-overlord-oversight-off",
         "AffectedUnitArray": [
           "OverlordSCBW"
@@ -1529,20 +1281,13 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "OverlordSCBWSpeedUpgrade",
-        "EditorCategories": "Race:Zerg,UpgradeType:Talents",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "DataCollection": "OverlordSCBWSpeedUpgrade",
         "id": "OverlordSCBWSpeedUpgrade",
         "EffectArrayTemplate": [
           {
             "Operation": "Set",
             "Reference": "Unit,^ParamId^,Speed",
-            "Value": "1.879000"
+            "Value": "1.879"
           }
         ],
         "Icon": "btn-upgrade-zerg-pneumatizedcarapace",
@@ -1552,7 +1297,8 @@
         "InfoTooltipPriority": 1,
         "Race": "Zerg",
         "ScoreAmount": 300,
-        "ScoreResult": "BuildOrder"
+        "ScoreResult": "BuildOrder",
+        "EditorCategories": "Race:Zerg,UpgradeType:Talents"
       },
       "OverlordSCBWTransportResearch": {
         "class": "CUpgrade",
@@ -1571,16 +1317,10 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "OverlordSCBWTransportResearch",
-        "EditorCategories": "Race:Zerg,UpgradeType:Talents",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "DataCollection": "OverlordSCBWTransportResearch",
         "id": "OverlordSCBWTransportResearch",
         "Icon": "btn-upgrade-zerg-ventralsacs",
+        "EditorCategories": "Race:Zerg,UpgradeType:Talents",
         "AffectedUnitArray": [
           "OverlordSCBW"
         ],
@@ -1606,13 +1346,6 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "ZergSCBWBurrowResearch",
-        "EditorCategories": "Race:Zerg,UpgradeType:Talents",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "DataCollection": "ZergSCBWBurrowResearch",
         "id": "ZergSCBWBurrowResearch",
         "Icon": "btn-ability-zerg-burrow-color",
@@ -1626,7 +1359,8 @@
         "InfoTooltipPriority": 1,
         "Race": "Zerg",
         "ScoreAmount": 200,
-        "ScoreResult": "BuildOrder"
+        "ScoreResult": "BuildOrder",
+        "EditorCategories": "Race:Zerg,UpgradeType:Talents"
       }
     },
     "units": {
@@ -1647,22 +1381,20 @@
         "LifeArmor": 1,
         "Food": 6,
         "CostResource": {
-          "Minerals": 300
+          "Minerals": 350
         },
         "Production": [
           "LarvaSCBW"
         ],
         "Research": [],
         "Morph": [
-          "LairSCBW",
-          null
+          "LairSCBW"
         ],
         "$Phase": [],
         "LifeArmorIcon": "btn-armor-zerg-building",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Zerg Building Armor",
-          "ruRU": "Zerg Building Armor"
+          "enUS": "Zerg Building Armor"
         },
         "priority": 10
       },
@@ -1683,7 +1415,7 @@
         "LifeArmor": 1,
         "Food": 6,
         "CostResource": {
-          "Minerals": 450,
+          "Minerals": 500,
           "Vespene": 100
         },
         "Production": [
@@ -1696,15 +1428,13 @@
           "OverlordSCBWSpeedUpgrade"
         ],
         "Morph": [
-          "HiveSCBW",
-          null
+          "HiveSCBW"
         ],
         "$Phase": [],
         "LifeArmorIcon": "btn-armor-zerg-building",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Zerg Building Armor",
-          "ruRU": "Zerg Building Armor"
+          "enUS": "Zerg Building Armor"
         },
         "priority": 14
       },
@@ -1725,7 +1455,7 @@
         "LifeArmor": 1,
         "Food": 6,
         "CostResource": {
-          "Minerals": 650,
+          "Minerals": 700,
           "Vespene": 250
         },
         "Production": [
@@ -1742,8 +1472,7 @@
         "LifeArmorIcon": "btn-armor-zerg-building",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Zerg Building Armor",
-          "ruRU": "Zerg Building Armor"
+          "enUS": "Zerg Building Armor"
         },
         "priority": 18
       },
@@ -1781,8 +1510,7 @@
         "LifeArmorIcon": "btn-upgrade-zerg-groundcarapace-level0",
         "ShieldArmorIcon": "btn-upgrade-zerg-swarmfrenzy",
         "LifeArmorName": {
-          "enUS": "Zerg Ground Carapace",
-          "ruRU": "Zerg Ground Carapace"
+          "enUS": "Zerg Ground Carapace"
         },
         "priority": 10
       },
@@ -1808,8 +1536,7 @@
         "LifeArmorIcon": "btn-upgrade-zerg-groundcarapace-level0",
         "ShieldArmorIcon": "btn-upgrade-zerg-swarmfrenzy",
         "LifeArmorName": {
-          "enUS": "Zerg Ground Carapace",
-          "ruRU": "Zerg Ground Carapace"
+          "enUS": "Zerg Ground Carapace"
         }
       },
       "DroneSCBW": {
@@ -1844,13 +1571,19 @@
           "UltraliskCavernSCBW"
         ],
         "Research": [],
-        "Morph": [],
-
+        "Morph": [
+          "DroneSCBW@Burrowed",
+          "DefilerSCBW",
+          "DroneSCBW",
+          "HydraliskSCBW",
+          "UltraliskSCBW",
+          "ZerglingSCBW"
+        ],
+        "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-zerg-groundcarapace-level0",
         "ShieldArmorIcon": "btn-upgrade-zerg-swarmfrenzy",
         "LifeArmorName": {
-          "enUS": "Zerg Ground Carapace",
-          "ruRU": "Zerg Ground Carapace"
+          "enUS": "Zerg Ground Carapace"
         },
         "ShieldArmorName": "-",
         "priority": 20
@@ -1876,14 +1609,18 @@
         "Production": [],
         "Research": [],
         "Morph": [
-          "DroneSCBW"
+          "DroneSCBW",
+          "DefilerSCBW@Burrowed",
+          "DroneSCBW@Burrowed",
+          "HydraliskSCBW@Burrowed",
+          "UltraliskSCBW@Burrowed",
+          "ZerglingSCBW@Burrowed"
         ],
-
+        "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-zerg-groundcarapace-level0",
         "ShieldArmorIcon": "btn-upgrade-zerg-swarmfrenzy",
         "LifeArmorName": {
-          "enUS": "Zerg Ground Carapace",
-          "ruRU": "Zerg Ground Carapace"
+          "enUS": "Zerg Ground Carapace"
         }
       },
       "DefilerSCBW@Burrowed": {
@@ -1905,13 +1642,18 @@
         "Production": [],
         "Research": [],
         "Morph": [
-          "DroneSCBW@Burrowed"
+          "DefilerSCBW",
+          "DefilerSCBW@Burrowed",
+          "DroneSCBW@Burrowed",
+          "HydraliskSCBW@Burrowed",
+          "UltraliskSCBW@Burrowed",
+          "ZerglingSCBW@Burrowed"
         ],
+        "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-zerg-groundcarapace-level0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Zerg Ground Carapace",
-          "ruRU": "Zerg Ground Carapace"
+          "enUS": "Zerg Ground Carapace"
         }
       },
       "DefilerSCBW": {
@@ -1938,15 +1680,17 @@
         "Research": [],
         "Morph": [
           "DefilerSCBW@Burrowed",
-          "DroneSCBW"
+          "DefilerSCBW",
+          "DroneSCBW",
+          "HydraliskSCBW",
+          "UltraliskSCBW",
+          "ZerglingSCBW"
         ],
-
-
+        "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-zerg-groundcarapace-level0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Zerg Ground Carapace",
-          "ruRU": "Zerg Ground Carapace"
+          "enUS": "Zerg Ground Carapace"
         },
         "priority": 90
       },
@@ -1972,16 +1716,20 @@
         "Production": [],
         "Research": [],
         "Morph": [
+          "HydraliskSCBW@Burrowed",
           "DefilerSCBW",
           "DroneSCBW",
+          "HydraliskSCBW",
+          "UltraliskSCBW",
+          "ZerglingSCBW",
           "LurkerSCBWEgg",
           "LurkerSCBW"
         ],
+        "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-zerg-groundcarapace-level0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Zerg Ground Carapace",
-          "ruRU": "Zerg Ground Carapace"
+          "enUS": "Zerg Ground Carapace"
         },
         "priority": 70
       },
@@ -2009,14 +1757,16 @@
         "Morph": [
           "HydraliskSCBW",
           "DefilerSCBW@Burrowed",
-          "DroneSCBW@Burrowed"
+          "DroneSCBW@Burrowed",
+          "HydraliskSCBW@Burrowed",
+          "UltraliskSCBW@Burrowed",
+          "ZerglingSCBW@Burrowed"
         ],
-
+        "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-zerg-groundcarapace-level0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Zerg Ground Carapace",
-          "ruRU": "Zerg Ground Carapace"
+          "enUS": "Zerg Ground Carapace"
         }
       },
       "UltraliskSCBW@Burrowed": {
@@ -2042,16 +1792,18 @@
         "Production": [],
         "Research": [],
         "Morph": [
+          "UltraliskSCBW",
           "DefilerSCBW@Burrowed",
           "DroneSCBW@Burrowed",
-          "HydraliskSCBW@Burrowed"
+          "HydraliskSCBW@Burrowed",
+          "UltraliskSCBW@Burrowed",
+          "ZerglingSCBW@Burrowed"
         ],
-
+        "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-zerg-groundcarapace-level0",
         "ShieldArmorIcon": "btn-upgrade-zerg-swarmfrenzy",
         "LifeArmorName": {
-          "enUS": "Zerg Ground Carapace",
-          "ruRU": "Zerg Ground Carapace"
+          "enUS": "Zerg Ground Carapace"
         },
         "ShieldArmorName": "-"
       },
@@ -2081,14 +1833,14 @@
           "DefilerSCBW",
           "DroneSCBW",
           "HydraliskSCBW",
-          "UltraliskSCBW@Burrowed"
+          "UltraliskSCBW",
+          "ZerglingSCBW"
         ],
-
+        "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-zerg-groundcarapace-level0",
         "ShieldArmorIcon": "btn-upgrade-zerg-swarmfrenzy",
         "LifeArmorName": {
-          "enUS": "Zerg Ground Carapace",
-          "ruRU": "Zerg Ground Carapace"
+          "enUS": "Zerg Ground Carapace"
         },
         "ShieldArmorName": "-",
         "priority": 180
@@ -2114,17 +1866,18 @@
         "Production": [],
         "Research": [],
         "Morph": [
+          "ZerglingSCBW@Burrowed",
           "DefilerSCBW",
           "DroneSCBW",
           "HydraliskSCBW",
-          "UltraliskSCBW"
+          "UltraliskSCBW",
+          "ZerglingSCBW"
         ],
-
+        "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-zerg-groundcarapace-level0",
         "ShieldArmorIcon": "btn-upgrade-zerg-swarmfrenzy",
         "LifeArmorName": {
-          "enUS": "Zerg Ground Carapace",
-          "ruRU": "Zerg Ground Carapace"
+          "enUS": "Zerg Ground Carapace"
         },
         "ShieldArmorName": "-",
         "priority": 50
@@ -2154,26 +1907,26 @@
           "DefilerSCBW@Burrowed",
           "DroneSCBW@Burrowed",
           "HydraliskSCBW@Burrowed",
-          "UltraliskSCBW@Burrowed"
+          "UltraliskSCBW@Burrowed",
+          "ZerglingSCBW@Burrowed"
         ],
-
+        "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-zerg-groundcarapace-level0",
         "ShieldArmorIcon": "btn-upgrade-zerg-swarmfrenzy",
         "LifeArmorName": {
-          "enUS": "Zerg Ground Carapace",
-          "ruRU": "Zerg Ground Carapace"
+          "enUS": "Zerg Ground Carapace"
         }
       },
       "LurkerSCBWEgg": {
         "id": "LurkerSCBWEgg",
         "Icon": "btn-unit-zerg-egg",
         "Name": {
-          "enUS": "Lurker Cocoon",
+          "enUS": "Lurker Egg",
           "zhCN": "潜伏者茧",
           "koKR": "러커 에그 /// Lurker Cocoon"
         },
         "Description": {
-          "enUS": "This cocoon contains a Hydralisk that is morphing into a Lurker.",
+          "enUS": "This egg contains a Hydralisk that is morphing into a Lurker.",
           "zhCN": "这个虫茧内的刺蛇正在变异为潜伏者。",
           "koKR": "이 고치 안에는 러커로 변태중인 히드라리스크가 있습니다. /// This cocoon contains a Hydralisk that is morphing into a Lurker."
         },
@@ -2191,8 +1944,7 @@
         "LifeArmorIcon": "btn-upgrade-zerg-groundcarapace-level0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Zerg Ground Carapace",
-          "ruRU": "Zerg Ground Carapace"
+          "enUS": "Zerg Ground Carapace"
         }
       },
       "LurkerSCBW": {
@@ -2217,13 +1969,15 @@
         },
         "Production": [],
         "Research": [],
-        "Morph": [],
-
+        "Morph": [
+          "LurkerSCBW@Burrowed",
+          "LurkerSCBW"
+        ],
+        "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-zerg-groundcarapace-level0",
         "ShieldArmorIcon": "btn-upgrade-zerg-swarmfrenzy",
         "LifeArmorName": {
-          "enUS": "Zerg Ground Carapace",
-          "ruRU": "Zerg Ground Carapace"
+          "enUS": "Zerg Ground Carapace"
         },
         "priority": 170
       },
@@ -2250,14 +2004,14 @@
         "Production": [],
         "Research": [],
         "Morph": [
+          "LurkerSCBW@Burrowed",
           "LurkerSCBW"
         ],
-
+        "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-zerg-groundcarapace-level0",
         "ShieldArmorIcon": "btn-upgrade-zerg-swarmfrenzy",
         "LifeArmorName": {
-          "enUS": "Zerg Ground Carapace",
-          "ruRU": "Zerg Ground Carapace"
+          "enUS": "Zerg Ground Carapace"
         }
       },
       "CreepColonySCBW": {
@@ -2284,8 +2038,7 @@
         "LifeArmorIcon": "btn-armor-zerg-building",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Zerg Building Armor",
-          "ruRU": "Zerg Building Armor"
+          "enUS": "Zerg Building Armor"
         },
         "priority": 220
       },
@@ -2314,8 +2067,7 @@
         "LifeArmorIcon": "btn-armor-zerg-building",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Zerg Building Armor",
-          "ruRU": "Zerg Building Armor"
+          "enUS": "Zerg Building Armor"
         },
         "priority": 22
       },
@@ -2347,8 +2099,7 @@
         "LifeArmorIcon": "btn-armor-zerg-building",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Zerg Building Armor",
-          "ruRU": "Zerg Building Armor"
+          "enUS": "Zerg Building Armor"
         },
         "priority": 26
       },
@@ -2387,8 +2138,7 @@
         "LifeArmorIcon": "btn-armor-zerg-building",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Zerg Building Armor",
-          "ruRU": "Zerg Building Armor"
+          "enUS": "Zerg Building Armor"
         },
         "priority": 29
       },
@@ -2422,8 +2172,7 @@
         "LifeArmorIcon": "btn-armor-zerg-building",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Zerg Building Armor",
-          "ruRU": "Zerg Building Armor"
+          "enUS": "Zerg Building Armor"
         },
         "priority": 10
       },
@@ -2460,8 +2209,7 @@
         "LifeArmorIcon": "btn-armor-zerg-building",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Zerg Building Armor",
-          "ruRU": "Zerg Building Armor"
+          "enUS": "Zerg Building Armor"
         },
         "priority": 241
       },
@@ -2495,8 +2243,7 @@
         "LifeArmorIcon": "btn-armor-zerg-building",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Zerg Building Armor",
-          "ruRU": "Zerg Building Armor"
+          "enUS": "Zerg Building Armor"
         },
         "priority": 237
       },
@@ -2524,8 +2271,7 @@
         "LifeArmorIcon": "btn-armor-zerg-building",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Zerg Building Armor",
-          "ruRU": "Zerg Building Armor"
+          "enUS": "Zerg Building Armor"
         },
         "priority": 249
       },
@@ -2559,8 +2305,7 @@
         "LifeArmorIcon": "btn-armor-zerg-building",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Zerg Building Armor",
-          "ruRU": "Zerg Building Armor"
+          "enUS": "Zerg Building Armor"
         },
         "priority": 33
       },
@@ -2593,8 +2338,7 @@
         "LifeArmorIcon": "btn-armor-zerg-building",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Zerg Building Armor",
-          "ruRU": "Zerg Building Armor"
+          "enUS": "Zerg Building Armor"
         },
         "priority": 253
       },
@@ -2623,8 +2367,7 @@
         "LifeArmorIcon": "btn-upgrade-zerg-flyercarapace-level0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Zerg Flyer Carapace",
-          "ruRU": "Zerg Flyer Carapace"
+          "enUS": "Zerg Flyer Carapace"
         },
         "priority": 201
       },
@@ -2645,7 +2388,7 @@
         "Food": -2,
         "CostResource": {
           "Minerals": 100,
-          "Vespene": 75
+          "Vespene": 100
         },
         "Production": [],
         "Research": [],
@@ -2659,8 +2402,7 @@
         "LifeArmorIcon": "btn-upgrade-zerg-flyercarapace-level0",
         "ShieldArmorIcon": "btn-upgrade-zerg-swarmfrenzy",
         "LifeArmorName": {
-          "enUS": "Zerg Flyer Carapace",
-          "ruRU": "Zerg Flyer Carapace"
+          "enUS": "Zerg Flyer Carapace"
         },
         "ShieldArmorName": "-",
         "priority": 130
@@ -2675,7 +2417,7 @@
         },
         "Description": "-",
         "LifeMax": 200,
-        "Food": -4,
+        "Food": -2,
         "CostResource": {
           "Minerals": 100,
           "Vespene": 100
@@ -2687,8 +2429,7 @@
         "LifeArmorIcon": "btn-upgrade-zerg-flyercarapace-level0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Zerg Flyer Carapace",
-          "ruRU": "Zerg Flyer Carapace"
+          "enUS": "Zerg Flyer Carapace"
         }
       },
       "GuardianSCBW": {
@@ -2706,10 +2447,10 @@
         },
         "LifeMax": 150,
         "LifeArmor": 2,
-        "Food": -4,
+        "Food": -2,
         "CostResource": {
           "Minerals": 150,
-          "Vespene": 175
+          "Vespene": 200
         },
         "Production": [],
         "Research": [],
@@ -2718,8 +2459,7 @@
         "LifeArmorIcon": "btn-upgrade-zerg-flyercarapace-level0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Zerg Flyer Carapace",
-          "ruRU": "Zerg Flyer Carapace"
+          "enUS": "Zerg Flyer Carapace"
         },
         "priority": 140
       },
@@ -2733,7 +2473,7 @@
         },
         "Description": "-",
         "LifeMax": 200,
-        "Food": -3,
+        "Food": -2,
         "CostResource": {
           "Minerals": 100,
           "Vespene": 100
@@ -2745,8 +2485,7 @@
         "LifeArmorIcon": "btn-upgrade-zerg-flyercarapace-level0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Zerg Flyer Carapace",
-          "ruRU": "Zerg Flyer Carapace"
+          "enUS": "Zerg Flyer Carapace"
         }
       },
       "DevourerSCBW": {
@@ -2764,10 +2503,10 @@
         },
         "LifeMax": 250,
         "LifeArmor": 2,
-        "Food": -3,
+        "Food": -2,
         "CostResource": {
-          "Minerals": 200,
-          "Vespene": 125
+          "Minerals": 250,
+          "Vespene": 150
         },
         "Production": [],
         "Research": [],
@@ -2776,8 +2515,7 @@
         "LifeArmorIcon": "btn-upgrade-zerg-flyercarapace-level0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Zerg Flyer Carapace",
-          "ruRU": "Zerg Flyer Carapace"
+          "enUS": "Zerg Flyer Carapace"
         },
         "priority": 190
       },
@@ -2807,8 +2545,7 @@
         "LifeArmorIcon": "btn-upgrade-zerg-flyercarapace-level0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Zerg Flyer Carapace",
-          "ruRU": "Zerg Flyer Carapace"
+          "enUS": "Zerg Flyer Carapace"
         },
         "priority": 218
       },
@@ -2844,8 +2581,7 @@
         "LifeArmorIcon": "btn-upgrade-zerg-flyercarapace-level0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Zerg Flyer Carapace",
-          "ruRU": "Zerg Flyer Carapace"
+          "enUS": "Zerg Flyer Carapace"
         },
         "priority": 80
       },
@@ -2875,8 +2611,7 @@
         "LifeArmorIcon": "btn-upgrade-terran-buildingarmor",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Terran Building Plating",
-          "ruRU": "Terran Building Plating"
+          "enUS": "Terran Building Plating"
         }
       },
       "InfestedCommandCenterSCBW": {
@@ -2908,8 +2643,7 @@
         "LifeArmorIcon": "btn-upgrade-terran-buildingarmor",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Terran Building Plating",
-          "ruRU": "Terran Building Plating"
+          "enUS": "Terran Building Plating"
         },
         "priority": 30
       },
@@ -2935,20 +2669,18 @@
         "Production": [],
         "Research": [],
         "Morph": [
+          "InfestedTerranSCBW@Burrowed",
           "DefilerSCBW",
           "DroneSCBW",
           "HydraliskSCBW",
           "UltraliskSCBW",
           "ZerglingSCBW"
         ],
-        "$Phase": [
-          "InfestedTerranSCBW@Burrowed"
-        ],
+        "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-zerg-groundcarapace-level0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Zerg Ground Carapace",
-          "ruRU": "Zerg Ground Carapace"
+          "enUS": "Zerg Ground Carapace"
         },
         "priority": 219
       },
@@ -2978,12 +2710,10 @@
           "ZerglingSCBW@Burrowed"
         ],
         "$Phase": [],
-
         "LifeArmorIcon": "btn-upgrade-zerg-groundcarapace-level0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Zerg Ground Carapace",
-          "ruRU": "Zerg Ground Carapace"
+          "enUS": "Zerg Ground Carapace"
         }
       },
       "BroodlingSCBW": {
@@ -3007,8 +2737,7 @@
         "LifeArmorIcon": "btn-upgrade-zerg-groundcarapace-level0",
         "ShieldArmorIcon": "btn-upgrade-zerg-swarmfrenzy",
         "LifeArmorName": {
-          "enUS": "Zerg Ground Carapace",
-          "ruRU": "Zerg Ground Carapace"
+          "enUS": "Zerg Ground Carapace"
         },
         "ShieldArmorName": "-",
         "priority": 200

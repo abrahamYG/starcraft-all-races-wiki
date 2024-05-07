@@ -21,8 +21,7 @@
   "LifeStart": 350,
   "LifeMax": 350,
   "LifeArmorName": {
-    "enUS": "Terran Building Plating",
-    "ruRU": "Terran Building Plating"
+    "enUS": "Terran Building Plating"
   },
   "Mover": "Ground",
   "StationaryTurningRate": 720,
@@ -89,12 +88,6 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
-  "$tokens": {
-    "ID": {
-      "type": "string",
-      "value": ""
-    }
-  },
   "Mob": "Multiplayer",
   "Gender": "Neutral",
   "FogVisibility": "Snapshot",
@@ -131,7 +124,7 @@
   "CostResource": {
     "Minerals": 100
   },
-  "BuildTime": 40,
+  "BuildTime": 30,
   "RepairTime": 40,
   "CardLayouts": {
     "Root": [
@@ -154,12 +147,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "BunkerSCBW@AttackRedirect",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "Alignment": "Negative",
           "Abil": "attack",
           "CmdButtonArray": {
@@ -219,12 +206,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "BunkerSCBW@StopRedirect",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "Abil": "stop",
           "CmdButtonArray": {
             "Execute": {
@@ -253,12 +234,10 @@
         "id": "Stop",
         "Icon": "btn-command-stop",
         "Name": {
-          "enUS": "Stop",
-          "ruRU": "Отставить /// Stop"
+          "enUS": "Stop"
         },
         "Tooltip": {
-          "enUS": "Orders selected units to cancel all orders and stop moving.",
-          "ruRU": "Orders selected units to cancel all orders and stop moving."
+          "enUS": "Orders selected units to cancel all orders and stop moving."
         },
         "Hotkey": "S"
       },
@@ -281,12 +260,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "MarineSCBWStimpack@Redirect",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "AbilSetId": "Stimpack",
           "Abil": "MarineSCBWStimpack",
           "CmdButtonArray": {
@@ -347,12 +320,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "FirebatSCBWStimpack@Redirect",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "AbilSetId": "Stimpack",
           "Abil": "FirebatSCBWStimpack",
           "CmdButtonArray": {
@@ -443,12 +410,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "BunkerSCBW@Transport",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "CmdButtonArray": {
             "Load": {
               "Flags": {
@@ -561,12 +522,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "BunkerSCBW@Transport",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "CmdButtonArray": {
             "Load": {
               "Flags": {
@@ -662,10 +617,10 @@
       },
       {
         "Info": {
-          "class": "CAbilBehavior",
-          "Name": "Abil/Name/Salvage",
+          "class": "CAbilRedirectInstant",
+          "Name": "Abil/Name/SalvageRedirect",
           "TechPlayer": "Upkeep",
-          "EditorCategories": "Race:Terran,AbilityorEffectType:Structures",
+          "EditorCategories": "AbilityorEffectType:Units",
           "TargetMessage": "Abil/TargetMessage/DefaultTargetMessage",
           "OrderArray": [
             {
@@ -678,35 +633,17 @@
           "SharedFlags": {
             "DisableWhileDead": 1
           },
-          "DataCollection": "SalvageShared",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
+          "DataCollection": "SalvageRedirect",
+          "Abil": "Salvage",
           "CmdButtonArray": {
-            "On": {
+            "Execute": {
               "Flags": {
-                "ShowInGlossary": 1,
-                "ToSelection": 1
+                "AllowMinimap": 0
               },
-              "DefaultButtonFace": "Salvage"
+              "DefaultButtonFace": "SalvageRedirect"
             }
           },
-          "VeterancyLevelMin": 0,
-          "VeterancyLevelSkip": 0,
-          "Flags": {
-            "BestUnit": 1,
-            "Transient": 1
-          },
-          "BehaviorArray": [
-            "SalvageShared"
-          ],
-          "ValidatorArray": [
-            "HasNoCargo"
-          ],
-          "id": "SalvageShared"
+          "id": "SalvageRedirect"
         },
         "Cost": {
           "Minerals": 0,
@@ -721,16 +658,18 @@
         "Row": 2,
         "Column": 3,
         "Type": "AbilCmd",
-        "AbilCmd": "SalvageShared,On",
-        "id": "BunkerSCBW@Salvage",
+        "AbilCmd": "SalvageRedirect,Execute",
+        "id": "SalvageRedirect",
         "Icon": "btn-ability-terran-salvage",
         "Name": {
           "enUS": "Salvage",
-          "ruRU": "Salvage"
+          "zhCN": "回收",
+          "koKR": "회수 /// Salvage"
         },
         "Tooltip": {
           "enUS": "Salvages the structure, removing it and returning 75% of its mineral and gas value. Salvage takes <b>5</b> to finish. Warning: once Salvage is triggered, it cannot be canceled.",
-          "ruRU": "Salvages the structure, removing it and returning 75% of its mineral and gas value. Salvage takes <b>5</b> to finish. Warning: once Salvage is triggered, it cannot be canceled."
+          "zhCN": "回收该建筑，将其移除并全额返还修建所花费的晶体矿及高能瓦斯数量。回收过程需要<b>5</b>。警告：回收过程一旦开始便无法取消。",
+          "koKR": "해당 구조물을 제거하면서 건설 시 소비한 미네랄과 가스를 75% 회수합니다. 회수 완료까지 <b>5</b>가 소요됩니다. 경고 - 한번 시작한 회수 작업은 취소할 수 없습니다. /// Salvages the structure, removing it and returning 75% of its mineral and gas value. Salvage takes <b>5</b> to finish. Warning: once Salvage is triggered, it cannot be canceled."
         },
         "Hotkey": "V"
       },
@@ -753,12 +692,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "BuildInProgress",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "Activity": "UI/Building",
           "VitalStartFactor": {
             "Life": 0.1,
@@ -792,12 +725,10 @@
         "id": "Halt",
         "Icon": "btn-command-stop",
         "Name": {
-          "enUS": "Halt",
-          "ruRU": "Приостановить /// Halt"
+          "enUS": "Halt"
         },
         "Tooltip": {
-          "enUS": "Halts construction of this structure. The partial construction will remain.",
-          "ruRU": "Приостановить сооружение этого строения. Впоследствии его можно будет продолжить. /// Halts construction of this structure. The partial construction will remain."
+          "enUS": "Halts construction of this structure. The partial construction will remain."
         },
         "Hotkey": "T"
       },
@@ -820,12 +751,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "BuildInProgress",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "Activity": "UI/Building",
           "VitalStartFactor": {
             "Life": 0.1,
@@ -859,12 +784,10 @@
         "id": "CancelBuilding",
         "Icon": "btn-command-cancel",
         "Name": {
-          "enUS": "Cancel",
-          "ruRU": "Отменить /// Cancel"
+          "enUS": "Cancel"
         },
         "Tooltip": {
-          "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-          "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+          "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund."
         },
         "Hotkey": "Esc"
       },
@@ -887,12 +810,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "SalvageShared",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "CmdButtonArray": {
             "On": {
               "Flags": {
@@ -933,12 +850,10 @@
         "id": "Cancel",
         "Icon": "btn-command-cancel",
         "Name": {
-          "enUS": "Cancel",
-          "ruRU": "Отменить /// Cancel"
+          "enUS": "Cancel"
         },
         "Tooltip": {
-          "enUS": "Drops the current order without performing it, and allows you to select a different order.",
-          "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+          "enUS": "Drops the current order without performing it, and allows you to select a different order."
         },
         "Hotkey": "Esc"
       },
@@ -959,12 +874,10 @@
         "id": "SelectBuilder",
         "Icon": "btn-upgrade-terran-weaponrefit",
         "Name": {
-          "enUS": "Select Builder",
-          "ruRU": "Select Builder"
+          "enUS": "Select Builder"
         },
         "Tooltip": {
-          "enUS": "Selects the unit constructing this structure.",
-          "ruRU": "Selects the unit constructing this structure."
+          "enUS": "Selects the unit constructing this structure."
         },
         "Hotkey": "Q"
       }
@@ -995,9 +908,7 @@
     {
       "id": "TerranBuildingSCBW@Burnout",
       "Name": {
-        "enUS": "Burnout",
-        "zhCN": "Burnout",
-        "koKR": "Burnout"
+        "enUS": "Burnout"
       },
       "Tooltip": "-"
     }
@@ -1006,8 +917,7 @@
     {
       "id": "BuildInProgress",
       "Name": {
-        "enUS": "Build in Progress",
-        "ruRU": "Build in Progress"
+        "enUS": "Build in Progress"
       }
     },
     {
@@ -1021,8 +931,7 @@
     {
       "id": "Rally",
       "Name": {
-        "enUS": "Rally",
-        "ruRU": "Rally"
+        "enUS": "Rally"
       }
     },
     {
@@ -1072,28 +981,6 @@
         "zhCN": "停止",
         "koKR": "중지 /// Stop"
       }
-    },
-    {
-      "id": "SalvageRedirect",
-      "Name": {
-        "enUS": "Salvage",
-        "zhCN": "回收",
-        "koKR": "회수 /// Salvage"
-      }
-    },
-    {
-      "id": "SalvageShared",
-      "Name": {
-        "enUS": "Salvage",
-        "ruRU": "Salvage"
-      }
-    },
-    {
-      "id": "BunkerSCBW@SalvageRefund",
-      "Name": {
-        "enUS": "Bunker",
-        "ruRU": "Bunker"
-      }
     }
   ],
   "$Upgrades": [
@@ -1108,8 +995,8 @@
     "IsBunkerSCBW",
     "NotBunkerSCBW",
     "CasterIsBunkerSCBW",
-    "BunkerSCBW@Count",
-    "BunkerSCBW"
+    "BunkerSCBW",
+    "BunkerSCBW@Count"
   ],
   "$Requirements": [],
   "$Production": [],
@@ -1141,12 +1028,10 @@
       "id": "Attack",
       "Icon": "btn-command-attack",
       "Name": {
-        "enUS": "Attack",
-        "ruRU": "Атаковать /// Attack"
+        "enUS": "Attack"
       },
       "Tooltip": {
-        "enUS": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
-        "ruRU": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed."
+        "enUS": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed."
       }
     },
     {
@@ -1154,12 +1039,10 @@
       "id": "Stop",
       "Icon": "btn-command-stop",
       "Name": {
-        "enUS": "Stop",
-        "ruRU": "Отставить /// Stop"
+        "enUS": "Stop"
       },
       "Tooltip": {
-        "enUS": "Orders selected units to cancel all orders and stop moving.",
-        "ruRU": "Orders selected units to cancel all orders and stop moving."
+        "enUS": "Orders selected units to cancel all orders and stop moving."
       }
     },
     {
@@ -1238,16 +1121,18 @@
       }
     },
     {
-      "AbilCmd": "SalvageShared,On",
-      "id": "BunkerSCBW@Salvage",
+      "AbilCmd": "SalvageRedirect,Execute",
+      "id": "SalvageRedirect",
       "Icon": "btn-ability-terran-salvage",
       "Name": {
         "enUS": "Salvage",
-        "ruRU": "Salvage"
+        "zhCN": "回收",
+        "koKR": "회수 /// Salvage"
       },
       "Tooltip": {
         "enUS": "Salvages the structure, removing it and returning 75% of its mineral and gas value. Salvage takes <b>5</b> to finish. Warning: once Salvage is triggered, it cannot be canceled.",
-        "ruRU": "Salvages the structure, removing it and returning 75% of its mineral and gas value. Salvage takes <b>5</b> to finish. Warning: once Salvage is triggered, it cannot be canceled."
+        "zhCN": "回收该建筑，将其移除并全额返还修建所花费的晶体矿及高能瓦斯数量。回收过程需要<b>5</b>。警告：回收过程一旦开始便无法取消。",
+        "koKR": "해당 구조물을 제거하면서 건설 시 소비한 미네랄과 가스를 75% 회수합니다. 회수 완료까지 <b>5</b>가 소요됩니다. 경고 - 한번 시작한 회수 작업은 취소할 수 없습니다. /// Salvages the structure, removing it and returning 75% of its mineral and gas value. Salvage takes <b>5</b> to finish. Warning: once Salvage is triggered, it cannot be canceled."
       }
     },
     {
@@ -1255,12 +1140,10 @@
       "id": "Halt",
       "Icon": "btn-command-stop",
       "Name": {
-        "enUS": "Halt",
-        "ruRU": "Приостановить /// Halt"
+        "enUS": "Halt"
       },
       "Tooltip": {
-        "enUS": "Halts construction of this structure. The partial construction will remain.",
-        "ruRU": "Приостановить сооружение этого строения. Впоследствии его можно будет продолжить. /// Halts construction of this structure. The partial construction will remain."
+        "enUS": "Halts construction of this structure. The partial construction will remain."
       }
     },
     {
@@ -1268,12 +1151,10 @@
       "id": "CancelBuilding",
       "Icon": "btn-command-cancel",
       "Name": {
-        "enUS": "Cancel",
-        "ruRU": "Отменить /// Cancel"
+        "enUS": "Cancel"
       },
       "Tooltip": {
-        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-        "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund."
       }
     },
     {
@@ -1281,12 +1162,10 @@
       "id": "Cancel",
       "Icon": "btn-command-cancel",
       "Name": {
-        "enUS": "Cancel",
-        "ruRU": "Отменить /// Cancel"
+        "enUS": "Cancel"
       },
       "Tooltip": {
-        "enUS": "Drops the current order without performing it, and allows you to select a different order.",
-        "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+        "enUS": "Drops the current order without performing it, and allows you to select a different order."
       }
     }
   ]

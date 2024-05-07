@@ -24,13 +24,6 @@
         "ScoreValue": "ArmorTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "TerranInfantryArmorsSCBW",
-        "EditorCategories": "Race:Terran,UpgradeType:ArmorBonus",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "Icon": "btn-upgrade-terran-infantryarmorlevel1",
         "DataCollection": "TerranInfantryArmorsSCBW",
         "id": "TerranInfantryArmorsSCBW@Lvl1",
@@ -51,6 +44,7 @@
             "Value": "Assets\\Textures\\btn-upgrade-terran-infantryarmorlevel1.dds"
           }
         ],
+        "EditorCategories": "Race:Terran,UpgradeType:ArmorBonus",
         "BonusResourcePerLevel": {
           "Minerals": 75,
           "Vespene": 75
@@ -80,13 +74,6 @@
         "ScoreValue": "ArmorTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "TerranInfantryArmorsSCBW",
-        "EditorCategories": "Race:Terran,UpgradeType:ArmorBonus",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "Icon": "btn-upgrade-terran-infantryarmorlevel2",
         "DataCollection": "TerranInfantryArmorsSCBW",
         "id": "TerranInfantryArmorsSCBW@Lvl2",
@@ -107,6 +94,7 @@
             "Value": "Assets\\Textures\\btn-upgrade-terran-infantryarmorlevel2.dds"
           }
         ],
+        "EditorCategories": "Race:Terran,UpgradeType:ArmorBonus",
         "BonusResourcePerLevel": {
           "Minerals": 75,
           "Vespene": 75
@@ -133,13 +121,6 @@
         "ScoreValue": "ArmorTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "TerranInfantryArmorsSCBW",
-        "EditorCategories": "Race:Terran,UpgradeType:ArmorBonus",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "Icon": "btn-upgrade-terran-infantryarmorlevel3",
         "DataCollection": "TerranInfantryArmorsSCBW",
         "id": "TerranInfantryArmorsSCBW@Lvl3",
@@ -160,6 +141,7 @@
             "Value": "Assets\\Textures\\btn-upgrade-terran-infantryarmorlevel3.dds"
           }
         ],
+        "EditorCategories": "Race:Terran,UpgradeType:ArmorBonus",
         "BonusResourcePerLevel": {
           "Minerals": 75,
           "Vespene": 75
@@ -186,13 +168,6 @@
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "TerranInfantryWeaponsSCBW",
-        "EditorCategories": "Race:Terran,UpgradeType:AttackBonus",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "Icon": "btn-upgrade-terran-infantryweaponslevel1",
         "DataCollection": "TerranInfantryWeaponsSCBW",
         "id": "TerranInfantryWeaponsSCBW@Lvl1",
@@ -211,7 +186,7 @@
           },
           {
             "Reference": "Effect,^ParamId^Weapon@DamageConc,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
+            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice*0.5}"
           },
           {
             "Reference": "Accumulator,^ParamId^Weapon@Damage,Amount",
@@ -255,27 +230,14 @@
             "Operation": "Set",
             "Reference": "Weapon,^ParamId^WeaponAir,Icon",
             "Value": "Assets\\Textures\\btn-upgrade-terran-infantryweaponslevel1.dds"
-          },
-          {
-            "Reference": "Effect,^ParamId^Weapon@DamageConc,AttributeBonus[Light]",
-            "Value": "1"
-          },
-          {
-            "Reference": "Effect,^ParamId^Weapon@DamageAccum,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
           }
         ],
+        "EditorCategories": "Race:Terran,UpgradeType:AttackBonus",
         "BonusResourcePerLevel": {
           "Minerals": 75,
           "Vespene": 75
         },
         "LeaderLevel": 1,
-        "EffectArray": [
-          {
-            "Reference": "Effect,FirebatSCBWWeapon@DamageAccum,AttributeBonus[Light]",
-            "Value": "1"
-          }
-        ],
         "icon": "Assets\\Textures\\btn-upgrade-terran-infantryweaponslevel1.dds",
         "$Phase": [
           "TerranInfantryWeaponsSCBW@Lvl2",
@@ -299,13 +261,6 @@
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "TerranInfantryWeaponsSCBW",
-        "EditorCategories": "Race:Terran,UpgradeType:AttackBonus",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "Icon": "btn-upgrade-terran-infantryweaponslevel2",
         "DataCollection": "TerranInfantryWeaponsSCBW",
         "id": "TerranInfantryWeaponsSCBW@Lvl2",
@@ -324,7 +279,7 @@
           },
           {
             "Reference": "Effect,^ParamId^Weapon@DamageConc,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
+            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice*0.5}"
           },
           {
             "Reference": "Accumulator,^ParamId^Weapon@Damage,Amount",
@@ -368,27 +323,14 @@
             "Operation": "Set",
             "Reference": "Weapon,^ParamId^WeaponAir,Icon",
             "Value": "Assets\\Textures\\btn-upgrade-terran-infantryweaponslevel2.dds"
-          },
-          {
-            "Reference": "Effect,^ParamId^Weapon@DamageConc,AttributeBonus[Light]",
-            "Value": "1"
-          },
-          {
-            "Reference": "Effect,^ParamId^Weapon@DamageAccum,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
           }
         ],
+        "EditorCategories": "Race:Terran,UpgradeType:AttackBonus",
         "BonusResourcePerLevel": {
           "Minerals": 75,
           "Vespene": 75
         },
         "LeaderLevel": 2,
-        "EffectArray": [
-          {
-            "Reference": "Effect,FirebatSCBWWeapon@DamageAccum,AttributeBonus[Light]",
-            "Value": "1"
-          }
-        ],
         "icon": "Assets\\Textures\\btn-upgrade-terran-infantryweaponslevel2.dds",
         "$Phased": "TerranInfantryWeaponsSCBW@Lvl1"
       },
@@ -409,13 +351,6 @@
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "TerranInfantryWeaponsSCBW",
-        "EditorCategories": "Race:Terran,UpgradeType:AttackBonus",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "Icon": "btn-upgrade-terran-infantryweaponslevel3",
         "DataCollection": "TerranInfantryWeaponsSCBW",
         "id": "TerranInfantryWeaponsSCBW@Lvl3",
@@ -434,7 +369,7 @@
           },
           {
             "Reference": "Effect,^ParamId^Weapon@DamageConc,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
+            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice*0.5}"
           },
           {
             "Reference": "Accumulator,^ParamId^Weapon@Damage,Amount",
@@ -478,27 +413,14 @@
             "Operation": "Set",
             "Reference": "Weapon,^ParamId^WeaponAir,Icon",
             "Value": "Assets\\Textures\\btn-upgrade-terran-infantryweaponslevel3.dds"
-          },
-          {
-            "Reference": "Effect,^ParamId^Weapon@DamageConc,AttributeBonus[Light]",
-            "Value": "1"
-          },
-          {
-            "Reference": "Effect,^ParamId^Weapon@DamageAccum,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
           }
         ],
+        "EditorCategories": "Race:Terran,UpgradeType:AttackBonus",
         "BonusResourcePerLevel": {
           "Minerals": 75,
           "Vespene": 75
         },
         "LeaderLevel": 3,
-        "EffectArray": [
-          {
-            "Reference": "Effect,FirebatSCBWWeapon@DamageAccum,AttributeBonus[Light]",
-            "Value": "1"
-          }
-        ],
         "icon": "Assets\\Textures\\btn-upgrade-terran-infantryweaponslevel3.dds",
         "$Phased": "TerranInfantryWeaponsSCBW@Lvl1"
       },
@@ -519,13 +441,6 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "MarineSCBWRangeUpgrade",
-        "EditorCategories": "Race:Terran,UpgradeType:Talents",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "DataCollection": "MarineSCBWRangeUpgrade",
         "id": "MarineSCBWRangeUpgrade",
         "EffectArrayTemplate": [
@@ -544,7 +459,8 @@
         ],
         "Race": "Terr",
         "ScoreAmount": 300,
-        "ScoreResult": "BuildOrder"
+        "ScoreResult": "BuildOrder",
+        "EditorCategories": "Race:Terran,UpgradeType:Talents"
       },
       "StimpackSCBWResearch": {
         "class": "CUpgrade",
@@ -563,19 +479,13 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "StimpackSCBWResearch",
-        "EditorCategories": "Race:Terran,UpgradeType:SpellResearch",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "DataCollection": "StimpackSCBWResearch",
         "id": "StimpackSCBWResearch",
         "Icon": "btn-ability-terran-stimpack-color",
         "ScoreAmount": 200,
         "ScoreResult": "BuildOrder",
         "Race": "Terr",
+        "EditorCategories": "Race:Terran,UpgradeType:SpellResearch",
         "AffectedUnitArray": [
           "MarineSCBW",
           "FirebatSCBW"
@@ -598,19 +508,13 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "MedicSCBWRestorationResearch",
-        "EditorCategories": "Race:Terran,UpgradeType:SpellResearch",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "DataCollection": "MedicSCBWRestorationResearch",
         "id": "MedicSCBWRestorationResearch",
         "Icon": "btn-ability-terran-restoration@scbw",
         "Race": "Terr",
         "ScoreAmount": 200,
         "ScoreResult": "BuildOrder",
+        "EditorCategories": "Race:Terran,UpgradeType:SpellResearch",
         "AffectedUnitArray": [
           "MedicSCBW"
         ]
@@ -632,19 +536,13 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "MedicSCBWOpticFlareResearch",
-        "EditorCategories": "Race:Terran,UpgradeType:SpellResearch",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "DataCollection": "MedicSCBWOpticFlareResearch",
         "id": "MedicSCBWOpticFlareResearch",
         "Icon": "btn-upgrade-protoss-fenix-dragoonsolariteflare",
         "Race": "Terr",
         "ScoreAmount": 200,
         "ScoreResult": "BuildOrder",
+        "EditorCategories": "Race:Terran,UpgradeType:SpellResearch",
         "AffectedUnitArray": [
           "MedicSCBW"
         ]
@@ -666,13 +564,6 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "MedicSCBWEnergyUpgrade",
-        "EditorCategories": "Race:Terran,UpgradeType:Talents",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "DataCollection": "MedicSCBWEnergyUpgrade",
         "id": "MedicSCBWEnergyUpgrade",
         "EffectArrayTemplate": [
@@ -689,6 +580,7 @@
         "Race": "Terr",
         "ScoreAmount": 300,
         "ScoreResult": "BuildOrder",
+        "EditorCategories": "Race:Terran,UpgradeType:Talents",
         "AffectedUnitArray": [
           "MedicSCBW"
         ]
@@ -710,13 +602,6 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "VultureSCBWSpeedUpgrade",
-        "EditorCategories": "Race:Terran,UpgradeType:Talents",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "DataCollection": "VultureSCBWSpeedUpgrade",
         "id": "VultureSCBWSpeedUpgrade",
         "EffectArrayTemplate": [
@@ -730,6 +615,7 @@
         "Race": "Terr",
         "ScoreAmount": 200,
         "ScoreResult": "BuildOrder",
+        "EditorCategories": "Race:Terran,UpgradeType:Talents",
         "AffectedUnitArray": [
           "VultureSCBW"
         ]
@@ -751,18 +637,12 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "VulturePlaceSpiderMineSCBWResearch",
-        "EditorCategories": "UpgradeType:SpellResearch,Race:Terran",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "DataCollection": "VulturePlaceSpiderMineSCBWResearch",
         "id": "VulturePlaceSpiderMineSCBWResearch",
         "Icon": "btn-upgrade-siegetank-spidermines",
         "ScoreAmount": 200,
         "ScoreResult": "BuildOrder",
+        "EditorCategories": "UpgradeType:SpellResearch,Race:Terran",
         "AffectedUnitArray": [
           "VultureSCBW"
         ]
@@ -784,19 +664,13 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "SiegeModeSCBWResearch",
-        "EditorCategories": "Race:Terran,UpgradeType:SpellResearch",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "DataCollection": "SiegeModeSCBWResearch",
         "id": "SiegeModeSCBWResearch",
         "Icon": "btn-upgrade-terran-nova-siegetankrange",
         "Race": "Terr",
         "ScoreAmount": 300,
         "ScoreResult": "BuildOrder",
+        "EditorCategories": "Race:Terran,UpgradeType:SpellResearch",
         "AffectedUnitArray": [
           "SiegeTankSCBW"
         ]
@@ -818,120 +692,33 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "GoliathSCBWRangeUpgrade",
-        "EditorCategories": "Race:Terran,UpgradeType:Talents",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "DataCollection": "GoliathSCBWRangeUpgrade",
         "id": "GoliathSCBWRangeUpgrade",
         "EffectArrayTemplate": [
           {
             "Reference": "Weapon,^ParamId^WeaponAir,Range",
-            "Value": "3"
+            "Value": "4"
           },
           {
             "Reference": "Weapon,^ParamId^WeaponAir,MinScanRange",
-            "Value": "3"
+            "Value": "4"
           },
           {
             "Reference": "Weapon,^ParamId^WeaponAir@Fake,Range",
-            "Value": "3"
+            "Value": "4"
           },
           {
             "Reference": "Weapon,^ParamId^WeaponAir@Fake,MinScanRange",
-            "Value": "3"
+            "Value": "4"
           }
         ],
         "Icon": "btn-upgrade-terran-magfieldaccelerator",
         "Race": "Terr",
         "ScoreAmount": 200,
         "ScoreResult": "BuildOrder",
+        "EditorCategories": "Race:Terran,UpgradeType:Talents",
         "AffectedUnitArray": [
           "GoliathSCBW"
-        ]
-      },
-      "StingerSCBWAttackMoveUpgrade": {
-        "class": "CUpgrade",
-        "Flags": {
-          "UpgradeCheat": 1,
-          "IgnoreInvalidReferenceInTemplate": 1
-        },
-        "Name": {
-          "enUS": "Helios Tracer Rounds",
-          "zhCN": "Helios Tracer Rounds",
-          "koKR": "Helios Tracer Rounds"
-        },
-        "MaxLevel": 1,
-        "Alert": "ResearchComplete",
-        "ScoreCount": "MiscTechnologyCount",
-        "ScoreValue": "MiscTechnologyValue",
-        "WebPriority": 1,
-        "LeaderAlias": "StingerSCBWAttackMoveUpgrade",
-        "EditorCategories": "Race:Terran,UpgradeType:Talents",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
-        "DataCollection": "StingerSCBWAttackMoveUpgrade",
-        "id": "StingerSCBWAttackMoveUpgrade",
-        "Icon": "btn-ability-mengsk-siegetank-flyingtankarmament",
-        "Race": "BWTe",
-        "ScoreAmount": 300,
-        "ScoreResult": "BuildOrder",
-        "EffectArrayTemplate": [
-          {
-            "Operation": "Set",
-            "Reference": "Weapon,^ParamId^Weapon,Options[OnlyFireAtAttackOrderTarget]",
-            "Value": "0"
-          },
-          {
-            "Operation": "Set",
-            "Reference": "Weapon,^ParamId^Weapon,Options[OnlyFireWhileInAttackOrder]",
-            "Value": "0"
-          },
-          {
-            "Operation": "Set",
-            "Reference": "Weapon,^ParamId^Weapon,AllowedMovement",
-            "Value": "Moving"
-          },
-          {
-            "Operation": "Set",
-            "Reference": "Weapon,^ParamId^Weapon@Air,Options[OnlyFireAtAttackOrderTarget]",
-            "Value": "0"
-          },
-          {
-            "Operation": "Set",
-            "Reference": "Weapon,^ParamId^Weapon@Air,Options[OnlyFireWhileInAttackOrder]",
-            "Value": "0"
-          },
-          {
-            "Operation": "Set",
-            "Reference": "Weapon,^ParamId^Weapon@Air,AllowedMovement",
-            "Value": "Moving"
-          },
-          {
-            "Operation": "Set",
-            "Reference": "Weapon,^ParamId^WeaponGround,Options[OnlyFireAtAttackOrderTarget]",
-            "Value": "0"
-          },
-          {
-            "Operation": "Set",
-            "Reference": "Weapon,^ParamId^WeaponGround,Options[OnlyFireWhileInAttackOrder]",
-            "Value": "0"
-          },
-          {
-            "Operation": "Set",
-            "Reference": "Weapon,^ParamId^WeaponGround,AllowedMovement",
-            "Value": "Moving"
-          }
-        ],
-        "AffectedUnitArray": [
-          "StingerSCBW"
         ]
       },
       "WraithSCBWCloakResearch": {
@@ -951,19 +738,13 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "WraithSCBWCloakResearch",
-        "EditorCategories": "Race:Terran,UpgradeType:SpellResearch",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "DataCollection": "WraithSCBWCloakResearch",
         "id": "WraithSCBWCloakResearch",
         "Icon": "btn-upgrade-nova-tacticalstealthsuit",
         "Race": "Terr",
         "ScoreAmount": 300,
         "ScoreResult": "BuildOrder",
+        "EditorCategories": "Race:Terran,UpgradeType:SpellResearch",
         "AffectedUnitArray": [
           "WraithSCBW"
         ]
@@ -985,13 +766,6 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "WraithSCBWEnergyUpgrade",
-        "EditorCategories": "Race:Terran,UpgradeType:Talents",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "DataCollection": "WraithSCBWEnergyUpgrade",
         "id": "WraithSCBWEnergyUpgrade",
         "EffectArrayTemplate": [
@@ -1008,44 +782,9 @@
         "Race": "Terr",
         "ScoreAmount": 400,
         "ScoreResult": "BuildOrder",
+        "EditorCategories": "Race:Terran,UpgradeType:Talents",
         "AffectedUnitArray": [
           "WraithSCBW"
-        ]
-      },
-      "DropshipSCBWSpeedBoostResearch": {
-        "class": "CUpgrade",
-        "Flags": {
-          "UpgradeCheat": 1,
-          "IgnoreInvalidReferenceInTemplate": 1,
-          "TechTreeCheat": 1
-        },
-        "Name": {
-          "enUS": "Emergency Thrusters",
-          "zhCN": "Emergency Thrusters",
-          "koKR": "Emergency Thrusters"
-        },
-        "MaxLevel": 1,
-        "Alert": "ResearchComplete",
-        "ScoreCount": "MiscTechnologyCount",
-        "ScoreValue": "MiscTechnologyValue",
-        "WebPriority": 1,
-        "LeaderAlias": "DropshipSCBWSpeedBoostResearch",
-        "EditorCategories": "Race:Terran,UpgradeType:SpellResearch",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
-        "DataCollection": "DropshipSCBWSpeedBoostResearch",
-        "id": "DropshipSCBWSpeedBoostResearch",
-        "InfoTooltipPriority": 1,
-        "Icon": "btn-upgrade-terran-medivacemergencythrusters",
-        "Race": "Terr",
-        "ScoreAmount": 300,
-        "ScoreResult": "BuildOrder",
-        "AffectedUnitArray": [
-          "DropshipSCBW"
         ]
       },
       "BattlecruiserSCBWYamatoResearch": {
@@ -1065,19 +804,13 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "BattlecruiserSCBWYamatoResearch",
-        "EditorCategories": "Race:Terran,UpgradeType:SpellResearch",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "DataCollection": "BattlecruiserSCBWYamatoResearch",
         "id": "BattlecruiserSCBWYamatoResearch",
         "Icon": "btn-ability-mengsk-battlecruiser-yamatocannon",
         "Race": "Terr",
         "ScoreAmount": 200,
         "ScoreResult": "BuildOrder",
+        "EditorCategories": "Race:Terran,UpgradeType:SpellResearch",
         "AffectedUnitArray": [
           "BattlecruiserSCBW"
         ]
@@ -1099,13 +832,6 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "BattlecruiserSCBWEnergyUpgrade",
-        "EditorCategories": "Race:Terran,UpgradeType:Talents",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "DataCollection": "BattlecruiserSCBWEnergyUpgrade",
         "id": "BattlecruiserSCBWEnergyUpgrade",
         "EffectArrayTemplate": [
@@ -1122,6 +848,7 @@
         "Race": "Terr",
         "ScoreAmount": 300,
         "ScoreResult": "BuildOrder",
+        "EditorCategories": "Race:Terran,UpgradeType:Talents",
         "AffectedUnitArray": [
           "BattlecruiserSCBW"
         ]
@@ -1143,19 +870,13 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "GhostSCBWLockdownResearch",
-        "EditorCategories": "Race:Terran,UpgradeType:SpellResearch",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "DataCollection": "GhostSCBWLockdownResearch",
         "id": "GhostSCBWLockdownResearch",
         "Icon": "btn-abilty-terran-lockdown@scbw",
         "Race": "Terr",
         "ScoreAmount": 400,
         "ScoreResult": "BuildOrder",
+        "EditorCategories": "Race:Terran,UpgradeType:SpellResearch",
         "AffectedUnitArray": [
           "GhostSCBW"
         ]
@@ -1177,18 +898,12 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "GhostSCBWCloakResearch",
-        "EditorCategories": "Race:Terran,UpgradeType:SpellResearch",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "DataCollection": "GhostSCBWCloakResearch",
         "id": "GhostSCBWCloakResearch",
         "Icon": "btn-upgrade-nova-tacticalstealthsuit",
         "Race": "Terr",
         "ScoreResult": "BuildOrder",
+        "EditorCategories": "Race:Terran,UpgradeType:SpellResearch",
         "ScoreAmount": 200,
         "AffectedUnitArray": [
           "GhostSCBW"
@@ -1211,13 +926,6 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "GhostSCBWSightUpgrade",
-        "EditorCategories": "Race:Terran,UpgradeType:Talents",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "DataCollection": "GhostSCBWSightUpgrade",
         "id": "GhostSCBWSightUpgrade",
         "EffectArrayTemplate": [
@@ -1226,6 +934,7 @@
             "Value": "2"
           }
         ],
+        "EditorCategories": "Race:Terran,UpgradeType:Talents",
         "Icon": "btn-upgrade-terran-ocularimplants@scbw",
         "ScoreAmount": 200,
         "ScoreResult": "BuildOrder",
@@ -1251,13 +960,6 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "GhostSCBWEnergyUpgrade",
-        "EditorCategories": "Race:Terran,UpgradeType:Talents",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "DataCollection": "GhostSCBWEnergyUpgrade",
         "id": "GhostSCBWEnergyUpgrade",
         "EffectArrayTemplate": [
@@ -1274,6 +976,7 @@
         "Race": "Terr",
         "ScoreAmount": 300,
         "ScoreResult": "BuildOrder",
+        "EditorCategories": "Race:Terran,UpgradeType:Talents",
         "AffectedUnitArray": [
           "GhostSCBW"
         ]
@@ -1295,19 +998,13 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "ScienceVesselSCBWEMPShockwaveResearch",
-        "EditorCategories": "Race:Terran,UpgradeType:SpellResearch",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "DataCollection": "ScienceVesselSCBWEMPShockwaveResearch",
         "id": "ScienceVesselSCBWEMPShockwaveResearch",
         "Icon": "btn-ability-mengsk-ghost-staticempblast",
         "Race": "Terr",
         "ScoreAmount": 400,
         "ScoreResult": "BuildOrder",
+        "EditorCategories": "Race:Terran,UpgradeType:SpellResearch",
         "AffectedUnitArray": [
           "ScienceVesselSCBW"
         ]
@@ -1329,19 +1026,13 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "ScienceVesselSCBWIrradiateResearch",
-        "EditorCategories": "Race:Terran,UpgradeType:SpellResearch",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "DataCollection": "ScienceVesselSCBWIrradiateResearch",
         "id": "ScienceVesselSCBWIrradiateResearch",
         "Icon": "btn-upgrade-swann-irradiate",
         "Race": "Terr",
         "ScoreAmount": 400,
         "ScoreResult": "BuildOrder",
+        "EditorCategories": "Race:Terran,UpgradeType:SpellResearch",
         "AffectedUnitArray": [
           "ScienceVesselSCBW"
         ]
@@ -1363,13 +1054,6 @@
         "ScoreValue": "MiscTechnologyValue",
         "WebPriority": 1,
         "LeaderAlias": "ScienceVesselSCBWEnergyUpgrade",
-        "EditorCategories": "Race:Terran,UpgradeType:Talents",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "DataCollection": "ScienceVesselSCBWEnergyUpgrade",
         "id": "ScienceVesselSCBWEnergyUpgrade",
         "EffectArrayTemplate": [
@@ -1386,91 +1070,83 @@
         "Race": "Terr",
         "ScoreAmount": 300,
         "ScoreResult": "BuildOrder",
+        "EditorCategories": "Race:Terran,UpgradeType:Talents",
         "AffectedUnitArray": [
           "ScienceVesselSCBW"
         ]
       },
-      "MechPlating@Lvl1": {
+      "TerranShipPlatingSCBW@Lvl1": {
         "class": "CUpgrade",
         "Flags": {
           "UpgradeCheat": 1,
           "IgnoreInvalidReferenceInTemplate": 1
         },
         "Name": {
-          "enUS": "Vehicle and Ship Plating Level 1",
-          "zhCN": "Vehicle and Ship Plating Level 1",
-          "koKR": "Vehicle and Ship Plating Level 1"
+          "enUS": "Terran Ship Plating Level 1",
+          "zhCN": "人类舰船钢板等级1",
+          "koKR": "테란 우주선 방어력 레벨 1 /// Terran Ship Plating Level 1"
         },
         "MaxLevel": 1,
         "Alert": "UpgradeComplete",
         "ScoreCount": "ArmorTechnologyCount",
         "ScoreValue": "ArmorTechnologyValue",
-        "WebPriority": 1,
-        "LeaderAlias": "MechPlating@Lvl1",
-        "EditorCategories": "Race:Terran,UpgradeType:ArmorBonus",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
+        "WebPriority": 0,
+        "LeaderAlias": "TerranShipPlatingSCBW",
+        "Icon": "btn-upgrade-terran-shipplatinglevel1",
+        "DataCollection": "TerranShipPlatingSCBW",
+        "id": "TerranShipPlatingSCBW@Lvl1",
+        "Race": "BWTe",
+        "ScoreResult": "BuildOrder",
+        "EffectArrayTemplate": [
+          {
+            "Reference": "Unit,^ParamId^,LifeArmorLevel",
+            "Value": "1"
+          },
+          {
+            "Reference": "Unit,^ParamId^,LifeArmor",
+            "Value": "{DataCollection,^ParamId^,UpgradeInfoUnitLifeArmorPerLevel}"
+          },
+          {
+            "Operation": "Set",
+            "Reference": "Actor,^ParamId^,LifeArmorIcon",
+            "Value": "Assets\\Textures\\btn-upgrade-terran-shipplatinglevel1.dds"
           }
+        ],
+        "EditorCategories": "Race:Terran,UpgradeType:ArmorBonus",
+        "BonusResourcePerLevel": {
+          "Minerals": 75,
+          "Vespene": 75
         },
         "ScoreAmount": 300,
         "LeaderLevel": 1,
-        "Icon": "btn-upgrade-terran-vehicleplatinglevel1",
-        "Race": "Terr",
+        "icon": "Assets\\Textures\\btn-upgrade-terran-shipplatinglevel1.dds",
+        "$Phase": [
+          "TerranShipPlatingSCBW@Lvl2",
+          "TerranShipPlatingSCBW@Lvl3"
+        ]
+      },
+      "TerranShipPlatingSCBW@Lvl2": {
+        "class": "CUpgrade",
+        "Flags": {
+          "UpgradeCheat": 1,
+          "IgnoreInvalidReferenceInTemplate": 1
+        },
+        "Name": {
+          "enUS": "Terran Ship Plating Level 2",
+          "zhCN": "人类舰船钢板等级2",
+          "koKR": "테란 우주선 방어력 레벨 2 /// Terran Ship Plating Level 2"
+        },
+        "MaxLevel": 1,
+        "Alert": "UpgradeComplete",
+        "ScoreCount": "ArmorTechnologyCount",
+        "ScoreValue": "ArmorTechnologyValue",
+        "WebPriority": 0,
+        "LeaderAlias": "TerranShipPlatingSCBW",
+        "Icon": "btn-upgrade-terran-shipplatinglevel2",
+        "DataCollection": "TerranShipPlatingSCBW",
+        "id": "TerranShipPlatingSCBW@Lvl2",
+        "Race": "BWTe",
         "ScoreResult": "BuildOrder",
-        "EffectArray": [
-          {
-            "Operation": "Set",
-            "Reference": "Actor,DropshipSCBW,LifeArmorIcon",
-            "Value": "Assets\\Textures\\btn-upgrade-terran-shipplatinglevel1.dds"
-          },
-          {
-            "Operation": "Set",
-            "Reference": "Actor,WraithSCBW,LifeArmorIcon",
-            "Value": "Assets\\Textures\\btn-upgrade-terran-shipplatinglevel1.dds"
-          },
-          {
-            "Operation": "Set",
-            "Reference": "Actor,ValkyrieSCBW,LifeArmorIcon",
-            "Value": "Assets\\Textures\\btn-upgrade-terran-shipplatinglevel1.dds"
-          },
-          {
-            "Operation": "Set",
-            "Reference": "Actor,ScienceVesselSCBW,LifeArmorIcon",
-            "Value": "Assets\\Textures\\btn-upgrade-terran-shipplatinglevel1.dds"
-          },
-          {
-            "Operation": "Set",
-            "Reference": "Actor,BattlecruiserSCBW,LifeArmorIcon",
-            "Value": "Assets\\Textures\\btn-upgrade-terran-shipplatinglevel1.dds"
-          },
-          {
-            "Operation": "Set",
-            "Reference": "Actor,VultureSCBW,LifeArmorIcon",
-            "Value": "Assets\\Textures\\btn-upgrade-terran-vehicleplatinglevel1.dds"
-          },
-          {
-            "Operation": "Set",
-            "Reference": "Actor,SiegeTankSCBW,LifeArmorIcon",
-            "Value": "Assets\\Textures\\btn-upgrade-terran-vehicleplatinglevel1.dds"
-          },
-          {
-            "Operation": "Set",
-            "Reference": "Actor,SiegeTankSCBWSieged,LifeArmorIcon",
-            "Value": "Assets\\Textures\\btn-upgrade-terran-vehicleplatinglevel1.dds"
-          },
-          {
-            "Operation": "Set",
-            "Reference": "Actor,GoliathSCBW,LifeArmorIcon",
-            "Value": "Assets\\Textures\\btn-upgrade-terran-vehicleplatinglevel1.dds"
-          },
-          {
-            "Operation": "Set",
-            "Reference": "Actor,StingerSCBW,LifeArmorIcon",
-            "Value": "Assets\\Textures\\btn-upgrade-terran-vehicleplatinglevel1.dds"
-          }
-        ],
         "EffectArrayTemplate": [
           {
             "Reference": "Unit,^ParamId^,LifeArmorLevel",
@@ -1479,207 +1155,45 @@
           {
             "Reference": "Unit,^ParamId^,LifeArmor",
             "Value": "{DataCollection,^ParamId^,UpgradeInfoUnitLifeArmorPerLevel}"
+          },
+          {
+            "Operation": "Set",
+            "Reference": "Actor,^ParamId^,LifeArmorIcon",
+            "Value": "Assets\\Textures\\btn-upgrade-terran-shipplatinglevel2.dds"
           }
         ],
-        "DataCollection": "MechPlating",
+        "EditorCategories": "Race:Terran,UpgradeType:ArmorBonus",
         "BonusResourcePerLevel": {
           "Minerals": 75,
           "Vespene": 75
-        },
-        "otherIcon": [
-          "Assets\\Textures\\btn-upgrade-terran-shipplatinglevel1.dds"
-        ],
-        "id": "MechPlating@Lvl1",
-        "icon": "Assets\\Textures\\btn-upgrade-terran-vehicleplatinglevel1.dds",
-        "$Phase": [
-          "MechPlating@Lvl2",
-          "MechPlating@Lvl3"
-        ]
-      },
-      "MechPlating@Lvl2": {
-        "class": "CUpgrade",
-        "Flags": {
-          "UpgradeCheat": 1,
-          "IgnoreInvalidReferenceInTemplate": 1
-        },
-        "Name": {
-          "enUS": "Vehicle and Ship Plating Level 2",
-          "zhCN": "Vehicle and Ship Plating Level 2",
-          "koKR": "Vehicle and Ship Plating Level 2"
-        },
-        "MaxLevel": 1,
-        "Alert": "UpgradeComplete",
-        "ScoreCount": "ArmorTechnologyCount",
-        "ScoreValue": "ArmorTechnologyValue",
-        "WebPriority": 1,
-        "LeaderAlias": "MechPlating@Lvl2",
-        "EditorCategories": "Race:Terran,UpgradeType:ArmorBonus",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
         },
         "ScoreAmount": 450,
         "LeaderLevel": 2,
-        "Icon": "btn-upgrade-terran-vehicleplatinglevel2",
-        "Race": "Terr",
-        "ScoreResult": "BuildOrder",
-        "EffectArray": [
-          {
-            "Operation": "Set",
-            "Reference": "Actor,DropshipSCBW,LifeArmorIcon",
-            "Value": "Assets\\Textures\\btn-upgrade-terran-shipplatinglevel2.dds"
-          },
-          {
-            "Operation": "Set",
-            "Reference": "Actor,WraithSCBW,LifeArmorIcon",
-            "Value": "Assets\\Textures\\btn-upgrade-terran-shipplatinglevel2.dds"
-          },
-          {
-            "Operation": "Set",
-            "Reference": "Actor,ValkyrieSCBW,LifeArmorIcon",
-            "Value": "Assets\\Textures\\btn-upgrade-terran-shipplatinglevel2.dds"
-          },
-          {
-            "Operation": "Set",
-            "Reference": "Actor,ScienceVesselSCBW,LifeArmorIcon",
-            "Value": "Assets\\Textures\\btn-upgrade-terran-shipplatinglevel2.dds"
-          },
-          {
-            "Operation": "Set",
-            "Reference": "Actor,BattlecruiserSCBW,LifeArmorIcon",
-            "Value": "Assets\\Textures\\btn-upgrade-terran-shipplatinglevel2.dds"
-          },
-          {
-            "Operation": "Set",
-            "Reference": "Actor,VultureSCBW,LifeArmorIcon",
-            "Value": "Assets\\Textures\\btn-upgrade-terran-vehicleplatinglevel2.dds"
-          },
-          {
-            "Operation": "Set",
-            "Reference": "Actor,SiegeTankSCBW,LifeArmorIcon",
-            "Value": "Assets\\Textures\\btn-upgrade-terran-vehicleplatinglevel2.dds"
-          },
-          {
-            "Operation": "Set",
-            "Reference": "Actor,SiegeTankSCBWSieged,LifeArmorIcon",
-            "Value": "Assets\\Textures\\btn-upgrade-terran-vehicleplatinglevel2.dds"
-          },
-          {
-            "Operation": "Set",
-            "Reference": "Actor,GoliathSCBW,LifeArmorIcon",
-            "Value": "Assets\\Textures\\btn-upgrade-terran-vehicleplatinglevel2.dds"
-          },
-          {
-            "Operation": "Set",
-            "Reference": "Actor,StingerSCBW,LifeArmorIcon",
-            "Value": "Assets\\Textures\\btn-upgrade-terran-vehicleplatinglevel2.dds"
-          }
-        ],
-        "EffectArrayTemplate": [
-          {
-            "Reference": "Unit,^ParamId^,LifeArmorLevel",
-            "Value": "1"
-          },
-          {
-            "Reference": "Unit,^ParamId^,LifeArmor",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoUnitLifeArmorPerLevel}"
-          }
-        ],
-        "DataCollection": "MechPlating",
-        "BonusResourcePerLevel": {
-          "Minerals": 75,
-          "Vespene": 75
-        },
-        "otherIcon": [
-          "Assets\\Textures\\btn-upgrade-terran-shipplatinglevel2.dds"
-        ],
-        "id": "MechPlating@Lvl2",
-        "icon": "Assets\\Textures\\btn-upgrade-terran-vehicleplatinglevel2.dds",
-        "$Phased": "MechPlating@Lvl1"
+        "icon": "Assets\\Textures\\btn-upgrade-terran-shipplatinglevel2.dds",
+        "$Phased": "TerranShipPlatingSCBW@Lvl1"
       },
-      "MechPlating@Lvl3": {
+      "TerranShipPlatingSCBW@Lvl3": {
         "class": "CUpgrade",
         "Flags": {
           "UpgradeCheat": 1,
           "IgnoreInvalidReferenceInTemplate": 1
         },
         "Name": {
-          "enUS": "Vehicle and Ship Plating Level 3",
-          "zhCN": "Vehicle and Ship Plating Level 3",
-          "koKR": "Vehicle and Ship Plating Level 3"
+          "enUS": "Terran Ship Plating Level 3",
+          "zhCN": "人类舰船钢板等级3",
+          "koKR": "테란 우주선 방어력 레벨 3 /// Terran Ship Plating Level 3"
         },
         "MaxLevel": 1,
         "Alert": "UpgradeComplete",
         "ScoreCount": "ArmorTechnologyCount",
         "ScoreValue": "ArmorTechnologyValue",
-        "WebPriority": 1,
-        "LeaderAlias": "MechPlating@Lvl3",
-        "EditorCategories": "Race:Terran,UpgradeType:ArmorBonus",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
-        "ScoreAmount": 600,
-        "LeaderLevel": 3,
-        "Icon": "btn-upgrade-terran-vehicleplatinglevel3",
-        "Race": "Terr",
+        "WebPriority": 0,
+        "LeaderAlias": "TerranShipPlatingSCBW",
+        "Icon": "btn-upgrade-terran-shipplatinglevel3",
+        "DataCollection": "TerranShipPlatingSCBW",
+        "id": "TerranShipPlatingSCBW@Lvl3",
+        "Race": "BWTe",
         "ScoreResult": "BuildOrder",
-        "EffectArray": [
-          {
-            "Operation": "Set",
-            "Reference": "Actor,DropshipSCBW,LifeArmorIcon",
-            "Value": "Assets\\Textures\\btn-upgrade-terran-shipplatinglevel3.dds"
-          },
-          {
-            "Operation": "Set",
-            "Reference": "Actor,WraithSCBW,LifeArmorIcon",
-            "Value": "Assets\\Textures\\btn-upgrade-terran-shipplatinglevel3.dds"
-          },
-          {
-            "Operation": "Set",
-            "Reference": "Actor,ValkyrieSCBW,LifeArmorIcon",
-            "Value": "Assets\\Textures\\btn-upgrade-terran-shipplatinglevel3.dds"
-          },
-          {
-            "Operation": "Set",
-            "Reference": "Actor,ScienceVesselSCBW,LifeArmorIcon",
-            "Value": "Assets\\Textures\\btn-upgrade-terran-shipplatinglevel3.dds"
-          },
-          {
-            "Operation": "Set",
-            "Reference": "Actor,BattlecruiserSCBW,LifeArmorIcon",
-            "Value": "Assets\\Textures\\btn-upgrade-terran-shipplatinglevel3.dds"
-          },
-          {
-            "Operation": "Set",
-            "Reference": "Actor,VultureSCBW,LifeArmorIcon",
-            "Value": "Assets\\Textures\\btn-upgrade-terran-vehicleplatinglevel3.dds"
-          },
-          {
-            "Operation": "Set",
-            "Reference": "Actor,SiegeTankSCBW,LifeArmorIcon",
-            "Value": "Assets\\Textures\\btn-upgrade-terran-vehicleplatinglevel3.dds"
-          },
-          {
-            "Operation": "Set",
-            "Reference": "Actor,SiegeTankSCBWSieged,LifeArmorIcon",
-            "Value": "Assets\\Textures\\btn-upgrade-terran-vehicleplatinglevel3.dds"
-          },
-          {
-            "Operation": "Set",
-            "Reference": "Actor,GoliathSCBW,LifeArmorIcon",
-            "Value": "Assets\\Textures\\btn-upgrade-terran-vehicleplatinglevel3.dds"
-          },
-          {
-            "Operation": "Set",
-            "Reference": "Actor,StingerSCBW,LifeArmorIcon",
-            "Value": "Assets\\Textures\\btn-upgrade-terran-vehicleplatinglevel3.dds"
-          }
-        ],
         "EffectArrayTemplate": [
           {
             "Reference": "Unit,^ParamId^,LifeArmorLevel",
@@ -1688,19 +1202,22 @@
           {
             "Reference": "Unit,^ParamId^,LifeArmor",
             "Value": "{DataCollection,^ParamId^,UpgradeInfoUnitLifeArmorPerLevel}"
+          },
+          {
+            "Operation": "Set",
+            "Reference": "Actor,^ParamId^,LifeArmorIcon",
+            "Value": "Assets\\Textures\\btn-upgrade-terran-shipplatinglevel3.dds"
           }
         ],
-        "DataCollection": "MechPlating",
+        "EditorCategories": "Race:Terran,UpgradeType:ArmorBonus",
         "BonusResourcePerLevel": {
           "Minerals": 75,
           "Vespene": 75
         },
-        "otherIcon": [
-          "Assets\\Textures\\btn-upgrade-terran-shipplatinglevel3.dds"
-        ],
-        "id": "MechPlating@Lvl3",
-        "icon": "Assets\\Textures\\btn-upgrade-terran-vehicleplatinglevel3.dds",
-        "$Phased": "MechPlating@Lvl1"
+        "ScoreAmount": 600,
+        "LeaderLevel": 3,
+        "icon": "Assets\\Textures\\btn-upgrade-terran-shipplatinglevel3.dds",
+        "$Phased": "TerranShipPlatingSCBW@Lvl1"
       },
       "TerranShipWeaponsSCBW@Lvl1": {
         "class": "CUpgrade",
@@ -1719,13 +1236,6 @@
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "TerranShipWeaponsSCBW",
-        "EditorCategories": "Race:Terran,UpgradeType:AttackBonus",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "Icon": "btn-upgrade-terran-shipweaponslevel1",
         "DataCollection": "TerranShipWeaponsSCBW",
         "id": "TerranShipWeaponsSCBW@Lvl1",
@@ -1743,7 +1253,7 @@
           },
           {
             "Reference": "Effect,^ParamId^Weapon@DamageExpl,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
+            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice*0.75}"
           },
           {
             "Reference": "Accumulator,^ParamId^Weapon@Damage,Amount",
@@ -1764,7 +1274,7 @@
           },
           {
             "Reference": "Effect,^ParamId^WeaponGround@DamageExpl,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
+            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice*0.75}"
           },
           {
             "Reference": "Accumulator,^ParamId^WeaponGround@Damage,Amount",
@@ -1785,7 +1295,7 @@
           },
           {
             "Reference": "Effect,^ParamId^WeaponAir@DamageExpl,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[1].DamagePerDice}"
+            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[1].DamagePerDice*0.75}"
           },
           {
             "Reference": "Accumulator,^ParamId^WeaponAir@Damage,Amount",
@@ -1795,47 +1305,14 @@
             "Operation": "Set",
             "Reference": "Weapon,^ParamId^WeaponAir,Icon",
             "Value": "Assets\\Textures\\btn-upgrade-terran-shipweaponslevel1.dds"
-          },
-          {
-            "Reference": "Effect,^ParamId^Weapon@DamageAccum,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
-          },
-          {
-            "Reference": "Effect,^ParamId^WeaponGround@DamageAccum,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
-          },
-          {
-            "Reference": "Effect,^ParamId^WeaponAir@DamageAccum,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[1].DamagePerDice}"
-          },
-          {
-            "Reference": "Effect,^ParamId^Weapon@DamageExpl,AttributeBonus[Armored]",
-            "Value": "1"
-          },
-          {
-            "Reference": "Effect,^ParamId^WeaponGround@DamageExpl,AttributeBonus[Armored]",
-            "Value": "1"
-          },
-          {
-            "Reference": "Effect,^ParamId^WeaponAir@DamageExpl,AttributeBonus[Armored]",
-            "Value": "1"
           }
         ],
+        "EditorCategories": "Race:Terran,UpgradeType:AttackBonus",
         "BonusResourcePerLevel": {
           "Minerals": 50,
           "Vespene": 50
         },
         "LeaderLevel": 1,
-        "EffectArray": [
-          {
-            "Reference": "Effect,WraithSCBWWeaponAir@DamageAccum,AttributeBonus[Armored]",
-            "Value": "1"
-          },
-          {
-            "Reference": "Effect,ValkyrieSCBWWeapon@DamageAccum,AttributeBonus[Armored]",
-            "Value": "1"
-          }
-        ],
         "icon": "Assets\\Textures\\btn-upgrade-terran-shipweaponslevel1.dds",
         "$Phase": [
           "TerranShipWeaponsSCBW@Lvl2",
@@ -1859,13 +1336,6 @@
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "TerranShipWeaponsSCBW",
-        "EditorCategories": "Race:Terran,UpgradeType:AttackBonus",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "Icon": "btn-upgrade-terran-shipweaponslevel2",
         "DataCollection": "TerranShipWeaponsSCBW",
         "id": "TerranShipWeaponsSCBW@Lvl2",
@@ -1883,7 +1353,7 @@
           },
           {
             "Reference": "Effect,^ParamId^Weapon@DamageExpl,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
+            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice*0.75}"
           },
           {
             "Reference": "Accumulator,^ParamId^Weapon@Damage,Amount",
@@ -1904,7 +1374,7 @@
           },
           {
             "Reference": "Effect,^ParamId^WeaponGround@DamageExpl,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
+            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice*0.75}"
           },
           {
             "Reference": "Accumulator,^ParamId^WeaponGround@Damage,Amount",
@@ -1925,7 +1395,7 @@
           },
           {
             "Reference": "Effect,^ParamId^WeaponAir@DamageExpl,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[1].DamagePerDice}"
+            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[1].DamagePerDice*0.75}"
           },
           {
             "Reference": "Accumulator,^ParamId^WeaponAir@Damage,Amount",
@@ -1935,47 +1405,14 @@
             "Operation": "Set",
             "Reference": "Weapon,^ParamId^WeaponAir,Icon",
             "Value": "Assets\\Textures\\btn-upgrade-terran-shipweaponslevel2.dds"
-          },
-          {
-            "Reference": "Effect,^ParamId^Weapon@DamageAccum,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
-          },
-          {
-            "Reference": "Effect,^ParamId^WeaponGround@DamageAccum,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
-          },
-          {
-            "Reference": "Effect,^ParamId^WeaponAir@DamageAccum,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[1].DamagePerDice}"
-          },
-          {
-            "Reference": "Effect,^ParamId^Weapon@DamageExpl,AttributeBonus[Armored]",
-            "Value": "1"
-          },
-          {
-            "Reference": "Effect,^ParamId^WeaponGround@DamageExpl,AttributeBonus[Armored]",
-            "Value": "1"
-          },
-          {
-            "Reference": "Effect,^ParamId^WeaponAir@DamageExpl,AttributeBonus[Armored]",
-            "Value": "1"
           }
         ],
+        "EditorCategories": "Race:Terran,UpgradeType:AttackBonus",
         "BonusResourcePerLevel": {
           "Minerals": 50,
           "Vespene": 50
         },
         "LeaderLevel": 2,
-        "EffectArray": [
-          {
-            "Reference": "Effect,WraithSCBWWeaponAir@DamageAccum,AttributeBonus[Armored]",
-            "Value": "1"
-          },
-          {
-            "Reference": "Effect,ValkyrieSCBWWeapon@DamageAccum,AttributeBonus[Armored]",
-            "Value": "1"
-          }
-        ],
         "icon": "Assets\\Textures\\btn-upgrade-terran-shipweaponslevel2.dds",
         "$Phased": "TerranShipWeaponsSCBW@Lvl1"
       },
@@ -1996,13 +1433,6 @@
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "TerranShipWeaponsSCBW",
-        "EditorCategories": "Race:Terran,UpgradeType:AttackBonus",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "Icon": "btn-upgrade-terran-shipweaponslevel3",
         "DataCollection": "TerranShipWeaponsSCBW",
         "id": "TerranShipWeaponsSCBW@Lvl3",
@@ -2020,7 +1450,7 @@
           },
           {
             "Reference": "Effect,^ParamId^Weapon@DamageExpl,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
+            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice*0.75}"
           },
           {
             "Reference": "Accumulator,^ParamId^Weapon@Damage,Amount",
@@ -2041,7 +1471,7 @@
           },
           {
             "Reference": "Effect,^ParamId^WeaponGround@DamageExpl,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
+            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice*0.75}"
           },
           {
             "Reference": "Accumulator,^ParamId^WeaponGround@Damage,Amount",
@@ -2062,7 +1492,7 @@
           },
           {
             "Reference": "Effect,^ParamId^WeaponAir@DamageExpl,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[1].DamagePerDice}"
+            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[1].DamagePerDice*0.75}"
           },
           {
             "Reference": "Accumulator,^ParamId^WeaponAir@Damage,Amount",
@@ -2072,49 +1502,160 @@
             "Operation": "Set",
             "Reference": "Weapon,^ParamId^WeaponAir,Icon",
             "Value": "Assets\\Textures\\btn-upgrade-terran-shipweaponslevel3.dds"
-          },
-          {
-            "Reference": "Effect,^ParamId^Weapon@DamageAccum,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
-          },
-          {
-            "Reference": "Effect,^ParamId^WeaponGround@DamageAccum,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
-          },
-          {
-            "Reference": "Effect,^ParamId^WeaponAir@DamageAccum,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[1].DamagePerDice}"
-          },
-          {
-            "Reference": "Effect,^ParamId^Weapon@DamageExpl,AttributeBonus[Armored]",
-            "Value": "1"
-          },
-          {
-            "Reference": "Effect,^ParamId^WeaponGround@DamageExpl,AttributeBonus[Armored]",
-            "Value": "1"
-          },
-          {
-            "Reference": "Effect,^ParamId^WeaponAir@DamageExpl,AttributeBonus[Armored]",
-            "Value": "1"
           }
         ],
+        "EditorCategories": "Race:Terran,UpgradeType:AttackBonus",
         "BonusResourcePerLevel": {
           "Minerals": 50,
           "Vespene": 50
         },
         "LeaderLevel": 3,
-        "EffectArray": [
+        "icon": "Assets\\Textures\\btn-upgrade-terran-shipweaponslevel3.dds",
+        "$Phased": "TerranShipWeaponsSCBW@Lvl1"
+      },
+      "TerranVehiclePlatingSCBW@Lvl1": {
+        "class": "CUpgrade",
+        "Flags": {
+          "UpgradeCheat": 1,
+          "IgnoreInvalidReferenceInTemplate": 1
+        },
+        "Name": {
+          "enUS": "Terran Vehicle Plating Level 1",
+          "zhCN": "人类战车钢板等级1",
+          "koKR": "테란 차량 방어력 레벨 1 /// Terran Vehicle Plating Level 1"
+        },
+        "MaxLevel": 1,
+        "Alert": "UpgradeComplete",
+        "ScoreCount": "ArmorTechnologyCount",
+        "ScoreValue": "ArmorTechnologyValue",
+        "WebPriority": 0,
+        "LeaderAlias": "TerranVehiclePlatingSCBW",
+        "Icon": "btn-upgrade-terran-vehicleplatinglevel1",
+        "DataCollection": "TerranVehiclePlatingSCBW",
+        "id": "TerranVehiclePlatingSCBW@Lvl1",
+        "Race": "BWTe",
+        "ScoreResult": "BuildOrder",
+        "EffectArrayTemplate": [
           {
-            "Reference": "Effect,WraithSCBWWeaponAir@DamageAccum,AttributeBonus[Armored]",
+            "Reference": "Unit,^ParamId^,LifeArmorLevel",
             "Value": "1"
           },
           {
-            "Reference": "Effect,ValkyrieSCBWWeapon@DamageAccum,AttributeBonus[Armored]",
-            "Value": "1"
+            "Reference": "Unit,^ParamId^,LifeArmor",
+            "Value": "{DataCollection,^ParamId^,UpgradeInfoUnitLifeArmorPerLevel}"
+          },
+          {
+            "Operation": "Set",
+            "Reference": "Actor,^ParamId^,LifeArmorIcon",
+            "Value": "Assets\\Textures\\btn-upgrade-terran-vehicleplatinglevel1.dds"
           }
         ],
-        "icon": "Assets\\Textures\\btn-upgrade-terran-shipweaponslevel3.dds",
-        "$Phased": "TerranShipWeaponsSCBW@Lvl1"
+        "EditorCategories": "Race:Terran,UpgradeType:ArmorBonus",
+        "BonusResourcePerLevel": {
+          "Minerals": 75,
+          "Vespene": 100
+        },
+        "ScoreAmount": 200,
+        "LeaderLevel": 1,
+        "icon": "Assets\\Textures\\btn-upgrade-terran-vehicleplatinglevel1.dds",
+        "$Phase": [
+          "TerranVehiclePlatingSCBW@Lvl2",
+          "TerranVehiclePlatingSCBW@Lvl3"
+        ]
+      },
+      "TerranVehiclePlatingSCBW@Lvl2": {
+        "class": "CUpgrade",
+        "Flags": {
+          "UpgradeCheat": 1,
+          "IgnoreInvalidReferenceInTemplate": 1
+        },
+        "Name": {
+          "enUS": "Terran Vehicle Plating Level 2",
+          "zhCN": "人类战车钢板等级2",
+          "koKR": "테란 차량 방어력 레벨 2 /// Terran Vehicle Plating Level 2"
+        },
+        "MaxLevel": 1,
+        "Alert": "UpgradeComplete",
+        "ScoreCount": "ArmorTechnologyCount",
+        "ScoreValue": "ArmorTechnologyValue",
+        "WebPriority": 0,
+        "LeaderAlias": "TerranVehiclePlatingSCBW",
+        "Icon": "btn-upgrade-terran-vehicleplatinglevel2",
+        "DataCollection": "TerranVehiclePlatingSCBW",
+        "id": "TerranVehiclePlatingSCBW@Lvl2",
+        "Race": "BWTe",
+        "ScoreResult": "BuildOrder",
+        "EffectArrayTemplate": [
+          {
+            "Reference": "Unit,^ParamId^,LifeArmorLevel",
+            "Value": "1"
+          },
+          {
+            "Reference": "Unit,^ParamId^,LifeArmor",
+            "Value": "{DataCollection,^ParamId^,UpgradeInfoUnitLifeArmorPerLevel}"
+          },
+          {
+            "Operation": "Set",
+            "Reference": "Actor,^ParamId^,LifeArmorIcon",
+            "Value": "Assets\\Textures\\btn-upgrade-terran-vehicleplatinglevel2.dds"
+          }
+        ],
+        "EditorCategories": "Race:Terran,UpgradeType:ArmorBonus",
+        "BonusResourcePerLevel": {
+          "Minerals": 75,
+          "Vespene": 100
+        },
+        "ScoreAmount": 350,
+        "LeaderLevel": 2,
+        "icon": "Assets\\Textures\\btn-upgrade-terran-vehicleplatinglevel2.dds",
+        "$Phased": "TerranVehiclePlatingSCBW@Lvl1"
+      },
+      "TerranVehiclePlatingSCBW@Lvl3": {
+        "class": "CUpgrade",
+        "Flags": {
+          "UpgradeCheat": 1,
+          "IgnoreInvalidReferenceInTemplate": 1
+        },
+        "Name": {
+          "enUS": "Terran Vehicle Plating Level 3",
+          "zhCN": "人类战车钢板等级3",
+          "koKR": "테란 차량 방어력 레벨 3 /// Terran Vehicle Plating Level 3"
+        },
+        "MaxLevel": 1,
+        "Alert": "UpgradeComplete",
+        "ScoreCount": "ArmorTechnologyCount",
+        "ScoreValue": "ArmorTechnologyValue",
+        "WebPriority": 0,
+        "LeaderAlias": "TerranVehiclePlatingSCBW",
+        "Icon": "btn-upgrade-terran-vehicleplatinglevel3",
+        "DataCollection": "TerranVehiclePlatingSCBW",
+        "id": "TerranVehiclePlatingSCBW@Lvl3",
+        "Race": "BWTe",
+        "ScoreResult": "BuildOrder",
+        "EffectArrayTemplate": [
+          {
+            "Reference": "Unit,^ParamId^,LifeArmorLevel",
+            "Value": "1"
+          },
+          {
+            "Reference": "Unit,^ParamId^,LifeArmor",
+            "Value": "{DataCollection,^ParamId^,UpgradeInfoUnitLifeArmorPerLevel}"
+          },
+          {
+            "Operation": "Set",
+            "Reference": "Actor,^ParamId^,LifeArmorIcon",
+            "Value": "Assets\\Textures\\btn-upgrade-terran-vehicleplatinglevel3.dds"
+          }
+        ],
+        "EditorCategories": "Race:Terran,UpgradeType:ArmorBonus",
+        "BonusResourcePerLevel": {
+          "Minerals": 75,
+          "Vespene": 100
+        },
+        "ScoreAmount": 500,
+        "LeaderLevel": 3,
+        "icon": "Assets\\Textures\\btn-upgrade-terran-vehicleplatinglevel3.dds",
+        "$Phased": "TerranVehiclePlatingSCBW@Lvl1"
       },
       "TerranVehicleWeaponsSCBW@Lvl1": {
         "class": "CUpgrade",
@@ -2133,13 +1674,6 @@
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "TerranVehicleWeaponsSCBW",
-        "EditorCategories": "Race:Terran,UpgradeType:AttackBonus",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "Icon": "btn-upgrade-terran-vehicleweaponslevel1",
         "DataCollection": "TerranVehicleWeaponsSCBW",
         "id": "TerranVehicleWeaponsSCBW@Lvl1",
@@ -2157,11 +1691,11 @@
           },
           {
             "Reference": "Effect,^ParamId^Weapon@DamageExpl,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
+            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice*0.75}"
           },
           {
             "Reference": "Effect,^ParamId^Weapon@DamageConc,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
+            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice*0.5}"
           },
           {
             "Reference": "Accumulator,^ParamId^Weapon@Damage,Amount",
@@ -2182,7 +1716,7 @@
           },
           {
             "Reference": "Effect,^ParamId^WeaponGround@DamageExpl,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
+            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice*0.75}"
           },
           {
             "Reference": "Accumulator,^ParamId^WeaponGround@Damage,Amount",
@@ -2203,7 +1737,7 @@
           },
           {
             "Reference": "Effect,^ParamId^WeaponAir@DamageExpl,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[1].DamagePerDice}"
+            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[1].DamagePerDice*0.75}"
           },
           {
             "Reference": "Accumulator,^ParamId^WeaponAir@Damage,Amount",
@@ -2213,67 +1747,14 @@
             "Operation": "Set",
             "Reference": "Weapon,^ParamId^WeaponAir,Icon",
             "Value": "Assets\\Textures\\btn-upgrade-terran-vehicleweaponslevel1.dds"
-          },
-          {
-            "Reference": "Effect,^ParamId^Weapon@DamageAccum,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
-          },
-          {
-            "Reference": "Effect,^ParamId^WeaponGround@DamageAccum,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
-          },
-          {
-            "Reference": "Effect,^ParamId^WeaponAir@DamageAccum,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[1].DamagePerDice}"
-          },
-          {
-            "Reference": "Effect,^ParamId^Weapon@DamageDirect,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
-          },
-          {
-            "Reference": "Effect,^ParamId^Weapon@DamageExpl,AttributeBonus[Armored]",
-            "Value": "1"
-          },
-          {
-            "Reference": "Effect,^ParamId^Weapon@DamageConc,AttributeBonus[Light]",
-            "Value": "1"
-          },
-          {
-            "Reference": "Effect,^ParamId^WeaponGround@DamageExpl,AttributeBonus[Armored]",
-            "Value": "1"
-          },
-          {
-            "Reference": "Effect,^ParamId^WeaponAir@DamageExpl,AttributeBonus[Armored]",
-            "Value": "1"
-          },
-          {
-            "Reference": "Effect,^ParamId^Weapon@DamageDirect,AttributeBonus[Armored]",
-            "Value": "1"
           }
         ],
+        "EditorCategories": "Race:Terran,UpgradeType:AttackBonus",
         "BonusResourcePerLevel": {
           "Minerals": 75,
           "Vespene": 75
         },
         "LeaderLevel": 1,
-        "EffectArray": [
-          {
-            "Reference": "Effect,SiegeTankSCBWWeapon@DamageAccum,AttributeBonus[Armored]",
-            "Value": "1"
-          },
-          {
-            "Reference": "Effect,SiegeTankSCBWSiegedWeapon@DamageAccum,AttributeBonus[Armored]",
-            "Value": "1"
-          },
-          {
-            "Reference": "Effect,VultureSCBWWeapon@DamageAccum,AttributeBonus[Light]",
-            "Value": "1"
-          },
-          {
-            "Reference": "Effect,GoliathSCBWWeaponAir@DamageAccum,AttributeBonus[Armored]",
-            "Value": "1"
-          }
-        ],
         "icon": "Assets\\Textures\\btn-upgrade-terran-vehicleweaponslevel1.dds",
         "$Phase": [
           "TerranVehicleWeaponsSCBW@Lvl2",
@@ -2297,13 +1778,6 @@
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "TerranVehicleWeaponsSCBW",
-        "EditorCategories": "Race:Terran,UpgradeType:AttackBonus",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "Icon": "btn-upgrade-terran-vehicleweaponslevel2",
         "DataCollection": "TerranVehicleWeaponsSCBW",
         "id": "TerranVehicleWeaponsSCBW@Lvl2",
@@ -2321,11 +1795,11 @@
           },
           {
             "Reference": "Effect,^ParamId^Weapon@DamageExpl,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
+            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice*0.75}"
           },
           {
             "Reference": "Effect,^ParamId^Weapon@DamageConc,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
+            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice*0.5}"
           },
           {
             "Reference": "Accumulator,^ParamId^Weapon@Damage,Amount",
@@ -2346,7 +1820,7 @@
           },
           {
             "Reference": "Effect,^ParamId^WeaponGround@DamageExpl,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
+            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice*0.75}"
           },
           {
             "Reference": "Accumulator,^ParamId^WeaponGround@Damage,Amount",
@@ -2367,7 +1841,7 @@
           },
           {
             "Reference": "Effect,^ParamId^WeaponAir@DamageExpl,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[1].DamagePerDice}"
+            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[1].DamagePerDice*0.75}"
           },
           {
             "Reference": "Accumulator,^ParamId^WeaponAir@Damage,Amount",
@@ -2377,67 +1851,14 @@
             "Operation": "Set",
             "Reference": "Weapon,^ParamId^WeaponAir,Icon",
             "Value": "Assets\\Textures\\btn-upgrade-terran-vehicleweaponslevel2.dds"
-          },
-          {
-            "Reference": "Effect,^ParamId^Weapon@DamageAccum,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
-          },
-          {
-            "Reference": "Effect,^ParamId^WeaponGround@DamageAccum,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
-          },
-          {
-            "Reference": "Effect,^ParamId^WeaponAir@DamageAccum,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[1].DamagePerDice}"
-          },
-          {
-            "Reference": "Effect,^ParamId^Weapon@DamageDirect,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
-          },
-          {
-            "Reference": "Effect,^ParamId^Weapon@DamageExpl,AttributeBonus[Armored]",
-            "Value": "1"
-          },
-          {
-            "Reference": "Effect,^ParamId^Weapon@DamageConc,AttributeBonus[Light]",
-            "Value": "1"
-          },
-          {
-            "Reference": "Effect,^ParamId^WeaponGround@DamageExpl,AttributeBonus[Armored]",
-            "Value": "1"
-          },
-          {
-            "Reference": "Effect,^ParamId^WeaponAir@DamageExpl,AttributeBonus[Armored]",
-            "Value": "1"
-          },
-          {
-            "Reference": "Effect,^ParamId^Weapon@DamageDirect,AttributeBonus[Armored]",
-            "Value": "1"
           }
         ],
+        "EditorCategories": "Race:Terran,UpgradeType:AttackBonus",
         "BonusResourcePerLevel": {
           "Minerals": 75,
           "Vespene": 75
         },
         "LeaderLevel": 2,
-        "EffectArray": [
-          {
-            "Reference": "Effect,SiegeTankSCBWWeapon@DamageAccum,AttributeBonus[Armored]",
-            "Value": "1"
-          },
-          {
-            "Reference": "Effect,SiegeTankSCBWSiegedWeapon@DamageAccum,AttributeBonus[Armored]",
-            "Value": "1"
-          },
-          {
-            "Reference": "Effect,VultureSCBWWeapon@DamageAccum,AttributeBonus[Light]",
-            "Value": "1"
-          },
-          {
-            "Reference": "Effect,GoliathSCBWWeaponAir@DamageAccum,AttributeBonus[Armored]",
-            "Value": "1"
-          }
-        ],
         "icon": "Assets\\Textures\\btn-upgrade-terran-vehicleweaponslevel2.dds",
         "$Phased": "TerranVehicleWeaponsSCBW@Lvl1"
       },
@@ -2458,13 +1879,6 @@
         "ScoreValue": "WeaponTechnologyValue",
         "WebPriority": 0,
         "LeaderAlias": "TerranVehicleWeaponsSCBW",
-        "EditorCategories": "Race:Terran,UpgradeType:AttackBonus",
-        "$tokens": {
-          "ID": {
-            "type": "string",
-            "value": ""
-          }
-        },
         "Icon": "btn-upgrade-terran-vehicleweaponslevel3",
         "DataCollection": "TerranVehicleWeaponsSCBW",
         "id": "TerranVehicleWeaponsSCBW@Lvl3",
@@ -2482,11 +1896,11 @@
           },
           {
             "Reference": "Effect,^ParamId^Weapon@DamageExpl,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
+            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice*0.75}"
           },
           {
             "Reference": "Effect,^ParamId^Weapon@DamageConc,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
+            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice*0.5}"
           },
           {
             "Reference": "Accumulator,^ParamId^Weapon@Damage,Amount",
@@ -2507,7 +1921,7 @@
           },
           {
             "Reference": "Effect,^ParamId^WeaponGround@DamageExpl,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
+            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice*0.75}"
           },
           {
             "Reference": "Accumulator,^ParamId^WeaponGround@Damage,Amount",
@@ -2528,7 +1942,7 @@
           },
           {
             "Reference": "Effect,^ParamId^WeaponAir@DamageExpl,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[1].DamagePerDice}"
+            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[1].DamagePerDice*0.75}"
           },
           {
             "Reference": "Accumulator,^ParamId^WeaponAir@Damage,Amount",
@@ -2538,67 +1952,14 @@
             "Operation": "Set",
             "Reference": "Weapon,^ParamId^WeaponAir,Icon",
             "Value": "Assets\\Textures\\btn-upgrade-terran-vehicleweaponslevel3.dds"
-          },
-          {
-            "Reference": "Effect,^ParamId^Weapon@DamageAccum,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
-          },
-          {
-            "Reference": "Effect,^ParamId^WeaponGround@DamageAccum,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
-          },
-          {
-            "Reference": "Effect,^ParamId^WeaponAir@DamageAccum,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[1].DamagePerDice}"
-          },
-          {
-            "Reference": "Effect,^ParamId^Weapon@DamageDirect,Amount",
-            "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
-          },
-          {
-            "Reference": "Effect,^ParamId^Weapon@DamageExpl,AttributeBonus[Armored]",
-            "Value": "1"
-          },
-          {
-            "Reference": "Effect,^ParamId^Weapon@DamageConc,AttributeBonus[Light]",
-            "Value": "1"
-          },
-          {
-            "Reference": "Effect,^ParamId^WeaponGround@DamageExpl,AttributeBonus[Armored]",
-            "Value": "1"
-          },
-          {
-            "Reference": "Effect,^ParamId^WeaponAir@DamageExpl,AttributeBonus[Armored]",
-            "Value": "1"
-          },
-          {
-            "Reference": "Effect,^ParamId^Weapon@DamageDirect,AttributeBonus[Armored]",
-            "Value": "1"
           }
         ],
+        "EditorCategories": "Race:Terran,UpgradeType:AttackBonus",
         "BonusResourcePerLevel": {
           "Minerals": 75,
           "Vespene": 75
         },
         "LeaderLevel": 3,
-        "EffectArray": [
-          {
-            "Reference": "Effect,SiegeTankSCBWWeapon@DamageAccum,AttributeBonus[Armored]",
-            "Value": "1"
-          },
-          {
-            "Reference": "Effect,SiegeTankSCBWSiegedWeapon@DamageAccum,AttributeBonus[Armored]",
-            "Value": "1"
-          },
-          {
-            "Reference": "Effect,VultureSCBWWeapon@DamageAccum,AttributeBonus[Light]",
-            "Value": "1"
-          },
-          {
-            "Reference": "Effect,GoliathSCBWWeaponAir@DamageAccum,AttributeBonus[Armored]",
-            "Value": "1"
-          }
-        ],
         "icon": "Assets\\Textures\\btn-upgrade-terran-vehicleweaponslevel3.dds",
         "$Phased": "TerranVehicleWeaponsSCBW@Lvl1"
       }
@@ -2621,7 +1982,7 @@
         "LifeArmor": 1,
         "Food": 15,
         "CostResource": {
-          "Minerals": 350
+          "Minerals": 400
         },
         "Production": [
           "SCVSCBW",
@@ -2636,8 +1997,7 @@
         "LifeArmorIcon": "btn-upgrade-terran-buildingarmor",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Terran Building Plating",
-          "ruRU": "Terran Building Plating"
+          "enUS": "Terran Building Plating"
         },
         "priority": 30
       },
@@ -2658,7 +2018,7 @@
         "LifeArmor": 1,
         "Food": 15,
         "CostResource": {
-          "Minerals": 350
+          "Minerals": 400
         },
         "Production": [
           "ComsatStationSCBW",
@@ -2673,8 +2033,7 @@
         "LifeArmorIcon": "btn-upgrade-terran-buildingarmor",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Terran Building Plating",
-          "ruRU": "Terran Building Plating"
+          "enUS": "Terran Building Plating"
         }
       },
       "ComsatStationSCBW": {
@@ -2703,8 +2062,7 @@
         "LifeArmorIcon": "btn-upgrade-terran-buildingarmor",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Terran Building Plating",
-          "ruRU": "Terran Building Plating"
+          "enUS": "Terran Building Plating"
         },
         "priority": 337
       },
@@ -2736,8 +2094,7 @@
         "LifeArmorIcon": "btn-upgrade-terran-buildingarmor",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Terran Building Plating",
-          "ruRU": "Terran Building Plating"
+          "enUS": "Terran Building Plating"
         },
         "priority": 337
       },
@@ -2754,7 +2111,7 @@
           "zhCN": "基础工作单位。用于采集资源、建造人类建筑和修理。<br/><br/><span style=\"color: #ffff8a\">可以对地。</span>",
           "koKR": "기본 일꾼 유닛입니다. 자원을 채취하고, 테란 구조물을 건설하며, 구조물과 유닛을 수리할 수 있습니다.<br/><br/><span style=\"color: #ffff8a\">지상 유닛 공격 가능</span> /// Basic worker unit. Can gather resources, build Terran structures, and repair.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>"
         },
-        "LifeMax": 45,
+        "LifeMax": 60,
         "Food": -1,
         "CostResource": {
           "Minerals": 50
@@ -2780,8 +2137,7 @@
         "LifeArmorIcon": "btn-upgrade-terran-infantryarmorlevel0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Terran Infantry Armor",
-          "ruRU": "Terran Infantry Armor"
+          "enUS": "Terran Infantry Armor"
         },
         "priority": 10
       },
@@ -2811,8 +2167,7 @@
         "LifeArmorIcon": "btn-upgrade-terran-buildingarmor",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Terran Building Plating",
-          "ruRU": "Terran Building Plating"
+          "enUS": "Terran Building Plating"
         },
         "priority": 248
       },
@@ -2841,8 +2196,7 @@
         "LifeArmorIcon": "btn-upgrade-terran-buildingarmor",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Terran Building Plating",
-          "ruRU": "Terran Building Plating"
+          "enUS": "Terran Building Plating"
         },
         "priority": 244
       },
@@ -2878,8 +2232,7 @@
         "LifeArmorIcon": "btn-upgrade-terran-buildingarmor",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Terran Building Plating",
-          "ruRU": "Terran Building Plating"
+          "enUS": "Terran Building Plating"
         },
         "priority": 252
       },
@@ -2911,8 +2264,7 @@
         "LifeArmorIcon": "btn-upgrade-terran-buildingarmor",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Terran Building Plating",
-          "ruRU": "Terran Building Plating"
+          "enUS": "Terran Building Plating"
         }
       },
       "MarineSCBW": {
@@ -2940,8 +2292,7 @@
         "LifeArmorIcon": "btn-upgrade-terran-infantryarmorlevel0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Terran Infantry Armor",
-          "ruRU": "Terran Infantry Armor"
+          "enUS": "Terran Infantry Armor"
         },
         "priority": 21
       },
@@ -2958,7 +2309,7 @@
           "zhCN": "专业反步兵作战单位。<br/><br/><span style=\"color: #ffff8a\">可以对地。</span>",
           "koKR": "대보병 전문 공격 유닛입니다.<br/><br/><span style=\"color: #ffff8a\">지상 유닛 공격 가능</span> /// Specialized anti-infantry attacker.<br/><br/><span style=\"color: #ffff8a\">Can attack ground units.</span>"
         },
-        "LifeMax": 80,
+        "LifeMax": 55,
         "LifeArmor": 1,
         "Food": -1,
         "CostResource": {
@@ -2972,14 +2323,13 @@
         "LifeArmorIcon": "btn-upgrade-terran-infantryarmorlevel0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Terran Infantry Armor",
-          "ruRU": "Terran Infantry Armor"
+          "enUS": "Terran Infantry Armor"
         },
         "priority": 40
       },
       "GhostSCBW": {
         "id": "GhostSCBW",
-        "Icon": "btn-unit-terran-ghost",
+        "Icon": "btn-unit-terran-ghost@scbw",
         "Name": {
           "enUS": "Ghost",
           "zhCN": "幽灵",
@@ -2987,14 +2337,14 @@
         },
         "Description": {
           "enUS": "Infiltrator. Can use <span class=\"style-TooltipHighlightSCBW\"><b>Personal Cloaking</b></span> and call down <span class=\"style-TooltipHighlightSCBW\">Tactical Nukes</span> built at the <span class=\"style-TooltipHighlightSCBW\"><b>Nuclear Silo</b></span>.  <br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>",
-          "zhCN": "Infiltrator. Can use <span class=\"style-TooltipHighlightSCBW\"><b>Personal Cloaking</b></span> and call down <span class=\"style-TooltipHighlightSCBW\">Tactical Nukes</span> built at the <span class=\"style-TooltipHighlightSCBW\"><b>Nuclear Silo</b></span>.  <br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>",
+          "zhCN": "渗透单位。可以使用<span class=\"style-TooltipHighlightSCBW\"><b>Personal Cloaking</b></span>和呼叫在<span class=\"style-TooltipHighlightSCBW\"><b>Nuclear Silo</b></span>中建造的<span class=\"style-TooltipHighlightSCBW\">战术核弹</span>。升级后可以使用<span class=\"style-TooltipHighlightSCBW\"><b>Personal Cloaking</b></span>和<span class=\"style-TooltipHighlightSCBW\"><b>Lockdown</b></span>。<br/><br/><span style=\"color: #ffff8a\">可以对地和对空。</span>",
           "koKR": "침투 전문가입니다. <span class=\"style-TooltipHighlightSCBW\"><b>Nuclear Silo</b></span>에서 무장된 <span class=\"style-TooltipHighlightSCBW\">Tactical Nukes</span>을 유도할 수 있습니다. 업그레이드 하여 <span class=\"style-TooltipHighlightSCBW\"><b>Personal Cloaking</b></span>과 <span class=\"style-TooltipHighlightSCBW\"><b>Lockdown</b></span>을 사용할 수 있습니다.<br/><br/><span style=\"color: #ffff8a\">지상 및 공중 유닛 공격 가능</span>"
         },
-        "LifeMax": 75,
+        "LifeMax": 55,
         "Food": -1,
         "CostResource": {
-          "Minerals": 100,
-          "Vespene": 100
+          "Minerals": 25,
+          "Vespene": 75
         },
         "Production": [],
         "Research": [],
@@ -3003,8 +2353,7 @@
         "LifeArmorIcon": "btn-upgrade-terran-infantryarmorlevel0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Terran Infantry Armor",
-          "ruRU": "Terran Infantry Armor"
+          "enUS": "Terran Infantry Armor"
         },
         "priority": 70
       },
@@ -3025,7 +2374,7 @@
         "LifeArmor": 1,
         "Food": -1,
         "CostResource": {
-          "Minerals": 75,
+          "Minerals": 50,
           "Vespene": 25
         },
         "Production": [],
@@ -3035,8 +2384,7 @@
         "LifeArmorIcon": "btn-upgrade-terran-infantryarmorlevel0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Terran Infantry Armor",
-          "ruRU": "Terran Infantry Armor"
+          "enUS": "Terran Infantry Armor"
         },
         "priority": 30
       },
@@ -3074,8 +2422,7 @@
         "LifeArmorIcon": "btn-upgrade-terran-buildingarmor",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Terran Building Plating",
-          "ruRU": "Terran Building Plating"
+          "enUS": "Terran Building Plating"
         },
         "priority": 256
       },
@@ -3107,8 +2454,7 @@
         "LifeArmorIcon": "btn-upgrade-terran-buildingarmor",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Terran Building Plating",
-          "ruRU": "Terran Building Plating"
+          "enUS": "Terran Building Plating"
         }
       },
       "MissileTurretSCBW": {
@@ -3135,8 +2481,7 @@
         "LifeArmorIcon": "btn-upgrade-terran-buildingarmor",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Terran Building Plating",
-          "ruRU": "Terran Building Plating"
+          "enUS": "Terran Building Plating"
         },
         "priority": 310
       },
@@ -3165,8 +2510,7 @@
         "LifeArmorIcon": "btn-upgrade-terran-buildingarmor",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Terran Building Plating",
-          "ruRU": "Terran Building Plating"
+          "enUS": "Terran Building Plating"
         },
         "priority": 300
       },
@@ -3195,8 +2539,7 @@
         "LifeArmorIcon": "btn-upgrade-terran-buildingarmor",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Terran Building Plating",
-          "ruRU": "Terran Building Plating"
+          "enUS": "Terran Building Plating"
         },
         "priority": 11
       },
@@ -3231,8 +2574,7 @@
         "LifeArmorIcon": "btn-upgrade-terran-buildingarmor",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Terran Building Plating",
-          "ruRU": "Terran Building Plating"
+          "enUS": "Terran Building Plating"
         },
         "priority": 318
       },
@@ -3259,7 +2601,6 @@
           "VultureSCBW",
           "SiegeTankSCBW",
           "GoliathSCBW",
-          "StingerSCBW",
           "MachineShopSCBW"
         ],
         "Research": [],
@@ -3270,8 +2611,7 @@
         "LifeArmorIcon": "btn-upgrade-terran-buildingarmor",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Terran Building Plating",
-          "ruRU": "Terran Building Plating"
+          "enUS": "Terran Building Plating"
         },
         "priority": 322
       },
@@ -3306,8 +2646,7 @@
         "LifeArmorIcon": "btn-upgrade-terran-buildingarmor",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Terran Building Plating",
-          "ruRU": "Terran Building Plating"
+          "enUS": "Terran Building Plating"
         }
       },
       "MachineShopSCBW": {
@@ -3334,16 +2673,14 @@
           "VultureSCBWSpeedUpgrade",
           "VulturePlaceSpiderMineSCBWResearch",
           "SiegeModeSCBWResearch",
-          "GoliathSCBWRangeUpgrade",
-          "StingerSCBWAttackMoveUpgrade"
+          "GoliathSCBWRangeUpgrade"
         ],
         "Morph": [],
         "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-terran-buildingarmor",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Terran Building Plating",
-          "ruRU": "Terran Building Plating"
+          "enUS": "Terran Building Plating"
         },
         "priority": 337
       },
@@ -3374,8 +2711,7 @@
         "LifeArmorIcon": "btn-upgrade-terran-vehicleplatinglevel0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Terran Vehicle Plating",
-          "ruRU": "Terran Vehicle Plating"
+          "enUS": "Terran Vehicle Plating"
         },
         "priority": 90
       },
@@ -3403,8 +2739,7 @@
         "LifeArmorIcon": "btn-upgrade-terran-vehicleplatinglevel0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Terran Vehicle Plating",
-          "ruRU": "Terran Vehicle Plating"
+          "enUS": "Terran Vehicle Plating"
         },
         "priority": 160
       },
@@ -3418,15 +2753,15 @@
         },
         "Description": {
           "enUS": "Heavy Tank. Can switch into <span class=\"style-TooltipHighlightSCBW\"><b>Siege Mode</b></span> to provide long-range artillery support. <br/><br/><span class=\"style-TooltipHighlightSCBW\">Can attack ground units.</span>",
-          "zhCN": "Heavy Tank. Can switch into <span class=\"style-TooltipHighlightSCBW\"><b>Siege Mode</b></span> to provide long-range artillery support. <br/><br/><span class=\"style-TooltipHighlightSCBW\">Can attack ground units.</span>",
+          "zhCN": "重型坦克。升级后可切换至<span class=\"style-TooltipHighlightSCBW\"><b>Siege Mode</b></span>提供远程炮火支援。<br/><br/><span class=\"style-TooltipHighlightSCBW\">可以对地。</span>",
           "koKR": "중전차입니다. 업그레이드 하여 <span class=\"style-TooltipHighlightSCBW\"><b>Siege Mode</b></span>로 전환하여 장거리 지원 포격을 할 수 있습니다.<br/><br/><span class=\"style-TooltipHighlightSCBW\">지상 유닛 공격 가능</span>"
         },
-        "LifeMax": 175,
+        "LifeMax": 150,
         "LifeArmor": 1,
-        "Food": -3,
+        "Food": -2,
         "CostResource": {
           "Minerals": 150,
-          "Vespene": 125
+          "Vespene": 100
         },
         "Production": [],
         "Research": [],
@@ -3437,8 +2772,7 @@
         "LifeArmorIcon": "btn-upgrade-terran-vehicleplatinglevel0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Terran Vehicle Plating",
-          "ruRU": "Terran Vehicle Plating"
+          "enUS": "Terran Vehicle Plating"
         },
         "priority": 130
       },
@@ -3455,12 +2789,12 @@
           "zhCN": "重型坦克。 可切换至<span class=\"style-TooltipHighlightSCBW\"><b>undefined</b></span>提供机动坦克火力支援。<br/><br/><span class=\"style-TooltipHighlightSCBW\">可以对地。</span>",
           "koKR": "중전차입니다. 장거리 지원 포격을 할 수 있습니다. <span class=\"style-TooltipHighlightSCBW\">탱크 모드</span>로 전환할 수 있습니다. <br/><br/><span class=\"style-TooltipHighlightSCBW\">지상 유닛 공격 가능</span> /// Heavy Tank. Provides long-range artillery support. Can revert into <span class=\"style-TooltipHighlightSCBW\">Tank Mode</span> <br/><br/><span class=\"style-TooltipHighlightSCBW\">Can attack ground units.</span>"
         },
-        "LifeMax": 175,
+        "LifeMax": 150,
         "LifeArmor": 1,
-        "Food": -3,
+        "Food": -2,
         "CostResource": {
           "Minerals": 150,
-          "Vespene": 125
+          "Vespene": 100
         },
         "Production": [],
         "Research": [],
@@ -3469,8 +2803,7 @@
         "LifeArmorIcon": "btn-upgrade-terran-vehicleplatinglevel0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Terran Vehicle Plating",
-          "ruRU": "Terran Vehicle Plating"
+          "enUS": "Terran Vehicle Plating"
         },
         "priority": 135
       },
@@ -3487,7 +2820,7 @@
           "zhCN": "重火力支援单位。<br/><br/><span class=\"style-TooltipHighlightSCBW\">可以对地和对空。</span>",
           "koKR": "중화력 지원 유닛입니다.<br/><br/><span class=\"style-TooltipHighlightSCBW\">지상 및 공중 유닛 공격 가능</span> /// Heavy-fire support unit.<br/><br/><span class=\"style-TooltipHighlightSCBW\">Can attack ground and air units.</span>"
         },
-        "LifeMax": 125,
+        "LifeMax": 150,
         "LifeArmor": 1,
         "Food": -2,
         "CostResource": {
@@ -3501,42 +2834,9 @@
         "LifeArmorIcon": "btn-upgrade-terran-vehicleplatinglevel0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Terran Vehicle Plating",
-          "ruRU": "Terran Vehicle Plating"
+          "enUS": "Terran Vehicle Plating"
         },
         "priority": 100
-      },
-      "StingerSCBW": {
-        "id": "StingerSCBW",
-        "Icon": "btn-unit-terran-stinger@scbw",
-        "Name": {
-          "enUS": "Stinger",
-          "zhCN": "Stinger",
-          "koKR": "Stinger"
-        },
-        "Description": {
-          "enUS": "Versatile Scout. Has a Machinegun that can fire to ground and air and a specialized Launcher for use against Buildings.<br/><br/><span class=\"style-TooltipHighlightSCBW\">Can attack ground and air units.</span>",
-          "zhCN": "Versatile Scout. Has a Machinegun that can fire to ground and air and a specialized Launcher for use against Buildings.<br/><br/><span class=\"style-TooltipHighlightSCBW\">Can attack ground and air units.</span>",
-          "koKR": "Versatile Scout. Has a Machinegun that can fire to ground and air and a specialized Launcher for use against Buildings.<br/><br/><span class=\"style-TooltipHighlightSCBW\">Can attack ground and air units.</span>"
-        },
-        "LifeMax": 130,
-        "LifeArmor": 1,
-        "Food": -2,
-        "CostResource": {
-          "Minerals": 125,
-          "Vespene": 50
-        },
-        "Production": [],
-        "Research": [],
-        "Morph": [],
-        "$Phase": [],
-        "LifeArmorIcon": "btn-upgrade-terran-vehicleplatinglevel0",
-        "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
-        "LifeArmorName": {
-          "enUS": "Terran Vehicle Plating",
-          "ruRU": "Terran Vehicle Plating"
-        },
-        "priority": 90
       },
       "StarportSCBW": {
         "id": "StarportSCBW",
@@ -3549,7 +2849,7 @@
         "Description": {
           "enUS": "Air-unit production facility. <br/><br/><span class=\"style-TooltipHighlightSCBW\">Enables:</span><br/>- <b>Wraith</b>s",
           "zhCN": "空中单位生产设施。<br/><br/><span class=\"style-TooltipHighlightSCBW\">开启：</span><br/>- <b>Wraith</b>s",
-          "koKR": "공중 유닛 생산 시설입니다.<br/><br/><span class=\"style-TooltipHighlightSCBW\">사용 가능:</span><br/>- <b>Scout</b><br/>- <b>Corsair</b> /// Air-unit production facility. <br/><br/><span class=\"style-TooltipHighlightSCBW\">Enables:</span><br/>- <b>Wraith</b>s"
+          "koKR": "공중 유닛 생산 시설입니다.<br/><br/><span class=\"style-TooltipHighlightSCBW\">사용 가능:</span><br/>- <b>Wraith</b> /// Air-unit production facility. <br/><br/><span class=\"style-TooltipHighlightSCBW\">Enables:</span><br/>- <b>Wraith</b>s"
         },
         "LifeMax": 1300,
         "LifeArmor": 1,
@@ -3573,8 +2873,7 @@
         "LifeArmorIcon": "btn-upgrade-terran-buildingarmor",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Terran Building Plating",
-          "ruRU": "Terran Building Plating"
+          "enUS": "Terran Building Plating"
         },
         "priority": 322
       },
@@ -3606,8 +2905,7 @@
         "LifeArmorIcon": "btn-upgrade-terran-buildingarmor",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Terran Building Plating",
-          "ruRU": "Terran Building Plating"
+          "enUS": "Terran Building Plating"
         }
       },
       "ControlTowerSCBW": {
@@ -3632,16 +2930,14 @@
         "Production": [],
         "Research": [
           "WraithSCBWCloakResearch",
-          "WraithSCBWEnergyUpgrade",
-          "DropshipSCBWSpeedBoostResearch"
+          "WraithSCBWEnergyUpgrade"
         ],
         "Morph": [],
         "$Phase": [],
         "LifeArmorIcon": "btn-upgrade-terran-buildingarmor",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Terran Building Plating",
-          "ruRU": "Terran Building Plating"
+          "enUS": "Terran Building Plating"
         },
         "priority": 337
       },
@@ -3671,8 +2967,7 @@
         "LifeArmorIcon": "btn-upgrade-terran-shipplatinglevel0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Terran Ship Plating",
-          "ruRU": "Terran Ship Plating"
+          "enUS": "Terran Ship Plating"
         },
         "priority": 160
       },
@@ -3703,8 +2998,7 @@
         "LifeArmorIcon": "btn-upgrade-terran-shipplatinglevel0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Terran Ship Plating",
-          "ruRU": "Terran Ship Plating"
+          "enUS": "Terran Ship Plating"
         },
         "priority": 160
       },
@@ -3721,8 +3015,8 @@
           "zhCN": "空中运输单位。",
           "koKR": "공중 수송선입니다. /// Aerial Transport."
         },
-        "LifeMax": 165,
-        "LifeArmor": 2,
+        "LifeMax": 150,
+        "LifeArmor": 1,
         "Food": -2,
         "CostResource": {
           "Minerals": 100,
@@ -3735,8 +3029,7 @@
         "LifeArmorIcon": "btn-upgrade-terran-shipplatinglevel0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Terran Ship Plating",
-          "ruRU": "Terran Ship Plating"
+          "enUS": "Terran Ship Plating"
         },
         "priority": 185
       },
@@ -3767,8 +3060,7 @@
         "LifeArmorIcon": "btn-upgrade-terran-shipplatinglevel0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Terran Ship Plating",
-          "ruRU": "Terran Ship Plating"
+          "enUS": "Terran Ship Plating"
         },
         "priority": 180
       },
@@ -3799,8 +3091,7 @@
         "LifeArmorIcon": "btn-upgrade-terran-shipplatinglevel0",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Terran Ship Plating",
-          "ruRU": "Terran Ship Plating"
+          "enUS": "Terran Ship Plating"
         },
         "priority": 210
       },
@@ -3839,8 +3130,7 @@
         "LifeArmorIcon": "btn-upgrade-terran-buildingarmor",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Terran Building Plating",
-          "ruRU": "Terran Building Plating"
+          "enUS": "Terran Building Plating"
         },
         "priority": 322
       },
@@ -3873,8 +3163,7 @@
         "LifeArmorIcon": "btn-upgrade-terran-buildingarmor",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Terran Building Plating",
-          "ruRU": "Terran Building Plating"
+          "enUS": "Terran Building Plating"
         }
       },
       "PhysicsLabSCBW": {
@@ -3906,8 +3195,7 @@
         "LifeArmorIcon": "btn-upgrade-terran-buildingarmor",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Terran Building Plating",
-          "ruRU": "Terran Building Plating"
+          "enUS": "Terran Building Plating"
         },
         "priority": 337
       },
@@ -3942,8 +3230,7 @@
         "LifeArmorIcon": "btn-upgrade-terran-buildingarmor",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Terran Building Plating",
-          "ruRU": "Terran Building Plating"
+          "enUS": "Terran Building Plating"
         },
         "priority": 337
       },
@@ -3968,12 +3255,15 @@
         },
         "Production": [],
         "Research": [
-          "MechPlating@Lvl1",
-          "MechPlating@Lvl2",
-          "MechPlating@Lvl3",
+          "TerranShipPlatingSCBW@Lvl1",
+          "TerranShipPlatingSCBW@Lvl2",
+          "TerranShipPlatingSCBW@Lvl3",
           "TerranShipWeaponsSCBW@Lvl1",
           "TerranShipWeaponsSCBW@Lvl2",
           "TerranShipWeaponsSCBW@Lvl3",
+          "TerranVehiclePlatingSCBW@Lvl1",
+          "TerranVehiclePlatingSCBW@Lvl2",
+          "TerranVehiclePlatingSCBW@Lvl3",
           "TerranVehicleWeaponsSCBW@Lvl1",
           "TerranVehicleWeaponsSCBW@Lvl2",
           "TerranVehicleWeaponsSCBW@Lvl3"
@@ -3983,8 +3273,7 @@
         "LifeArmorIcon": "btn-upgrade-terran-buildingarmor",
         "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
         "LifeArmorName": {
-          "enUS": "Terran Building Plating",
-          "ruRU": "Terran Building Plating"
+          "enUS": "Terran Building Plating"
         },
         "priority": 326
       }
@@ -4010,7 +3299,6 @@
     "SiegeTankSCBW",
     "SiegeTankSCBWSieged",
     "GoliathSCBW",
-    "StingerSCBW",
     "WraithSCBW",
     "ValkyrieSCBW",
     "DropshipSCBW",
@@ -4060,10 +3348,8 @@
     "VulturePlaceSpiderMineSCBWResearch",
     "SiegeModeSCBWResearch",
     "GoliathSCBWRangeUpgrade",
-    "StingerSCBWAttackMoveUpgrade",
     "WraithSCBWCloakResearch",
     "WraithSCBWEnergyUpgrade",
-    "DropshipSCBWSpeedBoostResearch",
     "BattlecruiserSCBWYamatoResearch",
     "BattlecruiserSCBWEnergyUpgrade",
     "GhostSCBWLockdownResearch",
@@ -4073,12 +3359,15 @@
     "ScienceVesselSCBWEMPShockwaveResearch",
     "ScienceVesselSCBWIrradiateResearch",
     "ScienceVesselSCBWEnergyUpgrade",
-    "MechPlating@Lvl1",
-    "MechPlating@Lvl2",
-    "MechPlating@Lvl3",
+    "TerranShipPlatingSCBW@Lvl1",
+    "TerranShipPlatingSCBW@Lvl2",
+    "TerranShipPlatingSCBW@Lvl3",
     "TerranShipWeaponsSCBW@Lvl1",
     "TerranShipWeaponsSCBW@Lvl2",
     "TerranShipWeaponsSCBW@Lvl3",
+    "TerranVehiclePlatingSCBW@Lvl1",
+    "TerranVehiclePlatingSCBW@Lvl2",
+    "TerranVehiclePlatingSCBW@Lvl3",
     "TerranVehicleWeaponsSCBW@Lvl1",
     "TerranVehicleWeaponsSCBW@Lvl2",
     "TerranVehicleWeaponsSCBW@Lvl3"

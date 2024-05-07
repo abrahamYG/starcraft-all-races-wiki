@@ -21,8 +21,7 @@
   "LifeStart": 750,
   "LifeMax": 750,
   "LifeArmorName": {
-    "enUS": "Terran Building Plating",
-    "ruRU": "Terran Building Plating"
+    "enUS": "Terran Building Plating"
   },
   "Mover": "Ground",
   "StationaryTurningRate": 720,
@@ -88,12 +87,6 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
-  "$tokens": {
-    "ID": {
-      "type": "string",
-      "value": ""
-    }
-  },
   "Mob": "Multiplayer",
   "Gender": "Neutral",
   "FogVisibility": "Snapshot",
@@ -152,12 +145,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "que5",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "QueueCount": 1,
           "Flags": {
             "BestUnit": 1,
@@ -191,12 +178,10 @@
         "id": "Cancel",
         "Icon": "btn-command-cancel",
         "Name": {
-          "enUS": "Cancel",
-          "ruRU": "Отменить /// Cancel"
+          "enUS": "Cancel"
         },
         "Tooltip": {
-          "enUS": "Drops the current order without performing it, and allows you to select a different order.",
-          "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+          "enUS": "Drops the current order without performing it, and allows you to select a different order."
         },
         "Hotkey": "Esc"
       },
@@ -219,12 +204,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "BuildInProgress",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "Activity": "UI/Building",
           "VitalStartFactor": {
             "Life": 0.1,
@@ -258,12 +237,10 @@
         "id": "CancelBuilding",
         "Icon": "btn-command-cancel",
         "Name": {
-          "enUS": "Cancel",
-          "ruRU": "Отменить /// Cancel"
+          "enUS": "Cancel"
         },
         "Tooltip": {
-          "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-          "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+          "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund."
         },
         "Hotkey": "Esc"
       },
@@ -286,12 +263,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "BuildInProgress",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "Activity": "UI/Building",
           "VitalStartFactor": {
             "Life": 0.1,
@@ -325,12 +296,10 @@
         "id": "Halt",
         "Icon": "btn-command-stop",
         "Name": {
-          "enUS": "Halt",
-          "ruRU": "Приостановить /// Halt"
+          "enUS": "Halt"
         },
         "Tooltip": {
-          "enUS": "Halts construction of this structure. The partial construction will remain.",
-          "ruRU": "Приостановить сооружение этого строения. Впоследствии его можно будет продолжить. /// Halts construction of this structure. The partial construction will remain."
+          "enUS": "Halts construction of this structure. The partial construction will remain."
         },
         "Hotkey": "T"
       },
@@ -352,17 +321,15 @@
         "id": "SelectBuilder",
         "Icon": "btn-upgrade-terran-weaponrefit",
         "Name": {
-          "enUS": "Select Builder",
-          "ruRU": "Select Builder"
+          "enUS": "Select Builder"
         },
         "Tooltip": {
-          "enUS": "Selects the unit constructing this structure.",
-          "ruRU": "Selects the unit constructing this structure."
+          "enUS": "Selects the unit constructing this structure."
         },
         "Hotkey": "Q"
       },
       {
-        "Upgrade": "MechPlating@Lvl1",
+        "Upgrade": "TerranShipPlatingSCBW@Lvl1",
         "Info": {
           "Button": {
             "Flags": {
@@ -372,20 +339,21 @@
               "UseDefaultButton": 1,
               "CreateDefaultButton": 1
             },
-            "DefaultButtonFace": "MechPlating@Lvl1",
-            "Requirements": "MechPlating@Lvl1"
+            "DefaultButtonFace": "TerranShipPlatingSCBW@Lvl1",
+            "State": "Restricted",
+            "Requirements": "TerranShipPlatingSCBW@Lvl1"
           },
           "Resource": {
-            "Minerals": 100,
-            "Vespene": 100
+            "Minerals": 150,
+            "Vespene": 150
           },
           "Time": 160,
-          "Upgrade": "MechPlating@Lvl1"
+          "Upgrade": "TerranShipPlatingSCBW@Lvl1"
         },
         "Time": 160,
         "Cost": {
-          "Minerals": 100,
-          "Vespene": 100,
+          "Minerals": 150,
+          "Vespene": 150,
           "Terazine": 0,
           "Custom": 0,
           "Energy": 0,
@@ -393,26 +361,26 @@
           "Shields": 0,
           "Food": 0
         },
-        "Row": 0,
+        "Row": 1,
         "Column": 1,
         "Type": "AbilCmd",
-        "AbilCmd": "MechPlating,Research1",
-        "id": "MechPlating@Lvl1",
-        "Icon": "btn-upgrade-terran-vehicleplatinglevel1",
+        "AbilCmd": "TerranShipPlatingSCBW,Research1",
+        "id": "TerranShipPlatingSCBW@Lvl1",
+        "Icon": "btn-upgrade-terran-shipplatinglevel1",
         "Name": {
-          "enUS": "Upgrade Vehicle and Ship Plating Level 1",
-          "zhCN": "Upgrade Vehicle and Ship Plating Level 1",
-          "koKR": "Upgrade Vehicle and Ship Plating Level 1"
+          "enUS": "Upgrade Ship Plating Level 1",
+          "zhCN": "升级舰船钢板等级1",
+          "koKR": "우주선 방어력 업그레이드 레벨 1 /// Upgrade Ship Plating Level 1"
         },
         "Tooltip": {
-          "enUS": "Upgrades the armor of units built at Factories and Starports.",
-          "zhCN": "Upgrades the armor of units built at Factories and Starports.",
-          "koKR": "Upgrades the armor of units built at Factories and Starports."
+          "enUS": "Upgrades the armor of units built at a Starport.",
+          "zhCN": "提升星港制造的单位的护甲。",
+          "koKR": "우주공항에서 생산하는 유닛의 방어력을 업그레이드합니다. /// Upgrades the armor of units built at a Starport."
         },
-        "Hotkey": "V"
+        "Hotkey": "P"
       },
       {
-        "Upgrade": "MechPlating@Lvl2",
+        "Upgrade": "TerranShipPlatingSCBW@Lvl2",
         "Info": {
           "Button": {
             "Flags": {
@@ -422,20 +390,21 @@
               "UseDefaultButton": 1,
               "CreateDefaultButton": 1
             },
-            "DefaultButtonFace": "MechPlating@Lvl2",
-            "Requirements": "MechPlating@Lvl2"
+            "State": "Restricted",
+            "DefaultButtonFace": "TerranShipPlatingSCBW@Lvl2",
+            "Requirements": "TerranShipPlatingSCBW@Lvl2"
           },
           "Resource": {
-            "Minerals": 175,
-            "Vespene": 175
+            "Minerals": 225,
+            "Vespene": 225
           },
           "Time": 190,
-          "Upgrade": "MechPlating@Lvl2"
+          "Upgrade": "TerranShipPlatingSCBW@Lvl2"
         },
         "Time": 190,
         "Cost": {
-          "Minerals": 175,
-          "Vespene": 175,
+          "Minerals": 225,
+          "Vespene": 225,
           "Terazine": 0,
           "Custom": 0,
           "Energy": 0,
@@ -443,26 +412,26 @@
           "Shields": 0,
           "Food": 0
         },
-        "Row": 0,
+        "Row": 1,
         "Column": 1,
         "Type": "AbilCmd",
-        "AbilCmd": "MechPlating,Research2",
-        "id": "MechPlating@Lvl2",
-        "Icon": "btn-upgrade-terran-vehicleplatinglevel2",
+        "AbilCmd": "TerranShipPlatingSCBW,Research2",
+        "id": "TerranShipPlatingSCBW@Lvl2",
+        "Icon": "btn-upgrade-terran-shipplatinglevel2",
         "Name": {
-          "enUS": "Upgrade Vehicle and Ship Plating Level 2",
-          "zhCN": "Upgrade Vehicle and Ship Plating Level 2",
-          "koKR": "Upgrade Vehicle and Ship Plating Level 2"
+          "enUS": "Upgrade Ship Plating Level 2",
+          "zhCN": "升级舰船钢板等级2",
+          "koKR": "우주선 방어력 업그레이드 레벨 2 /// Upgrade Ship Plating Level 2"
         },
         "Tooltip": {
-          "enUS": "Upgrades the armor of units built at Factories and Starports.",
-          "zhCN": "Upgrades the armor of units built at Factories and Starports.",
-          "koKR": "Upgrades the armor of units built at Factories and Starports."
+          "enUS": "Further upgrades the armor of units built at a Starport.",
+          "zhCN": "进一步提升星港制造的单位的护甲。",
+          "koKR": "우주공항에서 생산하는 유닛의 방어력을 한 단계 더 업그레이드합니다. /// Further upgrades the armor of units built at a Starport."
         },
-        "Hotkey": "V"
+        "Hotkey": "P"
       },
       {
-        "Upgrade": "MechPlating@Lvl3",
+        "Upgrade": "TerranShipPlatingSCBW@Lvl3",
         "Info": {
           "Button": {
             "Flags": {
@@ -472,20 +441,21 @@
               "UseDefaultButton": 1,
               "CreateDefaultButton": 1
             },
-            "DefaultButtonFace": "MechPlating@Lvl3",
-            "Requirements": "MechPlating@Lvl3"
+            "State": "Restricted",
+            "DefaultButtonFace": "TerranShipPlatingSCBW@Lvl3",
+            "Requirements": "TerranShipPlatingSCBW@Lvl3"
           },
           "Resource": {
-            "Minerals": 250,
-            "Vespene": 250
+            "Minerals": 300,
+            "Vespene": 300
           },
           "Time": 220,
-          "Upgrade": "MechPlating@Lvl3"
+          "Upgrade": "TerranShipPlatingSCBW@Lvl3"
         },
         "Time": 220,
         "Cost": {
-          "Minerals": 250,
-          "Vespene": 250,
+          "Minerals": 300,
+          "Vespene": 300,
           "Terazine": 0,
           "Custom": 0,
           "Energy": 0,
@@ -493,23 +463,23 @@
           "Shields": 0,
           "Food": 0
         },
-        "Row": 0,
+        "Row": 1,
         "Column": 1,
         "Type": "AbilCmd",
-        "AbilCmd": "MechPlating,Research3",
-        "id": "MechPlating@Lvl3",
-        "Icon": "btn-upgrade-terran-vehicleplatinglevel3",
+        "AbilCmd": "TerranShipPlatingSCBW,Research3",
+        "id": "TerranShipPlatingSCBW@Lvl3",
+        "Icon": "btn-upgrade-terran-shipplatinglevel3",
         "Name": {
-          "enUS": "Upgrade Vehicle and Ship Plating Level 3",
-          "zhCN": "Upgrade Vehicle and Ship Plating Level 3",
-          "koKR": "Upgrade Vehicle and Ship Plating Level 3"
+          "enUS": "Upgrade Ship Plating Level 3",
+          "zhCN": "升级舰船钢板等级3",
+          "koKR": "우주선 방어력 업그레이드 레벨 3 /// Upgrade Ship Plating Level 3"
         },
         "Tooltip": {
-          "enUS": "Upgrades the armor of units built at Factories and Starports.",
-          "zhCN": "Upgrades the armor of units built at Factories and Starports.",
-          "koKR": "Upgrades the armor of units built at Factories and Starports."
+          "enUS": "Maximizes the armor of units built at a Starport.",
+          "zhCN": "使星港制造的单位的护甲最大化。",
+          "koKR": "우주공항에서 생산하는 유닛의 방어력을 최대로 업그레이드합니다. /// Maximizes the armor of units built at a Starport."
         },
-        "Hotkey": "V"
+        "Hotkey": "P"
       },
       {
         "Upgrade": "TerranShipWeaponsSCBW@Lvl1",
@@ -523,6 +493,7 @@
               "CreateDefaultButton": 1
             },
             "DefaultButtonFace": "TerranShipWeaponsSCBW@Lvl1",
+            "State": "Restricted",
             "Requirements": "TerranShipWeaponsSCBW@Lvl1"
           },
           "Resource": {
@@ -572,20 +543,21 @@
               "UseDefaultButton": 1,
               "CreateDefaultButton": 1
             },
+            "State": "Restricted",
             "DefaultButtonFace": "TerranShipWeaponsSCBW@Lvl2",
             "Requirements": "TerranShipWeaponsSCBW@Lvl2"
           },
           "Resource": {
-            "Minerals": 175,
-            "Vespene": 175
+            "Minerals": 150,
+            "Vespene": 150
           },
           "Time": 190,
           "Upgrade": "TerranShipWeaponsSCBW@Lvl2"
         },
         "Time": 190,
         "Cost": {
-          "Minerals": 175,
-          "Vespene": 175,
+          "Minerals": 150,
+          "Vespene": 150,
           "Terazine": 0,
           "Custom": 0,
           "Energy": 0,
@@ -622,20 +594,21 @@
               "UseDefaultButton": 1,
               "CreateDefaultButton": 1
             },
+            "State": "Restricted",
             "DefaultButtonFace": "TerranShipWeaponsSCBW@Lvl3",
             "Requirements": "TerranShipWeaponsSCBW@Lvl3"
           },
           "Resource": {
-            "Minerals": 250,
-            "Vespene": 250
+            "Minerals": 200,
+            "Vespene": 200
           },
           "Time": 220,
           "Upgrade": "TerranShipWeaponsSCBW@Lvl3"
         },
         "Time": 220,
         "Cost": {
-          "Minerals": 250,
-          "Vespene": 250,
+          "Minerals": 200,
+          "Vespene": 200,
           "Terazine": 0,
           "Custom": 0,
           "Energy": 0,
@@ -662,6 +635,159 @@
         "Hotkey": "S"
       },
       {
+        "Upgrade": "TerranVehiclePlatingSCBW@Lvl1",
+        "Info": {
+          "Button": {
+            "Flags": {
+              "AllowMinimap": 0,
+              "ShowInGlossary": 1,
+              "ToSelection": 1,
+              "UseDefaultButton": 1,
+              "CreateDefaultButton": 1
+            },
+            "DefaultButtonFace": "TerranVehiclePlatingSCBW@Lvl1",
+            "State": "Restricted",
+            "Requirements": "TerranVehiclePlatingSCBW@Lvl1"
+          },
+          "Resource": {
+            "Minerals": 100,
+            "Vespene": 100
+          },
+          "Time": 160,
+          "Upgrade": "TerranVehiclePlatingSCBW@Lvl1"
+        },
+        "Time": 160,
+        "Cost": {
+          "Minerals": 100,
+          "Vespene": 100,
+          "Terazine": 0,
+          "Custom": 0,
+          "Energy": 0,
+          "Life": 0,
+          "Shields": 0,
+          "Food": 0
+        },
+        "Row": 0,
+        "Column": 1,
+        "Type": "AbilCmd",
+        "AbilCmd": "TerranVehiclePlatingSCBW,Research1",
+        "id": "TerranVehiclePlatingSCBW@Lvl1",
+        "Icon": "btn-upgrade-terran-vehicleplatinglevel1",
+        "Name": {
+          "enUS": "Upgrade Vehicle Plating Level 1",
+          "zhCN": "升级战车钢板等级1",
+          "koKR": "차량 방어력 업그레이드 레벨 1 /// Upgrade Vehicle Plating Level 1"
+        },
+        "Tooltip": {
+          "enUS": "Upgrades the armor of ground vehicles.",
+          "zhCN": "提升战车单位的护甲。",
+          "koKR": "지상 차량의 방어력을 업그레이드합니다. /// Upgrades the armor of ground vehicles."
+        },
+        "Hotkey": "V"
+      },
+      {
+        "Upgrade": "TerranVehiclePlatingSCBW@Lvl2",
+        "Info": {
+          "Button": {
+            "Flags": {
+              "AllowMinimap": 0,
+              "ShowInGlossary": 1,
+              "ToSelection": 1,
+              "UseDefaultButton": 1,
+              "CreateDefaultButton": 1
+            },
+            "State": "Restricted",
+            "DefaultButtonFace": "TerranVehiclePlatingSCBW@Lvl2",
+            "Requirements": "TerranVehiclePlatingSCBW@Lvl2"
+          },
+          "Resource": {
+            "Minerals": 175,
+            "Vespene": 175
+          },
+          "Time": 190,
+          "Upgrade": "TerranVehiclePlatingSCBW@Lvl2"
+        },
+        "Time": 190,
+        "Cost": {
+          "Minerals": 175,
+          "Vespene": 175,
+          "Terazine": 0,
+          "Custom": 0,
+          "Energy": 0,
+          "Life": 0,
+          "Shields": 0,
+          "Food": 0
+        },
+        "Row": 0,
+        "Column": 1,
+        "Type": "AbilCmd",
+        "AbilCmd": "TerranVehiclePlatingSCBW,Research2",
+        "id": "TerranVehiclePlatingSCBW@Lvl2",
+        "Icon": "btn-upgrade-terran-vehicleplatinglevel2",
+        "Name": {
+          "enUS": "Upgrade Vehicle Plating Level 2",
+          "zhCN": "升级战车钢板等级2",
+          "koKR": "차량 방어력 업그레이드 레벨 2 /// Upgrade Vehicle Plating Level 2"
+        },
+        "Tooltip": {
+          "enUS": "Further upgrades the armor of ground vehicles.",
+          "zhCN": "进一步提升战车单位的护甲。",
+          "koKR": "지상 차량의 방어력을 한 단계 더 업그레이드합니다. /// Further upgrades the armor of ground vehicles."
+        },
+        "Hotkey": "V"
+      },
+      {
+        "Upgrade": "TerranVehiclePlatingSCBW@Lvl3",
+        "Info": {
+          "Button": {
+            "Flags": {
+              "AllowMinimap": 0,
+              "ShowInGlossary": 1,
+              "ToSelection": 1,
+              "UseDefaultButton": 1,
+              "CreateDefaultButton": 1
+            },
+            "State": "Restricted",
+            "DefaultButtonFace": "TerranVehiclePlatingSCBW@Lvl3",
+            "Requirements": "TerranVehiclePlatingSCBW@Lvl3"
+          },
+          "Resource": {
+            "Minerals": 250,
+            "Vespene": 250
+          },
+          "Time": 220,
+          "Upgrade": "TerranVehiclePlatingSCBW@Lvl3"
+        },
+        "Time": 220,
+        "Cost": {
+          "Minerals": 250,
+          "Vespene": 250,
+          "Terazine": 0,
+          "Custom": 0,
+          "Energy": 0,
+          "Life": 0,
+          "Shields": 0,
+          "Food": 0
+        },
+        "Row": 0,
+        "Column": 1,
+        "Type": "AbilCmd",
+        "AbilCmd": "TerranVehiclePlatingSCBW,Research3",
+        "id": "TerranVehiclePlatingSCBW@Lvl3",
+        "Icon": "btn-upgrade-terran-vehicleplatinglevel3",
+        "Name": {
+          "enUS": "Upgrade Vehicle Plating Level 3",
+          "zhCN": "升级战车钢板等级3",
+          "koKR": "차량 방어력 업그레이드 레벨 3 /// Upgrade Vehicle Plating Level 3"
+        },
+        "Tooltip": {
+          "enUS": "Maximizes the armor of ground vehicles.",
+          "zhCN": "使战车单位的护甲最大化。",
+          "koKR": "지상 차량의 방어력을 최대로 업그레이드합니다. /// Maximizes the armor of ground vehicles."
+        },
+        "Hotkey": "V"
+      },
+      {
         "Upgrade": "TerranVehicleWeaponsSCBW@Lvl1",
         "Info": {
           "Button": {
@@ -673,6 +799,7 @@
               "CreateDefaultButton": 1
             },
             "DefaultButtonFace": "TerranVehicleWeaponsSCBW@Lvl1",
+            "State": "Restricted",
             "Requirements": "TerranVehicleWeaponsSCBW@Lvl1"
           },
           "Resource": {
@@ -722,6 +849,7 @@
               "UseDefaultButton": 1,
               "CreateDefaultButton": 1
             },
+            "State": "Restricted",
             "DefaultButtonFace": "TerranVehicleWeaponsSCBW@Lvl2",
             "Requirements": "TerranVehicleWeaponsSCBW@Lvl2"
           },
@@ -772,6 +900,7 @@
               "UseDefaultButton": 1,
               "CreateDefaultButton": 1
             },
+            "State": "Restricted",
             "DefaultButtonFace": "TerranVehicleWeaponsSCBW@Lvl3",
             "Requirements": "TerranVehicleWeaponsSCBW@Lvl3"
           },
@@ -832,9 +961,7 @@
     {
       "id": "TerranBuildingSCBW@Burnout",
       "Name": {
-        "enUS": "Burnout",
-        "zhCN": "Burnout",
-        "koKR": "Burnout"
+        "enUS": "Burnout"
       },
       "Tooltip": "-"
     }
@@ -843,27 +970,33 @@
     {
       "id": "BuildInProgress",
       "Name": {
-        "enUS": "Build in Progress",
-        "ruRU": "Build in Progress"
+        "enUS": "Build in Progress"
       }
     },
     {
       "id": "que5",
       "Name": {
-        "ruRU": "Queue (5)",
         "enUS": "Queue (5)"
       }
     },
     {
-      "id": "MechPlating",
+      "id": "TerranShipPlatingSCBW",
       "Name": {
         "enUS": "Research",
-        "zhCN": "Research",
-        "koKR": "Research"
+        "zhCN": "研究",
+        "koKR": "연구 /// Research"
       }
     },
     {
       "id": "TerranShipWeaponsSCBW",
+      "Name": {
+        "enUS": "Research",
+        "zhCN": "研究",
+        "koKR": "연구 /// Research"
+      }
+    },
+    {
+      "id": "TerranVehiclePlatingSCBW",
       "Name": {
         "enUS": "Research",
         "zhCN": "研究",
@@ -894,12 +1027,15 @@
   "$Requirements": [],
   "$Production": [],
   "$Research": [
-    "MechPlating@Lvl1",
-    "MechPlating@Lvl2",
-    "MechPlating@Lvl3",
+    "TerranShipPlatingSCBW@Lvl1",
+    "TerranShipPlatingSCBW@Lvl2",
+    "TerranShipPlatingSCBW@Lvl3",
     "TerranShipWeaponsSCBW@Lvl1",
     "TerranShipWeaponsSCBW@Lvl2",
     "TerranShipWeaponsSCBW@Lvl3",
+    "TerranVehiclePlatingSCBW@Lvl1",
+    "TerranVehiclePlatingSCBW@Lvl2",
+    "TerranVehiclePlatingSCBW@Lvl3",
     "TerranVehicleWeaponsSCBW@Lvl1",
     "TerranVehicleWeaponsSCBW@Lvl2",
     "TerranVehicleWeaponsSCBW@Lvl3"
@@ -916,12 +1052,10 @@
       "id": "Cancel",
       "Icon": "btn-command-cancel",
       "Name": {
-        "enUS": "Cancel",
-        "ruRU": "Отменить /// Cancel"
+        "enUS": "Cancel"
       },
       "Tooltip": {
-        "enUS": "Drops the current order without performing it, and allows you to select a different order.",
-        "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+        "enUS": "Drops the current order without performing it, and allows you to select a different order."
       }
     },
     {
@@ -929,12 +1063,10 @@
       "id": "CancelBuilding",
       "Icon": "btn-command-cancel",
       "Name": {
-        "enUS": "Cancel",
-        "ruRU": "Отменить /// Cancel"
+        "enUS": "Cancel"
       },
       "Tooltip": {
-        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-        "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund."
       }
     },
     {
@@ -942,12 +1074,10 @@
       "id": "Halt",
       "Icon": "btn-command-stop",
       "Name": {
-        "enUS": "Halt",
-        "ruRU": "Приостановить /// Halt"
+        "enUS": "Halt"
       },
       "Tooltip": {
-        "enUS": "Halts construction of this structure. The partial construction will remain.",
-        "ruRU": "Приостановить сооружение этого строения. Впоследствии его можно будет продолжить. /// Halts construction of this structure. The partial construction will remain."
+        "enUS": "Halts construction of this structure. The partial construction will remain."
       }
     },
     {
@@ -955,57 +1085,55 @@
       "id": "SelectBuilder",
       "Icon": "btn-upgrade-terran-weaponrefit",
       "Name": {
-        "enUS": "Select Builder",
-        "ruRU": "Select Builder"
+        "enUS": "Select Builder"
       },
       "Tooltip": {
-        "enUS": "Selects the unit constructing this structure.",
-        "ruRU": "Selects the unit constructing this structure."
+        "enUS": "Selects the unit constructing this structure."
       }
     },
     {
-      "AbilCmd": "MechPlating,Research1",
-      "id": "MechPlating@Lvl1",
-      "Icon": "btn-upgrade-terran-vehicleplatinglevel1",
+      "AbilCmd": "TerranShipPlatingSCBW,Research1",
+      "id": "TerranShipPlatingSCBW@Lvl1",
+      "Icon": "btn-upgrade-terran-shipplatinglevel1",
       "Name": {
-        "enUS": "Upgrade Vehicle and Ship Plating Level 1",
-        "zhCN": "Upgrade Vehicle and Ship Plating Level 1",
-        "koKR": "Upgrade Vehicle and Ship Plating Level 1"
+        "enUS": "Upgrade Ship Plating Level 1",
+        "zhCN": "升级舰船钢板等级1",
+        "koKR": "우주선 방어력 업그레이드 레벨 1 /// Upgrade Ship Plating Level 1"
       },
       "Tooltip": {
-        "enUS": "Upgrades the armor of units built at Factories and Starports.",
-        "zhCN": "Upgrades the armor of units built at Factories and Starports.",
-        "koKR": "Upgrades the armor of units built at Factories and Starports."
+        "enUS": "Upgrades the armor of units built at a Starport.",
+        "zhCN": "提升星港制造的单位的护甲。",
+        "koKR": "우주공항에서 생산하는 유닛의 방어력을 업그레이드합니다. /// Upgrades the armor of units built at a Starport."
       }
     },
     {
-      "AbilCmd": "MechPlating,Research2",
-      "id": "MechPlating@Lvl2",
-      "Icon": "btn-upgrade-terran-vehicleplatinglevel2",
+      "AbilCmd": "TerranShipPlatingSCBW,Research2",
+      "id": "TerranShipPlatingSCBW@Lvl2",
+      "Icon": "btn-upgrade-terran-shipplatinglevel2",
       "Name": {
-        "enUS": "Upgrade Vehicle and Ship Plating Level 2",
-        "zhCN": "Upgrade Vehicle and Ship Plating Level 2",
-        "koKR": "Upgrade Vehicle and Ship Plating Level 2"
+        "enUS": "Upgrade Ship Plating Level 2",
+        "zhCN": "升级舰船钢板等级2",
+        "koKR": "우주선 방어력 업그레이드 레벨 2 /// Upgrade Ship Plating Level 2"
       },
       "Tooltip": {
-        "enUS": "Upgrades the armor of units built at Factories and Starports.",
-        "zhCN": "Upgrades the armor of units built at Factories and Starports.",
-        "koKR": "Upgrades the armor of units built at Factories and Starports."
+        "enUS": "Further upgrades the armor of units built at a Starport.",
+        "zhCN": "进一步提升星港制造的单位的护甲。",
+        "koKR": "우주공항에서 생산하는 유닛의 방어력을 한 단계 더 업그레이드합니다. /// Further upgrades the armor of units built at a Starport."
       }
     },
     {
-      "AbilCmd": "MechPlating,Research3",
-      "id": "MechPlating@Lvl3",
-      "Icon": "btn-upgrade-terran-vehicleplatinglevel3",
+      "AbilCmd": "TerranShipPlatingSCBW,Research3",
+      "id": "TerranShipPlatingSCBW@Lvl3",
+      "Icon": "btn-upgrade-terran-shipplatinglevel3",
       "Name": {
-        "enUS": "Upgrade Vehicle and Ship Plating Level 3",
-        "zhCN": "Upgrade Vehicle and Ship Plating Level 3",
-        "koKR": "Upgrade Vehicle and Ship Plating Level 3"
+        "enUS": "Upgrade Ship Plating Level 3",
+        "zhCN": "升级舰船钢板等级3",
+        "koKR": "우주선 방어력 업그레이드 레벨 3 /// Upgrade Ship Plating Level 3"
       },
       "Tooltip": {
-        "enUS": "Upgrades the armor of units built at Factories and Starports.",
-        "zhCN": "Upgrades the armor of units built at Factories and Starports.",
-        "koKR": "Upgrades the armor of units built at Factories and Starports."
+        "enUS": "Maximizes the armor of units built at a Starport.",
+        "zhCN": "使星港制造的单位的护甲最大化。",
+        "koKR": "우주공항에서 생산하는 유닛의 방어력을 최대로 업그레이드합니다. /// Maximizes the armor of units built at a Starport."
       }
     },
     {
@@ -1051,6 +1179,51 @@
         "enUS": "Maximizes the damage dealt by units built at a Starport.",
         "zhCN": "使星港制造的单位的火力最大化。",
         "koKR": "우주공항에서 생산하는 유닛의 공격력을 최대로 업그레이드합니다. /// Maximizes the damage dealt by units built at a Starport."
+      }
+    },
+    {
+      "AbilCmd": "TerranVehiclePlatingSCBW,Research1",
+      "id": "TerranVehiclePlatingSCBW@Lvl1",
+      "Icon": "btn-upgrade-terran-vehicleplatinglevel1",
+      "Name": {
+        "enUS": "Upgrade Vehicle Plating Level 1",
+        "zhCN": "升级战车钢板等级1",
+        "koKR": "차량 방어력 업그레이드 레벨 1 /// Upgrade Vehicle Plating Level 1"
+      },
+      "Tooltip": {
+        "enUS": "Upgrades the armor of ground vehicles.",
+        "zhCN": "提升战车单位的护甲。",
+        "koKR": "지상 차량의 방어력을 업그레이드합니다. /// Upgrades the armor of ground vehicles."
+      }
+    },
+    {
+      "AbilCmd": "TerranVehiclePlatingSCBW,Research2",
+      "id": "TerranVehiclePlatingSCBW@Lvl2",
+      "Icon": "btn-upgrade-terran-vehicleplatinglevel2",
+      "Name": {
+        "enUS": "Upgrade Vehicle Plating Level 2",
+        "zhCN": "升级战车钢板等级2",
+        "koKR": "차량 방어력 업그레이드 레벨 2 /// Upgrade Vehicle Plating Level 2"
+      },
+      "Tooltip": {
+        "enUS": "Further upgrades the armor of ground vehicles.",
+        "zhCN": "进一步提升战车单位的护甲。",
+        "koKR": "지상 차량의 방어력을 한 단계 더 업그레이드합니다. /// Further upgrades the armor of ground vehicles."
+      }
+    },
+    {
+      "AbilCmd": "TerranVehiclePlatingSCBW,Research3",
+      "id": "TerranVehiclePlatingSCBW@Lvl3",
+      "Icon": "btn-upgrade-terran-vehicleplatinglevel3",
+      "Name": {
+        "enUS": "Upgrade Vehicle Plating Level 3",
+        "zhCN": "升级战车钢板等级3",
+        "koKR": "차량 방어력 업그레이드 레벨 3 /// Upgrade Vehicle Plating Level 3"
+      },
+      "Tooltip": {
+        "enUS": "Maximizes the armor of ground vehicles.",
+        "zhCN": "使战车单位的护甲最大化。",
+        "koKR": "지상 차량의 방어력을 최대로 업그레이드합니다. /// Maximizes the armor of ground vehicles."
       }
     },
     {

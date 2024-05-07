@@ -13,13 +13,6 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "ObserverSCBWSightUpgrade",
-  "EditorCategories": "UpgradeType:Talents,Race:Protoss",
-  "$tokens": {
-    "ID": {
-      "type": "string",
-      "value": ""
-    }
-  },
   "DataCollection": "ObserverSCBWSightUpgrade",
   "EffectArrayTemplate": [
     {
@@ -31,6 +24,7 @@
       "Value": "2"
     }
   ],
+  "EditorCategories": "UpgradeType:Talents,Race:Protoss",
   "AffectedUnitArray": [
     "ObserverSCBW",
     "ObserverSCBWSieged"

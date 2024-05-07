@@ -13,13 +13,6 @@
   "ScoreValue": "WeaponTechnologyValue",
   "WebPriority": 0,
   "LeaderAlias": "TerranVehicleWeaponsSCBW",
-  "EditorCategories": "Race:Terran,UpgradeType:AttackBonus",
-  "$tokens": {
-    "ID": {
-      "type": "string",
-      "value": ""
-    }
-  },
   "DataCollection": "TerranVehicleWeaponsSCBW",
   "Race": "BWTe",
   "ScoreAmount": 200,
@@ -35,11 +28,11 @@
     },
     {
       "Reference": "Effect,^ParamId^Weapon@DamageExpl,Amount",
-      "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
+      "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice*0.75}"
     },
     {
       "Reference": "Effect,^ParamId^Weapon@DamageConc,Amount",
-      "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
+      "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice*0.5}"
     },
     {
       "Reference": "Accumulator,^ParamId^Weapon@Damage,Amount",
@@ -60,7 +53,7 @@
     },
     {
       "Reference": "Effect,^ParamId^WeaponGround@DamageExpl,Amount",
-      "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
+      "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice*0.75}"
     },
     {
       "Reference": "Accumulator,^ParamId^WeaponGround@Damage,Amount",
@@ -81,7 +74,7 @@
     },
     {
       "Reference": "Effect,^ParamId^WeaponAir@DamageExpl,Amount",
-      "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[1].DamagePerDice}"
+      "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[1].DamagePerDice*0.75}"
     },
     {
       "Reference": "Accumulator,^ParamId^WeaponAir@Damage,Amount",
@@ -91,66 +84,13 @@
       "Operation": "Set",
       "Reference": "Weapon,^ParamId^WeaponAir,Icon",
       "Value": "Assets\\Textures\\btn-upgrade-terran-vehicleweaponslevel1.dds"
-    },
-    {
-      "Reference": "Effect,^ParamId^Weapon@DamageAccum,Amount",
-      "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
-    },
-    {
-      "Reference": "Effect,^ParamId^WeaponGround@DamageAccum,Amount",
-      "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
-    },
-    {
-      "Reference": "Effect,^ParamId^WeaponAir@DamageAccum,Amount",
-      "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[1].DamagePerDice}"
-    },
-    {
-      "Reference": "Effect,^ParamId^Weapon@DamageDirect,Amount",
-      "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
-    },
-    {
-      "Reference": "Effect,^ParamId^Weapon@DamageExpl,AttributeBonus[Armored]",
-      "Value": "1"
-    },
-    {
-      "Reference": "Effect,^ParamId^Weapon@DamageConc,AttributeBonus[Light]",
-      "Value": "1"
-    },
-    {
-      "Reference": "Effect,^ParamId^WeaponGround@DamageExpl,AttributeBonus[Armored]",
-      "Value": "1"
-    },
-    {
-      "Reference": "Effect,^ParamId^WeaponAir@DamageExpl,AttributeBonus[Armored]",
-      "Value": "1"
-    },
-    {
-      "Reference": "Effect,^ParamId^Weapon@DamageDirect,AttributeBonus[Armored]",
-      "Value": "1"
     }
   ],
+  "EditorCategories": "Race:Terran,UpgradeType:AttackBonus",
   "BonusResourcePerLevel": {
     "Minerals": 75,
     "Vespene": 75
   },
   "LeaderLevel": 1,
-  "EffectArray": [
-    {
-      "Reference": "Effect,SiegeTankSCBWWeapon@DamageAccum,AttributeBonus[Armored]",
-      "Value": "1"
-    },
-    {
-      "Reference": "Effect,SiegeTankSCBWSiegedWeapon@DamageAccum,AttributeBonus[Armored]",
-      "Value": "1"
-    },
-    {
-      "Reference": "Effect,VultureSCBWWeapon@DamageAccum,AttributeBonus[Light]",
-      "Value": "1"
-    },
-    {
-      "Reference": "Effect,GoliathSCBWWeaponAir@DamageAccum,AttributeBonus[Armored]",
-      "Value": "1"
-    }
-  ],
   "icon": "Assets\\Textures\\btn-upgrade-terran-vehicleweaponslevel1.dds"
 }

@@ -21,8 +21,7 @@
   "LifeStart": 200,
   "LifeMax": 200,
   "LifeArmorName": {
-    "enUS": "Protoss Armor",
-    "ruRU": "Protoss Armor"
+    "enUS": "Protoss Armor"
   },
   "Mover": "Ground",
   "StationaryTurningRate": 719.4726,
@@ -89,12 +88,6 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
-  "$tokens": {
-    "ID": {
-      "type": "string",
-      "value": ""
-    }
-  },
   "Mob": "Multiplayer",
   "FogVisibility": "Snapshot",
   "PlaneArray": [
@@ -119,10 +112,9 @@
   "EnergyRegenRate": 0.5,
   "ShieldsStart": 200,
   "ShieldsMax": 200,
-  "ShieldRegenRate": 2,
+  "ShieldRegenRate": 0.4375,
   "ShieldArmorName": {
-    "enUS": "Protoss Plasma Shields",
-    "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+    "enUS": "Protoss Plasma Shields"
   },
   "Sight": 9,
   "CostCategory": "Technology",
@@ -151,12 +143,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "ShieldBatterySCBWRecharge",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "RangeSlop": 1,
           "ArcSlop": 11.25,
           "AutoCastAcquireLevel": "Defensive",
@@ -168,7 +154,7 @@
             "RangeUseCasterRadius": 1,
             "ReApproachable": 1,
             "RequireTargetVision": 1,
-            "WaitToSpend": 1,
+            "WaitToSpend": 0,
             "UpdateChargesOnLevelChange": 1,
             "BestUnit": 0,
             "AutoCast": 1,
@@ -247,10 +233,10 @@
             "Visible;Self,Enemy,Missile,UnderConstruction,Dead,Hidden,Invulnerable"
           ],
           "Range": [
-            6
+            4
           ],
           "Arc": 360,
-          "AutoCastRange": 6,
+          "AutoCastRange": 4,
           "AutoCastValidatorArray": [
             "ShieldBatterySCBWRecharge@Autocast"
           ],
@@ -311,12 +297,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "BuildInProgress",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "Activity": "UI/Building",
           "VitalStartFactor": {
             "Life": 0.1,
@@ -350,12 +330,10 @@
         "id": "Cancel",
         "Icon": "btn-command-cancel",
         "Name": {
-          "enUS": "Cancel",
-          "ruRU": "Отменить /// Cancel"
+          "enUS": "Cancel"
         },
         "Tooltip": {
-          "enUS": "Drops the current order without performing it, and allows you to select a different order.",
-          "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+          "enUS": "Drops the current order without performing it, and allows you to select a different order."
         },
         "Hotkey": "Esc"
       },
@@ -378,12 +356,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "stop",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "AbilSetId": "Stop",
           "CmdButtonArray": {
             "Stop": {
@@ -430,12 +402,10 @@
         "id": "Stop",
         "Icon": "btn-command-stop",
         "Name": {
-          "enUS": "Stop",
-          "ruRU": "Отставить /// Stop"
+          "enUS": "Stop"
         },
         "Tooltip": {
-          "enUS": "Orders selected units to cancel all orders and stop moving.",
-          "ruRU": "Orders selected units to cancel all orders and stop moving."
+          "enUS": "Orders selected units to cancel all orders and stop moving."
         },
         "Hotkey": "S"
       }
@@ -451,13 +421,12 @@
   "GlossaryCategory": "Unit/Category/ProtossUnitsSCBW",
   "GlossaryPriority": 201,
   "HotkeyCategory": "Unit/Category/ProtossUnitsSCBW",
-  "BuildTime": 25,
+  "BuildTime": 30,
   "GlossaryWeakArray": [
     "ScienceVesselSCBW",
     "DefilerSCBW",
     "ReaverSCBW"
   ],
-  "ShieldRegenDelay": 10,
   "id": "ShieldBatterySCBW",
   "Icon": "btn-building-protoss-shieldbattery",
   "LifeArmorIcon": "btn-armor-protoss-buildingplating",
@@ -467,8 +436,7 @@
     {
       "id": "PowerUserQueueSmall",
       "Name": {
-        "enUS": "Power User (Queue, Small)",
-        "ruRU": "Power User (Queue, Small)"
+        "enUS": "Power User (Queue, Small)"
       },
       "Tooltip": "-"
     }
@@ -477,8 +445,7 @@
     {
       "id": "BuildInProgress",
       "Name": {
-        "enUS": "Build in Progress",
-        "ruRU": "Build in Progress"
+        "enUS": "Build in Progress"
       }
     },
     {
@@ -492,8 +459,7 @@
     {
       "id": "stop",
       "Name": {
-        "enUS": "Stop",
-        "ruRU": "Stop"
+        "enUS": "Stop"
       }
     }
   ],
@@ -507,10 +473,10 @@
     "IsShieldBatterySCBW",
     "NotShieldBatterySCBW",
     "CasterIsShieldBatterySCBW",
+    "ShieldBatterySCBW",
     "ShieldBatterySCBW@Count",
     "ShieldBatterySCBW@QoB",
-    "ShieldBatterySCBW@QoBAtUnit",
-    "ShieldBatterySCBW"
+    "ShieldBatterySCBW@QoBAtUnit"
   ],
   "$Requirements": [],
   "$Production": [],
@@ -542,12 +508,10 @@
       "id": "Cancel",
       "Icon": "btn-command-cancel",
       "Name": {
-        "enUS": "Cancel",
-        "ruRU": "Отменить /// Cancel"
+        "enUS": "Cancel"
       },
       "Tooltip": {
-        "enUS": "Drops the current order without performing it, and allows you to select a different order.",
-        "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+        "enUS": "Drops the current order without performing it, and allows you to select a different order."
       }
     },
     {
@@ -555,12 +519,10 @@
       "id": "Stop",
       "Icon": "btn-command-stop",
       "Name": {
-        "enUS": "Stop",
-        "ruRU": "Отставить /// Stop"
+        "enUS": "Stop"
       },
       "Tooltip": {
-        "enUS": "Orders selected units to cancel all orders and stop moving.",
-        "ruRU": "Orders selected units to cancel all orders and stop moving."
+        "enUS": "Orders selected units to cancel all orders and stop moving."
       }
     }
   ]

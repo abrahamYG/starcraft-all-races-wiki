@@ -21,8 +21,7 @@
   "LifeStart": 400,
   "LifeMax": 400,
   "LifeArmorName": {
-    "enUS": "Zerg Ground Carapace",
-    "ruRU": "Zerg Ground Carapace"
+    "enUS": "Zerg Ground Carapace"
   },
   "Mover": "Burrowed",
   "StationaryTurningRate": 720,
@@ -88,12 +87,6 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
-  "$tokens": {
-    "ID": {
-      "type": "string",
-      "value": ""
-    }
-  },
   "Mob": "Multiplayer",
   "EnergyRegenRate": 0.5,
   "id": "UltraliskSCBW@Burrowed",
@@ -145,12 +138,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "attack",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "AbilSetId": "Attack",
           "Alignment": "Negative",
           "AcquireFilters": "-;Player,Ally,Neutral,Dead,Hidden,Invulnerable,Benign",
@@ -198,12 +185,10 @@
         "id": "Attack",
         "Icon": "btn-command-attack",
         "Name": {
-          "enUS": "Attack",
-          "ruRU": "Атаковать /// Attack"
+          "enUS": "Attack"
         },
         "Tooltip": {
-          "enUS": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
-          "ruRU": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed."
+          "enUS": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed."
         },
         "Hotkey": "A"
       },
@@ -237,12 +222,10 @@
         "id": "BurrowUp",
         "Icon": "btn-ability-zerg-upburrow-color",
         "Name": {
-          "enUS": "Unburrow",
-          "ruRU": "Unburrow"
+          "enUS": "Unburrow"
         },
         "Tooltip": {
-          "enUS": "Returns the unit to the surface.",
-          "ruRU": "Returns the unit to the surface."
+          "enUS": "Returns the unit to the surface."
         },
         "Hotkey": "R"
       },
@@ -291,12 +274,10 @@
         "id": "BurrowDown",
         "Icon": "btn-ability-zerg-burrow-color",
         "Name": {
-          "enUS": "Burrow",
-          "ruRU": "Burrow"
+          "enUS": "Burrow"
         },
         "Tooltip": {
-          "enUS": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
-          "ruRU": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection."
+          "enUS": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection."
         },
         "Hotkey": "D"
       },
@@ -340,12 +321,10 @@
         "id": "BurrowDown",
         "Icon": "btn-ability-zerg-burrow-color",
         "Name": {
-          "enUS": "Burrow",
-          "ruRU": "Burrow"
+          "enUS": "Burrow"
         },
         "Tooltip": {
-          "enUS": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
-          "ruRU": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection."
+          "enUS": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection."
         },
         "Hotkey": "D"
       },
@@ -394,12 +373,10 @@
         "id": "BurrowDown",
         "Icon": "btn-ability-zerg-burrow-color",
         "Name": {
-          "enUS": "Burrow",
-          "ruRU": "Burrow"
+          "enUS": "Burrow"
         },
         "Tooltip": {
-          "enUS": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
-          "ruRU": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection."
+          "enUS": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection."
         },
         "Hotkey": "D"
       },
@@ -443,12 +420,10 @@
         "id": "BurrowDown",
         "Icon": "btn-ability-zerg-burrow-color",
         "Name": {
-          "enUS": "Burrow",
-          "ruRU": "Burrow"
+          "enUS": "Burrow"
         },
         "Tooltip": {
-          "enUS": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
-          "ruRU": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection."
+          "enUS": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection."
         },
         "Hotkey": "D"
       },
@@ -492,12 +467,10 @@
         "id": "BurrowDown",
         "Icon": "btn-ability-zerg-burrow-color",
         "Name": {
-          "enUS": "Burrow",
-          "ruRU": "Burrow"
+          "enUS": "Burrow"
         },
         "Tooltip": {
-          "enUS": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
-          "ruRU": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection."
+          "enUS": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection."
         },
         "Hotkey": "D"
       },
@@ -541,18 +514,16 @@
         "id": "BurrowDown",
         "Icon": "btn-ability-zerg-burrow-color",
         "Name": {
-          "enUS": "Burrow",
-          "ruRU": "Burrow"
+          "enUS": "Burrow"
         },
         "Tooltip": {
-          "enUS": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
-          "ruRU": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection."
+          "enUS": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection."
         },
         "Hotkey": "D"
       }
     ]
   },
-  "InnerRadius": 0.6875,
+  "InnerRadius": 0.5625,
   "ScoreKill": 500,
   "SubgroupPriority": 88,
   "TacticalAIThink": "AIThinkUltraliskSCBW",
@@ -589,19 +560,14 @@
   "$Production": [],
   "$Research": [],
   "$Morph": [
+    "UltraliskSCBW",
     "DefilerSCBW@Burrowed",
     "DroneSCBW@Burrowed",
-    "HydraliskSCBW@Burrowed"
-  ],
-  "$Phase": [
-    "ZerglingSCBW@Burrowed",
+    "HydraliskSCBW@Burrowed",
     "UltraliskSCBW@Burrowed",
-    "UltraliskSCBW@Burrowed",
-    "UltraliskSCBW",
-    "UltraliskSCBW",
-    "ZerglingSCBW"
+    "ZerglingSCBW@Burrowed"
   ],
-  "$Phased": "UltraliskSCBW@Burrowed",
+  "$Phase": [],
   "$Producers": [],
   "$Commands": [
     {
@@ -609,12 +575,10 @@
       "id": "Attack",
       "Icon": "btn-command-attack",
       "Name": {
-        "enUS": "Attack",
-        "ruRU": "Атаковать /// Attack"
+        "enUS": "Attack"
       },
       "Tooltip": {
-        "enUS": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
-        "ruRU": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed."
+        "enUS": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed."
       }
     },
     {
@@ -622,12 +586,10 @@
       "id": "BurrowUp",
       "Icon": "btn-ability-zerg-upburrow-color",
       "Name": {
-        "enUS": "Unburrow",
-        "ruRU": "Unburrow"
+        "enUS": "Unburrow"
       },
       "Tooltip": {
-        "enUS": "Returns the unit to the surface.",
-        "ruRU": "Returns the unit to the surface."
+        "enUS": "Returns the unit to the surface."
       }
     },
     {
@@ -635,12 +597,10 @@
       "id": "BurrowDown",
       "Icon": "btn-ability-zerg-burrow-color",
       "Name": {
-        "enUS": "Burrow",
-        "ruRU": "Burrow"
+        "enUS": "Burrow"
       },
       "Tooltip": {
-        "enUS": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
-        "ruRU": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection."
+        "enUS": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection."
       }
     },
     {
@@ -648,12 +608,10 @@
       "id": "BurrowDown",
       "Icon": "btn-ability-zerg-burrow-color",
       "Name": {
-        "enUS": "Burrow",
-        "ruRU": "Burrow"
+        "enUS": "Burrow"
       },
       "Tooltip": {
-        "enUS": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
-        "ruRU": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection."
+        "enUS": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection."
       }
     },
     {
@@ -661,12 +619,10 @@
       "id": "BurrowDown",
       "Icon": "btn-ability-zerg-burrow-color",
       "Name": {
-        "enUS": "Burrow",
-        "ruRU": "Burrow"
+        "enUS": "Burrow"
       },
       "Tooltip": {
-        "enUS": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
-        "ruRU": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection."
+        "enUS": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection."
       }
     },
     {
@@ -674,12 +630,10 @@
       "id": "BurrowDown",
       "Icon": "btn-ability-zerg-burrow-color",
       "Name": {
-        "enUS": "Burrow",
-        "ruRU": "Burrow"
+        "enUS": "Burrow"
       },
       "Tooltip": {
-        "enUS": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
-        "ruRU": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection."
+        "enUS": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection."
       }
     },
     {
@@ -687,12 +641,10 @@
       "id": "BurrowDown",
       "Icon": "btn-ability-zerg-burrow-color",
       "Name": {
-        "enUS": "Burrow",
-        "ruRU": "Burrow"
+        "enUS": "Burrow"
       },
       "Tooltip": {
-        "enUS": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
-        "ruRU": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection."
+        "enUS": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection."
       }
     },
     {
@@ -700,12 +652,10 @@
       "id": "BurrowDown",
       "Icon": "btn-ability-zerg-burrow-color",
       "Name": {
-        "enUS": "Burrow",
-        "ruRU": "Burrow"
+        "enUS": "Burrow"
       },
       "Tooltip": {
-        "enUS": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection.",
-        "ruRU": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection."
+        "enUS": "Buries the unit underground. Burrowed units are unable to move or attack, but they cannot be seen without detection."
       }
     }
   ]

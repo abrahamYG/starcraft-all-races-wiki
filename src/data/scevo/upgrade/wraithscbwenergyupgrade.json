@@ -13,13 +13,6 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "WraithSCBWEnergyUpgrade",
-  "EditorCategories": "Race:Terran,UpgradeType:Talents",
-  "$tokens": {
-    "ID": {
-      "type": "string",
-      "value": ""
-    }
-  },
   "DataCollection": "WraithSCBWEnergyUpgrade",
   "EffectArrayTemplate": [
     {
@@ -34,6 +27,7 @@
   "Race": "Terr",
   "ScoreAmount": 400,
   "ScoreResult": "BuildOrder",
+  "EditorCategories": "Race:Terran,UpgradeType:Talents",
   "AffectedUnitArray": [
     "WraithSCBW"
   ]

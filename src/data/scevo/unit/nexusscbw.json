@@ -21,8 +21,7 @@
   "LifeStart": 750,
   "LifeMax": 750,
   "LifeArmorName": {
-    "enUS": "Protoss Armor",
-    "ruRU": "Protoss Armor"
+    "enUS": "Protoss Armor"
   },
   "Mover": "Ground",
   "StationaryTurningRate": 719.4726,
@@ -89,22 +88,15 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
-  "$tokens": {
-    "ID": {
-      "type": "string",
-      "value": ""
-    }
-  },
   "Facing": 315,
   "Mob": "Multiplayer",
   "FogVisibility": "Snapshot",
   "LifeArmor": 1,
   "ShieldsStart": 750,
   "ShieldsMax": 750,
-  "ShieldRegenRate": 2,
+  "ShieldRegenRate": 0.4375,
   "ShieldArmorName": {
-    "enUS": "Protoss Plasma Shields",
-    "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+    "enUS": "Protoss Plasma Shields"
   },
   "Food": 15,
   "AttackTargetPriority": 11,
@@ -159,12 +151,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "que5Passive",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "QueueCount": 1,
           "Flags": {
             "BestUnit": 1,
@@ -199,12 +185,10 @@
         "id": "Cancel",
         "Icon": "btn-command-cancel",
         "Name": {
-          "enUS": "Cancel",
-          "ruRU": "Отменить /// Cancel"
+          "enUS": "Cancel"
         },
         "Tooltip": {
-          "enUS": "Drops the current order without performing it, and allows you to select a different order.",
-          "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+          "enUS": "Drops the current order without performing it, and allows you to select a different order."
         },
         "Hotkey": "Esc"
       },
@@ -227,12 +211,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "BuildInProgress",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "Activity": "UI/Building",
           "VitalStartFactor": {
             "Life": 0.1,
@@ -266,12 +244,10 @@
         "id": "CancelBuilding",
         "Icon": "btn-command-cancel",
         "Name": {
-          "enUS": "Cancel",
-          "ruRU": "Отменить /// Cancel"
+          "enUS": "Cancel"
         },
         "Tooltip": {
-          "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-          "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+          "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund."
         },
         "Hotkey": "Esc"
       },
@@ -294,12 +270,10 @@
         "id": "Rally",
         "Icon": "btn-ability-terran-setrallypoint",
         "Name": {
-          "enUS": "Set Rally Point",
-          "ruRU": "Задать точку сбора /// Set Rally Point"
+          "enUS": "Set Rally Point"
         },
         "Tooltip": {
-          "enUS": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
-          "ruRU": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically."
+          "enUS": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically."
         },
         "Hotkey": "Y"
       },
@@ -311,6 +285,7 @@
               "UseDefaultButton": 1,
               "CreateDefaultButton": 1
             },
+            "State": "Restricted",
             "DefaultButtonFace": "ProbeSCBW",
             "Requirements": "ProbeSCBW"
           },
@@ -355,13 +330,12 @@
   "HotkeyCategory": "Unit/Category/ProtossUnitsSCBW",
   "CostCategory": "Economy",
   "CostResource": {
-    "Minerals": 350
+    "Minerals": 400
   },
   "TechTreeProducedUnitArray": [
     "ProbeSCBW"
   ],
   "BuildTime": 100,
-  "ShieldRegenDelay": 10,
   "id": "NexusSCBW",
   "Icon": "btn-building-protoss-nexus@scbw",
   "LifeArmorIcon": "btn-armor-protoss-buildingplating",
@@ -372,14 +346,12 @@
     {
       "id": "BuildInProgress",
       "Name": {
-        "enUS": "Build in Progress",
-        "ruRU": "Build in Progress"
+        "enUS": "Build in Progress"
       }
     },
     {
       "id": "que5Passive",
       "Name": {
-        "ruRU": "Queue (5) Passive",
         "enUS": "Queue (5) Passive"
       }
     },
@@ -402,8 +374,7 @@
     {
       "id": "stopProtossBuilding",
       "Name": {
-        "enUS": "stop Protoss Building",
-        "ruRU": "stop Protoss Building"
+        "enUS": "stop Protoss Building"
       }
     }
   ],
@@ -419,10 +390,10 @@
     "IsNexusSCBW",
     "NotNexusSCBW",
     "CasterIsNexusSCBW",
+    "NexusSCBW",
     "NexusSCBW@Count",
     "NexusSCBW@QoB",
-    "NexusSCBW@QoBAtUnit",
-    "NexusSCBW"
+    "NexusSCBW@QoBAtUnit"
   ],
   "$Requirements": [],
   "$Production": [
@@ -441,12 +412,10 @@
       "id": "Cancel",
       "Icon": "btn-command-cancel",
       "Name": {
-        "enUS": "Cancel",
-        "ruRU": "Отменить /// Cancel"
+        "enUS": "Cancel"
       },
       "Tooltip": {
-        "enUS": "Drops the current order without performing it, and allows you to select a different order.",
-        "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+        "enUS": "Drops the current order without performing it, and allows you to select a different order."
       }
     },
     {
@@ -454,12 +423,10 @@
       "id": "CancelBuilding",
       "Icon": "btn-command-cancel",
       "Name": {
-        "enUS": "Cancel",
-        "ruRU": "Отменить /// Cancel"
+        "enUS": "Cancel"
       },
       "Tooltip": {
-        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-        "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund."
       }
     },
     {
@@ -467,12 +434,10 @@
       "id": "Rally",
       "Icon": "btn-ability-terran-setrallypoint",
       "Name": {
-        "enUS": "Set Rally Point",
-        "ruRU": "Задать точку сбора /// Set Rally Point"
+        "enUS": "Set Rally Point"
       },
       "Tooltip": {
-        "enUS": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
-        "ruRU": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically."
+        "enUS": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically."
       }
     },
     {

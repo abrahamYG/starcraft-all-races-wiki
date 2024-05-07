@@ -13,18 +13,12 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "ArbiterSCBWRecallResearch",
-  "EditorCategories": "UpgradeType:SpellResearch,Race:Protoss",
-  "$tokens": {
-    "ID": {
-      "type": "string",
-      "value": ""
-    }
-  },
   "DataCollection": "ArbiterSCBWRecallResearch",
   "InfoTooltipPriority": 1,
   "Race": "Prot",
   "ScoreAmount": 300,
   "ScoreResult": "BuildOrder",
+  "EditorCategories": "UpgradeType:SpellResearch,Race:Protoss",
   "AffectedUnitArray": [
     "ArbiterSCBW"
   ]

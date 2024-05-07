@@ -13,13 +13,6 @@
   "ScoreValue": "ArmorTechnologyValue",
   "WebPriority": 0,
   "LeaderAlias": "ProtossGroundArmorsSCBW",
-  "EditorCategories": "Race:Protoss,UpgradeType:ArmorBonus",
-  "$tokens": {
-    "ID": {
-      "type": "string",
-      "value": ""
-    }
-  },
   "DataCollection": "ProtossGroundArmorsSCBW",
   "Race": "BWPr",
   "ScoreResult": "BuildOrder",
@@ -38,6 +31,7 @@
       "Value": "Assets\\Textures\\btn-upgrade-protoss-groundarmorlevel2.dds"
     }
   ],
+  "EditorCategories": "Race:Protoss,UpgradeType:ArmorBonus",
   "BonusResourcePerLevel": {
     "Minerals": 75,
     "Vespene": 75

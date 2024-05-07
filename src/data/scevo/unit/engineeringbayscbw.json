@@ -21,8 +21,7 @@
   "LifeStart": 850,
   "LifeMax": 850,
   "LifeArmorName": {
-    "enUS": "Terran Building Plating",
-    "ruRU": "Terran Building Plating"
+    "enUS": "Terran Building Plating"
   },
   "Mover": "Ground",
   "StationaryTurningRate": 720,
@@ -88,12 +87,6 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
-  "$tokens": {
-    "ID": {
-      "type": "string",
-      "value": ""
-    }
-  },
   "Mob": "Multiplayer",
   "Gender": "Neutral",
   "FogVisibility": "Snapshot",
@@ -172,12 +165,10 @@
         "id": "Lift",
         "Icon": "btn-ability-terran-liftoff",
         "Name": {
-          "enUS": "Lift Off",
-          "ruRU": "Lift Off"
+          "enUS": "Lift Off"
         },
         "Tooltip": {
-          "enUS": "Transforms structure into a slow air unit for redeployment. May not produce units, research upgrades, or use abilities until it has landed.",
-          "ruRU": "Transforms structure into a slow air unit for redeployment. May not produce units, research upgrades, or use abilities until it has landed."
+          "enUS": "Transforms structure into a slow air unit for redeployment. May not produce units, research upgrades, or use abilities until it has landed."
         },
         "Hotkey": "L"
       },
@@ -200,12 +191,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "que5",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "QueueCount": 1,
           "Flags": {
             "BestUnit": 1,
@@ -239,12 +224,10 @@
         "id": "Cancel",
         "Icon": "btn-command-cancel",
         "Name": {
-          "enUS": "Cancel",
-          "ruRU": "Отменить /// Cancel"
+          "enUS": "Cancel"
         },
         "Tooltip": {
-          "enUS": "Drops the current order without performing it, and allows you to select a different order.",
-          "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+          "enUS": "Drops the current order without performing it, and allows you to select a different order."
         },
         "Hotkey": "Esc"
       },
@@ -267,12 +250,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "BuildInProgress",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "Activity": "UI/Building",
           "VitalStartFactor": {
             "Life": 0.1,
@@ -306,12 +283,10 @@
         "id": "CancelBuilding",
         "Icon": "btn-command-cancel",
         "Name": {
-          "enUS": "Cancel",
-          "ruRU": "Отменить /// Cancel"
+          "enUS": "Cancel"
         },
         "Tooltip": {
-          "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-          "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+          "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund."
         },
         "Hotkey": "Esc"
       },
@@ -334,12 +309,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "BuildInProgress",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "Activity": "UI/Building",
           "VitalStartFactor": {
             "Life": 0.1,
@@ -373,12 +342,10 @@
         "id": "Halt",
         "Icon": "btn-command-stop",
         "Name": {
-          "enUS": "Halt",
-          "ruRU": "Приостановить /// Halt"
+          "enUS": "Halt"
         },
         "Tooltip": {
-          "enUS": "Halts construction of this structure. The partial construction will remain.",
-          "ruRU": "Приостановить сооружение этого строения. Впоследствии его можно будет продолжить. /// Halts construction of this structure. The partial construction will remain."
+          "enUS": "Halts construction of this structure. The partial construction will remain."
         },
         "Hotkey": "T"
       },
@@ -399,12 +366,10 @@
         "id": "SelectBuilder",
         "Icon": "btn-upgrade-terran-weaponrefit",
         "Name": {
-          "enUS": "Select Builder",
-          "ruRU": "Select Builder"
+          "enUS": "Select Builder"
         },
         "Tooltip": {
-          "enUS": "Selects the unit constructing this structure.",
-          "ruRU": "Selects the unit constructing this structure."
+          "enUS": "Selects the unit constructing this structure."
         },
         "Hotkey": "Q"
       },
@@ -420,6 +385,7 @@
               "CreateDefaultButton": 1
             },
             "DefaultButtonFace": "TerranInfantryArmorsSCBW@Lvl1",
+            "State": "Restricted",
             "Requirements": "TerranInfantryArmorsSCBW@Lvl1"
           },
           "Resource": {
@@ -469,20 +435,21 @@
               "UseDefaultButton": 1,
               "CreateDefaultButton": 1
             },
+            "State": "Restricted",
             "DefaultButtonFace": "TerranInfantryArmorsSCBW@Lvl2",
             "Requirements": "TerranInfantryArmorsSCBW@Lvl2"
           },
           "Resource": {
-            "Minerals": 150,
-            "Vespene": 150
+            "Minerals": 175,
+            "Vespene": 175
           },
           "Time": 190,
           "Upgrade": "TerranInfantryArmorsSCBW@Lvl2"
         },
         "Time": 190,
         "Cost": {
-          "Minerals": 150,
-          "Vespene": 150,
+          "Minerals": 175,
+          "Vespene": 175,
           "Terazine": 0,
           "Custom": 0,
           "Energy": 0,
@@ -519,20 +486,21 @@
               "UseDefaultButton": 1,
               "CreateDefaultButton": 1
             },
+            "State": "Restricted",
             "DefaultButtonFace": "TerranInfantryArmorsSCBW@Lvl3",
             "Requirements": "TerranInfantryArmorsSCBW@Lvl3"
           },
           "Resource": {
-            "Minerals": 200,
-            "Vespene": 200
+            "Minerals": 250,
+            "Vespene": 250
           },
           "Time": 220,
           "Upgrade": "TerranInfantryArmorsSCBW@Lvl3"
         },
         "Time": 220,
         "Cost": {
-          "Minerals": 200,
-          "Vespene": 200,
+          "Minerals": 250,
+          "Vespene": 250,
           "Terazine": 0,
           "Custom": 0,
           "Energy": 0,
@@ -570,6 +538,7 @@
               "CreateDefaultButton": 1
             },
             "DefaultButtonFace": "TerranInfantryWeaponsSCBW@Lvl1",
+            "State": "Restricted",
             "Requirements": "TerranInfantryWeaponsSCBW@Lvl1"
           },
           "Resource": {
@@ -619,20 +588,21 @@
               "UseDefaultButton": 1,
               "CreateDefaultButton": 1
             },
+            "State": "Restricted",
             "DefaultButtonFace": "TerranInfantryWeaponsSCBW@Lvl2",
             "Requirements": "TerranInfantryWeaponsSCBW@Lvl2"
           },
           "Resource": {
-            "Minerals": 150,
-            "Vespene": 150
+            "Minerals": 175,
+            "Vespene": 175
           },
           "Time": 190,
           "Upgrade": "TerranInfantryWeaponsSCBW@Lvl2"
         },
         "Time": 190,
         "Cost": {
-          "Minerals": 150,
-          "Vespene": 150,
+          "Minerals": 175,
+          "Vespene": 175,
           "Terazine": 0,
           "Custom": 0,
           "Energy": 0,
@@ -669,20 +639,21 @@
               "UseDefaultButton": 1,
               "CreateDefaultButton": 1
             },
+            "State": "Restricted",
             "DefaultButtonFace": "TerranInfantryWeaponsSCBW@Lvl3",
             "Requirements": "TerranInfantryWeaponsSCBW@Lvl3"
           },
           "Resource": {
-            "Minerals": 200,
-            "Vespene": 200
+            "Minerals": 250,
+            "Vespene": 250
           },
           "Time": 220,
           "Upgrade": "TerranInfantryWeaponsSCBW@Lvl3"
         },
         "Time": 220,
         "Cost": {
-          "Minerals": 200,
-          "Vespene": 200,
+          "Minerals": 250,
+          "Vespene": 250,
           "Terazine": 0,
           "Custom": 0,
           "Energy": 0,
@@ -725,9 +696,7 @@
     {
       "id": "TerranBuildingSCBW@Burnout",
       "Name": {
-        "enUS": "Burnout",
-        "zhCN": "Burnout",
-        "koKR": "Burnout"
+        "enUS": "Burnout"
       },
       "Tooltip": "-"
     }
@@ -736,14 +705,12 @@
     {
       "id": "BuildInProgress",
       "Name": {
-        "enUS": "Build in Progress",
-        "ruRU": "Build in Progress"
+        "enUS": "Build in Progress"
       }
     },
     {
       "id": "que5",
       "Name": {
-        "ruRU": "Queue (5)",
         "enUS": "Queue (5)"
       }
     },
@@ -811,12 +778,10 @@
       "id": "Lift",
       "Icon": "btn-ability-terran-liftoff",
       "Name": {
-        "enUS": "Lift Off",
-        "ruRU": "Lift Off"
+        "enUS": "Lift Off"
       },
       "Tooltip": {
-        "enUS": "Transforms structure into a slow air unit for redeployment. May not produce units, research upgrades, or use abilities until it has landed.",
-        "ruRU": "Transforms structure into a slow air unit for redeployment. May not produce units, research upgrades, or use abilities until it has landed."
+        "enUS": "Transforms structure into a slow air unit for redeployment. May not produce units, research upgrades, or use abilities until it has landed."
       }
     },
     {
@@ -824,12 +789,10 @@
       "id": "Cancel",
       "Icon": "btn-command-cancel",
       "Name": {
-        "enUS": "Cancel",
-        "ruRU": "Отменить /// Cancel"
+        "enUS": "Cancel"
       },
       "Tooltip": {
-        "enUS": "Drops the current order without performing it, and allows you to select a different order.",
-        "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+        "enUS": "Drops the current order without performing it, and allows you to select a different order."
       }
     },
     {
@@ -837,12 +800,10 @@
       "id": "CancelBuilding",
       "Icon": "btn-command-cancel",
       "Name": {
-        "enUS": "Cancel",
-        "ruRU": "Отменить /// Cancel"
+        "enUS": "Cancel"
       },
       "Tooltip": {
-        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-        "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund."
       }
     },
     {
@@ -850,12 +811,10 @@
       "id": "Halt",
       "Icon": "btn-command-stop",
       "Name": {
-        "enUS": "Halt",
-        "ruRU": "Приостановить /// Halt"
+        "enUS": "Halt"
       },
       "Tooltip": {
-        "enUS": "Halts construction of this structure. The partial construction will remain.",
-        "ruRU": "Приостановить сооружение этого строения. Впоследствии его можно будет продолжить. /// Halts construction of this structure. The partial construction will remain."
+        "enUS": "Halts construction of this structure. The partial construction will remain."
       }
     },
     {

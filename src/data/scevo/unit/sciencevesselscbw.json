@@ -21,8 +21,7 @@
   "LifeStart": 200,
   "LifeMax": 200,
   "LifeArmorName": {
-    "enUS": "Terran Ship Plating",
-    "ruRU": "Terran Ship Plating"
+    "enUS": "Terran Ship Plating"
   },
   "Mover": "Fly",
   "StationaryTurningRate": 999.8437,
@@ -92,12 +91,6 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
-  "$tokens": {
-    "ID": {
-      "type": "string",
-      "value": ""
-    }
-  },
   "Mob": "Multiplayer",
   "EnergyRegenRate": 0.5625,
   "id": "ScienceVesselSCBW",
@@ -159,12 +152,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -202,7 +189,8 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move"
+          "id": "move",
+          "AbilSetId": "Move"
         },
         "Cost": {
           "Minerals": 0,
@@ -221,12 +209,10 @@
         "id": "Move",
         "Icon": "btn-command-move",
         "Name": {
-          "enUS": "Move",
-          "ruRU": "Двигаться /// Move"
+          "enUS": "Move"
         },
         "Tooltip": {
-          "enUS": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
-          "ruRU": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies."
+          "enUS": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies."
         },
         "Hotkey": "M"
       },
@@ -249,12 +235,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "stop",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "AbilSetId": "Stop",
           "CmdButtonArray": {
             "Stop": {
@@ -301,12 +281,10 @@
         "id": "Stop",
         "Icon": "btn-command-stop",
         "Name": {
-          "enUS": "Stop",
-          "ruRU": "Отставить /// Stop"
+          "enUS": "Stop"
         },
         "Tooltip": {
-          "enUS": "Orders selected units to cancel all orders and stop moving.",
-          "ruRU": "Orders selected units to cancel all orders and stop moving."
+          "enUS": "Orders selected units to cancel all orders and stop moving."
         },
         "Hotkey": "S"
       },
@@ -335,12 +313,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -378,7 +350,8 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move"
+          "id": "move",
+          "AbilSetId": "Move"
         },
         "Cost": {
           "Minerals": 0,
@@ -397,12 +370,10 @@
         "id": "MoveHoldPosition",
         "Icon": "btn-command-holdposition",
         "Name": {
-          "enUS": "Hold Position",
-          "ruRU": "Удерживать позицию /// Hold Position"
+          "enUS": "Hold Position"
         },
         "Tooltip": {
-          "enUS": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
-          "ruRU": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage."
+          "enUS": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage."
         },
         "Hotkey": "H"
       },
@@ -431,12 +402,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -474,7 +439,8 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move"
+          "id": "move",
+          "AbilSetId": "Move"
         },
         "Cost": {
           "Minerals": 0,
@@ -493,12 +459,10 @@
         "id": "MovePatrol",
         "Icon": "btn-command-patrol",
         "Name": {
-          "enUS": "Patrol",
-          "ruRU": "Патрулировать /// Patrol"
+          "enUS": "Patrol"
         },
         "Tooltip": {
-          "enUS": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
-          "ruRU": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies."
+          "enUS": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies."
         },
         "Hotkey": "P"
       },
@@ -521,12 +485,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "attack",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "AbilSetId": "Attack",
           "Alignment": "Negative",
           "AcquireFilters": "-;Player,Ally,Neutral,Dead,Hidden,Invulnerable,Benign",
@@ -574,12 +532,10 @@
         "id": "Attack",
         "Icon": "btn-command-attack",
         "Name": {
-          "enUS": "Attack",
-          "ruRU": "Атаковать /// Attack"
+          "enUS": "Attack"
         },
         "Tooltip": {
-          "enUS": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
-          "ruRU": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed."
+          "enUS": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed."
         },
         "Hotkey": "A"
       },
@@ -608,12 +564,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -651,7 +601,8 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move"
+          "id": "move",
+          "AbilSetId": "Move"
         },
         "Cost": {
           "Minerals": 0,
@@ -670,12 +621,10 @@
         "id": "AcquireMove",
         "Icon": "btn-command-attack",
         "Name": {
-          "enUS": "Scan Move",
-          "ruRU": "Двигаться в режиме наблюдения /// Scan Move"
+          "enUS": "Scan Move"
         },
         "Tooltip": {
-          "enUS": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies.",
-          "ruRU": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies."
+          "enUS": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies."
         },
         "Hotkey": "A"
       },
@@ -725,12 +674,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "ScienceVesselSCBWDefensiveMatrix",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "RangeSlop": 1,
           "ArcSlop": 11.25,
           "AutoCastAcquireLevel": "Offensive",
@@ -742,7 +685,7 @@
             "RangeUseCasterRadius": 1,
             "ReApproachable": 1,
             "RequireTargetVision": 1,
-            "WaitToSpend": 1,
+            "WaitToSpend": 0,
             "UpdateChargesOnLevelChange": 1,
             "BestUnit": 1,
             "AllowMovement": 1
@@ -809,6 +752,7 @@
                 "CreateDefaultButton": 1
               },
               "DefaultButtonFace": "ScienceVesselSCBWDefensiveMatrix",
+              "State": "Restricted",
               "Requirements": "ScienceVesselSCBWDefensiveMatrix"
             },
             "Cancel": {
@@ -824,7 +768,7 @@
             }
           ],
           "TargetFilters": [
-            "-;Self,Structure,RawResource,HarvestableResource,Item,Dead,Hidden,Invulnerable"
+            "-;Self,Enemy,Structure,RawResource,HarvestableResource,Item,Dead,Hidden,Invulnerable"
           ],
           "Range": [
             10
@@ -879,12 +823,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "ScienceVesselSCBWEMPShockwave",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "RangeSlop": 1,
           "ArcSlop": 11.25,
           "AutoCastAcquireLevel": "Offensive",
@@ -896,7 +834,7 @@
             "RangeUseCasterRadius": 1,
             "ReApproachable": 1,
             "RequireTargetVision": 1,
-            "WaitToSpend": 1,
+            "WaitToSpend": 0,
             "UpdateChargesOnLevelChange": 1,
             "BestUnit": 1,
             "AllowMovement": 1
@@ -1015,8 +953,8 @@
           "koKR": "EMP 쇼크웨이브 /// EMP Shockwave"
         },
         "Tooltip": {
-          "enUS": "Creates an electromagnetic pulse that reduces energy and shields by <span class=\"style-TooltipBuffSCBW\"><b>100</b></span> to all units in the targeted area. Cloaked units hit by <span class=\"style-TooltipHighlightSCBW\">EMP</span> are revealed for a short time.",
-          "zhCN": "Creates an electromagnetic pulse that reduces energy and shields by <span class=\"style-TooltipBuffSCBW\"><b>100</b></span> to all units in the targeted area. Cloaked units hit by <span class=\"style-TooltipHighlightSCBW\">EMP</span> are revealed for a short time.",
+          "enUS": "Creates an electromagnetic pulse that reduces energy and shields by <span class=\"style-TooltipBuffSCBW\"><b>1000</b></span> to all units in the targeted area. Cloaked units hit by <span class=\"style-TooltipHighlightSCBW\">EMP</span> are revealed for a short time.",
+          "zhCN": "发射一股电磁脉冲，师目标区域内所有单位的能量和护盾减少到<span class=\"style-TooltipBuffSCBW\">0</span>点。被<span class=\"style-TooltipHighlightSCBW\">EMP</span>击中的隐形单位会短暂暴露。",
           "koKR": "선택 영역에 전자기 파동을 발사하여, 그 안에 있는 유닛의 에너지와 쉴드를 <span class=\"style-TooltipBuffSCBW\">0</span>으로 만듭니다. 클로크 상태의 유닛이 <span class=\"style-TooltipHighlightSCBW\">EMP</span>에 노출되면 짧은 시간 동안 모습이 드러납니다. /// Creates an electromagnetic pulse that reduces energy and shields to <span class=\"style-TooltipBuffSCBW\">0</span> of all units in the targeted area. Cloaked units hit by <span class=\"style-TooltipHighlightSCBW\">EMP</span> are revealed for a short time."
         },
         "Hotkey": "E"
@@ -1040,12 +978,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "ScienceVesselSCBWIrradiate",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "RangeSlop": 1,
           "ArcSlop": 11.25,
           "AutoCastAcquireLevel": "Offensive",
@@ -1057,7 +989,7 @@
             "RangeUseCasterRadius": 1,
             "ReApproachable": 1,
             "RequireTargetVision": 1,
-            "WaitToSpend": 1,
+            "WaitToSpend": 0,
             "UpdateChargesOnLevelChange": 1,
             "BestUnit": 1,
             "AllowMovement": 1
@@ -1141,7 +1073,7 @@
             }
           ],
           "TargetFilters": [
-            "-;Structure,RawResource,HarvestableResource,Item,Stasis,Dead,Hidden,Invulnerable"
+            "-;Self,Structure,RawResource,HarvestableResource,Item,Stasis,Dead,Hidden,Invulnerable"
           ],
           "Range": [
             9
@@ -1178,7 +1110,7 @@
         },
         "Tooltip": {
           "enUS": "<span class=\"style-TooltipHighlightSCBW\">Irradiates</span> a single target, causing damage over time to target and any nearby units for <span class=\"style-TooltipHighlightSCBW\"><b>35</b></span> seconds. Irradiate does not damage mechanical units, but nearby biological units will take damage from an Irradiated mechanical unit.",
-          "zhCN": "<span class=\"style-TooltipHighlightSCBW\">辐照</span>一个单位，对其及周围的单位在<span class=\"style-TooltipHighlightSCBW\"><b>35</b></span>秒内持续造成伤害。被辐照的机械单位不会受到伤害，但其周围的生物单位仍会受到辐照影响。 ",
+          "zhCN": "<span class=\"style-TooltipHighlightSCBW\">辐照</span>一个单位，对其及周围的单位在<span class=\"style-TooltipHighlightSCBW\"><b>35</b></span>秒内持续造成伤害。被辐照的机械单位不会受到伤害，但其周围的生物单位仍会受到辐照影响。",
           "koKR": "단일 대상을 <span class=\"style-TooltipHighlightSCBW\">이래디에이트</span>하여 <span class=\"style-TooltipHighlightSCBW\"><b>35</b></span>초 동안 대상과 주위의 유닛에 지속 피해를 줍니다. 이래디에이트는 기계 유닛에 피해를 주지 않지만, 근처 생체 유닛에 피해를 줄 수 있습니다. /// <span class=\"style-TooltipHighlightSCBW\">Irradiates</span> a single target, causing damage over time to target and any nearby units for <span class=\"style-TooltipHighlightSCBW\"><b>35</b></span> seconds. Irradiate does not damage mechanical units, but nearby biological units will take damage from an Irradiated mechanical unit."
         },
         "Hotkey": "R"
@@ -1213,12 +1145,10 @@
       "id": "Detector11",
       "Icon": "btn-status-detector",
       "Name": {
-        "enUS": "Detector",
-        "ruRU": "Детектор /// Detector"
+        "enUS": "Detector"
       },
       "Tooltip": {
-        "enUS": "This unit can detect cloaked or burrowed units within its sight range.",
-        "ruRU": "Эта боевая единица может обнаруживать замаскированные или закопанные войска в поле обзора."
+        "enUS": "This unit can detect cloaked or burrowed units within its sight range."
       }
     }
   ],
@@ -1226,15 +1156,13 @@
     {
       "id": "stop",
       "Name": {
-        "enUS": "Stop",
-        "ruRU": "Stop"
+        "enUS": "Stop"
       }
     },
     {
       "id": "move",
       "Name": {
-        "enUS": "Move",
-        "ruRU": "Move"
+        "enUS": "Move"
       }
     },
     {
@@ -1275,8 +1203,8 @@
     "ScienceVesselSCBW@AllowUnit",
     "StarportSCBW@Train",
     "StarportSCBW",
-    "ScienceVesselSCBW",
     "Button/Tooltip/ScienceVesselSCBWDefensiveMatrixResearch",
+    "ScienceVesselSCBW",
     "IsScienceVesselSCBW",
     "NotScienceVesselSCBW",
     "CasterIsScienceVesselSCBW",
@@ -1297,12 +1225,10 @@
       "id": "Move",
       "Icon": "btn-command-move",
       "Name": {
-        "enUS": "Move",
-        "ruRU": "Двигаться /// Move"
+        "enUS": "Move"
       },
       "Tooltip": {
-        "enUS": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
-        "ruRU": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies."
+        "enUS": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies."
       }
     },
     {
@@ -1310,12 +1236,10 @@
       "id": "Stop",
       "Icon": "btn-command-stop",
       "Name": {
-        "enUS": "Stop",
-        "ruRU": "Отставить /// Stop"
+        "enUS": "Stop"
       },
       "Tooltip": {
-        "enUS": "Orders selected units to cancel all orders and stop moving.",
-        "ruRU": "Orders selected units to cancel all orders and stop moving."
+        "enUS": "Orders selected units to cancel all orders and stop moving."
       }
     },
     {
@@ -1323,12 +1247,10 @@
       "id": "MoveHoldPosition",
       "Icon": "btn-command-holdposition",
       "Name": {
-        "enUS": "Hold Position",
-        "ruRU": "Удерживать позицию /// Hold Position"
+        "enUS": "Hold Position"
       },
       "Tooltip": {
-        "enUS": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
-        "ruRU": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage."
+        "enUS": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage."
       }
     },
     {
@@ -1336,12 +1258,10 @@
       "id": "MovePatrol",
       "Icon": "btn-command-patrol",
       "Name": {
-        "enUS": "Patrol",
-        "ruRU": "Патрулировать /// Patrol"
+        "enUS": "Patrol"
       },
       "Tooltip": {
-        "enUS": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
-        "ruRU": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies."
+        "enUS": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies."
       }
     },
     {
@@ -1349,12 +1269,10 @@
       "id": "Attack",
       "Icon": "btn-command-attack",
       "Name": {
-        "enUS": "Attack",
-        "ruRU": "Атаковать /// Attack"
+        "enUS": "Attack"
       },
       "Tooltip": {
-        "enUS": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
-        "ruRU": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed."
+        "enUS": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed."
       }
     },
     {
@@ -1362,12 +1280,10 @@
       "id": "AcquireMove",
       "Icon": "btn-command-attack",
       "Name": {
-        "enUS": "Scan Move",
-        "ruRU": "Двигаться в режиме наблюдения /// Scan Move"
+        "enUS": "Scan Move"
       },
       "Tooltip": {
-        "enUS": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies.",
-        "ruRU": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies."
+        "enUS": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies."
       }
     },
     {
@@ -1395,8 +1311,8 @@
         "koKR": "EMP 쇼크웨이브 /// EMP Shockwave"
       },
       "Tooltip": {
-        "enUS": "Creates an electromagnetic pulse that reduces energy and shields by <span class=\"style-TooltipBuffSCBW\"><b>100</b></span> to all units in the targeted area. Cloaked units hit by <span class=\"style-TooltipHighlightSCBW\">EMP</span> are revealed for a short time.",
-        "zhCN": "Creates an electromagnetic pulse that reduces energy and shields by <span class=\"style-TooltipBuffSCBW\"><b>100</b></span> to all units in the targeted area. Cloaked units hit by <span class=\"style-TooltipHighlightSCBW\">EMP</span> are revealed for a short time.",
+        "enUS": "Creates an electromagnetic pulse that reduces energy and shields by <span class=\"style-TooltipBuffSCBW\"><b>1000</b></span> to all units in the targeted area. Cloaked units hit by <span class=\"style-TooltipHighlightSCBW\">EMP</span> are revealed for a short time.",
+        "zhCN": "发射一股电磁脉冲，师目标区域内所有单位的能量和护盾减少到<span class=\"style-TooltipBuffSCBW\">0</span>点。被<span class=\"style-TooltipHighlightSCBW\">EMP</span>击中的隐形单位会短暂暴露。",
         "koKR": "선택 영역에 전자기 파동을 발사하여, 그 안에 있는 유닛의 에너지와 쉴드를 <span class=\"style-TooltipBuffSCBW\">0</span>으로 만듭니다. 클로크 상태의 유닛이 <span class=\"style-TooltipHighlightSCBW\">EMP</span>에 노출되면 짧은 시간 동안 모습이 드러납니다. /// Creates an electromagnetic pulse that reduces energy and shields to <span class=\"style-TooltipBuffSCBW\">0</span> of all units in the targeted area. Cloaked units hit by <span class=\"style-TooltipHighlightSCBW\">EMP</span> are revealed for a short time."
       }
     },
@@ -1411,7 +1327,7 @@
       },
       "Tooltip": {
         "enUS": "<span class=\"style-TooltipHighlightSCBW\">Irradiates</span> a single target, causing damage over time to target and any nearby units for <span class=\"style-TooltipHighlightSCBW\"><b>35</b></span> seconds. Irradiate does not damage mechanical units, but nearby biological units will take damage from an Irradiated mechanical unit.",
-        "zhCN": "<span class=\"style-TooltipHighlightSCBW\">辐照</span>一个单位，对其及周围的单位在<span class=\"style-TooltipHighlightSCBW\"><b>35</b></span>秒内持续造成伤害。被辐照的机械单位不会受到伤害，但其周围的生物单位仍会受到辐照影响。 ",
+        "zhCN": "<span class=\"style-TooltipHighlightSCBW\">辐照</span>一个单位，对其及周围的单位在<span class=\"style-TooltipHighlightSCBW\"><b>35</b></span>秒内持续造成伤害。被辐照的机械单位不会受到伤害，但其周围的生物单位仍会受到辐照影响。",
         "koKR": "단일 대상을 <span class=\"style-TooltipHighlightSCBW\">이래디에이트</span>하여 <span class=\"style-TooltipHighlightSCBW\"><b>35</b></span>초 동안 대상과 주위의 유닛에 지속 피해를 줍니다. 이래디에이트는 기계 유닛에 피해를 주지 않지만, 근처 생체 유닛에 피해를 줄 수 있습니다. /// <span class=\"style-TooltipHighlightSCBW\">Irradiates</span> a single target, causing damage over time to target and any nearby units for <span class=\"style-TooltipHighlightSCBW\"><b>35</b></span> seconds. Irradiate does not damage mechanical units, but nearby biological units will take damage from an Irradiated mechanical unit."
       }
     }

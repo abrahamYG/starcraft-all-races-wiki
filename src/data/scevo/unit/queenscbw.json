@@ -21,8 +21,7 @@
   "LifeStart": 120,
   "LifeMax": 120,
   "LifeArmorName": {
-    "enUS": "Zerg Flyer Carapace",
-    "ruRU": "Zerg Flyer Carapace"
+    "enUS": "Zerg Flyer Carapace"
   },
   "Mover": "Fly",
   "StationaryTurningRate": 799.9804,
@@ -92,12 +91,6 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
-  "$tokens": {
-    "ID": {
-      "type": "string",
-      "value": ""
-    }
-  },
   "Mob": "Multiplayer",
   "EnergyRegenRate": 0.5625,
   "id": "QueenSCBW",
@@ -127,7 +120,7 @@
     "Minerals": 100,
     "Vespene": 100
   },
-  "BuildTime": 50,
+  "BuildTime": 47,
   "AttackTargetPriority": 20,
   "KillXP": 40,
   "CardLayouts": {
@@ -157,12 +150,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -200,7 +187,8 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move"
+          "id": "move",
+          "AbilSetId": "Move"
         },
         "Cost": {
           "Minerals": 0,
@@ -219,12 +207,10 @@
         "id": "Move",
         "Icon": "btn-command-move",
         "Name": {
-          "enUS": "Move",
-          "ruRU": "Двигаться /// Move"
+          "enUS": "Move"
         },
         "Tooltip": {
-          "enUS": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
-          "ruRU": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies."
+          "enUS": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies."
         },
         "Hotkey": "M"
       },
@@ -247,12 +233,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "stop",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "AbilSetId": "Stop",
           "CmdButtonArray": {
             "Stop": {
@@ -299,12 +279,10 @@
         "id": "Stop",
         "Icon": "btn-command-stop",
         "Name": {
-          "enUS": "Stop",
-          "ruRU": "Отставить /// Stop"
+          "enUS": "Stop"
         },
         "Tooltip": {
-          "enUS": "Orders selected units to cancel all orders and stop moving.",
-          "ruRU": "Orders selected units to cancel all orders and stop moving."
+          "enUS": "Orders selected units to cancel all orders and stop moving."
         },
         "Hotkey": "S"
       },
@@ -333,12 +311,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -376,7 +348,8 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move"
+          "id": "move",
+          "AbilSetId": "Move"
         },
         "Cost": {
           "Minerals": 0,
@@ -395,12 +368,10 @@
         "id": "MoveHoldPosition",
         "Icon": "btn-command-holdposition",
         "Name": {
-          "enUS": "Hold Position",
-          "ruRU": "Удерживать позицию /// Hold Position"
+          "enUS": "Hold Position"
         },
         "Tooltip": {
-          "enUS": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
-          "ruRU": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage."
+          "enUS": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage."
         },
         "Hotkey": "H"
       },
@@ -423,12 +394,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "attack",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "AbilSetId": "Attack",
           "Alignment": "Negative",
           "AcquireFilters": "-;Player,Ally,Neutral,Dead,Hidden,Invulnerable,Benign",
@@ -476,12 +441,10 @@
         "id": "Attack",
         "Icon": "btn-command-attack",
         "Name": {
-          "enUS": "Attack",
-          "ruRU": "Атаковать /// Attack"
+          "enUS": "Attack"
         },
         "Tooltip": {
-          "enUS": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
-          "ruRU": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed."
+          "enUS": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed."
         },
         "Hotkey": "A"
       },
@@ -510,12 +473,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -553,7 +510,8 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move"
+          "id": "move",
+          "AbilSetId": "Move"
         },
         "Cost": {
           "Minerals": 0,
@@ -572,12 +530,10 @@
         "id": "MovePatrol",
         "Icon": "btn-command-patrol",
         "Name": {
-          "enUS": "Patrol",
-          "ruRU": "Патрулировать /// Patrol"
+          "enUS": "Patrol"
         },
         "Tooltip": {
-          "enUS": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
-          "ruRU": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies."
+          "enUS": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies."
         },
         "Hotkey": "P"
       },
@@ -600,12 +556,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "QueenSCBWParasite",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "RangeSlop": 1,
           "ArcSlop": 11.25,
           "AutoCastAcquireLevel": "Offensive",
@@ -617,7 +567,7 @@
             "RangeUseCasterRadius": 1,
             "ReApproachable": 1,
             "RequireTargetVision": 1,
-            "WaitToSpend": 1,
+            "WaitToSpend": 0,
             "UpdateChargesOnLevelChange": 1,
             "BestUnit": 1,
             "AllowMovement": 1
@@ -731,8 +681,8 @@
           "koKR": "패러사이트 /// Parasite"
         },
         "Tooltip": {
-          "enUS": "Infect the target unit with a <span class=\"style-TooltipHighlightSCBW\"><b>Parasite</b></span>, granting vision of everything the infected unit can see. Effect lasts for <b>168</b> seconds.",
-          "zhCN": "Infect the target unit with a <span class=\"style-TooltipHighlightSCBW\"><b>Parasite</b></span>, granting vision of everything the infected unit can see. Effect lasts for <b>168</b> seconds.",
+          "enUS": "Infect the target unit with a <span class=\"style-TooltipHighlightSCBW\"><b>Parasite</b></span>, granting vision of everything the infected unit can see. Effect lasts indefinitely.",
+          "zhCN": "使用一只<span class=\"style-TooltipHighlightSCBW\"><b>Parasite</b></span>感染对方单位，为你提供该单位的视野。效果将一直持续。",
           "koKR": "대상 유닛에 <span class=\"style-TooltipHighlightSCBW\"><b>Parasite</b></span>을 흡착시켜 해당 유닛의 시야를 공유받습니다. 효과는 무기한으로 지속됩니다. /// Infect the target unit with a <span class=\"style-TooltipHighlightSCBW\"><b>Parasite</b></span>, granting vision of everything the infected unit can see. Effect lasts indeffinitely."
         },
         "Hotkey": "R"
@@ -756,12 +706,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "QueenSCBWSpawnBroodlings",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "RangeSlop": 1,
           "ArcSlop": 11.25,
           "AutoCastAcquireLevel": "Offensive",
@@ -773,7 +717,7 @@
             "RangeUseCasterRadius": 1,
             "ReApproachable": 1,
             "RequireTargetVision": 1,
-            "WaitToSpend": 1,
+            "WaitToSpend": 0,
             "UpdateChargesOnLevelChange": 1,
             "BestUnit": 1,
             "AllowMovement": 1
@@ -846,12 +790,12 @@
           "Cost": [
             {
               "Vital": {
-                "Energy": 150
+                "Energy": 125
               }
             }
           ],
           "TargetFilters": [
-            "-;Air,Robotic,Massive,Structure,Heroic,Missile,Stasis,Dead,Hidden,Invulnerable"
+            "Ground;Robotic,Structure,Heroic,Missile,Stasis,Dead,Hidden,Invulnerable"
           ],
           "Range": [
             9
@@ -871,7 +815,7 @@
           "Vespene": 0,
           "Terazine": 0,
           "Custom": 0,
-          "Energy": 150,
+          "Energy": 125,
           "Life": 0,
           "Shields": 0,
           "Food": 0
@@ -888,9 +832,9 @@
           "koKR": "브루들링 소환 /// Spawn Broodlings"
         },
         "Tooltip": {
-          "enUS": "Kills targeted unit spawning <span class=\"style-TooltipHighlightSCBW\"><b>2</b></span> <span class=\"style-TooltipHighlightSCBW\"><b>Broodling</b>s</span>.<br/><span style=\"color: #ffff8a\">Can't be used on massive targets</span>",
-          "zhCN": "Kills targeted unit spawning <span class=\"style-TooltipHighlightSCBW\"><b>2</b></span> <span class=\"style-TooltipHighlightSCBW\"><b>Broodling</b>s</span>.<br/><span style=\"color: #ffff8a\">Can't be used on massive targets</span>",
-          "koKR": "대상 유닛을 처치하며 그 자리에 <span class=\"style-TooltipHighlightSCBW\"><b>2</b></span>마리의 <span class=\"style-TooltipHighlightSCBW\"><b>Broodling</b></span>을 생성합니다.<br/><span style=\"color: #ffff8a\">거대 속성 대상에 사용할 수 없습니다</span>"
+          "enUS": "Deals <b>300</b>(+<b>100</b> .vs Biological) damage to ground biological or mechanical unit<br/>Spawns <b>2</b> <span class=\"style-TooltipHighlightSCBW\"><b>Broodling</b>s</span> if the target is killed.<br/><span style=\"color: #ffff8a\">Can't be used on robotic targets</span>",
+          "zhCN": "Deals <b>300</b>(+<b>100</b> .vs Biological) damage to ground biological or mechanical unit<br/>Spawns <b>2</b> <span class=\"style-TooltipHighlightSCBW\"><b>Broodling</b>s</span> if the target is killed.<br/><span style=\"color: #ffff8a\">Can't be used on robotic targets</span>",
+          "koKR": "지상 생체나 기계 유닛에 <b>300</b>(생체 대상 +<b>100</b>)의 피해를 줍니다.<br/>대상이 사망 시 <span class=\"style-TooltipHighlightSCBW\"><b>Broodling</b></span> <b>2</b>기를 생성합니다.<br/><span style=\"color: #ffff8a\">로봇 유닛을 대상으로 할 수 없습니다</span> /// Deals <b>300</b>(+<b>100</b> .vs Biological) damage to ground biological or mechanical unit<br/>Spawns <b>2</b> <span class=\"style-TooltipHighlightSCBW\"><b>Broodling</b>s</span> if the target is killed.<br/><span style=\"color: #ffff8a\">Can't be used on robotic targets</span>"
         },
         "Hotkey": "B"
       },
@@ -913,12 +857,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "QueenSCBWEnsnare",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "RangeSlop": 1,
           "ArcSlop": 11.25,
           "AutoCastAcquireLevel": "Offensive",
@@ -930,7 +868,7 @@
             "RangeUseCasterRadius": 1,
             "ReApproachable": 1,
             "RequireTargetVision": 1,
-            "WaitToSpend": 1,
+            "WaitToSpend": 0,
             "UpdateChargesOnLevelChange": 1,
             "BestUnit": 1,
             "AllowMovement": 1
@@ -1040,14 +978,14 @@
         "id": "QueenSCBWEnsnare",
         "Icon": "btn-ability-zerg-fungalgrowth-color",
         "Name": {
-          "enUS": "Ensaring Creep",
-          "zhCN": "Ensaring Creep",
+          "enUS": "Ensnare",
+          "zhCN": "诱捕",
           "koKR": "인스네어 /// Ensnare"
         },
         "Tooltip": {
-          "enUS": "Envelopes target area in creep, enemies movement reduced by <span class=\"style-TooltipHighlightSCBW\"><b>100</b>%</span> and attack speed by <span class=\"style-TooltipHighlightSCBW\"><b>25</b>%</span> for <span class=\"style-TooltipBuffSCBW\"><b>38</b></span> seconds. Reveals cloaked and burrowed units.",
-          "zhCN": "Envelopes target area in creep, enemies movement reduced by <span class=\"style-TooltipHighlightSCBW\"><b>100</b>%</span> and attack speed by <span class=\"style-TooltipHighlightSCBW\"><b>25</b>%</span> for <span class=\"style-TooltipBuffSCBW\"><b>38</b></span> seconds. Reveals cloaked and burrowed units.",
-          "koKR": "이동 속도가 <span class=\"style-TooltipHighlightSCBW\"><b>100</b>%</span>만큼 감소하고 공격 속도가 <span class=\"style-TooltipBuffSCBW\"><b>38</b></span>초 동안 <span class=\"style-TooltipHighlightSCBW\"><b>25</b>%</span>만큼 감소합니다. 클로크하거나 버로우한 유닛은 모습이 드러납니다. /// Reduces movement by <span class=\"style-TooltipHighlightSCBW\"><b>100</b>%</span> and attack speed by <span class=\"style-TooltipHighlightSCBW\"><b>25</b>%</span> for <span class=\"style-TooltipBuffSCBW\"><b>38</b></span> seconds. Reveals cloaked and burrowed units."
+          "enUS": "Reduces movement by <span class=\"style-TooltipHighlightSCBW\"><b>50</b>%</span> and attack speed by <span class=\"style-TooltipHighlightSCBW\"><b>25</b>%</span> for <span class=\"style-TooltipBuffSCBW\"><b>38</b></span> seconds. Reveals cloaked and burrowed units.",
+          "zhCN": "使目标单位的移动速度降低<span class=\"style-TooltipHighlightSCBW\"><b>50</b>%</span>。攻击速度降低<span class=\"style-TooltipHighlightSCBW\"><b>25</b>%</span>，持续<span class=\"style-TooltipBuffSCBW\"><b>38</b></span>秒。暴露隐形和潜地的单位。",
+          "koKR": "이동 속도가 <span class=\"style-TooltipHighlightSCBW\"><b>50</b>%</span>만큼 감소하고 공격 속도가 <span class=\"style-TooltipBuffSCBW\"><b>38</b></span>초 동안 <span class=\"style-TooltipHighlightSCBW\"><b>25</b>%</span>만큼 감소합니다. 클로크하거나 버로우한 유닛은 모습이 드러납니다. /// Reduces movement by <span class=\"style-TooltipHighlightSCBW\"><b>50</b>%</span> and attack speed by <span class=\"style-TooltipHighlightSCBW\"><b>25</b>%</span> for <span class=\"style-TooltipBuffSCBW\"><b>38</b></span> seconds. Reveals cloaked and burrowed units."
         },
         "Hotkey": "E"
       },
@@ -1070,12 +1008,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "QueenSCBWInfestCommandCenter",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "RangeSlop": 1,
           "ArcSlop": 11.25,
           "AutoCastAcquireLevel": "Offensive",
@@ -1087,7 +1019,7 @@
             "RangeUseCasterRadius": 1,
             "ReApproachable": 1,
             "RequireTargetVision": 1,
-            "WaitToSpend": 1,
+            "WaitToSpend": 0,
             "UpdateChargesOnLevelChange": 1,
             "BestUnit": 1,
             "AutoCast": 1,
@@ -1235,22 +1167,19 @@
     {
       "id": "stop",
       "Name": {
-        "enUS": "Stop",
-        "ruRU": "Stop"
+        "enUS": "Stop"
       }
     },
     {
       "id": "attack",
       "Name": {
-        "ruRU": "Attack",
         "enUS": "Attack"
       }
     },
     {
       "id": "move",
       "Name": {
-        "enUS": "Move",
-        "ruRU": "Move"
+        "enUS": "Move"
       }
     },
     {
@@ -1264,7 +1193,7 @@
     {
       "id": "QueenSCBWEnsnare",
       "Name": {
-        "enUS": "Ensaring Creep",
+        "enUS": "Ensnare",
         "zhCN": "诱捕",
         "koKR": "인스네어 /// Ensnare"
       }
@@ -1305,11 +1234,11 @@
     "IsQueenSCBW",
     "NotQueenSCBW",
     "CasterIsQueenSCBW",
+    "QueenSCBW",
     "QueenSCBW@Count",
     "QueenSCBW@CountAtUnit",
     "QueenSCBW@QoB",
-    "QueenSCBW@QoBAtUnit",
-    "QueenSCBW"
+    "QueenSCBW@QoBAtUnit"
   ],
   "$Requirements": [],
   "$Production": [
@@ -1332,12 +1261,10 @@
       "id": "Move",
       "Icon": "btn-command-move",
       "Name": {
-        "enUS": "Move",
-        "ruRU": "Двигаться /// Move"
+        "enUS": "Move"
       },
       "Tooltip": {
-        "enUS": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
-        "ruRU": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies."
+        "enUS": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies."
       }
     },
     {
@@ -1345,12 +1272,10 @@
       "id": "Stop",
       "Icon": "btn-command-stop",
       "Name": {
-        "enUS": "Stop",
-        "ruRU": "Отставить /// Stop"
+        "enUS": "Stop"
       },
       "Tooltip": {
-        "enUS": "Orders selected units to cancel all orders and stop moving.",
-        "ruRU": "Orders selected units to cancel all orders and stop moving."
+        "enUS": "Orders selected units to cancel all orders and stop moving."
       }
     },
     {
@@ -1358,12 +1283,10 @@
       "id": "MoveHoldPosition",
       "Icon": "btn-command-holdposition",
       "Name": {
-        "enUS": "Hold Position",
-        "ruRU": "Удерживать позицию /// Hold Position"
+        "enUS": "Hold Position"
       },
       "Tooltip": {
-        "enUS": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
-        "ruRU": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage."
+        "enUS": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage."
       }
     },
     {
@@ -1371,12 +1294,10 @@
       "id": "Attack",
       "Icon": "btn-command-attack",
       "Name": {
-        "enUS": "Attack",
-        "ruRU": "Атаковать /// Attack"
+        "enUS": "Attack"
       },
       "Tooltip": {
-        "enUS": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
-        "ruRU": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed."
+        "enUS": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed."
       }
     },
     {
@@ -1384,12 +1305,10 @@
       "id": "MovePatrol",
       "Icon": "btn-command-patrol",
       "Name": {
-        "enUS": "Patrol",
-        "ruRU": "Патрулировать /// Patrol"
+        "enUS": "Patrol"
       },
       "Tooltip": {
-        "enUS": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
-        "ruRU": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies."
+        "enUS": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies."
       }
     },
     {
@@ -1402,8 +1321,8 @@
         "koKR": "패러사이트 /// Parasite"
       },
       "Tooltip": {
-        "enUS": "Infect the target unit with a <span class=\"style-TooltipHighlightSCBW\"><b>Parasite</b></span>, granting vision of everything the infected unit can see. Effect lasts for <b>168</b> seconds.",
-        "zhCN": "Infect the target unit with a <span class=\"style-TooltipHighlightSCBW\"><b>Parasite</b></span>, granting vision of everything the infected unit can see. Effect lasts for <b>168</b> seconds.",
+        "enUS": "Infect the target unit with a <span class=\"style-TooltipHighlightSCBW\"><b>Parasite</b></span>, granting vision of everything the infected unit can see. Effect lasts indefinitely.",
+        "zhCN": "使用一只<span class=\"style-TooltipHighlightSCBW\"><b>Parasite</b></span>感染对方单位，为你提供该单位的视野。效果将一直持续。",
         "koKR": "대상 유닛에 <span class=\"style-TooltipHighlightSCBW\"><b>Parasite</b></span>을 흡착시켜 해당 유닛의 시야를 공유받습니다. 효과는 무기한으로 지속됩니다. /// Infect the target unit with a <span class=\"style-TooltipHighlightSCBW\"><b>Parasite</b></span>, granting vision of everything the infected unit can see. Effect lasts indeffinitely."
       }
     },
@@ -1417,9 +1336,9 @@
         "koKR": "브루들링 소환 /// Spawn Broodlings"
       },
       "Tooltip": {
-        "enUS": "Kills targeted unit spawning <span class=\"style-TooltipHighlightSCBW\"><b>2</b></span> <span class=\"style-TooltipHighlightSCBW\"><b>Broodling</b>s</span>.<br/><span style=\"color: #ffff8a\">Can't be used on massive targets</span>",
-        "zhCN": "Kills targeted unit spawning <span class=\"style-TooltipHighlightSCBW\"><b>2</b></span> <span class=\"style-TooltipHighlightSCBW\"><b>Broodling</b>s</span>.<br/><span style=\"color: #ffff8a\">Can't be used on massive targets</span>",
-        "koKR": "대상 유닛을 처치하며 그 자리에 <span class=\"style-TooltipHighlightSCBW\"><b>2</b></span>마리의 <span class=\"style-TooltipHighlightSCBW\"><b>Broodling</b></span>을 생성합니다.<br/><span style=\"color: #ffff8a\">거대 속성 대상에 사용할 수 없습니다</span>"
+        "enUS": "Deals <b>300</b>(+<b>100</b> .vs Biological) damage to ground biological or mechanical unit<br/>Spawns <b>2</b> <span class=\"style-TooltipHighlightSCBW\"><b>Broodling</b>s</span> if the target is killed.<br/><span style=\"color: #ffff8a\">Can't be used on robotic targets</span>",
+        "zhCN": "Deals <b>300</b>(+<b>100</b> .vs Biological) damage to ground biological or mechanical unit<br/>Spawns <b>2</b> <span class=\"style-TooltipHighlightSCBW\"><b>Broodling</b>s</span> if the target is killed.<br/><span style=\"color: #ffff8a\">Can't be used on robotic targets</span>",
+        "koKR": "지상 생체나 기계 유닛에 <b>300</b>(생체 대상 +<b>100</b>)의 피해를 줍니다.<br/>대상이 사망 시 <span class=\"style-TooltipHighlightSCBW\"><b>Broodling</b></span> <b>2</b>기를 생성합니다.<br/><span style=\"color: #ffff8a\">로봇 유닛을 대상으로 할 수 없습니다</span> /// Deals <b>300</b>(+<b>100</b> .vs Biological) damage to ground biological or mechanical unit<br/>Spawns <b>2</b> <span class=\"style-TooltipHighlightSCBW\"><b>Broodling</b>s</span> if the target is killed.<br/><span style=\"color: #ffff8a\">Can't be used on robotic targets</span>"
       }
     },
     {
@@ -1427,14 +1346,14 @@
       "id": "QueenSCBWEnsnare",
       "Icon": "btn-ability-zerg-fungalgrowth-color",
       "Name": {
-        "enUS": "Ensaring Creep",
-        "zhCN": "Ensaring Creep",
+        "enUS": "Ensnare",
+        "zhCN": "诱捕",
         "koKR": "인스네어 /// Ensnare"
       },
       "Tooltip": {
-        "enUS": "Envelopes target area in creep, enemies movement reduced by <span class=\"style-TooltipHighlightSCBW\"><b>100</b>%</span> and attack speed by <span class=\"style-TooltipHighlightSCBW\"><b>25</b>%</span> for <span class=\"style-TooltipBuffSCBW\"><b>38</b></span> seconds. Reveals cloaked and burrowed units.",
-        "zhCN": "Envelopes target area in creep, enemies movement reduced by <span class=\"style-TooltipHighlightSCBW\"><b>100</b>%</span> and attack speed by <span class=\"style-TooltipHighlightSCBW\"><b>25</b>%</span> for <span class=\"style-TooltipBuffSCBW\"><b>38</b></span> seconds. Reveals cloaked and burrowed units.",
-        "koKR": "이동 속도가 <span class=\"style-TooltipHighlightSCBW\"><b>100</b>%</span>만큼 감소하고 공격 속도가 <span class=\"style-TooltipBuffSCBW\"><b>38</b></span>초 동안 <span class=\"style-TooltipHighlightSCBW\"><b>25</b>%</span>만큼 감소합니다. 클로크하거나 버로우한 유닛은 모습이 드러납니다. /// Reduces movement by <span class=\"style-TooltipHighlightSCBW\"><b>100</b>%</span> and attack speed by <span class=\"style-TooltipHighlightSCBW\"><b>25</b>%</span> for <span class=\"style-TooltipBuffSCBW\"><b>38</b></span> seconds. Reveals cloaked and burrowed units."
+        "enUS": "Reduces movement by <span class=\"style-TooltipHighlightSCBW\"><b>50</b>%</span> and attack speed by <span class=\"style-TooltipHighlightSCBW\"><b>25</b>%</span> for <span class=\"style-TooltipBuffSCBW\"><b>38</b></span> seconds. Reveals cloaked and burrowed units.",
+        "zhCN": "使目标单位的移动速度降低<span class=\"style-TooltipHighlightSCBW\"><b>50</b>%</span>。攻击速度降低<span class=\"style-TooltipHighlightSCBW\"><b>25</b>%</span>，持续<span class=\"style-TooltipBuffSCBW\"><b>38</b></span>秒。暴露隐形和潜地的单位。",
+        "koKR": "이동 속도가 <span class=\"style-TooltipHighlightSCBW\"><b>50</b>%</span>만큼 감소하고 공격 속도가 <span class=\"style-TooltipBuffSCBW\"><b>38</b></span>초 동안 <span class=\"style-TooltipHighlightSCBW\"><b>25</b>%</span>만큼 감소합니다. 클로크하거나 버로우한 유닛은 모습이 드러납니다. /// Reduces movement by <span class=\"style-TooltipHighlightSCBW\"><b>50</b>%</span> and attack speed by <span class=\"style-TooltipHighlightSCBW\"><b>25</b>%</span> for <span class=\"style-TooltipBuffSCBW\"><b>38</b></span> seconds. Reveals cloaked and burrowed units."
       }
     },
     {

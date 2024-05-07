@@ -13,18 +13,12 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "ArbiterSCBWStasisFieldResearch",
-  "EditorCategories": "UpgradeType:SpellResearch,Race:Protoss",
-  "$tokens": {
-    "ID": {
-      "type": "string",
-      "value": ""
-    }
-  },
   "DataCollection": "ArbiterSCBWStasisFieldResearch",
   "InfoTooltipPriority": 1,
   "Race": "Prot",
   "ScoreAmount": 300,
   "ScoreResult": "BuildOrder",
+  "EditorCategories": "UpgradeType:SpellResearch,Race:Protoss",
   "AffectedUnitArray": [
     "ArbiterSCBW"
   ]

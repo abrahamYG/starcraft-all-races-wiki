@@ -21,8 +21,7 @@
   "LifeStart": 600,
   "LifeMax": 600,
   "LifeArmorName": {
-    "enUS": "Terran Building Plating",
-    "ruRU": "Terran Building Plating"
+    "enUS": "Terran Building Plating"
   },
   "Mover": "Ground",
   "StationaryTurningRate": 720,
@@ -88,12 +87,6 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
-  "$tokens": {
-    "ID": {
-      "type": "string",
-      "value": ""
-    }
-  },
   "Mob": "Multiplayer",
   "Gender": "Neutral",
   "FogVisibility": "Snapshot",
@@ -165,12 +158,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "que5Addon",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "QueueCount": 1,
           "Flags": {
             "BestUnit": 1,
@@ -204,12 +191,10 @@
         "id": "Cancel",
         "Icon": "btn-command-cancel",
         "Name": {
-          "enUS": "Cancel",
-          "ruRU": "Отменить /// Cancel"
+          "enUS": "Cancel"
         },
         "Tooltip": {
-          "enUS": "Drops the current order without performing it, and allows you to select a different order.",
-          "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+          "enUS": "Drops the current order without performing it, and allows you to select a different order."
         },
         "Hotkey": "Esc"
       },
@@ -232,12 +217,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "BuildInProgress",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "Activity": "UI/Building",
           "VitalStartFactor": {
             "Life": 0.1,
@@ -271,12 +250,10 @@
         "id": "CancelBuilding",
         "Icon": "btn-command-cancel",
         "Name": {
-          "enUS": "Cancel",
-          "ruRU": "Отменить /// Cancel"
+          "enUS": "Cancel"
         },
         "Tooltip": {
-          "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-          "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+          "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund."
         },
         "Hotkey": "Esc"
       },
@@ -336,7 +313,7 @@
   },
   "ScoreMake": 200,
   "ScoreKill": 200,
-  "BuildTime": 40,
+  "BuildTime": 50,
   "TacticalAIThink": "AIThinkNuclearSiloSCBW",
   "Icon": "btn-building-terran-nuclearsilo@scbw",
   "LifeArmorIcon": "btn-upgrade-terran-buildingarmor",
@@ -346,9 +323,7 @@
     {
       "id": "TerranBuildingSCBW@Burnout",
       "Name": {
-        "enUS": "Burnout",
-        "zhCN": "Burnout",
-        "koKR": "Burnout"
+        "enUS": "Burnout"
       },
       "Tooltip": "-"
     },
@@ -366,15 +341,13 @@
     {
       "id": "que5Addon",
       "Name": {
-        "ruRU": "Queue",
         "enUS": "Queue"
       }
     },
     {
       "id": "BuildInProgress",
       "Name": {
-        "enUS": "Build in Progress",
-        "ruRU": "Build in Progress"
+        "enUS": "Build in Progress"
       }
     },
     {
@@ -392,15 +365,15 @@
     "NuclearSiloSCBW",
     "Button/Tooltip/GhostSCBW",
     "Button/Tooltip/CommandCenterSCBW",
-    "Button/Tooltip/InfestedCommandCenterSCBW@Flying",
     "CommandCenterSCBW@AddOns",
     "Button/Tooltip/CommandCenterSCBW@Flying",
+    "Button/Tooltip/InfestedCommandCenterSCBW@Flying",
     "CommandCenterSCBW",
     "NuclearSiloSCBW",
     "NuclearSiloSCBW@Splat",
     "NotNuclearSiloSCBW",
-    "NuclearSiloSCBW@CountAtUnit",
-    "NuclearSiloSCBW"
+    "NuclearSiloSCBW",
+    "NuclearSiloSCBW@CountAtUnit"
   ],
   "$Requirements": [],
   "$Production": [
@@ -420,12 +393,10 @@
       "id": "Cancel",
       "Icon": "btn-command-cancel",
       "Name": {
-        "enUS": "Cancel",
-        "ruRU": "Отменить /// Cancel"
+        "enUS": "Cancel"
       },
       "Tooltip": {
-        "enUS": "Drops the current order without performing it, and allows you to select a different order.",
-        "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+        "enUS": "Drops the current order without performing it, and allows you to select a different order."
       }
     },
     {
@@ -433,12 +404,10 @@
       "id": "CancelBuilding",
       "Icon": "btn-command-cancel",
       "Name": {
-        "enUS": "Cancel",
-        "ruRU": "Отменить /// Cancel"
+        "enUS": "Cancel"
       },
       "Tooltip": {
-        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-        "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund."
       }
     },
     {

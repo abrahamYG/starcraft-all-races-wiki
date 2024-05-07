@@ -13,13 +13,6 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "MarineSCBWRangeUpgrade",
-  "EditorCategories": "Race:Terran,UpgradeType:Talents",
-  "$tokens": {
-    "ID": {
-      "type": "string",
-      "value": ""
-    }
-  },
   "DataCollection": "MarineSCBWRangeUpgrade",
   "EffectArrayTemplate": [
     {
@@ -36,5 +29,6 @@
   ],
   "Race": "Terr",
   "ScoreAmount": 300,
-  "ScoreResult": "BuildOrder"
+  "ScoreResult": "BuildOrder",
+  "EditorCategories": "Race:Terran,UpgradeType:Talents"
 }

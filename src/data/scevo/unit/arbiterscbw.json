@@ -21,8 +21,7 @@
   "LifeStart": 200,
   "LifeMax": 200,
   "LifeArmorName": {
-    "enUS": "Protoss Plating",
-    "ruRU": "Protoss Plating"
+    "enUS": "Protoss Plating"
   },
   "Mover": "Fly",
   "StationaryTurningRate": 539.4726,
@@ -90,22 +89,15 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
-  "$tokens": {
-    "ID": {
-      "type": "string",
-      "value": ""
-    }
-  },
   "Mob": "Multiplayer",
   "EnergyRegenRate": 0.5625,
   "id": "ArbiterSCBW",
   "ShieldArmorName": {
-    "enUS": "Protoss Plasma Shields",
-    "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+    "enUS": "Protoss Plasma Shields"
   },
   "GlossaryCategory": "Unit/Category/ProtossUnitsSCBW",
   "HotkeyCategory": "Unit/Category/ProtossUnitsSCBW",
-  "ShieldRegenRate": 2,
+  "ShieldRegenRate": 0.4375,
   "PlaneArray": [
     "Air"
   ],
@@ -132,7 +124,7 @@
     "Minerals": 100,
     "Vespene": 300
   },
-  "BuildTime": 60,
+  "BuildTime": 115,
   "AttackTargetPriority": 20,
   "DamageDealtXP": 1,
   "DamageTakenXP": 1,
@@ -164,12 +156,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -207,7 +193,8 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move"
+          "id": "move",
+          "AbilSetId": "Move"
         },
         "Cost": {
           "Minerals": 0,
@@ -226,12 +213,10 @@
         "id": "Move",
         "Icon": "btn-command-move",
         "Name": {
-          "enUS": "Move",
-          "ruRU": "Двигаться /// Move"
+          "enUS": "Move"
         },
         "Tooltip": {
-          "enUS": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
-          "ruRU": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies."
+          "enUS": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies."
         },
         "Hotkey": "M"
       },
@@ -254,12 +239,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "stop",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "AbilSetId": "Stop",
           "CmdButtonArray": {
             "Stop": {
@@ -306,12 +285,10 @@
         "id": "Stop",
         "Icon": "btn-command-stop",
         "Name": {
-          "enUS": "Stop",
-          "ruRU": "Отставить /// Stop"
+          "enUS": "Stop"
         },
         "Tooltip": {
-          "enUS": "Orders selected units to cancel all orders and stop moving.",
-          "ruRU": "Orders selected units to cancel all orders and stop moving."
+          "enUS": "Orders selected units to cancel all orders and stop moving."
         },
         "Hotkey": "S"
       },
@@ -340,12 +317,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -383,7 +354,8 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move"
+          "id": "move",
+          "AbilSetId": "Move"
         },
         "Cost": {
           "Minerals": 0,
@@ -402,12 +374,10 @@
         "id": "MoveHoldPosition",
         "Icon": "btn-command-holdposition",
         "Name": {
-          "enUS": "Hold Position",
-          "ruRU": "Удерживать позицию /// Hold Position"
+          "enUS": "Hold Position"
         },
         "Tooltip": {
-          "enUS": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
-          "ruRU": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage."
+          "enUS": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage."
         },
         "Hotkey": "H"
       },
@@ -430,12 +400,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "attack",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "AbilSetId": "Attack",
           "Alignment": "Negative",
           "AcquireFilters": "-;Player,Ally,Neutral,Dead,Hidden,Invulnerable,Benign",
@@ -483,12 +447,10 @@
         "id": "Attack",
         "Icon": "btn-command-attack",
         "Name": {
-          "enUS": "Attack",
-          "ruRU": "Атаковать /// Attack"
+          "enUS": "Attack"
         },
         "Tooltip": {
-          "enUS": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
-          "ruRU": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed."
+          "enUS": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed."
         },
         "Hotkey": "A"
       },
@@ -517,12 +479,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -560,7 +516,8 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move"
+          "id": "move",
+          "AbilSetId": "Move"
         },
         "Cost": {
           "Minerals": 0,
@@ -579,12 +536,10 @@
         "id": "MovePatrol",
         "Icon": "btn-command-patrol",
         "Name": {
-          "enUS": "Patrol",
-          "ruRU": "Патрулировать /// Patrol"
+          "enUS": "Patrol"
         },
         "Tooltip": {
-          "enUS": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
-          "ruRU": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies."
+          "enUS": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies."
         },
         "Hotkey": "P"
       },
@@ -610,7 +565,7 @@
           "koKR": "클로크 필드 /// Cloak Field"
         },
         "Tooltip": {
-          "enUS": "Cloaks friendly units near the <span class=\"style-TooltipHighlightSCBW\"><b>Arbiter</b></span>.<br/><br/><span style=\"color: ffff8a\">Passive ability</span>",
+          "enUS": "Cloaks friendly units near the <span class=\"style-TooltipHighlightSCBW\"><b>Arbiter</b></span>.<br/><br/><span style=\"color: ffff8a\">Passive ability</span> ",
           "zhCN": "使<span class=\"style-TooltipHighlightSCBW\"><b>Arbiter</b></span>周围的友军单位隐形。",
           "koKR": "<span class=\"style-TooltipHighlightSCBW\"><b>Arbiter</b></span> 근처의 모든 아군 유닛을 은폐합니다.<br/><br/><span style=\"color: ffff8a\">지속 능력</span> /// Cloaks friendly units near the <span class=\"style-TooltipHighlightSCBW\"><b>Arbiter</b></span>.<br/><br/><span style=\"color: ffff8a\">Passive ability</span> "
         }
@@ -634,12 +589,10 @@
         "id": "Rally",
         "Icon": "btn-ability-terran-setrallypoint",
         "Name": {
-          "enUS": "Set Rally Point",
-          "ruRU": "Задать точку сбора /// Set Rally Point"
+          "enUS": "Set Rally Point"
         },
         "Tooltip": {
-          "enUS": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
-          "ruRU": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically."
+          "enUS": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically."
         },
         "Hotkey": "Y"
       },
@@ -662,12 +615,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "ArbiterSCBWRecall",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "RangeSlop": 1,
           "ArcSlop": 11.25,
           "AutoCastAcquireLevel": "Offensive",
@@ -679,7 +626,7 @@
             "RangeUseCasterRadius": 1,
             "ReApproachable": 1,
             "RequireTargetVision": 1,
-            "WaitToSpend": 1,
+            "WaitToSpend": 0,
             "UpdateChargesOnLevelChange": 1,
             "BestUnit": 1,
             "Transient": 1
@@ -753,7 +700,7 @@
           "Cost": [
             {
               "Vital": {
-                "Energy": 150
+                "Energy": 125
               },
               "Charge": {
                 "Link": ""
@@ -776,7 +723,7 @@
           "Vespene": 0,
           "Terazine": 0,
           "Custom": 0,
-          "Energy": 150,
+          "Energy": 125,
           "Life": 0,
           "Shields": 0,
           "Food": 0
@@ -818,12 +765,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "ArbiterSCBWStasisField",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "RangeSlop": 1,
           "ArcSlop": 11.25,
           "AutoCastAcquireLevel": "Offensive",
@@ -835,7 +776,7 @@
             "RangeUseCasterRadius": 1,
             "ReApproachable": 1,
             "RequireTargetVision": 1,
-            "WaitToSpend": 1,
+            "WaitToSpend": 0,
             "UpdateChargesOnLevelChange": 1,
             "BestUnit": 1,
             "AllowMovement": 1
@@ -909,7 +850,7 @@
           "Cost": [
             {
               "Vital": {
-                "Energy": 100
+                "Energy": 75
               }
             }
           ],
@@ -925,7 +866,7 @@
           "Vespene": 0,
           "Terazine": 0,
           "Custom": 0,
-          "Energy": 100,
+          "Energy": 75,
           "Life": 0,
           "Shields": 0,
           "Food": 0
@@ -942,9 +883,9 @@
           "koKR": "스테이시스 필드 /// Stasis Field"
         },
         "Tooltip": {
-          "enUS": "Places enemy units in target area into stasis for <span class=\"style-TooltipHighlightSCBW\"><b>40</b></span> seconds. Units in stasis cannot move, attack, be attacked or be affected by abilities. Reveals cloaked or burrowed units.",
-          "zhCN": "使目标区域内的敌人陷入静滞状态，持续<span class=\"style-TooltipHighlightSCBW\"><b>40</b></span>秒。静滞状态下的单位无法攻击、移动、被攻击或受任何技能影响。可以使隐形和潜地的单位显形。",
-          "koKR": "대상 지역에 있는 적들을 <span class=\"style-TooltipHighlightSCBW\"><b>40</b></span>초 동안 정지장에 가둡니다. 정지장에 갇힌 유닛은 이동하거나 공격할 수 없지만, 주문이나 공격의 대상이 되지도 않습니다. 은폐하거나 잠복한 유닛은 모습이 드러납니다. /// Places enemy units in target area into stasis for <span class=\"style-TooltipHighlightSCBW\"><b>40</b></span> seconds. Units in stasis cannot move, attack, be attacked or be affected by abilities. Reveals cloaked or burrowed units."
+          "enUS": "Places enemy units in target area into stasis for <span class=\"style-TooltipHighlightSCBW\"><b>66</b></span> seconds. Units in stasis cannot move, attack, be attacked or be affected by abilities. Reveals cloaked or burrowed units.",
+          "zhCN": "使目标区域内的敌人陷入静滞状态，持续<span class=\"style-TooltipHighlightSCBW\"><b>66</b></span>秒。静滞状态下的单位无法攻击、移动、被攻击或受任何技能影响。可以使隐形和潜地的单位显形。",
+          "koKR": "대상 지역에 있는 적들을 <span class=\"style-TooltipHighlightSCBW\"><b>66</b></span>초 동안 정지장에 가둡니다. 정지장에 갇힌 유닛은 이동하거나 공격할 수 없지만, 주문이나 공격의 대상이 되지도 않습니다. 은폐하거나 잠복한 유닛은 모습이 드러납니다. /// Places enemy units in target area into stasis for <span class=\"style-TooltipHighlightSCBW\"><b>66</b></span> seconds. Units in stasis cannot move, attack, be attacked or be affected by abilities. Reveals cloaked or burrowed units."
         },
         "Hotkey": "F"
       }
@@ -966,8 +907,7 @@
   "ScoreMake": 450,
   "ScoreKill": 450,
   "ScoreResult": "BuildOrder",
-  "RepairTime": 55,
-  "ShieldRegenDelay": 10,
+  "RepairTime": 75,
   "Icon": "btn-unit-protoss-arbiter",
   "LifeArmorIcon": "btn-upgrade-protoss-airarmorlevel0",
   "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
@@ -980,14 +920,11 @@
         "zhCN": "相位扰断炮",
         "koKR": "차원 분열포 /// Phase Disruptor Cannon"
       },
-      "Amount": 8,
-      "AttributeBonus": {
-        "Armored": 3
-      },
+      "Amount": 7.5,
       "Kind": "Ranged",
       "TargetFilters": "",
       "Range": 5,
-      "Period": 2.5312
+      "Period": 2.8125
     }
   ],
   "Behaviors": [
@@ -1010,29 +947,25 @@
     {
       "id": "stop",
       "Name": {
-        "enUS": "Stop",
-        "ruRU": "Stop"
+        "enUS": "Stop"
       }
     },
     {
       "id": "attack",
       "Name": {
-        "ruRU": "Attack",
         "enUS": "Attack"
       }
     },
     {
       "id": "move",
       "Name": {
-        "enUS": "Move",
-        "ruRU": "Move"
+        "enUS": "Move"
       }
     },
     {
       "id": "Warpable",
       "Name": {
-        "enUS": "Warpable",
-        "ruRU": "Warpable"
+        "enUS": "Warpable"
       }
     },
     {
@@ -1054,8 +987,7 @@
     {
       "id": "ProgressRally",
       "Name": {
-        "enUS": "Progress Rally",
-        "ruRU": "Progress Rally"
+        "enUS": "Progress Rally"
       }
     }
   ],
@@ -1079,10 +1011,10 @@
     "IsArbiterSCBW",
     "NotArbiterSCBW",
     "CasterIsArbiterSCBW",
+    "ArbiterSCBW",
     "ArbiterSCBW@Count",
     "ArbiterSCBW@QoB",
-    "ArbiterSCBW@QoBAtUnit",
-    "ArbiterSCBW"
+    "ArbiterSCBW@QoBAtUnit"
   ],
   "$Requirements": [],
   "$Production": [],
@@ -1099,12 +1031,10 @@
       "id": "Move",
       "Icon": "btn-command-move",
       "Name": {
-        "enUS": "Move",
-        "ruRU": "Двигаться /// Move"
+        "enUS": "Move"
       },
       "Tooltip": {
-        "enUS": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies.",
-        "ruRU": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies."
+        "enUS": "Orders selected units to move to the target area or follow the target unit. Moving units will not engage enemies."
       }
     },
     {
@@ -1112,12 +1042,10 @@
       "id": "Stop",
       "Icon": "btn-command-stop",
       "Name": {
-        "enUS": "Stop",
-        "ruRU": "Отставить /// Stop"
+        "enUS": "Stop"
       },
       "Tooltip": {
-        "enUS": "Orders selected units to cancel all orders and stop moving.",
-        "ruRU": "Orders selected units to cancel all orders and stop moving."
+        "enUS": "Orders selected units to cancel all orders and stop moving."
       }
     },
     {
@@ -1125,12 +1053,10 @@
       "id": "MoveHoldPosition",
       "Icon": "btn-command-holdposition",
       "Name": {
-        "enUS": "Hold Position",
-        "ruRU": "Удерживать позицию /// Hold Position"
+        "enUS": "Hold Position"
       },
       "Tooltip": {
-        "enUS": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage.",
-        "ruRU": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage."
+        "enUS": "Orders selected units to stay where they are and attack enemies that are within range. Units will neither chase down enemies nor move to engage."
       }
     },
     {
@@ -1138,12 +1064,10 @@
       "id": "Attack",
       "Icon": "btn-command-attack",
       "Name": {
-        "enUS": "Attack",
-        "ruRU": "Атаковать /// Attack"
+        "enUS": "Attack"
       },
       "Tooltip": {
-        "enUS": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed.",
-        "ruRU": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed."
+        "enUS": "Orders selected units to move to the target point, fighting nearby enemies along the way. Targeting a unit with the Attack command orders that it be attacked until it is destroyed."
       }
     },
     {
@@ -1151,12 +1075,10 @@
       "id": "MovePatrol",
       "Icon": "btn-command-patrol",
       "Name": {
-        "enUS": "Patrol",
-        "ruRU": "Патрулировать /// Patrol"
+        "enUS": "Patrol"
       },
       "Tooltip": {
-        "enUS": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies.",
-        "ruRU": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies."
+        "enUS": "Orders selected units to patrol between their current position and the target area. Units will attack enemies and move to engage nearby enemies."
       }
     },
     {
@@ -1164,12 +1086,10 @@
       "id": "Rally",
       "Icon": "btn-ability-terran-setrallypoint",
       "Name": {
-        "enUS": "Set Rally Point",
-        "ruRU": "Задать точку сбора /// Set Rally Point"
+        "enUS": "Set Rally Point"
       },
       "Tooltip": {
-        "enUS": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
-        "ruRU": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically."
+        "enUS": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically."
       }
     },
     {
@@ -1197,9 +1117,9 @@
         "koKR": "스테이시스 필드 /// Stasis Field"
       },
       "Tooltip": {
-        "enUS": "Places enemy units in target area into stasis for <span class=\"style-TooltipHighlightSCBW\"><b>40</b></span> seconds. Units in stasis cannot move, attack, be attacked or be affected by abilities. Reveals cloaked or burrowed units.",
-        "zhCN": "使目标区域内的敌人陷入静滞状态，持续<span class=\"style-TooltipHighlightSCBW\"><b>40</b></span>秒。静滞状态下的单位无法攻击、移动、被攻击或受任何技能影响。可以使隐形和潜地的单位显形。",
-        "koKR": "대상 지역에 있는 적들을 <span class=\"style-TooltipHighlightSCBW\"><b>40</b></span>초 동안 정지장에 가둡니다. 정지장에 갇힌 유닛은 이동하거나 공격할 수 없지만, 주문이나 공격의 대상이 되지도 않습니다. 은폐하거나 잠복한 유닛은 모습이 드러납니다. /// Places enemy units in target area into stasis for <span class=\"style-TooltipHighlightSCBW\"><b>40</b></span> seconds. Units in stasis cannot move, attack, be attacked or be affected by abilities. Reveals cloaked or burrowed units."
+        "enUS": "Places enemy units in target area into stasis for <span class=\"style-TooltipHighlightSCBW\"><b>66</b></span> seconds. Units in stasis cannot move, attack, be attacked or be affected by abilities. Reveals cloaked or burrowed units.",
+        "zhCN": "使目标区域内的敌人陷入静滞状态，持续<span class=\"style-TooltipHighlightSCBW\"><b>66</b></span>秒。静滞状态下的单位无法攻击、移动、被攻击或受任何技能影响。可以使隐形和潜地的单位显形。",
+        "koKR": "대상 지역에 있는 적들을 <span class=\"style-TooltipHighlightSCBW\"><b>66</b></span>초 동안 정지장에 가둡니다. 정지장에 갇힌 유닛은 이동하거나 공격할 수 없지만, 주문이나 공격의 대상이 되지도 않습니다. 은폐하거나 잠복한 유닛은 모습이 드러납니다. /// Places enemy units in target area into stasis for <span class=\"style-TooltipHighlightSCBW\"><b>66</b></span> seconds. Units in stasis cannot move, attack, be attacked or be affected by abilities. Reveals cloaked or burrowed units."
       }
     }
   ]

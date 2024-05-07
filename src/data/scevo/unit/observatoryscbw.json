@@ -21,8 +21,7 @@
   "LifeStart": 250,
   "LifeMax": 250,
   "LifeArmorName": {
-    "enUS": "Protoss Armor",
-    "ruRU": "Protoss Armor"
+    "enUS": "Protoss Armor"
   },
   "Mover": "Ground",
   "StationaryTurningRate": 719.4726,
@@ -88,12 +87,6 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
-  "$tokens": {
-    "ID": {
-      "type": "string",
-      "value": ""
-    }
-  },
   "Facing": 45,
   "Mob": "Multiplayer",
   "FogVisibility": "Snapshot",
@@ -116,16 +109,15 @@
   "LifeArmor": 1,
   "ShieldsStart": 250,
   "ShieldsMax": 250,
-  "ShieldRegenRate": 2,
+  "ShieldRegenRate": 0.4375,
   "ShieldArmorName": {
-    "enUS": "Protoss Plasma Shields",
-    "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+    "enUS": "Protoss Plasma Shields"
   },
   "Sight": 10,
   "CostCategory": "Technology",
   "CostResource": {
-    "Minerals": 50,
-    "Vespene": 100
+    "Minerals": 100,
+    "Vespene": 50
   },
   "AttackTargetPriority": 11,
   "CardLayouts": {
@@ -149,12 +141,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "que5",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "QueueCount": 1,
           "Flags": {
             "BestUnit": 1,
@@ -188,12 +174,10 @@
         "id": "Cancel",
         "Icon": "btn-command-cancel",
         "Name": {
-          "enUS": "Cancel",
-          "ruRU": "Отменить /// Cancel"
+          "enUS": "Cancel"
         },
         "Tooltip": {
-          "enUS": "Drops the current order without performing it, and allows you to select a different order.",
-          "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+          "enUS": "Drops the current order without performing it, and allows you to select a different order."
         },
         "Hotkey": "Esc"
       },
@@ -216,12 +200,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "BuildInProgress",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "Activity": "UI/Building",
           "VitalStartFactor": {
             "Life": 0.1,
@@ -255,12 +233,10 @@
         "id": "CancelBuilding",
         "Icon": "btn-command-cancel",
         "Name": {
-          "enUS": "Cancel",
-          "ruRU": "Отменить /// Cancel"
+          "enUS": "Cancel"
         },
         "Tooltip": {
-          "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-          "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+          "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund."
         },
         "Hotkey": "Esc"
       },
@@ -276,6 +252,7 @@
               "CreateDefaultButton": 1
             },
             "DefaultButtonFace": "ObserverSCBWSpeedUpgrade",
+            "State": "Restricted",
             "Requirements": "ObserverSCBWSpeedUpgrade"
           },
           "Resource": {
@@ -326,11 +303,12 @@
               "CreateDefaultButton": 1
             },
             "DefaultButtonFace": "ObserverSCBWSightUpgrade",
+            "State": "Restricted",
             "Requirements": "ObserverSCBWSightUpgrade"
           },
           "Resource": {
             "Minerals": 100,
-            "Vespene": 110
+            "Vespene": 100
           },
           "Time": 90,
           "Upgrade": "ObserverSCBWSightUpgrade"
@@ -338,7 +316,7 @@
         "Time": 90,
         "Cost": {
           "Minerals": 100,
-          "Vespene": 110,
+          "Vespene": 100,
           "Terazine": 0,
           "Custom": 0,
           "Energy": 0,
@@ -376,11 +354,12 @@
               "CreateDefaultButton": 1
             },
             "DefaultButtonFace": "ObserverSCBWSightUpgrade",
+            "State": "Restricted",
             "Requirements": "ObserverSCBWSightUpgrade"
           },
           "Resource": {
             "Minerals": 100,
-            "Vespene": 110
+            "Vespene": 100
           },
           "Time": 90,
           "Upgrade": "ObserverSCBWSightUpgrade"
@@ -388,7 +367,7 @@
         "Time": 90,
         "Cost": {
           "Minerals": 100,
-          "Vespene": 110,
+          "Vespene": 100,
           "Terazine": 0,
           "Custom": 0,
           "Energy": 0,
@@ -426,6 +405,7 @@
               "CreateDefaultButton": 1
             },
             "DefaultButtonFace": "ObserverSCBWSpeedUpgrade",
+            "State": "Restricted",
             "Requirements": "ObserverSCBWSpeedUpgrade"
           },
           "Resource": {
@@ -477,8 +457,7 @@
   "TechTreeUnlockedUnitArray": [
     "ObserverSCBW"
   ],
-  "BuildTime": 25,
-  "ShieldRegenDelay": 10,
+  "BuildTime": 28,
   "id": "ObservatorySCBW",
   "Icon": "btn-building-protoss-observatory@scbw",
   "LifeArmorIcon": "btn-armor-protoss-buildingplating",
@@ -489,8 +468,7 @@
       "id": "PowerUserQueue",
       "Icon": "btn-building-protoss-pylon",
       "Name": {
-        "enUS": "Power User (Queue)",
-        "ruRU": "Power User (Queue)"
+        "enUS": "Power User (Queue)"
       },
       "Tooltip": "-"
     }
@@ -499,14 +477,12 @@
     {
       "id": "BuildInProgress",
       "Name": {
-        "enUS": "Build in Progress",
-        "ruRU": "Build in Progress"
+        "enUS": "Build in Progress"
       }
     },
     {
       "id": "que5",
       "Name": {
-        "ruRU": "Queue (5)",
         "enUS": "Queue (5)"
       }
     },
@@ -537,9 +513,9 @@
     "IsObservatorySCBW",
     "NotObservatorySCBW",
     "CasterIsObservatorySCBW",
+    "ObservatorySCBW",
     "ObservatorySCBW@QoB",
-    "ObservatorySCBW@QoBAtUnit",
-    "ObservatorySCBW"
+    "ObservatorySCBW@QoBAtUnit"
   ],
   "$Requirements": [],
   "$Production": [],
@@ -559,12 +535,10 @@
       "id": "Cancel",
       "Icon": "btn-command-cancel",
       "Name": {
-        "enUS": "Cancel",
-        "ruRU": "Отменить /// Cancel"
+        "enUS": "Cancel"
       },
       "Tooltip": {
-        "enUS": "Drops the current order without performing it, and allows you to select a different order.",
-        "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+        "enUS": "Drops the current order without performing it, and allows you to select a different order."
       }
     },
     {
@@ -572,12 +546,10 @@
       "id": "CancelBuilding",
       "Icon": "btn-command-cancel",
       "Name": {
-        "enUS": "Cancel",
-        "ruRU": "Отменить /// Cancel"
+        "enUS": "Cancel"
       },
       "Tooltip": {
-        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-        "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund."
       }
     },
     {

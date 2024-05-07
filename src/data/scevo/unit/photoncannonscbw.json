@@ -21,8 +21,7 @@
   "LifeStart": 150,
   "LifeMax": 150,
   "LifeArmorName": {
-    "enUS": "Protoss Armor",
-    "ruRU": "Protoss Armor"
+    "enUS": "Protoss Armor"
   },
   "Mover": "Ground",
   "StationaryTurningRate": 720,
@@ -89,12 +88,6 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
-  "$tokens": {
-    "ID": {
-      "type": "string",
-      "value": ""
-    }
-  },
   "Facing": 45,
   "Mob": "Multiplayer",
   "FogVisibility": "Snapshot",
@@ -117,10 +110,9 @@
   "LifeArmor": 1,
   "ShieldsStart": 150,
   "ShieldsMax": 150,
-  "ShieldRegenRate": 2,
+  "ShieldRegenRate": 0.4375,
   "ShieldArmorName": {
-    "enUS": "Protoss Plasma Shields",
-    "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+    "enUS": "Protoss Plasma Shields"
   },
   "Sight": 11,
   "CostCategory": "Technology",
@@ -149,12 +141,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "BuildInProgress",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "Activity": "UI/Building",
           "VitalStartFactor": {
             "Life": 0.1,
@@ -188,12 +174,10 @@
         "id": "CancelBuilding",
         "Icon": "btn-command-cancel",
         "Name": {
-          "enUS": "Cancel",
-          "ruRU": "Отменить /// Cancel"
+          "enUS": "Cancel"
         },
         "Tooltip": {
-          "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-          "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+          "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund."
         },
         "Hotkey": "Esc"
       },
@@ -216,12 +200,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "stop",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "AbilSetId": "Stop",
           "CmdButtonArray": {
             "Stop": {
@@ -268,12 +246,10 @@
         "id": "Stop",
         "Icon": "btn-command-stop",
         "Name": {
-          "enUS": "Stop",
-          "ruRU": "Отставить /// Stop"
+          "enUS": "Stop"
         },
         "Tooltip": {
-          "enUS": "Orders selected units to cancel all orders and stop moving.",
-          "ruRU": "Orders selected units to cancel all orders and stop moving."
+          "enUS": "Orders selected units to cancel all orders and stop moving."
         },
         "Hotkey": "S"
       },
@@ -296,12 +272,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "attack",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "AbilSetId": "Attack",
           "Alignment": "Negative",
           "AcquireFilters": "-;Player,Ally,Neutral,Dead,Hidden,Invulnerable,Benign",
@@ -349,12 +319,10 @@
         "id": "AttackBuilding",
         "Icon": "btn-command-attack",
         "Name": {
-          "enUS": "Attack",
-          "ruRU": "Attack"
+          "enUS": "Attack"
         },
         "Tooltip": {
-          "enUS": "Targets and attacks the target unit until it is destroyed or moves out of range.",
-          "ruRU": "Targets and attacks the target unit until it is destroyed or moves out of range."
+          "enUS": "Targets and attacks the target unit until it is destroyed or moves out of range."
         },
         "Hotkey": "A"
       },
@@ -408,7 +376,6 @@
   "HotkeyCategory": "Unit/Category/ProtossUnitsSCBW",
   "Speed": 0,
   "BuildTime": 40,
-  "ShieldRegenDelay": 10,
   "id": "PhotonCannonSCBW",
   "Icon": "btn-building-protoss-photoncannon",
   "LifeArmorIcon": "btn-armor-protoss-buildingplating",
@@ -435,27 +402,23 @@
       "id": "Detector11",
       "Icon": "btn-status-detector",
       "Name": {
-        "enUS": "Detector",
-        "ruRU": "Детектор /// Detector"
+        "enUS": "Detector"
       },
       "Tooltip": {
-        "enUS": "This unit can detect cloaked or burrowed units within its sight range.",
-        "ruRU": "Эта боевая единица может обнаруживать замаскированные или закопанные войска в поле обзора."
+        "enUS": "This unit can detect cloaked or burrowed units within its sight range."
       }
     },
     {
       "id": "PowerUserBaseDefenseSmall",
       "Name": {
-        "enUS": "Power User (Queue, Base defense)",
-        "ruRU": "Power User (Queue, Base defense)"
+        "enUS": "Power User (Queue, Base defense)"
       },
       "Tooltip": "-"
     },
     {
       "id": "UnderConstruction",
       "Name": {
-        "enUS": "Under Construction",
-        "ruRU": "Under Construction"
+        "enUS": "Under Construction"
       },
       "Tooltip": "-"
     }
@@ -464,21 +427,18 @@
     {
       "id": "BuildInProgress",
       "Name": {
-        "enUS": "Build in Progress",
-        "ruRU": "Build in Progress"
+        "enUS": "Build in Progress"
       }
     },
     {
       "id": "stop",
       "Name": {
-        "enUS": "Stop",
-        "ruRU": "Stop"
+        "enUS": "Stop"
       }
     },
     {
       "id": "attack",
       "Name": {
-        "ruRU": "Attack",
         "enUS": "Attack"
       }
     }
@@ -494,10 +454,10 @@
     "IsPhotonCannonSCBW",
     "NotPhotonCannonSCBW",
     "CasterIsPhotonCannonSCBW",
+    "PhotonCannonSCBW",
     "PhotonCannonSCBW@Count",
     "PhotonCannonSCBW@QoB",
-    "PhotonCannonSCBW@QoBAtUnit",
-    "PhotonCannonSCBW"
+    "PhotonCannonSCBW@QoBAtUnit"
   ],
   "$Requirements": [],
   "$Production": [],
@@ -514,12 +474,10 @@
       "id": "CancelBuilding",
       "Icon": "btn-command-cancel",
       "Name": {
-        "enUS": "Cancel",
-        "ruRU": "Отменить /// Cancel"
+        "enUS": "Cancel"
       },
       "Tooltip": {
-        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-        "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund."
       }
     },
     {
@@ -527,12 +485,10 @@
       "id": "Stop",
       "Icon": "btn-command-stop",
       "Name": {
-        "enUS": "Stop",
-        "ruRU": "Отставить /// Stop"
+        "enUS": "Stop"
       },
       "Tooltip": {
-        "enUS": "Orders selected units to cancel all orders and stop moving.",
-        "ruRU": "Orders selected units to cancel all orders and stop moving."
+        "enUS": "Orders selected units to cancel all orders and stop moving."
       }
     },
     {
@@ -540,12 +496,10 @@
       "id": "AttackBuilding",
       "Icon": "btn-command-attack",
       "Name": {
-        "enUS": "Attack",
-        "ruRU": "Attack"
+        "enUS": "Attack"
       },
       "Tooltip": {
-        "enUS": "Targets and attacks the target unit until it is destroyed or moves out of range.",
-        "ruRU": "Targets and attacks the target unit until it is destroyed or moves out of range."
+        "enUS": "Targets and attacks the target unit until it is destroyed or moves out of range."
       }
     }
   ]

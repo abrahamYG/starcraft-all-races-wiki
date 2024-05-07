@@ -21,15 +21,14 @@
   "LifeStart": 20,
   "LifeMax": 20,
   "LifeArmorName": {
-    "enUS": "Terran Vehicle Plating",
-    "ruRU": "Terran Vehicle Plating"
+    "enUS": "Terran Vehicle Plating"
   },
   "Mover": "Ground",
   "StationaryTurningRate": 2292.8906,
   "TurningRate": 720,
   "Radius": 0.25,
   "SeparationRadius": 0,
-  "MinimapRadius": 0.25,
+  "MinimapRadius": 0.2,
   "EditorCategories": "ObjectType:Unit,ObjectFamily:Melee",
   "TacticalAIFilters": "-;Player,Ally,Neutral",
   "AIEvalFactor": 1,
@@ -86,12 +85,6 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
-  "$tokens": {
-    "ID": {
-      "type": "string",
-      "value": ""
-    }
-  },
   "PlaneArray": [
     "Ground"
   ],
@@ -110,12 +103,13 @@
     "Minerals": 25
   },
   "RepairTime": 20,
+  "InnerRadius": 0.25,
   "SubgroupPriority": 1,
-  "GlossaryPriority": 160,
-  "HotkeyCategory": "Unit/Category/TerranUnitsSCBW",
-  "KillDisplay": "Never",
-  "RankDisplay": "Never",
+  "TechAliasArray": [
+    "Alias_SpiderMineSCBW"
+  ],
   "GlossaryCategory": "Unit/Category/TerranUnitsSCBW",
+  "GlossaryPriority": 160,
   "GlossaryStrongArray": [
     "MarineSCBW",
     "ZerglingSCBW",
@@ -126,10 +120,15 @@
     "GuardianSCBW",
     "ArchonSCBW"
   ],
-  "TechAliasArray": [
-    "Alias_SpiderMineSCBW"
+  "HotkeyCategory": "Unit/Category/TerranUnitsSCBW",
+  "KillDisplay": "Never",
+  "RankDisplay": "Never",
+  "AttackTargetPriority": 20,
+  "TargetingHitTestPriority": [
+    {
+      "value": "1"
+    }
   ],
-  "InnerRadius": 0.25,
   "id": "SpiderMineSCBW",
   "Icon": "btn-unit-terran-spiderminescbw",
   "LifeArmorIcon": "btn-upgrade-terran-vehicleplatinglevel0",
@@ -144,10 +143,7 @@
         "zhCN": "蜘蛛雷",
         "koKR": "스파이더 마인 /// Spider Mines"
       },
-      "Amount": 95,
-      "AttributeBonus": {
-        "Armored": 30
-      },
+      "Amount": 94,
       "Kind": "Splash",
       "TargetFilters": "Ground",
       "Range": 0.3125,
@@ -167,9 +163,7 @@
     {
       "id": "SpiderMineSCBWWeapon@InvisSearchTargets",
       "Name": {
-        "enUS": "Invis Search Targets",
-        "zhCN": "Invis Search Targets",
-        "koKR": "Invis Search Targets"
+        "enUS": "Invis Search Targets"
       },
       "Tooltip": "-"
     }
@@ -186,22 +180,19 @@
     {
       "id": "stop",
       "Name": {
-        "enUS": "Stop",
-        "ruRU": "Stop"
+        "enUS": "Stop"
       }
     },
     {
       "id": "attack",
       "Name": {
-        "ruRU": "Attack",
         "enUS": "Attack"
       }
     },
     {
       "id": "move",
       "Name": {
-        "enUS": "Move",
-        "ruRU": "Move"
+        "enUS": "Move"
       }
     }
   ],
@@ -211,19 +202,18 @@
     "SpiderMineSCBW",
     "SpiderMineSCBW@Burrowed",
     "SpiderMineSCBW@Unburrow",
+    "NotSpiderMineSCBW",
     "Button/Tooltip/VulturePlaceSpiderMineSCBW",
     "VulturePlaceSpiderMineSCBW",
     "Button/Tooltip/VulturePlaceSpiderMineSCBWResearch",
-    "IsNotSpiderMineSCBW",
     "IsSpiderMineSCBW",
-    "NotSpiderMineSCBW",
-    "SpiderMineSCBW@BurySound",
+    "SpiderMineSCBW@PlaceSound",
+    "SpiderMineSCBW",
     "SpiderMineSCBW",
     "SpiderMineSCBW@AllowUnit",
     "SpiderMineSCBW@Count",
     "SpiderMineSCBW@QoB",
-    "SpiderMineSCBW@QoBAtUnit",
-    "SpiderMineSCBW"
+    "SpiderMineSCBW@QoBAtUnit"
   ],
   "$Requirements": [],
   "$Production": [],

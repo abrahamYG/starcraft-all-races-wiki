@@ -1,32 +1,9 @@
 {
   "mods": [
-    {
-      "name": "LOTV 5.0.11",
-      "id": "lotv5011"
-    },
-    {
-      "name": "LOTV 5.0.12",
-      "id": "lotv5012"
-    },
+   
     {
       "name": "LOTV 5.0.13",
       "id": "lotv5013"
-    },
-    {
-      "id": "scion",
-      "name": "Scion Races"
-    },
-    {
-      "id": "arc",
-      "name": "All Races"
-    },
-    {
-      "id": "coop",
-      "name": "COOP"
-    },
-    {
-      "id": "nexus",
-      "name": "nexus coop"
     },
     {
       "id": "scevo",

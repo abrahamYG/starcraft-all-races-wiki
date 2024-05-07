@@ -21,8 +21,7 @@
   "LifeStart": 2500,
   "LifeMax": 2500,
   "LifeArmorName": {
-    "enUS": "Zerg Building Armor",
-    "ruRU": "Zerg Building Armor"
+    "enUS": "Zerg Building Armor"
   },
   "Mover": "Ground",
   "StationaryTurningRate": 719.4726,
@@ -89,12 +88,6 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
-  "$tokens": {
-    "ID": {
-      "type": "string",
-      "value": ""
-    }
-  },
   "Mob": "Multiplayer",
   "EnergyRegenRate": 0.5,
   "id": "HiveSCBW",
@@ -130,7 +123,7 @@
   "Food": 6,
   "CostCategory": "Technology",
   "CostResource": {
-    "Minerals": 650,
+    "Minerals": 700,
     "Vespene": 250
   },
   "BuildTime": 80,
@@ -145,9 +138,9 @@
   "ScoreResult": "BuildOrder",
   "SubgroupPriority": 35,
   "TechAliasArray": [
-    "HiveSCBW",
-    "LairSCBW",
-    "HatcherySCBW"
+    "Alias_HiveSCBW",
+    "Alias_LairSCBW",
+    "Alias_HatcherySCBW"
   ],
   "GlossaryPriority": 18,
   "KillDisplay": "Always",
@@ -188,14 +181,12 @@
     {
       "id": "BuildInProgress",
       "Name": {
-        "enUS": "Build in Progress",
-        "ruRU": "Build in Progress"
+        "enUS": "Build in Progress"
       }
     },
     {
       "id": "que5CancelToSelection",
       "Name": {
-        "ruRU": "Queue (5) (Cancel To Selection)",
         "enUS": "Queue (5) (Cancel To Selection)"
       }
     },
@@ -244,7 +235,6 @@
     "Button/Tooltip/HiveSCBW",
     "HiveSCBW",
     "HiveSCBW@Count",
-    "HiveSCBW@CountAtUnitNoTechtree",
     "HiveSCBW@AllowUnit",
     "HiveSCBW@Morph",
     "ZergBuildingSCBW@StopSound",
@@ -256,10 +246,11 @@
     "IsHiveSCBW",
     "NotHiveSCBW",
     "CasterIsHiveSCBW",
+    "HiveSCBW",
+    "HiveSCBW@CountAtUnitNoTechtree",
     "HiveSCBW@CountAtUnit",
     "HiveSCBW@QoB",
-    "HiveSCBW@QoBAtUnit",
-    "HiveSCBW"
+    "HiveSCBW@QoBAtUnit"
   ],
   "$Requirements": [],
   "$Production": [
@@ -280,12 +271,10 @@
       "id": "CancelBuilding",
       "Icon": "btn-command-cancel",
       "Name": {
-        "enUS": "Cancel",
-        "ruRU": "Отменить /// Cancel"
+        "enUS": "Cancel"
       },
       "Tooltip": {
-        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-        "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund."
       }
     },
     {
@@ -293,12 +282,10 @@
       "id": "Cancel",
       "Icon": "btn-command-cancel",
       "Name": {
-        "enUS": "Cancel",
-        "ruRU": "Отменить /// Cancel"
+        "enUS": "Cancel"
       },
       "Tooltip": {
-        "enUS": "Drops the current order without performing it, and allows you to select a different order.",
-        "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+        "enUS": "Drops the current order without performing it, and allows you to select a different order."
       }
     },
     {
@@ -306,12 +293,10 @@
       "id": "RallyEgg",
       "Icon": "btn-ability-zerg-setworkerrallypoint",
       "Name": {
-        "enUS": "Set Worker Rally Point",
-        "ruRU": "Set Worker Rally Point"
+        "enUS": "Set Worker Rally Point"
       },
       "Tooltip": {
-        "enUS": "Sends morphed worker units to the designated point. Workers rallied to Mineral Fields or Extractors will begin gathering automatically.",
-        "ruRU": "Sends morphed worker units to the designated point. Workers rallied to Mineral Fields or Extractors will begin gathering automatically."
+        "enUS": "Sends morphed worker units to the designated point. Workers rallied to Mineral Fields or Extractors will begin gathering automatically."
       }
     },
     {
@@ -319,12 +304,10 @@
       "id": "SetRallyPoint2",
       "Icon": "btn-ability-terran-setrallypoint",
       "Name": {
-        "enUS": "Set Rally Point",
-        "ruRU": "Задать точку сбора /// Set Rally Point"
+        "enUS": "Set Rally Point"
       },
       "Tooltip": {
-        "enUS": "Sends morphed units to the designated point.",
-        "ruRU": "Sends morphed units to the designated point."
+        "enUS": "Sends morphed units to the designated point."
       }
     },
     {
@@ -337,8 +320,8 @@
         "koKR": "안테나 진화 /// Evolve Antennae"
       },
       "Tooltip": {
-        "enUS": "Increases <span class=\"style-TooltipHighlightSCBW\"><b>Overlord</b>s</span> sight range by <span class=\"style-TooltipBuffSCBW\"><d stringref=\"Upgrade,OverlordSCBWSightUpgrade,EffectArrayTemplate[0].Value\"/></span> and allows them to detect cloaked and burrowed units.",
-        "zhCN": "Increases <span class=\"style-TooltipHighlightSCBW\"><b>Overlord</b>s</span> sight range by <span class=\"style-TooltipBuffSCBW\"><d stringref=\"Upgrade,OverlordSCBWSightUpgrade,EffectArrayTemplate[0].Value\"/></span> and allows them to detect cloaked and burrowed units.",
+        "enUS": "Increases <span class=\"style-TooltipHighlightSCBW\"><b>Overlord</b>s</span> sight range by <span class=\"style-TooltipBuffSCBW\"><d stringref=\"Upgrade,GhostSCBWSightUpgrade,EffectArrayTemplate[0].Value\"/></span>.",
+        "zhCN": "<span class=\"style-TooltipHighlightSCBW\"><b>Overlord</b></span>的视野范围提高<span class=\"style-TooltipBuffSCBW\"><d stringref=\"Upgrade,GhostSCBWSightUpgrade,EffectArrayTemplate[0].Value\"/></span>点。",
         "koKR": "<span class=\"style-TooltipHighlightSCBW\"><b>Overlord</b></span>의 시야 범위가 <span class=\"style-TooltipBuffSCBW\"><d stringref=\"Upgrade,GhostSCBWSightUpgrade,EffectArrayTemplate[0].Value\"/></span>만큼 증가합니다. /// Increases <span class=\"style-TooltipHighlightSCBW\"><b>Overlord</b>s</span> sight range by <span class=\"style-TooltipBuffSCBW\"><d stringref=\"Upgrade,GhostSCBWSightUpgrade,EffectArrayTemplate[0].Value\"/></span>."
       }
     },

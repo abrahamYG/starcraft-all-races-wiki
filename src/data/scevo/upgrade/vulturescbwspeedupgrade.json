@@ -13,13 +13,6 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "VultureSCBWSpeedUpgrade",
-  "EditorCategories": "Race:Terran,UpgradeType:Talents",
-  "$tokens": {
-    "ID": {
-      "type": "string",
-      "value": ""
-    }
-  },
   "DataCollection": "VultureSCBWSpeedUpgrade",
   "EffectArrayTemplate": [
     {
@@ -31,6 +24,7 @@
   "Race": "Terr",
   "ScoreAmount": 200,
   "ScoreResult": "BuildOrder",
+  "EditorCategories": "Race:Terran,UpgradeType:Talents",
   "AffectedUnitArray": [
     "VultureSCBW"
   ]

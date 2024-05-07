@@ -21,8 +21,7 @@
   "LifeStart": 750,
   "LifeMax": 750,
   "LifeArmorName": {
-    "enUS": "Terran Building Plating",
-    "ruRU": "Terran Building Plating"
+    "enUS": "Terran Building Plating"
   },
   "Mover": "Ground",
   "StationaryTurningRate": 720,
@@ -88,12 +87,6 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
-  "$tokens": {
-    "ID": {
-      "type": "string",
-      "value": ""
-    }
-  },
   "Mob": "Multiplayer",
   "Gender": "Neutral",
   "FogVisibility": "Snapshot",
@@ -165,12 +158,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "que5Addon",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "QueueCount": 1,
           "Flags": {
             "BestUnit": 1,
@@ -204,12 +191,10 @@
         "id": "Cancel",
         "Icon": "btn-command-cancel",
         "Name": {
-          "enUS": "Cancel",
-          "ruRU": "Отменить /// Cancel"
+          "enUS": "Cancel"
         },
         "Tooltip": {
-          "enUS": "Drops the current order without performing it, and allows you to select a different order.",
-          "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+          "enUS": "Drops the current order without performing it, and allows you to select a different order."
         },
         "Hotkey": "Esc"
       },
@@ -232,12 +217,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "BuildInProgress",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "Activity": "UI/Building",
           "VitalStartFactor": {
             "Life": 0.1,
@@ -271,12 +250,10 @@
         "id": "CancelBuilding",
         "Icon": "btn-command-cancel",
         "Name": {
-          "enUS": "Cancel",
-          "ruRU": "Отменить /// Cancel"
+          "enUS": "Cancel"
         },
         "Tooltip": {
-          "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-          "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+          "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund."
         },
         "Hotkey": "Esc"
       },
@@ -292,6 +269,7 @@
               "CreateDefaultButton": 1
             },
             "DefaultButtonFace": "VultureSCBWSpeedUpgrade",
+            "State": "Restricted",
             "Requirements": "VultureSCBWSpeedUpgrade"
           },
           "Resource": {
@@ -342,16 +320,17 @@
               "CreateDefaultButton": 1
             },
             "DefaultButtonFace": "VulturePlaceSpiderMineSCBWResearch",
+            "State": "Restricted",
             "Requirements": "VulturePlaceSpiderMineSCBWResearch"
           },
           "Resource": {
             "Minerals": 100,
             "Vespene": 100
           },
-          "Time": 100,
+          "Time": 75,
           "Upgrade": "VulturePlaceSpiderMineSCBWResearch"
         },
-        "Time": 100,
+        "Time": 75,
         "Cost": {
           "Minerals": 100,
           "Vespene": 100,
@@ -392,19 +371,20 @@
               "CreateDefaultButton": 1
             },
             "DefaultButtonFace": "SiegeModeSCBWResearch",
+            "State": "Restricted",
             "Requirements": "SiegeModeSCBWResearch"
           },
           "Resource": {
             "Minerals": 100,
-            "Vespene": 100
+            "Vespene": 150
           },
-          "Time": 80,
+          "Time": 60,
           "Upgrade": "SiegeModeSCBWResearch"
         },
-        "Time": 80,
+        "Time": 60,
         "Cost": {
           "Minerals": 100,
-          "Vespene": 100,
+          "Vespene": 150,
           "Terazine": 0,
           "Custom": 0,
           "Energy": 0,
@@ -425,7 +405,7 @@
         },
         "Tooltip": {
           "enUS": "Allows <span class=\"style-TooltipHighlightSCBW\"><b>Siege Tank</b>s</span> to deploy into <span class=\"style-TooltipHighlightSCBW\"><b>Siege Mode</b></span>. In this mode tanks gain significant range and inflict area damage. <span class=\"style-TooltipHighlightSCBW\"><b>Siege Tank</b>s</span> in this mode cannot move or attack targets at close range.",
-          "zhCN": "让<span class=\"style-TooltipHighlightSCBW\"><b>Siege Tank</b></span>可以部署为<span class=\"style-TooltipHighlightSCBW\"><b>Siege Mode</b></span>. 该模式下，<span class=\"style-TooltipHighlightSCBW\"><b>Siege Tank</b></span> 的射程极大提高，造成范围伤害，但无法移动，也无法向过近的单位开火。",
+          "zhCN": "让<span class=\"style-TooltipHighlightSCBW\"><b>Siege Tank</b></span>可以部署为<span class=\"style-TooltipHighlightSCBW\"><b>Siege Mode</b></span>. 该模式下，<span class=\"style-TooltipHighlightSCBW\"><b>Siege Tank</b></span>的射程极大提高，造成范围伤害，但无法移动，也无法向过近的单位开火。",
           "koKR": "<span class=\"style-TooltipHighlightSCBW\"><b>Siege Tank</b></span>가 <span class=\"style-TooltipHighlightSCBW\"><b>Siege Mode</b></span>를 사용할 수 있습니다. 사거리가 크게 증가하여 범위 피해를 주지만, 이동하거나 근접한 적 유닛을 공격할 수 없습니다. /// Allows <span class=\"style-TooltipHighlightSCBW\"><b>Siege Tank</b>s</span> to deploy into <span class=\"style-TooltipHighlightSCBW\"><b>Siege Mode</b></span>. In this mode tanks gain significant range and inflict area damage. <span class=\"style-TooltipHighlightSCBW\"><b>Siege Tank</b>s</span> in this mode cannot move or attack targets at close range."
         },
         "Hotkey": "E"
@@ -442,6 +422,7 @@
               "CreateDefaultButton": 1
             },
             "DefaultButtonFace": "GoliathSCBWRangeUpgrade",
+            "State": "Restricted",
             "Requirements": "GoliathSCBWRangeUpgrade"
           },
           "Resource": {
@@ -481,7 +462,7 @@
         "Hotkey": "C"
       },
       {
-        "Upgrade": "StingerSCBWAttackMoveUpgrade",
+        "Upgrade": "SiegeModeSCBWResearch",
         "Info": {
           "Button": {
             "Flags": {
@@ -491,19 +472,20 @@
               "UseDefaultButton": 1,
               "CreateDefaultButton": 1
             },
-            "DefaultButtonFace": "StingerSCBWAttackMoveUpgrade",
-            "Requirements": "StingerSCBWAttackMoveUpgrade"
+            "DefaultButtonFace": "SiegeModeSCBWResearch",
+            "State": "Restricted",
+            "Requirements": "SiegeModeSCBWResearch"
           },
           "Resource": {
-            "Minerals": 150,
+            "Minerals": 100,
             "Vespene": 150
           },
-          "Time": 150,
-          "Upgrade": "StingerSCBWAttackMoveUpgrade"
+          "Time": 60,
+          "Upgrade": "SiegeModeSCBWResearch"
         },
-        "Time": 150,
+        "Time": 60,
         "Cost": {
-          "Minerals": 150,
+          "Minerals": 100,
           "Vespene": 150,
           "Terazine": 0,
           "Custom": 0,
@@ -512,23 +494,23 @@
           "Shields": 0,
           "Food": 0
         },
-        "Row": 1,
-        "Column": 1,
+        "Row": 0,
+        "Column": 2,
         "Type": "AbilCmd",
-        "AbilCmd": "StingerSCBWAttackMoveUpgrade,Research1",
-        "id": "StingerSCBWAttackMoveUpgrade",
-        "Icon": "btn-ability-mengsk-siegetank-flyingtankarmament",
+        "AbilCmd": "SiegeModeSCBWResearch,Research1",
+        "id": "SiegeModeSCBWResearch",
+        "Icon": "btn-upgrade-terran-nova-siegetankrange",
         "Name": {
-          "enUS": "Research Helios Tracer Rounds",
-          "zhCN": "Research Helios Tracer Rounds",
-          "koKR": "Research Helios Tracer Rounds"
+          "enUS": "Research Siege Mode",
+          "zhCN": "研究攻城模式",
+          "koKR": "시즈 모드 연구 /// Research Siege Mode"
         },
         "Tooltip": {
-          "enUS": "Allows the <span class=\"style-TooltipHighlightSCBW\"><b>Stinger</b></span> to attack targets while moving.",
-          "zhCN": "Allows the <span class=\"style-TooltipHighlightSCBW\"><b>Stinger</b></span> to attack targets while moving.",
-          "koKR": "Allows the <span class=\"style-TooltipHighlightSCBW\"><b>Stinger</b></span> to attack targets while moving."
+          "enUS": "Allows <span class=\"style-TooltipHighlightSCBW\"><b>Siege Tank</b>s</span> to deploy into <span class=\"style-TooltipHighlightSCBW\"><b>Siege Mode</b></span>. In this mode tanks gain significant range and inflict area damage. <span class=\"style-TooltipHighlightSCBW\"><b>Siege Tank</b>s</span> in this mode cannot move or attack targets at close range.",
+          "zhCN": "让<span class=\"style-TooltipHighlightSCBW\"><b>Siege Tank</b></span>可以部署为<span class=\"style-TooltipHighlightSCBW\"><b>Siege Mode</b></span>. 该模式下，<span class=\"style-TooltipHighlightSCBW\"><b>Siege Tank</b></span>的射程极大提高，造成范围伤害，但无法移动，也无法向过近的单位开火。",
+          "koKR": "<span class=\"style-TooltipHighlightSCBW\"><b>Siege Tank</b></span>가 <span class=\"style-TooltipHighlightSCBW\"><b>Siege Mode</b></span>를 사용할 수 있습니다. 사거리가 크게 증가하여 범위 피해를 주지만, 이동하거나 근접한 적 유닛을 공격할 수 없습니다. /// Allows <span class=\"style-TooltipHighlightSCBW\"><b>Siege Tank</b>s</span> to deploy into <span class=\"style-TooltipHighlightSCBW\"><b>Siege Mode</b></span>. In this mode tanks gain significant range and inflict area damage. <span class=\"style-TooltipHighlightSCBW\"><b>Siege Tank</b>s</span> in this mode cannot move or attack targets at close range."
         },
-        "Hotkey": "R"
+        "Hotkey": "E"
       },
       {
         "Upgrade": "VulturePlaceSpiderMineSCBWResearch",
@@ -542,16 +524,17 @@
               "CreateDefaultButton": 1
             },
             "DefaultButtonFace": "VulturePlaceSpiderMineSCBWResearch",
+            "State": "Restricted",
             "Requirements": "VulturePlaceSpiderMineSCBWResearch"
           },
           "Resource": {
             "Minerals": 100,
             "Vespene": 100
           },
-          "Time": 100,
+          "Time": 75,
           "Upgrade": "VulturePlaceSpiderMineSCBWResearch"
         },
-        "Time": 100,
+        "Time": 75,
         "Cost": {
           "Minerals": 100,
           "Vespene": 100,
@@ -592,6 +575,7 @@
               "CreateDefaultButton": 1
             },
             "DefaultButtonFace": "VultureSCBWSpeedUpgrade",
+            "State": "Restricted",
             "Requirements": "VultureSCBWSpeedUpgrade"
           },
           "Resource": {
@@ -642,6 +626,7 @@
               "CreateDefaultButton": 1
             },
             "DefaultButtonFace": "GoliathSCBWRangeUpgrade",
+            "State": "Restricted",
             "Requirements": "GoliathSCBWRangeUpgrade"
           },
           "Resource": {
@@ -679,62 +664,12 @@
           "koKR": "<span class=\"style-TooltipHighlightSCBW\"><b>Goliath</b></span>의 대공 사거리가 <span class=\"style-TooltipBuffSCBW\"><d stringref=\"Upgrade,GoliathSCBWRangeUpgrade,EffectArrayTemplate[0].Value\"/></span>만큼 증가합니다. /// Improves <span class=\"style-TooltipHighlightSCBW\"><b>Goliath</b>'s</span> <span class=\"style-TooltipHighlightSCBW\"><b>Hellfire Missile Pack</b></span> increasing anti-air range by <span class=\"style-TooltipBuffSCBW\"><d stringref=\"Upgrade,GoliathSCBWRangeUpgrade,EffectArrayTemplate[0].Value\"/></span>"
         },
         "Hotkey": "C"
-      },
-      {
-        "Upgrade": "StingerSCBWAttackMoveUpgrade",
-        "Info": {
-          "Button": {
-            "Flags": {
-              "AllowMinimap": 0,
-              "ShowInGlossary": 1,
-              "ToSelection": 1,
-              "UseDefaultButton": 1,
-              "CreateDefaultButton": 1
-            },
-            "DefaultButtonFace": "StingerSCBWAttackMoveUpgrade",
-            "Requirements": "StingerSCBWAttackMoveUpgrade"
-          },
-          "Resource": {
-            "Minerals": 150,
-            "Vespene": 150
-          },
-          "Time": 150,
-          "Upgrade": "StingerSCBWAttackMoveUpgrade"
-        },
-        "Time": 150,
-        "Cost": {
-          "Minerals": 150,
-          "Vespene": 150,
-          "Terazine": 0,
-          "Custom": 0,
-          "Energy": 0,
-          "Life": 0,
-          "Shields": 0,
-          "Food": 0
-        },
-        "Row": 1,
-        "Column": 1,
-        "Type": "AbilCmd",
-        "AbilCmd": "StingerSCBWAttackMoveUpgrade,Research1",
-        "id": "StingerSCBWAttackMoveUpgrade",
-        "Icon": "btn-ability-mengsk-siegetank-flyingtankarmament",
-        "Name": {
-          "enUS": "Research Helios Tracer Rounds",
-          "zhCN": "Research Helios Tracer Rounds",
-          "koKR": "Research Helios Tracer Rounds"
-        },
-        "Tooltip": {
-          "enUS": "Allows the <span class=\"style-TooltipHighlightSCBW\"><b>Stinger</b></span> to attack targets while moving.",
-          "zhCN": "Allows the <span class=\"style-TooltipHighlightSCBW\"><b>Stinger</b></span> to attack targets while moving.",
-          "koKR": "Allows the <span class=\"style-TooltipHighlightSCBW\"><b>Stinger</b></span> to attack targets while moving."
-        },
-        "Hotkey": "R"
       }
     ]
   },
   "ScoreMake": 100,
   "ScoreKill": 100,
-  "BuildTime": 37.5,
+  "BuildTime": 35,
   "AddedOnUnit": "FactorySCBW",
   "Icon": "btn-building-terran-machineshop@scbw",
   "LifeArmorIcon": "btn-upgrade-terran-buildingarmor",
@@ -744,9 +679,7 @@
     {
       "id": "TerranBuildingSCBW@Burnout",
       "Name": {
-        "enUS": "Burnout",
-        "zhCN": "Burnout",
-        "koKR": "Burnout"
+        "enUS": "Burnout"
       },
       "Tooltip": "-"
     },
@@ -764,15 +697,21 @@
     {
       "id": "que5Addon",
       "Name": {
-        "ruRU": "Queue",
         "enUS": "Queue"
       }
     },
     {
       "id": "BuildInProgress",
       "Name": {
-        "enUS": "Build in Progress",
-        "ruRU": "Build in Progress"
+        "enUS": "Build in Progress"
+      }
+    },
+    {
+      "id": "SiegeModeSCBWResearch",
+      "Name": {
+        "enUS": "Research",
+        "zhCN": "研究",
+        "koKR": "연구 /// Research"
       }
     },
     {
@@ -798,14 +737,6 @@
         "zhCN": "研究",
         "koKR": "연구 /// Research"
       }
-    },
-    {
-      "id": "StingerSCBWAttackMoveUpgrade",
-      "Name": {
-        "enUS": "Research",
-        "zhCN": "Research",
-        "koKR": "Research"
-      }
     }
   ],
   "$Upgrades": [
@@ -818,10 +749,10 @@
     "IsMachineShopSCBW",
     "NotMachineShopSCBW",
     "CasterIsMachineShopSCBW",
+    "MachineShopSCBW",
     "MachineShopSCBW@Count",
     "MachineShopSCBW@QoB",
-    "MachineShopSCBW@QoBAtUnit",
-    "MachineShopSCBW"
+    "MachineShopSCBW@QoBAtUnit"
   ],
   "$Requirements": [],
   "$Production": [],
@@ -829,8 +760,7 @@
     "VultureSCBWSpeedUpgrade",
     "VulturePlaceSpiderMineSCBWResearch",
     "SiegeModeSCBWResearch",
-    "GoliathSCBWRangeUpgrade",
-    "StingerSCBWAttackMoveUpgrade"
+    "GoliathSCBWRangeUpgrade"
   ],
   "$Morph": [],
   "$Phase": [],
@@ -845,12 +775,10 @@
       "id": "Cancel",
       "Icon": "btn-command-cancel",
       "Name": {
-        "enUS": "Cancel",
-        "ruRU": "Отменить /// Cancel"
+        "enUS": "Cancel"
       },
       "Tooltip": {
-        "enUS": "Drops the current order without performing it, and allows you to select a different order.",
-        "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+        "enUS": "Drops the current order without performing it, and allows you to select a different order."
       }
     },
     {
@@ -858,12 +786,10 @@
       "id": "CancelBuilding",
       "Icon": "btn-command-cancel",
       "Name": {
-        "enUS": "Cancel",
-        "ruRU": "Отменить /// Cancel"
+        "enUS": "Cancel"
       },
       "Tooltip": {
-        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-        "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund."
       }
     },
     {
@@ -907,7 +833,7 @@
       },
       "Tooltip": {
         "enUS": "Allows <span class=\"style-TooltipHighlightSCBW\"><b>Siege Tank</b>s</span> to deploy into <span class=\"style-TooltipHighlightSCBW\"><b>Siege Mode</b></span>. In this mode tanks gain significant range and inflict area damage. <span class=\"style-TooltipHighlightSCBW\"><b>Siege Tank</b>s</span> in this mode cannot move or attack targets at close range.",
-        "zhCN": "让<span class=\"style-TooltipHighlightSCBW\"><b>Siege Tank</b></span>可以部署为<span class=\"style-TooltipHighlightSCBW\"><b>Siege Mode</b></span>. 该模式下，<span class=\"style-TooltipHighlightSCBW\"><b>Siege Tank</b></span> 的射程极大提高，造成范围伤害，但无法移动，也无法向过近的单位开火。",
+        "zhCN": "让<span class=\"style-TooltipHighlightSCBW\"><b>Siege Tank</b></span>可以部署为<span class=\"style-TooltipHighlightSCBW\"><b>Siege Mode</b></span>. 该模式下，<span class=\"style-TooltipHighlightSCBW\"><b>Siege Tank</b></span>的射程极大提高，造成范围伤害，但无法移动，也无法向过近的单位开火。",
         "koKR": "<span class=\"style-TooltipHighlightSCBW\"><b>Siege Tank</b></span>가 <span class=\"style-TooltipHighlightSCBW\"><b>Siege Mode</b></span>를 사용할 수 있습니다. 사거리가 크게 증가하여 범위 피해를 주지만, 이동하거나 근접한 적 유닛을 공격할 수 없습니다. /// Allows <span class=\"style-TooltipHighlightSCBW\"><b>Siege Tank</b>s</span> to deploy into <span class=\"style-TooltipHighlightSCBW\"><b>Siege Mode</b></span>. In this mode tanks gain significant range and inflict area damage. <span class=\"style-TooltipHighlightSCBW\"><b>Siege Tank</b>s</span> in this mode cannot move or attack targets at close range."
       }
     },
@@ -927,18 +853,18 @@
       }
     },
     {
-      "AbilCmd": "StingerSCBWAttackMoveUpgrade,Research1",
-      "id": "StingerSCBWAttackMoveUpgrade",
-      "Icon": "btn-ability-mengsk-siegetank-flyingtankarmament",
+      "AbilCmd": "SiegeModeSCBWResearch,Research1",
+      "id": "SiegeModeSCBWResearch",
+      "Icon": "btn-upgrade-terran-nova-siegetankrange",
       "Name": {
-        "enUS": "Research Helios Tracer Rounds",
-        "zhCN": "Research Helios Tracer Rounds",
-        "koKR": "Research Helios Tracer Rounds"
+        "enUS": "Research Siege Mode",
+        "zhCN": "研究攻城模式",
+        "koKR": "시즈 모드 연구 /// Research Siege Mode"
       },
       "Tooltip": {
-        "enUS": "Allows the <span class=\"style-TooltipHighlightSCBW\"><b>Stinger</b></span> to attack targets while moving.",
-        "zhCN": "Allows the <span class=\"style-TooltipHighlightSCBW\"><b>Stinger</b></span> to attack targets while moving.",
-        "koKR": "Allows the <span class=\"style-TooltipHighlightSCBW\"><b>Stinger</b></span> to attack targets while moving."
+        "enUS": "Allows <span class=\"style-TooltipHighlightSCBW\"><b>Siege Tank</b>s</span> to deploy into <span class=\"style-TooltipHighlightSCBW\"><b>Siege Mode</b></span>. In this mode tanks gain significant range and inflict area damage. <span class=\"style-TooltipHighlightSCBW\"><b>Siege Tank</b>s</span> in this mode cannot move or attack targets at close range.",
+        "zhCN": "让<span class=\"style-TooltipHighlightSCBW\"><b>Siege Tank</b></span>可以部署为<span class=\"style-TooltipHighlightSCBW\"><b>Siege Mode</b></span>. 该模式下，<span class=\"style-TooltipHighlightSCBW\"><b>Siege Tank</b></span>的射程极大提高，造成范围伤害，但无法移动，也无法向过近的单位开火。",
+        "koKR": "<span class=\"style-TooltipHighlightSCBW\"><b>Siege Tank</b></span>가 <span class=\"style-TooltipHighlightSCBW\"><b>Siege Mode</b></span>를 사용할 수 있습니다. 사거리가 크게 증가하여 범위 피해를 주지만, 이동하거나 근접한 적 유닛을 공격할 수 없습니다. /// Allows <span class=\"style-TooltipHighlightSCBW\"><b>Siege Tank</b>s</span> to deploy into <span class=\"style-TooltipHighlightSCBW\"><b>Siege Mode</b></span>. In this mode tanks gain significant range and inflict area damage. <span class=\"style-TooltipHighlightSCBW\"><b>Siege Tank</b>s</span> in this mode cannot move or attack targets at close range."
       }
     },
     {
@@ -984,21 +910,6 @@
         "enUS": "Improves <span class=\"style-TooltipHighlightSCBW\"><b>Goliath</b>'s</span> <span class=\"style-TooltipHighlightSCBW\"><b>Hellfire Missile Pack</b></span> increasing anti-air range by <span class=\"style-TooltipBuffSCBW\"><d stringref=\"Upgrade,GoliathSCBWRangeUpgrade,EffectArrayTemplate[0].Value\"/></span>",
         "zhCN": "<span class=\"style-TooltipHighlightSCBW\"><b>Goliath</b></span>的<span class=\"style-TooltipHighlightSCBW\"><b>Hellfire Missile Pack</b></span>射程提高<span class=\"style-TooltipBuffSCBW\"><d stringref=\"Upgrade,GoliathSCBWRangeUpgrade,EffectArrayTemplate[0].Value\"/></span>点。",
         "koKR": "<span class=\"style-TooltipHighlightSCBW\"><b>Goliath</b></span>의 대공 사거리가 <span class=\"style-TooltipBuffSCBW\"><d stringref=\"Upgrade,GoliathSCBWRangeUpgrade,EffectArrayTemplate[0].Value\"/></span>만큼 증가합니다. /// Improves <span class=\"style-TooltipHighlightSCBW\"><b>Goliath</b>'s</span> <span class=\"style-TooltipHighlightSCBW\"><b>Hellfire Missile Pack</b></span> increasing anti-air range by <span class=\"style-TooltipBuffSCBW\"><d stringref=\"Upgrade,GoliathSCBWRangeUpgrade,EffectArrayTemplate[0].Value\"/></span>"
-      }
-    },
-    {
-      "AbilCmd": "StingerSCBWAttackMoveUpgrade,Research1",
-      "id": "StingerSCBWAttackMoveUpgrade",
-      "Icon": "btn-ability-mengsk-siegetank-flyingtankarmament",
-      "Name": {
-        "enUS": "Research Helios Tracer Rounds",
-        "zhCN": "Research Helios Tracer Rounds",
-        "koKR": "Research Helios Tracer Rounds"
-      },
-      "Tooltip": {
-        "enUS": "Allows the <span class=\"style-TooltipHighlightSCBW\"><b>Stinger</b></span> to attack targets while moving.",
-        "zhCN": "Allows the <span class=\"style-TooltipHighlightSCBW\"><b>Stinger</b></span> to attack targets while moving.",
-        "koKR": "Allows the <span class=\"style-TooltipHighlightSCBW\"><b>Stinger</b></span> to attack targets while moving."
       }
     }
   ]

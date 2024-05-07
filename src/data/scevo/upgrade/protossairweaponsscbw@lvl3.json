@@ -13,13 +13,6 @@
   "ScoreValue": "WeaponTechnologyValue",
   "WebPriority": 0,
   "LeaderAlias": "ProtossAirWeaponsSCBW",
-  "EditorCategories": "Race:Protoss,UpgradeType:AttackBonus",
-  "$tokens": {
-    "ID": {
-      "type": "string",
-      "value": ""
-    }
-  },
   "DataCollection": "ProtossAirWeaponsSCBW",
   "Race": "BWPr",
   "ScoreResult": "BuildOrder",
@@ -34,7 +27,7 @@
     },
     {
       "Reference": "Effect,^ParamId^Weapon@DamageExpl,Amount",
-      "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
+      "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice*0.75}"
     },
     {
       "Reference": "Accumulator,^ParamId^Weapon@Damage,Amount",
@@ -55,7 +48,7 @@
     },
     {
       "Reference": "Effect,^ParamId^WeaponGround@DamageExpl,Amount",
-      "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
+      "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice*0.75}"
     },
     {
       "Reference": "Accumulator,^ParamId^WeaponGround@Damage,Amount",
@@ -76,7 +69,7 @@
     },
     {
       "Reference": "Effect,^ParamId^WeaponAir@DamageExpl,Amount",
-      "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[1].DamagePerDice}"
+      "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[1].DamagePerDice*0.75}"
     },
     {
       "Reference": "Accumulator,^ParamId^WeaponAir@Damage,Amount",
@@ -90,51 +83,14 @@
     {
       "Reference": "Weapon,^ParamId^Weapon@Dummy,Level",
       "Value": "1"
-    },
-    {
-      "Reference": "Effect,^ParamId^Weapon@DamageAccum,Amount",
-      "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
-    },
-    {
-      "Reference": "Effect,^ParamId^WeaponGround@DamageAccum,Amount",
-      "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[0].DamagePerDice}"
-    },
-    {
-      "Reference": "Effect,^ParamId^WeaponAir@DamageAccum,Amount",
-      "Value": "{DataCollection,^ParamId^,UpgradeInfoWeapon[1].DamagePerDice}"
-    },
-    {
-      "Reference": "Effect,^ParamId^Weapon@DamageExpl,AttributeBonus[Armored]",
-      "Value": "1"
-    },
-    {
-      "Reference": "Effect,^ParamId^WeaponGround@DamageExpl,AttributeBonus[Armored]",
-      "Value": "1"
-    },
-    {
-      "Reference": "Effect,^ParamId^WeaponAir@DamageExpl,AttributeBonus[Armored]",
-      "Value": "1"
     }
   ],
+  "EditorCategories": "Race:Protoss,UpgradeType:AttackBonus",
   "BonusResourcePerLevel": {
     "Minerals": 75,
     "Vespene": 75
   },
   "ScoreAmount": 500,
   "LeaderLevel": 3,
-  "EffectArray": [
-    {
-      "Reference": "Effect,ArbiterSCBWWeapon@DamageAccum,AttributeBonus[Armored]",
-      "Value": "1"
-    },
-    {
-      "Reference": "Effect,ScoutSCBWWeaponAir@DamageAccum,AttributeBonus[Armored]",
-      "Value": "1"
-    },
-    {
-      "Reference": "Effect,CorsairSCBWWeapon@DamageAccum,AttributeBonus[Armored]",
-      "Value": "1"
-    }
-  ],
   "icon": "Assets\\Textures\\btn-upgrade-protoss-airweaponslevel3.dds"
 }

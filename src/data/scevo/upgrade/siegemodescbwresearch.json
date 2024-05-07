@@ -13,17 +13,11 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "SiegeModeSCBWResearch",
-  "EditorCategories": "Race:Terran,UpgradeType:SpellResearch",
-  "$tokens": {
-    "ID": {
-      "type": "string",
-      "value": ""
-    }
-  },
   "DataCollection": "SiegeModeSCBWResearch",
   "Race": "Terr",
   "ScoreAmount": 300,
   "ScoreResult": "BuildOrder",
+  "EditorCategories": "Race:Terran,UpgradeType:SpellResearch",
   "AffectedUnitArray": [
     "SiegeTankSCBW"
   ]

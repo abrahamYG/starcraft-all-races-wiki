@@ -21,8 +21,7 @@
   "LifeStart": 450,
   "LifeMax": 450,
   "LifeArmorName": {
-    "enUS": "Protoss Armor",
-    "ruRU": "Protoss Armor"
+    "enUS": "Protoss Armor"
   },
   "Mover": "Ground",
   "StationaryTurningRate": 719.4726,
@@ -88,12 +87,6 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
-  "$tokens": {
-    "ID": {
-      "type": "string",
-      "value": ""
-    }
-  },
   "Mob": "Multiplayer",
   "FogVisibility": "Snapshot",
   "PlaneArray": [
@@ -115,10 +108,9 @@
   "LifeArmor": 1,
   "ShieldsStart": 450,
   "ShieldsMax": 450,
-  "ShieldRegenRate": 2,
+  "ShieldRegenRate": 0.4375,
   "ShieldArmorName": {
-    "enUS": "Protoss Plasma Shields",
-    "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+    "enUS": "Protoss Plasma Shields"
   },
   "Sight": 9,
   "CostCategory": "Technology",
@@ -148,12 +140,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "que5",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "QueueCount": 1,
           "Flags": {
             "BestUnit": 1,
@@ -187,12 +173,10 @@
         "id": "Cancel",
         "Icon": "btn-command-cancel",
         "Name": {
-          "enUS": "Cancel",
-          "ruRU": "Отменить /// Cancel"
+          "enUS": "Cancel"
         },
         "Tooltip": {
-          "enUS": "Drops the current order without performing it, and allows you to select a different order.",
-          "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+          "enUS": "Drops the current order without performing it, and allows you to select a different order."
         },
         "Hotkey": "Esc"
       },
@@ -215,12 +199,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "BuildInProgress",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "Activity": "UI/Building",
           "VitalStartFactor": {
             "Life": 0.1,
@@ -254,12 +232,10 @@
         "id": "CancelBuilding",
         "Icon": "btn-command-cancel",
         "Name": {
-          "enUS": "Cancel",
-          "ruRU": "Отменить /// Cancel"
+          "enUS": "Cancel"
         },
         "Tooltip": {
-          "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-          "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+          "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund."
         },
         "Hotkey": "Esc"
       },
@@ -275,19 +251,20 @@
               "CreateDefaultButton": 1
             },
             "DefaultButtonFace": "ScarabSCBWWeaponDamageUpgrade",
+            "State": "Restricted",
             "Requirements": "ScarabSCBWWeaponDamageUpgrade"
           },
           "Resource": {
-            "Minerals": 100,
-            "Vespene": 100
+            "Minerals": 150,
+            "Vespene": 150
           },
-          "Time": 110,
+          "Time": 140,
           "Upgrade": "ScarabSCBWWeaponDamageUpgrade"
         },
-        "Time": 110,
+        "Time": 140,
         "Cost": {
-          "Minerals": 100,
-          "Vespene": 100,
+          "Minerals": 150,
+          "Vespene": 150,
           "Terazine": 0,
           "Custom": 0,
           "Energy": 0,
@@ -300,21 +277,21 @@
         "Type": "AbilCmd",
         "AbilCmd": "ScarabSCBWWeaponDamageUpgrade,Research1",
         "id": "ScarabSCBWWeaponDamageUpgrade",
-        "Icon": "scarabupgradepurple",
+        "Icon": "btn-upgrade-artanis-scarabsplashradius",
         "Name": {
           "enUS": "Research Scarab Damage",
           "zhCN": "研究强化金甲虫",
           "koKR": "스캐럽 공격력 증가 /// Research Scarab Damage"
         },
         "Tooltip": {
-          "enUS": "Increases <span class=\"style-TooltipHighlightSCBW\"><b>Reaver</b>'s</span> <span class=\"style-TooltipHighlightSCBW\"><b>Scarab</b></span> damage by vs armored <span class=\"style-TooltipBuffSCBW\"><b>40</b></span>.",
-          "zhCN": "Increases <span class=\"style-TooltipHighlightSCBW\"><b>Reaver</b>'s</span> <span class=\"style-TooltipHighlightSCBW\"><b>Scarab</b></span> damage by vs armored <span class=\"style-TooltipBuffSCBW\"><b>40</b></span>.",
-          "koKR": "<span class=\"style-TooltipHighlightSCBW\"><b>Reaver</b></span>의 <span class=\"style-TooltipHighlightSCBW\"><b>Scarab</b></span> 피해량이 <span class=\"style-TooltipBuffSCBW\"><b>40</b></span>만큼 증가합니다. /// Increases <span class=\"style-TooltipHighlightSCBW\"><b>Reaver</b>'s</span> <span class=\"style-TooltipHighlightSCBW\"><b>Scarab</b></span> damage by <span class=\"style-TooltipBuffSCBW\"><b>40</b></span>."
+          "enUS": "Increases <span class=\"style-TooltipHighlightSCBW\"><b>Reaver</b>'s</span> <span class=\"style-TooltipHighlightSCBW\"><b>Scarab</b></span> damage by <span class=\"style-TooltipBuffSCBW\"><b>25</b></span>.",
+          "zhCN": "<span class=\"style-TooltipHighlightSCBW\"><b>Reaver</b></span>的<span class=\"style-TooltipHighlightSCBW\"><b>Scarab</b></span>伤害提高<span class=\"style-TooltipBuffSCBW\"><b>25</b></span>点。",
+          "koKR": "<span class=\"style-TooltipHighlightSCBW\"><b>Reaver</b></span>의 <span class=\"style-TooltipHighlightSCBW\"><b>Scarab</b></span> 피해량이 <span class=\"style-TooltipBuffSCBW\"><b>25</b></span>만큼 증가합니다. /// Increases <span class=\"style-TooltipHighlightSCBW\"><b>Reaver</b>'s</span> <span class=\"style-TooltipHighlightSCBW\"><b>Scarab</b></span> damage by <span class=\"style-TooltipBuffSCBW\"><b>25</b></span>."
         },
         "Hotkey": "S"
       },
       {
-        "Upgrade": "ReaverSCBWWeaponRangeUpgrade",
+        "Upgrade": "ReaverSCBWHangarIncreaseUpgrade",
         "Info": {
           "Button": {
             "Flags": {
@@ -324,20 +301,21 @@
               "UseDefaultButton": 1,
               "CreateDefaultButton": 1
             },
-            "DefaultButtonFace": "ReaverSCBWWeaponRangeUpgrade",
-            "Requirements": "ReaverSCBWWeaponRangeUpgrade"
+            "DefaultButtonFace": "ReaverSCBWHangarIncreaseUpgrade",
+            "State": "Restricted",
+            "Requirements": "ReaverSCBWHangarIncreaseUpgrade"
           },
           "Resource": {
-            "Minerals": 200,
-            "Vespene": 200
+            "Minerals": 150,
+            "Vespene": 150
           },
-          "Time": 169.4,
-          "Upgrade": "ReaverSCBWWeaponRangeUpgrade"
+          "Time": 110,
+          "Upgrade": "ReaverSCBWHangarIncreaseUpgrade"
         },
-        "Time": 169.4,
+        "Time": 110,
         "Cost": {
-          "Minerals": 200,
-          "Vespene": 200,
+          "Minerals": 150,
+          "Vespene": 150,
           "Terazine": 0,
           "Custom": 0,
           "Energy": 0,
@@ -348,18 +326,18 @@
         "Row": 0,
         "Column": 1,
         "Type": "AbilCmd",
-        "AbilCmd": "ReaverSCBWWeaponRangeUpgrade,Research1",
-        "id": "ReaverSCBWWeaponRangeUpgrade",
-        "Icon": "btn-ability-protoss-envision",
+        "AbilCmd": "ReaverSCBWHangarIncreaseUpgrade,Research1",
+        "id": "ReaverSCBWHangarIncreaseUpgrade",
+        "Icon": "btn-upgrade-protoss-increasedscarabcapacity@scbw",
         "Name": {
-          "enUS": "Research Imbued Lenses",
-          "zhCN": "Research Imbued Lenses",
-          "koKR": "Research Imbued Lenses"
+          "enUS": "Research Reaver Increased Capacity",
+          "zhCN": "研究掠夺者扩容",
+          "koKR": "리버 수용력 증가 개발 /// Research Reaver Increased Capacity"
         },
         "Tooltip": {
-          "enUS": "Increases <span class=\"style-TooltipHighlightSCBW\"><b>Reaver</b></span> weapon range by <span class=\"style-TooltipBuffSCBW\"><b>2</b></span>.",
-          "zhCN": "Increases <span class=\"style-TooltipHighlightSCBW\"><b>Reaver</b></span> weapon range by <span class=\"style-TooltipBuffSCBW\"><b>2</b></span>.",
-          "koKR": "Increases <span class=\"style-TooltipHighlightSCBW\"><b>Reaver</b></span> weapon range by <span class=\"style-TooltipBuffSCBW\"><b>2</b></span>."
+          "enUS": "Increases <span class=\"style-TooltipHighlightSCBW\"><b>Reaver</b>'s</span> <span class=\"style-TooltipHighlightSCBW\"><b>Scarab</b></span> capacity to <span class=\"style-TooltipBuffSCBW\"><b>10</b></span>.",
+          "zhCN": "<span class=\"style-TooltipHighlightSCBW\"><b>Reaver</b></span>的<span class=\"style-TooltipHighlightSCBW\"><b>Scarab</b></span>容量提高到<span class=\"style-TooltipBuffSCBW\"><b>10</b></span>。",
+          "koKR": "<span class=\"style-TooltipHighlightSCBW\"><b>Reaver</b></span>의 <span class=\"style-TooltipHighlightSCBW\"><b>Scarab</b></span> 수용량이 <span class=\"style-TooltipBuffSCBW\"><b>10</b></span>개로 증가합니다. /// Increases <span class=\"style-TooltipHighlightSCBW\"><b>Reaver</b>'s</span> <span class=\"style-TooltipHighlightSCBW\"><b>Scarab</b></span> capacity to <span class=\"style-TooltipBuffSCBW\"><b>10</b></span>."
         },
         "Hotkey": "R"
       },
@@ -375,19 +353,20 @@
               "CreateDefaultButton": 1
             },
             "DefaultButtonFace": "ShuttleSCBWSpeedUpgrade",
+            "State": "Restricted",
             "Requirements": "ShuttleSCBWSpeedUpgrade"
           },
           "Resource": {
-            "Minerals": 100,
-            "Vespene": 100
+            "Minerals": 200,
+            "Vespene": 200
           },
           "Time": 80,
           "Upgrade": "ShuttleSCBWSpeedUpgrade"
         },
         "Time": 80,
         "Cost": {
-          "Minerals": 100,
-          "Vespene": 100,
+          "Minerals": 200,
+          "Vespene": 200,
           "Terazine": 0,
           "Custom": 0,
           "Energy": 0,
@@ -407,8 +386,8 @@
           "koKR": "중력 구동기 개발 /// Research Gravitic Drive"
         },
         "Tooltip": {
-          "enUS": "Increases <span class=\"style-TooltipHighlightSCBW\"><b>Shuttle</b></span> movement speed by <span class=\"style-TooltipBuffSCBW\"><b>50</b>%</span>. Additionally pickup range increased by <span class=\"style-TooltipBuffSCBW\"><b>1.0</b></span>",
-          "zhCN": "Increases <span class=\"style-TooltipHighlightSCBW\"><b>Shuttle</b></span> movement speed by <span class=\"style-TooltipBuffSCBW\"><b>50</b>%</span>. Additionally pickup range increased by <span class=\"style-TooltipBuffSCBW\"><b>1.0</b></span>",
+          "enUS": "Increases <span class=\"style-TooltipHighlightSCBW\"><b>Shuttle</b></span> movement speed by <span class=\"style-TooltipBuffSCBW\"><b>50</b>%</span>.",
+          "zhCN": "<span class=\"style-TooltipHighlightSCBW\"><b>Shuttle</b></span>的移动速度提高<span class=\"style-TooltipBuffSCBW\"><b>50</b>%</span>。",
           "koKR": "<span class=\"style-TooltipHighlightSCBW\"><b>Shuttle</b></span>의 이동 속도가 <span class=\"style-TooltipBuffSCBW\"><b>50</b>%</span>만큼 증가합니다. /// Increases <span class=\"style-TooltipHighlightSCBW\"><b>Shuttle</b></span> movement speed by <span class=\"style-TooltipBuffSCBW\"><b>50</b>%</span>."
         },
         "Hotkey": "G"
@@ -425,19 +404,20 @@
               "CreateDefaultButton": 1
             },
             "DefaultButtonFace": "ShuttleSCBWSpeedUpgrade",
+            "State": "Restricted",
             "Requirements": "ShuttleSCBWSpeedUpgrade"
           },
           "Resource": {
-            "Minerals": 100,
-            "Vespene": 100
+            "Minerals": 200,
+            "Vespene": 200
           },
           "Time": 80,
           "Upgrade": "ShuttleSCBWSpeedUpgrade"
         },
         "Time": 80,
         "Cost": {
-          "Minerals": 100,
-          "Vespene": 100,
+          "Minerals": 200,
+          "Vespene": 200,
           "Terazine": 0,
           "Custom": 0,
           "Energy": 0,
@@ -457,14 +437,14 @@
           "koKR": "중력 구동기 개발 /// Research Gravitic Drive"
         },
         "Tooltip": {
-          "enUS": "Increases <span class=\"style-TooltipHighlightSCBW\"><b>Shuttle</b></span> movement speed by <span class=\"style-TooltipBuffSCBW\"><b>50</b>%</span>. Additionally pickup range increased by <span class=\"style-TooltipBuffSCBW\"><b>1.0</b></span>",
-          "zhCN": "Increases <span class=\"style-TooltipHighlightSCBW\"><b>Shuttle</b></span> movement speed by <span class=\"style-TooltipBuffSCBW\"><b>50</b>%</span>. Additionally pickup range increased by <span class=\"style-TooltipBuffSCBW\"><b>1.0</b></span>",
+          "enUS": "Increases <span class=\"style-TooltipHighlightSCBW\"><b>Shuttle</b></span> movement speed by <span class=\"style-TooltipBuffSCBW\"><b>50</b>%</span>.",
+          "zhCN": "<span class=\"style-TooltipHighlightSCBW\"><b>Shuttle</b></span>的移动速度提高<span class=\"style-TooltipBuffSCBW\"><b>50</b>%</span>。",
           "koKR": "<span class=\"style-TooltipHighlightSCBW\"><b>Shuttle</b></span>의 이동 속도가 <span class=\"style-TooltipBuffSCBW\"><b>50</b>%</span>만큼 증가합니다. /// Increases <span class=\"style-TooltipHighlightSCBW\"><b>Shuttle</b></span> movement speed by <span class=\"style-TooltipBuffSCBW\"><b>50</b>%</span>."
         },
         "Hotkey": "G"
       },
       {
-        "Upgrade": "ReaverSCBWWeaponRangeUpgrade",
+        "Upgrade": "ReaverSCBWHangarIncreaseUpgrade",
         "Info": {
           "Button": {
             "Flags": {
@@ -474,20 +454,21 @@
               "UseDefaultButton": 1,
               "CreateDefaultButton": 1
             },
-            "DefaultButtonFace": "ReaverSCBWWeaponRangeUpgrade",
-            "Requirements": "ReaverSCBWWeaponRangeUpgrade"
+            "DefaultButtonFace": "ReaverSCBWHangarIncreaseUpgrade",
+            "State": "Restricted",
+            "Requirements": "ReaverSCBWHangarIncreaseUpgrade"
           },
           "Resource": {
-            "Minerals": 200,
-            "Vespene": 200
+            "Minerals": 150,
+            "Vespene": 150
           },
-          "Time": 169.4,
-          "Upgrade": "ReaverSCBWWeaponRangeUpgrade"
+          "Time": 110,
+          "Upgrade": "ReaverSCBWHangarIncreaseUpgrade"
         },
-        "Time": 169.4,
+        "Time": 110,
         "Cost": {
-          "Minerals": 200,
-          "Vespene": 200,
+          "Minerals": 150,
+          "Vespene": 150,
           "Terazine": 0,
           "Custom": 0,
           "Energy": 0,
@@ -498,18 +479,18 @@
         "Row": 0,
         "Column": 1,
         "Type": "AbilCmd",
-        "AbilCmd": "ReaverSCBWWeaponRangeUpgrade,Research1",
-        "id": "ReaverSCBWWeaponRangeUpgrade",
-        "Icon": "btn-ability-protoss-envision",
+        "AbilCmd": "ReaverSCBWHangarIncreaseUpgrade,Research1",
+        "id": "ReaverSCBWHangarIncreaseUpgrade",
+        "Icon": "btn-upgrade-protoss-increasedscarabcapacity@scbw",
         "Name": {
-          "enUS": "Research Imbued Lenses",
-          "zhCN": "Research Imbued Lenses",
-          "koKR": "Research Imbued Lenses"
+          "enUS": "Research Reaver Increased Capacity",
+          "zhCN": "研究掠夺者扩容",
+          "koKR": "리버 수용력 증가 개발 /// Research Reaver Increased Capacity"
         },
         "Tooltip": {
-          "enUS": "Increases <span class=\"style-TooltipHighlightSCBW\"><b>Reaver</b></span> weapon range by <span class=\"style-TooltipBuffSCBW\"><b>2</b></span>.",
-          "zhCN": "Increases <span class=\"style-TooltipHighlightSCBW\"><b>Reaver</b></span> weapon range by <span class=\"style-TooltipBuffSCBW\"><b>2</b></span>.",
-          "koKR": "Increases <span class=\"style-TooltipHighlightSCBW\"><b>Reaver</b></span> weapon range by <span class=\"style-TooltipBuffSCBW\"><b>2</b></span>."
+          "enUS": "Increases <span class=\"style-TooltipHighlightSCBW\"><b>Reaver</b>'s</span> <span class=\"style-TooltipHighlightSCBW\"><b>Scarab</b></span> capacity to <span class=\"style-TooltipBuffSCBW\"><b>10</b></span>.",
+          "zhCN": "<span class=\"style-TooltipHighlightSCBW\"><b>Reaver</b></span>的<span class=\"style-TooltipHighlightSCBW\"><b>Scarab</b></span>容量提高到<span class=\"style-TooltipBuffSCBW\"><b>10</b></span>。",
+          "koKR": "<span class=\"style-TooltipHighlightSCBW\"><b>Reaver</b></span>의 <span class=\"style-TooltipHighlightSCBW\"><b>Scarab</b></span> 수용량이 <span class=\"style-TooltipBuffSCBW\"><b>10</b></span>개로 증가합니다. /// Increases <span class=\"style-TooltipHighlightSCBW\"><b>Reaver</b>'s</span> <span class=\"style-TooltipHighlightSCBW\"><b>Scarab</b></span> capacity to <span class=\"style-TooltipBuffSCBW\"><b>10</b></span>."
         },
         "Hotkey": "R"
       },
@@ -525,19 +506,20 @@
               "CreateDefaultButton": 1
             },
             "DefaultButtonFace": "ScarabSCBWWeaponDamageUpgrade",
+            "State": "Restricted",
             "Requirements": "ScarabSCBWWeaponDamageUpgrade"
           },
           "Resource": {
-            "Minerals": 100,
-            "Vespene": 100
+            "Minerals": 150,
+            "Vespene": 150
           },
-          "Time": 110,
+          "Time": 140,
           "Upgrade": "ScarabSCBWWeaponDamageUpgrade"
         },
-        "Time": 110,
+        "Time": 140,
         "Cost": {
-          "Minerals": 100,
-          "Vespene": 100,
+          "Minerals": 150,
+          "Vespene": 150,
           "Terazine": 0,
           "Custom": 0,
           "Energy": 0,
@@ -550,16 +532,16 @@
         "Type": "AbilCmd",
         "AbilCmd": "ScarabSCBWWeaponDamageUpgrade,Research1",
         "id": "ScarabSCBWWeaponDamageUpgrade",
-        "Icon": "scarabupgradepurple",
+        "Icon": "btn-upgrade-artanis-scarabsplashradius",
         "Name": {
           "enUS": "Research Scarab Damage",
           "zhCN": "研究强化金甲虫",
           "koKR": "스캐럽 공격력 증가 /// Research Scarab Damage"
         },
         "Tooltip": {
-          "enUS": "Increases <span class=\"style-TooltipHighlightSCBW\"><b>Reaver</b>'s</span> <span class=\"style-TooltipHighlightSCBW\"><b>Scarab</b></span> damage by vs armored <span class=\"style-TooltipBuffSCBW\"><b>40</b></span>.",
-          "zhCN": "Increases <span class=\"style-TooltipHighlightSCBW\"><b>Reaver</b>'s</span> <span class=\"style-TooltipHighlightSCBW\"><b>Scarab</b></span> damage by vs armored <span class=\"style-TooltipBuffSCBW\"><b>40</b></span>.",
-          "koKR": "<span class=\"style-TooltipHighlightSCBW\"><b>Reaver</b></span>의 <span class=\"style-TooltipHighlightSCBW\"><b>Scarab</b></span> 피해량이 <span class=\"style-TooltipBuffSCBW\"><b>40</b></span>만큼 증가합니다. /// Increases <span class=\"style-TooltipHighlightSCBW\"><b>Reaver</b>'s</span> <span class=\"style-TooltipHighlightSCBW\"><b>Scarab</b></span> damage by <span class=\"style-TooltipBuffSCBW\"><b>40</b></span>."
+          "enUS": "Increases <span class=\"style-TooltipHighlightSCBW\"><b>Reaver</b>'s</span> <span class=\"style-TooltipHighlightSCBW\"><b>Scarab</b></span> damage by <span class=\"style-TooltipBuffSCBW\"><b>25</b></span>.",
+          "zhCN": "<span class=\"style-TooltipHighlightSCBW\"><b>Reaver</b></span>的<span class=\"style-TooltipHighlightSCBW\"><b>Scarab</b></span>伤害提高<span class=\"style-TooltipBuffSCBW\"><b>25</b></span>点。",
+          "koKR": "<span class=\"style-TooltipHighlightSCBW\"><b>Reaver</b></span>의 <span class=\"style-TooltipHighlightSCBW\"><b>Scarab</b></span> 피해량이 <span class=\"style-TooltipBuffSCBW\"><b>25</b></span>만큼 증가합니다. /// Increases <span class=\"style-TooltipHighlightSCBW\"><b>Reaver</b>'s</span> <span class=\"style-TooltipHighlightSCBW\"><b>Scarab</b></span> damage by <span class=\"style-TooltipBuffSCBW\"><b>25</b></span>."
         },
         "Hotkey": "S"
       }
@@ -576,8 +558,7 @@
   "TechTreeUnlockedUnitArray": [
     "ReaverSCBW"
   ],
-  "BuildTime": 65,
-  "ShieldRegenDelay": 10,
+  "BuildTime": 50,
   "id": "RoboticsBaySCBW",
   "Icon": "btn-building-protoss-roboticssupportbay",
   "LifeArmorIcon": "btn-armor-protoss-buildingplating",
@@ -588,8 +569,7 @@
       "id": "PowerUserQueue",
       "Icon": "btn-building-protoss-pylon",
       "Name": {
-        "enUS": "Power User (Queue)",
-        "ruRU": "Power User (Queue)"
+        "enUS": "Power User (Queue)"
       },
       "Tooltip": "-"
     }
@@ -598,8 +578,7 @@
     {
       "id": "BuildInProgress",
       "Name": {
-        "enUS": "Build in Progress",
-        "ruRU": "Build in Progress"
+        "enUS": "Build in Progress"
       }
     },
     {
@@ -611,7 +590,7 @@
       }
     },
     {
-      "id": "ReaverSCBWWeaponRangeUpgrade",
+      "id": "ReaverSCBWHangarIncreaseUpgrade",
       "Name": {
         "enUS": "",
         "zhCN": "",
@@ -629,7 +608,6 @@
     {
       "id": "que5",
       "Name": {
-        "ruRU": "Queue (5)",
         "enUS": "Queue (5)"
       }
     }
@@ -645,15 +623,15 @@
     "IsRoboticsBaySCBW",
     "NotRoboticsBaySCBW",
     "CasterIsRoboticsBaySCBW",
+    "RoboticsBaySCBW",
     "RoboticsBaySCBW@QoB",
-    "RoboticsBaySCBW@QoBAtUnit",
-    "RoboticsBaySCBW"
+    "RoboticsBaySCBW@QoBAtUnit"
   ],
   "$Requirements": [],
   "$Production": [],
   "$Research": [
     "ScarabSCBWWeaponDamageUpgrade",
-    "ReaverSCBWWeaponRangeUpgrade",
+    "ReaverSCBWHangarIncreaseUpgrade",
     "ShuttleSCBWSpeedUpgrade"
   ],
   "$Morph": [],
@@ -668,12 +646,10 @@
       "id": "Cancel",
       "Icon": "btn-command-cancel",
       "Name": {
-        "enUS": "Cancel",
-        "ruRU": "Отменить /// Cancel"
+        "enUS": "Cancel"
       },
       "Tooltip": {
-        "enUS": "Drops the current order without performing it, and allows you to select a different order.",
-        "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+        "enUS": "Drops the current order without performing it, and allows you to select a different order."
       }
     },
     {
@@ -681,42 +657,40 @@
       "id": "CancelBuilding",
       "Icon": "btn-command-cancel",
       "Name": {
-        "enUS": "Cancel",
-        "ruRU": "Отменить /// Cancel"
+        "enUS": "Cancel"
       },
       "Tooltip": {
-        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-        "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund."
       }
     },
     {
       "AbilCmd": "ScarabSCBWWeaponDamageUpgrade,Research1",
       "id": "ScarabSCBWWeaponDamageUpgrade",
-      "Icon": "scarabupgradepurple",
+      "Icon": "btn-upgrade-artanis-scarabsplashradius",
       "Name": {
         "enUS": "Research Scarab Damage",
         "zhCN": "研究强化金甲虫",
         "koKR": "스캐럽 공격력 증가 /// Research Scarab Damage"
       },
       "Tooltip": {
-        "enUS": "Increases <span class=\"style-TooltipHighlightSCBW\"><b>Reaver</b>'s</span> <span class=\"style-TooltipHighlightSCBW\"><b>Scarab</b></span> damage by vs armored <span class=\"style-TooltipBuffSCBW\"><b>40</b></span>.",
-        "zhCN": "Increases <span class=\"style-TooltipHighlightSCBW\"><b>Reaver</b>'s</span> <span class=\"style-TooltipHighlightSCBW\"><b>Scarab</b></span> damage by vs armored <span class=\"style-TooltipBuffSCBW\"><b>40</b></span>.",
-        "koKR": "<span class=\"style-TooltipHighlightSCBW\"><b>Reaver</b></span>의 <span class=\"style-TooltipHighlightSCBW\"><b>Scarab</b></span> 피해량이 <span class=\"style-TooltipBuffSCBW\"><b>40</b></span>만큼 증가합니다. /// Increases <span class=\"style-TooltipHighlightSCBW\"><b>Reaver</b>'s</span> <span class=\"style-TooltipHighlightSCBW\"><b>Scarab</b></span> damage by <span class=\"style-TooltipBuffSCBW\"><b>40</b></span>."
+        "enUS": "Increases <span class=\"style-TooltipHighlightSCBW\"><b>Reaver</b>'s</span> <span class=\"style-TooltipHighlightSCBW\"><b>Scarab</b></span> damage by <span class=\"style-TooltipBuffSCBW\"><b>25</b></span>.",
+        "zhCN": "<span class=\"style-TooltipHighlightSCBW\"><b>Reaver</b></span>的<span class=\"style-TooltipHighlightSCBW\"><b>Scarab</b></span>伤害提高<span class=\"style-TooltipBuffSCBW\"><b>25</b></span>点。",
+        "koKR": "<span class=\"style-TooltipHighlightSCBW\"><b>Reaver</b></span>의 <span class=\"style-TooltipHighlightSCBW\"><b>Scarab</b></span> 피해량이 <span class=\"style-TooltipBuffSCBW\"><b>25</b></span>만큼 증가합니다. /// Increases <span class=\"style-TooltipHighlightSCBW\"><b>Reaver</b>'s</span> <span class=\"style-TooltipHighlightSCBW\"><b>Scarab</b></span> damage by <span class=\"style-TooltipBuffSCBW\"><b>25</b></span>."
       }
     },
     {
-      "AbilCmd": "ReaverSCBWWeaponRangeUpgrade,Research1",
-      "id": "ReaverSCBWWeaponRangeUpgrade",
-      "Icon": "btn-ability-protoss-envision",
+      "AbilCmd": "ReaverSCBWHangarIncreaseUpgrade,Research1",
+      "id": "ReaverSCBWHangarIncreaseUpgrade",
+      "Icon": "btn-upgrade-protoss-increasedscarabcapacity@scbw",
       "Name": {
-        "enUS": "Research Imbued Lenses",
-        "zhCN": "Research Imbued Lenses",
-        "koKR": "Research Imbued Lenses"
+        "enUS": "Research Reaver Increased Capacity",
+        "zhCN": "研究掠夺者扩容",
+        "koKR": "리버 수용력 증가 개발 /// Research Reaver Increased Capacity"
       },
       "Tooltip": {
-        "enUS": "Increases <span class=\"style-TooltipHighlightSCBW\"><b>Reaver</b></span> weapon range by <span class=\"style-TooltipBuffSCBW\"><b>2</b></span>.",
-        "zhCN": "Increases <span class=\"style-TooltipHighlightSCBW\"><b>Reaver</b></span> weapon range by <span class=\"style-TooltipBuffSCBW\"><b>2</b></span>.",
-        "koKR": "Increases <span class=\"style-TooltipHighlightSCBW\"><b>Reaver</b></span> weapon range by <span class=\"style-TooltipBuffSCBW\"><b>2</b></span>."
+        "enUS": "Increases <span class=\"style-TooltipHighlightSCBW\"><b>Reaver</b>'s</span> <span class=\"style-TooltipHighlightSCBW\"><b>Scarab</b></span> capacity to <span class=\"style-TooltipBuffSCBW\"><b>10</b></span>.",
+        "zhCN": "<span class=\"style-TooltipHighlightSCBW\"><b>Reaver</b></span>的<span class=\"style-TooltipHighlightSCBW\"><b>Scarab</b></span>容量提高到<span class=\"style-TooltipBuffSCBW\"><b>10</b></span>。",
+        "koKR": "<span class=\"style-TooltipHighlightSCBW\"><b>Reaver</b></span>의 <span class=\"style-TooltipHighlightSCBW\"><b>Scarab</b></span> 수용량이 <span class=\"style-TooltipBuffSCBW\"><b>10</b></span>개로 증가합니다. /// Increases <span class=\"style-TooltipHighlightSCBW\"><b>Reaver</b>'s</span> <span class=\"style-TooltipHighlightSCBW\"><b>Scarab</b></span> capacity to <span class=\"style-TooltipBuffSCBW\"><b>10</b></span>."
       }
     },
     {
@@ -729,8 +703,8 @@
         "koKR": "중력 구동기 개발 /// Research Gravitic Drive"
       },
       "Tooltip": {
-        "enUS": "Increases <span class=\"style-TooltipHighlightSCBW\"><b>Shuttle</b></span> movement speed by <span class=\"style-TooltipBuffSCBW\"><b>50</b>%</span>. Additionally pickup range increased by <span class=\"style-TooltipBuffSCBW\"><b>1.0</b></span>",
-        "zhCN": "Increases <span class=\"style-TooltipHighlightSCBW\"><b>Shuttle</b></span> movement speed by <span class=\"style-TooltipBuffSCBW\"><b>50</b>%</span>. Additionally pickup range increased by <span class=\"style-TooltipBuffSCBW\"><b>1.0</b></span>",
+        "enUS": "Increases <span class=\"style-TooltipHighlightSCBW\"><b>Shuttle</b></span> movement speed by <span class=\"style-TooltipBuffSCBW\"><b>50</b>%</span>.",
+        "zhCN": "<span class=\"style-TooltipHighlightSCBW\"><b>Shuttle</b></span>的移动速度提高<span class=\"style-TooltipBuffSCBW\"><b>50</b>%</span>。",
         "koKR": "<span class=\"style-TooltipHighlightSCBW\"><b>Shuttle</b></span>의 이동 속도가 <span class=\"style-TooltipBuffSCBW\"><b>50</b>%</span>만큼 증가합니다. /// Increases <span class=\"style-TooltipHighlightSCBW\"><b>Shuttle</b></span> movement speed by <span class=\"style-TooltipBuffSCBW\"><b>50</b>%</span>."
       }
     },
@@ -744,39 +718,39 @@
         "koKR": "중력 구동기 개발 /// Research Gravitic Drive"
       },
       "Tooltip": {
-        "enUS": "Increases <span class=\"style-TooltipHighlightSCBW\"><b>Shuttle</b></span> movement speed by <span class=\"style-TooltipBuffSCBW\"><b>50</b>%</span>. Additionally pickup range increased by <span class=\"style-TooltipBuffSCBW\"><b>1.0</b></span>",
-        "zhCN": "Increases <span class=\"style-TooltipHighlightSCBW\"><b>Shuttle</b></span> movement speed by <span class=\"style-TooltipBuffSCBW\"><b>50</b>%</span>. Additionally pickup range increased by <span class=\"style-TooltipBuffSCBW\"><b>1.0</b></span>",
+        "enUS": "Increases <span class=\"style-TooltipHighlightSCBW\"><b>Shuttle</b></span> movement speed by <span class=\"style-TooltipBuffSCBW\"><b>50</b>%</span>.",
+        "zhCN": "<span class=\"style-TooltipHighlightSCBW\"><b>Shuttle</b></span>的移动速度提高<span class=\"style-TooltipBuffSCBW\"><b>50</b>%</span>。",
         "koKR": "<span class=\"style-TooltipHighlightSCBW\"><b>Shuttle</b></span>의 이동 속도가 <span class=\"style-TooltipBuffSCBW\"><b>50</b>%</span>만큼 증가합니다. /// Increases <span class=\"style-TooltipHighlightSCBW\"><b>Shuttle</b></span> movement speed by <span class=\"style-TooltipBuffSCBW\"><b>50</b>%</span>."
       }
     },
     {
-      "AbilCmd": "ReaverSCBWWeaponRangeUpgrade,Research1",
-      "id": "ReaverSCBWWeaponRangeUpgrade",
-      "Icon": "btn-ability-protoss-envision",
+      "AbilCmd": "ReaverSCBWHangarIncreaseUpgrade,Research1",
+      "id": "ReaverSCBWHangarIncreaseUpgrade",
+      "Icon": "btn-upgrade-protoss-increasedscarabcapacity@scbw",
       "Name": {
-        "enUS": "Research Imbued Lenses",
-        "zhCN": "Research Imbued Lenses",
-        "koKR": "Research Imbued Lenses"
+        "enUS": "Research Reaver Increased Capacity",
+        "zhCN": "研究掠夺者扩容",
+        "koKR": "리버 수용력 증가 개발 /// Research Reaver Increased Capacity"
       },
       "Tooltip": {
-        "enUS": "Increases <span class=\"style-TooltipHighlightSCBW\"><b>Reaver</b></span> weapon range by <span class=\"style-TooltipBuffSCBW\"><b>2</b></span>.",
-        "zhCN": "Increases <span class=\"style-TooltipHighlightSCBW\"><b>Reaver</b></span> weapon range by <span class=\"style-TooltipBuffSCBW\"><b>2</b></span>.",
-        "koKR": "Increases <span class=\"style-TooltipHighlightSCBW\"><b>Reaver</b></span> weapon range by <span class=\"style-TooltipBuffSCBW\"><b>2</b></span>."
+        "enUS": "Increases <span class=\"style-TooltipHighlightSCBW\"><b>Reaver</b>'s</span> <span class=\"style-TooltipHighlightSCBW\"><b>Scarab</b></span> capacity to <span class=\"style-TooltipBuffSCBW\"><b>10</b></span>.",
+        "zhCN": "<span class=\"style-TooltipHighlightSCBW\"><b>Reaver</b></span>的<span class=\"style-TooltipHighlightSCBW\"><b>Scarab</b></span>容量提高到<span class=\"style-TooltipBuffSCBW\"><b>10</b></span>。",
+        "koKR": "<span class=\"style-TooltipHighlightSCBW\"><b>Reaver</b></span>의 <span class=\"style-TooltipHighlightSCBW\"><b>Scarab</b></span> 수용량이 <span class=\"style-TooltipBuffSCBW\"><b>10</b></span>개로 증가합니다. /// Increases <span class=\"style-TooltipHighlightSCBW\"><b>Reaver</b>'s</span> <span class=\"style-TooltipHighlightSCBW\"><b>Scarab</b></span> capacity to <span class=\"style-TooltipBuffSCBW\"><b>10</b></span>."
       }
     },
     {
       "AbilCmd": "ScarabSCBWWeaponDamageUpgrade,Research1",
       "id": "ScarabSCBWWeaponDamageUpgrade",
-      "Icon": "scarabupgradepurple",
+      "Icon": "btn-upgrade-artanis-scarabsplashradius",
       "Name": {
         "enUS": "Research Scarab Damage",
         "zhCN": "研究强化金甲虫",
         "koKR": "스캐럽 공격력 증가 /// Research Scarab Damage"
       },
       "Tooltip": {
-        "enUS": "Increases <span class=\"style-TooltipHighlightSCBW\"><b>Reaver</b>'s</span> <span class=\"style-TooltipHighlightSCBW\"><b>Scarab</b></span> damage by vs armored <span class=\"style-TooltipBuffSCBW\"><b>40</b></span>.",
-        "zhCN": "Increases <span class=\"style-TooltipHighlightSCBW\"><b>Reaver</b>'s</span> <span class=\"style-TooltipHighlightSCBW\"><b>Scarab</b></span> damage by vs armored <span class=\"style-TooltipBuffSCBW\"><b>40</b></span>.",
-        "koKR": "<span class=\"style-TooltipHighlightSCBW\"><b>Reaver</b></span>의 <span class=\"style-TooltipHighlightSCBW\"><b>Scarab</b></span> 피해량이 <span class=\"style-TooltipBuffSCBW\"><b>40</b></span>만큼 증가합니다. /// Increases <span class=\"style-TooltipHighlightSCBW\"><b>Reaver</b>'s</span> <span class=\"style-TooltipHighlightSCBW\"><b>Scarab</b></span> damage by <span class=\"style-TooltipBuffSCBW\"><b>40</b></span>."
+        "enUS": "Increases <span class=\"style-TooltipHighlightSCBW\"><b>Reaver</b>'s</span> <span class=\"style-TooltipHighlightSCBW\"><b>Scarab</b></span> damage by <span class=\"style-TooltipBuffSCBW\"><b>25</b></span>.",
+        "zhCN": "<span class=\"style-TooltipHighlightSCBW\"><b>Reaver</b></span>的<span class=\"style-TooltipHighlightSCBW\"><b>Scarab</b></span>伤害提高<span class=\"style-TooltipBuffSCBW\"><b>25</b></span>点。",
+        "koKR": "<span class=\"style-TooltipHighlightSCBW\"><b>Reaver</b></span>의 <span class=\"style-TooltipHighlightSCBW\"><b>Scarab</b></span> 피해량이 <span class=\"style-TooltipBuffSCBW\"><b>25</b></span>만큼 증가합니다. /// Increases <span class=\"style-TooltipHighlightSCBW\"><b>Reaver</b>'s</span> <span class=\"style-TooltipHighlightSCBW\"><b>Scarab</b></span> damage by <span class=\"style-TooltipBuffSCBW\"><b>25</b></span>."
       }
     }
   ]

@@ -13,13 +13,6 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "OverlordSCBWSightUpgrade",
-  "EditorCategories": "Race:Zerg,UpgradeType:Talents",
-  "$tokens": {
-    "ID": {
-      "type": "string",
-      "value": ""
-    }
-  },
   "DataCollection": "OverlordSCBWSightUpgrade",
   "EffectArrayTemplate": [
     {
@@ -31,6 +24,7 @@
       "Value": "2"
     }
   ],
+  "EditorCategories": "Race:Zerg,UpgradeType:Talents",
   "AffectedUnitArray": [
     "OverlordSCBW"
   ],

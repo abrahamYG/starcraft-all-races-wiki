@@ -21,8 +21,7 @@
   "LifeStart": 600,
   "LifeMax": 600,
   "LifeArmorName": {
-    "enUS": "Terran Building Plating",
-    "ruRU": "Terran Building Plating"
+    "enUS": "Terran Building Plating"
   },
   "Mover": "Ground",
   "StationaryTurningRate": 720,
@@ -88,12 +87,6 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
-  "$tokens": {
-    "ID": {
-      "type": "string",
-      "value": ""
-    }
-  },
   "Mob": "Multiplayer",
   "Gender": "Neutral",
   "FogVisibility": "Snapshot",
@@ -152,12 +145,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "que5",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "QueueCount": 1,
           "Flags": {
             "BestUnit": 1,
@@ -191,12 +178,10 @@
         "id": "Cancel",
         "Icon": "btn-command-cancel",
         "Name": {
-          "enUS": "Cancel",
-          "ruRU": "Отменить /// Cancel"
+          "enUS": "Cancel"
         },
         "Tooltip": {
-          "enUS": "Drops the current order without performing it, and allows you to select a different order.",
-          "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+          "enUS": "Drops the current order without performing it, and allows you to select a different order."
         },
         "Hotkey": "Esc"
       },
@@ -219,12 +204,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "BuildInProgress",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "Activity": "UI/Building",
           "VitalStartFactor": {
             "Life": 0.1,
@@ -258,12 +237,10 @@
         "id": "CancelBuilding",
         "Icon": "btn-command-cancel",
         "Name": {
-          "enUS": "Cancel",
-          "ruRU": "Отменить /// Cancel"
+          "enUS": "Cancel"
         },
         "Tooltip": {
-          "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-          "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+          "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund."
         },
         "Hotkey": "Esc"
       },
@@ -286,12 +263,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "BuildInProgress",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "Activity": "UI/Building",
           "VitalStartFactor": {
             "Life": 0.1,
@@ -325,12 +296,10 @@
         "id": "Halt",
         "Icon": "btn-command-stop",
         "Name": {
-          "enUS": "Halt",
-          "ruRU": "Приостановить /// Halt"
+          "enUS": "Halt"
         },
         "Tooltip": {
-          "enUS": "Halts construction of this structure. The partial construction will remain.",
-          "ruRU": "Приостановить сооружение этого строения. Впоследствии его можно будет продолжить. /// Halts construction of this structure. The partial construction will remain."
+          "enUS": "Halts construction of this structure. The partial construction will remain."
         },
         "Hotkey": "T"
       },
@@ -351,12 +320,10 @@
         "id": "SelectBuilder",
         "Icon": "btn-upgrade-terran-weaponrefit",
         "Name": {
-          "enUS": "Select Builder",
-          "ruRU": "Select Builder"
+          "enUS": "Select Builder"
         },
         "Tooltip": {
-          "enUS": "Selects the unit constructing this structure.",
-          "ruRU": "Selects the unit constructing this structure."
+          "enUS": "Selects the unit constructing this structure."
         },
         "Hotkey": "Q"
       },
@@ -372,19 +339,20 @@
               "CreateDefaultButton": 1
             },
             "DefaultButtonFace": "MarineSCBWRangeUpgrade",
+            "State": "Restricted",
             "Requirements": "MarineSCBWRangeUpgrade"
           },
           "Resource": {
             "Minerals": 50,
-            "Vespene": 50
+            "Vespene": 100
           },
-          "Time": 60,
+          "Time": 93.75,
           "Upgrade": "MarineSCBWRangeUpgrade"
         },
-        "Time": 60,
+        "Time": 93.75,
         "Cost": {
           "Minerals": 50,
-          "Vespene": 50,
+          "Vespene": 100,
           "Terazine": 0,
           "Custom": 0,
           "Energy": 0,
@@ -422,16 +390,17 @@
               "CreateDefaultButton": 1
             },
             "DefaultButtonFace": "StimpackSCBWResearch",
+            "State": "Restricted",
             "Requirements": "StimpackSCBWResearch"
           },
           "Resource": {
             "Minerals": 100,
             "Vespene": 100
           },
-          "Time": 140,
+          "Time": 75,
           "Upgrade": "StimpackSCBWResearch"
         },
-        "Time": 140,
+        "Time": 75,
         "Cost": {
           "Minerals": 100,
           "Vespene": 100,
@@ -472,19 +441,20 @@
               "CreateDefaultButton": 1
             },
             "DefaultButtonFace": "MedicSCBWRestorationResearch",
+            "State": "Restricted",
             "Requirements": "MedicSCBWRestorationResearch"
           },
           "Resource": {
-            "Minerals": 100,
-            "Vespene": 100
+            "Minerals": 50,
+            "Vespene": 50
           },
-          "Time": 90,
+          "Time": 75,
           "Upgrade": "MedicSCBWRestorationResearch"
         },
-        "Time": 90,
+        "Time": 75,
         "Cost": {
-          "Minerals": 100,
-          "Vespene": 100,
+          "Minerals": 50,
+          "Vespene": 50,
           "Terazine": 0,
           "Custom": 0,
           "Energy": 0,
@@ -522,6 +492,7 @@
               "CreateDefaultButton": 1
             },
             "DefaultButtonFace": "MedicSCBWOpticFlareResearch",
+            "State": "Restricted",
             "Requirements": "MedicSCBWOpticFlareResearch"
           },
           "Resource": {
@@ -572,6 +543,7 @@
               "CreateDefaultButton": 1
             },
             "DefaultButtonFace": "MedicSCBWEnergyUpgrade",
+            "State": "Restricted",
             "Requirements": "MedicSCBWEnergyUpgrade"
           },
           "Resource": {
@@ -622,6 +594,7 @@
               "CreateDefaultButton": 1
             },
             "DefaultButtonFace": "MedicSCBWEnergyUpgrade",
+            "State": "Restricted",
             "Requirements": "MedicSCBWEnergyUpgrade"
           },
           "Resource": {
@@ -672,19 +645,20 @@
               "CreateDefaultButton": 1
             },
             "DefaultButtonFace": "MarineSCBWRangeUpgrade",
+            "State": "Restricted",
             "Requirements": "MarineSCBWRangeUpgrade"
           },
           "Resource": {
             "Minerals": 50,
-            "Vespene": 50
+            "Vespene": 100
           },
-          "Time": 60,
+          "Time": 93.75,
           "Upgrade": "MarineSCBWRangeUpgrade"
         },
-        "Time": 60,
+        "Time": 93.75,
         "Cost": {
           "Minerals": 50,
-          "Vespene": 50,
+          "Vespene": 100,
           "Terazine": 0,
           "Custom": 0,
           "Energy": 0,
@@ -722,16 +696,17 @@
               "CreateDefaultButton": 1
             },
             "DefaultButtonFace": "StimpackSCBWResearch",
+            "State": "Restricted",
             "Requirements": "StimpackSCBWResearch"
           },
           "Resource": {
             "Minerals": 100,
             "Vespene": 100
           },
-          "Time": 140,
+          "Time": 75,
           "Upgrade": "StimpackSCBWResearch"
         },
-        "Time": 140,
+        "Time": 75,
         "Cost": {
           "Minerals": 100,
           "Vespene": 100,
@@ -772,19 +747,20 @@
               "CreateDefaultButton": 1
             },
             "DefaultButtonFace": "MedicSCBWRestorationResearch",
+            "State": "Restricted",
             "Requirements": "MedicSCBWRestorationResearch"
           },
           "Resource": {
-            "Minerals": 100,
-            "Vespene": 100
+            "Minerals": 50,
+            "Vespene": 50
           },
-          "Time": 90,
+          "Time": 75,
           "Upgrade": "MedicSCBWRestorationResearch"
         },
-        "Time": 90,
+        "Time": 75,
         "Cost": {
-          "Minerals": 100,
-          "Vespene": 100,
+          "Minerals": 50,
+          "Vespene": 50,
           "Terazine": 0,
           "Custom": 0,
           "Energy": 0,
@@ -822,6 +798,7 @@
               "CreateDefaultButton": 1
             },
             "DefaultButtonFace": "MedicSCBWOpticFlareResearch",
+            "State": "Restricted",
             "Requirements": "MedicSCBWOpticFlareResearch"
           },
           "Resource": {
@@ -871,7 +848,7 @@
     "FirebatSCBW",
     "MedicSCBW"
   ],
-  "BuildTime": 40,
+  "BuildTime": 50,
   "Icon": "btn-building-terran-academy@scbw",
   "LifeArmorIcon": "btn-upgrade-terran-buildingarmor",
   "ShieldArmorIcon": "btn-upgrade-protoss-shieldslevel0",
@@ -880,9 +857,7 @@
     {
       "id": "TerranBuildingSCBW@Burnout",
       "Name": {
-        "enUS": "Burnout",
-        "zhCN": "Burnout",
-        "koKR": "Burnout"
+        "enUS": "Burnout"
       },
       "Tooltip": "-"
     }
@@ -891,14 +866,12 @@
     {
       "id": "BuildInProgress",
       "Name": {
-        "enUS": "Build in Progress",
-        "ruRU": "Build in Progress"
+        "enUS": "Build in Progress"
       }
     },
     {
       "id": "que5",
       "Name": {
-        "ruRU": "Queue (5)",
         "enUS": "Queue (5)"
       }
     },
@@ -976,12 +949,10 @@
       "id": "Cancel",
       "Icon": "btn-command-cancel",
       "Name": {
-        "enUS": "Cancel",
-        "ruRU": "Отменить /// Cancel"
+        "enUS": "Cancel"
       },
       "Tooltip": {
-        "enUS": "Drops the current order without performing it, and allows you to select a different order.",
-        "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+        "enUS": "Drops the current order without performing it, and allows you to select a different order."
       }
     },
     {
@@ -989,12 +960,10 @@
       "id": "CancelBuilding",
       "Icon": "btn-command-cancel",
       "Name": {
-        "enUS": "Cancel",
-        "ruRU": "Отменить /// Cancel"
+        "enUS": "Cancel"
       },
       "Tooltip": {
-        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-        "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund."
       }
     },
     {
@@ -1002,12 +971,10 @@
       "id": "Halt",
       "Icon": "btn-command-stop",
       "Name": {
-        "enUS": "Halt",
-        "ruRU": "Приостановить /// Halt"
+        "enUS": "Halt"
       },
       "Tooltip": {
-        "enUS": "Halts construction of this structure. The partial construction will remain.",
-        "ruRU": "Приостановить сооружение этого строения. Впоследствии его можно будет продолжить. /// Halts construction of this structure. The partial construction will remain."
+        "enUS": "Halts construction of this structure. The partial construction will remain."
       }
     },
     {

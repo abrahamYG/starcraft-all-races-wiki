@@ -13,13 +13,6 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "DefilerSCBWPlagueResearch",
-  "EditorCategories": "Race:Zerg,UpgradeType:SpellResearch",
-  "$tokens": {
-    "ID": {
-      "type": "string",
-      "value": ""
-    }
-  },
   "DataCollection": "DefilerSCBWPlagueResearch",
   "AffectedUnitArray": [
     "DefilerSCBW"
@@ -27,5 +20,6 @@
   "InfoTooltipPriority": 1,
   "Race": "Zerg",
   "ScoreAmount": 400,
-  "ScoreResult": "BuildOrder"
+  "ScoreResult": "BuildOrder",
+  "EditorCategories": "Race:Zerg,UpgradeType:SpellResearch"
 }

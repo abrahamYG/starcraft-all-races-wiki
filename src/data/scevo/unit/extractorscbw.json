@@ -21,8 +21,7 @@
   "LifeStart": 750,
   "LifeMax": 750,
   "LifeArmorName": {
-    "enUS": "Zerg Building Armor",
-    "ruRU": "Zerg Building Armor"
+    "enUS": "Zerg Building Armor"
   },
   "Mover": "Ground",
   "StationaryTurningRate": 719.4726,
@@ -88,12 +87,6 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
-  "$tokens": {
-    "ID": {
-      "type": "string",
-      "value": ""
-    }
-  },
   "Mob": "Multiplayer",
   "EnergyRegenRate": 0.5,
   "id": "ExtractorSCBW",
@@ -148,12 +141,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "BuildInProgress",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "Activity": "UI/Building",
           "VitalStartFactor": {
             "Life": 0.1,
@@ -187,12 +174,10 @@
         "id": "CancelBuilding",
         "Icon": "btn-command-cancel",
         "Name": {
-          "enUS": "Cancel",
-          "ruRU": "Отменить /// Cancel"
+          "enUS": "Cancel"
         },
         "Tooltip": {
-          "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-          "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+          "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund."
         },
         "Hotkey": "Esc"
       }
@@ -228,8 +213,7 @@
       "id": "HarvestableVespeneGeyserGasZerg",
       "Icon": "icon-gas",
       "Name": {
-        "enUS": "Harvestable Vespene Geyser Gas Zerg",
-        "ruRU": "Harvestable Vespene Geyser Gas Zerg"
+        "enUS": "Harvestable Vespene Geyser Gas Zerg"
       },
       "Tooltip": "-"
     }
@@ -238,8 +222,7 @@
     {
       "id": "BuildInProgress",
       "Name": {
-        "enUS": "Build in Progress",
-        "ruRU": "Build in Progress"
+        "enUS": "Build in Progress"
       }
     }
   ],
@@ -252,11 +235,11 @@
     "IsExtractorSCBW",
     "NotExtractorSCBW",
     "CasterIsExtractorSCBW",
+    "ExtractorSCBW",
     "ExtractorSCBW@Count",
     "ExtractorSCBW@CountAtUnit",
     "ExtractorSCBW@QoB",
-    "ExtractorSCBW@QoBAtUnit",
-    "ExtractorSCBW"
+    "ExtractorSCBW@QoBAtUnit"
   ],
   "$Requirements": [],
   "$Production": [],
@@ -273,12 +256,10 @@
       "id": "CancelBuilding",
       "Icon": "btn-command-cancel",
       "Name": {
-        "enUS": "Cancel",
-        "ruRU": "Отменить /// Cancel"
+        "enUS": "Cancel"
       },
       "Tooltip": {
-        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-        "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund."
       }
     }
   ]

@@ -13,14 +13,8 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "OverlordSCBWTransportResearch",
-  "EditorCategories": "Race:Zerg,UpgradeType:Talents",
-  "$tokens": {
-    "ID": {
-      "type": "string",
-      "value": ""
-    }
-  },
   "DataCollection": "OverlordSCBWTransportResearch",
+  "EditorCategories": "Race:Zerg,UpgradeType:Talents",
   "AffectedUnitArray": [
     "OverlordSCBW"
   ],

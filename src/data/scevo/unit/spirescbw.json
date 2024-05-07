@@ -21,8 +21,7 @@
   "LifeStart": 600,
   "LifeMax": 600,
   "LifeArmorName": {
-    "enUS": "Zerg Building Armor",
-    "ruRU": "Zerg Building Armor"
+    "enUS": "Zerg Building Armor"
   },
   "Mover": "Ground",
   "StationaryTurningRate": 719.4726,
@@ -88,12 +87,6 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
-  "$tokens": {
-    "ID": {
-      "type": "string",
-      "value": ""
-    }
-  },
   "Mob": "Multiplayer",
   "EnergyRegenRate": 0.5,
   "id": "SpireSCBW",
@@ -149,12 +142,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "que5CancelToSelection",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "QueueCount": 1,
           "Flags": {
             "BestUnit": 1,
@@ -192,12 +179,10 @@
         "id": "Cancel",
         "Icon": "btn-command-cancel",
         "Name": {
-          "enUS": "Cancel",
-          "ruRU": "Отменить /// Cancel"
+          "enUS": "Cancel"
         },
         "Tooltip": {
-          "enUS": "Drops the current order without performing it, and allows you to select a different order.",
-          "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+          "enUS": "Drops the current order without performing it, and allows you to select a different order."
         },
         "Hotkey": "Esc"
       },
@@ -220,12 +205,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "BuildInProgress",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "Activity": "UI/Building",
           "VitalStartFactor": {
             "Life": 0.1,
@@ -259,12 +238,10 @@
         "id": "CancelBuilding",
         "Icon": "btn-command-cancel",
         "Name": {
-          "enUS": "Cancel",
-          "ruRU": "Отменить /// Cancel"
+          "enUS": "Cancel"
         },
         "Tooltip": {
-          "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-          "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+          "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund."
         },
         "Hotkey": "Esc"
       },
@@ -273,12 +250,12 @@
           "SectionArray": {
             "Abils": {
               "DurationArray": {
-                "Delay": 112.5
+                "Delay": 100
               }
             },
             "Actor": {
               "DurationArray": {
-                "Duration": 112.5
+                "Duration": 100
               }
             },
             "Facing": {
@@ -288,7 +265,7 @@
             },
             "Stats": {
               "DurationArray": {
-                "Delay": 112.5
+                "Delay": 100
               }
             }
           },
@@ -297,7 +274,7 @@
         },
         "Unit": "GreaterSpireSCBW",
         "Cost": {
-          "Minerals": 350,
+          "Minerals": 300,
           "Vespene": 300,
           "Terazine": 0,
           "Custom": 0,
@@ -313,12 +290,10 @@
         "id": "CancelMutateMorph",
         "Icon": "btn-command-cancel",
         "Name": {
-          "enUS": "Cancel",
-          "ruRU": "Cancel"
+          "enUS": "Cancel"
         },
         "Tooltip": {
-          "enUS": "Cancels the mutation order, returning the structure to its original state.",
-          "ruRU": "Cancels the mutation order, returning the structure to its original state."
+          "enUS": "Cancels the mutation order, returning the structure to its original state."
         },
         "Hotkey": "Esc"
       },
@@ -334,6 +309,7 @@
               "CreateDefaultButton": 1
             },
             "DefaultButtonFace": "ZergFlyerAttacksSCBW@Lvl1",
+            "State": "Restricted",
             "Requirements": "ZergFlyerAttacksSCBW@Lvl1"
           },
           "Resource": {
@@ -383,6 +359,7 @@
               "UseDefaultButton": 1,
               "CreateDefaultButton": 1
             },
+            "State": "Restricted",
             "DefaultButtonFace": "ZergFlyerAttacksSCBW@Lvl2",
             "Requirements": "ZergFlyerAttacksSCBW@Lvl2"
           },
@@ -433,6 +410,7 @@
               "UseDefaultButton": 1,
               "CreateDefaultButton": 1
             },
+            "State": "Restricted",
             "DefaultButtonFace": "ZergFlyerAttacksSCBW@Lvl3",
             "Requirements": "ZergFlyerAttacksSCBW@Lvl3"
           },
@@ -484,6 +462,7 @@
               "CreateDefaultButton": 1
             },
             "DefaultButtonFace": "ZergFlyerCarapaceSCBW@Lvl1",
+            "State": "Restricted",
             "Requirements": "ZergFlyerCarapaceSCBW@Lvl1"
           },
           "Resource": {
@@ -533,6 +512,7 @@
               "UseDefaultButton": 1,
               "CreateDefaultButton": 1
             },
+            "State": "Restricted",
             "DefaultButtonFace": "ZergFlyerCarapaceSCBW@Lvl2",
             "Requirements": "ZergFlyerCarapaceSCBW@Lvl2"
           },
@@ -583,6 +563,7 @@
               "UseDefaultButton": 1,
               "CreateDefaultButton": 1
             },
+            "State": "Restricted",
             "DefaultButtonFace": "ZergFlyerCarapaceSCBW@Lvl3",
             "Requirements": "ZergFlyerCarapaceSCBW@Lvl3"
           },
@@ -646,8 +627,7 @@
     {
       "id": "OnCreep",
       "Name": {
-        "enUS": "On Creep",
-        "ruRU": "On Creep"
+        "enUS": "On Creep"
       },
       "Tooltip": "-"
     }
@@ -656,14 +636,12 @@
     {
       "id": "BuildInProgress",
       "Name": {
-        "enUS": "Build in Progress",
-        "ruRU": "Build in Progress"
+        "enUS": "Build in Progress"
       }
     },
     {
       "id": "que5CancelToSelection",
       "Name": {
-        "ruRU": "Queue (5) (Cancel To Selection)",
         "enUS": "Queue (5) (Cancel To Selection)"
       }
     },
@@ -693,19 +671,19 @@
     }
   ],
   "$Upgrades": [
-    "SpireSCBW@Count",
     "Button/Tooltip/GreaterSpireSCBW",
     "SpireSCBW",
     "SpireSCBW@AllowUnit",
     "DroneSCBW@BuildAdv",
+    "SpireSCBW@Count",
     "SpireSCBW",
     "IsSpireSCBW",
     "NotSpireSCBW",
     "CasterIsSpireSCBW",
+    "SpireSCBW",
     "SpireSCBW@CountAtUnit",
     "SpireSCBW@QoB",
-    "SpireSCBW@QoBAtUnit",
-    "SpireSCBW"
+    "SpireSCBW@QoBAtUnit"
   ],
   "$Requirements": [],
   "$Production": [],
@@ -729,12 +707,10 @@
       "id": "Cancel",
       "Icon": "btn-command-cancel",
       "Name": {
-        "enUS": "Cancel",
-        "ruRU": "Отменить /// Cancel"
+        "enUS": "Cancel"
       },
       "Tooltip": {
-        "enUS": "Drops the current order without performing it, and allows you to select a different order.",
-        "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+        "enUS": "Drops the current order without performing it, and allows you to select a different order."
       }
     },
     {
@@ -742,12 +718,10 @@
       "id": "CancelBuilding",
       "Icon": "btn-command-cancel",
       "Name": {
-        "enUS": "Cancel",
-        "ruRU": "Отменить /// Cancel"
+        "enUS": "Cancel"
       },
       "Tooltip": {
-        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-        "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund."
       }
     },
     {
@@ -755,12 +729,10 @@
       "id": "CancelMutateMorph",
       "Icon": "btn-command-cancel",
       "Name": {
-        "enUS": "Cancel",
-        "ruRU": "Cancel"
+        "enUS": "Cancel"
       },
       "Tooltip": {
-        "enUS": "Cancels the mutation order, returning the structure to its original state.",
-        "ruRU": "Cancels the mutation order, returning the structure to its original state."
+        "enUS": "Cancels the mutation order, returning the structure to its original state."
       }
     },
     {

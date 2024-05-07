@@ -13,16 +13,10 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "VulturePlaceSpiderMineSCBWResearch",
-  "EditorCategories": "UpgradeType:SpellResearch,Race:Terran",
-  "$tokens": {
-    "ID": {
-      "type": "string",
-      "value": ""
-    }
-  },
   "DataCollection": "VulturePlaceSpiderMineSCBWResearch",
   "ScoreAmount": 200,
   "ScoreResult": "BuildOrder",
+  "EditorCategories": "UpgradeType:SpellResearch,Race:Terran",
   "AffectedUnitArray": [
     "VultureSCBW"
   ]

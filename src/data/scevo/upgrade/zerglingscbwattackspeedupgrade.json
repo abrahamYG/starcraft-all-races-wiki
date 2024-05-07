@@ -13,13 +13,6 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "ZerglingSCBWAttackSpeedUpgrade",
-  "EditorCategories": "Race:Zerg,UpgradeType:Talents",
-  "$tokens": {
-    "ID": {
-      "type": "string",
-      "value": ""
-    }
-  },
   "DataCollection": "ZerglingSCBWAttackSpeedUpgrade",
   "EffectArrayTemplate": [
     {
@@ -33,5 +26,6 @@
   "InfoTooltipPriority": 1,
   "Race": "Zerg",
   "ScoreAmount": 400,
-  "ScoreResult": "BuildOrder"
+  "ScoreResult": "BuildOrder",
+  "EditorCategories": "Race:Zerg,UpgradeType:Talents"
 }

@@ -21,8 +21,7 @@
   "LifeStart": 25,
   "LifeMax": 25,
   "LifeArmorName": {
-    "enUS": "Zerg Ground Carapace",
-    "ruRU": "Zerg Ground Carapace"
+    "enUS": "Zerg Ground Carapace"
   },
   "Mover": "Creep",
   "StationaryTurningRate": 720,
@@ -87,12 +86,6 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
-  "$tokens": {
-    "ID": {
-      "type": "string",
-      "value": ""
-    }
-  },
   "Mob": "Multiplayer",
   "EnergyRegenRate": 0.5,
   "id": "LarvaSCBW",
@@ -138,12 +131,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "que1",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "QueueCount": 1,
           "Flags": {
             "BestUnit": 1,
@@ -177,12 +164,10 @@
         "id": "Cancel",
         "Icon": "btn-command-cancel",
         "Name": {
-          "enUS": "Cancel",
-          "ruRU": "Отменить /// Cancel"
+          "enUS": "Cancel"
         },
         "Tooltip": {
-          "enUS": "Drops the current order without performing it, and allows you to select a different order.",
-          "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+          "enUS": "Drops the current order without performing it, and allows you to select a different order."
         },
         "Hotkey": "Esc"
       },
@@ -194,14 +179,14 @@
               "UseDefaultButton": 1,
               "CreateDefaultButton": 1
             },
-            "DefaultButtonFace": "DroneSCBW",
-            "State": "Suppressed"
+            "State": "Suppressed",
+            "DefaultButtonFace": "DroneSCBW"
           },
           "Unit": [
             "DroneSCBW"
           ],
           "Alert": "TrainWorkerComplete",
-          "Effect": "Pop"
+          "Effect": "LarvaSCBW@TrainFinish"
         },
         "Unit": [
           "DroneSCBW"
@@ -242,14 +227,15 @@
               "UseDefaultButton": 1,
               "CreateDefaultButton": 1
             },
-            "DefaultButtonFace": "ZerglingSCBW",
             "State": "Suppressed",
+            "DefaultButtonFace": "ZerglingSCBW",
             "Requirements": "ZerglingSCBW"
           },
           "Unit": [
             "ZerglingSCBW",
             "ZerglingSCBW"
-          ]
+          ],
+          "Effect": "LarvaSCBW@TrainFinish"
         },
         "Unit": [
           "ZerglingSCBW",
@@ -291,12 +277,14 @@
               "UseDefaultButton": 1,
               "CreateDefaultButton": 1
             },
+            "State": "Restricted",
             "DefaultButtonFace": "OverlordSCBW",
             "Requirements": "OverlordSCBW"
           },
           "Unit": [
             "OverlordSCBW"
-          ]
+          ],
+          "Effect": "LarvaSCBW@TrainFinish"
         },
         "Unit": [
           "OverlordSCBW"
@@ -337,13 +325,14 @@
               "UseDefaultButton": 1,
               "CreateDefaultButton": 1
             },
-            "DefaultButtonFace": "HydraliskSCBW",
             "State": "Suppressed",
+            "DefaultButtonFace": "HydraliskSCBW",
             "Requirements": "HydraliskSCBW"
           },
           "Unit": [
             "HydraliskSCBW"
-          ]
+          ],
+          "Effect": "LarvaSCBW@TrainFinish"
         },
         "Unit": [
           "HydraliskSCBW"
@@ -384,20 +373,21 @@
               "UseDefaultButton": 1,
               "CreateDefaultButton": 1
             },
-            "DefaultButtonFace": "MutaliskSCBW",
             "State": "Suppressed",
+            "DefaultButtonFace": "MutaliskSCBW",
             "Requirements": "MutaliskSCBW"
           },
           "Unit": [
             "MutaliskSCBW"
-          ]
+          ],
+          "Effect": "LarvaSCBW@TrainFinish"
         },
         "Unit": [
           "MutaliskSCBW"
         ],
         "Cost": {
           "Minerals": 100,
-          "Vespene": 75,
+          "Vespene": 100,
           "Terazine": 0,
           "Custom": 0,
           "Energy": 0,
@@ -431,14 +421,15 @@
               "UseDefaultButton": 1,
               "CreateDefaultButton": 1
             },
-            "DefaultButtonFace": "ScourgeSCBW",
             "State": "Suppressed",
+            "DefaultButtonFace": "ScourgeSCBW",
             "Requirements": "MutaliskSCBW"
           },
           "Unit": [
             "ScourgeSCBW",
             "ScourgeSCBW"
           ],
+          "Effect": "LarvaSCBW@TrainFinish",
           "Resource": {
             "Minerals": 25,
             "Vespene": 75
@@ -484,13 +475,14 @@
               "UseDefaultButton": 1,
               "CreateDefaultButton": 1
             },
-            "DefaultButtonFace": "QueenSCBW",
             "State": "Suppressed",
+            "DefaultButtonFace": "QueenSCBW",
             "Requirements": "QueenSCBW"
           },
           "Unit": [
             "QueenSCBW"
-          ]
+          ],
+          "Effect": "LarvaSCBW@TrainFinish"
         },
         "Unit": [
           "QueenSCBW"
@@ -531,13 +523,14 @@
               "UseDefaultButton": 1,
               "CreateDefaultButton": 1
             },
-            "DefaultButtonFace": "UltraliskSCBW",
             "State": "Suppressed",
+            "DefaultButtonFace": "UltraliskSCBW",
             "Requirements": "UltraliskSCBW"
           },
           "Unit": [
             "UltraliskSCBW"
-          ]
+          ],
+          "Effect": "LarvaSCBW@TrainFinish"
         },
         "Unit": [
           "UltraliskSCBW"
@@ -578,13 +571,14 @@
               "UseDefaultButton": 1,
               "CreateDefaultButton": 1
             },
-            "DefaultButtonFace": "DefilerSCBW",
             "State": "Suppressed",
+            "DefaultButtonFace": "DefilerSCBW",
             "Requirements": "DefilerSCBW"
           },
           "Unit": [
             "DefilerSCBW"
-          ]
+          ],
+          "Effect": "LarvaSCBW@TrainFinish"
         },
         "Unit": [
           "DefilerSCBW"
@@ -649,7 +643,9 @@
     },
     {
       "id": "DeathOffCreep",
-      "Name": "-",
+      "Name": {
+        "enUS": "Death Off Creep"
+      },
       "Tooltip": "-"
     }
   ],
@@ -665,34 +661,33 @@
     {
       "id": "que1",
       "Name": {
-        "ruRU": "Queue (1)",
         "enUS": "Queue (1)"
       }
     }
   ],
   "$Upgrades": [
-    "Button/Tooltip/ZerglingSCBW",
-    "LarvaSCBW",
     "NotLarvaSCBW",
+    "Button/Tooltip/ZerglingSCBW",
+    "Button/Tooltip/SpawningPoolSCBW",
     "Button/Tooltip/HydraliskDenSCBW",
     "Button/Tooltip/SpireSCBW",
-    "Button/Tooltip/ScourgeSCBW",
     "Button/Tooltip/QueensNestSCBW",
-    "Button/Tooltip/UltraliskCavernSCBW",
     "Button/Tooltip/DefilerMoundSCBW",
-    "Button/Tooltip/SpawningPoolSCBW",
+    "Button/Tooltip/UltraliskCavernSCBW",
     "HatcherySCBW@SpawnLarva",
     "LarvaSCBW@QoBAtUnit",
     "HatcherySCBW",
     "LarvaSCBW",
+    "Button/Tooltip/ScourgeSCBW",
+    "LarvaSCBW",
     "LarvaSCBW@Death",
     "IsLarvaSCBW",
     "CasterIsLarvaSCBW",
+    "LarvaSCBW",
     "LarvaSCBW@AllowUnit",
     "LarvaSCBW@Count",
     "LarvaSCBW@CountAtUnit",
-    "LarvaSCBW@QoB",
-    "LarvaSCBW"
+    "LarvaSCBW@QoB"
   ],
   "$Requirements": [],
   "$Production": [
@@ -718,12 +713,10 @@
       "id": "Cancel",
       "Icon": "btn-command-cancel",
       "Name": {
-        "enUS": "Cancel",
-        "ruRU": "Отменить /// Cancel"
+        "enUS": "Cancel"
       },
       "Tooltip": {
-        "enUS": "Drops the current order without performing it, and allows you to select a different order.",
-        "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+        "enUS": "Drops the current order without performing it, and allows you to select a different order."
       }
     },
     {

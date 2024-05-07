@@ -13,13 +13,6 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "ZergSCBWBurrowResearch",
-  "EditorCategories": "Race:Zerg,UpgradeType:Talents",
-  "$tokens": {
-    "ID": {
-      "type": "string",
-      "value": ""
-    }
-  },
   "DataCollection": "ZergSCBWBurrowResearch",
   "AffectedUnitArray": [
     "DroneSCBW",
@@ -31,5 +24,6 @@
   "InfoTooltipPriority": 1,
   "Race": "Zerg",
   "ScoreAmount": 200,
-  "ScoreResult": "BuildOrder"
+  "ScoreResult": "BuildOrder",
+  "EditorCategories": "Race:Zerg,UpgradeType:Talents"
 }

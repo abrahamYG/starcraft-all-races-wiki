@@ -6,7 +6,11 @@ import {ModsListComponent} from "./mods-list/mods-list.component";
 const routes: Routes = [
   { path: '', pathMatch: 'full', component: ModsListComponent },
   {
-    matcher: (url: UrlSegment[]) => ({consumed: url, parameters: {}}),
+    matcher: (url: UrlSegment[]) => {
+      console.log(url)
+      return {consumed: url, parameters: {}}
+    },
+    //matcher: (url: UrlSegment[]) => ({consumed: url, parameters: {}}),
     component: RaceDataComponent
   }
 ];

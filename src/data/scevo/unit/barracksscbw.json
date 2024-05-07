@@ -21,8 +21,7 @@
   "LifeStart": 1000,
   "LifeMax": 1000,
   "LifeArmorName": {
-    "enUS": "Terran Building Plating",
-    "ruRU": "Terran Building Plating"
+    "enUS": "Terran Building Plating"
   },
   "Mover": "Ground",
   "StationaryTurningRate": 720,
@@ -88,12 +87,6 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
-  "$tokens": {
-    "ID": {
-      "type": "string",
-      "value": ""
-    }
-  },
   "Mob": "Multiplayer",
   "Gender": "Neutral",
   "FogVisibility": "Snapshot",
@@ -152,12 +145,10 @@
         "id": "Rally",
         "Icon": "btn-ability-terran-setrallypoint",
         "Name": {
-          "enUS": "Set Rally Point",
-          "ruRU": "Задать точку сбора /// Set Rally Point"
+          "enUS": "Set Rally Point"
         },
         "Tooltip": {
-          "enUS": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
-          "ruRU": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically."
+          "enUS": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically."
         },
         "Hotkey": "Y"
       },
@@ -200,12 +191,10 @@
         "id": "Lift",
         "Icon": "btn-ability-terran-liftoff",
         "Name": {
-          "enUS": "Lift Off",
-          "ruRU": "Lift Off"
+          "enUS": "Lift Off"
         },
         "Tooltip": {
-          "enUS": "Transforms structure into a slow air unit for redeployment. May not produce units, research upgrades, or use abilities until it has landed.",
-          "ruRU": "Transforms structure into a slow air unit for redeployment. May not produce units, research upgrades, or use abilities until it has landed."
+          "enUS": "Transforms structure into a slow air unit for redeployment. May not produce units, research upgrades, or use abilities until it has landed."
         },
         "Hotkey": "L"
       },
@@ -228,12 +217,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "BuildInProgress",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "Activity": "UI/Building",
           "VitalStartFactor": {
             "Life": 0.1,
@@ -267,12 +250,10 @@
         "id": "Halt",
         "Icon": "btn-command-stop",
         "Name": {
-          "enUS": "Halt",
-          "ruRU": "Приостановить /// Halt"
+          "enUS": "Halt"
         },
         "Tooltip": {
-          "enUS": "Halts construction of this structure. The partial construction will remain.",
-          "ruRU": "Приостановить сооружение этого строения. Впоследствии его можно будет продолжить. /// Halts construction of this structure. The partial construction will remain."
+          "enUS": "Halts construction of this structure. The partial construction will remain."
         },
         "Hotkey": "T"
       },
@@ -295,12 +276,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "que5",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "QueueCount": 1,
           "Flags": {
             "BestUnit": 1,
@@ -334,12 +309,10 @@
         "id": "Cancel",
         "Icon": "btn-command-cancel",
         "Name": {
-          "enUS": "Cancel",
-          "ruRU": "Отменить /// Cancel"
+          "enUS": "Cancel"
         },
         "Tooltip": {
-          "enUS": "Drops the current order without performing it, and allows you to select a different order.",
-          "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+          "enUS": "Drops the current order without performing it, and allows you to select a different order."
         },
         "Hotkey": "Esc"
       },
@@ -362,12 +335,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "BuildInProgress",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "Activity": "UI/Building",
           "VitalStartFactor": {
             "Life": 0.1,
@@ -401,12 +368,10 @@
         "id": "CancelBuilding",
         "Icon": "btn-command-cancel",
         "Name": {
-          "enUS": "Cancel",
-          "ruRU": "Отменить /// Cancel"
+          "enUS": "Cancel"
         },
         "Tooltip": {
-          "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-          "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+          "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund."
         },
         "Hotkey": "Esc"
       },
@@ -427,12 +392,10 @@
         "id": "SelectBuilder",
         "Icon": "btn-upgrade-terran-weaponrefit",
         "Name": {
-          "enUS": "Select Builder",
-          "ruRU": "Select Builder"
+          "enUS": "Select Builder"
         },
         "Tooltip": {
-          "enUS": "Selects the unit constructing this structure.",
-          "ruRU": "Selects the unit constructing this structure."
+          "enUS": "Selects the unit constructing this structure."
         },
         "Hotkey": "Q"
       },
@@ -444,6 +407,7 @@
               "UseDefaultButton": 1,
               "CreateDefaultButton": 1
             },
+            "State": "Restricted",
             "DefaultButtonFace": "MarineSCBW",
             "Requirements": "MarineSCBW"
           },
@@ -490,6 +454,7 @@
               "UseDefaultButton": 1,
               "CreateDefaultButton": 1
             },
+            "State": "Restricted",
             "DefaultButtonFace": "FirebatSCBW",
             "Requirements": "FirebatSCBW"
           },
@@ -536,6 +501,7 @@
               "UseDefaultButton": 1,
               "CreateDefaultButton": 1
             },
+            "State": "Restricted",
             "DefaultButtonFace": "GhostSCBW",
             "Requirements": "GhostSCBW"
           },
@@ -547,8 +513,8 @@
           "GhostSCBW"
         ],
         "Cost": {
-          "Minerals": 100,
-          "Vespene": 100,
+          "Minerals": 25,
+          "Vespene": 75,
           "Terazine": 0,
           "Custom": 0,
           "Energy": 0,
@@ -561,7 +527,7 @@
         "Type": "AbilCmd",
         "AbilCmd": "BarracksSCBW@Train,Train3",
         "id": "GhostSCBW",
-        "Icon": "btn-unit-terran-ghost",
+        "Icon": "btn-unit-terran-ghost@scbw",
         "Name": {
           "enUS": "Train Ghost",
           "zhCN": "训练幽灵",
@@ -569,7 +535,7 @@
         },
         "Tooltip": {
           "enUS": "Infiltrator. Can use <span class=\"style-TooltipHighlightSCBW\"><b>Personal Cloaking</b></span> and call down <span class=\"style-TooltipHighlightSCBW\">Tactical Nukes</span> built at the <span class=\"style-TooltipHighlightSCBW\"><b>Nuclear Silo</b></span>.  <br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>",
-          "zhCN": "Infiltrator. Can use <span class=\"style-TooltipHighlightSCBW\"><b>Personal Cloaking</b></span> and call down <span class=\"style-TooltipHighlightSCBW\">Tactical Nukes</span> built at the <span class=\"style-TooltipHighlightSCBW\"><b>Nuclear Silo</b></span>.  <br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>",
+          "zhCN": "渗透单位。可以使用<span class=\"style-TooltipHighlightSCBW\"><b>Personal Cloaking</b></span>和呼叫在<span class=\"style-TooltipHighlightSCBW\"><b>Nuclear Silo</b></span>中建造的<span class=\"style-TooltipHighlightSCBW\">战术核弹</span>。升级后可以使用<span class=\"style-TooltipHighlightSCBW\"><b>Personal Cloaking</b></span>和<span class=\"style-TooltipHighlightSCBW\"><b>Lockdown</b></span>。<br/><br/><span style=\"color: #ffff8a\">可以对地和对空。</span>",
           "koKR": "침투 전문가입니다. <span class=\"style-TooltipHighlightSCBW\"><b>Nuclear Silo</b></span>에서 무장된 <span class=\"style-TooltipHighlightSCBW\">Tactical Nukes</span>을 유도할 수 있습니다. 업그레이드 하여 <span class=\"style-TooltipHighlightSCBW\"><b>Personal Cloaking</b></span>과 <span class=\"style-TooltipHighlightSCBW\"><b>Lockdown</b></span>을 사용할 수 있습니다.<br/><br/><span style=\"color: #ffff8a\">지상 및 공중 유닛 공격 가능</span>"
         },
         "Hotkey": "G"
@@ -582,6 +548,7 @@
               "UseDefaultButton": 1,
               "CreateDefaultButton": 1
             },
+            "State": "Restricted",
             "DefaultButtonFace": "MedicSCBW",
             "Requirements": "MedicSCBW"
           },
@@ -593,7 +560,7 @@
           "MedicSCBW"
         ],
         "Cost": {
-          "Minerals": 75,
+          "Minerals": 50,
           "Vespene": 25,
           "Terazine": 0,
           "Custom": 0,
@@ -633,7 +600,7 @@
     "MedicSCBW",
     "GhostSCBW"
   ],
-  "BuildTime": 60,
+  "BuildTime": 65,
   "TacticalAIThink": "AIThinkBarracksSCBW",
   "Icon": "btn-building-terran-barracks",
   "LifeArmorIcon": "btn-upgrade-terran-buildingarmor",
@@ -643,9 +610,7 @@
     {
       "id": "TerranBuildingSCBW@Burnout",
       "Name": {
-        "enUS": "Burnout",
-        "zhCN": "Burnout",
-        "koKR": "Burnout"
+        "enUS": "Burnout"
       },
       "Tooltip": "-"
     }
@@ -654,21 +619,18 @@
     {
       "id": "BuildInProgress",
       "Name": {
-        "enUS": "Build in Progress",
-        "ruRU": "Build in Progress"
+        "enUS": "Build in Progress"
       }
     },
     {
       "id": "Rally",
       "Name": {
-        "enUS": "Rally",
-        "ruRU": "Rally"
+        "enUS": "Rally"
       }
     },
     {
       "id": "que5",
       "Name": {
-        "ruRU": "Queue (5)",
         "enUS": "Queue (5)"
       }
     },
@@ -728,12 +690,10 @@
       "id": "Rally",
       "Icon": "btn-ability-terran-setrallypoint",
       "Name": {
-        "enUS": "Set Rally Point",
-        "ruRU": "Задать точку сбора /// Set Rally Point"
+        "enUS": "Set Rally Point"
       },
       "Tooltip": {
-        "enUS": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
-        "ruRU": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically."
+        "enUS": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically."
       }
     },
     {
@@ -741,12 +701,10 @@
       "id": "Lift",
       "Icon": "btn-ability-terran-liftoff",
       "Name": {
-        "enUS": "Lift Off",
-        "ruRU": "Lift Off"
+        "enUS": "Lift Off"
       },
       "Tooltip": {
-        "enUS": "Transforms structure into a slow air unit for redeployment. May not produce units, research upgrades, or use abilities until it has landed.",
-        "ruRU": "Transforms structure into a slow air unit for redeployment. May not produce units, research upgrades, or use abilities until it has landed."
+        "enUS": "Transforms structure into a slow air unit for redeployment. May not produce units, research upgrades, or use abilities until it has landed."
       }
     },
     {
@@ -754,12 +712,10 @@
       "id": "Halt",
       "Icon": "btn-command-stop",
       "Name": {
-        "enUS": "Halt",
-        "ruRU": "Приостановить /// Halt"
+        "enUS": "Halt"
       },
       "Tooltip": {
-        "enUS": "Halts construction of this structure. The partial construction will remain.",
-        "ruRU": "Приостановить сооружение этого строения. Впоследствии его можно будет продолжить. /// Halts construction of this structure. The partial construction will remain."
+        "enUS": "Halts construction of this structure. The partial construction will remain."
       }
     },
     {
@@ -767,12 +723,10 @@
       "id": "Cancel",
       "Icon": "btn-command-cancel",
       "Name": {
-        "enUS": "Cancel",
-        "ruRU": "Отменить /// Cancel"
+        "enUS": "Cancel"
       },
       "Tooltip": {
-        "enUS": "Drops the current order without performing it, and allows you to select a different order.",
-        "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+        "enUS": "Drops the current order without performing it, and allows you to select a different order."
       }
     },
     {
@@ -780,12 +734,10 @@
       "id": "CancelBuilding",
       "Icon": "btn-command-cancel",
       "Name": {
-        "enUS": "Cancel",
-        "ruRU": "Отменить /// Cancel"
+        "enUS": "Cancel"
       },
       "Tooltip": {
-        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-        "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund."
       }
     },
     {
@@ -821,7 +773,7 @@
     {
       "AbilCmd": "BarracksSCBW@Train,Train3",
       "id": "GhostSCBW",
-      "Icon": "btn-unit-terran-ghost",
+      "Icon": "btn-unit-terran-ghost@scbw",
       "Name": {
         "enUS": "Train Ghost",
         "zhCN": "训练幽灵",
@@ -829,7 +781,7 @@
       },
       "Tooltip": {
         "enUS": "Infiltrator. Can use <span class=\"style-TooltipHighlightSCBW\"><b>Personal Cloaking</b></span> and call down <span class=\"style-TooltipHighlightSCBW\">Tactical Nukes</span> built at the <span class=\"style-TooltipHighlightSCBW\"><b>Nuclear Silo</b></span>.  <br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>",
-        "zhCN": "Infiltrator. Can use <span class=\"style-TooltipHighlightSCBW\"><b>Personal Cloaking</b></span> and call down <span class=\"style-TooltipHighlightSCBW\">Tactical Nukes</span> built at the <span class=\"style-TooltipHighlightSCBW\"><b>Nuclear Silo</b></span>.  <br/><br/><span style=\"color: #ffff8a\">Can attack ground and air units.</span>",
+        "zhCN": "渗透单位。可以使用<span class=\"style-TooltipHighlightSCBW\"><b>Personal Cloaking</b></span>和呼叫在<span class=\"style-TooltipHighlightSCBW\"><b>Nuclear Silo</b></span>中建造的<span class=\"style-TooltipHighlightSCBW\">战术核弹</span>。升级后可以使用<span class=\"style-TooltipHighlightSCBW\"><b>Personal Cloaking</b></span>和<span class=\"style-TooltipHighlightSCBW\"><b>Lockdown</b></span>。<br/><br/><span style=\"color: #ffff8a\">可以对地和对空。</span>",
         "koKR": "침투 전문가입니다. <span class=\"style-TooltipHighlightSCBW\"><b>Nuclear Silo</b></span>에서 무장된 <span class=\"style-TooltipHighlightSCBW\">Tactical Nukes</span>을 유도할 수 있습니다. 업그레이드 하여 <span class=\"style-TooltipHighlightSCBW\"><b>Personal Cloaking</b></span>과 <span class=\"style-TooltipHighlightSCBW\"><b>Lockdown</b></span>을 사용할 수 있습니다.<br/><br/><span style=\"color: #ffff8a\">지상 및 공중 유닛 공격 가능</span>"
       }
     },

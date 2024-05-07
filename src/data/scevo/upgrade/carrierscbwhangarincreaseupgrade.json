@@ -13,13 +13,6 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "CarrierSCBWHangarIncreaseUpgrade",
-  "EditorCategories": "UpgradeType:Talents,Race:Protoss",
-  "$tokens": {
-    "ID": {
-      "type": "string",
-      "value": ""
-    }
-  },
   "DataCollection": "CarrierSCBWHangarIncreaseUpgrade",
   "EffectArrayTemplate": [
     {
@@ -33,6 +26,7 @@
       "Value": "CarrierSCBWHangar@ArmUpgrade"
     }
   ],
+  "EditorCategories": "UpgradeType:Talents,Race:Protoss",
   "InfoTooltipPriority": 1,
   "Race": "Prot",
   "ScoreAmount": 200,

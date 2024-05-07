@@ -21,8 +21,7 @@
   "LifeStart": 850,
   "LifeMax": 850,
   "LifeArmorName": {
-    "enUS": "Zerg Building Armor",
-    "ruRU": "Zerg Building Armor"
+    "enUS": "Zerg Building Armor"
   },
   "Mover": "Ground",
   "StationaryTurningRate": 719.4726,
@@ -88,12 +87,6 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
-  "$tokens": {
-    "ID": {
-      "type": "string",
-      "value": ""
-    }
-  },
   "Mob": "Multiplayer",
   "EnergyRegenRate": 0.5,
   "id": "QueensNestSCBW",
@@ -149,12 +142,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "que5",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "QueueCount": 1,
           "Flags": {
             "BestUnit": 1,
@@ -188,12 +175,10 @@
         "id": "Cancel",
         "Icon": "btn-command-cancel",
         "Name": {
-          "enUS": "Cancel",
-          "ruRU": "Отменить /// Cancel"
+          "enUS": "Cancel"
         },
         "Tooltip": {
-          "enUS": "Drops the current order without performing it, and allows you to select a different order.",
-          "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+          "enUS": "Drops the current order without performing it, and allows you to select a different order."
         },
         "Hotkey": "Esc"
       },
@@ -216,12 +201,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "BuildInProgress",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "Activity": "UI/Building",
           "VitalStartFactor": {
             "Life": 0.1,
@@ -255,12 +234,10 @@
         "id": "CancelBuilding",
         "Icon": "btn-command-cancel",
         "Name": {
-          "enUS": "Cancel",
-          "ruRU": "Отменить /// Cancel"
+          "enUS": "Cancel"
         },
         "Tooltip": {
-          "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-          "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+          "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund."
         },
         "Hotkey": "Esc"
       },
@@ -276,16 +253,17 @@
               "CreateDefaultButton": 1
             },
             "DefaultButtonFace": "QueenSCBWSpawnBroodlingsResearch",
+            "State": "Restricted",
             "Requirements": "QueenSCBWSpawnBroodlingsResearch"
           },
           "Resource": {
             "Minerals": 100,
             "Vespene": 100
           },
-          "Time": 140,
+          "Time": 75,
           "Upgrade": "QueenSCBWSpawnBroodlingsResearch"
         },
-        "Time": 140,
+        "Time": 75,
         "Cost": {
           "Minerals": 100,
           "Vespene": 100,
@@ -326,6 +304,7 @@
               "CreateDefaultButton": 1
             },
             "DefaultButtonFace": "QueenSCBWEnsnareResearch",
+            "State": "Restricted",
             "Requirements": "QueenSCBWEnsnareResearch"
           },
           "Resource": {
@@ -358,9 +337,9 @@
           "koKR": "인스네어 진화 /// Evolve Ensnare"
         },
         "Tooltip": {
-          "enUS": "Enables <span class=\"style-TooltipHighlightSCBW\"><b>Queen</b>s</span> to use the <span class=\"style-TooltipHighlightSCBW\"><b>Ensaring Creep</b></span> ability.",
-          "zhCN": "让<span class=\"style-TooltipHighlightSCBW\"><b>Queen</b></span>可以使用<span class=\"style-TooltipHighlightSCBW\"><b>Ensaring Creep</b></span>技能。",
-          "koKR": "<span class=\"style-TooltipHighlightSCBW\"><b>Queen</b></span>이 <span class=\"style-TooltipHighlightSCBW\"><b>Ensaring Creep</b></span> 능력을 사용할 수 있습니다. /// Enables <span class=\"style-TooltipHighlightSCBW\"><b>Queen</b>s</span> to use the <span class=\"style-TooltipHighlightSCBW\"><b>Ensaring Creep</b></span> ability."
+          "enUS": "Enables <span class=\"style-TooltipHighlightSCBW\"><b>Queen</b>s</span> to use the <span class=\"style-TooltipHighlightSCBW\"><b>Ensnare</b></span> ability.",
+          "zhCN": "让<span class=\"style-TooltipHighlightSCBW\"><b>Queen</b></span>可以使用<span class=\"style-TooltipHighlightSCBW\"><b>Ensnare</b></span>技能。",
+          "koKR": "<span class=\"style-TooltipHighlightSCBW\"><b>Queen</b></span>이 <span class=\"style-TooltipHighlightSCBW\"><b>Ensnare</b></span> 능력을 사용할 수 있습니다. /// Enables <span class=\"style-TooltipHighlightSCBW\"><b>Queen</b>s</span> to use the <span class=\"style-TooltipHighlightSCBW\"><b>Ensnare</b></span> ability."
         },
         "Hotkey": "E"
       },
@@ -376,6 +355,7 @@
               "CreateDefaultButton": 1
             },
             "DefaultButtonFace": "QueenSCBWEnergyUpgrade",
+            "State": "Restricted",
             "Requirements": "QueenSCBWEnergyUpgrade"
           },
           "Resource": {
@@ -426,6 +406,7 @@
               "CreateDefaultButton": 1
             },
             "DefaultButtonFace": "QueenSCBWEnergyUpgrade",
+            "State": "Restricted",
             "Requirements": "QueenSCBWEnergyUpgrade"
           },
           "Resource": {
@@ -476,16 +457,17 @@
               "CreateDefaultButton": 1
             },
             "DefaultButtonFace": "QueenSCBWSpawnBroodlingsResearch",
+            "State": "Restricted",
             "Requirements": "QueenSCBWSpawnBroodlingsResearch"
           },
           "Resource": {
             "Minerals": 100,
             "Vespene": 100
           },
-          "Time": 140,
+          "Time": 75,
           "Upgrade": "QueenSCBWSpawnBroodlingsResearch"
         },
-        "Time": 140,
+        "Time": 75,
         "Cost": {
           "Minerals": 100,
           "Vespene": 100,
@@ -534,8 +516,7 @@
     {
       "id": "OnCreep",
       "Name": {
-        "enUS": "On Creep",
-        "ruRU": "On Creep"
+        "enUS": "On Creep"
       },
       "Tooltip": "-"
     }
@@ -544,14 +525,12 @@
     {
       "id": "BuildInProgress",
       "Name": {
-        "enUS": "Build in Progress",
-        "ruRU": "Build in Progress"
+        "enUS": "Build in Progress"
       }
     },
     {
       "id": "que5",
       "Name": {
-        "ruRU": "Queue (5)",
         "enUS": "Queue (5)"
       }
     },
@@ -573,18 +552,18 @@
     }
   ],
   "$Upgrades": [
-    "QueensNestSCBW@Count",
-    "QueensNestSCBW",
     "QueensNestSCBW@AllowUnit",
+    "QueensNestSCBW",
     "DroneSCBW@BuildAdv",
+    "QueensNestSCBW@Count",
     "QueensNestSCBW",
     "IsQueensNestSCBW",
     "NotQueensNestSCBW",
     "CasterIsQueensNestSCBW",
+    "QueensNestSCBW",
     "QueensNestSCBW@CountAtUnit",
     "QueensNestSCBW@QoB",
-    "QueensNestSCBW@QoBAtUnit",
-    "QueensNestSCBW"
+    "QueensNestSCBW@QoBAtUnit"
   ],
   "$Requirements": [],
   "$Production": [],
@@ -605,12 +584,10 @@
       "id": "Cancel",
       "Icon": "btn-command-cancel",
       "Name": {
-        "enUS": "Cancel",
-        "ruRU": "Отменить /// Cancel"
+        "enUS": "Cancel"
       },
       "Tooltip": {
-        "enUS": "Drops the current order without performing it, and allows you to select a different order.",
-        "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+        "enUS": "Drops the current order without performing it, and allows you to select a different order."
       }
     },
     {
@@ -618,12 +595,10 @@
       "id": "CancelBuilding",
       "Icon": "btn-command-cancel",
       "Name": {
-        "enUS": "Cancel",
-        "ruRU": "Отменить /// Cancel"
+        "enUS": "Cancel"
       },
       "Tooltip": {
-        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-        "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund."
       }
     },
     {
@@ -651,9 +626,9 @@
         "koKR": "인스네어 진화 /// Evolve Ensnare"
       },
       "Tooltip": {
-        "enUS": "Enables <span class=\"style-TooltipHighlightSCBW\"><b>Queen</b>s</span> to use the <span class=\"style-TooltipHighlightSCBW\"><b>Ensaring Creep</b></span> ability.",
-        "zhCN": "让<span class=\"style-TooltipHighlightSCBW\"><b>Queen</b></span>可以使用<span class=\"style-TooltipHighlightSCBW\"><b>Ensaring Creep</b></span>技能。",
-        "koKR": "<span class=\"style-TooltipHighlightSCBW\"><b>Queen</b></span>이 <span class=\"style-TooltipHighlightSCBW\"><b>Ensaring Creep</b></span> 능력을 사용할 수 있습니다. /// Enables <span class=\"style-TooltipHighlightSCBW\"><b>Queen</b>s</span> to use the <span class=\"style-TooltipHighlightSCBW\"><b>Ensaring Creep</b></span> ability."
+        "enUS": "Enables <span class=\"style-TooltipHighlightSCBW\"><b>Queen</b>s</span> to use the <span class=\"style-TooltipHighlightSCBW\"><b>Ensnare</b></span> ability.",
+        "zhCN": "让<span class=\"style-TooltipHighlightSCBW\"><b>Queen</b></span>可以使用<span class=\"style-TooltipHighlightSCBW\"><b>Ensnare</b></span>技能。",
+        "koKR": "<span class=\"style-TooltipHighlightSCBW\"><b>Queen</b></span>이 <span class=\"style-TooltipHighlightSCBW\"><b>Ensnare</b></span> 능력을 사용할 수 있습니다. /// Enables <span class=\"style-TooltipHighlightSCBW\"><b>Queen</b>s</span> to use the <span class=\"style-TooltipHighlightSCBW\"><b>Ensnare</b></span> ability."
       }
     },
     {

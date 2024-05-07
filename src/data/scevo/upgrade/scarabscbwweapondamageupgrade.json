@@ -13,13 +13,6 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "ScarabSCBWWeaponDamageUpgrade",
-  "EditorCategories": "UpgradeType:AttackBonus,Race:Protoss",
-  "$tokens": {
-    "ID": {
-      "type": "string",
-      "value": ""
-    }
-  },
   "DataCollection": "ScarabSCBWWeaponDamageUpgrade",
   "InfoTooltipPriority": 1,
   "Race": "Prot",
@@ -27,15 +20,11 @@
   "ScoreResult": "BuildOrder",
   "EffectArrayTemplate": [
     {
-      "Reference": "Effect,^ParamId^Weapon@Damage,AttributeBonus[Armored]",
-      "Value": "40"
-    },
-    {
-      "Operation": "Set",
-      "Reference": "Weapon,^ParamId^Weapon,Icon",
-      "Value": "Assets\\Effects\\Protoss\\SardineS_ReaverMod\\ScarabUpgradePurple.dds"
+      "Reference": "Effect,^ParamId^Weapon@Damage,Amount",
+      "Value": "25"
     }
   ],
+  "EditorCategories": "UpgradeType:AttackBonus,Race:Protoss",
   "AffectedUnitArray": [
     "ReaverSCBW"
   ]

@@ -1,6 +1,6 @@
 import fs from "fs-extra";
-// import * as SCParser from "sc-parser"
-import * as SCParser from "./../../parser/index.js"
+import * as SCParser from "sc-parser"
+//import * as SCParser from "./../../parser/index.js"
 
 
 async function wiki (config) {
@@ -592,7 +592,7 @@ async function wiki (config) {
 //replace text strings expressions with data values
   mod.resolveTextValues()
 //load the list of available icons
-  mod.readImages('./../../web-assets/icons')
+  mod.readImages('./../starcraft-all-races-web-assets/icons')
 //check entities icons and use the available ones
   mod.checkImages()
 //add actor data to units
@@ -624,7 +624,8 @@ async function wiki (config) {
       ...pick(race, ["include", "exclude"])
     }))
   if(!config.allunits){
-    racesData = racesData.filter(race => race.Flags?.Selectable === 1)
+    //racesData = racesData.filter(race => race.Flags?.Selectable === 1)
+    racesData = racesData.filter(race => ["Prot","Terr","Zerg","BWPr","BWTe","BWZe"].includes(race.id))
   }
 
   output["index"] = {
@@ -671,6 +672,9 @@ async function wiki (config) {
           let morph = mod.cache.unit[morphID]
           if (!morph) {
             continue;
+          }
+          if(unit.data().Race === "BWZe"){
+              continue
           }
           if (morph._morph?.includes(unit.id)) {
             morph._phased = unit.id
@@ -803,10 +807,10 @@ async function wiki (config) {
 
 }
 
-SCParser.SCGame.directories.mods = `C:\\Program Files (x86)\\StarCraft II\\mods\\all-races-mods`
-SCParser.SCGame.directories.builtin = 'C:\\Program Files (x86)\\StarCraft II\\MODS\\all-races-mods\\builtin'
-SCParser.SCGame.directories.dependencies = 'C:\\Program Files (x86)\\StarCraft II\\MODS\\all-races-mods\\dependencies'
-SCParser.SCGame.directories.factions = 'C:\\Program Files (x86)\\StarCraft II\\MODS\\all-races-mods\\factions'
+//SCParser.SCGame.directories.mods = `C:\\Program Files (x86)\\StarCraft II\\mods\\all-races-mods`
+//SCParser.SCGame.directories.dependencies = 'C:\\Program Files (x86)\\StarCraft II\\MODS\\all-races-mods\\dependencies'
+SCParser.SCGame.directories.builtin = 'C:\\Users\\ayunes\\sc2\\SC2GameData\\mods'
+SCParser.SCGame.directories.factions = 'C:\\Users\\ayunes\\sc2\\SCEvoComplete\\SC Evo Complete'
 
 // let localPath = './../../../mods/all-races-mods/factions/'
 // let arcGitPath = 'github:hometlt/starcraft-all-races-mods/'
@@ -839,12 +843,12 @@ await wiki( {
   id:"scevo",
   mods: [
     '$builtin/Core.SC2Mod',
-    // '$builtin/Liberty.sc2mod',
-    // '$builtin/Swarm.sc2mod',
-    // '$builtin/Void.sc2mod',
-    '$dependencies/Base.SC2Mod',
-    '$dependencies/VoidMulti.SC2Mod',
-    '$factions/SCEvo.SC2Mod',
+    '$builtin/Liberty.sc2mod',
+    '$builtin/Swarm.sc2mod',
+    '$builtin/Void.sc2mod',
+    '$builtin/VoidMulti.SC2Mod',
+    '$factions/SCEvo_Core.SC2Mod',
+    '$factions/SCEvo_Extension.SC2Mod',
     // '$factions/Scion.SC2Mod',
     // '$factions/Dragons.SC2Mod',
     // '$factions/UED.SC2Mod',
@@ -853,7 +857,7 @@ await wiki( {
     // '$factions/Synoid.SC2Mod',
     // '$factions/Umojan.SC2Mod'
   ],
-  output: './../src/data/scevo/'
+  output: './src/data/scevo/'
 })
 
 // await wiki( {

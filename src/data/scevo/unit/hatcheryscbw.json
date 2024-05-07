@@ -21,8 +21,7 @@
   "LifeStart": 1250,
   "LifeMax": 1250,
   "LifeArmorName": {
-    "enUS": "Zerg Building Armor",
-    "ruRU": "Zerg Building Armor"
+    "enUS": "Zerg Building Armor"
   },
   "Mover": "Ground",
   "StationaryTurningRate": 719.4726,
@@ -89,12 +88,6 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
-  "$tokens": {
-    "ID": {
-      "type": "string",
-      "value": ""
-    }
-  },
   "Mob": "Multiplayer",
   "EnergyRegenRate": 0.5,
   "id": "HatcherySCBW",
@@ -130,7 +123,7 @@
   "Food": 6,
   "CostCategory": "Economy",
   "CostResource": {
-    "Minerals": 300
+    "Minerals": 350
   },
   "BuildTime": 100,
   "AttackTargetPriority": 11,
@@ -148,7 +141,7 @@
   "ScoreResult": "BuildOrder",
   "SubgroupPriority": 33,
   "TechAliasArray": [
-    "HatcherySCBW"
+    "Alias_HatcherySCBW"
   ],
   "GlossaryPriority": 10,
   "TechTreeProducedUnitArray": [
@@ -187,14 +180,12 @@
     {
       "id": "BuildInProgress",
       "Name": {
-        "enUS": "Build in Progress",
-        "ruRU": "Build in Progress"
+        "enUS": "Build in Progress"
       }
     },
     {
       "id": "que5CancelToSelection",
       "Name": {
-        "ruRU": "Queue (5) (Cancel To Selection)",
         "enUS": "Queue (5) (Cancel To Selection)"
       }
     },
@@ -222,9 +213,6 @@
     "HatcherySCBW@AllowUnit",
     "DroneSCBW@Build",
     "HatcherySCBW@Count",
-    "HatcherySCBW@CountAtUnit",
-    "HiveSCBW",
-    "LairSCBW",
     "HatcherySCBW",
     "HatcherySCBW@PlayerDecalMacro",
     "LairSCBW",
@@ -233,10 +221,11 @@
     "IsHatcherySCBW",
     "NotHatcherySCBW",
     "CasterIsHatcherySCBW",
+    "HatcherySCBW",
+    "HatcherySCBW@CountAtUnit",
     "HatcherySCBW@CountAtUnitNoTechtree",
     "HatcherySCBW@QoB",
-    "HatcherySCBW@QoBAtUnit",
-    "HatcherySCBW"
+    "HatcherySCBW@QoBAtUnit"
   ],
   "$Requirements": [],
   "$Production": [
@@ -244,8 +233,7 @@
   ],
   "$Research": [],
   "$Morph": [
-    "LairSCBW",
-    null
+    "LairSCBW"
   ],
   "$Phase": [],
   "$Producers": [
@@ -258,12 +246,10 @@
       "id": "Cancel",
       "Icon": "btn-command-cancel",
       "Name": {
-        "enUS": "Cancel",
-        "ruRU": "Отменить /// Cancel"
+        "enUS": "Cancel"
       },
       "Tooltip": {
-        "enUS": "Drops the current order without performing it, and allows you to select a different order.",
-        "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+        "enUS": "Drops the current order without performing it, and allows you to select a different order."
       }
     },
     {
@@ -271,12 +257,10 @@
       "id": "CancelMutateMorph",
       "Icon": "btn-command-cancel",
       "Name": {
-        "enUS": "Cancel",
-        "ruRU": "Cancel"
+        "enUS": "Cancel"
       },
       "Tooltip": {
-        "enUS": "Cancels the mutation order, returning the structure to its original state.",
-        "ruRU": "Cancels the mutation order, returning the structure to its original state."
+        "enUS": "Cancels the mutation order, returning the structure to its original state."
       }
     },
     {
@@ -284,12 +268,10 @@
       "id": "CancelBuilding",
       "Icon": "btn-command-cancel",
       "Name": {
-        "enUS": "Cancel",
-        "ruRU": "Отменить /// Cancel"
+        "enUS": "Cancel"
       },
       "Tooltip": {
-        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-        "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund."
       }
     },
     {

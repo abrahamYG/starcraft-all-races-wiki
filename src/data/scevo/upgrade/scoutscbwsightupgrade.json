@@ -13,13 +13,6 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "ScoutSCBWSightUpgrade",
-  "EditorCategories": "UpgradeType:Talents,Race:Protoss",
-  "$tokens": {
-    "ID": {
-      "type": "string",
-      "value": ""
-    }
-  },
   "DataCollection": "ScoutSCBWSightUpgrade",
   "EffectArrayTemplate": [
     {
@@ -27,6 +20,7 @@
       "Value": "2"
     }
   ],
+  "EditorCategories": "UpgradeType:Talents,Race:Protoss",
   "InfoTooltipPriority": 1,
   "Race": "BWPr",
   "ScoreAmount": 200,

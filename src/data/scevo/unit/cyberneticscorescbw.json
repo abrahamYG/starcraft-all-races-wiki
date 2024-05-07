@@ -21,8 +21,7 @@
   "LifeStart": 500,
   "LifeMax": 500,
   "LifeArmorName": {
-    "enUS": "Protoss Armor",
-    "ruRU": "Protoss Armor"
+    "enUS": "Protoss Armor"
   },
   "Mover": "Ground",
   "StationaryTurningRate": 719.4726,
@@ -88,12 +87,6 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
-  "$tokens": {
-    "ID": {
-      "type": "string",
-      "value": ""
-    }
-  },
   "Facing": 315,
   "Mob": "Multiplayer",
   "FogVisibility": "Snapshot",
@@ -116,10 +109,9 @@
   "LifeArmor": 1,
   "ShieldsStart": 500,
   "ShieldsMax": 500,
-  "ShieldRegenRate": 2,
+  "ShieldRegenRate": 0.4375,
   "ShieldArmorName": {
-    "enUS": "Protoss Plasma Shields",
-    "ruRU": "Плазменные щиты протоссов /// Protoss Plasma Shields"
+    "enUS": "Protoss Plasma Shields"
   },
   "Sight": 9,
   "CostCategory": "Technology",
@@ -148,12 +140,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "que5",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "QueueCount": 1,
           "Flags": {
             "BestUnit": 1,
@@ -187,12 +173,10 @@
         "id": "Cancel",
         "Icon": "btn-command-cancel",
         "Name": {
-          "enUS": "Cancel",
-          "ruRU": "Отменить /// Cancel"
+          "enUS": "Cancel"
         },
         "Tooltip": {
-          "enUS": "Drops the current order without performing it, and allows you to select a different order.",
-          "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+          "enUS": "Drops the current order without performing it, and allows you to select a different order."
         },
         "Hotkey": "Esc"
       },
@@ -215,12 +199,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "BuildInProgress",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "Activity": "UI/Building",
           "VitalStartFactor": {
             "Life": 0.1,
@@ -254,12 +232,10 @@
         "id": "CancelBuilding",
         "Icon": "btn-command-cancel",
         "Name": {
-          "enUS": "Cancel",
-          "ruRU": "Отменить /// Cancel"
+          "enUS": "Cancel"
         },
         "Tooltip": {
-          "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-          "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+          "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund."
         },
         "Hotkey": "Esc"
       },
@@ -275,10 +251,11 @@
               "CreateDefaultButton": 1
             },
             "DefaultButtonFace": "DragoonSCBWRangeUpgrade",
+            "State": "Restricted",
             "Requirements": "DragoonSCBWRangeUpgrade"
           },
           "Resource": {
-            "Minerals": 150,
+            "Minerals": 100,
             "Vespene": 150
           },
           "Time": 110,
@@ -286,7 +263,7 @@
         },
         "Time": 110,
         "Cost": {
-          "Minerals": 150,
+          "Minerals": 100,
           "Vespene": 150,
           "Terazine": 0,
           "Custom": 0,
@@ -325,16 +302,17 @@
               "CreateDefaultButton": 1
             },
             "DefaultButtonFace": "ProtossAirWeaponsSCBW@Lvl1",
+            "State": "Restricted",
             "Requirements": "ProtossAirWeaponsSCBW@Lvl1"
           },
           "Resource": {
             "Minerals": 100,
             "Vespene": 100
           },
-          "Time": 180,
+          "Time": 160,
           "Upgrade": "ProtossAirWeaponsSCBW@Lvl1"
         },
-        "Time": 180,
+        "Time": 160,
         "Cost": {
           "Minerals": 100,
           "Vespene": 100,
@@ -374,6 +352,7 @@
               "UseDefaultButton": 1,
               "CreateDefaultButton": 1
             },
+            "State": "Restricted",
             "DefaultButtonFace": "ProtossAirWeaponsSCBW@Lvl2",
             "Requirements": "ProtossAirWeaponsSCBW@Lvl2"
           },
@@ -381,10 +360,10 @@
             "Minerals": 175,
             "Vespene": 175
           },
-          "Time": 215,
+          "Time": 190,
           "Upgrade": "ProtossAirWeaponsSCBW@Lvl2"
         },
-        "Time": 215,
+        "Time": 190,
         "Cost": {
           "Minerals": 175,
           "Vespene": 175,
@@ -424,6 +403,7 @@
               "UseDefaultButton": 1,
               "CreateDefaultButton": 1
             },
+            "State": "Restricted",
             "DefaultButtonFace": "ProtossAirWeaponsSCBW@Lvl3",
             "Requirements": "ProtossAirWeaponsSCBW@Lvl3"
           },
@@ -431,10 +411,10 @@
             "Minerals": 250,
             "Vespene": 250
           },
-          "Time": 250,
+          "Time": 220,
           "Upgrade": "ProtossAirWeaponsSCBW@Lvl3"
         },
-        "Time": 250,
+        "Time": 220,
         "Cost": {
           "Minerals": 250,
           "Vespene": 250,
@@ -475,19 +455,20 @@
               "CreateDefaultButton": 1
             },
             "DefaultButtonFace": "ProtossAirArmorsSCBW@Lvl1",
+            "State": "Restricted",
             "Requirements": "ProtossAirArmorsSCBW@Lvl1"
           },
           "Resource": {
-            "Minerals": 100,
-            "Vespene": 100
+            "Minerals": 150,
+            "Vespene": 150
           },
-          "Time": 180,
+          "Time": 160,
           "Upgrade": "ProtossAirArmorsSCBW@Lvl1"
         },
-        "Time": 180,
+        "Time": 160,
         "Cost": {
-          "Minerals": 100,
-          "Vespene": 100,
+          "Minerals": 150,
+          "Vespene": 150,
           "Terazine": 0,
           "Custom": 0,
           "Energy": 0,
@@ -524,20 +505,21 @@
               "UseDefaultButton": 1,
               "CreateDefaultButton": 1
             },
+            "State": "Restricted",
             "DefaultButtonFace": "ProtossAirArmorsSCBW@Lvl2",
             "Requirements": "ProtossAirArmorsSCBW@Lvl2"
           },
           "Resource": {
-            "Minerals": 175,
-            "Vespene": 175
+            "Minerals": 225,
+            "Vespene": 225
           },
-          "Time": 215,
+          "Time": 190,
           "Upgrade": "ProtossAirArmorsSCBW@Lvl2"
         },
-        "Time": 215,
+        "Time": 190,
         "Cost": {
-          "Minerals": 175,
-          "Vespene": 175,
+          "Minerals": 225,
+          "Vespene": 225,
           "Terazine": 0,
           "Custom": 0,
           "Energy": 0,
@@ -574,20 +556,21 @@
               "UseDefaultButton": 1,
               "CreateDefaultButton": 1
             },
+            "State": "Restricted",
             "DefaultButtonFace": "ProtossAirArmorsSCBW@Lvl3",
             "Requirements": "ProtossAirArmorsSCBW@Lvl3"
           },
           "Resource": {
-            "Minerals": 250,
-            "Vespene": 250
+            "Minerals": 300,
+            "Vespene": 300
           },
-          "Time": 250,
+          "Time": 220,
           "Upgrade": "ProtossAirArmorsSCBW@Lvl3"
         },
-        "Time": 250,
+        "Time": 220,
         "Cost": {
-          "Minerals": 250,
-          "Vespene": 250,
+          "Minerals": 300,
+          "Vespene": 300,
           "Terazine": 0,
           "Custom": 0,
           "Energy": 0,
@@ -625,10 +608,11 @@
               "CreateDefaultButton": 1
             },
             "DefaultButtonFace": "DragoonSCBWRangeUpgrade",
+            "State": "Restricted",
             "Requirements": "DragoonSCBWRangeUpgrade"
           },
           "Resource": {
-            "Minerals": 150,
+            "Minerals": 100,
             "Vespene": 150
           },
           "Time": 110,
@@ -636,7 +620,7 @@
         },
         "Time": 110,
         "Cost": {
-          "Minerals": 150,
+          "Minerals": 100,
           "Vespene": 150,
           "Terazine": 0,
           "Custom": 0,
@@ -678,7 +662,6 @@
   ],
   "BuildTime": 50,
   "TacticalAIThink": "AIThinkCyberneticsCoreSCBW",
-  "ShieldRegenDelay": 10,
   "id": "CyberneticsCoreSCBW",
   "Icon": "btn-building-protoss-cyberneticscore",
   "LifeArmorIcon": "btn-armor-protoss-buildingplating",
@@ -689,8 +672,7 @@
       "id": "PowerUserQueue",
       "Icon": "btn-building-protoss-pylon",
       "Name": {
-        "enUS": "Power User (Queue)",
-        "ruRU": "Power User (Queue)"
+        "enUS": "Power User (Queue)"
       },
       "Tooltip": "-"
     }
@@ -699,14 +681,12 @@
     {
       "id": "BuildInProgress",
       "Name": {
-        "enUS": "Build in Progress",
-        "ruRU": "Build in Progress"
+        "enUS": "Build in Progress"
       }
     },
     {
       "id": "que5",
       "Name": {
-        "ruRU": "Queue (5)",
         "enUS": "Queue (5)"
       }
     },
@@ -746,9 +726,9 @@
     "IsCyberneticsCoreSCBW",
     "NotCyberneticsCoreSCBW",
     "CasterIsCyberneticsCoreSCBW",
+    "CyberneticsCoreSCBW",
     "CyberneticsCoreSCBW@QoB",
-    "CyberneticsCoreSCBW@QoBAtUnit",
-    "CyberneticsCoreSCBW"
+    "CyberneticsCoreSCBW@QoBAtUnit"
   ],
   "$Requirements": [],
   "$Production": [],
@@ -773,12 +753,10 @@
       "id": "Cancel",
       "Icon": "btn-command-cancel",
       "Name": {
-        "enUS": "Cancel",
-        "ruRU": "Отменить /// Cancel"
+        "enUS": "Cancel"
       },
       "Tooltip": {
-        "enUS": "Drops the current order without performing it, and allows you to select a different order.",
-        "ruRU": "Отменить текущий приказ и отдать следующий. /// Drops the current order without performing it, and allows you to select a different order."
+        "enUS": "Drops the current order without performing it, and allows you to select a different order."
       }
     },
     {
@@ -786,12 +764,10 @@
       "id": "CancelBuilding",
       "Icon": "btn-command-cancel",
       "Name": {
-        "enUS": "Cancel",
-        "ruRU": "Отменить /// Cancel"
+        "enUS": "Cancel"
       },
       "Tooltip": {
-        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund.",
-        "ruRU": "Отменить сооружение этого строения, уничтожив его и получив частичную компенсацию. /// Cancels construction of this structure, destroying the structure and giving a partial refund."
+        "enUS": "Cancels construction of this structure, destroying the structure and giving a partial refund."
       }
     },
     {

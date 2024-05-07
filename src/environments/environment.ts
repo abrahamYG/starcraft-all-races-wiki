@@ -4,8 +4,8 @@
 
 export const environment = {
   production: false,
-  imagesRoot: "http://scassets.hometlt.ru/icons/",
-  dataRoot: "/data/"
+  imagesRoot: "./icons/",
+  dataRoot: "./data/"
 };
 
 /*

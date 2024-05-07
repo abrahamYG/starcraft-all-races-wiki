@@ -13,18 +13,12 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "DarkArchonSCBWMindControlResearch",
-  "EditorCategories": "UpgradeType:SpellResearch,Race:Protoss",
-  "$tokens": {
-    "ID": {
-      "type": "string",
-      "value": ""
-    }
-  },
   "DataCollection": "DarkArchonSCBWMindControlResearch",
   "InfoTooltipPriority": 1,
   "Race": "Prot",
   "ScoreAmount": 400,
   "ScoreResult": "BuildOrder",
+  "EditorCategories": "UpgradeType:SpellResearch,Race:Protoss",
   "AffectedUnitArray": [
     "DarkArchonSCBW"
   ]

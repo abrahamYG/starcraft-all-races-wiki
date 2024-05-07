@@ -13,35 +13,29 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "GoliathSCBWRangeUpgrade",
-  "EditorCategories": "Race:Terran,UpgradeType:Talents",
-  "$tokens": {
-    "ID": {
-      "type": "string",
-      "value": ""
-    }
-  },
   "DataCollection": "GoliathSCBWRangeUpgrade",
   "EffectArrayTemplate": [
     {
       "Reference": "Weapon,^ParamId^WeaponAir,Range",
-      "Value": "3"
+      "Value": "4"
     },
     {
       "Reference": "Weapon,^ParamId^WeaponAir,MinScanRange",
-      "Value": "3"
+      "Value": "4"
     },
     {
       "Reference": "Weapon,^ParamId^WeaponAir@Fake,Range",
-      "Value": "3"
+      "Value": "4"
     },
     {
       "Reference": "Weapon,^ParamId^WeaponAir@Fake,MinScanRange",
-      "Value": "3"
+      "Value": "4"
     }
   ],
   "Race": "Terr",
   "ScoreAmount": 200,
   "ScoreResult": "BuildOrder",
+  "EditorCategories": "Race:Terran,UpgradeType:Talents",
   "AffectedUnitArray": [
     "GoliathSCBW"
   ]

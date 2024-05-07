@@ -13,27 +13,21 @@
   "ScoreValue": "MiscTechnologyValue",
   "WebPriority": 1,
   "LeaderAlias": "DragoonSCBWRangeUpgrade",
-  "EditorCategories": "UpgradeType:Talents,Race:Protoss",
-  "$tokens": {
-    "ID": {
-      "type": "string",
-      "value": ""
-    }
-  },
   "DataCollection": "DragoonSCBWRangeUpgrade",
   "EffectArrayTemplate": [
     {
       "Reference": "Weapon,^ParamId^Weapon,Range",
-      "Value": "1"
+      "Value": "2"
     },
     {
       "Reference": "Weapon,^ParamId^Weapon,MinScanRange",
-      "Value": "1"
+      "Value": "2"
     }
   ],
   "Race": "Prot",
   "ScoreAmount": 300,
   "ScoreResult": "BuildOrder",
+  "EditorCategories": "UpgradeType:Talents,Race:Protoss",
   "AffectedUnitArray": [
     "DragoonSCBW"
   ]

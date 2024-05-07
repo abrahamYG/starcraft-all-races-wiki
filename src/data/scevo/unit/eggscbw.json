@@ -21,8 +21,7 @@
   "LifeStart": 200,
   "LifeMax": 200,
   "LifeArmorName": {
-    "enUS": "Zerg Ground Carapace",
-    "ruRU": "Zerg Ground Carapace"
+    "enUS": "Zerg Ground Carapace"
   },
   "Mover": "Ground",
   "StationaryTurningRate": 719.4726,
@@ -86,12 +85,6 @@
   },
   "InnerRadiusSafetyMultiplier": 1,
   "ArmorType": "Unknown",
-  "$tokens": {
-    "ID": {
-      "type": "string",
-      "value": ""
-    }
-  },
   "PlaneArray": [
     "Ground"
   ],
@@ -132,12 +125,10 @@
         "id": "Rally",
         "Icon": "btn-ability-terran-setrallypoint",
         "Name": {
-          "enUS": "Set Rally Point",
-          "ruRU": "Задать точку сбора /// Set Rally Point"
+          "enUS": "Set Rally Point"
         },
         "Tooltip": {
-          "enUS": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
-          "ruRU": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically."
+          "enUS": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically."
         },
         "Hotkey": "Y"
       },
@@ -160,12 +151,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "que1",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "QueueCount": 1,
           "Flags": {
             "BestUnit": 1,
@@ -199,12 +184,10 @@
         "id": "CancelCocoon",
         "Icon": "btn-command-cancel",
         "Name": {
-          "enUS": "Cancel",
-          "ruRU": "Cancel"
+          "enUS": "Cancel"
         },
         "Tooltip": {
-          "enUS": "Cancels the build order, killing the larva in the process.",
-          "ruRU": "Cancels the build order, killing the larva in the process."
+          "enUS": "Cancels the build order, killing the larva in the process."
         },
         "Hotkey": "Esc"
       },
@@ -233,12 +216,6 @@
             "DisableWhileDead": 1
           },
           "DataCollection": "move",
-          "$tokens": {
-            "ID": {
-              "type": "string",
-              "value": ""
-            }
-          },
           "CmdButtonArray": {
             "Move": {
               "Flags": {
@@ -276,7 +253,8 @@
           "FollowRangeSlop": 1,
           "FollowAcquireRange": 6,
           "MinPatrolDistance": 1,
-          "id": "move"
+          "id": "move",
+          "AbilSetId": "Move"
         },
         "Cost": {
           "Minerals": 0,
@@ -295,12 +273,10 @@
         "id": "AcquireMove",
         "Icon": "btn-command-attack",
         "Name": {
-          "enUS": "Scan Move",
-          "ruRU": "Двигаться в режиме наблюдения /// Scan Move"
+          "enUS": "Scan Move"
         },
         "Tooltip": {
-          "enUS": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies.",
-          "ruRU": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies."
+          "enUS": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies."
         },
         "Hotkey": "A"
       }
@@ -318,28 +294,26 @@
     {
       "id": "que1",
       "Name": {
-        "ruRU": "Queue (1)",
         "enUS": "Queue (1)"
       }
     },
     {
       "id": "Rally",
       "Name": {
-        "enUS": "Rally",
-        "ruRU": "Rally"
+        "enUS": "Rally"
       }
     }
   ],
   "$Upgrades": [
-    "LarvaSCBW@Train",
-    "EggSCBW",
     "NotEggSCBW",
+    "EggSCBW",
+    "LarvaSCBW@Train",
     "EggSCBW",
     "EggSCBW@DeathSound",
     "EggSCBW@Birth",
     "IsEggSCBW",
-    "EggSCBW@AllowUnit",
-    "EggSCBW"
+    "EggSCBW",
+    "EggSCBW@AllowUnit"
   ],
   "$Requirements": [],
   "$Production": [],
@@ -353,12 +327,10 @@
       "id": "Rally",
       "Icon": "btn-ability-terran-setrallypoint",
       "Name": {
-        "enUS": "Set Rally Point",
-        "ruRU": "Задать точку сбора /// Set Rally Point"
+        "enUS": "Set Rally Point"
       },
       "Tooltip": {
-        "enUS": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically.",
-        "ruRU": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically."
+        "enUS": "Sends constructed units to the designated point. Workers rallied to resources will begin gathering automatically."
       }
     },
     {
@@ -366,12 +338,10 @@
       "id": "CancelCocoon",
       "Icon": "btn-command-cancel",
       "Name": {
-        "enUS": "Cancel",
-        "ruRU": "Cancel"
+        "enUS": "Cancel"
       },
       "Tooltip": {
-        "enUS": "Cancels the build order, killing the larva in the process.",
-        "ruRU": "Cancels the build order, killing the larva in the process."
+        "enUS": "Cancels the build order, killing the larva in the process."
       }
     },
     {
@@ -379,12 +349,10 @@
       "id": "AcquireMove",
       "Icon": "btn-command-attack",
       "Name": {
-        "enUS": "Scan Move",
-        "ruRU": "Двигаться в режиме наблюдения /// Scan Move"
+        "enUS": "Scan Move"
       },
       "Tooltip": {
-        "enUS": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies.",
-        "ruRU": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies."
+        "enUS": "Orders selected units to move to the target area or follow the target unit. Scan-moving units will not engage enemies."
       }
     }
   ]

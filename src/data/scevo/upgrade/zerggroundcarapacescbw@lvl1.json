@@ -13,13 +13,6 @@
   "ScoreValue": "ArmorTechnologyValue",
   "WebPriority": 0,
   "LeaderAlias": "ZergGroundCarapaceSCBW",
-  "EditorCategories": "Race:Zerg,UpgradeType:ArmorBonus",
-  "$tokens": {
-    "ID": {
-      "type": "string",
-      "value": ""
-    }
-  },
   "DataCollection": "ZergGroundCarapaceSCBW",
   "Race": "BWZe",
   "ScoreAmount": 300,
@@ -39,6 +32,7 @@
       "Value": "Assets\\Textures\\btn-upgrade-zerg-groundcarapace-level1.dds"
     }
   ],
+  "EditorCategories": "Race:Zerg,UpgradeType:ArmorBonus",
   "BonusResourcePerLevel": {
     "Minerals": 75,
     "Vespene": 75
